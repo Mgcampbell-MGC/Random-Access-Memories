@@ -8,6 +8,7 @@ Goal: Pick ONE rental-equipment business (asset-owner, near-passive, huge KISS c
 - [x] **Phase 1** — Analyst + Red-Team + Score the 6 contenders (18 agents, done). Result: 5 of 6 KILLED; only SilicaShield survives at 4.15/10. Raw: `scratchpad/phase1_clean.json`.
 - [x] Write Phase 1 kill list (verification kills recorded in 02_KILL_LIST.md)
 - [~] **Phase 2** — Prospector fleet → pre-filter → same treatment on net-new plays  ← RUNNING (workflow wf_15566e0e-250)
+- [ ] **Phase 3 — Final Kill Gauntlet** (armed: `scratchpad/wf_phase3_gauntlet.js`). Fires on Phase-2 survivors + SilicaShield. 6 assassins/finalist: market-death, obsolescence, PE roll-up, rent-vs-own, passivity-trap, resale-cliff → DEAD/FRAGILE/FUNDABLE. No hype; kill first.
 - [ ] Write all 5 markdown deliverables in ./output/
 - [ ] Produce the final execution Word doc for the #1 pick
 - [ ] Commit & push to branch `claude/rental-equipment-evaluation-s9xphh`
