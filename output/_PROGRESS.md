@@ -5,12 +5,24 @@ Goal: Pick ONE rental-equipment business (asset-owner, near-passive, huge KISS c
 ## Status
 - [x] Read & extract all 9 source `.docx` plays
 - [x] Pre-filter (kill on-sight plays that fail a hard filter — no tokens wasted verifying them)
-- [~] **Phase 1** — Analyst + Red-Team + Score the 6 contenders  ← RUNNING (workflow wf_3911f08d-63b)
-- [ ] Write Phase 1 partial deliverables (kill list, partial ranking)
-- [ ] **Phase 2** — Prospector fleet → pre-filter → same treatment on net-new plays
+- [x] **Phase 1** — Analyst + Red-Team + Score the 6 contenders (18 agents, done). Result: 5 of 6 KILLED; only SilicaShield survives at 4.15/10. Raw: `scratchpad/phase1_clean.json`.
+- [x] Write Phase 1 kill list (verification kills recorded in 02_KILL_LIST.md)
+- [~] **Phase 2** — Prospector fleet → pre-filter → same treatment on net-new plays  ← RUNNING (workflow wf_15566e0e-250)
 - [ ] Write all 5 markdown deliverables in ./output/
 - [ ] Produce the final execution Word doc for the #1 pick
 - [ ] Commit & push to branch `claude/rental-equipment-evaluation-s9xphh`
+
+## Phase 1 scorecard (existing 9 → 6 verified)
+| Play | Verdict | Weighted | Honest CoC | Net/unit/yr |
+|---|---|---|---|---|
+| SilicaShield | SURVIVE | 4.15 | 55% | $15,500 |
+| Aquifer-as-a-Service | KILL | 2.85 | ~50%* | $99,000 |
+| SpurSafe/QuickRack | KILL | 2.75 | 23% | $7,500 |
+| ConcreteWash | KILL | 2.55 | 15% | $2,000 |
+| ColdBox | KILL | 2.00 | −61% | −$3,303 |
+| RailWatch Virtual Gate | KILL | 1.90 | 10% | $3,000 |
+
+Bar for Phase 2 to beat: **4.15**. Kill patterns now hard pre-filters: invented rates, rent-vs-own, dispatch-route/secret-job, commodity/Tier-1, toothless demand.
 
 ## Pre-filter decisions (on-sight kills — see 02_KILL_LIST.md)
 - Rail Tank-Car Heat/Steam Pedestals — KILL: buys a job (owner runs crew + dispatch board; $360k/yr staffing).
