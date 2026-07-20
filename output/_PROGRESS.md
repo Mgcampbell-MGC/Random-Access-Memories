@@ -24,6 +24,9 @@ Goal: Pick ONE rental-equipment business (asset-owner, near-passive, huge KISS c
 
 Bar for Phase 2 to beat: **4.15**. Kill patterns now hard pre-filters: invented rates, rent-vs-own, dispatch-route/secret-job, commodity/Tier-1, toothless demand.
 
+## User preference — AI edge layer (secondary, applied AFTER niche is chosen)
+Niche selection stays on merit (forced demand + passivity + moat + cash flow). THEN, on the winning pick(s), add an explicit "AI / Agent Edge" layer in the deep-dive + Word doc: AI compliance-doc agent (software moat, automated), AI dispatch/ops agent (makes "no 2am phone" literal → kills the dispatch-route failure mode), AI outbound/lead-gen, predictive-maintenance/telemetry anomaly detection, AI billing/collections/support. Flag per pick whether AI is a real moat or cosmetic. Do NOT let "must have AI" drive niche choice.
+
 ## Pre-filter decisions (on-sight kills — see 02_KILL_LIST.md)
 - Rail Tank-Car Heat/Steam Pedestals — KILL: buys a job (owner runs crew + dispatch board; $360k/yr staffing).
 - Specialized Industrial Services (transformer oil, MV cable, SF6, helium) — KILL: owner = the technician; not passive, not rental.
