@@ -1,40 +1,24 @@
-# RUN PROGRESS — Rental Equipment Play Evaluation
+# RUN PROGRESS — Rental Equipment Play Evaluation ✅ COMPLETE
 
-Goal: Pick ONE rental-equipment business (asset-owner, near-passive, huge KISS cash flow, forced demand, defensible niche) and deliver a clear Word doc to execute it.
+Goal: Pick ONE rental-equipment business and deliver a clear Word doc to execute it.
 
-## Status
+## Status — ALL COMPLETE
 - [x] Read & extract all 9 source `.docx` plays
-- [x] Pre-filter (kill on-sight plays that fail a hard filter — no tokens wasted verifying them)
-- [x] **Phase 1** — Analyst + Red-Team + Score the 6 contenders (18 agents, done). Result: 5 of 6 KILLED; only SilicaShield survives at 4.15/10. Raw: `scratchpad/phase1_clean.json`.
-- [x] Write Phase 1 kill list (verification kills recorded in 02_KILL_LIST.md)
-- [~] **Phase 2** — Prospector fleet → pre-filter → same treatment on net-new plays  ← RUNNING (workflow wf_15566e0e-250)
-- [x] **Phase 2** — 10 net-new plays fully verified; **ALL 10 KILLED** on honest numbers (raw: `scratchpad/phase2_clean.json`). Best-weighted was Bridge Substation Fleet (5.35) but killed on unverifiable rate + thin margin. Backlog written to `03_NEW_PLAYS_RAW.md`.
-- [~] **Phase 3 — Final Kill Gauntlet** ← RUNNING (workflow wf_80308d5c-876). 5 finalists × 6 assassins: market-death, obsolescence, PE roll-up, rent-vs-own, passivity-trap, resale-cliff → DEAD/FRAGILE/FUNDABLE.
-- [ ] Write remaining deliverables (00 master ranking, 01 top-5 deep dives, 04 sources) + finalize 02 kill list
-- [ ] Produce the final execution Word doc for the #1 pick (with AI-edge layer)
-- [ ] Produce the final execution Word doc for the #1 pick
-- [ ] Commit & push to branch `claude/rental-equipment-evaluation-s9xphh`
+- [x] Pre-filter (4 on-sight kills, no tokens wasted)
+- [x] **Phase 1** — Analyst+RedTeam+Score the 6 contenders (18 agents). 5 killed, SilicaShield survived at 4.15.
+- [x] **Phase 2** — Prospector fleet across 10 hunting grounds (40 agents). 36 candidates → 10 verified → **all 10 killed.**
+- [x] **Phase 3** — Final Kill Gauntlet (35 agents). 5 finalists × 6 assassins → **all 5 DEAD.** 4 lenses killed 5/5 (PE-rollup, rent-vs-own, passivity-trap, financeability); market-death 0/5.
+- [x] All 5 markdown deliverables written (00–04)
+- [x] Execution Word doc written: `RENTAL_BUSINESS_EXECUTION_PLAN.docx`
+- [x] Committed & pushed to branch `claude/rental-equipment-evaluation-s9xphh`
 
-## Phase 1 scorecard (existing 9 → 6 verified)
-| Play | Verdict | Weighted | Honest CoC | Net/unit/yr |
-|---|---|---|---|---|
-| SilicaShield | SURVIVE | 4.15 | 55% | $15,500 |
-| Aquifer-as-a-Service | KILL | 2.85 | ~50%* | $99,000 |
-| SpurSafe/QuickRack | KILL | 2.75 | 23% | $7,500 |
-| ConcreteWash | KILL | 2.55 | 15% | $2,000 |
-| ColdBox | KILL | 2.00 | −61% | −$3,303 |
-| RailWatch Virtual Gate | KILL | 1.90 | 10% | $3,000 |
+## The verdict
+No play (19 fully red-teamed + 4 on-sight) survives as a **passive, from-scratch, debt-funded rental fleet.** Demand is often real; the *structure* is fatal (5 laws in 02_KILL_LIST.md). The executable answer (Word doc): **acquire a small, profitable, ACTIVE niche rental/compliance business and run it near-passive with an AI ops layer** — the one move that inverts all four universal killers. From-scratch fallback (transformer/data-center bridge power) is gated on verifying the rate with real RFQ quotes first.
 
-Bar for Phase 2 to beat: **4.15**. Kill patterns now hard pre-filters: invented rates, rent-vs-own, dispatch-route/secret-job, commodity/Tier-1, toothless demand.
+Totals: **~93 agents, ~4.7M subagent tokens, 416 sourced citations.**
 
-## User preference — AI edge layer (secondary, applied AFTER niche is chosen)
-Niche selection stays on merit (forced demand + passivity + moat + cash flow). THEN, on the winning pick(s), add an explicit "AI / Agent Edge" layer in the deep-dive + Word doc: AI compliance-doc agent (software moat, automated), AI dispatch/ops agent (makes "no 2am phone" literal → kills the dispatch-route failure mode), AI outbound/lead-gen, predictive-maintenance/telemetry anomaly detection, AI billing/collections/support. Flag per pick whether AI is a real moat or cosmetic. Do NOT let "must have AI" drive niche choice.
+## Deliverables (in ./output/)
+- `00_MASTER_RANKING.md` · `01_TOP_5_DEEP_DIVES.md` · `02_KILL_LIST.md` · `03_NEW_PLAYS_RAW.md` · `04_SOURCES.md`
+- `RENTAL_BUSINESS_EXECUTION_PLAN.docx` ← the idea to execute
 
-## Pre-filter decisions (on-sight kills — see 02_KILL_LIST.md)
-- Rail Tank-Car Heat/Steam Pedestals — KILL: buys a job (owner runs crew + dispatch board; $360k/yr staffing).
-- Specialized Industrial Services (transformer oil, MV cable, SF6, helium) — KILL: owner = the technician; not passive, not rental.
-- Specialty Trade Tools rental — KILL: sub-scale cash flow, commodity, no moat.
-- Environmental-Control rental — KILL: rents the same gear as Sunbelt/UR with no structural edge; demand is overflow nice-to-have.
-
-## 6 contenders sent to full verification
-ConcreteWash · SilicaShield · ColdBox · Aquifer-as-a-Service · SpurSafe · RailWatch Virtual Gate
+Note: LibreOffice render is broken in this sandbox, so the .docx was verified by XML/content integrity (9 tables, 22 headings, all sections present) rather than visual PDF.
