@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auditoria de Voz — Salão Aurora</title>
+<style>
+  :root{
+    --ink:#141414; --grey:#5B6B66; --green:#0B4A36; --green2:#0A6E4C;
+    --line:#C9D6D0; --bg:#F7FAF8; --amber:#8A4B0B; --red:#8A1C1C; --card:#FFFFFF;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{font-family:Georgia,'Times New Roman',serif; color:var(--ink); background:var(--bg); line-height:1.55}
+  .page{max-width:860px; margin:0 auto; padding:56px 48px; background:var(--card);
+        border-bottom:1px solid var(--line); position:relative; min-height:92vh}
+  .wm{position:absolute; top:14px; right:20px; font-family:Arial,sans-serif; font-size:11px;
+      letter-spacing:.14em; color:#B44; border:1px solid #D99; padding:3px 10px; border-radius:3px}
+  .kicker{font-family:Arial,sans-serif; font-size:12px; letter-spacing:.32em; color:var(--green2);
+          text-transform:uppercase; margin-bottom:14px}
+  h1{font-size:46px; color:var(--green); font-weight:700; line-height:1.12; margin-bottom:10px}
+  h2{font-size:30px; color:var(--green); line-height:1.2; margin-bottom:22px}
+  .sub{font-size:17px; color:var(--grey); margin-bottom:6px}
+  .rule{height:3px; background:var(--green); width:64px; margin:26px 0}
+  .cols{display:flex; gap:28px; margin:26px 0}
+  .col{flex:1}
+  .panel{background:var(--bg); border-left:4px solid var(--green2); padding:18px 20px; margin:16px 0}
+  .panel.bad{border-left-color:var(--red)}
+  .panel.amber{border-left-color:var(--amber)}
+  .stat{font-size:44px; color:var(--green); font-weight:700; font-family:Arial,sans-serif; line-height:1}
+  .stat small{font-size:14px; color:var(--grey); font-weight:400; display:block; margin-top:6px; letter-spacing:.02em}
+  ul{list-style:none}
+  li{padding:7px 0 7px 24px; position:relative; font-size:16.5px}
+  li::before{content:"—"; position:absolute; left:0; color:var(--green2)}
+  .bad li::before{color:var(--red)}
+  q{display:block; font-style:italic; font-size:17px; color:var(--ink);
+    padding:14px 18px; background:var(--bg); border-radius:4px; margin:10px 0; quotes:"“" "”"}
+  q::before{content:open-quote; color:var(--green2); font-size:26px; vertical-align:-6px; margin-right:4px}
+  q::after{content:no-close-quote}
+  .src{font-family:Arial,sans-serif; font-size:12px; color:var(--grey); margin:-4px 0 8px 18px}
+  .bars{margin:22px 0}
+  .bar{display:flex; align-items:center; gap:12px; margin:8px 0; font-family:Arial,sans-serif; font-size:14px}
+  .bar .lbl{width:52px; color:var(--grey); text-align:right}
+  .bar .track{flex:1; background:#E7EFEA; height:26px; border-radius:3px; overflow:hidden}
+  .bar .fill{height:100%; background:var(--green2)}
+  .bar.neg .fill{background:var(--red)}
+  .bar .n{width:44px; color:var(--ink); font-weight:700}
+  table{width:100%; border-collapse:collapse; margin:18px 0; font-family:Arial,sans-serif; font-size:14.5px}
+  th{background:var(--green); color:#fff; text-align:left; padding:10px 12px; font-weight:700}
+  td{padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top}
+  .money{font-family:Arial,sans-serif; font-weight:700; color:var(--green); white-space:nowrap}
+  .foot{font-family:Arial,sans-serif; font-size:11.5px; color:var(--grey); margin-top:40px;
+        border-top:1px solid var(--line); padding-top:12px}
+  .big-quote{font-size:24px; font-style:italic; color:var(--green); line-height:1.4; margin:28px 0}
+  .tag{display:inline-block; font-family:Arial,sans-serif; font-size:11px; letter-spacing:.1em;
+       background:var(--green); color:#fff; padding:3px 10px; border-radius:3px; margin-bottom:14px; text-transform:uppercase}
+  .gap-row{display:flex; gap:0; margin:14px 0; border:1px solid var(--line); border-radius:6px; overflow:hidden}
+  .gap-cell{flex:1; padding:16px 18px}
+  .gap-cell:first-child{background:#EEF5F1; border-right:1px solid var(--line)}
+  .gap-cell h4{font-family:Arial,sans-serif; font-size:12px; letter-spacing:.14em; text-transform:uppercase; margin-bottom:8px}
+  .gap-cell:first-child h4{color:var(--green2)}
+  .gap-cell:last-child h4{color:var(--red)}
+  .gap-cell p{font-size:15.5px}
+  @media print{ .page{min-height:auto; page-break-after:always; border:none} body{background:#fff} }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 · COVER -->
+<div class="page">
+  <div class="wm">EXEMPLO · DADOS FICTÍCIOS</div>
+  <div style="height:16vh"></div>
+  <div class="kicker">Auditoria de Voz · Marca × Clientes</div>
+  <h1>Salão Aurora</h1>
+  <p class="sub">Como você se apresenta. Como suas clientes te veem. E o que o vão entre os dois está custando.</p>
+  <div class="rule"></div>
+  <div class="cols">
+    <div class="col"><div class="stat">327<small>avaliações públicas analisadas — Google e Instagram</small></div></div>
+    <div class="col"><div class="stat">4,1<small>nota média normalizada (289 com nota válida)</small></div></div>
+    <div class="col"><div class="stat">1<small>prioridade para agir — uma, não trinta</small></div></div>
+  </div>
+  <div style="height:22vh"></div>
+  <p class="sub">Preparado para Marina Duarte · Pinheiros, São Paulo · Julho 2026</p>
+  <p class="sub" style="font-size:14px">Feito 100% com dados públicos. Nenhum acesso a sistemas ou conversas foi necessário — ou usado.</p>
+  <div class="foot">Salão Aurora é um salão fictício. Este documento é uma amostra do formato: números, nomes e citações são inventados para demonstrar o método. Toda análise é reproduzível: as notas são computadas por código; as citações são transcritas na íntegra.</div>
+</div>
+
+<!-- PAGE 2 · RESUMO EXECUTIVO -->
+<div class="page">
+  <div class="wm">EXEMPLO · DADOS FICTÍCIOS</div>
+  <div class="kicker">Resumo executivo</div>
+  <h2>O talento conquista. A agenda deixa escapar.</h2>
+  <div class="cols">
+    <div class="col">
+      <div class="panel">
+        <h4 style="font-family:Arial;font-size:12px;letter-spacing:.14em;color:var(--green2);margin-bottom:10px">O QUE FUNCIONA</h4>
+        <ul>
+          <li>Resultado técnico elogiado por nome — mechas e correção de cor</li>
+          <li>“A Ju é fada” — profissionais queridas, clientes fiéis a pessoas</li>
+          <li>Ambiente descrito como acolhedor e impecável</li>
+          <li>Noivas: 5★ quase unânime, com fotos</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col">
+      <div class="panel bad">
+        <h4 style="font-family:Arial;font-size:12px;letter-spacing:.14em;color:var(--red);margin-bottom:10px">O QUE FALHA</h4>
+        <ul class="bad">
+          <li>WhatsApp sem resposta — a queixa nº 1, e crescendo</li>
+          <li>Pacotes que a cliente “não consegue usar” — agenda trava a remarcação</li>
+          <li>Saída da Renata levou clientes — ninguém as chamou de volta</li>
+          <li>Preço subiu; valor não foi explicado</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bars">
+    <div class="bar"><span class="lbl">5★</span><div class="track"><div class="fill" style="width:52%"></div></div><span class="n">150</span></div>
+    <div class="bar"><span class="lbl">4★</span><div class="track"><div class="fill" style="width:21%"></div></div><span class="n">61</span></div>
+    <div class="bar neg"><span class="lbl">3★</span><div class="track"><div class="fill" style="width:9%"></div></div><span class="n">27</span></div>
+    <div class="bar neg"><span class="lbl">2★</span><div class="track"><div class="fill" style="width:7%"></div></div><span class="n">20</span></div>
+    <div class="bar neg"><span class="lbl">1★</span><div class="track"><div class="fill" style="width:11%"></div></div><span class="n">31</span></div>
+  </div>
+  <p class="sub" style="font-size:14px">289 avaliações com nota válida de 1 a 5, normalizadas por código a partir de 6 formatos diferentes. 38 sem nota utilizável. Nada foi estimado por IA — contagem é contagem.</p>
+  <div class="panel amber" style="margin-top:26px">
+    <p><strong>A leitura em uma linha:</strong> suas clientes não estão indo embora por qualidade — estão sendo <em>deixadas ir</em> por atendimento e agenda. Isso é o tipo de perda que volta.</p>
+  </div>
+  <div class="foot">Auditoria de Voz · Salão Aurora · página 2</div>
+</div>
+
+<!-- PAGE 3 · MARCA × CLIENTES -->
+<div class="page">
+  <div class="wm">EXEMPLO · DADOS FICTÍCIOS</div>
+  <div class="kicker">Marca × Clientes</div>
+  <h2>Você promete acolhimento. Elas encontram silêncio.</h2>
+
+  <div class="gap-row">
+    <div class="gap-cell">
+      <h4>Como você se apresenta</h4>
+      <p>“Cuidado de verdade, do seu jeito” · “Aqui você é recebida pelo nome” · tom caloroso, íntimo, emojis de coração, resposta carinhosa a TODO comentário no Instagram.</p>
+    </div>
+    <div class="gap-cell">
+      <h4>Como suas clientes te veem</h4>
+      <p>“Amo o salão, mas ninguém responde o WhatsApp” aparece, em alguma forma, em <strong>41% das avaliações negativas</strong>. O carinho existe na cadeira — e some no telefone.</p>
+    </div>
+  </div>
+
+  <div class="gap-row">
+    <div class="gap-cell">
+      <h4>Como você se apresenta</h4>
+      <p>“Seu momento, garantido” — os pacotes (cronograma, mechas de manutenção, noiva) são vendidos como constância e prioridade de agenda.</p>
+    </div>
+    <div class="gap-cell">
+      <h4>Como suas clientes te veem</h4>
+      <p>“Paguei 8 sessões e nunca tem horário” — <strong>1 em cada 4 queixas</strong> é sobre não conseguir usar o que já pagou. A promessa de prioridade virou fila.</p>
+    </div>
+  </div>
+
+  <q>Faço mechas com a Ju há 3 anos. Perfeito sempre. Mas pra remarcar é um sofrimento — dessa vez desisti.</q>
+  <div class="src">Google · 2★ · maio 2026</div>
+  <q>Depois que a Renata saiu ninguém me avisou nem ofereceu outra profissional. Fui pra outro salão, sinto falta de lá.</q>
+  <div class="src">Google · 3★ · março 2026</div>
+  <q>O lugar é um sonho e o corte impecável. Só acho que subiu muito de preço do nada.</q>
+  <div class="src">Instagram · comentário · junho 2026</div>
+
+  <div class="foot">Auditoria de Voz · Salão Aurora · página 3</div>
+</div>
+
+<!-- PAGE 4 · A PRIORIDADE -->
+<div class="page">
+  <div class="wm">EXEMPLO · DADOS FICTÍCIOS</div>
+  <div class="kicker">A prioridade</div>
+  <h2>Uma coisa primeiro: responder — e remarcar — quem já é sua.</h2>
+  <p style="font-size:17px">Das 78 avaliações negativas, <strong>62 (79%) vêm de clientes que se descrevem como fiéis</strong> — “cliente há anos”, “sempre amei”, “não queria trocar”. Elas não pedem desconto, não comparam concorrentes. Pedem <em>resposta</em> e <em>horário</em>. É a falha mais barata que existe para consertar — e a que mais devolve dinheiro, porque a cliente já quer voltar.</p>
+  <div class="panel">
+    <p><strong>Ação desta semana, custo zero:</strong> toda conversa de WhatsApp termina com dois horários específicos oferecidos — “tenho quinta 14h ou sábado 10h, qual fica melhor?” — e toda cliente com pacote em aberto recebe uma mensagem carinhosa com horário e link para garantir. Quem tem sessão paga esperando não pode precisar <em>pedir</em> para usá-la.</p>
+  </div>
+  <div class="big-quote">O padrão inteiro desta auditoria aponta para o mesmo lugar: o dinheiro do Aurora não está indo para o concorrente. Está dormindo na sua própria carteira de clientes.</div>
+  <div class="foot">Auditoria de Voz · Salão Aurora · página 4</div>
+</div>
+
+<!-- PAGE 5 · A PONTE -->
+<div class="page">
+  <div class="wm">EXEMPLO · DADOS FICTÍCIOS</div>
+  <div class="kicker">A ponte · do sentimento ao número</div>
+  <h2>O que isso provavelmente vale — e como saber o número exato</h2>
+  <table>
+    <tr><th>O que as avaliações mostram</th><th>O que isso costuma significar no caixa</th><th>Faixa típica*</th></tr>
+    <tr><td>“Paguei o pacote e não consigo usar”</td><td>Sessões pagas paradas + pacotes abandonados no meio</td><td class="money">R$ 8–18 mil dormindo</td></tr>
+    <tr><td>“Ninguém respondeu / desisti”</td><td>Clientes fiéis sumidas há 60–180 dias, recuperáveis</td><td class="money">R$ 3–7 mil/mês</td></tr>
+    <tr><td>“A profissional saiu e ninguém me chamou”</td><td>Carteira da profissional que saiu, nunca reativada</td><td class="money">R$ 2–5 mil, uma vez</td></tr>
+  </table>
+  <p class="sub" style="font-size:13.5px">*Faixas conservadoras para um salão premium deste porte; o número real sai dos seus próprios registros — com nome, valor e data. Isto NÃO é uma promessa de receita: é o tamanho do campo de jogo.</p>
+
+  <div class="panel" style="margin-top:26px">
+    <p style="font-size:17px"><strong>O próximo passo (se você quiser):</strong> o <strong>Raio-X do Caixa</strong> — eu leio a sua agenda e as suas comandas (exportadas por você, sem acesso a sistema) e te entrego o número exato: quem, quanto, e o que ainda dá pra recuperar. <strong>R$ 490, com garantia:</strong> se eu não encontrar pelo menos R$ 3.000 recuperáveis, devolvo tudo.</p>
+    <p style="margin-top:10px; font-size:16px">E depois, se fizer sentido: eu mesma vou buscar — mensagens no seu tom (este documento já aprendeu como você fala), aprovadas por você antes de sair qualquer coisa. <strong>Sem mensalidade. Eu fico com 25% só do que voltar.</strong></p>
+  </div>
+  <div class="foot">Auditoria de Voz · Salão Aurora · página 5 · Feita com dados públicos · Números computados por código; citações transcritas na íntegra · EXEMPLO — salão e dados fictícios</div>
+</div>
+
+</body>
+</html>

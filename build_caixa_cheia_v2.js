@@ -172,7 +172,7 @@ body.push(
   tbl(
     ['Rung', 'Product', 'Price', 'What it does'],
     [
-      ['0', 'Auditoria por Áudio (free)', 'R$0 · self-serve', 'Owner answers 8 questions by WhatsApp voice note; gets a personalized PDF estimating her leak. Lead capture, zero marginal cost.'],
+      ['0', 'Auditoria de Voz (free gift)', 'R$0 · unsolicited', 'Built from PUBLIC data only: what her clients say in reviews vs. what her brand projects — the gap, with real quotes, ending on the money bridge. Requires nothing from her. Lead magnet + voice calibration + recovery intelligence in one artifact.'],
       ['1', 'Raio-X do Caixa', 'R$490 once', 'Real audit of her real exports: "R$X is sleeping in your client list," name by name. Guarantee: find ≥R$3.000 recoverable or full refund.'],
       ['2', 'The Recovery Mandate', '25% success fee', 'The business. Backlog harvest, then monthly waves. Fee auto-collected via Pix split. No monthly fee, ever.'],
       ['3', 'The Deposit Rail', '2,9% per transaction', 'Sinal (booking-deposit) links that kill no-shows. Transactional, permanent, survives even a cured account.'],
@@ -185,6 +185,8 @@ body.push(
   callout([
     P([B('The spine, in three sentences. ', { color: GREEN }), T('“Eu encontro o dinheiro que já é seu.” · “Você só me paga do que voltar.” · “Seus números vêm do código; suas clientes, tratadas com carinho — sempre.”')]),
   ]),
+  spacer(),
+  P([B('Delivery chain, verified against the real world (July 2026): '), T('Trinks natively exports a client-debt report and a package-balance report — the audit’s two money buckets are ready-made files, not an integration project. Asaas split is live for Pix, boleto and card via API with subaccounts — the fee routes itself. Full Google-review histories are fetchable through licensed APIs for a few reais per salon. And the floor sending mode — reception sends a generated one-tap list from the salon’s own phone — works for any salon on day one, no platform required.')]),
   new Paragraph({ children: [new PageBreak()] }),
 );
 
@@ -229,7 +231,7 @@ body.push(
   spacer(),
 
   H1('§5 · The ladder — pricing logic'),
-  P([B('Rung 0 is free and self-serve'), T(' because leads must cost nothing and qualify themselves. '), B('Rung 1 costs R$490'), T(' because a decision an owner can make alone at her desk must stay under R$500 — and because a paid audit is acquisition that pays for itself. The guarantee (≥R$3.000 found or refunded) is safe: the finder is deterministic, and any qualifying salon’s records contain that much. '), B('Rung 2 is 25% flat'), T(' — one number, no tiers, no monthly. Simple enough to say in one breath, rich enough to build a company on. '), B('Rung 3 is 2,9% per deposit'), T(' — priced like a payment feature, adopted because it solves no-shows, kept because it’s invisible.')]),
+  P([B('Rung 0 is free, unsolicited, and never for sale'), T(' — a gift built from public data that costs her prospects nothing and demonstrates the craft. '), B('Rung 1 costs R$490'), T(' because a decision an owner can make alone at her desk must stay under R$500 — and because a paid audit is acquisition that pays for itself. The guarantee (≥R$3.000 found or refunded) is safe: the finder is deterministic, and any qualifying salon’s records contain that much. '), B('Rung 2 is 25% flat'), T(' — one number, no tiers, no monthly. Simple enough to say in one breath, rich enough to build a company on. '), B('Rung 3 is 2,9% per deposit'), T(' — priced like a payment feature, adopted because it solves no-shows, kept because it’s invisible.')]),
   P([B('First three clients: '), T('15% success fee instead of 25%, in exchange for a written testimonial, anonymized before/after numbers, and one reference call. Capped at three, expiry in the contract. She is not selling cheap — she is buying the proof that closes the next thirty.')]),
   new Paragraph({ children: [new PageBreak()] }),
 );
@@ -243,7 +245,7 @@ body.push(
     ['Stage', 'Asset', 'Conversion target'],
     [
       ['Attention', 'Her content + distributors + direct outreach + fair', '—'],
-      ['Capture', 'Free Auditoria por Áudio → personalized PDF', '30–50 leads/month by month 3'],
+      ['Capture', 'Free Auditoria de Voz (gift, from public data) → delivery chat qualifies', '30–50 leads/month by month 3'],
       ['Qualify + cash', 'Raio-X do Caixa (R$490)', '15–25% of leads buy'],
       ['Convert', 'Recovery mandate (25%)', '50–60% of audits sign'],
       ['Deepen', 'Deposit rail (2,9%)', '60%+ of mandates adopt in 90 days'],
@@ -253,13 +255,15 @@ body.push(
   ),
   spacer(),
 
-  H1('§7 · Rung 0 — the free voice audit (the lead machine)'),
-  P([T('Brazilian salon owners live on WhatsApp voice notes — so the lead magnet meets them there. From any link or QR code: the owner taps, and a warm bot asks '), B('eight questions she can answer by voice'), T(' while drying a client’s hair:')]),
-  bullet(T('Faturamento mensal aproximado? (faixas) · Quantas clientes ativas? · Ticket médio?')),
-  bullet(T('Vende pacotes ou planos? Quanto do faturamento? · Quantos furos (no-show) por semana?')),
-  bullet(T('Tem cliente te devendo? Quanto, chutando? · Há quanto tempo não chama quem sumiu? · Qual sistema de agenda você usa?')),
-  P([T('The engine transcribes, runs a '), B('published, conservative calculator'), T(' (never the AI guessing), and replies in under two minutes with a branded PDF — '), I('Raio-X Estimado do Seu Caixa'), T(' — her salon’s name on the cover, three bucket estimates with the arithmetic shown, a sector benchmark line, and one honest sentence: '), PT('isto é uma estimativa conservadora — o número real, com nome e valor, sai do Raio-X completo: R$490, com garantia.')]),
-  P([T('Every completed audio audit lands in her pipeline auto-scored: revenue band, packages yes/no, agenda system (which also answers the data question before she ever talks to them). Cost per lead ≈ R$0. The eighth question is secretly the intake form.')]),
+  H1('§7 · Rung 0 — the Auditoria de Voz (the gift that opens every door)'),
+  P([T('Built entirely from '), B('public data'), T(' — the salon’s Google reviews (fetched in full via a licensed reviews API; the official API caps at 5, third-party APIs fetch all for a few reais per business), Instagram posts and comments, the WhatsApp greeting, the site. Because it needs '), B('nothing from the owner'), T(', it can be made unsolicited, as a gift — the perfect cold open, with zero LGPD friction. Five sections, Casulo-grade:')]),
+  bullet([B('Como você se apresenta '), T('— the brand voice her channels project (warm? premium? playful?), with her own phrases quoted.')]),
+  bullet([B('Como suas clientes te veem '), T('— the customer voice from reviews: what they love (by name — “a Carol é maravilhosa”), what they complain about, the normalized rating math (deterministic, code-computed).')]),
+  bullet([B('O gap '), T('— where promise and experience diverge: '), I('“você vende acolhimento; 40% das queixas são resposta lenta.”')]),
+  bullet([B('A prioridade '), T('— the one thing to fix first. One, not thirty.')]),
+  bullet([B('A ponte '), T('— the gap named in money: '), PT('clientes que amam o método mas não conseguem usar o pacote, e somem. Isso é dinheiro dormindo. Quer o número real, com nome e valor? Raio-X do Caixa — R$490, com garantia.')]),
+  P([B('Triple duty: '), T('(1) the lead magnet — magnetic, giftable, demonstrates the exact craft the business runs on; (2) '), B('voice calibration'), T(' — the brand-voice half becomes the tone profile the wave engine writes with, so recovery messages provably sound like her; (3) '), B('recovery intelligence'), T(' — the customer-voice half tells the engine WHY clients drift (favorite professional left, can’t book, price jump), so win-back messages address the real reason, never a generic “sentimos sua falta”.')]),
+  P([B('The funnel is one truth at three resolutions: '), T('feeling ('), I('suas clientes dizem que não conseguem agendar o pacote'), T(') → number ('), I('são R$18.400 em pacotes parados'), T(') → money ('), I('recuperei R$11.200 esse mês'), T('). Each rung zooms in; the subject never changes. Delivery chat follow-up doubles as qualification: '), PT('qual sistema você usa — Trinks, Belasis, Avec?'), T(' answers the data question before the R$490 is ever offered. The audit stays free and internal forever — it is a door and an engine input, never a paid product; charging for it would drift into crowded salon-marketing consulting, exactly the red ocean this business avoids.')]),
   spacer(),
 
   H1('§8 · The four channels that feed it'),
@@ -298,7 +302,7 @@ body.push(
   tbl(
     ['Module', 'Job', 'Runs'],
     [
-      ['CAPTA', 'Voice-audit bot: 8 questions, transcription, calculator, branded PDF, lead scoring into the pipeline', 'Autonomous 24/7'],
+      ['CAPTA', 'Auditoria de Voz factory: reviews ingestion (licensed API), brand-channel reader, deterministic rating math, gap analysis, branded PDF, voice-profile + drift-reasons extraction, lead scoring', 'Batch, ~R$5–15/audit'],
       ['RAIO-X', 'Intake exports (Trinks/Belasis/Avec/Salão99/CSV) → normalize → pseudonymize → reconcile agenda × comandas × packages → the three buckets → audit PDF', 'On demand, ~1h/audit of machine time'],
       ['ONDAS', 'Segments, message waves, pacing, opt-outs, never-list, owner approval, business-hours sending', 'Autonomous after owner tap'],
       ['PIX', 'Charges from the salon’s own PSP account; split routes her 25% (or 2,9% rail) at settlement; deposit links; refund/MED handling', 'Autonomous'],
@@ -329,6 +333,7 @@ body.push(
   ),
   spacer(),
   P([B('Hard safety rails, all enforced in code: '), T('≤20 sends/day per salon number, business hours only, stop-the-wave if reply rate <5%, PARAR opt-out honored instantly and forever, owner’s never-contact list checked before every send, principal only — no interest, no penalties, no shame language (CDC Arts. 42/71 compiled into the template linter), maximum 3 touches per debt per quarter, and every message goes out in the salon’s name from the salon’s number.')]),
+  P([B('Two inputs from the Auditoria de Voz make the waves land: '), T('the '), B('voice profile'), T(' (tone, greetings, emoji habits, how she says “oi amor”) is the style config every template is written against — messages provably sound like her; and the '), B('drift reasons'), T(' (favorite professional left, booking friction, price jump) route each dormant client to a message that answers her actual reason for leaving — '), PT('a Duda saiu, mas a Carol assumiu as alunas dela — vem fazer uma aula por conta da casa?'), T(' — never a generic “sentimos sua falta”.')]),
   P([B('Two sending modes. '), B('Mode 1 (entry, any salon): '), T('the engine generates the day’s list — name, message, Pix link — and reception sends from the salon’s own WhatsApp in ten minutes. Zero platform risk, works everywhere. '), B('Mode 2 (scale): '), T('the system sends via the salon’s WhatsApp Business number after the owner’s one-tap wave approval. Same templates, same rails, zero reception labour. Accounts graduate from 1 to 2 when trust and volume justify it.')]),
   spacer(),
 
@@ -341,7 +346,7 @@ body.push(
   tbl(
     ['Week', 'She ships (by directing Claude Code)', 'Proof it works'],
     [
-      ['1', 'Entity + contracts started · CAPTA: bot, calculator, PDF · pipeline sheet', 'She completes her own audit by voice; PDF arrives in 2 min'],
+      ['1', 'Entity + contracts started · CAPTA: reviews ingestion, gap analysis, voice-audit PDF factory · pipeline sheet', 'Salão Aurora’s voice audit generates end-to-end from planted reviews'],
       ['2', 'RAIO-X: importers for Trinks/Belasis/Avec/CSV · reconciler · audit PDF · Salão Aurora sample (watermarked, fictitious)', 'Aurora’s audit finds the planted R$21.470 exactly'],
       ['3', 'ONDAS: segments, templates, linter, pacing, approval flow · PSP sandbox + split · deposit links', 'Test wave to her own 5 numbers; split lands in sandbox'],
       ['4', 'LIVRO: ledger, reconciliation, Extrato · PAINEL: her view + owner view · scheduled tasks', 'Month-end close runs end-to-end on Aurora unattended'],
