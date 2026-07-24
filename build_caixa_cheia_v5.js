@@ -1,0 +1,945 @@
+// Caixa Cheia v5 — canonical business & operating plan — docx generator
+// v5 = v4's fail-closed spine + the fulfillment loop v4 was missing, minus the layers v5-as-submitted added back.
+const {
+  Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType,
+  Table, TableRow, TableCell, WidthType, BorderStyle, ShadingType,
+  TableOfContents, PageNumber, Footer, LevelFormat, PageBreak,
+} = require('docx');
+
+const GREEN = '0B4A36', GREEN2 = '0A6E4C', INK = '141414', GREY = '5B6B66',
+      RULE = '1D6B4F', LINE = 'C9D6D0', AMBER = '8A4B0B', RED = '8A1C1C';
+
+const T = (t, o = {}) => new TextRun({ text: t, color: INK, ...o });
+const B = (t, o = {}) => new TextRun({ text: t, bold: true, color: INK, ...o });
+const I = (t, o = {}) => new TextRun({ text: t, italics: true, color: GREY, ...o });
+const PT = (t) => I(`“${t}”`, { color: GREEN2 });
+const MONO = (t) => new TextRun({ text: t, font: 'Consolas', size: 21, color: GREEN2 });
+
+const P = (children, o = {}) => new Paragraph({
+  children: Array.isArray(children) ? children : [children],
+  spacing: { after: 160, line: 360 }, ...o,
+});
+const spacer = () => new Paragraph({ children: [], spacing: { after: 60 } });
+
+const bullet = (children, level = 0) => new Paragraph({
+  children: Array.isArray(children) ? children : [children],
+  numbering: { reference: 'bul', level },
+  spacing: { after: 100, line: 340 },
+});
+
+const H1 = (t) => new Paragraph({
+  heading: HeadingLevel.HEADING_1,
+  children: [new TextRun({ text: t, color: GREEN, bold: true })],
+  spacing: { before: 360, after: 200 },
+});
+const H3 = (t) => new Paragraph({
+  heading: HeadingLevel.HEADING_3,
+  children: [new TextRun({ text: t, color: INK, bold: true })],
+  spacing: { before: 220, after: 120 },
+});
+
+const callout = (children, fill = 'EEF5F1', edge = RULE) => new Table({
+  width: { size: 9360, type: WidthType.DXA },
+  columnWidths: [9360],
+  borders: {
+    top: { style: BorderStyle.NONE }, bottom: { style: BorderStyle.NONE },
+    left: { style: BorderStyle.SINGLE, size: 24, color: edge },
+    right: { style: BorderStyle.NONE },
+    insideHorizontal: { style: BorderStyle.NONE }, insideVertical: { style: BorderStyle.NONE },
+  },
+  rows: [new TableRow({
+    children: [new TableCell({
+      width: { size: 9360, type: WidthType.DXA },
+      shading: { type: ShadingType.CLEAR, fill },
+      margins: { top: 140, bottom: 140, left: 220, right: 220 },
+      children,
+    })],
+  })],
+});
+
+function tbl(headers, rows, widths) {
+  const total = widths.reduce((a, b) => a + b, 0);
+  if (total !== 9360) throw new Error(`widths sum ${total} != 9360`);
+  const mk = (cells, isHead) => new TableRow({
+    tableHeader: isHead,
+    children: cells.map((c, i) => new TableCell({
+      width: { size: widths[i], type: WidthType.DXA },
+      shading: isHead ? { type: ShadingType.CLEAR, fill: GREEN } : undefined,
+      margins: { top: 90, bottom: 90, left: 140, right: 140 },
+      children: [new Paragraph({
+        children: (Array.isArray(c) ? c : [isHead
+          ? new TextRun({ text: String(c), bold: true, color: 'FFFFFF', size: 22 })
+          : new TextRun({ text: String(c), color: INK, size: 22 })]),
+        spacing: { after: 0, line: 300 },
+      })],
+    })),
+  });
+  return new Table({
+    width: { size: 9360, type: WidthType.DXA },
+    columnWidths: widths,
+    borders: {
+      top: { style: BorderStyle.SINGLE, size: 8, color: RULE },
+      bottom: { style: BorderStyle.SINGLE, size: 8, color: RULE },
+      left: { style: BorderStyle.NONE }, right: { style: BorderStyle.NONE },
+      insideHorizontal: { style: BorderStyle.SINGLE, size: 4, color: LINE },
+      insideVertical: { style: BorderStyle.SINGLE, size: 4, color: LINE },
+    },
+    rows: [mk(headers, true), ...rows.map(r => mk(r, false))],
+  });
+}
+
+const partBanner = (kicker, title) => new Table({
+  width: { size: 9360, type: WidthType.DXA },
+  columnWidths: [9360],
+  borders: {
+    top: { style: BorderStyle.NONE }, bottom: { style: BorderStyle.NONE },
+    left: { style: BorderStyle.NONE }, right: { style: BorderStyle.NONE },
+    insideHorizontal: { style: BorderStyle.NONE }, insideVertical: { style: BorderStyle.NONE },
+  },
+  rows: [new TableRow({
+    children: [new TableCell({
+      width: { size: 9360, type: WidthType.DXA },
+      shading: { type: ShadingType.CLEAR, fill: GREEN },
+      margins: { top: 260, bottom: 260, left: 300, right: 300 },
+      children: [
+        new Paragraph({
+          children: [new TextRun({ text: kicker, color: 'BFE3D3', size: 22, bold: true, allCaps: true })],
+          spacing: { after: 80 },
+        }),
+        new Paragraph({
+          children: [new TextRun({ text: title, color: 'FFFFFF', size: 40, bold: true })],
+          spacing: { after: 0 },
+        }),
+      ],
+    })],
+  })],
+});
+
+const body = [];
+
+// ---------- Cover ----------
+body.push(
+  new Paragraph({ children: [], spacing: { after: 2200 } }),
+  new Paragraph({
+    children: [new TextRun({ text: 'CANONICAL BUSINESS & OPERATING PLAN', color: GREEN2, size: 24, bold: true, allCaps: true })],
+    spacing: { after: 140 },
+  }),
+  new Paragraph({
+    children: [new TextRun({ text: 'CAIXA CHEIA', color: GREEN, size: 96, bold: true })],
+    spacing: { after: 60 },
+  }),
+  new Paragraph({
+    children: [new TextRun({ text: 'v5', color: GREEN2, size: 56, bold: true })],
+    spacing: { after: 300 },
+  }),
+  new Paragraph({
+    children: [new TextRun({ text: 'Fail-closed reactivation, prepaid fulfillment, and results-only pricing', color: INK, size: 30 })],
+    spacing: { after: 60 },
+  }),
+  new Paragraph({
+    children: [new TextRun({ text: 'for Brazil’s premium non-medical beauty businesses', color: INK, size: 30 })],
+    spacing: { after: 420 },
+  }),
+  new Paragraph({
+    children: [new TextRun({ text: 'São Paulo  ·  24 July 2026', color: GREY, size: 24 })],
+    spacing: { after: 700 },
+  }),
+  callout([
+    P([B('Internal working plan. '), T('Provider, legal, security, data, fulfillment and cash gates control release — not dates. Every provider fact cited here carries a source in Part XIII and must be re-verified against primary documentation immediately before implementation, because these APIs and policies change.')]),
+  ], 'F4F1EA', AMBER),
+  new Paragraph({ children: [new PageBreak()] }),
+);
+
+// ---------- TOC ----------
+body.push(
+  H1('Contents'),
+  new TableOfContents('Contents', { hyperlink: true, headingStyleRange: '1-1' }),
+  new Paragraph({ children: [new PageBreak()] }),
+);
+
+// ---------- PART 0 ----------
+body.push(partBanner('Part 0', 'The decision, in one page'), spacer());
+
+body.push(
+  H1('§0 · What this is'),
+  P([T('Caixa Cheia sells one thing: '), B('a managed prepaid win-back campaign, priced only on money that actually lands.')]),
+  callout([
+    P([PT('Eu trago suas clientes de volta com uma oferta paga. Você paga 20% só do valor líquido que realmente entrar pelo checkout da campanha. Estornou? Nossa parte volta junto.')]),
+  ]),
+  P([T('The founder is one non-technical woman directing an AI coding tool. Everything below exists to make that survivable: the software owns known state transitions, the salon owns its customers, and every ambiguous condition stops instead of guessing.')]),
+  spacer(),
+  H1('§0.1 · The loop'),
+  P([T('v4 described a blast and a Pix link. That was incomplete in a way that mattered. v5 is the closed loop:')]),
+  callout([
+    P([MONO('authorized data → eligible audience → owner-approved offer + manifest → send from the salon’s own number → stable offer page → just-in-time Pix checkout → authenticated settlement → voucher + reception task → booking → redemption or refund → statement → next eligible cohort')]),
+  ]),
+  spacer(),
+  H1('§0.2 · The error v5 found, and why it is the whole reason for this version'),
+  callout([
+    P([B('v4 excluded every client holding unused prepaid credit — and then made selling new prepaid credit its only revenue event.')]),
+    P([T('Under CPC 47 an unredeemed voucher is a liability the salon owes its client, never a receivable. v4 correctly refused to contact clients in that state. It then designed a product whose every sale creates one more client in exactly that state, and stopped tracking at "money settled, fee split." No booking, no redemption, no expiry, no refund path.')]),
+    P([T('That is not a missing feature. It is a hole in the middle of the business: it poisons future audiences, strands paying customers, and puts consumer-law exposure on the salon under the founder’s campaign. Everything in Part V exists to close it.')]),
+  ], 'FBF0EE', RED),
+  spacer(),
+  H1('§0.3 · What stays locked'),
+  P([T('These survived three independent hostile-diligence rounds and are not reopened in this document.')]),
+  bullet([T('One launch vertical: premium, non-medical beauty using Trinks.')]),
+  bullet([T('One fee: 20% of Asaas '), MONO('netValue'), T(' that settles through the campaign checkout '), B('and successfully splits'), T('. No monthly fee, ever.')]),
+  bullet([T('Refunds and chargebacks reverse the fee symmetrically.')]),
+  bullet([T('No off-rail attribution, no agenda reconciliation, no bypass invoices. Leakage is accepted on purpose.')]),
+  bullet([T('No send without documented WhatsApp marketing permission carrying '), MONO('value + captured_at + source + scope'), T('. No evidence, no send, no exceptions.')]),
+  bullet([T('No contact with a client holding unused prepaid credit until that obligation is resolved.')]),
+  bullet([T('One sending mode: Cloud API with Business-App coexistence, on the salon’s own number.')]),
+  bullet([T('The owner authorizes the exact business-initiated payload before it sends.')]),
+  bullet([T('Health-data-adjacent businesses stay excluded.')]),
+  spacer(),
+  H1('§0.4 · What v5 corrects in v4'),
+  tbl(
+    ['v4 claim', 'Verdict', 'v5 rule'],
+    [
+      ['One Trinks CSV holds every eligibility fact', 'WRONG', 'Trinks documents clients, package balances and debts in different reports. Launch uses one versioned export bundle — one specification and one normalizer, not necessarily one file. A formal Conecta Trinks partner connection replaces it only once authorized.'],
+      ['Upload first, contract later', 'WRONG', 'Scan authorization, privacy notice and limited processing terms are accepted before any customer file is uploaded. No upload control renders before acceptance.'],
+      ['15-minute end-to-end onboarding', 'OVERSTATED', 'Three clocks, tracked separately: ~2 min to start, 10–20 min of active owner work when prerequisites already exist, and provider calendar time measured in hours or days. Never shown as one number.'],
+      ['Asaas is a connect button', 'WRONG', 'Asaas documents API-key auth, not public OAuth. Keys are created in the web admin, by an administrator, shown once. Public scale is blocked until Asaas approves the split topology in writing.'],
+      ['Approve once, send to 500', 'WRONG', 'A new business portfolio starts at a low rolling 24-hour recipient limit and must earn a higher tier. Sends run in tranches inside the live limit, each tranche within the 24-hour data-freshness window.'],
+      ['A Pix link per recipient in the manifest', 'WRONG', 'Checkouts expire; a dead link two days later kills conversion silently. Recipients get a stable opaque offer URL; the checkout is created just-in-time when a buyer taps pay.'],
+      ['Money settles → done', 'HOLE', 'Payment is the middle, not the end. Voucher, booking handoff, redemption, expiry and refund are first-class states with owners and deadlines (Part V).'],
+      ['20% exceptions, 100 accounts/month', 'UNPROVEN', 'Both become production telemetry gates measured from account one, not forecasts (§26).'],
+      ['Long-tail accounts are free because support is zero', 'UNPROVEN', 'The long tail opens only after 90-day contribution stays positive net of provider, support, tax and reversal cost.'],
+      ['A new vertical only needs a new importer', 'INCOMPLETE', 'It needs a connector plus a vertical policy and fulfillment pack (§28).'],
+    ],
+    [2100, 1300, 5960],
+  ),
+  spacer(),
+  H1('§0.5 · What was cut back out, and why'),
+  P([T('The v5 draft that surfaced the errors above also re-added three separate products. v2 died of exactly that. Each cut below is recorded so it can be reversed deliberately, behind a gate, rather than drifting back in.')]),
+  tbl(
+    ['Cut', 'Why', 'What stands in its place'],
+    [
+      ['AI end-customer concierge (intent classifier, per-salon answer library, LLM subprocessor, sensitive-content detector, output validator, confidence thresholds)', 'A second product with its own privacy surface, whose lift is unmeasured. It also invents a problem: the salon already has a receptionist who answers WhatsApp all day.', 'The template offers two paths: Ver oferta (the page answers the questions) and Falar com o salão (a normal thread reception answers in her own app). Caixa sends nothing else into that thread. Gate E can reopen this on evidence.'],
+      ['Salon consumer-fiscal-document state machine, blocking campaign closeout', 'That is the salon contador’s duty. Tracking it makes Caixa accountable for someone else’s tax obligation and blocks Caixa’s own statements on it.', 'The Offer Contract states the salon is the seller and owns its consumer fiscal document. Caixa issues NFS-e for its own fee only, and says so in writing.'],
+      ['Guia Caixa — AI owner-guide with voice input, read-aloud and provider-error translation', 'The draft concedes the normal path should not need it. Founder time for the first 50 accounts is cheaper and teaches more.', 'A versioned help card per activation step, plus a direct line to the founder while volume is low. Measured, then automated only where it actually fires.'],
+      ['POS consent-growth kit as a launch feature', 'A whole second product built for salons who are not yet customers, with its own landing pages, disclosure versioning and ledger writes.', 'If consent evidence is absent, say so plainly and do not onboard. Gate F opens the kit once the core loop is boring.'],
+      ['22-state owner lifecycle enum + 8 overlay states', 'Documentation theater. It will not survive the first real account, and nobody can hold it in their head.', 'A 7-card activation board (§15), a task list, and five automated nudges. States are derived from verified provider facts, never from a founder checkbox.'],
+      ['Ten kill switches', 'Eight of them are a tenant filter on the other two.', 'Two: stop all outbound sending, and stop all financial writes. Both scopeable to one tenant.'],
+      ['Three device-handoff mechanisms (continue here / send to computer / ask the admin)', 'Three UX paths for one problem: the wrong person is holding the phone.', 'One magic link that resumes exact state on any device. The owner forwards it to whoever she needs. One mechanism.'],
+    ],
+    [2500, 3300, 3560],
+  ),
+  spacer(),
+  H1('§0.6 · The honest promise'),
+  callout([
+    P([PT('Comece em 2 minutos. Você faz sua parte pelo celular; avisamos assim que dados, WhatsApp e recebimentos estiverem prontos.')]),
+    P([T('Never show a spinner for an asynchronous provider process. Every task reads as exactly one of: '), B('Sua parte terminou'), T(' · '), B('Aguardando aprovação externa'), T(' · '), B('Precisamos de uma ação sua'), T('.')]),
+  ]),
+  new Paragraph({ children: [new PageBreak()] }),
+);
+
+// ---------- PART I ----------
+body.push(partBanner('Part I', 'The commercial foundation'), spacer());
+
+body.push(
+  H1('§1 · The product, and what it is not'),
+  P([T('Caixa Cheia identifies genuinely lapsed, legally contactable clients; helps the salon define one fulfillable return offer; sends one owner-authorized template from the salon’s own WhatsApp number; and maintains the resulting voucher until it is redeemed or refunded.')]),
+  P([B('It is not: '), T('a WhatsApp CRM, a bulk sender, an agenda replacement, a debt collector, an AI receptionist, a marketplace, a merchant of record, a custodian of anyone’s money, a subscription, or a multi-vertical platform.')]),
+  H3('One offer archetype at launch'),
+  P([T('A single-redemption, fixed-price prepaid voucher for one precisely defined service or bundle. Nothing else.')]),
+  P([T('Deposits, multi-session packages, subscriptions and variable balances each create a different fulfillment, accounting and refund path. They enter only through an evidence gate (§29), never because a prospect asked nicely.')]),
+  H3('Who is who'),
+  bullet([B('The salon is the seller. '), T('Its CNPJ, terms, support contact and fulfillment duty appear in the sale record and in the customer’s experience.')]),
+  bullet([B('Asaas hosts payment '), T('and settles into the salon’s own account.')]),
+  bullet([B('Caixa Cheia provides software '), T('— campaign, checkout orchestration, voucher, reporting — and receives its 20% split.')]),
+  bullet([B('LGPD roles are documented per purpose by counsel '), T('(§23). The intended allocation is not treated as legally self-proving.')]),
+  spacer(),
+  H1('§2 · Ideal customer profile'),
+  P([B('Core ICP — all of the following must be true:')]),
+  bullet([T('Trinks is the system of record.')]),
+  bullet([T('Non-medical, with no health-data-adjacent service inside the connected tenant.')]),
+  bullet([T('A recurring cadence from which lapse is computable from data alone.')]),
+  bullet([T('Able to produce the export bundle (§11).')]),
+  bullet([T('A meaningful pool of '), B('fully sendable'), T(' clients — not merely lapsed records.')]),
+  bullet([T('Ticket high enough that 20% plus variable campaign cost still leaves contribution.')]),
+  bullet([T('Real capacity to honor every voucher sold.')]),
+  bullet([T('Reception that can own human handoffs during declared hours.')]),
+  bullet([T('An authorized person who can approve offer and manifest.')]),
+  P([T('The v4 markers of 500+ eligible contacts and R$250+ ticket remain '), B('prospecting hypotheses, not acceptance rules'), T('. The real minimum pool is computed from campaign contribution after the first production cohorts.')]),
+  P([B('Excluded: '), T('medical/dental/injectable/clinical aesthetics; any business that cannot separate non-medical from sensitive records; low-ticket businesses with negative realistic contribution; bridal- or event-only work with no recurring cadence; owners without authoritative digital records; accounts that cannot prove marketing permission; accounts that cannot honor capacity; known-minor audiences without required authorization; and anyone asking Caixa to evade Meta, Asaas, consumer, tax or privacy rules.')]),
+  spacer(),
+  H1('§3 · Why anyone pays for this'),
+  P([T('Trinks already ships client reports, return invitations, WhatsApp features and online payments. So Caixa Cheia does not sell '), I('the ability to send a reactivation message'), T('. It sells the disciplined commercial wrapper busy owners do not execute:')]),
+  bullet([T('fail-closed eligibility and consent;')]),
+  bullet([T('a capacity-backed prepaid offer with frozen terms;')]),
+  bullet([T('exact owner authorization, stored and hashed;')]),
+  bullet([T('payment-source fee collection — nothing to invoice, nothing to chase;')]),
+  bullet([T('accountable fulfillment through redemption or refund;')]),
+  bullet([T('results-only pricing;')]),
+  bullet([T('provider operations run as a system rather than as a series of surprises.')]),
+  P([B('The moat is not code and not price. '), T('It is the measured operating system: compliant source mapping, fulfillment discipline, provider recovery playbooks, statements salons trust, referral density, and comparable production results nobody else has. No WhatsApp conversation data or client-level history ever trains a shared model.')]),
+  spacer(),
+  H1('§4 · Commercial terms'),
+  callout([
+    P([B('Caixa fee = 20% × Asaas netValue'), T(', recognized only when all three hold:')]),
+    bullet([T('the payment is confirmed by an authenticated Asaas webhook;')]),
+    bullet([T('the related split status is '), MONO('DONE'), T('; and')]),
+    bullet([T('the event has not already been posted.')]),
+    P([T('A split that is '), MONO('PENDING'), T(', '), MONO('AWAITING_CREDIT'), T(', '), MONO('REFUSED'), T(', '), MONO('CANCELLED'), T(' or '), MONO('REFUNDED'), T(' is never recognized as available revenue. Refund or chargeback reverses the fee ledger.')]),
+  ]),
+  P([B('One price: 20%. '), T('Founding salons get more of the founder’s attention, not a different number. A second price tier would complicate the one promise that makes this sellable in a sentence.')]),
+  P([B('Attribution. '), T('Only a payment created through the stable campaign offer path counts. A recipient who walks in and pays at the counter generates no fee. That leakage is accepted deliberately — it is what buys the absence of every attribution argument.')]),
+  P([B('Termination. '), T('New sends stop immediately; unpaid and unredeemed offers run out under frozen terms; charges created before termination may still settle or refund; provider credentials are revoked once financial and refund duties are safely transferred; operational data is returned or deleted on the retention schedule; and records that must legally remain are isolated to that purpose and period. No hostage data, no exit fee, no post-termination campaign.')]),
+  spacer(),
+  H1('§5 · One acquisition door'),
+  P([T('The free eligibility scan is the only door. It now reports three separate numbers, because conflating them is how a plan lies to itself:')]),
+  tbl(
+    ['Number', 'Means'],
+    [
+      ['Lapsed', 'Last completed paid service falls inside the campaign lapse range (90–365 days).'],
+      ['Contactable', 'Lapsed, and carrying valid WhatsApp marketing permission with all four evidence fields.'],
+      ['Fully sendable', 'Contactable, and also clear of future bookings, debt, unused credit, disputes, duplicates, minors, suppression and stale data. This is the only number that means anything.'],
+    ],
+    [2200, 7160],
+  ),
+  spacer(),
+  callout([
+    P([B('Do not show "potencial R$8 mil." '), T('Before comparable production evidence exists, that is a forecast the founder can be held to. Show a scenario the owner controls:')]),
+    P([MONO('Se X das Y clientes liberadas comprarem a R$Z, o caixa liquidado seria R$…')]),
+    P([T('Once enough comparable campaigns exist, the portal may show an observed range — always with cohort size, dates, offer type and refund rate attached.')]),
+  ], 'F4F1EA', AMBER),
+  P([B('Channels: '), T('Beauty Fair secure scan QR; distributor and educator referral links; permissioned case studies; referral links inside strong closeout reports; a Trinks partner listing if formally approved; owner-shared links in salon communities. '), B('No cold WhatsApp outreach from scraped CNPJ lists'), T(' — a business built on documented consent cannot prospect by violating it.')]),
+  P([T('Every funnel stage records attempted, completed, abandoned and provider-blocked counts separately. "100 leads," "100 scans," "100 activated accounts" and "100 live campaigns" are four different numbers and are never used interchangeably.')]),
+  new Paragraph({ children: [new PageBreak()] }),
+);
+
+// ---------- PART II ----------
+body.push(partBanner('Part II', 'Data, consent, and source truth'), spacer());
+
+body.push(
+  H1('§6 · The data contract is the first launch gate'),
+  P([T('v4 assumed one CSV could prove last visit, future booking, debt, unused credit, disputes, ticket and consent provenance. Trinks documents these across different reports and product areas. That single-file claim was never verified and is now retired.')]),
+  P([B('"One importer" means one bundle specification and one normalization pipeline'), T(' — not necessarily one physical file. The owner uploads the reports as Trinks generates them. She is never asked to edit, rename, merge or convert a spreadsheet.')]),
+  spacer(),
+  H1('§7 · Canonical fields and the fail-closed rule'),
+  tbl(
+    ['Field', 'Required behavior'],
+    [
+      ['Tenant / branch ID', 'Must resolve to the contracted salon.'],
+      ['Internal customer reference', 'Tenant-scoped. Never joined across salons.'],
+      ['First name', 'Used only for deterministic message rendering.'],
+      ['Phone', 'Normalized to E.164; duplicates collapse conservatively.'],
+      ['Last completed paid service', 'Source and as_of stored with the value.'],
+      ['Coarse service category', 'Allow-listed. No notes, no free text, no sensitive detail — the importer cannot ingest what it has no column for.'],
+      ['Future booking', 'Any active future booking excludes.'],
+      ['Open debt', 'Any positive or unknown debt excludes.'],
+      ['Unused package / voucher / credit', 'Any positive or unknown balance excludes (CPC 47).'],
+      ['Dispute or do-not-contact flag', 'A positive flag excludes. Requires either a proven structured source field or a signed per-campaign exception list from the owner.'],
+      ['Age signal', 'A known minor excludes; raw birth date is discarded after derivation. Unknown age follows a counsel-approved adult-targeting rule — an explicit decision, not an accidental exclusion of the entire market.'],
+      ['Consent value', 'Must affirm WhatsApp marketing permission.'],
+      ['Consent captured_at', 'Required.'],
+      ['Consent source', 'Required.'],
+      ['Consent scope + disclosure version', 'Must cover the planned campaign.'],
+      ['Prior withdrawal / suppression', 'A later re-opt-in supersedes it only on independent evidence.'],
+    ],
+    [2600, 6760],
+  ),
+  spacer(),
+  callout([
+    P([B('Fail-closed, stated exactly. '), T('Unknown, stale, contradictory or unmapped values exclude the record whenever that fact is required to establish eligibility: completed visit, future booking, debt, unused credit, consent, suppression, source freshness. The system never infers permission and never treats silence as consent.')]),
+  ]),
+  P([B('Provenance. '), T('Every normalized fact carries its source file or connector, source field, import version, source generation time, normalization rule version, tenant and validation outcome. The manifest stores the exact snapshot and rule set that produced it — so any send can be reconstructed months later.')]),
+  spacer(),
+  H1('§8 · Launch bundle now, formal Trinks connection next'),
+  P([B('Launch path: '), T('prove the bundle against real exports from at least three Trinks salons; map every required field; document which report produces each fact; accept .xlsx or .csv as generated; allow multiple files in one guided upload; produce exact errors naming the missing report or field; and require a source generation time no more than 24 hours before manifest build.')]),
+  callout([
+    P([B('Do not ask a salon to paste its Trinks API key. '), T('Trinks documents API and webhook access through Conecta Trinks, but describes that key as personal, secret and non-transferable. Asking for it would be asking the customer to breach her own provider terms.')]),
+    P([B('Day-one action: '), T('request formal developer/partner access; obtain written authorization for a multi-tenant integration; confirm the exact consent, booking, credit, debt, dispute and transaction fields; confirm rate limits and commercial terms. Build the live connector only after those are documented — then it '), B('replaces'), T(' the bundle rather than coexisting with it forever.')]),
+    P([T('Until then, repeat campaigns require a fresh bundle. They cannot honestly be called "two taps," and the product will not claim it.')]),
+  ], 'F4F1EA', AMBER),
+  spacer(),
+  H1('§9 · File security and deletion'),
+  bullet([T('Files upload directly to encrypted object storage through short-lived URLs — never through support chat, email attachment, or a shared tablet at a trade fair.')]),
+  bullet([T('Type, size, encoding, macro, formula, archive-depth and malware checks run before parsing.')]),
+  bullet([T('Forbidden columns and free text are discarded at the door.')]),
+  bullet([T('Raw data never enters logs, analytics, support tools or model prompts.')]),
+  bullet([T('Raw files are deleted after successful normalization plus a short recovery window.')]),
+  bullet([T('A non-converting scan’s row-level data is deleted within the documented scan-retention period; only non-identifying funnel statistics remain.')]),
+  bullet([T('Production data is never copied into development or into the AI coding tool.')]),
+  spacer(),
+  H1('§10 · Consent ledger and suppression'),
+  P([B('No valid evidence means no message. '), T('The product does not manufacture historical permission, and does not let an owner attest her way past the gate.')]),
+  P([B('Suppression is checked three times: '), T('at import, at manifest build, and immediately before send. An opt-out stops that salon’s marketing at once.')]),
+  P([T('"Suppress forever" is replaced by a design that survives legal review: keep a tenant-scoped, salted suppression token for the justified retention period; never use it for analytics or another salon; while access remains, export an encrypted, actionable do-not-contact file to the salon controller and obtain receipt; then reduce Caixa’s copy to the purpose-limited token where the schedule permits. A terminated salon must merge and validate that file before it can re-onboard.')]),
+  spacer(),
+  H1('§11 · The fair, without a data incident'),
+  P([T('At Beauty Fair the tablet shows '), B('synthetic demo data only'), T('. The visitor scans a QR and continues on her own phone. Authorization appears before upload. No customer file ever lands on the tablet, in WhatsApp, in email, or in a founder download folder. Real results are delivered in the secure portal afterward. '), B('The fair date does not override a data, provider, legal or safety gate'), T(' — a good week of leads is not worth the one incident that ends the company.')]),
+  new Paragraph({ children: [new PageBreak()] }),
+);
+
+// ---------- PART III ----------
+body.push(partBanner('Part III', 'Owner activation'), spacer());
+
+body.push(
+  H1('§12 · The surface'),
+  P([T('Activation is an asynchronous task board, not a wizard. Every action saves immediately. The owner resumes through '), B('one magic link'), T(' that restores exact state on any device — her phone, the salon computer, or whoever administers the Meta account. She forwards it herself. One mechanism, not three.')]),
+  P([T('All Caixa screens work on an ordinary Android or iPhone. "Mobile-first" does not mean pretending every provider action is app-native: Asaas key creation is web-only and admin-only, and the product says so rather than looping the owner through a flow that cannot complete on her phone.')]),
+  spacer(),
+  H1('§13 · The seven-card activation board'),
+  tbl(
+    ['Card', 'Owner sees', 'States'],
+    [
+      ['Data', 'Dados do salão', 'Enviado · incompleto · atualizado'],
+      ['Agreement', 'Contrato', 'Assinar · aguardando responsável · concluído'],
+      ['Asaas', 'Recebimentos', 'Conectar · conta em análise · testar · conectado'],
+      ['Meta', 'WhatsApp do salão', 'Preparar · conectar · revisão externa · conectado'],
+      ['Offer', 'Oferta', 'Completar · revisar · aprovada'],
+      ['Reception', 'Atendimento', 'Informar horário · respostas prontas · concluído'],
+      ['Template', 'Mensagem', 'Preparando · Meta analisando · aprovada'],
+    ],
+    [1500, 2600, 5260],
+  ),
+  spacer(),
+  P([T('Cards complete in parallel. '), B('READY is computed from verified provider facts'), T(' — never from a founder checkbox, because a checkbox is how a plan starts lying about what is actually connected.')]),
+  spacer(),
+  H1('§14 · The owner journey, in order'),
+  H3('Entry and identification'),
+  P([PT('Quantas clientes podem voltar para o seu salão?'), T(' — then CNPJ, the owner’s WhatsApp, and a one-time code. '), PT('Encontramos: Salão Bela Luz, São Paulo. É este?')]),
+  H3('Authority and scan privacy — before any upload'),
+  P([PT('Vamos usar os arquivos apenas para calcular quem pode receber a campanha. Nenhuma mensagem será enviada sem autorização, e listas sem permissão comprovada ficam de fora.')]),
+  P([T('Two explicit confirmations: '), B('I am authorized to submit these salon records'), T(', and '), B('I accept the scan terms, privacy notice and processing terms'), T('. No upload control renders before both.')]),
+  H3('The bundle, and delegation'),
+  P([T('She uploads the named reports, or forwards the magic link to whoever has the salon computer. The delegated person lands on the upload task alone — not the account.')]),
+  H3('Result — three honest numbers'),
+  P([MONO('612 clientes não voltam há mais de 90 dias  ·  214 têm permissão comprovada  ·  186 estão totalmente liberadas')]),
+  P([T('If a required fact is missing: '), PT('Estes arquivos não comprovam {{requisito}}. Por segurança, nenhuma cliente afetada entrou na lista.'), T(' If consent is absent entirely, say so plainly and do not onboard — there is no campaign to sell her yet.')]),
+  H3('Agreement'),
+  P([T('Plain-language commercial summary before the legal text: 20% only of Asaas net settled through the campaign; payments outside the path generate no fee; refunds reverse Caixa’s portion; the salon remains the seller and fulfills the service; the owner approves the offer and the manifest. If the current user lacks authority: '), PT('Enviar para quem pode assinar'), T('.')]),
+  H3('Offer, reception, message, authorization'),
+  P([T('One recommended offer populated from her own data — not a gallery to browse. She confirms capacity, terms and price, or edits. Then reception hours and the handoff route. Then a real WhatsApp bubble preview, not Meta terminology. Then the final authorization screen (§16).')]),
+  spacer(),
+  H1('§15 · Connecting the two providers'),
+  H3('Asaas — the launch reality'),
+  callout([
+    P([B('Blocking prerequisite. '), T('Before public use, obtain written Asaas confirmation that Caixa may receive and securely store a dedicated salon-generated key; that the unrelated-merchant split topology is accepted; that the required payment, split, refund and webhook operations are allowed; and that the expected scale is supported. '), B('UX cannot repair an unapproved financial topology'), T(' — if that confirmation does not exist, payment connection stays assisted or launch stops.')]),
+  ], 'FBF0EE', RED),
+  bullet([T('Ask first: '), PT('Você já tem uma conta Asaas PJ aprovada?'), T(' If not, open the official account flow and save Caixa progress — document review takes provider calendar time, not owner minutes.')]),
+  bullet([T('When ready, open the Asaas web key page in Chrome or Safari. The administrator creates a dedicated key named '), MONO('Caixa Cheia'), T('.')]),
+  bullet([T('She returns to a masked, single-submit field. The secret goes straight to the backend over TLS — never to analytics, support, a screenshot, or an LLM.')]),
+  bullet([T('Validate production environment, salon CNPJ, account approval, Pix readiness and wallet. Provision webhooks automatically — '), B('never ask an owner to configure a webhook'), T('.')]),
+  bullet([T('Store the key in a managed vault with envelope encryption; keep only fingerprint, last four, version and health in application data. Provide guided rotation and immediate revocation.')]),
+  bullet([T('Run one real low-value production charge, split, refund and reversal before declaring '), PT('Asaas conectado e testado'), T('.')]),
+  callout([
+    P([B('The notification trap. '), T('Create or select the Asaas customer through the API with '), MONO('notificationDisabled=true'), T(' and verify the stored setting before hosted checkout. Otherwise Asaas fires its own collection reminders to the salon’s clients — unapproved messages, under the salon’s name, outside the manifest the owner authorized. '), B('Launch is blocked until a real production checkout proves no Asaas reminder of any kind reaches the customer.')]),
+  ], 'F4F1EA', AMBER),
+  H3('Meta — one BSP, and the limits that actually apply'),
+  P([T('Use one official Solution Partner supporting Embedded Signup v4, Business-App coexistence, message echoes, webhook delivery, template submission and status, a clear billing path, Brazilian numbers and support, live messaging-limit visibility, and a clean DPA. '), B('Do not build Meta partner infrastructure as the moat'), T(' — the direct Tech Provider path costs provider status, business verification, App Review, advanced permissions and capacity management, none of which is the business.')]),
+  bullet([B('Readiness first: '), T('WhatsApp Business installed and current; the correct Meta admin login and 2FA available; a warning if the link opened inside Instagram’s or WhatsApp’s in-app browser; disclosure that linked devices may disconnect; reception moved off an incompatible companion app if required.')]),
+  bullet([B('Explicitly instruct the owner not to grant or upload historical chats or contacts. '), T('Caixa needs traffic created after connection and traceably linked to a campaign recipient, offer token or voucher — nothing else. Unrelated inbound threads, group traffic and her contact book are never imported or processed.')]),
+  bullet([B('Exchange the final code immediately '), T('— its documented lifetime is measured in seconds — and make callback failure resumable rather than fatal.')]),
+  bullet([B('Verify after connection: '), T('the phone is still on the Business App, platform type is Cloud API, WABA and phone assets are accessible, message and echo webhooks are subscribed.')]),
+  bullet([B('Then wait honestly: '), PT('A Meta está analisando a mensagem. Avisaremos quando estiver aprovada.')]),
+  callout([
+    P([B('Tranches, not blasts. '), T('A new business portfolio starts at a low rolling 24-hour unique-recipient limit and must qualify upward. One approval tranche is capped at the smallest of: current Meta capacity, offer inventory, reception capacity, and the audience sendable before the 24-hour freshness deadline expires. A second day requires a fresh bundle, recomputation, and a new approval. '), B('Caixa does not stretch a stale manifest across days to hit a volume promise.')]),
+  ]),
+  H3('One controller per conversation'),
+  P([T('Because sends leave the salon’s own number, a thread must never have two voices. With no bot at launch this reduces to a hard rule: '), B('after the T0 template, Caixa sends nothing further into that thread'), T('. Reception answers in her own app, exactly as she does today. Message echoes are still consumed — they are how the system knows a human took the conversation, and they are the precondition for ever reopening Gate E.')]),
+  new Paragraph({ children: [new PageBreak()] }),
+);
+
+// ---------- PART IV ----------
+body.push(partBanner('Part IV', 'Offer, checkout, voucher, fulfillment'), spacer());
+
+body.push(
+  H1('§16 · The frozen Offer Contract'),
+  P([T('No campaign reaches owner approval until this structured record is complete. The landing page, checkout item, voucher, confirmation and statement all read from '), B('this one versioned object'), T('. Nothing downstream can invent or alter a value in it.')]),
+  tbl(
+    ['Group', 'Fields'],
+    [
+      ['Seller', 'CNPJ, legal and trade name, participating unit and address, consumer support channel, business hours, response SLA.'],
+      ['What is sold', 'Exact service or bundle, inclusions and exclusions, normal price, campaign price, participating professionals or "any qualified professional."'],
+      ['Limits', 'Quantity available, per-customer purchase limit, sale window, redemption window, blackout conditions, owner capacity attestation.'],
+      ['Rules', 'Booking method, rescheduling rule, cancellation and refund rule, transferability (the link may be forwarded; the voucher issues to the verified purchaser and is not transferable after purchase).'],
+      ['Endings', 'Counsel-approved outcome if the redemption deadline is reached unused — extension, refund, credit or another expressly lawful result. Never silent forfeiture.'],
+      ['Statements', 'The salon owns its consumer fiscal document and its timing, per its contador. Payment does not guarantee a specific time until reception confirms it.'],
+      ['Control', 'Version and approver.'],
+    ],
+    [1500, 7860],
+  ),
+  spacer(),
+  H1('§17 · Inventory'),
+  bullet([T('Offer inventory is atomic. Starting checkout reserves one unit for that checkout’s lifetime.')]),
+  bullet([T('An expired or cancelled checkout releases the reservation; a settled one converts it to a sale.')]),
+  bullet([T('Sold-out and expired offers cannot create new checkouts.')]),
+  bullet([T('Duplicate clicks return the same active checkout, or the settled result — never a second charge.')]),
+  P([B('Why this is not optional: '), T('selling forty vouchers a salon can deliver twenty of is how a campaign becomes a consumer complaint, a Meta report, and the end of the salon’s number.')]),
+  spacer(),
+  H1('§18 · Stable offer URL and just-in-time checkout'),
+  P([B('Never put a pre-created, expiring checkout in the manifest. '), T('Each recipient gets an opaque signed Caixa URL:')]),
+  P([MONO('https://oferta.caixacheia.com.br/o/{{opaque_token}}')]),
+  bullet([T('The token carries no visible phone, name, tenant or customer ID; it is tenant- and campaign-bound, expiring and revocable.')]),
+  bullet([B('It identifies campaign source — it is explicitly not identity. '), T('A forwarded link must not let one person see another’s payment or voucher status.')]),
+  bullet([T('Click events are recorded without third-party advertising trackers.')]),
+  P([B('Before checkout '), T('the page shows the frozen Offer Contract and live inventory, collects the minimum purchaser contact needed for fulfillment, verifies control of that contact, records intended recipient and actual purchaser separately if the link was forwarded, enforces the purchase limit against the verified purchaser, and stores the exact terms, seller identity, cancellation path, privacy notice, acceptance timestamp and evidence version.')]),
+  P([B('On Pagar com Pix: '), T('reserve inventory atomically → return any existing active checkout → create or select the Asaas customer with '), MONO('notificationDisabled=true'), T(' verified → create one server-side checkout with a unique '), MONO('externalReference'), T(' → include the 20% split → set a short expiry → configure callbacks → redirect to the hosted page. The stable page can mint a fresh checkout at any time while the offer is live.')]),
+  callout([
+    P([B('Browser callbacks are UX. Only authenticated webhooks move money or state. '), T('A success page that marks a payment settled is a page that can be forged by anyone who reads a URL.')]),
+  ]),
+  spacer(),
+  H1('§19 · Payment ledger'),
+  P([MONO('OFFER_VIEWED → INVENTORY_RESERVED → CHECKOUT_ACTIVE → PIX_PENDING → PAYMENT_CONFIRMED')]),
+  P([MONO('PAYMENT_CONFIRMED → VOUCHER_PAID   (buyer’s entitlement)')]),
+  P([MONO('PAYMENT_CONFIRMED → SPLIT_PENDING → SPLIT_DONE | SPLIT_REFUSED   (Caixa’s revenue)')]),
+  P([MONO('Alternate: CHECKOUT_EXPIRED | CHECKOUT_CANCELLED | PAYMENT_FAILED')]),
+  P([MONO('After payment: REFUND_REQUESTED → REFUND_PROCESSING → PAYMENT_REFUNDED → SPLIT_REFUNDED → UNUSED_VOUCHER_INVALIDATED')]),
+  P([MONO('Exceptional: CHARGEBACK_BEFORE_REDEMPTION | POST_REDEMPTION_PAYMENT_DISPUTE | WEBHOOK_MISMATCH')]),
+  spacer(),
+  bullet([B('The two branches are independent. '), MONO('PAYMENT_CONFIRMED'), T(' issues the voucher and the salon’s obligation immediately. A pending or refused split is a founder problem, never the buyer’s — she paid, she gets the service.')]),
+  bullet([T('Webhooks are signature- or token-validated, idempotent and replay-safe. A forged or replayed event changes nothing.')]),
+  bullet([T('Partial refunds stay disabled at launch until counsel, Asaas behavior, ledger and voucher effects are all proven.')]),
+  bullet([T('Duplicate payments enter an immediate refund workflow.')]),
+  bullet([T('A pre-redemption chargeback pauses and disputes the voucher. A '), B('post-redemption'), T(' dispute records a salon loss and reverses the fee — it cannot un-consume a service already delivered.')]),
+  bullet([B('Fee cash carries a reversal reserve '), T('so later refunds never create a shortfall (§25).')]),
+  spacer(),
+  H1('§20 · Voucher and fulfillment — the part v4 did not have'),
+  P([MONO('DRAFT → PAYMENT_PENDING → PAID_UNBOOKED → BOOKING_REQUESTED → BOOKED → REDEEMED')]),
+  P([MONO('From PAID_UNBOOKED or BOOKED: CANCELLATION_REQUESTED → REFUND_PENDING → REFUNDED')]),
+  P([MONO('Exceptional: REDEMPTION_DUE | CHARGEBACK_BEFORE_REDEMPTION | POST_REDEMPTION_PAYMENT_DISPUTE | RESOLUTION_REQUIRED')]),
+  spacer(),
+  callout([
+    P([B('An unused paid voucher is a salon obligation, and it is excluded from every future reactivation audience until redeemed, refunded or resolved. '), T('This is the same CPC 47 rule the eligibility gate enforces — now applied to the liabilities Caixa itself creates. A deadline moves a voucher to '), MONO('REDEMPTION_DUE'), T('; time alone never erases it. '), MONO('RESOLUTION_REQUIRED'), T(' is an exception queue, not an acceptable resting state.')]),
+  ], 'FBF0EE', RED),
+  H3('After payment'),
+  P([T('The success page confirms only what the webhook confirms, then shows the voucher code, an '), B('Agendar agora'), T(' action that has the '), B('customer'), T(' open the booking conversation with the salon, an optional non-binding preference for daypart and unit, a cancellation and help path, and the seller’s support contact. It never promises that reception can start a free-form message later — outside an open service window that requires a separately approved utility template.')]),
+  H3('Reception’s view'),
+  P([T('A mobile task with the customer’s first name and masked phone, the purchased offer, payment status, voucher code, any stated preference, current state, and four actions: '), B('Confirmar agendamento'), T(' · '), B('Marcar como utilizado'), T(' · '), B('Solicitar cancelamento/reembolso'), T(' · '), B('Falar com cliente'), T('. It exposes neither the campaign list nor any financial credential.')]),
+  spacer(),
+  H1('§21 · Fulfillment automation and its safety stops'),
+  tbl(
+    ['Trigger', 'Automatic action', 'Safety stop'],
+    [
+      ['PAYMENT_CONFIRMED', 'Issue voucher; create reception task; show Agendar agora.', 'Never waits on the split.'],
+      ['PAID_UNBOOKED', 'Keep the task visible; at most one approved utility booking prompt.', 'No promotional content, ever.'],
+      ['Customer requests booking', 'Start the reception SLA within business hours.', 'Thread is human-owned from that moment.'],
+      ['Reception misses SLA', 'Remind once; at 2× SLA escalate to the salon owner.', 'Pause new checkouts for that offer.'],
+      ['A paid buyer is stranded past maximum SLA', 'Apologize through an approved channel; expose the cancellation path.', 'Pause all new sales for that salon.'],
+      ['Redemption deadline approaches', 'Approved fulfillment reminder at the counsel-approved cadence.', 'No upsell. No automatic forfeiture.'],
+      ['Deadline reached unused', 'Move to REDEMPTION_DUE; require extension, refund or credit.', 'New sales stay paused while unresolved.'],
+      ['Cancellation or refund requested', 'Freeze redemption; route the authorized decision; show status.', 'No automated decision on disputed facts.'],
+      ['Booked appointment passes', 'Ask reception to mark redeemed, no-show, rescheduled or unresolved.', 'Stale state blocks that client’s repeat eligibility.'],
+    ],
+    [2300, 3830, 3230],
+  ),
+  spacer(),
+  P([B('Every paid obligation has an owner, a deadline, a last action and a next action. '), T('Automation may reduce reception’s work. It may never hide it.')]),
+  H3('Cancellation and consumer rights'),
+  P([T('The offer page presents a clear cancellation channel in the same medium used to buy. Counsel approves the final terms, including Brazil’s generally applicable seven-day right of withdrawal for online purchases and anything that changes its application. A requested refund pauses redemption, routes to the salon, invokes the Asaas refund only after the authorized decision, reverses the split, updates voucher and statement, and confirms the result to the customer.')]),
+  spacer(),
+  H1('§22 · Customer messaging cadence — deliberately thin'),
+  tbl(
+    ['Moment', 'What Caixa does'],
+    [
+      ['T0', 'One owner-approved marketing template. Three paths: Ver oferta · Falar com o salão · a visible way to stop messages.'],
+      ['Customer replies', 'Nothing automated. The thread is the salon’s, answered by reception in her own app.'],
+      ['No reply, no click', 'Stop. No second marketing touch at launch — not to nonresponders, not "just one reminder."'],
+      ['Clicked, no checkout', 'Recover on the webpage, never with an unsolicited chat.'],
+      ['Checkout active, unpaid', 'No WhatsApp chase at launch.'],
+      ['Settled', 'Success state plus approved confirmation.'],
+      ['Paid but unbooked', 'Bounded utility follow-up and a reception task until booked or lawfully resolved.'],
+      ['Opt-out, complaint, or anything sensitive', 'Immediate suppression or hard handoff. Automation stops.'],
+      ['Paid', 'No automated upsell. Ever.'],
+    ],
+    [2300, 7060],
+  ),
+  spacer(),
+  P([T('This is not blast-and-pass — the system stays present wherever real intent exists. But it manufactures no unsolicited touch beyond the one the owner authorized, which is the only reason the salon’s number stays healthy.')]),
+  new Paragraph({ children: [new PageBreak()] }),
+);
+
+// ---------- PART V ----------
+body.push(partBanner('Part V', 'Architecture, privacy, security'), spacer());
+
+body.push(
+  H1('§23 · Shape'),
+  P([T('One repository, one modular application. KISS is not the same as one fragile machine, and it is not microservices either — no service split until a measured bottleneck demands one.')]),
+  bullet([T('One FastAPI modular monolith.')]),
+  bullet([T('Managed Postgres with tenant isolation enforced in both database and application layers.')]),
+  bullet([T('Managed queue and outbox workers — the outbox is what makes "sent exactly once, recorded exactly once" true under retry.')]),
+  bullet([T('Encrypted object storage for short-lived source files.')]),
+  bullet([T('Managed secret vault / KMS.')]),
+  bullet([T('One owner portal, one internal console, one public offer surface.')]),
+  bullet([T('One approved BSP integration; Asaas and Trinks behind versioned adapter interfaces.')]),
+  spacer(),
+  H1('§24 · Modules'),
+  tbl(
+    ['Module', 'Responsibility'],
+    [
+      ['Identity and tenant', 'CNPJ, users, roles, magic links, MFA, authorization.'],
+      ['Owner lifecycle', 'Activation board, tasks, nudges, termination.'],
+      ['Source intake', 'Upload, validation, provenance, normalization, deletion.'],
+      ['Consent and suppression', 'Evidence, withdrawal, re-opt-in, three-point enforcement.'],
+      ['Eligibility', 'Lapse, exclusions, freshness, and an explicit fail-closed reason per excluded row.'],
+      ['Offer and inventory', 'Offer Contract, capacity, versions, atomic reservations.'],
+      ['Campaign', 'Template rendering with deterministic variables, manifest, approval, tranche scheduling, outbox.'],
+      ['WhatsApp / BSP', 'Embedded Signup, templates, live limits, webhooks, quality, echoes.'],
+      ['Offer page and checkout', 'Opaque tokens, frozen-terms display, purchaser verification, idempotent checkout.'],
+      ['Payments and ledger', 'Charge, split, refund, chargeback, reconciliation, revenue recognition.'],
+      ['Voucher and fulfillment', 'Issue, booking task, redemption, cancellation, expiry resolution.'],
+      ['Statements', 'Salon closeout, Caixa fee NFS-e, accounting export.'],
+      ['Ops queue', 'Prioritized exceptions, kill switches, diagnostics.'],
+      ['Analytics', 'Funnel events, contribution, provider and support metrics.'],
+    ],
+    [2400, 6960],
+  ),
+  spacer(),
+  H1('§25 · Seven rules that do not bend'),
+  bullet([T('Eligibility, exclusions, money, inventory, links, status and statements come from code — never from a model.')]),
+  bullet([T('Every business-initiated send is tied to a stored owner authorization.')]),
+  bullet([T('Every external write carries an idempotency key and an audit event.')]),
+  bullet([T('Every unknown condition on a required fact fails closed.')]),
+  bullet([T('Every conversation has exactly one controller.')]),
+  bullet([T('Every provider or quality restriction pauses safely rather than retrying.')]),
+  bullet([T('No customer row ever reaches an LLM. Mail-merge happens locally, after the AI has drafted a generic template.')]),
+  spacer(),
+  H1('§26 · What approval stores'),
+  P([T('Source snapshot and rule version · offer version · the exact recipient list · the exact rendered message and stable link · approver identity, authority, timestamp and re-authentication · manifest hash · scheduling and send events · template and provider version · payment and voucher events · and any change that invalidated a prior approval.')]),
+  P([B('Approval is re-required '), T('when the recipient list, offer terms, price, inventory, initial copy, destination domain or reminder policy changes. A "small edit" after approval is a new approval.')]),
+  spacer(),
+  H1('§27 · Security, shipped in week one'),
+  P([T('Before any customer data exists, not after:')]),
+  bullet([T('Separate production and test environments; test uses synthetic data only.')]),
+  bullet([T('Tenant isolation enforced in two layers and tested.')]),
+  bullet([T('MFA on every privileged founder action, audited.')]),
+  bullet([T('Secrets in a vault — not database columns, not env files visible to support.')]),
+  bullet([T('Encrypted backups with a rehearsed restore.')]),
+  bullet([T('Short sessions; re-authentication for high-risk approvals.')]),
+  bullet([T('No PII or secret in logs, analytics, error trackers, screenshots or support chat.')]),
+  bullet([T('Opaque, signed, rate-limited, revocable, scoped links.')]),
+  bullet([T('Verified webhook signatures and timestamps; idempotent, replay-safe processing.')]),
+  bullet([T('Isolated, hardened file parsing; scanned dependencies, containers and generated code.')]),
+  bullet([T('Rehearsed migrations and rollback; provider-outage and founder-unavailability runbooks.')]),
+  bullet([T('External security review completed before public self-service opens.')]),
+  P([B('The AI coding tool receives source code and synthetic fixtures. Never production credentials, never customer data.')]),
+  spacer(),
+  H1('§28 · Two kill switches'),
+  P([B('Stop all outbound sending'), T(' and '), B('stop all financial writes'), T(' — each scopeable to a single tenant. Every other switch anyone might want is a tenant filter on one of these two.')]),
+  P([T('Unauthorized send, cross-tenant access, duplicate charge, suspected secret exposure or a provider signature failure triggers immediate containment.')]),
+  spacer(),
+  H1('§29 · LGPD posture'),
+  tbl(
+    ['Purpose', 'Intended role'],
+    [
+      ['Salon campaign audience and offer', 'Salon is controller; Caixa is instructed operator.'],
+      ['Caixa billing, tax, fraud and account security', 'Caixa is independent controller.'],
+      ['Product analytics', 'Aggregated / anonymized, under a documented basis.'],
+      ['Case study', 'Separate permission from the salon and any identifiable person.'],
+    ],
+    [3600, 5760],
+  ),
+  spacer(),
+  P([B('Counsel documents the allocation per purpose. '), T('Do not assume the ANPD small-agent simplifications apply forever — volume and automated processing can narrow or remove them.')]),
+  P([B('Retention. '), T('Before the first production upload, a record schedule is defined, approved, configured and '), B('tested'), T(' by category: raw files, normalized campaign data, consent and withdrawal evidence, manifest and approval evidence, message bodies and status metadata, payment and reversal records, voucher and fulfillment records, tax and accounting exports, incident evidence, and backups. Each names purpose, legal basis, active period, backup tail, deletion mechanism, owner and offboarding treatment. '), B('The upload endpoint stays disabled until counsel approves it and the automated deletion tests pass.')]),
+  P([T('"Delete everything" is not credible where tax, dispute, consent and authorization records must remain. Say so honestly: retained records are purpose-limited, access-restricted, and deleted when the period ends.')]),
+  new Paragraph({ children: [new PageBreak()] }),
+);
+
+// ---------- PART VI ----------
+body.push(partBanner('Part VI', 'Operations, economics, rollout'), spacer());
+
+body.push(
+  H1('§30 · The founder console — three queues'),
+  tbl(
+    ['Queue', 'Contains', 'Response'],
+    [
+      ['Red now', 'Security or privacy incident, unauthorized send, cross-tenant access, duplicate charge, unexplained money mismatch, Meta quality suspension.', 'Kill switch and containment, immediately. Counsel or provider as required.'],
+      ['Resolve today', 'Provider disconnect, split refusal, stuck refund, campaign-system failure, core-account activation block, a stranded paid buyer.', 'Same business day. Affected function pauses meanwhile.'],
+      ['Digest', 'Aged owner task, recurring importer error, stale manifest, patterns in checkout failure.', 'Weekly review.'],
+    ],
+    [1600, 4700, 3060],
+  ),
+  spacer(),
+  P([B('End-customer questions never appear in any of them. '), T('The founder is not the salon’s receptionist — handoffs escalate to reception, then to the salon owner. That boundary is the entire reason one person can run this.')]),
+  spacer(),
+  H1('§31 · Failure queues and their safe defaults'),
+  tbl(
+    ['Queue', 'Safe automatic response'],
+    [
+      ['IMPORT_REJECTED', 'Reject; name the missing report or field exactly; issue a fresh secure upload task.'],
+      ['CONSENT_UNPROVEN', 'Exclude the affected records. Never infer.'],
+      ['OWNER_ACTION_STALE', 'Remind within cadence; expire the stale manifest at day 7.'],
+      ['META_PROVIDER_BLOCKED', 'Save state; show the provider action; send nothing.'],
+      ['ASAAS_PROVIDER_BLOCKED', 'Save state; write nothing financial.'],
+      ['MESSAGE_TRANSIENT_FAILURE', 'Bounded idempotent retry.'],
+      ['MESSAGE_PERMANENT_FAILURE', 'No retry. Mark unreachable.'],
+      ['META_QUALITY_RISK', 'Pause that account’s sends.'],
+      ['CHECKOUT_EXPIRED', 'Release inventory; the stable page may mint a new checkout.'],
+      ['SPLIT_REFUSED', 'Fulfill the paid customer; quarantine operator revenue; founder reviews.'],
+      ['PAID_UNBOOKED_SLA', 'Remind reception, escalate to owner, pause that offer’s checkouts.'],
+      ['REDEMPTION_DUE', 'Require extension, refund or credit. Never forfeit silently.'],
+      ['REFUND_OR_CHARGEBACK', 'Invalidate only an unused voucher; reverse the ledger; record post-redemption disputes as loss events.'],
+      ['WEBHOOK_MISMATCH', 'Post no money. Reconcile and alert.'],
+    ],
+    [2900, 6460],
+  ),
+  spacer(),
+  P([B('Never retried: '), T('opt-outs, permanent delivery failures, policy rejections, complaints, sensitive cases.')]),
+  spacer(),
+  H1('§32 · Operating rhythm'),
+  bullet([B('Daily, 15 min — '), T('red queue and provider health.')]),
+  bullet([B('Monday, 30 min — '), T('acquisition and activation funnel; name the single largest drop-off and fix only that.')]),
+  bullet([B('Friday, 45 min — '), T('reconciliation exceptions, refund reserve, message quality, fulfillment health, contribution.')]),
+  bullet([B('Monthly — '), T('provider permissions, access review, restore test, subprocessor and policy changes.')]),
+  bullet([B('Quarterly — '), T('pricing and contribution, security review, long-tail and expansion gates.')]),
+  P([T('She does not read every statement. The system reconciles all of them and surfaces only exceptions.')]),
+  spacer(),
+  H1('§33 · Automatic tripwires'),
+  tbl(
+    ['Signal', 'Automatic action'],
+    [
+      ['Meta quality or template status deteriorates', 'Pause affected sends; review audience and copy before anything else.'],
+      ['Opt-out, block or report rate crosses threshold', 'Pause the campaign or the account; investigate.'],
+      ['Refund or chargeback rate crosses threshold', 'Pause new offer sales; inspect fulfillment and terms.'],
+      ['Any paid booking request exceeds maximum reception SLA', 'Pause that offer’s checkouts; alert reception and owner.'],
+      ['A salon repeatedly strands paid buyers', 'Pause all new sales until fulfillment recovers.'],
+      ['Outstanding vouchers exceed declared capacity', 'Stop sales and new campaigns.'],
+      ['Source snapshot older than 24 hours', 'Invalidate the manifest.'],
+      ['Asaas credential or webhook health fails', 'Stop checkout creation.'],
+      ['Split status is not DONE', 'Recognize no fee.'],
+      ['Conversion weak across two comparable campaigns', 'Change offer economics or stop. Do not merely rewrite copy.'],
+      ['Fully sendable pool stagnates', 'Prioritize consent growth, not more messages.'],
+    ],
+    [3900, 5460],
+  ),
+  spacer(),
+  P([T('Thresholds start conservative and are replaced by provider guidance, counsel and production evidence. They live in configuration, not in hard-coded folklore.')]),
+  spacer(),
+  H1('§34 · Economics, stated honestly'),
+  callout([
+    P([B('Gross fee is not contribution.')]),
+    P([MONO('Recognized fee = 20% × settled Asaas netValue where split = DONE')]),
+    P([MONO('Contribution = recognized fee − Meta/BSP cost − support tooling − referral commission − fiscal issuance − infrastructure − loaded founder/ops minutes − tax accrual − unrecovered refund and chargeback loss')]),
+    P([T('Asaas fees are already removed from '), MONO('netValue'), T(' — do not subtract them twice. Actual minutes are recorded by activation, campaign, provider exception, refund and support category '), B('from account one'), T('.')]),
+  ]),
+  P([B('The salon’s dashboard '), T('shows gross customer payments, Asaas fees, the Caixa fee, refunds and chargebacks, net cash received, outstanding prepaid voucher liability, and redemptions. '), B('It does not call cash received "ROI"'), T(' — true ROI needs discount and service-delivery cost, which Caixa does not have. Use '), I('valor líquido recebido'), T(' and '), I('caixa liquidado por cliente entregue'), T('.')]),
+  H3('North star'),
+  P([B('Settled GMV per delivered recipient, paired with refund and redemption rates. '), T('Paired, because aggressive selling must not be able to look successful while fulfillment quietly fails.')]),
+  H3('On the income ambition'),
+  P([T('The R$150k/month personal target is retained as '), B('an aspiration, not a dated forecast'), T('. Every account and portfolio number is rebuilt from actual sendable pool, actual settled conversion, actual price, actual refund and redemption, actual repeat frequency, actual contribution and actual founder minutes. Revenue is lumpy by construction: backlog harvest, then new-lapse cohorts, then seasonality.')]),
+  P([B('The split removes collection work; it does not remove invoicing. '), T('The fiscal module closes recognized fee events by salon, issues or exports Caixa’s own NFS-e at the cadence the municipality and contador permit, links corrections to refunds, and reconciles invoice totals to the fee ledger. It never invoices an unpaid, refused or reversed split. Taxes, Fator R, NFS-e cadence, dividend withholding and entity structure are confirmed by the contador under current law.')]),
+  callout([
+    P([B('Reversal reserve. '), T('Fee cash attached to open withdrawal, refund, dispute and chargeback exposure is not distributable. Until real reversal history exists, the reserve is ring-fenced from ordinary spending and replaced only by a trailing, contador-approved policy.')]),
+    P([B('Launch cash gate. '), T('Before accepting production uploads, committed cash must cover legal and contador, BSP/Meta setup, Asaas proofs and reversal float, external security review and remediation, infrastructure, Beauty Fair commitments, six months of founder-essential fixed costs, and the separate reserve. '), B('If that gate is not funded, the sequence narrows to provider approvals and synthetic build work'), T(' — it does not take consumer money and hope settlement fees finance unfinished obligations.')]),
+  ], 'F4F1EA', AMBER),
+  spacer(),
+  H1('§35 · The hiring gate'),
+  P([T('Do not wait until operations eat 60% of the month. Open an operations hire or contracted support when '), B('any'), T(' of these fires: a four-week forecast above 70% of founder capacity; a P1/P2 SLA missed twice in a month; growth work displaced two weeks running; p90 support time above the self-service gate; or core-account launches queuing behind routine work.')]),
+  P([T('The first hire inherits versioned runbooks and the product queue — not the founder’s memory.')]),
+  spacer(),
+  H1('§36 · Gate order'),
+  P([T('Dates are sequencing targets. Provider, legal, security, data, fulfillment and cash gates control release and may move every date without lowering the standard.')]),
+  P([MONO('legal + provider spine → secure data and consent spine → complete production vertical slice → three founding production salons → assisted self-service cohort → public self-service → long tail')]),
+  P([B('No "MVP" that stops before redemption and refund counts as proof.')]),
+  spacer(),
+  H1('§37 · Launch-blocking proofs'),
+  tbl(
+    ['Area', 'Must be proven in production, not described'],
+    [
+      ['Data', 'Real export bundles from 3+ Trinks salons map every required field. Manual comparison proves that future-booked, indebted, credited, suppressed, duplicated, known-minor, stale and unconsented records all fail closed. Consent provenance is genuinely present, never inferred.'],
+      ['Meta', 'The selected BSP supports Embedded Signup v4 and coexistence on a real salon number. A non-technical owner completes the flow. Human echoes register. Template creation, review, delivery, opt-out, quality and the current account limit are all visible.'],
+      ['Asaas', 'Written topology approval. One real salon account connects securely. One real payment settles with the correct netValue split. One real refund reverses both portions. A real hosted checkout with notificationDisabled=true produces no uncontrolled Asaas reminder. Replay, duplicate click, expired checkout and split refusal corrupt nothing.'],
+      ['Full loop', 'Real authorized recipients complete: send → offer page → checkout → voucher → customer-initiated booking → redemption → statement. Separately proven: a forwarded link that exposes no payment status, a refused split that still fulfills the buyer, a full refund with symmetric reversal, and a post-redemption dispute accounted as a loss.'],
+      ['Security', 'Tenant isolation tests pass. No customer data or secret in logs. Both kill switches work. Backup restore works. External review completed before public self-service.'],
+    ],
+    [1500, 7860],
+  ),
+  spacer(),
+  H1('§38 · Sequence'),
+  tbl(
+    ['Window', 'Work', 'Exit'],
+    [
+      ['24–31 Jul', 'Entity, contador, counsel, service agreement, DPA, offer terms. Select BSP; start Meta approvals. Request written Asaas topology confirmation. Request Conecta Trinks partner access. Collect real export bundles. Build tenant isolation, auth, secrets, upload security, event model, kill switches.', 'Security spine exists before any customer data.'],
+      ['1–8 Aug', 'Bundle validator and provenance. Consent and suppression ledger. Eligibility engine. Scan authorization and task board.', 'A real bundle is accepted; every required unknown and forbidden condition fails closed.'],
+      ['9–16 Aug', 'Asaas guided connection and health. Meta Embedded Signup v4 via the BSP. Offer Contract and inventory. Template, manifest, approval, outbox, tranche scheduler.', 'A real salon number is connected; an exact manifest is approved; no unapproved send is possible.'],
+      ['17–24 Aug', 'Stable offer page. Just-in-time checkout. Voucher, reception task, redemption, cancellation, refund. Owner and internal dashboards.', 'The full vertical slice works with real money.'],
+      ['25–31 Aug', 'Small real campaigns with three founding salons. At least one redemption and one refund completed. Fix exceptions in the same production screens.', 'Critical defects closed; build frozen for the fair.'],
+      ['1–4 Sep', 'Synthetic demo tenant, secure QR onboarding, scripts, incident and provider runbooks.', 'No risky changes remain unshipped.'],
+      ['5–8 Sep', 'Beauty Fair — synthetic demonstration, permissioned leads, secure scans.', 'No live activation is promised on the floor; no gate is waived for the event.'],
+      ['9 Sep on', 'Weekly founding and core-ICP campaigns. Publish permissioned measured results. Assisted self-service after the first three.', 'Public self-service opens only on §39.'],
+    ],
+    [1150, 5210, 3000],
+  ),
+  spacer(),
+  H1('§39 · The gate that replaces the 100-accounts claim'),
+  P([T('After at least 20 real production onboardings, all of these must hold:')]),
+  bullet([T('80%+ of prerequisite-ready owners finish with no synchronous founder help.')]),
+  bullet([T('Owner active time p50 ≤ 20 min, p90 ≤ 35 min. Founder support p50 ≤ 10 min, p90 ≤ 30 min.')]),
+  bullet([T('90%+ of device handoffs resume successfully; under 10% stalled past 7 days for a Caixa-controlled reason.')]),
+  bullet([T('Zero unapproved sends, duplicate charges, cross-tenant exposures or secret leaks.')]),
+  bullet([T('Every eligibility-required unknown fails closed; suppression passes on every campaign.')]),
+  bullet([T('Repeat campaigns need no founder data preparation.')]),
+  bullet([T('Reception workload and response time stay inside the Offer Contract; no paid buyer unresolved past maximum SLA.')]),
+  bullet([T('Campaign contribution stays positive after loaded support; Asaas and Meta approvals current.')]),
+  callout([
+    P([B('Twenty accounts can justify opening public self-service. They cannot prove a 100-account claim. '), T('Caixa may claim capacity for 100 new live accounts per month only after an actual rolling 30-day period handles that volume through activation, templates, sends, handoffs, paid-voucher fulfillment, refunds and support with every p90 and contribution gate green — and only after the BSP confirms its own capacity for that onboarding volume in writing.')]),
+    P([T('The first 20 are real production accounts on the finished portal with the founder watching. They are not a concierge process wearing the product’s name.')]),
+  ], 'F4F1EA', AMBER),
+  new Paragraph({ children: [new PageBreak()] }),
+);
+
+// ---------- PART VII ----------
+body.push(partBanner('Part VII', 'Expansion, risk, and what "done" means'), spacer());
+
+body.push(
+  H1('§40 · What ports, and what does not'),
+  P([B('Generic — already vertical-agnostic: '), T('consent evidence and suppression; owner authorization and audit; template sending and conversation windows; stable offer URLs; checkout, split, refund and ledger; voucher state; owner lifecycle automation; exception queues and dashboards.')]),
+  P([B('Vertical-specific — a policy pack, not just a CSV mapping: '), T('the source connector and event mapping; what counts as a completed visit; cadence and lapse rules; future-service, debt, dispute and liability exclusions; consent-capture norms; offer archetypes; capacity, booking, redemption and refund rules; sensitive-data and age exclusions; economics and qualification thresholds; and the hard-handoff topic list.')]),
+  P([B('So the honest answer to "can this go into other niches" is yes — but not for free. '), T('The kernel ports. The importer, the policy pack and the fulfillment model do not. Anyone who says a new vertical is "just a new importer" has not shipped one.')]),
+  spacer(),
+  H1('§41 · Expansion gates'),
+  bullet([B('Gate A — second importer in beauty: '), T('opens when 3+ qualified prospects share one system, or one multi-unit signed contract clears fully loaded build and support cost; real exports from multiple accounts prove the schema; the same consent and exclusion evidence exists; and the connector will not become a permanent second manual ritual.')]),
+  bullet([B('Gate B — second vertical: '), T('opens only after repeatable positive contribution in beauty, passed self-service gates, 3+ paid production candidates on the same source system, counsel approval of the data category, a complete fulfillment pack, and payback on connector plus support work.')]),
+  bullet([B('Gate C — active-base campaigns: '), T('same machinery, bigger pool. Opens when win-back telemetry is boring across 20+ accounts. This is where revenue stops depending on lapse alone.')]),
+  bullet([B('Gate D — the ops hire: '), T('per §35.')]),
+  bullet([B('Gate E — the customer conversation layer: '), T('opens only with real reply-traffic evidence that reception is the bottleneck, and then deterministic-first. Cut in §0.5; reversible on data, not on enthusiasm.')]),
+  bullet([B('Gate F — the POS consent kit: '), T('opens once the core loop is boring and there is a measured queue of salons blocked only on consent.')]),
+  spacer(),
+  H1('§42 · Vertical priority, when a gate ever opens'),
+  tbl(
+    ['Candidate', 'Verdict'],
+    [
+      ['Premium barbershops already on Trinks', 'Strongest — an ICP extension inside the same non-medical kernel and the same importer. Subject only to ticket and sendable-pool economics.'],
+      ['A second beauty importer (same vertical, new source)', 'Next — proves the connector abstraction without touching policy or fulfillment.'],
+      ['Premium non-clinical pet grooming and daycare', 'Plausible cadence and package behavior, but a new source system, a fresh privacy analysis and a different fulfillment model.'],
+      ['Premium auto detailing / subscription care', 'Plausible ticket, unproven dominant data source in Brazil.'],
+      ['Dental and aesthetic clinics', 'Closed. Health-adjacent data under LGPD Art. 11 — the exclusion that protects the whole model.'],
+      ['Restaurants', 'Closed. No client-level purchase records to compute lapse from.'],
+      ['Gyms, photography, driving schools', 'Closed at this stage — cadence, source or consent norms do not clear the same filters.'],
+    ],
+    [3100, 6260],
+  ),
+  spacer(),
+  H1('§43 · Ranked risk register'),
+  tbl(
+    ['#', 'Risk', 'Status', 'Response'],
+    [
+      ['1', 'Trinks sources do not carry complete consent and exclusion evidence', 'STOP', 'No campaign. Prove the bundle or the connector; otherwise grow new permission first.'],
+      ['2', 'Asaas does not approve the third-party-key split topology', 'STOP', 'Assisted approved topology, a private partnership, or no launch.'],
+      ['3', 'BSP/coexistence cannot support real salon numbers reliably', 'STOP', 'Change BSP before public launch. Never use unofficial automation.'],
+      ['4', 'Offer sells but the salon cannot fulfill', 'STOP', 'Inventory cap, capacity attestation, reception task, refund path.'],
+      ['5', 'Owner onboarding drops at the provider/admin steps', 'PROVE', 'Saved board, one resumable link, exact recovery copy, instrument every step.'],
+      ['6', 'Consent pool too small for viable economics', 'PROVE', 'Do not send and do not exaggerate potential. Gate F, later.'],
+      ['7', 'Split refused after the customer paid', 'P1', 'Fulfill the customer; quarantine the fee; reconcile topology.'],
+      ['8', 'Refund reversals create a cash shortfall', 'P1', 'Reserve policy and delayed distribution.'],
+      ['9', 'Meta quality deteriorates', 'STOP', 'Pause tenant or template; inspect audience, copy and consent.'],
+      ['10', 'Source data goes stale before send', 'STOP', '24-hour freshness gate; rebuild the manifest.'],
+      ['11', 'Public long tail consumes founder capacity', 'STOP', 'Contribution and support gates. Core ICP first.'],
+      ['12', 'Generated code leaks data or crosses tenants', 'P0', 'Foundation controls, tests, external review, kill switches.'],
+      ['13', 'Native Trinks features erode perceived differentiation', 'Commercial', 'Sell managed conversion, fulfillment and results-only pricing — not sending.'],
+    ],
+    [500, 3400, 1000, 4460],
+  ),
+  spacer(),
+  H1('§44 · No-go conditions'),
+  P([T('Do not send a production campaign when any of these is true:')]),
+  bullet([T('consent provenance is absent or ambiguous;')]),
+  bullet([T('any eligibility-required exclusion fact is absent, unknown or stale;')]),
+  bullet([T('owner authorization is missing or invalidated;')]),
+  bullet([T('offer capacity or terms are incomplete;')]),
+  bullet([T('reception has no handoff route;')]),
+  bullet([T('Meta template, quality, account or limit state is unsafe;')]),
+  bullet([T('Asaas account, key, Pix, webhook or split health is unsafe;')]),
+  bullet([T('an unresolved P0 or relevant P1 exists;')]),
+  bullet([T('a paid buyer is stranded beyond maximum reception SLA;')]),
+  bullet([T('the salon cannot honor its outstanding prepaid obligations;')]),
+  bullet([T('the retention schedule or the launch cash gate is unapproved;')]),
+  bullet([T('expected contribution is negative.')]),
+  spacer(),
+  H1('§45 · Explicitly deferred'),
+  P([T('Second importer · second vertical · AI receptionist · per-client generated prose · automatic live booking before formal Trinks access · deposits, subscriptions and multi-session packages · abandoned-checkout WhatsApp reminders · active-base promotions · debt reminders · custom white-glove campaigns · multiple PSPs or BSPs · microservices.')]),
+  P([B('Each deferred item needs a written gate, and must replace or simplify something to enter. '), T('That rule is what keeps v5 from becoming v2 again.')]),
+  spacer(),
+  H1('§46 · Final acceptance test'),
+  P([T('Ready for assisted launch only after real production events prove each path independently:')]),
+  bullet([T('an owner authorizes data, completes fail-closed eligibility, activates both providers, freezes an Offer Contract and approves an exact manifest;')]),
+  bullet([T('a recipient receives the template, buys directly, accepts the frozen terms, completes one idempotent Pix checkout, receives a voucher on authenticated confirmation, initiates booking, redeems, and appears correctly in provisional and final statements;')]),
+  bullet([T('a forwarded link records intended recipient and actual purchaser separately and exposes no payment status;')]),
+  bullet([T('a paid transaction fulfills even when the split is refused, while Caixa recognizes no fee;')]),
+  bullet([T('a full refund reverses payment and split and invalidates only the unused voucher;')]),
+  bullet([T('a post-redemption dispute records the loss and reversal without pretending the service was un-consumed;')]),
+  bullet([T('Asaas emits no uncontrolled customer notification;')]),
+  bullet([T('opt-out suppresses at import, manifest and send;')]),
+  bullet([T('safe termination, portable suppression export, credential revocation, retention and deletion are rehearsed.')]),
+  P([B('That set of real loops is the proof. '), T('Not a survey, not a mock checkout, not a founder-operated shadow process wearing the product’s name.')]),
+  spacer(),
+  H1('§47 · Where this ends up'),
+  P([T('Caixa Cheia wins if it becomes the safest button in the salon: the system knows who may be contacted, the owner knows exactly what she authorized, the client gets a real and fulfillable offer, questions reach a person, payment and voucher and redemption and refund stay connected, the salon pays only when campaign money settles, and the founder sees only consequential exceptions.')]),
+  P([B('The strongest version of this business is not the most autonomous-looking version. '), T('It is the one where routine work disappears, external uncertainty is visible instead of hidden behind a spinner, customer obligations are never dropped, and every ambiguous condition stops safely. After 24 months of that, she owns the only dataset of its kind — measured win-back conversion by offer, segment, ticket and season across hundreds of Brazilian beauty businesses — plus the trust position of the operator who only ever charged for money that landed.')]),
+  spacer(),
+  H1('§48 · Source ledger'),
+  P([I('Re-verify every entry against primary documentation immediately before implementation. Provider APIs and policies change, and this document is only as current as its last check.')]),
+  H3('Meta / WhatsApp'),
+  bullet([T('Embedded Signup overview, implementation, versions, and Business-App coexistence onboarding — developers.facebook.com (business-messaging/whatsapp/embedded-signup/…)')]),
+  bullet([T('Template review · messaging limits — developers.facebook.com/documentation/business-messaging/whatsapp/')]),
+  bullet([T('WhatsApp Business Messaging Policy — whatsappbusiness.com/policy/')]),
+  bullet([T('WhatsApp Business Solution Terms — whatsapp.com/legal/business-solution-terms')]),
+  H3('Asaas'),
+  bullet([T('Authentication and web-only API-key creation · key lifecycle and security — docs.asaas.com/docs/autenticacao, /chaves-de-api')]),
+  bullet([T('Account validation documents — central.ajuda.asaas.com')]),
+  bullet([T('Pix · payment split and reversal · Pix checkout, expiry and callbacks — docs.asaas.com/docs/pix, /split, /checkout-para-pix')]),
+  bullet([T('Customer notifications and notificationDisabled · webhook creation — docs.asaas.com/docs/notificacoes, /criar-novo-webhook-pela-api')]),
+  bullet([T('Subaccount regulatory evaluation · BaaS — docs.asaas.com/docs/criacao-de-subcontas, /sobre-baas')]),
+  H3('Trinks'),
+  bullet([T('Client and CRM reports · import/export · package balances · customer debts — ajuda.trinks.com')]),
+  bullet([T('Conecta Trinks API and webhooks · native return invitation — ajuda.trinks.com')]),
+  H3('Brazil legal and regulatory'),
+  bullet([T('LGPD, Law 13.709/2018 — planalto.gov.br')]),
+  bullet([T('ANPD Resolution 2/2022, small processing agents — gov.br/anpd')]),
+  bullet([T('Ministry of Justice online-consumer withdrawal guidance — gov.br/mj')]),
+  bullet([T('Law 15.270/2025, 2026 dividend rules — planalto.gov.br')]),
+  bullet([T('CPC 47, revenue from contracts with customers — cpc.org.br')]),
+  bullet([T('Beauty Fair 2026 registration and dates — beautyfair.com.br')]),
+);
+
+// ---------- document ----------
+const doc = new Document({
+  styles: {
+    default: {
+      document: { run: { font: 'Calibri', size: 26, color: INK }, paragraph: { spacing: { line: 360 } } },
+      heading1: { run: { font: 'Calibri', size: 40, bold: true, color: GREEN } },
+      heading2: { run: { font: 'Calibri', size: 30, bold: true, color: GREEN2 } },
+      heading3: { run: { font: 'Calibri', size: 27, bold: true, color: INK } },
+    },
+  },
+  numbering: {
+    config: [{
+      reference: 'bul',
+      levels: [
+        { level: 0, format: LevelFormat.BULLET, text: '•', alignment: AlignmentType.LEFT,
+          style: { paragraph: { indent: { left: 460, hanging: 260 } } } },
+        { level: 1, format: LevelFormat.BULLET, text: '◦', alignment: AlignmentType.LEFT,
+          style: { paragraph: { indent: { left: 920, hanging: 260 } } } },
+      ],
+    }],
+  },
+  features: { updateFields: true },
+  sections: [{
+    properties: {
+      page: { size: { width: 12240, height: 15840 }, margin: { top: 1440, bottom: 1440, left: 1440, right: 1440 } },
+      titlePage: true,
+    },
+    footers: {
+      default: new Footer({
+        children: [new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({ text: 'Caixa Cheia · Canonical Plan v5 · ', color: GREY, size: 18 }),
+            new TextRun({ children: [PageNumber.CURRENT], color: GREY, size: 18 }),
+          ],
+        })],
+      }),
+    },
+    children: body,
+  }],
+});
+
+Packer.toBuffer(doc).then(buf => {
+  require('fs').writeFileSync('/home/user/Random-Access-Memories/CAIXA_CHEIA_V5.docx', buf);
+  console.log('written', buf.length, 'bytes');
+});
