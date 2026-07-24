@@ -187,6 +187,7 @@ body.push(
   ]),
   spacer(),
   P([B('Delivery chain, verified against the real world (July 2026): '), T('Trinks natively exports a client-debt report and a package-balance report — the audit’s two money buckets are ready-made files, not an integration project. Asaas split is live for Pix, boleto and card via API with subaccounts — the fee routes itself. Full Google-review histories are fetchable through licensed APIs for a few reais per salon. And the floor sending mode — reception sends a generated one-tap list from the salon’s own phone — works for any salon on day one, no platform required.')]),
+  P([B('And the lane is verified open: '), T('Brazil is full of DIY reactivation tools (SocialHub, iZap, RobotiZap) and platform checkboxes — all things the owner must operate herself — and has no visible done-for-you, success-fee operator for beauty. In the US, Winback Engine proves the exact model at 20% of net recovered revenue. Demand proven, model proven, position unoccupied. (§2 has the full map and the positioning rules.)')]),
   new Paragraph({ children: [new PageBreak()] }),
 );
 
@@ -208,6 +209,18 @@ body.push(
   bullet([B('Success-fee accountability. '), T('Everyone else in the owner’s life charges her whether or not it works — the platform, the agency, the consultant. Caixa Cheia is the only line on her books that is pure profit by construction. That sentence closes deals and kills churn.')]),
   bullet([B('The recovery dataset. '), T('From wave one she measures what nobody in Brazil knows: which message, at which hour, to which segment, brings which % of money back — by service, by ticket, by city. Every account makes the next one better. Copyable method, uncopyable memory.')]),
   bullet([B('The rail. '), T('Once the salon’s booking deposits run through her Pix links, she is no longer a campaign — she is infrastructure. Even an account whose backlog is fully cured keeps paying the rail. This is the lock-in that survives her own success.')]),
+  spacer(),
+  H3('The field, honestly — verified July 2026'),
+  P([T('Reactivation is not empty space — it is '), B('crowded with tools and empty of outcomes'), T('. DIY WhatsApp win-back tools (SocialHub, iZap, RobotiZap and a dozen more) sell segmentation and disparos as monthly SaaS the owner must operate herself. The platforms are commoditizing the feature — Trinks’ own blog teaches reactivation campaigns and ships birthday automations. Deposit and recurring-billing tools exist (Frizzar sells cobrança de sinal; Vindi and InfinitePay do recurrence). And in the US, '), B('Winback Engine proves the exact model'), T(' — done-for-you win-back at 20% of net recovered revenue, no monthly fee, aimed at multi-location service businesses — with no visible equivalent in Brazilian beauty.')]),
+  P([T('Read that as a market saying yes: demand proven, money proven, model proven elsewhere — '), B('position unoccupied'), T('. Every Brazilian competitor sells a tool; the owner already had tools and didn’t use them, because the job was never information — it was the awkward work. Done-for-you plus success-fee is the entire difference. And the collections bucket is the least contested of all: nobody wants to chase salon debts for a living. She does — politely, in code.')]),
+  H3('Positioning rules — never break these'),
+  bullet([B('Never sell “software” or “automação”. '), T('She would be compared to R$99/month tools and lose. She sells: '), PT('eu faço, e você só paga do que voltar.')]),
+  bullet([B('Never charge a mensalidade. '), T('The moment a monthly fee exists, she competes with every SaaS above on their terms.')]),
+  bullet([B('Always lead with the voice audit. '), T('Nobody else in the market opens with “o que suas clientes estão dizendo”. It is the one unclaimed front door.')]),
+  bullet([B('The moats are time-based — say so. '), T('The method is copyable in two months; the recovery-rate dataset, the distributor relationships, and a good name in a ~400-salon market are not. Speed is the strategy; month one being slow costs the only thing that can’t be bought back.')]),
+  bullet([B('Who could kill it, watched openly: '), T('Trinks shipping done-for-you collections (unlikely — tool DNA, success-fee liability, and their analytics can never conclude “your platform setup is losing you money”); or a fast copycat cloning Winback Engine for salons (possible — which is exactly why she launches now and hoards the dataset).')]),
+  H3('The pilot promise (ported from the US playbook)'),
+  P([T('Winback Engine de-risks with “5× your fees in 30 days or your money back.” Her version, KISS: the R$490 audit already guarantees '), B('≥R$3.000 found — six times the price — or refunded'), T('. When the owner signs the mandate on the delivery call, '), B('the R$490 is credited against the first success fee'), T('. And if the first backlog wave recovers nothing, the audit is refunded too. Nobody can lose money trying her — and she can afford that promise because the finder is deterministic.')]),
   spacer(),
 
   H1('§3 · Why her, specifically'),
@@ -262,6 +275,7 @@ body.push(
   bullet([B('O gap '), T('— where promise and experience diverge: '), I('“você vende acolhimento; 40% das queixas são resposta lenta.”')]),
   bullet([B('A prioridade '), T('— the one thing to fix first. One, not thirty.')]),
   bullet([B('A ponte '), T('— the gap named in money: '), PT('clientes que amam o método mas não conseguem usar o pacote, e somem. Isso é dinheiro dormindo. Quer o número real, com nome e valor? Raio-X do Caixa — R$490, com garantia.')]),
+  P([T('Salons with too few public reviews (under ~40) still get a door: the brand-voice half plus the self-serve audio variant — eight questions answered by WhatsApp voice note, a deterministic calculator, the same PDF. The funnel never closes for lack of data.')]),
   P([B('Triple duty: '), T('(1) the lead magnet — magnetic, giftable, demonstrates the exact craft the business runs on; (2) '), B('voice calibration'), T(' — the brand-voice half becomes the tone profile the wave engine writes with, so recovery messages provably sound like her; (3) '), B('recovery intelligence'), T(' — the customer-voice half tells the engine WHY clients drift (favorite professional left, can’t book, price jump), so win-back messages address the real reason, never a generic “sentimos sua falta”.')]),
   P([B('The funnel is one truth at three resolutions: '), T('feeling ('), I('suas clientes dizem que não conseguem agendar o pacote'), T(') → number ('), I('são R$18.400 em pacotes parados'), T(') → money ('), I('recuperei R$11.200 esse mês'), T('). Each rung zooms in; the subject never changes. Delivery chat follow-up doubles as qualification: '), PT('qual sistema você usa — Trinks, Belasis, Avec?'), T(' answers the data question before the R$490 is ever offered. The audit stays free and internal forever — it is a door and an engine input, never a paid product; charging for it would drift into crowded salon-marketing consulting, exactly the red ocean this business avoids.')]),
   spacer(),
@@ -298,6 +312,8 @@ body.push(
     P([B('Rule 2 — names never reach the AI. '), T('Message templates are drafted against pseudonyms; a deterministic mail-merge inserts real names and Pix links locally, after the AI is done.')]),
     P([B('Rule 3 — a human gate before anything external. '), T('The owner approves every wave (one tap). She reviews every new account’s first wave and every dispute. Automation does labour, never accountability.')]),
   ]),
+  spacer(),
+  P([B('The stack is frozen — on purpose. '), T('One repo, one FastAPI service, one Postgres, one server, daily backup. WhatsApp + Asaas + a PDF engine, and nothing else without deleting something first. No microservices, no queues, no second database. Every module is a folder; every behavior is a written spec that Claude Code maintains (the SKILL.md pattern) — she changes the business by editing sentences, not code. Boring technology is a feature: the company must survive her taking a week off, and it will, because the machine’s whole shape fits in one person’s head.')]),
   spacer(),
   tbl(
     ['Module', 'Job', 'Runs'],
@@ -396,7 +412,7 @@ body.push(
 
   H1('§17 · The legal spine (ported whole from the blueprint, adapted)'),
   bullet([B('Entity: '), T('ME or SLU · CNAE 7020-4/00 principal (+ 8291-1/00 cobrança as secondary — decide with the accountant) · Simples Nacional · contador from day 1 — premium salons require nota fiscal; the CNPJ is a precondition for the first sale.')]),
-  bullet([B('Contract stack (lawyer-reviewed once, ~R$1.5–3k): '), T('service contract (mandate scope, the 25%, attribution definition, monthly reconciliation, liability cap, labour-law exclusion) · DPA (salon = controladora, she = operadora; AI provider named as sub-operator; international-transfer clause per ANPD Res. 19/2024) · LIA template handed to the salon · mutual NDA.')]),
+  bullet([B('Contract stack (lawyer-reviewed once, ~R$1.5–3k): '), T('service contract (mandate scope, the 25%, attribution definition, monthly reconciliation, liability cap, labour-law exclusion, '), B('post-termination window'), T(' — fees due on recoveries attributable to contacts made before cancellation, for 30 days after) · DPA (salon = controladora, she = operadora; AI provider named as sub-operator; international-transfer clause per ANPD Res. 19/2024; '), B('retention schedule'), T(' — raw exports deleted at delivery +30 days, pseudonymized working set +90, written deletion confirmation) · LIA template handed to the salon · mutual NDA.')]),
   bullet([B('Collections law, compiled into code: '), T('CDC Art. 42/71 — no embarrassment, no threats, no third parties, principal only, private 1:1 always, instant opt-out, 3-touch cap, 5-year prescription filter. The template linter blocks violations before any human sees them.')]),
   bullet([B('Lei do Salão Parceiro guardrail: '), T('messages and reports never score or direct profissionais-parceiras — reception process and client outcomes only. The eight-second version of this, said in the sales call, closes deals by itself.')]),
   bullet([B('Absolute prohibitions: '), T('never health data · never hold client money · never message without the owner’s standing instruction + wave approval · never mix one client’s data into another’s · never claim anonymization (it is pseudonymization) · never guarantee recovery amounts — guarantee the audit, never the result.')]),
@@ -411,7 +427,7 @@ body.push(
   tbl(
     ['Window', 'Do', 'Exit with'],
     [
-      ['Weeks 1–2 · Aug 1–14', 'Entity + contador + lawyer on contracts · Claude Code builds CAPTA + RAIO-X · Salão Aurora sample built and watermarked · CNPJ list pulled and scored', 'Working funnel front + the demo artifact'],
+      ['Weeks 1–2 · Aug 1–14', 'Entity + contador + lawyer on contracts · Claude Code builds CAPTA + RAIO-X · Salão Aurora sample built and watermarked · CNPJ list pulled and scored · 20-min competitor scan (Instagram/Google: “recuperação de clientes salão”) to confirm the lane is still open', 'Working funnel front + the demo artifact'],
       ['Weeks 3–4 · Aug 15–28', 'Funnel live · content starts (1/day) · 20 owner conversations · 5 distributor meetings booked · ONDAS + PSP built', 'First 30 free audits done · first 3 paid Raio-X sold'],
       ['Week 5 · Aug 29–Sep 4', 'Deliver audits · close first 2–3 mandates at 15% · fair prep (tablet, QR, 60-second pitch)', 'First waves approved and sent · first Pix splits land'],
       ['Days 36–39 · Sep 5–8', 'BEAUTY FAIR: 10 distributor relationships · 50 free audits at the stand · 5 paid audits closed on the spot', 'A pipeline that outlives September'],
@@ -422,6 +438,15 @@ body.push(
   ),
   spacer(),
   P([B('Her operating week from month 4: '), T('Mon — pipeline + new-account onboarding. Tue–Thu mornings — sales calls (audit deliveries); afternoons — first-wave reviews and disputes. Fri — Extrato review + content batch. The machine sends, collects, splits, reconciles and reports without her. Twenty-five hours a week runs it; the rest is growth.')]),
+  spacer(),
+
+  H1('§19 · Running it KISS — five numbers, three rituals, one rule'),
+  P([T('The whole company is managed on '), B('five numbers'), T(', read from one dashboard: leads this week · audits sold · active mandates · R$ recovered this month · fee collected. If a report doesn’t move one of the five, it doesn’t exist. No CRM, no project tool, no marketing stack — WhatsApp, the PAINEL, and one pipeline sheet.')]),
+  bullet([B('Monday, 30 minutes — the pipeline: '), T('leads → audits → mandates; pick the week’s ten outreach targets. Done before coffee is cold.')]),
+  bullet([B('Every morning, 2 hours — growth block: '), T('prospecting and sales only. Delivery never invades it; afternoons belong to audit-delivery calls and first-wave reviews.')]),
+  bullet([B('Friday, 1 hour — the close: '), T('read every Extrato before it ships (first six months), batch next week’s content, log the five numbers. That log IS the board meeting.')]),
+  P([B('The rule of one: '), T('one ICP, one city, one fee (25%), one channel priority per quarter, at most one new capability per month — and any new complexity must delete an old one. The moment operating the business needs a manual she hasn’t written, it has drifted; stop and simplify.')]),
+  P([B('Tripwires, with responses pre-written: '), T('disputes >1 per 50 accounts/month → freeze new onboarding, fix templates first. Wave replies <5% two weeks running → pause that segment, rewrite with drift-reasons. First-wave review errors rising → push a delivery date, never the review. Churn >5%/month → stop selling, interview the last five losses. Overload reveals itself in these numbers before any client feels it — that is what the numbers are for.')]),
   new Paragraph({ children: [new PageBreak()] }),
 );
 
@@ -429,7 +454,7 @@ body.push(
 body.push(partBanner('Part VI', 'Scale — the levers and the endgame'), spacer());
 
 body.push(
-  H1('§19 · The levers, in order'),
+  H1('§20 · The levers, in order'),
   bullet([B('Lever 1 — Mode 2 everywhere. '), T('Graduating accounts from reception-sends to system-sends drops her marginal minutes toward zero and makes 100+ accounts a dashboard, not a job.')]),
   bullet([B('Lever 2 — the rail as default. '), T('Every mandate adopts deposit links in onboarding (“your new no-show policy”). Rail revenue is churn-proof and grows with the client’s success, not their leak.')]),
   bullet([B('Lever 3 — ops hire #1 at ~55 accounts '), T('(ex-receptionist, manual in a folder, CLT). Her hours shift to sales; the Fator R math makes the hire partially tax-self-funding.')]),
@@ -437,7 +462,7 @@ body.push(
   bullet([B('Lever 5 — adjacent verticals, same machine. '), T('Barbershops premium, nail studios with packages, pet grooming, tattoo studios — anywhere value is sold forward and clients drift. Health-adjacent only in year 2+, with counsel, or never.')]),
   spacer(),
 
-  H1('§20 · The endgame asset'),
+  H1('§21 · The endgame asset'),
   P([T('By month 24 she owns the only dataset of its kind in Brazil: measured recovery rates — message × segment × timing × ticket — across a hundred-plus salons, plus a deposit rail humming underneath the sector’s no-show problem. That unlocks year-3 options from a position of strength: the published '), B('Índice Caixa Cheia'), T(' (the sector’s benchmark for money left on the table), speaking slots at the fair she once walked with a tablet, licensing conversations with the booking platforms — who by then will want the one capability they structurally cannot build: the willingness to be accountable for results.')]),
   spacer(),
   callout([
