@@ -312,6 +312,49 @@ def tab_sources(wb):
         r += 1
     ws.freeze_panes = "A5"
 
+
+# ---------------------------------------------------------------- PF targets
+def tab_pf(wb, ref):
+    from pfdata import HEADLINE, ROWS, FOOTER
+    ws = wb.create_sheet("PF Targets")
+    title(ws, "The lending list — Fitch's watch-listed project financings, against our claim data",
+          "Two independent sources that agree: Fitch's published Rating Watch Negative list, and our own "
+          "eligible-claim computation from raw ONS data. 5,414 GWh — 21.4% of the national pool — sits inside these.")
+    r = 4
+    for h in HEADLINE:
+        put(ws, r, 1, h, bold=(r == 4), color="C00000" if r == 5 else BLACK, size=10 if r < 6 else 9)
+        for cc in range(2, 8): put(ws, r, cc, "")
+        r += 1
+    r += 1
+    hdr(ws, r, ["Fitch entity", "Our matched complexes", "UF", "Eligible GWh", "Est. claim (R$m)",
+                "Rating and coverage detail", "Sponsor / SPEs", "Named contact", "Why this one"],
+        [30, 30, 5, 10, 11, 54, 44, 42, 62]); r += 1
+    first = r
+    for fe, cxs, uf, gwh, rating, sponsor, contact, why in ROWS:
+        put(ws, r, 1, fe, bold=True)
+        put(ws, r, 2, cxs)
+        put(ws, r, 3, uf, align="center")
+        put(ws, r, 4, gwh if gwh else "n/a", fmt=NUM if gwh else None, align="right")
+        put(ws, r, 5, f"=IF(ISNUMBER(D{r}),D{r}*1000*Assumptions!{ref['price']}/1000000,\"n/a\")",
+            fmt=NUM, align="right", bold=True)
+        put(ws, r, 6, rating)
+        put(ws, r, 7, sponsor)
+        put(ws, r, 8, contact)
+        put(ws, r, 9, why)
+        r += 1
+    put(ws, r, 1, "TOTAL matched", bold=True, fill=SUBFILL)
+    for cc in (2, 3, 6, 7, 8, 9): put(ws, r, cc, "", fill=SUBFILL)
+    put(ws, r, 4, f"=SUM(D{first}:D{r-1})", fmt=NUM, bold=True, fill=SUBFILL, align="right")
+    put(ws, r, 5, f"=SUM(E{first}:E{r-1})", fmt=NUM, bold=True, fill=SUBFILL, align="right")
+    r += 2
+    for a, b in FOOTER:
+        put(ws, r, 1, a, bold=True, color=NAVY)
+        put(ws, r, 2, b)
+        for cc in range(3, 10): put(ws, r, cc, "")
+        r += 1
+    ws.freeze_panes = "C" + str(first)
+
+
 if __name__ == "__main__":
     import build as base
     wb = openpyxl.Workbook(); wb.remove(wb.active)
@@ -319,10 +362,11 @@ if __name__ == "__main__":
     rows = tab_calllist(wb, ref)
     tab_complexes(wb, ref)
     tab_contacts(wb)
+    tab_pf(wb, ref)
     base.tab_mechanics(wb)
     base.tab_script(wb)
     tab_sources(wb)
-    order = ["Call List", "Complexes", "Contacts", "Assumptions",
+    order = ["Call List", "PF Targets", "Complexes", "Contacts", "Assumptions",
              "Portaria 140 - Mechanics", "Call Script", "Sources"]
     wb._sheets = [wb[n] for n in order]
     out = "Sutphin_Curtailment_Call_List.xlsx"
