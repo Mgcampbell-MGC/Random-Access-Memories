@@ -69,8 +69,8 @@ ASSUM = [
      "Sector-wide, ~R$3.3bn of credit is netted against ~R$6bn generators owe CCEE (ABEEólica). At sector level the credit does not cover the debt. Per company the ratio varies enormously and is not public."),
     ("It does not price the waiver", None, None,
      "Signing waives claims on ALL curtailment to 25 Nov 2025 including sobreoferta — 23,213 GWh across this population that is never compensated. Whether that claim is worth anything depends on the pending Congressional veto override (see Mechanics tab)."),
-    ("It does not value the garantia física loss", None, None,
-     "Art. 10 counts cut volumes as generation verificada for the annual garantia física revision, 'passíveis ou não de compensação'. MME's methodology is still undefined, so this cannot yet be quantified — but it is a real second cost."),
+    ("It does not value the garantia física BENEFIT", None, None,
+     "Art. 10 counts cut volumes as generation verificada for the annual garantia física revision, 'passíveis ou não de compensação'. This PROTECTS the plant — it stops the physical guarantee being revised down for output the plant was ordered not to produce, and it covers sobreoferta cuts too, which are never paid in cash. MME's methodology is still undefined so it cannot be quantified, but the direction is favourable and it belongs on the POSITIVE side of the sign/do-not-sign decision. An earlier version of this model had it inverted."),
     ("It uses one price for everyone", None, None,
      "In reality compensation is paid at the PLD of the plant's submarket in the specific hours cut. In the Nordeste those are disproportionately floor hours: the 10h–15h block averaged R$134/MWh in 2026 YTD with 56% of hours at the R$57.31 floor. A plant cut mostly at midday recovers far less than this model implies."),
 ]
@@ -215,52 +215,8 @@ def tab_complexes(wb, ref):
     ws.freeze_panes = "C5"
 
 # ---------------------------------------------------------------- Contacts
-CONTACTS = [
- ("THE TWO CALLS THAT ARE WORTH MORE THAN ANY GENERATOR", None, None, None, None, None),
- ("Elbia Gannoum", "CEO / Presidente-executiva", "ABEEólica", "H",
-  "Speaks for ~40 member companies. Source of the ~R$6bn CCEE passivo figure. Has publicly refused to forecast take-up: 'Não posso garantir aqui que haverá adesão de 100%, nem de 50%.'",
-  "One call reaches the whole membership. She is also the person who knows which members are wavering."),
- ("Donato da Silva Filho", "CEO / Diretor-geral", "Volt Robotics", "H",
-  "Near-monopoly supplier of the sector's curtailment loss data — every R$ figure in the Brazilian press traces to him. Tested MME's SOSIN formula and found it produces 143% MORE sobreoferta than ONS's own calculation.",
-  "PARTNER OR COMPETITOR. He has the classification data and the credibility; he does not have capital. That is a complementary pairing, and it is the single highest-value call on this sheet."),
- ("NAMED IN THE PUBLIC RECORD ON CURTAILMENT — these people have self-identified as caring", None, None, None, None, None),
- ("Liu Aquino", "CEO", "Echoenergia (Equatorial)", "H",
-  "Publicly: some plants at ~45% restriction, 'patamar que torna a operação insustentável'. Company is plaintiff in two of the twelve suits.", "Already litigating — must actively choose to abandon."),
- ("Bernardo Bezerra", "Diretor de Regulação e Inovação", "Serena Energia", "H",
-  "Ex-PSR. Writes publicly on cut classification (eixos, 13 Apr 2026, 'Curtailment: separando o joio do trigo').",
-  "The most technically credible regulatory director in the sector on precisely this issue."),
- ("Gabriel Mann", "Diretor de Regulação", "Engie Brasil Energia", "M",
-  "Quoted updating Engie's curtailment projection to 25% for 2025.", "Engie discloses percentages but has never published an R$ figure."),
- ("Gustavo Estrella", "CEO", "CPFL Energia", "H",
-  "Quoted on the step-change: 'Na média do semestre, tivemos um curtailment de 8,6% no ano passado, e nesse começo de ano, 20,9%.'",
-  "CPFL is the most transparent discloser — R$558m FY2025 lost revenue, 30.8% curtailment."),
- ("Isabella Sene", "Regulatory lead", "ABSOLAR", "M",
-  "Source of the R$2.8bn centralised-solar ACR figure for 2025. ABSOLAR has stated the manifestação de interesse does not itself waive existing suits.", "The solar counterpart to ABEEólica."),
- ("Francisco Silva", "Regulatory", "ABEEólica", "M", "Source of the R$2.5bn non-reimbursable sobreoferta figure.", "Has already quantified the waived side."),
- ("Rui Altieri", "Chairman", "APINE", "M", "Put the 2025 cost of curtailment at R$6bn.", "Independent producers' association — reaches the mid-caps."),
- ("REGULATORY AND OFFICIAL", None, None, None, None, None),
- ("Agnes Maria de Aragão da Costa", "Diretora", "ANEEL", "H",
-  "Authored the January 2026 medida cautelar suspending REN 1.030 reapurações (Processo 48500.000231/2026-56). Her voto is the authoritative source for the 46/41/13 classification split.",
-  "Not a sales call. Read her voto before any regulatory conversation."),
- ("ADVISERS ALREADY PUBLISHING ON PORTARIA 140", None, None, None, None, None),
- ("Raphael Gomes", "Partner, energy regulatory", "Lefosse", "H",
-  "Published a client alert on Portaria 140. Quoted: 'Com a tratativa atual, podemos ter mais uma onda de judicialização.'",
-  "Already advising on this. Either a co-counsel or the competition — worth knowing which."),
- ("(Mattos Filho energy team)", "—", "Mattos Filho", "M", "Published a Portaria 140 client alert.", "Same."),
- ("THINK TANKS AND CONSULTANCIES WITH PUBLISHED POSITIONS", None, None, None, None, None),
- ("Eduardo Müller Monteiro", "—", "Instituto Acende Brasil", "H",
-  "Presented to the Senate CI hearing 30 Sep 2025. Best-documented independent methodology: R$3.85bn all cuts at PLD, R$2.85bn for the compensable subset.",
-  "The most rigorous public work on sizing. Read it before modelling."),
- ("João Carlos Mello", "—", "Thymos Energia", "M", "Argues PLD/CMO at R$200–300/MWh during oversupply is itself the distortion. Publishes no R$ tally.", "Useful on the price mechanics."),
- ("Jean Paul Prates", "Chairman", "Cerne", "H", "Ex-Petrobras CEO. Cerne/CarpeVie put losses above R$5bn, 70% in the Nordeste.", "Political reach as much as technical."),
- ("HOW TO USE THIS SHEET", None, None, None, None, None),
- ("No email addresses are given here", "—", "—", "—",
-  "Every name above is sourced from a published quote, filing or IR page. NO EMAIL ADDRESS HAS BEEN CONSTRUCTED OR GUESSED — the Apollo database returned a billing error on this account, so nothing here comes from a contact database.",
-  "Route in through GC's network rather than cold email. For the ones with no route, the association call (Gannoum, Sene) is the way in."),
- ("Company CFOs and GCs are deliberately not listed", "—", "—", "—",
-  "A separate agent was still searching IR pages and CVM filings when this was built. Rather than pad the sheet with guessed names, the roles are left for GC to fill from his own network — which is faster and more accurate than anything scraped.",
-  "The five names at the top of this sheet are enough to start."),
-]
+from contactdata import CONTACTS
+
 
 def tab_contacts(wb):
     ws = wb.create_sheet("Contacts")
@@ -268,7 +224,7 @@ def tab_contacts(wb):
           "Nobody on this sheet is a guess. Where a name could not be verified it has been left out rather than invented.")
     r = 4
     hdr(ws, r, ["Name", "Role", "Organisation", "Conf.", "What is on the record", "Why this call"],
-        [30, 26, 26, 6, 78, 62]); r += 1
+        [30, 30, 26, 6, 96, 70]); r += 1
     for n, role, org, conf, rec, why in CONTACTS:
         if role is None:
             put(ws, r, 1, n, bold=True, size=10, color=NAVY, fill=SUBFILL)
