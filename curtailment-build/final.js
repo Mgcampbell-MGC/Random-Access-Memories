@@ -245,6 +245,11 @@ c.push(box('THE UNLOCK — CCEE NEVER HAS TO PAY US',[
  'We do not need it. CCEE pays the generator, into the generator’s own account, same CNPJ, exactly as today. We take a security interest OVER THAT ACCOUNT rather than redirecting the payment. That turns an unresolved regulatory question into ordinary Brazilian secured lending — which is work this desk already knows how to do.'
 ],GREEN));
 
+c.push(H2('No, it cannot be sold on a secondary market — and that is exactly why the structure above is the answer'));
+c.push(PR([{text:'Worth stating plainly, because it will come up: there is no secondary market for this credit today, and CCEE’s own systems will not create one. Its GSF settlement mechanism — the one real precedent for a litigant-generator renouncing a lawsuit in exchange for value, run in August 2025 and moving R$1.4bn — expressly bars any payment except into the buyer’s own registered account, and restricted eligible buyers to registered CCEE hydro agents only. No fund, bank or outside financier has ever been let in. No FIDC, CRI or CRA has ever held a credit of this type as collateral.'}]));
+c.push(PR([{text:'That is not a reason to stand down — it is confirmation that the right move is the one in the box above: never ask CCEE to pay a third party. We do not need a market, because CCEE keeps paying the registered agent exactly as always.',bold:true}]));
+c.push(PR([{text:'And the structure itself is not a theory — CCEE has already built it, for its own financing. In April 2022 CCEE raised R$5.5bn against its own reimbursement right from the CDE, using a cessão fiduciária, a dedicated blocked account at Bradesco, a servicer, and an irrevocable mandate. That is the identical shape of what we build around a generator. CCEE proved the mechanism works inside its own ecosystem; we are applying it one level down, to an agent’s account rather than CCEE’s own.'}]));
+
 c.push(H2('Three instruments, all standard'));
 c.push(N('A cessão fiduciária over the specific settlement receivable — Lei 4.728/1965 art. 66-B — perfected by registration and notice to CCEE and MME.'));
 c.push(N('A conta vinculada in the generator’s own name and CNPJ, blocked at the account bank. This is exactly what satisfies CCEE’s same-holder requirement, because the account holder does not change.'));
@@ -256,6 +261,11 @@ c.push(PR([{text:'We advance only against the ',},{text:'Verified Net Cash Recei
 c.push(H2('The one open legal question — and it is narrow'));
 c.push(PR([{text:'Cessão fiduciária is extraconcursal: it survives if the generator enters recuperação judicial during the wait (Lei 11.101/2005 art. 49 §3). But that protection is contested when the secured creditor is not a financial institution (STJ REsp 1.833.824/RS).'}]));
 c.push(PR([{text:'So the question is not the open-ended “is this claim assignable”, which the Portaria’s silence makes unanswerable. It is: does our protection hold if we lend directly, or do we need a licensed institution as formal secured party with us behind it economically? One lawyer, one week. If yes, we lend directly. If uncertain, a bank sits in front — that costs a spread, not the deal.',bold:true}]));
+
+c.push(H2('The worst case is more reassuring than it sounds'));
+c.push(PR([{text:'One precision worth having exactly right. The Termo being a título executivo extrajudicial does not, by itself, keep it out of the federal precatório queue forever — that is a slight overstatement in how this has been described up to now. What actually matters is which path is in play.'}]));
+c.push(PR([{text:'On the intended path — CCEE’s administrative recontabilização — no court is ever involved, so precatório never enters into it; this is a private clearing process, not a judicial payment order. Only if the União ever breached and a generator had to sue to enforce the Termo would CPC art. 910 apply, and unpaid amounts would ultimately be requisitioned as a precatório.'}]));
+c.push(PR([{text:'That fallback is the reassuring part, not the risk: assignment of a credit that is already in a precatório is expressly permitted without the debtor’s consent, under art. 100 §13 of the Constitution, and is a mature, well-precedented market in Brazil. So the one scenario where enforcement genuinely gets difficult — a breach by the União — is also the one scenario where assigning the resulting credit becomes easiest.',bold:true}]));
 
 c.push(H2('Risks we accept and price, rather than solve'));
 c.push(B('The generator’s own ongoing compliance. It must file the renunciation within ten days of signing, never oppose a provisional order, and cure any default within five days — or the compensation is suspended while every other obligation survives. We are underwriting eighteen months of the borrower’s behaviour, not just the Union’s credit. Priced and monitored like any covenant.'));
@@ -318,6 +328,8 @@ c.push(H3('“What actually kills this?”'));
 c.push(PR([{text:'Two things, and we should name them first. One: the borrower breaches its own ongoing obligations under the settlement — misses the ten-day court filing, opposes a provisional order — and the compensation is suspended while its debts survive. Two: our security is not extraconcursal because we are not a bank, and the borrower enters recuperação judicial. The first is priced and monitored; the second is the one legal question we are resolving now.'}]));
 c.push(H3('“How big is the market?”'));
 c.push(PR([{text:'Honest answer: unknown, and anyone who gives you a number is guessing. The eligible claim base is 25,326 GWh and we have computed it complex by complex. But the portion that converts to cash rather than debt relief cannot be seen from outside. Five real contract books turn that from a guess into a number, and that is what the next fortnight is for.'}]));
+c.push(H3('“Can we just buy this on a secondary market instead of structuring a loan?”'));
+c.push(PR([{text:'No, and we checked properly rather than assumed. CCEE ran a comparable litigant-renunciation-for-value mechanism in August 2025 for hydrological-risk credits — R$1.4bn, and it restricted eligible buyers to registered CCEE agents only, paying value through a concession extension rather than cash to an outside financier. No FIDC, CRI or CRA has ever held a credit of this type. There is no market to buy into, which is exactly why we structure a secured advance instead — it requires no market and no cooperation from CCEE at all.'}]));
 
 c.push(box('THE LINE THAT LANDS',[
  'Fitch put 13 Brazilian renewable project financings on Rating Watch Negative explicitly on curtailment, downgraded six, and left eleven on negative outlook to 2030 — and its rating cases ASSUME ZERO COMPENSATION.',
@@ -334,6 +346,7 @@ c.push(box('THE INSTRUCTION',[
  'We intend to advance cash to a wind or solar generator, secured by a cessão fiduciária over its compensation claim under Portaria Normativa MME 140/2026, plus a conta vinculada in the generator’s own name and CNPJ, plus an irrevocable sweep mandate. CCEE continues to pay the generator exactly as today — we are NOT asking CCEE to recognise us as payee.',
  'QUESTION: Lei 11.101/2005 art. 49 §3 makes cessão fiduciária extraconcursal. That protection is reported as contested where the secured creditor is not a financial institution (STJ REsp 1.833.824/RS). Does it hold for us lending directly? If not, what is the minimum structure that restores it — a licensed institution as titular secured party with us behind it economically, or something else?',
  'Also confirm: (a) that a conta vinculada in the generator’s own CNPJ satisfies CCEE’s existing same-holder requirement, since ownership does not change; and (b) whether the obligor being the União, operationalised through CCEE recontabilização, changes the analysis versus an ordinary commercial receivable.',
+ 'Useful precedent to pull first: CCEE itself executed a cessão fiduciária of its own CDE reimbursement right in April 2022, to finance R$5.5bn of Escassez Hídrica lending — dedicated blocked account at Bradesco, a servicer, an irrevocable mandate. It is a public instrument and a working template for exactly this structure, one level up from where we are applying it.',
  'One week. This is a scoping question, not a transactional opinion — the documentation work happens once we have a book to lend against.'
 ]));
 
@@ -345,6 +358,8 @@ c.push(H2('What to tell them we already know, so they do not bill for it'));
 c.push(B('The Portaria contains zero occurrences of cessão, cedente, cessionário, transferência, oneração, penhor, caução or alienação. We have run the search. It is silent, not prohibitive.'));
 c.push(B('The Termo is a título executivo extrajudicial under art. 784 II/III CPC, forum Federal Court in Brasília, and the hierarchy is Termo > Portaria > CCEE rules.'));
 c.push(B('Compensation is carved out of short-term-market default sharing under Art. 6º §6º.'));
+c.push(B('There is no secondary market for this credit and CCEE will not pay a non-agent third party directly — confirmed against CCEE’s own GSF settlement mechanism (Edital 01/2025), which restricted buyers to registered agents. We are not asking for a market; we are asking to secure our position on the generator’s own account after CCEE pays it as usual.'));
+c.push(B('On the intended administrative path (CCEE recontabilização) no court and no precatório is involved at all. Precatório only becomes relevant if the União breaches and the Termo has to be enforced by suit under CPC art. 910 — and even then, a credit inside a precatório is freely assignable without the debtor’s consent under CF art. 100 §13, which is a reassuring fallback, not a new risk.'));
 
 /* ─────────────────── 11. FIRST TWO WEEKS ─────────────────── */
 c.push(new Paragraph({children:[new PageBreak()]}));
