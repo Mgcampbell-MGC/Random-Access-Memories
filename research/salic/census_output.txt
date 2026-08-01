@@ -1,0 +1,77 @@
+total projects 2023-26      : 45863
+projects with captado > 0   : 10945  (23.9%)
+total captado               : R$ 8,448,892,045
+funded AND not dead/archived: 9663
+
+distinct proponentes w/ funded live projects: 5690 (PJ 4981 / PF 709)
+
+=== PJ BUYER COUNTS by concurrent FUNDED live projects ===
+  >=  2 funded projects :  1939 proponentes | captado R$ 6,179,565,762
+  >=  3 funded projects :   933 proponentes | captado R$ 4,055,920,489
+  >=  4 funded projects :   448 proponentes | captado R$ 2,640,139,717
+  >=  5 funded projects :   246 proponentes | captado R$ 1,515,976,902
+  >=  6 funded projects :   140 proponentes | captado R$ 990,492,080
+  >=  8 funded projects :    38 proponentes | captado R$ 338,392,266
+  >= 10 funded projects :    18 proponentes | captado R$ 138,380,105
+
+=== SIZE OF THE PRIZE: PJ with >=3 funded live projects ===
+  proponentes: 933
+  median captado/proponente : R$ 2,057,994
+  mean   captado/proponente : R$ 4,347,182
+  max: R$ 130,888,315
+  p90: R$ 9,122,839
+  p75: R$ 4,634,526
+  p50: R$ 2,057,994
+
+=== UF (PJ >=3 funded live) ===
+  SP: 293
+  RS: 139
+  RJ: 111
+  MG: 105
+  PR: 79
+  SC: 76
+  CE: 29
+  ES: 19
+  PE: 18
+  BA: 13
+
+=== TOP 30 PJ BY FUNDED LIVE PROJECT COUNT ===
+   21 proj | R$    14,815,819 | RS | MARCA PRODUCOES ARTISTICAS LTDA
+   14 proj | R$     3,931,247 | RS | CARLOS BRANCO & CIA LTDA
+   14 proj | R$     5,459,871 | RS | LUCANO CULTURA E MARKETING LTDA
+   13 proj | R$     4,799,411 | PR | CGC-CSA CONSULTORIA E ASSESSORIA LTDA
+   13 proj | R$     5,488,148 | RJ | ASSOCIACAO CULTURAL E BENEFICENTE BEITH LUBAVI
+   12 proj | R$    34,548,024 | MG | ASSOCIACAO PRO-CULTURA E PROMOCAO DAS ARTES
+   12 proj | R$     3,789,771 | RS | NOVA PRODUCOES E EVENTOS LTDA
+   11 proj | R$     1,862,543 | RS | M.J. PRODUTORA DE EVENTOS LTDA
+   11 proj | R$     3,360,978 | PR | COISAS DA VIDA ENSINO, ARTE E CULTURA LTDA
+   11 proj | R$    12,022,243 | SP | INSTITUTO ACERTE - ARTE CULTURA E EDUCACAO RAI
+   11 proj | R$     6,368,792 | SC | SOCIEDADE CULTURA ARTISTICA
+   11 proj | R$     8,101,750 | SP | FBF CULTURAL LTDA
+   11 proj | R$     4,541,860 | SC | RETURN SERVICOS DE MARKETING SOCIAL LTDA
+   10 proj | R$     1,058,498 | RS | LISBOA & ROCHA CONSULTORIA LTDA
+   10 proj | R$    16,467,809 | MG | UNIVERSO PRODUCAO LTDA
+   10 proj | R$     3,013,717 | SP | AH SETE PRODUCOES CULTURAIS LTDA
+   10 proj | R$     5,821,622 | SP | INSTITUTO EVOLUIR CULTURAL
+   10 proj | R$     2,928,001 | MG | ESPACO AMPLIAR - ASSESSORIA, PROJETOS E EVENTO
+    9 proj | R$     3,164,196 | RS | VR SERVICOS CULTURAIS LTDA
+    9 proj | R$     2,962,988 | RS | SIMPLES ASSIM PROJETOS E PRODUCOES CULTURAIS L
+    9 proj | R$     6,784,731 | SP | EDUCARE PRODUCOES LTDA
+    9 proj | R$    55,857,505 | SP | INSTITUTO PEDRA
+    8 proj | R$     5,400,546 | RS | LUME GESTAO DE EVENTOS LTDA
+    8 proj | R$     3,183,548 | RS | MARCIO SCHMIDT PUBLICIDADES
+    8 proj | R$    36,514,248 | SP | MANA PRODUCOES COMUNICACAO E EVENTOS LTDA
+    8 proj | R$     1,272,000 | RS | AM9 PRODUCOES GESTAO DE EVENTOS LTDA
+    8 proj | R$     2,893,298 | PR | INSTITUTO DE APOIO A ORQUESTRA SINFONICA DO PA
+    8 proj | R$     4,653,572 | PR | R S PRODUCOES ARTISTICAS LTDA
+    8 proj | R$    20,149,967 | PR | SINAPSE PRODUCOES CULTURAIS E TEATRAIS LTDA
+    8 proj | R$     5,267,040 | SC | INSTITUTO MARATONA CULTURAL
+
+=== PAIN SIGNALS (all 45.863 rows) ===
+    3611  submitted, awaiting analysis
+     120  prazo started to submit
+     107  INADIMPLENTE
+      84  contas DESAPROVADA
+     262  archived: no answer to diligencia
+      83  under diligencia now
+     163  suspenso

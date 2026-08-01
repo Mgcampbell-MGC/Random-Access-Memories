@@ -1,0 +1,158 @@
+rows loaded: 45863
+
+==============================================================================
+SITUACAO DISTRIBUTION (all rows)
+==============================================================================
+  17976  Autorizada a captação total dos recursos
+  11099  Projeto encerrado por excesso de prazo sem captação 
+   5040  Autorizada a captação residual dos recursos
+   3604  Apresentou prestação de contas
+   2143  Arquivado - solicitação de desistência do proponente
+   1302  Arquivado
+    756  Expirado o prazo de captação total
+    624  Projeto não executado por insuficiência de captação de recursos
+    575  Arquivado a pedido proponente
+    407  Indeferido
+    384  Projeto liberado para adequação à realidade de execução.
+    348  Projeto em execução - Encerrado prazo de captação
+    211  Expirado o prazo de captação parcial
+    184  Encaminhado para análise técnica
+    163  Projeto suspenso
+    134  Arquivado - não atendimento à diligência técnica
+    128  Indeferido - não atendimento à diligência
+    120  Iniciado prazo para apresentar prestação de contas
+    102  Inadimplente
+     70  Prestação de contas desaprovada com notificação de cobrança
+     70  Projeto em avaliação documental
+     58  Projeto incluído em pauta para avaliação da CNIC
+     43  Projeto adequado à realidade de execução
+     37  Diligenciado - Parecer técnico
+     36  Projeto encaminhado para finalização do processo de homologação
+     31  Análise preditiva após comprovação
+     29  Indeferido - projeto em duplicidade
+     19  Aguardando superação/desistência do prazo recursal
+     19  Aguarda publicação de portaria
+     14  Prestação de contas desaprovada com INDICATIVO para Tomada de Contas Especial
+     14  Aguarda publicação de portaria de Prorrogação
+     13  Diligenciado - movimentação da conta corrente
+     12  Indeferido por não atender aos objetivos e finalidades da Lei 8313/91.
+     12  Diligenciado - Readequação
+     10  Diligenciado - Comissão Nacional de Incentivo à Cultura - CNIC
+      9  Projeto apreciado pela Comissão Nacional de Incentivo à Cultura - CNIC. Projeto em verificação documental.
+      9  Diligenciado - Monitoramento
+      7  Apresentou prestação de contas após reprovação
+      7  Prorrogado o prazo para apresentar prestação de contas
+      5  Inadimplente - por não responder a diligência de monitoramento
+
+classified -> {'other': 4221, 'dead': 16181, 'live': 25461}
+
+'other' situacoes (unclassified):
+    3604  Apresentou prestação de contas
+     163  Projeto suspenso
+     120  Iniciado prazo para apresentar prestação de contas
+     102  Inadimplente
+      70  Prestação de contas desaprovada com notificação de cobrança
+      37  Diligenciado - Parecer técnico
+      19  Aguarda publicação de portaria
+      14  Prestação de contas desaprovada com INDICATIVO para Tomada de Contas Especial
+      14  Aguarda publicação de portaria de Prorrogação
+      13  Diligenciado - movimentação da conta corrente
+      10  Diligenciado - Comissão Nacional de Incentivo à Cultura - CNIC
+       9  Projeto apreciado pela Comissão Nacional de Incentivo à Cultura - CNIC. Projeto em verificação documental.
+       9  Diligenciado - Monitoramento
+       7  Apresentou prestação de contas após reprovação
+       7  Prorrogado o prazo para apresentar prestação de contas
+
+==============================================================================
+PROPONENTES WITH LIVE (SLOT-OCCUPYING) PROJECTS
+==============================================================================
+live projects        : 25461
+distinct proponentes : 16486   (PJ 12773 / PF 3713)
+
+PJ proponentes by number of concurrent live projects:
+  exactly  20 projects:     2   (>= 20: 2)
+  exactly  17 projects:     1   (>= 17: 3)
+  exactly  16 projects:     1   (>= 16: 4)
+  exactly  15 projects:     1   (>= 15: 5)
+  exactly  13 projects:     1   (>= 13: 6)
+  exactly  12 projects:     1   (>= 12: 7)
+  exactly  11 projects:     7   (>= 11: 14)
+  exactly  10 projects:    20   (>= 10: 34)
+  exactly   9 projects:    33   (>= 9: 67)
+  exactly   8 projects:    50   (>= 8: 117)
+  exactly   7 projects:    95   (>= 7: 212)
+  exactly   6 projects:   139   (>= 6: 351)
+  exactly   5 projects:   243   (>= 5: 594)
+  exactly   4 projects:   445   (>= 4: 1039)
+  exactly   3 projects:   893   (>= 3: 1932)
+  exactly   2 projects:  2291   (>= 2: 4223)
+  exactly   1 projects:  8550   (>= 1: 12773)
+
+--- ADDRESSABLE BUYER COUNTS (PJ only) ---
+  PJ with >=  3 concurrent live projects : 1932
+  PJ with >=  4 concurrent live projects : 1039
+  PJ with >=  5 concurrent live projects : 594
+  PJ with >=  6 concurrent live projects : 351
+  PJ with >=  7 concurrent live projects : 212
+  PJ with >=  8 concurrent live projects : 117
+  PJ with >= 10 concurrent live projects : 34
+
+--- CAPTACAO among multi-project PJ (>=4 live) ---
+  proponentes: 1039
+  soma valor_captado  : R$ 860,828,533
+  soma valor_aprovado : R$ 7,988,055,326
+
+--- UF of multi-project PJ (>=4 live) ---
+  SP: 351
+  RJ: 155
+  RS: 120
+  MG: 106
+  PR: 64
+  SC: 44
+  CE: 26
+  BA: 24
+  PE: 21
+  DF: 21
+  MA: 19
+  ES: 17
+
+--- TOP 25 PJ BY LIVE PROJECT COUNT ---
+   20 proj | captado R$     24,584,988 | aprovado R$    215,190,450 | GO | ELYSIUM SOCIEDADE   CULTURAL
+   20 proj | captado R$     45,857,505 | aprovado R$    384,584,106 | SP | INSTITUTO PEDRA
+   17 proj | captado R$      8,346,700 | aprovado R$    169,732,161 | MG | ASSOCIACAO PRO-CULTURA E PROMOCAO DAS ARTES
+   16 proj | captado R$      4,485,719 | aprovado R$     97,080,862 | SP | STR ESTRUTURA PARA FILMES E EVENTOS LTDA
+   15 proj | captado R$          7,594 | aprovado R$      9,083,201 | RS | MARCOS GUILHERME DE OLIVEIRA LTDA
+   13 proj | captado R$        554,900 | aprovado R$      8,680,943 | RS | HAYLIEN ASTRION MATTEO MOR GU DE OLIVEIRA LT
+   12 proj | captado R$      2,941,771 | aprovado R$     10,043,790 | RS | NOVA PRODUCOES E EVENTOS LTDA
+   11 proj | captado R$        144,551 | aprovado R$      8,015,952 | SP | CORUJA CONSULTORIA EMPRESARIAL & PROJETOS CU
+   11 proj | captado R$              0 | aprovado R$     21,572,293 | MG | INSTITUTO VEM VIVER
+   11 proj | captado R$        539,557 | aprovado R$      9,656,875 | PR | ASSOCIACAO DOS AMIGOS DO MUSEU DINAMICO INTE
+   11 proj | captado R$         84,000 | aprovado R$      6,201,057 | SC | ALBERTI PROJETOS E ASSESSORIA LTDA
+   11 proj | captado R$      1,290,000 | aprovado R$     15,095,340 | MG | ESPACO AMPLIAR - ASSESSORIA, PROJETOS E EVEN
+   11 proj | captado R$              0 | aprovado R$     15,912,546 | MG | ASSOCIACAO ACAO EM MOVIMENTOS ARTISTICOS - A
+   11 proj | captado R$        198,000 | aprovado R$      7,434,493 | SP | INSTITUTO NORBERTO BOBBIO
+   10 proj | captado R$        172,000 | aprovado R$      8,116,597 | RJ | CIA DE IDEIAS PRODUCOES CULTURAIS E EVENTOS 
+   10 proj | captado R$        334,951 | aprovado R$     28,695,072 | RS | FRANCISCO EMILIO MIRON ROLOFF
+   10 proj | captado R$      3,001,010 | aprovado R$     90,503,332 | DF | INSTITUTO BASE
+   10 proj | captado R$      1,076,968 | aprovado R$      5,580,621 | RS | ANALICE C. M. OLIVEIRA LTDA
+   10 proj | captado R$      3,868,572 | aprovado R$     12,857,381 | PR | R S PRODUCOES ARTISTICAS LTDA
+   10 proj | captado R$      3,533,116 | aprovado R$     59,060,527 | RS | INSTITUTO CULTURAL QUATTRO
+   10 proj | captado R$      2,563,350 | aprovado R$     10,245,255 | MG | SERVICO SOCIAL DA INDUSTRIA, DEPARTAMENTO RE
+   10 proj | captado R$      1,323,058 | aprovado R$     10,966,623 | RJ | ANDREA JAKOBSSON ESTUDIO EDITORIAL LTDA
+   10 proj | captado R$              0 | aprovado R$      6,458,543 | PR | MUCHA AMORA PRODUCOES CULTURAIS LTDA
+   10 proj | captado R$        519,000 | aprovado R$     13,774,601 | MA | FUNDACAO SOUSANDRADE DE APOIO AO DESENVOL DA
+   10 proj | captado R$              0 | aprovado R$     11,686,891 | GO | PLANT CULTURA E PRODUCOES LTDA
+
+--- SEGMENTS among multi-project PJ (>=4 live) ---
+    812  Apresentação ou Performance de Teatro
+    609  Empreend Ações Educ-Cult/Capacitação/Treinamento
+    568  Apresentação/Gravação de Música Regional
+    520  Livro/Obra Refer impres/eletrôni valor Art/Lit/Hum
+    513  Exposição Cultural / Artística
+    400  Apresentação/Gravação de Música Instrumental
+    348  Prod. AV curta/média mtragem/Tv Edu Cult
+    176  Apresentação ou Performance de Dança
+    141  Difusão de acerv e conteúdo AV diver meios/suporte
+    140  Teatro Musical (c/ dramaturgia, danças e canções)
+    120  Event Literá/Ações Edu-Cult Incen Leitu/SlamSarau
+    102  Empreendedorismo Cultural
