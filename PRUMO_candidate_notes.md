@@ -1,4 +1,4 @@
-# LASTRO — candidate #5, with the census done first
+# PRUMO — candidate #5, with the census done first
 
 **Status: CANDIDATE, not a decision.** Written the night LÍQUIDO was killed.
 Every number below that comes from official data is marked VERIFIED with its
@@ -58,14 +58,14 @@ consultancy, not a funded startup.**
 
 ---
 
-## 3. LASTRO — what it is
+## 3. PRUMO — what it is
 
 Brazilian cultural projects funded through Lei Rouanet must document every
 centavo spent against an approved planilha orçamentária, and submit a Relatório
 de Execução Financeira through SALIC. Producers running several projects at once
 do this in spreadsheets and folders of PDFs.
 
-**LASTRO is the ledger that keeps every funded project's documentation
+**PRUMO is the ledger that keeps every funded project's documentation
 reconciled against its approved budget in real time** — so the prestação de
 contas is a button, not a three-week archaeology dig, and no diligência ever
 expires unanswered.
@@ -268,7 +268,7 @@ no BCB exposure, no custody question. Next.js + Supabase + file storage.
 **~4 weeks to v0.**
 
 Positioning on liability: the CRC accountant is already mandatory and already
-signs. LASTRO feeds the contador — it never replaces the signature. That
+signs. PRUMO feeds the contador — it never replaces the signature. That
 resolves the "who is to blame" objection structurally.
 
 ---
@@ -331,7 +331,7 @@ Five conversations with proponentes drawn from the extracted SP list.
 
 ## Verdict
 
-LASTRO is the **best-evidenced candidate of the five**, and the first where the
+PRUMO is the **best-evidenced candidate of the five**, and the first where the
 buyer census was completed *before* the business was written rather than deferred
 indefinitely: **933 PJ proponentes with 3+ funded projects, 448 with 4+, 145 of
 those in São Paulo, R$ 8,45 bi of captação needing documentation.**
