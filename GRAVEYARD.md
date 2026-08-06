@@ -130,3 +130,82 @@ phased build triggers, and "code calculates, AI never calculates money."
    consultancy needs a credential the founder lacks.
 6. **Price ceilings are set by the cheapest adequate substitute**, not by the
    value delivered. R$389/month unlimited beat a R$4.347/month service.
+   **But see the correction below — this filter was being applied wrongly, and
+   the wrong application is more dangerous than the filter is useful.**
+
+---
+
+## Correction, 6 Aug 2026 — the filter above was killing good ideas
+
+**Nineteen candidates killed, nothing launched.** That base rate is evidence
+about this filter set, not only about the ideas. The diagnosis is specific.
+
+**Filter 6 was applied to partial substitutes as though they were complete ones.**
+LINELOCK was killed because Adobe Acrobat's Compare Files exists at US$19,99/month.
+But Acrobat cannot verify a barcode and cannot check a change against an
+authorisation sheet. It was never an *adequate* substitute — only a partial one.
+
+Applied consistently, that reasoning kills Notion (a text file is free), kills
+Superhuman (Gmail is free), and kills every vertical tool ever sold against a
+spreadsheet. **Charging a premium over a partial substitute is the normal case in
+software, not the anomaly.** A filter that cannot pass a good idea is not rigorous.
+
+### The rule that replaces it
+
+Every objection sorts into exactly one bucket, and must be **labelled**.
+
+**Bucket A — structural. These kill.** A verified fact making the plan
+*impossible*, not merely uncertain. Only five kinds qualify:
+
+| | Test | Verified precedent from this graveyard |
+|---|---|---|
+| A1 | Someone ships the **identical** product to the **identical** buyer | Pora, "+2000 influenciadores já foram pagos"; Stella Luna & Co shipping the identical swimwear package |
+| A2 | A **named** law reserves it to a credential the founder lacks | CFC Res. 1.640/2021 Art. 3º XVIII |
+| A3 | **The list does not exist** — the buyer cannot be enumerated | — |
+| A4 | **The physics fail** — chiefly, required send volume exceeds what one new domain can send | — |
+| A5 | A cheaper substitute does **the whole job**, or a regulator gives it away free | Gestão Cultural Pro, R$389/mo unlimited; free government platforms covering ~60% |
+
+**Bucket B — unproven. These may NOT kill anything.** Whether buyers pay this
+price; whether the gap over a *partial* substitute is worth paying for; the
+conversion rate; whether the buyer knows they have the problem; whether they act
+now; whether they trust an unknown vendor.
+
+> **Every Bucket B objection must arrive with the cheapest test that settles it —
+> under two weeks, under US$200, with a numeric pass threshold. A Bucket B
+> objection without a test attached is not a finding. It is a guess wearing the
+> costume of rigour.**
+
+### Why this matters more than it looks
+
+A false kill costs more than a missed risk. A missed risk shows up in a cheap
+test and gets corrected. **A false kill never shows up at all** — the business
+simply never exists, and nothing ever contradicts the decision.
+
+"Not proven" is the normal condition of every new business before it is tested.
+It is not evidence of weakness.
+
+### And a calibration fact that was being ignored
+
+This founder's marginal cost of **building and testing** is unusually low —
+she genuinely ships working software by directing Claude Code. For someone who
+can produce a working artefact in days, the optimal strategy is not *analyse
+until certain*; it is *find the cheapest real test and run it*.
+
+**Therefore: prefer a candidate that can be TESTED cheaply over one that merely
+SURVIVES analysis.** And always commit to one angle. Ten reasons to be cautious
+is the wrong deliverable.
+
+### Which of the deaths above still stand
+
+Most do. LÍQUIDO (A1), RIO BLOCKS (A1), PRUMO (A2), AVAL (A2), JANELA (A1) and
+the marketplace/freight/repasse candidates (A1) all died on Bucket A facts and
+remain dead.
+
+**LINELOCK's cause of death is amended:** it stays dead, but on the *trigger*,
+not the substitute. The moment an agency sends artwork to print is invisible from
+outside — no public feed, no filing, no announcement — which is an A3/A4 problem.
+The US$19,99 substitute argument is withdrawn.
+
+**WRAPCHECK's is amended the same way:** the free-spreadsheet argument was a
+Bucket B judgement. It stays dead because its trigger is invisible *and* rare
+*and* only useful for the few hours a shoot is still live.
