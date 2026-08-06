@@ -209,3 +209,56 @@ The US$19,99 substitute argument is withdrawn.
 **WRAPCHECK's is amended the same way:** the free-spreadsheet argument was a
 Bucket B judgement. It stays dead because its trigger is invisible *and* rare
 *and* only useful for the few hours a shoot is still live.
+
+---
+
+## Second correction, 6 Aug 2026 — R4 was aimed at the wrong question
+
+The old rule asked *"does the founder hold the credential?"* That is not what
+predicts failure. The question that does:
+
+> **After the buyer opens the file, can they tell whether it is right?**
+
+| Buyer can self-verify the output | R4 status |
+|---|---|
+| **Yes** — the artefact carries its own authority | **Does not bind.** The founder's standing is irrelevant because nothing rests on it. Nobody asks who wrote their tax software. |
+| **No** — the buyer must trust the author | **Binds hard.** Borrowed authority is the product, and it cannot be borrowed. |
+
+DeckProof is the clean case: it recomputes arithmetic against the buyer's *own*
+documents, so every line is checkable on the spot. LICENCEPROOF is the opposite —
+"is my sponsor licence compliant?" cannot be self-checked, which is why it carries
+the worst credential exposure in the set despite a better trigger stream.
+
+### The credential is a one-time purchased input, not a dependency
+
+For a **service**, the credentialed person is required on *every engagement* — that
+is what breaks a one-or-two-person shop. For a **download**, they are required
+*once*, during authoring.
+
+One US$300 session with an ex-buyer to validate a checklist is a **line item**, not
+a partner, not a royalty, not a standing obligation. What R4 should screen for is
+therefore: *does this need the credentialed human on every transaction?* A
+downloadable product, by construction, does not.
+
+### The consequence for how candidates get screened
+
+After the product is built, the founder's job is **marketing, not delivery.** That
+is the structural advantage of a download over a service, and it should be weighted
+as one.
+
+Her build cost is one-time and close to zero — she directs Claude Code. The
+*recurring* work is reading lists and writing emails. So the binding constraint was
+never "can this be built simply":
+
+> **Screen on whether it can be MARKETED simply, not on whether it can be BUILT
+> simply. A harder-to-build product with a visible trigger beats an easy-to-build
+> one without.**
+
+Corollary: the bundled corpus should be *thicker*, not thinner. It is one-time
+work, it is the moat, and it is the part a prompt cannot hold.
+
+### Which deaths this revisits
+
+**None are resurrected.** RIO BLOCKS, CREDIT LAB, AVAL and PRUMO each died on an
+A1 or A2 fact — an identical product already shipping, or a named law reserving the
+work. The credential was never the load-bearing objection for any of them.
