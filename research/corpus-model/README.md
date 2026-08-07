@@ -101,3 +101,66 @@ defines what the product may and may not claim.
 
 Hunt 2 — UK and Brazil published-decision corpora, including UK planning appeals.
 Hunt 3 — education, technical practice and open domain, with the licensing screen.
+
+---
+
+## Hunt 2 — UK and Brazil published-decision corpora
+
+Six candidates. **Two STRONG.**
+
+| Candidate | Country | Price | Verdict |
+|---|---|---|---|
+| **ET Respondent's Corpus** — small employer facing an employment tribunal | UK | US$397 | **STRONG** |
+| **Recurso em 3 Dias** — TCU licitação corpus for public-tender bidders | Brazil | US$197 | **STRONG** |
+| Service Charge Tribunal Corpus — leasehold service-charge disputes | UK | US$149 | VIABLE |
+| Defesa Fiscal PME — CARF corpus for tax impugnação | Brazil | US$397 | VIABLE |
+| Planning Appeal Decisions Corpus | UK | US$297 | **WEAK — corpus BLOCKED** |
+| Appeal Ready — planning decision-pattern library | UK | US$149 | — |
+
+### The UK legal foundation — verified from the primary source
+
+**Legal Services Act 2007 s.12** [VERIFIED by direct fetch of legislation.gov.uk]. Reserved legal
+activities are *only*: (a) exercise of a right of audience, (b) conduct of litigation, (c) reserved
+instrument activities, (d) probate activities, (e) notarial activities, (f) administration of oaths.
+
+**General legal advice is not among them.** Unregulated providers may lawfully supply legal
+information and advice in England and Wales.
+
+And **FTT Property Chamber Rules 2013, rule 14** [VERIFIED]: *"A party may appoint a representative
+(whether legally qualified or not)"* — lay representation is normal.
+
+That makes England and Wales materially safer ground for a self-help corpus than the United States,
+where unauthorised practice of law is prohibited in every state. Immigration (OISC) and claims
+management (FCA) remain carved out entirely.
+
+### The corpora — independently verified end to end
+
+| Corpus | Decisions | Access |
+|---|---|---|
+| Residential property tribunal (`residential_property_tribunal_decision`) | **17.581** | gov.uk search API, HTTP 200, no key |
+| ...of which Leasehold disputes (management) | **6.995** | Same, category-filtered |
+| **Employment tribunal** (`employment_tribunal_decision`) | **133.287** | gov.uk search API, HTTP 200, no key |
+
+**The full pipeline was proven, not assumed:** search API → content API → attachment URL →
+`assets.publishing.service.gov.uk` PDF, HTTP 200, 496.578 bytes. Enumerate, resolve, download.
+
+133.287 employment tribunal decisions is the largest corpus found anywhere in this project, and it
+is the context-window moat in its purest form — no buyer's AI can ingest it.
+
+### The candidate that died, and it was the favoured one
+
+**Planning appeals: corpus `BLOCKED`.** The Planning Inspectorate's decisions could not be
+enumerated — the verifier independently attempted the same three endpoints and failed. This was the
+idea flagged as "test this first" on the strength of its buyer and its money-at-stake. It failed the
+one screen made mandatory after an earlier plan's free test proved unrunnable.
+
+**The screen worked.** Counting the corpus rather than claiming it is now non-negotiable.
+
+### Demand evidence worth noting
+
+For the leasehold candidate, managing agents publicly report a *"sharp rise in AI-drafted
+complaints… multiple challenges per week on larger portfolios"* that **fail** because the model
+misapplies section 20 consultation rules [VERIFIED by fetch].
+
+That is unusually direct evidence for this whole model: buyers are *already* using ChatGPT for this
+exact task and *already* failing on the specifics a corpus would fix.
