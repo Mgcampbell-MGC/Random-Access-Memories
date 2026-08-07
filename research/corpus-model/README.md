@@ -164,3 +164,91 @@ misapplies section 20 consultation rules [VERIFIED by fetch].
 
 That is unusually direct evidence for this whole model: buyers are *already* using ChatGPT for this
 exact task and *already* failing on the specifics a corpus would fix.
+
+---
+
+## Hunt 3 — education, technical practice, open domain
+
+Six candidates. **Every one cleared the licensing screen as REDISTRIBUTABLE and every corpus came
+back BULK-AVAILABLE.** Two STRONG.
+
+| Candidate | Country | Price | Verdict |
+|---|---|---|---|
+| **The Classification Desk** — HTS tariff classification | US | US$397 | **STRONG** |
+| **TARIFF PACK** — vertical HTS corpora | US | US$149 | **STRONG** |
+| VET Assessment Architect — Australian RTO assessment tools | Australia | US$397 | VIABLE |
+| The Hazard Analysis Workbench — FDA preventive controls | US | US$197 | VIABLE |
+| RADAR SUPLEMENTOS — ANVISA dietary supplements | Brazil | US$127 | VIABLE |
+| Licensing-Ready — Texas childcare licensing | US | US$147 | WEAK |
+
+### The education version survives, but only in a specific form
+
+The obvious education idea — exam board past papers and mark schemes — is **infringing** and was
+correctly never proposed. What survived instead is **Australian VET**, and the licence was verified
+rather than assumed:
+
+- Training package content released after 16 Sep 2011 is **Creative Commons
+  Attribution-No Derivative Works 3.0 Australia** — verbatim commercial redistribution with
+  attribution is expressly permitted [VERIFIED]. The product design honours the ND term by shipping
+  units verbatim and keeping all original analysis in separate files.
+- The 2025 Standards instruments are **CC BY 4.0, "any purpose, even commercially"** [VERIFIED].
+- Training-package Companion Volumes have varying developer licences — **excluded, not
+  redistributed.**
+- ASQA guidance licence obtained secondhand only (direct fetch 403) — **must be re-verified before
+  shipping.**
+
+And a genuinely useful technical finding: **training.gov.au is a JavaScript single-page app that AI
+browsing tools cannot read** — a fetch returns an empty Nuxt shell. So the buyer's AI *cannot* look
+this up even if it tries, while an undocumented JSON API returns 15.165 current units and per-unit
+PDF/DOCX assets. That is the context-window moat plus an access moat.
+
+---
+
+# THE CONVERGENCE — the most significant finding of the session
+
+**HTS tariff classification was arrived at five separate times, by five different lenses, across
+two independent workflows, and rated STRONG three times.**
+
+| Arrival | Lens | Framing given to the agent | Price |
+|---|---|---|---|
+| Hunt 1 | hidden-criteria | "criteria insiders know" | US$297 |
+| Hunt 3 | technical-practice | "applying a complex published framework" | US$397 |
+| Hunt 3 | open-domain | "richest redistributable corpus anywhere" | US$149 |
+
+Five lenses were handed deliberately different starting points — fighting a rejection, complex
+forms, hidden criteria, professional practice, and open domain — and independently optimised into
+the same answer. That is not coincidence. It is the mechanism selecting for its own optimum.
+
+**Why this specific problem wins on every axis at once:**
+
+| Axis | HTS classification |
+|---|---|
+| Model failure rate | **Measured and published** — the only candidate in the project with this |
+| Corpus size | 54.117 apparel + 8.947 footwear rulings, verified by fetch |
+| Corpus licence | **US government works — public domain** |
+| Corpus metadata | `revokedBy` / `modifiedBy` / `operationallyRevoked` — nobody has structured this |
+| Repeat use | Every product, every season, every entry |
+| Liability | Sits on the **importer of record**, not the broker |
+| Buyer count | Importers, plus **~11.000 licensed customs brokers** |
+| Buyer type | Business, AI-comfortable, compares the price to a consultant's hour |
+
+**The pricing spread is itself a finding.** Three independent agents priced the same product at
+US$149, US$297 and US$397. Nobody thought it was a US$29 product, and nobody converged on a number —
+so the price is genuinely unproven and belongs in the first test rather than in the plan.
+
+## What remains unverified, and both are an hour's work
+
+1. **The apparel/footwear importer population.** Census confirms **239.231 identified US importers
+   in 2024** [VERIFIED by fetch] and that SMEs are 98,7–98,9% of wholesaler-importers, but the
+   apparel-specific slice sits in an image-based table and was not extracted. The arithmetic bounds
+   the risk: US$297 × 28 sales/month = US$8.316, so 336 sales/year, which needs a population above
+   roughly 5.000 for plausible penetration. Very likely, not yet measured.
+2. **CBP HQ H350722** (Jan 2026), which reportedly permits an AI classification tool as a suggestion
+   aid only — separated from the entry portal, meaningfully disclaimed, and not directing the code
+   that appears on an entry, with the licensed broker making the actual entry classification. Only
+   law-firm summaries were obtained. **Read the ruling text before writing a word of copy**, because
+   it defines what may be claimed.
+
+Note that H350722, if accurate, makes **brokers a safer buyer rather than a riskier one**: a corpus
+that helps a licensed professional do their own CROSS research feeds their judgement rather than
+replacing it, which is the most defensible position available.
