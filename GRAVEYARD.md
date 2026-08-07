@@ -1,5 +1,66 @@
 # The graveyard — candidates killed, and what each one taught
 
+---
+
+## GATE 0 — read this before designing anything
+
+> **CAN THE BUYER PAY? Prove it with a measured size distribution before you design a product.**
+
+This gate exists because it was learned the most expensive way available: a complete business
+case was written, verified three times, and committed to the repository before anyone checked
+the target population's bank balance.
+
+**The candidate:** monitoring for US charities that had fallen out of good standing with state
+charity regulators. 16.679 organizations verified in a "may not solicit" status. US$395 then
+US$119/month. It looked strong on every axis — a measured need, a recurring calendar, a verified
+list of 105.022, self-evident output, a regulator's own words supplying the authority.
+
+**Then the buyer was measured.** 150 delinquent organizations sampled and joined to IRS revenue
+data via the ProPublica API. All 150 resolved.
+
+| Annual revenue | Count |
+|---|---|
+| **Under US$50k** | **105** |
+| US$50k–250k | 14 |
+| US$250k–500k | 6 |
+| US$500k–1M | 2 |
+| US$1M–5M | 5 |
+| Over US$5M | 1 |
+| No data | 17 |
+
+**70% under US$50.000. Only 5,3% above US$500k.** Projected across the population: ~810 solvent
+prospects, below the viability floor, requiring 7,4% cold-email conversion to reach 60
+subscribers. Dead.
+
+An organization running on US$40.000 a year does not pay US$119 a month.
+
+---
+
+## The structural lesson: adverse selection is built into the visible-defect mechanism
+
+This is the most valuable finding of the whole exercise, and it generalises to every
+"find-the-error-and-sell-the-fix" idea.
+
+> **Companies carrying a public compliance defect are frequently defective BECAUSE they are
+> under-resourced. Neglect and poverty are the same phenomenon seen from two angles.**
+
+So the population *with the problem* is systematically biased toward the population that
+*cannot pay to fix it*. The mechanism that makes a faceless seller credible — quoting the
+buyer's own public defect — simultaneously selects for the buyers least able to pay.
+
+Any candidate using it must be designed against this. Three escapes:
+
+| | Escape | How it works |
+|---|---|---|
+| **W1** | **Sell to a different party** | Report the defect about *other* companies to the solvent party bearing the exposure — a lender, insurer, franchisor, platform, general contractor, large buyer. The defect-holder's poverty becomes irrelevant because they are not the customer. |
+| **W2** | **Target defects that scale with size, not neglect** | Errors caused by *complexity* rather than inattention. A company with 400 SKUs across 12 jurisdictions has conflicts because coordination is genuinely hard. The defect-holder is large by construction. |
+| **W3** | **Find a counterparty with power** | Where a solvent company must *prove* something to keep getting paid, the buyer has a contract worth keeping and the deadline is set by someone who can withhold money. |
+
+**Evidence that W2 works:** the appliance ENERGY-STAR-versus-DOE candidate found its mismatches
+concentrated in mid-size importers carrying large catalogues — with exactly *one* Whirlpool and
+*one* LG record across everything tested. Scale generated the defect; poverty did not.
+
+
 Kept honest so no dead idea gets quietly resurrected, and so the reasons
 compound into a filter.
 
