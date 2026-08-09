@@ -1,0 +1,262 @@
+# HTS Classification Defense Corpus — the two open gaps, closed
+
+Two things were outstanding on the leading candidate. Both are now resolved by direct fetch, and one
+of them changes the product.
+
+| Gap | Status |
+|---|---|
+| **CBP HQ H350722** — read directly, because it defines what the product may claim | **CLOSED.** Fetched in full: 40.504 characters, dated 16 January 2026 |
+| **The buyer population and its size distribution** (the Census table was an image) | **CLOSED.** The same data exists as extractable text in the PDF release |
+
+---
+
+## Gap 1 — the legal perimeter
+
+`rulings.cbp.gov/api/ruling/H350722` returns HTTP 200 and the complete text. Subject:
+**"Online platform; conducting customs business without a license."** Signed Yuliya A. Gulis,
+Director, Commercial and Trade Facilitation Division. It is an internal-advice decision requested by
+the Automotive and Aerospace Center of Excellence and Expertise.
+
+This is the most on-point document that could exist for this product. CBP examined a company that,
+among other things, ran **an AI classification tool that derives HTSUS subheadings from a
+customer-supplied product description** — and ruled on whether that is customs business requiring a
+broker's licence.
+
+### What CBP held, service by service
+
+| Service examined | Holding |
+|---|---|
+| Connecting importers to brokers via a platform | **Not** customs business, if the operator is merely transmitting and does not decide what is transmitted |
+| An OCR tool that identifies which data appears on an entry | **Is** customs business — impermissible for an unlicensed entity, and equally impermissible if contracted out to another unlicensed entity |
+| **An AI classification tool producing HTSUS subheadings** | **Permissible only** as general information disconnected from an actual or intended importation, with a meaningfully implemented disclaimer. Impermissible where it gives sub-6-digit codes to customers who are filing entry through the same platform |
+| Certifying and submitting CBP Form 5106 | **Is** customs business — "only a licensed customs broker may complete and submit CBP Form 5106 on behalf of another party" |
+
+### The four rules that decide our case
+
+**1. Six digits is the bright line.** Quoting HQ H260075 (3 Apr 2017), classification to the
+six-digit level is not customs business; *"[i]f the number is reported to the ten-digit HTSUS level,
+then [it] concerns classification for purposes of customs business and requires a license."* The
+reason is mechanical: filing an entry requires a ten-digit code.
+
+**2. Publishing and teaching are expressly permitted.** Quoting HQ 114654 (28 May 1999):
+
+> "as a general rule, unlicensed persons may instruct others on customs laws, regulations, policies
+> and procedures . . . they may **explain the use of the Harmonized Tariff Schedules** . . . They may
+> not, however, advise a client on how to classify, appraise, or mark merchandise that is going to be
+> the subject of an entry."
+
+**3. A general database is permitted — and CBP supplies the disclaimer wording.** HQ H272798
+(26 Jan 2017) approved an unlicensed foreign company building a tariff classification database
+usable by clients *"regardless of whether [a] particular product is ever actually imported into the
+United States."* Its disclaimer, which CBP accepted:
+
+> "for general, educational and planning purposes only. The specific tariff classification to be
+> applied to a specific entry of merchandise [wa]s to be determined by the licensed Customhouse
+> broker."
+
+CBP called this a *"fine line"* but concluded that so long as the disclaimer is **meaningfully
+implemented** and does not direct clients or brokers on how to prepare an entry, building the
+database is not customs business. **H350722 affirms H272798 and applies it to an AI tool.**
+
+**4. The forbidden version — and a disclaimer does not save it.** HQ H290535 (29 Sep 2022): a
+company classified the specific goods its customers ordered, to eight and ten digits, with a
+disclaimer saying the information was in no way confirmation or endorsement. CBP held it
+impermissible anyway, because it was *"providing specific subheadings on specific goods that its
+clients have ordered and for which they will be filing entry documentation."*
+
+The distinguishing fact CBP itself names: in H272798 the database was available for all products
+irrespective of whether any specific merchandise was purchased or imported; in H290535 the client
+sought codes for the exact goods it was importing.
+
+### The new holding, and why it is worth encoding
+
+H350722 adds a rule that did not previously exist in published form:
+
+> "This precondition necessarily extends to automated tools — if such tools are utilized to conduct
+> customs business, then an individual broker or other licensed person must have a role in specifying
+> what information, like value or classification, is automatically generated by the tool's decision
+> matrix and ultimately appears on an entry filed with CBP. **A tool does not constitute a 'person'**
+> as defined by 19 C.F.R. § 111.1, such that the actual decision regarding the classification of
+> imported merchandise . . . must be made by a duly licensed customs broker."
+
+A brokerage that has pointed an AI at classification now has a documented obligation to supervise
+its output. The corpus — real rulings, cited, with revocation status attached — is exactly the
+artifact that makes that supervision possible and auditable. **This ruling became public around
+17 March 2026** (the decision instructs a sixty-day delay before release on CROSS), so it is roughly
+five months old and largely unabsorbed.
+
+### The buyer's own use is lawful — verified separately
+
+The importer edition depends on the buyer being allowed to classify its own goods at ten digits.
+**19 CFR 111.2(a)(2)(i)**, fetched verbatim from eCFR:
+
+> "**For one's own account.** An importer or exporter transacting customs business solely on his own
+> account and in no sense on behalf of another is not required to be licensed, nor are his authorized
+> regular employees or officers who act only for him in the transaction of such business."
+
+And 111.2(a)(2)(ii) exempts a broker's employees acting for their employer under the broker's
+supervision. So both intended buyers are doing something lawful, and the statutory prohibition
+(19 U.S.C. § 1641(b)(1)) bites only on customs business conducted **on behalf of another**.
+
+### The perimeter, settled
+
+| Question | Answer | Authority |
+|---|---|---|
+| May an unlicensed publisher sell a general classification reference containing ten-digit codes? | **Yes**, with a meaningfully implemented disclaimer, not directing how to prepare an entry | HQ H272798, affirmed by HQ H350722 |
+| May she teach how the HTS works? | **Yes**, expressly | HQ 114654 |
+| May she classify a named customer's specific goods? | **No** — customs business even with a disclaimer | HQ H290535, affirmed by HQ H350722 |
+| May the importer use the corpus on its own goods to ten digits? | **Yes**, no licence required | 19 CFR 111.2(a)(2)(i) |
+| May a brokerage use it? | **Yes**, and it now helps them discharge a duty | HQ H350722 |
+| Does an AI doing the work change the analysis? | The tool is not a person; a licensed person must specify what it generates | HQ H350722 |
+
+### The design rules this forces — all cheap
+
+1. **Never classify a customer's goods.** No "send me your product spec." No review service, no
+   audit, no second opinion on a specific SKU. That is H290535 and it is the one thing that converts
+   a lawful publication into unlicensed customs business. It is also the obvious upsell, so it must
+   be refused in writing, in advance.
+2. **Carry the H272798 disclaimer, and mean it** — general, educational and planning purposes; the
+   classification applied to a specific entry is for the licensed broker or the importer to
+   determine. "Meaningfully implemented" is CBP's phrase, so the disclaimer must sit in the operating
+   procedure the AI reads, not only in a footer.
+3. **Position as research and defence, not answer-generation.** Find the governing rulings, check
+   whether they were revoked or modified, assemble the reasonable-care file, answer a CF-28 with
+   citations. That is further from entry preparation than "here is your code," and it is the more
+   valuable use anyway.
+4. **No broker referral fees, ever.** 19 CFR 111.36(b) prohibits a broker from arrangements where an
+   unlicensed person benefits from customs business transactions; only freight forwarders have a
+   carve-out. An affiliate commission from a brokerage would be an independent violation.
+5. **This matters more for her than for a US founder.** 19 CFR 111.3(a) requires customs business to
+   be conducted inside the customs territory of the United States, and CBP noted the company in
+   H350722 was foreign. If the product ever drifted into a service, it would be both unlicensed and
+   extraterritorial. The US company holds the transaction; the rule against classifying for clients
+   is what keeps 111.3(a) irrelevant.
+
+---
+
+## Gap 2 — the buyer, measured
+
+The Census figure was previously unavailable because the web version of the table is an image. The
+same content is extractable text in the PDF release: `census.gov/foreign-trade/Press-Release/edb/edbrel2024.pdf`
+(3.803.151 bytes, 59 pages), *A Profile of U.S. Importing and Exporting Companies*.
+
+**Correction to the earlier record: the 2024 figure is 240.535 identified importers, not 239.231.**
+The number appears five times in the release, including Table 1d, Table 2c and the narrative
+("*Of the 240,535 identified importers in 2024 (a decline of 0.8 percent from 2023), 17.4 percent
+were manufacturers, 36.5 percent...*"). The 2023 comparative is 242.515.
+
+### The apparel and footwear slice — Table 7c, 2024 Imports by 3-digit NAICS
+
+| NAICS | Identified importers | Under 500 employees | Known import value |
+|---|---|---|---|
+| 315 — Apparel Manufacturing | **948** | 943 | US$2.920M |
+| 316 — Leather and Allied Product Manufacturing | **311** | 306 | US$852M |
+| 458 — Clothing, Clothing Accessories, Shoe and Jewelry Retailers | **5.449** | 5.312 | US$62.046M |
+| **Hard floor** | **6.708** | **6.561** | — |
+
+**What cannot be measured from this source, stated plainly.** Most apparel brands that import
+finished garments are classified as wholesalers, and the relevant code — NAICS 4243, Apparel, Piece
+Goods and Notions — sits inside 3-digit NAICS 424 (Merchant Wholesalers, Nondurable Goods:
+**30.619** identified importers). This release publishes 3-digit NAICS only, so the apparel share of
+those 30.619 **is not derivable from it**. The true population is therefore above 6.708 by an
+unknown amount, and 6.708 should be treated as a floor rather than an estimate.
+
+### Can they pay? The size distribution — Table 1d
+
+Of the 240.535 identified importers:
+
+| Employment size | Importers | Share | Cumulative |
+|---|---|---|---|
+| Employees unknown | 94.200 | 39,2% | 39,2% |
+| 1–19 | 92.517 | 38,5% | **77,6%** |
+| 20–49 | 22.013 | 9,2% | 86,8% |
+| 50–99 | 11.526 | 4,8% | 91,6% |
+| 100–249 | 9.607 | 4,0% | 95,6% |
+| 250–499 | 4.160 | 1,7% | 97,3% |
+| 500+ | 6.512 | 2,7% | 100,0% |
+
+**77,6% of US importers have fewer than twenty employees or no reported employees at all.** That is
+the same shape as the population that killed the solicitation monitor — so it has to be answered
+directly rather than waved past.
+
+It resolves the other way here, because these are trading companies rather than grantees, and the
+release also publishes their import value. Aggregate known import value divided by importer count:
+
+| Slice | Mean known import value per importer |
+|---|---|
+| NAICS 315 | US$3,08M |
+| NAICS 316 | US$2,74M |
+| NAICS 458 | US$11,39M |
+
+These are means over a skewed distribution and should not be read as typical. But the arithmetic
+that matters survives that caveat. The verified duty rate in ruling F87174 for a women's knit
+sweater is **32,9%**. Even a company at a tenth of the NAICS 315 mean — US$300.000 of annual apparel
+imports — pays tens of thousands of dollars in duty a year, and a single misclassified style can move
+several points of it. US$297 against that is not a price objection; it is a rounding error. The
+charity case had no equivalent arithmetic, because a delinquent registration produces no revenue at
+all.
+
+**Gate 0: PASS, on a measured distribution rather than an argument.**
+
+### The second buyer, which the ruling promotes
+
+H350722 makes licensed brokers and in-house trade-compliance staff the safer and better-funded
+buyer, and that population is now measured too, from CBP's own rulemaking rather than from
+inference.
+
+**88 FR 41224**, *Continuing Education for Licensed Customs Brokers* (final rule, 23 June 2023),
+fetched from the Federal Register full-text endpoint:
+
+- **"As of 2022, there are 13,952 active, individual broker licenses."** This replaces the earlier
+  ~11.000 figure, which was never sourced.
+- Individual brokers must complete **36 continuing education credits per triennial period**.
+- CBP's own estimate of what broker training costs: *"The hourly cost of such trainings (excluding
+  free events provided by government agencies and other organizations) usually ranges from around
+  $25 to $70"* — so **US$900–2.520 per broker per triennium**, before travel, which CBP costs
+  separately at $66–133 per hour.
+- First compliance is tied to the **2027 triennial status reports, filed approximately 15 December
+  2026 to 28 February 2027.**
+
+Three things follow. This population is enumerable and professional. It has a documented,
+CBP-quantified habit of paying for knowledge by the hour. And it holds a new duty — supervising what
+an automated tool generates — that a citable, revocation-checked corpus directly serves.
+
+**The corpus is not accredited continuing education and must never be sold as though it were.** The
+CE regime matters only as evidence of budget and of attention landing on broker knowledge in exactly
+the window ahead.
+
+---
+
+## What this changes about the product
+
+**Two editions of one corpus, not one product with two audiences.**
+
+| | Importer edition | Broker / compliance edition |
+|---|---|---|
+| Buyer | The brand that owns the reasonable-care duty | The licensed broker or in-house compliance analyst |
+| Population | 6.708 identified importers as a floor, plus an unmeasured share of 30.619 nondurable wholesalers | 13.952 active individual licences |
+| Legal basis for their use | 19 CFR 111.2(a)(2)(i) — own account | Licensed, plus 111.2(a)(2)(ii) for employees |
+| The argument | ATLAS: 40% ten-digit accuracy from the best purpose-built model. Your AI is wrong most of the time at the digit where duty lives | H350722: your tool is not a person. Every classification it produces needs a licensed judgement you can evidence |
+| Price | US$297 | US$297, and defensible higher |
+
+The importer edition keeps the original demand story. The broker edition is the safer one — the buyer
+is permitted to do the thing the corpus supports, is fully enumerable, and has a dated regulatory
+reason to care this year.
+
+## Still unverified
+
+- **Whether anyone already sells a rulings-based classification corpus for AI use.** Competitor
+  checks run first, by the rule adopted after Pora. Not yet run here.
+- **The apparel share of NAICS 424** — needs a different source than this release, or a proxy.
+- **Whether brokers will buy a file rather than a subscription.** That is a Bucket B question: it
+  gets a test, not a verdict. 60 emails, under US$100, corpus already joined.
+
+## Sources, all fetched
+
+| Source | URL |
+|---|---|
+| HQ H350722, 16 Jan 2026 | `rulings.cbp.gov/api/ruling/H350722` |
+| 19 CFR 111.2 | `ecfr.gov/api/renderer/v1/content/enhanced/current/title-19?part=111&section=111.2` |
+| 88 FR 41224 full text | `federalregister.gov/documents/full_text/text/2023/06/23/2023-12921.txt` |
+| Census 2024 profile | `census.gov/foreign-trade/Press-Release/edb/edbrel2024.pdf` |
+| CROSS rulings API | `rulings.cbp.gov/api/search?term=apparel` — totalHits 54.117 |

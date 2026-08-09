@@ -252,3 +252,37 @@ so the price is genuinely unproven and belongs in the first test rather than in 
 Note that H350722, if accurate, makes **brokers a safer buyer rather than a riskier one**: a corpus
 that helps a licensed professional do their own CROSS research feeds their judgement rather than
 replacing it, which is the most defensible position available.
+
+---
+
+# Both gaps closed — see `HTS_gap_closure.md`
+
+Full working in `research/corpus-model/HTS_gap_closure.md`. Summary and corrections:
+
+| Item | Previous record | Corrected, by direct fetch |
+|---|---|---|
+| Identified US importers, 2024 | 239.231 | **240.535** (2023: 242.515) |
+| Licensed customs brokers | ~11.000 [PLAUSIBLE] | **13.952 active individual licences**, CBP's own figure in 88 FR 41224 |
+| Apparel/footwear importer slice | Not extracted — image table | **6.708 identified importers as a floor** (NAICS 315: 948, 316: 311, 458: 5.449) |
+| HQ H350722 | Law-firm summaries only | **Read in full** — 40.504 characters, 16 Jan 2026 |
+
+**The population threshold set above is cleared.** The note required a population above roughly
+5.000 for the sales plan to be plausible. The measured floor is 6.708, and excludes the apparel share
+of 30.619 nondurable-goods wholesalers, which this Census release cannot resolve at 3-digit NAICS.
+
+**The prior reading of H350722 from summaries was correct**, and the ruling turns out to be stronger
+than the summaries suggested. It affirms **HQ H272798**, which expressly permits an unlicensed party
+to build a general tariff classification database — and supplies the disclaimer wording CBP accepted.
+It also adds a new holding: *"A tool does not constitute a 'person'"*, so a licensed broker must
+specify what an automated tool generates. That converts the corpus into a supervision artifact and
+confirms brokers as the safer buyer.
+
+**The one forbidden business model, now on the record:** never classify a named customer's specific
+goods. HQ H290535 makes that customs business even with a disclaimer attached. It is also the obvious
+upsell, which is why it has to be refused in advance rather than declined in the moment.
+
+**Gate 0: PASS on a measured distribution.** 77,6% of US importers have under twenty employees or no
+reported employees — the same shape that killed the solicitation monitor. It resolves the other way
+because these are trading companies with published import value: mean known import value is
+US$3,08M in NAICS 315, against a verified 32,9% duty rate on knitwear. The charity case had no such
+arithmetic.
