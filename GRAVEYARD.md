@@ -1606,3 +1606,148 @@ Three of the five investigations returning UNCERTAIN is **not** a pass. It is a 
 business cannot be assessed from a desk — which, after thirty-three desk-based kills and zero buyer
 contact, would itself be the finding, and the correct response would be the cheapest possible contact
 with a real buyer, not another round of analysis.
+
+---
+
+# KILL — DECKPROOF (10 August 2026). Candidate 34. Pre-committed condition #1 fired.
+
+## KILL 1 — BUCKET A, MEASURED: the free substitute does the whole job
+
+The gate was: can the buyer just upload both files to Claude or ChatGPT? It was **measured, not
+argued**. Three fixtures built on disk (16, 20 and 40 SKUs), ground truth written to a file without
+being printed into context, scored by script:
+
+| Fixture | Planted | Found | False positives | Silent arithmetic errors |
+|---|---|---|---|---|
+| 1 — 16 SKUs, 8pp | 10 | **10** | 0 | 0 |
+| 2 — 20 SKUs, 7pp, distractor cost columns | 12 | **12** | 0 | 0 |
+| 3 — 40 SKUs, 6pp, deltas at the rounding threshold | 16 | **16** | 0 | 0 |
+| **Total** | **38** | **38** | **0** | **0** across ~380 checks |
+
+The hardest fixture deliberately shrank the plants *inside real rounding noise* — margins off 2–3
+points, case prices off 1,8–2,6% — sitting beside ~200 correctly-rounded claims. All separated
+correctly, with checkable page-and-cell citations, nothing invented. **And both competitors execute
+Python over the uploaded XLSX and PDF, so the arithmetic is not in the weights and will not regress.**
+
+**Three further points, each sufficient on its own:**
+
+1. **The wedge is one copyable paragraph of prompt.** That is *worse* than the funded-incumbent risk
+   the candidate was designed to survive, because **a prompt needs no funding to distribute.** Any CPG
+   newsletter can publish it free, once, forever.
+2. **The demo is self-defeating.** To justify any price she must show the chat failing on the
+   prospect's own files. The prospect will test the chat first, at 12–25 SKUs, where it does not fail.
+   **The prospect's own experiment closes the sale for the competitor.**
+3. **What survives technically does not sell.** Repeatability — nobody re-runs a deck check. Calibrated
+   precision — protects against *noise*, and noise is a nuisance resolved at the brand's desk, never a
+   wound suffered in front of a category buyer. A stated denominator — genuinely unique, and a
+   **compliance artifact**.
+
+## The finding that generalises, and it damages the thesis that led here
+
+> **An audit trail nobody demands has no price.**
+
+CPG pre-sale has **no** party who requires evidence that a check happened: no retailer, no regulator,
+no auditor, no insurer, no lender. The coverage report is DeckProof's only structurally unique output
+and there is nobody to hand it to.
+
+**This forces a correction to the position that survived thirty-three kills.** The thesis was:
+*"when generation becomes free, verification becomes scarce."* The measurement says otherwise — **free
+generation brought free verification with it.** The thesis is only true under a condition it never
+stated:
+
+> **Verification sells only where a party DEMANDS EVIDENCE THAT THE CHECK HAPPENED — or where the
+> check is beyond what a general model can do. Absent both, free generation verifies its own output
+> for nothing.**
+
+And the sting: the places where someone *does* demand documented evidence are regulated filings,
+audits, insurance and certification — **precisely the space where Law 2 says the regulator already
+built the tool free, and where the vise has fired five times.** The refinement narrows the position
+rather than relocating it. That must be carried into candidate 35 rather than rediscovered.
+
+## KILL 2 — the fail-closed spec rejects the file population it needs
+
+Values-only XLSX with no formulas in any mapped cell. Brands author price lists in Excel *with*
+formulas, with multiple cost definitions and stale references. The spec that makes the product safe
+is the spec that disqualifies its own buyers — **the precondition trap, third appearance.**
+
+## KILL 3 — the channel, and my legal reading was wrong
+
+I concluded manual roster reading was permitted because I read the anti-scraping clause. **I missed two
+means-neutral clauses in the same section**, fetched verbatim from `ecrm.marketgate.com/UserTerms`:
+
+- **§2(a)(vii)** bars *"data mining or similar data gathering or extraction activities or retrieve data
+  or other content from the ECRM Services for purposes of creating or compiling that content for any
+  purpose other than your authorized use"* — **no mention of automation.**
+- **§2(a)(vi)** bars conduct that *"harvests or otherwise collects information about others, including
+  names, e-mail addresses, other contact information."*
+- **§1(a)** limits the licence to *"only for Your internal business purposes"*, and *"use for any other
+  purpose, is explicitly prohibited."*
+
+The roster is out, by hand or by script. *(Correcting the other reviewer too: the phrase "unauthorized
+commercial solicitation" appears nowhere in the document — that was a paraphrase. The bar comes from
+(vi), (vii) and §1(a).)*
+
+## KILL 4 — the population is at the floor, and its size cannot be measured
+
+Measured from primary Census files, downloaded and parsed: **NAICS 425120 Wholesale Trade Agents and
+Brokers — 33.732 firms**, 35.819 establishments, 79,8% under five employees, 6.501 with 5–99. But
+**neither CBP nor SUSB splits 425120 by commodity, so the food/CPG slice cannot be measured.** The
+widely repeated *"at least 850 plausible repeat buyers"* is an assumption inside a plausible bracket,
+not a finding. After a food-share assumption and a solvency filter: **~350–520 firms** — at or below
+the pre-committed floor of 500.
+
+## Recorded because it is the best work in the packet and is reusable
+
+**THE PRICING ANSWER, and it directly answers the founder's question.**
+
+**Neither monthly nor one-time. A credit pack** — US$149 per buyer pack checked, US$595 for 5,
+US$1.790 for 20 (US$89,50 each), credits never expiring, **a credit burning only on a completed run**
+so a fail-closed INCOMPLETE result costs the customer nothing.
+
+**Monthly is dead for a brand, and this is now evidenced from the retailers' own published calendars:**
+
+- **Sprouts'** Category Review Calendar gives each of ~50 categories exactly **one** new-item
+  submission deadline and **one** reset per 12-month cycle (only three categories appear twice)
+- **Whole Foods Market UK**: *"There are between 15 and 35 categories per product team, per year, that
+  we will be accepting submissions for"*, with off-cycle entry *"strictly limited"*
+- **NielsenIQ**: category reviews *"generally occur twice a year"*
+
+So a brand is at **0,25–0,7 uses per month.** A monthly subscription's billing period contains zero
+use in most months — one cycle, then ten months of churn to explain, with no live English call
+available to save the account. And US$399/month is **18–37× the annual price** of the nearest
+seat-subscription comparable (Draftable, US$129–261 per user per **year**).
+
+**The print-preflight comparable cuts the other way, and that is the lesson.** Enfocus PitStop Pro is
+US$40/month or US$480/year per seat — deterministic, fail-closed document verification, exactly this
+product's shape. It is a subscription because **a print shop preflights every job every day.** Same
+product shape, opposite usage shape. *Copying a pricing model without copying the usage frequency is
+the error.*
+
+> **Bill the unit the customer's own world already counts.** Retailers define the submission; the
+> submission is the billable event. Where a document flow is bursty the market prices per document —
+> SafeSend Returns per tax return, PDF remediation per page. Where it is continuous it prices per seat
+> per year.
+
+**And the defect rate, partially measured for the first time:** of 12 public CPG pricing documents
+stating enough interlocking numbers to self-check, **3 contain a hard internal arithmetic
+contradiction (25%, Wilson CI 8,9–53,2%)** and 2 more are mapping-ambiguous; **4 hard defects across
+~117 verified claims = 3,4% per claim.** Including — with some irony — **Startup CPG's own
+"Pricing 101" tutorial**, which states COGS of US$2,55, then uses US$2,65 in the formula, and prints a
+US$4,25 result consistent with neither as written.
+
+## Honest note on the strength of this kill
+
+The commodity measurement is **indicative, not independent**, and every bias runs toward overstating
+the free substitute: same model family as the competitor, the tester knew the plant categories a
+buyer's prompt would not supply, pre-extracted text rather than uploaded files, far more effort than
+one chat turn, and same-fixture repeatability measured at n=0.
+
+And the strongest independent evidence runs the *other* way. **FinVerBench (arXiv 2605.29586)** found
+calibration collapse on genuinely ambiguous financial documents: **9 of 14 frontier runs at 59,0%
+accuracy with a 100% false-positive rate**, GPT-4.1 at 95,3%, DeepSeek R1 at 95,3% — against **0% FPR
+for a deterministic rule-based verifier**, which managed only 51,6% recall. The paper's own words:
+*"the central observed challenge is calibration rather than detection."*
+
+**So the kill is commercial, not technical, and it is stated that way deliberately.** The deterministic
+tool really is more precise. Precision protects against noise; noise is resolved at a desk; and there
+is nobody who requires the certificate. That is the whole argument, and it is enough.
