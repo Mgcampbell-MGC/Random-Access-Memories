@@ -535,3 +535,51 @@ precedent**; the **Employment Rights Act 2025** rewrites the substrate through 2
 **purchases once a decade**. A narrow reachable-by-nobody segment is not a business, and reaching it
 means winning panicked UK search traffic against Acas, gov.uk, Peninsula and every employment firm's
 SEO budget — from Brazil, with no phone support.
+
+## Two reusable findings from the ET audit — keep these
+
+**1. The UK legal perimeter is clean, and now documented verbatim.**
+
+**Employment Tribunals Act 1996 s.6(1)**: *"A person may appear before an employment tribunal in
+person or be represented by— (a) counsel or a solicitor, (b) a representative of a trade union or an
+employers' association, or (c) **any other person whom he desires to represent him**."*
+
+**Legal Services Act 2007 s.12(1)** lists six reserved activities — right of audience, conduct of
+litigation, reserved instruments, probate, notarial acts, administration of oaths. **ET
+representation is none of them**, and employment tribunals sit outside the LSA's "court" definition.
+The Employment Tribunal Procedure Rules 2024 (SI 2024/1155, in force 6 January 2025) replaced the
+2013 rules and expressly recognise a *"lay representative"* — *"a person who charges for
+representation in proceedings but is not a legal representative."*
+
+FCA claims-management regulation covers employment but is built around advising a **claimant**;
+art 89W excludes activity *"consist[ing] of the provision of a service to the defendant."* A
+respondent-side product sits outside it.
+
+So: no regulatory barrier ever existed here. The product died commercially, not legally.
+
+**2. UK case-law licensing is split, and the split matters enormously.**
+
+| Source | Licence | Bulk / computational use |
+|---|---|---|
+| **First-instance ET decisions** (gov.uk) | Generic **OGL v3.0** footer — permits commercial exploitation, attribution required | Permitted, but there is **no bulk download and no API**. The Atom feed returns only the 50 most recent; the corpus is 2.666 pages of search UI. The judgment PDFs carry **no copyright notice at all** |
+| **EAT and appellate** (Find Case Law, National Archives) | **Open Justice Licence v2.0** | **Expressly bars "computational analysis of the Information (including indexing by search engines)"** without a separate application. The licence is free and ~40 have been granted since 2022 |
+
+**This is a rule for any future UK legal-corpus product: the binding authority is under the licence
+that forbids bulk processing, and the freely-processable material is the part that binds nobody.**
+That inversion is not an accident — and it is exactly the trap this candidate walked into.
+
+Also recorded: the OGL reading for first-instance ET decisions is **inferred, not stated**. No
+primary source says so in terms; it rests on the generic footer, the absence of any ET carve-out in
+OGL v3.0, and practitioner commentary. Anyone building on it should treat that as an open risk.
+
+**3. The staleness dates, now precise.** Employment Rights Act 2025 received Royal Assent
+18 December 2025. Commencement relevant to this corpus:
+
+| Date | Change |
+|---|---|
+| **1 October 2026** — under two months away | ET claim time limit rises **3 → 6 months** |
+| **1 January 2027** | Unfair dismissal qualifying period **2 years → 6 months**; **compensation caps removed**; fire-and-rehire restrictions |
+| Through 2027 | Guaranteed hours, flexible working, bereavement leave, umbrella companies, collective redundancy thresholds |
+
+Fact-pattern reasoning in old decisions stays illustrative. Any statement of time limits, qualifying
+periods or remedies caps drawn from them **misstates the law within weeks.**
