@@ -1561,3 +1561,48 @@ of code was written.
 This should have been run on DeckProof in August — and in a sense it was: the parser gate found
 public sell sheets exist for only **2,7%** of brands. That was read as a parser failure. It was an
 input-existence failure, and the same test names it correctly.
+
+---
+
+# PRE-COMMITTED VERDICT RULES FOR DECKPROOF — written 10 Aug 2026, BEFORE the results landed
+
+Recorded before the six investigation agents returned, so the go/no-go is bound to criteria set in
+advance rather than to whatever the evidence happens to permit. The governing discipline, borrowed
+from an external memo and adopted verbatim:
+
+> **"Do not reinterpret a failure as 'we need better positioning.'"**
+
+## Any ONE of these is an unconditional KILL. No restructure, no reprice, no second look.
+
+1. **THE LLM GATE.** A single general-purpose pass in Claude or ChatGPT, on the planted fixture, finds
+   substantially all the discrepancies with usable citations and no silent arithmetic errors. If the
+   buyer's existing chat window does the job, there is no product — and "ours is deterministic" is a
+   seller's distinction, not a buyer's, unless the buyer can be shown to feel the difference.
+2. **THE DEFECT RATE.** Public sell sheets that state enough numbers to self-check show internal
+   arithmetic contradictions in **under ~20%** of cases, AND no independent evidence exists that
+   buyers or brokers experience this error class as costly. A checker for a defect that is rare and
+   cheap is not a business, however elegant.
+3. **THE POPULATION.** Fewer than ~500 reachable US independent brokers / fractional retail-sales
+   teams can be enumerated from a source that actually exists, OR the evidence shows these firms
+   buy essentially no software. Commission-paid, lean-on-tooling is a real risk, not a rhetorical one.
+4. **THE PRECONDITION TRAP.** Brokers do not hold a structured, values-capable price sheet per brand.
+   If their "cost sheet" is whatever each client emailed them, the qualified and the needy populations
+   are disjoint and the product cannot run on the buyers who need it.
+5. **ARITHMETIC.** No mix reaches US$7.400–8.300/month under any of the three pricing models with a
+   **derived** account count — attach rate and retention both stated. A number that only works when
+   the retention assumption is left unwritten is the error already made once in this file.
+
+## These are NOT kills. They are restructures, and each must arrive with a fix.
+
+- The roster channel being closed by ECRM's terms → change channel, not product.
+- Monthly being wrong → switch to credit-pack or per-pack, which is an honest answer for an
+  episodically-used tool, not a retreat.
+- The brand buyer repeating poorly → sell to the broker.
+- Vision or parsing limits → fail closed and disclose coverage.
+
+## And one rule about how the answer gets read
+
+Three of the five investigations returning UNCERTAIN is **not** a pass. It is a statement that the
+business cannot be assessed from a desk — which, after thirty-three desk-based kills and zero buyer
+contact, would itself be the finding, and the correct response would be the cheapest possible contact
+with a real buyer, not another round of analysis.
