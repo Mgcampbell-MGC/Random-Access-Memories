@@ -828,3 +828,66 @@ incumbents who reach buyers we cannot.
 Breaking the trap requires changing exactly one of three things — **the audience/network exclusion,
 the product category (something that is not information), or the revenue target and timeline.**
 Nothing else in the set is load-bearing.
+
+---
+
+# THE ALERT FINDING — who you sell a trigger to decides whether it sells at all
+
+Researched 10 Aug 2026, before designing candidate twelve. **This is the most useful structural
+finding in the file.**
+
+## The evidence splits on one variable: who benefits from the trigger
+
+**When the recipient is an OPPORTUNIST who profits by acting on the information, the alert sells by
+itself, at real prices, sustained:**
+
+| Business | Watches | Price |
+|---|---|---|
+| PropertyRadar | foreclosure / ownership change | **US$119–599/month** |
+| RealtyTrac | foreclosure listings | **from US$49,95/month** |
+| Owler | funding, hiring, competitor events | **US$39–350/month** |
+
+**When the recipient is the SUBJECT of the problem — their own violation, liability or cost — the
+alert is free or near-free and every dollar is in the fix:**
+
+| Business | Alert price | Fix price |
+|---|---|---|
+| ViolationWatch | **$9/building/month** | $350 simple cure · $950 OATH hearing · $1.800+ complex · $500/month retainer |
+| Insparisk | **free, unlimited buildings** | inspections $300–800 per elevator, $15k–100k facade |
+| Alt Legal | watch is a **$30–95 add-on** | its own marketing tells firms the value is the **enforcement billables** the alert surfaces |
+| Levelset | alerts bundled | **$59 per notice filed** — the filing is the product |
+
+> **No example was found of anyone selling a pure alert, at a meaningful price, to the party the
+> alert is about.** Sell the trigger to whoever profits from it — never to whoever it happens to.
+
+## The success stories for trigger-based cold outreach are fabricated
+
+Two cases circulate constantly: Baird Hall scraping the iTunes API to reach $1,3M ARR, and Jake
+Atwood's $1,2M ARR from Indeed-triggered cold email. **Both were checked against primary sources and
+neither survives.** The Indie Hackers transcript contains no mention of iTunes API scraping — Hall
+describes hand-researched outreach, 10–30 emails a day, and explicitly criticises mass blasts. The
+Atwood interview contains no trigger events, no Indeed, and no ARR figure at all. Both trace to a
+cluster of cold-outreach *tool vendors'* content marketing.
+
+**The one genuine, decades-sustained trigger→outreach industry is attorney direct mail off public
+arrest, accident and bankruptcy records** — ~7,9% response, mailed within days. But: physical mail,
+targeting distressed individuals, selling representation. Never a subscription.
+
+## And the framing itself is a known fraud vector
+
+USPTO, the FTC and multiple law firms publish active warnings about solicitors who use a business's
+**own public filing data** — serial number, filing date, legal name — to send official-looking demands.
+Legitimate outreach built on *"we have public data about your regulatory situation"* is
+pattern-matched to that scam by recipients and probably by spam filters. Separately, CAN-SPAM carries
+**US$53.088 per email, uncapped** — Verkada, an ordinary security-camera company, paid **US$2,95M** in
+2024.
+
+## What this changes
+
+The shape requested — API trigger → direct outreach → sell to the affected company — is the
+**worst-evidenced** version of a trigger business. The well-evidenced version **inverts the buyer.**
+
+**The rule going forward:** a trigger is only sellable if there is a third party who makes money by
+knowing first. Identify that party before designing anything. If the only interested party is the one
+the event happened to, the alert is a lead magnet and the business is the remedy — which requires
+credentials, per-customer work, or both.
