@@ -1296,3 +1296,93 @@ And both survived for the same reason, which is now the most load-bearing findin
 
 That is why the lead-magnet mechanism cannot reach either one. Content is free to produce; **reading
 a stranger's inbox is not.** There is nothing to publish, so there is nothing to give away.
+
+---
+
+# KILL — THE EXPEDITING DESK (10 August 2026). Found by the founder, in one link.
+
+**Object & Order — https://objectandorder.com/ — ships the identical product, to the identical buyer,
+free, with no paid plan by design.**
+
+Verbatim from their own pages:
+
+- *"Track orders from confirmation to delivery with **AI-powered inbox sync**"*
+- *"identify order confirmations and shipping updates from vendors, then map tracking numbers and
+  delivery dates to the correct line items — **no manual copy-paste**"*
+- *"the free procurement platform for design studios"*
+- *"Object & Order is free. No subscription. No per-seat charge. No setup fee."*
+- *"**Free isn't a trial or a teaser for a paid plan — there is no paid plan.**"*
+- Monetised instead by *"a 5% margin over what the vendor charges"* embedded in trade prices.
+
+Bucket A1. Identical product, identical buyer, price zero, and zero is not a promotion — it is the
+business model.
+
+## How the screen failed, which is the part worth keeping
+
+The competitor sweep was the centrepiece of this session's method. Seventeen agents ran. A dedicated
+adversarial verifier was given one job — kill this candidate using **vendor vocabulary** — and it ran
+twenty-plus queries, surfaced sixteen vendors (Knowlix, Canals.ai, Leverage AI, P1ston, Debales,
+Line, Specsources, Canoa, Focuspilot, Planify, Figurz, Mortar, Roomwork, DesignerInc, Daniel House
+Club, Uncap), fetched Studio Designer's Feb and May 2026 release notes to prove the negative with a
+date, and returned SURVIVES at 74.
+
+It missed the only competitor that mattered.
+
+> **A competitor search is implicitly a search for vendors, and a vendor is someone who charges. A
+> free competitor is systematically invisible to it** — no pricing page to compare, no Capterra
+> category row, no paid keywords, no G2 entry, nothing for a "price / plans / pricing" query to
+> catch. Every query in the sweep had a price-shaped hole in it.
+
+**Test C — search for the free one separately, and search for it by its funding model.** Ask *who
+earns margin on the goods or money flowing past this software*, then go and look at what that party
+publishes. The queries that would have found Object & Order are not software queries at all: *"free
+procurement platform interior designers"*, *"designer trade pricing platform no subscription"*,
+*"who pays for [vertical] software when it is free"*.
+
+## THE LAW — seventh appearance of the lead-magnet mechanism, and its sharpest form
+
+Previous six were content-funded: a marketing department gives away a template because content costs
+nothing. This one is different and worse.
+
+> **Where software sits beside a flow of goods or money, the margin on that flow will fund the
+> software to zero. Do not sell software into a transaction you are not taking a cut of.**
+
+The party clearing the transaction can always outprice a pure-software seller, permanently, because
+the software is their customer-acquisition cost and the goods are their revenue. This retroactively
+explains a string of earlier kills that were recorded separately:
+
+| Free product | Funded by |
+|---|---|
+| Object & Order's inbox sync | 5% margin on trade prices |
+| Booksy Biz's per-client Claim button | payments and Boost commission |
+| Momence's contribution margin per class | payments |
+| RangeMe's auto-computed case price and buyer gross margin | ECRM's US$7.000–16.900 meeting fees |
+| Arhaus Trade Dashboard, Uncap dealer portal, Daniel House Club | goods margin |
+| Insparisk Command's free-forever tier | insurance |
+
+**My own workflow surfaced this variant and I under-read it.** The list-reverify agent wrote: *"the
+party that earns margin on the goods gives order tracking away free"* — naming Arhaus, Uncap and
+Daniel House Club. I recorded it as "narrows the wedge" rather than following it to its conclusion,
+which was that somebody would build the entire product on that model and give it away.
+
+## What this does to the horizontal plan
+
+The "one engine, many verticals" expansion proposed hours earlier is damaged at every stop, because
+**every vertical on the list has a party earning margin on the goods flow**: freight forwarding
+(Freightos, Flexport), parts dealers (the distributor), specialty food (KeHE, UNFI), apparel
+wholesale, print brokerage, dental labs (the lab bills the practice).
+
+> **"Order status tracking" may be structurally unsellable as paid software in every vertical, for
+> the same reason it is unsellable in this one.** Wherever goods move, someone with margin on the
+> movement will fund the tracking to zero.
+
+## What survives, stated narrowly
+
+DeckProof's shield is thinner than claimed. RangeMe is free because ECRM sells meetings — the same
+mechanism one step removed, and it already killed two of DeckProof's three deliverables. The single
+surviving deliverable — the cross-document discrepancy audit — survives only because **nobody earns
+a margin on whether a brand's own deck matches its own cost sheet.** There is no third party clearing
+that transaction, so there is no adjacent revenue to fund a free version.
+
+**That is now the test to apply before anything else: name the party who clears the transaction. If
+one exists, they will give your software away.**
