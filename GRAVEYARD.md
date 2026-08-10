@@ -891,3 +891,64 @@ The shape requested — API trigger → direct outreach → sell to the affected
 knowing first. Identify that party before designing anything. If the only interested party is the one
 the event happened to, the alert is a lead magnet and the business is the remedy — which requires
 credentials, per-customer work, or both.
+
+---
+
+## FORM 5500 DELINQUENCY LEAD FEED — killed 10 Aug 2026 (candidate 13)
+
+The first candidate to satisfy the alert finding — sell the trigger to the professional who profits,
+not to the company in trouble. It died on something more embarrassing.
+
+**1. THE BUYERS ARE NOT ENUMERABLE — and that was the whole premise.**
+The sponsors are beautifully enumerable: EFAST2 bulk files, free, ~800.000 plans a year. **The buyers
+are not.** SPBA — the TPAs' own trade body — states plainly that no standard definition of "TPA"
+exists: its comprehensive membership is **~185 firms**, while "probably a couple thousand entities may
+do TPA work to some degree." NAPA's 20.000+ and ASPPA's 6.900–9.000 are **individuals, not firms**.
+NABIP's 100.000+ are overwhelmingly health brokers, the wrong buyer. No BLS code isolates the
+occupation. **No free bulk directory of TPAs, retirement advisers or ERISA attorneys exists** — the
+buyer list requires paid commercial enrichment layered on fragmented association directories.
+
+> **I verified the enumerability of the leads and never checked the enumerability of the buyers.**
+
+**2. The lead itself is adverse-selected.** Delinquency correlates with dysfunction — a dead or absent
+prior adviser, non-responsive sponsors, missing records. Taking on a delinquent plan means
+reconstructing multi-year records and carrying DFVCP execution risk. The literature treats it as a
+liability category, not a clean win. No source confirms that delinquent sponsors are a *wanted* lead
+type.
+
+**3. Four detection blind spots, and timing fixes only one.**
+- Form 5558 extensions are not public — fixable by computing each plan's own extended deadline rather
+  than a blanket October date.
+- **One-participant/5500-EZ plans are excluded from public data entirely.** IRS, verbatim:
+  *"Information for a one-participant plan... will not be published on the internet."* A naive scan
+  misflags compliant solo-401(k) sponsors as delinquent.
+- **MEP/PEP adopting employers** correctly have no EIN-level filing — more false positives, growing
+  post-SECURE.
+- **EIN and plan-number matching is documented as unreliable by DOL's own watchdog**: GAO-14-441 found
+  naming conventions and identification numbers inconsistent, and 18% of records unmatchable.
+
+**4. And the competitor picture was already adverse.** DOL runs the identical algorithm internally —
+its **Stop-Filer Initiative** sends inquiry letters, lifting compliance from 34,5% to 56,4% in one
+cohort and 11,0% to 69,0% in another — and **the DOL letter is precisely what destroys DFVCP
+eligibility**, so the product races the government for a window the government is closing. Seven
+vendors already monetise this data: miEdge/Zywave (~$2.400–7.000/seat/year), Judy Diamond
+($795–3.900/year with a 19-signal "Red Flags" layer and a blog series called *Prospecting the Federal
+Form 5500*), and **form5500search.com at $49/month flat with unlimited unlocks and CSV export.**
+
+**What was actually fine:** the legal perimeter. No DOL usage restriction on EFAST2 data; ABA Model
+Rule 7.3 permits written B2B solicitation of entities that routinely buy such services; and the
+USPTO/FTC scam warnings do **not** transfer — those concern impersonation and fake official notices,
+not prospecting from public data. Legally clean, commercially dead.
+
+## THE LESSON — a lead-data business needs TWO enumerable populations
+
+The requirement set says *"an enumerable, contactable, solvent population."* For a data or lead
+product that test must be applied **to the buyer, not to the records being sold.**
+
+> **Check the buyer's enumerability before the lead's.** Public registries make the *subjects* of data
+> easy to count and the *purchasers* of data easy to assume. Thirteen candidates in, this is the first
+> that failed on the buyer side alone.
+
+And a corollary worth keeping: **an agency that publishes a public register often works that register
+itself.** DOL, IRS, CBP and USPTO all run internal programmes off their own data. Before treating a
+public dataset as an unwatched signal, check whether the publishing agency is already acting on it.
