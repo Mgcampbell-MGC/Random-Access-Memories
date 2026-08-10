@@ -493,3 +493,45 @@ session *sob pena de preclusão* — a deadline that recurs for the same buyer, 
 decade.
 
 It has not been audited against the four questions above. It should be, before anything is built.
+
+## Corrections to the entry above, from the fuller substitutes audit
+
+**My FSB figure was wrong and the source was weaker than I implied.** I wrote "£97,50/year for a sole
+trader". £97,50 is the **associate** rate. The pricing found is sole trader/no employees **£195/yr**,
+1–20 employees £345, 21–50 £545, 51–100 £895, 101+ £1.295. Worse, `fsbmembership.co.uk` is a
+**reseller site** that itself discloses it "is not the official Federation of Small Businesses
+corporate website" — and the official domain could not be fetched. Treat the FSB numbers as
+corroborated but not primary.
+
+**The insurance argument is weaker than I stated, not stronger.** How many UK SMEs actually hold
+legal expenses cover **could not be verified in either direction**. The ABI's January 2026
+underinsurance report sits behind a bot check; secondary summaries confirm employers' liability
+(50%) and public liability (57%) but do not isolate legal expenses at all. The "~30%" figure in
+circulation is unverified. So "someone else already pays" is true *where cover exists* and its
+prevalence is unknown.
+
+**Where cover does exist it is strong but conditional** — from Markel's own policy wording, read
+directly: it names *"Employment tribunal response (ET3)"* as a covered stage, pays compensation up
+to £100.000, **but** applies a 51% prospects-of-success merits test the insurer alone judges, lets
+the insurer choose the representative, and **collapses the indemnity to £1.000 if the employer picks
+their own solicitor**. Cover can also be reduced where the employer failed to follow the advice line
+or the ACAS Code before dismissing.
+
+**The solicitor comparison needs to be stated at the right level.** £261–£522 + VAT is the fee to
+**draft the ET3**, which is roughly what this product costs. Defending the whole claim is
+£6.000–£8.000 straightforward and £18.000–£28.000 end to end, with no costs-shifting — the employer
+pays even when they win. So the price inversion holds at the level of the specific task the product
+addresses, not for the entire defence.
+
+**One honest point in the product's favour, recorded because it is real:** no dedicated ET3 defence
+toolkit for employers was found at any price. The format appears genuinely novel here, and a narrow
+segment does exist — uninsured, no HR retainer, claim small enough that self-representation is
+rational. SETA 2018 puts employer representation at 70% day-to-day and 77% at final hearing, so
+roughly 30% are unrepresented.
+
+**Why the kill still stands.** The load-bearing reasons are not the insurance argument. They are:
+the buyer **cannot be found** inside the 28-day window by any lawful mechanism; the corpus **is not
+precedent**; the **Employment Rights Act 2025** rewrites the substrate through 2027; and the buyer
+**purchases once a decade**. A narrow reachable-by-nobody segment is not a business, and reaching it
+means winning panicked UK search traffic against Acas, gov.uk, Peninsula and every employment firm's
+SEO budget — from Brazil, with no phone support.
