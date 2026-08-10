@@ -753,3 +753,78 @@ worth R$272,6 bilhões** — a derived average around **R$566.000 per ME/EPP con
 fine too: atas name every participant with CNPJ, and **PNCP exposes CNPJ-level data through a
 no-login public API**. Gate 0 passed and the list existed. It died on the incumbent's shipped AI, the
 R$190 human, and a statutory clock that closes before a call can land.
+
+---
+
+## DOSSIÊ PATROCÍNIO — sponsorship architecture kit (killed 10 Aug 2026)
+
+The taste hypothesis, tested. **Candidate eleven, and the first that used the founder's actual
+expertise.** Fatal on four axes, and it disproves the thesis that produced it.
+
+**1. Adverse selection, now with numbers.** IBGE: Brazilian cultural-sector workers average
+**R$2.815/month**, women **R$2.510**, informality **44,6%**, 43% conta-própria. R$497 is ~18–20% of
+the target buyer's monthly income; R$997 is ~35–40%. And the trigger selects for structural losers,
+not unlucky ones: **77,4% of Rouanet money 2021–24 went to the Sudeste, SP alone 40,5%**, with
+researchers attributing the gap to *"desigualdades no acesso a redes de financiamento"* — unequal
+access to funding **networks**, not to deck quality. A PDF does not fix network access.
+
+**2. The law already built the buyer a better option.** Rouanet norms permit a professional
+captador's fee of up to **10% of project value (cap ~R$100–150k) as a line item inside the approved
+project budget**, paid only from funds actually captured. Zero upfront, success-contingent, and the
+captador brings the network the data says determines the outcome. A broke producer's rational choice
+is never a cash-upfront PDF.
+
+**3. Everything informational is already free.** Sympla Academy's free certificated course covers
+proposal structure, tier pricing, contract clauses, negotiation and post-event reporting. Plus
+4.events, Even3, Lets, Sebrae, MinC's free 160-hour course, and Incentiv.me. Premium is occupied too
+— Cultura e Mercado charges **R$3.599** for 63 hours with 14 named specialists. The R$497–997 slot is
+squeezed from both ends.
+
+**4. The one scarce ingredient cannot be built.** Sponsorship values are confidential and per-deal.
+What is public is already googleable — individual events publish their own cota decks. What is not
+public is what brands actually paid. And the sharpest point: **her career was executing brand events,
+not closing sponsorship contracts.** She does not hold the dataset.
+
+## THE TASTE THESIS IS DEAD, AND HERE IS EXACTLY WHY
+
+I argued: *in compliance a free template is equivalent; in taste, free is visibly worse — so
+aesthetic products resist the lead-magnet mechanism.*
+
+**The inversion:** the premium end already retains agencies with in-house design and existing brand
+relationships. **The buyer who needs someone else's taste is the buyer who lacks it — the one earning
+R$2.500/month.** The thesis may hold in the founder's old world; the addressable buyer for
+taste-as-a-product is precisely the one who cannot pay for it. The thesis contradicts itself.
+
+**Founder-fit crack, recorded:** Rouanet captação is a fiscal-incentive game — renúncia fiscal
+mechanics, prestação de contas, compliance. Not the luxury-brand-experience game she knows. The one
+candidate built on her expertise pointed it at buyers playing a different sport.
+
+**Correction to my own input:** the "35.000 approved-but-unfunded projects" figure was my computation
+from this repo's SALIC pull (45.863 total, 10.945 with captação > 0), not a published national
+statistic. The phenomenon is real and worse — nationally in 2023, **R$16,7bn requested against ~R$2bn
+captured**, and in the ABC paulista region **1 project in 10** raised anything.
+
+---
+
+# ELEVEN CANDIDATES. THE CONSTRAINT SET IS THE PROBLEM.
+
+The mechanism never changed across nine industries, three countries, two languages, both
+distribution models, and now both product categories — compliance *and* taste.
+
+**The chain that closes the trap:**
+
+1. No audience and no network ⇒ discovery must come from **search or marketplaces**.
+2. Search and marketplaces are **where funded incumbents place free content**, because content now
+   costs nothing to produce and is the cheapest acquisition channel in existence.
+3. An informational or template product is **exactly what they give away**.
+4. Therefore the intersection of "digital information product" and "discovered without an audience"
+   is approximately empty.
+
+**The most expensive constraint is not capital — it is the excluded network.** Every strand of
+evidence converges on it: the base-rate data showed nearly every large solo success rode an existing
+audience; the GIFE research says captação outcomes are set by network access; five kills came from
+incumbents who reach buyers we cannot.
+
+Breaking the trap requires changing exactly one of three things — **the audience/network exclusion,
+the product category (something that is not information), or the revenue target and timeline.**
+Nothing else in the set is load-bearing.
