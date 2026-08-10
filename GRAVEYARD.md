@@ -981,3 +981,142 @@ lower floor than the enterprise seat pricing suggested.
 2. **How wide is the exclusivity window?** Measure the gap between the earliest point you can detect
    cleanly and the point the incumbent or the agency acts. Here it was eight weeks a year. If that gap
    is short, there is no subscription — at best a seasonal list.
+
+---
+
+## THE LIST HUNT — killed 10 Aug 2026 (candidates 14, 15, 16)
+
+Three survivors came out of the list hunt: two from Brazil and the US that ranked first on their
+side, plus a third. All three were killed by the same check, run once, in one search each.
+
+### 14. OFICINAS PERMISSIONÁRIAS (Brazil) — Inmetro-authorised measuring-instrument repair shops
+
+The agent's case: CNAE 3314-7/10 = 13.867 active companies; only these shops may lawfully break the
+metrological seal on a commercial scale or fuel pump; **"no vertical SaaS found across three
+Portuguese search phrasings."**
+
+**There are two guards, not one, and both were found on the first query.**
+
+**Guard A — the government runs the workflow, free and mandatory.** **PSIE, the Portal de Serviços
+do Inmetro nos Estados** (`servicos.rbmlq.gov.br` / `psie.inmetro.gov.br`), is where permissionárias
+register users, record every repair, and file the service declaration — **required within 5 working
+days.** Inmetro also publishes a full step-by-step wiki for it (`wiki.inmetro.rs.gov.br`) with quick
+guides titled *Como Cadastrar Usuário de Oficina Permissionária*, *Como Gerenciar Minhas
+Solicitações*, *Como Gerenciar Declarações da Conformidade*. The portal is also the public directory
+of the shops themselves — so the "enumerable population" is enumerable because the regulator already
+built and published the register it mandates.
+
+**Guard B — a dedicated commercial product already exists, built to the exact clause.**
+**SISMETRO** sells *"Gestão de Serviços para Oficinas Permissionárias do Inmetro"* at
+`sismetro.com/permissionarias`. Its own copy: *"A solução atende plenamente a legislação vigente, em
+especial a Portaria N° 457 de 17 de novembro de 2021 do Inmetro"* — and it states that SS-management
+software is itself **provided for at item 5.12.3 of that Portaria.** It ships QR-code equipment tags,
+custom checklists, digital client signature in-app, tamper-proof records, and **PSIE integration**
+(the operator pastes the SS URL into the *Descrição da Ordem de Serviço* field so Inmetro and the
+IPEMs can open it without a SISMETRO login). Capterra: **R$89 per user per month, 121 reviews,
+4,5 rating.**
+
+**And the price ceiling kills the arithmetic anyway.** At R$89/technician/month, R$30.000/month needs
+**~337 paying seats** inside a population whose *upper bound* is 13.867 companies — most of them one
+or two technicians. That is not a niche you can enter second.
+
+### 15. NATIONAL BOARD R-CERTIFICATE REPAIR ORGANIZATIONS (US) — boiler and pressure-vessel repair
+
+The agent's case: "more than 5,000 repair organizations in over 60 countries"; every code repair
+requires an **NBIC R-1 (Report of Repair)** or **R-2 (Report of Alteration)** with dual sign-off by
+the Authorized Inspector; a public directory at `buscenter.nationalboard.org`; **"no vertical
+business/compliance SaaS found."**
+
+**The National Board runs the R-1/R-2 system itself.** **EDT — Electronic Data Transfer**
+(`nationalboard.org/index.aspx?pageID=9&ID=60`, now also branded JRS Register) is, in its own words,
+*"an interactive document management system that both simplifies and expedites the process of
+registering data reports, conveniently accomplished through the internet."* **R-1 and R-2 are both on
+the form list.** *"The entire process is completed electronically with just a few clicks of a
+button."* It supports the **Form Registration Log requirement of the NBIC for R Certificate
+Holders** — the exact recordkeeping obligation a product would have sold.
+
+**It also already fixed the defect the product would have sold against.** EDT's *"electronic
+prompting for required information will eliminate the need for correcting reports due to omitted
+information"* — reported to have **cut administrative rejection of data reports by as much as 90%.**
+There is no fee to be authorised to register; *"most filing fees have been discounted for electronic
+filing as compared with filing data reports on paper."* **The incumbent pays you to use its free
+system.**
+
+**The one piece EDT does not do fails on cadence and on the human substitute.** The unserved part is
+the NB-415 accreditation itself — the written QMS manual and the shop audit. But the R Certificate
+runs **three years** (**US$1.150**), the audit is **triennial** (~US$5.000 direct cost), and it is
+performed by named humans — the National Board representative or jurisdiction Chief Inspector, plus
+the AIA supervisor and the Authorized Inspector. Consultants already sell the manual: **Sperko
+Engineering**, **The Welding Expert**, and off-the-shelf editable templates from **8sme Qualite**.
+A triennial purchase, against insured human consultants, is not a subscription.
+
+### 16. STATE-REGISTERED SCALE SERVICE AGENCIES (US) — ranked third, and the incumbent is stronger than ranked
+
+Discounted in the hunt as "SmarterCerts exists but is unfunded." Unfunded is not the test — **price
+is.** SmarterCerts publishes: **Starter US$210/month (3 technicians, 5.000 certs/yr) + US$995 setup;
+Pro US$335/month (5 technicians) + US$1.495 setup; Enterprise custom.** No free tier. That is a
+sharper, better-priced incumbent than most of what has been killed here — occupying the same niche,
+in the same trade, as candidate 14.
+
+---
+
+## TWO NEW TESTS — and the list hunt's premise is what actually died
+
+### Test A — "no competitor found" is a claim about the searcher, not the market
+
+Both leaders were reported as having **no vertical software after multiple search phrasings.** Both
+incumbents surfaced on **the first query I ran.** The difference was vocabulary. The agent searched
+the way the *trade* talks — *software para oficina de balanças*. The vendors write the way the
+*regulation* talks: *"Oficinas Permissionárias do Inmetro"*, *"Portaria N° 457"*, *"item 5.12.3"*,
+*"RBMLQ-I"*, *"NBIC Form Registration Log"*, *"R-1"*, *"EDT"*.
+
+> **Search for the incumbent in the regulation's own vocabulary — the portaria number, the form
+> number, the portal's name, the accreditation document's code. That is what the vendor put on its
+> landing page, because that is what the buyer types.**
+
+A negative competitor result is only admissible once the regulation's own nouns have been used as
+queries. Until then it means nothing.
+
+### Test B — the regulator builds the software for its own mandatory filings
+
+Candidates 14 and 15 died identically, in two countries, two languages, two legal systems: **the body
+that demands the filing had already built and shipped the filing system, free, and required its use.**
+Inmetro built PSIE. The National Board built EDT. Both validate the fields. Both are mandatory or
+strongly preferred. Both are documented and taught for free by the mandating body.
+
+The reason is structural, not accidental: **the recipient of a mandatory filing wants the data more
+than the filer wants to send it.** Machine-readable, validated, on time. That incentive is far
+stronger than any repair shop's desire for nicer paperwork, so the regulator builds first and gives
+it away.
+
+> **A mandatory filing to a government or standards body is the *worst* place to look for unserved
+> software, not the best.**
+
+**The one apparent counter-example, and what it actually shows.** Tax filing is a mandatory filing
+with an enormous private software industry. The difference is population size and heterogeneity: the
+IRS serves ~160 million filers with wildly varying inputs, so it cannot build one form that fits;
+Inmetro serves a few thousand shops filing one repair record. So:
+
+- **Small, homogeneous filing population → the regulator has already eaten it.** (PSIE, EDT, the DOL
+  Stop-Filer Initiative, the CBP downstream validator.)
+- **Enormous, heterogeneous filing population → a funded incumbent has already eaten it.** (Intuit,
+  ADP, Zywave.)
+- The band between them is where an independent could live — **and "regulated population that repeats
+  a mandatory filing" almost never lands in it.**
+
+### What this means for the search itself
+
+The list hunt was built to escape the lead-magnet trap by demanding *an enumerable, contactable,
+solvent population that repeats a task.* Every time, "enumerable population that repeats a task"
+resolved into **"regulated population that repeats a mandatory filing"** — because a public register
+is what makes a population enumerable in the first place. **The property that made the buyers
+findable is the same property that guarantees the regulator built the tool.** That is the same shape
+as the constraint trap recorded earlier, one level up.
+
+> The enumerability requirement and the free-guard requirement are in direct tension. Any population
+> enumerable *because a regulator registers it* is a population whose recurring task that regulator
+> has an incentive to systematise for free.
+
+**So the next hunt must find populations that are enumerable for a reason other than regulation** —
+enumerable because they buy something, list themselves, publish, hold an asset, or transact on a
+platform — and whose recurring task is owed to **no one who wants the data.**
