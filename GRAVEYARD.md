@@ -583,3 +583,66 @@ OGL v3.0, and practitioner commentary. Anyone building on it should treat that a
 
 Fact-pattern reasoning in old decisions stays illustrative. Any statement of time limits, qualifying
 periods or remedies caps drawn from them **misstates the law within weeks.**
+
+---
+
+# THE FIELD IS DEAD — nine candidates, one mechanism (10 August 2026)
+
+Three more killed today, after the workflow join bug was fixed and the real top of the field was
+finally evaluated.
+
+| Candidate | Killed by |
+|---|---|
+| NYC Building Compliance Radar | **Insparisk Command's free-forever plan** — unlimited buildings, deadline and violation alerts included. ViolationWatch at $99/yr + $59,99/yr Local Law Tracker. And the city itself prints the obligation on the **November property tax bill**, pre-deadline, per building — the "no free proactive notice" premise was simply false |
+| Sistema de Ciclo (concursos) | Free lead magnets from **Estratégia** and **QConcursos** at the exact edital moment; **Gran Gerenciador de Estudos** auto-generates the ciclo inside the R$34,90 subscription buyers already hold; **Planilha do Aprovado** at R$29,90 with 38.000 users |
+| ISO 9001 Countdown Pack | The contents are **mandatory retained records under clauses 9.2.2, 9.3.3 and 10.2.2** — possession is a precondition of being certified. Advisera's internal-audit kit is **$229 one-time** with a human expert; the full kit is $897 including the free 2026 upgrade. And **IAF CertSearch's FAQ states no user at any price tier can extract a list of certified companies** — the funnel cannot be filled |
+
+## The mechanism, five times over
+
+Levelset. GleanMark. Estratégia/QConcursos. iNymbus/SPS. Insparisk/ViolationWatch/NYC.
+
+**A funded party gives away an equivalent free version, as lead generation, on the exact keywords.**
+
+The reason is structural and specific to 2026: content and templates now cost almost nothing to
+produce, so **the free tier is the marketing budget of every funded incumbent.** A solo operator
+selling an artifact is not competing with a product — it is competing with someone's marketing
+department, which is *designed* to give that artifact away.
+
+Portuguese did not protect against this. Estratégia runs the identical play in Brazil.
+
+## THE HARDER LESSON — about the search, not the market
+
+Fifty candidates were generated across six lenses I designed to be structurally different. They were
+not. Every one was **a tool, template or monitor helping a professional complete a recurring task.**
+The industries varied — customs, employment, construction, trademarks, medical credentialing,
+property, quality management, Brazilian exams — and the *shape* never did.
+
+That shape is the single most commoditised category in digital products, because it is exactly what
+content marketing produces for free.
+
+**I searched one room nine times and called it a broad search.**
+
+## The constraint trap, stated honestly
+
+Faceless, no audience, no network, no calls, no capital, self-serve, US$8.000/month. That set leaves
+only two discovery mechanisms — **search and marketplaces** — and both are precisely where funded
+incumbents spend their marketing budget. The constraints force the hunt into the most contested
+channel that exists.
+
+So the answer is not another candidate in the same room. It is one of:
+
+1. **A distribution surface incumbents have not yet colonised.** The unlock sweep found one and it was
+   never tested: MCP registries and agent tool-surfaces, roughly twelve months old, where discovery
+   happens through a registry rather than Google, and where no incumbent is yet running content
+   marketing. Authoritative niche data delivered *into other people's AI tools*.
+2. **A category where no funded party has any reason to give anything away** — because there is no
+   upsell to fund it. That usually means unglamorous, fragmented, offline-heavy markets that venture
+   capital ignores. US$8.000/month is small enough that "too small to matter" is a real moat.
+3. **Relaxing a constraint.** The binding one is not the money — it is having no distribution. That
+   is a permanent constraint by choice, and it is the reason every path leads back to contested search.
+
+## What must not happen next
+
+Another hunt of the same shape. The screen is working — every kill named a competitor and a published
+price — but a working screen applied to the same room repeatedly produces nine corpses and no
+business.
