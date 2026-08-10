@@ -952,3 +952,32 @@ product that test must be applied **to the buyer, not to the records being sold.
 And a corollary worth keeping: **an agency that publishes a public register often works that register
 itself.** DOL, IRS, CBP and USPTO all run internal programmes off their own data. Before treating a
 public dataset as an unwatched signal, check whether the publishing agency is already acting on it.
+
+### Form 5500 — red team amendment, two quantitative kills
+
+**The feed is factually wrong for a quarter of the year.** DOL's own filing-pattern study (N=752.671):
+only **50% of filings arrive by 31 July, 90% by 15 October, and under 20% of large plans file by
+31 July.** So from 1 August to 15 October roughly **40% of fully compliant plans — and over 80% of
+large ones — are indistinguishable from delinquents.** One batch of leads who reply *"we filed a
+5558"* ends the buyer relationship.
+
+**The signal is annual, not monthly.** For calendar-year plans the true delinquent cohort materialises
+once a year, in late October. **A monthly subscription for an annual signal is structurally
+mispriced.** And 8,3% of filers filed more than ~14 months after year-end — a large share self-cure
+with no intervention.
+
+**The exclusivity window is eight weeks.** In the studied year DOL's OCA mailed its inquiries on
+**15 December** — about two months after the only date on which the signal stops being wrong. And the
+DOL letter *itself recommends DFVCP*, so the government detects the lead and delivers the remedy
+referral, free, achieving 56–69% compliance unaided.
+
+Also corrected: miEdge sells state-level retirement prospecting at **$34,95–$59,99/month** — a far
+lower floor than the enterprise seat pricing suggested.
+
+**TWO NEW TESTS, both generalisable:**
+
+1. **Is the signal continuous or seasonal?** A once-a-year event cannot support monthly recurring
+   revenue. Establish the cadence of the underlying event before choosing the pricing model.
+2. **How wide is the exclusivity window?** Measure the gap between the earliest point you can detect
+   cleanly and the point the incumbent or the agency acts. Here it was eight weeks a year. If that gap
+   is short, there is no subscription — at best a seasonal list.
