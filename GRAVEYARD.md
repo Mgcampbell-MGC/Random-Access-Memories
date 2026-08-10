@@ -1481,3 +1481,83 @@ compounds.
 
 That surface is larger than every government registry searched in this project combined, no
 regulator owns it, and no incumbent can close it.
+
+---
+
+# COMPLAINT-TRIGGER HUNT — 3 killed, and the axis was never actually tested (10 Aug 2026)
+
+## The kills (candidates 31–33)
+
+**REPACTUA** — recomputing the *planilha de custos* and repactuação claim for Brazilian outsourced-labour
+firms holding public contracts. **Two independent Bucket A kills.**
+1. **TOTVS Prestadores de Serviços Terceirização** — *"Mais de 7 mil clientes no segmento"* — ships it.
+   From its current release notes: *"você pode reajustar automaticamente os custos dos contratos, com
+   base nos dados da próxima convenção coletiva de trabalho… para precificar automaticamente os
+   contratos a partir da vigência da nova convenção."* Per-posto, per-município CCT ingestion,
+   automatic repricing. For the 7.000 firms already on the ERP the marginal price is **zero**.
+2. **The screenshot could not be produced, and this was measured.** The proposer set its own gate:
+   ≥15 of 40 contracts must carry a readable planilha de custos. The verifier hit the free PNCP API
+   across **1.950 contract records** in four windows and opened the anexos: of 19 labour-intensive
+   continuous-service contracts, **0 carried a planilha de custos, a formação de preços file, or the
+   winning proposta.** What is attached is the contract PDF, the nota de empenho, the portaria de
+   designação de fiscal and the termos aditivos. **0/19 against a required 37,5%.**
+
+**RFQ DESK** — normalised intake for job-shop quoting. **FabQuote (Jparo Systems), US$497 ONE-TIME**,
+instant download, aimed at metal fabrication and welding shops: extracts *"material grades,
+thicknesses, dimensions, and welding processes"* from messy customer messages, delivers a *"draft
+quote summary… to Gmail Drafts"*, and sends *"automated clarification emails when specifications are
+missing."* That is the candidate, verbatim, at a one-time price against a proposed US$299/month.
+**CloudNC Quote Agent** also takes *"Forward customer RFQs to your Quote Agent inbox."* And the
+clearing party the proposer swore did not exist: **Stella Source**, *"$500/mo for fabricators and
+$800/mo for service centers, plus transaction fees"*, marketing *"lower transaction fees"*.
+
+**PROVISIONAL** — correção monetária and juros de mora unclaimed on late public payments. Split
+between two shipping parties with nothing in the middle: **RecebGov** already takes a CNPJ and
+*"automatically locates all contracts in federal, state and municipal databases"* with payment-date
+projections; and the computation itself is **free on at least five Brazilian calculator sites**
+(DrCalc, Debit, CálculoJurídico, CalculaPrazo, eCálculos). Clearing party: the
+**antecipação-de-recebíveis** layer — **bitgov**, which raised **R$8,1 milhões** and already scrapes
+exactly this data to underwrite, *"se ela vem ganhando licitações, se vem recebendo."*
+
+## THE REAL RESULT — the axis was not tested, because I pointed the agents at walls
+
+**Two of four hunt lenses returned zero candidates.** Their transcripts say why:
+
+> *"Reclame Aqui and Reddit are blocked. Let me find which Brazilian complaint surfaces I can
+> actually read."*
+> *"I've hit a hard wall that determines my output. Let me record it precisely rather than fabricate
+> evidence."*
+
+**Reddit, LinkedIn, Reclame Aqui, G2, Capterra — the entire complaint-surface stack the axis depends
+on — is bot-walled to automated fetching.** The two lenses that *did* produce candidates fell back to
+what they could read (job postings, Fórum Contábeis, the PNCP API) and generated from structural
+hypotheses instead. **So all three candidates were the old method wearing the new label.** The
+complaint-trigger axis has still never been run.
+
+This is a design failure on my part, not evidence about the axis.
+
+**And it is the second appearance of the identical wall.** The B2C verdict weeks ago recorded that
+Etsy is bot-walled to *"search, /market, listings, curl, WebFetch, jina.ai proxy… confirmed
+independently in three separate check passes"*, and concluded the question *"can only be answered by
+her, in a browser, in 30 minutes."* That reconnaissance was never done either.
+
+> **Two separate axes have now been blocked by the same wall, and both times the fix is thirty
+> minutes of a human in a browser. No amount of agent capacity substitutes for it.** The surfaces
+> where buyers self-identify are precisely the surfaces that defend themselves against automated
+> reading — which is *why* incumbents are not mining them, and therefore why the opportunity is real.
+> But it cannot be prospected from here.
+
+## A NEW TEST, earned by the Repactua verifier
+
+It converted *"would the screenshot's input data even exist?"* into a measured number, for free, in
+an afternoon, against a public API — **0 of 19** — and killed the candidate on physics before a line
+of code was written.
+
+> **THE INPUT-EXISTENCE TEST. Before designing anything that computes on a prospect's documents,
+> measure what share of real prospects actually have the input, in a readable form, obtainable
+> before they pay. State the threshold first, then measure it. A screenshot you cannot produce is
+> not a wedge.**
+
+This should have been run on DeckProof in August — and in a sense it was: the parser gate found
+public sell sheets exist for only **2,7%** of brands. That was read as a parser failure. It was an
+input-existence failure, and the same test names it correctly.
