@@ -1120,3 +1120,179 @@ as the constraint trap recorded earlier, one level up.
 **So the next hunt must find populations that are enumerable for a reason other than regulation** —
 enumerable because they buy something, list themselves, publish, hold an asset, or transact on a
 platform — and whose recurring task is owed to **no one who wants the data.**
+
+---
+
+# THE FEMALE-MARKET THESIS, TESTED — nine kills, one survivor (10 August 2026)
+
+**The thesis:** *"markets whose buyers are overwhelmingly women running real businesses are served by
+software built by people who never did the job — tech bros building for a niche they are not in, so
+the incumbents are mismatched."*
+
+Ten candidates, four independent lenses (US/UK woman-run trades; structural mismatch read out of
+incumbent review text; Brazil where phone-selling in Portuguese is permitted; and the
+computes-on-private-files shape). Every one went through an adversarial pass whose default was KILL
+and which was required to re-run the competitor search in **vendor vocabulary**.
+
+## Verdict on the thesis: it does not survive contact, and the way it failed is the useful part
+
+| Candidate | Killed by |
+|---|---|
+| Marketplace commission audit for salons/med-spas (Fresha, Booksy) | **Booksy Biz ships the identical flow free inside the app the buyer already pays for** — Boost details lists every commissioned client with a per-client **Claim** button, reason picker and evidence attachments |
+| VialCheck — injectable COGS for med spas | **Spa Ledger, US$499/month**, "injectable cost tracking… reconciled against Allergan and Galderma invoices", aimed at med spas with US$1–3m revenue. Same inputs, same computation |
+| The Gown ETA Desk — bridal special orders | **BridalLive advertises it on its homepage**: *"track each special order until arrival, and receive alerts for any past-due shipments"* |
+| Channel P&L for boutique fitness studios | **Momence ships it natively** — "Earned Revenue minus the Teacher's Payout… both will show on the class details page" — with a native ClassPass integration |
+| RunCheck — co-manufacturer invoice vs BOM | **Guidance (guidance.so) sells exactly this, tiered by co-packer intensity**: US$199 / US$499 / US$899 per month |
+| Comissão Conferida — travel-agency commission | **Monde** (2.500 agencies, R$440/mês) ships *"Importação de Extrato CVC"* — *"a conferência exata da loja com o extrato integrado do Systur"* |
+| Repasse Certo — Wellhub/TotalPass audit | **DT GYM's landing page is literally titled** *"Fechamento de Gympass e TotalPass automático"*. Two more Brazilian vendors plus a human giving the audit away as lead generation |
+| Comissão Limpa — OTA commission for pousadas | Physics: Booking's own rule closes the window at 48h from checkout, before the monthly invoice being audited even exists |
+| RoyaltyCheck — franchisee royalty recheck | No second measurement to diff against. Xponential's 10-K: franchisees are required to use *"a uniform third-party hosted studio management system"* — the franchisor and franchisee read the identical inputs |
+
+**Nine incumbents. Every one surfaced on the verifier's first vendor-vocabulary query, after the
+proposing agent had reported the space clear.** Test A fired nine times in one run.
+
+> **These verticals are not neglected. They are densely and competently served, at real prices, by
+> vendors who plainly do understand the job.** A med-spa P&L tool at US$499/month and a per-line-item
+> commission dispute button inside Booksy are not the work of people who never met the buyer.
+
+The thesis was worth testing and it was tested properly. It is wrong as stated.
+
+## But the one survivor says something the thesis was reaching for
+
+**THE EXPEDITING DESK — score 74, the only survivor.** Reads a residential interior-design firm's own
+mailbox for vendor order acknowledgements, ship notices and delay emails, matches each to her open
+purchase orders, and produces a daily "what moved / what needs chasing" list.
+
+Interior design is the most female-dominated category in the set — so the thesis pointed at the right
+place. But it survived for a **completely different reason than the thesis predicted.** The
+incumbents are not bad and they are not absent:
+
+- Studio Designer (20.000+ users, US$69–119 per seat per month) has a literal **"Expediting &
+  Tracking"** help article and *"dedicated fields for acknowledgments, ship dates, and received
+  dates"*
+- Design Manager sells a **Purchase Order Status Window**; Materio, Programa, Mydoma, DesignFiles,
+  Houzz Pro and Procurist all ship procurement modules
+- Sixteen further vendors surfaced under vendor vocabulary — Knowlix, Canals.ai, Leverage AI, P1ston,
+  Debales, Line, Specsources, Canoa, Focuspilot, Planify, Figurz, Mortar, Roomwork, DesignerInc,
+  Daniel House Club, Uncap
+
+**Every one of them shipped FIELDS. Not one shipped INGESTION.** The verifier proved the negative with
+a date rather than by absence of search results: Studio Designer's **February 2026** release spent its
+AI budget on catalog search and **reverse image search**, and the **May 2026** release on catalog
+colour filters and trial-balance fixes. The market leader shipped AI twice in 2026 and pointed it at
+product discovery, never at the inbox.
+
+The horizontal version of this is funded and crowded — Canals.ai *"reads vendor PO acknowledgments,
+shipping notices, and packing slips"* — but sells to **distributors** with an ERP, at contract sizes
+a design firm cannot reach. The category automated the manufacturer's inbox and left the designer's
+inbox alone.
+
+**Human substitute clears decisively** — the opposite of the AM Consulte failure. Wishup's interior
+design VA is **US$1.299/month** with the scope listed verbatim as *"PO creation, order placement,
+tracking, and vendor/installer coordination"*; procurement staff run US$23–37/hour. Proposed price:
+**US$199/month**.
+
+**And it is the first recurring-revenue candidate in the record.** Every prior candidate was a
+one-shot sale paying full acquisition cost forever. At US$199/month, an LTV near US$2.000 supports a
+CAC of US$400–600 — which is 250–400 clicks at US$1,50, so paid search becomes viable for the first
+time. Law #9's arithmetic loosens structurally, not by wishful pricing.
+
+**Its two honest weaknesses**, recorded so they are not rediscovered as surprises:
+1. **The parser's long tail.** Acknowledgements arrive from hundreds of to-the-trade suppliers in
+   inconsistent formats. A 60%-accurate ETA feed is *worse than useless* — she still opens every
+   email. This is the only thing that could make it impossible rather than merely unsold.
+2. **Mailbox access granted to a faceless unknown vendor on a Brazilian CNPJ.** Bucket B. Mitigated by
+   a forwarding address rather than OAuth on day one, which also sidesteps Google restricted-scope
+   verification.
+
+**Solvency evidence is the weak part and is recorded as weak.** The proposer's "US$1,7m average
+small-firm billings" is invalid — it is aggregate ASID sales divided by firm count, not a measured
+distribution. What *is* verified is revealed willingness to pay: this buyer already pays Studio
+Designer US$69–119 per seat per month plus a separate accounting stack.
+
+---
+
+# DECKPROOF — cleared on two checks, narrowed hard on the third (10 August 2026)
+
+**Competitor sweep: SURVIVES.** Seventeen queries in vendor register plus six direct fetches. Nothing
+ingests a brand's own deck *and* own cost sheet and reconciles across both. What exists is five
+clusters, none doing the whole job: free forward calculators from typed input (CPG Guy, BoxNCase,
+Margin Velocity, Bravo CPG, Foodbevy, RGM Academy); investor-stage deck auditors (MyDeckAudit,
+Frontrunner — wrong buyer, wrong arithmetic); document *generators* (Retail Path US$99 template,
+Satellite CPG); enterprise deduction platforms (HighRadius, SPS, Vividly, Esker — the closest
+structural analogue, but post-sale against invoices, enterprise-priced); and humans.
+
+**Human substitute clears.** Fractional CPG consultants US$200–450/hour on US$5.000–15.000/month
+retainers; broker retainers US$1.000–15.000/month plus 3–7%; sell-sheet consulting US$900–1.200. The
+one cheaper human — **Emily Anne Page at US$300** — does a different job (delivery rehearsal) and her
+existence is *positive* evidence: she gates her discount on **proof of ECRM purchase**, proving this
+exact roster population is reachable and already converts at US$300–500.
+
+**Parser objection: dissolved, and the original test was misread.** Of the 14 PDFs, **11 had a usable
+text layer** — pdfplumber worked 79% of the time. Of the 12 failures, **9 were content-absence** (the
+publisher deliberately omitted wholesale price from a public-facing catalog) and at most 3 were
+OCR-fixable. **The gate was read as a parser failure; it was overwhelmingly a corpus failure.** A
+blind measured test on flattened CPG economics sheets returned 84/84 clean and 82/84 degraded, with
+**money fields 36/36 on both** and both errors in UPCs, which enter no margin calculation.
+
+**The architecture that makes the accuracy question moot:** the spreadsheet is the *only* source of
+computed truth; the deck is never a source of arithmetic, only a set of claims to be checked. Then an
+OCR misread produces a **false flag** the user dismisses in ten seconds, an OCR miss produces
+silence, and *reciting a wrong margin to a retail buyer becomes architecturally impossible, because
+margins never come from pixels.* Add UPC-A check-digit validation locally and the silent-error class
+shrinks again. And the confidentiality inverts: **the cost sheet never leaves the machine; the only
+thing that would touch cloud vision is the deck — the document she is about to hand to a Kroger
+buyer.**
+
+## The check that did damage: LAW #1 fires on two of the three deliverables
+
+**RangeMe is free, is owned by ECRM's parent, and is linked from the roster page itself.** It already
+auto-calculates **Case Price** (cost × units per case) and **Buyer Gross Margin** (from Cost and
+MSRP), with free explainer articles on margin and MSRP. And ECRM's own prep site carries *"a wealth
+of best practices content… how to prepare for a buyer meeting, tips on pitching"* — free, to the same
+attendee who paid US$7.000–16.900.
+
+| Deliverable | Status |
+|---|---|
+| Per-retailer required-fields / retail-readiness checklist | **DEAD** — ECRM gives the informational version away free |
+| Margin and case-pack calculators | **DEAD** — RangeMe Basic computes both, free, one click from the roster |
+| **Cross-document discrepancy audit** | **ALIVE** — nothing at ECRM or RangeMe reads a PDF deck against a cost spreadsheet |
+
+**RangeMe computes margin from numbers you type in — which is precisely the failure mode DeckProof
+claims to catch.** A brand can hold a perfect RangeMe profile and a deck with a wrong margin on slide
+9, and RangeMe will never know, because RangeMe never sees the deck.
+
+**What survives is one sentence:** *"Your deck says one thing and your cost sheet says another, in
+five places, and the buyer will find it."* Everything else in the specified product is decoration a
+US$16.900 attendee already owns.
+
+**Second finding, operational and unwelcome.** The list did not decay — 93 sessions, the same 15 live
+rosters, ~456–475 unique named companies with clickable websites, no login, re-fetched today. But
+**four days passed and not one new roster published.** Rosters arrive in monthly lumps, not a weekly
+drip. The nearest session (24–27 Aug) is already too late to sell a preparation product into. Outbound
+must be batched against roster-publication events, and there will be dead weeks. **KeHE Summer Show
+is the one clean second source** — public exhibitor directory, no login, named brands, dated. Expo
+West, Fancy Food and PLMA are JS-rendered and yield no names to a fetch; Cosmoprof is confirmed
+gated.
+
+---
+
+# THE CONVERGENCE — two independent tracks, one shape
+
+DeckProof and The Expediting Desk were produced by completely separate processes: one is a
+resurrection from a shelved decision in CPG retail, the other came out of a female-market hunt in US
+interior design. They are the same product:
+
+> **Ingest the buyer's own private, messy files — the ones no incumbent can see — and compute
+> something the buyer is otherwise doing by hand.**
+
+And both survived for the same reason, which is now the most load-bearing finding in this repo:
+
+> **Every incumbent in both markets built the FIELDS and left the INGESTION.** Studio Designer has
+> dedicated fields for acknowledgment and ship dates, and spent its 2026 AI budget on reverse image
+> search. RangeMe computes a perfect margin from numbers you type in by hand. The workflow layer is
+> comprehensively farmed. **The data-acquisition layer — getting the buyer's own mess into the
+> system — is empty, in both markets, at both ends of the price range.**
+
+That is why the lead-magnet mechanism cannot reach either one. Content is free to produce; **reading
+a stranger's inbox is not.** There is nothing to publish, so there is nothing to give away.
