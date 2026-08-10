@@ -323,3 +323,83 @@ work, it is the moat, and it is the part a prompt cannot hold.
 **None are resurrected.** RIO BLOCKS, CREDIT LAB, AVAL and PRUMO each died on an
 A1 or A2 fact — an identical product already shipping, or a named law reserving the
 work. The credential was never the load-bearing objection for any of them.
+
+---
+
+# KILL — HTS Ruling Currency Index (10 August 2026)
+
+Killed by its own audit, one day after it was found. The defect was real and I measured it
+correctly. It is unserved because **it does not cost anyone money.**
+
+## What it was
+
+A US$297 downloadable index: every apparel and footwear CBP ruling joined to the current HTS, each
+cited tariff code marked LIVE / SUBDIVIDED / GONE. Built on a measured finding — 28,9% of the
+8-digit lines those rulings cite no longer exist, across 377 distinct dead lines, and no product at
+any price flags this.
+
+## Why it died — four structural hits, all verified
+
+**1. The government already prescribes the check, free.** USITC's own FAQ, verbatim:
+*"Once you find a potential HTS classification in CROSS, return to HTS and enter that classification
+number in the search bar."* The thing the product sells is the published standard procedure, it is
+free, and it takes seconds.
+
+**2. The filing system already blocks the failure.** A dead tariff number cannot reach an entry —
+ACE/ABI validates against the current Harmonized reference file and rejects it. So the cost of the
+error the product prevents is a few minutes of rework, not a penalty. **A defect with no unpriced
+consequence is not a product.**
+
+**3. The headline number was inflated, by my own measurement choice.** USITC:
+*"Statistical Reporting Numbers are not legal... the stat suffixes... are administratively adopted
+rather than being enacted."* Legal classification ends at 8 digits; the 10-digit suffix churns
+administratively. My 43,2% figure largely measured that churn. The legally meaningful figure is
+28,9% — and it is concentrated in old rulings: **4,1% for rulings from 2015 onward**, which is what
+anyone with a recency preference actually reads.
+
+**4. A static file cannot hold the claim.** USITC published ~31 revisions of the 2025 HTS and was at
+Revision 12 of 2026 by mid-year, driven by Chapter 99 trade actions. A staleness-checker that is
+itself stale emits false verdicts on the exact dimension it charges for. USITC Investigation
+1205-14, implementing the next WCO HS amendment cycle, reports to the President in September 2026 —
+a scheduled mass renumbering of the apparel chapters, on the calendar, against a one-time price with
+no economics to maintain it.
+
+**5. The arithmetic never worked anyway.** 13.952 brokers + 6.708 importers = 20.660 maximum buyers.
+At 1–2% conversion on a one-time purchase that is US$61k–123k of lifetime revenue, decaying. The
+target is US$89–100k **per year**. I did not run this until the red team did.
+
+## The sharpest point, which I missed entirely
+
+**The product detects the errors that detect themselves.** A code that has *died* announces itself —
+free lookup, ACE rejection. The expensive error is a code that **still exists but whose scope changed
+underneath it**: ACE accepts it, the entry is wrong, nothing warns anyone. That is the staleness
+worth paying for, and an existence check is structurally blind to it.
+
+## THE LESSON — add this to Gate 0 and the two-bucket rule
+
+> **"Nobody sells this" has two explanations, and I only seriously entertained one.**
+
+Absence of a competitor is evidence of an *opportunity* or evidence of *no value*, and the second is
+more common. Before building on an unserved defect, ask what happens today when it goes uncaught. If
+the answer is "a free system catches it" or "nothing, because it self-corrects", the space is empty
+for a reason.
+
+**The new test, to run before any build:** name the specific person who loses a specific amount of
+money when this defect goes undetected, and the mechanism by which they lose it. If the loss is
+"minutes of rework", stop.
+
+This sits alongside Gate 0 (prove the buyer can pay) and adverse selection (the defect may select for
+buyers who cannot). Gate 0 asked *can they pay*. This asks *is there anything to pay for.*
+
+## What survives
+
+- **The corpus model is untouched.** What failed is this instance of it, not the model.
+- **The legal perimeter research stands** — HQ H272798, HQ H350722, 19 CFR 111.2(a)(2)(i) — and is
+  reusable for any future US customs product. One correction: H350722 should not be cited as a green
+  light. Read fairly, its holding on automated tools is a *restriction* — a tool is not a licensed
+  person — and the trade press headlined it *"Even AI Needs A License."*
+- **The measurement assets are real**: a 47.627-ruling index, a 942-line currency map, and 1.586
+  current tariff lines with no precedent at all, in 2,1 MB. Their honest ceiling is a free lead
+  magnet, not a product.
+- **Scope drift remains a genuine, unsolved, expensive problem** — and it needs a customs expert's
+  judgement, which is the same wall LineProof hit.
