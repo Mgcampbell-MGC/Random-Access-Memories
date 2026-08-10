@@ -646,3 +646,69 @@ So the answer is not another candidate in the same room. It is one of:
 Another hunt of the same shape. The screen is working — every kill named a competitor and a published
 price — but a working screen applied to the same room repeatedly produces nine corpses and no
 business.
+
+---
+
+## RECURSO EM 3 DIAS — Brazilian licitação impugnação/recurso (killed 10 Aug 2026)
+
+The last shortlisted candidate, audited after the distribution constraint was relaxed to allow
+Portuguese phone selling. **Relaxing distribution did not save it.** Three independent kills.
+
+**1. The incumbent already ships the AI product.** ConLicitação sells **Dr. Licita** — *"a primeira
+inteligência artificial do mercado de licitações"* — drafting petições administrativas *"em menos de
+um minuto"*, **uso ilimitado**, on a proprietary base of editais, acórdãos, legislação and *"teses
+reais validadas por advogados"*, inside the subscription serious licitantes already hold. The
+candidate's only asset — the public TCU jurisprudência CSV — is already productised by the incumbent,
+with lawyer validation the founder cannot offer.
+
+**2. A human sells the finished document for R$190.** AM Consulte's published price list:
+*"Elaboração de Recurso e/ou Contrarrazões — R$190,00 por peça"*; impugnação R$140–180. Above that,
+free templates from ConLicitação itself, LicitaGov, BLL, Jusbrasil, AGU and law firms; below it,
+Sebrae trains the small licitante free. Every layer occupied, for the sixth consecutive time.
+
+**3. The statutory clock makes the sale impossible — this is the novel finding.**
+**Lei 14.133/2021 art. 165 §1º**: the *intenção de recorrer* must be manifested **immediately, in
+session, sob pena de preclusão**. Only the razões get 3 dias úteis. So at the only moment a bidder is
+publicly identifiable — the ata, generated at session close — they have **already** either declared
+intent (and are committed, usually already assisted) or are legally dead. **There is no moment at
+which a cold call can create a sellable situation.** For the impugnação side it is worse: it must be
+filed before the session, when participants are not yet public at all.
+
+**4. And the differentiator is reserved.** Lei 8.906/94 **art. 1º, II** makes *"consultoria, assessoria
+e direção jurídicas"* privativa de advocacia. Identifying the defect and advising which tese to argue
+— the phone judgement that was to distinguish this from a free template — is the reserved part.
+OAB-SP actively litigates ACPs against unlicensed practice, and São Paulo is where she lives. Same
+shape as the CFC kill that ended PRUMO: **the reserved perimeter and the pricing premium are the same
+feature.**
+
+**What this proves about the diagnosis.** The distribution relaxation was correctly identified but
+insufficient. Phone selling in Portuguese does not help when the statute closes the window before the
+call can land, and when the incumbent's AI already ships inside a subscription the buyer holds.
+
+---
+
+# TEN CANDIDATES. THE SHAPE IS FARMED.
+
+US customs · UK employment · US construction · US trademarks · US e-commerce · US property ·
+US quality management · Brazilian exam prep · Brazilian public procurement.
+
+**Nine industries. Three countries. Two languages. Both distribution models. One mechanism.**
+
+> **"An informational or tooling product that helps a professional complete a recurring task" is
+> comprehensively occupied** — because AI made content free to produce, so every funded company now
+> uses free content as its acquisition channel, and in a compliance domain **a free template is
+> genuinely as good as a paid one.**
+
+## The untested hypothesis, and why its physics differ
+
+Every one of the fifty candidates asked a woman whose career was **luxury and premium brand events**
+to become a compliance analyst in a field she has never worked in, against incumbents who know it
+better.
+
+**In compliance, free is equivalent. In taste, free is visibly worse.** A free proposal template
+advertises its own inferiority; a free clause library does not. That is a structural difference in
+competitive physics, not a preference — it is the reason aesthetic categories resist the
+lead-magnet mechanism that killed all ten candidates, and it is the only domain identified in this
+entire session where the founder's actual expertise is the moat rather than the gap.
+
+**Untested. Recorded as the next hypothesis, not as a finding.**
