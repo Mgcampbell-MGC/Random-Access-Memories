@@ -1386,3 +1386,98 @@ that transaction, so there is no adjacent revenue to fund a free version.
 
 **That is now the test to apply before anything else: name the party who clears the transaction. If
 one exists, they will give your software away.**
+
+---
+
+# THE NEW AXIS — complaint as trigger, screenshot as delivery (10 August 2026)
+
+Two changes, both from outside this project, both aimed at the constraint that has actually been
+binding all along.
+
+## 1. We hunted for triggers in the wrong place, for thirty candidates
+
+Every trigger ever chased here was a **government record** — a registration, a filing, a violation,
+a delinquency, a roster, a licence. That is precisely what walked us into the enumerability trap:
+a population is enumerable through a public register only because a regulator maintains that
+register, and that regulator has already built and mandated the software free.
+
+**A person complaining in public is also a trigger.** It is:
+
+- **non-regulatory** — no agency owns it, so no agency has pre-built the fix
+- **continuously refreshed** — not annual, not seasonal, not a one-time event
+- **attributable** — a named person at a named company
+- **invisible to incumbents**, who buy keywords rather than read complaints
+- **readable by a faceless operator** who never posts anything herself
+
+Surfaces: who liked and commented on the posts of the 10–20 accounts a buyer follows; trade
+subreddits, especially the rant threads; 1- and 2-star reviews of the incumbent tools; industry
+forums and Facebook groups; YouTube comments under tutorials for the painful workflow; the
+incumbent's own community board where users beg for a feature; and job postings as a complaint
+proxy — *a company hiring someone to do X by hand is telling you X hurts.*
+
+**This does not revive anything killed by A1.** Nothing beats a free identical product. But it
+directly re-scores every candidate killed on **"the trigger is invisible"** — LINELOCK, WRAPCHECK,
+and the whole family dismissed because we could not tell when the buyer needed help. That dismissal
+rested on the assumption that the only visible signals are public records. The assumption was wrong.
+
+Cost of the whole mechanism: roughly **US$200/month** — inbox infrastructure, a sending platform,
+enrichment credits. That is the entire go-to-market, not a piece of one.
+
+**The counterweight, recorded honestly:** practitioners running this at scale report that reply
+rates are collapsing across every channel as AI-generated outbound floods the zone. This works
+*only* with a hand-raise signal in front of it. Generic outbound is dead, which is consistent with
+everything else in this file.
+
+## 2. The screenshot sale — the answer to the trust problem
+
+> **"You are not selling the future. You are selling the screenshot."**
+
+The first cold email contains a **computation performed on that prospect's own situation**, produced
+before they pay anything. Not a claim, not a case study — an artifact about them, verifiable against
+facts they already hold.
+
+This is what made DeckProof work, and it had been recorded here as a *product* property. It is also
+a **distribution mechanic**, and that is the more valuable reading. It is the only known answer to
+the question shadowing every candidate for weeks: *why would anyone trust an unknown, faceless
+seller on a new Brazilian CNPJ?*
+
+**They do not have to.** They look at their own numbers being wrong.
+
+**It is now a hard requirement.** If the exact artifact in the first email cannot be described —
+what it computes, from which inputs, and which fact of the prospect's own lets them verify it on the
+spot — the candidate is not finished and does not get proposed.
+
+## 3. A constraint that was drawn too wide, and is hereby narrowed
+
+The founder's rule is **no camera, no personal brand, no influencer or creator work.** That was
+being applied as *no audience of any kind*, which is broader than what was actually said.
+
+An **anonymous topic-based page** — no face, no name, no personal identity — violates none of it.
+The precedent is Julian Shapiro operating **@GrowthTactics** rather than @DemandCurve: the topic
+carries the following, the person stays invisible. Combined with an automated content loop (source
+material → LLM → scheduled posts → analytics feeding the next round), it costs nothing and
+compounds.
+
+**Permitted from now on. The exclusion covers personal brand, not anonymous topical presence.**
+
+## 4. What was explicitly rejected from the same material
+
+- **Cloudflare's pay-per-crawl / x402 / agent-payment thesis.** Genuinely interesting, and it
+  converges with this file's own note that MCP registries are the one uncolonised distribution
+  surface. But agent wallets are nascent and "build a paid door and wait for agents to walk through
+  it" has no 2026 revenue. **A 2027–28 bet, not a path to R$30.000/month in twelve months.** Build
+  toward it — report → dashboard → API → MCP → per-lookup — but every rung must pay on its own.
+- **"Agent readiness" / AI-visibility auditing as a business.** Filling fast: Profound, Peec,
+  Otterly, Scrunch, plus Semrush and Ahrefs shipping AI-visibility tracking. The *audit* is a good
+  wedge; the *fix* (llms.txt, schema markup, docs restructure) is already free content everywhere —
+  law #1.
+- **The niche data refinery aimed at med spas.** Walks straight into a distributor holding margin on
+  the goods. Law 0.
+
+## 5. The screening question, restated
+
+> **Stop asking "what public record tells me this buyer needs help?"**
+> **Start asking "where do these people complain out loud, by name, in a place I can read every day?"**
+
+That surface is larger than every government registry searched in this project combined, no
+regulator owns it, and no incumbent can close it.
