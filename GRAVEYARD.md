@@ -712,3 +712,44 @@ lead-magnet mechanism that killed all ten candidates, and it is the only domain 
 entire session where the founder's actual expertise is the moat rather than the gap.
 
 **Untested. Recorded as the next hypothesis, not as a finding.**
+
+### Correction to the Recurso entry — the legal perimeter is better than stated, and that makes it worse
+
+The full perimeter audit found the **product** side more defensible than the red team assumed. Recorded
+so the reasoning is accurate rather than convenient:
+
+- **Lei 8.906/94 art. 1º, I** reserves *"a postulação a qualquer órgão do Poder Judiciário e aos
+  juizados especiais"* — **judicial bodies only.** Administrative licitação authorities were never in
+  scope.
+- **Lei 9.784/99 art. 3º, IV**: *"fazer-se assistir, **facultativamente**, por advogado."*
+- **Súmula Vinculante 5**: *"A falta de defesa técnica por advogado no processo administrativo
+  disciplinar não ofende a Constituição."*
+- **Lei 14.133/2021 art. 164**: *"Qualquer pessoa é parte legítima para impugnar edital"* — universal
+  standing, no lawyer required anywhere in arts. 164–165.
+- **The "Resolve Juizado" ruling (27ª Vara Federal RJ, 17 Nov 2025)** held an AI petition-generating
+  platform does **not** exercise reserved advocacy, because it *"organiza e formata informações
+  inseridas pelo usuário"* without *"análise jurídica individualizada."* Conditions imposed: prominent
+  disclaimers, no promise of legal outcomes. **But OAB-RJ has escalated to the STJ — live, contested,
+  not settled law.**
+- No OAB enforcement action was found anywhere targeting licitação recurso drafting specifically.
+
+**THE VISE — and this generalises beyond Brazil.**
+
+The legally safe version is a **pure self-service formatter with no individualized judgement**. That is
+exactly the version **Dr. Licita already ships better**, that free templates from ConLicitação, BLL,
+LicitaGov, AGU and Jusbrasil already cover, and that Sebrae already teaches free.
+
+The differentiated version — reading *this* edital, finding *this* defect, advising *which* tese —
+is **art. 1º, II** territory: *"consultoria, assessoria e direção jurídicas"*, against which OAB-SP
+has filed **34 ações civis públicas with 23 favourable liminares since 2022**.
+
+> **The legally safe version has no differentiation. The differentiated version is legally exposed.**
+> The reserved perimeter and the pricing premium are the same feature — the third time this exact vise
+> has appeared (PRUMO/CFC, ET corpus, now Recurso).
+
+**What did NOT kill it, recorded for accuracy.** The buyer was fine: **700.000 SICAF suppliers**,
+**over 1 million public purchases worth ~R$1 trilhão in 2025**, ME/EPP alone at **481.700 purchases
+worth R$272,6 bilhões** — a derived average around **R$566.000 per ME/EPP contract**. Reachability was
+fine too: atas name every participant with CNPJ, and **PNCP exposes CNPJ-level data through a
+no-login public API**. Gate 0 passed and the list existed. It died on the incumbent's shipped AI, the
+R$190 human, and a statutory clock that closes before a call can land.
