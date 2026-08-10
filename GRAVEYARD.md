@@ -403,3 +403,93 @@ buyers who cannot). Gate 0 asked *can they pay*. This asks *is there anything to
   magnet, not a product.
 - **Scope drift remains a genuine, unsolved, expensive problem** — and it needs a customs expert's
   judgement, which is the same wall LineProof hit.
+
+---
+
+# KILL — ET Respondent's Corpus, UK, US$397 (10 August 2026)
+
+Audited on the same day it was reviewed. Five structural hits. The corpus is real and excellent;
+the business around it is not.
+
+## The verified kill: price inversion against a regulated professional
+
+| Substitute | Price | What the buyer gets |
+|---|---|---|
+| **FSB membership** | **£97,50/year** (sole trader) to £1.295 (101+ employees) | Legal expenses insurance underwritten by Markel, SRA-regulated solicitors (Markel Law LLP): *"Legal representation throughout the employment tribunal process, including ACAS Early Conciliation, responding to claims, pre-hearing reviews, tribunal hearings"*, plus *"Tribunal-ordered compensation, agreed settlements"* — **up to £100.000 per claim** |
+| **Solicitor drafting the ET3** | **£261–£522 + VAT** (~£313–£626) | A regulated, insured professional does the actual work |
+| **gov.uk respond service + Acas helpline** | **£0** | Official guided ET3 submission and free employer advice |
+| **This product** | US$397 (~£300) | A file |
+
+**£97,50 a year buys a solicitor and the award paid. The product costs three times that, once, and
+delivers markdown.** At the other end, the bottom of a solicitor's ET3 range is roughly the product's
+price for the real thing. There is no band in which the file is the rational purchase.
+
+## The legal error I should have caught myself
+
+**First-instance Employment Tribunal decisions are not binding precedent.** Only the EAT, Court of
+Appeal and Supreme Court bind. So a corpus of 133.296 first-instance decisions is not authority —
+"find comparable decided cases" sounds like law and isn't. CBP rulings genuinely are citable, which
+is why the tariff corpus never had this problem. I carried the analogy across jurisdictions without
+checking that the thing being carried still held.
+
+## The other three
+
+**The buyer cannot be found.** The ET1 is confidential at filing; there is no public register of
+lodged claims; hearing lists appear days before a hearing that now sits ~12 months out; the decisions
+database publishes only after judgment. The buying window is the **28-day ET3 deadline**, during
+which the respondent is publicly invisible. Outbound is impossible — not hard, impossible. Everything
+must come from inbound search, competing with Acas, gov.uk, Peninsula and every employment firm's SEO
+budget.
+
+**The buyer buys once.** ~50.000 single claims in 2025/26 against ~1,37M UK employers with staff —
+roughly 3% annual incidence, skewed toward larger employers. A small employer meets this once a
+decade. No repeat purchase, no referral network (nobody advertises being sued). This violates the
+project's own rule: **sell to the professional who repeats the task.**
+
+**The statute is being rewritten underneath it.** Employment Rights Act 2025: tribunal time limits
+3→6 months from ~October 2026; unfair dismissal qualifying period 2 years→6 months for dismissals
+from 1 January 2027; statutory compensation caps removed. Every decision in the corpus was decided
+under a regime being dismantled while the product is on sale — and the seller has no legal training
+with which to maintain it.
+
+**And it can injure its buyer.** An ET3 is a pleading; admissions in it are near-impossible to walk
+back. The core loop — lay user, AI, cite comparable cases — is the workflow that produces fabricated
+citations, which the High Court addressed in *Ayinde* (June 2025). A non-lawyer seller with no
+professional indemnity insurance carries that.
+
+## THE PATTERN ACROSS THREE KILLS — this is the useful part
+
+| Candidate | Cause of death |
+|---|---|
+| 50-State Solicitation Monitor | The buyer could not pay (70% under US$50k revenue) |
+| HTS Ruling Currency Index | The defect had no consequence — free systems already caught it |
+| ET Respondent's Corpus | A regulated professional already does it cheaper, and the buyer cannot be reached |
+
+Three different failures, one shared cause: **every one was chosen by finding a measurable defect
+first and looking for the buyer afterwards.** The defect was real in all three cases. The route to a
+payer was never checked until late, and it is what killed each of them.
+
+**THE REFRAME — choose the next candidate channel-first.** Before measuring any defect, answer in
+this order:
+
+1. **Who repeats this task for money?** Not who suffers it once.
+2. **Can I reach them, repeatedly, without a list I cannot legally obtain?** Is there a public,
+   timely signal of need — or is the trigger invisible?
+3. **What does the professional substitute cost?** If a regulated human does it for the same money,
+   stop.
+4. *Only then* measure the defect.
+
+Gate 0 asked *can they pay*. The dead-code lesson asked *is there anything to pay for*. This one asks
+**can they be found, and am I cheaper than the human**.
+
+## What this says about the next candidate
+
+**Recurso em 3 Dias (Brazil, US$197) inverts every one of these failures**, and that is worth
+noticing rather than treating it as merely the next name on a list. Public procurement is public by
+design: the bidders, the editais and the session records are published, so the buyer is identifiable
+and the trigger is visible. A company that bids on public contracts bids continuously, so the task
+repeats. And Lei 14.133/2021 art. 165 fixes the window at **3 dias úteis** with intent declared in
+session *sob pena de preclusão* — a deadline that recurs for the same buyer, rather than once a
+decade.
+
+It has not been audited against the four questions above. It should be, before anything is built.
