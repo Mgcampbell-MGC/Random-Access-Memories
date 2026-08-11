@@ -1938,3 +1938,124 @@ product without NF-e, boleto or Pix.
 customers**; at R$650 it is **46**. That is not a fantasy number. It says any product for this founder
 must be **built for Brazil, priced in reais inside that band, and sold on WhatsApp** — not imported,
 and not priced in dollars.
+
+---
+
+# BRAZIL WHATSAPP B2B HUNT (11 Aug 2026) — 7 killed, **1 SURVIVOR at 72**
+
+## First, the grounding, which is a permanent asset
+
+An agent downloaded and processed **the entire Receita Federal CNPJ open base** (~4,9 GB, reference
+2026-07: Estabelecimentos 0-9, Empresas 0-9, Simples) and counted directly.
+
+**Definition used:** `situacao_cadastral='02'` (ativa) AND `identificador_matriz_filial='1'` (matriz)
+AND not a currently-active MEI.
+
+- 27.800.278 active establishments · 26.486.756 active matrizes · 17.195.659 active MEI
+- **13.033.275 active non-MEI companies nationally — the real addressable universe**
+- **133 CNAEs clear 20.000.** 59 clear 50.000. The 20k–150k band holds ~6,2 million companies
+- **Volume is definitively NOT the binding constraint.** Whatever kills a candidate, it is not size.
+
+**And it corrected my own instruction.** I told the hunt to size segments with SICAF. That was wrong:
+**the SICAF/national ratio spans 580×** — 58% for atacado médico-hospitalar, 16% for construção,
+**0,1% for criação de bovinos**. SICAF over-ranks government-supplier segments by two orders of
+magnitude. It answers *"does this segment sell to government"* and must never be used to size a market.
+
+Contactability is now measured per CNAE: e.g. construção de edifícios **97,2% telefone, 57,4% celular,
+87,4% e-mail**; psicologia 77% mobile / 98% email.
+
+## THE SURVIVOR — PASTA LIBERADA
+
+*Cobrança e conferência, por WhatsApp, da documentação mensal do empreiteiro antes da liberação da
+medição.*
+
+A construtora cannot release a subcontractor's monthly payment while a labour document is missing.
+Today a person in the office chases it by hand, every month, subcontractor by subcontractor. The
+product chases unattended, checks, and releases the gate.
+
+**The job, in the incumbent's own words.** Dynadok, verbatim: *"o pagamento de cada medição de obra
+depende da conferência de um pacote de **10 a 20 documentos por empreiteiro por mês**"* — NF with 11%
+INSS retention, GRF/FGTS with bank proof, GPS, folha analítica, controles de ponto, CND, ASO, ficha de
+EPI, ART. A construtora with 8 subcontractors does this **96 times a year, for 24–36 months per site.**
+
+**The stake is legal and specific.** CLT art. 455 (solidary liability in subempreitada) and **Súmula
+331 TST** (subsidiary liability of the tomador). One claim from a subcontractor's employee lands on
+the construtora at **R$20–80k, and the defence is the monthly folder.** Insoft4, verbatim: *"A falta
+de rastreabilidade de apenas um mês ou de um único colaborador rompe o histórico de conformidade."*
+
+**Five kill attempts, all failed:**
+
+| Test | Result |
+|---|---|
+| **Chat window** | The value is not the reading — reading a GRF is exactly what a general model does well, and the candidate says so explicitly. The value is **unattended pursuit of 8–15 subcontractors who don't open email, every month for 36 months**, plus **the payment gate state**, plus **a 5-year archive recoverable for a hearing**. A chat session produces none of the three, and it is not a distributable prompt |
+| **Contador (LAW 6)** | **The documents belong to a third legal person.** The construtora's contador has no mandate over the empreiteiro's folha, ponto or ASO — a different CNPJ with a different accountant. And half the pack (ASO, ficha de EPI, PGR/NR-1, ART) is **SST and engineering, outside DL 9.295/46**. Honest admission recorded: the contador does absorb the adjacent piece (11% retention, EFD-Reinf, DCTFWeb) — *which is precisely why construtoras believe they are covered and are convicted anyway, because a previdenciária retention proves nothing about the bricklayer's FGTS* |
+| **Volume** | Re-measured independently. 4120400 = **172.616 national**, 69.365 above microempresa, 97,2% with a phone |
+| **LAW 0 — clearing party** | **None found, searched by class not by name.** Supply-chain finance was the strongest hypothesis (bitgov precedent) — Painel Fornecedor/Finnet, Antecipa, Liber, Quartilho, BTG and Citi risco-sacado all monetise **the nota fiscal receivable**, not the labour dossiê. Sertras states its own model and it cuts the right way: gestão de terceiros is paid by the **contracting** company |
+| **LAW B — free/government** | Nothing public delivers the tomador the prestador's folha, ponto or ASO |
+
+**No credential custody** — the empreiteiro uploads its own PDF. That matters after the government-
+action category closed on exactly that point.
+
+**The WhatsApp motion is genuinely compliant, not waved through.** The *sale* is by **telephone**
+(97,2% of these companies have a landline; a cold call in Portuguese violates no Meta policy and
+cannot be banned), plus click-to-WhatsApp ads where the prospect messages first. The *product's*
+WhatsApp use is opt-in by construction: the construtora sends each subcontractor a link, **the
+subcontractor writes first**, which satisfies both conjunctive conditions of Meta's Business
+Messaging Policy, and monthly reminders then go as **UTILITY** templates, never MARKETING. No chip
+warming, no unofficial accounts, no rotation.
+
+**Arithmetic:** 100 × R$397 = R$39.700 gross; net ≈ **R$34.868** after Simples (~6%), AI page reading
+(~R$1.200), WhatsApp UTILITY templates (~R$750) and infra. **Target met at 88–90 clients.** The funnel
+consumes at most **6,5%** of the qualified universe.
+
+## The wound, recorded rather than suppressed
+
+**The incumbent field is roughly twice as dense as the proposer found — Law A fired.** Beyond
+Dynadok, GD3, GT Soft, Insoft4, e-Gestiona and Linkana there are **AUTODOC GD4** (construction-
+specific, expiry control, integrated with a facial-recognition catraca that blocks site access),
+**NETRIN**, **SERTRAS**, **VALIDE**, **SENIOR**, **BMS INTEGRA** and **ACCIO**. **~14 funded vendors
+on this exact job.**
+
+It is a wound and not a kill for one measured reason: **not one of them publishes a price, and not
+one collects by WhatsApp.** Dynadok's own copy: the empreiteiro attaches *"diretamente pela
+plataforma ou por um portal integrado via API ao ERP da construtora"*, billed *"com base na
+quantidade de páginas processadas pela IA, com contrato padrão de 12 meses"*.
+
+> **So the differentiation is channel + published price + same-day onboarding — and the channel leg
+> is the one thing nobody has measured.** The load-bearing hypothesis, stated by the proposer against
+> its own interest: *the small empreiteiro refuses the incumbent's web portal and only answers on
+> WhatsApp, so the job stays manual even at construtoras that already bought a portal.* **If that is
+> false, the wedge collapses to price alone, which is the weakest wedge that exists against a vendor
+> with implementation and an annual contract.**
+
+Two further risks: **Sienge** has the installed base, has medição and caução in-product, and could
+ship this as a module. And the AI reading must be accurate enough that *"pasta liberada"* means
+something — a false "complete" is exactly the month that breaks the traceability the customer bought.
+That argues for the same fail-closed discipline as DeckProof: the product reports and gates; the
+construtora decides.
+
+## THE TEST — R$0–200, 8 working days, no code written
+
+Filter the Receita base for 4120400 in SP, porte EPP or DEMAIS, telephone present (33.972 available).
+**Call 60.** Two closed questions: *do you hold the empreiteiro's medição payment when a labour
+document is missing?* and *how do you chase it today — portal, email or WhatsApp?*
+
+- **≥20 of 60 (33%)** confirm they hold payment AND chase by hand on WhatsApp/phone
+- **≥6 of 60 (10%)** commit **money on the call** — a paid 60-day pilot at R$397, card on file
+- **Fewer than 6 committing money → kill**
+
+The test is correctly aimed: it does not buy *"the pain exists"* — that is documented by the
+incumbents themselves. It buys the only unmeasured claim: **that the incumbent's portal does not
+close the loop, and that R$397 to close it by WhatsApp is worth paying.**
+
+## The seven killed alongside it
+
+| Candidate | Killed by |
+|---|---|
+| PASTA DO CONTRATO | LAW 0 — clearing party, fetched verbatim |
+| CADERNO DO PRÉDIO | LAW 0 + LAW A on the first formal query; **Superlógica** named by the proposer as a "future" risk and shown to be a present one; volume also failed |
+| PASTA DO TERCEIRO | LAW 0 |
+| CIENTE | — |
+| VALIDADE | — |
+| **BALCÃO** | **LAW 7 via Meta policy.** Its whole differentiation was messaging *the caller*, which fails opt-in (*"businesses must clearly state that a person is opting in"*), display-name matching, and impersonation rules simultaneously |
+| **PLANTÃO** | **LAW C — Meta shipped it free, nationally, six months ago.** On 24 Feb 2026 Meta launched native AI agents inside WhatsApp Business in Brazil — conversational, 24/7, free, no add-on. The candidate's own free-competitor analysis argued against a competitor state that had ceased to exist |
