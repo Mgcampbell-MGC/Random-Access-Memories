@@ -1751,3 +1751,98 @@ for a deterministic rule-based verifier**, which managed only 51,6% recall. The 
 **So the kill is commercial, not technical, and it is stated that way deliberately.** The deterministic
 tool really is more precise. Precision protects against noise; noise is resolved at a desk; and there
 is nobody who requires the certificate. That is the whole argument, and it is enough.
+
+---
+
+# PNCP HUNT — 8 killed (candidates 35–42), 11 Aug 2026. Top score 21.
+
+The prediction was recorded before the run: *automation reality first, Law B second.* Both fired.
+But the mechanism is sharper than predicted, and it closes a whole category permanently.
+
+## THE CATEGORY KILL — automated action on a Brazilian government system is closed to THIS founder
+
+Three walls, and they compound. Any one is survivable; together they are structural.
+
+**1. The gov.br Termo de Uso bans the architecture, not just the scraping.** Downloaded and text-
+extracted from `acesso.gov.br/faq/_downloads/.../TERMO_DE_USO_E_POLITICA_DE_PRIVACIDADE.pdf` —
+a document no proposer had opened:
+
+> *"o cidadão concorda que não usará robôs, sistemas de varredura e armazenamento de dados (como
+> spiders ou scrapers)… ou método coletor/extrator de dados automático para acessar, adquirir, copiar
+> ou monitorar o gov.br, sem permissão expressa por escrito"*
+
+and — the clause that has not been cited anywhere and is fatal on its own —
+
+> *"Incluem-se nos acessos os realizados através de **serviços de hospedagem (hostings)**, pois devido
+> a uma política interna foram considerados **inviáveis** para prestação deste serviço público."*
+
+**A daily cron on a VPS is an access "através de serviços de hospedagem."** The CONTINUITY pillar —
+unattended scheduled execution, the thing that made these candidates more than a chat window — is
+the precise thing the terms prohibit.
+
+**2. The credential required is the company's entire fiscal identity, and facelessness forbids
+asking for it.** The authenticated write needs custody of the customer's **e-CNPJ A1 `.pfx` plus
+password**. That certificate reaches e-CAC, DET, eSocial, NF-e issuance, cadastral alteration and
+binding digital signature — not just SICAF. So the ask at the point of sale is: *an unnamed woman,
+from an anonymous page with no face and no name, cold-calls a stranger and asks them to email their
+digital certificate and password, then pay by card on the same call.* Brazilian guidance on exactly
+this decision says the opposite — *"Desconfie de empresas sem CNPJ visível, sem avaliações públicas
+ou que não constem no registro ICP-Brasil."*
+
+> **The faceless constraint and credential custody are structurally incompatible.** This is not a
+> positioning problem and no amount of copy fixes it. **The entire class — software that performs an
+> authenticated action on a government system on a customer's behalf — is closed to this founder.**
+
+**3. The labour replaced is ~25 minutes a month.** Six certidões, all issued free and instantly;
+two uploads at Compras.gov.br › Manter Fornecedor; one email per órgão.
+
+## The individual kills, briefly
+
+| # | Candidate | Killed by |
+|---|---|---|
+| 35 | **PAGÁVEL** (regularity pack pushed at each payment) | Credential custody vs facelessness; ~25 min/month of labour replaced. **Law B did NOT fire** — the State genuinely refuses this act: SICAF auto-integrates federal data but *"a comprovação da regularidade fiscal Estadual e Municipal deve ser realizada pelo fornecedor a partir do upload das certidões"* |
+| 36 | **ANIVERSÁRIO** (reajuste filed on the anniversary) | **The trigger does not exist in law.** AGU Parecer 3/2023/DECOR/CGU/AGU: *"NÃO HÁ PRECLUSÃO LÓGICA DO DIREITO AO REAJUSTE… EM DECORRÊNCIA DA CELEBRAÇÃO DE ADITAMENTO."* Outer bound is Decreto 20.910/32 — **five years**, retroactive. And TCU Acórdão 1105/2008: the reajuste should be granted *de ofício*. The clock the whole subscription rested on is fiction. Also: no unified protocol system across 5.570 municipalities, and SEI/1Doc external access is *"pessoal e intransferível"* |
+| 37 | **SICAF Verde** | The gov.br hosting ban, quoted above |
+| 38 | **Pasta Sempre Válida** | Same wall |
+| 39 | **MAPA 15** (Polícia Federal controlled-products map) | **Not an action — a file generator.** PF's own ROTEIRO 17 shows submission is a logged-in human clicking *Importar Arquivos → Selecionar o Arquivo → Processar*. No API. And PF ships a **free "Validador TXT Novo"** plus the layout, the product table and video tutorials — Law B, comprehensively |
+| 40 | **MAPA TRIMESTRAL** (Exército SisFPC / Polícia Civil) | Same |
+| 41 | **CERTIDÃO CONTÍNUA** | Same credential wall |
+| 42 | **PUBLICA 94** | Assessed dead by its own proposer |
+
+## WHAT THE RUN ACTUALLY PRODUCED — a data asset worth more than the candidates
+
+All measured by direct call on 11 Aug 2026, no key, no login. **Keep this; it outlives the hunt.**
+
+**The better register was found, and it is not PNCP.** `dadosabertos.compras.gov.br` (OpenAPI at
+`/v3/api-docs`, no key) exposes **SICAF itself**:
+`GET /modulo-fornecedor/1_consultarFornecedor?ativo=true` → **826.570 active suppliers** (the widely
+quoted "700.000" is stale), returning `codigoCnae`, `nomeCnae`, `porteEmpresaId`, `nomeMunicipio`,
+`ufSigla`, `naturezaJuridica`, `habilitadoLicitar`. Native filters on CNAE and porte.
+**MICROEMPRESA 406.380 · EPP 127.624 · DEMAIS 106.521.**
+
+**PNCP's limits, measured:** `/v1/contratos` has **no supplier filter** — unknown params are silently
+ignored, so `niFornecedor` appears to work and does nothing. Page size 10–500; 1000 → HTTP 400.
+Rate limiting is real and undocumented: at 8 parallel requests it returns a mix of 503 and an
+**HTML page titled "Limite de Requisições Excedido" served with a 200-looking body**, so a naive
+ingester silently loses pages — 628 of 760 lost on the first pass.
+
+**Solvency, June 2026 (n=169.505 contracts, 58.154 unique suppliers):** contract value p50 **R$5.000**,
+p75 R$39.500, p90 R$243.682, p99 R$5,4mi. Supplier monthly take p50 **R$38.400**, p90 R$1.037.234.
+**68% of suppliers have exactly one contract.** The top 1.000 take **69% of all value**; 2.232
+suppliers account for 80%. *(11 records exceed R$1 bilhão, the largest R$3,9 trilhão — plainly typos.
+Any product reporting value must winsorise.)*
+
+**The repeat-winner list is real:** 16.220 suppliers appear in both June and February (28%).
+Filtering to ≥3 distinct months, ≥R$300k cumulative and ≥2 distinct órgãos sizes the class at
+**3.500–7.000** — a genuine ~5k population, not an artefact.
+
+**And per-supplier win history does exist**, just not where anyone looked:
+`/modulo-contratacoes/3_consultarResultadoItensContratacoes_PNCP_14133` **does** filter by
+`niFornecedor`, returning `quantidadeHomologada`, `valorUnitarioHomologado`, `valorTotalHomologado`.
+
+## The law this adds
+
+> **Before proposing any product that acts on a system you do not own, read that system's terms of
+> use and find out what identity the action requires.** If the action needs custody of a credential
+> that is the customer's whole identity, the trust required is maximal — and maximal trust is
+> exactly what a faceless seller cannot supply. Check the credential before the market.
