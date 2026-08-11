@@ -1,2 +1,7 @@
 node_modules/
 *.pdf
+
+# Stray research fetches from background hunt agents (legislation dumps, scraped pages).
+# Working artifacts belong in the session scratchpad, not the repo.
+clt.html
+*.html.gz
