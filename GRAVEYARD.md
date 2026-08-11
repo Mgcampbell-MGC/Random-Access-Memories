@@ -1846,3 +1846,95 @@ Filtering to ≥3 distinct months, ≥R$300k cumulative and ≥2 distinct órgã
 > use and find out what identity the action requires.** If the action needs custody of a credential
 > that is the customer's whole identity, the trust required is maximal — and maximal trust is
 > exactly what a faceless seller cannot supply. Check the credential before the market.
+
+---
+
+# KILL — THE BRAZIL CHANNEL MODEL (11 Aug 2026). Candidate 43, and a category closes with it.
+
+Pre-committed bar: **~30 verified qualifying vendors.** Result: **2.** Generously 4. Not close, and
+not a gap more hunting closes.
+
+## Why 2 and not 30 — the market has a structure, and it excludes her precisely
+
+Two investigations independently enumerated close to a census: **186 PartnerStack sales programmes**
+and **147 Reditus programmes**, 333 with visible terms. Of the 186, **only 18 are tagged LIFETIME —
+and essentially all 18 sit under US$200/month** (SocialBee, Salesflare, CallHippo, KrispCall,
+MeetGeek, Campaign Monitor, Sellfy, Ticket Tailor).
+
+Every product genuinely in the US$200–2.000 band pays **first-year-only**, or does not publish:
+
+| Vendor | Verbatim |
+|---|---|
+| Close | *"30% commission on first-year subscription revenue"* |
+| PandaDoc | *"25–40% of revenue from first-year sales"* |
+| Cognism | *"15% of sales for the first year"* |
+| ZoomInfo | *"10% in Year 1"* |
+| Pipedrive | *"20–30% for first 12 months"* |
+| HubSpot | *"20% for 3 years"* — behind a US$400/month gate |
+
+> **Published commission rate and product price are inversely correlated across the whole market, and
+> the correlation has a cause: vendors pay lifetime only where CAC is trivial and self-serve, and cap
+> at twelve months wherever a deal is worth a salesperson's time.**
+
+The founder needs the high-ticket half. **That half does not publish rates and gates entry behind an
+English discovery call.** So *"never an unscripted live English call"* is not a footnote in this
+model — **it is the primary filter, and it removes the entire half of the market where the arithmetic
+could have worked.**
+
+The two that pass: **MRPeasy** (*"20% commission for the first three years"*, US$49–149/user/mo — but
+its reseller tier demands *"at least 3 full-time consultants and a physical office in the country"*,
+disqualifying) and **Katana** (Core *"Starts at $299/month"*, 20% published only on a PartnerStack
+tile, duration unverified). The structurally cleanest thing found in the entire hunt was
+**CleanCloud** — *"Earn 20% commission for lifetime"*, no upfront cash, no call — and it fails the
+price band at US$99–335/month.
+
+## KILL 2 — the Brazilian price gap, and it is independent of vendor count
+
+Re-fetched 11 Aug 2026: **Bling** R$60 / R$120 / R$650 per month, every tier including unlimited
+NF-e. **Conta Azul** R$159,90–719,90. **The Brazilian SME software band is roughly R$150–700/month.**
+
+At 5,11 BRL/USD, a US$299/month product lands on the Brazilian buyer at **~R$2.060–2.260/month**
+against a R$399,90 Conta Azul or a R$650 Bling Diamante — **3–5× the incumbent price**, for a product
+with an English UI, no NF-e, no boleto, no Pix, and USD card billing carrying 3,5% IOF and 15–25%
+cross-border decline rates.
+
+**No commission rate repairs a price gap of that size.**
+
+## KILL 3 — the arithmetic, derived rather than assumed
+
+Simples Nacional Anexo III at R$396.000 RBT12 computes to **9,045% nominal**, and export segregation
+removes 49,10% of the DAS repartition → **4,60% effective.** Tax was never the problem. The problem
+is what is left after it:
+
+Required gross commission **R$32.803/month = US$6.420**. At the **20%** actually verified (not the
+assumed 25%), that is **US$32.100/month of managed recurring revenue** — and at Katana's real
+US$299 price, **107 customers.** Not the 24–75 estimated.
+
+The verifier also rejected its own investigation's friendlier number, correctly: *"26 customers at
+US$1.000"* is arithmetically fine and practically void, **because the number of verified vendors
+pairing a ~US$1.000/month product with a published recurring commission is ZERO across all five
+investigations.**
+
+## And "no Brazil presence" means the opposite of what the model assumed
+
+The model read an absent Brazilian GTM as an open lane. The evidence reads it as **a rational vendor
+decline**: the vendors most isolated from Brazil are isolated *because they are small and cheap* —
+Sirvoy, the only vendor with no Portuguese anywhere, prices at **EUR11–44/month**, which makes the
+arithmetic hopeless by construction.
+
+> **Absence of a foreign vendor in a market is evidence about the market at least as often as it is
+> evidence of opportunity — the same lesson as "nobody sells this", relearned on the distribution
+> side.**
+
+## What this closes
+
+**The reseller/channel category is closed**, for a structural reason rather than a local one: the
+commission market pays lifetime only below the price point that could reach the target, gates the
+profitable half behind English calls, and the Brazilian buyer will not pay foreign prices for a
+product without NF-e, boleto or Pix.
+
+**And one finding cuts the other way and should be kept:** the measured Brazilian SME software band —
+**R$150–700/month** — is a real, solvent, addressable market. R$30.000/month at R$300/month is **100
+customers**; at R$650 it is **46**. That is not a fantasy number. It says any product for this founder
+must be **built for Brazil, priced in reais inside that band, and sold on WhatsApp** — not imported,
+and not priced in dollars.
