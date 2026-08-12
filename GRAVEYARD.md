@@ -2388,3 +2388,124 @@ The FECHAMENTO verifier caught a statistical error worth generalising: **a 5-in-
 is too thin to decide anything. At a true 2% conversion she expects 2,4 closes and would kill a live
 business on noise.** Every money-committed test here must dial **200–250**, or widen the pass band and
 state the confidence interval. A test that can fail a working business is not a cheap test.
+
+---
+
+# KILL — FECHA MÊS (11 Aug 2026). Killed by desk research, before one call was dialled.
+
+The founder asked what research alone could answer. It answered nearly everything, and three of the
+answers are fatal. **This is the cheapest kill in the entire record.**
+
+## KILL 1 — THE POOL IS NOT 179.702. IT IS ROUGHLY 108–500.
+
+This is the decisive finding and it invalidates the premise I built the arithmetic on.
+
+- **CNAE 7319002 is a catch-all, per IBGE's own Concla notes:** it comprises *"a promoção de vendas e
+  a publicidade no local da venda"* **and** *"a distribuição ou entrega de material publicitário
+  (fullfilment)"*. Panfletagem houses, brindes operators and degustação outfits sit in the same bucket.
+- **832.969 active registrations in the subclass — and the subclass's own MEI occupation name is
+  *"Panfleteiro(a) independente / Promotor(a) de vendas independente"*.** The mass of this code is
+  **the promoters themselves — her customers' workforce, not her customers.**
+- **The organised agency universe is tiny and countable.** AMPRO's own member directory filtered to
+  *Agência + TRADE MARKETING* returns **35 companies, 27 of them in São Paulo.** All AMPRO agencies of
+  any discipline: **160.** AMPRO Awards 2025, its largest ever: **509 entries from 108 agências.**
+
+> **68 customers out of ~108–500 real field-force agencies is 14–60% market share, not 0,038%.**
+> The volume test — the founder's own stated condition, *"as long as there is volume and a list"* —
+> fails outright.
+
+## KILL 2 — THE INCUMBENT SHIPPED THE PRODUCT FOUR WEEKS AGO
+
+eMerchan (*"200+ Agências na plataforma"*, *"100.000+ Atendimentos por mês"*) published, all tagged
+**"Para quem: Agência"**, in the last ten days of July 2026:
+
+- **24 Jul — "Faturamento do App com fechamento auditável"**: *"operações e lojas… podem ser revisadas
+  no CRM antes do fechamento do cliente"*. That is her per-store review-before-close.
+- **31 Jul — "DRE Gerencial…"**: *"mostra os ajustes de negociação como linha própria."* That is her
+  disputed-items line, already broken out.
+- **31 Jul — "Faturamento completo em um único relatório Excel."**
+- **22 Jul — "Book em HTML com logo personalizável na capa."** That is her agency-logo PDF.
+- Its agency page already frames the journey **Vender / Planejar / Executar / Comprovar / Faturar /
+  Receber**, where *"Faturar — Consolide o realizado para sustentar o fechamento."* **Her positioning
+  sentence, written by someone else, already on the market.** Changelog header: *"Julho de 2026 — 38
+  evoluções."*
+
+## KILL 3 — BELOW 8–13 PROMOTERS SHE COSTS MORE THAN THE TOOL THAT CREATES HER INPUT
+
+- **PMR**: *"A partir de R$ 2,00/visita"*, *"Sem mensalidade fixa"*, *"Zero: sem visita, sem cobrança"*
+  — and it already emits her deliverable: *"Gere um book de fotos por PDV em PDF ou PowerPoint para
+  apresentar aos clientes"*, with client access *"sem custo extra"*.
+- **Contele Teams**: R$62,50/user, 4-licence minimum = **R$250/month** including app, routing, GPS
+  check-in and reports, with *"logo personalizado"* on the service order.
+- **TradePRO**: *"Por apenas R$37 por promotor"*.
+
+**Derived crossover:** R$497 ÷ R$62,50 = **8 promoters**; R$497 ÷ R$37 = **13**. Below that she is more
+expensive than the tool that produces the data she depends on. And the precondition trap fires in full:
+agencies with clean exportable data are exactly the ones already paying those vendors.
+
+## Both of her sales words were wrong
+
+- **"Glosa" is not this trade's word.** Zero occurrences in the ABA/AMPRO *Glossário de Promoção e
+  Merchandising* (~600 terms), zero in Clear Promoções' 150-term glossary, absent from Involves,
+  eMerchan, uMov.me, Neogrid, Contele and MaximaTech. It lives in **health billing** and in **public**
+  contracts (*"glosa por falta"*, Lei 14.133).
+- **"Medição" is also wrong** — absent from both trade glossaries; where it is a monthly document it is
+  **public works** (*"O Boletim de Medição é documento complementar à atestação da nota fiscal"*). Say
+  it and an agency owner hears construction site.
+- **The trade's actual words**, all evidenced: **fechamento**, **atendimento** (the billable unit),
+  **realizado vs previsto**, **comprovação**, **evidência**, **book**, **cobertura**, **margem**,
+  **rentabilidade**. And **there is no native word for "visits the brand refuses to pay for"** — the
+  trade names the *state* (*atendimento não realizado*, *absenteísmo*) and never the deduction.
+
+## What the research also closed, and it is worth keeping
+
+- **The billing model, in kind:** per-visit is real and openly marketed, but it is the defining feature
+  of the **shared** promoter model. MaximaTech's own page on the dedicated model: *"gera um custo fixo
+  mensal que independe de indicadores como tarefas realizadas ou visitas feitas no período."* The only
+  survey (Involves 2018, n=351, vendor-run, brand-side, team-model not billing-model): **52,2%
+  exclusivas / 22% compartilhadas / 24,8% ambas.** So her lead module addresses the smaller half.
+- **The buyer, precisely:** **Coordenador de Operações** owns the fechamento — a live Soul Trade ad
+  requires *"Conhecimento Intermediário em ferramentas de coleta (Involves, Trade Force e Umov.me)"*
+  plus advanced Excel. **Analista de Faturamento** is downstream and fiscal. Cost to employ, CAGED for
+  this CNAE: *"Custo empresa (est.) R$ 5.001"*.
+- **Public procurement is a dead end** — in PNCP "merchandising" means TV product placement and
+  physical giveaways; "promotor de vendas" matches supplier *names* selling carimbos. **Public bodies
+  do not buy promoter visits.** My hypothesis that editais would answer the billing question was wrong.
+- **The artefact is unobtainable** — ~30 searches, ~25 fetches across Scribd, Passei Direto, PNCP and
+  academic repositories found no real filled fechamento document. It is a commercial annex; nobody
+  publishes it.
+- **No free or open-source competitor** — GitHub returns 21 zero-star repos, all construction or
+  student route-optimisation. The real incumbent is the agency's own Excel workbook, which has no URL.
+
+## THE ONE GAP THAT REMAINS OPEN — recorded, not pursued
+
+**The words margem, lucro and rentabilidade return ZERO hits across all 54 of eMerchan's release
+notes.** Its entire published Financeiro capability is two cost-side items — *"Pagamentos de
+promotores"* and *"Extrato e conciliação automática"*. Its DRE breaks out **receita only**. Nobody in
+the category — not eMerchan, not Involves' agency page, not maxPromotor's 20 bullets, not Médidy —
+advertises **margin per brand contract after promoter cost.**
+
+That is a genuine, verified gap. **It cannot be a business here, because the pool is 108–500 companies.**
+Recorded in case the same gap appears in a segment with volume.
+
+## Claims retired — these must never reach a sales call
+
+- **"Involves = R$11.750/client/month" is broken as stated.** R$127 milhões is verified (Brazil Journal,
+  3 Feb 2025), 2024, global. The "900" is Involves' own *"+900 marcas em todo o mundo"* — brands,
+  worldwide, different unit, different date. **Mismatched numerator and denominator.** Keep only the
+  qualitative version: enterprise-priced, publishes no price.
+- **"71%/29%" exclusive-vs-shared** — UNVERIFIED, source 404s. **"3.000 agências de live marketing"** —
+  UNVERIFIED. **"R$100 bilhões"** is brand spend on live marketing, not a TAM. **"Trade Force: mais de
+  cem clientes"** — UNVERIFIED; the domain now redirects to Neogrid, which has no promoter product.
+
+## Consequence
+
+**FECHA MÊS is dead, and ESCALA DA FESTA is now first.** Its pool must get the same treatment before
+anything else happens: 8230001 (72.970 non-MEI) may be diluted the same way, but **CNAE 5620102 —
+serviços de alimentação para eventos, bufê, 55.027 companies — is an unambiguous operating-business
+category, not a workforce code.** That distinction is exactly what FECHA MÊS lacked.
+
+> **THE NEW LAW: a CNAE count is not a buyer count. Before sizing any segment, read IBGE's Concla
+> notes for what the subclass actually comprises, and check whether the subclass's MEI occupation name
+> describes the BUYER or the buyer's WORKFORCE. Then find the trade association's member list — if the
+> organised universe is 108 companies, the CNAE's 179.702 is a mirage.**
