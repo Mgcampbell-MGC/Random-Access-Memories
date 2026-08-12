@@ -2137,3 +2137,83 @@ Four agents did substantial elimination work and had nowhere to return it — th
 only in their transcripts, partially. **Every future hunt schema must carry an explicit
 `whatIEliminatedAndWhy` field, so a zero-candidate run returns its full value.** Wave 2 has the same
 flaw and its synthesis agent partially compensates.
+
+---
+
+# WAVE 2 — EIGHT LENSES, ZERO PROPOSALS. And the synthesis that makes it worth it. (11 Aug 2026)
+
+Twelve lenses across two waves. Zero proposals. Not twelve candidates dying of twelve mechanisms —
+**twelve agents independently concluding the assigned segments contain no reachable space.**
+
+## PROMOTED TO THE LAW SET — Law 0 is a property of the SEGMENT, not the candidate
+
+> **Law 0 is predictable before any candidate exists, and the predictor is one question:
+> DOES THIS BUYER'S CUSTOMER PAY ACROSS A COUNTER TERMINAL?**
+> If yes, an acquirer funds complete vertical software to zero to win the card flow, and every
+> candidate in that segment is dead on arrival regardless of shape.
+> **Apply it at lens-selection time and it costs nothing. Apply it at candidate-evaluation time and
+> it costs a wave.**
+
+**Six of the seven CNAEs were structurally closed before wave 2 started.** Four are counter-dense
+(9602501, 9602502, 8630504, and 8230001 on its ticketing face). 8599604 has a non-counter clearing
+party (Hotmart/Eduzz/Kiwify) plus Sebrae giving training away free. 8650003 is dense on the first
+formal query plus the CFP vise.
+
+## THE UNCOMFORTABLE COROLLARY — and it is the real finding of both waves
+
+> **The founder-fit filter and Law 0 are ANTI-CORRELATED.** The set of buyers a 26-year-old from the
+> São Paulo events world would enjoy is nearly identical to the set of businesses that take cards at
+> a counter. The hunt was aimed at the intersection of *pleasant* and *viable*, and in these segments
+> those two sets barely overlap.
+
+## THE SHAPE THAT HAS EVER WORKED — one, out of 44
+
+**PASTA LIBERADA**, scored 72, survived five kill attempts. Stripped of construction, its shape is:
+
+> **Unattended pursuit of a document owed by a THIRD PARTY who is not the customer, sitting behind a
+> gate the customer controls, with the customer's own money or liability on the far side of it.**
+
+Four load-bearing properties, all structural rather than argued:
+
+1. **The counterparty is not the buyer.** A chat window cannot chase a stranger for 36 months. The
+   value is pursuit and gate-state, never analysis — so the chat-window test cannot fire.
+2. **Money is held at the gate.** A data position plus an action, two of the five permitted classes.
+3. **No credential custody** — the third party uploads its own PDF. Compatible with facelessness.
+4. **Payment moves by contract, not across a terminal.** No acquirer. Law 0 silent, searched by class.
+5. **Opt-in is free** — the buyer sends the link, the third party writes first, satisfying Meta's
+   conjunctive conditions by the product's own physics.
+
+> **It died on ONE thing: the buyer's daily vocabulary. The mechanism is proven; the segment failed.**
+
+## THE UNTESTED SEAM
+
+**7319002 — promoção de vendas / trade marketing. 179.702 companies, 73% mobile, 97% email. The
+largest CNAE on the table and the only one with no clearing party ever identified.**
+
+Wave 1 tested only its **field-evidence face** and found eMerchan (agency-specific) and PMR (pay-per-
+visit, no monthly fee). Its **PAYABLES face is untested**: the agency holding a promotora's or
+supplier's repasse pending a document. That is PASTA LIBERADA's exact mechanism, in a segment whose
+buyer is a marketing person — someone she would talk to naturally.
+
+**UNVERIFIED**, and it carries a live vocabulary risk (RPA, INSS on autônomos) that must be checked
+against her tolerance before a single call is dialled. Adjacent and weaker: 8230001's supplier-
+payables face, where the gate recurs per event rather than monthly, so the archive value is absent.
+
+## Territory closed — do not re-search
+
+**Segments:** 9602501, 9602502, 8630504 closed entirely — all five parts of the operating surface
+occupied by free product. 8650003 dense plus the CFP vise. 8599604 on Hotmart plus Sebrae.
+8230001 closed on ticketing, attendee, marketing and content faces. 7319002 closed on field evidence.
+
+**Classes:** any candidate whose buyer's customer pays at a counter terminal — now a **pre-filter,
+not a test**. Anything WhatsApp-facing resembling automated replies, and anything messaging an
+inbound caller (BALCÃO died on opt-in, display-name matching and impersonation simultaneously).
+
+**Method:** the multi-lens parallel desk hunt over the measured CNAE table. Two waves, twelve lenses,
+zero proposals. **The marginal desk-hunt now has a measured expected yield of zero.**
+
+## Process defect, recurring and now twice-recorded
+
+Wave 1's post-mortem mandated a `whatIEliminatedAndWhy` field so a zero-candidate run returns its
+value. **Wave 2 shipped without it.** Eight lenses of elimination reasoning exist only in transcripts.
+Every hunt schema from here carries that field — the two runs launched after this one do.
