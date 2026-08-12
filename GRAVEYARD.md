@@ -2509,3 +2509,111 @@ category, not a workforce code.** That distinction is exactly what FECHA MÊS la
 > notes for what the subclass actually comprises, and check whether the subclass's MEI occupation name
 > describes the BUYER or the buyer's WORKFORCE. Then find the trade association's member list — if the
 > organised universe is 108 companies, the CNAE's 179.702 is a mirage.**
+
+---
+
+# KILL — ESCALA DA FESTA (11 Aug 2026). Candidate 48. Killed by desk research, and four of my own numbers were wrong.
+
+## MY ERRORS FIRST
+
+- **"72.970 non-MEI matrizes on CNAE 8230001" is impossible.** IBGE CEMPRE puts the **entire class
+  82.30-0, both subclasses, at 50.817 non-MEI companies.** My figure for one subclass exceeded the whole
+  class. It was counting *situação ATIVA*, which includes dormant registrations IBGE does not treat as
+  operating.
+- **"~128.000 addressable" is a CNAE count that is ~89% MEI.** IBGE keeps two registers: CEMPRE
+  **excludes** MEI. Class 56.20-1 holds **500.092 MEIs against 50.187 non-MEI companies (90,9%)**, and
+  only **3.373 of those MEIs have even one employee (0,67%)**.
+- **"Violent seasonality" — wrong.** IBGE Registro Civil 2024, marriages by month: November **97.862**,
+  February **56.316**. **Peak-to-trough 1,74×, not 3,85×.** A buffet whose worst month is 58% of its
+  best grumbles; it does not cancel.
+- **"WhatsApp per-message pricing began January 2026, costing 7–20% of the subscription" — wrong twice.**
+  Billing began **1 July 2025** globally, and Meta's live Brazil card is **Utility R$0,035, Service R$0**.
+  A realistic month is **R$6,72 — 2,3% of R$297.** The message price was never the wall.
+
+**Three of the four concerns I raised were wrong, and it died anyway on things I never flagged.**
+
+## KILL 1 — the pool, on every construction
+
+| Construction | Number | Source |
+|---|---|---|
+| Non-MEI buffets + casas de festas, **no roster filter** | ~16.700 | rescaled to CEMPRE |
+| **CNAE 82.3 units with 10+ people occupied** | **1.638** | IBGE CEMPRE 2024, agg. 9529 |
+| **Catering/bufê firms with 20+ people occupied** | **1.760** | IBGE PAS 2023, agg. 2619 |
+| **Businesses with a real roster problem** | **2.000–8.000** | two interrogations converging independently |
+
+The same **"independente"** worker-signature that killed FECHA MÊS fires again: the MEI occupations on
+these codes are **Churrasqueiro(a) em domicílio independente**, **Pizzaiolo(a) em domicílio
+independente**, **Promotor(a) de eventos independente**. *A man who grills at your house.*
+
+**And a distinction worth keeping:** 5620102 is not a workforce code *by definition* — Concla gives it
+four clean firm-level descriptors and, unlike 7420001 fotografia (*"compreende também as atividades dos
+fotógrafos independentes"*), it has no independents clause. **It is a workforce code by OCCUPANCY.**
+*"The description will keep passing your smell test while the list you buy keeps failing."*
+
+## KILL 2 — nobody could find the pain
+
+> **Six interrogations searched "furou", "deu bolo", "não apareceu", "faltou garçom", "absenteísmo
+> freelancers eventos" and found nothing but vendor marketing and generic advice. Not one first-person
+> account, anywhere in Portuguese, of a buffet losing money because staff did not turn up.**
+>
+> The product is a cure for a disease six interrogations could not prove anyone has.
+
+## KILL 3 — the job is twenty minutes
+
+**StaffPRO's own homepage, same page, same units: 35.000 diárias ÷ 6.000 events = 5,8 people per
+event.** Worked trade examples: 50-child party = 2 people; 80-person coffee break = 3–4; 150-guest
+formal wedding = ~13. **To need 40 people you need 600–1.200 guests.** The weekly task is one WhatsApp
+message and a handful of replies.
+
+## KILL 4 — the price band is capped below R$297, and her signature is already shipped
+
+- **Festero: R$299/mês for an ENTIRE buffet ERP**, labelled *"Mais Popular"*.
+- **GestãoFesta: R$99/mês** for agenda + contratos + financeiro.
+- **Assessoria VIP: R$49,90/mês**, already including *"RSVP via WhatsApp"*, *"Checklist de presença"*,
+  *"Equipe do dia"* — and describing the product verbatim: *"Escale os membros da equipe através da
+  plataforma e envie a escalação com todas as informações necessárias via WhatsApp."*
+- **Easy Buffet ships her exact signature design, in a rival's own copy:** *"escala por evento e link
+  público para colaboradores confirmarem presença — **sem precisar ter conta no sistema**."*
+- **Food Sistemas ships the entire feature list word for word:** escala por evento, consulta de
+  disponibilidade, *"Confirmação de presença 48h antes por WhatsApp"*, *"Check-in no local com
+  geolocalização"*, *"Pagamento por diária consolidado no mês"*.
+- **And WhatsApp now ships Events natively inside groups** — title, date, place, RSVP *Vou / Talvez /
+  Não vou*, responses gathered into one list, automatic reminder. **~60% of the promise, at R$0, where
+  the team already is.**
+
+## KILL 5 — THE PRODUCT MANUFACTURES EVIDENCE AGAINST ITS OWN BUYER
+
+This is the finding nobody anticipated and it is the most serious.
+
+> **TST, verbatim: *"A subordinação foi confirmada por testemunha que relatou existir uma escala de
+> serviço para os garçons contratados, revelando o poder diretivo do empregador."***
+
+A roster is already cited by Brazilian labour courts as proof of **poder diretivo**. On *habitualidade*,
+twice a week over three years sufficed (Pirlim Pim Pim, 3ª Turma). **Her product converts "a witness
+must remember" into a permanent, timestamped, geolocated database of habitual subordinated work —
+held by the employer, discoverable, and organised per person.**
+
+The core artefact is documentary evidence of **vínculo empregatício**. Selling it means selling a buffet
+owner the instrument of his own liability.
+
+## WHAT SURVIVES AND IS WORTH KEEPING
+
+- **Phone reachability, measured** (n=298 active 5620102 CNPJs, free Receita base): **MEIs 0%** carry a
+  phone; **non-MEI 63,3%**; **EPP-and-larger 97,5%**. A callable São Paulo list of ~2.000 qualified
+  names is buildable from free public data. **Email is dead in this segment — the field returns the
+  accountant's address.**
+- **The vocabulary:** the trade word is **escala**; the pain word is **furo / furar**; the money word is
+  **diária** (buffets) or **cachê** (produtoras).
+- **Diárias confirmed:** R$80–150 for eight hours, verbatim across three independent sources.
+- **Seasonality is mild** (1,74×) and **WhatsApp Utility is R$0,035** — both retire concerns that were
+  wrongly raised against several candidates in this file.
+- **SEBRAE prescribes the workflow unprompted:** *"A contratação temporária é uma rotina nos buffets…
+  procure manter um cadastro atualizado."* Two third parties describe the loop. The workflow is real —
+  it is simply small, cheap, already shipped, and legally hazardous to formalise.
+
+## THE LAW THIS ADDS
+
+> **Before building anything that creates a durable record of who worked, when, under whose
+> instruction — check whether that record is evidence against your buyer.** In Brazil, escala, check-in
+> and habitualidade are the three elements a labour court uses to find vínculo. A product that
+> organises them is a liability generator wearing a productivity label.
