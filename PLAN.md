@@ -197,3 +197,50 @@ I will not spend another week guessing at these:
 > **Stop screening candidates and start screening segments; put her on the phone inside four weeks with
 > whatever survives eight free tests; and never again spend a week on a business that a one-hour audit
 > of IBGE would have ended.**
+
+---
+
+## 9. Standing watch item — autonomous computer-use agents (added 12 Aug 2026)
+
+**xAI announced Grok Bot** (`x.ai/news/introducing-grok-bot`). Fetched and read, so the note is
+accurate rather than a placeholder.
+
+**What it claims:** an agent with **its own cloud computer** that *"sign[s] into the tools you already
+use and work[s] across apps"*, runs 24/7 without the user present, *"finish[es] jobs end to end, and
+only come[s] back when something needs your approval"*, learns preferences by observation, and
+coordinates with other bots.
+
+**Status:** **beta**, gated to SuperGrok Heavy, Cursor Ultra and Cursor Teams Premium; enterprise
+waitlist. **No public API or standardised agent interface mentioned.** Not dependable as infrastructure
+yet — which matches the founder's own read.
+
+### The distinction that decides how it can be used
+
+> **It works across apps WITHOUT APIs by signing in as the user. That is simultaneously the capability
+> we needed and the thing we proved she cannot sell.**
+
+- **As a PRODUCT mechanism: still closed.** The whole government-action category died because the
+  authenticated write needs custody of the customer's e-CNPJ certificate or gov.br login, and a
+  faceless unknown seller asking a stranger for that **inverts the trust gradient**. An agent that signs
+  in on the customer's behalf does not fix that — it *is* that. Same wall, better robot.
+  Also unchanged: the gov.br Termo de Uso bans robots **and** access *"através de serviços de
+  hospedagem"*, which is what a cloud agent is.
+- **As LEVERAGE ON HER OWN OPERATIONS: genuinely valuable, and the right place to point it.** The
+  candidates that died on *per-transaction founder labour* (Aval, REAVER, the MCP service, arguably
+  Bancada) died because a human had to touch every transaction. An agent operating **her own** accounts,
+  her own back office, her own list-building and her own follow-up compresses exactly that cost — and
+  every credential involved is hers.
+
+### When it leaves beta, research these four things specifically
+
+1. **Reliability on repetitive commercial work** — not demos. Error rate on a hundred identical runs.
+2. **Whether it can be pointed at her own back office** — list building from the Receita base, CRM
+   hygiene, follow-up sequencing, invoice and payout admin — without her touching each item.
+3. **Cost per completed job at volume**, against the R$150–700/month price band. A tool that costs more
+   per customer than the subscription is not leverage.
+4. **Whether any product design becomes viable that was previously blocked ONLY by "no API"** — and
+   whether it can be built so the *customer* runs the agent under their own credentials rather than her
+   holding them. That single architectural question decides whether the closed category reopens.
+
+**Do not re-open any killed candidate on the strength of this until item 4 is answered.** "Better
+automation" was never the binding constraint; **trust and terms of use were.**
