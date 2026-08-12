@@ -2316,3 +2316,75 @@ annual dissídio is a dated, unavoidable cost increase she knows about before th
 The safety classifier was unavailable while eight of these subagents were reviewed. Before any of
 these numbers reaches a sales conversation, re-verify by hand: eMerchan's 200 agências, Involves'
 R$127mi/900, Food Sistemas' feature list, StaffPRO's 6.000 events, and the WhatsApp per-message rates.
+
+---
+
+# THE FOURTH HUNT, AND A RULE THAT REORDERS THE FINALISTS (11 Aug 2026)
+
+24 more candidates. Top survivor **FECHAMENTO** at 68 — PASTA LIBERADA's exact mechanism transposed
+out of construction into event production: chasing the event supplier's nota fiscal and bank details
+before the producer releases payment. Vocabulary problem solved, real founder domain fit, and the best
+build in the file: **it refuses to read, classify or reconcile the document**, so there is no AI page
+cost, no accuracy risk and no fail-closed problem — all three of which were live wounds on PASTA
+LIBERADA. Tokenised no-login upload link, cron reminders, red/amber/green board, ZIP export. 2–4 weeks.
+
+**But its verifier found the flaw, and it generalises into a rule.**
+
+> **In PASTA LIBERADA the chased document was burdensome to produce and potentially incriminating.
+> Here the chased document is the supplier's own nota fiscal — the instrument by which he DEMANDS
+> PAYMENT. No NF, no money. So the population of suppliers who withhold their own invoice is
+> structurally small, and those who genuinely don't send one mostly *cannot* (no NF capability, wants
+> informal payment), which software cannot fix.**
+
+The candidate's load-bearing statistic — *"roughly a third send it late, wrong, or not at all"* — is
+**invented. No source, unverifiable.** Honest read: a 3–7 day intermittent annoyance, not the claimed
+2–3 weeks. And two of PASTA LIBERADA's three value legs are absent: **no legal stake and no five-year
+archive.** Also **GestãoClick publishes R$119 / R$199 / R$289 / R$379** — its top tier undercuts the
+proposed R$397 with an entire ERP, so *"o GestãoClick faz tudo por R$289"* is a live objection on every
+call. Plus an unscoped fraud surface: collecting third-party bank details for the producer to pay
+against manufactures a payment-redirection risk a financeiro will raise.
+
+Genuine adoption finding in its favour: **MeEventos claims "1 a cada 10 eventos no Brasil"** — but its
+supplier feature is a *registry* and its NF feature is the producer's **own issuance**, not third-party
+collection with chasing. **The widest-reaching vendor in the segment does not do this job at all.**
+
+## THE RULE — counterparty motivation cuts both ways, depending on the job
+
+> **When the job is COORDINATION, you want a MOTIVATED counterparty — motivation is what makes the
+> product work.**
+> **When the job is CHASING, you want an UNMOTIVATED counterparty — motivation is what removes the
+> pain you were going to sell.**
+
+Applied to the three finalists:
+
+| Candidate | Counterparty | Job | Match |
+|---|---|---|---|
+| **FECHA MÊS** | **None** — the agency's own field data against its own contract | Reconciliation the agency owes its client | **Cleanest. No counterparty to depend on at all** |
+| **ESCALA DA FESTA** | Motivated — the garçom confirms because the shift is money | **Coordination** (40 people, one date) | **Correct match. Motivation delivers the product** |
+| **FECHAMENTO** | Motivated — the supplier wants to invoice to get paid | **Chasing** | **Mismatch. Motivation deletes the pain** |
+
+**FECHAMENTO therefore drops behind both.** Same mechanism, better build, worse economics of pain.
+
+## FINAL ORDER
+
+**1. FECHA MÊS** — no counterparty dependency, no Meta dependency, R$497–697, 68 customers, a monthly
+unavoidable deadline with disputed cash at the end. One unmeasured number: what share of agencies bill
+per visit. Test: 50 dials logging that answer on every call, 2 PIX to pass, under R$500.
+
+**2. ESCALA DA FESTA** — her own world, motivated counterparty on a coordination job, ~128.000
+addressable companies across 8230001 plus 5620102 bufê. Costs: R$297 needs ~115 customers, violent
+seasonality, and the WhatsApp layer that already killed BALCÃO — though the pure-web-link design ships
+in days with zero Meta dependency and can carry a paid pilot.
+
+**3. FECHAMENTO** — keep the build design (no-read, no-classify) as a pattern; it is the cheapest,
+safest architecture found in 46 candidates. Drop it as a business.
+
+**Also keep, regardless:** *Precifica Trade* as a free one-page giveaway — the annual dissídio is a
+dated, unavoidable cost rise she knows about before the owner has acted. Best cold-call door in the file.
+
+## Test-design correction, and it applies to every test in this file
+
+The FECHAMENTO verifier caught a statistical error worth generalising: **a 5-in-120 threshold (4,2%)
+is too thin to decide anything. At a true 2% conversion she expects 2,4 closes and would kill a live
+business on noise.** Every money-committed test here must dial **200–250**, or widen the pass band and
+state the confidence interval. A test that can fail a working business is not a cheap test.
