@@ -6,7 +6,7 @@ const {
 
 const NAVY = '1F3352', ACC = '9A6B3F', GREY = '5A6472', LINE = 'D6DAE0', BG = 'F4F6F8';
 
-const src = fs.readFileSync('DECKPROOF_V2_Business_Overview.md', 'utf8');
+const src = fs.readFileSync('PLAN.md', 'utf8');
 
 // ---- inline markdown (bold + code) -> TextRuns
 function runs(text, base = {}) {
@@ -128,6 +128,6 @@ const doc = new Document({
 });
 
 Packer.toBuffer(doc).then(b => {
-  fs.writeFileSync('DeckProof_V2_Business_Overview.docx', b);
+  fs.writeFileSync('The_Plan.docx', b);
   console.log('written', b.length, 'bytes');
 });
