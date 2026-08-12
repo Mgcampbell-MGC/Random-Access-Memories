@@ -2059,3 +2059,81 @@ close the loop, and that R$397 to close it by WhatsApp is worth paying.**
 | VALIDADE | — |
 | **BALCÃO** | **LAW 7 via Meta policy.** Its whole differentiation was messaging *the caller*, which fails opt-in (*"businesses must clearly state that a person is opting in"*), display-name matching, and impersonation rules simultaneously |
 | **PLANTÃO** | **LAW C — Meta shipped it free, nationally, six months ago.** On 24 Feb 2026 Meta launched native AI agents inside WhatsApp Business in Brazil — conversational, 24/7, free, no add-on. The candidate's own free-competitor analysis argued against a competitor state that had ceased to exist |
+
+---
+
+# WAVE 1 OF THE FOUNDER-FIT HUNT — FOUR LENSES, ZERO CANDIDATES (11 Aug 2026)
+
+All four lenses were told that returning zero with a clear explanation beats returning something weak.
+**All four took that option.** Their reasons converge, and the convergence is the finding.
+
+## Lens A — solo health practitioners (psicologia 106.316, odontologia 123.639)
+
+> *"Every structure in this lens died on the **first** formal Portuguese query — Law A fired in
+> reverse: the space is dense, not neglected."*
+
+## Lens B — beauty and aesthetics (cabeleireiros 124.273, estética 74.583)
+
+The fullest account, and it generalises: **the operating surface of a beauty business has exactly
+five parts and all five are closed.**
+
+1. **The client** — booking, reminders, recall, reviews, loyalty. Booksy, Trinks, Avec, Belle,
+   Fresha, SimplesAgenda, plus Meta's free native WhatsApp Business AI agents since 24 Feb 2026.
+2. **The money** — and this is the important one. **Capterra Brasil's *free* salon-software category
+   lists eleven products with free plans, one of them Square Appointments, *"free for individuals"*.**
+   An acquirer giving away complete salon software to win the card flow. The Booksy Claim-button
+   precedent, repeating.
+3. **The product** — estoque and per-service cost. The agent's most promising non-obvious idea was
+   gram-level colour costing, and it **died on the first formal Portuguese query**: **Graces** ships
+   *"estoque de uso interno"* with automatic per-service deduction naming *colorações e tratamentos*
+   specifically. And **ePrático** ships the whole stack **"sem mensalidade"** — a permanent-licence
+   competitor structurally invisible to any pricing-page search, exactly as Law C predicts.
+4. **The staff** — chair rental, splits, ponto. Law 6: a recepcionista at R$1.600–2.500 and a contador
+   at R$300–800 absorb it, and owners fill chairs for free in WhatsApp and Facebook groups.
+
+## Lens C — events, training, promotion
+
+> *"Both leading hypotheses hit incumbents immediately."*
+
+## Lens D — the job common to all small woman-run service businesses
+
+> *"Every element of the shared operational spine tested dead."* Trade-marketing evidence collection
+> specifically: **eMerchan** is agency-specific and **PMR** sells pay-per-visit with no monthly fee.
+
+---
+
+## THE STRUCTURAL FINDING — and it is uncomfortable
+
+> **The woman-dominated small-service segments are the WORST hunting ground in Brazil for this
+> founder, and for a reason that has nothing to do with the quality of the ideas.**
+>
+> These businesses are **payment-dense**. Every one of them takes card payments at the counter. That
+> makes the acquirers — Stone, PagSeguro, Cielo, Mercado Pago, InfinitePay, Ton, Square — permanent,
+> armed clearing parties who will fund *complete vertical software* to zero to win the card flow.
+> **Law 0 is not an occasional risk in these segments. It is the market structure.**
+
+This explains, retrospectively, why the earlier female-market hunt lost nine of ten and why the one
+survivor was interior design — **a segment where the designer does not take card payments at a
+counter, so no acquirer is funding software into it.**
+
+**The tension is now explicit and it is the real problem:** the buyer she would most enjoy talking to
+is, almost by construction, the buyer whose software somebody else is giving away free.
+
+## What this implies for where anything can survive
+
+A segment must be **solvent and reachable but NOT payment-dense** — where money moves by contract,
+invoice, transfer or retainer rather than across a counter terminal. That is what protected interior
+design, and what protects the construction candidate the founder rejected.
+
+Wave 2 is running eight further lenses. The ones with a structural chance are precisely those least
+payment-adjacent: **education and children, the celebration economy, fashion wholesale rather than
+retail, new municipal and conselho obligations, and the seams between existing tools.** The ones
+touching a counter terminal will die the same way.
+
+## A process error, recorded so it does not recur
+
+The wave-1 schema had a single `candidates` field and **no field for "what I eliminated and why."**
+Four agents did substantial elimination work and had nowhere to return it — the reasoning survives
+only in their transcripts, partially. **Every future hunt schema must carry an explicit
+`whatIEliminatedAndWhy` field, so a zero-candidate run returns its full value.** Wave 2 has the same
+flaw and its synthesis agent partially compensates.
