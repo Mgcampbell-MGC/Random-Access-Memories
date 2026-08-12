@@ -2217,3 +2217,102 @@ zero proposals. **The marginal desk-hunt now has a measured expected yield of ze
 Wave 1's post-mortem mandated a `whatIEliminatedAndWhy` field so a zero-candidate run returns its
 value. **Wave 2 shipped without it.** Eight lenses of elimination reasoning exist only in transcripts.
 Every hunt schema from here carries that field — the two runs launched after this one do.
+
+---
+
+# THE REFRAME WORKED — 42 candidates, 8+ viable (11 Aug 2026)
+
+Three hunts under the reversed screen produced **24 + 18 candidates** where twelve lenses under the
+old screen produced **zero**. The founder's instinct was right and the constraint was mine.
+
+## THE EVIDENCE THAT THE OLD SCREEN WAS WRONG
+
+**Involves** — Brazilian trade-marketing leader: **R$127 milhões revenue 2024 / ~900 clients =
+R$11.750 per client per month.** 24× the top of her band. It *cannot profitably serve* a ten-person
+agency and does not try.
+**eMerchan** — the only vendor covering the exact stage: **200 agências against 179.702 companies =
+0,11%.** Publishes no price.
+**Trade Force** — *"mais de cem clientes."* **MáximaTech** — 1.300, but atacadistas not agencies.
+Sum every disclosed number, zero overlap: **3.000–4.000 paying companies in the whole Brazilian
+field-team software industry, mostly brands and wholesalers. Over 97% of the segment buys nothing.**
+
+**The macro floor, fetched:** Cetic.br TIC Empresas 2025 — **36% of Brazilian companies use ERP, 31%
+CRM, small firms 29%** — and the survey *excludes* the smallest firms. Sebrae 2025's "historic high"
+is 47% using any integrating software: **53% run on spreadsheets in the best year ever recorded.**
+Sebrae TIC 2025: **under 13%** of pequenos negócios use the internet for management platforms.
+
+> **THE LAW THIS REPLACES: "an incumbent exists" was never a kill at this scale. The test is
+> ADOPTION. If the leader has 900 clients in a 179.702-company segment, 99,5% is open, and she needs
+> 0,04% of it.** Existence killed 44 candidates that adoption would have passed.
+
+## CANDIDATE A — FECHA MÊS (score 68). The stronger business.
+
+Turns a merchandising agency's raw field data into the month-end **medição** it sends the brand: the
+invoice value, the itemised **glosa** list (visits the brand will refuse to pay for), and real margin
+per contract. **R$497/mês up to 8 contracts, R$697 unlimited. 68 customers = 0,038% of the segment.**
+
+- **It sits ABOVE the field app, not against it.** The agency exports from Involves, Contele, PDV Info,
+  a Google Form or a spreadsheet; she maps columns once. **Even Involves customers still build the
+  medição in Excel**, because Involves knows what happened in-store and nothing about price-per-visit
+  or the glosa rule. Both ends of the market are one product.
+- **v1 is CSV in, PDF out — two to three weeks.** No API, no integration, no partner, **no Meta
+  dependency**, and no credential custody by design.
+- **The opener disqualifies in one breath:** *"os contratos de vocês são cobrados por visita, ou é
+  valor fechado no mês?"* The word **glosado** self-selects the buyer.
+- **The one unmeasured number:** what share of small agencies bill per visit rather than a flat monthly
+  fee. Nobody publishes it. The whole business rests on it.
+- **Test: under R$500, 12 days.** Three agencies send last month's spreadsheet, she hand-builds the
+  medição with no product. Then 50 dials logging the per-visita answer on every call — 50 buyers
+  answer the unanswerable question free. **PASS: 2 PIX from 50 dials AND ≥12 of 50 billing per visit.
+  FAIL: fewer than 8 of 50.**
+
+## CANDIDATE B — ESCALA DA FESTA (top VIABLE, wave 3). The better founder-fit.
+
+Freelancer shift confirmation for event producers, buffets and agencies: who is booked, who confirmed,
+who checked in, per-person no-show history, and the month-end payment list. **R$297/mês.**
+
+- **Her own world**, and the pool is bigger than measured: 72.970 non-MEI on 8230001, **plus CNAE
+  5620102 bufê = 55.027** — buffets are the headcount-heavy rosterers and are the truer buyer.
+- **THE COUNTERPARTY IS MOTIVATED.** The garçom confirms because the shift is money in his pocket.
+  That removes the response-rate risk that every document-chasing candidate carries — a structural
+  improvement on PASTA LIBERADA's shape.
+- **Adoption near zero.** Buffetmax gates escala *above* its entry plan. **Food Sistemas /
+  EventBuffetOS is the closest product in Brazil** — availability checks, 48h confirmation messages,
+  alerts when staff do not confirm, geolocated check-in, monthly diária consolidation — buffet-ERP
+  shaped, no price, no customer count, not sold standalone. **StaffPRO** has 32.000 freelancers but
+  only 6.000 events and R$6MM lifetime, monetising 10% on connections to *strangers* — it sells access
+  to strangers, not management of your own 60 trusted garçons.
+- **Not the closed booking category** — customer appointment booking never rosters the business's own
+  workforce. But **she must never pitch it with the word "agenda".**
+- **Solvency holds by the staffing ratio:** 1 waiter per 15–20 guests, diárias R$80–150. A 40-person
+  roster implies 600–800 guests, so the buyer grosses tens of thousands a month and R$297 is under 1%.
+- **Two honest weaknesses, both arithmetic.** R$297 × 100 = R$29.700 gross ≈ R$26.000 net, so the real
+  target is **~115 customers or a R$340 average ticket.** And Brazilian event demand is violently
+  seasonal, so 5% monthly churn is optimistic. Both push the R$30.000 month past twelve months.
+- **The build gate is the WhatsApp layer — the same wall that killed BALCÃO.** Three lawful designs;
+  the shippable one is a pure web link the buffet posts to its existing group (days, zero Meta
+  dependency) which degrades the "it chases them itself" promise but carries a paid pilot. Brazil moved
+  to per-message pricing in Jan 2026 at **R$0,035–0,09 per UTILITY template**, so a 40-person roster
+  costs R$22–58/month — **7–20% of a R$297 subscription.** And a pooled WABA means one customer's
+  irritated waiters can drag every other customer's quality rating down.
+
+## Recommendation
+
+**FECHA MÊS first.** Better price, fewer customers, a monthly unavoidable deadline with cash at the end
+of it, and — decisively — **no Meta dependency anywhere in the product.** ESCALA's core promise runs
+through the exact layer that has already killed a candidate here.
+
+**ESCALA DA FESTA is the immediate second**, and it is where her events career is directly usable. If
+the 50 FECHA MÊS calls come back "valor fechado no mês", she switches list and script inside a week.
+
+**Also worth building regardless:** *Precifica Trade* (scored 72) — a free one-page calculator of what
+a CLT promoter really costs under the applicable convenção coletiva, with the annual reajuste letter.
+It loses as a business (consumed once; obliges her to maintain dozens of union conventions) but the
+annual dissídio is a dated, unavoidable cost increase she knows about before the owner has acted.
+**Best cold-call door in the file.**
+
+## Verification debt, recorded
+
+The safety classifier was unavailable while eight of these subagents were reviewed. Before any of
+these numbers reaches a sales conversation, re-verify by hand: eMerchan's 200 agências, Involves'
+R$127mi/900, Food Sistemas' feature list, StaffPRO's 6.000 events, and the WhatsApp per-message rates.
