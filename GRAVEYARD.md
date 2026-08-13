@@ -2617,3 +2617,88 @@ owner the instrument of his own liability.
 > instruction — check whether that record is evidence against your buyer.** In Brazil, escala, check-in
 > and habitualidade are the three elements a labour court uses to find vínculo. A product that
 > organises them is a liability generator wearing a productivity label.
+
+---
+
+# KILL — LOTELOCK / RELEASEGATE (12 Aug 2026). Candidate 49 — **and it is LINELOCK's third appearance.**
+
+**Why it keeps coming back:** it is the same idea as LINELOCK, which is already in this file twice —
+killed once on the invisible trigger (A3/A4, with the Acrobat substitute argument formally withdrawn),
+reopened as a tier-2 lead, then killed again by the clearing-party law: *printers earn on the print run
+and already offer free preflight.* LoteLock is a genuinely narrower and better-specified version — the
+release gate rather than the preflight check, local-first, nothing installed at the printer — so it
+earned a fresh run through the gauntlet. It fails three tests.
+
+## TEST 1 — POOL. **FATAL.**
+
+**The entire Brazilian personal-care, perfumery and cosmetics manufacturing sector is 3.483 companies**
+(ABIHPEC, June 2023; 3.130 in 2020; Sudeste 1.866). **ABIHPEC's own 400+ members represent "90% do
+setor."** Private-label and contract manufacturers are a *subset* of that — realistically a few hundred.
+
+The model requires **71 active teams.** That is:
+- **~2% of the entire sector**, counting Natura, Boticário and every multinational, or
+- **roughly 15–35% of the actual private-label manufacturer segment.**
+
+**This is the FECHA MÊS failure mode exactly** — a narrow professional segment where the required
+penetration is market leadership, not 0,1%. The document widens the target to packaging converters and
+to small brands with outsourced production, but those are three different buyers with three different
+pains and three different sales motions, and one of them is the clearing party (below).
+
+## TEST 3 — SHIPPED. **FAILS.**
+
+The competitor is not "enterprise QMS/PLM". **"Label and artwork management" is a mature, named
+software category with its own comparison directories.** Named vendors: **ManageArtworks**, **Twona**,
+**Artwork Flow**, plus Esko, Kallik, Loftware and GlobalVision — the last two of which the document
+itself consulted and then classified as enterprise-only.
+
+**ManageArtworks is explicitly not enterprise-only:** *"designed to streamline packaging artwork
+management for businesses of all sizes"*, *"trusted by over 5,000 brands"*, shipping version control,
+approval workflows, and AI proofing with image compare, barcode check and spell check. **Artwork Flow**
+is *"a cloud-based artwork management and label compliance platform"* for marketing, packaging and
+regulatory teams.
+
+Version control plus a gated approval workflow **is the category's definition**, not a gap in it.
+
+## TEST 7 — CLEARING PARTY. **FAILS, and this is the one that killed LINELOCK.**
+
+**The gráfica is the clearing party.** A printer who runs the wrong version eats the reprint, so the
+printer has a permanent, structural incentive to fund approval workflow to zero — and Brazilian
+printers routinely do, as **prova digital / aprovação de prova**, included in the job.
+
+The document's own defence is honest but weak: *"printers and manufacturers may benefit from fewer
+errors, but they do not automatically fund a neutral release utility as customer-acquisition cost.
+This is a hypothesis to validate, not a proven exemption."* It is not a hypothesis. It is standard
+Brazilian print practice, and it is the exact mechanism that killed this idea's predecessor.
+
+## TEST 2 — PAIN. Unproven, and the document says so.
+
+*"The claim that small Brazilian private-label manufacturers frequently suffer a specific monetary loss
+from wrong-version artwork is UNVERIFIED as a measured market statistic."* Same position ESCALA DA
+FESTA died in — six interrogations there could not find one first-person account of the loss.
+
+## What it PASSES, recorded fairly
+
+- **Chat window:** clean. The value is the release action and the verification, not analysis.
+- **Credential custody:** none. Local-first, nothing stored, nothing installed at the printer.
+- **Law B:** clean — it explicitly refuses to judge ANVISA compliance, which is the right boundary.
+- **Founder fit:** strong. Cosmetics, packaging and brand people are her world.
+- **Grok positioning:** correct — deterministic core, AI optional, *"never market the product as
+  Grok-powered."*
+- **And the paid test is the best-specified in this entire record:** R$197 non-refundable, a live
+  release required, and the disqualifying line *"Se vocês não têm uma próxima arte ou especificação
+  para liberar, não faz sentido testar agora."* **That sentence should be reused verbatim on every
+  future test — it refuses the merely curious.**
+
+## THE PATTERN WORTH KEEPING — why some ideas keep coming back
+
+LoteLock/LINELOCK has surfaced three times because it has **excellent product logic and unexamined
+market size**: a crisp verifiable action, a two-minute demo, no credentials, no regulator, and a buyer
+the founder can talk to. Everything about it feels right *except* how many buyers exist.
+
+> **An idea that keeps recurring is telling you about its APPEAL, not its VIABILITY. Recurrence is a
+> signal to check the pool first — because the reason it feels good is precisely the reason nobody
+> checked the boring number.**
+
+**Operational consequence, effective now:** the eight-test gauntlet runs **pool first, always**, and no
+recurring idea is re-examined without re-running Test 1. This is the third time this specific idea has
+consumed analysis; it should not be a fourth.
