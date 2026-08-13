@@ -115,6 +115,43 @@ appeal, no repositioning. *Do not reinterpret a failure as "we need better posit
 **Gate 1:** at least two candidates clear all eight. If none does, return to Phase 1 once. If a second
 pass also returns nothing, the constraint set is binding and that becomes the conversation.
 
+#### PHASE 2b — THE REPAIR PASS · mandatory · *added 13 Aug 2026, and it is the correction of a real defect*
+
+**Every candidate that fails a test gets one repair pass before it is filed. Alongside the kill, never
+instead of it.** The kill is written first, in full, and is not softened by what follows.
+
+The rule that makes this safe — and the reason it is not the "repositioning" the paragraph above
+forbids:
+
+> **Classify the fatal fact. Is it SHAPE, SEGMENT or FOUNDER?**
+> - **SHAPE** — every possible version of this product has this problem (it is content, so Law 1; its
+>   value is analysis, so the chat window). **File it. No repair exists. Do not spend another minute.**
+> - **FOUNDER** — a different person could build it, this one cannot. **File it.** It is a fact about
+>   the constraint set, and it belongs in §7, not in a repair.
+> - **SEGMENT** — the problem belongs to the buyer group chosen, not to the product. **This one, and
+>   only this one, gets the repair pass.**
+
+**The repair is limited to ONE change**: a different buyer, a different segment, a different geography,
+or a different price model. **One.** If it takes three changes it is not a repair, it is a new
+candidate, and it re-enters at Phase 1 with no inherited credit.
+
+**The repaired version then re-runs the FULL gauntlet from test 1.** Nothing carries over. Pool is
+re-measured with a real number, competitors are re-searched in that segment's vendor vocabulary, and
+the clearing party is re-identified — because **Law 0 is a property of the segment, so changing the
+segment changes the clearing party**, and a repair that ignores this replaces one free competitor with
+another.
+
+**Why this is in the plan.** LoteLock failed three tests and was filed. The founder changed one thing —
+the buyer, from cosmetics brand to gráfica — and the fatal test flipped: a pool of 3.483 became 15.000–
+20.000, and required penetration fell from 15–35% to 0,5–0,7%. **The repair was available and I did not
+run it.** She asked for this in different words at least four times over two days and it never got done.
+That is a method defect, not an idea shortage, and this section exists so it cannot recur.
+
+**And the counterweight, which is equally binding:** a repaired candidate that fails the re-run is
+**finished**. No second repair, ever. LINELOCK has now appeared four times — as LINELOCK, as a
+resurrection-audit lead, as LoteLock/ReleaseGate, and as Press-Go — and consumed analysis every time.
+**One repair per candidate, then the file closes.**
+
 ### PHASE 3 — Contact · 12 days · under R$500 · **this is the phase that has never happened**
 
 **This is the forcing function and it is non-negotiable: she is on the phone by day 25, with whatever
@@ -171,6 +208,12 @@ Four commitments, each earned by a specific failure of mine in this record:
    elimination work survived only in transcripts.
 4. **I flag my own uncertainty before the user has to find it.** Three of my four stated concerns about
    Escala were wrong. That is worse than saying nothing, because it aims the search at phantoms.
+5. **Every kill is classified SHAPE / SEGMENT / FOUNDER, and every SEGMENT kill gets the repair pass in
+   §Phase 2b.** She asked for this four times in different words — *"is any of the past kills worth
+   looking at again with new eyes"*, *"how can it work then"*, *"we should and I have asked in different
+   ways, never that, plain and simple"* — and it was deferred every time. Meanwhile she performed the
+   repair herself, on LoteLock, in one message, and flipped its fatal test. **The generator was never
+   the bottleneck. The unwillingness to ask "what would have to be true" was.**
 
 ---
 
