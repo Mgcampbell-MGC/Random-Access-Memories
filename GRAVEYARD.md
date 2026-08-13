@@ -2702,3 +2702,228 @@ the founder can talk to. Everything about it feels right *except* how many buyer
 **Operational consequence, effective now:** the eight-test gauntlet runs **pool first, always**, and no
 recurring idea is re-examined without re-running Test 1. This is the third time this specific idea has
 consumed analysis; it should not be a fourth.
+
+---
+
+# THE REPAIR PASS — eight corpses, zero survivors, five new laws (13 August 2026)
+
+The founder's criticism, verbatim and correct: *"WE SSHOLD AND I have asked in diffrnet ways never
+that plan and simple."* The repair pass — *what would have to be true?* — had been asked for four
+times in different words over two days and had never been run. It was run today, properly, on the
+eight strongest candidates in the record.
+
+**Every one came back dead.** That is not a failure of the exercise. It is the exercise working:
+the repair pass is now a mandatory step in PLAN.md §Phase 2b, and it is no longer possible to file
+a candidate without asking whether its fatal fact belonged to the product or to the segment.
+
+## KILL — PASTA LIBERADA (13 Aug 2026). The only survivor in the record, killed by its own survey.
+
+**KILL 1 — the pool and the pain are DISJOINT POPULATIONS.** IBGE **PAIC 2024** (aggregate 10463,
+vars 410/1269/1236; corroborated on aggregate 1744 for 2022–23), CNAE 41.20:
+
+| Stratum | Companies | Subempreitada spend/company/year | Per month |
+|---|---|---|---|
+| **5–29 pessoas ocupadas** | **18.624** | R$ 135.153 | **R$ 11.263** |
+| **30+ pessoas ocupadas** | **4.042** | R$ 3.736.981 | R$ 311.415 |
+
+Not 69.365. The Receita porte-based count includes SPEs and staffless CNPJs. The construtora with
+8–15 empreiteiros and 96 conferences a year **is the 30+ stratum — 4.042 companies nationally**,
+where the ~23 incumbents already sell. The stratum the funnel can reach subcontracts **R$11.263 a
+month, roughly one empreiteiro** — a twenty-minute job, and R$397 would be 3,5% of the subcontracted
+volume. **The precondition trap in cost form.**
+
+**KILL 2 — the record's own Sertras finding was WRONG, and it is a clearing party.** The file said
+*"gestão de terceiros is paid by the contracting company."* Sertras' own FAQ publishes a price table
+**paid by the fornecedor** — Simplificado R$141/ano, Prata R$633–1.030, Ouro R$1.109–3.055, Platinum
+R$2.495–4.857 — verbatim: *"O valor é pago pela análise documental… independente do resultado."* The
+homologação certifier is funded by supplier annuities and **can price the construtora side at zero
+permanently.**
+
+**KILL 3 — the channel leg, the one unmeasured claim, is already shipped twice.** Sertras contacts
+the contratada *"por telefone, e-mail, WhatsApp e videochamada"*, first attempts by **ligação**.
+Dynadok already ships link-by-WhatsApp collection in crédito, locação, frota and telemedicina —
+the counterparty *"recebe um link pelo app, site, WhatsApp ou ponto de venda"*. It is a channel
+toggle in an existing product, not a moat.
+
+**And the load-bearing hypothesis is false in the observable record.** No first-person Portuguese
+account of an empreiteiro refusing a portal exists. The evidence runs the other way: **LNP
+Consultorias sells a service to empreiteiros that fills the incumbent portals in for them** — for
+Bernhoeft, Level Group, SG3, IBRACEM, SERTRAS, SAP Fieldglass and New Era. **Suppliers pay a human
+to use the portal. They do not refuse it.** Sienge already ships the gate (parâmetro 131 =
+*"Obrigar"*). Vendor field ~2× denser than recorded, again — **LAW A fired for the third time.**
+Published price found: Dynadok's own ROI calculator uses **R$12.800/mês** for a construtora.
+
+**Do not dial the 60-call test.**
+
+## The other seven, briefly
+
+| Candidate | Verdict | Killed by |
+|---|---|---|
+| **DECKPROOF** | SHAPE-specific, no repair exists | The "immune shape" of the resurrection audit is a verbatim job description of a chat window |
+| **ESCALA DA FESTA** | Repair exists, has nowhere to go | Divisão 78 entire = 14.295 firms, 3.704 with 10+ — **the safe segment is the smallest one**. TIO Digital already ships the safe-side product |
+| **FECHA MÊS** | Dead across nine repair segments | Every visit-based Brazilian segment has a mean firm of 2–5 people. eMerchan holds **200+ agencies of a 108–509 universe** |
+| **THE EXPEDITING DESK** | SHAPE-specific | Brazilian term is **diligenciamento**; Smarti Supply FUP ships it; five named free-to-buyer products at national scale |
+| **LICITAÇÃO POPULATION** | **Population closed, not just the product** | Its only counterparty is the State, which cannot be gated and publishes its own gate-state by statute (Lei 14.133 art. 141 §3º) |
+| **PRESS-GO / LINELOCK (4th appearance)** | Confirmed dead on evidence | **GI Arte** ships it feature-for-feature to gráficas including the timestamped log; **Setor de Arte** is *"100% Grátis"* with WhatsApp approval, funded by a freelancer-marketplace take-rate |
+| **Meta-review of all 58** | — | See the laws below |
+
+---
+
+# THE FIVE LAWS BOUGHT ON 13 AUGUST 2026
+
+### THE SELLER-SIDE FUNDING LAW
+> **If the party you chase is competing to SELL to your buyer, someone will charge that party for
+> access and give the chasing tool to the buyer free.**
+
+Object & Order (5% goods margin), Mercado Eletrônico (*"a empresa fornecedora paga uma taxa… o que
+faz a solução totalmente gratuita para compradores"*), Neogrid Winn, SAP Ariba Standard, Nimbi
+Private — **one mechanism, not five coincidences.** The chased party must be a **payee already under
+contract**, who will not pay a network for access to a customer they already have, so no network
+forms and nobody funds the free version.
+
+### THE GATEABLE-COUNTERPARTY LAW
+> **Enumerability and solvency are properties of the BUYER. Gate-holding is a property of the
+> buyer's COUNTERPARTY. The two were never checked together.**
+
+SICAF enumerates 826.570 solvent, phone-reachable buyers whose only counterparty is the State —
+which cannot be gated, cannot be withheld from, and publishes the gate-state by statute. **The best
+buyer evidence in the record is unusable.**
+
+### PRICE AND POOL MOVE IN OPPOSITE DIRECTIONS
+> **When the competitor is per-seat, escaping the crossover means raising price, which raises the
+> minimum client headcount, which drops the qualifying population into the top 2–7% of the segment.**
+
+Measured: R$497 ÷ R$37 (TradePRO) = 13 promoters; at R$700 the crossover is 19.
+
+### THE FIELD-OWNERSHIP LAW
+> **If what you are selling can be described as one field changing value, ask who owns the record
+> before you ask who the buyer is.**
+
+An approval gate is a status field on a record some system already owns — structurally a feature.
+CDC art. 40 makes a written orçamento with consumer approval mandatory for **every** consumer
+service in Brazil, which is why every trade's R$40–120/mês OS app already ships it.
+
+### THE CHAT-WINDOW BOUNDARY (the exemptions have expired)
+OpenAI shipped a redesigned **Scheduled Tasks** hub on **17 June 2026** — recurring prompts that run
+while the user is absent, reaching connected apps. *"It runs on a timer"* and *"it remembers"* are
+consumer features now.
+
+> **A chat window has exactly one user, one account, one moment. It acts only inside its user's
+> account, with its user's consent, on its user's data.**
+
+Survives only on: **third-party obligation** · **shared state** · **custody for a later party** ·
+**an irreversible act**.
+> **One line: if the whole product still works when only the buyer ever touches it, it is a chat window.**
+> **Corollary: "unattended" alone is no longer differentiation — only *unattended against somebody else* is.**
+
+### And the boundary that is an asset rather than a law — VÍNCULO
+Software scheduling non-employee workers becomes evidence of vínculo **only when four conditions
+hold at once**: operator = tomador who denies employment · named non-substitutable person
+(*pessoalidade*, Súmula 331 III) · **command rather than refusable offer** (TRT-2 used WhatsApp
+records to **deny** vínculo) · persistence proving habitualidade. Remove any one and the record flips
+to defensive. **MEI/CNPJ does NOT cure it** — that is pejotização, live in **STF Tema 1389**, ~74.000
+actions paused, undecided. **ETT employment (Lei 6.019/74 art. 10) and intermitente (CLT art. 443
+§3º) DO cure it.**
+
+---
+
+# THE SCALE SCISSORS — the finding that explains all 58 deaths
+
+> **The segments where the job is big enough have too few firms. The segments with enough firms have
+> firms too small to have the job.**
+
+- Fecha Mês, across nine segments: **every visit-based Brazilian service segment has a mean firm of 2–5 people.**
+- Pasta Liberada, inside one CNAE: the stratum with the pain is 4.042; the stratum with the pool has one subcontractor.
+- Escala da Festa, in law: **buying legality cost 96% of the pool.**
+
+**Nobody ever tested a segment for this before generating a candidate. It costs one SIDRA call.**
+
+# THE SEARCH BIAS — half the economy was never entered
+
+Of 58 candidates, **45 were aimed at professional services, health, beauty, events, education,
+culture, property and government paperwork. Only 5 at the real economy.** Strike rate: **1 of 3
+Brazilian real-economy candidates cleared the gauntlet; 0 of ~40 service-sector candidates did.**
+
+CEMPRE 2024, fetched 13 Aug 2026:
+
+| Block | Firms | Status |
+|---|---|---|
+| 47 Comércio varejista | 1.993.299 | **Excluded at source** — counter terminal, LAW 0 |
+| 46.1 Representantes comerciais | 215.560 | **Excluded** — mean 1,5 people, the CNAE mirage |
+| **46.2–46.9 Atacado real** | **301.489** | **Never searched** |
+| **49.30-2 Transporte rodoviário de carga** | **228.463** | **Never searched** |
+| 45.2 oficinas + 45.3 autopeças | 292.501 | LAW 0 — parts margin, measured |
+| 52 Armazenagem e auxiliares | 55.386 | **Never searched** |
+| C Indústrias de transformação | 619.384 (19.691 with 50+) | Searched once |
+
+---
+
+# THE CONSTRAINT CHANGE — 13 August 2026, and it inverts the search
+
+The founder relaxed two constraints that were **assumed, never tested, and did more filtering than
+any law in this file**:
+
+1. **INCOME TARGET.** R$30.000/month net in 12 months → **R$12.000–15.000/month net near-term,
+   ramping to R$30.000 over ~3 years.**
+2. **FOUNDER LABOUR.** "NO per-transaction founder labour", absolute → **a per-customer human step
+   is permitted, provided total labour at target customer count stays under ~10 hours/week.**
+
+Unchanged: faceless permanently · no English calls · no employees or contractors · no credential
+custody · her personal network is not a channel · a few hundred dollars of budget.
+
+## The new arithmetic
+
+Net R$12.000–15.000 needs ≈ **R$13.500/month gross**.
+
+| Price/month | Customers | Segment where that is ≤1% |
+|---|---|---|
+| R$397 | 34 | 3.400 |
+| R$997 | 14 | 1.400 |
+| R$1.500 | 9 | 900 |
+| **R$2.500** | **6** | **600** |
+| R$4.000 | 4 | 400 |
+
+**The pool bar was ≥10.000 firms. It is now 600–3.400 depending on price.**
+
+## And the price band was never a fact about Brazil
+
+**R$150–700/month was a property of SMALL buyers.** Counter-evidence already inside this file:
+Dynadok's own ROI calculator uses **R$12.800/mês** for a construtora; Auvo sells at R$529,70/mês for
+three users; Sertras Platinum runs to R$4.857/ano. **Nobody ever priced at a large buyer, because
+the R$30.000 target forced a volume business.**
+
+## Why the newly-opened quadrant is structurally different
+
+**Every kill mechanism in this file is a VOLUME mechanism.** A clearing party funds free software
+where the flow is large. A lead-magnet incumbent writes content for large audiences. A vertical ERP
+at R$99–299 only exists for trades with tens of thousands of firms. A free tier is customer
+acquisition for a market worth acquiring.
+
+> **This record spent 58 candidates hunting CHEAP software for LARGE populations — precisely the
+> quadrant where free competitors are structurally guaranteed. The relaxed constraint set points at
+> EXPENSIVE software for SMALL populations, which is beneath everything that killed us.**
+
+**Caveat, stated so nobody is oversold:** most pool-deaths had a second cause. Pasta Liberada's 4.042
+large construtoras go from 2,5% to **0,25% at 10 customers** — the pool kill genuinely dissolves —
+but **Sertras is free to the buyer, and free kills at any target.** Zero excludes nobody, and the
+corrected Law A1 has no force against it.
+
+## CORRECTED LAW A1 — adopted 13 Aug 2026
+
+The general screen was reversed from *existence* to *adoption* and produced 42 candidates where
+twelve lenses had produced zero. **A1 was left standing as an automatic kill and applied without a
+single adoption number in at least 12 of the 24 segment deaths.**
+
+> **An incumbent kills only when (a) its version is FREE, or (b) its measured adoption inside the
+> specific target segment exceeds roughly 20%. "A vendor exists and has a landing page" is a price
+> and positioning constraint, not a kill.**
+
+Evidence: Cetic.br TIC Empresas 2025 — **36% ERP adoption**. Sebrae 2025 — **53% of small firms
+still on spreadsheets, in the best year ever recorded**.
+
+## And LAW 0 must be a TEST, not a PRE-FILTER
+
+Run as a pre-filter it closed **6 of 7 CNAEs before any candidate existed** and produced two
+zero-yield waves. Corrected: **LAW 0 kills only where the clearing party earns margin on the same
+flow the product's deliverable touches** — and only where that flow is large enough to be worth
+funding.

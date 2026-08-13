@@ -62,7 +62,7 @@ the record, and the plan is built on it.
 
 | # | Test | What killed | Cost | Time |
 |---|---|---|---|---|
-| **1** | **POOL** — how many *real operating firms*, not CNPJs? | Fecha Mês, Escala | R$0 | 1 hour |
+| **1** | **POOL** — how many *real operating firms*, not CNPJs? **Plus the SCALE SCISSORS: check the SIZE DISTRIBUTION, not just the count.** Bar is now 600–3.400 firms depending on price — see §6b | Fecha Mês, Escala, **Pasta Liberada** | R$0 | 1 hour |
 | **2** | **PAIN** — can we find a *first-person* account in Portuguese of someone losing money to this? | Escala | R$0 | 2 hours |
 | **3** | **SHIPPED** — does someone already sell it verbatim? Searched free-shaped and in vendor vocabulary | Fecha Mês, Escala | R$0 | 3 hours |
 | **4** | **PRICE FLOOR** — what is the cheapest thing covering *part* of the job? | Escala (R$49,90 vs R$297) | R$0 | 1 hour |
@@ -217,13 +217,63 @@ Four commitments, each earned by a specific failure of mine in this record:
 
 ---
 
+## 6b. THE CONSTRAINT CHANGE — 13 August 2026. Read this before anything above.
+
+**Two constraints were relaxed by the founder today. They were assumed, never tested, and did more
+filtering than any law in this file. Everything in §3 and §4 is now calibrated against these.**
+
+| Constraint | Was | **Now** |
+|---|---|---|
+| Income target | R$30.000/month net in 12 months | **R$12.000–15.000/month net near-term, ramping to R$30.000 over ~3 years** |
+| Founder labour | "NO per-transaction founder labour", absolute | **A per-customer human step is permitted, if total labour at target customer count stays under ~10 h/week** |
+
+**Unchanged and still hard:** faceless permanently · never unscripted live English calls · no
+employees, no contractors · no custody of any customer credential · her personal network is not a
+sales channel · a few hundred dollars of budget.
+
+### The new arithmetic — R$13.500/month gross
+
+| Price/month | Customers needed | Segment size where that is ≤1% |
+|---|---|---|
+| R$397 | 34 | 3.400 |
+| R$997 | 14 | 1.400 |
+| R$1.500 | 9 | 900 |
+| **R$2.500** | **6** | **600** |
+| R$4.000 | 4 | 400 |
+
+**The pool bar in §3 test 1 was ≥10.000 firms. It is now 600–3.400 depending on price.**
+
+**And the R$150–700 band was never a fact about Brazil — it was a fact about SMALL buyers.**
+Counter-evidence already in the record: Dynadok's own ROI calculator uses **R$12.800/mês** for a
+construtora; Auvo sells at R$529,70/mês for three users; Sertras Platinum runs to R$4.857/ano.
+Nobody ever priced at a large buyer because the R$30.000 target forced a volume business.
+
+**The two relaxations compound.** Permitted labour — an onboarding, a setup step, a monthly
+exception review — is exactly what lets a product sell at R$2.500 instead of R$397. Higher price →
+fewer customers → smaller pools qualify.
+
+### Why this inverts the search
+
+> **Every kill mechanism in this file is a VOLUME mechanism.** A clearing party funds free software
+> where the flow is large. A lead-magnet incumbent writes content for large audiences. A vertical
+> ERP at R$99–299 only exists for trades with tens of thousands of firms. A free tier is customer
+> acquisition for a market worth acquiring.
+>
+> **58 candidates hunted CHEAP software for LARGE populations — precisely the quadrant where free
+> competitors are structurally guaranteed. The target is now EXPENSIVE software for SMALL
+> populations, which is beneath everything that killed us.**
+
+**What does NOT move with the target:** FREE (zero excludes nobody) · clearing party · chat window ·
+Law B · the closed categories · credential custody · the liability-evidence law · counterparty
+motivation · the seller-side funding law. A pool kill dissolving does not resurrect a candidate that
+also failed one of these.
+
+---
+
 ## 7. The decisions that are hers, not mine
 
-I will not spend another week guessing at these:
-
-1. **Is R$30.000/month in 12 months still the target?** Half of what has been killed would survive at
-   R$10.000/month, or at R$30.000 in three years. This single number has done more filtering than any
-   law in the file.
+1. ~~**Is R$30.000/month in 12 months still the target?**~~ **ANSWERED 13 Aug 2026 — see §6b.
+   Relaxed, along with the founder-labour rule.**
 2. **Does the audience/network exclusion still hold?** It has been named as one of only three
    load-bearing constraints since candidate 11 and has never moved. An **anonymous topic page** is
    already permitted and has never been used.
