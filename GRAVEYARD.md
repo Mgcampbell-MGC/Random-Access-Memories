@@ -2927,3 +2927,156 @@ Run as a pre-filter it closed **6 of 7 CNAEs before any candidate existed** and 
 zero-yield waves. Corrected: **LAW 0 kills only where the clearing party earns margin on the same
 flow the product's deliverable touches** — and only where that flow is large enough to be worth
 funding.
+
+---
+
+# THE ENGLISH RESET AND THE MARKETPLACE SWEEP (13 August 2026, evening)
+
+## The founder corrected three assumptions in one message
+
+| Assumption held for 62 candidates | The correction |
+|---|---|
+| *"Never unscripted live English calls"* was applied as **"no English market"** | **She writes English fluently. Selling in WRITING to US/UK/EU buyers is fine — "more than fine."** She will not SPEAK to anyone, in any language |
+| She has no skills; design for a blank slate | **Strong AI/agent skills, a Google Project Management certificate, a Google Marketing certificate, ~30 h/week.** Paid acquisition and SEO are genuinely available to her |
+| *"Female friendly"* was a live filter on every candidate | **It dissolves entirely into "no people."** Her words: *"if no people and it's just system management and marketing then it's ok"* |
+
+**Her positive specification, the first in the record:** *"writing, designing, organising, digging
+through data — with AI doing the heavy lifting while she supervises that the system is working."*
+
+**Trajectory bar:** month 3 at zero is fine. **Month 8 at R$3.000 is a FAILING trajectory.**
+
+## MY ERROR, MEASURED AND CORRECTED
+
+I told the founder the English assumption was probably the costliest in the file. **It was not, and an
+agent proved it with the record's own numbers:**
+
+> **0 of 62 died on the Brazilian price floor alone. 24 of 62 (39%) were ALREADY English-market
+> candidates, priced in USD or GBP, sold in writing from a page** — HTS $297, ET Corpus $397,
+> 50-State Monitor $395+$119/mo, DeckProof $750, Expediting Desk $199/mo, RFQ Desk $299/mo,
+> LICENCEPROOF, AGENCY ATLAS, ISO 9001, National Board, and five of the nine female-market kills.
+
+**The record had already run the experiment. The geography assumption cost approximately ONE
+candidate.** Re-score result: **1 flip, 61 stay dead.** The real killers — free competitors (11),
+clearing parties (6), the chat window (4), credential custody (8) — **are indifferent to what
+currency she bills in.**
+
+> **The purest test was the Brazil channel model, which failed again: the profitable half of that
+> market gates entry behind a discovery call. English fluency was never the barrier. THE VOICE WAS.**
+
+**The one flip:** US state-registered scale service agencies, $249/mo × 10. Its recorded kill was
+*"unfunded is not the test — price is"*, which corrected Law A1 downgrades to a positioning
+constraint. **Free check before anything else: do the five largest US states publish a free
+electronic service-agency registration portal?** PSIE and EDT killed two candidates this exact way,
+in this exact trade.
+
+## TWO NEW TESTS, and they are now the hardest filters in the file
+
+### THE NO-SALES-CALL TEST
+> **She cannot speak to anyone. So the product must be bought from a page — which caps annual
+> contract value at roughly US$3.000/year. Above that, a human buyer appears and demands a call.**
+
+This kills essentially all mid-market and enterprise B2B regardless of product quality.
+
+### THE NO-TRUST-GATE TEST
+> **A faceless one-person company with no track record cannot pass vendor security review, SOC 2, or
+> an MSA negotiation.**
+
+Anything touching insurance, health or lending data is presumptively dead unless the platform
+vouches for her.
+
+## THE MARKETPLACE SWEEP — ranked by whether money can actually be collected
+
+| Ecosystem | Native till | Take | Reaches US$2.400/mo? |
+|---|---|---|---|
+| **Atlassian Forge** | **Yes — on the invoice the customer already pays** | **0% to $1M lifetime**, then 16% | Yes — 27 × $90 |
+| **Shopify** | Yes | **0% to $1M LIFETIME** (changed 16 Jun 2025; it used to reset annually) | Yes |
+| **Chrome Web Store** | **No** — store payments shut down 1 Feb 2021 | 0%, any price you set | Yes, but you build the billing |
+| **Figma** | Yes | 15% | **NO — structurally** |
+| Canva | A usage fund, you don't set a price | — | No |
+| **Notion** | **None** | — | **Zero** |
+
+**Figma's failure is structural and permanent:** it bills the *individual user* at consumer prices
+($2 minimum, whole dollars). US$2.400/mo needs ~300 subscribers ≈ 12–15k installs. **Stark, one of
+the best-known plugins in the store, has 73k.** Top 1% of 12.686 plugins by month 8. **Figma pays,
+but it cannot pay enough.**
+
+**Chrome's discovery problem, measured:** ~251k extensions, **median 9–18 users, ~90% never pass
+1.000 installs, 0,7% over 100k.** Every documented indie win came from Product Hunt or a founder's
+blog — **an audience, permanently closed to her.** The only reproducible audience-free channel is
+in-store keyword search plus SEO.
+
+### THE SHOPIFY LAW — price, not installs
+Review:install runs 1:30–1:100, but **install→paid is 8–18% with strong onboarding, 2–5% with weak**,
+and churn is 5–12%/month. Median listed app earns **under $1.000/mo**.
+> **The binding variable is PRICE, not installs. Anything priced under $29 is disqualified before it
+> starts.** At $29 with weak onboarding, 100 reviews yields ~$400/mo. At $49 the same app clears.
+
+### KILL — Shopify resale-certificate custody (measured by me, 13 Aug)
+Passed the chat-window test on all four legs and had genuinely low platform risk (Shopify would have
+to accept legal liability for validating documents in 45+ jurisdictions; it has declined for a decade
+and routes tax to Avalara). **Killed on demand thinness.** Fetched directly: **Exemptify — 37 reviews
+total, three visible across Dec 2025–Jun 2026, $4.99/mo. Tax Exempt Manager — 24 reviews, most recent
+visible May 2022, $9.99/mo.** The niche generates well under 2 reviews/month. That is not a
+badly-served market; it is a market of roughly 2.000 stores.
+
+### THE ATLASSIAN FINDING — the platform solves the trust gate
+> **"Runs on Atlassian" (26 May 2026): Forge apps run on Atlassian's infrastructure, data never
+> leaves Atlassian Cloud, and — Atlassian's own words — there is no lengthy vendor security review.**
+
+This is the constraint that killed white-label, solved at the platform level. Combined with: **0%
+revenue share on Forge to $1M**, **Atlassian collects payment, taxes and renewals**, **she holds no
+credential and no customer data**, apps free at 1–10 seats so a 100-seat app is $600–1.900/yr —
+**under the self-serve ceiling, so no human buyer ever appears** — and **search long tail exploded**
+(top-5 terms fell from 57% of all searches in 2021 to ~12% in 2026), plus a **free Marketplace
+Reporting API** giving real search terms, impressions and installs. **A demand verdict in six weeks
+for zero dollars, from inside the channel.**
+
+**Its search rule, which is an ECONOMIC moat rather than a hoped-for one:**
+> **Atlassian structurally will not build workflows for people who do not have a seat, because that
+> cannibalises per-seat revenue. So hunt anything where the person who must act is unlicensed.**
+
+**Honest verdict on its first candidate (external sign-off):** clears no-sales-call, no-trust-gate,
+no-credential and payment-collection better than anything in 62 candidates — **and still fails the
+month-8 TARGET, passing only the month-8 FLOOR** ($720–1.080/mo by month 8; target month 14–18). It
+also sits in the most crowded category on the marketplace. **Right channel, wrong app.**
+
+### KILL — EAA/WCAG accessibility monitoring (Chrome)
+The gap is real: **the $79–249/mo self-serve band is empty** (accessiBe from $490, AudioEye
+$24–75k/yr sales-assisted, UserWay enterprise, and free scanners below). It dies on her constraint,
+not the market's:
+> **A faceless company issuing conformance evidence is a contradiction. Buyers of compliance proof
+> want a NAMED auditor.**
+
+Plus a role mismatch (the installer is a developer; the buyer is the agency owner) and **Law 1 aimed
+at her** — Level Access, UserWay and accessiBe all publish free EAA guides.
+
+---
+
+# THE CHAT-WINDOW TEST, CORRECTED BY THE FOUNDER (13 Aug 2026)
+
+I had been applying the test as though AI-in-the-product were automatically dead. **The founder
+corrected it:**
+
+> *"can also reach out to buyers and such"*
+
+**A chat window has one user, one account, one moment. It acts only inside its user's account, with
+its user's consent, on its user's data. IT CANNOT CONTACT EIGHT HUNDRED STRANGERS.**
+
+> **So an AI that reaches out to THIRD PARTIES does not fail the chat-window test — it is leg one of
+> that test PASSING.** AI is dead when it works inside the buyer's own account. It is the strongest
+> thing available when it works on somebody else's.
+
+**And it needs no credential custody** — the agent messages third parties from her own
+infrastructure, on the customer's behalf, never logging in as the customer. **The Grok-bot note in
+PLAN.md §9 concluded "as a product mechanism: still closed" on credential grounds. That conflated two
+different mechanisms and is hereby corrected.**
+
+## CHASING ≠ PROSPECTING — the distinction that decides the whole space
+
+- **PROSPECTING** — cold outbound to strangers with no relationship. **DEAD:** spam law,
+  deliverability, and a funded crowded market (Apollo, Clay, Instantly, Smartlead, Lemlist).
+- **CHASING** — pursuing a party who **already owes the customer something** under an existing
+  commercial relationship. Transactional, expected, deliverable, no opt-in problem.
+
+**Every version of the chasing shape in this record was Brazilian, at R$397/month, sold by
+telephone. Not one was ever tested in English, at US prices, self-serve.** That is the open seam.
