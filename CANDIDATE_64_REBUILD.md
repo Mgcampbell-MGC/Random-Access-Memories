@@ -66,11 +66,33 @@ answers all of it, in writing, on the record:
 - **No inventory. No packing. No post office. No lab negotiation.** The physical-goods veto is
   satisfied properly, not conditionally.
 - **The print order is an API call**, which deletes 5 minutes of manual work per book forever.
-- **Verified cost anchor:** a **100-page** full-colour premium hardcover runs
-  [**~$32.50**](https://podvector.ai/articles/print-on-demand/costs-and-suppliers/lulu-print-on-demand-pricing),
-  plus a **$1.75 per-order fulfilment fee**. A 40-page book is materially less — binding base plus
-  ~40 pages of premium stock puts it around **$17–22**, which is the **one number still to confirm
-  on Lulu's own calculator** before anything is priced.
+- **Print cost — CONFIRMED 14 Aug 2026, from Lulu's own pricing resolver**, not a blog. The
+  calculator at `www.lulu.com/pricing` posts `query manufacturingCost` to `https://api.lulu.com/graphql/`;
+  the figures below are that endpoint's replies for
+  `0850X0850FCPRECW080CW444GXX` — 8.5×8.5, full colour, **premium**, casewrap hardcover, 80# coated
+  white, 444 PPI.
+
+| Pages | USD | GBP | EUR |
+|---|---|---|---|
+| 32 | $17.85 | £14.00 | €15.63 |
+| **40** | **$19.57** | **£15.31** | **€17.14** |
+| 48 | $21.29 | £16.62 | €18.65 |
+| **60** | **$23.87** | **£18.59** | **€20.92** |
+| 100 | $32.46 | £25.14 | €28.47 |
+
+  The curve is exactly linear: **$10.99 base + $0.2147 per page.** The estimate this document
+  carried was $17–22 at 40pp; the true figure is **$19.57, mid-band, so nothing in the pricing
+  needs to move.** The 100pp reply of $32.46 also confirms the ~$32.50 secondary source above was
+  accurate.
+
+  **Fulfilment fee, from Lulu's own integration guide: $1.75 USD · £1.55 GBP · €1.75 EUR, fixed
+  per order** — so the EU/UK expansion arithmetic now runs on local-currency print costs and the
+  correct local fee, not a converted dollar figure.
+
+  **Landed cost at 40pp: $19.57 + $1.75 = $21.32 before shipping.** Two useful comparisons at the
+  same 40pp: **standard** colour casewrap is **$13.52** — a $6 saving that costs the entire
+  "premium" claim — and a premium-colour **paperback** is **$10.75**, which is what makes a
+  discounted second copy work as an add-on rather than a giveaway.
 
 Compare with Brazil, where the print cost swung from R$80 to R$194 across the same lab's price list
 and took the margin negative at the top of the range.
@@ -119,6 +141,14 @@ The gift card is the product on the shelf. The book is what it becomes.
 5. **Layout is deterministic** — fixed template, her images, approved text. **No layout revisions
    are offered.** *Sol's time: ~5 min.*
 6. **Lulu API prints and ships direct** in white-label packaging. *Sol's time: ~1 min.*
+   **Confirmed 14 Aug 2026 from Lulu's Direct Integration Guide** — her branding goes on the
+   packing slip, fulfilment emails come from *"a discrete, non-Lulu branded email domain"*, and
+   there is a cancellable production delay of 1–24 hours before a job goes to press. One detail
+   worth knowing before the first order: *"By default, the billing address used for your orders
+   will be used as the return address on your customers' packages. You can change this address in
+   the fields provided."* **Left at default, a US gift buyer gets a package with a São Paulo return
+   address.** It is editable, so this is a setting to get right, not a problem — but it needs a
+   real address she can use.
 
 > **~18–20 minutes per book, and the two time sinks are structurally capped rather than hoped
 > away.** Text-only approval is the single most important design decision in this document — it is
@@ -263,7 +293,7 @@ Ranked by how likely they are to actually fire.
 | # | Action | Cost | What it settles |
 |---|---|---|---|
 | 1 | **Build one complete book** for a real volunteer, recruited in writing, and order it from Lulu | ~$30 | **Print quality, true print cost, production time, and her real minutes-per-book — all four in one motion** |
-| 2 | Run Lulu's own price calculator at 40pp and 60pp premium colour hardcover | $0 | The last unverified number in the model |
+| 2 | ~~Run Lulu's own price calculator at 40pp and 60pp premium colour hardcover~~ **DONE 14 Aug** | $0 | **Settled: $19.57 at 40pp, $23.87 at 60pp, +$1.75 fulfilment. Inside the predicted band — no repricing** |
 | 3 | Build two more books from different volunteers | ~$60 | Whether the questionnaire produces good writing from *strangers*, and whether 20 min/book holds on repetition |
 | 4 | Photograph the samples; Etsy listing + a one-page storefront | ~$20 | The object photographs well enough to sell |
 | 5 | 40–60 Pinterest pins over three weeks | $0 | Whether the seed moves |
@@ -275,7 +305,7 @@ Ranked by how likely they are to actually fire.
 |---|---|
 | Print quality unacceptable at 40pp, and Blurb no better | **Kill.** The object is the business |
 | Fully-loaded time per book still >45 min at the third book | **Reprice to $249 or kill.** The ceiling is back |
-| Confirmed print cost pushes contribution under $70 | **Reprice, don't kill** |
+| ~~Confirmed print cost pushes contribution under $70~~ **CLEARED** | Landed cost is **$21.32** at 40pp. Contribution holds. This criterion can no longer fire |
 | Average revisions >2 rounds across three books | **Restructure the gate, then re-test once** |
 | Zero sales by week 10 with the storefront live and pins compounding | **Kill.** No channel, and she cannot buy one |
 | Any buyer requires a call | Will not happen in this market. If it does, **kill** |
@@ -302,3 +332,46 @@ printed and in a hand, everything above is design rather than evidence.
 *Antes de Você Chegar* does not travel. The English edition needs a name — **BEFORE YOU** is the
 strongest candidate as a cover title, but it is generic and hard to protect. Worth 30 minutes and a
 domain check before the storefront goes up, and not worth blocking the sample book on.
+
+---
+
+## Appendix — the Lulu verification, 14 Aug 2026
+
+**Method, so this can be re-run rather than trusted.** Lulu's public calculator lives at
+`https://www.lulu.com/pricing` (not `/pricing-calculator`, which 404s). It is a Next.js page whose
+Apollo client does **not** use the default `/graphql` path — `www.lulu.com/graphql` returns a
+genuine 404. The real endpoint is built in `main-*.js` as `https://api.lulu.com/graphql/`, with
+client name `lulu-website`. Posting `query manufacturingCost($podPackageId, $pageCount, $currency)`
+to it returns the same numbers the calculator displays.
+
+*(A browser was tried first and abandoned: Chromium in this container cannot reach the network at
+all — `ERR_CONNECTION_RESET` on every host, including `example.com` — while curl to the same hosts
+returns 200. Nothing was worked around; the data source was queried directly instead.)*
+
+**SKU grammar**, confirmed empirically: trim (`0850X0850`) + colour (`FC`/`BW`) + quality
+(`PRE`/`STD`) + binding (`CW` casewrap / `PB` paperback / `LW` linen) + paper (`080CW444` 80# coated
+white / `060UW444` 60# uncoated) + finish (`G` gloss / `M` matte) + linen flag + foil flag.
+
+**All variants priced, 40pp, USD:**
+
+| Variant | SKU | 40pp |
+|---|---|---|
+| **8.5×8.5 premium colour casewrap, 80# coated** — *the spec* | `0850X0850FCPRECW080CW444GXX` | **$19.57** |
+| 8.5×8.5 **standard** colour casewrap | `0850X0850FCSTDCW080CW444GXX` | $13.52 |
+| 8.5×8.5 premium colour **paperback** | `0850X0850FCPREPB080CW444GXX` | $10.75 |
+| 8.5×8.5 premium colour casewrap, **60# uncoated** | `0850X0850FCPRECW060UW444GXX` | $19.01 |
+| 7.5×7.5 premium colour casewrap | `0750X0750FCPRECW080CW444GXX` | $19.57 *(identical — trim is free below 8.5″)* |
+| 6×9 premium colour casewrap | `0600X0900FCPRECW080CW444GXX` | $16.24 |
+| 6×9 BW standard paperback *(sanity check)* | `0600X0900BWSTDPB060UW444MXX` | $2.99 |
+
+Two SKUs were rejected as invalid combinations and are **not** yet priced: linen-wrap
+(`0850X0850FCPRELW…`) and 8×10 casewrap (`0800X1000FCPRECW…`). Neither is on the critical path.
+
+**From the Direct Integration Guide (PDF, Lulu's own):** fulfilment fee **USD 1.75 · GBP 1.55 ·
+EUR 1.75 · AUD 2.75 · CAD 2.45**, fixed per order · white-label branding on the packing slip ·
+fulfilment email from a non-Lulu domain · production delay default 1 hour, settable 60–1440 minutes,
+order cancellable throughout · **return address defaults to the billing address and is editable.**
+
+**What is still unquoted from a primary source:** whether the outer carton itself carries any Lulu
+marking. The packing slip is confirmed white-label; the box is not. The $30 sample book answers it
+by arriving.
