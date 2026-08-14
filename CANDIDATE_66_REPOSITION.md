@@ -84,6 +84,62 @@ from a page.
   than at composing text.
 - **The one-page overview and the pricing ladder both need rewriting** on this basis.
 
+## 6b. Measured competitor data (sweep returned 14 Aug) — confirms the reposition and corrects my price
+
+### The free layer is worse than I thought, and it now reaches attributes
+
+- **Shopify Magic** — free, every plan, no cap. **Amazon AI Listing Generator — free, and per Amazon
+  used by 900.000+ sellers with a claimed 90% acceptance rate, auto-filling over 70% of required
+  attributes.** **eBay Listings Assistant** and **Walmart Success Hub Gen AI** — free.
+- **Akeneo Community Edition** — a free, open-source, uncapped PIM. **Plytix Standard** — free to
+  500 SKUs.
+- Shopify apps with free tiers: Youssify (100 free descriptions), SEOMagic (50), producteasy (10
+  credits/mo), Describely (5 products).
+
+> **Amazon auto-filling 70% of required attributes is the single most dangerous number in the
+> sweep** — it means even the attribute argument is weak *on Amazon specifically*. It does not touch
+> broken variation families or failed flat-file uploads, which is precisely where the reposition
+> points.
+
+### My per-SKU price was above market for generation-shaped work
+
+| Anchor | Price |
+|---|---|
+| Market rate, standard SKU with description | **$0,33–4,38** |
+| Market rate, complex SKU | $0,80–11,67 |
+| **Describely, self-serve PAYG** | **$0,75 per product** |
+| **SKULaunch** (closest direct competitor, publishes prices) | **from £499/mo for ≤10.000 SKUs**, £1.299/mo for ≤100.000, plus £999–4.999 one-time setup |
+| Offshore BPO | $4–20/hour; eDataIndia $4–5/hour |
+| Fiverr | ~$7,50 per description; bulk listing gigs $60–70 |
+| **My proposed ladder** | **$1,80/SKU at the 500 tier** |
+
+**SKULaunch at £499 for up to 10.000 SKUs is the number that matters.** Per-SKU pricing for
+generation work is a race I would enter 3–4× above the leader. **This is further proof that the
+business cannot be priced per SKU for generation — exception repair must be priced against the
+blocked outcome instead.**
+
+### Four gaps the sweep could not fill — all four favour the reposition
+
+1. **Nobody sells a flat, fixed-price, single-job, no-account transaction.** Every enrichment
+   offer is hourly or monthly; every tool is subscription or credit-metered. *"Upload a file, pay
+   once, download it back"* was not found anywhere.
+2. **Nobody sells GPSR content remediation.** All 7 providers found (€150–800/year) sell
+   **Responsible Person registration** — an address service, not a listing-data service.
+3. **Nobody sells multi-marketplace format translation as a one-off.** Feed tools do it only as
+   continuous subscription infrastructure.
+4. **No BPO publishes a per-SKU rate card** — every specific per-SKU figure came from third-party
+   guides, not a vendor's own page.
+
+### And the seam is now measured
+
+> **Self-serve published pricing holds to roughly $500–600/month or ~50.000 SKUs. Above that,
+> pricing disappears behind a sales call almost without exception.**
+
+That is the exact boundary of what she can sell, quantified — and it sits comfortably above her
+job sizes.
+
+---
+
 ## 7. Corrections issued to the running agents
 
 All three affected agents were redirected mid-flight rather than allowed to finish on the old brief:
