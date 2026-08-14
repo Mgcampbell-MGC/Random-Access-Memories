@@ -180,6 +180,48 @@ produce zero paid conversions · a buyer names an existing vendor doing it under
 
 ---
 
+## 6b. Sharbel (@sharbelxyz) — what he confirms, and the trap he reveals
+
+**Caveat first: YouTube blocked the fetch with a captcha, so I have not seen the specific video.**
+What follows is from his public repositories and profile only, and should be re-read against the
+video if you summarise it.
+
+**What he is doing**, from [his GitHub](https://github.com/sharbelxyz/): shipping packaged agents —
+[**Nova**](https://github.com/sharbelxyz/nova-youtube-agent), *"YouTube growth agent… competitor
+scanning, channel analysis, idea generation, script writing, performance tracking, feedback loop.
+**Self-installs in 5 minutes**"* — plus an X content agent with voice calibration and trend
+scouting. Profile line: *builds AI systems that trade, create content, and close deals.*
+
+### He confirms the thesis
+
+**"Competitor scanning, channel analysis, idea generation, script writing, performance tracking,
+feedback loop" is a department, not a tool.** He has independently arrived at packaging a whole
+function as one agent. And **"self-installs in 5 minutes"** is the integration tax stated as a
+feature — the same insight from the other side.
+
+### But his monetisation is her hardest veto
+
+**The agents are free and open-source. The asset is the audience.** That is Law 1 in its purest
+form — give away the capability, monetise attention — and it requires a face, a channel and a
+personal brand. **Sol is permanently faceless with no audience-building as a route to market.** She
+cannot run his business, and the free agents mean she cannot sell his products either.
+
+### The trap, and it applies directly to §4 above
+
+> ### NEVER SELL THE AGENT. SELL THE OUTPUT.
+> **Any agent worth selling is on GitHub free within a year, published by someone monetising
+> attention rather than software.** GitHub is already full of them. The agent is not the asset.
+>
+> **The catalogue play survives this precisely because it sells the finished work, not the
+> machine.** A free open-source SKU-enrichment agent does not produce 500 written SKUs for a
+> merchant who will never run it — it just lowers her own cost of goods.
+
+**That is the sharpest thing to come out of looking at him**, and it is a real hazard I had not
+priced into §4: had the play been "sell an AI agent that does X," it would have a two-year
+shelf life. Selling the output does not.
+
+---
+
 ## 7. Honest ranking against candidate 64
 
 **Candidate 64 remains first**, on three grounds: a consumer buyer cannot demand a call, 45 orders
