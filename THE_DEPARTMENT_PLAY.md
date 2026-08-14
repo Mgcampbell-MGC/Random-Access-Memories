@@ -180,6 +180,66 @@ produce zero paid conversions · a buyer names an existing vendor doing it under
 
 ---
 
+## 6a. Sharbel's nine methods, filtered through Sol's constraints
+
+**Transcript supplied 14 Aug 2026. His tier list, and what survives contact with her vetoes.**
+
+He independently states the seed of this document, as an operator rather than a theorist:
+
+> **"Businesses do not just wake up wanting an agent. They want a job done without hiring another
+> person."**
+
+That is the payroll anchor, verbatim. And the positioning rule:
+
+> **"If you sell AI, people compare you to other tools. If you sell an outcome, people compare you
+> to the pain they already have."**
+
+That is *never sell the agent, sell the output*, arrived at from the other direction.
+
+### The filter that does all the work: seven of his nine methods need system access
+
+| # | Method | His tier | Sol |
+|---|---|---|---|
+| 1 | AI lead generation | A | **DEAD** — outreach from *their* domain and LinkedIn. Credential custody. He also calls it *"already crowded"* |
+| 2 | AI lead qualification | A | **DEAD** — his own $12k story runs on **his inbox**. Custody |
+| 3 | AI agent development | **S** | **DEAD** — deployed into the client's systems. Custody + the integration tax |
+| 4 | AI content engines | A | **DEAD** — Law 1, and his own condition kills it: *"S tier if it has **taste or proof**."* **Proof in ghostwriting means a visible track record.** She is permanently faceless |
+| 5 | Faceless AI channels | **F** | **DEAD**, and already killed here on the newsletter arithmetic |
+| 6 | AI trading bots | B | **DEAD** — capital she does not have, edge that decays |
+| 7 | **AI productized services** | **S** | **SURVIVES — and it is §4 of this document** |
+| 8 | AI chief of staff | A | **DEAD** — access to everything |
+| 9 | AI revenue automation | **S** | **N/A** — it means using AI inside a business you already own. She has none |
+
+> **His three S-tier picks reduce to one under her constraint set, and it is the catalogue
+> department.** Not because the others are bad — because **seven of nine require being wired into
+> someone else's systems**, which is the integration tax confirmed by someone who has actually
+> shipped these.
+
+### He validates three specific decisions already made here
+
+1. **Manual before automated.** *"You can begin manually. Use AI behind the scenes. Build your
+   workflow. Learn what clients actually want. Then slowly productize the process of delivery."*
+   Same conclusion as the critique's *place the first 10–20 Lulu orders by hand.*
+2. **The bespoke trap.** *"Every client becomes custom. Every workflow becomes messy and every edge
+   case becomes your problem."* **This is the strongest argument for the CSV-in/CSV-out shape
+   specifically** — it is the only shape where every client is identical. It is also precisely what
+   makes SingleBrain impossible for her.
+3. **No market education needed.** *"The market already buys content. It already buys clips… AI just
+   lets you deliver some of these faster, cheaper, or better."* The catalogue department sells into
+   a budget line that already exists — a data specialist's salary.
+
+### The caution
+
+**The video is an advertisement for his own products** — Hermes Agent, OpenClaw, Founderfunnel,
+client pulsebot all appear as the illustrations of their own categories. The $12.000 sponsor story
+and the $50.000/month revenue claim are unverifiable and self-serving. **The framework is sound;
+the proof points are marketing**, and should be read the way the Atlassian public record was.
+
+**And his distribution is the one thing she cannot copy.** He monetises a YouTube audience. That is
+Law 1 as a business model and it needs a face.
+
+---
+
 ## 6b. Sharbel (@sharbelxyz) — what he confirms, and the trap he reveals
 
 **Caveat first: YouTube blocked the fetch with a captcha, so I have not seen the specific video.**
