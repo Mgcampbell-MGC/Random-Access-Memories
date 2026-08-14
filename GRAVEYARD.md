@@ -873,14 +873,44 @@ cluster of cold-outreach *tool vendors'* content marketing.
 arrest, accident and bankruptcy records** — ~7,9% response, mailed within days. But: physical mail,
 targeting distressed individuals, selling representation. Never a subscription.
 
-## And the framing itself is a known fraud vector
+## ~~And the framing itself is a known fraud vector~~ — STRUCK 14 AUG 2026. BOTH SENTENCES FALSIFIED.
 
-USPTO, the FTC and multiple law firms publish active warnings about solicitors who use a business's
-**own public filing data** — serial number, filing date, legal name — to send official-looking demands.
-Legitimate outreach built on *"we have public data about your regulatory situation"* is
-pattern-matched to that scam by recipients and probably by spam filters. Separately, CAN-SPAM carries
-**US$53.088 per email, uncapped** — Verkada, an ordinary security-camera company, paid **US$2,95M** in
-2024.
+> **This paragraph was wrong on both legs, and because the alert finding was applied as a
+> PRE-FILTER rather than a test, it closed a design space before candidates were ever generated in
+> it. That is worse than a dead candidate. The file's own rule already says LAW 0 MUST BE A TEST,
+> NOT A PRE-FILTER — and this is the same failure.**
+>
+> **Worse: the file had already caught half of this locally and failed to propagate it.** The
+> Form 5500 entry, sixty lines below, reads *"the USPTO/FTC scam warnings do NOT transfer — those
+> concern impersonation and fake official notices, not prospecting from public data. Legally clean,
+> commercially dead."* That correction was made in one entry and never carried back to the law it
+> undermined. **When a correction lands, propagate it to every law that depends on it.**
+
+**LEG 1 — the scam-pattern claim, OVERSTATED.** USPTO's warning specifically concerns entities using
+names *similar to the agency*, sending *official-looking notices*, and *falsely claiming a service is
+mandatory*. Outreach doing none of those three is not the described pattern. It is a copywriting
+risk, not a kill.
+
+**LEG 2 — the CAN-SPAM claim, MATERIALLY WRONG.** US$53.088 is a STATUTORY MAXIMUM, never applied at
+per-email scale. **Verkada sent more than 30 MILLION commercial emails over three years and paid
+US$2,95M** — the largest CAN-SPAM penalty the FTC has ever obtained — which is **US$0,098 per
+email**, and it was bundled with a data-security case in which a hacker viewed 150.000 live cameras.
+The four violations charged were purely mechanical: no unsubscribe option, unsubscribe requests not
+honoured, no clear opt-out, no physical postal address.
+**There is NO PRIVATE RIGHT OF ACTION** — 15 U.S.C. §7706, only the FTC, state AGs and ISPs may sue.
+State AG damages cap at $250/email and $2M total; ISPs at $25–100/email and $1M. CAN-SPAM is
+**OPT-OUT, not opt-in.** Compliant B2B cold email is lawful.
+=> At ~50 emails/week with accurate headers, a real postal address and a working opt-out honoured
+within 10 business days, the exposure is **ZERO, because there is no violation.**
+
+**WHAT SURVIVES, AND IT IS THE VALUABLE HALF.** The alert finding's pricing table is market-structure
+evidence and stands untouched: PropertyRadar $119–599/mo · ViolationWatch $9/building/mo for the
+alert against $350–1.800 for the fix · Insparisk free · Levelset $59 per notice filed.
+
+**RESTATED CORRECTLY:**
+> A pure **ALERT** sold to the party the event happened to is worth little — that is evidenced.
+> A **REMEDY** sold to that party, triggered by the event, is what all four of those businesses
+> actually monetise. And written outreach to that party is lawful, cheap, and was never the obstacle.
 
 ## What this changes
 
