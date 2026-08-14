@@ -1,0 +1,514 @@
+================================================================================
+IDEA HUNT PROMPT — V6
+A brief for another AI, to help find a business for one specific person.
+Written 14 August 2026, after 67+ candidates and roughly 80 documented kills.
+================================================================================
+
+READ ALL OF THIS BEFORE PROPOSING ANYTHING. The single most common failure mode
+is proposing something that was already killed, for a reason recorded here. The
+second most common is proposing something that fails a hard constraint stated in
+Section 1. The third is asserting a fact from a vendor's marketing page.
+
+If, after reading, your honest conclusion is "nothing fits", say that. A
+well-evidenced "no" is worth more than a manufactured "yes". We have had
+sixty-seven manufactured yeses.
+
+
+================================================================================
+SECTION 1 — THE FOUNDER, AND THE CONSTRAINTS THAT DO NOT BEND
+================================================================================
+
+She is a ~26-year-old Brazilian woman in São Paulo. Call her the founder. She is
+intelligent, organised, an excellent writer, and unusually good at directing AI
+tools to build working software. Her background is in luxury and premium brand
+events. She holds a Google Project Management certificate and a Google Digital
+Marketing certificate. She holds NO professional credential of any kind — she is
+not an accountant, lawyer, engineer, auditor, doctor, or licensed anything.
+
+--- THE HARD CONSTRAINTS -------------------------------------------------------
+
+These are not preferences. They are not negotiable. They will not be relaxed
+later. A proposal that violates one of them is not a proposal.
+
+C1. SHE NEVER SPEAKS TO ANYONE. No phone calls. No video calls. No meetings. No
+    webinars. No voice notes. No audio messages. In any language. Ever. Not for
+    sales, not for onboarding, not for support, not for a "quick 15-minute
+    intro". WRITTEN COMMUNICATION ONLY — email, chat, forms, documents. Screen
+    recordings with no face and no voice are acceptable.
+
+    This kills more candidates than any other constraint. Test it FIRST and test
+    it HONESTLY. Do not invent workarounds. "She could hire someone to take
+    calls" violates C3. "Most clients won't need a call" is not evidence.
+
+C2. SHE IS PERMANENTLY FACELESS. No camera. No photographs. No personal brand.
+    No founder story. No LinkedIn presence built on her identity. No
+    audience-building, no content creation as a person, no becoming an
+    influencer. She will not be the face of anything, ever. Any model that
+    requires her to be known, followed, or personally trusted is dead.
+
+C3. NO EMPLOYEES, NO CONTRACTORS, EVER. Not one, not part-time, not a virtual
+    assistant, not a freelancer for overflow. Solo permanently. (A VENDOR or
+    SUPPLIER relationship — buying a service from a company — is allowed. Hiring
+    a person is not.)
+
+C4. SHE NEVER TAKES CUSTODY OF A CUSTOMER CREDENTIAL. No passwords, no logins,
+    no API keys, no certificates, no admin access to anyone's account or system.
+    Ever. This kills nearly every "we'll set it up for you" business.
+
+C5. TOTAL BUDGET: A FEW HUNDRED US DOLLARS. Not per month — total. She cannot
+    buy ads at scale, cannot pay for a US or EU legal entity casually, cannot
+    front inventory, cannot buy data licences, cannot afford professional
+    indemnity insurance.
+
+C6. TIME: ~30 hours per week.
+
+C7. HER PERSONAL SÃO PAULO NETWORK IS NOT A SALES CHANNEL. She will not sell to
+    friends, family, or acquaintances, and will not use them for introductions.
+
+--- THE VETOES -----------------------------------------------------------------
+
+V1. Construction as a buyer segment. Excluded entirely.
+V2. Labour-compliance document chasing.
+V3. Physical goods and inventory — UNLESS it is print-on-demand or made-to-order
+    with zero inventory and zero capital. (See Section 5: Lulu's Print API is
+    already verified and costed, so a printed object IS available to her.)
+V4. Anything requiring her to be BELIEVED AS AN EXPERT. She has no credential,
+    no track record, and no identity to stake. If the sale depends on the buyer
+    trusting her judgement, it is dead.
+
+--- THE TARGETS ----------------------------------------------------------------
+
+Near-term:  R$12.000–15.000 per month  (~US$2.300–2.900)
+Year three: R$30.000 per month         (~US$5.780)
+
+Exchange rate used throughout: USD/BRL 5,19 (verified).
+
+Note that R$30.000/month is SMALL. "Too small to matter" is a legitimate moat.
+Do not propose venture-scale ideas; propose things a single person can hold.
+
+
+================================================================================
+SECTION 2 — THE LAWS
+================================================================================
+
+Each of these was paid for with a dead candidate. Apply all of them.
+
+LAW 1 — THE FREE COMPETITOR LAW
+  Content, templates, checkers and tools now cost almost nothing to produce, so
+  every funded incumbent gives them away as lead generation. A solo operator
+  selling an artefact is not competing with a product; it is competing with
+  someone's MARKETING BUDGET, which is designed to give that artefact away.
+  METHOD: hunt the free competitor BY FUNDING MODEL. Ask "who is funded to give
+  this away, and why?" before anything else. Verified instances: Levelset,
+  GleanMark, Estratégia/QConcursos, iNymbus/SPS, Insparisk/ViolationWatch,
+  FamilySearch, Sebrae, ANVISA, APEX Accelerators ($55M/yr, 92 offices), Arelle,
+  EDItEUR, W3C/DAISY, DDEX, the MLC, Grants.gov, Google Merchant Center, CMS.
+
+CORRECTED LAW A1 — WHEN AN INCUMBENT ACTUALLY KILLS
+  An incumbent only kills a candidate when it is FREE, or above ~20% MEASURED
+  adoption in the specific target segment. A paid partial substitute does NOT
+  kill. (This correction exists because a good candidate was wrongly killed by
+  citing Adobe Acrobat at $19,99/month against a product Acrobat could not do.)
+
+THE ARBITRAGE LAW
+  A Brazilian cost base is only an advantage against a buyer who does NOT have
+  one. Revenue in reais is structurally weak. STRONGLY prefer USD/GBP/EUR.
+  Corollary discovered 14 Aug: the arbitrage often runs the WRONG way. Indian
+  and Filipino bureaus already publish £4/page and $8–12/hour with unlimited
+  revisions. Brazil is not the cheap option in most back-office work.
+
+THE B2B BUYER LAW
+  A business buyer brings a negotiation, a diligence process, an incumbent, and
+  a $5–50/month price anchor. A consumer brings none of those.
+  RUNNING TALLY: THIRTY B2B MODELS ASSESSED. ZERO SURVIVORS.
+  This does not forbid B2B. It means a B2B proposal carries a heavy prior and
+  must explain why it escapes what killed the other thirty.
+
+THE INTEGRATION TAX
+  Every product that lives inside the client's stack (CRM, inbox, helpdesk,
+  seller account, accounting system, portal) is sold on a call and requires
+  access. A 50-idea list was run through this filter and 38 died on it alone.
+  The only version she can sell is the one needing no wiring.
+
+THE VERIFIABILITY LAW (and its 6 Aug correction)
+  The question is NOT "does she hold the credential?" It is:
+  ***AFTER THE BUYER OPENS THE FILE, CAN THEY TELL WHETHER IT IS RIGHT?***
+  If YES — her standing is irrelevant. Nobody asks who wrote their tax software.
+  If NO — borrowed authority is the product, and it cannot be borrowed.
+
+THE STAMP LAW  (derived 14 Aug 2026 — read this one twice)
+  The property that makes a document business worth $33.600 instead of $99 is
+  that A PERSON IS STANDING BEHIND IT — legally exposed, insured, reachable.
+  A faceless seller with no credential and no professional indemnity cannot hold
+  the stamp, and therefore cannot capture the price the stamp commands.
+  TEST: NAME THE PERSON WHO GETS SUED IF THIS IS WRONG. If the business only
+  works when that person is the seller, stop.
+  This single law retroactively explains ten prior compliance kills: every one
+  was the recurring/painful/document-heavy artefact priced as though it carried
+  the stamp. It also restates the Brazilian reserved-profession kills — the
+  reserved perimeter and the pricing premium are the same feature, because the
+  state is deciding who is allowed to hold the stamp.
+  Evidence of universality: a $23M/month operator's own list of nine high-value
+  compliance categories was checked item by item. NINE OF NINE are stamp-gated.
+
+THE GATE FRAME, AND WHY IT LARGELY FAILED  (14 Aug 2026)
+  HYPOTHESIS: a machine can adjudicate in place of a person. Where a portal or
+  validator ACCEPTS or REJECTS a submission, the buyer never has to trust the
+  preparer — the gate decides.
+  We swept SIX gate families in one day: customs filings, retail/marketplace
+  data feeds, publishing and music metadata, financial and corporate e-filing,
+  product/environmental compliance portals, healthcare claims, and government
+  procurement portals. RESULT: ZERO SURVIVORS ACROSS ALL OF THEM.
+  Two failure modes closed the entire space:
+    (a) THE GATE OPERATOR WANTS YOU TO PASS, so it funds the free validator
+        itself. Standards bodies, marketplaces and governments all want more
+        conforming supply.
+    (b) THE GATE ADJUDICATES IDENTITY, NOT THE ARTEFACT. Amazon checks a LUCID
+        number, not a risk assessment. Customs checks a licence and a bond.
+  THEREFORE:
+  G4 — THE GATE OPERATOR MUST HAVE AN INCENTIVE TO KEEP CONFORMANCE SCARCE.
+  Hunt only gates whose operator is INDIFFERENT or ADVERSARIAL to you passing.
+  After six families we are not confident such a gate exists in any volume. If
+  you propose a gate business, you must clear G4 explicitly and with evidence.
+
+THE TRANSPOSITION LAW  (this one GENERATES — it is the most productive law here)
+  A gap exists where two mature industries sit adjacent and neither has crossed
+  into the other, because each is branded, priced and staffed for its own side.
+  WORKED EXAMPLE: life-story services (StoryWorth, Remento, Memoirji) are
+  branded for elders and legacy. Pregnancy keepsakes are a paper-goods industry
+  selling blank journals. Two mature businesses, touching, neither crossing.
+  The gap was a written pregnancy memoir — a hardcover that arrives already
+  written, bought as a baby-shower gift. That is the file's best candidate.
+
+THE CHAT-WINDOW TEST
+  If a competent person with ChatGPT could produce the deliverable in one
+  sitting, it is dead. The deliverable must be something a chat window CANNOT
+  produce: A PHYSICAL OBJECT, A THIRD PARTY CONTACTED, OR CUSTODY HELD.
+  Since she cannot hold custody (C4) and cannot contact third parties by voice
+  (C1), a physical object is the most reliable escape.
+
+THE SUBSTITUTE-COUNT LAW
+  A print-on-demand product with a thousand substitutes needs bought traffic.
+  One with ZERO substitutes needs only to be found once. The manufacturing model
+  does not determine the economics; the substitute count does. A t-shirt design
+  is a commodity. A book about one specific person's life has exactly one
+  possible buyer and no substitute at any price.
+
+NEVER SELL THE AGENT, SELL THE OUTPUT
+  Any AI agent worth selling is free on GitHub within a year. Sell what it
+  produces, never the thing itself, and never a guide to configuring one.
+
+THE ALERT FINDING
+  When the recipient of an alert is an OPPORTUNIST who profits by acting on it,
+  the alert sells by itself at real prices (PropertyRadar $119–599/mo, Owler
+  $39–350/mo). When the recipient is the SUBJECT of the problem — their own
+  violation, liability or cost — the alert is free and all the money is in the
+  fix. NO EXAMPLE WAS FOUND, ANYWHERE, of anyone selling a pure alert at a
+  meaningful price to the party the alert is about.
+  RULE: sell the trigger to whoever profits from it, never to whoever it
+  happens to. If the only interested party is the one the event happened to,
+  the alert is a lead magnet and the business is the remedy.
+
+GATE 0 — CAN THE BUYER PAY?
+  Prove it with a MEASURED size distribution before designing anything. This
+  gate exists because a complete business case was written and committed before
+  anyone checked the target population's bank balance: 70% of the target were
+  under US$50.000 annual revenue. An organisation running on $40k/year does not
+  pay $119/month.
+
+ADVERSE SELECTION
+  Companies carrying a visible public defect are frequently defective BECAUSE
+  they are under-resourced. Neglect and poverty are the same phenomenon seen
+  from two angles. The mechanism that makes a faceless seller credible — quoting
+  the buyer's own public defect — simultaneously selects for the buyers least
+  able to pay.
+  Three escapes: (W1) sell to a different, solvent party who bears the exposure;
+  (W2) target defects that scale with SIZE and COMPLEXITY rather than neglect;
+  (W3) find a counterparty with power who withholds money until proof arrives.
+
+"NOBODY SELLS THIS" HAS TWO EXPLANATIONS, AND THE SECOND IS MORE COMMON
+  Absence of a competitor is evidence of an opportunity OR evidence of no value.
+  Before building on an unserved defect, ask what happens TODAY when it goes
+  uncaught. If the answer is "a free system catches it" or "nothing, it
+  self-corrects", the space is empty for a reason.
+  TEST: name the specific person who loses a specific amount of money when this
+  defect goes undetected, and the mechanism by which they lose it. If the loss
+  is "minutes of rework", stop.
+
+THE TWO-BUCKET RULE — how to kill honestly
+  BUCKET A — STRUCTURAL. These kill. Only five kinds qualify:
+    A1  Someone ships the IDENTICAL product to the IDENTICAL buyer
+    A2  A NAMED law reserves it to a credential she lacks
+    A3  THE LIST DOES NOT EXIST — the buyer cannot be enumerated
+    A4  THE PHYSICS FAIL — e.g. required send volume exceeds one domain
+    A5  A cheaper substitute does THE WHOLE JOB, or a regulator gives it free
+  BUCKET B — UNPROVEN. THESE MAY NOT KILL ANYTHING. Whether buyers pay this
+    price; whether the gap over a PARTIAL substitute is worth paying for; the
+    conversion rate; whether the buyer knows they have the problem; whether they
+    trust an unknown vendor. Every Bucket B objection must arrive WITH THE
+    CHEAPEST TEST THAT SETTLES IT — under two weeks, under US$200, with a
+    numeric pass threshold. A Bucket B objection without a test attached is not
+    a finding; it is a guess wearing the costume of rigour.
+  WHY THIS MATTERS: a false kill costs more than a missed risk. A missed risk
+  shows up in a cheap test and gets corrected. A FALSE KILL NEVER SHOWS UP AT
+  ALL — the business simply never exists, and nothing ever contradicts it.
+
+THE PRICING MECHANISM NOBODY HAS USED YET
+  All 67 candidates were priced cost-plus or against a substitute. NOT ONE was
+  priced against WHAT THE BUYER LOSES. A $33.600 certification quote was paid
+  without negotiation because it was priced against the downside.
+  Absorbing a LIABILITY downside requires the stamp. But there is a downside
+  that requires no stamp and no credential: A MISSED WINDOW. A launch date, a
+  season, a deadline, a shipping cut-off. Nobody signs an indemnity for speed —
+  you either hit the date or you do not, and the buyer can see which.
+  THIS IS UNEXPLOITED. If you can build on it, do.
+
+
+================================================================================
+SECTION 3 — THE GRAVEYARD. DO NOT PROPOSE THESE.
+================================================================================
+
+Roughly 80 documented deaths. Grouped by cause so you can pattern-match.
+
+--- DEAD ON A RESERVED PROFESSION (A2) ---
+  Lei Rouanet prestação de contas desk (CFC Res. 1.640/2021 Art. 3º)
+  Brazilian licitação recurso/impugnação drafting (OAB Lei 8.906/94 art. 1º II)
+  Bookkeeping in Brazil · dental/medical consent registry · anything requiring
+  CRC, OAB, CREA, CRM, CRN, CRP registration
+  US customs brokerage (19 CFR 111.11 requires US CITIZENSHIP — uncurable)
+  UK company filing (ECCTA 2023 ACSP status requires UK AML supervision)
+  Brazilian despachante aduaneiro (RFB qualification exam)
+
+--- DEAD ON A FREE COMPETITOR (A5 / LAW 1) ---
+  Genealogy family-history book (FamilySearch shipped "Memories Book" free)
+  NYC building compliance radar (Insparisk free-forever, unlimited buildings)
+  Concursos study-cycle system (Estratégia + QConcursos free lead magnets)
+  ISO 9001 countdown pack (Advisera $229; IAF CertSearch blocks the funnel)
+  ACX audiobook QC (Amazon hosts the validator free; chapterpass first file free)
+  ONIX validation (EDItEUR publishes schemas free and explains why)
+  EPUBCheck remediation (W3C/DAISY, MIT licence, free web wrappers everywhere)
+  Music metadata / MLC royalties (registration free BY STATUTE)
+  Journal manuscript formatting (Elsevier format-free since 2013; SciSpace free)
+  iXBRL validation (Arelle free, open source, certified, 7 jurisdictions)
+  SEC filing-fee exhibits (SEC's own FEPT tool, free)
+  Grants.gov pre-flight (portal ships its own "Check Application" button)
+  SAM.gov registration help (APEX Accelerators, $55M/yr federal funding)
+  Google Merchant Center diagnosis (Google names every disapproval free)
+  Hospital price transparency validation (CMS open-sources its own validator)
+  Sponsorship architecture kit (Sympla Academy, Sebrae, MinC all free)
+  Cosmetics regulatory (ANVISA notification is FREE and takes three days)
+
+--- DEAD ON THE STAMP / ACCOUNTABLE ENTITY ---
+  Every EU EPR, GPSR, WEEE, battery, CE, UKCA and MoCRA candidate. The gate
+  adjudicates an in-jurisdiction ACCOUNTABLE ENTITY she cannot be, and the AR
+  firms bundle the document work at €190–1.000/country/year.
+  US CPSC children's product certificates (importer of record + accredited lab)
+  SOC 2 / ISO / PCI (licensed auditor issues the report)
+  R&D tax credits, cost segregation, 179D/45L (CPA or engineer certifies)
+  HIPAA (a BAA makes her personally liable to US federal enforcement)
+  ESEF (the statutory auditor must opine on conformance)
+  Prior authorisation packets (physician must attest)
+
+--- DEAD ON THE BUYER (GATE 0 / ADVERSE SELECTION) ---
+  50-State Solicitation Monitor (70% of targets under US$50k revenue)
+  Dossiê Patrocínio (Brazilian cultural workers average R$2.815/month)
+  Indie-author products generally (max exposure at IngramSpark is $25)
+
+--- DEAD ON AN INVISIBLE OR CLOSED TRIGGER (A3/A4) ---
+  LINELOCK (the moment artwork goes to print is invisible from outside)
+  WRAPCHECK (trigger invisible, rare, and useful only for hours)
+  ET Respondent's Corpus (the ET1 is confidential; respondent invisible for the
+    28-day window; also first-instance ET decisions are NOT binding precedent)
+  Form 5500 delinquency feed (the SPONSORS are enumerable; the BUYERS are not)
+  Recurso em 3 dias (Lei 14.133 art. 165 §1º closes the window in session)
+
+--- DEAD ON ECONOMICS OR CAPITAL ---
+  BioCore aesthetics import (R$80–150k capital against a few hundred dollars)
+  Amazon FBA / TikTok Shop / retail arbitrage / wholesale / dropshipping
+  HTS Ruling Currency Index (20.660 max buyers; and ACE already rejects dead
+    codes free, so the defect had NO CONSEQUENCE)
+  Medical billing (offshore denial specialists at $8–12/hour, WITH phone
+    coverage and system access, priced below her target income)
+  Brazilian implementation partner work (RD Station requires a 3-PERSON TEAM;
+    Trinks/Belasis/Guia da Beleza give migration and training away FREE at
+    R$65–110/month subscriptions)
+
+--- DEAD BECAUSE THE MARKET WAS ABOLISHED ---
+  FinCEN BOI reporting (final rule effective 14 Aug 2026 exempts US companies —
+    ~32 million filers went to roughly zero)
+  Section 321 / de minimis filings (permanently suspended, effective 24 Jul 2026)
+
+--- DEAD, AND THE LESSON IS THE POINT ---
+  EPUB ACCESSIBILITY REMEDIATION (candidate 67). Killed the same afternoon it
+  was generated. The French decree (Décret n° 2023-778, Art. 7) gives the
+  BACKLIST UNTIL 28 JUNE 2030. And the premise was false: Ace by DAISY's own
+  documentation says "Passing Ace validation is not the same as meeting
+  requirements of WCAG." I had read its MARKETING instead of its DOCS.
+  ***RULE ADOPTED: before any candidate is built on "the buyer can verify it
+  themselves", READ THE VERIFYING TOOL'S OWN DOCUMENTATION FIRST.***
+
+--- THE 50-IDEA SWEEP ---
+  A 50-item list of AI business ideas was run through this filter. 38 died on
+  ONE word: they require access to the client's systems. 3 more died on speech.
+  5 survived on shape; 4 of those died on trust or labour. 1 survived everything
+  and had already been rejected. NET NEW CANDIDATES: ZERO.
+
+
+================================================================================
+SECTION 4 — THE TWO SURVIVORS (so you don't re-derive them)
+================================================================================
+
+CANDIDATE 64 — "BEFORE YOU", a written pregnancy memoir.
+  A 40-page premium-colour hardcover that arrives ALREADY WRITTEN. Bought as a
+  baby-shower gift by the mother's mother, sister or closest friend; redeemed by
+  the expectant mother, who answers 28 questions in a form. AI drafts, she
+  edits, the mother approves TEXT ONLY (one approval gate, one revision round),
+  layout is deterministic, Lulu prints and ships white-label. ~18–20 min/book.
+  $179, second copy +$69. ~$130–145 contribution. 40–45 books/month to R$30.000.
+  Generated by the TRANSPOSITION LAW. Fully costed. Both pre-spend checks clear.
+  Competitors Qeepsake / Baby Notebook / The Short Years occupy $99–165 —
+  but NONE OF THEM WRITES. The differentiation is editorial transformation.
+  BIGGEST UNKNOWNS: will strangers buy, and will gift codes get redeemed?
+
+CANDIDATE 66 — the new-market catalogue landing.
+  Prepare a merchant's catalogue to land on ONE new channel or country, returned
+  as a file already proved to import. Sold to the launch event, never to the
+  mess. $149 sample → $399 → $900–1.400, plus a $60/month credential-free
+  monitor. 4 jobs + 40 monitors to R$30.000. Under $400 for 90 days.
+  ***DAMAGED 14 AUG 2026.*** Its stated best demand trigger — Amazon's
+  75-character title cap — INVERTS: Amazon is rewriting non-compliant titles
+  ITSELF with AI, reportedly 984 million already updated, listings staying live
+  throughout. And Shopify's Google & YouTube channel is a FREE app that
+  auto-syncs catalogues with category mapping. The wedge needs re-picking.
+
+BOTH SHARE ONE GAP AND IT IS THE REAL PROBLEM: no channel. Sixty-seven
+candidates have been assessed and NOT ONE has been put in front of a stranger
+with a price on it.
+
+
+================================================================================
+SECTION 5 — WHAT SHE ACTUALLY HAS. Build on these.
+================================================================================
+
+VERIFIED PRINT-ON-DEMAND CAPABILITY (checked against Lulu's own API, 14 Aug):
+  8.5×8.5 full-colour PREMIUM casewrap hardcover, 80# coated white, 444 PPI:
+    32pp $17.85 / £14.00 / €15.63
+    40pp $19.57 / £15.31 / €17.14
+    48pp $21.29 / £16.62 / €18.65
+    60pp $23.87 / £18.59 / €20.92
+    100pp $32.46 / £25.14 / €28.47
+  Exactly linear: $10.99 base + $0.2147/page.
+  Standard colour casewrap at 40pp: $13.52. Premium colour PAPERBACK: $10.75.
+  FULFILMENT FEE, fixed per order: $1.75 USD / £1.55 GBP / €1.75 EUR.
+  White-label CONFIRMED from Lulu's Direct Integration Guide: her branding on
+  the packing slip, fulfilment emails from a non-Lulu domain, cancellable 1–24h
+  production delay, no minimum order, ships to 200+ countries.
+  ONE THING TO KNOW: the return address on the customer's package DEFAULTS TO
+  HER BILLING ADDRESS and is editable.
+  => A PHYSICAL OBJECT IS AVAILABLE TO HER, WITH ZERO INVENTORY AND ZERO
+     CAPITAL. This is the most reliable escape from the chat-window test.
+
+OTHER REAL ASSETS:
+  - She builds working software fast by directing AI. Her marginal cost of
+    BUILDING is close to zero. So screen on whether something can be MARKETED
+    simply, not on whether it can be BUILT simply. A harder-to-build product
+    with a visible trigger beats an easy-to-build one without.
+  - She writes well in American English.
+  - Written cold outreach to US/UK/EU is explicitly fine and preferred.
+  - Consumer buyers never demand a call. This is a large, under-used advantage.
+
+CHANNELS THAT PLAUSIBLY WORK FOR HER (everything else has been ruled out):
+  Etsy and marketplace search · Pinterest · written cold email at LOW volume ·
+  gift-guide bloggers and written PR · organic search IF the query is
+  low-competition · possibly MCP/agent tool registries (identified as the one
+  uncolonised discovery surface; NEVER TESTED — investigate if relevant).
+CHANNELS THAT DO NOT: paid ads (budget) · any social requiring her face ·
+  dense professional forums (they ban self-promotion on pain of site ban) ·
+  her personal network · anything requiring a call.
+LEGAL NOTE ON COLD EMAIL: CAN-SPAM carries US$53.088 PER EMAIL, uncapped.
+  Verkada, an ordinary security-camera company, paid US$2,95M in 2024. Low
+  volume and careful compliance only.
+
+
+================================================================================
+SECTION 6 — YOUR TASK, AND THE STANDARD OF EVIDENCE
+================================================================================
+
+FIND HER A BUSINESS. Or tell us honestly that this constraint set admits none,
+and say WHICH CONSTRAINT IS BINDING.
+
+--- WHERE WE THINK THE REMAINING SPACE IS -------------------------------------
+
+We are least confident about — and would most like you to attack — these:
+
+  1. CONSUMER, GIFTED, PHYSICAL. The one room where this file has had success.
+     Use the TRANSPOSITION LAW. Find two mature adjacent industries where
+     neither has crossed. A gifting moment beats a self-purchase because gift
+     budgets are a different mental account. Zero substitutes beats a thousand.
+     Already hunted and dead: pregnancy (taken, it's candidate 64), genealogy,
+     pet memorial, family cookbook, tribute books, letters archive, wedding
+     speeches. Find a DIFFERENT life event.
+
+  2. SELLING FOR SOMEONE WHO HOLDS THE STAMP. She cannot hold liability — so
+     could she generate CLIENTS for firms that do, and take a commission? The
+     expert firm takes the calls, does the work, signs the report. One $30.000
+     engagement at 10% is $3.000; two to four deals a month clears the target.
+     UNDER ACTIVE INVESTIGATION. Known risks: attribution, disintermediation,
+     fee-splitting rules (ABA Model Rule 5.4, AICPA, SRA, OAB), ISO/IEC 17065
+     impartiality clauses, and the fact that SHE STILL HAS TO GENERATE THE
+     DEMAND — which is the same unsolved problem.
+
+  3. THE MISSED-WINDOW PRICING MECHANISM. See Section 2. Unexploited.
+
+  4. A NON-INFORMATION PRODUCT. The file's own conclusion is that breaking the
+     trap requires changing exactly one of three things: the audience/network
+     exclusion (she will not), the revenue target and timeline (possible), or
+     THE PRODUCT CATEGORY — something that is not information. Candidate 64 is
+     the only proposal that has ever satisfied this.
+
+--- THE STANDARD OF EVIDENCE. THIS PART IS NOT OPTIONAL. ----------------------
+
+  * CITE A URL FOR EVERY FACTUAL CLAIM.
+  * READ PRIMARY SOURCES. Regulations, standards documents, official
+    documentation, filings. NOT vendor marketing pages. A candidate died
+    because its central premise came from a tool's marketing rather than its
+    docs. Another cited an Asia capital-markets newsletter as a cosmetics trade
+    source, twice, as the emotional centre of the argument.
+  * FLAG ANYTHING UNVERIFIED AS UNVERIFIED. Do not assert it.
+  * BEWARE FABRICATED SUCCESS STORIES. This file has already caught two
+    widely-circulated ones: the claim that Baird Hall scraped the iTunes API to
+    reach $1,3M ARR (the actual transcript describes hand-researched outreach
+    and criticises mass blasts), and that Jake Atwood reached $1,2M ARR from
+    Indeed-triggered cold email (the interview contains no trigger events, no
+    Indeed, and no ARR figure). BOTH traced to cold-outreach TOOL VENDORS'
+    content marketing. Verify against the operator's own words.
+  * NAME COMPETITORS WITH PUBLISHED PRICES, INCLUDING THE FREE ONES.
+  * DO YOUR OWN ARITHMETIC AND SHOW IT. How many units at what price to reach
+    US$2.300/month and US$5.780/month? If the answer is 675 customers, say so.
+
+--- THE OUTPUT WE WANT --------------------------------------------------------
+
+For each candidate:
+  1.  NAME and one-line description
+  2.  THE BUYER — who, how many, and MEASURED evidence they can pay
+  3.  THE TRIGGER — the public, timely signal that this buyer needs it NOW.
+      Name the dataset. Verify it exists, is free, and its licence permits use.
+  4.  THE DELIVERABLE — and how it passes the CHAT-WINDOW TEST
+  5.  THE PRICE, and the arithmetic to both targets
+  6.  WHO GETS SUED IF IT IS WRONG (the Stamp Law test)
+  7.  CAN THE BUYER SELF-VERIFY after opening the file?
+  8.  COMPETITORS, named, with published prices, INCLUDING FREE ONES
+  9.  THE CHANNEL — how a faceless seller with no audience is found
+  10. CONSTRAINT CHECK — walk C1–C7 and V1–V4 explicitly, one by one
+  11. VERDICT, and the load-bearing reason
+  12. THE CHEAPEST TEST — under US$200, under two weeks, with a NUMERIC PASS
+      THRESHOLD
+
+BE AGGRESSIVE ABOUT KILLING YOUR OWN IDEAS. One genuinely live candidate is
+worth more than six weak ones. A false positive costs weeks of real work.
+
+And commit to an angle. Ten reasons to be cautious is the wrong deliverable.
+
+================================================================================
+END OF BRIEF
+================================================================================
