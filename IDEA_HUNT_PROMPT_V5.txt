@@ -1,0 +1,830 @@
+================================================================================
+FIND A BUSINESS — BRIEF V5
+For an independent LLM with subagent capability.
+Written 13 August 2026, after 63 dead candidates, 8 dead business models,
+and 6 measured marketplace ecosystems.
+================================================================================
+
+READ THE WHOLE THING BEFORE GENERATING ANYTHING.
+
+Most of this file is the record of what has already been tried and exactly why
+it failed, plus the laws each failure bought. Proposing something already in
+here is the single most common failure mode of previous attempts: five external
+LLMs have contributed candidates, and all five died — four of them to laws
+written below.
+
+Section 7 tells you how to deploy your subagents. Do not skip it. The
+orchestration pattern matters as much as the search space, and it was learned
+expensively.
+
+================================================================================
+1. THE JOB
+================================================================================
+
+Find a business a specific person can start, alone, with a few hundred dollars,
+that nets her R$12.000-15.000/month (about US$2.100-2.600) within roughly a
+year, and R$30.000/month within three.
+
+You are NOT being asked for a list of ideas. You are being asked for ONE to
+THREE candidates, each with:
+  - a measured buyer population, with source and date
+  - a price and a customer count that multiply to the target
+  - a named competitive field found in the VENDOR's vocabulary
+  - an honest statement of how it dies
+  - the single cheapest check that would settle it
+
+A candidate without a real number in it is worthless. Sixty-three have already
+been produced and killed.
+
+================================================================================
+2. THE FOUNDER
+================================================================================
+
+~26 years old, woman, based in Sao Paulo, Brazil. Has a Brazilian CNPJ and
+access to a US company. Stripe, Pix and boleto all work.
+
+WHAT SHE HAS (do not design for a blank slate — this was an error):
+  - Strong AI and agent skills. She can direct AI to build things.
+  - A Google Project Management certificate and a Google Marketing certificate.
+    Paid acquisition, SEO and listing optimisation are genuinely available.
+  - About 30 hours a week.
+  - Fluent written English. Native Portuguese.
+  - A few hundred US dollars. Total. This is real, not conservative.
+
+WHAT SHE WANTS TO DO ALL DAY, in her own words:
+  "writing, designing, organising, digging through data — with AI doing the
+  heavy lifting while she supervises that the system is working."
+  And: "prefer a business where I provide a deliverable" (rather than renting
+  software by the seat, though monthly SaaS is acceptable).
+
+HARD CONSTRAINTS — these have never moved and will not:
+
+  1. SHE WILL NOT SPEAK TO ANYONE. Ever. No calls in any language, no video, no
+     meetings, no demos, no discovery calls, no sales calls. This is now THE
+     binding constraint on the whole search.
+     - WRITTEN support IS fine. Email, docs, tickets: all acceptable.
+     - She writes English fluently and selling in WRITING to US/UK/EU buyers is
+       explicitly fine, "more than fine."
+  2. FACELESS, PERMANENTLY. No camera, no personal brand, no creator or
+     influencer work, no webinars, no audience-building as a route to market,
+     no name on anything. An ANONYMOUS or COMPANY-BRANDED presence IS allowed.
+  3. NO EMPLOYEES, NO CONTRACTORS. Ever, at any revenue level.
+  4. NO CUSTODY of any customer credential, certificate, password or login.
+     This closed an entire category. A faceless unknown asking a stranger for
+     their login inverts the trust gradient and cannot be sold.
+  5. Her personal Sao Paulo network is NOT a sales channel.
+  6. BUILD CAPABILITY, stated precisely by the person who knows her:
+     "Yes but not highly. Build yes. Bugs and such after the build."
+     => She can ship a first version with AI. She is NOT a strong engineer and
+     ongoing maintenance is a real risk. FAVOUR LOW-MAINTENANCE SHAPES OVER
+     CLEVER ONES. A product requiring constant platform-API firefighting is a
+     worse fit than a simpler product that sits still.
+
+RELAXED CONSTRAINTS (these moved on 13 August 2026 — use the room):
+  7. INCOME TARGET: was R$30.000/month in 12 months. Now R$12.000-15.000/month
+     near-term, R$30.000 over about three years.
+  8. FOUNDER LABOUR: was "no per-transaction founder labour", absolute. Now a
+     per-customer human step is permitted, provided total labour at target
+     volume stays under about 10 hours/week. Onboarding, setup, manual
+     exception review, and hand-delivery before automation are all now legal.
+
+THE TRAJECTORY BAR — this is a hard filter, apply it to every candidate:
+  - Month 3 at zero revenue: ACCEPTABLE.
+  - Month 8 at R$3.000 (about US$520): FAILING. Too little.
+  - Reaching full target at month 14-18: ACCEPTABLE.
+  So: something that plausibly clears roughly US$1.000/month by month 8 and
+  US$2.400/month by month 14-18.
+
+SCOPE: she wants ONE business. However — a smaller thing earning US$500-700/
+month is explicitly welcome as a starting point or side project while the main
+one is found. So do not discard a candidate merely because it tops out below
+target. Say what it tops out at and let that be judged.
+
+FOUNDER VETOES (permanent, do not propose):
+  - Construction as a buyer segment.
+  - Labour-compliance document chasing (the gauntlet converged on it three
+    times in three different segments; she declined all three).
+  - Physical goods and inventory, unless it is a clear home run.
+  - Anything requiring her to be believed as an expert.
+
+================================================================================
+3. THE ARITHMETIC — the most important section
+================================================================================
+
+Target is about US$2.400/month gross.
+
+    Price/month     Customers needed      Segment where that is <=1%
+    US$29           83                    8.300
+    US$49           49                    4.900
+    US$99           24                    2.400
+    US$199          12                    1.200
+    US$500          5                     500
+
+    One-off US$300  8 sales/month
+    One-off US$1000 2-3 sales/month
+
+THE RULE: required penetration must be at or under roughly 1% of the real buyer
+pool. Above that she needs market leadership, which a solo founder with no
+capital, no face and no audience does not get.
+
+TWO PRICING LAWS, both measured:
+
+  THE PRICE-FLOOR LAW (from Shopify data): review-to-install runs 1:30 to
+  1:100, but install-to-paid is only 8-18% with strong onboarding and 2-5% with
+  weak onboarding, and churn is 5-12%/month. The median listed Shopify app
+  earns under US$1.000/month.
+  => THE BINDING VARIABLE IS PRICE, NOT INSTALLS. Anything priced under US$29
+  is disqualified before it starts. At US$29 with weak onboarding, 100 reviews
+  yields about US$400/month. At US$49 the same app clears target.
+
+  THE SELF-SERVE CEILING (the NO-SALES-CALL TEST, below): annual contract value
+  must stay under roughly US$3.000/year. Above that a human buyer appears and
+  demands a conversation, and she cannot have one.
+
+  => The viable band is therefore roughly US$29-250/month. Narrow, and it
+  eliminates both cheap-consumer and enterprise at a stroke.
+
+================================================================================
+4. THE GAUNTLET — run in this order, cheapest killer first
+================================================================================
+
+Three candidates passed every other test and then died on a number obtainable
+in an afternoon. TEST 1 RUNS FIRST, ALWAYS.
+
+TEST 1 — POOL / VOLUME
+  How many real buyers exist? Then: customers-needed <= ~1%?
+  Two traps that have each killed multiple candidates:
+    - THE SCALE SCISSORS: the segments where the job is big enough have too few
+      firms; the segments with enough firms have firms too small to have the
+      job. Measured in Brazil: every visit-based service segment has a mean
+      firm of 2-5 people. CHECK THE SIZE DISTRIBUTION, NOT JUST THE COUNT.
+    - MEAN IS THE WRONG STATISTIC; THE BAND COUNT IS THE RIGHT ONE. In one
+      measured population the median claim was tiny but 619 entities still
+      cleared the threshold, because the tail was fat rather than the top
+      being thin. Count the band you can sell to, never the average.
+
+TEST 2 — NO-SALES-CALL (new, and now the hardest filter in the file)
+  She cannot speak to anyone. THE PRODUCT MUST BE BOUGHT FROM A PAGE.
+  This kills essentially all mid-market and enterprise B2B regardless of how
+  good the product is. If the category sells after a demo, a pilot, or a
+  procurement process, it is dead. Say so plainly and move on.
+
+TEST 3 — NO-TRUST-GATE (new)
+  A faceless one-person company with no track record cannot pass vendor
+  security review, SOC 2, HITRUST, a BAA, or an MSA negotiation.
+  Anything touching insurance, health, lending or payroll data is presumptively
+  dead UNLESS a platform vouches for her (see the Atlassian finding in §6).
+  Corollary learned today: FACELESSNESS IS A FEATURE IN DELIVERY AND A
+  DISQUALIFIER IN DILIGENCE. It helps where nobody needs to know who built it;
+  it is fatal where somebody must trust who built it.
+
+TEST 4 — PAIN
+  Is there a first-person account, from a real buyer, in the buyer's own words?
+  Not vendor marketing. Two candidates died because six separate interrogations
+  could not find one person describing the loss.
+
+TEST 5 — SHIPPED (apply the CORRECTED law)
+  CORRECTED LAW A1: an incumbent kills only when (a) its version is FREE, or
+  (b) its measured adoption inside the specific target segment exceeds roughly
+  20%. "A vendor exists and has a landing page" is a price and positioning
+  constraint, NOT a kill.
+  Supporting data: Cetic.br 2025 puts Brazilian ERP adoption at 36%; Sebrae
+  2025 puts 53% of small firms still on spreadsheets, in the best year ever
+  recorded.
+
+  BUT SEARCH PROPERLY. LAW A: "no competitor found" is a claim about the
+  SEARCHER, not the market. EVERY WRONG NULL IN THIS ENTIRE RECORD WAS A SEARCH
+  IN THE BUYER'S VOCABULARY INSTEAD OF THE VENDOR'S:
+
+      the buyer says             the vendor says
+      -------------------------  ----------------------------------
+      supplier follow-up         diligenciamento
+      warranty claims portal     gestao de pos-venda
+      document collection        gestao de terceiros
+      artwork proofing           prova digital / aprovacao de arte
+
+  Find the vendor's word FIRST, then search. This has fired five times.
+
+TEST 6 — FREE (hunt separately, by funding model)
+  LAW C: a competitor search is implicitly a search for VENDORS, and a vendor
+  is someone who charges — so a free competitor has no pricing page, no
+  Capterra row and no keywords. It CANNOT be found by searching for a product.
+  It must be found by asking "who would give this away, and why?"
+  This law was bought expensively: a candidate cleared by 17 agents including a
+  dedicated adversarial verifier running 20+ vendor-vocabulary queries was
+  killed by the founder with ONE LINK — a competitor whose own copy read "Free
+  isn't a trial or a teaser for a paid plan — there is no paid plan", funded by
+  a 5% margin on the goods flowing past it.
+  FREE KILLS AT ANY PRICE AND ANY TARGET. Zero excludes nobody, and the
+  adoption correction in Test 5 has no force against it.
+
+TEST 7 — REGULATOR (LAW B)
+  Does the regulator build and mandate its own tool, free? Killed at least six:
+  Inmetro's PSIE, the US National Board's EDT, Brazil's SINIR MTR system
+  ("eletronico, numerado, autodeclaratorio e gratuito"), the ANTT insurance
+  webservice, Lei 14.133 art. 141 s3 publishing the public payment queue by
+  statute, and BACEN's SVR which has already returned R$15,81 billion of
+  R$20,93 billion identified to 38,73 million people.
+  THE ENUMERABILITY TRAP: a population enumerable BECAUSE a regulator registers
+  it has usually already had its task systematised free by that same regulator.
+
+TEST 8 — HUMAN SUBSTITUTE (LAW 6)
+  Brazilian benchmarks: secretaria R$1.600-2.500/month; contador R$300-800;
+  analista ~R$3.400; Analista de Documentacao R$4.324 average (~R$7-9k loaded).
+  US benchmarks are 5-10x these.
+  Note this test WEAKENED when the price band moved: a US$199/month product
+  against a US$4.000/month analyst is a fair fight; a US$29 product never was.
+
+TEST 9 — CLEARING PARTY (LAW 0)
+  Whoever earns margin on goods, payments, bookings, credit, insurance or
+  advertising flowing past the product WILL give that software away free,
+  permanently.
+  Predictor: does this buyer's customer pay across a counter terminal? If yes,
+  an acquirer funds vertical software to zero.
+  TWO CORRECTIONS, both bought expensively:
+    - IT IS A TEST, NOT A PRE-FILTER. Run as a pre-filter it closed 6 of 7
+      candidate segments before any candidate existed and produced two
+      consecutive zero-yield waves.
+    - A CLEARING PARTY KILLS SOFTWARE AND PRICES GOODS. Mercado Livre earns
+      margin on goods flowing past, which is exactly why its seller tooling is
+      free and its take rate is 12-19% plus shipping. It prices you; it does
+      not kill you. Software has zero marginal cost so it gets given away;
+      goods have a COGS so they get taxed instead.
+
+TEST 10 — THE CHAT WINDOW (and read the correction, it is important)
+  A general chat model was measured against a candidate's core value: 38/38
+  planted discrepancies found, 0 false positives, across ~380 checks. And
+  OpenAI shipped a Scheduled Tasks hub on 17 June 2026, so "it runs on a timer"
+  and "it remembers" are consumer features now.
+
+  THE BOUNDARY:
+    A chat window has exactly ONE USER, ONE ACCOUNT, ONE MOMENT. It acts only
+    inside its user's account, with its user's consent, on its user's data.
+
+  A candidate survives only if its value depends on at least one of:
+    (a) THIRD-PARTY OBLIGATION — someone who is NOT the customer, and who
+        agreed to nothing, must be made to act.
+    (b) SHARED STATE — a status a second party reads and is bound by.
+    (c) CUSTODY FOR A LATER PARTY — a record a court, auditor, insurer, client
+        or platform DEMANDS as evidence. (Corollary: an audit trail nobody
+        demands has no price.)
+    (d) AN IRREVERSIBLE ACT — money released, access revoked, a batch shipped.
+
+  ONE-LINE SCREEN: if the whole product still works when only the buyer ever
+  touches it, it is a chat window.
+
+  *** THE CORRECTION, made by the founder and it matters enormously ***
+  An AI that REACHES OUT TO THIRD PARTIES does not fail this test — it is leg
+  (a) PASSING. A chat window cannot contact eight hundred strangers.
+  AI IS DEAD WHEN IT WORKS INSIDE THE BUYER'S OWN ACCOUNT. IT IS THE STRONGEST
+  THING AVAILABLE WHEN IT WORKS ON SOMEBODY ELSE'S.
+  It also needs NO credential custody: the agent messages third parties from
+  her own infrastructure on the customer's behalf, never logging in as the
+  customer.
+
+================================================================================
+5. THE REST OF THE LAW SET — each bought with at least one corpse
+================================================================================
+
+LAW 1 — THE LEAD-MAGNET MECHANISM (7 kills, the deadliest in the file)
+  Content costs nothing to produce, so a funded incumbent's free tier IS its
+  marketing budget. Anything that is content — a guide, a template, a
+  checklist, a corpus, a course, a report, a swipe file — is dead on arrival.
+  IT IS STRONGER IN ENGLISH MARKETS, NOT WEAKER. The US content-marketing
+  machine is vastly bigger than Brazil's.
+
+LAW 7 — THE VISE (6 appearances)
+  The legally safe version has no differentiation; the differentiated version
+  is reserved work. In Brazil watch CFC/DL 9.295 (accounting judgement, art.
+  25(c), art. 15 "sob qualquer forma"), OAB (legal theses), CONFEA Res.
+  218/1973 (technical equivalence), CRQ, CRM, CRO, CRECI (Lei 6.530/78 art. 3
+  reserves property intermediation), SUSEP (insurance broking), CVM
+  (securities). In the US watch CPA, bar admission, PE licensure and state
+  broker licensing.
+  NOTE: the relaxed labour rule makes this MORE dangerous, not less — the human
+  check she could now perform is often precisely the reserved work.
+
+THE SELLER-SIDE FUNDING LAW (3 appearances)
+  If the party you chase is competing to SELL to your buyer, someone will
+  charge that party for access and give the chasing tool to the buyer FREE.
+  Object & Order (5% goods margin), Mercado Eletronico ("a empresa fornecedora
+  paga uma taxa... o que faz a solucao totalmente gratuita para compradores"),
+  Neogrid, SAP Ariba, Nimbi Private, ISNetworld, Avetta, TraceGains, EcoVadis.
+  One mechanism, not nine coincidences.
+  => THE CHASED PARTY MUST BE A PAYEE OR OBLIGOR ALREADY UNDER CONTRACT, never
+  a seller competing to win the order.
+
+THE COUNTERPARTY-MOTIVATION RULE
+  A COORDINATION job wants a motivated counterparty. A CHASING job wants an
+  UNMOTIVATED one. If the document is how the counterparty gets paid, they are
+  motivated and there is no chasing job.
+  Exception that matters: motivation is insufficient when the thing owed is
+  BURDENSOME or INCRIMINATING to produce.
+  The purest form found: a franchisee who reports more sales PAYS more royalty
+  — structurally adverse, not merely lazy.
+
+THE GATEABLE-COUNTERPARTY LAW
+  Enumerability and solvency are properties of the BUYER. Gate-holding is a
+  property of the buyer's COUNTERPARTY. Check them together.
+  826.570 Brazilian government suppliers are enumerable, solvent and
+  phone-reachable — and useless, because their only counterparty is the State,
+  which cannot be gated and publishes its own gate-state by statute.
+
+THE THREE-CONDITION RULE FOR ASSEMBLY BUSINESSES
+  A business built on assembling scattered parties needs three things at once:
+  a statute that PUBLISHES the tail, a statute that makes the tail PIVOTAL, and
+  a SOLVENT party who must satisfy it.
+  Without pivotality, a published list of people owed money is just a list of
+  poor people, and every buyer for it is the State, a saturated fund, or a
+  lawyer.
+
+THE PLACEMENT SCISSORS
+  Where supply is ACTIVE, the matching layer is already free on both sides.
+  Where supply is PASSIVE, filling the slot IS twenty hours of outbound calling
+  — agency work with the invoice reshaped. There is no third region.
+
+PRICE AND POOL MOVE IN OPPOSITE DIRECTIONS
+  When the competitor is per-seat, escaping the crossover means raising price,
+  which raises the minimum client headcount, which drops the qualifying
+  population into the top 2-7% of the segment.
+
+THE FIELD-OWNERSHIP LAW
+  If what you sell can be described as one field changing value, ask who owns
+  the record before you ask who the buyer is. An approval gate is a status
+  field on a record some system already owns — structurally a feature, not a
+  product. Tested across eleven segments; survived none.
+
+THE PRECONDITION TRAP (3 appearances)
+  If the product requires the discipline whose absence is the problem, the
+  qualified and the needy populations are disjoint.
+
+THE LIABILITY-EVIDENCE LAW, with its boundary
+  Before building anything that records who worked when under whose
+  instruction, check whether the record becomes evidence AGAINST your buyer.
+  Brazilian boundary, established: it becomes evidence of vinculo only when
+  FOUR conditions hold at once — the operator is the tomador who denies
+  employment; a named, non-substitutable person (pessoalidade, Sumula 331 III);
+  command rather than a refusable offer; and persistence proving habitualidade.
+  Remove any one and the record flips to DEFENSIVE. MEI/CNPJ does NOT cure it
+  (STF Tema 1389, undecided, ~74.000 actions paused). ETT employment (Lei
+  6.019/74 art. 10) and intermitente (CLT art. 443 s3) DO.
+
+THE ALERT FINDING
+  Alerts sell only to whoever PROFITS FROM KNOWING — never to the subject of
+  the alert.
+
+GATE 0
+  Measured solvency as a DISTRIBUTION. An aggregate or a count is not a
+  distribution. One candidate died because its buyers averaged R$2.815/month
+  personal income.
+
+RECURRENCE LAW
+  An idea that keeps coming back is telling you about its APPEAL, not its
+  viability. One idea surfaced four times in four costumes and consumed four
+  rounds of analysis before anyone checked the boring number.
+
+THE CNAE-MIRAGE LAW (Brazil-specific but generalises)
+  A registry count is not a buyer count. Check what the classification actually
+  contains, and check whether the entities in it are the buyer or the
+  workforce. One code showed 179.702 entries; the real buyer count was 108-500.
+
+================================================================================
+6. WHAT HAS ALREADY BEEN SEARCHED — do not repeat any of this
+================================================================================
+
+63 CANDIDATES, 8 BUSINESS MODELS, 6 MARKETPLACE ECOSYSTEMS.
+
+CLOSED CATEGORIES — do not propose anything inside these:
+  - Information or content products of any kind (Law 1, 7 kills)
+  - Analysis, verification, reconciliation or report products (chat window,
+    measured 38/38)
+  - Pure AI wrappers operating inside the buyer's own account
+  - Government filing tools (Law B)
+  - Authenticated action on Brazilian government systems: gov.br's Termo de Uso
+    bans robots AND bans "acessos realizados atraves de servicos de
+    hospedagem", which is what any cloud agent is. Eight candidates died here.
+  - Two-sided marketplaces (cold start, no capital, no audience)
+  - Agency or service work sold by the hour
+  - Reselling foreign SaaS into Brazil
+  - Order or shipment tracking, in any vertical
+  - Booking, scheduling, payments or course platforms where the customer pays
+    at a counter (Law 0 fires by construction)
+  - Supplier onboarding, qualification, RFQ chasing, PO confirmation, delivery
+    follow-up (seller-side funding, five named free-to-buyer incumbents)
+  - Approval gates in any segment (field-ownership law, eleven segments tested)
+  - The Brazilian public-procurement supplier population (gateable-counterparty)
+  - PO expediting in any geography
+  - Road freight document gates: TST 5a Turma, September 2024 held transport
+    contracts commercial, so Sumula 331 IV does not apply and the tomador has
+    no subsidiary liability. The legal engine that makes document gates
+    valuable is judicially excluded from freight.
+  - Labelling and signage packs (see below)
+  - Construction as a buyer segment (founder veto)
+  - Labour-compliance document chasing (founder veto)
+  - Generic/horizontal document chasing: Content Snare US$35-215/month with
+    1.900 customers, Suralink US$17/user/month, FileInvite. The horizontal is
+    gone. ONLY VERTICAL ADVERSARIAL CHASING IS OPEN.
+  - Certificates of insurance (COI) chasing: BCS has a genuinely free tier;
+    Certificial is free for insureds, agents, brokers and requestors, funded by
+    25.000+ agencies and carriers. Law 0 executed exactly.
+  - W-9 / vendor tax onboarding: free from Avalara Track1099, TaxBandits,
+    TaxZerone, funded by e-filing fees.
+  - US healthcare prior authorisation: BAA + SOC 2 Type 2 + HITRUST are table
+    stakes. Fails the no-trust-gate test fatally.
+  - Cold outbound prospecting to strangers: spam law, deliverability, and a
+    funded crowded market (Apollo, Clay, Instantly, Smartlead, Lemlist).
+
+THE 8 BUSINESS MODELS ALREADY TESTED AND THEIR KILLS:
+  Success-fee origination — works only at US$1.500-3.000 per closing at 1-2
+    closings/month; below that it is full-time sales, above it the cycle is
+    6-12 months and she cannot fund it. THE CASH CYCLE IS THE FILTER.
+  Lead generation — every signal derivable from a national company registry is
+    worth about one cent (Casa dos Dados sells CNPJ records at R$0,01). Signals
+    from specialist registers have unenumerable beneficiaries.
+  Physical product / own brand — working capital, freight, and unmeasured COGS;
+    founder has since vetoed inventory.
+  Data / list licensing — the two highest-assembly-cost datasets in Brazil are
+    given away FREE by open-source and philanthropic actors (minhareceita /
+    BrasilAPI for the company registry; Querido Diario for 27 states of
+    official gazettes). And the one genuinely missing field, verified WhatsApp
+    numbers, died on a MECHANISM: Meta sunset the On-Premises API on 23 October
+    2025, taking the /contacts number-existence endpoint with it, and the Cloud
+    API has no equivalent. Every surviving validator is an unofficial
+    WhatsApp-Web wrapper, i.e. a permanent ToS breach as the product's core.
+  Placement / recruiting — the placement scissors.
+  Acquiring cash flow — a 135x capital gap, plus art. 133 CTN making the
+    acquirer of a Brazilian fundo de comercio inherit the seller's taxes
+    integrally (STJ, Feb 2024).
+  Demand aggregation — wherever pooled buying pays in Brazil the aggregator
+    seat is already held by a licensed or association-owned institution;
+    wherever it is not held, the volume discount is already delivered without
+    any pool (atacarejo: R$327,7 billion, 29% of food retail, any CNPJ walks in).
+  White-label / arms dealer — it INVERTS her only asymmetry, converting many
+    low-trust transactions into few high-trust senior partnership sales. And
+    the specific instance died on Telecontrol: 30 years, "aprovada pelos 120
+    maiores fabricantes", 35.000 postos autorizados, 1M+ service orders/month,
+    while Garanzia sells the identical product at R$159-359/month.
+
+THE MARKETPLACE ECOSYSTEMS, MEASURED AND RANKED BY WHETHER MONEY CAN BE
+COLLECTED:
+
+  ATLASSIAN FORGE — native till (billed on the invoice the customer already
+    pays); 0% revenue share to US$1M lifetime, then 16%; apps free at 1-10
+    seats so a 100-seat app is US$600-1.900/year, UNDER the self-serve ceiling
+    so no human buyer appears; 53.017 customers above US$10k cloud ARR.
+    *** THE KEY FINDING: "Runs on Atlassian" (launched 26 May 2026) means Forge
+    apps run on Atlassian's infrastructure, data never leaves Atlassian Cloud,
+    and — Atlassian's own words — there is NO LENGTHY VENDOR SECURITY REVIEW.
+    This is the no-trust-gate problem SOLVED AT THE PLATFORM LEVEL, and nothing
+    else in the record does that. ***
+    Search long tail exploded: top-5 search terms fell from 57% of all searches
+    in 2021 to about 12% in 2026.
+    Free Marketplace Reporting API gives every listed partner real search
+    terms, impressions and installs — a demand verdict in six weeks for zero
+    dollars, from inside the channel.
+    ITS SEARCH RULE, an ECONOMIC moat rather than a hoped-for one: Atlassian
+    structurally will not build workflows for people who do not have a seat,
+    because that cannibalises per-seat revenue. SO HUNT ANYTHING WHERE THE
+    PERSON WHO MUST ACT IS UNLICENSED.
+
+  SHOPIFY — native till; 0% revenue share on the first US$1M LIFETIME gross
+    (changed 16 June 2025; it used to reset annually); US$19 to list; ~5,5M
+    merchants, 2,90M live verified stores growing 11%/year; 17.891 active apps
+    from 11.352 partners, 34% with zero reviews.
+    Platform risk is REAL AND FAST: on 2 April 2026 Shopify shipped native B2B
+    to every paid plan and gutted the wholesale-pricing app category overnight.
+
+  CHROME WEB STORE — NO native till; store payments shut down 1 February 2021;
+    you bill via Stripe/Paddle/Lemon Squeezy/ExtensionPay; 0% store cut and any
+    price you set. ~251k extensions, median 9-18 users, ~90% never pass 1.000
+    installs, 0,7% over 100k. Every documented indie win came from Product Hunt
+    or a founder's blog — i.e. an AUDIENCE, which is permanently closed to her.
+
+  FIGMA — native till, flat 15%, but it bills the INDIVIDUAL USER at consumer
+    prices (US$2 minimum, whole dollars). US$2.400/month needs ~300 subscribers
+    = 12-15k installs. Stark, one of the best-known plugins in the store, has
+    73k installs. Top 1% of 12.686 plugins by month 8. FIGMA PAYS BUT CANNOT
+    PAY ENOUGH. Paid FILES are also paused for new sellers.
+
+  CANVA — a discretionary usage fund, not a price you set. Not a business.
+
+  NOTION — NO payment layer at all. Zero.
+
+  monday.com — native till (payments, renewals, taxes, compliance), 0% until
+    US$200k lifetime then 15%; 250.000+ customers; 49% of accounts and 87% of
+    enterprise accounts have installed at least one app.
+
+  SALESFORCE APPEXCHANGE — US$999 security review per paid app, 6-9 weeks, 15%
+    cut, and contract values that summon a procurement human. Fails
+    no-trust-gate and no-sales-call outright.
+
+  ZAPIER / MAKE / AIRTABLE / CLICKUP / SLACK — no monetisation of integrations.
+    They are distribution for a SaaS you already sell, not a revenue channel.
+
+  HUBSPOT — 0% take is a trap: you must build billing, tax, dunning and licence
+    enforcement yourself.
+
+KILLED WITHIN THE MARKETPLACES, with the measurement:
+  Shopify resale-certificate custody — passed the chat-window test on all four
+    legs and had genuinely low platform risk, but the niche generates well
+    under 2 reviews/month: Exemptify 37 reviews total with three visible across
+    Dec 2025-Jun 2026 at US$4,99; Tax Exempt Manager 24 reviews with the most
+    recent visible from May 2022 at US$9,99. A market of roughly 2.000 stores.
+  EU accessibility (EAA/WCAG) monitoring — the US$79-249/month self-serve band
+    is genuinely empty (accessiBe from US$490, AudioEye US$24-75k/year
+    sales-assisted, UserWay enterprise). It dies on HER constraint: A FACELESS
+    COMPANY ISSUING CONFORMANCE EVIDENCE IS A CONTRADICTION. Buyers of
+    compliance proof want a NAMED auditor.
+  Atlassian external sign-off for unlicensed users — cleared every structural
+    test better than anything in 63 candidates and STILL only reached
+    US$720-1.080/month by month 8, in the most crowded category on the
+    marketplace (Appfire owns the Confluence half; Atlassian shipped approvals
+    into Premium). RIGHT CHANNEL, WRONG APP.
+  Franchisee royalty-report chasing — the purest adverse-counterparty found
+    anywhere (reporting more sales means paying more royalty), a real gap
+    (FranConnect US$1.000-2.000/month demo-gated, every competitor gated), and
+    still probably dead: it is a trust gate wearing a US$129 price tag, the
+    self-reporting segment SHRINKS as POS integration spreads, and the search
+    volume implies about one customer/month, i.e. month 8 at US$650.
+
+*** THE SEEDING LAW — the most important finding in the whole marketplace file,
+    from a study of documented solo builders ***
+
+  ZERO documented cases exist of a cold marketplace listing reaching US$1k MRR
+  on in-marketplace search alone. NOT ONE.
+
+  But every documented winner seeded a first cohort BY HAND, and the channels
+  they used were WRITTEN, FACELESS AND CALL-FREE:
+    - Kaching Bundles: gave the app away free in Facebook dropshipping groups.
+      Posts went semi-viral -> 500 merchants in week 1, 1.000 in month 1, THEN
+      ranked #1 for its keyword. US$1k MRR IN FOUR MONTHS.
+    - Storemapper: emailed his own freelance clients, then answered "store
+      locator" questions in Shopify forums. Later: "a big portion comes from
+      searches inside the app stores."
+    - DropCommerce: cold-emailed brands to seed supply, then 18 installs/day
+      organic from the App Store, which he credits as "everything."
+    - "Credible": one Shopify New & Upcoming -> Featured placement "netted
+      about 180 new recurring customers."
+
+  => MARKETPLACE-AS-SOLE-DISTRIBUTION IS DEAD.
+     MARKETPLACE-AS-COMPOUNDING-CHANNEL-AFTER-A-WRITTEN-SEED IS WELL SUPPORTED.
+     The seed is forum writing and free giveaways in exchange for reviews. All
+     of it is inside this founder's constraints.
+
+  THE REVIEW COLD-START is the specific mechanism: ranking weights installs,
+  uninstalls, reviews and billing usage. Listings under 25 reviews convert at
+  1-2% versus 5-8% at 200+. Kaching solved it by giving the app away FOR
+  REVIEWS. Any candidate must state how it crosses this threshold.
+
+*** MAINTENANCE BURDEN, RANKED — and this REVERSES the obvious choice ***
+
+  Given "build yes but not highly, bugs and such after the build", maintenance
+  matters more than economics. Measured:
+
+  SHOPIFY — KINDEST. Quarterly API versions, 12-month support, 9-month
+    overlap. Support load measured at 5-10 tickets/week across 1.800 merchants
+    = about 1-2 tickets per 100 merchants per month, and ~80% of tickets are
+    merchant misconfiguration rather than bugs, answerable with saved snippets.
+
+  ATLASSIAN — BRUTAL. Connect reached end-of-support 30 April 2026, and
+    post-EOS breaking changes and security fixes become the DEVELOPER'S
+    problem. The legacy Forge runtime is deprecated and state is no longer
+    guaranteed cleared between invocations. Forge is not at feature parity with
+    Connect. The community expects a wave of apps to disappear.
+
+  CHROME — BRUTAL. Manifest V3 was "a complete structural redesign, not a
+    port", and MV2 extensions were auto-disabled from Chrome 127.
+
+  *** CONSEQUENCE: Atlassian has the best economics in the file (0% to US$1M,
+  host collects, and "Runs on Atlassian" solves the trust gate) AND the worst
+  maintenance profile for a non-expert. Only ~50 businesses have EVER grossed
+  more than US$1M lifetime on that marketplace — about 2,8% of its ~1.800
+  vendors. Worse: THE PUBLIC RECORD FOR ATLASSIAN IS MARKETING, NOT DATA. The
+  single most-cited Atlassian solo success never states how it got one
+  customer, and no Atlassian solo developer publishes a channel breakdown.
+  TREAT ATLASSIAN DISCOVERY AS UNVERIFIED. Shopify is the only one of these
+  marketplaces with a genuine first-person record. ***
+
+*** WHAT KIND OF APP ACTUALLY WON, and it fights the price band ***
+
+  Uniform pattern across documented solo winners: NARROW, SINGLE-PURPOSE,
+  CHEAP, HORIZONTAL UTILITIES. Kaching quantity-breaks at US$14,99-59,99.
+  Storemapper, a map widget, at US$5-20. A guarantees-and-features icons app at
+  US$5,99/month. TEAMS won the complex multi-sided products; SOLO winners
+  priced LOW TO MANY, not high to few.
+
+  This qualifies the price-floor law in §3: under US$29 is disqualified ONLY IF
+  you cannot seed. With a seeded base of 500+ merchants, US$15/month x 160
+  merchants clears target. So state your seeding plan and let it set the price,
+  rather than the reverse.
+
+WHY MOST MARKETPLACE APPS EARN NOTHING — top three, with evidence:
+  1. The listing is not distribution. Median Shopify app has 4 reviews; 25%
+     have zero; 75% of all reviews sit in the top 5% of apps. 87% of Chrome
+     extensions have under 1.000 installs and 50% have under 16.
+  2. The review cold-start (above).
+  3. Built on assumptions then abandoned. Shopify's own post-mortem: no user
+     research, built "in a bubble", competitor already ahead. About 30% of
+     listed Shopify apps never add a paid plan at all.
+
+KILLED — THE FACELESS AFFILIATE/SPONSORSHIP NEWSLETTER (tested 13 Aug, and it
+died on arithmetic rather than doctrine):
+  Sponsorship needs 12.000-37.500 subscribers for US$2.400/month at measured
+  vertical CPMs (generalist B2B US$5-12, devtools US$15-40, cybersecurity
+  US$25-60 at the ceiling, priced per thousand OPENS not sends). Affiliate needs
+  43.000-125.000 at a 0,5-1% CTR and US$1,20-3,50 EPC. Paid subscription needs
+  38.700 free subscribers at beehiiv's median 0,62% free-to-paid conversion.
+  Her capital buys 80-250 subscribers. THE GAP IS 32x TO 500x.
+  And the structural finding, which generalises:
+    *** CPM AND CONTESTEDNESS ARE THE SAME VARIABLE. A niche uncontested enough
+    for a faceless newcomer to win has too little advertiser demand to pay
+    US$2.400/month. There is no gap in the middle. ***
+  Law 1 confirmed in the field: cybersecurity's leading free newsletter,
+  tl;dr sec with 50.000+ subscribers, is written by Semgrep's Head of Security
+  Research. A vendor employee, produced as marketing.
+  KEPT BUT DEMOTED: a newsletter as DISTRIBUTION for a product she owns dodges
+  Law 1 (the money comes from the tool, not the words) but not acquisition
+  cost. It is a tactic to attach to a product, never a business on its own.
+
+FIVE MORE FACTS WORTH CARRYING:
+  - DELIVERABILITY IS THE FRAGILE CORE of any chasing product. Sending on
+    behalf of hundreds of small customers is exactly the reputation profile
+    ESPs terminate, and one customer repurposing it for prospecting torches the
+    pool for everyone.
+  - EMAIL ONLY, NEVER SMS, for third-party outreach in the US. TCPA class
+    filings are up ~95% year on year at US$500-1.500 per message. A
+    transactional message about an existing obligation is a genuinely different
+    legal object from marketing under CAN-SPAM — but SMS is litigated
+    regardless.
+  - LGPD ENFORCEMENT CAME FROM THE COURTS, NOT THE REGULATOR. The Brazilian
+    ANPD's total private-sector fines were R$14.400 — but MPDFT's acao civil
+    publica obtained an injunction, upheld by TJDFT, ordering Serasa Experian
+    to STOP commercialising its "Lista Online" and "Prospeccao de Clientes"
+    products, and the court EXPRESSLY REJECTED the legitimate-interest defence.
+    The largest data company in the country, enjoined out of that exact
+    category.
+  - THE OAB BANS PAID INTERMEDIARIES. Lei 8.906/94 art. 34 and CED art. 7 ban
+    "intermediarios e agenciadores comissionados" by name, and Provimento
+    205/2021 bans unsolicited outreach offering legal services. Legal-services
+    lead generation and claimant sourcing are permanently closed.
+  - THE US SEARCH BIAS. Of 63 candidates, ~45 were aimed at professional
+    services, health, beauty, events, education, culture, property and
+    government paperwork. ZERO of those survived. Only 5 were aimed at the real
+    economy (industry, commerce, transport, agriculture) and 1 of 3 Brazilian
+    real-economy candidates cleared the gauntlet.
+
+================================================================================
+7. HOW TO DEPLOY YOUR AGENTS — read this, it was learned expensively
+================================================================================
+
+The orchestration pattern matters as much as the search space. What follows
+worked; the alternatives failed measurably.
+
+RULE 1 — FIX THE DIMENSION, NEVER LET AGENTS FREE-ASSOCIATE.
+  Give each agent ONE fixed thing — one business model, one marketplace, one
+  vertical, one shape — and tell it that if its best answer resolves to
+  something outside that fix, it has FAILED THE TASK and must go back.
+  When 12 agents were given open briefs they returned zero candidates. When 8
+  agents were each handed a fixed business model, they returned 8 measured
+  verdicts and 2 conditional survivors.
+
+RULE 2 — SEPARATE MEASUREMENT AGENTS FROM IDEATION AGENTS.
+  The single most valuable agent run in this entire project was a pure
+  measurement task with the instruction "Do not propose any business. Measure."
+  It machine-parsed nine documents, validated its parser against stated totals
+  to the centavo, and settled a question that had blocked two candidates.
+  When a candidate hinges on one number, spawn an agent whose ONLY job is that
+  number. Forbid it from ideating.
+
+RULE 3 — EVERY AGENT MUST RETURN "WHAT I ELIMINATED AND WHY".
+  Twelve agents once returned zero candidates and their elimination reasoning
+  survived only in transcripts. The eliminations are frequently worth more than
+  the survivors, because they are where the laws come from.
+
+RULE 4 — MAKE EVERY AGENT DESTROY ITS OWN PROPOSAL IN THE LAST THIRD.
+  Instruct explicitly: "the last third of your answer must be your best attempt
+  to destroy your own candidate." The strongest results in this project came
+  from agents that killed their own work. One agent's self-destruction —
+  "this is a trust gate wearing a US$129 price tag, and I may be rationalising"
+  — was more useful than its candidate.
+
+RULE 5 — POOL FIRST, ALWAYS, AND STOP EARLY.
+  Instruct agents to run the tests in order and STOP at the first failure,
+  reporting which test killed it. Three candidates in this record passed every
+  other test and then died on a number obtainable in an afternoon.
+
+RULE 6 — REQUIRE THE ONE FREE CHECK.
+  Every candidate must arrive with the single cheapest observation that would
+  settle it. Real examples that each cost under an hour and settled a
+  candidate: "open dgtec.com.br and look at the price list"; "count reviews
+  posted on these four apps in the last six months"; "open Porto Seguro
+  Corretor and look for a prospecting module"; "walk into an Atacadao with a
+  CNPJ". If an agent cannot name the check, it does not understand its own
+  candidate.
+
+RULE 7 — SEND MID-FLIGHT CORRECTIONS.
+  When one agent returns a finding that sharpens the brief, message the agents
+  still running. A finding from a solar-signage kill ("if the artifact carries
+  no per-job information, digital-in-artifact-out degenerates to
+  nothing-in-commodity-out") was pushed to a running agent and improved its
+  output materially.
+
+RULE 8 — RUN 4-8 AGENTS IN PARALLEL, NOT 1 AND NOT 20.
+  Below 4 you learn too slowly. Above 8 you cannot read the results carefully,
+  and reading them carefully is where the laws come from.
+
+THE AGENT SET TO DEPLOY, in order:
+
+  WAVE 1 — TERRITORY HUNTERS (4-6 agents, one fixed territory each)
+    Suggested fixes, given what is already closed:
+    a) Atlassian Forge apps, using the "unlicensed person must act" search rule
+    b) Shopify apps, in categories Shopify structurally will not enter
+    c) monday.com apps (250k customers, host collects, 0% to US$200k)
+    d) WordPress plugins (largest install base, but establish how money is
+       actually collected before anything else)
+    e) VERTICAL ADVERSARIAL CHASING in English markets — the shape where an AI
+       contacts an obligated, unmotivated third party. The horizontal is
+       commoditised; only verticals are open.
+    f) One wildcard: a territory nobody has named. Instruct it to justify the
+       territory before proposing anything in it.
+
+  WAVE 2 — MEASUREMENT AGENTS (spawn as needed, no ideation)
+    For each Wave 1 survivor, one agent whose only job is the single number the
+    candidate depends on. Give it the exact sources to try, tell it to validate
+    its own extraction, and tell it to report "unmeasured" rather than estimate.
+
+  WAVE 3 — ADVERSARIAL VERIFIERS (1 per surviving candidate)
+    Brief: "Here is a candidate that survived. Your only job is to kill it.
+    Hunt the FREE competitor by funding model, in the vendor's vocabulary, in
+    the local language. Check who earns margin on the flow. Check whether the
+    host platform can ship this. Report the single link that kills it."
+    NOTE: a candidate cleared by 17 agents including a dedicated adversarial
+    verifier was still killed by the founder with one link. Verifiers reduce
+    the failure rate; they do not eliminate it.
+
+  WAVE 4 — THE CASE-STUDY AGENT (1, and do this early)
+    Not "what should we build" but "who has actually done this, and how did
+    their first hundred customers arrive?" Demand named people, named products,
+    revenue figures with dates, and specific acquisition accounts. Instruct it
+    explicitly not to let survivorship bias produce a hopeful answer, and to
+    say "the public record here is marketing, not data" if that is the truth.
+
+================================================================================
+8. WHAT A GOOD ANSWER LOOKS LIKE
+================================================================================
+
+For EACH candidate — one to three maximum:
+
+  1. One sentence describing the product as the BUYER would search for it.
+  2. The buyer, precisely — and HOW THEY BUY IT WITHOUT ANY CONVERSATION.
+  3. VOLUME, measured, with source and date. Then the arithmetic:
+     price x customers = US$2.400/month, and customers as a % of the pool.
+     If that percentage is above ~1%, do not send the candidate.
+  4. PAIN: a link or a quote from a real buyer, or an explicit "unverified".
+  5. SHIPPED: named vendors found in the VENDOR's vocabulary, with prices, and
+     an explicit judgement under corrected Law A1 — is any of them FREE, and is
+     measured adoption in THIS segment above 20%?
+  6. FREE: the answer to "who would give this away, and why?" — reasoned by
+     funding model, not by product search.
+  7. CLEARING PARTY: name them, or state that you searched by class and found
+     none.
+  8. CHAT WINDOW: which of the four survival properties does the value rest on?
+     Quote the property.
+  9. MAINTENANCE: how much ongoing engineering does this need, and what happens
+     when the platform ships a breaking change? She is not a strong engineer.
+  10. THE MONTH-8 NUMBER: show the ramp. Is it plausibly above US$1.000/month
+      by month 8? Name the acquisition channel and cost it.
+  11. HOW IT DIES, and the ONE FREE CHECK that settles it.
+
+MANDATORY CLOSING SECTION: "WHAT I ELIMINATED AND WHY" — everything considered
+and rejected, with the reason. And the last third of your answer must be your
+best attempt to destroy your own proposal.
+
+================================================================================
+9. WHAT A BAD ANSWER LOOKS LIKE
+================================================================================
+
+  - Any number without a source and a date.
+  - A registry count presented as a buyer count.
+  - "There is no competitor" without evidence you searched in the vendor's own
+    vocabulary, in the relevant language.
+  - A competitor analysis that only looks for companies THAT CHARGE (Law C).
+  - Anything in the closed-category list in section 6.
+  - A product priced under US$29/month, or above US$3.000/year.
+  - A product whose value is analysis, a report, a template, advice, a
+    dashboard, an alert, or an AI acting inside the buyer's own account.
+  - Anything requiring her face, her name, her network, an employee, a
+    credential, an audience, or a spoken conversation.
+  - A candidate that needs her to be believed as an expert.
+  - Enthusiasm. Six candidates were cleared enthusiastically by large agent
+    fleets and killed later by a single link.
+
+================================================================================
+10. THE ONE-LINE VERSION
+================================================================================
+
+Find a business bought from a page for US$29-250/month by 5-50 customers in an
+English-speaking market, whose value depends on somebody OTHER THAN THE BUYER
+being made to act, built and maintained by one faceless person with AI, no
+staff, no capital, no audience and no telephone — and then spend the last third
+of your answer trying to kill it.
