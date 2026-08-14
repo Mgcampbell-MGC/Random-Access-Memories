@@ -418,16 +418,72 @@ OTHER REAL ASSETS:
   - Consumer buyers never demand a call. This is a large, under-used advantage.
 
 CHANNELS THAT PLAUSIBLY WORK FOR HER (everything else has been ruled out):
-  Etsy and marketplace search · Pinterest · written cold email at LOW volume ·
-  gift-guide bloggers and written PR · organic search IF the query is
-  low-competition · possibly MCP/agent tool registries (identified as the one
-  uncolonised discovery surface; NEVER TESTED — investigate if relevant).
+  Etsy and marketplace search · Pinterest · written cold email · gift-guide
+  bloggers and written PR · direct written approaches to a small named list.
+  ** MCP REGISTRIES ARE NOW CLOSED — MEASURED, NOT INFERRED, 14 AUG 2026. **
+  This file long carried MCP/agent tool-surfaces as "the one uncolonised
+  discovery channel, never tested." It was tested by querying the registry APIs
+  directly. The official registry returns 40.100+ server records; Smithery
+  8.007; Glama ~72.400. It is not uncolonised — it is more saturated than most
+  SEO niches. And her exact candidate categories already exist with ZERO usage:
+  an HS-code classifier (0 uses), an EU tender scout (0), three separate WCAG
+  accessibility servers (0, 0, 0). Category counts: customs 194 servers,
+  accessibility 186, compliance 147, procurement 120. Of 2.500+ Smithery
+  servers only EIGHT exceed 50.000 installs, and Madrona's analysis says the
+  users are "technical builders," explicitly NOT "mainstream business buyers."
+  Smithery's pricing page contains no prices; PulseMCP's promotional tier states
+  "No money changes hands." Nobody sells placement because there is no audience
+  worth buying. DO NOT SPEND ANY BUDGET HERE.
+  ** PINTEREST IS DEGRADING. ** Publishers in Pinterest's own business community
+  report impressions −25%, engagements −27%, outbound clicks −28%, saves −31%,
+  all beginning 1 August 2026, with the same complaint pattern recurring in
+  April 2026 and July 2025. Staff response attributes it to "natural ebbs and
+  flows." Treat Pinterest as a declining channel, not a plan.
+  ** ETSY CHANGED ITS RULES ON 11 AUGUST 2026. ** The Prohibited Items Policy
+  now bars items made with computerised tools from a templated design "unless
+  the design is the seller's original work," read as covering digital downloads,
+  and AI DISCLOSURE IS MANDATORY in the description. For a founder whose entire
+  production method is AI-directed, this is a live compliance surface on her
+  main channel, days old, with enforcement patterns not yet established.
 CHANNELS THAT DO NOT: paid ads (budget) · any social requiring her face ·
   dense professional forums (they ban self-promotion on pain of site ban) ·
   her personal network · anything requiring a call.
-LEGAL NOTE ON COLD EMAIL: CAN-SPAM carries US$53.088 PER EMAIL, uncapped.
-  Verkada, an ordinary security-camera company, paid US$2,95M in 2024. Low
-  volume and careful compliance only.
+LEGAL NOTE ON COLD EMAIL — CORRECTED 14 AUG 2026. THIS FILE HAD IT WRONG.
+  The US$53.088-per-email figure is a STATUTORY MAXIMUM, not an expected cost,
+  and has never been applied at anything near per-email scale. Verkada sent
+  "more than 30 million commercial emails over a three-year period" and paid
+  US$2,95M — the largest CAN-SPAM penalty the FTC has ever obtained — which is
+  **US$0,098 per email**, and it was bundled with a data-security case in which
+  a hacker viewed 150.000 live cameras in psychiatric hospitals.
+  The four violations charged were purely mechanical: no unsubscribe option,
+  unsubscribe requests not honoured, no clear opt-out, no physical postal
+  address. All trivially avoidable.
+  THERE IS NO PRIVATE RIGHT OF ACTION — only the FTC, state AGs and ISPs may
+  sue. State AG damages cap at $250/email and $2M total; ISPs at $25–100/email
+  and $1M. CAN-SPAM is OPT-OUT, not opt-in: compliant B2B cold email is lawful.
+  => At ~50 emails/week with accurate headers, a real postal address and a
+     working opt-out honoured within 10 business days, the legal exposure is
+     not small — it is ZERO, because there is no violation.
+  ALSO CORRECTED: Google/Yahoo bulk-sender rules trigger at 5.000+ messages per
+  day to Gmail. At ~10/day she is 500× below the threshold; DMARC and one-click
+  unsubscribe are not required of her. Her real problem is the opposite of what
+  this file assumed — at that volume she is too small to BUILD reputation.
+  ALSO CORRECTED: the USPTO/FTC "you look like the scam" finding was overstated.
+  USPTO's warning is specifically about entities using names similar to the
+  agency, sending official-looking notices, and falsely claiming a service is
+  mandatory. Outreach doing none of those is not the described pattern. It is a
+  copywriting risk, not a kill.
+
+A NEW KILL THIS FILE HAD MISSED — check it before proposing any referral model:
+  **Cal. Bus. & Prof. Code § 5061(a)**: "a person engaged in the practice of
+  public accountancy shall not: (1) pay a fee or commission to obtain a client."
+  Subsection (f) defines "fee" to include "a commission, rebate, preference,
+  discount, or other consideration, whether in the form of money or otherwise",
+  closing the rename. Mirrored by AICPA ET §1.520.001 and WAC 4-30-045.
+  => Every California CPA firm is barred from paying her to bring a client. SOC
+     2 reports can ONLY be issued by CPA firms. That closes SOC 2, financial
+     audit and CPA-delivered specialty tax entirely. Engineering-delivered work
+     (cost segregation, 179D) is NOT public accountancy and stays open.
 
 
 ================================================================================

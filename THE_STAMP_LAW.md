@@ -136,6 +136,72 @@ a gate — not evidence that 66 is the answer.
 
 ---
 
+## 5b. THE ESCAPE HATCH THAT ISN'T — tested and closed, same day
+
+The obvious inference from this law is: *if she cannot hold the stamp, sell clients to whoever
+does.* One $30.000 engagement at 10% is $3.000; two to four a month clears the target. It was
+worked properly — nine agents, including a dedicated red team — and **it dies on four independent
+Bucket A facts.**
+
+| | The kill |
+|---|---|
+| **1** | **The introduction is already made, free.** Drata's own page: *"Over 80% of our customers meet their auditor through Drata."* Two free directories list 173 and 293 SOC 2 firms underneath. CORRECTED LAW A1 kills at free **or** 20% adoption. This is both |
+| **2** | **The commission is $250–500, not $3.000.** EmpowerRD pays 10% of the **first claim only** on a £2–4k fee. Gusto pays a **$500 gift card**. Firms that could pay $2–3k publish no rate — terms are negotiated, i.e. a conversation. A 6–12× error in the premise |
+| **3** | **The runway cannot be survived.** At the friendliest published close rate (1 per 464 emails) and 6–9 month cycles in these verticals, the pipeline needs **8.352–12.528 emails before the first dollar**, at $100–300/month for domains and warmup. She runs out of money in month 2–3. *(Send volume is fine — 63/day on one warmed domain. It is the runway, not the physics.)* |
+| **4** | **Named laws close the best verticals.** **19 CFR 111.36(b)** — no broker arrangement where fees inure to an unlicensed person. **Cal. B&P § 5061(a)(1)** — every California CPA firm barred from paying a fee to obtain a client, with (f) foreclosing the rename. **Rule 7.2(b)** — every law firm. **ISO/IEC 17065 4.2.3 NOTE 1** — see below |
+
+**And a fifth that is nearly comic.** AICPA ET §1.520.001, WAC 4-30-045(3) and Cal. B&P 5061(d)–(e)
+all require the referral fee to be **disclosed to the client in writing, in advance, with the
+amount**. So the firm must tell the buyer: *an anonymous third party who cold-emailed you is being
+paid $2.000 because you replied.* **The thing she is selling must be confessed to the buyer as a
+condition of selling it.**
+
+### The reason, stated once
+
+> **An introduction is a trust instrument too.** Its price is set by how much the referrer's name is
+> worth to the referee — which is exactly why the AICPA, the ABA, the SRA, ISO 17065 and 19 CFR 111
+> all regulate *who may be paid to make one*.
+>
+> **A faceless seller cannot hold the stamp and cannot vouch for the person who does. Those are the
+> same disability, not two.**
+
+A cold email from an anonymous stranger transfers no trust. It is a **lead**, not a referral — and
+leads price at cost-per-lead, not at 10% of the deal.
+
+### THE COROLLARY — add this to the filter
+
+> **WHEN A CREDENTIAL CREATES A PRICE, IT ALSO REGULATES WHO MAY BE PAID TO INTRODUCE IT.** Every
+> regime that lets a professional charge $30.000 for a signature also restricts referral
+> compensation, because the same conflict-of-interest logic produces both. **Never propose selling
+> introductions into a licensed profession without first reading that profession's referral-fee
+> rule. It exists, in every one of them.**
+
+The proof is in the standard this whole law came from. **ISO/IEC 17065:2012, clause 4.2.3, NOTE 1**
+lists what threatens a certification body's impartiality:
+
+> *"…finances, contracts, marketing (including branding), and **payment of a sales commission or
+> other inducement for the referral of new clients**, etc."*
+
+**The clause that makes the $33.600 quote worth paying is the same clause that forbids being paid to
+introduce it.** The stamp's value and the impossibility of brokering it are not two facts. They are
+one sentence.
+
+### What survives, and the cheapest test in the file
+
+Two things are worth keeping from the exercise:
+
+- **The withholding question was framed wrong.** Her commission would not be US-source income —
+  services are sourced where performed under **26 U.S.C. § 862(a)(3)**, and the IRS confirms place
+  of performance controls regardless of the payer's residence. **The rate is zero; the missing
+  US–Brazil treaty is irrelevant.** File a W-8BEN with Part II blank purely to prevent §3406 backup
+  withholding. *(And note: MEI's ceiling cannot carry R$360k/year — that needs ME/Simples.)*
+- **If anyone ever revisits this: 30 partner-side emails, $0, one week.** Ask SOC 2 firms one
+  question — *"what is your published referral commission, and is it paid on close or on
+  collection?"* — and count written answers containing a number. That settles kills 2 and 5
+  simultaneously. It is the cheapest decisive test anywhere in this record.
+
+---
+
 ## 6. The unexploited pricing mechanism
 
 Separate from the gate, and possibly worth more.
