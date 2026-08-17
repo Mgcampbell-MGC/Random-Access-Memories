@@ -82,6 +82,7 @@ whatever died around it. Parts are reusable. Candidates are not.
 | **F6** | **THE ROYALTY POOL LAW** — never build on an unpublished rate | Canva |
 | **F7** | **THE SELF-SCORE TELL** — read the budget and the org chart; ignore the scores | PERMITCLOSE + STONEPROOF |
 | **F8** | **Adverse buyer** — the person who feels the pain is not in the room when the money is spent. What killed the volunteer-org handoff | Volunteer orgs |
+| **F9** | **THE VETO LAW** — lost knowledge only funds a purchase when a **third party holds a veto**: someone who will not let the payer proceed without the document. **And wherever a veto exists, the veto-holder or a funded vendor publishes the artefact free, because guaranteed demand is what makes a template worth giving away.** F8 and LAW 1 are two halves of one mechanism: no veto, no buyer; veto, free competitor | Agent 7, Assembly 3 |
 
 ---
 
