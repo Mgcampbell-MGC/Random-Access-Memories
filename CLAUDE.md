@@ -22,14 +22,45 @@ local optimum and the search rolls back into it every time unless something forb
 | | Shape | Deliverable |
 |---|---|---|
 | **S1** | **Written work** | She writes prose. *(70, 71, 72, 64, the whole book family)* |
-| **S2** | **Replenishment / merchant of record** | A vendor makes it; she routes it and knows which |
+| **S2** | **Replenishment / merchant of record** | **CLOSED 17 Aug by seven agents — see below** |
 | **S3** | **Continuous operation** | The product is that something was watched for ninety days |
 | **S4** | **A compounding dataset** | She accumulates what nobody else has |
-| **S5** | **Software or a system, sold as a product** | Built once, licensed |
+| **S5** | **Software or a system, sold as a product** | Built once, licensed. Partly tested — app stores and Fiverr |
 | **S6** | **Matching two enumerable populations** | She connects, never produces |
 
-**S1 is over-explored. S2, S3, S4 and S6 are barely touched.** If a proposal is S1, it must be
-justified as a *deliberate* return, not presented as a new idea.
+**S1 is over-explored and holds the only live candidates. S2 is closed. S3, S4 and S6 have NEVER been
+hunted.** If a proposal is S1, it must be justified as a *deliberate* return, not presented as a new idea.
+
+### S2 is closed — do not re-open it without new facts
+
+Seven agents, primary statutory and supplier sources, several correcting each other and two correcting me:
+
+- **The rail works** — Global O-Ring has a self-serve blind-drop-ship checkbox, a $5 minimum, and **card-pay
+  that bypasses credit approval**. Copylite's reseller form lists Brazil. **Plumbing was never the problem.**
+- **THE FREE FRONT DOOR** — "knowing which part" is the customer-acquisition cost of whoever holds the stock.
+  Grainger sells it as a KeepStock service line; CrossFilters gives away *manual* crossing in one business day
+  and advertises *"Real inventory, not just data."* **Zero part-identification gigs exist on Fiverr or Upwork.**
+- **MERCHANT OF RECORD IS FALSE IN BRAZIL.** RIR/2018 art. 162 §1 makes her *equiparada à pessoa jurídica* by
+  operation of law, registered or not. **Two non-creditable turnover taxes stack in opposite directions** —
+  Brazilian PIS/COFINS on her gross selling price (not an export, no input credits: SC COSIT 306/2017 and
+  31/2023) and US state sales tax on her cost (no resale certificate). **LC 126/2007 art. 20** bars a *pessoa
+  física* from the foreign insurance her customers contractually require.
+- **THE ONBOARDING LAW** — written-only is compatible with *selling*; it is **not** compatible with *being
+  onboarded*. Reseller setup, acquirer risk review, fiscal-rep appointment and dispute escalation are all
+  conversations. **Ask this of every future candidate.**
+- **THE COMMISSION-AGENT RESOLUTION** — resale is closed by Brazilian tax law; brokerage is closed by
+  professional referral-fee rules. **The surviving intersection is commission agency in an industry with no
+  referral-fee rule.** *(This corrects parts-bin G7, which said the escape was to resell rather than broker.)*
+- **THE RENEWAL SCISSORS** — a regulator needing a filing from 100.000 entities makes the artefact cheap by
+  design. **G9 does not transpose to documents: no statute can force an annual DOCUMENT to be expensive.**
+- **THE ASSURANCE COUPLING** — enforcement teeth and the absence of a stamp are anti-correlated by design.
+  And **THE DOWNSTREAM STAMP**: Companies Act 2006 **s.496** makes the auditor opine on the strategic report,
+  so every document nested inside it already has a mandatory stamp downstream.
+- **THE COMPLIANCE COSTUME** — six widely-sold "mandatory" replacement cycles are not in the rule text.
+  OSHA's own position: ANSI standards bind only if OSHA adopts them, and **Z358.1 and Z308.1 were not
+  adopted.** Treat fake mandates as a kill list, never an opportunity list.
+- **THE POSTAL LIST LAW** — of eight registers field-inspected, **one publishes email.** Enumerable ≠
+  contactable.
 
 > ### RULE 2 — Filter LAST, not first.
 
