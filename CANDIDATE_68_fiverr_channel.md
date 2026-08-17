@@ -59,15 +59,55 @@ Drawn from millions of platform searches, **November 2025 – April 2026**:
 | Programming & Tech, AI-related | +94% |
 | Vibe coding | +61% |
 
-And the pricing bands, from the same reporting:
+### ~~And the pricing bands~~ — CORRECTED SAME DAY, and the correction is material
 
-- **AI agent gigs: $1.000–$5.000+ per project**, bundles including setup, training, maintenance
-- **Intermediate sellers: $500–$1.500** per gig from small-business clients
-- **Specialists: $3.000–$8.000/month**
-- Stated barrier to entry: *"execution skill (not just prompting) is the real barrier"* at the $500+ band
+> ~~AI agent gigs $1.000–$5.000+ per project. Intermediate sellers $500–$1.500. Specialists
+> $3.000–$8.000/month.~~
+>
+> **WRONG. Those bands came from SEO content blogs, not from observed listings.** Fiverr's own
+> Business Trends Index verified the **demand** (+938%); it said nothing whatever about price. I
+> presented secondary-source pricing with the same confidence as primary-source demand data. **Fourth
+> time this file has caught me propagating an unverified number.**
 
-**This is her actual skill, at the exact moment demand for it is up 938%.** Not a skill she would have
-to acquire — the one she already has.
+**What is actually listed on Fiverr for this service, observed directly:**
+
+| Live gig | Price |
+|---|---|
+| *"claude code setup, claude consultant, claude ai agent claude tutor claude cowork"* | **$15** |
+| *"build claude skills claude code claude design claude ai app ai agent cowork mcp"* | **$30** |
+| *"claude code setup, claude ai agents, coded apps, claude cowork, ai automation"* | **$45** |
+| Fiverr's own category page | *"24 Best Claude Skills Services"* — roughly 24 gigs total |
+
+Fiverr's category copy: prices *"range from around $15 for basic setups."*
+
+**At $30 less 20% commission she nets $24 and needs 120 orders a month.** Dead at the observed price.
+
+### THE REPEATABILITY TRAP — the law this produced
+
+The recurring asks were confirmed exactly as the founder predicted: install/authenticate/configure
+Claude Code and a CLAUDE.md; Cowork setup *"configured for file types, task patterns, and team skill
+level"*; wiring to n8n, Airtable, Notion, Zapier, GHL, CRMs; documentation and walkthroughs. **The same
+five problems, over and over.** So the productisation instinct was right — and the market has already
+priced that repeatability at fifteen dollars.
+
+> **THE REPEATABILITY TRAP — the property that grants operator leverage is the same property that
+> destroys pricing power. "Build once, sell many" is available to every competitor equally, so the
+> price falls to the cost of a copy. Productisation creates leverage and kills the price in one
+> motion. The price survives only if something scarce sits NEXT TO the repeatable artefact.**
+
+The marginal-cost moat, read from the seller's side. It generalises to every "build one thing and sell
+it forever" candidate this file will ever consider.
+
+**What restores price here:** the buyer's own specifics. A generic MD/skill pack is $30 against 24
+competitors — template tier. The same pack **adapted to their actual repository** is plausibly
+$150–300, and reading a repo they send is reading *a file*, not holding a credential, so **C4
+survives**. Same three-tier structure found in the book analysis; the money is in the middle tier
+again. But the middle tier costs her hours back — roughly 1 per order instead of 4.
+
+**Status of candidate 68 after the correction:** the **channel** facts remain fully verified from
+Fiverr's own help pages — 20% flat, 14-day payout, consultations deactivable, logo or AI profile image
+permitted, no legal name required, Brazilian sellers active, $0 acquisition cost. **The money math is
+unproven and the only directly observed price point is fatal.** The channel is real. This gig is not.
 
 ---
 
