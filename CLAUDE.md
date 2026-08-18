@@ -130,6 +130,17 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   buyer; where a veto exists, the veto-holder or a funded vendor publishes the artefact free.
 - **App stores take 12–18 months** to a top-quartile solo outcome. Organic discovery for a new indie app is
   effectively zero.
+- **Time savings only sell to a buyer who is short of hours.** *(THE CONSTRAINT-SIDE LAW, 18 Aug — see
+  `THE_CONSTRAINT_SIDE_LAW.md`.)* Ask **"what breaks if their volume doubled next month?"** A
+  *demand-constrained* buyer has spare hours already and will not pay to be given more. The buyer to hunt is
+  one whose **volume is set by something they do not control** (deaths, renewal dates, statutory deadlines,
+  settlement dates, pay cycles) and whose **cost is their own hours**. This dropped celebrants from #1 to #4:
+  **118.804 Australian marriages ÷ 10.832 registered celebrants = 11,0 ceremonies each per year even if
+  celebrants performed every marriage in the country** — realistically ~9.
+- **She is capacity, not expertise.** The expert veto means she can never supply the domain, so the buyer
+  must: **the buyer supplies the domain, she supplies the throughput.** And she must never assert a
+  "before" — **the buyer sends work they already did, with their own hours attached, and she returns the
+  after.** Nothing is claimed, so nothing has to be believed.
 - **Etsy could not be read all day, by four separate agents.** DataDome blocks every method available.
   Zero Etsy prices, sales counts or review counts have ever been obtained here. Any Etsy conclusion needs a
   human with a browser.

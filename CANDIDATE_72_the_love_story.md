@@ -173,3 +173,33 @@ the C1 channel question simultaneously. **G17 — twenty real instances, count h
 
 **And the second test, which decides whether this is a machine or a job:** write two love stories for the
 **same** celebrant's format and time both. **If the second takes under half the first, G2 is real.**
+
+---
+
+## 9. CORRECTION — 18 Aug 2026. This drops from #1 to #4 on structure
+
+**Source: `THE_CONSTRAINT_SIDE_LAW.md`.** Two primary figures, divided:
+
+> **118.804 marriages registered in Australia in 2025** *(ABS, `Marriages and Divorces, Australia`, released
+> 28 Jul 2026)* **÷ 10.832 Commonwealth-registered celebrants = 11,0 ceremonies each per year — and that is
+> the ceiling, assuming celebrants perform EVERY marriage in the country.** They do not. Applying a ~83%
+> civil share *(AIFS citing ABS; **secondary, the page 403s** — ABS stopped publishing the breakdown in
+> 2022)* gives **~9,1**, and lower again once registry offices are removed.
+
+**Two consequences, and the second is the serious one:**
+
+1. **A celebrant with nine ceremonies a year is demand-constrained.** They are short of bookings, not hours.
+   **Selling them time back is selling them the one thing they already have a surplus of.** This is an
+   independent arrival at agent 3's **A$100–400 per celebrant per year** wallet estimate, from a different
+   method.
+2. **Re-pricing it as a differentiator — "this wins you the booking" rather than "this saves you an
+   afternoon" — walks straight into the expert veto**, because a differentiator is bought on the seller's
+   reputation.
+
+**§8's twenty-celebrant test is still worth running** — it costs nothing and the *"what would that be worth
+to you?"* question tests exactly this. **But the prior has moved: expect the numbers in the replies to be
+small, and expect the honest ones to say they enjoy writing it.**
+
+**The board's structural order is now: submission narrative (renewal calendar) · funeral homes (deaths) ·
+genealogy · this.** The top two fail on capital/onboarding and on her own veto respectively — **which is why
+the next hunt is for a buyer with EXOGENOUS VOLUME that is neither.**
