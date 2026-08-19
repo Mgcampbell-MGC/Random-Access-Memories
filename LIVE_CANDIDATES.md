@@ -48,12 +48,26 @@ left it**. Archive the daily snapshot and the change-log becomes an artefact the
 | **Why it beat the version that died** | `THE_FDA_TEST` killed the *device* register on `THE NAMEABILITY CONDITION` — the vanished records were anonymous integers. **Here the firm name, address and two working emails sit on the same row as the identifier** |
 | **Day 0** | **Banked** — `archive/decrs/2026-08-19.tsv.gz` |
 
-**⚠ THREE QUESTIONS, ALL PURE READING — a few hours, no build, no money.** *Answer them before anything else.*
-1. **Does anything actually vanish?** The device declaration table was append-only. Unknown here.
-2. **Is the US agent the filer?** 1.666 distinct agents; Registrar Corp holds 418. ***"You cannot sell a firm a
-   monitor for its own outbox"* killed the last one — check this first.**
-3. **Is the buyer already legally compelled to run this check?** 21 CFR 807.22(b)(3) compelled it on the device
-   side, inside FURLS.
+### ★ TWO OF THE THREE BLOCKERS CLEARED, 19 Aug — both favourably
+
+**Q2 — is the US agent the filer? NO, on the regulation's face.** **21 CFR 207.69** makes the agent a
+*communications conduit*, not a filer: *"Registrants of foreign establishments… must designate a single United
+States agent"*, whose duties are *"reviewing, disseminating, routing, and responding to all communications from
+FDA"*, answering questions on imported drugs, and *"assisting FDA in scheduling inspections."* **21 CFR 207.29
+puts the filing on the registrant** — *"Registrants must review and update all registration information."*
+**So the device-side trap does not transpose cleanly.** ⚠ It still bites in one direction: selling a US agent a
+monitor of *their own client roster* remains selling a firm its own outbox. **Sell to a third party watching a
+supply chain it does not file for.**
+
+**Q3 — is the buyer already legally compelled? NO, not for third-party monitoring.** 207.29 compels a registrant
+to update **its own** record annually, and *"if no changes have occurred… registrants must certify that no
+changes have occurred."* **Nothing compels anyone to monitor another establishment's status.** That is the
+distinction that killed the device version, where 21 CFR 807.22(b)(3) compelled the check inside FURLS.
+
+**Q1 — does anything actually vanish? STILL OPEN, and unmeasurable from one snapshot.** Day 0 is banked; this is
+now a waiting game, not a research question.
+
+> ### ★ AND A TIMING FINDING WORTH MORE THAN THE ANSWERS: **the annual review window is 1 October – 31 December** (207.29). **The file churns hardest in Q4, which is six weeks away — so the archive started today captures the single most valuable period in the year. Starting later means missing it by twelve months.**
 
 *(Also open: archive risk UNVERIFIED · a 2020 snapshot is publicly purchasable, so NET CHANGE is back-fillable —
 only the order and dates of changes are not.)*
