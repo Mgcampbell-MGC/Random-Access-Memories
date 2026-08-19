@@ -337,3 +337,121 @@ commercial purposes, all without asking permission."* Commercial resale is permi
 > ### THE ERASURE MOAT NEEDS A FIFTH CONDITION, AND THIS IS WHERE IT WAS LEARNED. It is not enough that the authority overwrites. **The vanished record must still be IDENTIFIABLE after it vanishes** — a name, an address, something a human can act on. **A register that erases COMPLETELY leaves you holding a list of anonymous integers, which is a moat around nothing.**
 >
 > **Add to the screen: does the disappearance leave a corpse you can name?**
+
+---
+
+# PART THREE — THE CHANNEL RED TEAM. Both the candidate and the pivot are dead.
+
+## ⚠ A SECOND CORRECTION TO ME — my concentration figures were inflated ~6×
+
+**I quoted openFDA LISTING ROWS — one row per product listing, so an agent is counted once per device.**
+Deduped against `us_agent.txt`, where one row is one establishment:
+
+| US agent | **Actual establishments** | What I said |
+|---|---:|---:|
+| Registrar Corp | **1.188** | 4.910 |
+| Regrek LLC | **793** | 7.270 |
+| Emergo/UL | **276** | 1.981 |
+| MEDAGENT | **168** | 4.650 |
+
+**And the in-house departments are tens, not thousands:** Philips 47 · J&J 33 · BD 33 · Medtronic 31 ·
+Stryker 31 · Zimmer 27.
+
+**The shape is a very thin head on a very long tail: 13 agents hold ≥100 establishments, 91 hold ≥20, and
+3.170 — 67,5% of all agents — represent exactly ONE.** The single largest domain is **gmail.com, with 1.211
+establishments.** The tail is individuals on free mail.
+
+## ★ THE ARITHMETIC KILL — and the match rate was MEASURED, not cited
+
+**The agent ran 20 randomly-sampled real official correspondents through commercial enrichment. 5 of 20
+returned a work email — a measured 25%** *(n=20, CI ≈9–49%; all five role-plausible, e.g. a Director of
+Regulatory Compliance)*.
+
+```
+597 importers with the finding  ×  25% match  =  ~149 reachable inboxes
+US$133.200/yr ÷ 149  =  US$892/yr each AT 100% PENETRATION
+   at 10% conversion → 15 customers × US$8.925/yr
+   at 20% conversion → 30 customers × US$4.462/yr
+```
+
+> **From a 149-inbox universe, a one-time PDF cannot reach the target at any conversion rate. A subscription
+> needs US$4.500–17.800/yr from a buyer whose entire adjacent service — full US-agent representation — sells
+> for US$250–849/yr.**
+>
+> **The channel does not fail. It succeeds, and the number is still too small.**
+
+## ★★ AND THE PIVOT IS DEAD ON ARRIVAL — the obvious buyer already built it
+
+**Registrar Corp — the #1 US agent in FDA's own file — sells ComplyHub, which "actively monitors the
+importer's supplier base and provides alerts and risk scores" across "100 million shipping records," with a
+0–100 risk index.**
+
+> **The largest, most concentrated, most obvious wholesale buyer for this product has already shipped it.**
+
+**And the whole industry is too small anyway.** At published US-agent fees of **$250 · $449 · $849**
+*(vendor-published, unaudited)*, 15.477 establishments implies **$3,9M–13,1M of total annual industry gross.
+She would need 1,0–3,4% of the entire US-agent industry's revenue** — sold to firms whose head competes with
+her and whose tail (67,5% hold a single client) cannot buy.
+
+## ★ THE REGULATOR HAS PRE-POISONED THE CHANNEL
+
+**FDA's own *Important Reminders about Registration and Listing*, verbatim:**
+
+> *"FDA is aware that various firms may be offering their services to assist domestic and/or foreign
+> facilities to register with FDA… these firms are not affiliated with FDA… **FDA does not use any outside
+> contractors to notify or bill regulated industry about the need to register.**"*
+
+**And on 3 March 2021 FDA wrote to 25 firms** issuing misleading "FDA registration certificates" that *"often
+have the look of an official government document and many display the FDA logo."*
+
+**Field-observed:** Liberty Management Group — **the #10 US agent in FDA's own file, 126 establishments** —
+advertises *"Free Registration Certificate"* on its homepage. **The exact artefact the regulator called
+misleading is being marketed by a firm sitting inside the dataset.**
+
+> **A structural discount on every first message, not a copywriting problem: the regulator has explicitly told
+> this exact population to distrust unsolicited mail of this shape.**
+
+## Two attacks that FAILED — reported because an honest red team reports its misses
+
+- **CAN-SPAM: FAILS.** 15 U.S.C. §7704(a)(5)(A)(iii) requires *"a valid physical postal address of the
+  sender"* **with no geographic limitation**, and the FTC's guidance is illustrative rather than exhaustive.
+  **A São Paulo address satisfies the statute.** The cost is commercial, not legal.
+- **Deliverability: WOUNDS, does not kill.** Every mandatory requirement is satisfiable from Brazil at ~$0,
+  and she is far below the 5.000/day bulk threshold. **And the agent reported its own failure: it found NO
+  primary evidence that regulated-industry gateways classify compliance-flavoured first-contact mail as
+  phishing.** *"That hypothesis is UNVERIFIED and I could not substantiate it"* — my hypothesis, correctly
+  refused.
+- **The quality-system objection is weaker than it looks**, and the agent refused to overstate it:
+  **21 CFR 820 became the Quality Management System Regulation in 2024 and §820.50 "Purchasing controls" no
+  longer exists**, with ISO 13485 incorporated by reference instead.
+
+---
+
+# FINAL: DEAD, BOTH VERSIONS
+
+| | |
+|---|---|
+| **The original** | ~149 reachable inboxes; needs $4.500–17.800/yr each from a buyer whose full service costs $250–849 |
+| **The US-agent pivot** | The #1 buyer already ships the product; total industry gross is $3,9–13,1M |
+| **The moat** | Free on a public data marketplace since 2013; and the change-log is two downloads a year |
+| **The artefact** | 100% of vanished manufacturers are anonymous integers — **the finding cannot name the factory** |
+
+## THE HONEST LEDGER OF MY OWN ERRORS TODAY
+
+**Three, all caught by agents, all material:**
+
+1. **I joined the wrong table** and accused a correct plan of a 3× overstatement.
+2. **I generalised from that error** to *"every internally-computed number in that archive is now suspect."*
+   **Withdrawn.**
+3. **I quoted listing rows as establishment counts** and inflated the concentration figures ~6×.
+
+> **The pattern in all three: I ran a fast computation, got a striking result, and published it without asking
+> what would make it wrong. That is exactly the failure mode this file's evidence standard exists to prevent,
+> and I committed it three times in one afternoon while auditing someone else for the same thing.**
+>
+> **The rule earned: A RECOMPUTATION THAT DISAGREES WITH A CAREFUL SOURCE IS EVIDENCE ABOUT THE
+> RECOMPUTATION FIRST.**
+
+**What this candidate cost: about two hours and zero dollars. What it produced: a fifth condition on the
+erasure moat, a measured enrichment match rate, and three corrections to my own method.** The six hunts
+running now carry all of it.
