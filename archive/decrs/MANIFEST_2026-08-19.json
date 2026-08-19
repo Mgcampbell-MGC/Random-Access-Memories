@@ -1,0 +1,20 @@
+{
+  "source_reg": "https://www.accessdata.fda.gov/cder/drls_reg.zip",
+  "source_excluded": "https://www.accessdata.fda.gov/cder/drls_excluded.zip",
+  "captured_utc": "2026-08-19",
+  "file_mtime_utc": "2026-08-19T03:00Z",
+  "sha256_drls_reg_txt": "48ad8def6f3057341ffaefec5c72c538c2253441ae69b324784ae97d701aa0a0",
+  "sha256_drls_excluded_txt": "93c0e687cecf0dcbe69286bee2ce5384c2e3d0fcf5eb49e7580c454d75affc13",
+  "reg_rows": 10414,
+  "excluded_rows": 20,
+  "unique_fei": 9837,
+  "unique_firm_name": 7736,
+  "unique_registrant_name": 6758,
+  "establishment_contact_email_fill": "10414/10414 = 100.00%",
+  "registrant_contact_email_fill": "10414/10414 = 100.00%",
+  "agent_details_fill": "4764/10414 = 45.75%",
+  "expiration_date_distinct_values": [
+    "12/31/2026"
+  ],
+  "note": "Day 0 of the change-log. FDA publishes today's state only; it never publishes what left. Compact columns only - full raw file belongs in object storage, not git."
+}

@@ -199,6 +199,62 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
 
 ---
 
+- **★★ THE KNOWLEDGE-LIABILITY TEST — ask of every reconciliation, detection or completeness candidate:
+  "WHEN THIS FINDS SOMETHING, DOES THE BUYER GET MONEY, OR A PROBLEM?"** An objective acceptance test makes a
+  deliverable *sellable in writing*; it does not make it *wanted*. Where the finding creates a duty to
+  self-correct (minimum-wage arrears, royalty underpayments, a bordereau wrong for three years), **the buyer's
+  rational response to a perfect detector is to look away — so demand is suppressed exactly where the product
+  is most valuable.** Worse on the wholesale route: a bureau that runs the check across its book may find
+  breaches *in work it did itself*. **A sharper split than price, pool size, or any constraint in this file.**
+  See `THE_MACHINE_VERIFIABLE_HUNT.md`.
+- **★ THE FREE-VALIDATOR SCREEN — run it before anything else.** The commonest cause of death across seventeen
+  objective-test spaces is that **the body that DEFINES a standard also PUBLISHES A FREE VALIDATOR** —
+  EPUBCheck, Ace, Pinnacle 21 Community, the EN 16931 Schematron, Google Merchant Center diagnostics, GFW Pro.
+  Structural, not accidental: *a standards body's job is to make conformance testable, so it gives the test
+  away.* **The corollary is the useful half: SELL WHERE THE CHECK IS FREE BUT THE RULE IS SCATTERED** — across
+  a statute, four rate tables, a taxonomy and six years of history, with no owner who has a reason to ship it.
+- **★ THE SEPARATION LAW — a scheduled maintenance window only produces a business for a THIRD party where
+  something FORBIDS the maintainer from covering the gap it created.** In the seed case that something is
+  **capital** (a calibration lab does not own a US$1M rental fleet) — **the referral is not generosity, it is a
+  structural inability to compete.** Strip the capital out and the roles collapse: the implementation partner
+  sells the reconciliation, the payroll bureau sells the parallel run, the consultant sells the audit prep.
+  **The only non-capital separator found in sixteen instances is a STATUTORY INDEPENDENCE RULE** (ISO/IEC
+  17021-1 §5.2.5, MDR Annex VII, Reg (EU) 537/2014 art. 5). **That short list is where to hunt next.**
+  And **THE COVER-IS-THE-SAME-THING LAW**: what fills a gap is whatever made it — a credentialed capability
+  needs a credential, a physical one needs an asset. **The property that makes a window predictable is the
+  property that locks her out.** See `THE_MAINTENANCE_WINDOW.md`.
+- **★ THE GATE/CONTACT ANTI-CORRELATION — screen on EMAIL FIRST, money-gate SECOND.** Across twelve fee-gated
+  registers the biggest gates publish the least contact data (UK Licensed Sponsors: 127.391 orgs at £574–£1.579
+  each, **five columns, no contact field**; UKGC and DOL Form 5500 the same), while the one register publishing
+  two working emails per row has the fuzziest gate. **And THE POSTAL LIST LAW takes a second bound: the split
+  is PER-REGISTER, not national.** Measured: **FDA DECRS 100% · Charity Commission 80,5% (148.191/184.104) ·
+  FCC ULS 75,4% · FMCSA brokers 75,2%** — against **243 columns of SEC Form ADV with no email at all**, and
+  none in Form 990 or Form 5500. The exception is **US federal agencies that collect email as part of an
+  ELECTRONIC FILING obligation.** See `THE_FEE_GATE_CENSUS.md`.
+- **★ A 30% DANGLE RATE IS MORE LIKELY A SCHEMA MISREADING THAN A FINDING. Net every "dangling" set against
+  the register that records the CURE.** Worked twice in one day: an FDA registrant-vs-establishment gap of
+  29,9% was simply the normal shape of the table, and a raw IRS result of 15,1% of filers collapsed to **5,8%
+  (2.194 hits → 205)** once netted against Publication 78. *(Third occurrence of this failure mode in the file,
+  two of them mine. The antidote never changes: **a recomputation that disagrees with a careful source is
+  evidence about the recomputation first.**)* And **SCREEN FOR THE AMENDMENT DUTY FIRST — if nobody is REQUIRED
+  to keep a declaration current, stop**; that duty is the only thing that defeats append-only cruft.
+  See `THE_DANGLING_REFERENCE.md`.
+- **★ THE BUILDABILITY THRESHOLD — a commoditised capability never DEFENDS a business, but it can ADMIT one.**
+  It changes nothing for a firm that could already afford the headcount and everything for the operator who was
+  arithmetically excluded. **Screen for candidates that were IMPOSSIBLE for one person in 2024 and are merely
+  HARD now** — the incumbent is absent not because it cannot come but because it has not noticed, and
+  `THE_CAPABILITY_ANSWER` already priced that absence at **~one quarter**, the length of a procurement cycle.
+  **So buildability buys a quarter and nothing more; only an accumulating asset extends it.** Corollary: if a
+  candidate would also have worked in 2024, someone with a sales team has already built it. **2026 capability
+  changes her COST OF OPERATING, never her RIGHT TO CHARGE.**
+- **THE INVITED-SEAT CORRECTION — giving an agent its own identity is a DOWNGRADE of credential risk, not an
+  escape from C4.** A scoped, named, revocable seat is better than a shared password and is **still standing
+  access to their system**, and it still triggers the vendor security review `THE ONBOARDING LAW` says
+  written-only cannot survive. **Where it does pay is inside the wholesale shape: the PARTNER invites one
+  vendor seat, the partner's security review happens ONCE, and the end clients never onboard her at all.**
+  *(Also: "Agent Mail" needs no vendor — it is a mailbox, and a naming convention sold as a feature.)*
+  See `THE_GROK_BOT_PARTS.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
