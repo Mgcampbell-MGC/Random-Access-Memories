@@ -156,6 +156,18 @@ auditing their own sources.
 inventory unless made-to-order · **anything requiring her to be believed as an expert** · **anything built
 around death** *(added 17 Aug — she is uneasy about it, and it is her life, not an argument)*.
 
+> ### ★ C8 — DOMAIN AFFINITY IS A REAL SCREEN, NOT A SOFT ONE *(added 19 Aug)*
+> **She is a 26-year-old FORMER RUNWAY MODEL.** She will be alone with this business for three years, so a
+> candidate she finds alienating fails on persistence even when the economics work. **Hunt inside worlds she
+> knows: fashion, modelling, apparel, beauty, and the creative-licensing economy.**
+>
+> **★ BUT HER MODELLING BACKGROUND IS A KNOWLEDGE ASSET, NOT A PRESENCE ASSET, and this is the hard part.**
+> C2 forbids her face, her name and any audience; C7 forbids her network; and the expert veto forbids her being
+> credible as a fashion authority. **So every candidate whose value comes from her being RECOGNISED, being ON
+> CAMERA, having CONTACTS, or being BELIEVED as a taste authority is dead on arrival.** What survives is what
+> she KNOWS about how the industry actually operates — used to spot a structural gap a machine can then serve.
+> **The insight is hers; the delivery must never be.**
+
 **Not constraints:** the USA is not the only market — UK, EU, Canada and Australia are open, and
 **Australian and Northern-Hemisphere seasons are opposite, which fills each other's trough.**
 
