@@ -50,11 +50,11 @@ SECTION 2 — THE GOVERNING ARITHMETIC. READ THIS BEFORE PROPOSING ANYTHING.
 ================================================================================
 
   Target, net, in her hands            US$10,000/month
-  Brazilian burden, working figure     ~25% (being verified; range 6-33%)
-  Gross revenue required               ~US$13,000/month  (~US$156,000/year)
+  Brazilian burden, VERIFIED            8.1% tax / ~10% incl. rail + accountant
+  Gross revenue required               ~US$11,100/month  (~US$133,200/year)
   Her time                             30 h/week = ~130 h/month
   Of which actual delivery             ~78 h/month (60%, generous for a solo)
-  REQUIRED REALISATION                 ~US$167 PER HOUR OF DELIVERY TIME
+  REQUIRED REALISATION                 ~US$142 PER HOUR OF DELIVERY TIME
 
 WHAT THIS KILLS, AND IT IS NOT A MATTER OF OPINION:
 
@@ -66,13 +66,13 @@ WHAT THIS KILLS, AND IT IS NOT A MATTER OF OPINION:
 The proof, so you do not have to take it on faith. The best-designed
 hand-production business this project ever received priced a professional
 written deliverable at US$325 per unit, covering up to 150 source pages, one
-clarification round and one revision. To gross US$13,000/month she must deliver
-FORTY of them per month inside 78 delivery hours — UNDER TWO HOURS EACH,
+clarification round and one revision. To gross US$11,100/month she must deliver
+THIRTY-FOUR of them per month inside 78 delivery hours — ~2h20 EACH,
 including intake, reading, drafting and revision. It is not credible.
 
 Meanwhile, observed live listings for written deliverables on freelance
 marketplaces sit at US$15, US$30 and US$45 — realising perhaps US$15-30/hour.
-The gap to US$167 is five to eleven times. No pricing discipline closes it.
+The gap to US$142 is five to nine times. No pricing discipline closes it.
 
 THEREFORE, revenue must come from one of only four places:
 
@@ -350,7 +350,7 @@ ON DISTRIBUTION — THE ACTUAL BINDING CONSTRAINT
     set by the RESELLER'S CLIENT REVENUE, not by the self-serve comparable.
     It is the only structure found in seventy-two candidates in which C1, C2 and
     the expert veto stop being costs and become the product's shape.
-    Arithmetic: 20 firms at US$650/month = US$13,000. Twenty, not three hundred.
+    Arithmetic: 20 firms at US$650/month = US$11,100. Twenty, not three hundred.
     Positioning line that tested well: "You own the relationship. We are your
     invisible department."
 
@@ -544,7 +544,7 @@ AGENT 1 — THE WHOLESALE BUYER HUNT.  *** HIGHEST PRIORITY ***
   professional-indemnity insurer require of a subprocessor? How many such firms
   exist and are they contactable by email?
   Deliverable: a ranked list of reseller populations, with the arithmetic for
-  reaching US$13,000/month from 15-25 of them.
+  reaching US$11,100/month from 15-25 of them.
 
 AGENT 2 — THE COMPOUNDING DATASET (S4).
   What dataset can one person accumulate in 30 h/week that someone pays a
@@ -593,7 +593,7 @@ AGENT 3 — MATCHING AND COMMISSION AGENCY (S6).
   which side can she acquire first, and why would that side join an empty
   marketplace?
   Compute, for every commission rate you find with a source, the monthly flow
-  required to gross US$13,000.
+  required to gross US$11,100.
 
 AGENT 4 — B2B SOFTWARE MARKETPLACES (S5) AND VERIFIED SOLO SOFTWARE REVENUE.
   Consumer mobile app stores are settled dead. B2B software marketplaces are
@@ -773,7 +773,7 @@ When the agents report, do NOT simply concatenate them. Do this:
   4. FOR EACH SURVIVING CANDIDATE, state: the shape (S1-S6); which of the four
      revenue structures (A-D); the named buyer; what breaks for that buyer
      without it; the observed comparable price with a URL; the number of
-     customers needed for US$13,000/month; the channel that reaches them; the
+     customers needed for US$11,100/month; the channel that reaches them; the
      capital tier; the onboarding count; and THE HONEST REASON IT MIGHT FAIL.
 
   5. RANK BY WHAT IS LEAST LIKELY TO BE WRONG, not by what is most exciting.
@@ -784,7 +784,7 @@ SECTION 12 — WHAT A GOOD ANSWER LOOKS LIKE
 
   * It names a buyer, not a market.
   * It has an observed price with a URL, not an estimate.
-  * It states the arithmetic to US$13,000/month explicitly.
+  * It states the arithmetic to US$11,100/month explicitly.
   * It says which of the four revenue structures it is, and therefore why her
     78 delivery hours are not the bottleneck.
   * It answers THE ONBOARDING LAW with a count.

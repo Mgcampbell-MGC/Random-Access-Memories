@@ -8,7 +8,10 @@ graveyard, a parts bin, and roughly twenty derived laws. Read this before propos
 > **US$10.000/month NET TAKE-HOME, reached within 12–18 MONTHS.** Not gross, not company profit — in her
 > hands after Brazilian tax. Working figure for gross revenue required: **~US$13.000/month**.
 >
-> **Against 30 h/week that is ~US$167 per hour of delivery time, which means ANY business where she
+> **Gross required, VERIFIED 19 Aug: US$11.100/month (R$57.800).** Brazil taxes a zero-payroll service
+> **exporter** at **8,1%** — *Lucro Presumido*, not Simples. See `THE_TAX_ANSWER.md`.
+>
+> **Against 30 h/week that is ~US$142 per hour of delivery time, which means ANY business where she
 > personally produces each unit of output is arithmetically dead.** Her hours build or operate an asset;
 > they never make the units. **See `THE_REBUILD.md` — read it before proposing anything.**
 
@@ -157,7 +160,28 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
 - **Lost-knowledge and documentation products are closed.** Where no third party holds a veto there is no
   buyer; where a veto exists, the veto-holder or a funded vendor publishes the artefact free.
 - **App stores take 12–18 months** to a top-quartile solo outcome. Organic discovery for a new indie app is
-  effectively zero.
+  effectively zero. **And B2B software marketplaces are the same animal in a better suit** — a full census of
+  all **4.192 paid Atlassian cloud apps** gives a **median of 13 installs**, a **median VENDOR total of 8**,
+  and **12 of 1.384 single-app vendors above 1.000 installs**; the four with clean histories took **5,8–7
+  years.** See `THE_MARKETPLACE_CENSUS.md`.
+- **INVOICE, DON'T CHECKOUT.** Wise costs ~0,5%; a Stripe card checkout costs **~8% all-in** — *more than her
+  entire tax bill.* How the money arrives is now part of the candidate screen.
+- **THE HEAD-START ASYMMETRY** — the property that makes a dataset defensible (it compounds) is the same one
+  that makes it un-enterable. **Screen for this FIRST.** The only level moment is a **CLOCK-START**: a
+  register or regime that has only just come into existence. And **THE STATE KEEPS STATE, NOT HISTORY** — a
+  register overwrites, so *its change-log is the one artefact the holder will never produce and nobody can
+  back-fill.* See `THE_DATASET_HUNT.md`.
+- **AI answer engines cite by RETRIEVAL, not training — the lag is DAYS.** Separate crawler fleets, per the
+  providers' own docs; a site blocking every training crawler was still cited first. **But it is ~0,6% of
+  Google's referral volume, so it is a secondary channel, never the primary one.** Correction: *"SEO is dead"*
+  is too strong — **indexation is free, fast and written-only; RANKING is what stays out of reach.** And
+  **THE SOURCING/REPUTATION SPLIT**: she loses *"which vendor should I use"* permanently, and can win *"what
+  is the answer."* **llms.txt is noise** (Google: *"Google Search itself doesn't use them"*; 97% of published
+  files got zero requests). See `THE_RETRIEVAL_ANSWER.md`.
+- **★ THE CONVERGENCE — for an S4 dataset the PRODUCT AND THE DISTRIBUTION ARE THE SAME ARTEFACT.** Two
+  agents on unrelated questions arrived here independently. The pages that constitute the dataset are the
+  pages that get cited. **It is the only structure found in 72 candidates that NEUTRALISES C2 rather than
+  tolerating it, and it dissolves THE DISTRIBUTION SCISSORS.**
 - **Time savings only sell to a buyer who is short of hours.** *(THE CONSTRAINT-SIDE LAW, 18 Aug — see
   `THE_CONSTRAINT_SIDE_LAW.md`.)* Ask **"what breaks if their volume doubled next month?"** A
   *demand-constrained* buyer has spare hours already and will not pay to be given more. The buyer to hunt is

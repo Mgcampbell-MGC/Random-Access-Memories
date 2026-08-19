@@ -1,5 +1,11 @@
 # THE REBUILD — 19 Aug 2026. Ground up, from the money backwards.
 
+> ### ⚠ NUMBERS CORRECTED, same day. The tax leg reported and the target moved DOWN.
+> **Gross required fell from an assumed ~US$13.000/month to a verified US$11.100/month**, because Brazil taxes
+> a zero-payroll service EXPORTER at **8,1%**, not the ~25% assumed here. Every figure below is the corrected
+> one. **See `THE_TAX_ANSWER.md`. The conclusions are unchanged — the production ceiling still holds at
+> US$142 per delivery hour — but the arithmetic is now measured rather than guessed.**
+
 **The founder changed two things in one sentence: the target went from R$12.000–15.000/month
 (≈US$2.300–2.900) to US$10.000/month NET TAKE-HOME, and the constraints stopped being walls and became
 LEVERS WITH PRICES.**
@@ -16,11 +22,11 @@ LEVERS WITH PRICES.**
 | | |
 |---|---|
 | Target, net, in her hands | **US$10.000/month** |
-| Brazilian burden on a solo operator | **UNDER RESEARCH.** Somewhere between ~6% (Simples Anexo III, best case) and ~33% (Anexo V plus pró-labore INSS and IRPF). **Working figure ~25%, flagged, pending the tax leg** |
-| **Gross revenue required** | **≈ US$13.000/month · US$156.000/year** |
+| Brazilian burden on a solo operator | **ANSWERED 19 Aug — 8,1% tax, ~10,0% including rail and accountant**, as a *Lucro Presumido* PJ selling services abroad. See `THE_TAX_ANSWER.md` |
+| **Gross revenue required** | **≈ US$11.100/month · US$133.200/year** *(R$57.800/month at PTAX 5,2037)* |
 | Her time | 30 h/week × 4,33 = **130 h/month** |
 | Of which actual delivery, after selling, admin, support | **~78 h/month** *(60% — generous for a solo operator)* |
-| **Required realisation** | **≈ US$100 per hour of TOTAL time · ≈ US$167 per hour of DELIVERY time** |
+| **Required realisation** | **≈ US$85 per hour of TOTAL time · ≈ US$142 per hour of DELIVERY time** |
 
 ### What that does to the existing board — and it is not a re-ranking this time, it is a kill
 
@@ -28,8 +34,8 @@ LEVERS WITH PRICES.**
 **$325 per submission**, one insured, ≤5 locations, ≤3 losses, **≤150 source pages**, one clarification round,
 one revision.
 
-> **To gross $13.000/month at $325 a unit she must deliver 40 units a month. In 78 delivery hours. That is
-> UNDER TWO HOURS PER UNIT** — intake, reading up to 150 pages of applications and loss runs, drafting,
+> **To gross $11.100/month at $325 a unit she must deliver 34 units a month. In 78 delivery hours. That is
+> ABOUT TWO HOURS AND TWENTY MINUTES PER UNIT** — intake, reading up to 150 pages of applications and loss runs, drafting,
 > building the proof sheet, and handling the revision.
 >
 > **It is not credible, and it is the best-designed version of the shape.** The weaker versions are worse:
@@ -79,15 +85,15 @@ Production has never once been the problem.
 
 ### And the target now tells us which channels are even eligible
 
-$13.000/month decomposes into price × customers, and each row demands a different channel:
+$11.100/month decomposes into price × customers, and each row demands a different channel:
 
 | Price | Customers needed | The only channels that deliver that many |
 |---|---|---|
-| **$29/mo** | **448** | High-volume self-serve only — SEO, marketplace, paid ads |
-| **$99/mo** | **131** | Self-serve, marketplace, or sustained cold email |
-| **$299/mo** | **43** | Cold email · marketplace · partner |
-| **$999/mo** | **13** | **Partner / white-label — thirteen relationships** |
-| **$2.500/mo** | **5** | Five relationships, each of them a negotiation |
+| **$29/mo** | **383** | High-volume self-serve only — SEO, marketplace, paid ads |
+| **$99/mo** | **112** | Self-serve, marketplace, or sustained cold email |
+| **$299/mo** | **37** | Cold email · marketplace · partner |
+| **$999/mo** | **11** | **Partner / white-label — thirteen relationships** |
+| **$2.500/mo** | **4** | Five relationships, each of them a negotiation |
 
 > **THE DISTRIBUTION SCISSORS — being FACELESS pushes her toward many small self-serve customers, because a
 > relationship needs a person. Being unable to BUILD AN AUDIENCE or run a sales motion pushes her toward few
@@ -168,7 +174,7 @@ local access for free: native Portuguese, local context, local time zone, local 
 
 **What it COSTS, stated honestly:**
 
-- **Price points are lower.** ~US$13.000/month ≈ **R$70.000/month** from Brazilian SMEs implies materially
+- **Price points are lower.** ~US$11.100/month ≈ **R$57.800/month** from Brazilian SMEs implies materially
   more customers than the same revenue from US or UK buyers. This is being quantified with observed prices.
 - **THE CURRENCY DIRECTION LAW says earn hard, spend soft.** Earning BRL domestically earns the *spending*
   currency — worse for resilience, and worse still under the assumed 2027–28 crash.
@@ -233,5 +239,5 @@ possible.**
 
 > **The old file asked "what can she do given these constraints?" and kept arriving at prose-from-a-form,
 > because that is the most constraint-compatible activity in existence. The new question is "what pays
-> $13.000 a month to a machine and a channel?" — and her constraints are then applied as the LAST filter, not
+> $11.100 a month to a machine and a channel?" — and her constraints are then applied as the LAST filter, not
 > the first, exactly as RULE 2 requires.**
