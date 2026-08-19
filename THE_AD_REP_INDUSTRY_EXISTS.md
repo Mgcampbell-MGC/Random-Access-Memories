@@ -155,3 +155,95 @@ place: THE ONBOARDING LAW.** Selling the placement works in writing. **Winning t
 2. **SELL THE CONTRACT, NOT THE UNIT.** Where an industry already prices 12× and 24× frequency contracts, one
    sale can be worth twenty-four placements — which is the only observed mechanism that collapses the
    per-unit hour cost in a sales business.
+
+---
+
+# PART TWO — the technology leg, 19 Aug 2026. Same kill, different direction.
+
+**Twenty-five observed rate cards from publishers' own pages and storefronts. A second agent, a completely
+different niche family, and it arrives at the same structural wall.**
+
+## ★★ THE SQUEEZE — the finding that closes the candidate
+
+> **The good inventory is full and does not need her. The inventory that needs her cannot pay her.**
+
+**The publishers are SUPPLY-CONSTRAINED, and they say so in their own words:**
+
+| | |
+|---|---|
+| **Cooper Press** *(one owner, 11 newsletters, 450.000+ developers)* | *"Due to high levels of interest, we maintain a waiting list and **take reservations each quarter in advance**."* |
+| **Data Elixir** *(45.000 subs, 57% open rate, one person)* | *"**Books out 4–6 weeks in advance.**"* |
+| **A tl;dr sec sponsor, quoted on the sponsor page** | *"**We'll buy as many sponsored issues as you'll sell us!**"* |
+| **This Week in React** | Public calendar shows dates already sold |
+
+> ### THE CONSTRAINT-SIDE LAW, POINTED AT THE SUPPLIER INSTEAD OF THE BUYER — I have only ever asked *"what breaks if the BUYER's volume doubled?"* **Ask it of the SUPPLIER too. A weekly newsletter has ~4,3 issues a month and one premium slot in each. NOTHING breaks if demand doubles, because they cannot print more issues. Bringing more advertisers to a sold-out publisher is worth exactly nothing to them.**
+>
+> **In any intermediary business, run the constraint-side test on BOTH SIDES. A supply-constrained supplier does not need a salesperson.**
+
+**And the unsold inventory is unsold for a reason:** Web Tools Weekly **$175**, Launch Llama **$199**. Twenty-five
+of those is $4.400 booked — **$660/month at 15%.** *(beehiiv's own illustrative Ad Network payout is "$5 for
+every 1.000 unique opens" — roughly an order of magnitude below what direct-sold placements achieve. That is
+what free automated inbound demand is worth.)*
+
+## ★ CORRECTION — the 30% commission premise was wrong, and I built the arithmetic on it
+
+| Platform | Publisher pays |
+|---|---|
+| **Paved Marketplace** | **30%** on bookings · 40% on Ad Network performance |
+| **Passionfroot** | **2%** when the brand comes to you · **15% when Passionfroot brings the brand** |
+| **Paved Booker** *(self-serve booking page)* | **0%** — Stripe fee only |
+| **beehiiv Ad Network** | Take rate **not disclosed**; publisher-facing framing is "no cut" — **UNVERIFIED** |
+| **Sponsy** | **$79–109/month, no commission** — software, not a marketplace |
+
+> **The observed range is 0–30%, and the modal price for MATCHED DEMAND is 15%, not 30%. At 15% the required
+> flow doubles to ~US$74.000/month.** *(This also resolves the contradiction in Part One in the S6 agent's
+> favour: Paved's 30% is real and published — it is simply the top of the range, not the market rate.)*
+
+## The arithmetic that closes it
+
+**Median in-band single placement across 25 observations ≈ $1.500.**
+
+| Commission | Monthly flow needed | Placements/month | **Publishers required** |
+|---|---|---|---|
+| **30%** | $37.000 | ~25 | **~6 weekly publishers, exclusively repped, SOLD OUT EVERY WEEK, forever** |
+| **15%** | $74.000 | ~50 | **~12 publishers, all sold out, all month, all year** |
+
+## What was genuinely good, and is worth keeping
+
+**Cybersecurity was the best niche found, and the reason is worth carrying forward.** It is the only place
+where all three appeared together: **advertisers who PRE-BUY BLOCKS OF ISSUES** — tl;dr sec's own page:
+*"companies are pre-purchasing a specific number of 'issues' up front and then selecting dates over one or
+more quarters"* — **a practitioner tier no network has touched** (tl;dr sec 120.000+, Vulnerable U 32.000+,
+Return on Security, Risky Business, Unsupervised Learning 94.518 — **every one contactable only by direct
+email, none listed on any network**), and **no published prices anywhere**, which is where a broker's margin
+would live.
+
+**Wiz was verified advertising in two different newsletters** — one confirmed same-advertiser-across-titles
+instance, against rosters containing Netflix, Datadog, Databricks, SentinelOne, Palo Alto, Vanta, Tines.
+
+> **Every publisher-side contact in this family is written. C1 is satisfied on the supply side. That is a real
+> positive finding — it just does not matter, because the supply side is not the constraint.**
+
+**Highest price per subscriber found: cloud/DevOps at $83–110 per 1.000** — and note the direction, because it
+inverts the intuition: **price per subscriber FALLS as lists grow.** This Week in React charged €43/1.000 at
+4.600 subscribers and €37/1.000 at 40.297. **Bigger is not better per unit.**
+
+## VERDICT — the advertising-representation candidate is dead
+
+**Two agents, two unrelated niche families, two independent structural kills that compound:**
+
+1. **The mandate cannot be won in writing** *(Part One)* — the outsourced rep industry is forty years old, every
+   repped publication is already repped, and the pitch to a publisher is *"advertisers take my call,"* which is
+   a speaking claim and an expertise claim at once.
+2. **The publishers who could be won do not need selling** *(Part Two)* — they are supply-constrained and
+   booked out a quarter ahead, and the inventory that is genuinely available pays $175–250 a placement.
+
+**Three laws survive it, and they are the return on this hunt:**
+
+- **THE APPOINTMENT LAYER TEST** — ask separately whether the TRANSACTION runs in writing and whether the
+  MANDATE can be won in writing. Different questions, different answers, and the second is where intermediary
+  businesses die.
+- **THE CONSTRAINT-SIDE LAW APPLIES TO BOTH SIDES.** A supply-constrained supplier does not need a salesperson.
+- **SELL THE CONTRACT, NOT THE UNIT** — where an industry already prices 12× and 24× frequency contracts, one
+  sale can be worth twenty-four placements. *(NAFA sells a 24× contract as a single $10.920 booking. Still the
+  only observed mechanism that collapses per-unit hour cost in a sales business.)*
