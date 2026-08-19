@@ -180,3 +180,172 @@ relationship — **and no systematic way of knowing whose clock is running out.*
    matrix is the discipline that answers it.
 
 **Three miners and the capability agent are still out. This is the first half of an answer, not the answer.**
+
+---
+
+# PART TWO — THE RECOVERY FAMILY. Same seam, different direction.
+
+**Eight money-recovery plans mined. The structural finding is independent of the regulatory slice and lands in
+the same place.**
+
+## ★★ THE RECOVERY COUPLING
+
+> **Credential access and action path are INVERSELY COUPLED.**
+>
+> - **The variants with a real claim against a third party who owes money REQUIRE A LOGIN.** VOLTA needs OAuth
+>   into the seller's Mercado Livre and Mercado Pago; DisputeKit *is* a Stripe App with OAuth into the
+>   merchant's account. *(Note VOLTA's own defence — "sellers never provide VOLTA with their passwords" —
+>   **OAuth is standing access. The doc does not notice this.**)*
+> - **The variants that are genuinely FILE-ONLY have NO THIRD PARTY WHO OWES ANYTHING.** The Raio-X and Escopo
+>   Pago "recover" money by asking the customer's own customer for it.
+> - **Exactly one file breaks the coupling, and it does it with one move: THE CREDENTIAL IS GRANTED TO A
+>   PARTNER PROFESSIONAL, NOT TO THE OPERATOR.** Caixa de Volta works from NF-e XML and SPED files she is
+>   emailed; a partnered *contador* holds the e-CAC *procuração* and files.
+
+**That is the wholesale escape again — third independent arrival today.** *"The AI does the dreaded 90%; the
+partner does the signature, not the labour."*
+
+**⚠ And its load-bearing legal claim is UNVERIFIED.** The file asserts *"the restitution request can be made
+by any professional with the technical knowledge — it does not strictly require an accountant or lawyer"* and
+**cites no statute, IN or regulation.** That single sentence carries the only variant that beats the
+credential problem.
+
+---
+
+## THE MECHANISMS WORTH MORE THAN THE EIGHT BUSINESSES
+
+### ★★ M24 · BLIND MODE — privacy as a PRODUCT, not a promise
+
+**A single HTML file the client runs on their own computer.** It hashes phone numbers and strips names before
+anything is uploaded; **the same salt goes on the second export so the join still works;** she never receives
+an identifier.
+
+Offered as the answer to what the file calls the best objection in the sales process — *"'I can't send
+customer conversations' — the best objection, it means they're serious"* — with the line:
+
+> ***"I never see who they are, and I can still cross-reference. You keep the key."***
+
+**This is the strongest object in the archive for a founder forbidden from holding customer data. It is
+build-once, ship-to-everyone, and it converts C4 from a limitation into a differentiator.**
+*(Mechanically: `sha256(SALT + normalised_phone)[:10]`, per-client salt never reused. **And the gotcha the file
+flags: normalise before hashing — strip +55, spaces, parens, and handle the Brazilian mobile 9th-digit
+inconsistency, "or the join silently fails on a third of rows and she won't notice."**)*
+
+### ★★ M14 · THE FEE THAT TAKES ITSELF
+
+Her fee is a **split executed at settlement inside the client's own payment account** — a `walletId` and a
+percentage, applied when the money actually lands, **refund-symmetric** (a refund reverses the fee, a partial
+refund reverses it pro-rata). Rail fees are read live from the API, never hardcoded.
+
+> ***"There is no reconciliation fight, no 'that client would have come back anyway' invoice dispute, no
+> chasing. The fee takes itself, only when money actually lands."***
+
+**For a founder who cannot get on a call to argue an invoice, this may be the single most valuable component
+in the entire archive.** *(Its own kill gate is honest: test an unlinked split to an **independently
+registered** account — *"never via POST /v3/accounts — that tests the wrong thing"* — sandbox then R$5 live.
+A 400/403 is a NO-GO.)*
+
+### ★ M16 · THE MARGIN GATE — *"The refusal is the trust product"*
+
+Software that **refuses to propose any campaign** leaving the customer under 15% net after commission,
+consumables, taxes, rail fee and her own fee.
+
+> *"Every incumbent and agency will happily run a campaign that loses the salon money, because they are paid
+> either way. Caixa Cheia is the only vendor whose software says 'não' to a bad package."*
+
+**And the Raio-X prints the refusal rather than hiding it. That is a credibility substitute for an expertise
+she is not allowed to claim.**
+
+### ★ M11 · THE BLANK-COLUMNS RITUAL — an S4 engine hiding inside an S1 deliverable
+
+The recoverables spreadsheet ships with its last three columns — `enviado_em`, `respondeu`, `agendou` —
+**deliberately blank. The client fills them in.**
+
+Three effects: it turns the report into a work tool · it creates the reason to return in 30 days · **and it
+generates her measured recovery rate, "the asset nobody else has."** *"If she implements nothing else,
+implement this."*
+
+> **A compounding dataset harvested for free from the customer's own follow-through.**
+
+### ★ M19 · PICK THE ROUTE WHERE THE HOLDER ADJUDICATES BEFORE PAYING
+
+*Compensação* offsets immediately — fast, but an un-homologated offset can draw an **isolated fine of 50%**.
+*Restituição* asks for cash and the authority reviews first.
+
+> *"With restitution, the worst realistic outcome is a reduced or denied claim, or a clarification request —
+> **never 'recovered, then clawed back with a penalty.'**"*
+>
+> **Generalised: prefer the claim route where the money-holder adjudicates BEFORE releasing, so a wrong claim
+> costs a "no" rather than a clawback plus a penalty.** The most portable risk-shaping idea in the slice.
+
+### ★ M4 · THE A/B/C MODEL — never blended
+
+**A — gross unconverted opportunity**, labelled verbatim *"This is NOT lost money. It is the size of the
+playing field."* · **B — loss attributable to a specific named failure**, every row defensible against a
+conversation ID · **C — still credibly recoverable.** Absolute rules: never present B or C as guaranteed ·
+every value traces to **the client's own price list, never a market average** · **where a price is a range,
+use the floor.**
+
+**The cleanest anti-fabrication device found anywhere in the archive.**
+
+### ★ M22 · GUARANTEE THE DIAGNOSIS, NEVER THE OUTCOME — and know why it is safe
+
+*"If I don't document at least 3 actionable booking failures in the sample, I refund the R$490."*
+
+> **And the file explains why that is safe to offer: three of the four commonest failures are DETERMINISTIC,
+> so in a real 40-conversation sample the probability of finding fewer than three is near zero. She is
+> guaranteeing something she can COMPUTE.**
+
+### M26 · RISK-BASED REVIEW — the only card that costs the hours down
+
+First three runs: review ≥20 cases, every failure category, every ambiguous join, best and worst, 5 random
+controls. **Mature monthly: only low-confidence labels, disputed joins, the top 10% of value, a 5-case random
+control — target 3–7 MINUTES per client.** Rejection rule: *"more than 2 errors in a 10-case check → reject
+and re-run the batch (do not hand-patch — a 20% error rate is systemic)."*
+
+> **Everything else in the slice that reviews each case by hand is dead on hours. This is the difference
+> between a desk and a job.**
+
+### And four more kept in one line each
+
+**M1 — *"The model may label. Only code calculates."*** *(Three files re-derive this independently.)* ·
+**M23 — score the FUNCTION, never a named individual**: *"O fluxo de agendamento tem atrito"* never *"a
+Profissional C converte mal"* — *"same finding, same actionability, completely different legal artifact"* ·
+**M28 — the anonymised sample artefact**, a fully built watermarked report for a fictional client:
+*"converts 'I do reception audits' into an object an owner understands in 90 seconds. Build it before selling
+anything"* — **it replaces credibility-by-person with credibility-by-object** · **M10 — schema fingerprints
+plus 150–200 golden fixtures**, which is what makes audit #12 cost a fraction of audit #1.
+
+---
+
+## THE TWO DEATHS THAT GENERALISE
+
+**★ THE INTAKE DEATH — the deal dies AFTER the sale.**
+> *"WhatsApp's native export works on one chat at a time. There is no 'export all conversations' button. There
+> never has been. Do the arithmetic: 400 conversations at ~45 seconds each is five hours of receptionist
+> labour to produce the input file. **Nobody will do that. The deal dies at intake — after she's sold it.**"*
+
+**Ask of every file-in candidate: how many minutes of the CUSTOMER'S labour does the input cost?**
+
+**★ THE JOB WITH BETTER MARGINS.**
+> *"Twelve hours of her judgment per client, R$3.900 a time, caps at roughly R$33k/month and never moves.
+> **That's a job with better margins, not a business.**"*
+
+*(And one buyer-qualification line worth stealing outright — the disqualifying question is "what is your
+conversion rate?": **"a number → disqualify, they have a system; a pause or a laugh → the sale just closed
+itself."**)*
+
+---
+
+## WHERE THE TWO SLICES AGREE
+
+**Two miners, sixteen plans, two unrelated industries, one conclusion:**
+
+| | Regulatory slice | Recovery slice |
+|---|---|---|
+| **The constraint-clean half** | Compute the statutory window from a free public register | Compute the discrepancy from a file the customer emails |
+| **The half that breaks everything** | File the petition — needs a signature, a portal login, a conversation | Claim the money — needs a login, or there is nobody who owes it |
+| **The one file that escaped** | ORIGEM — solved *"may never opine"* with a **closed vocabulary** | Caixa de Volta — solved the credential by **giving it to a partner** |
+
+> **Both slices independently found that the COMPUTATION is ownable and the ACTION is not. And in both, the
+> archive priced the action and gave the computation away.**
