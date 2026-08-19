@@ -146,7 +146,83 @@ listicles, and a clean negative with a named cause of death is an acceptable res
 
 ---
 
-## 6. What is now assumed, and should be corrected if wrong
+## 6. BRAZIL DOMESTIC IS A FIRST-CLASS MARKET — and it may be the best one
+
+**Re-stated by the founder, 19 Aug: the business does not have to sell to the USA.** This has been treated
+as a footnote for seventy-two candidates and it should not have been.
+
+**What selling domestically REMOVES — and these are the exact things that killed candidates here:**
+
+| Killer | Domestic status |
+|---|---|
+| The cross-border tax pincer that closed **S2** — PIS/COFINS on gross with no input credits *(SC COSIT 306/2017, 31/2023)* stacked against US state sales tax on her cost | **Does not arise** |
+| **LC 126/2007 art. 20** barring a *pessoa física* from foreign insurance her customers require | **Does not arise** |
+| **THE ONBOARDING LAW** — acquirer risk review, fiscal-rep appointment, vendor security diligence, all by voice | **Much thinner.** Pix settles in seconds, is effectively free, has no acquirer risk review and no chargeback arbitration to be argued by telephone |
+| The foreign-anonymous-vendor trust penalty — a São Paulo stranger handling a US broker's confidential client files | **Does not arise** |
+| **THE POSTAL LIST LAW** — of eight foreign registers, one published email | **Under field inspection now.** The Receita Federal public CNPJ dataset is a free bulk download of every registered company in Brazil; whether it carries email is being verified rather than assumed |
+
+**And it activates the one genuine arbitrage this file has ever identified.** RULE 2 records that *"Brazilian
+eyes on the ground"* was filtered out early as a constraint violation, and that underneath it sat **the only
+idea in the file that passes the inversion check — local access is real arbitrage.** Domestically she has
+local access for free: native Portuguese, local context, local time zone, local data.
+
+**What it COSTS, stated honestly:**
+
+- **Price points are lower.** ~US$13.000/month ≈ **R$70.000/month** from Brazilian SMEs implies materially
+  more customers than the same revenue from US or UK buyers. This is being quantified with observed prices.
+- **THE CURRENCY DIRECTION LAW says earn hard, spend soft.** Earning BRL domestically earns the *spending*
+  currency — worse for resilience, and worse still under the assumed 2027–28 crash.
+
+### The configuration that gets both — and this is the strongest structural idea in the rebuild
+
+> ### THE ASYMMETRIC PAIR — put the SOURCE in Brazil and the BUYER abroad.
+>
+> **Brazilian raw material is cheap, published in enormous volume, badly formatted, and protected by
+> language — which is her arbitrage and costs her nothing. Foreign buyers pay in hard currency — which is
+> THE CURRENCY DIRECTION LAW. The configuration that satisfies both at once is: SOMETHING OBTAINABLE ONLY IN
+> BRAZIL, SOLD TO SOMEONE WHO IS NOT IN BRAZIL.**
+
+**It survives every constraint by construction:** the data proves itself, so she is never believed as an
+expert · the source is public, so she never holds a customer credential · the asset compounds, so her hours
+do not produce the units · the buyer is foreign, so she is paid in dollars · and being anonymous is normal
+for a data vendor in a way it is not for a writer.
+
+**Concrete seed, now under research on legs 4 and 6:** foreign parties who must understand or screen a
+Brazilian counterparty — exporters and importers, compliance and KYC vendors, trade finance, foreign counsel,
+and market-entry work — against material that exists only in Portuguese and mostly only in PDF: the CNPJ
+register and *situação cadastral* changes, CEIS/CNEP debarment, PNCP procurement, INPI's weekly RPI, the
+Diário Oficial, DataJud. **Whether anyone actually pays for this is the open question, and it is the right
+kind of open question: a demand test, not a legal one.**
+
+---
+
+## 7. What the founder settled today, and what it rules out
+
+| Question | Answer | **Consequence** |
+|---|---|---|
+| **Is $10.000 a destination or a requirement?** | **Destination, 12–18 months** | **Rules OUT anything with a two-year discovery curve** — organic SEO as a primary channel, and any dataset that must compound for a year before the first sale. **Requires revenue to start by roughly month 6**, so the business must be sellable while still incomplete |
+| **Capital, one time?** | **US$500–2.500** | Buys an entity, tooling, domains, data acquisition and a small acquisition test. **Rules OUT paid acquisition as a CHANNEL** (it buys a test, not a customer base), a licensing or regulatory opinion, and **acquiring an existing cash-flowing asset** |
+| **Where is the line on faceless?** | ***"Open to it if it makes sense, but the idea needs to make sense"*** | **The default stays anonymous. A company brand or a pen name is a lever available ON ARGUMENT — it must never be the thing that rescues a weak idea.** No candidate may depend on a persona for its viability |
+
+### Which leaves exactly three channels alive
+
+**Cheap enough for $500–2.500, fast enough for 12–18 months, and compatible with having no face:**
+
+1. **Cold email** — the only channel that is simultaneously cheap, fast and faceless. Its constraint is
+   legality and deliverability for a foreign sender, which is why leg 3 is critical path. *(Note: CASL and
+   Australia's Spam Act require consent and effectively bar cold B2B mail; the US permits it under
+   conditions; **Brazil's LGPD position is being checked and may be the most permissive of all** — that would
+   be a significant finding.)*
+2. **Borrowed intent — a marketplace that already has buyers.** Costs nothing, supplies the trust she cannot.
+3. **White-label partners — thirteen relationships at ~$999.** Opened today by the C1 relaxation.
+
+**Everything else — SEO, ads, content, community, audience — is either too slow, too expensive, or forbidden.
+The search is now for a product that fits one of those three channels, not for a business that happens to be
+possible.**
+
+---
+
+## 8. What is now assumed, and should be corrected if wrong
 
 1. **US$10.000/month is NET, in her hands, after Brazilian tax** — not gross revenue, not company profit.
 2. **C1 is relaxed at SETUP ONLY** — a bounded number of one-off calls to open a supplier account, pass a

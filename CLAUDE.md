@@ -3,6 +3,15 @@
 **This repo is a business search for Sol — a solo founder in São Paulo. Seventy-two candidates, one
 graveyard, a parts bin, and roughly twenty derived laws. Read this before proposing anything.**
 
+> ### THE TARGET — reset 19 Aug 2026
+>
+> **US$10.000/month NET TAKE-HOME, reached within 12–18 MONTHS.** Not gross, not company profit — in her
+> hands after Brazilian tax. Working figure for gross revenue required: **~US$13.000/month**.
+>
+> **Against 30 h/week that is ~US$167 per hour of delivery time, which means ANY business where she
+> personally produces each unit of output is arithmetically dead.** Her hours build or operate an asset;
+> they never make the units. **See `THE_REBUILD.md` — read it before proposing anything.**
+
 ---
 
 ## THE SHAPE CHECK — run this before proposing any candidate
@@ -100,11 +109,11 @@ auditing their own sources.
 
 | | |
 |---|---|
-| **C1** | **NEVER speaks to anyone.** No calls, video, meetings, voice notes, in any language, ever. Written only |
-| **C2** | **Permanently faceless.** No camera, no personal brand, no audience-building. *(Governs PUBLIC facing, not private KYC to a payment processor)* |
+| **C1** | **Never speaks in ONGOING OPERATIONS.** No customer calls, video, meetings or voice notes, ever. *(Relaxed 19 Aug: a small, bounded number of ONE-OFF SETUP calls is now allowed — opening a supplier account, a payment-processor risk review, instructing counsel, signing a partner. This reopened the white-label door that `THE ONBOARDING LAW` had closed.)* |
+| **C2** | **Permanently faceless.** No camera, no personal brand, no audience-building. *(Governs PUBLIC facing, not private KYC to a payment processor.)* **On a company brand or a pen-name persona, 19 Aug: *"open to it if it makes sense, but the idea needs to make sense."* So the DEFAULT IS ANONYMOUS. A persona is a lever available on argument — it must never be the thing that rescues a weak idea.** |
 | **C3** | **No employees, no contractors, ever.** Vendors and suppliers are allowed; hiring a person is not |
 | **C4** | **Never takes custody of a customer credential** or standing access to their system. Work arrives as a file they send |
-| **C5** | **A few hundred US dollars, ONE TIME.** Not monthly |
+| **C5** | **US$500–2.500, ONE TIME.** *(Raised 19 Aug from "a few hundred." Still one-time, not monthly. This buys an entity, tooling, domains and a small acquisition test. It does NOT buy paid acquisition at scale, a legal/licensing opinion, or acquiring an existing asset.)* |
 | **C6** | **~30 h/week** |
 | **C7** | Personal São Paulo network is not a sales channel |
 
