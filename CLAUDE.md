@@ -358,6 +358,33 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   PAST-DATE is.** **(3) THE PUBLISHER SHIPS THE DELTA** — look for a `/daily/` directory first; the FCC serves
   per-weekday transaction zips and ClinicalTrials.gov serves a free version-history API.
 
+- **★★ THE CLAIMANT-EVIDENCE LAW — when a dispute or claims policy demands evidence, ASK WHOSE EVIDENCE.**
+  World-state evidence (*"slots were scarce that morning"*) is corroboration nobody asked for; claimant-conduct
+  evidence (*"I, holding THIS container, tried and was refused"*) is the actual requirement — and it is
+  account-specific, container-specific, and exists only inside the claimant's own logged-in session. **A third
+  party can only ever sell the corroboration.** This killed the port-appointment archive on its second leg,
+  independently of access. **It amends `THE CONTEMPORANEOUS-EVIDENCE RULE`, which was right that a
+  specified-time observation is worth selling and silent on whose — and the silence is where the candidate
+  died.** See `THE_PORT_EVIDENCE_KILL.md`.
+- **★ THE BOOKING-INVENTORY LAW — an operator publishes how busy it is and what it will accept, and NEVER how
+  many slots are left.** Measured: of 17 US container terminals, **3 publish gate/yard status, 2 publish
+  empty-return restrictions server-rendered, and 0 — ZERO — publish appointment availability anonymously.**
+  Status and restrictions are marketing; remaining availability **is the booking engine's inventory.** Generalise
+  it: **the one number no booking system gives away is the one a scarcity-evidence product would need.**
+- **★ THE POST-ONLY TEST NEEDS ITS CONVERSE — un-crawlable protects an archive you can BUILD. Before
+  celebrating that no competitor can capture a thing, confirm that SHE can. INACCESSIBILITY IS SYMMETRIC**, and
+  it was read backwards here: what looked like the moat was the wall.
+- **★ A COUNT OF STRUCTURES IS NOT A CHECK OF CONTENT. Print the first row and READ IT** before reporting that a
+  table, column or field exists. **Three times in one day this produced a confident wrong number: an FDA join, a
+  vacancy vocabulary count that returned "30/30 clean" from page boilerplate, and a "real data table" that was
+  the COOKIE-POLICY TABLE.** The tell is always the same — the result is too clean to be true.
+- **★ A TAX ON GROSS IS A MARGIN TEST, NOT A VERDICT — compute the margin before letting it kill anything.**
+  The same double-taxation that is fatal at a 15% gross margin (≈80% of the spread) is a haircut at 50%
+  (≈24%). **Killing a candidate on tax before knowing its margin is `RULE 2` violated** — the constraint deletes
+  the component along with the candidate. *(And the structural fix usually exists: under the wholesale escape a
+  US partner is merchant of record, holds the resale certificates, and she invoices an exported SERVICE at
+  8,1% — both taxes vanish.)*
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
