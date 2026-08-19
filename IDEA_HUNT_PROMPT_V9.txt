@@ -1,0 +1,927 @@
+================================================================================
+IDEA HUNT — PORTABLE BRIEF V9
+A self-contained instruction set for a frontier LLM with sub-agent capability.
+Written 19 Aug 2026, after seven parallel research agents reported. Supersedes V1-V8.
+================================================================================
+
+HOW TO USE THIS FILE
+--------------------
+Paste the whole thing as your opening message to a frontier model that can spawn
+parallel sub-agents. It assumes the model knows NOTHING about this project.
+
+Do not summarise it before pasting. The specificity IS the value. Two weeks,
+seventy-two dead candidates and seven primary-source research agents produced
+Sections 5 and 6; an agent that has not read them will burn its budget
+re-deriving conclusions that are already settled, or repeating a premise that has
+already been falsified.
+
+Three of the corrections in Section 6 overturned things the PRINCIPAL believed
+and briefed agents on. Expect this file to be wrong somewhere too. Say so.
+
+================================================================================
+SECTION 1 — THE MISSION
+================================================================================
+
+Find a business for one specific person. Not a category, not a "space" — a
+business with a named buyer, an observed price, and a route to that buyer.
+
+THE FOUNDER
+  A 26-year-old Brazilian woman in Sao Paulo. She works alone and always will.
+  Intelligent, literate in English and Portuguese, capable of sustained careful
+  work. No professional credential, no industry background, no track record, no
+  reputation, and no intention of acquiring a public one.
+
+THE TARGET
+  US$10,000/month NET TAKE-HOME — in her hands, after Brazilian tax.
+  Reached within 12-18 MONTHS, with revenue beginning by roughly month 6.
+
+CAPITAL
+  US$500-2,500. ONE TIME. Not monthly.
+  Buys: a company entity, tooling, domains, data acquisition, one small test.
+  Does NOT buy: paid customer acquisition as a channel, a legal or regulatory
+  opinion, or the purchase of an existing cash-flowing asset.
+  If a candidate needs more, SAY SO EXPLICITLY rather than quietly assuming it.
+
+MARKETS
+  Brazil domestic, USA, UK, EU, Canada, Australia. All open.
+  Brazil domestic is a FIRST-CLASS option and was under-weighted for seventy-two
+  candidates. Read Section 7.
+
+================================================================================
+SECTION 2 — THE GOVERNING ARITHMETIC. READ BEFORE PROPOSING ANYTHING.
+================================================================================
+
+  Target, net, in her hands            US$10,000/month
+  Brazilian burden — VERIFIED          8.1% tax; ~10% incl. payment rail and
+                                       accountant, as a Lucro Presumido company
+                                       selling SERVICES to buyers OUTSIDE Brazil
+  GROSS REVENUE REQUIRED               ~US$11,100/month  (~US$133,200/year)
+                                       = R$57,800/month at PTAX 5.2037
+  Her time                             30 h/week = ~130 h/month
+  Of which actual delivery             ~78 h/month (60% — generous for a solo)
+  REQUIRED REALISATION                 ~US$142 PER HOUR OF DELIVERY TIME
+
+  >>> THE PRODUCTION CEILING <<<
+  At this target, ANY business in which she personally produces each unit of
+  output is arithmetically dead. Not hard — dead. Her 78 delivery hours must
+  BUILD OR OPERATE AN ASSET. They must never MAKE THE UNITS.
+
+  The proof, so you need not take it on faith: the best-designed hand-production
+  business this project ever received priced a professional written deliverable
+  at US$325/unit covering up to 150 source pages, one clarification round and one
+  revision. To gross US$11,100/month she must deliver THIRTY-FOUR of them inside
+  78 delivery hours — about 2h20 each, including intake, reading, drafting and
+  revision. Not credible. Meanwhile OBSERVED live freelance listings for written
+  deliverables sit at US$15, US$30 and US$45, realising perhaps US$15-30/hour.
+  The gap to US$142 is five to nine times. No pricing discipline closes it.
+
+REVENUE MUST THEREFORE COME FROM ONE OF FOUR PLACES. State which one.
+  A. THE ASSET PRODUCES THE UNITS — built once, serves customer 2 through 400 at
+     near-zero marginal cost. (Software, a dataset, a watcher.)
+  B. A SLICE OF SOMEONE ELSE'S FLOW — commission or take-rate on transactions she
+     introduces but does not perform.
+  C. A SPREAD SHE OWNS — closed for physical goods (Section 5).
+  D. RENT ON SOMETHING SHE OWNS — a sub-case of A. Beware Section 6's SOURCING
+     LAW before pointing any of it at the United States.
+  If a candidate is none of these, it is a job, and it does not reach the target.
+
+TWO ARITHMETIC RULES THAT KEEP GETTING FORGOTTEN
+  * FIXED COST vs PER-CUSTOMER COST. A watcher that reads one public file weekly
+    and serves it to every customer has fixed cost. A monitor that must issue
+    paid API queries per customer, forever, has variable cost that scales with
+    customers — and a solo operator entering last always loses that race. ASK OF
+    EVERY CANDIDATE: is the source read ONCE and sold MANY times, or read once
+    PER CUSTOMER?
+  * HOW THE MONEY ARRIVES IS PART OF THE SCREEN. A bank-transfer invoice costs
+    ~0.5%. A card checkout costs ~8% all-in — MORE THAN HER ENTIRE TAX BILL.
+    INVOICE, DON'T CHECKOUT.
+
+================================================================================
+SECTION 3 — HARD CONSTRAINTS
+================================================================================
+
+Real, not preferences. Two were recently relaxed; the relaxations are stated
+precisely. Do not extend them further.
+
+C1  NEVER SPEAKS IN ONGOING OPERATIONS.
+    No customer calls, video, meetings, voice notes, webinars or podcasts, in any
+    language, ever. Written only.
+    RELAXED: a small, bounded number of ONE-OFF SETUP calls at launch is
+    acceptable — a supplier account, a payment-processor risk review, instructing
+    counsel, signing a partner. Ongoing customer contact stays written forever.
+
+C2  PERMANENTLY FACELESS.
+    No camera, no photograph, no personal brand, no audience-building, no
+    name-based reputation. Forbids the entire build-in-public playbook, which is
+    how most solo software is actually sold. Private KYC to a payment processor
+    is fine.
+    ON PERSONAS: a company brand or pen name is available ON ARGUMENT, but the
+    default is anonymous, and a persona must NEVER be the thing that rescues an
+    otherwise weak idea.
+
+C3  NO EMPLOYEES, NO CONTRACTORS, EVER.
+    Vendors, suppliers, software and APIs are unlimited.
+    Note the asymmetry: CAPACITY IS PURCHASABLE AS MACHINES, NOT AS PEOPLE.
+
+C4  NEVER TAKES CUSTODY OF A CUSTOMER CREDENTIAL, and never holds standing access
+    to a customer's systems. Work arrives as a file the customer sends.
+    This closes most B2B SaaS (OAuth refresh tokens ARE standing access), all
+    bookkeeping and ops work, and all monitoring that needs access.
+    What survives: products that process an uploaded FILE, and products that
+    watch something PUBLIC. See also the platform-enforced exception in §5.
+
+C5  CAPITAL: US$500-2,500, ONE TIME.
+C6  ~30 HOURS PER WEEK.
+C7  HER PERSONAL SAO PAULO NETWORK IS NOT A SALES CHANNEL.
+
+VETOES — absolute:
+  * Anything requiring her to be BELIEVED AS AN EXPERT. Highest body count of any
+    rule here. Kills advisory, interpretation, opinion, assurance, and anything
+    priced on credibility.
+  * Construction as a buyer segment.
+  * Labour-compliance document chasing.
+  * Physical goods and inventory, unless made-to-order.
+  * Anything built around death. It is her life, not an argument. Do not
+    relitigate it.
+
+THE FOUR KNOWN MECHANISMS THAT SURVIVE THE EXPERT VETO:
+  1. THE ARTEFACT PROVES ITSELF. Ship a proof sheet: every material statement
+     paired with its source file and page; contradictions surfaced rather than
+     silently resolved; unsupported claims listed in a "not used" section.
+  2. THE BUYER SUPPLIES THE DOMAIN, SHE SUPPLIES THE THROUGHPUT.
+  3. THE BUYER SUPPLIES THE "BEFORE." She never claims a baseline. They send work
+     they already did with their own hours attached; she returns the after; the
+     two objects sit side by side and the buyer does the comparing.
+  4. THE RESELLER SUPPLIES THE FACE. See THE WHOLESALE ESCAPE in Section 6.
+
+================================================================================
+SECTION 4 — THE EVIDENCE STANDARD. NON-NEGOTIABLE.
+================================================================================
+
+FOUR FABRICATED STATISTICS HAVE ALREADY BEEN CAUGHT IN THIS PROJECT. Assume you
+will be audited.
+
+  * EVERY NUMBER NEEDS A PRIMARY-SOURCE URL. Acceptable: the company's own
+    pricing page or documentation; a statute; a regulator or government
+    publication; a trade body's own survey; a live listing you actually opened; a
+    peer-reviewed or arXiv paper; a court or regulatory filing.
+  * WRITE "UNVERIFIED" EXPLICITLY wherever you cannot meet that bar. A flagged
+    gap beats a plausible figure. "There is no reliable public data on this" is a
+    valuable sentence, not a failure.
+  * NEVER CITE SEO CONTENT FARMS, LISTICLES, ROUNDUPS OR VENDOR MARKETING as
+    evidence that a requirement, a market or a price exists. Whole genres of this
+    material are fabricated end to end and cite each other in circles. The worst
+    offenders encountered so far: "top 10 micro-SaaS success stories" posts, "GEO
+    statistics 2026" roundups, "average cold email reply rate" agency blogs, and
+    any accounting-firm blog quoting a tax rate. Use them ONLY to locate a
+    primary source, then read the primary source and cite that.
+  * OBSERVED LISTINGS BEAT PUBLISHED CLAIMS. Freelance price bands quoted at
+    US$500-1,500 in blogs were US$15/US$30/US$45 when the live gigs were opened.
+  * FIELD-INSPECT, DO NOT ASSUME. "Publicly available" and "obtainable at scale"
+    are different properties. Open the record layout before claiming a list
+    exists. And BEWARE MIRRORS: for the Brazilian company register, two of the
+    four obvious API mirrors silently return null for the email field while two
+    return the real address. One agent's first run of 80 records returned 0/80
+    and was pure artefact.
+  * PREFER A CENSUS TO A SAMPLE OF WINNERS. See THE VERIFICATION-IS-THE-BRAND LAW
+    in Section 6 — it is the most important methodological finding in this file.
+  * WHEN A CORRECTION LANDS, PROPAGATE IT to every conclusion that depends on it.
+  * A CLEAN NEGATIVE WITH A NAMED CAUSE OF DEATH IS A GOOD RESULT. You are not
+    scored on finding something. You are scored on being right.
+
+================================================================================
+SECTION 5 — ALREADY SETTLED. DO NOT RE-DERIVE. DO NOT PROPOSE.
+================================================================================
+
+DEAD BUSINESS FAMILIES
+  * Digital assets on marketplaces — templates, stock, fonts, presets, prompt
+    packs, mockups, icon sets. AI is either banned there (her skill is worthless)
+    or allowed (price goes to zero). No third door.
+  * Written deliverables sold on freelance marketplaces. Observed US$15-45,
+    sampled three times across unrelated categories.
+  * Verification of anything. A physical asset needs a body in a place; a digital
+    asset needs a credential into the system that hosts it. She can have neither.
+  * Lost-knowledge and documentation products. Where no third party holds a veto
+    there is no buyer; where a veto exists, the veto-holder or a funded vendor
+    publishes the artefact free.
+  * Reselling physical goods / merchant of record. Closed by Brazilian tax law
+    (a natural person habitually trading GOODS is deemed a company by operation
+    of law, and non-creditable turnover taxes then stack).
+    *** BUT SEE THE AGENT EXEMPTION IN SECTION 6 — the same decree expressly
+    exempts agents and representatives who never trade on their own account, AND
+    non-commercial services, AND creative works. The kill is narrower than this
+    file believed for two weeks. ***
+  * CONSUMER mobile app stores. 12-18 months, organic discovery ~zero.
+  * B2B SOFTWARE MARKETPLACES — NEWLY CLOSED, on a full census rather than a
+    guess. All 4,192 paid cloud apps in the best-fitting marketplace were pulled
+    from its public API: MEDIAN 13 INSTALLS; median VENDOR 8 installs across its
+    entire catalogue; 14.9% have zero installs; 49.7% have zero reviews; only 12
+    of 1,384 single-app vendors exceed 1,000 installs and one of those twelve is
+    the platform itself. The four with clean version histories took 5.8-7 YEARS.
+    Median price US$450/year at 50 seats, and 79% are free at ten seats.
+    >>> B2B marketplaces are not a different animal from consumer app stores.
+    They are the same animal with a better-dressed buyer. <<<
+  * AI-VISIBILITY MONITORING ("am I cited in AI answers?") — NEWLY KILLED. Four
+    independent causes: free tiers from large incumbents; a venture-funded
+    incumbent at a US$1bn valuation publishing competitive teardowns of the long
+    tail; API cost per observation at or ABOVE the incumbents' retail price per
+    observation; every relevant robots.txt disallows the consumer surfaces, so a
+    compliant monitor measures a proxy and an accurate one scrapes in breach; and
+    a variance decomposition over 12,933 responses finding BRAND IDENTITY IS 1.5%
+    OF THE VARIANCE against 34.8% resampling noise and 26.5% query language.
+  * Anything whose buyer segment is construction, or whose subject is death.
+
+DEAD OR HEAVILY DISCOUNTED CHANNELS
+  * PAID ADVERTISING — dead on C2, not on budget. The major ad platform publicly
+    displays the advertiser's NAME AND LOCATION, permanently, linked from every
+    ad. "Location: Brazil" against a US professional-services pitch is a trust
+    discount on every impression she pays for. Separately: NO ad platform
+    publishes a CPC benchmark, so every CPC figure in circulation is UNVERIFIED
+    by construction.
+  * Content, community, audience, personal brand — C2.
+  * Her personal network — C7.
+  * ROYALTY AND LICENSING INCOME AIMED AT THE UNITED STATES — see THE SOURCING
+    LAW in Section 6. This is a hard, recent, and frequently missed kill.
+  * Affiliate networks as a PRIMARY channel. They are a payment rail, not demand;
+    affiliates promote only what already converts, so it returns zero times zero.
+    Keep the mechanism; do not treat it as a channel.
+  * Organic SEO as a PRIMARY channel — too slow for 18 months. BUT SEE THE
+    INDEXATION/RANKING SPLIT in Section 6; "SEO is dead" is too strong and the
+    two halves must not be collapsed.
+
+ONE OPERATIONAL FACT
+  * Several sites are simply unreadable to automated agents and any conclusion
+    about them needs a human with a browser: one large craft marketplace (four
+    agents, every method, bot-detection blocked all), the main indie-founder
+    revenue community (interactive challenge on every path including
+    robots.txt), and various vendor pricing pages that 403 selectively.
+
+================================================================================
+SECTION 6 — THE LAWS. THE REUSABLE HALF OF SEVENTY-TWO FAILURES.
+================================================================================
+
+Use these as tests. If a candidate fails one, say so and explain why it survives
+anyway — or drop it.
+
+--- ON WHETHER ANYONE WILL PAY ---
+
+THE CONSTRAINT-SIDE LAW
+  "This saves you four hours" only sells to a buyer SHORT OF HOURS. Ask: what
+  breaks if their volume doubled next month? DEMAND-CONSTRAINED (short of
+  customers — will NOT buy time back; they have spare hours and would rather keep
+  them); SUPPLY-CONSTRAINED (turning work away — an hour saved is revenue);
+  MARGIN-CONSTRAINED (volume fixed by something outside their control, cost is
+  their own hours — an hour saved is margin). Most sole traders are
+  demand-constrained. Worked example: 118,804 marriages in Australia in 2025
+  divided by 10,832 registered celebrants is 11.0 ceremonies each per year even
+  if celebrants performed every marriage in the country. Realistically ~9. A
+  person with nine jobs a year is not short of hours.
+
+THE EXOGENOUS-VOLUME SPEC
+  Hunt a buyer whose VOLUME IS SET BY SOMETHING THEY DO NOT CONTROL and whose
+  COST IS THEIR OWN HOURS. Renewal dates, statutory deadlines, publication-
+  triggered legal clocks, settlement dates, pay cycles, filing seasons.
+
+THE INVERSION CHECK
+  Not "does the buyer possess this data?" but "COULD THE BUYER PRODUCE THIS
+  ANSWER IN AN AFTERNOON?" If yes, there is no business.
+
+THE FREE FRONT DOOR
+  "Knowing which one" is usually the customer-acquisition cost of whoever holds
+  the stock or the paying work — so they give it away. Before selling
+  identification, matching, crossing or lookup, NAME WHO IS ALREADY PAID TO GIVE
+  IT AWAY FREE.
+
+THE MOAT-IS-A-CONTRACT TEST
+  Name who is being PAID to eliminate the fragmentation you are calling a moat.
+  Two candidates died on this in one day: a municipal-gazette unification product
+  (a philanthropically funded nonprofit ships an open-source crawler fleet and a
+  free public API doing exactly that, and every city it adds deletes part of your
+  inventory) and an EU disclosure corpus (a funded EU body is building the free
+  machine-readable version, with dates already set).
+
+THE EMPTY-NICHE WARNING
+  Zero competitors is WORSE evidence than a crowded market. A crowded market with
+  visible prices proves demand; an empty one usually proves someone already tried.
+
+--- ON PRICE ---
+
+THE CEILING-HOLDER LAW
+  Regulatory or audit exposure raises a category's CEILING but never creates a
+  FLOOR, and the ceiling is held with a credential and a name. A faceless seller
+  lands at the floor of every category she enters.
+
+THE MONITORING PINCER
+  Self-serve monitoring clusters at US$0-100/month because the raw signal is free
+  and a competent solo builder always undercuts. Above US$300/month it is sold by
+  a sales force. The rare products that are BOTH self-serve AND above US$300
+  share exactly one property: THE BUYER'S OWN REVENUE IS A DIRECT FUNCTION OF THE
+  WATCH — the investor buys the house, the retailer reprices the stock, the
+  expired certificate takes the site down.
+  >>> The test is not "is this watchable?" It is: DOES ONE ALERT, ACTED ON, PAY
+  FOR A YEAR OF SUBSCRIPTION? <<<
+
+THE PRICE-HIDING TELL
+  If the nearest comparable does not publish a price, the category is SALES-LED
+  and she cannot enter it. This is a ten-second screen and it killed several
+  candidates outright.
+
+THE REPEATABILITY TRAP
+  The property granting her leverage (it is repeatable, so a machine can do it)
+  is the same property destroying pricing power (it is repeatable, so anyone's
+  machine can do it).
+
+THE UNCERTAINTY-PREMIUM LAW
+  A business whose price is supported by the buyer's IGNORANCE of a new channel
+  is priced on a decaying asset. Ask: does the platform being measured have both
+  the data and the incentive to publish this itself? If yes, you are renting
+  time, not building a business.
+
+THE NOISE-FLOOR FILTER
+  A product whose measured construct is a small fraction of its own variance
+  cannot be sold honestly. The tell: the honest version of the product — "your
+  number is mostly noise, here is the decomposition" — talks its own customer out
+  of buying.
+
+--- ON DISTRIBUTION: THE ACTUAL BINDING CONSTRAINT ---
+
+Seventy-two candidates died at the same place: where a stranger has to decide to
+give her money. She has unlimited production and zero distribution.
+
+THE DISTRIBUTION SCISSORS
+  Being FACELESS pushes toward MANY SMALL self-serve customers (a relationship
+  needs a person). Having NO AUDIENCE AND NO BUDGET pushes toward FEW LARGE
+  customers (reaching 400 strangers needs a following or money). THE TWO POINT IN
+  OPPOSITE DIRECTIONS. This tension is the real strategic problem.
+
+*** THE WHOLESALE ESCAPE — the most important finding in this file ***
+  There is exactly ONE channel in which a faceless supplier is PREFERRED rather
+  than merely tolerated: SELLING THE MACHINE TO A FIRM THAT RESELLS IT UNDER ITS
+  OWN NAME. The reseller supplies the face, the credential, the interpretation
+  and the liability. She supplies the throughput. Price is then set by the
+  RESELLER'S CLIENT REVENUE, not by the self-serve comparable.
+  Arithmetic: 17 firms at US$650/month reaches the target. Seventeen, not three
+  hundred. Positioning that tested well: "You own the relationship. We are your
+  invisible department."
+
+*** THE CONVERGENCE — arrived at independently by two agents on unrelated
+    questions, and it dissolves the Scissors ***
+  FOR A COMPOUNDING DATASET, THE PRODUCT AND THE DISTRIBUTION ARE THE SAME
+  ARTEFACT. The pages that constitute the dataset are the pages that get cited by
+  AI answer engines and search. Publishing IS the marketing. It is the only
+  structure found in seventy-two candidates that NEUTRALISES C2 rather than
+  merely tolerating it — because what makes her invisible as a person is
+  irrelevant to an object that answers a question with a number.
+
+THE DISCLOSED-DEPARTMENT LAW
+  The invisible department survives, but only half of it. In regulated
+  professions the firm's own code of conduct typically requires it to INFORM ITS
+  CLIENT that a third-party provider may be used, while a confidentiality
+  contract with the provider removes the need for client CONSENT.
+  >>> Her IDENTITY can stay invisible. Her EXISTENCE cannot. Any pitch promising
+  the buyer that nobody will ever know is asking a professional to breach their
+  own code, and sophisticated buyers know it. <<<
+  The escape worth mining: such codes typically carve out ADMINISTRATIVE SUPPORT
+  SERVICES (record storage, application hosting, transmittal) from the disclosure
+  rule entirely. Positioning as administrative support rather than
+  professional-service assistance moves the work outside the rule. That is a
+  product-shaping constraint, not a legal quibble.
+
+THE ONBOARDING LAW
+  Written-only is compatible with SELLING. It is NOT compatible with BEING
+  ONBOARDED. Reseller setup, acquirer risk review, vendor security diligence,
+  fiscal-representative appointment and dispute escalation are all conversations.
+  ASK OF EVERY CANDIDATE: how many separate parties must onboard her, and can
+  each be done in writing?
+
+THE POSTAL LIST LAW, and its exception
+  A public register gives name, street address, phone and an expiry date. It does
+  not give email. Of NINE registers now field-inspected across six countries,
+  exactly TWO publish email at scale. ENUMERABLE AND CONTACTABLE ARE DIFFERENT
+  PROPERTIES. Field-inspect before believing — and beware mirrors that silently
+  null the field.
+  THE EXCEPTION IS LARGE: Brazil's national company register publishes an email
+  field for every establishment, alongside industry code, size, capital, tax
+  regime and start date, free and in bulk. Measured fill rate 62% of a random
+  sample of 32 (small N, measured through a mirror, needs confirming at source).
+  In Brazil, enumerable IS contactable.
+
+THE CONSPICUOUS-PUBLICATION LAW
+  All five non-Brazilian target jurisdictions permit unsolicited commercial email
+  to a business address the recipient PUBLISHED THEMSELVES, where the message is
+  relevant to their role and carries an opt-out. They differ in who carries the
+  BURDEN OF PROOF, not in whether the door is open. (Germany is stricter and was
+  not checked — treat DACH as closed.) Brazil has NO anti-spam statute at all;
+  what governs is the data-protection statute's legitimate-interest basis, plus a
+  requirement to identify the controller and honour objections — which requires
+  an identifiable controller, NOT a face.
+
+THE PROVIDER-AUP LAW
+  Cold email is legal under the statutes of every market here and SIMULTANEOUSLY
+  PROHIBITED by the terms of the mailbox provider used to send it. The regulator
+  is not the risk; the VENDOR is. She is not one complaint away from a fine — she
+  is one complaint away from losing the sending infrastructure, and re-warming
+  costs weeks.
+
+THE INDEXATION / RANKING SPLIT
+  AI answer engines cite by LIVE RETRIEVAL, not training — the providers run
+  separate crawler fleets and document them separately, and a site that blocks
+  every major TRAINING crawler was observed being cited FIRST. The lag is days,
+  not years. BUT one major engine is index-gated: the page must already be
+  indexed in ordinary search, though it need not RANK (measured: 29.8% of its AI
+  citations come from domains absent from the corresponding first page).
+  >>> Being INDEXED is free, fast, written-only and a hard prerequisite. RANKING
+  is what stays out of reach. Do not collapse the two. <<<
+  Scale check before betting on it: AI referrals were measured at roughly 0.6% of
+  the incumbent search engine's referral volume, growing ~357%/yr. A channel
+  growing tenfold off 0.6% is at 6% in eighteen months. SECONDARY CHANNEL, NEVER
+  PRIMARY. And llms.txt is noise — the largest engine's own documentation says it
+  does not use such files, and 97% of published ones received zero requests.
+
+THE SOURCING/REPUTATION SPLIT
+  Two studies appear to contradict each other on whether small unknown sites get
+  cited. They measured different question types. "What is the answer to this
+  question" is a SOURCING problem, won by whoever holds the data — citation there
+  is measurably flatter than search ranking, with over half of citation hosts
+  appearing exactly once. "Which vendor should I use" is a REPUTATION problem,
+  won by stature — small brands appear in 11% of such answers against 73% for
+  large ones.
+  >>> She loses the reputation query PERMANENTLY — it requires exactly what her
+  veto forbids. She can win the sourcing query, because IT DOES NOT ASK WHO SHE
+  IS. <<<
+  And what wins once retrieved is measured: adding QUOTATIONS and STATISTICS
+  scores highest; KEYWORD STUFFING scores BELOW baseline — classic SEO actively
+  fails. Where specific data does not exist in retrievable form, the slot is
+  filled with generic vendor content marketing. Those slots are UNOCCUPIED.
+
+THE VERIFICATION-IS-THE-BRAND LAW — the key methodological finding
+  Publicly verifiable success in a channel is NOT a neutral sample of that
+  channel. It is a sample of operators who CHOSE TO BE VISIBLE, and visibility is
+  itself their business model. The largest verified-revenue feed literally
+  requires a public social post as its verification rule.
+  >>> Asking any agent to "find verified examples" of a faceless business
+  GUARANTEES an audience-driven answer set. USE PLATFORM CENSUSES INSTEAD — they
+  count everyone, including the silent. <<<
+  Corollary: much of what looks like solo-software success is audience
+  monetisation wearing software clothing — courses, boilerplates and tools sold
+  to other founders. Closed to her twice over.
+
+THE MERCHANT-OF-RECORD SPLIT — a ten-second platform screen
+  GROUP A: the platform bills the customer, remits their taxes and pays her a net
+  share. This converts her from a merchant selling to thousands of foreign
+  consumers into a SUPPLIER INVOICING ONE CORPORATE COUNTERPARTY — an ordinary
+  service export, which sidesteps the tax structure that closed the resale shape.
+  GROUP B: the platform is a directory only; she builds her own billing and IS
+  her own merchant of record.
+  >>> Group B's "0% revenue share" is not generosity. It is the ABSENCE OF THE
+  ONLY THING that made the platform useful to her. <<<
+
+--- ON DATA AND ASSETS ---
+
+THE HEAD-START ASYMMETRY — screen for this FIRST, before buyer, price or law
+  The property making a dataset defensible (it compounds) is the SAME property
+  making it un-enterable. If a dataset is worth accumulating, someone started
+  accumulating it, and their moat points AT HER. The law says so out loud: in the
+  jurisdictions with a database right, accumulation of successive additions
+  qualifies the database for a FRESH term of protection — a continuously-updated
+  database is effectively perpetually protected.
+
+THE CLOCK-START RULE
+  The only moment a solo entrant and an incumbent are LEVEL is when the recording
+  opportunity COMES INTO EXISTENCE — a register that opened this year, a regime
+  that just took effect, a mandate whose first filings are landing now.
+  HUNT CLOCK-STARTS, NOT DATASETS.
+
+THE STATE KEEPS STATE, NOT HISTORY
+  A register publishes what it needs to OPERATE. It has no operational need for
+  last year's snapshot, so it overwrites. The CHANGE-LOG of a current-state-only
+  register is the one artefact the register-holder will never produce, and it
+  CANNOT BE BACK-FILLED BY ANYONE — including an AI agent — because the prior
+  state is gone. The only genuinely non-re-assemblable class found.
+
+THE SCRAPING PERIMETER
+  The computer-misuse statutes are NOT the barrier — the leading case ended with
+  the scraper winning on the statute and then LOSING ON CONTRACT, settling with a
+  six-figure judgment and an injunction to destroy the data and derived
+  algorithms. PUBLIC + NO LOGIN does not mean permitted. A scraper that never
+  registers an account is in a very different position from one that does.
+  Government open data is the only raw material simultaneously free, licensed for
+  commercial re-use, and outside the terms-of-service trap — but CHECK THE
+  LICENCE: at least one major national procurement portal publishes under a
+  NO-DERIVATIVES licence, which forbids a derived data product outright.
+
+--- ON WHERE SHE IS ---
+
+THE SOURCING LAW — a distribution constraint disguised as a tax one
+  There is NO US-Brazil income tax treaty. Personal-service income is sourced
+  where the services are PERFORMED; royalties are sourced where the property is
+  USED. Therefore: work performed in Brazil is foreign-source and reaches her
+  whole. A ROYALTY FROM A US PAYER IS US-SOURCE AND REACHES HER AT 70 CENTS ON
+  THE DOLLAR, with no treaty relief available.
+  >>> SELL SERVICES. NEVER LICENSE IP INTO THE UNITED STATES. <<<
+  It compounds with a Brazilian rule: passive royalties falling outside the
+  company's REGISTERED OBJECT are taxed on a 100% base rather than a 32% presumed
+  base — roughly 34% instead of 7.7%. A US royalty stream can be hit at 30%
+  American withholding AND ~34% Brazilian tax. If a licensing stream is ever
+  built, the company's registered object must be the exploitation of that right.
+  This is a one-line drafting decision at incorporation worth a quarter of the
+  revenue.
+
+THE AGENT EXEMPTION — the resale kill is narrower than believed
+  The decree that deems a habitual goods-trader to be a company EXPRESSLY EXEMPTS
+  (a) agents and representatives who do not trade on their own account,
+  (b) non-commercial services, and (c) the exploitation of artistic, didactic and
+  scientific works. Two agents found these independently while working on
+  unrelated questions. The kill applies to the GOODS LEG ONLY and must not be
+  cited against a services, creative-works or commission-agency candidate.
+
+THE ANTI-DISINTERMEDIATION STATUTE
+  The reason two-sided businesses fail is that both sides transact directly once
+  introduced. In Brazil, the UK and the EU, an EXCLUSIVE-TERRITORY COMMERCIAL
+  AGENT is owed commission on business concluded in her territory THAT SHE NEVER
+  TOUCHED. Statutory, non-derogable in the UK/EU, and the default rule in Brazil.
+  >>> And the distinction is one word in one contract: the AGENCY form carries
+  this protection; the BROKERAGE form has the OPPOSITE default, denying any
+  commission where the parties concluded directly. Every contract must be an
+  agency, never a brokerage. <<<
+  Note also that in Brazil the apparent registration gate on commission agency
+  was struck down as unconstitutional — commission is earnable and suable
+  unregistered, and registration buys a statutory package (a termination
+  indemnity, a prohibition on credit-risk clauses, priority in the principal's
+  insolvency) which may itself deter principals from appointing her. NOT
+  registering can be the better move.
+
+THE CURRENCY DIRECTION LAW
+  Earn hard currency, spend soft. The property is in the BILLING, not the cargo.
+
+THE ASYMMETRIC PAIR
+  Put the SOURCE in Brazil and the BUYER abroad. Brazilian raw material is cheap,
+  voluminous, badly formatted and protected by language — her arbitrage, and free
+  to her. Foreign buyers pay hard currency. The configuration satisfying both:
+  SOMETHING OBTAINABLE ONLY IN BRAZIL, SOLD TO SOMEONE WHO IS NOT IN BRAZIL.
+  (Weigh it against THE SOURCING LAW: services, not licences, if the buyer is US.)
+
+--- ON METHOD ---
+
+FILTER LAST, NOT FIRST
+  A constraint applied early deletes the COMPONENT along with the candidate, and
+  the component was the valuable half. Hold parts loose, recombine, THEN filter.
+
+NAME THE SHAPE OUT LOUD
+  Before proposing a candidate, state its shape (Section 8). If it is the same
+  shape as the last one, STOP and change shape first. Optimising for her
+  constraints drives everything toward "questionnaire, she writes prose,
+  deliverable," because that is the most constraint-compatible activity in
+  existence. IT IS A LOCAL OPTIMUM AND THE SEARCH ROLLS BACK INTO IT EVERY TIME
+  UNLESS SOMETHING FORBIDS IT. Three consecutive "new candidates" were once one
+  idea with three different buyers.
+
+PORT THE WHOLE MODEL, NOT ONLY THE PARTS
+  When an outside business model is supplied, ask what HER VERSION OF THE WHOLE
+  MODEL is — not merely which components it donates.
+
+THE TEST DESIGN THAT WORKS
+  Twenty real instances, and COUNT HOW MANY CLEAR A NUMERIC BAR. Measure the
+  RATE, because the rate predicts everything after it. Prefer the test that costs
+  nothing and needs no phone. State the bar IN ADVANCE and what result kills the
+  candidate. A test that cannot fail is not a test.
+
+================================================================================
+SECTION 7 — BRAZIL DOMESTIC, AND WHAT CHANGED THIS YEAR
+================================================================================
+
+Selling domestically REMOVES: the cross-border tax pincer that closed the resale
+shape; the foreign-insurance bar (a natural person is statutorily barred from
+buying the foreign cover trade customers require); most of the onboarding-by-
+voice problem (the domestic instant-payment rail has no acquirer risk review and
+no chargeback arbitration conducted by telephone); and the foreign-anonymous-
+vendor trust penalty. It ACTIVATES local access — the only genuine arbitrage
+identified in the entire project.
+
+It COSTS: lower price points, and earning the soft currency.
+
+TWO THINGS CHANGED IN 2026 THAT THIS FILE MISSED FOR MONTHS:
+  * THE EU ADOPTED A DATA ADEQUACY DECISION FOR BRAZIL, 26 JANUARY 2026. A
+    European firm may now send client files to a processor in Sao Paulo with NO
+    standard contractual clauses, NO transfer impact assessment, NO Article 46
+    safeguard. This overturned a structural kill recorded by another agent on the
+    same day. EVERY EU-FACING WHITE-LABEL CANDIDATE PREVIOUSLY KILLED OR
+    DISCOUNTED ON DATA-TRANSFER GROUNDS MUST BE RE-EXAMINED. The UK did NOT
+    follow — plan for EU does not equal UK.
+  * The domestic instant-payment rail now supports native recurring subscription
+    collection under a 2025 central-bank resolution. BUT IT IS NOT FREE: the
+    regulation expressly permits charging a legal entity for receipt, and
+    charging a natural person for "receiving funds for the purpose of
+    purchasing" — which is exactly what she would be doing. What survives is
+    still valuable: no acquirer risk review, no chargeback dispute by telephone,
+    settlement in seconds.
+
+THE PRICE PROBLEM, STATED HONESTLY. R$57,800/month from Brazilian buyers, against
+observed Brazilian self-serve B2B software list prices of roughly R$60-650/month,
+implies 89-963 customers. Not serviceable at 30 h/week.
+  >>> She must clear R$1,000+/month per customer, which is ABOVE the entire
+  self-serve Brazilian band. THE BUYER'S COMPARISON MUST BE A SALARY, NOT A
+  SUBSCRIPTION. Under THE CONSTRAINT-SIDE LAW that points at buyers whose volume
+  is set by the Brazilian fiscal and statutory calendar and whose cost is their
+  own hours. <<<
+
+================================================================================
+SECTION 8 — THE SIX SHAPES
+================================================================================
+
+Label every candidate.
+
+  S1  WRITTEN WORK to order. DEAD — over-explored AND arithmetically dead at this
+      target. If you believe you have an exception you must show the per-hour
+      arithmetic explicitly.
+  S2  REPLENISHMENT / MERCHANT OF RECORD. CLOSED for goods by Brazilian tax law.
+      See THE AGENT EXEMPTION for what survives.
+  S3  CONTINUOUS OPERATION — the product is that something was watched. The
+      self-serve version is dead (THE MONITORING PINCER). THE WHOLESALE VERSION
+      IS THE LEADING STRUCTURE IN THE PROJECT.
+  S4  A COMPOUNDING DATASET. Arithmetically ideal, and it is the shape THE
+      CONVERGENCE points at. Almost every instance is closed by THE HEAD-START
+      ASYMMETRY; the opening is a CLOCK-START.
+  S5  SOFTWARE SOLD AS A PRODUCT. Consumer app stores dead; B2B marketplaces now
+      also dead on a full census. What survives is software sold DIRECT, through
+      one of the live channels.
+  S6  MATCHING TWO ENUMERABLE POPULATIONS. Live, and protected by THE
+      ANTI-DISINTERMEDIATION STATUTE.
+
+================================================================================
+SECTION 9 — THE THREE LIVE CHANNELS, AND WHAT SURVIVED THE HUNT
+================================================================================
+
+Given 12-18 months and US$500-2,500, three channels are cheap enough, fast enough
+and compatible with having no face:
+
+  1. COLD EMAIL — and specifically, IN PORTUGUESE, INTO BRAZIL, off the national
+     company register, segmented by industry code. It is the only channel that
+     clears every constraint at once: written both directions; requires an
+     identifiable controller but not a face; free list; under US$100/month all
+     in; no foreign-sender signal; no FX, no withholding, no merchant-of-record
+     problem, no foreign-insurance bar. Its binding constraint is PRICE, not
+     reach — see Section 7.
+  2. WHITE-LABEL / WHOLESALE PARTNERS — 15-25 relationships. Opened by the C1
+     relaxation and by the EU adequacy decision. See THE WHOLESALE ESCAPE and THE
+     DISCLOSED-DEPARTMENT LAW.
+  3. THE DATASET AS ITS OWN DISTRIBUTION — see THE CONVERGENCE. Slower and
+     smaller in absolute terms, but it compounds and it is the only one that
+     neutralises C2 outright.
+
+  Also live but secondary: DIRECT MAIL, the one channel with no consent regime,
+  no spam filter, no platform terms and no identity disclosure — the natural
+  partner to the seven registers that publish street addresses but not email.
+  Also under-explored: BUYING AN EXISTING DISTRIBUTION ASSET rather than building
+  one. It converts the unsolved problem (acquisition) into a solved one (capital
+  plus written diligence), and diligence is document review — exactly C4's
+  permitted shape. It needs the top capital tier and is therefore currently out
+  of budget; say so rather than pretending otherwise.
+
+THREE CANDIDATES SURVIVED THE SEVEN-AGENT HUNT. Treat them as the incumbents to
+beat, not as answers:
+  * WHOLESALE MULTI-OFFICE IP-GAZETTE WATCH, white-labelled to small IP
+    boutiques. 17 firms at US$650/month. Statutory deadlines with malpractice
+    consequences; buyers enumerable and email-contactable from the same free
+    data. Fails on: an incumbent anchor at US$30-95/month for a single-office
+    version, and THE ONBOARDING LAW.
+  * EXCLUSIVE ADVERTISING REPRESENTATION for niche B2B newsletters, structured as
+    an exclusive-territory AGENCY. Observed 30-40% intermediation rate from the
+    incumbent's own published schedule; ~7-8 placements/month needed; under
+    US$500; no licence in any market; chicken-and-egg solved because unsold
+    inventory is worth zero once the send goes out. Fails on: about 10 hours per
+    closed placement against 78 delivery hours, so IT ONLY WORKS IF ADVERTISERS
+    REBOOK — and that rate is the first thing to measure.
+  * A CLOCK-START DATASET on a statutory regime whose first filings have not yet
+    happened, sold to software vendors whose product breaks without it. Fails on:
+    an unknowable-today deviation rate that decides whether the dataset is rich
+    or thin, and a funded public body that will publish the current-state version
+    free (the residue is that it will never publish the HISTORY).
+
+================================================================================
+SECTION 10 — HOW PREVIOUS HUNTS FAILED. DO NOT REPEAT THESE.
+================================================================================
+
+  1. GENERATING BUYERS INSTEAD OF IDEAS. Three consecutive "new candidates" were
+     one idea with three buyers. Name the shape out loud.
+  2. FILTERING TOO EARLY, deleting valuable components with the candidates.
+  3. MINING A SUPPLIED MODEL FOR PARTS and applying them back onto the old
+     business instead of asking what HER version of that whole model would be.
+  4. ACCEPTING SECONDARY SOURCES. Four fabricated statistics, and two research
+     premises sourced only to the marketing of the firms that benefited.
+  5. ASSUMING A REGISTER IS A MAILING LIST. Field-inspect the record layout, and
+     beware mirrors that silently null the field you care about.
+  6. CONFUSING GROSS WITH NET. Every revenue figure across seventy-two candidates
+     was gross; the tax burden was never computed once until an agent did it.
+  7. SELF-SCORING. Documents arriving with "8.8/10, conditional GO" alongside a
+     capital requirement ten to forty times over budget, stated on page nine.
+     Read the budget and the org chart; ignore the score.
+  8. PROPOSING A BUSINESS THAT IS ACTUALLY A JOB.
+  9. SAMPLING WINNERS INSTEAD OF CENSUSING A POPULATION. See THE
+     VERIFICATION-IS-THE-BRAND LAW.
+ 10. BRIEFING AGENTS ON A FALSE PREMISE. In one day the principal told agents
+     that two countries banned cold B2B email (false), that a national gazette
+     was PDF-only and therefore a moat (false — it has been structured XML since
+     2017), and that an instant-payment rail was free (false). ALL THREE WERE
+     CAUGHT BY AGENTS AND CORRECTED. Tell your agents explicitly that correcting
+     the brief is a valued result, and mean it.
+
+================================================================================
+SECTION 11 — THE DEPLOYMENT PLAN. TEN AGENTS, THREE WAVES.
+================================================================================
+
+Give EVERY agent, without exception: Section 1, Section 2, Section 3, Section 4,
+and the relevant laws from Section 6. An agent that has not read the evidence
+standard will return listicle numbers.
+
+Tell every agent: A CLEAN NEGATIVE WITH A NAMED CAUSE OF DEATH IS A SUCCESSFUL
+RESULT, AND CORRECTING THIS BRIEF IS THE MOST VALUABLE THING YOU CAN DO.
+
+--------------------------------------------------------------------------------
+WAVE 1 — FOUR AGENTS: KILL OR CONFIRM THE THREE SURVIVORS
+--------------------------------------------------------------------------------
+Do this BEFORE hunting anything new. Three candidates already exist; finding a
+fourth is worth less than knowing whether these three are real.
+
+AGENT 1 — THE WHOLESALE BUYER HUNT.  *** HIGHEST PRIORITY ***
+  THE WHOLESALE ESCAPE says the only channel where facelessness is an ADVANTAGE
+  is supplying a firm that resells under its own name. FIND THE BUYERS.
+  Which small professional firms routinely white-label an outside vendor's output
+  under their own brand, and where is this NORMAL rather than exceptional? Look
+  at IP boutiques and filing services, accountancy practices, insurance
+  brokerages, marketing and translation agencies, recruiters, property managers,
+  annuity services, corporate secretarial and registered-agent firms. For each:
+  is white-labelling established, with published partner or wholesale programmes?
+  What is the observed wholesale-versus-retail spread? HOW IS A WHOLESALE
+  SUPPLIER ONBOARDED, AND CAN IT BE DONE IN WRITING? What does the firm's
+  professional-indemnity insurer require of a subprocessor? What does the
+  profession's code of conduct require the firm to disclose to its clients (see
+  THE DISCLOSED-DEPARTMENT LAW, and hunt the administrative-support carve-out)?
+  How many such firms exist and are they email-contactable?
+  MEASURE, DON'T GUESS: open thirty white-label partner pages and COUNT how many
+  offer a self-serve signup versus a calendar link. That is a rate, and nobody
+  has one.
+  Deliver: a ranked list of reseller populations with the arithmetic to
+  US$11,100/month from 15-25 of them.
+
+AGENT 2 — THE REBOOKING RATE.
+  The advertising-representation candidate lives or dies on one number: what
+  fraction of advertisers who buy one placement buy a second? Find any observed
+  evidence — ad networks' published retention, newsletter operators' public
+  reports, media-kit renewal language, anything measured. Also: verify the
+  intermediation rate against more than one incumbent's published schedule, find
+  observed sponsorship prices for the specific vertical, and establish whether
+  the whole transaction genuinely runs without a call by examining what the
+  incumbents actually do. If there is no public data on rebooking, SAY SO — and
+  design the cheapest test that would produce it.
+
+AGENT 3 — THE CLOCK-START CENSUS.
+  Hunt clock-starts systematically, not just the one already found. What
+  statutory regimes, registers, mandates or reporting obligations COME INTO
+  EXISTENCE in the next 24 months, in any of the six markets, such that first
+  filings have not yet happened and no incumbent has a head start? For each:
+  what gets published, in what form, by whom, on what calendar; who breaks if
+  they do not have it; is the publishing body funded to produce the machine-
+  readable version itself (THE MOAT-IS-A-CONTRACT TEST); and crucially, WILL THE
+  HISTORY BE KEPT OR OVERWRITTEN (THE STATE KEEPS STATE, NOT HISTORY)?
+  Check licences: a no-derivatives licence forbids the product outright.
+
+AGENT 4 — THE RED TEAM.  *** DEFAULT TO KILLING ***
+  Take the three survivors in Section 9 and try to destroy them. Mandatory
+  checks, each answered explicitly:
+    - Who is already paid to give this away free?
+    - Could the buyer produce this answer in an afternoon?
+    - Is the buyer demand-, supply- or margin-constrained?
+    - How many separate parties must onboard her, and can each be done in
+      writing?
+    - Does one unit, acted on, pay for a year?
+    - Is the source read ONCE and sold MANY times, or once PER CUSTOMER?
+    - Does the property granting leverage also destroy pricing power?
+    - Is the list actually contactable? Open the record layout.
+    - What is the cheapest existing substitute, with a URL and a price?
+    - What does this look like in a global downturn in 2027-2028?
+  A survivor of a genuine attempt to kill it is worth ten unexamined candidates.
+
+--------------------------------------------------------------------------------
+WAVE 2 — FOUR AGENTS: THE REMAINING GAPS
+--------------------------------------------------------------------------------
+
+AGENT 5 — THE EXOGENOUS-VOLUME BUYER HUNT.
+  Enumerate populations whose volume is set by something they do not control and
+  whose cost is their own hours, EXCLUDING death and construction. Renewal and
+  expiry calendars, statutory filing deadlines, publication-triggered legal
+  clocks, settlement dates, payroll cycles, licence renewal, tax seasons,
+  insurance renewal, IP annuities, grant acquittal, admissions cycles, customs
+  windows. For each: what sets the volume; population size; IS IT ENUMERABLE AND
+  EMAIL-CONTACTABLE (field-inspect); what do they pay now; does ONE person
+  decide? Rank by wallet times contactability. Bias toward breadth — this
+  produces the target list the other agents aim at.
+  FOR BRAZIL SPECIFICALLY: the buyer must clear R$1,000+/month, so the comparison
+  must be a salary. Start from the fiscal and statutory calendar.
+
+AGENT 6 — THE EU REOPENING.
+  The EU granted Brazil data adequacy on 26 January 2026 and this project has not
+  absorbed it. Re-examine every EU-facing possibility that was previously killed
+  or discounted on data-transfer grounds: white-label subcontracting into EU
+  professional firms, screening and compliance processing, document and file
+  work. What remains after adequacy — sector rules, professional codes,
+  procurement policies, insurer requirements? Confirm the UK position separately
+  and do not assume it followed.
+
+AGENT 7 — THE COMMISSION-AGENCY DEEPENING.
+  Commission agency in an industry with no referral-fee rule is protected by THE
+  ANTI-DISINTERMEDIATION STATUTE and passes the onboarding law. Go deeper: which
+  specific industries pay commission to an unlicensed intermediary, at what
+  PUBLISHED rate, and can the whole transaction run in writing? Map the licence
+  gates negatively first. Compute required monthly flow at every rate you can
+  source. Note that no current primary-source commission survey exists for
+  industrial sales agency — if you find one, that alone is worth the leg.
+
+AGENT 8 — THE FREE-TEST DESIGNER.
+  For every survivor, design a test that COSTS NOTHING, NEEDS NO PHONE AND NO
+  CUSTOMER, and measures a RATE. The best ones produced so far: pull twenty
+  firms' published price lists and count how many contain a specific line item;
+  email thirty organisations one written question and count replies CONTAINING A
+  NUMBER; write the same deliverable twice and time both (second under half the
+  first means it is a machine; the same means it is a job); parse four weeks of a
+  public gazette and count how many events touched each of twenty named firms;
+  publish twenty structured factual pages on one indexed domain and count how
+  many are cited within sixty days. Each test states its numeric bar IN ADVANCE
+  and what result kills the candidate.
+
+--------------------------------------------------------------------------------
+WAVE 3 — TWO AGENTS: THE THINGS THAT NEED A HUMAN OR A RETRY
+--------------------------------------------------------------------------------
+
+AGENT 9 — THE UNVERIFIED LEDGER.
+  Collect every UNVERIFIED item from all prior reports into one list, sort by how
+  much rests on it, and attempt each one again by a different method. Mark clearly
+  which ones genuinely need a human with a browser. In this project that list has
+  included: bot-blocked marketplaces and pricing pages, a JavaScript-only
+  government file host, a public API returning gateway timeouts, PDFs that are
+  image scans with no text layer, and legislation sites that refuse automated
+  clients. A retry from a different network often succeeds where the first failed.
+
+AGENT 10 — THE COMPLETENESS CRITIC.
+  Read everything the other agents produced and answer one question: WHAT IS
+  MISSING? Which shape was not hunted, which market was not checked, which claim
+  is load-bearing and unverified, which two reports contradict each other, and
+  which conclusion rests on a premise nobody tested? What it finds becomes the
+  next wave.
+
+--------------------------------------------------------------------------------
+IF YOU CAN ONLY RUN THREE AGENTS
+--------------------------------------------------------------------------------
+Run Agent 1 (the wholesale buyer hunt), Agent 5 (exogenous-volume buyers), and
+Agent 4 (the red team) against whatever those two produce. Shortest path from
+nothing to a defensible candidate.
+
+================================================================================
+SECTION 12 — SYNTHESIS
+================================================================================
+
+Do NOT concatenate the reports. Do this:
+
+  1. LIST THE CONTRADICTIONS FIRST. Where two agents disagree, name it and
+     resolve it on the evidence, saying which you believe and why. In this
+     project, agents correcting each other AND correcting the principal has
+     produced more value than agreement. On one day, one agent's structural kill
+     was overturned by another agent's finding within hours.
+  2. SEPARATE THE LAWS FROM THE CANDIDATES. The reusable finding outlives the
+     business. Write down every new structural rule with the evidence that
+     produced it, whether or not any candidate survived.
+  3. BUILD ONE NUMBERS LEDGER with three columns: VERIFIED PRIMARY /
+     SECONDARY-FLAGGED / UNVERIFIED-AND-NOT-USED. Anything unverified goes in the
+     third column BY NAME rather than being quietly dropped.
+  4. FOR EACH SURVIVOR state: the shape (S1-S6); which revenue structure (A-D);
+     the named buyer; what breaks for that buyer without it; the observed
+     comparable price with a URL; customers needed for US$11,100/month; the
+     channel that reaches them; the capital tier; the onboarding count; and THE
+     HONEST REASON IT MIGHT FAIL.
+  5. RANK BY WHAT IS LEAST LIKELY TO BE WRONG, not by what is most exciting.
+
+================================================================================
+SECTION 13 — WHAT A GOOD ANSWER LOOKS LIKE
+================================================================================
+
+  * It names a buyer, not a market.
+  * It has an observed price with a URL, not an estimate.
+  * It states the arithmetic to US$11,100/month explicitly.
+  * It says which revenue structure it is, and therefore why her 78 delivery
+    hours are not the bottleneck.
+  * It answers THE ONBOARDING LAW with a count.
+  * It says whether the source is read once and sold many times, or once per
+    customer.
+  * It says how the money arrives, and what that costs.
+  * It has a free test with a numeric bar set in advance.
+  * It flags its own weakest link before anyone else has to.
+  * IT CORRECTS SOMETHING IN THIS BRIEF.
+
+  A bad answer, received many times: a well-written blueprint with a
+  self-assessed score, a capital requirement ten times over budget stated on page
+  nine, a market size from a content farm, and a buyer who is short of customers
+  rather than short of hours.
+
+================================================================================
+END OF BRIEF
+================================================================================
