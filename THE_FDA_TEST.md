@@ -131,3 +131,90 @@ minutes instead of two months.**
 > ### THE LESSON THAT GENERALISES — **the plan asserted 31,18% and 15,05% three times, described them as "reproduced on two different weekly snapshots, matching to the digit," and they are wrong by a factor of three. Every internally-computed number in every plan in that archive is now suspect.** Recompute before believing, including — especially — the ones that carry a method note.
 
 **The three red-team agents are running against the plan's original numbers. They are being sent these.**
+
+---
+
+## 7. THE PROSPECT LIST, INSPECTED — and this is where it probably ends
+
+**The 597 shrinks again once you look at who is actually in it.**
+
+| | |
+|---|---:|
+| Importers with ≥1 dangling reference | **597** |
+| ...US-based | **574** |
+| **...and actually flagged `INITIAL_IMPORTER = Y` — the real ICP** | **440** |
+
+**And two-thirds of them have the weakest possible finding:**
+
+| Dangling references | Importers |
+|---:|---:|
+| **exactly 1** | **401 — 67%** |
+| 2 | 115 |
+| 3 | 50 |
+| 4+ | 31 |
+
+> **For 401 of 597 buyers the email says: "one of your ten declared manufacturers is not in the current
+> file." That is a single stale row. It is the shrug, and it is the majority case.**
+
+### ★ And the strongest findings belong to the companies that will never buy
+
+**Sorted by number of dangling references, the top of the list is:**
+
+| Dangling | Company |
+|---:|---|
+| **31** | **MEDLINE INDUSTRIES** |
+| 14 | SW Technologies Inc. |
+| **10** | **Cardinal Health 200** |
+| **10** | **Covidien** |
+| 9 | Avanos Medical |
+| 8 | CareFusion 2200 · **ZIMMER** · Compass Health Brands |
+| 7 | Straumann USA · **BIOMET** |
+
+> **These are precisely the firms the plan itself said to exclude as procurement-gated. The impressive
+> findings and the reachable buyers are ANTI-CORRELATED — the same pincer that killed the newsletter
+> candidate, arriving in a completely different industry.**
+>
+> **Strip the giants and strip the single-row findings, and the genuinely sellable pool is on the order of
+> 100–150 companies.**
+
+### The arithmetic at that pool size
+
+**US$11.100/month from ~150 prospects means 15 customers at $740/month, or 30 at $370 — against a competitor
+reportedly at $19/month.** *(The median ICP importer declares 10 manufacturers; p75 is 22; the largest
+declares 602.)*
+
+---
+
+## 8. WHAT I COULD NOT TEST, AND IT IS THE ONE THING THAT COULD SAVE IT
+
+**Everything above is a measure of the STOCK of findings from a single snapshot. The plan's actual argument
+was about FLOW** — registration renews 1 Oct – 31 Dec, so *"every January a fresh cohort drops out."*
+
+> **A cohort that lapses annually could produce far more findings per year than the 998 standing today. I
+> cannot measure it, because measuring it requires two snapshots months apart — which is precisely the moat
+> the plan is built on.**
+
+**So the honest position is: the stock is thin, the top of it is unsellable, and the flow is unknowable
+without doing the thing. That is a genuinely uncomfortable place, and it should not be resolved by
+assumption in either direction.**
+
+---
+
+## 9. STANDING VERDICT — before the red teams report
+
+**Probably dead as specified. Three independent problems, none of which is a matter of execution:**
+
+1. **The pool is ~150 sellable, not 717.**
+2. **The channel is telephone.** 41 of 597 have any email in the data.
+3. **The best findings belong to Medline and Cardinal Health.**
+
+**Two things survive regardless:**
+
+- **THE ERASURE MOAT IS A REAL AND VERIFIED PATTERN** — just not necessarily on this register. *(Three agents
+  are now hunting it across every public register they can reach.)*
+- **THE US-AGENT POPULATION IS EMAIL-PUBLISHED AND EXTRAORDINARILY CONCENTRATED** — 177.900 records, single
+  firms representing thousands of establishments. **That is a different and possibly better business, and it
+  is under attack by two red teams right now.**
+
+> **Cost of learning all of this: about forty minutes and zero dollars. The plan it corrects took someone
+> weeks to write.**
