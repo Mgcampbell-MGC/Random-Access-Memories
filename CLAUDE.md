@@ -69,7 +69,26 @@ Seven agents, primary statutory and supplier sources, several correcting each ot
   OSHA's own position: ANSI standards bind only if OSHA adopts them, and **Z358.1 and Z308.1 were not
   adopted.** Treat fake mandates as a kill list, never an opportunity list.
 - **THE POSTAL LIST LAW** — of eight registers field-inspected, **one publishes email.** Enumerable ≠
-  contactable.
+  contactable. **BOUNDED 19 Aug: it does not hold in Brazil.** The Receita Federal CNPJ open data publishes
+  `CORREIO ELETRÔNICO` for every establishment, with CNAE, porte, capital social, situação cadastral and start
+  date, free and monthly. *(Fill rate UNVERIFIED — measuring it is the cheapest test in the file.)*
+- **THE AGENT EXEMPTION — S2's tax kill has a documented escape, in the same decree.** RIR/2018 art. 162
+  **§2º III** exempts *"agentes, representantes… que, ao tomar parte em atos de comércio, não os pratiquem…
+  por conta própria"* from the *equiparação*. **Commission agency as a *pessoa física* is clean — no
+  PIS/COFINS on gross — provided she never trades on her own account.** And **STJ REsp 1.678.551/DF** holds
+  Lei 4.886/65 **art. 5º was not received by CF/88**, so no council registration is needed to earn or sue for
+  commission. See `THE_AGENCY_FINDING.md`.
+- **THE ANTI-DISINTERMEDIATION STATUTE** — the reason matching businesses fail is that both sides transact
+  directly afterwards. **Brazilian CC art. 714, Lei 4.886 art. 31, UK SI 1993/3053 reg. 7(2) and EU
+  86/653 art. 7(2) all pay an exclusive-territory AGENT on business in her zone that she never touched.**
+  **Every contract must be an *agência*, never a *corretagem*** — CC art. 726 gives the opposite default.
+- **THE WHOLESALE ESCAPE** — the one channel where being faceless is an ADVANTAGE: supplying a firm that
+  resells under its own name. It supplies the face, credential, interpretation and liability; she supplies the
+  throughput, priced off the reseller's client revenue. **20 resellers at $650 ≠ 300 customers.**
+  See `THE_WHOLESALE_ESCAPE.md`.
+- **THE MONITORING PINCER** — self-serve monitoring clusters at $0–100/month; above $300 it is sales-force
+  gated. The rare exceptions share one property: **the buyer's own revenue is a direct function of the watch.**
+  Test: *does one alert, acted on, pay for a year?*
 
 > ### RULE 2 — Filter LAST, not first.
 
