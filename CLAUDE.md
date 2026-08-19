@@ -89,6 +89,14 @@ Seven agents, primary statutory and supplier sources, several correcting each ot
   directly afterwards. **Brazilian CC art. 714, Lei 4.886 art. 31, UK SI 1993/3053 reg. 7(2) and EU
   86/653 art. 7(2) all pay an exclusive-territory AGENT on business in her zone that she never touched.**
   **Every contract must be an *agência*, never a *corretagem*** — CC art. 726 gives the opposite default.
+  **★ VERIFIED VERBATIM 19 Aug and STRONGER than recorded: art. 31 gives the zone commission where the contract
+  provides for exclusivity *"ou quando este for omisso"* — it is the DEFAULT. Art. 33 makes an unrefused written
+  order into a commission entitlement after 15/30/60/**120 days for a foreign buyer**. Art. 27(j) sets a
+  termination indemnity of **1/12 of ALL retribution ever earned under the contract**, protected against rolled
+  fixed terms by §2–§3 — a compounding statutory asset. ⚠ BUT art. 28 imposes a duty to *"EXPANDIR os negócios…
+  e PROMOVER os seus produtos"*, and art. 33 §1 pays her NOTHING if the buyer is insolvent. **The screen for any
+  agency candidate is: can art. 28's promotion duty be discharged entirely in writing?*** See
+  `THE_AGENCY_STATUTE.md`.
 - **THE WHOLESALE ESCAPE** — the one channel where being faceless is an ADVANTAGE: supplying a firm that
   resells under its own name. It supplies the face, credential, interpretation and liability; she supplies the
   throughput, priced off the reseller's client revenue. **20 resellers at $650 ≠ 300 customers.**
