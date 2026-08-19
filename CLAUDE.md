@@ -413,6 +413,26 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   cost, +6% card = ~16,6%, versus the category leader's 10,8% TOTAL operating margin**). **Compute the whole cost
   stack against a real comparable's audited margin before letting any single line kill a candidate.**
 
+- **★★ THE DENOMINATOR PLAY — the strongest live candidate, 19 Aug. Do not sell EVIDENCE for an argument; sell
+  an INPUT TO A LEGALLY MANDATORY FIELD.** Maersk's US tariff defines free time as *"any day a gate is open"*
+  and **46 CFR 541.6** makes the free-time start and end dates mandatory invoice contents, with **541.5** voiding
+  the obligation to pay if they are missing. **So gate open/closed is the DENOMINATOR of every US demurrage
+  invoice, terminals retain it 1–6 days, and nobody keeps the series.** Verified by me: `lynx.yti.com/
+  ClosedAreaMatrix.aspx` is the terminal operating system itself at **HTTP 200 with no login**, and Maersk's
+  2,7 MB empty-return directory returns **200 today and 404 on all five prior dates tested.**
+  See `THE_WORKING_DAY_LEDGER.md`.
+- **★★ THE COMPLEMENTARY-HALVES STRUCTURE — the wholesale fit to look for is one where EACH SIDE IS
+  STRUCTURALLY BARRED FROM THE OTHER'S HALF.** D&D recovery firms hold the customer's conduct evidence and
+  **cannot buy back the past**; she holds the past and can **never** hold conduct evidence (C4 forbids it).
+  **Contrast the version that died the same day, which tried to sell the half the buyer already had — see
+  `THE SUBSET LAW`.**
+- **★ A CA-COUNTERSIGNED HASH CHAIN REPLACES RECOGNITION WITH ARITHMETIC, FREE.** Carriers accept third-party
+  evidence only from a source *"in widespread use and generally recognized as reliable"* — which a faceless new
+  entrant fails **by construction**, and C2 forbids the cure. **Tested: FreeTSA, DigiCert, Izenpe and Sectigo
+  all returned RFC 3161 `Status: Granted` in seconds, at zero cost**, and **FRE 902(13)/(14)** make such records
+  self-authenticating on a **records CUSTODIAN's** certification — a fact about her own system, never an expert
+  opinion. **This is the first mechanism found that defeats the expert veto structurally rather than dodging it.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the

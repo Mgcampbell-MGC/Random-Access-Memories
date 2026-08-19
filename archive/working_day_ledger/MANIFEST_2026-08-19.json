@@ -1,0 +1,42 @@
+{
+  "captured_utc": "2026-08-19T21:15Z",
+  "daily_merkle_root_sha256": "a0da4396fc8183bb7459337591bb8455d47d2737fbb0de2860ac884ec6c20aa6",
+  "rfc3161_tokens_granted": [
+    "freetsa.org",
+    "timestamp.digicert.com",
+    "tsa.izenpe.com",
+    "timestamp.sectigo.com"
+  ],
+  "token_time": "Aug 19 21:15:59-21:16:00 2026 GMT",
+  "sources": {
+    "maersk_empty_return_directory": {
+      "url": ".../us-empty-return-locations-2026-08-19.xlsx",
+      "bytes": 2709258,
+      "erasure_verified": "prior dates 2026-08-18, -08-15, -08-12, -08-05, 2026-07-19 ALL return HTTP 404 (4309 B). Measured by me."
+    },
+    "yti_closed_area_matrix": {
+      "url": "https://lynx.yti.com/ClosedAreaMatrix.aspx",
+      "bytes": 6180,
+      "note": "terminal operating system itself, NO LOGIN, Aug 19-Aug 25 window"
+    },
+    "yti_gate_schedule": {
+      "url": "https://yti.com/terminal-schedules/gate-schedule/",
+      "bytes": 78794
+    },
+    "its_empty_receiving": {
+      "url": "https://www.itslb.com/itslb/empty-receiving-updates/",
+      "bytes": 114485,
+      "note": "split by 1st/2nd shift"
+    },
+    "pnct_empty_return": {
+      "url": "https://www.pnct.net/EmptyReturn",
+      "bytes": 36601
+    },
+    "trapac_la_empty_returns": {
+      "url": "https://losangeles.trapac.com/empty-returns/",
+      "bytes": 92575
+    }
+  },
+  "tarball_sha256": "4f603058198f3e69cf5b22b5a749e4ad416e6d374a6b1e7a3e99ede714949441",
+  "why": "Gate open/closed and empty-return acceptance are the FREE-TIME DENOMINATOR on every US demurrage invoice (46 CFR 541.6 makes free-time start/end dates mandatory invoice contents; 541.5 voids the obligation to pay if they are missing). Terminals retain 1-6 days. Nobody keeps the series."
+}
