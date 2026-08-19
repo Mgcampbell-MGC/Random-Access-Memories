@@ -167,6 +167,13 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
 > CAMERA, having CONTACTS, or being BELIEVED as a taste authority is dead on arrival.** What survives is what
 > she KNOWS about how the industry actually operates — used to spot a structural gap a machine can then serve.
 > **The insight is hers; the delivery must never be.**
+>
+> **⚠ AND SIZE IT HONESTLY (19 Aug): she had a SMALL name and a SMALL network in modelling.** So there is no
+> brand equity to leverage even if C2 were relaxed, and no doors she can open even if C7 were. **Do not build
+> anything that assumes recognition or access at any size.** *(This does not weaken the knowledge asset — it
+> sharpens it. What a WORKING model knows is the grind economics: agency deductions, payment delays, usage
+> overruns, sample sizing, how a shoot actually runs. **That is more useful raw material than the celebrity end,
+> and it is the half with the unsolved money problems.**)*
 
 **Not constraints:** the USA is not the only market — UK, EU, Canada and Australia are open, and
 **Australian and Northern-Hemisphere seasons are opposite, which fills each other's trough.**
