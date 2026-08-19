@@ -354,3 +354,113 @@ The acquisition and shutdown are confirmed by beehiiv's own blog.)*
 > **FINAL VERDICT: KILLED. Three independent agents, three unrelated angles — the mandate cannot be won in
 > writing, the publishers worth winning are supply-constrained and do not need selling, and the unit price is
 > roughly 8× too small in the only band that would have her.**
+
+---
+
+# PART FOUR — THE DEMAND SIDE. The rebooking question, finally measured.
+
+**786 paid placements across 447 archived issues of 5 newsletters from 3 unrelated publishers, over matched
+12-month windows, parsed and counted directly. Validated by hand against a rendered issue.**
+
+## ★ 87,3% of all paid newsletter inventory goes to an advertiser who bought more than once that year
+
+| Newsletter | Issues | Placements | Distinct advertisers | **Repeat inventory** | Mean bookings each |
+|---|---:|---:|---:|---:|---:|
+| **Ruby Weekly** | 52 | 152 | 26 | **93,4%** | 5,4 |
+| **Golang Weekly** | 52 | 97 | 28 | **90,7%** | 3,3 |
+| **JavaScript Weekly** | 52 | 155 | 38 | **89,7%** | 4,0 |
+| **bytes.dev** | 52 | 127 | 39 | **88,2%** | 3,2 |
+| **TLDR Marketing** | 235 | 255 | 87 | **80,4%** | 2,9 |
+
+**Single-purchase advertisers are only ~13% of inventory.** These are standing schedules, not lucky repeats:
+**TigerData bought 24 placements over 44 weeks at a 2-week median gap.** Meticulous 17. Clerk 12.
+
+### The advertisers self-document it in their own tracking strings
+
+- **Mescius:** `SpreadJS-JS-Weekly-Primary-Sponsor-August-2025`, `-Oct-25`, `-December-2025`, `-Jan-2026`,
+  `-March-2026` — **a named monthly recurring primary sponsorship, labelled by the buyer.**
+- **Auth0:** `..._jsweekly_newsletter_aud_JavascriptWeekly-Q3-Newsletter_utm2` — an enterprise demand-gen
+  taxonomy with **a named quarterly line item for one specific newsletter.**
+- **Microsoft:** `ai-fy27q2-...`, `ecommerce-fy27q3-...` — **fiscal-year quarterly planning.**
+
+> **The placement is a budgeted recurring line item, not a discretionary buy — and the evidence comes from the
+> BUYER's side, not the seller's marketing.**
+
+### Two of my own hypotheses falsified
+
+**(a) I predicted frequency rate cards — "1x/4x/12x" — would be the evidence of multi-issue buying. WRONG.**
+Cooperpress states *"All listings are priced per issue in USD,"* and three of its media kits contain **zero
+hits** for discount, frequency, bundle, 4x, 12x, multi-issue or volume. **The largest developer-newsletter
+group in the world achieves ~90% repeat inventory with a flat per-issue price and no volume discount at all.
+Rebooking is driven by the channel working, not by discount engineering.**
+
+**(b) Short measurement windows badly understate it.** The same newsletter reads **66,7% over 13 weeks and
+89,1% over 52.** Anyone sampling a quarter will re-derive a wrong low number.
+
+---
+
+## ★★ THE NEW AND INDEPENDENT CAUSE OF DEATH — the market does not pay the rep for renewals
+
+**GrowLetter — commission-only ad sales for newsletter publishers, i.e. literally this business, with The
+Hustle, 1440, James Clear and "50+ more" as clients — publishes its trigger:**
+
+> ***"There's no cost unless we bring you an advertiser you're not currently working with."***
+
+**And the measured carryover — the share of a year's later placements bought by an advertiser already present
+in the first quarter — is 53,7% (bytes.dev), 58,1% (Golang), 63,8% (JavaScript), 70,8% (Ruby Weekly).**
+
+> ### THE RESERVED-ANNUITY LAW — **the rebooking that collapses her hour cost and turns selling into an asset is precisely the revenue the market standard says a representative does not get paid on.** She would be paid on the ~30–45% that is genuinely new, at ~$1.764 a placement, and inherit none of the annuity.
+>
+> **Check this against every future candidate: when the COMPOUNDING half of a revenue stream is contractually
+> reserved to the principal, the agent keeps the NON-COMPOUNDING half at full hour cost.**
+
+**And exclusivity is not on offer at all** — GrowLetter markets ***"No exclusivity — work with any seller or ad
+network"*** as a *feature*. A publisher with 90% repeat inventory has no reason to give an unknown a monopoly.
+
+---
+
+## The price finding, from the only primary rate card obtained
+
+**Cooperpress Q3 2024 — 463.545 subscribers across seven titles:**
+
+| Newsletter | Subs | Primary | Sponsored | Classified |
+|---|---:|---:|---:|---:|
+| JavaScript Weekly | 179.077 | **$3.590** | $1.190 | — |
+| Frontend Focus | 74.264 | $1.780 | $550 | $180 |
+| Node Weekly | 61.236 | $1.420 | $640 | $180 |
+| Ruby Weekly | 38.755 | $1.180 | $540 | — |
+| Golang Weekly | 37.438 | $1.040 | $580 | $180 |
+
+**Observed 2,98 paid slots per issue. JavaScript Weekly's average placement at rate card is $1.764 — not
+$5.000. The top slot in the largest JavaScript newsletter on earth is $3.590.**
+
+> **Her target of $444.000/year is 1,62× JAVASCRIPT WEEKLY'S ENTIRE ANNUAL ADVERTISING INVENTORY, and 50,8% of
+> the whole seven-title Cooperpress group's theoretical maximum with every slot sold every week.**
+
+**And the cross-sell premise is weaker than assumed:** measured advertiser overlap between *different
+publishers* serving the *same* audience is only **21,1%**. Overlap is high *within one publisher's stable* —
+which is the cross-sell that publisher's own in-house team already runs for free.
+
+---
+
+## What was genuinely favourable, and is worth keeping
+
+- **Advertisers buy on FLAT FEES with publisher-supplied metrics.** Only **44,8% of 411 sponsor links carried
+  any tracking parameter at all** — more than half of these advertisers do not tag their newsletter links.
+  **She would not be exposed on attribution or on expertise: the publisher supplies the numbers.** That is the
+  file's own law — *the buyer supplies the domain, she supplies throughput* — satisfied cleanly.
+- **The advertiser population is enumerable for free.** 96 named advertisers with exact placement counts and
+  dates, extracted from public archives in about an hour, for $0. Sponsors are machine-labelled in the HTML.
+  No login, no bot-blocking. *(Though note **SponsorGap sells exactly this intelligence for $39/month**, so
+  any publisher can self-serve the prospect list she would charge 30% to assemble.)*
+- **The transaction genuinely clears in writing.** Cooperpress's entire commercial contact surface is email —
+  no phone number anywhere in the media kit — and its documented seven-step order process contains no call.
+- **★ The heaviest repeat buyers are SPECIALIST CONSULTANCIES, not SaaS.** FastRuby.io bought **39
+  placements**, Sinaptia **25** — firms selling Rails-upgrade engagements worth tens of thousands. **A
+  consultancy with a high-value engagement sold to a narrow, precisely enumerable audience is the ideal
+  newsletter advertiser: highest LTV, longest cycle, least click-sensitive.** That is a materially different
+  profile from "B2B SaaS" and worth remembering for any future advertising-adjacent candidate.
+
+> **FOUR independent agents have now killed this candidate on four unrelated grounds: the mandate cannot be won
+> in writing · the publishers worth winning are supply-constrained · the unit is ~8× too small · and the
+> compounding half of the revenue is contractually reserved to the principal.**
