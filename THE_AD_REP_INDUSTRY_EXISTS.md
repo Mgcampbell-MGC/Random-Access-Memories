@@ -247,3 +247,110 @@ inverts the intuition: **price per subscriber FALLS as lists grow.** This Week i
 - **SELL THE CONTRACT, NOT THE UNIT** — where an industry already prices 12× and 24× frequency contracts, one
   sale can be worth twenty-four placements. *(NAFA sells a 24× contract as a single $10.920 booking. Still the
   only observed mechanism that collapses per-unit hour cost in a sales business.)*
+
+---
+
+# PART THREE — RED TEAM. Killed on the price of the unit.
+
+**The whole model rested on one unexamined number: a ~$5.000 average sponsorship slot. It is wrong, and the
+correction comes from the incumbent's own published table.**
+
+**Paved's knowledge-base article *"How much do newsletter ads cost?"* says *"typically averaging around $5K"*
+— and then prints eight real newsletters on the same page, none of which is $5.000:**
+
+| Publication | Price | Subs | **per 1.000** |
+|---|---:|---:|---:|
+| Internet is Beautiful | $900 | 10.000 | $90,00 |
+| MoneyWeek | $2.429 | 85.000 | $28,58 |
+| Fast Company | $6.000 | 302.689 | $19,82 |
+| **The Mommy — the ONLY observation inside the 20–60k band** | **$295** | **41.000** | **$7,20** |
+| Newser's Daily Rundown | $250 | 250.000 | $1,00 |
+
+> **Median $16,27 per 1.000 subscribers. At 40.000 subscribers that is $651 a slot, not $5.000 — and her 30%
+> is $195, not $1.500.**
+
+### The closed-form kill
+
+**$11.100 ÷ $195 = 57 placements a month. Against 78 delivery hours: 82 minutes each** — prospect, pitch,
+negotiate, traffic the creative, chase the IO, confirm the send, reconcile payment.
+
+**And she cannot sell inventory she does not represent.** A weekly newsletter has ~4 primary slots a month:
+
+| Configuration | Booked at **100% sell-through, full rate card** | Her 30% |
+|---|---:|---:|
+| 5 publishers × 40.000 subs | $13.020 | **$3.906** |
+| **8 publishers × 60.000 — the top of every stated range** | $31.232 | **$9.370** |
+| **Target** | $37.000 | **$11.100** |
+
+> **At literal perfection — every slot, every send, full price, zero remnant, forever — the configuration tops
+> out BELOW the target. It is 2,2–2,8× short at the median.**
+
+### ★ THE ANTI-CORRELATION THAT MAKES IT A KILL RATHER THAN A HARD BUSINESS
+
+> **The price band where the arithmetic works belongs to publishers who will never sign with an anonymous solo
+> rep. The publishers who WILL sign sit in a band where the arithmetic cannot work. There is no overlap, and
+> the gap is roughly 8×.**
+
+### The benchmark that settles it
+
+**TechTarget — a pure-play B2B IT media company, her exact target vertical — disclosed 195 sales and marketing
+staff generating $86,5M in 2009: $443.600 of booked advertising per head per year.**
+
+> **Her target is $444.000/year of bookings. She proposes to be exactly ONE AVERAGE HEAD of a professional B2B
+> media sales organisation — part-time, cold, anonymous, foreign, with no telephone, no brand and no inbound —
+> while also doing the ad ops, invoicing and reconciliation that the other ~440 employees do.**
+
+**And selling & marketing cost TechTarget 37,0% of revenue in 2009, 37,4% in 2020 and 42,3% in 2023. Her
+entire gross take is 30%, and she must live on it.**
+
+*(Rebooking is NOT the flaw — TechTarget's own 10-K: *"the quarterly renewal rate of our top 100 customers has
+consistently exceeded 90%."* **The flaw is that per-placement overhead is per PLACEMENT, not per relationship.**
+Rebooking collapses prospecting and leaves trafficking, which is the majority of the work and never goes away.)*
+
+### Three attacks that FAILED — reported because an honest red team reports its misses
+
+- **US WITHHOLDING: no.** IRS sources personal-service income where the services are **performed**, *"regardless
+  of where the contract was made, or the place of payment, or the residence of the payer."* **Selling from São
+  Paulo makes her commission foreign-source. No 1042-S, no 30% haircut, W-8BEN and paid gross.** THE SOURCING
+  LAW working in her favour for once.
+- **Disintermediation is not what kills it.** Newsletter sponsorship is transactional and low-trust; the
+  business dies on unit price long before anyone bothers to cut her out.
+- **Trust only wounds.** The advertiser's real counterparty risk sits with the publisher, whose archive is
+  public. *(Though note: **Apple's Mail Privacy Protection has made open rate — the headline metric of every
+  media kit — unauditable since 2021**, and she has no balance sheet behind a makegood.)*
+
+### Two corrections to this file's own record
+
+1. **CORRECTS `THE_AGENCY_FINDING.md`.** I flagged the reach of Brazilian agency law as *"UNVERIFIED, needs
+   counsel."* It is verifiable and it is negative. **CPC/2015 art. 25: a Brazilian judge MUST decline
+   jurisdiction once a foreign exclusive-forum clause is pleaded.** And **LINDB art. 9º §2º** points at the
+   proponent's residence anyway. **Art. 714 never gets applied.** *(The only exclusive ad-rep agreement filed
+   with a regulator that could be found chooses California law and LA County courts.)* **UK/EU protection also
+   fails: SI 1993/3053 reg. 2(1) confines "commercial agent" to a person negotiating the sale of GOODS.
+   Advertising inventory is a service.**
+2. **"No licence is required anywhere" is FALSE — in her own jurisdiction.** **Lei 4.680/1965 art. 2º** defines
+   *Agenciadores de Propaganda* as *"profissionais que, vinculados aos veículos da divulgação, a êles
+   encaminhem propaganda por conta de terceiros"* — a description of the job with no daylight in it — and
+   **Decreto 57.690/1966 art. 22** makes the occupation *privativo* of those registered with the Ministry of
+   Labour. *(Probably a dead letter under the STJ's non-recepção reasoning — **UNVERIFIED** — but the "no
+   licence anywhere" claim was stated as verified and it was not.)*
+
+### And the mechanism the industry actually uses, which she deliberately gave up
+
+**The one exclusive ad-rep agreement filed in full with a regulator has the REP COLLECTING THE MONEY:**
+*"Advertising Revenue shall mean all revenue actually received by [the rep]"*, with the publisher paid 65%
+**after** the rep is paid.
+
+> **The real anti-disintermediation device in observed practice is HOLDING THE CASH. "She is never merchant of
+> record" was listed as a strength. It is the surrender of the only leverage the position has.**
+
+### And the market already tested this margin
+
+**Swapstack — funded, named, US-based, 2.500+ newsletters, 60 million collective readers, $2M of facilitated
+ad spend — reached ~$25.000/month of company revenue in about 2,7 years, was acquired by beehiiv in September
+2023 and shut down that October.** *(Revenue and take rate founder-stated to a trade publication, not audited.
+The acquisition and shutdown are confirmed by beehiiv's own blog.)*
+
+> **FINAL VERDICT: KILLED. Three independent agents, three unrelated angles — the mandate cannot be won in
+> writing, the publishers worth winning are supply-constrained and do not need selling, and the unit price is
+> roughly 8× too small in the only band that would have her.**
