@@ -26,6 +26,22 @@ fees for a percentage.
 | **Verified by me** | `lynx.yti.com/ClosedAreaMatrix.aspx` = the terminal operating system, **HTTP 200, no login** · Maersk's 2,7 MB empty-return directory: **200 today, 404 on all five prior dates tested** · **FreeTSA, DigiCert, Izenpe, Sectigo all returned RFC 3161 `Status: Granted`** over today's bundle, free |
 | **Day 0** | **Banked** — `archive/working_day_ledger/2026-08-19.tar.gz` with all four timestamp tokens |
 
+### ★ SURVIVED A KILL ATTEMPT, 19 Aug — the annual-calendar test
+
+**The sharpest objection to #1: if terminals publish a full-year holiday calendar, closures are knowable in
+advance and the archive has no scarcity.** Tested by reading YTI's gate schedule rather than counting it:
+
+| | 1st shift | 2nd shift |
+|---|---|---|
+| 17–19 Aug | OPEN | OPEN |
+| **20 Aug** | OPEN | **CLOSED** |
+| **21 Aug** | OPEN | **CLOSED** |
+| **22 Aug** | **CLOSED** | **CLOSED** |
+
+**A rolling ~6-day window, values varying week to week. These are operational closures, not statutory holidays
+— no annual calendar contains them.** *(And it satisfies `THE OUTCOME-IS-RETAINED LAW` uniquely: a gate
+calendar has no outcome. Every day IS its own outcome and nothing supersedes it.)*
+
 **⚠ OPEN — and the whole thing turns on the first one:**
 1. **8 of 20 terminals verified publicly readable. Not twenty.**
 2. **The moat is probabilistic, not structural** — plain GET pages; what protects them is that no crawler visits

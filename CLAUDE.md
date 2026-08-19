@@ -452,6 +452,43 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   self-authenticating on a **records CUSTODIAN's** certification — a fact about her own system, never an expert
   opinion. **This is the first mechanism found that defeats the expert veto structurally rather than dodging it.**
 
+- **★★ THE MANDATORY-FIELD SELF-SUPPLY LAW — regulators do not compel a party to state a number it cannot
+  obtain, so the field's owner almost always owns the input.** All eleven fields in 49 CFR 1333.4 are the
+  railroad's own records. **The ocean-demurrage seed is the EXCEPTION: 46 CFR 541.6 puts the field on the
+  CARRIER while the gate calendar belongs to the TERMINAL — two different companies.** ### **THE SPLIT TEST,
+  thirty seconds, run it first: is the party on the hook for the field the same party that generates the input?
+  If yes, stop.** Killed rail, SEC 605/606/614, ETF 6c-11, parcel guarantees and CBAM in ten seconds each.
+- **★★ THE RETENTION-DUTY COROLLARY — A SHORT POSTING WINDOW IS EVIDENCE OF A LONG RETENTION DUTY. READ THE
+  WHOLE PART.** 18 CFR 284.13(b) posts 90 days; **284.12(b)(3)(v) retains three years "available in electronic
+  form for a reasonable fee."** 18 CFR 37.7(b) caps OASIS postings at 20 days and orders five-year retention
+  **in the same sentence.** Four of nine machine-readable windows are paired with an archive duty in the same
+  part. *(This killed a direction I had recommended after verifying only the section, not the part.)*
+- **★ THE OUTCOME-IS-RETAINED LAW — a publisher that overwrites keeps the OUTCOME and discards the RUNNING
+  COMMENTARY, and a mandatory field almost always needs the outcome.** CBP discards weekly quota fill
+  percentages and retains the date and time each quota filled. **Ask what the ANNUAL or FINAL version of the
+  data is; if one exists you are archiving noise.** **The working-day ledger passes uniquely — a gate calendar
+  has no outcome; every day IS its own outcome.** *(Measured 19 Aug: YTI's schedule is a rolling ~6-day window
+  with 2nd shift CLOSED on 20–21 Aug and both shifts CLOSED on 22 Aug — operational, not statutory holidays.)*
+- **★ THE GAZETTE LAW — any input that is a RATE, PRICE or THRESHOLD set by a public authority is gazetted and
+  archived by statute. RATES ARE NEVER ERASABLE; only OPERATIONAL STATES are.** Deletes tax and customs rates,
+  statutory payroll rates, index-linked construction adjustment, benchmark rates and Brazilian ICMS-ST MVA/PMPF
+  without a fetch. **The live space is not "published numbers" — it is "the operating condition of a private
+  facility on a named day."**
+- **★★ FASHION AND MODELLING WERE HUNTED 19 AUG AND NOTHING SURVIVED — but the reason is reusable.
+  ★ THE 75-FIRM CEILING:** New York's Fashion Workers Act registry, pulled and counted, is **75 active model
+  management companies with a `phone` column and NO email column** ($500–700 fee + $50.000 surety bond — the
+  gate/contact anti-correlation again). **Any product whose buyer is "model agencies" is dead on arithmetic.**
+  **★ THE DISCOVERY/DETAIL SPLIT:** Amazon serves a 1,08 MB product page and a 2,6 MB search page containing
+  **zero** products — a third state, neither open nor blocked. **An archive needs ENUMERATION, not retrieval;
+  test discovery, never detail.** **★ AND THE REFRAME: her modelling knowledge is DIAGNOSTIC, NOT COMMERCIAL —
+  it correctly identifies unwatched problems, and every one has a 75-firm pool, no email, and an incentive not
+  to act. Use domain affinity as a SCREEN on candidates found elsewhere, not as the hunting ground.**
+  See `THE_FASHION_HUNT.md`.
+- **★ THE STATUTE IS NOT THE BUSINESS; THE RECOVERY INDUSTRY IS.** The EU prior-price rule (Dir. 98/6/EC art.
+  6a) is as clean a mandatory-field hook as ocean demurrage and dies anyway, because **no contingency-fee
+  industry exists whose revenue is a direct function of the observation.** The working-day ledger differs by
+  exactly that: a 25–35% success-fee recovery trade already sits there.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
