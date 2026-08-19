@@ -72,9 +72,13 @@ Seven agents, primary statutory and supplier sources, several correcting each ot
   OSHA's own position: ANSI standards bind only if OSHA adopts them, and **Z358.1 and Z308.1 were not
   adopted.** Treat fake mandates as a kill list, never an opportunity list.
 - **THE POSTAL LIST LAW** — of eight registers field-inspected, **one publishes email.** Enumerable ≠
-  contactable. **BOUNDED 19 Aug: it does not hold in Brazil.** The Receita Federal CNPJ open data publishes
-  `CORREIO ELETRÔNICO` for every establishment, with CNAE, porte, capital social, situação cadastral and start
-  date, free and monthly. *(Fill rate UNVERIFIED — measuring it is the cheapest test in the file.)*
+  contactable. **BOUNDED 19 Aug, AND NOW MEASURED: it does not hold in Brazil.** The Receita Federal CNPJ open
+  data publishes `CORREIO ELETRÔNICO` with CNAE, porte, capital social, situação cadastral and start date, free
+  and monthly. **Fill rate ~76% on active accounting firms — four independent runs at 75,0 / 75,6 / 76,9 /
+  78,6%, two of them mine** *(sampling bias: all draws were pre-1996 CNPJ roots; the bulk file settles it)*.
+  **★ AND A TRAP: `minhareceita.org` and `brasilapi.com.br` SILENTLY REDACT the email field — verified `None`
+  for Petrobras and Magazine Luiza, which `publica.cnpj.ws` serves intact. A fill rate measured through either
+  is a FALSE ZERO, and it fails in the direction of a kill.** See `THE_BRAZIL_BUYER.md`.
 - **THE AGENT EXEMPTION — S2's tax kill has a documented escape, in the same decree.** RIR/2018 art. 162
   **§2º III** exempts *"agentes, representantes… que, ao tomar parte em atos de comércio, não os pratiquem…
   por conta própria"* from the *equiparação*. **Commission agency as a *pessoa física* is clean — no
@@ -281,6 +285,28 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   point-in-time 2020 snapshot, "Irregular", and carries no email — but that one historical point is publicly
   purchasable, so NET CHANGE is back-fillable by anyone and only the ORDER AND DATES of the changes are not.**
   State the narrower claim.
+
+- **★★ THE R$1.200 CEILING — a COMPLETE outsourced back office for a Brazilian small business (apuração do
+  Simples, guias, escrituração fiscal, eSocial, folha) sells at R$450–1.200/month**; mid-market R$1.500–5.000.
+  **No Brazilian SME will pay R$1.000+/month for one sub-task when their entire compliance bill is R$700.**
+  This deletes the whole "sell one clever thing to a Brazilian small business" family. **The R$1.000+ price is
+  payable only by firms ABOVE the Simples ceiling, or by firms that AGGREGATE many small businesses — so price
+  per client in their portfolio, not per subscription.** *(Secondary: three accountancy pricing pages agreeing;
+  no primary survey found.)* And **`PORTE DA EMPRESA` = 05 plus `CAPITAL SOCIAL` are in the free CNPJ file, so
+  the above-Simples population can be isolated at zero cost before a single email is sent.**
+- **★ THE VENDOR-URGENCY LAW — when a statutory deadline creates a large data-cleanup task, the ERP vendors
+  ABSORB it before a solo operator can sell it, and the vendor content describing the crisis OUTLIVES the
+  crisis by months. Date-check the REGULATOR'S OWN PAGE before believing any compliance-urgency pitch.** Worked
+  example: the reforma tributária remapping play, killed by **Ato Técnico Conjunto CGIBS/RFB nº 1 de 31/07/2026**
+  postponing the NF-e validation rules indefinitely, and by CGIBS's own report of **88% compliance at 4 Aug
+  2026** — while law-firm and vendor pages still describe real-time blocking. **The gap between the blogs and
+  the regulator was NINETEEN DAYS.** *(`THE COMPLIANCE COSTUME` with a clock on it: not a fake mandate, a real
+  mandate quietly deferred.)*
+- **★ ONLY ONE BRAZILIAN SME SEGMENT IS STRUCTURALLY WRITTEN-ONLY: escritórios de contabilidade.** Their entire
+  operating model is already receiving files by email and sending files back, so they will read a technical
+  email and reply in writing because that is their job. **Every other Brazilian SME segment defaults to WhatsApp
+  and a phone call — which breaks C1 at the exact moment it starts working.** Screen Brazilian buyers on this
+  before anything else.
 
 ## The test design that works
 
