@@ -132,3 +132,103 @@ third-party archive evidence is **UNVERIFIED** — MSC, CMA CGM and APL all bot-
 
 **But even granting every unverified host were wide open, four or five terminals cannot support a product whose
 disputes span whichever terminal the container happened to sit at — and kill two applies at all of them.**
+
+---
+
+# SECOND RED TEAM — independent confirmation, and it is worse
+
+**A separate agent attacked the buyer side without seeing the access findings. It killed the idea again, on
+four further grounds, and produced the sharpest law of the day.**
+
+## ★★ THE SUBSET LAW — the deepest kill, and it holds at any price
+
+> ### **Before selling evidence, ask: DOES THE ACT OF PRODUCING THE EVIDENCE THE BUYER IS REQUIRED TO PRODUCE ALSO PRODUCE MINE? Where the buyer's mandatory artefact contains hers as a by-product, the archive has ZERO marginal value at any price.**
+
+**Sharper than `THE FREE FRONT DOOR`: here the free supplier is not a competitor at all — it is the customer's
+own compliance obligation.** The buyer must screenshot their own appointment attempts. That screenshot contains
+the world-state inside the same image. **Her archive is never the marginal document; it is a duplicate of one
+the buyer already had to make.**
+
+## ★ THE IDENTITY REQUIREMENT — amending `THE CONTEMPORANEOUS-EVIDENCE RULE` a second time
+
+**A timing requirement makes evidence unmanufacturable; an IDENTITY requirement makes it unsellable.** Every
+major carrier names the subject of the required act:
+
+| Carrier | The clause |
+|---|---|
+| **ONE** | *"the credible evidence must include **all** of the following"* → *"Screenshot(s) with the date and time **these attempts were made**"* — conjunctive |
+| **MSC** | *"time-stamped screenshots **from the terminal appointment system**"*, which must show the *"**specific container number**"* and *"current date and time displayed at the **bottom-right corner of the screen**"* |
+| **Maersk** | *"An e-mail to Maersk's equipment team… **must be sent prior to the first day being requested**"* — unmanufacturable by anyone but the buyer |
+| **Hapag-Lloyd** D07(3)(d) | *"a statement from the motor carrier that it **attempted in good faith**"* |
+| **APL / CMA CGM** | *"the billed party was unable to secure an appointment"* + the same good-faith statement |
+
+**And a third screen to add: does the policy say the ADJUDICATOR keeps its own reports of the same fact?**
+Hapag-Lloyd D06(6)(b) and APL both do — *"**Reports maintained by [the carrier] that appointments were
+reasonably available** on the date/time in question."* **Third-party evidence of a fact the judge already
+records itself is never decisive.** `THE CONTEMPORANEOUS-EVIDENCE RULE` assumed nobody else was watching. Two
+parties were, and one of them decides the case.
+
+## ★ "RELIABLE THIRD-PARTY VENDOR" IS A RECOGNITION TEST, NOT A CORRECTNESS TEST
+
+Hapag-Lloyd and APL use identical words: third-party screenshots are accepted only where *"**the third-party
+website is in widespread use and is generally recognized as reliable and accurate**."*
+
+> **A new archive run by an anonymous entity fails that on day one BY CONSTRUCTION — and C2 forbids the
+> brand-building that is the only cure. This is the EXPERT VETO in a new costume: not that she must be believed,
+> but that her ARCHIVE must be.** No cryptographic hashing fixes it; no carrier policy contains any concept of a
+> hash. What they specify is a human's desktop screenshot showing the OS taskbar clock.
+
+## ★ THE PRODUCT HAS EXISTED SINCE 2018, PRICED AND PUBLISHED
+
+**BlueCargo** ([bluecargo.io/pricing](https://www.bluecargo.io/pricing)) — **Pro from US$18.126/year**:
+*"Terminal schedules and **appointment availability** for 23 steamship lines and **67 port terminals**"* ·
+*"Start at $120,000 in per diem disputes per year **with 2 years of backup documentation**."*
+**Free tier: 4 terminals, 23 lines, 5 users.** Home page: *"**the industry's only audit record with timestamped
+documentation**"*, *"neutral party real-world port events and evidences"*, *"95% Dispute Success."* Distributed
+inside **Trinium TMS via the CargoWise Landside partnership.**
+
+**`THE FREE FRONT DOOR` and `THE MONITORING PINCER` on one published page** — free below, $1.510/month above,
+and every incumbent gated behind "book a demo." **She would be the one unable to back-fill: BlueCargo has been
+accumulating since 2018 and sells the history.**
+
+And the TMS vendors get it as a by-product — PortPro's *"Automated Terminal Appointments"* polls availability
+continuously in order to auto-book. **Anyone logged in to book already holds the history free.**
+
+## ★ THE MONEY — "one alert pays for a year" is FALSE, now measured
+
+**Maersk US import tariffs, own PDFs, effective 20 Jun 2026:** detention **$210/day** (d5–8), **$260** (d9–12),
+**$290** (d13+); demurrage **$300/day** (d5–8), **$345** (d9–13), **$395** (d14+). **Port of LA Tariff No. 4
+wharf demurrage: $13,33/day (20'), $26,66 (40').**
+
+**A container's typical chargeable exposure is 2–5 days = US$420–1.975. Her $650/month is $7.800/year, needing
+20–26 chargeable container-days to cover.** That is a book of disputes, not one alert — **and the buyer with
+that book is exactly BlueCargo's Pro customer.**
+
+**FMC FY2024 Annual Report (primary):** *"the FMC received **189 charge complaints**… **Eighty-one of those
+charges, valued at $1.001.350, were voluntarily refunded or cancelled**… The total amount refunded or cancelled
+during FY 2024 was **$1.874.142**."* Plus *"**18 small claims cases**."* **Nationwide, all carriers, all charge
+types.** *(Total US D&D billed and disputed: **UNVERIFIED**, no primary source.)*
+
+## ★ THE RULE WAS FINE. THAT IS THE POINT.
+
+**46 CFR part 541 is in force** — final rule 23 Feb 2024, effective 28 May 2024. *World Shipping Council v. FMC*
+(D.C. Cir., 23 Sept 2025) set aside **only §541.4**; per the FMC's own article, *"apart from section 541.4, the
+rest of the Rule remains in effect."* **545.5 intact.** So 541.5, 541.6(e)(2) and 541.8(a) — every provision the
+pitch leaned on — are good law.
+
+> **The regulatory tailwind was real and it rescued nothing.** Worth remembering the next time a candidate is
+> argued from a statute: **a favourable rule is not a business.**
+
+## ★ AND SHE CANNOT GET THE LOGIN EVEN IF SHE WANTED TO
+
+eModal's own instruction sheet: ***"You must have a valid SCAC and either an MCP or USDOT number."*** Approval
+takes 2–3 business days and support *"will reply… or **contact you by phone**."* **She has no US motor carrier
+authority, no USDOT, no MCP, no SCAC.** And a capture from *her* account would show neither the customer's
+container number nor the customer's attempts.
+
+## THE BUYER WAS NEVER REACHABLE EITHER
+
+**Freight audit & payment firms are not a register** — no public list; the US ocean-relevant set is low tens
+(Trax, nVision Global, CTSI-Global, Cass, Data2Logistics, Intelligent Audit, CT Logistics, enVista, A3, Ocean
+Audit). **Selling 18–20 subscriptions into a 20–40 firm population is ~50% market penetration, by cold email,
+from an anonymous foreign entity, with no call, ever. That is not a target, it is a wish.**
