@@ -385,6 +385,34 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   US partner is merchant of record, holds the resale certificates, and she invoices an exported SERVICE at
   8,1% — both taxes vanish.)*
 
+- **★★ THE CATALOGUE SCISSORS — an item either EXISTS in a catalogue the buyer reaches in ninety seconds without
+  speaking to anyone (Amazon Business, 4imprint, Snappy, Goody), in which case THERE IS NO MARGIN; or it does
+  NOT, in which case it is CUSTOM — artwork, proofs, approvals — which means HER HANDS ON EVERY UNIT.** The only
+  items with margin need her hands; the only items that don't need her hands have no margin. **No third door.**
+  Killed the HR drop-ship family. *(Same shape as the settled AI-on-marketplaces law, in a different market.)*
+  See `THE_CATALOGUE_SCISSORS.md`.
+- **★★ THE WHOLESALE ESCAPE DOES NOT TRANSPOSE TO PHYSICAL GOODS — it pays only where the throughput is A
+  MACHINE THAT RUNS ONCE AND SERVES MANY** (a cron, a corpus, a watch). Where throughput is **per-unit human
+  handling**, white-labelling changes who gets the credit and nothing else. **TEST EVERY WHITE-LABEL PROPOSAL:
+  does the partner's marginal order cost her marginal minutes? If yes it is not the wholesale escape, it is a
+  job.** This BOUNDS `THE_WHOLESALE_ESCAPE.md`.
+- **★ THE SELF-SERVED FRICTION LAW — when a buyer's friction is INTERNAL to the buyer, they fix it on their own
+  side and keep 100% of the saving.** The 1994 GAO purchase-card study (the only primary cost-per-transaction
+  evidence found) measured **$54 average saving per transaction**, and the entire saving accrued to the buyer:
+  FAR 2.101's micro-purchase threshold is now **$15.000**, and GSA SmartPay ran **19,6M card transactions worth
+  $28,4bn in FY2025**. **Before selling relief from a process cost, ask WHOSE process it is.**
+  ⚠ **And distrust the famous procurement numbers: APQC's "$50–$150 to process a PO" is UNVERIFIED and appears
+  only in vendor blogs — apqc.org 403s every method.**
+- **★ INVOICE, DON'T CHECKOUT — restated. The RAIL IS CHEAP AND EXISTS: Wise Business supports Brazilian
+  Empresário Individual/MEI with USD receiving details for R$250, so a US buyer pays by domestic ACH at near
+  zero.** What is expensive is the **CARD** (Stripe Brazil 3,99% + 2% international) — and an international wire
+  is worse still (**$40–50**, i.e. 13–17% of a $300 order). **The payment rail was NOT the kill and this file was
+  about to assume it was.**
+- **⚠ AND THE FOUNDER'S CORRECTION, VINDICATED: the tax was not the kill either.** The Brazilian turnover load on
+  a goods trade is **~5,9% of revenue** — survivable alone. It kills only in combination (**+4,7% US sales tax on
+  cost, +6% card = ~16,6%, versus the category leader's 10,8% TOTAL operating margin**). **Compute the whole cost
+  stack against a real comparable's audited margin before letting any single line kill a candidate.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
