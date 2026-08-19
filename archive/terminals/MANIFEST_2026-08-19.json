@@ -1,0 +1,152 @@
+{
+  "capture_targets": {
+    "apmt_losangeles": {
+      "bytes": 47415,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Wed, 19 Aug 2026 20:54:51 GMT"
+      },
+      "http": 200,
+      "sha256": "5d8c397ec650769e8f35429dbc739a20ba95b7bc3a63273229b11a35b738b36a",
+      "tables": 0,
+      "text_chars": 3104,
+      "url": "https://www.apmterminals.com/en/los-angeles"
+    },
+    "emodal_home": {
+      "bytes": 3858,
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Wed, 19 Aug 2026 20:54:51 GMT",
+        "ETag": "\"77512d46d7c2dc1:0\"",
+        "Last-Modified": "Thu, 02 Apr 2026 19:31:16 GMT"
+      },
+      "http": 200,
+      "sha256": "69646b66997f1b4f49788040fcaf72b9149c1d44cf0acf8a34bea09229f94eed",
+      "tables": 0,
+      "text_chars": 415,
+      "url": "https://www.emodal.com/"
+    },
+    "fenix_rates": {
+      "bytes": 55519,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Wed, 19 Aug 2026 20:54:50 GMT"
+      },
+      "http": 200,
+      "sha256": "148b820f62afc53f06eff38de63d1761b3711372065dd4ae0273fb94f8897c1b",
+      "tables": 0,
+      "text_chars": 686,
+      "url": "https://fenixmarineservices.com/schedule-of-rates/"
+    },
+    "fenix_terminal": {
+      "bytes": 88326,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Wed, 19 Aug 2026 20:54:49 GMT"
+      },
+      "http": 200,
+      "sha256": "e25c737ed434ca711e3a3c3a380e8c81798450f3270a2fdf245c697bb994e8e2",
+      "tables": 0,
+      "text_chars": 9822,
+      "url": "https://fenixmarineservices.com/terminal/"
+    },
+    "one_disputes": {
+      "bytes": 46586,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Wed, 19 Aug 2026 20:54:52 GMT",
+        "last-modified": "Wed, 19 Aug 2026 15:08:12 GMT"
+      },
+      "http": 200,
+      "sha256": "fc1772c0e7fcca7c39b172216eb914da6d199c2bba10daa8203ad6fb27355019",
+      "tables": 0,
+      "text_chars": 8032,
+      "url": "https://us.one-line.com/invoice-disputes-landing-page"
+    },
+    "trapac_la_empty_returns": {
+      "bytes": 94779,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Wed, 19 Aug 2026 20:54:46 GMT"
+      },
+      "http": 200,
+      "sha256": "0bba141c3bc8d76e750479d9ff613646be21cc57e41755490c6ff72f014e38a7",
+      "tables": 5,
+      "text_chars": 32088,
+      "url": "https://losangeles.trapac.com/empty-returns/"
+    },
+    "trapac_la_gate_hours": {
+      "bytes": 98707,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Wed, 19 Aug 2026 20:54:46 GMT"
+      },
+      "http": 200,
+      "sha256": "329975207db772350dd9b270f3c8047713510a71308c99def494154a28b7d40a",
+      "tables": 1,
+      "text_chars": 33321,
+      "url": "https://losangeles.trapac.com/gate-hours/"
+    },
+    "trapac_la_yard_status": {
+      "bytes": 83829,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Wed, 19 Aug 2026 20:54:45 GMT"
+      },
+      "http": 200,
+      "sha256": "3ab0a6a670aa7377bd13b4f318fa55d93dca20ba7dfab04b1ab1d6387d63f717",
+      "tables": 1,
+      "text_chars": 27707,
+      "url": "https://losangeles.trapac.com/real-time-yard-status/"
+    },
+    "trapac_oak_yard_status": {
+      "error": "HTTP Error 404: Not Found",
+      "url": "https://oakland.trapac.com/real-time-yard-status/"
+    },
+    "yti_appointments_policy": {
+      "bytes": 98734,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Wed, 19 Aug 2026 20:54:47 GMT"
+      },
+      "http": 200,
+      "sha256": "e1bbfd0ca14ae14b08636d1a5fc7e16f3df75b2e15f36825a3ac3935b9b3be37",
+      "tables": 1,
+      "text_chars": 9545,
+      "url": "https://yti.com/appointments/"
+    },
+    "yti_demurrage_dispute": {
+      "bytes": 86443,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Wed, 19 Aug 2026 20:54:48 GMT"
+      },
+      "http": 200,
+      "sha256": "907856a20170acfca5fcd5325c4eae8e654dc0231feb5073c958cfad5979cf6d",
+      "tables": 0,
+      "text_chars": 6618,
+      "url": "https://yti.com/demurrage-dispute/"
+    },
+    "yti_terminal_schedules": {
+      "bytes": 85677,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Wed, 19 Aug 2026 20:54:49 GMT"
+      },
+      "http": 200,
+      "sha256": "a02b8516419447e5ccad89ca9ddb90671af7f05347ec642c03c393145479361d",
+      "tables": 0,
+      "text_chars": 4088,
+      "url": "https://yti.com/terminal-schedules/"
+    }
+  },
+  "captured_utc_date": "2026-08-19",
+  "note": "Day 0. Perishable public terminal state. Nothing here can be recreated later if not captured today.",
+  "readable_anonymously_with_data": [
+    "trapac_la_empty_returns",
+    "trapac_la_gate_hours",
+    "trapac_la_yard_status",
+    "yti_appointments_policy"
+  ],
+  "tarball_sha256": "9ccf82706ae665107e56f5966fdefdd99a38cafe7a33845961839d42e440e2aa"
+}
