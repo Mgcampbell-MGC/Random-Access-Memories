@@ -1,6 +1,21 @@
 # STATE OF PLAY — 19 Aug 2026, end of the four-hunt day
 
-**Four structural hunts ran in parallel against four different patterns. None was told about the others.
+> ## ⚠ CORRECTED SAME DAY — read `THE_ERASURE_CENSUS.md` §4 before acting on §1–2 below.
+>
+> A sixth hunt landed after this was written and qualified two claims made here:
+>
+> **1. "The change-log cannot be back-filled" is TOO STRONG.** No vendor holds the DECRS *series*, but a 2020
+> point-in-time snapshot is publicly purchasable from John Snow Labs. **Net change over six years is
+> back-fillable by anyone; only the ORDER AND DATES of the changes are not.**
+>
+> **2. DECRS has NO structural archive protection.** It fails the POST-only test — a static `.zip` at a stable
+> URL by plain GET is the most crawlable shape there is. **And I could not check whether it has been crawled:
+> `web.archive.org` was egress-blocked from this container all day, both routes. ARCHIVE RISK IS UNVERIFIED,
+> and it is the question that decides whether the archive below is worth anything.**
+>
+> Day 0 still cost nothing and is still worth having. It is now explicitly contingent.
+
+**Six structural hunts ran in parallel against four different patterns. None was told about the others.
 Reading them together is where the value is.**
 
 ---

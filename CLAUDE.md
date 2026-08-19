@@ -255,6 +255,33 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   *(Also: "Agent Mail" needs no vendor — it is a mailbox, and a naming convention sold as a feature.)*
   See `THE_GROK_BOT_PARTS.md`.
 
+- **★★ THE UKGWA LAW — THE UNITED KINGDOM IS CLOSED, AND ITS OWN ARCHIVE CLOSES IT.** The National Archives'
+  UK Government Web Archive already runs the erasure-archive product free on every UK public-body register, it
+  captures the **bulk data attachments** and not merely the pages, and on high-value registers **it crawls MORE
+  OFTEN THAN THE PUBLISHER UPDATES**: 1.867 mementos of the sponsor register, **231/270/269/250/261/263** crawls
+  per year 2020–2025 against gov.uk's own **240/227/232/239/244/247** updates — and a replayed 2024 edition
+  returns real bytes (114.629 rows vs 142.790 today). **Any candidate whose bulk file sits on a gov.uk or UK
+  public-body domain is DEAD ON ARRIVAL.** The Internet Archive is not the adversary in the UK; UKGWA is, and
+  it is far more thorough. See `THE_ERASURE_CENSUS.md`.
+- **★ THE CONDITIONAL-LICENCE KILL — FREE TO READ IS NOT FREE TO KEEP. Check the licence file inside the ZIP.**
+  The Environment Agency registers produced the cleanest erasure evidence in the file (**0 of 145.864 expiry
+  dates in the past**) and died on a 760-byte text file shipped in the download: *"may not allow any period of
+  use longer than the period licensed to you… **The period of permitted use is one year.**"* **A one-year
+  permitted-use window with restricted sublicensing is incompatible with a multi-year private archive resold to
+  third parties.** A five-second test that killed the two best-evidenced registers in the census.
+- **★ THE POST-ONLY TEST — *"is the result set reachable ONLY by POST?"* is the fastest archive-proofness test
+  available, and it is a STRUCTURAL guarantee rather than a probabilistic one.** No crawler captures a POST
+  result set behind a session cookie, **and it does not depend on any archive being reachable to check** —
+  which matters, because `web.archive.org` was egress-blocked all day and every "no Internet Archive copy"
+  claim in this file is therefore **UNVERIFIED**. Health Canada's MDEL register survives on exactly this
+  property. **DECRS FAILS it — a static .zip at a stable URL fetched by plain GET is the most crawlable shape
+  there is.**
+- **A CHANGE-LOG CLAIM NEEDS A COMPETITOR SWEEP BEFORE IT NEEDS A CRON.** *"Nobody can back-fill it"* is
+  usually too strong: for DECRS, **no vendor holds the series — John Snow Labs' drug-establishment extract is a
+  point-in-time 2020 snapshot, "Irregular", and carries no email — but that one historical point is publicly
+  purchasable, so NET CHANGE is back-fillable by anyone and only the ORDER AND DATES of the changes are not.**
+  State the narrower claim.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
