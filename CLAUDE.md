@@ -489,6 +489,25 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   industry exists whose revenue is a direct function of the observation.** The working-day ledger differs by
   exactly that: a 25–35% success-fee recovery trade already sits there.
 
+- **★★ THE SPECULATIVE-CAPTURE LAW — an archive must capture BEFORE it has a customer, so SCREEN EVERY ARCHIVE
+  CANDIDATE ON THE SIZE OF THE UNIVERSE IT MUST CAPTURE SPECULATIVELY.** Value accrues only to the tiny subset
+  ever asked about; **cost, blocking and legal exposure scale with the whole universe.** The working-day ledger
+  captures ~17 terminal pages a day; the usage-rights ledger would have to capture the commercial web. **That is
+  the entire difference between them.** ⚠ **COROLLARY THAT BITES THE LIVE CANDIDATE: on launch day the archive
+  is empty, so there is NO head start — Stillio at $29/month pointed at the same pages that morning holds the
+  identical asset. The moat is the archive ONLY IN COMBINATION WITH THE PARSE; raw screenshots are worth $29 to
+  anybody.**
+- **★★ THE TWO-DATES TEST — before selling a dated series, ask whether the interval is already bounded by two
+  dates the BUYER OWNS.** The usage-rights ledger died on it: the licence expiry is in their contract and the
+  end date is their own screenshot, **because an overrun is a CONTINUING STATE and the present tense suffices.**
+  **Run this before ANY S3 proposal — it is the sharper, cheaper form of `THE SUBSET LAW`.** *(Candidate #1
+  passes: a demurrage charge is a CLOSED historical interval with no present tense to inspect, and which days
+  the gate was open belongs to a third party.)* See `THE_USAGE_RIGHTS_KILL.md`.
+- **⚠ AND A CORRECTION TO THE FASHION HUNT: model agencies ARE email-reachable on their own websites — 8 of 10
+  sampled publish department-level addresses** (IMG, Wilhelmina, Next, Models 1, Vivien's, Storm, Elite,
+  Premier). An agency's business *is* being emailable for bookings. **The New York register publishes phone only,
+  but the domain fails on POOL SIZE (~75) and INCENTIVE, NOT on contactability.** Record it that way.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the

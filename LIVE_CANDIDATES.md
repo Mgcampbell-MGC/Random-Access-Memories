@@ -47,6 +47,18 @@ calendar has no outcome. Every day IS its own outcome and nothing supersedes it.
 2. **The moat is probabilistic, not structural** — plain GET pages; what protects them is that no crawler visits
    a gate schedule twice a day. **Archive risk UNVERIFIED** (`web.archive.org` blocked all day).
 3. **`THE SUBSET LAW` must be re-run against this version.** It killed the previous one.
+4. **★ NEW, 19 Aug — THE COMMODITY-CAPTURE CAVEAT.** The raw capture is not a moat: **Stillio publishes
+   $29/month for scheduled dated screenshots of unlimited pages.** Anyone can point it at the same seventeen
+   terminal pages tomorrow. **The defensible part is (a) starting today and (b) the PARSE — turning raw pages
+   into a per-terminal, per-shift, per-day calendar joined to the carrier tariff definitions. Build the parse,
+   not the screenshotter.**
+
+### ★ PASSED TWO MORE TESTS, 19 Aug
+**THE TWO-DATES TEST** *(which killed the usage-rights ledger)*: the buyer owns the invoice and the charge
+period **but not which days within it the gate was open** — that belongs to a third party and is in the past.
+And **a demurrage charge is a CLOSED historical interval; there is no present tense to inspect.**
+**THE SPECULATIVE-CAPTURE LAW**: the universe is **~17–20 pages a day**, against the commercial web for the
+candidate that died on it.
 
 > **NEXT ACTION: the ten-day, twenty-terminal capture. Under $20, no phone, no account — and the test IS the
 > build, because those ten days are the first ten days of the asset.**
