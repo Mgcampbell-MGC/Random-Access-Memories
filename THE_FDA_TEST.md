@@ -455,3 +455,128 @@ misleading is being marketed by a firm sitting inside the dataset.**
 **What this candidate cost: about two hours and zero dollars. What it produced: a fifth condition on the
 erasure moat, a measured enrichment match rate, and three corrections to my own method.** The six hunts
 running now carry all of it.
+
+---
+
+# PART FOUR — THE THIRD RED TEAM. Dead on CONSTRUCTIBILITY, before any question of law or price.
+
+**It confirms my table error independently, and then finds the cause of death the other two missed.**
+
+## ★★ THE EMAIL CANNOT BE WRITTEN
+
+**Of the 3.528 absent manufacturer keys, ZERO appear in `Owner_Operator.txt`, `us_agent.txt`,
+`Official_Correspondent.txt` or `registration_listing.txt`. No name, no registration number, no FEI, no
+country.**
+
+All she holds is `MANUFACTURER_REG_KEY` — **an FDA-internal surrogate integer that appears in no FDA public
+interface**, so the importer cannot look it up either.
+
+> **The specified email — *"your filing declares 5, FDA's file contains 2, here are the three listing IDs"* —
+> becomes *"here are the integers 51, 4471 and 88012."* The recipient cannot resolve them, cannot verify them,
+> and cannot act on them.**
+>
+> **The whole design rested on "they verify it themselves." There is nothing to verify against.**
+
+### And the mechanism is the moat wearing its other face
+
+**Every name-bearing table in the weekly extract is keyed to the 28.591 CURRENTLY-REGISTERED establishments.
+When one de-registers it vanishes from the entire distribution — its name included.**
+
+> ### **The erasure I read as a moat — "nobody can back-fill the history" — IS THE SAME FACT THAT GAGS THE PRODUCT. She cannot back-fill it either.**
+
+**The only nameable variant: where the dangling row resolves to a listing the importer itself owns, so she can
+cite a real 510(k) number. That is 88 importers of 1.846 — 4,8%.**
+**US$11.100/month from 88 prospects is $126/month from every importer in the country at 100% conversion.**
+
+## ★ FDA GIVES IT AWAY — and the buyer is LEGALLY COMPELLED to do the check
+
+**21 CFR 807.22(b)(3), verbatim:** *"Every fiscal year, during the period beginning on October 1 and ending on
+December 31, owners or operators shall **review and update all of their device listing information** that is
+on file at FDA… **The accuracy of all information on file must be confirmed each year regardless of whether
+any changes were made.**"*
+
+**And FDA's own registration database tells them where:** *"Need to update your information? To modify, add,
+or delete information, log onto your FURLS account."*
+
+> **She would be selling a worse, unnameable copy of a MANDATORY ANNUAL CHORE the buyer already performs
+> inside the authoritative system. THE FREE FRONT DOOR, with a statute behind it.**
+
+## ★ AND THE IMPORTER HAS VIOLATED NOTHING
+
+**The duty to register belongs to the foreign manufacturer — 21 CFR 807.40(a).** A dangling reference means
+*the manufacturer* lapsed. The importer's declaration remains true.
+
+- **807.22(b)(2)'s 30-day update duty reaches only the enumerated list in 807.25(b)** — establishment name and
+  address, website, owner/operator contact details, official correspondent details, trade names.
+  **The declared-manufacturer list is not in it.**
+- **807.20(a)(5): the importer *"may fulfill their listing obligation… by submitting the name and address of
+  the manufacturer."*** An option, not a supplier roster with an accuracy duty.
+- **807.28's update triggers** — activities starting or ceasing, devices entering or leaving distribution.
+  **"Your supplier's registration lapsed" is not among them.**
+- **Import Alerts 89-16 and 99-32 were read in full: both concern REFUSED INSPECTIONS, not registration
+  status.** No import alert covers this.
+- **And a hazard pointing at her: 21 CFR 807.39** — *"Any representation that creates an impression of
+  official approval because of registration or possession of a registration number is misleading and
+  constitutes misbranding."*
+
+## ★ THE SHRUG, MEASURED
+
+**`MANUFACTURER_REG_KEY` is a monotonic surrogate, so its magnitude proxies age.** If dangling references
+were mostly abandoned legacy suppliers, absence would concentrate in low keys. **It does not:**
+
+| Key range | % absent |
+|---|---:|
+| 0–50k | 28,7% |
+| 50k–100k | 34,5% |
+| **100k–150k** | **38,5%** |
+| 150k–200k | 35,8% |
+| 200k–250k | 32,7% |
+| 300k–400k | 14,9% |
+
+> **29–38% across six of seven vintages. No single explanation dominates — which is WORSE than if one did.
+> The base rate IS the message.** An importer told *"3 of your 9 are gone"* mentions it to a peer and learns
+> the peer has the same ratio. **It reads as a property of the file, not a discovery about them.**
+
+**And `Manu_ID_by_Imp.txt` has no date field at all.** She cannot distinguish *"lapsed last month"* from
+*"abandoned in 2009"* — **and recency is the only thing that would make it urgent.**
+
+## The competitor, now confirmed from the vendor's own page
+
+**fdadevicecheck.com: free single lookup · $19/month for 25 facilities · $49/month for 250.** Same product,
+already built, already priced, **and it solved the naming problem by working off the PRESENT registry rather
+than the absent one.** *(Registrar Corp's Compliance Monitor is $1,99/facility/month — 2015 press release,
+food-framed, possibly stale.)*
+
+## ★ AND THE CLEANEST KILL OF THE US-AGENT PIVOT
+
+**Under 807.40(b) and 807.25(e) the US agent / official correspondent is the party that SUBMITS the client's
+registration and RECEIVES ALL FDA CORRESPONDENCE about it.**
+
+> ### ***"You cannot sell a firm a monitor for its own outbox."***
+>
+> Registrar Corp does not need telling the status of registrations it files itself. **And it is not a market —
+> it is about six accounts, each a bespoke enterprise sale with a procurement conversation attached.**
+
+---
+
+# CLOSED. Three red teams, three sufficient causes, none of them the one I attacked.
+
+| | |
+|---|---|
+| **RT1 — buyer** | FDA gives it free and mandates the check annually; the importer has no duty; a competitor sells it at $19/month; **the finding cannot be named — 88 prospects** |
+| **RT2 — mechanism** | Append-only table (82 added, 0 removed / 14 days); archive already public and free since 2013; annual churn = two downloads a year |
+| **RT3 — channel** | ~149 reachable inboxes at a measured 25% match; needs $4.500–17.800/yr from a buyer whose full service costs $250–849 |
+
+## THREE LAWS EARNED, AND THEY ARE THE RETURN ON THE WHOLE EXERCISE
+
+> **1. THE NAMEABILITY CONDITION.** It is not enough that an authority overwrites. **The vanished record must
+> remain IDENTIFIABLE after it vanishes.** Where erasure is total, the moat and the gag are the same fact —
+> you hold a list of anonymous integers, and so does everyone, forever.
+
+> **2. YOU CANNOT SELL A FIRM A MONITOR FOR ITS OWN OUTBOX.** Before proposing a monitoring product to an
+> intermediary, ask whether they are the party who FILES the thing being monitored. If they are, they already
+> know, by construction.
+
+> **3. CHECK WHETHER THE BUYER IS LEGALLY COMPELLED TO DO YOUR CHECK ALREADY.** A mandatory annual review
+> inside the authoritative system is the strongest possible version of THE FREE FRONT DOOR, and a statute
+> that compels it can be found in an afternoon.
