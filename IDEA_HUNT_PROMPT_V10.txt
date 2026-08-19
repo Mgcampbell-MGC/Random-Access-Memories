@@ -1,0 +1,381 @@
+================================================================================
+IDEA HUNT V10 — AN ADVERSARIAL SEARCH PROTOCOL
+Not a briefing document. A sequence you execute in order.
+Written 19 Aug 2026, after V7 failed in a specific and instructive way.
+================================================================================
+
+WHY THIS VERSION EXISTS — READ THIS FIRST
+------------------------------------------
+V7 of this prompt was given to a competent frontier model. It returned a
+personalised pregnancy memoir sold as a hardcover gift book.
+
+That answer was already in the file. It had been proposed five days earlier,
+assessed, and narrowed — and the direct competitors had already been found and
+priced ($47.88/yr, $49.99/yr + $99, from $129, with a published comparison
+article between the three). The model found none of them, cited two unrelated
+products instead, and concluded "no structural kill found."
+
+It did not fail from incompetence. IT FAILED BECAUSE THE PROMPT LED IT THERE.
+The earlier prompts opened by describing an operator's limits in exhaustive
+detail and then asked for a business. Every model given that ordering solves it
+as a constraint-satisfaction problem, and the global optimum of that problem is
+always the same object: A CUSTOMER FILLS IN A FORM AND THE OPERATOR WRITES
+SOMETHING. Wrapping it in a hardcover, an app, a PDF or a subscription does not
+change what it is.
+
+THIS VERSION IS BUILT TO MAKE THAT ANSWER STRUCTURALLY UNREACHABLE.
+Three changes do the work:
+  1. You will not be told who the operator is until STAGE 4. Generate blind.
+  2. The arithmetic is a GATE you must compute and show, not a fact you may
+     acknowledge and then ignore.
+  3. The forbidden shape is defined by WHOSE ATTENTION TOUCHES EACH UNIT, not by
+     what the finished object is made of.
+
+EXECUTE THE STAGES IN ORDER. Do not read ahead to Stage 4 and work backwards. If
+you find yourself reasoning "what could someone with those limits do?", you have
+already failed; stop and restart at Stage 2.
+
+================================================================================
+STAGE 0 — RULES OF ENGAGEMENT
+================================================================================
+
+EVIDENCE
+  * Every number needs a primary-source URL: a company's own pricing page or
+    documentation, a statute, a regulator or government publication, a trade
+    body's own survey, a live listing you actually opened, a peer-reviewed or
+    arXiv paper, or a court filing.
+  * Write UNVERIFIED explicitly wherever you cannot meet that bar. A flagged gap
+    beats a plausible figure. "There is no reliable public data on this" is a
+    complete and valuable answer.
+  * NEVER cite SEO content farms, listicles, "top 10" roundups, agency blogs, or
+    vendor marketing as evidence that a market, a price, or a requirement
+    exists. Use them only to locate a primary source, then read that.
+  * OBSERVED LISTINGS BEAT PUBLISHED CLAIMS. Blog-quoted price bands in this
+    project were wrong by 10-30x when the live listings were actually opened.
+  * PREFER A CENSUS TO A SAMPLE OF WINNERS. Publicly celebrated successes are a
+    sample of operators who chose to be visible, and visibility is usually their
+    business model. Count a whole population from an API or a bulk file where
+    you can.
+  * FIELD-INSPECT, DO NOT ASSUME. "Publicly available" and "obtainable at scale"
+    are different properties. Open the record layout before claiming a list
+    exists. Beware data mirrors: for one national register in this project, two
+    of four API mirrors silently return null for the exact field that matters,
+    and a first run of 80 records returned zero and was pure artefact.
+
+BEHAVIOUR
+  * A CLEAN NEGATIVE WITH A NAMED CAUSE OF DEATH IS A SUCCESSFUL RESULT. You are
+    not scored on finding something. You are scored on being right.
+  * CORRECTING THIS PROMPT IS THE HIGHEST-VALUE THING YOU CAN DO. In one day,
+    agents on this project falsified three premises the principal had written
+    into their own briefs. Say so plainly when you find one.
+  * NEVER self-score. Documents arriving with "8.8/10, conditional GO" alongside
+    a capital requirement forty times over budget are a known failure pattern.
+    Report the budget and the risks; let someone else score it.
+  * If you cannot fill a required quota, WRITE "I COULD NOT FILL THIS AND HERE IS
+    WHAT I TRIED." Do not substitute something easier and present it as a find.
+
+================================================================================
+STAGE 1 — THE ARITHMETIC GATE
+================================================================================
+
+You are looking for a business that pays ONE PERSON US$11,100 per month in gross
+revenue (US$133,200/year). That person has 130 working hours a month, of which
+at most 78 are productive delivery hours after selling, admin and support.
+
+  >>> THE UNIT-OF-ATTENTION TEST — THE CENTRAL GATE OF THIS ENTIRE PROTOCOL <<<
+
+  For every candidate you propose you must compute and display, in a visible
+  table, before any recommendation:
+
+      A. Revenue per unit sold (US$)
+      B. Units per month required to reach US$11,100  [ = 11,100 / A ]
+      C. Hours of the operator's personal attention consumed per unit, counting
+         EVERYTHING: intake, clarification, chasing the customer, production,
+         revision, quality check, packaging, support, refunds, exceptions
+      D. TOTAL HOURS  [ = B x C ]
+
+  IF D EXCEEDS 78, THE CANDIDATE IS AUTO-REJECTED. You may not recommend it.
+  You may not recommend it with a caveat. You may not describe it as "a
+  substantial load" and proceed. You delete it and continue searching.
+
+  You may not set C below 0.5 hours for anything involving a human customer
+  supplying inputs, unless you can point to an existing operator doing exactly
+  that at that speed, with a source.
+
+WHAT THAT GATE ACTUALLY FORBIDS, STATED SO YOU CANNOT ROUTE AROUND IT:
+
+  The forbidden shape is not "writing." It is not "digital." It is not "a
+  service." IT IS ANY BUSINESS IN WHICH THE OPERATOR'S ATTENTION IS CONSUMED
+  ONCE PER UNIT SOLD.
+
+  All of these are the SAME FORBIDDEN SHAPE wearing different clothes:
+    - a questionnaire, then the operator writes prose, then a PDF
+    - a questionnaire, then the operator writes prose, then a HARDCOVER BOOK
+    - a questionnaire, then the operator writes prose, then an app renders it
+    - an uploaded file, then the operator produces a custom report
+    - a customer's brief, then the operator makes a custom design or video
+    - a subscription where each month's deliverable is individually produced
+    - "productised services", "done-for-you", "we handle it", "concierge"
+    - a physical object personalised per customer by the operator's own labour
+  A print-on-demand vendor manufacturing the object does NOT exempt it, because
+  the operator's attention was still spent once per customer before printing.
+
+  WHAT THE GATE PERMITS. Revenue must arrive by one of these four routes, and
+  you must name which one:
+    A. THE ASSET PRODUCES THE UNITS. Built once; serves customer 2 through 400
+       at near-zero marginal attention. Software, a dataset, an automated watcher.
+    B. A SLICE OF SOMEONE ELSE'S FLOW. Commission or take-rate on transactions
+       the operator introduces but does not perform. Hours per unit trivial
+       against the value transferred.
+    C. A SPREAD THE OPERATOR OWNS. Buy at one price, sell at another.
+    D. RENT ON SOMETHING OWNED. A licence, a right, a system.
+
+  ONE MORE COST TEST, which kills a whole class that passes the hours gate:
+  IS THE SOURCE READ ONCE AND SOLD MANY TIMES, OR READ ONCE PER CUSTOMER? A
+  watcher that parses one public file weekly and serves it to every subscriber
+  has fixed cost. A monitor that must buy paid API calls per customer forever
+  has cost that scales with customers, and a solo operator entering last always
+  loses that race. State which yours is.
+
+================================================================================
+STAGE 2 — GENERATE. YOU DO NOT YET KNOW WHO WILL RUN THIS.
+================================================================================
+
+Do not ask who the operator is. Do not optimise for anyone. If you catch
+yourself narrowing toward a person's convenience, stop.
+
+DEPLOY AGENTS IN PARALLEL. Recommended: eight to twelve. Give each agent Stage 0
+and Stage 1 in full and ONE of the mandates below. Do not give any agent Stage 4.
+
+MANDATORY QUOTAS. Return at least THREE distinct candidates in each of the five
+structures below. Fifteen minimum. If a structure yields nothing, write "I could
+not fill this" and show what you searched.
+
+  STRUCTURE 1 — SOMETHING WATCHED CONTINUOUSLY
+    The product is that a public, external thing was monitored and someone was
+    told the moment it changed. Hunt: statutory publication that starts a legal
+    clock; registers whose status changes cost someone money; deadlines nobody
+    is notified of. Ask what rule makes the date matter and who suffers if it
+    is missed. Ask: does one alert, acted on, pay for a year of subscription?
+
+  STRUCTURE 2 — A DATASET THAT COMPOUNDS
+    Accumulate over time what nobody else has. Hunt CLOCK-STARTS, not datasets:
+    a register that opened this year, a regime that just took effect, a mandate
+    whose first filings are landing now. If a dataset is worth accumulating,
+    someone already started, and their head start points at you. And note that
+    a register keeps CURRENT STATE, not history — it overwrites — so its
+    change-log is the one artefact the holder will never produce and nobody can
+    back-fill.
+
+  STRUCTURE 3 — MATCHING OR COMMISSION ON SOMEONE ELSE'S TRANSACTION
+    Two enumerable populations, a hard-to-make match, a percentage. Map first
+    where referral fees are PROHIBITED or licence-gated, then work in what is
+    left. Compute required monthly flow at every commission rate you can source.
+    Ask what stops the two sides transacting directly next quarter.
+
+  STRUCTURE 4 — SOFTWARE OR A SYSTEM SOLD MANY TIMES
+    Built once. Census the distribution channel before believing in it: pull the
+    whole catalogue from a public API and compute the median, not the winners.
+    In this project the median paid app in the best-fitting business marketplace
+    had 13 installs and the median vendor had 8.
+
+  STRUCTURE 5 — A SPREAD, A RENT, OR AN ARBITRAGE
+    Buy and sell, licence, or capture a differential. Include: buying an
+    existing cash-flowing asset rather than building one. Include: geographic,
+    regulatory, linguistic and temporal arbitrage.
+
+AND A HARD DIVERSITY RULE. At least SIX of your fifteen must come from
+industries you consider boring, unglamorous or unfashionable. Waste handling,
+freight, insurance claims, industrial fasteners, payroll, calibration,
+agricultural inputs, port logistics, laboratory consumables, municipal
+utilities, textile finishing, cold chain, scrap metal, bonded warehousing.
+The emotionally appealing candidate is nearly always the crowded one. Money
+lives where nobody wants to look.
+
+FOR EACH CANDIDATE, RETURN EXACTLY THIS AND NOTHING MORE:
+  - One sentence: what is sold, to whom.
+  - Which revenue route (A/B/C/D from Stage 1).
+  - The Stage 1 arithmetic table. A, B, C, D. Show the numbers.
+  - The named buyer. Not "SMEs" — a job title in a kind of firm.
+  - What breaks for that buyer if they do not have it.
+  - An OBSERVED comparable price, with a URL.
+  - Whether the source is read once and sold many, or once per customer.
+  - The single honest reason it might fail.
+
+================================================================================
+STAGE 3 — THE KILL SCREEN. RUN THIS BEFORE YOU FALL IN LOVE.
+================================================================================
+
+Every candidate that survived Stage 1 now faces these. Answer each EXPLICITLY.
+One failure is not automatically fatal, but an unanswered question is.
+
+  1. WHO IS ALREADY PAID TO GIVE THIS AWAY FREE? "Knowing which one" is usually
+     the customer-acquisition cost of whoever holds the stock or the paying
+     work, so they give it away. Name the party and check.
+  2. COULD THE BUYER PRODUCE THIS ANSWER IN AN AFTERNOON? Not "do they have the
+     data" — could they get it themselves before lunch?
+  3. WHO IS BEING PAID TO ELIMINATE THE FRAGMENTATION YOU ARE CALLING A MOAT?
+     Funded nonprofits, regulators, standards bodies and platform owners are
+     all actively abolishing exactly the messes that look like opportunities.
+  4. IS THE BUYER SHORT OF CUSTOMERS, SHORT OF CAPACITY, OR SHORT OF MARGIN?
+     Ask: what breaks if their volume doubled next month? A buyer short of
+     CUSTOMERS will not pay to be given more hours — they already have spare
+     hours and would rather keep them and the money. Sell time savings only to
+     someone turning work away, or someone whose volume is fixed by something
+     outside their control and whose cost is their own hours.
+  5. WHAT IS THE CHEAPEST EXISTING SUBSTITUTE, WITH A URL AND A PRICE? Include
+     free tiers and bundled features. If a large incumbent gives this away to
+     sell something else, say so.
+  6. DOES THE PROPERTY THAT GIVES LEVERAGE ALSO DESTROY PRICING POWER? If it is
+     repeatable enough for a machine to do it, it is repeatable enough for
+     anyone's machine.
+  7. IS THE LIST ACTUALLY CONTACTABLE? Public registers give name, street
+     address, phone and an expiry date. They rarely give email. Of nine national
+     registers field-inspected in this project, two published email at scale.
+     OPEN THE RECORD LAYOUT. Do not assume.
+  8. HOW MANY SEPARATE PARTIES MUST ONBOARD THE OPERATOR, AND CAN EACH BE DONE
+     IN WRITING? Selling in writing and BEING ONBOARDED in writing are different
+     problems. Supplier accounts, payment-processor risk reviews, vendor
+     security diligence and professional-indemnity questions are conversations.
+     Give a count.
+  9. HOW DOES THE MONEY ARRIVE, AND WHAT DOES THAT COST? A bank-transfer invoice
+     costs ~0.5%. A card checkout costs ~8% all-in. That difference can exceed
+     the entire tax bill. INVOICE, DON'T CHECKOUT.
+ 10. IS THE CATEGORY EMPTY OR CROWDED? Empty is WORSE evidence than crowded. A
+     crowded market with visible prices proves demand; an empty one usually
+     proves someone already tried and stopped.
+ 11. IF THE NEAREST COMPARABLE DOES NOT PUBLISH A PRICE, THE CATEGORY IS
+     SALES-LED. That is a ten-second screen and it kills a lot.
+ 12. WHAT DOES THIS LOOK LIKE IN A GLOBAL DOWNTURN IN 2027-2028?
+
+  AND THE DUPLICATE CHECK, WHICH V7 FAILED. Before recommending anything, state
+  explicitly: "This is not a rediscovery of X." The following have already been
+  proposed, assessed and killed or narrowed in this project. Anything materially
+  resembling them is a REJECTION, not a find:
+    - memoir, legacy, life-story, keepsake or milestone books of any kind, for
+      any occasion, in any format, digital or physical
+    - pregnancy, baby, wedding, funeral or anniversary personalised gifts
+    - anything sold on general asset marketplaces: templates, stock, fonts,
+      presets, prompt packs, mockups, icon sets
+    - written deliverables sold on freelance marketplaces
+    - consumer mobile apps, and business software marketplaces
+    - reselling physical goods held in inventory
+    - "AI visibility" or brand-mention monitoring
+    - documentation, lost-knowledge capture, or institutional-memory products
+    - anything whose buyer segment is construction, or whose subject is death
+
+================================================================================
+STAGE 4 — NOW, AND ONLY NOW, MEET THE OPERATOR
+================================================================================
+
+Do not read this section until Stages 2 and 3 are complete and written down.
+
+Filtering last is deliberate. A constraint applied early deletes the COMPONENT
+along with the candidate, and the component is usually the valuable half.
+
+THE OPERATING UNIT IS NOT A PERSON WITH LIMITATIONS. It is this machine:
+
+  * A program that runs unattended, on rented compute, indefinitely.
+  * Plus 78 hours a month of one literate, careful, bilingual human
+    (Portuguese and English, resident in Brazil) who communicates only in
+    writing and never appears in any form.
+  * Plus US$500-2,500 of one-time capital. Not monthly.
+  * Plus unlimited purchased software, APIs, data and vendor services.
+
+THIS MACHINE CAN: read, parse, structure, match, monitor, compute, correspond,
+contract, invoice, and buy anything from any vendor. It can operate in
+Portuguese natively, which is an advantage nobody else in its market has.
+
+THIS MACHINE CANNOT:
+  * Speak. No calls, video, meetings, voice notes or webinars, ever, in any
+    language. (One narrow exception: a small, bounded number of ONE-OFF SETUP
+    calls at launch — a supplier account, a processor risk review, instructing
+    counsel, signing a partner. Ongoing customer contact is written forever.)
+  * Appear. No camera, photograph, personal brand, audience or name-based
+    reputation. A company brand or a pen name is available ON ARGUMENT, but it
+    must never be the thing that rescues an otherwise weak idea.
+  * Employ. No employees or contractors, ever. Vendors and software are
+    unlimited. CAPACITY IS PURCHASABLE AS MACHINES, NEVER AS PEOPLE.
+  * Hold a customer's credentials or standing access to their systems. Work
+    arrives as a file they send, or is observed from outside in public.
+  * Be believed. No credential, no industry background, no track record. It can
+    never assert an expert opinion, a determination, an assurance, or a
+    professional judgement.
+  * Be present anywhere physically, or testify to anything.
+  * Sell to construction as a buyer segment, or build anything around death.
+
+FOUR MECHANISMS ARE KNOWN TO SURVIVE THE "CANNOT BE BELIEVED" LIMIT. If your
+candidate needs credibility, it must use one of these or die:
+  1. THE ARTEFACT PROVES ITSELF. Every material statement paired with its source
+     and page; contradictions surfaced rather than resolved; unsupported claims
+     listed in a "not used" section. Nothing rests on the operator's authority.
+  2. THE BUYER SUPPLIES THE DOMAIN, THE MACHINE SUPPLIES THE THROUGHPUT.
+  3. THE BUYER SUPPLIES THE "BEFORE." They send work they already did with their
+     own hours attached; the machine returns the after; the two objects sit side
+     by side and the buyer does the comparing. Nothing is claimed.
+  4. A RESELLER SUPPLIES THE FACE. The machine is sold wholesale to a firm that
+     puts its own name, credential and liability on the output. This is the only
+     arrangement found in which being anonymous is what the buyer WANTS. Price
+     is then set by the reseller's client revenue, not by the retail comparable:
+     seventeen resellers at US$650/month reaches the target, not three hundred
+     customers.
+
+NOW RE-SCORE EVERY SURVIVING CANDIDATE against this machine. State PASS or FAIL
+per line, and where a candidate fails, ask whether the COMPONENT can be kept
+even though the candidate dies. Record the component.
+
+================================================================================
+STAGE 5 — WHAT YOU MUST HAND BACK
+================================================================================
+
+  1. THE CONTRADICTIONS FIRST. Where two of your agents disagree, name it and
+     resolve it on evidence, saying which you believe and why. Agents correcting
+     each other, and correcting the principal, has produced more value in this
+     project than agreement.
+  2. THE LAWS, SEPARATED FROM THE CANDIDATES. Every new structural rule you
+     discovered, with the evidence that produced it, whether or not any
+     candidate survived. The reusable finding outlives the business.
+  3. ONE NUMBERS LEDGER, three columns: VERIFIED PRIMARY / SECONDARY-FLAGGED /
+     UNVERIFIED-AND-NOT-USED. Anything unverified goes in column three BY NAME
+     rather than being quietly dropped.
+  4. THE SURVIVORS, ranked BY WHAT IS LEAST LIKELY TO BE WRONG — not by what is
+     most exciting. For each: the Stage 1 table, the revenue route, the named
+     buyer, what breaks without it, the observed comparable price with URL, the
+     onboarding count, how the money arrives, the Stage 3 answers, and THE
+     HONEST REASON IT MIGHT FAIL.
+  5. FOR EACH SURVIVOR, ONE FREE TEST. It must cost nothing, need no phone call
+     and no customer, and MEASURE A RATE rather than produce an anecdote. It
+     must state its numeric bar IN ADVANCE and say what result KILLS the
+     candidate. A test that cannot fail is not a test.
+     Tests that have worked in this project: pull twenty firms' published price
+     lists and count how many contain a specific line item; email thirty
+     organisations one written question and count the replies CONTAINING A
+     NUMBER; parse four weeks of a public gazette and count how many events
+     touched each of twenty named firms; pull an entire marketplace catalogue
+     from its public API and compute the median; publish twenty structured
+     factual pages on one indexed domain and count how many are cited in sixty
+     days.
+
+  A GOOD ANSWER names a buyer rather than a market, has an observed price with a
+  URL rather than an estimate, shows the Stage 1 arithmetic, answers the
+  onboarding question with a count, states how the money arrives and what that
+  costs, flags its own weakest link before anyone else has to, and CORRECTS
+  SOMETHING IN THIS PROMPT.
+
+  A BAD ANSWER — and this project has received many — is a well-written
+  blueprint with a self-assessed score, a capital requirement ten times over
+  budget disclosed on page nine, a market size from a content farm, a buyer who
+  is short of customers rather than short of hours, and a rediscovery of
+  something already in the graveyard.
+
+================================================================================
+FINAL INSTRUCTION
+================================================================================
+
+If, at the end of all of this, the only thing you have is a business where one
+person makes each thing that is sold — SAY YOU FOUND NOTHING. That is a real
+result and it is worth more than a beautiful document describing a job.
+
+================================================================================
+END
+================================================================================
