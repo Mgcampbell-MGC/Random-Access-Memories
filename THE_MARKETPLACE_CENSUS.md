@@ -161,9 +161,9 @@ with periodicity, start date and receiving-user identity, supporting **fixed or 
 
 > **A Brazilian PJ can collect recurring subscriptions natively, in BRL, with no card network and no foreign
 > acquirer. That removes the acquirer-risk-review conversation flagged by THE ONBOARDING LAW, and removes the
-> international merchant-of-record problem entirely for domestic sales.** *(Cost: the BCB does not set it —
-> Resolução BCB 19/2020 permits PSPs to charge pessoa jurídica clients. Actual MDR is **UNVERIFIED** and must
-> be priced from two or three PSPs' own tables.)*
+> international merchant-of-record problem entirely for domestic sales.**
+
+> ### ⚠ CORRECTED same day — **PIX IS NOT FREE FOR HER.** I wrote that it was. **Resolução BCB 19/2020 art. 4** expressly permits an institution to charge **a legal entity for both remittance and receipt**, and to charge **a natural person *"as a result of receiving funds for the purpose of purchasing."*** **Receiving Pix as payment for a sale is precisely the case the regulation allows a bank to price.** *(PagBank advertises "PIX 0% nos primeiros 30 dias" — free as a promotion, priced after.)* **What survives is still real: no acquirer risk review, no chargeback dispute argued by telephone, settlement in seconds. The per-transaction cost is PSP-specific and UNVERIFIED.**
 
 **Pix Automático solves COLLECTION better than any foreign marketplace. It does nothing for DISTRIBUTION,
 which is the constraint that actually kills this candidate.**
