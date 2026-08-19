@@ -464,3 +464,104 @@ which is the cross-sell that publisher's own in-house team already runs for free
 > **FOUR independent agents have now killed this candidate on four unrelated grounds: the mandate cannot be won
 > in writing · the publishers worth winning are supply-constrained · the unit is ~8× too small · and the
 > compounding half of the revenue is contractually reserved to the principal.**
+
+---
+
+# PART FIVE — THE SUPPLY SIDE. Findable, signable, not buyable at 30%.
+
+**90 homepages tested, 69 sponsorship URLs attempted, 34 live pages read, every incumbent's publisher terms
+opened.**
+
+## ★ THE $10 FLOOR — the reusable law
+
+**The take-rate ladder, each from the platform's own pricing page:**
+
+| | Publisher pays |
+|---|---|
+| **beehiiv Direct Sponsorships** | **$10 FLAT PER PLACEMENT.** beehiiv is merchant of record and does the contract, the escrow, the invoicing and the payout |
+| **Hecto** | **5%** on successful transactions, £0/month |
+| **Passionfroot** | **0% on self-sourced deals**, 15% on network-sourced |
+| **Paved Marketplace** | **30%** — but that buys *inbound demand from an existing advertiser base* |
+| **Her** | **30%** for *outbound effort from an unknown* |
+
+> ### THE $10 FLOOR — **when a platform makes the transaction layer cost $10, every cent above $10 must be paid for by a RELATIONSHIP.** The contract, escrow, invoicing and merchant-of-record work she was going to charge 30% for is a commodity priced at ten dollars. She must originate demand the free channels cannot reach at all — **and demand origination is the one thing that requires a name.**
+>
+> **Same shape as THE FREE FRONT DOOR: the thing she would charge for is the customer-acquisition cost of whoever already holds the inventory.**
+
+## Exclusivity — the word the whole candidate rested on — is unobtainable
+
+- **Paved's Publisher Agreement grants only NON-EXCLUSIVE licences** and states *"Either Party may terminate…
+  at any time, by providing notice,"* with Paved free to revoke participation *"with or without cause."*
+- **beehiiv actively tells publishers to multi-home:** *"For best results, you can use both to diversify your
+  monetization strategy."*
+- **Zero of 34 sampled sponsorship pages named an exclusive representative.** Every one takes enquiries itself.
+
+> **The realistic contract is a NON-EXCLUSIVE, TERMINABLE-AT-WILL, COMMISSION-ONLY appointment competing
+> against the publisher's own inbox, Paved, beehiiv's Ad Network and a $10 self-serve storefront. That is not
+> representation. It is being one more source of leads, at the highest price on the shelf.**
+
+## ★ A CORRECTION IN HER FAVOUR — the onboarding law passes cleanly here
+
+**Paved's Publisher Agreement opens:** *"**BY CLICKING THE BUTTON INDICATING YOUR ACCEPTANCE**, BY USING THE
+PLATFORM, OR BY EXECUTING AN ORDER… YOU AGREE TO THE TERMS."*
+
+> **Click-to-accept. No call, no video, no signature ceremony anywhere in the incumbent onboarding path.
+> Publishers already onboard to revenue relationships with faceless entities by clicking a button.**
+> **I assumed the mandate could not be won in writing. On the platform path it demonstrably can.** *(Part One's
+> finding stands for TRADE PUBLISHERS and associations — it does not hold for modern email-native publishers.)*
+
+## The one real competitor sells exactly what she cannot have
+
+**Ad Sales as a Service** — outbound human ad sales for newsletters:
+- ***"No commissions — flat monthly retainer."*** Not a percentage at all.
+- Every CTA is **"Book a strategy call."**
+- The proposition is the founders' named résumés: *"Saw Finimize to a 9-figure exit"* · *"first sales hire at
+  The Daily Upside"* · *"one-man sales team at Chartr, acquired by Robinhood."*
+
+> **The product being sold to publishers is a NAMED SALESPERSON'S TRACK RECORD. She has no name, cannot build
+> one (C2), and cannot take the call (C1). The expert veto arriving through the front door of the only proven
+> business model in the category.**
+
+## The sampled rates — a modified postal-list law
+
+**Of 90 homepages tested, 34 (38%) surfaced a sponsorship link at all.** *(Substack-hosted B2B titles were
+uniformly blank — Lenny's, Net Interest, Fintech Brainfood, SemiAnalysis, Import AI: no public sponsorship
+page found by any method.)* **Of the 34 live pages:**
+
+| | Count | Rate |
+|---|---:|---:|
+| Published a price | 8 | **24%** |
+| Published a direct email | 13 | **38%** |
+| **Published BOTH a price AND an email** | **1** | **3%** |
+| Stated they are represented by anyone | **0** | **0%** |
+
+> **One newsletter in thirty-four gave a stranger everything needed to transact without a conversation.
+> Enumerable at the level of NAMES, yes. Enumerable with a price and an address, 3%.**
+
+## Price and count, confirming the red team independently
+
+**Observed target-band pricing: DevOps'ish $750 · Web Tools Weekly $175 · Dense Discovery from $649 ·
+Sidebar $950 · CSS Weekly $700.** *(Paved's own benchmark article says a 20.000-subscriber list at 60% open
+sells at "$700–$800.")*
+
+**$37.000/month ÷ ~$850 per placement = ~44 CLOSED SALES EVERY MONTH, forever, with no month off.**
+**And 20–30 publishers, not three** — a weekly's *entire annual* sellable inventory is ~$44.000, so her 30% of
+one fully-sold publisher is **~$13.000 a year.**
+
+**And the good inventory is not idle:** Cooperpress *"maintain[s] a waiting list and take[s] reservations each
+quarter in advance."* **Dense Discovery's next open main-sponsor date was 20 October — booked nine weeks out.**
+Meanwhile Paved's PPC, beehiiv's Ad Network and BuySellAds all **backfill unsold slots automatically at zero
+marginal cost**. *"She is a human bidding for the remnant against three algorithms that already do it free."*
+
+## ⚠ CONTRADICTION BETWEEN TWO AGENTS, RECORDED UNRESOLVED
+
+The demand agent cited **GrowLetter** as commission-only newsletter ad sales with a published trigger
+(*"no cost unless we bring you an advertiser you're not currently working with"*), sourced to
+`newsletteroperator.com/ads`. **This agent read `growletter.com` and classifies it as a subscriber-GROWTH
+agency — paid social, referrals, Boosts — not ad sales.** Two different properties may both exist under
+related branding. **The RESERVED-ANNUITY LAW in Part Four rests on that quoted term, so it is flagged
+UNVERIFIED pending a human check of which entity published it.** *(The measured 53,7–70,8% carryover it was
+applied to is independent and stands regardless.)*
+
+> **FIVE agents, five unrelated causes of death — and one correction in her favour on onboarding. The candidate
+> is closed.**
