@@ -85,18 +85,19 @@ Seven agents, primary statutory and supplier sources, several correcting each ot
   PIS/COFINS on gross — provided she never trades on her own account.** And **STJ REsp 1.678.551/DF** holds
   Lei 4.886/65 **art. 5º was not received by CF/88**, so no council registration is needed to earn or sue for
   commission. See `THE_AGENCY_FINDING.md`.
-- **THE ANTI-DISINTERMEDIATION STATUTE** — the reason matching businesses fail is that both sides transact
-  directly afterwards. **Brazilian CC art. 714, Lei 4.886 art. 31, UK SI 1993/3053 reg. 7(2) and EU
-  86/653 art. 7(2) all pay an exclusive-territory AGENT on business in her zone that she never touched.**
-  **Every contract must be an *agência*, never a *corretagem*** — CC art. 726 gives the opposite default.
-  **★ VERIFIED VERBATIM 19 Aug and STRONGER than recorded: art. 31 gives the zone commission where the contract
-  provides for exclusivity *"ou quando este for omisso"* — it is the DEFAULT. Art. 33 makes an unrefused written
-  order into a commission entitlement after 15/30/60/**120 days for a foreign buyer**. Art. 27(j) sets a
-  termination indemnity of **1/12 of ALL retribution ever earned under the contract**, protected against rolled
-  fixed terms by §2–§3 — a compounding statutory asset. ⚠ BUT art. 28 imposes a duty to *"EXPANDIR os negócios…
-  e PROMOVER os seus produtos"*, and art. 33 §1 pays her NOTHING if the buyer is insolvent. **The screen for any
-  agency candidate is: can art. 28's promotion duty be discharged entirely in writing?*** See
-  `THE_AGENCY_STATUTE.md`.
+- **⚠ THE ANTI-DISINTERMEDIATION STATUTE — DEMOTED 19 Aug. It is a DEFAULT, NOT A SHIELD.** Brazilian Lei
+  4.886 art. 31, UK SI 1993/3053 reg. 7(2) and EU 86/653 art. 7(2) do pay an exclusive-territory agent on
+  business in her zone she never touched — **but all three are freely contracted away, and the file's claim that
+  the UK/EU versions were "non-derogable" was simply WRONG. Verified at source: Directive 86/653 art. 5 protects
+  only arts. 3–4 (plus 17–18 via art. 19), and SI 1993/3053 reg. 5(1) protects only regs. 3–4. Article 7 /
+  regulation 7 is in NEITHER list.** And **STJ 3ª Turma (2023)**: art. 31 exclusivity *"pode ser expressamente
+  restringida ou afastada pela vontade das partes."* **It protects her against sloppiness, not against intent —
+  any principal with counsel deletes it in clause 1.** *(Still true and still useful: art. 31 is the default
+  where the contract is SILENT; art. 33 makes an unrefused written order a commission entitlement after
+  15/30/60/120 days; art. 27(j) sets an indemnity of 1/12 of ALL retribution ever earned. But art. 28 imposes a
+  duty to EXPAND and PROMOTE, and CPC art. 25 lets an international contract elect a foreign forum outright.)*
+  **Every contract must still be an *agência*, never a *corretagem*** — CC art. 726 gives the opposite default.
+  See `THE_AGENCY_STATUTE.md` and `THE_AGENCY_SCISSORS.md`.
 - **THE WHOLESALE ESCAPE** — the one channel where being faceless is an ADVANTAGE: supplying a firm that
   resells under its own name. It supplies the face, credential, interpretation and liability; she supplies the
   throughput, priced off the reseller's client revenue. **20 resellers at $650 ≠ 300 customers.**
@@ -315,6 +316,47 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   email and reply in writing because that is their job. **Every other Brazilian SME segment defaults to WhatsApp
   and a phone call — which breaks C1 at the exact moment it starts working.** Screen Brazilian buyers on this
   before anything else.
+
+- **★★ THE AGENCY SCISSORS — S6 (matching two enumerable populations) IS CLOSED, and it closes structurally.**
+  **Wherever a B2B order is generated IN WRITING, the buyer can already broadcast it to every qualified supplier
+  for free, so the introduction an agent sells is worth nothing; wherever the introduction IS worth something,
+  the order comes from a conversation and C1 forbids it.** Written procurement is *a technology for destroying
+  relational access*. The only cell that survived the matrix — a public-tender bid desk — **is not an agency at
+  all: she personally produces every edital, which is the arithmetic-dead shape in an S6 costume.**
+  See `THE_AGENCY_SCISSORS.md`.
+- **★ THE MARGIN LAW — the commission rate is a function of the PRINCIPAL'S GROSS MARGIN, not the agent's
+  effort.** Physical goods with a factory behind them: **3–6%** — the only PRIMARY commission datum in this file
+  is a manufacturer's own circular quoted in **TJPR Ap. Cível 581.757-2**: *"Peças = 5%… fator acima de 0.72 =
+  6%… Serviços de Campo = não tem comissão"*, director's testimony 3–6%, exceptionally 10%. **That puts the
+  territory volume needed at R$12,5–25 MILLION A YEAR — dead on arithmetic before any constraint applies.**
+  Zero-marginal-cost inventory pays 25–40% (SECONDARY). **★ And the same judgment proves the job is SPOKEN:
+  trade-fair stands, borrowed robots, calls to authorise each discount. The one document proving the rate proves
+  the constraint violation.**
+- **⚠ THE 8,1% RATE IS FOR EXPORTED SERVICES ONLY. Commission earned for finding BRAZILIAN buyers is not an
+  export** (by symmetry with **SC Cosit 76/2018**'s *"resultado aqui se verifique"* test — **UNVERIFIED as
+  applied**). Domestic Lucro Presumido loads **13,3–16,3%** ⇒ **~US$12.000/month gross**. **★ And this INVERTS
+  `THE AGENT EXEMPTION`: *pessoa física* is the WORST of the three vehicles at ~28–32% (IRPF to 27,5% + INSS +
+  ISS), about US$2.400/month worse than a PJ.** It dodges PIS/COFINS on gross goods value, which was never going
+  to apply to an agent anyway.
+- **★★ THE CONTEMPORANEOUS-EVIDENCE RULE — DO NOT HUNT REGISTERS. HUNT PUBLISHED DISPUTE AND CLAIMS POLICIES.**
+  A dated series is only *the product* where a counterparty's own policy requires an observation **made at a
+  specified time on a specified day** — that timing requirement is the only thing that makes *"I was watching and
+  you were not"* a purchase rather than a preference, because it makes the evidence **impossible to manufacture
+  after the fact, by anyone, at any price.** A register says what is true now; a dispute policy says what
+  somebody will PAY for and WHEN IT HAD TO BE TAKEN. See `THE_CONTINUOUS_OPERATION_HUNT.md`.
+- **★ S3 (continuous operation) PASSES THE ARITHMETIC GATE BY CONSTRUCTION AND DIES ON DEMAND.** One cron, one
+  archive, **zero marginal human hours per subscriber**; 18 subscribers at $650 clears the target. **Not one of
+  seventeen S3 candidates died on economics — all died on distribution, occupancy or the free front door.**
+  *(The binding constraint has never once been supply, in any shape, in any hunt.)*
+- **★ THREE CHEAP MOAT-KILLERS, each a test rather than an argument.** **(1) THE DATE-STAMPED FILENAME IS A
+  BACK-FILL INVITATION** — `evergreen-shipping.us/Return_Location_LA_20240830.pdf` still returns 609.976 bytes
+  today, so the whole back series is brute-forceable in an hour. **Guess three superseded dates in the
+  publisher's own naming convention before claiming any erasure moat; sixty seconds.** **(2) THE
+  REGULATOR-MANDATED ARCHIVE** — 46 CFR 520.10 orders carriers to retain 5 years, serve 2 years online, and
+  provide as-of-date retrieval, free. *The body that mandates a publication often mandates its archive, for the
+  same reason a standards body ships a free validator.* **Free-to-read is not the screen; FREE-TO-READ-AS-OF-A-
+  PAST-DATE is.** **(3) THE PUBLISHER SHIPS THE DELTA** — look for a `/daily/` directory first; the FCC serves
+  per-weekday transaction zips and ClinicalTrials.gov serves a free version-history API.
 
 ## The test design that works
 
