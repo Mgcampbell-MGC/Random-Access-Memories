@@ -349,3 +349,156 @@ itself."**)*
 
 > **Both slices independently found that the COMPUTATION is ownable and the ACTION is not. And in both, the
 > archive priced the action and gave the computation away.**
+
+---
+
+# PART THREE — THE PRODUCTION SLICE, and the law that answers the onboarding problem
+
+## ★★ THE VERIFIABILITY → SILENCE COUPLING
+
+**The fourth miner found that whether signing a reseller requires a conversation splits perfectly along one
+line — and it is not price.**
+
+| Deliverable is… | What the plan specifies for signing |
+|---|---|
+| **MACHINE-VERIFIABLE** — the package launches and tracks or it doesn't; every store has exactly one complete folder or it doesn't | *"Send each a short written offer and a source-file/QA sample. Ask only for the $450 paid proof."* **No call anywhere in the file** |
+| **JUDGMENT-LADEN** — pitch quality, campaign closeout, localisation nuance | *"Speak with at least 20 new-business leaders"* · *"Complete five discovery calls"* · *"English discovery and handoff calls"* |
+
+> ### THE VERIFIABILITY→SILENCE COUPLING — **a buyer will hand a mandate to an unknown, faceless supplier IN WRITING exactly when THE ACCEPTANCE TEST IS OBJECTIVE.**
+>
+> **The conversation is never about price. It is the buyer trying to establish whether the supplier's JUDGMENT
+> can be trusted. Remove the judgment from the deliverable and the conversation disappears.**
+
+**This is the missing half of THE ONBOARDING LAW.** That law said written-only survives selling but not being
+onboarded. **This says when it survives both — and it explains why three independent downloadable-tool plans
+all concluded, separately, that "no sales call should be required": they all sell a BENCHMARK, not an
+OPINION.**
+
+---
+
+## ★ THE 50% CONCESSION — the honest ceiling on every "we automate it" claim
+
+**Three files, three unrelated businesses, written independently, converged on the same number:**
+
+| | |
+|---|---|
+| *"80–90% of folder, PDF and manifest generation can be automated. **50–60% of total company hours**"* |
+| *"Repetitive mechanics automatable ~80–90%. **Total company hours automatable: realistically 45–55%**"* |
+| *"70–80% of repetitive coding and document generation. **Approximately 50–60% of total company hours**"* |
+
+> **Automation removes 80–90% of the MECHANICAL work and only ~50% of TOTAL hours, because sales, onboarding
+> and exceptions are not mechanical. Treat 50% as the ceiling on any automation claim in this file until
+> something proves otherwise.**
+
+---
+
+## ★ THE THREE MECHANISMS THAT SURVIVE EVERYTHING
+
+### M-7 · THE SEEDED-DEFECT BENCHMARK — *"the benchmark, not the prompt, is the product"*
+
+> ***"LINELOCK v1 detected 499 of 500 seeded critical mismatches and produced zero false MATCH results."***
+
+Build a synthetic corpus, plant hundreds of known errors, **publish the detection rate.**
+
+> **A published measurement about the TOOL replaces a claim about HER. Nothing needs to be believed; it needs
+> to be reproduced.** The strongest anti-expert-veto component in the slice, and it pairs exactly with the
+> verifiability coupling above — a published benchmark IS an objective acceptance test.
+
+### M-10 · PAY → UPLOAD → DELIVER → REORDER
+
+Stripe Checkout → a confirmation screen with **a unique upload URL that payment unlocks** → drag-and-drop
+intake → automated pipeline → one delivery email containing everything, **plus a one-click reorder button
+that reuses the stored card.**
+
+> **Fully C1, C2 and C4 compliant commerce: no portal, no account, no login, no onboarding, no conversation —
+> and a repeat-purchase loop built into the delivery itself.**
+
+### M-4 · THE EXCEPTION LEDGER — flag, never solve
+
+**Six independent files converged on this.** *"If unclear, flag — don't guess."* · *"Missing inputs become
+named exceptions; they do not stop delivery or payment."* · Ambiguous items labelled *"Client/legal decision
+required."*
+
+> **It caps her hours, hands every judgment call back to the buyer, and is a complete structural answer to the
+> expert veto in one move. She never opines — she ROUTES.**
+
+*(Also kept: **the frozen input list** with its negative half — *"No raw PDFs. No 'make this engaging.' No SME
+interviews. No end-client calls"* — which is what converts an open-ended service into a bounded one. And
+**card-pay-only as a procurement filter**: *"make the portal card-pay only… some will hate it; that's okay —
+those are also the ones with the worst procurement drag."*)*
+
+---
+
+## THE ARITHMETIC — the agency family convicts itself
+
+| Candidate | Hours/month at its OWN stated targets | vs 78 h | Team conceded IN THE FILE? |
+|---|---:|---:|---|
+| SCORM production cell | **245 h** | **3,1×** | *"three-to-four-person production team"* |
+| Multi-location campaign cell | 160–176 h | 2,2× | *"two-to-three-person delivery team"* |
+| Pitch operations | ~190 h | 2,4× | *"one trained part-time operations specialist"* |
+| Campaign closeout | **114 h — stated in the file itself** | 1,5× | — |
+| **The three downloadable TOOLS** | **7,5 h, capped, self-serve** | **FITS WITH ROOM** | **expert hired ONCE** |
+
+> **Not one production-cell variant clears the ceiling, and five of six concede a person in writing. The only
+> three that fit are the ones that ship a LICENSED ARTEFACT rather than a production run — where *"the
+> software runs on the agency's own account, Sol has zero ongoing hosting costs"* and THE FILES NEVER REACH
+> HER AT ALL.** *(C4 solved by architecture rather than by policy.)*
+
+**And the miner names the combination nobody in the archive wrote down:**
+
+> ***"A white-label relationship whose deliverable is a LICENCE rather than a production run — the reseller's
+> mandate solves distribution, and the fixed-cost artefact solves the ceiling. Every ingredient already exists
+> in these files. They have simply never been assembled in the same document."***
+
+---
+
+## FOUR MORE RULES, EACH EARNED
+
+**★ THE EXPERT-RENTAL DISTINCTION** — *"An expert bought ONCE is a vendor; an expert needed PER UNIT is a
+contractor. **Same person, opposite constraint.**"* The working form: *"Those experts provide the retail
+doctrine once; they do not deliver each sale."*
+
+**★ THE LUMPY-VOLUME QUALIFIER to the constraint-side law** — exogenous volume is necessary but **not
+sufficient.** *"You don't want a salary that depends on the acquisition calendar."* **If the event is RARE PER
+BUYER, sell to the party who aggregates many buyers' events.**
+
+**★ NEVER LET THE AUTOMATION BE THE PITCH** — *"if your pitch is 'we use AI to extract leases,' you're a
+feature, not a business,"* because the incumbent platform ships it already.
+
+**★ THE SPREADSHEET COMPETITOR** — *"Your true competitor isn't software — it's the 'good enough' combination
+of Excel + calendar reminders + PDF folders."* Named independently in three files.
+
+**And a documented counter-example to THE POSTAL LIST LAW, worth more than the candidate it sat in:** the US
+federal **NPPES** provider register is a free, complete, weekly-updated **9,3 GB CSV filterable by provider
+taxonomy code**, carrying business phone, mailing and practice addresses **and endpoint email where supplied**
+— with state directories layering on top that do carry email. **Generalisable to every US healthcare-adjacent
+taxonomy, not just the one the file used.**
+
+---
+
+# APPENDIX — CERTFLEET 365, read as a parts donor
+
+*Supplied as an inspiration source, not for judgement. Graded by mistake first — Rule 3 exists precisely to
+prevent that. The parts:*
+
+**★ THE MAINTENANCE-WINDOW CLOCK — the best part, and it is a clock this file has never had.** *"Your
+instrument goes to calibration on the 14th; here is an identical calibrated one for exactly that window."*
+> **Generalised: find the event where the buyer's OWN ASSET IS TEMPORARILY UNAVAILABLE on a date they ALREADY
+> KNOW. Three properties nothing else here has: the buyer schedules it months ahead, it is UNCORRELATED with
+> their busy season (maintenance is deliberately scheduled to avoid it), and THE BUYER TELLS YOU — it is a
+> clock you do not have to detect.**
+
+**THE CUSTOMER IS THE CERTIFIER** — sell capacity to the party who already holds the credential, the
+insurance, the protocols and the contracts. **The wholesale escape, arriving from a fourth independent
+direction today.**
+
+**THE LIABILITY BOUNDARY AS A PRODUCT BOUNDARY** — *"It does not interpret test results. It does not certify
+compliance."* Same shape as the closed vocabulary and the non-judgement sentence. **Three unrelated documents
+have now independently invented the same device.**
+
+**CYCLELOCK** — at the moment of delivery, ask: *"shall we hold the same capacity for your next cycle?"* with
+a deposit. **A renewal that requires no selling, captured at the one moment the buyer's attention is already
+on you.**
+
+**THE PURCHASE FORMULA** — *"confirmed reservations + probability-weighted repeat demand + required spare
+capacity − currently available = documented shortage."* **Revenue growth by itself is not permission to buy.**
