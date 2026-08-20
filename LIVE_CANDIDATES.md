@@ -70,6 +70,14 @@ candidate that died on it.
 > **NEXT ACTION: the ten-day, twenty-terminal capture. Under $20, no phone, no account — and the test IS the
 > build, because those ten days are the first ten days of the asset.**
 
+### ★ THE CHASSIS COLUMN, added 20 Aug — same buyer, same cron, ~10 more pages
+Chassis lessors bill per-diem; terminals/depots generate the acceptance state — **poster ≠ invoice-issuer, the
+541.6 structure in private-contract form.** Passes two-dates and speculative-capture. **Fold into the ten-day
+capture, gated on a three-part test:** dated per-location state visible from a real browser (CCM/TRAC are
+Cloudflare-blocked from the container) · CCM's own `/news/` delta doesn't already reconstruct it · **and ≥5 of
+20 published IANA arbitration decisions turned on world-state evidence rather than the carrier's own conduct
+logs.** That last number is load-bearing. See `THE_CONVERGENCE_HUNT_RESULTS.md`.
+
 ---
 
 ## #2 · THE DECRS CHANGE-LOG — *FDA drug establishment register*

@@ -547,6 +547,20 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   art. 15 gives consumer claimants the defendant's records free in a month; no evidence market exists under free
   statutory discovery.** See `THE_RECOVERY_CENSUS.md`.
 
+- **★★ THE PRESENT-TENSE DUTY TEST — before archiving any register's erased half, READ THE TENSE of the duty
+  that consumes it.** 21 CFR 1.505 makes an FSVP importer check whether a supplier *"IS the subject of"* an
+  import alert — present tense, so the free current page satisfies the only compelled buyer and **the change-log
+  has no compelled consumer.** Killed the best-shaped convergence candidate in thirty seconds. And **★ FOIA IS A
+  FRONT DOOR: for US federal registers, "the state keeps state, not history" is true of the WEBSITE and false of
+  the AGENCY — the history is FOIA-retrievable for the cost of a letter. The erasure moat only exists where the
+  record-holder is PRIVATE**, which is why candidate #1's terminals remain the only clean instance found.
+  **★ And THE CLAIMANT-EVIDENCE LAW CROSSES JURISDICTIONS: ANTAQ Acórdão 521/2025 demands the user's own attempt
+  records "de maneira cabal" — same wall as ONE's dispute page, in Portuguese.** ★ DIARY, quarterly: **if
+  ANTAQ's pending resolution creates a carrier-must-prove or invoice-must-state field, the Brazilian working-day
+  ledger resurrects as the only 46-CFR-541-shaped rule outside the US.** The convergence hunt's verdict:
+  **the structure solves DISTRIBUTION and only distribution — not one of fourteen candidates died there.**
+  See `THE_CONVERGENCE_HUNT_RESULTS.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
