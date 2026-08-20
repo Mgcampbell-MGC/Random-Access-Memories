@@ -4,7 +4,13 @@
 
 ---
 
-## #1 · THE WORKING-DAY LEDGER ★★ — *shipping terminal ledger*
+## #1 · THE WORKING-DAY LEDGER ★★ — *shipping terminal ledger* → **GATELEDGER**
+
+> **★ 20 Aug: chosen by the founder as THE idea and taken through a two-counsel refinement (business-case +
+> adversarial). The two-pager is `GATELEDGER_Business_Overview.docx`.** Pricing honesty preserved: the blueprint
+> path to $11.111/mo (2 white-label + 8 Dispute Desk + 6 Ledger + 15 packs) stands NEXT TO the adversarial
+> corridor ($150–350/mo + $49–99/extract, white-label load-bearing). **Five pre-committed kill bars are in the
+> document; nothing gets built until the 30-email probe and the BlueCargo free-tier check return numbers.**
 
 **The pitch in one paragraph.** Importers are charged large daily late fees (demurrage and detention) when a
 container sits at a US port past its free time. **But free time is counted in WORKING days — and a day the
