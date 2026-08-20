@@ -561,6 +561,18 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   **the structure solves DISTRIBUTION and only distribution — not one of fourteen candidates died there.**
   See `THE_CONVERGENCE_HUNT_RESULTS.md`.
 
+- **★★ THE BRAZILIAN RECOVERY CENSUS RETURNED EMPTY — 16 industries, zero poster≠issuer splits — and for a
+  reason the US census didn't have: THE BRAZILIAN STATE CLOSES THE GAPS ITSELF.** Four kills to run on any
+  Brazilian candidate, in order: **★ THE STATE-AS-ARCHIVIST KILL — check `dadosabertos` BEFORE checking whether
+  a fact is transient** (ANAC's VRA publishes per-flight scheduled-vs-actual back to 2000 as static CSVs, so the
+  flight-compensation evidence market is nationalised); **★ THE FREE-DISCOVERY DOUBLE BARREL — CDC art. 6º VIII
+  + CPC art. 400: refusal to exhibit means the facts are ADMITTED AS TRUE**, which is sharper than the DSAR
+  kill; **★ THE AUTOMATIC-COMPENSATION KILL** (ANEEL DIC/FIC: the offender computes its own compensation from
+  its own records — poster, issuer and payer are one party by regulatory design); **★ THE CONTRACTUAL-DEADLINE
+  KILL** (a deadline created by contract has no public clock — both TISS timestamps are party-held). Also: LAI
+  (Lei 12.527) transposes the FOIA front door to Brazil intact. **Across two jurisdictions and 40 industries,
+  candidate #1's structure has now occurred exactly once.** See `THE_BRAZIL_RECOVERY_CENSUS.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
