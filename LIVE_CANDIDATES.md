@@ -26,6 +26,13 @@ fees for a percentage.
 | **Verified by me** | `lynx.yti.com/ClosedAreaMatrix.aspx` = the terminal operating system, **HTTP 200, no login** · Maersk's 2,7 MB empty-return directory: **200 today, 404 on all five prior dates tested** · **FreeTSA, DigiCert, Izenpe, Sectigo all returned RFC 3161 `Status: Granted`** over today's bundle, free |
 | **Day 0** | **Banked** — `archive/working_day_ledger/2026-08-19.tar.gz` with all four timestamp tokens |
 
+### ★★ SURVIVED A 24-INDUSTRY UNIQUENESS SWEEP, 20 Aug
+The inverted hunt censused every contingency-fee recovery industry findable. **The structure this candidate
+sits on — refund-side buyers + a posted schedule whose poster is NOT the invoice-issuer + a bounded capture
+universe — occurred EXACTLY ONCE in 24 industries.** Every rival died on the go-forward split (savings-fee
+buyers don't buy history), the incorporated-schedule corollary (the poster archives its own invoice inputs),
+claimant-evidence, gazette, platform-arbiter, or head-start. See `THE_RECOVERY_CENSUS.md`.
+
 ### ★ SURVIVED A KILL ATTEMPT, 19 Aug — the annual-calendar test
 
 **The sharpest objection to #1: if terminals publish a full-year holiday calendar, closures are knowable in

@@ -535,6 +535,18 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   and digital-only AI (no print) — the machine-personalised PRINTED artifact threads the needle.**
   See `THE_SCAN_KEEPSAKE_MACHINE.md`.
 
+- **★★ THE RECOVERY-INDUSTRY INVERSION RETURNED A NULL THAT HARDENS CANDIDATE #1: across 24 contingency-fee
+  recovery industries, EXACTLY ONE needs an input that is a transient third-party public fact nobody archives —
+  the seed.** Three laws from the census: **★ THE GO-FORWARD SPLIT — most "audit" industries charge a % of
+  FUTURE SAVINGS, not past refunds, and a firm paid on the future buys no history; run this FIRST.** **★ THE
+  INCORPORATED-SCHEDULE COROLLARY — when an invoice incorporates its issuer's own posted schedule, the POSTER
+  archives it to defend its own invoices** (WM publishes its own 52-week surcharge history; AT&T runs its own
+  Service Guide Archive; 47 CFR 42.10 posts + 42.11 retains 2,5 years in the same part). **The seed escapes
+  because the gate schedule is posted by the TERMINAL but feeds the CARRIER'S invoice — poster ≠ invoice-issuer.
+  Hunt other poster≠issuer splits inside refund-side industries; nothing else.** **★ THE DSAR FRONT DOOR — GDPR
+  art. 15 gives consumer claimants the defendant's records free in a month; no evidence market exists under free
+  statutory discovery.** See `THE_RECOVERY_CENSUS.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
