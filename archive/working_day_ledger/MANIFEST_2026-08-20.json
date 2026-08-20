@@ -1,0 +1,6 @@
+{
+  "captured_utc": "2026-08-20 (morning UTC)",
+  "maersk_erasure_cadence_pinned": "At ~21:15 UTC on 19 Aug, file 08-18 was already 404 and 08-19 was live. This morning (20 Aug, before 16:00 EST), 08-19 is STILL live (200, 2.709.258 bytes) and 08-20 does not yet exist (404). Model: EXACTLY ONE file live at any time; the prior date dies at the ~16:00 EST publish. Retention ~24h.",
+  "note": "Maersk 08-20 not yet published at capture time; five terminal pages captured.",
+  "tarball_sha256": "b22b1c7ecc9941b8c81a0f4205eac1417df0fbf1c59ee57795214d4da20af67d"
+}
