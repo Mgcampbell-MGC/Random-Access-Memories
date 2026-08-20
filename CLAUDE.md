@@ -508,6 +508,18 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   Premier). An agency's business *is* being emailable for bookings. **The New York register publishes phone only,
   but the domain fails on POOL SIZE (~75) and INCENTIVE, NOT on contactability.** Record it that way.
 
+- **★★ WEDDINGS & EVENTS WERE DEEP-HUNTED 19–20 AUG AND CLOSED — ten candidates, ten kills — and the closure
+  SHARPENS `THE CONSTRAINT-SIDE LAW`: the domain satisfies it perfectly (every vendor's volume is set by wedding
+  dates) and still produces nothing.** **Exogenous dates create sellable work only where a dispute policy pays on
+  a THIRD PARTY'S TIMED OBSERVATION; where every policy pays on state-archived events and claimant-owned
+  documents, the evidence market is PRE-NATIONALISED.** Two insurers' full wordings, read independently, define
+  the trigger identically and name the validator themselves: *"we may rely on publicly available records (such as
+  Companies House or The Gazette)."* **★ THE STATE-TRIGGER LAW: a claims policy that defines its trigger as a
+  formal legal event has outsourced its evidence to the state — and the perishable population (unregistered sole
+  traders) is EXCLUDED from cover, so the perishable half is the uninsured half.** Deposits already have a free
+  statutory recovery industry — **chargeback + s.75 CCA: the recovery industry is the card scheme, price zero.**
+  The split test returns EMPTY domain-wide. See `THE_WEDDING_HUNT.md` and `THE_WEDDING_INSURANCE_PROBE.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
