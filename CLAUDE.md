@@ -573,6 +573,16 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   (Lei 12.527) transposes the FOIA front door to Brazil intact. **Across two jurisdictions and 40 industries,
   candidate #1's structure has now occurred exactly once.** See `THE_BRAZIL_RECOVERY_CENSUS.md`.
 
+- **★★ THE PDA LAW — BRAZIL NEEDS NO UKGWA BECAUSE ITS AGENCIES ARCHIVE THEMSELVES.** Sixteen sources
+  field-inspected: ANTT ships monthly snapshots back to 2020 at date-stamped URLs · ANS publishes a dedicated
+  cancelled-operators file · CVM retains cancelled registrants in-file with date and reason · ANVISA retains
+  expired certificates AND publishes the queue-wait statistic itself · IBAMA ships its own cure register ·
+  INPI's RPI is literally a weekly gazette · **and LAI (Lei 12.527) retrieves any past version of anything else
+  for R$0 in writing.** **The Brazilian erasure family is CLOSED for public registers; the record-holder must be
+  PRIVATE, and none was found.** What Brazil contributes is DISTRIBUTION: **the SIF register publishes native
+  email at 78,5% (measured, 21.089/26.856)**, CADASTUR and CVM likewise — two registers beat the postal list law
+  without even the CNPJ join. See `THE_BRAZIL_REGISTER_CENSUS.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
