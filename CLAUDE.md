@@ -520,6 +520,21 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   statutory recovery industry — **chargeback + s.75 CCA: the recovery industry is the card scheme, price zero.**
   The split test returns EMPTY domain-wide. See `THE_WEDDING_HUNT.md` and `THE_WEDDING_INSURANCE_PROBE.md`.
 
+- **★★ THE PLATFORM-ARBITER LAW — no third-party evidence market can exist downstream of a platform.** The
+  evidence structures this file prizes presuppose an arbiter who accepts records the parties don't already hold
+  (a court, the FMC, a tariff desk). **In every consumer domain hunted, the dispute path runs through a platform
+  — card networks, Airbnb/Booking, iFood, Amazon KDP — that is SIMULTANEOUSLY THE JUDGE AND THE KEEPER OF THE
+  RECORD, and accepts only evidence it already holds or the merchant's own conduct.** Thirty-second screen:
+  *"who is the arbiter, and do they accept a record they don't already hold?"* If the arbiter is a platform,
+  stop. **This is why the demurrage seed has no consumer analogue: B2B, statute-governed, external arbiter.**
+- **★ THE INACCESSIBLE-SUBJECT SCREEN — a keepsake/artifact machine survives only where it monetises ACCESS to
+  a subject that cannot be photographed.** A fetus has no free substitute; a puppy competes with the adopter's
+  phone from minute one. **Decoration loses to the camera in everyone's pocket; access does not.** This is what
+  separates the scan-keepsake machine from every other channel-partner artifact tried (pets, homes, weddings).
+  And the un-occupied intersection it sits in: **incumbents split between catalogue blanks (scissors: no margin)
+  and digital-only AI (no print) — the machine-personalised PRINTED artifact threads the needle.**
+  See `THE_SCAN_KEEPSAKE_MACHINE.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the

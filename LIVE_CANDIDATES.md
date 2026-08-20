@@ -102,7 +102,15 @@ only the order and dates of changes are not.)*
 
 ---
 
-## #3 · "ANTES DE VOCÊ CHEGAR" — *the baby book*, and the book family
+## #3 · THE SCAN KEEPSAKE MACHINE — *formerly "the baby book", upgraded 20 Aug*
+
+> ### ★ THE UPGRADE: the kill-condition ("does she write every book?") is resolved BY SUBTRACTION — **zero generated prose**. The artifact family (enhanced portraits from the parents' own uploads, heartbeat-soundwave print, star chart, name-and-dates typesetting) is 100% deterministic machine work; her role is QA and exceptions. **And a second, larger corridor exists: white-label to US/UK elective ultrasound studios (one UK franchise HQ = 35 clinics), invoiced per unit as an exported service at 8,1%.** Incumbents split between catalogue blanks (no margin) and digital-only AI (no print) — **the machine-personalised PRINTED artifact threads the catalogue scissors, which nothing else in two days has.** See `THE_SCAN_KEEPSAKE_MACHINE.md`.
+>
+> **THE TEST (serves both corridors, pre-committed bars): 20 real scan images → full pipeline → stopwatch. KILL at median >5 min/unit or <14/20 shippable; PASS at ≤3 min and ≥18/20.** No money, no phone, one week.
+>
+> **Weakest link, stated:** channel economics rest on one bear vendor's own marketing (~1-in-3 attach — SECONDARY); BabyFlix could add print with one integration, so the durable asset is the signed channel.
+
+### The original consumer version, for the record
 
 **The pitch.** After a 3D/4D ultrasound the mother scans a clinic QR code and buys a **R$349 hardcover**. She
 uploads her own cropped images and fills a questionnaire — **the clinic transfers nothing**. The book arrives
