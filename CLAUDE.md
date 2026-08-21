@@ -655,6 +655,27 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   the loop ACCUMULATES is the entire question. **Her version keeps the production machine and replaces
   attention-rent with a per-unit sale that arrives in writing.**
 
+- **★★ THE DISPUTE-IS-THE-PRODUCT LAW — in any pay-per-lead or success-fee model the core recurring workload
+  is not matching, it is ARBITRATING WHETHER THE LEAD WAS REAL — and that arbitration is spoken.** Measured
+  on Brazil's largest pay-per-lead marketplace: GetNinjas' public complaint record is about **money, not match
+  quality** (*"cobrança por lead inválido e falta de reembolso"*, *"leads desbloqueados sem retorno"*,
+  *"dados de contato falsos… se recusou a realizar o estorno"*). **C1 fails not at the edges but at the exact
+  moment revenue begins.** *(Generalises `THE ONBOARDING LAW`: written-only is compatible with SELLING, not
+  with BEING INVOICED AGAINST.)* **★ THE CHEAP TEST: before proposing any marketplace or success-fee model,
+  read the SELLER-SIDE complaint record of the category leader — it measures disputes-per-transaction free.**
+- **★★ THE SELF-REPORTED-CONVERSION TRAP — a success fee on an outcome only the counterparty can observe is
+  uncollectable.** Her options are trust (they underreport, permanently and one-directionally) or standing
+  access to their systems (**C4**). No third. **★ COROLLARY THAT VALIDATES THE BOARD: the working-day ledger
+  must stay priced at a FIXED $150–350/month + $49–99 per extract and must NEVER convert to a share of
+  recovered demurrage — despite its buyers themselves working on 25–35% success fees. Sell the input at a
+  fixed price; never take a share of an outcome you cannot see.**
+- **★★ A MATCHING DESK IS PER-UNIT HUMAN PRODUCTION IN AN S6 COSTUME — S6 DOES NOT REOPEN FOR CONSUMER JUST
+  BECAUSE IT CLOSED FOR B2B.** Killed COROA (a hair-prosthesis matching marketplace) on the plan's own stated
+  bars: **20 min/customer against C6's 130 h/month ⇒ 193 h at the R$100 pilot lead price, 167 h at R$350/sale
+  and 33% conversion**, and the proposal's own revenue table topped out at **27% of target.** *(Identical
+  verdict to `THE AGENCY SCISSORS`' one surviving cell, the public-tender bid desk.)* **Compute units × her
+  minutes against 130 h BEFORE arguing about anything else — it is the fastest kill in the file.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
