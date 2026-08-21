@@ -76,6 +76,13 @@ candidate that died on it.
 > **NEXT ACTION: the ten-day, twenty-terminal capture. Under $20, no phone, no account — and the test IS the
 > build, because those ten days are the first ten days of the asset.**
 
+### ★ THE INLAND RAIL RAMP COLUMN, added 21 Aug — the tournament's gift
+The FMC final rule **expressly extends 46 CFR 541 inland under through bills of lading** (Kirby cited in the
+docket, fetched). Railroad-posted ramp gate hours feeding OCEAN carriers' invoices = the seed's poster≠issuer
+structure at ~30 more pages. **Gated on two checks:** carrier tariffs define inland free time by gate-open
+days · ramp closures publicly posted, not app-gated. Container detention is the safe leg; ramp storage the
+contested one. Fold into the ten-day capture if the checks pass.
+
 ### ★ THE CHASSIS COLUMN, added 20 Aug — same buyer, same cron, ~10 more pages
 Chassis lessors bill per-diem; terminals/depots generate the acceptance state — **poster ≠ invoice-issuer, the
 541.6 structure in private-contract form.** Passes two-dates and speculative-capture. **Fold into the ten-day
@@ -96,6 +103,11 @@ left it**. Archive the daily snapshot and the change-log becomes an artefact the
 | **Measured by me** | 10.414 rows · 9.837 unique FEIs · **100,00% email on TWO separate fields** · 43,7% of rows yield a second distinct human · all 10.414 share one expiry date (12/31/2026) · the exclusion file is **named** |
 | **Why it beat the version that died** | `THE_FDA_TEST` killed the *device* register on `THE NAMEABILITY CONDITION` — the vanished records were anonymous integers. **Here the firm name, address and two working emails sit on the same row as the identifier** |
 | **Day 0** | **Banked** — `archive/decrs/2026-08-19.tsv.gz` |
+
+### ★ FIRST OBSERVED DEMAND COMPARABLE, 21 Aug
+**Redica/FDAzilla sells FDA 483 inspection documents self-serve at $289/document** — buyers demonstrably pay
+high-three-figures, self-serve, for FDA facility-level intelligence, **and Redica sells no registration
+change-log.** Direct counter-evidence to the "$0–100 pincer band" weakness.
 
 ### ★ TWO OF THE THREE BLOCKERS CLEARED, 19 Aug — both favourably
 
