@@ -39,7 +39,7 @@ report.**
 | `AGENT_DETAILS` (DUNS · name · **email** · phone) | 45,75% |
 | `EXPIRATION_DATE` | **12/31/2026 on all 10.414** — one shared statutory calendar |
 | `drls_excluded.txt` | **20 rows, and NAMED** — FEI, DUNS, firm name, address |
-| Largest US agent | Registrar Corp, **418** *(a hunt report said 427; 418 is today's count)* |
+| Largest US agent | Registrar Corp, **427 rows / 417 distinct FEIs** *(a hunt report said 427; 418 is today's count)* |
 
 ### Why this is not just another register
 
