@@ -583,6 +583,25 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   email at 78,5% (measured, 21.089/26.856)**, CADASTUR and CVM likewise — two registers beat the postal list law
   without even the CNPJ join. See `THE_BRAZIL_REGISTER_CENSUS.md`.
 
+- **★★ THE DIAGNOSIS-IS-INCLUDED LAW — the statutory-independence branch is CLOSED, six regimes fetched, zero
+  candidates.** Where an independence bar is TOTAL, **the same regime COMPELS the assessor to deliver the
+  DIAGNOSIS inside the assessment fee** (ISO 17021-1 §9.3.1.2.2–.3 Stage-1 concerns; NOP §205.662(a) written
+  noncompliance descriptions with cure dates; FedRAMP's RAR on its own free template). **Statutory independence
+  cleaves REMEDIATION from assessment, never DIAGNOSIS — the machine-makeable half is the half given away; the
+  gap created is remediation: judgment, prose, conversation — everything C1 and the expert veto forbid.** And
+  **THE PEER-FILL COROLLARY**: per-client bars (SOX §201, 537/2014, CVM 23/2021; AICPA even lets the SAME firm
+  sell readiness) hand the prep side to identically-credentialed competitors with sales forces. **The only
+  separator that creates a third-party business is CAPITAL, as the seed case said.**
+  See `THE_TOURNAMENT_VERDICT.md`.
+- **★★ THE SIX-LENS TOURNAMENT RETURNED SIX NULLS, 21 Aug — and crowned the board.** Across three jurisdictions
+  and ~48 industries the GateLedger structure has been hunted three independent ways and **occurs exactly once
+  as a standalone business.** Gains: **a possible INLAND RAIL RAMP column** (the FMC rule extends 46 CFR 541
+  inland under through bills of lading — poster≠issuer again, ~30 pages, gated on two checks) · **DECRS's first
+  observed demand comparable — Redica/FDAzilla sells FDA 483s self-serve at $289/document, and sells NO
+  registration change-log** · entity resolution settled as the parts-bin tool that builds prospect lists, not a
+  moat. *(Air cargo died at the primary source: WFS's tariff makes the handler poster, issuer, clock and arbiter
+  in one company.)* **The marginal hour goes to the 30-email probe.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
