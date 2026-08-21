@@ -1,6 +1,6 @@
 # LIVE CANDIDATES — the running list
 
-**Maintained. Everything else is in `GRAVEYARD.md` or its own kill file. Status as at 19 Aug 2026.**
+**Maintained. Everything else is in `GRAVEYARD.md` or its own kill file. Status as at 21 Aug 2026.**
 
 ---
 
@@ -29,8 +29,8 @@ fees for a percentage.
 | **Why the wholesale fit is unusually clean** | They hold the customer's conduct evidence and **cannot buy back the past**; she holds the past and can **never** hold conduct evidence. Each side is structurally barred from the other's half |
 | **Distribution** | `THE CONVERGENCE` — a public page per terminal per day *is* the dataset and *is* the marketing. Free for the last 7 days (matching the terminals' own retention); the older half is sold |
 | **Cost to run** | Cloudflare R2 + Workers, **under $20/month**; ~5,8 GB/year |
-| **Verified by me** | `lynx.yti.com/ClosedAreaMatrix.aspx` = the terminal operating system, **HTTP 200, no login** · Maersk's 2,7 MB empty-return directory: **200 today, 404 on all five prior dates tested** · **FreeTSA, DigiCert, Izenpe, Sectigo all returned RFC 3161 `Status: Granted`** over today's bundle, free |
-| **Day 0** | **Banked** — `archive/working_day_ledger/2026-08-19.tar.gz` with all four timestamp tokens |
+| **Verified by me** | `lynx.yti.com/ClosedAreaMatrix.aspx` = the terminal operating system, **HTTP 200, no login** · Maersk's 2,7 MB empty-return directory: **200 today; 13 of 14 consecutive prior dates 404** (re-tested 21 Aug — one live edition at a time, predecessors erased permanently) · **FreeTSA, DigiCert, Izenpe, Sectigo all returned RFC 3161 `Status: Granted`** over today's bundle, free |
+| **Days banked** | **Three** — 19/20/21 Aug. Pipeline rebuilt 21 Aug as `bin/capture_ledger.py`: frozen slugs, Maersk edition discovery, **real Merkle root with per-source inclusion proofs** (the v1 field named `daily_merkle_root_sha256` was recovered by search and was a **flat concatenation** — it could not prove one terminal-day without disclosing all six). See `archive/working_day_ledger/README.md` |
 
 ### ★★ SURVIVED A 24-INDUSTRY UNIQUENESS SWEEP, 20 Aug
 The inverted hunt censused every contingency-fee recovery industry findable. **The structure this candidate
@@ -39,21 +39,40 @@ universe — occurred EXACTLY ONCE in 24 industries.** Every rival died on the g
 buyers don't buy history), the incorporated-schedule corollary (the poster archives its own invoice inputs),
 claimant-evidence, gazette, platform-arbiter, or head-start. See `THE_RECOVERY_CENSUS.md`.
 
-### ★ SURVIVED A KILL ATTEMPT, 19 Aug — the annual-calendar test
+### ★★ RESTATED 21 Aug — the annual-calendar objection survives, but I NAMED THE WRONG PAGE TWICE
 
-**The sharpest objection to #1: if terminals publish a full-year holiday calendar, closures are knowable in
-advance and the archive has no scarcity.** Tested by reading YTI's gate schedule rather than counting it:
+**The objection: if terminals publish a full-year calendar, closures are knowable in advance and the archive
+has no scarcity.** My 19 Aug answer — *"YTI's gate schedule is a rolling ~6-day window whose values vary"* —
+was **FALSE**, and so was the follow-up correction that called it byte-identical. Three banked captures,
+parsed as **content**:
 
-| | 1st shift | 2nd shift |
+| source | text lines | changed in 2 days |
 |---|---|---|
-| 17–19 Aug | OPEN | OPEN |
-| **20 Aug** | OPEN | **CLOSED** |
-| **21 Aug** | OPEN | **CLOSED** |
-| **22 Aug** | **CLOSED** | **CLOSED** |
+| `yti_gate_schedule` | 172 | **1** — `Today's Date` |
+| `yti_closed_area_matrix` | 30 | **18** |
 
-**A rolling ~6-day window, values varying week to week. These are operational closures, not statutory holidays
-— no annual calendar contains them.** *(And it satisfies `THE OUTCOME-IS-RETAINED LAW` uniquely: a gate
-calendar has no outcome. Every day IS its own outcome and nothing supersedes it.)*
+**The gate schedule is a STATIC forward calendar** (published 9–11 days ahead; its only full-day closures are
+weekends) — and Maersk's tariff, *"partial day closures are considered as a full working day"*, means its
+shift detail moves no denominator. **It is not the product.**
+
+**The product is the CLOSED-AREA MATRIX and EMPTY-RETURN ACCEPTANCE**, and both were measured changing. The
+matrix rolls a 7-day window, so 21–25 Aug appear in all three captures — which tests revision for free:
+
+| day / shift | 19 Aug | 20 Aug | 21 Aug |
+|---|---|---|---|
+| **Mon 24, 1st** | `1D 1E 1G 2F 3F` | `1D 1E 1G 2F 3F` | **`1C 1D 1E 1F 1G`** |
+| **Mon 24, 2nd** | `1C 1F 1G 2D 2E 3D 3E` | `1C 1F 1G 2D 2E 3D 3E` | **`1C 1F 1G`** |
+| **Tue 25** | `TBA` | `TBA` | **resolved to real blocks** |
+| **Wed 26** | *(not in window)* | `1D 1E 2C 3C` | **withdrawn to `TBA`** |
+
+**Monday 24 was revised twice; Wednesday 26 was published concrete then retracted. And 19–20 Aug have already
+rolled off — the live page can no longer say what was closed on the 19th.** Erasure *and* revision, measured.
+The legal hook for this half is **46 CFR 545.5(c)(2)(ii)** — detention charged when empty containers *"cannot
+be returned"* is *"likely to be found unreasonable."*
+
+**★ AND THE MOAT IS NOW EXPLAINED STRUCTURALLY, not observationally.** `THE UNIFICATION` (21 Aug): a party
+archives an operational fact exactly when its own invoice depends on it. **YTI has no invoice to defend
+because the CARRIER issues it — so YTI erases, and that is not luck.**
 
 **⚠ OPEN — and the whole thing turns on the first one:**
 1. **8 of 20 terminals verified publicly readable. Not twenty.**
@@ -76,15 +95,18 @@ candidate that died on it.
 > **NEXT ACTION: the ten-day, twenty-terminal capture. Under $20, no phone, no account — and the test IS the
 > build, because those ten days are the first ten days of the asset.**
 
-### ★ THE INLAND RAIL RAMP COLUMN, added 21 Aug — the tournament's gift
-The FMC final rule **expressly extends 46 CFR 541 inland under through bills of lading** (Kirby cited in the
-docket, fetched). Railroad-posted ramp gate hours feeding OCEAN carriers' invoices = the seed's poster≠issuer
-structure at ~30 more pages. **Gated on two checks:** carrier tariffs define inland free time by gate-open
-days · ramp closures publicly posted, not app-gated. Container detention is the safe leg; ramp storage the
-contested one. Fold into the ten-day capture if the checks pass.
+### ~~THE INLAND RAIL RAMP COLUMN~~ — **KILLED 21 Aug, the day after it was added**
 
-### ★ THE CHASSIS COLUMN, added 20 Aug — same buyer, same cron, ~10 more pages
-Chassis lessors bill per-diem; terminals/depots generate the acceptance state — **poster ≠ invoice-issuer, the
+The split was **real**: Union Pacific's own tariff (PR2023-141, ITC §C.12) says *"if an Intermodal Terminal is
+closed for an entire calendar day for any reason, that day will not be included in the Free Time or Storage
+Charge calculations"* — 541.6's shape in a private tariff — and under a through B/L the ocean carrier issues
+the invoice while the railroad posts the closure. **It dies on erasure instead: UP archives its closure
+notices permanently.** `IM2020-82` (Yard Center IL, 1 Jun 2020) and `IM2020-140` (Houston, Hurricane Laura,
+25 Aug 2020) both return **HTTP 200 verbatim today**, on **sequential integers**. See
+`THE_SPLIT_PREDICTS_ERASURE.md`.
+
+### ★★ THE CHASSIS COLUMN — UPGRADED 21 Aug to a SECOND BUYER FAMILY, same cron, zero extra capture
+**Demand signals, 21 Aug (SECONDARY):** pools bill **$12–55/day**; **per-diem disputes run a 15–20% audit hit rate**; drayage is described as **the highest error-rate freight mode**; automated drayage audit recovers 3–5% of spend. **Per-diem auditors and drayage 3PLs outnumber ocean D&D recovery firms — add them to the 30-email probe.**\n\nChassis lessors bill per-diem; terminals/depots generate the acceptance state — **poster ≠ invoice-issuer, the
 541.6 structure in private-contract form.** Passes two-dates and speculative-capture. **Fold into the ten-day
 capture, gated on a three-part test:** dated per-location state visible from a real browser (CCM/TRAC are
 Cloudflare-blocked from the container) · CCM's own `/news/` delta doesn't already reconstruct it · **and ≥5 of
@@ -140,6 +162,18 @@ distinction that killed the device version, where 21 CFR 807.22(b)(3) compelled 
 
 *(Also open: archive risk UNVERIFIED · a 2020 snapshot is publicly purchasable, so NET CHANGE is back-fillable —
 only the order and dates of changes are not.)*
+
+### ⚠ A PRICE CEILING ARRIVED 21 Aug, and it cuts the other way
+
+`THE ATTENTION TRILEMMA` work put a ceiling on what a change-feed subscription can charge: **self-serve
+monitoring tops out around $99/month** (Visualping's published rate), and everything above it is sales-force
+gated — vendors answer a pricing request with *"a calendar link followed by a 90-minute discovery call"*,
+which is **C1-fatal**. Enterprise regulatory intelligence starts ~$50k/yr and lives entirely on that side.
+
+**So #2 is ~111 subscribers at $100/month, not 18 at $650.** Same target, six times the customers, all
+acquired through ranking she cannot win. **This is the single biggest change to the board today and it widens
+the gap between #1 and #2 more than the six-lens tournament did.** *(The $289/document Redica comparable still
+stands — but it is per-document, not subscription, and it prices a DOCUMENT, not a feed.)*
 
 ---
 
