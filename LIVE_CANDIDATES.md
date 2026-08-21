@@ -125,8 +125,16 @@ to update **its own** record annually, and *"if no changes have occurred… regi
 changes have occurred."* **Nothing compels anyone to monitor another establishment's status.** That is the
 distinction that killed the device version, where 21 CFR 807.22(b)(3) compelled the check inside FURLS.
 
-**Q1 — does anything actually vanish? STILL OPEN, and unmeasurable from one snapshot.** Day 0 is banked; this is
-now a waiting game, not a research question.
+> ### ★★ **Q1 ANSWERED, 21 Aug — SOMETHING VANISHED.** **FEI 3011921873, LABORATOIRES EXPANSCIENCE** (Epernon,
+> France; MANUFACTURE; contact `CSILLY@expanscience.com`; registrant Meena Rana; US agent Potomac Law) was
+> **present on 20 Aug and ABSENT on 21 Aug.** Verified not a key change: **zero rows** match its FEI, its DUNS
+> (347941502) or its firm name on the 21st. **FDA publishes no record of the departure.**
+>
+> **And the vanished row was FULLY NAMEABLE** — firm, address, two working emails, named US agent. That is
+> precisely the property whose absence killed the DEVICE version under `THE NAMEABILITY CONDITION`.
+>
+> ⚠ **Honest caveat: one removal, one day.** It could be a deregistration, a data correction, or a transient
+> republish. **The archive now accumulates that answer daily** — diffs so far: 19→20 **+4/−0**, 20→21 **+3/−1**.
 
 > ### ★ AND A TIMING FINDING WORTH MORE THAN THE ANSWERS: **the annual review window is 1 October – 31 December** (207.29). **The file churns hardest in Q4, which is six weeks away — so the archive started today captures the single most valuable period in the year. Starting later means missing it by twelve months.**
 

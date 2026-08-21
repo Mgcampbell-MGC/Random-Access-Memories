@@ -1,0 +1,13 @@
+{
+  "captured_utc": "2026-08-21",
+  "rows": 10420,
+  "BLOCKER_3_FIRST_EVIDENCE": "AN ESTABLISHMENT VANISHED. FEI 3011921873 LABORATOIRES EXPANSCIENCE (Epernon, France; MANUFACTURE; contact CSILLY@expanscience.com; registrant Meena Rana mrana@expanscience.com; US agent Potomac Law) was present 2026-08-20 and is ABSENT 2026-08-21. Verified not a key change: 0 rows match its FEI, its DUNS 347941502, or its FIRM_NAME on the 21st. FDA publishes no record of the departure.",
+  "nameability": "The vanished row carried firm name, full address, TWO working emails and a named US agent - the exact property whose absence killed the DEVICE version under THE NAMEABILITY CONDITION.",
+  "caveat": "ONE removal on ONE day. Could be deregistration, data correction, or transient republish. Needs a longer series; the archive now accumulates that answer daily.",
+  "diffs": {
+    "19to20": "+4 / -0",
+    "20to21": "+3 / -1",
+    "19to21_cumulative": "+7 / -1"
+  },
+  "tarball_sha256": "3c6f7e667e3e563f0508e9bc160b25688cf3b95a62f89cf63b847473b3cb52f2"
+}
