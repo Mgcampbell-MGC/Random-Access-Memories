@@ -676,6 +676,35 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   verdict to `THE AGENCY SCISSORS`' one surviving cell, the public-tender bid desk.)* **Compute units × her
   minutes against 130 h BEFORE arguing about anything else — it is the fastest kill in the file.**
 
+- **★★★ THE UNIFICATION — THE SPLIT TEST AND THE ERASURE MOAT ARE THE SAME TEST, and the split PREDICTS the
+  erasure.** Measured 21 Aug: Union Pacific's tariff (PR2023-141, ITC §C.12) says *"if an Intermodal Terminal
+  is closed for an entire calendar day for any reason, that day will not be included in the Free Time or
+  Storage Charge calculations"* — **the 46 CFR 541.6 shape in a private tariff.** And UP keeps its closure
+  notices **forever**: `IM2020-82` (Yard Center IL, street barricades, 1 Jun 2020) and `IM2020-140` (Houston,
+  Hurricane Laura, 25 Aug 2020) both return **HTTP 200 verbatim today**, on **sequential integers** — a
+  back-fill invitation with not even a date to guess. **Why UP archives and YTI erases: UP's own invoice
+  depends on the fact, so UP must prove it; YTI has no invoice to defend because the CARRIER issues it.**
+  ⇒ **POSTER = ISSUER ⇒ archives permanently ⇒ NO MOAT. POSTER ≠ ISSUER ⇒ nobody retains it ⇒ ERASURE IS
+  FREE.** Stop running erasure checks by hand — **run the split test and the erasure follows.** This kills the
+  inland rail ramp column outright *(the split was real; the moat was not)* and explains candidate #1's moat
+  structurally rather than observationally. See `THE_SPLIT_PREDICTS_ERASURE.md`.
+- **★★ THE BURDEN-OF-PROOF SCREEN — ask WHO BEARS THE BURDEN before anything else.** Where the **defendant**
+  must prove the exculpatory fact, **the claimant needs no evidence at all**, so no claimant-side evidence
+  market can exist. Killed EU261 flight-delay compensation in 30 seconds — a mature 25–35% contingency
+  industry — on its own settled rule: *"the burden of proof is on the airline, not the passenger… passengers
+  do not need to provide evidence."* **Sharper than `THE DSAR FRONT DOOR`: that says discovery is free, this
+  says discovery is unnecessary.** **★ AND THE INVERSION: the evidence market flips to the DEFENDANT — when
+  the burden sits there, ask what the DEFENDANT must buy.** *(Not pursued: the defendant is a global airline,
+  i.e. enterprise sales, i.e. C1.)* **★ It also VINDICATES candidate #1: the FMC's guidance names screen
+  captures of gate closures as evidence the COMPLAINANT brings, which is the side that supports a market.**
+- **★ CHASSIS PER DIEM IS A SECOND BUYER FAMILY FOR THE EXISTING ARCHIVE, NOT A SECOND BUSINESS.** Pools
+  (TRAC, DCLI, CCM) bill **$12–55/day** from their own records (poster = issuer, no value there), **but the
+  fact that clears a disputed charge — was the approved return location accepting that day — belongs to the
+  TERMINAL**, and is on the pages already being captured, at zero marginal cost. **Per-diem disputes run a
+  15–20% audit hit rate and drayage is the highest error-rate freight mode** *(SECONDARY sources)*.
+  ⚠ **Same caveat as #1: the market's own fix is "put a GPS on it" — claimant-conduct, self-supplied. Add
+  per-diem auditors and drayage 3PLs to the 30-email probe; they outnumber ocean D&D recovery firms.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
