@@ -467,8 +467,11 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   COMMENTARY, and a mandatory field almost always needs the outcome.** CBP discards weekly quota fill
   percentages and retains the date and time each quota filled. **Ask what the ANNUAL or FINAL version of the
   data is; if one exists you are archiving noise.** **The working-day ledger passes uniquely — a gate calendar
-  has no outcome; every day IS its own outcome.** *(Measured 19 Aug: YTI's schedule is a rolling ~6-day window
-  with 2nd shift CLOSED on 20–21 Aug and both shifts CLOSED on 22 Aug — operational, not statutory holidays.)*
+  has no outcome; every day IS its own outcome.** *(⚠ CORRECTED 21 Aug against three banked
+  captures: YTI's GATE SCHEDULE is **static**, published 9–11 days forward, and diffs to **one changed line in
+  172** — the date stamp. The transient artefact is the **CLOSED-AREA MATRIX**, a rolling 7-day window of closed
+  yard blocks: **18 of 30 lines changed in two days**, Mon 24 Aug was revised twice, Wed 26 Aug was published
+  concrete then withdrawn to `TBA`. The earlier claim named the wrong page.)*
 - **★ THE GAZETTE LAW — any input that is a RATE, PRICE or THRESHOLD set by a public authority is gazetted and
   archived by statute. RATES ARE NEVER ERASABLE; only OPERATIONAL STATES are.** Deletes tax and customs rates,
   statutory payroll rates, index-linked construction adjustment, benchmark rates and Brazilian ICMS-ST MVA/PMPF
@@ -601,6 +604,31 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   registration change-log** · entity resolution settled as the parts-bin tool that builds prospect lists, not a
   moat. *(Air cargo died at the primary source: WFS's tariff makes the handler poster, issuer, clock and arbiter
   in one company.)* **The marginal hour goes to the 30-email probe.**
+
+- **★★ THE PROOF-GRANULARITY LAW — an evidence archive must be able to prove ONE record without disclosing the
+  rest, and a digest taken over the whole capture cannot.** Found in my own pipeline 21 Aug: the field recorded
+  as `daily_merkle_root_sha256` was recovered by search and is
+  `SHA256(maersk ‖ its ‖ pnct ‖ trapac ‖ yti_closed ‖ yti_gate)` — **a flat concatenation.** The four RFC 3161
+  tokens over it are genuine and it is still a valid seal on *the bundle*; but a customer buys **one terminal on
+  one day**, and under a concatenation the only way to prove that day is to hand over all six captures. **Every
+  sale would have leaked the entire asset.** A Merkle root proves membership in `log2(n)` sibling hashes and
+  discloses nothing else — so the proof ships *with* the sale instead of competing with it. *(Promote odd nodes,
+  never duplicate them: duplication lets two distinct trees collide on one root, CVE-2012-2459.)* **Ask of any
+  archive candidate: what is the UNIT OF SALE, and does the seal cut at that unit?**
+- **★★ THE REVISION TEST — erasure is only half the premise; ask whether a published day gets REVISED before it
+  is erased, and use the WINDOW OVERLAP to test it for free.** A rolling window republished daily shows the same
+  future dates in consecutive captures, so two days of banking answers it at zero cost. Measured on YTI's
+  closed-area matrix: **Mon 24 Aug changed between the 20th and 21st on both shifts, Tue 25 resolved out of
+  `TBA`, and Wed 26 was published concrete on the 20th and withdrawn to `TBA` on the 21st.** Erasure alone only
+  proves *nobody can look it up later*; revision proves **the final state a party observes is not what was
+  announced** — which is what makes the archive a record rather than a convenience. **Run it on the first two
+  captures, before building anything.**
+- **★ AND THE COUNTER THAT COMES WITH IT: world-state vs claimant-conduct decides the sale, not the data.** The
+  yard's state *on the day* is third-party-held and genuinely unobtainable by the claimant — that is the sellable
+  half. A claim resting on the *earlier announcement* (*"I routed on what was posted Thursday"*) is
+  **claimant-conduct evidence**, which `THE CLAIMANT-EVIDENCE LAW` says only the claimant holds. **Same archive,
+  same bytes, opposite verdicts — so the 30-email probe must establish which one the recovery firms actually
+  argue, and that question outranks every coverage metric in the test.**
 
 ## The test design that works
 

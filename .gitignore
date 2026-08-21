@@ -5,3 +5,5 @@ node_modules/
 # Working artifacts belong in the session scratchpad, not the repo.
 clt.html
 *.html.gz
+
+__pycache__/

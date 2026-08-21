@@ -65,3 +65,25 @@ slightly stronger (the Expanscience removal). #3 is unchanged.
 
 **What changes is the honesty of the pitch, and one bar gets sharper:** the ten-day capture must now record
 **which artefacts actually change**, not assume the gate calendar is one of them.
+
+---
+
+## Second pass, 21 Aug 16:20 UTC — four pipeline defects, fixed and verified
+
+| # | Defect | Status |
+|---|---|---|
+| 1 | **Filename drift** — day 0 `yti_gate_schedule.html`, day 1 `yti_gate.html`. A differ keyed on filename invents a delete+recreate. | **Fixed.** Slugs frozen in `bin/capture_ledger.py`; `INDEX.json` remaps the three banked days onto them. |
+| 2 | **Maersk dropped on days 1–2** — the one source with verified erasure, therefore the one that cannot be back-filled. **Confirmed unrecoverable** (404 on both dates). | **Fixed forward.** The tool now discovers the live edition by walking back 21 days. The two lost days stand as a worked example of the premise. |
+| 3 | **No RFC 3161 tokens on days 1–2.** | **Fixed, honestly.** `INDEX_ROOTS.txt` timestamped by freetsa/DigiCert/Sectigo at 16:15 UTC on the 21st. That proves those bytes existed **by the 21st** — not on their capture dates. Only 19 Aug has a same-day token. Days from the 22nd are tokenised same-day. |
+| 4 | **Root mislabelled `daily_merkle_root_sha256`.** Recovered by search: a **flat concatenation** of the six files in capture order. | **Fixed.** Real Merkle root, odd nodes promoted not duplicated, inclusion proof per source — all six verified against the live root end-to-end. See `THE PROOF-GRANULARITY LAW`. |
+
+### And a fifth thing, which is the one that changes the candidate
+
+Parsing the three captures as **content** rather than bytes overturned which page carries the transient fact.
+**The gate schedule diffs to one changed line in 172 — the date stamp.** It is a static forward calendar and
+it is not the product. **The closed-area matrix changed 18 lines of 30 in two days**, and the window overlap
+shows published days being *revised*, not merely aged out. My earlier correction to the founder was right that
+the gate schedule was not scarce; **it did not go far enough, because it never named the page that is.**
+
+*(Also corrected: the `75,2%` email rate in `GATELEDGER_Business_Overview.docx` is FMCSA property **brokers**.
+Motor carriers measure **29,6%**. The docx has been patched in place and re-verified.)*

@@ -1,0 +1,332 @@
+{
+  "built_utc": "2026-08-21T16:20Z",
+  "days": {
+    "2026-08-19": {
+      "legacy_artifacts": {
+        "digicert.real.tsr": "623f27a6995ab68af21f53348c9d848febc299129a33f12d120ff194285633bc",
+        "freetsa.real.tsr": "2549746805f2d82bf1cb6f7132bb9d51437bb05c6ae5af042c857896a43fb9f4",
+        "izenpe.real.tsr": "4c6a4f507dc15cade3fc0810862b4a84a992f5436f011dedc252fff5083211af",
+        "root.txt": "1daa731b6272940d8540ea20944fa392bb5263bc35739528cfcd410e2deacadc",
+        "sectigo.real.tsr": "7d460f41e849ab2de24a851295e139fec335959c01bf992eb8e749053452b5f1"
+      },
+      "merkle_root_sha256": "c4010ff55d973d1c9e7f07fe7b0d823037319c217d2ab58376f27a547850e5f3",
+      "slug_count": 6,
+      "sources": {
+        "its_empty_receiving": {
+          "bytes": 114485,
+          "legacy_filename": "its_empty_receiving.html",
+          "merkle_proof": [
+            {
+              "hash": "3a8b0ffc47b8296386121eba726ddae942da47a9d6832af9077559a028b1f49b",
+              "side": "right"
+            },
+            {
+              "hash": "fe0d863644b76561b24ed779bce86e2b99c31bcbd3bd607f63f0f946b06998eb",
+              "side": "right"
+            },
+            {
+              "hash": "a4ad3d0df8f18f372639748c0244f183629d2c5ab0ac420b828e97307d3ec674",
+              "side": "right"
+            }
+          ],
+          "sha256": "b87b7d3642ba9ecdce2bdbc306ce912b16ee08573eed5f4e9b9f779cee838699"
+        },
+        "maersk_us_empty_return_directory": {
+          "bytes": 2709258,
+          "legacy_filename": "maersk_empty_returns_2026-08-19.xlsx",
+          "merkle_proof": [
+            {
+              "hash": "b87b7d3642ba9ecdce2bdbc306ce912b16ee08573eed5f4e9b9f779cee838699",
+              "side": "left"
+            },
+            {
+              "hash": "fe0d863644b76561b24ed779bce86e2b99c31bcbd3bd607f63f0f946b06998eb",
+              "side": "right"
+            },
+            {
+              "hash": "a4ad3d0df8f18f372639748c0244f183629d2c5ab0ac420b828e97307d3ec674",
+              "side": "right"
+            }
+          ],
+          "sha256": "3a8b0ffc47b8296386121eba726ddae942da47a9d6832af9077559a028b1f49b"
+        },
+        "pnct_empty_return": {
+          "bytes": 36601,
+          "legacy_filename": "pnct_empty_return.html",
+          "merkle_proof": [
+            {
+              "hash": "7b3651da4e24d0efecfb927d13868cfd59a63b3a7db9f79839bfd0f4b53e991b",
+              "side": "right"
+            },
+            {
+              "hash": "2f3aab99dcba73e97b435820eb49ea585d628f00e293e7a593363dbae60565f2",
+              "side": "left"
+            },
+            {
+              "hash": "a4ad3d0df8f18f372639748c0244f183629d2c5ab0ac420b828e97307d3ec674",
+              "side": "right"
+            }
+          ],
+          "sha256": "872d275a8f3e54c9732975d36891435f5cc6cd20d909335f207e9039957db7b1"
+        },
+        "trapac_la_empty_returns": {
+          "bytes": 92575,
+          "legacy_filename": "trapac_la_empty_returns.html",
+          "merkle_proof": [
+            {
+              "hash": "872d275a8f3e54c9732975d36891435f5cc6cd20d909335f207e9039957db7b1",
+              "side": "left"
+            },
+            {
+              "hash": "2f3aab99dcba73e97b435820eb49ea585d628f00e293e7a593363dbae60565f2",
+              "side": "left"
+            },
+            {
+              "hash": "a4ad3d0df8f18f372639748c0244f183629d2c5ab0ac420b828e97307d3ec674",
+              "side": "right"
+            }
+          ],
+          "sha256": "7b3651da4e24d0efecfb927d13868cfd59a63b3a7db9f79839bfd0f4b53e991b"
+        },
+        "yti_closed_area_matrix": {
+          "bytes": 6180,
+          "legacy_filename": "yti_closed_area_matrix.html",
+          "merkle_proof": [
+            {
+              "hash": "29cca8cabd28fde2b11ac0ed3d4060d17c8388312a2d6d61a9492c4acd68e10a",
+              "side": "right"
+            },
+            {
+              "hash": "64dd154753edd443bc31689d11be7dc5bf72cd498acfa518bd683315da34e22e",
+              "side": "left"
+            }
+          ],
+          "sha256": "ce8dabae216f927bafc07878235abb7ba23582ee2f68b089a9c35b742772b0e8"
+        },
+        "yti_gate_schedule": {
+          "bytes": 78794,
+          "legacy_filename": "yti_gate_schedule.html",
+          "merkle_proof": [
+            {
+              "hash": "ce8dabae216f927bafc07878235abb7ba23582ee2f68b089a9c35b742772b0e8",
+              "side": "left"
+            },
+            {
+              "hash": "64dd154753edd443bc31689d11be7dc5bf72cd498acfa518bd683315da34e22e",
+              "side": "left"
+            }
+          ],
+          "sha256": "29cca8cabd28fde2b11ac0ed3d4060d17c8388312a2d6d61a9492c4acd68e10a"
+        }
+      },
+      "tarball_sha256": "4f603058198f3e69cf5b22b5a749e4ad416e6d374a6b1e7a3e99ede714949441"
+    },
+    "2026-08-20": {
+      "legacy_artifacts": {},
+      "merkle_root_sha256": "3affb7350767590b32f9737c13510094666b5fdb7dfc96f62680af7a27a67bf0",
+      "slug_count": 5,
+      "sources": {
+        "its_empty_receiving": {
+          "bytes": 114485,
+          "legacy_filename": "its_empty.html",
+          "merkle_proof": [
+            {
+              "hash": "b3aaca4e67dc73a1e9da8d1e78d2b71d3967ed98a43a53bf79ddcd0fe7330e2b",
+              "side": "right"
+            },
+            {
+              "hash": "8fb3b4adb8990d7af9f84fc9a960bace625d1baeec5352f9262ce832149364d5",
+              "side": "right"
+            },
+            {
+              "hash": "3e16150fafa620f8cae6f264a5d74a8c995d020b65d2ebf1c020ac846efa60ee",
+              "side": "right"
+            }
+          ],
+          "sha256": "f37fbc65b7cc3a17bd0f38efcd512628df9f96f1ab95bf3e5ea3606bece54b54"
+        },
+        "pnct_empty_return": {
+          "bytes": 36584,
+          "legacy_filename": "pnct_empty.html",
+          "merkle_proof": [
+            {
+              "hash": "f37fbc65b7cc3a17bd0f38efcd512628df9f96f1ab95bf3e5ea3606bece54b54",
+              "side": "left"
+            },
+            {
+              "hash": "8fb3b4adb8990d7af9f84fc9a960bace625d1baeec5352f9262ce832149364d5",
+              "side": "right"
+            },
+            {
+              "hash": "3e16150fafa620f8cae6f264a5d74a8c995d020b65d2ebf1c020ac846efa60ee",
+              "side": "right"
+            }
+          ],
+          "sha256": "b3aaca4e67dc73a1e9da8d1e78d2b71d3967ed98a43a53bf79ddcd0fe7330e2b"
+        },
+        "trapac_la_empty_returns": {
+          "bytes": 94772,
+          "legacy_filename": "trapac_empty.html",
+          "merkle_proof": [
+            {
+              "hash": "ecf041c8dd067d0c6465e6987210f588ef567205acd4c0446a28a3c50f95b937",
+              "side": "right"
+            },
+            {
+              "hash": "6652b9c60af2fc270078cab1376419dce4f1c073b216d8dc8ebaaa883a2ebc5d",
+              "side": "left"
+            },
+            {
+              "hash": "3e16150fafa620f8cae6f264a5d74a8c995d020b65d2ebf1c020ac846efa60ee",
+              "side": "right"
+            }
+          ],
+          "sha256": "51f3ed9fe9c6946fc4a69f1d9de3c84e2d555e437bc6b45ea46e863de53f02c9"
+        },
+        "yti_closed_area_matrix": {
+          "bytes": 6180,
+          "legacy_filename": "yti_closed.html",
+          "merkle_proof": [
+            {
+              "hash": "51f3ed9fe9c6946fc4a69f1d9de3c84e2d555e437bc6b45ea46e863de53f02c9",
+              "side": "left"
+            },
+            {
+              "hash": "6652b9c60af2fc270078cab1376419dce4f1c073b216d8dc8ebaaa883a2ebc5d",
+              "side": "left"
+            },
+            {
+              "hash": "3e16150fafa620f8cae6f264a5d74a8c995d020b65d2ebf1c020ac846efa60ee",
+              "side": "right"
+            }
+          ],
+          "sha256": "ecf041c8dd067d0c6465e6987210f588ef567205acd4c0446a28a3c50f95b937"
+        },
+        "yti_gate_schedule": {
+          "bytes": 78793,
+          "legacy_filename": "yti_gate.html",
+          "merkle_proof": [
+            {
+              "hash": "b2464cb3ef1695f22293a31e3afe00bc3ad6d9e2df772ac183943177309d39df",
+              "side": "left"
+            }
+          ],
+          "sha256": "3e16150fafa620f8cae6f264a5d74a8c995d020b65d2ebf1c020ac846efa60ee"
+        }
+      },
+      "tarball_sha256": "b22b1c7ecc9941b8c81a0f4205eac1417df0fbf1c59ee57795214d4da20af67d"
+    },
+    "2026-08-21": {
+      "legacy_artifacts": {},
+      "merkle_root_sha256": "b68074dbfdfd35e54db2fcca943e2a2f89e80d4f1f25ba8735088516acc3ba7e",
+      "slug_count": 5,
+      "sources": {
+        "its_empty_receiving": {
+          "bytes": 114491,
+          "legacy_filename": "its_empty.html",
+          "merkle_proof": [
+            {
+              "hash": "af13ff690260c147e87a32382dd57b58b0a62b149a65aff77c638df9edcdc4cb",
+              "side": "right"
+            },
+            {
+              "hash": "c3641d43941b0964b49a5a97a791f5125459d29f654593ee309775d83e828f96",
+              "side": "right"
+            },
+            {
+              "hash": "55328328cf08de863611b0b9297b87a2f7a88a4de220f458be0c18d13eb35efc",
+              "side": "right"
+            }
+          ],
+          "sha256": "41606806a8b3b5b650c44c6772f18a8d9de660248db58287290952d654395e07"
+        },
+        "pnct_empty_return": {
+          "bytes": 36584,
+          "legacy_filename": "pnct_empty.html",
+          "merkle_proof": [
+            {
+              "hash": "41606806a8b3b5b650c44c6772f18a8d9de660248db58287290952d654395e07",
+              "side": "left"
+            },
+            {
+              "hash": "c3641d43941b0964b49a5a97a791f5125459d29f654593ee309775d83e828f96",
+              "side": "right"
+            },
+            {
+              "hash": "55328328cf08de863611b0b9297b87a2f7a88a4de220f458be0c18d13eb35efc",
+              "side": "right"
+            }
+          ],
+          "sha256": "af13ff690260c147e87a32382dd57b58b0a62b149a65aff77c638df9edcdc4cb"
+        },
+        "trapac_la_empty_returns": {
+          "bytes": 92593,
+          "legacy_filename": "trapac_empty.html",
+          "merkle_proof": [
+            {
+              "hash": "569989dbd702088c912e1bcc12cfcc54b400827f698fd98f3ad202582cd81c49",
+              "side": "right"
+            },
+            {
+              "hash": "45336f7afc63370a88a87862322ea833ac8a4d03fd60a40bad96ad1818a20bf9",
+              "side": "left"
+            },
+            {
+              "hash": "55328328cf08de863611b0b9297b87a2f7a88a4de220f458be0c18d13eb35efc",
+              "side": "right"
+            }
+          ],
+          "sha256": "d2eab4ddfc327b6046d28b97663b19bf1c7d808325175d12b16471a813daff05"
+        },
+        "yti_closed_area_matrix": {
+          "bytes": 6137,
+          "legacy_filename": "yti_closed.html",
+          "merkle_proof": [
+            {
+              "hash": "d2eab4ddfc327b6046d28b97663b19bf1c7d808325175d12b16471a813daff05",
+              "side": "left"
+            },
+            {
+              "hash": "45336f7afc63370a88a87862322ea833ac8a4d03fd60a40bad96ad1818a20bf9",
+              "side": "left"
+            },
+            {
+              "hash": "55328328cf08de863611b0b9297b87a2f7a88a4de220f458be0c18d13eb35efc",
+              "side": "right"
+            }
+          ],
+          "sha256": "569989dbd702088c912e1bcc12cfcc54b400827f698fd98f3ad202582cd81c49"
+        },
+        "yti_gate_schedule": {
+          "bytes": 78791,
+          "legacy_filename": "yti_gate.html",
+          "merkle_proof": [
+            {
+              "hash": "323d2f906655be4ef41b2034845d2f35ea9ad20679cf3d37a2e154e803d5114b",
+              "side": "left"
+            }
+          ],
+          "sha256": "55328328cf08de863611b0b9297b87a2f7a88a4de220f458be0c18d13eb35efc"
+        }
+      },
+      "tarball_sha256": "9179cbcb472a5a8240154577a2622ef65d7b5e347b346a1117cbea9d521a7a37"
+    }
+  },
+  "purpose": "Normalises the three hand-run captures (19-21 Aug 2026) onto the frozen slugs in bin/capture_ledger.py so the series is diffable, and replaces the v1 flat concatenation hash with a real Merkle root carrying per-source inclusion proofs.",
+  "schema": "gateledger/index-v2",
+  "v1_root_construction_RECOVERED": {
+    "capture_order": [
+      "maersk_empty_returns_2026-08-19.xlsx",
+      "its_empty_receiving.html",
+      "pnct_empty_return.html",
+      "trapac_la_empty_returns.html",
+      "yti_closed_area_matrix.html",
+      "yti_gate_schedule.html"
+    ],
+    "day0_tokens_still_valid": true,
+    "mislabelled_as": "daily_merkle_root_sha256 in MANIFEST_2026-08-19.json",
+    "value": "a0da4396fc8183bb7459337591bb8455d47d2737fbb0de2860ac884ec6c20aa6",
+    "what_it_was": "sha256( raw bytes of all sources concatenated in capture order )",
+    "why_it_mattered": "A flat concatenation cannot prove ONE source on ONE day without disclosing every source that day. Every sale would have leaked the whole capture. The four RFC 3161 tokens of 19 Aug remain valid over it and are retained; they are simply weaker than they looked."
+  }
+}

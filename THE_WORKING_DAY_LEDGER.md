@@ -163,3 +163,78 @@ history costs about **$0,45/month**. **Under $20/month all-in, inside C5 by two 
 **In parallel, written-only:** email the D&D recovery and freight-audit firms one question — ***"When you
 dispute on 'no empty return location', where do you get the terminal's state for a date three months ago?"*** —
 and count the answers containing a number.
+
+---
+
+## 8. ★★ THREE DAYS OF CAPTURE, PARSED 21 AUG — the premise stops being an argument
+
+Three banked tarballs, extracted and diffed as *content*, not as bytes. This section supersedes every
+earlier characterisation of which YTI page carries the transient fact.
+
+### 8.1 The gate schedule is NOT the product. The closed-area matrix is.
+
+Stripped to text and diffed, 19 Aug vs 21 Aug:
+
+| source | text lines | lines changed in 2 days |
+|---|---|---|
+| `yti_gate_schedule` | 172 | **1** — `Today's Date` |
+| `yti_closed_area_matrix` | 30 | **18** |
+
+The gate schedule is a **static forward calendar**, published 9–11 days ahead, whose only full-day closures
+are weekends. *(The earlier claim that it was "byte-identical" was loose — the files differ by 1–3 bytes.
+The claim that its **content** is identical is exact: one line, the date stamp.)* **Nothing about it is
+scarce, and Maersk's tariff — "partial day closures are considered as a full working day" — means its
+shift-level detail moves no denominator.**
+
+### 8.2 The matrix is revised after publication, and then erased
+
+`lynx.yti.com/ClosedAreaMatrix.aspx` publishes a rolling 7-day window of closed yard blocks per shift.
+Because the window rolls one day at a time, **21–25 Aug appear in all three captures** — which lets the only
+question that matters be tested directly: *does a published day change afterwards?*
+
+| day / shift | seen 19 Aug | seen 20 Aug | seen 21 Aug |
+|---|---|---|---|
+| **Mon 24, 1st** | `1D 1E 1G 2F 3F` | `1D 1E 1G 2F 3F` | **`1C 1D 1E 1F 1G`** |
+| **Mon 24, 2nd** | `1C 1F 1G 2D 2E 3D 3E` | `1C 1F 1G 2D 2E 3D 3E` | **`1C 1F 1G`** |
+| **Tue 25** | `TBA` | `TBA` | **resolved to real blocks** |
+| **Wed 26** | *(not in window)* | `1D 1E 2C 3C` | **reverted to `TBA`** |
+
+**Monday the 24th was revised twice in one day. Wednesday the 26th was published concrete and then withdrawn
+to `TBA`.** And 19 and 20 Aug have already rolled off the window: **as of the 21st the live page cannot tell
+anyone what was closed on the 19th.** Both halves — revision and erasure — are now measured rather than
+asserted.
+
+⚠ **The honest counter, unresolved.** Under 46 CFR 545.5(c)(2)(ii) the fact in issue is the yard's state
+**on the day**, which the archive holds and the terminal erases — that is world-state evidence and it is
+genuinely third-party-held. But a claim built on the *earlier announcement* ("I routed on what was posted
+Thursday") is **claimant-conduct evidence**, which `THE CLAIMANT-EVIDENCE LAW` says only the claimant holds.
+**The 30-email probe must establish which of the two the recovery firms actually argue.** If it is the
+second, this dies exactly where the port-appointment archive died.
+
+### 8.3 Maersk erasure — properly tested this time
+
+`THE DATE-STAMPED FILENAME IS A BACK-FILL INVITATION` requires guessing superseded dates before claiming an
+erasure moat. **Fourteen consecutive dates probed 21 Aug: exactly one returns 200.**
+
+```
+2026-08-21 … 2026-08-20   404
+2026-08-19                200   ← 2.709.258 B, still live on its third day
+2026-08-18 … 2026-08-07   404   (12 consecutive)
+```
+
+**The model, corrected twice.** Not "~24h retention". **Exactly one edition is live at a time; it persists
+until superseded; every predecessor 404s permanently.** So the file is *event-driven, not daily* — and the
+publication frequency is **UNVERIFIED and must be measured over the ten-day run.** Its capture cadence must
+be *poll daily, bank when the edition date moves*.
+
+**We lost 20 and 21 Aug of this source by not polling** — unrecoverable, and the cleanest possible
+demonstration of the asset's own premise.
+
+### 8.4 The root was mislabelled, and it mattered commercially
+
+The 19 Aug manifest recorded `daily_merkle_root_sha256`. Recovered by search: it is
+`SHA256(maersk ‖ its ‖ pnct ‖ trapac ‖ yti_closed ‖ yti_gate)` — a **flat concatenation, not a Merkle root.**
+A concatenation cannot prove one source belongs to a timestamped day without disclosing all six, **so under
+v1 every sale would have leaked the entire day's asset.** Fixed in `bin/capture_ledger.py`: real Merkle root,
+odd nodes promoted not duplicated, per-source inclusion proof shipped in every manifest and verified against
+the live root for all six sources. See `archive/working_day_ledger/README.md`.
