@@ -630,6 +630,31 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   same bytes, opposite verdicts — so the 30-email probe must establish which one the recovery firms actually
   argue, and that question outranks every coverage metric in the test.**
 
+- **★★ THE ATTENTION TRILEMMA — an attention asset has exactly THREE exits and a faceless solo operator is
+  barred from all three, each by a different law.** Supplied as three business ideas (local newsletter, niche
+  directory, Shopify store), they are **one monetisation in three costumes: aggregate attention, then rent it
+  out.** **Ad sales** is a negotiated relationship per sponsor — **C1**, and the source proves it against
+  itself: the one sponsor won was a local shop closed **in person**. **Affiliate/referral** is ranking for
+  *"which vendor should I use"* — the half `THE SOURCING/REPUTATION SPLIT` says she loses permanently.
+  **Paid subscription** dies on arithmetic: **0,62% median conversion at $10/mo ⇒ ~$62/month per 1.000 subs
+  ⇒ ≈179.000 subscribers** for the target, which is audience-building and **C2** — and going high-ticket
+  instead hands it to `THE MONITORING PINCER` (enterprise regulatory intelligence starts ~$50k/yr and answers
+  a pricing request with *"a calendar link followed by a 90-minute discovery call"*). **No fourth door.
+  Thirty-second screen: if the revenue is rent on attention, stop.** *(Rate figures are vendor/SEO blogs —
+  SECONDARY — and they flatter the candidate, which dies anyway.)* See `THE_ATTENTION_TRILEMMA.md`.
+- **★ THE SUBSCRIPTION-SEAT COLLISION — a per-seat monthly agent subscription is incompatible with C5.**
+  $200–300/month is $2.400–3.600/year against a **ONE-TIME** US$500–2.500. **Her production machine must be
+  cron + API on a ~$5 VPS, never a per-seat agent product** — which the GateLedger capture already is.
+  **And the corollary that matters more: `THE COST-RAIL SPLIT` — the expensive model does SELECTION, the
+  cheap rail does PRODUCTION.** *(Practitioner's version: "I could waste tokens writing 200 news stories, or
+  filter to the best ones and have a cheap automation write the blurb.")*
+- **★ A MONETISATION IS NOT A CANDIDATE, AND AN OUTSIDE MODEL SUPPLIED AS AN IDEA SOURCE USUALLY DONATES ONE.**
+  Under `RULE 3`, the whole model here strips to *"a tiny agent team runs a daily research-and-publish loop at
+  near-zero marginal cost, and the operator's hours only do SELECTION"* — which is `THE BUILDABILITY
+  THRESHOLD` restated by a practitioner, **confirming it rather than extending it.** The loop is free; what
+  the loop ACCUMULATES is the entire question. **Her version keeps the production machine and replaces
+  attention-rent with a per-unit sale that arrives in writing.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
