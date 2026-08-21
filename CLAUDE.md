@@ -705,6 +705,31 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   ⚠ **Same caveat as #1: the market's own fix is "put a GPS on it" — claimant-conduct, self-supplied. Add
   per-diem auditors and drayage 3PLs to the 30-email probe; they outnumber ocean D&D recovery firms.**
 
+- **★★★ C8 IS A GATE, NOT A WEIGHT — RUN THE PERSISTENCE SCREEN BEFORE THE STRUCTURAL WORK.** GATELEDGER passed
+  uniqueness across ~51 industries, the split test, two-dates, speculative-capture, burden-of-proof,
+  platform-arbiter and the arithmetic gate, had three days banked with erasure AND revision measured — **and was
+  killed by the founder in four words: *"not her at all."*** C8 was written down 19 Aug and **never run against
+  the board**; two days of tournaments, a two-counsel refinement, a four-page document and a built pipeline all
+  went to a candidate that failed a screen already on the page. **A candidate she will not still be operating in
+  year three has an expected value of zero whatever its economics say.** ⚠ **This does not reopen `RULE 2`** —
+  Rule 2 protects components from ECONOMIC filters; C8 is a SURVIVAL filter on the operator, and the parts
+  survive the kill intact. ⚠ **And SELECTION ≠ PERSISTENCE: she chose this idea on 20 Aug.** Ask *"could you
+  still be doing only this, alone, in year three?"* — never *"do you like it?"*
+- **★★ THE DOMAIN-DRIFT DIAGNOSIS — every structural property this file prizes exists ONLY in B2B industrial and
+  regulatory domains,** so optimising for a compelled buyer drives the search into the least human-feeling
+  territory available, deterministically. Terminals · FDA registers · rail ramps · chassis pools · flight
+  compensation — five hunts, one direction. **Same failure shape as the prose-from-a-form local optimum `RULE 1`
+  exists to break, by a different road.**
+- **★★★ THE TWO-ROUTE RESOLUTION — a faceless operator has TWO distributions, and only one has been hunted.**
+  **COMPULSION** (the buyer must — statute, invoice, deadline) lives in freight/regulatory/industrial: **~51
+  industries, one hit, rejected on C8.** **CHANNEL** (a partner already holds the customer AT THE MOMENT OF
+  NEED) lives in beauty, body, milestone, craft and care — **her world, and almost entirely unhunted.** The only
+  candidate ever generated there (#3, the scan keepsake machine) is not coincidentally the only one that feels
+  like her. **The channel route's screens must be DERIVED, not borrowed: the partner must already own the
+  emotional moment · the artifact must be machine-producible with ZERO prose · the subject must be inaccessible
+  to the customer's own phone · and the partner's marginal order must cost her ZERO marginal minutes.**
+  See `THE_C8_KILL.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
