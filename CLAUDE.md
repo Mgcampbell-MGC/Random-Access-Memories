@@ -730,6 +730,24 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   to the customer's own phone · and the partner's marginal order must cost her ZERO marginal minutes.**
   See `THE_C8_KILL.md`.
 
+- **★★ THE SAME-FACT-TWO-CLAIMS TRAP — when a pitch's distribution story is "no sales team, it's native /
+  embedded," check whether the mechanism that makes it frictionless for the customer is STANDING ACCESS to
+  their system.** It usually is, and then the pitch's two headline claims — effortless data and effortless
+  distribution — are the SAME fact described from two angles, and both are forbidden by **C4** together.
+  Killed SEATSET 72 (an embedded seating-chart print-fulfillment service) on exactly this: *"the API
+  auto-pulls the finalized guest list"* is standing access into the venue platform, and removing it to satisfy
+  C4 also removes the "no sales team" distribution claim — the host is back to emailing a spreadsheet, which
+  is the status quo the pitch exists to beat. **Both differentiators fall together; this is not a scoping fix.**
+- **★ THE IRREVERSIBLE-DATE + KITTING COLLISION — a hard, unrepeatable deadline combined with multi-component
+  physical kitting (not simple print-on-demand) guarantees an occasional live-human emergency at the worst
+  possible moment, which C1 forbids.** Tell to watch for: a plan that includes "correction cards" or similar
+  for last-minute changes is **conceding** the chaos isn't eliminated, only moved earlier and made costlier to
+  fix once materials are already produced.
+- **A pitch's own arithmetic is not self-verifying — always recompute it.** SEATSET 72: stated profit $146 vs.
+  computed $174 from its own stated price/cost breakdown (19% off); stated volume (2.100 events) times its own
+  stated profit doesn't reach its own stated target. Same pattern as prior vendor pitches in this file — check
+  the multiplication before trusting the target.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the

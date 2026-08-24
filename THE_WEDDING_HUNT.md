@@ -76,3 +76,53 @@ The Knot/WeddingWire pricing (vendor-reported only) · Aftershoot tiers (403) ·
 photo-book unit prices (not displayed) · Emerald Life's £50.000 supplier-failure limit (snippet) · FOS
 wedding-complaint volumes (403) · the share of wedding vendors trading as unregistered sole traders (no census)
 · e-Proclamas enumeration schema (existence confirmed, schema unprobed).
+
+---
+
+## W11 — SEATSET 72, added 21 Aug. A different mechanism, killed on new grounds.
+
+**The pitch:** embed into venue-management SaaS (Tripleseat named); host clicks "Lock Seating" 7 days out; the
+API auto-pulls the guest list and table assignments; a printed, kitted box (poster + table tents + place cards
+pre-sorted into per-table envelopes + 10 blank correction cards) ships to the venue 48h before the event. $349
+flat, platform takes 20%, ~$105 fulfillment cost.
+
+**Not a duplicate of W1–W10** — this is SaaS-embedded fulfillment automation, not a venue-channel consumer
+product, and it fails on structure the earlier ten never tested.
+
+### The plan's own arithmetic doesn't reconcile
+$349 − $70 (20%) − $105 = **$174**, not the stated $146 (a $28 / 19% gap). 2.100 events × $146 = $306.600, not
+the stated $250.000 target; the actual volume needed is **1.437–1.712**, not 2.100.
+
+### ★★ THE SAME-FACT-TWO-CLAIMS TRAP *(new, reusable)*
+The pitch's two headline defensibility claims — **"flawless data via API"** and **"native distribution, no
+sales team"** — are the SAME technical fact described from two angles: **standing API access into a third
+party's platform.** That is precisely what **C4** forbids, and it cannot be scoped away without destroying
+both claims at once: remove the standing access and the host is back to emailing a spreadsheet, the exact
+status quo the pitch exists to replace.
+
+> **When a pitch's distribution story is "no sales team, it's native/embedded" — check whether the mechanism
+> that makes it frictionless for the customer is standing access to their system. It usually is, and the two
+> claims fall together.**
+
+### C1 — an irreversible date plus physical kitting has no slack, and the plan admits it
+Real fulfillment requires KITTING (poster + tents + per-table sorted envelopes), not simple print-on-demand —
+a harder vendor relationship than "regional print shop" implies. Against a **hard, unrepeatable deadline**, any
+slip (shipping delay, mis-sort, a late guest change) needs a reachable, empowered human at the worst possible
+moment. **The pitch's own "10 blank correction cards" concede the chaos isn't eliminated — T-7 locking just
+moves it earlier and makes it costlier to fix**, since the materials are already printed and boxed.
+
+### Distribution claims checked against primary sources
+- Tripleseat: **public apps distributed to other venues are provisioned by Tripleseat's partnership team** —
+  not self-serve. "No sales team needed" requires a business-development relationship per platform.
+- **Tripleseat already partners with AllSeated** (since 2018) — a seating-chart/floorplan/guest-list product
+  live inside the same ecosystem. The natural mover on print fulfillment is the incumbent partnership, not an
+  outside single-operator granted a native button atop data a partner already owns.
+- For the pitch's own illustrative case (a wedding): **Zola already runs the full chain** — floor plan, seat
+  assignment, print-ready chart, matching place cards, in one branded product.
+
+### Verdict
+**Domain fit is genuinely good** — aesthetic, event-adjacent, no expert-authority veto, closer to her world
+than anything the compulsion-side hunt produced. **The mechanism dies anyway**, and not fixably: C4 and C1
+are load-bearing in the pitch as written, and removing either removes the reason the business would beat
+Zola. Confirms the domain's closing verdict rather than reopening it: **affinity finds the world; it does not
+by itself make the mechanism sellable.**
