@@ -151,10 +151,15 @@ auditing their own sources.
 | **C5** | **US$500–2.500, ONE TIME.** *(Raised 19 Aug from "a few hundred." Still one-time, not monthly. This buys an entity, tooling, domains and a small acquisition test. It does NOT buy paid acquisition at scale, a legal/licensing opinion, or acquiring an existing asset.)* |
 | **C6** | **~30 h/week** |
 | **C7** | Personal São Paulo network is not a sales channel |
+| **★ C9** | **~8–12 h/WEEK OF SCREEN TIME, not 30** *(added 21 Aug)*. The business stays digital; the machine runs itself and her hours are oversight, QA and selection. **This is a HARD constraint, not a preference, and it TRIPLES the arithmetic gate — see below.** |
 
 **Vetoes:** construction as a buyer segment · labour-compliance document chasing · physical goods and
-inventory unless made-to-order · **anything requiring her to be believed as an expert** · **anything built
-around death** *(added 17 Aug — she is uneasy about it, and it is her life, not an argument)*.
+inventory unless made-to-order · **anything requiring her to be believed as an expert** · ~~anything built
+around death~~ **— VETO LIFTED 21 Aug.** *(It was recorded 17 Aug as "she is uneasy about it, and it is her
+life, not an argument" — the basis was her feeling, not a structural finding, and her feeling changed. A veto
+written as "it is her life" cuts both ways.)* ⚠ **But `SELECTION ≠ PERSISTENCE` bites hardest here: death work
+is emotionally heavy on EVERY unit, forever, with no light months. Ask "could you still be opening files about
+strangers' dead parents, alone, in year three?"**
 
 > ### ★ C8 — DOMAIN AFFINITY IS A REAL SCREEN, NOT A SOFT ONE *(added 19 Aug)*
 > **She is a 26-year-old FORMER RUNWAY MODEL.** She will be alone with this business for three years, so a
@@ -747,6 +752,27 @@ around death** *(added 17 Aug — she is uneasy about it, and it is her life, no
   computed $174 from its own stated price/cost breakdown (19% off); stated volume (2.100 events) times its own
   stated profit doesn't reach its own stated target. Same pattern as prior vendor pitches in this file — check
   the multiplication before trusting the target.
+
+- **★★★ C9 IS A SECOND BLADE ON THE CATALOGUE SCISSORS — THE CRAFT ESCAPE IS CLOSED.** Her required rate goes
+  from **$85/hour at 130 h/month to $258/hour at ~43 h/month.** `THE CATALOGUE SCISSORS` says an item either
+  sits in a catalogue (no margin) or is custom (her hands on every unit) — **and the escape was always the
+  second blade: add her craft, charge a high ticket.** At 130 h that survived. **At 43 h it does not: craft
+  caps at 23–29 units/month, forcing a $400–500 ticket, forcing channel volume, forcing ~30 partner
+  relationships, forcing C1.** ⇒ **The only remaining escape from the catalogue scissors is a GENUINE MACHINE.**
+  **★ AND IT VALIDATES #3 RATHER THAN THREATENING IT:** the scan keepsake machine is built to a **≤3 min/unit**
+  bar, which at 43 h/month is **~860 units of capacity** — an order of magnitude of headroom. **C9 does not
+  touch the one candidate designed as a machine; it damages everything that was relying on her hands.**
+- **★★ THE MEMORIAL/FUNERAL DOMAIN — veto lifted, hunted, and no artefact survives.** The market is **barbelled
+  and the middle is occupied**: funeral booklets **from $4,90 (min 50)** and register-book sets **$95–395** at
+  the catalogue end; a full-service tribute book **~$5.000 that explicitly includes "client communications"**
+  (C1-fatal) at the other. **Tribute Technology (owner of Frazer Consultants) already sells a product called
+  "Tribute Book," and Frazer's personalisation software is FREE to funeral homes** — `THE FREE FRONT DOOR` and
+  `THE CATALOGUE SCISSORS` firing together, with wholesale held by Matthews Aurora · Hilton · Bright · Regal
+  Line. **She-writes-it needs $1.012–2.024/unit (dead); fully-automated competes with free (dead); hands-on
+  works on arithmetic and needs ~30 funeral-home partners, i.e. a sales operation (the W1 kill).** **To stay in
+  this domain, hunt an artefact that is machine-producible at ≤3 min/unit, ABSENT from the supplier catalogue,
+  and NOT already inside Frazer's free Tribute Center — three filters runnable in an afternoon.**
+  See `THE_FUNERAL_BOOK_TEST.md`.
 
 ## The test design that works
 
