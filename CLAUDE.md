@@ -823,6 +823,33 @@ strangers' dead parents, alone, in year three?"**
   together. **Own brand** dies on C5 arithmetic (a 510(k) programme is $1,0–1,5M against $500–2.500).
   **Run all three at once; a physical-product pitch is not dead until all three are.**
 
+- **★★★ THE TEMPLATE FLOOR TEST — COMPULSION IS A DEMAND PROOF, NOT A PRICE PROOF.** A statutory duty
+  guarantees the buyer must buy; it says nothing about FROM WHOM or FOR HOW MUCH. The duty is public,
+  identical across buyers, and discharged by **any conforming artefact** — so the price is set by the
+  cheapest conforming supplier, and for a document that is a **template**. **Ask what the cheapest
+  conforming version sells for TODAY and what forces the buyer above it. If the only answer is "a
+  signature," the price is the signature's market rate, not yours. Run it BEFORE the arithmetic.**
+  *(This is `THE RENEWAL SCISSORS` restated — and a 36-candidate hunt ran 35 of them into it without once
+  invoking it, mine included.)*
+- **★★★ THE RENTED-CREDENTIAL LAW — renting a credential only works where the statute is SILENT on
+  outsourcing.** Tested across four Brazilian verticals: **waste/PGRSS — no federal credential gate exists
+  at all** (RDC 222/2018 art. 10 par. único expressly permits outsourcing; RDC 1.002/2025 art. 111 III has
+  the establishment's own responsável legal sign) · **cosmetics — expressly FORBIDDEN** (RDC 894/2024 art.
+  46 §1º; ANVISA Q&A: hiring a PJ for the role *"não é considerada compatível"*) · **legal — FORBIDDEN**
+  (Lei 8.906/94 art. 1º II) · **accounting — REDUNDANT** (the buyer already holds it). ⇒ **Where a regulated
+  profession exists its own statute usually forbids this; where outsourcing IS permitted, no credential was
+  protecting the margin. CHECK THE PROFESSION'S STATUTE, NOT THE DUTY'S, before calling a contractor an
+  unlock.** *(Corrects my own claim that C3's amendment was "the single most consequential edit.")*
+- **★★ THE COMPULSION MONOCULTURE — a hunt built from obligation-finders returns ONE idea in N costumes.**
+  36 candidates across nine lenses collapsed to **~7 molecules, 22 of them "compelled artefact + rented
+  signature"**; two pairs were literally the same candidate twice. **Cause: five of nine lenses were
+  obligation-finders and NO LENS STARTED FROM MONEY.** `RULE 1` at scale. **Any future hunt must include at
+  least one lens that starts from observed revenue rather than from a duty.**
+- **★★ CHECK WHETHER YOUR TWO CORROBORATING NUMBERS ARE ONE NUMBER.** I cited *45.000 clinics*, *R$70.000/mo
+  average* and *R$40bn sector* as independent support: **45.000 × 70.000 × 12 = R$37,8bn = 94,5% of the
+  R$40bn.** One is derived from the other. **Multiply your population by your average before treating them
+  as two facts** — if it reconstructs the sector total, you have one unverified figure, not three.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
