@@ -793,6 +793,36 @@ strangers' dead parents, alone, in year three?"**
   (a clinic). Observed iris-photography retail — **$79 digital · $309–409 framed · ~10-minute session** — is
   good enough that the question is worth asking, and `THE_NEW_VERTICAL_SWEEP.md` carries the one-day test.
 
+- **★★ THE CONSUMPTION-CLOCK TEST — the single most valuable property a recurring business can have: a rule
+  that forces ONE unit per event on a calendar the buyer does not control, AND that the buyer cannot stretch
+  across two periods.** *(Donor's phrasing: "the hospital cannot stretch one disposable test pack across
+  several days.")* It is shape-independent — the unit can be a disposable, a capture, a filing or a report.
+  **Ask of every recurring-revenue candidate: what forces the SECOND purchase? If the answer is the buyer's
+  goodwill rather than a rule or a clock, there is no recurrence.** Sharpens `THE CONSTRAINT-SIDE LAW`, which
+  said volume must be exogenous, by adding that the unit must also be NON-STRETCHABLE.
+- **★★ THE MARKET-MULTIPLE RULE — a revenue target needs a serviceable market 3–5× ITS SIZE, not equal to it.**
+  A greenfield entrant against entrenched incumbents underwrites at **15–25% share**, exceptionally 30–40%.
+  **So her $11.100/month (~$133k/year) needs a reachable, contract-priced pool of roughly $450k–1,3M in the
+  actual niche** — small, but it must be REACHABLE spend, never a global TAM. *(Donor demoted its own candidate
+  on exactly this: a $75M revenue target against a $25–45M reachable pool.)* **Compute the reachable pool and
+  divide by 4 before believing any revenue plan, including mine.**
+- **★★ MED SPA HUNTED AND CLOSED, 21 Aug — the cleanest confirmation of `THE COMPELLED-BUT-CREDENTIALLED
+  TRAP`.** The fastest-growing vertical in her domain (**14,3% CAGR, $21,3B→$24,4B**) with genuine new pain:
+  **New York's 2026 enforcement sweep cited nearly 2 in 5 medical spas for violations**, and scope rules *"vary
+  by state and change frequently."* **Three doors shut simultaneously:** the advice is credentialled (every
+  source ends *"confirm with a licensed healthcare attorney"* — expert veto) · the reference material is
+  already **free** (medspastandards.com, Pabau, AestheticsPro publish per-state guides as marketing —
+  `THE FREE FRONT DOOR`) · and the stated #1 operator problem (retention) is CRM on patient records — **C4**,
+  and occupied by Aesthetic Record, TouchMD, PatientNow, Zenoti. **Before/after normalisation was already dead
+  on `THE PROTOCOL-NOT-PRODUCT LAW`.** Record it: pain plus growth plus domain affinity is still not a business.
+- **★ THE THREE-ROUTES-INTO-A-PRODUCT CHECK — when a physical-product plan is offered, the three ways in are
+  REP, RIGHTS, and OWN BRAND, and each has its own named kill.** **Rep** dies on `THE MARGIN LAW` (5% ⇒ ~$2,66M
+  of annual territory volume for her target) and on the fact that the one judgment proving the rate proves the
+  job is spoken. **Rights** dies not on tax but on LICENSING: importing a Class II device into Brazil needs an
+  ANVISA **AFE**, per-product registration and a **Responsável Técnico** — C3, C5 and the inventory veto
+  together. **Own brand** dies on C5 arithmetic (a 510(k) programme is $1,0–1,5M against $500–2.500).
+  **Run all three at once; a physical-product pitch is not dead until all three are.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
