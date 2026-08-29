@@ -110,3 +110,54 @@ above before either deserves the label.
 
 **All three are Brazil-domestic, none is a book, and none requires her to be believed as an expert** — in #1
 the credential belongs to a contracted professional, which is precisely what the amended C3 permits.
+
+---
+
+# ADDENDUM — CONFORMIDADE's load-bearing claims, verified by me, 21 Aug
+
+I sourced the original write-up from consultancy blogs. My own evidence rule forbids treating vendor
+marketing as proof a requirement exists — `THE COMPLIANCE COSTUME` was built on exactly that failure — so
+I went to the rule text and the rails. Three checks, all independent of the hunt.
+
+### 1. The CNPJ email channel — VERIFIED FIRST-HAND
+The free-distribution claim holds, and so does the redaction trap:
+
+| CNPJ | `publica.cnpj.ws` | `minhareceita.org` | `brasilapi.com.br` |
+|---|---|---|---|
+| Petrobras `33.000.167/0001-01` | `cc-rfisc@petrobras.com.br` | **None** | **None** |
+| Magazine Luiza `47.960.950/0001-21` | `fiscal.estadual@magazineluiza.com.br` | **None** | **None** |
+
+**Any fill-rate measured through minhareceita or brasilapi is a FALSE ZERO, and it fails in the direction
+of a kill.** Use `publica.cnpj.ws`.
+
+### 2. The mandate is REAL, and its scope is WIDER than I said
+RDC 222/2018's scope of generators explicitly names ***"serviços de piercing e tatuagem, salões de beleza e
+estética"*** — beauty and aesthetics **salons**, not merely clinics — alongside veterinary, dental, medical,
+pharmacies, funeral services and teaching establishments. **This is not a fake mandate.**
+
+**And the credential requirement is real:** the PGRSS must be written under the technical responsibility of a
+professional **registered with a competent professional council, with an ART** (engenheiro ambiental, químico,
+farmacêutico, biólogo or similar). RDC 222/2018 does **not** reserve it to one profession — it requires a
+higher-level professional with adequate technical knowledge.
+
+> **That is precisely the credential the amended C3 lets her contract. The mandate that would have been
+> unreachable this morning is reachable this afternoon.**
+
+⚠ **Sourcing honesty:** ANVISA's own PDF returned HTTP 503. The above is corroborated across four official
+sources (saude.rj.gov.br, saude.pr.gov.br, saude.se.gov.br, cff.org.br) rather than read off the primary.
+**Read the primary before committing money.**
+
+### 3. The population is far larger than my estimate — and that is NOT unambiguously good
+- **373.040 active companies under CNAE 9602-5/02** (atividades de estética e outros serviços de cuidados com
+  a beleza).
+- **1.257.676 beauty establishments** in Brazil overall; the second-largest sector by company count, present
+  in **100% of municipalities**.
+
+**⚠ But the R$1.200 ceiling bites here.** Most of those are micro-MEIs who will never pay R$700 for a
+compliance pack. The R$70.000/month average that makes the price defensible belongs to *clínicas de estética*,
+not to a two-chair salon. **So the real question is not the population — it is the PAYABLE population.**
+
+**The free CNPJ file answers it at zero cost:** `porte da empresa` and `capital social` are both in the bulk
+data, so the above-MEI segment can be isolated before a single email is sent. **Sizing that filtered segment
+is now the first thing to do — ahead of the price probe — because it sets whether the reachable pool clears
+the `MARKET-MULTIPLE RULE` (R$2,25–3,75M/year).**
