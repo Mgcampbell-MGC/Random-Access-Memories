@@ -774,6 +774,25 @@ strangers' dead parents, alone, in year three?"**
   and NOT already inside Frazer's free Tribute Center — three filters runnable in an afternoon.**
   See `THE_FUNERAL_BOOK_TEST.md`.
 
+- **★★ THE PROTOCOL-NOT-PRODUCT LAW — when an industry's own guidance says a defect "cannot be fixed in
+  editing, it has to be solved at capture," a post-processing product is dead on arrival; and where a REGULATOR
+  forbids the post-processing, the fix IS the violation.** Killed med-spa before/after normalisation — the
+  fastest-growing vertical in her domain (14,3% CAGR, $21,3B→$24,4B) — on one sentence of its own literature
+  plus the FTC's bar on *"changing the lighting between images."* `THE KNOWLEDGE-LIABILITY TEST` fires
+  alongside: an honest before/after is a *less* effective advert, so the buyer does not want the fix.
+- **★★ THE COMPELLED-BUT-CREDENTIALLED TRAP — inside her own domain the compelled obligations are exactly the
+  ones reserved to credentialled persons.** MoCRA safety substantiation requires *"experts qualified by
+  scientific training"*; the EU/UK Responsible Person is liability-bearing and needs an EU/UK address. **Domain
+  affinity and compulsion point at the same door, and the expert veto locks it.** ⇒ **This is the structural
+  CAUSE of `THE DOMAIN-DRIFT DIAGNOSIS`: compulsion in a pleasant domain is credentialled; compulsion that is
+  uncredentialled is industrial. There is no third cell, which is why every compulsion hunt lands in freight.**
+- **★ THE CAPTURE-RIG SPLIT — where a consumer category exists only as in-person STUDIOS, the binding asset is
+  the capture hardware and the location, and a remote operator can only ever own the PROCESSING half.** Ask
+  whether the processing is separable from the capture: if the studio's own processing IS its product, it will
+  never outsource it, and the only route is a channel that owns capture hardware for another reason entirely
+  (a clinic). Observed iris-photography retail — **$79 digital · $309–409 framed · ~10-minute session** — is
+  good enough that the question is worth asking, and `THE_NEW_VERTICAL_SWEEP.md` carries the one-day test.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
