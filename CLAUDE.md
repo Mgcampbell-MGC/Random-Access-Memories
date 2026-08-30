@@ -886,6 +886,25 @@ strangers' dead parents, alone, in year three?"**
   pre-bid ceiling built to be beaten — **measured haircut exactly 50,00%.** Always pull the **TERMO DE
   ADJUDICAÇÃO** from the same index page.
 
+- **★★★ THE REPLACEMENT-COST CEILING — A MACHINE'S PRICE IS CAPPED BY WHAT IT COSTS TO REBUILD IT.
+  SUB-LINEAR DELIVERY IS A COST PROPERTY, NOT A PRICE PROPERTY.** A machine built over inputs the buyer can
+  also reach prices at its own build cost — one hunt-3 candidate volunteered **R$12–18.000 of contracted
+  developer time against a R$128.400/year ask.** **The only escape is an input the buyer CANNOT commission:
+  accumulated history (zero at launch), a credential (expert veto), or an access right (owned by the
+  platform). All three are closed to her.** ★ And the new failure direction: **SUB-LINEAR IN HER HOURS,
+  LINEAR IN SOMEONE ELSE'S METER** — WhatsApp bills per message, so a "machine" whose delivery rides a
+  metered rail is not sub-linear at all.
+- **★★★ THE TARGET IS THE BINDING CONSTRAINT — TWO EDITS MULTIPLIED AND WERE NEVER EVALUATED TOGETHER.**
+  19 Aug raised the target **US$2.600 → US$10.000 net (×3,85)**; 21 Aug cut hours **130 → 43 h/month
+  (×3,02)**. **Product: ×11,6 on the rate she must realise — US$20/h to US$233/h.** At observed Brazilian
+  price bands, **43 h/month yields US$1.652–2.065/month net**, and even **173 h/month yields US$6.645–8.307**
+  — the target is unreachable at full time. It needs **41–51 concurrent clients ⇒ 48–60 h/WEEK**, or a ticket
+  of **R$6.855/client = 5,7× the file's own verified back-office ceiling.** **Leverage: cutting the target is
+  the ONLY single change that closes the gap. Capital → US$25.000 buys 0%. C1/C4 already off bought 0/12.
+  C3 buys NEGATIVE (`THE POSTO CONSTANT`).** ⇒ **US$10.000/month net in 18 months at 12 h/week is not hard,
+  it is arithmetically excluded. The solvable target is US$2.000–2.500/month net — the founder's own figure
+  before 19 Aug.** See `THE_TARGET_IS_THE_PROBLEM.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
