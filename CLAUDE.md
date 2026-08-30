@@ -850,6 +850,42 @@ strangers' dead parents, alone, in year three?"**
   R$40bn.** One is derived from the other. **Multiply your population by your average before treating them
   as two facts** — if it reconstructs the sector total, you have one unverified figure, not three.
 
+- **★★★ THE ZERO-COGS TARGET ERROR — THE HEADLINE NUMBER IN THIS FILE IS VALID ONLY AT ZERO DELIVERY COST.**
+  **Lei 9.249/1995 art. 15 §1º III(a)** applies the 32% presumption to **receita bruta**; art. 20 sets CSLL
+  identically; PIS/COFINS and ISS also run on gross. **Under Lucro Presumido CONTRACTOR COST IS NOT
+  DEDUCTIBLE.** So US$11.100 / R$62.520 hold only for a zero-payroll exporter. **Correct bar:
+  `Gross = Net ÷ (1 − tax_on_gross − COGS%)`** ⇒ at 40% COGS, **US$19.268/mo export or R$119.222/mo
+  domestic — 1,6–2,5× the briefed figure.** Simples is worse: PJ invoices are not *folha*, so fator r ≈ 0
+  ⇒ Anexo V (15,5–23%). **Compute the bar for the candidate's own COGS BEFORE screening it.**
+- **★★★ HER HOURS CAP CLIENTS, NOT UNITS.** Contractor delivery decouples her from units and NOT from
+  clients: a retainer costs 3–5 h/month of contact, QA, escalation and collection whoever delivers.
+  **43 h − 9 h sales ÷ 4 h/client ⇒ 8–10 concurrent clients, permanently ⇒ REQUIRED TICKET ≈ R$13.200/month.**
+  Killed six of sixteen candidates in ten seconds with no research. **Run it first.**
+- **★★★ THE POSTO CONSTANT — BRAZILIAN LABOUR RESALE IS ARITHMETICALLY CLOSED.** Four independent primary
+  measurements of one outsourced administrative head, all-in: **R$3.657 · 3.998,09 · 4.270,33 · 5.377,61,
+  mean R$4.325,76** — and CAPEP-Saúde prices a glosa SPECIALIST identically to a plain faturista, so **the
+  market assigns specialisation zero value.** At the mean: sell 4.326 − pay 3.700 − tax on gross 705 =
+  **−R$79/head/month.** Best case at every corner: +R$1.301 ⇒ **40 contractors needed.** **No ticket, no
+  vertical, no tax regime and no amount of selling fixes a production function.**
+- **★★★ THE RELAXATION WAS SPENT ON THE WRONG HALF.** Hunt 1 (machine, 75 candidates): fine economics,
+  **fatal distribution**. Hunt 2 (contractors, 16 candidates): fine distribution — 8–10 retainers is
+  genuinely closeable — and **fatal economics**. **Delivery was never the failing half** (*"not one of
+  seventeen S3 candidates died on economics"*). **The relaxed constraints are DISTRIBUTION assets** — a setup
+  call, a signed partner, a vendor seat, her network, **and a contracted developer who builds the machine she
+  cannot build.** ⇒ **KEEP SUB-LINEAR DELIVERY; SPEND THE RELAXATION ON GETTING IT SOLD.**
+- **★★★ THE LEGIBILITY–MARGIN ANTI-CORRELATION — a money-first lens is biased toward ZERO-MARGIN categories
+  BY CONSTRUCTION.** The transactions easiest to observe (tender awards, rate cards, salary surveys, job ads)
+  are exactly those priced **per unit of commodity labour**, because that is what buyers procure in writing at
+  published prices. **Margin lives where the price is quoted bespoke and never published.** ⇒ **Start from
+  observed money PAID FOR AN OUTCOME, never per delivered head.** *(This replaced the compulsion monoculture
+  with a labour-resale monoculture — 16 candidates, 2 molecules.)*
+- **★★ THE OBSERVED-PRICE CEILING — an anchor is usable only if the party earning it has NO advantage she
+  lacks.** Nine of sixteen kills reduce to *"the anchor was a ceiling, not a floor"*: a US address, a name,
+  1.600 billers, on-site presence, an atestado, scale. **Otherwise you have measured your own maximum and
+  called it validation.** ★ And **THE REFERENCE-PRICE ILLUSION**: a Brazilian edital's *Valor Médio* is a
+  pre-bid ceiling built to be beaten — **measured haircut exactly 50,00%.** Always pull the **TERMO DE
+  ADJUDICAÇÃO** from the same index page.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
