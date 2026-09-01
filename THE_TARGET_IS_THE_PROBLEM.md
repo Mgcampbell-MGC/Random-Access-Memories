@@ -1,4 +1,7 @@
 # HUNT 3, AND THE ANSWER TO THE QUESTION NOBODY ASKED
+
+> ### ★ RESOLVED 1 Sep 2026. The founder cut the target to US$2.000–2.500/month net — *"YES IT IS."* The bar is in `CLAUDE.md`; the re-screen of the record at the new bar is `THE_SCENARIO_B_BOARD.md`.
+
 **30 Aug 2026 · 18 candidates · 18 distinct molecules · 12 screened · ZERO survivors**
 
 **Three hunts. ~130 candidates. Three survivors ever, none held.**

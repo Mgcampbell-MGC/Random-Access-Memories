@@ -1,4 +1,7 @@
 # FOUR CANDIDATES, TWO MODELS — 30 Aug 2026
+
+> ### ★ The fork at the bottom was RESOLVED 1 Sep 2026: Scenario B is accepted. REPRESENTANTE is on target; VERA becomes a one-partner white-label play. Current ranking: `LIVE_CANDIDATES.md`.
+
 **Three from an independent model working off `TWO_PROMPTS_SECOND_OPINION.docx`; one from my own access-right
 hunt. All four fact-checked on their load-bearing claim. None fabricated.**
 

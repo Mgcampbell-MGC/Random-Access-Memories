@@ -1,5 +1,7 @@
 # THREE BRAZIL-ONLY CANDIDATES — 21 Aug 2026, against the AMENDED rule set
 
+> ### ⚠ Target restated 1 Sep 2026: the domestic bar is **R$12.300–15.400/month gross**, not R$62.520. CONFORMIDADE needs 8–10 packs/month at R$1.500 (41–51 at a R$300 floor); SINAL needs 21–26 clinics at R$600. The C3 "rent a credential" claim in the table below was corrected 29 Aug (`THE RENTED-CREDENTIAL LAW`). See `THE_SCENARIO_B_BOARD.md`.
+
 **Target restated for domestic Brazil:** the 8,1% export rate does not apply. Domestic Lucro Presumido
 loads 13,3–16,3% ⇒ **US$12.000/month gross = R$62.520/month = R$750.240/year.**
 

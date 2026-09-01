@@ -1,5 +1,7 @@
 # COROA — killed 21 Aug 2026. Cause of death: the matching desk is the arithmetic-dead shape in an S6 costume.
 
+> ### ⚠ KILL 1 re-derived 1 Sep 2026 at the reset target (R$12.300–15.400 gross): **45 h/month at the plan's own R$100/lead — at C9 capacity with nothing left for provider recruitment and disputes. MARGINAL, not dead on arithmetic.** Kills 2–4 stand, softened by C1/C4; the expert veto and C5 stand in full.
+
 **Proposal:** a private written questionnaire matches Brazilian women seeking hair prostheses / toppers /
 wigs (alopecia, chemotherapy) to up to three verified providers. Providers pay R$80–150 per qualified lead,
 R$300–500 per verified purchase, or R$249–499/month for enhanced listing.

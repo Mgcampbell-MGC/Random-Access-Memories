@@ -1,5 +1,7 @@
 # THE BOOK FAMILY — every book/keepsake idea in the record, 21 Aug 2026
 
+> ### ⚠ 1 Sep 2026: the target reset REPEALS the per-unit arithmetic kill on #70 and on the funeral V1/V3 versions (see `THE_FUNERAL_BOOK_TEST.md` banner) and on #64's English edition ($149, 16–20 books, 6–8 h/month). All RESURRECT on arithmetic and are PARKED at the founder's instruction ("no push now"). #3 is unchanged and remains the live one.
+
 **Seven entries. One is live. The rest are dead, and they died in two distinct ways that are worth
 keeping separate.**
 

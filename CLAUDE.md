@@ -3,17 +3,35 @@
 **This repo is a business search for Sol — a solo founder in São Paulo. Seventy-two candidates, one
 graveyard, a parts bin, and roughly twenty derived laws. Read this before proposing anything.**
 
-> ### THE TARGET — reset 19 Aug 2026
+> ### THE TARGET — reset 1 Sep 2026. Founder, on *"is US$2.000–2.500/month net acceptable?"*: **"YES IT IS."**
 >
-> **US$10.000/month NET TAKE-HOME, reached within 12–18 MONTHS.** Not gross, not company profit — in her
-> hands after Brazilian tax. Working figure for gross revenue required: **~US$13.000/month**.
+> **US$2.000–2.500/month NET TAKE-HOME, at ~43 h/month (C9), within 12–18 months.** This is the founder's own
+> pre-19-Aug figure, restored after three hunts (~130 candidates, zero survivors) showed that US$10.000 at
+> 12 h/week was arithmetically excluded — see `THE_TARGET_IS_THE_PROBLEM.md`. **US$10.000 is now a 36–84-month
+> rung, not the target.** *(History: R$30.000 net → 13 Aug R$12–15.000 → 19 Aug US$10.000 → 1 Sep US$2.000–2.500.)*
 >
-> **Gross required, VERIFIED 19 Aug: US$11.100/month (R$57.800).** Brazil taxes a zero-payroll service
-> **exporter** at **8,1%** — *Lucro Presumido*, not Simples. See `THE_TAX_ANSWER.md`.
+> **The bar — every figure below is derived in this file, PTAX 5,2037:**
 >
-> **Against 30 h/week that is ~US$142 per hour of delivery time, which means ANY business where she
-> personally produces each unit of output is arithmetically dead.** Her hours build or operate an asset;
-> they never make the units. **See `THE_REBUILD.md` — read it before proposing anything.**
+> | | Export *(8,1% tax + ~2% rail/accountant)* | Domestic Brazil *(15,5%: Lucro Presumido, ISS 2%)* |
+> |---|---|---|
+> | **Zero COGS** | **US$2.200–2.800/month gross** | **R$12.300–15.400/month gross** |
+> | 40% COGS *(contractor-delivered)* | US$3.850–4.800 | R$23.400–29.200 |
+> | Her hour, zero COGS | **US$51–63/h gross** *(was US$233)* | **≈R$290–360/h** |
+> | 8–10 client cap ⇒ ticket floor | US$220–340/client/month | **R$1.300–1.900/client/month** *(was R$13.200)* |
+> | Per-unit production at 20 / 60 / 180 min per unit | US$17–21 / 51–63 / 155–194 | R$95–120 / 290–360 / 880–1.100 |
+>
+> **What this REPEALS: `THE PRODUCTION CEILING` in `THE_REBUILD.md`** (*"ANY business where she personally
+> produces each unit is arithmetically dead"*). At US$51–63/h a hand-made unit is dead only below that rate —
+> the Fiverr floor ($15–30/h) still is; a US$150–350 deliverable at 2–4 hours is not. **S1 is arithmetically
+> alive again; `RULE 1` (it is the over-explored local optimum) still applies.**
+> **What it does NOT repeal: every structural kill** — free front door, clearing party, template floor, platform
+> arbiter, split test, posto constant, attention trilemma, replacement-cost ceiling. **Of 42 candidates screened
+> in hunts 1–3, 41 died on structure and exactly one (BRAZIL DESK) died on the old bar.** The re-screen of the
+> whole record is `THE_SCENARIO_B_BOARD.md`; the board is `LIVE_CANDIDATES.md`.
+> *(Open, UNVERIFIED: at R$12–15.000/month gross a DOMESTIC Simples Anexo III election with fator R ≥28% via
+> pró-labore may beat Lucro Presumido by ~6 points — `THE_TAX_ANSWER.md` Finding 2 was derived at R$57.800/month,
+> where the pró-labore needed was R$194.000/year. It moves the domestic bar by ~R$1.000 and changes no ranking.
+> MEI stays impossible: R$81.000/year is below the bar.)*
 
 ---
 
@@ -642,7 +660,7 @@ strangers' dead parents, alone, in year three?"**
   itself: the one sponsor won was a local shop closed **in person**. **Affiliate/referral** is ranking for
   *"which vendor should I use"* — the half `THE SOURCING/REPUTATION SPLIT` says she loses permanently.
   **Paid subscription** dies on arithmetic: **0,62% median conversion at $10/mo ⇒ ~$62/month per 1.000 subs
-  ⇒ ≈179.000 subscribers** for the target, which is audience-building and **C2** — and going high-ticket
+  ⇒ ≈179.000 subscribers** for the old target *(≈36–45.000 at the 1 Sep target — still audience-building)*, which is audience-building and **C2** — and going high-ticket
   instead hands it to `THE MONITORING PINCER` (enterprise regulatory intelligence starts ~$50k/yr and answers
   a pricing request with *"a calendar link followed by a 90-minute discovery call"*). **No fourth door.
   Thirty-second screen: if the revenue is rent on attention, stop.** *(Rate figures are vendor/SEO blogs —
@@ -753,7 +771,10 @@ strangers' dead parents, alone, in year three?"**
   stated profit doesn't reach its own stated target. Same pattern as prior vendor pitches in this file — check
   the multiplication before trusting the target.
 
-- **★★★ C9 IS A SECOND BLADE ON THE CATALOGUE SCISSORS — THE CRAFT ESCAPE IS CLOSED.** Her required rate goes
+- **★★★ C9 IS A SECOND BLADE ON THE CATALOGUE SCISSORS — THE CRAFT ESCAPE IS CLOSED.** *(⚠ DEMOTED 1 Sep 2026
+  by the target reset: at US$51–63/h, 23–29 craft units a month need a **US$75–120 ticket, not $400–500**, and
+  ~6 partner relationships, not ~30. The second blade no longer cuts; the FIRST blade — catalogue ⇒ no margin —
+  still does.)* Her required rate went
   from **$85/hour at 130 h/month to $258/hour at ~43 h/month.** `THE CATALOGUE SCISSORS` says an item either
   sits in a catalogue (no margin) or is custom (her hands on every unit) — **and the escape was always the
   second blade: add her craft, charge a high ticket.** At 130 h that survived. **At 43 h it does not: craft
@@ -803,7 +824,7 @@ strangers' dead parents, alone, in year three?"**
 - **★★ THE MARKET-MULTIPLE RULE — a revenue target needs a serviceable market 3–5× ITS SIZE, not equal to it.**
   A greenfield entrant against entrenched incumbents underwrites at **15–25% share**, exceptionally 30–40%.
   **So her $11.100/month (~$133k/year) needs a reachable, contract-priced pool of roughly $450k–1,3M in the
-  actual niche** — small, but it must be REACHABLE spend, never a global TAM. *(Donor demoted its own candidate
+  actual niche** *(at the 1 Sep target: ~US$26–34k/year ⇒ a reachable pool of **US$105–170k/year ≈ R$550–900k**)* — small, but it must be REACHABLE spend, never a global TAM. *(Donor demoted its own candidate
   on exactly this: a $75M revenue target against a $25–45M reachable pool.)* **Compute the reachable pool and
   divide by 4 before believing any revenue plan, including mine.**
 - **★★ MED SPA HUNTED AND CLOSED, 21 Aug — the cleanest confirmation of `THE COMPELLED-BUT-CREDENTIALLED
@@ -856,16 +877,20 @@ strangers' dead parents, alone, in year three?"**
   DEDUCTIBLE.** So US$11.100 / R$62.520 hold only for a zero-payroll exporter. **Correct bar:
   `Gross = Net ÷ (1 − tax_on_gross − COGS%)`** ⇒ at 40% COGS, **US$19.268/mo export or R$119.222/mo
   domestic — 1,6–2,5× the briefed figure.** Simples is worse: PJ invoices are not *folha*, so fator r ≈ 0
-  ⇒ Anexo V (15,5–23%). **Compute the bar for the candidate's own COGS BEFORE screening it.**
+  ⇒ Anexo V (15,5–23%). **Compute the bar for the candidate's own COGS BEFORE screening it.** *(Re-derived
+  1 Sep at the reset target: 40% COGS ⇒ **US$3.850–4.800 export / R$23.400–29.200 domestic**.)*
 - **★★★ HER HOURS CAP CLIENTS, NOT UNITS.** Contractor delivery decouples her from units and NOT from
   clients: a retainer costs 3–5 h/month of contact, QA, escalation and collection whoever delivers.
   **43 h − 9 h sales ÷ 4 h/client ⇒ 8–10 concurrent clients, permanently ⇒ REQUIRED TICKET ≈ R$13.200/month.**
-  Killed six of sixteen candidates in ten seconds with no research. **Run it first.**
+  Killed six of sixteen candidates in ten seconds with no research. **Run it first.** *(⚠ Re-derived 1 Sep: the
+  client cap stays; the floor is now **R$1.300–1.900/client/month** — the upper edge of the observed R$450–1.200
+  back-office band — so the ten-second ticket kill no longer fires on its own.)*
 - **★★★ THE POSTO CONSTANT — BRAZILIAN LABOUR RESALE IS ARITHMETICALLY CLOSED.** Four independent primary
   measurements of one outsourced administrative head, all-in: **R$3.657 · 3.998,09 · 4.270,33 · 5.377,61,
   mean R$4.325,76** — and CAPEP-Saúde prices a glosa SPECIALIST identically to a plain faturista, so **the
   market assigns specialisation zero value.** At the mean: sell 4.326 − pay 3.700 − tax on gross 705 =
-  **−R$79/head/month.** Best case at every corner: +R$1.301 ⇒ **40 contractors needed.** **No ticket, no
+  **−R$79/head/month.** Best case at every corner: +R$1.301 ⇒ **40 contractors needed** *(9–12 at the 1 Sep target — still a
+  staffing agency, still negative at the mean; verdict unchanged)*.** **No ticket, no
   vertical, no tax regime and no amount of selling fixes a production function.**
 - **★★★ THE RELAXATION WAS SPENT ON THE WRONG HALF.** Hunt 1 (machine, 75 candidates): fine economics,
   **fatal distribution**. Hunt 2 (contractors, 16 candidates): fine distribution — 8–10 retainers is
@@ -903,7 +928,26 @@ strangers' dead parents, alone, in year three?"**
   the ONLY single change that closes the gap. Capital → US$25.000 buys 0%. C1/C4 already off bought 0/12.
   C3 buys NEGATIVE (`THE POSTO CONSTANT`).** ⇒ **US$10.000/month net in 18 months at 12 h/week is not hard,
   it is arithmetically excluded. The solvable target is US$2.000–2.500/month net — the founder's own figure
-  before 19 Aug.** See `THE_TARGET_IS_THE_PROBLEM.md`.
+  before 19 Aug.** See `THE_TARGET_IS_THE_PROBLEM.md`. **★ RESOLVED 1 Sep 2026 — the founder cut the target to
+  US$2.000–2.500 net. The bar at the top of this file is the current one.**
+
+- **★★★ THE SCENARIO B RESET — 1 Sep 2026. THE TARGET CUT REVERSES EXACTLY ONE CLASS OF KILL: THE ARITHMETIC
+  KILL. IT REVERSES NO STRUCTURAL KILL, AND THE RECORD IS OVERWHELMINGLY STRUCTURAL.** Re-screened: hunts 1–3
+  (42 screened, **41 structural, 1 arithmetic** — BRAZIL DESK, the zero-COGS error); the 13–19 Aug board (**64
+  and 66 were designed AT this target** and died only on the 19 Aug raise — 64 at $149 needs **16–20 books ≈ 6–8
+  h/month**); the S1 family killed 17–21 Aug on the production ceiling (**70/71/72, RISKSTORY, the funeral book V1
+  and V3** all pass arithmetic again — V1 needs ~5 units and ~6 funeral homes, not 23 and 30; V3's phone-call kill
+  fell with C1); COROA (45 h at R$100/lead — at capacity, MARGINAL); CONFERÊNCIA DE CRÉDITO (never killed on
+  evidence — dropped on the 13 Aug no-speaking pivot, which C1 has since reversed; the êxito-lawyer risk is
+  still unmeasured). **Three laws were derived FROM the old bar and are now demoted, not deleted:** `THE
+  PRODUCTION CEILING` (repealed above US$51–63/h), `C9 IS A SECOND BLADE` (ticket US$75–120, not $400–500) and
+  `HER HOURS CAP CLIENTS` (floor R$1.300–1.900, not R$13.200). **Unchanged verdicts, re-derived:** posto constant
+  (−R$79/head at the mean at any target), attention trilemma (36–45k subs), replacement-cost ceiling (per client,
+  target-independent), the R$1.200 ceiling (a domestic retainer business now needs 8–12 clients at the very top of
+  the observed band — possible, not comfortable). **★ AND THE PROCESS LAW: RE-DERIVE THE BAR BEFORE EVERY HUNT.**
+  The ×11,6 compounding of two edits ran unnoticed for ten days and screened ~130 candidates against a number
+  nobody had checked. **48 generated candidates (22 + 20 + 6) were never screened at all, and all were generated
+  under the wrong bar.** See `THE_SCENARIO_B_BOARD.md`.
 
 ## The test design that works
 

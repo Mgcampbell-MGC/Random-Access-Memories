@@ -1,5 +1,7 @@
 # THE MEMORIAL BOOK — death veto lifted 21 Aug, three versions pressure-tested, and a new constraint that reprices the board
 
+> ### ⚠ §2 and §5 DEMOTED 1 Sep 2026 by the target reset. At US$2.000–2.500 net her hour is US$51–63, not $258: V3 needs **$400–555/unit at 5–7 units**, V1 needs **~5–6 units and ~6 funeral homes**, and V3's phone-call kill fell with C1. Both RESURRECT on arithmetic and are PARKED at the founder's instruction. §3 (the barbelled market, Frazer's free tool) is unchanged.
+
 **Two founder inputs, both load-bearing:** (1) the death veto is withdrawn — *"she likes the idea now"*;
 (2) **she wants materially less screen time.** Clarified: the business stays digital, the machine runs itself,
 and she does oversight/QA at roughly **8–12 h/week** rather than 30.

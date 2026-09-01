@@ -1,4 +1,7 @@
 # THE MONEY-FIRST HUNT — 36 candidates, 35 molecules, 16 screened, ZERO survivors
+
+> ### ⚠ §1, §2 and §4 re-derived 1 Sep 2026 at the reset target (US$2.000–2.500 net). 40% COGS ⇒ **US$3.850–4.800 / R$23.400–29.200**; the ticket floor is **R$1.300–1.900**, not R$13.200; a retainer shape yielding US$4.500–6.000 net now clears the target twice over. §3 (the posto constant) is unchanged at any target. Of the 16 kills, 15 were structural; **BRAZIL DESK** (killed on the zero-COGS arithmetic) is the one that reverses — see `THE_SCENARIO_B_BOARD.md` §3a.
+
 **30 Aug 2026 · 27 agents · 3,9M tokens · 1.015 tool calls**
 
 **The diversity fix worked and the result got WORSE, which makes it a much stronger null.** Last hunt: 36

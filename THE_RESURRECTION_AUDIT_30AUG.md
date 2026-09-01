@@ -1,5 +1,7 @@
 # RESURRECTION AUDIT #2 — the graveyard re-scored against the AMENDED rules, 30 Aug 2026
 
+> ### ⚠ The COUNTERWEIGHT section is REVERSED 1 Sep 2026: the target was cut to US$2.000–2.500 net, so the zero-COGS bar is now US$3.850–4.800 / R$23.400–29.200 at 40% COGS and arithmetic kills move TOWARD viability, not away. Audit #3 (1 Sep, target-driven) is `THE_SCENARIO_B_BOARD.md`.
+
 **The last audit was 10 Aug. The founder's amendments landed 29 Aug. Three of the four constraints that did
 most of the killing are now relaxed — C1 appears as a cause of death in 37 files, C4 in 27, C2 in 15,
 C3 in 12, C7 in 6.** This is that re-score.

@@ -1,5 +1,7 @@
 # THE REBUILD — 19 Aug 2026. Ground up, from the money backwards.
 
+> ### ⚠ §1 REPEALED 1 Sep 2026. The target was cut to US$2.000–2.500/month net (`CLAUDE.md`, top). `THE PRODUCTION CEILING` below was derived at US$142/h; at the reset bar her hour is **US$51–63**, and a hand-made unit is dead only below that rate. The four structures in §2 and the distribution analysis in §3 stand. See `THE_SCENARIO_B_BOARD.md`.
+
 > ### ⚠ NUMBERS CORRECTED, same day. The tax leg reported and the target moved DOWN.
 > **Gross required fell from an assumed ~US$13.000/month to a verified US$11.100/month**, because Brazil taxes
 > a zero-payroll service EXPORTER at **8,1%**, not the ~25% assumed here. Every figure below is the corrected
