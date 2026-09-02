@@ -1032,6 +1032,22 @@ strangers' dead parents, alone, in year three?"**
   São Paulo street in 1968, an actual shelf on an actual day, or a batch code on a unit already sold. **For
   evidence, AI raises the value of an archive instead of destroying it.** See `THE_ASSET_HUNT.md`.
 
+- **★★★ THE FIELD-STOP FLOOR — for any business built on her being physically somewhere: a São Paulo field stop
+  costs 3–4 hours door-to-door with travel and write-up, so at US$51–65/h SHE MUST CLEAR ~US$180–250 PER STOP OR
+  IT CANNOT BE THE BUSINESS.** Measured against it: crowd-gig platforms **US$3–20** (Field Agent, Gigwalk,
+  Premise, VISU-in-Brazil), WeGoLook **US$12–30**, US home-watch **US$40–100** — all 3–20× short. **What clears
+  the floor is never the walking; it is an observation that feeds a LEGAL OR FINANCIAL DECISION MADE BY A FIRM
+  WITH MONEY AT STAKE.** Benchmark, and it is a government schedule rather than a vendor page: the **US
+  Commercial Service publishes US$2.000 for a full International Company Profile, US$1.050 partial, US$360 per
+  arranged appointment and US$90 PER STAFF HOUR** (`trade.gov/user-fees`, verified). ★ **And the shape rule that
+  comes with it: physical needs are EVENT-DRIVEN, not recurring — nothing in this lens subscribes except retail
+  observation, which is already commoditised. Recurrence must come from the BUYER being a repeat firm, never
+  from the task repeating.** ★ **Legal clearance worth banking: fact-gathering for hire in Brazil is NOT a
+  credentialled profession** — Lei 13.432/2017 had arts. 1, 2 §2, 3, 4 and 12-V vetoed, leaving no licence,
+  council, course or diploma; art. 7 requires only a written record. **Its neighbours are all closed** —
+  valuation (CREA/CAU), notarial acts (cartório monopoly), customs (despachante), law (OAB).
+  See `THE_PRESENCE_HUNT.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
