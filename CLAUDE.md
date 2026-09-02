@@ -1010,6 +1010,28 @@ strangers' dead parents, alone, in year three?"**
   resellers of genuine stock (lawful under LPI art. 132 III), telling them apart is a legal judgement, and the
   operator who clicked submit is named. **Counsel before the first notice.**
 
+- **★★★ THE NO-MARGIN-ON-THE-FLOW LAW — everything in this record that died to a "free incumbent" or a
+  "clearing party" died for ONE reason: somebody earns margin on the FUTURE FLOW and therefore funds the
+  identification layer to zero.** Grainger's KeepStock, CrossFilters' free crossing, Frazer's free Tribute
+  Center, Mercado Livre's free BPP, **ApexBrasil's free pre-screened supplier list delivered in 10 business
+  days**, Wonnda. ⇒ **The one asset class nobody funds to zero is a RECORD OF TRANSACTIONS ALREADY COMPLETED,
+  because there is no future flow left to buy.** That is why PriceCharting (every eBay sale since 2007, $6–49/mo),
+  WorthPoint (700M sold records) and BuiltWith (**one employee**, 19 years of crawl history) are durable solo
+  businesses and directories never are. **Screen every candidate: am I selling identification, which somebody
+  upstream will give away, or completed history, which nobody can?**
+- **★★★ THE LOOKBACK-WINDOW LAW — screen an archive on the BUYER'S QUESTION, not the archive's age. An archive
+  is complete the day it is as deep as the question.** PriceCharting holds 19 years and a collector only ever
+  asks about the last twelve months. **Ask: does the buyer's question have a horizon of ≤18 months?** If yes, a
+  12-month archive is a FINISHED PRODUCT and a competitor starting today is permanently 12 months behind on the
+  only window anyone asks about. If the question is *"prove use since 2019"*, she is five years from a product.
+  ⇒ **This BOUNDS `THE SPECULATIVE-CAPTURE COROLLARY`** (*"on launch day the archive is empty, so there is no
+  head start"*) — true only where the question is deeper than the archive.
+- **★★ THE SETTLED AI-MARKETPLACE LAW GOVERNS GENERATABLE ASSETS, NOT EVIDENCE.** *"AI on asset marketplaces:
+  either banned or price → 0"* closes templates, stock, fonts, presets, icons — things a model can make.
+  **It does not touch a record of something that HAPPENED.** No model can generate a genuine photograph of a
+  São Paulo street in 1968, an actual shelf on an actual day, or a batch code on a unit already sold. **For
+  evidence, AI raises the value of an archive instead of destroying it.** See `THE_ASSET_HUNT.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
