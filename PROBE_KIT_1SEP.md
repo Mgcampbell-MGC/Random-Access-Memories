@@ -105,8 +105,7 @@ Source: `https://revistas.inpi.gov.br/txt/RM<edition>.zip`, editions 2901–2904
    1.610 distinct holders, ≈ **20.000 a year**: Thrive Brands LLC, Wishing Well Games LLC, Genmab A/S, Lundbeck,
    Wellbore Integrity Solutions. 1.759 were grants (IPAS770), 769 were publications for opposition (IPAS756).
    **The moment INPI issues an exigência or an opposition lands, LPI art. 217 makes a Brazil-resident procurador
-   mandatory** — the exact compelled moment, on a dated clock, for a named foreign company. *(When exactly the
-   duty attaches for Madrid holders: see the INPI FAQ note in the board — UNVERIFIED until fetched.)*
+   mandatory** — the exact compelled moment, on a dated clock, for a named foreign company. **INPI's own Manual de Marcas §11.3.2, fetched 2 Sep:** *"Ao praticar atos diretamente no INPI, o titular de uma inscrição internacional domiciliado no exterior deverá constituir e manter procurador devidamente qualificado e domiciliado no País… A procuração deverá ser apresentada em até 60 (sessenta) dias contínuos contados da prática do ato, independentemente de notificação ou exigência, sob pena de arquivamento da petição."* The designation itself needs no Brazilian procurador; **the first act before INPI — answering an exigência, an opposition, any petition — does, on a 60-day clock, on pain of the petition being archived.** Open legal question for counsel: whether *"devidamente qualificado"* is read by INPI as requiring an Agente da Propriedade Industrial or lawyer, or any domiciled attorney-in-fact under LPI art. 217.
 4. **Volume for the national route:** ~255 distinct new foreign applicants a week, all already represented.
    Country mix: US 3.658 · CN 2.683 · DE 858 · JP 695 · FR 691 · CH 602 · GB 601.
 

@@ -97,6 +97,12 @@ Seven agents, primary statutory and supplier sources, several correcting each ot
   **★ AND A TRAP: `minhareceita.org` and `brasilapi.com.br` SILENTLY REDACT the email field — verified `None`
   for Petrobras and Magazine Luiza, which `publica.cnpj.ws` serves intact. A fill rate measured through either
   is a FALSE ZERO, and it fails in the direction of a kill.** See `THE_BRAZIL_BUYER.md`.
+  **★ SECOND RAIL, measured 2 Sep 2026: for Brazilian HEALTH establishments the register to enumerate is CNES,
+  not the CNPJ file.** The Ministry of Health open-data API (`apidadosabertos.saude.gov.br/cnes/estabelecimentos`)
+  serves each establishment's own registered email and phone, no key, no CNPJ join, **and includes the pessoa-física
+  consultórios a CNPJ list cannot see (19,8% of São Paulo dental).** São Paulo capital dental, n=1.986: **70,2%
+  email, 69,9% phone.** *(Dependency note: `arquivos.receitafederal.gov.br/dados/cnpj/…` returned 404 on every path
+  tried that day — a candidate whose only rail is the Receita bulk file has a single point of failure.)*
 - **THE AGENT EXEMPTION — S2's tax kill has a documented escape, in the same decree.** RIR/2018 art. 162
   **§2º III** exempts *"agentes, representantes… que, ao tomar parte em atos de comércio, não os pratiquem…
   por conta própria"* from the *equiparação*. **Commission agency as a *pessoa física* is clean — no
