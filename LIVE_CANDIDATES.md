@@ -10,22 +10,29 @@ every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 > 66), the book family, CONFERÊNCIA DE CRÉDITO, and BRAZIL DESK. **No candidate below has a validated buyer.**
 
 ## ★ THE RANKED TEN — 2 Sep 2026, everything in the record placed on one list
-**Ranked by: does it reach the bar · is the price OBSERVED or invented · C8 as a GATE (`C8 IS A GATE, NOT A WEIGHT` —
+**Ranked by: does it reach the bar · is the price OBSERVED or invented · **is the revenue STOCK or FLOW** (`THE DEADLINE-HARVEST LAW`, 2 Sep) · C8 as a GATE (`C8 IS A GATE, NOT A WEIGHT` —
 GateLedger passed every structural test and died on it) · is the distribution free and enumerable · how fast to a
 first paying stranger. The detail for 1–6 is the board below; 7–10 are drawn from the reserve and parked sections.**
 
-| | Candidate | Reaches the bar with | Price | C8 | Fastest evidence | The one thing that kills it |
+| | Candidate | Reaches the bar with | Price | Stock or flow | Fastest evidence | The one thing that kills it |
 |---|---|---|---|---|---|---|
-| **1** | **CONFORMIDADE v2** — dental compliance pack | 8–10 packs/mo at R$1.500 | invented; floor R$97,90 | clinic world | **the 60-email probe, written and listed** | a free model pack from CFO/CRO or a supply vendor |
-| **2** | **REPRESENTANTE** — Brazil-resident procurador | 3–7 clients at US$400–800 | **OBSERVED** | neutral, cold | 20 provider quotes | law firms own the referral channel |
-| **3** | **SCAN KEEPSAKE MACHINE** — built, 264 ms/unit | 2–4 studios, or 16–20 direct at $149 | comparables | **strongest** | 20 scans + a stopwatch | the redact stage on a real 2D scan |
-| **4** | **#64 BEFORE YOU** — English pregnancy memoir | 16–21 orders/mo at $149, 6–8 h | comparables ($48–129 incumbents) | strong | **three books, one print run, ~$30** | S1 (`RULE 1`); a thumbnail cannot show editorial quality |
-| **5** | **VERA** — counterfeit-injectable evidence, wholesale | ONE partner at US$2.500–3.000/mo | invented | ✓ her domain | 15 partner/boutique emails | no partner programme exists; toxin test buys need a licence |
-| **6** | **SINAL** — no-show recovery, Pix deposit | 21–26 clinics at R$600 | anchored low | clinic world | 20 clinics, one question | Clinicorp at R$159–370; WhatsApp per-message postage |
-| **7** | **#66 SCOPED** — Shopify variant rebuild + verified import | 1 job/mo at £2.500 | council-stated | neutral | one real merchant quote | ~190 h build; offshore BPO at $0,30–1,50/SKU |
-| **8** | **FUNERAL BOOK V1** — hands-on, high ticket | 5–6 units/mo at $400–500, ~6 homes | GPL-anchored | ⚠ heavy every unit, forever | pull one GPL, email 20 homes | `SELECTION ≠ PERSISTENCE` |
-| **9** | **CONFERÊNCIA DE CRÉDITO** — RJ creditor reconciliation | 10–13 engagements/yr at R$12–25k | observed engagement band | doubtful | count contingency offers in 20 editais | the êxito lawyer doing it free on success |
-| **10** | **BRAZIL DESK** — Portuguese customer-ops seats | 2–3 seats, foreign USD payer | observed-ish | **weak** | 10 buyer-side quotes | a staffing business at a screen all day |
+| **1** | **★ REPRESENTANTE + GUARDA, merged** — the compelled Brazilian representative, upsold to marketplace takedowns, sold to ONE list | 3–7 clients at US$400–800, +US$250–450 for enforcement | **OBSERVED** on the compelled leg | **FLOW — ≈13.100/yr** | 20 provider quotes; then 15 emails to the measured list | false-takedown liability on the enforcement leg (counsel first); "nothing in fashion" |
+| **2** | **CONFORMIDADE v2** — ⚠ **reclassified: a Sept–Dec CASH CAMPAIGN with a written stop date, to fund #1** | 8–10 packs/mo at R$1.500 — **now 2,2× a R$679 incumbent** | invented; **floor measured R$97,90 / R$679** | **STOCK**, then thin | the amended 60-email probe | the R$679 pack with support; the deadline passing |
+| **3** | **SCAN KEEPSAKE MACHINE** — built, 264 ms/unit | 2–4 studios, or 16–20 direct at $149 | comparables | **FLOW — births** | 20 scans + a stopwatch | the redact stage on a real 2D scan |
+| **4** | **#64 BEFORE YOU** — English pregnancy memoir | 16–21 orders/mo at $149, 6–8 h | comparables | FLOW | **three books, one print run, ~$30** | S1 (`RULE 1`); price capped by $48–129 incumbents |
+| **5** | **SINAL** — no-show recovery, Pix deposit | 21–26 clinics at R$600 | anchored low | FLOW | 20 clinics, one question | Clinicorp at R$159–370; per-message postage |
+| **6** | **#66 SCOPED** — Shopify variant rebuild + verified import | 1 job/mo at £2.500 | council-stated | flow (launches) | one real merchant quote | ~190 h build |
+| **7** | **FUNERAL BOOK V1** — hands-on, high ticket | 5–6 units/mo at $400–500, ~6 homes | GPL-anchored | FLOW — deaths | pull one GPL, email 20 homes | persistence, not economics |
+| **8** | **CONFERÊNCIA DE CRÉDITO** — RJ creditor reconciliation | 10–13 engagements/yr at R$12–25k | observed band | FLOW — filings | count contingency offers in 20 editais | the êxito lawyer doing it free |
+| **9** | **BRAZIL DESK** — Portuguese customer-ops seats | 2–3 seats, foreign USD payer | observed-ish | flow | 10 buyer-side quotes | a staffing business at a screen all day |
+| **10** | **VERA** — counterfeit-injectable evidence, wholesale | ONE partner at US$2.500–3.000/mo | invented | flow | 15 partner emails | **dominated by #1's GUARDA leg**: free portal vs bespoke subcontract, enumerable buyer vs no partner programme, no licensed test purchases |
+
+**KILLED 2 Sep — VARREDURA RDC 1.030** *(cosmetics prohibited-ingredient scan, proposed by a second opinion at
+R$5.900/50 SKUs)*. Its facts all verified — RDC 1.030/2026, 13 entries, Lilial and Lyral, June and December 2027
+— and it fails `THE SPLIT TEST`: the cosmetics company owns its own formulas, RDC 894/2024 art. 46 §1º requires
+it to employ the professional who does the work and forbids outsourcing the role, ANVISA publishes an INCI/CAS
+lookup with .xlsx export free, and this file already measured the category's full document bundle at $30.
+See `THE_GUARDA_ASSESSMENT.md` §1.
 
 **Below the line, and only on C8** — both have BETTER evidence than most of the ten and sit in the exact shape the
 founder rejected in four words: **CertGap** (defect rate 6,1–9,7% *independently reproduced*, 3–4 audits/mo at $650)
