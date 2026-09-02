@@ -73,6 +73,9 @@ And the wholesale escape does **not** rescue it: `THE WHOLESALE ESCAPE DOES NOT 
 partner's marginal order cost her marginal minutes? If yes it is not the wholesale escape, it is a job."*
 
 ### V4 — memorial photo restoration, considered and rejected on price
+> **⚠ RE-SCORED 2 Sep 2026: at the reset target V4 needs 50–62 units/month (~10–13 h), not 218–272 — the price
+> objection below no longer holds. It stays dead on the free AI substitute and on needing 30–74 funeral-home
+> partners for 600–744 units a year: a small ticket makes the channel problem worse than V1's, not better.**
 True inaccessibility (no new photograph of this person can ever be taken) but **commoditised at $25–60**, so
 **218–272 units/month** are needed — ~12 min/unit, and a channel far larger than V1's. Remini, MyHeritage and
 MemoryCherish hold the floor. *(Separately: generating **new** images of a deceased person — as opposed to

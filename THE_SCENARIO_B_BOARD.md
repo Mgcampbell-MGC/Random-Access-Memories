@@ -98,6 +98,15 @@ revenue a domestic Simples Anexo III election (fator R ≥28% via pró-labore) p
   vs C5's US$3.000; an Ohio licensing opinion before the first file; LC 126/2007 bars the foreign E&O as a *pessoa
   física*. Capital and statute, not target.
 - **#72 love story (celebrants):** 11 ceremonies per celebrant per year — a constraint-side kill on evidence. Stays dead.
+- **Funeral V4, memorial photo restoration** — *not re-scored on 1 Sep; done now.* Old kill: commoditised at
+  **$25–60**, so **218–272 units/month**. At the new bar: **50–62 units/month at $45 ⇒ ~10–13 h. The arithmetic
+  passes comfortably.** It stays dead on the other two halves, which the target cut does not touch: **Remini and
+  MyHeritage ship AI restoration inside a consumer subscription** (the settled AI law + free front door), and
+  **600–744 units a year needs 30–74 funeral-home partners** — the small ticket makes the channel problem *worse*
+  than V1's, not better. **STILL DEAD, and now for the right reason.**
+- **#65, the genealogy family-history book:** FamilySearch shipped "Memories Book" **free** on 9 Aug 2026, five days
+  before the candidate was written. Structural. **STILL DEAD.**
+- **#69, card decks:** its own kill was computed at **$2.600/month — which IS the new target.** Already dead here.
 - **COROA:** 45 h/month at R$100/lead for the bar — at capacity with zero hours left for provider recruitment and
   disputes. C1/C4 soften kills 2 and 3; the expert veto (choosing providers for chemotherapy patients) and C5 (paid
   search) stand. **MARGINAL.**
