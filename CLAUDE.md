@@ -1068,6 +1068,18 @@ strangers' dead parents, alone, in year three?"**
   a spread.** *(The corrected business is not "buy retail here, sell retail there" — it is "reach the supply
   BELOW retail", which is a different and harder business.)*
 
+- **★★★ A NINE-ROW SAMPLE IS NOT A MARKET — before claiming a population is ABSENT from a platform, ask the
+  platform how many it has.** GARIMPO rested on *"of nine Jean Gillon listings, none of the sellers were in
+  Brazil"*; 1stDibs' own São Paulo location page returns **1.959 furniture listings and named professional
+  São Paulo storefronts** (Alessandra Delgado 79 items, Amilcar Oliveira, SIMONINI, RAIN, Cristiana Bertolucci).
+  **The Brazilian dealers sell direct to foreign buyers on the same platform and capture the whole spread** —
+  so the buying-agent seat had already been disintermediated. **One fetch, twenty minutes, available before the
+  candidate was written.** ★ And the incumbent shows what the moat actually is: Found Collectibles runs a **Rio
+  warehouse of 1.000+ pieces, two restoration teams** (upholstery led by Sergio Rodrigues's former chief
+  upholsterer) **and authentication built from reviewing 5.000 vintage Brazilian magazines page by page** —
+  a warehouse, restoration lineage and connoisseurship, the last being the expert veto in its purest form.
+  ⇒ **SIXTH kill in one day on a sub-30-minute check. PRICE, PERMISSION AND POPULATION FIRST; DESIGN SECOND.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
