@@ -2,6 +2,13 @@
 **Rebuilt 2 Sep 2026 as the CORE business, not an add-on. Founder: the representation seat is dead as a
 product; the takedown is the business. This supersedes `THE_REBUILD_REPRESENTANTE.md`, which is now parts.**
 
+> ### ⚠⚠ CORRECTED SAME DAY — read `THE_GUARDA_CORRECTIONS.md` BEFORE acting on §4, §5 or §8.
+> **Shopee §3.1 bans automated monitoring without written consent and §8.4(g) makes the notifier indemnify
+> Shopee** — so the automation this document calls *"what makes the business exist"* is not permitted on one of
+> the two platforms, and "zero personal liability" is false. Manual operation is 6–8 h/client/month ⇒ **4–5
+> clients ⇒ below the bar.** The honest shape until an automation permission exists is a **fixed-price cleanup
+> sprint at US$750–1.000**, not a retainer. Rating revised 6,5 → 5,0.
+
 ---
 
 ## 1. The business, in one paragraph

@@ -925,8 +925,10 @@ strangers' dead parents, alone, in year three?"**
   platform). All three are closed to her.** ★ And the new failure direction: **SUB-LINEAR IN HER HOURS,
   LINEAR IN SOMEONE ELSE'S METER** — WhatsApp bills per message, so a "machine" whose delivery rides a
   metered rail is not sub-linear at all.
-  **★★★ AMENDED 2 Sep 2026 — THE ENUMERATION WAS INCOMPLETE. There is a FOURTH escape: AN ACCESS RIGHT OWNED BY
-  HER OWN RESIDENCE.** Brazilian law compels a foreign party to appoint a Brazil-resident representative (IN RFB
+  **⚠⚠ THE 2 Sep AMENDMENT BELOW IS WITHDRAWN — see the correction after it. An input escapes this ceiling only
+  if the buyer cannot commission it FROM ANYONE; "the buyer cannot BE this" is worth nothing when ten thousand
+  others can be it instead. NON-SELF-SUPPLIABILITY IS NECESSARY AND NOWHERE NEAR SUFFICIENT — SUPPLY SCARCITY
+  is what prices.** *(Withdrawn claim, kept for the record:* **AN ACCESS RIGHT OWNED BY HER OWN RESIDENCE.** Brazilian law compels a foreign party to appoint a Brazil-resident representative (IN RFB
   2.119/2022 art. 6 §1 · LPI art. 217 · Registro.br), and the qualification is residence plus civil capacity —
   *"may be an IP agent, a specialized lawyer, or **any Brazilian citizen** (since June 2014)."* **A foreign buyer
   cannot commission residency at any price; it costs her nothing to hold; it needs no credential; it does not
@@ -938,7 +940,22 @@ strangers' dead parents, alone, in year three?"**
   signal.** *(And the Madrid Protocol is SOLD on "não obrigatoriedade de contratar um representante local" — so
   the unrepresented majority is correctly served, not unserved.)* ★ **The unpriced friction is the APOSTILLE:**
   the power of attorney must be notarised and apostilled in the client's country before the agent may act — a
-  two-week errand attached to a US$400/month purchase.
+  two-week errand attached to a US$400/month purchase.*)* **⇒ THE CORRECTION, 2 Sep: Brazilian residence is
+  ABUNDANT — thousands of residents, IP agents and firms supply the same seat — and the observed price proves it:
+  **123 Marcas R$810 for appointment PLUS a year of monitoring; Global Trademark Company US$460 ONE-TIME**
+  including filing, representation and procedural responses. Against a proposed US$149/month that is 2–22×
+  the market. **`THE OBSERVED-PRICE CEILING` was run on other people's candidates and not on my own.**
+  ★ **And a second discipline from the same review: A LEAD IS NOT A SUBSCRIBER** — 313 companies hitting a
+  deadline in a month is a stream of events, most of which are answered once by counsel and never recur.
+  **Never annualise a monthly count of DISTINCT ENTITIES by 13; entities recur across months.**
+- **★★ A PLATFORM'S TERMS ARE A STRUCTURAL KILL, AND THEY MUST BE READ BEFORE THE HOURS MODEL IS BUILT ON THEM.**
+  Shopee Brazil §3.1 prohibits *"robô, spider ou qualquer outro dispositivo automático"* without written consent,
+  and §8.4(g) makes an IP notifier declare accuracy **and indemnify Shopee for any damages it suffers.**
+  ⇒ **Automated sweeping of Shopee is a terms breach** (the gov.br Termo de Uso kill again), and **"zero personal
+  liability" for a takedown operator is FALSE — the indemnity is signed to submit at all, and no amount of
+  careful classification touches it.** Manual operation costs 6–8 h/client/month against ~1 h automated, which
+  moves the client ceiling from 15–20 to 4–5 and puts the business below the bar. **Read the ToS of any platform
+  a candidate's delivery rides on BEFORE computing its hours.**
 - **★★★ THE TARGET IS THE BINDING CONSTRAINT — TWO EDITS MULTIPLIED AND WERE NEVER EVALUATED TOGETHER.**
   19 Aug raised the target **US$2.600 → US$10.000 net (×3,85)**; 21 Aug cut hours **130 → 43 h/month
   (×3,02)**. **Product: ×11,6 on the rate she must realise — US$20/h to US$233/h.** At observed Brazilian
