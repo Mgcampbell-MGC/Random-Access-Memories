@@ -9,35 +9,40 @@ every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 > is the family the 19 Aug raise killed by fiat: hand-made units, the two candidates designed at this target (64,
 > 66), the book family, CONFERÊNCIA DE CRÉDITO, and BRAZIL DESK. **No candidate below has a validated buyer.**
 
-## ★ THE RANKED TEN — 2 Sep 2026, everything in the record placed on one list
-**Ranked by: does it reach the bar · is the price OBSERVED or invented · **is the revenue STOCK or FLOW** (`THE DEADLINE-HARVEST LAW`, 2 Sep) · C8 as a GATE (`C8 IS A GATE, NOT A WEIGHT` —
-GateLedger passed every structural test and died on it) · is the distribution free and enumerable · how fast to a
-first paying stranger. The detail for 1–6 is the board below; 7–10 are drawn from the reserve and parked sections.**
+## ★ THE BOARD — end of 2 Sep 2026, after five hunt agents and six kills
 
-| | Candidate | Reaches the bar with | Price basis | Stock or flow | Fastest evidence |
+**Reordered on the three screens that did today's killing: PRICE EVIDENCE · PERMISSION · POPULATION.**
+
+| | Candidate | Reaches the bar with | **Price evidence** | Permission | Fastest test |
 |---|---|---|---|---|---|
-| **1** | **SCAN KEEPSAKE MACHINE** — built, 264 ms/unit, small format | 2–4 studios, or 16–20 direct at $149 | comparables | **FLOW — births** | 20 real 2D scans + a stopwatch |
-| **2** | **#64 BEFORE YOU** — English pregnancy memoir, gift-bought | 16–21 orders/mo at $149, 6–8 h | **three incumbents at $48–199, mechanic proven** | FLOW | **three books, one print run, ~$30** |
-| **3** | **CONFERÊNCIA DE CRÉDITO** — creditor reconciliation in Brazilian restructuring ⚠ *never killed on evidence, never tested, C8 cold* | **10–13 engagements/yr at R$12–25k ≈ 1/month** | observed engagement band | FLOW — filings at a record | read 20 published editais, count contingency offers |
-| **4** | **GUARDA, as a CLEANUP SPRINT** — not a retainer *(founder's pick; corrected 2 Sep)* | ~3 sprints/mo at US$750–1.000 | reviewer-anchored | project, until reappearance is measured | hand-sweep 3 qualifying brands, count actionable listings |
-| **5** | **CONFORMIDADE, as a Sept–Dec CAMPAIGN** — a funding event with a written stop date | 8–10 packs/mo, **re-priced against R$679** | **floor measured R$97,90 / R$679** | **STOCK** | the amended 60-email probe |
+| **1** | **CAMPO** — field verification in São Paulo for foreign due-diligence and investigation firms. She records what is at an address; never signs a conclusion | **6 visits/mo at US$350–500 = US$2.100–3.000**, ~32 h | **★ A GOVERNMENT SCHEDULE — US Commercial Service: US$2.000 full company profile · US$1.050 partial · US$360/appointment · US$90 PER STAFF HOUR** *(verified by me)* | **★ CLEARED AT STATUTE — Lei 13.432/2017 had its licensing articles VETOED: no licence, council or diploma** | 25 supplier-side emails: *"what do you pay a São Paulo field correspondent per site visit?"* **PASS ≥5 naming ≥US$300** |
+| **2** | **SCAN KEEPSAKE MACHINE** — built, 264 ms/unit, small format | 2–4 studios, or 16–20 direct at $149 | comparables | none needed | 20 real 2D scans + a stopwatch |
+| **3** | **#64 BEFORE YOU** — English pregnancy memoir, gift-bought | 16–21 orders/mo at $149, **6–8 h** | **three incumbents selling the identical mechanic at $48–199** | none needed | **three books, one print run, ~$30** |
+| **4** | **CONFERÊNCIA DE CRÉDITO** — creditor reconciliation in Brazilian restructuring ⚠ *never tested, C8 cold* | **~1 engagement/month at R$12–25k** | observed engagement band | not reserved *(she reconciles; the client's lawyer files)* | read 20 published editais, count contingency offers |
+| **5** | **GUARDA as a CLEANUP SPRINT** *(founder's pick; not a retainer)* | ~3 sprints/mo at US$750–1.000 | reviewer-anchored | ⚠ **Shopee §3.1 bans automated monitoring; §8.4(g) demands an indemnity** | hand-sweep 3 brands, count actionable listings |
+| **6** | **CONFORMIDADE as a Sept–Dec CAMPAIGN** — a funding event with a written stop date | 8–10 packs, **re-priced against R$679** | floor measured R$97,90 / R$679 | deadline verified unamended | the amended 60-email probe |
+| 7 | **O ACERVO** — archive rights desk, perpetual royalty on undigitised São Paulo photographic archives | volume-dependent | Alamy *"up to 50% on exclusive images"* | none | 20 emails; **PASS ≥5 numbers, median ≥US$150** |
 
-**Below these:** SINAL (21–26 clinics, crowded at R$159–370) · #66 scoped (£2.500/job, ~190 h build) · funeral
-book V1 (5–6 units, ~6 homes) · BRAZIL DESK (2–3 seats, poor fit) · CertGap and ADV-Check (better evidence than
-most, held on C8 alone).
+> ### ★ THE MULTIPLIER — not a candidate: **ALLOW A SMALL NUMBER OF SALES CALLS.**
+> Three of three comparable firms publish no price. Self-serve clusters at **US$0–100/month**; everything above
+> **US$300 is sales-force gated**. **US$100 × 8 = US$800 fails. US$650 × 4 = US$2.600 clears.**
+> **A 3,25× on price at identical delivery hours, for 10–15 hours of calls in year one.** Applies to #1, #4, #5.
+> **The cheapest change available, and the ranking of all eight rules says the distribution rules are worth
+> everything while the production rules are worth nothing.**
 
-> ### ★ THE PATTERN 2 SEP EXPOSED — worth more than the ranking
-> **Everything demolished today died on a PRICE or a PERMISSION that was checkable in ten minutes, and that I
-> checked late:** Conformidade's R$679 incumbent · the representation seat's R$810/year and US$460-once
-> comparables · Shopee §3.1 banning automated monitoring and §8.4(g) demanding an indemnity. **Three candidates,
-> three ten-minute checks, all run after the design work rather than before it.**
-> **And what survived shares one property: the price is anchored on an observed CONSUMER transaction for an
-> object, not on an invented B2B retainer.** The compliance and enforcement family keeps dying on *"someone
-> already sells this cheaper"* or *"the platform forbids it."* The artifact family keeps standing because what a
-> person pays for a printed object has been stable for a century. ⇒ **Run the price and permission check FIRST,
-> and weight the artifact family accordingly.**
+## ⚰ KILLED OR DEMOTED 2 SEP — six, every one on a check costing under 30 minutes
+**GARIMPO** — 1stDibs lists **1.959** São Paulo items and named Brazilian storefronts; the dealers sell direct,
+and the incumbent's moat is a Rio warehouse, two restoration teams and 5.000 magazines read page by page ·
+**THE MAKER DESK** — ApexBrasil gives international buyers a pre-screened supplier list **free in 10 business
+days** · **THE REPRESENTATION SEAT** — observed at **R$810/year including a year of monitoring**, and killed by
+the founder · **SWORN TRANSLATION** — the only written deliverable where the Fiverr floor is statutorily
+inapplicable, and the **STF suspended the proficiency route in ADI 7196**; PARKED with a quarterly watch ·
+**PROOF OF USE** — INPI *Manual* §6·05 requires evidence issued by the holder; third-party photographs do not
+qualify · **VARREDURA** and **LIBERA** · **SHELF RECORD** demoted — the walk is a US$3–20 gig task and the
+**field-stop floor is US$180–250**.
 
-**RETIRED 2 Sep — the representation seat as a PRODUCT.** Founder: *"this won't work unless it was the counterfeit fake takedown; this business is dead to me."* The seat survives as **plumbing** — Mercado Livre's programme admits a *procurador* on documented authority, so the power of attorney is how GUARDA gets its trigger — and as a year-two upsell. `THE_REBUILD_REPRESENTANTE.md` is now a parts document; its liability architecture and its INPI findings carry straight into GUARDA.
+> ### **THE DAY'S REAL OUTPUT: six kills, all available BEFORE the design work. PRICE, PERMISSION AND POPULATION FIRST — DESIGN SECOND.** It is now the first rule of any hunt run here.
+
 
 **Below the line, and only on C8** — both have BETTER evidence than most of the ten and sit in the exact shape the
 founder rejected in four words: **CertGap** (defect rate 6,1–9,7% *independently reproduced*, 3–4 audits/mo at $650)
