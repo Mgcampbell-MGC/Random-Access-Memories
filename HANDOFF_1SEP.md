@@ -21,6 +21,22 @@ CONFERÊNCIA DE CRÉDITO.
   there). Six resurrect on arithmetic, none enters the top 5; all six are on the reserve table in `LIVE_CANDIDATES.md`
   with a C8 question each. **Nothing here needs re-running.**
 
+## DONE 2 Sep (after the pause) — see `PROBE_KIT_1SEP.md`
+- art. 182 verified unamended at source; ANVISA Q&A 9 Jul 2026 restates 360 days. Template floor measured: R$97,90–297.
+- **Dental list built from CNES** (`bin/cnes_dental_list.py`): São Paulo capital n=1.986, **70,2% email, 69,9% phone,
+  19,8% pessoa física**. Receita bulk host 404 on every path. The CSV is personal data — scratchpad only, never git.
+- **Both email arms for #1 written**, pass bars pre-committed (Part A). **Provider-side ask for #2 written** (Part B).
+- **INPI counted** (`bin/inpi_foreign_applicants.py`): 1.021 new foreign applicants / 4 wks; 707 procuradores, 369
+  individuals handling 29%; **≈20.000 Madrid holders/yr with no Brazilian procurador**, who must appoint one within
+  60 days of any act before INPI (Manual de Marcas §11.3.2, verified).
+- Lematt's tier table fetched ($800–1.300/mo); Res. Conjunta BCB/CVM 13/2024 recorded as a repealed-compulsion precedent.
+
+## What is left is the SEND — the founder's act, from her own domain
+1. Regenerate the dental CSV, draw 60 rows, split 30/30, send ARM A and ARM B (Part A2). Five days. Count per A3.
+2. Send the provider-side quote ask to 20 providers (Part B2). Count numbers; PASS ≥5 with median ≥US$300/month.
+3. Collect 20 real 2D scans and run `pipeline/scan_pipeline.py` with a stopwatch (#3).
+**Nothing else on the board moves until one of these returns a number.**
+
 ## Next actions, in order — all written, no phone, under R$100 together
 1. ~~Ten minutes: confirm art. 182 not deferred~~ **DONE 2 Sep: not deferred; ANVISA's own Q&A of 9 Jul 2026 restates 360 days.
    Template floor measured at R$97,90–297 (Hotmart kit, 186 Word templates). Both recorded under #1 in the board.**

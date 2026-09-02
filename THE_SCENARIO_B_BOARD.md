@@ -228,7 +228,7 @@ resident in Brazil with full civil capacity. **No credential; a foreign buyer ca
 
 | | |
 |---|---|
-| **Reaches the bar with** | **3–7 clients** at the observed US$400–800/month (Lematt US$800; US$400; R$500–1.500 local tier). Zero COGS. 1–3 h/client/month |
+| **Reaches the bar with** | **3–7 clients** at the observed US$400–800/month (**Lematt's published tiers, fetched 2 Sep: $800–900 startup/SPE · $900–1.100 SME · $1.100–1.300 mid-size, annual contracts**; US$400 elsewhere; R$500–1.500 local tier). Zero COGS. 1–3 h/client/month. ⚠ **Res. Conjunta BCB/CVM 13/2024 waived the representative for small foreign portfolio investors from 1 Jan 2025** — the CNPJ and INPI duties are separate and untouched, but a compulsion is a demand proof only while the state keeps it; diary quarterly |
 | **Liability** | CTN art. 135 III attaches on excess of powers or violation of law; case law shields a mere *procurador* — **UNVERIFIED as applied; needs one counsel read before the first mandate** |
 | **C8** | Neutral to weak: sober, legal-adjacent, low emotion. The persistence question (*"still doing this alone in year three?"*) is open |
 | **What kills it** | **Distribution** — law firms and *contadores* own the referral channel and no directory exists; foreign-CNPJ volume UNVERIFIED; a client that goes bad exposes her name on the CNPJ |

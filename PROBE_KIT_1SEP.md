@@ -134,3 +134,52 @@ Below that the observed US$400–800 is a ceiling held by firms, not a market pr
 - Board #2: **Madrid pool ≈20.000 holders/year without a Brazilian procurador**; individuals hold 29% of the role.
 - `CLAUDE.md`: one bullet under the postal-list law — CNES as a second free email rail for Brazilian health
   establishments; the Receita host dependency.
+
+---
+
+## PART D — desk findings, 2 Sep, that change a line on the board
+
+**D1. REPRESENTANTE's anchor is now a published tier table, not a snippet.** `lematt.com.br/quanto-custa-representante-legal`:
+
+| Client | Complexity | Monthly (USD) |
+|---|---|---|
+| Startup / SPE | low | **$800–900** |
+| International SME | medium | $900–1.100 |
+| Mid-size company | high | $1.100–1.300 |
+| Multinational / holding | very high | sob consulta |
+
+Included: formal designation of a Brazil-resident representative, registration with the relevant regulators, receipt
+of official notices, signature authority, corporate bank-account support, periodic compliance reporting, multilingual
+communication; **annual renewable contracts**; no setup fee stated. Cost drivers named: number of regulators
+(BACEN, CVM, ANATEL), volume of corporate acts, regulated-industry experience, physical presence, risk exposure.
+**Read it as `THE OBSERVED-PRICE CEILING` says: a São Paulo firm with an office and a name earns $800–1.300; the
+floor she enters at is the US$400 tier already on the board.** And Lematt's own page separates *procurador*
+(represents the foreign shareholder, acts within a power of attorney) from *representante legal* (local governance
+and administration of the Brazilian company) — **the procurador seat is the narrower, lower-liability one, and it
+is the one IN RFB 2.119/2022 art. 6 §1 and LPI art. 217 compel.**
+
+**D2. ★ A compelled representation role CAN be repealed — it just happened next door.** **Resolução Conjunta
+BCB/CVM nº 13, 3 Dec 2024, in force 1 Jan 2025** (`conteudo.cvm.gov.br/legislacao/decisoesconjuntas/rcbccvm13.html`):
+a non-resident *natural person* investing in Brazilian financial and securities markets from their own resources is
+**exempt from appointing a legal representative up to R$2.000.000 of monthly inflows.** The CNPJ procurador
+(IN RFB 2.119) and the INPI procurador (LPI art. 217) are separate duties and untouched — but the direction of
+travel at BCB/CVM is *"redução de custos de conformidade."* **Diary, quarterly: check IN RFB 2.119 art. 6 and any
+RFB simplification agenda for foreign-owned CNPJs. `THE VENDOR-URGENCY LAW`'s cousin: a compulsion is a demand
+proof only while the state keeps it.**
+
+**D3. A second primary instance for VERA.** ANVISA ordered seizure of counterfeit **Sculptra** lots after an alert
+from **Galderma Brasil Ltda.**, which had identified clandestine units with visual and structural divergences from the
+authentic product — the same manufacturer-alerts-regulator loop as Dysport P22686 (RE 3.356/2026), a second brand,
+a second product class (biostimulator, not toxin). And the Campinas operation that moved R$12M through **154 virtual
+stores** on e-commerce platforms is the seller-identity problem VERA's archive exists for. *(News sources; the ANVISA
+resolution number for Sculptra is not yet pulled — fetch it before citing.)* **No published partner or reseller
+programme was found at MarqVision, Red Points or Corsearch; MarqVision runs its own "MarqLaw" test-purchase
+programme and Corsearch/Incopro do offline investigations through local capacity — so the white-label route for
+#4 is a bespoke subcontract, not a programme to sign up to. The 15-email provider ask stands.**
+
+**D4. SINAL's postage question, at the primary source.** Meta's WhatsApp Business Platform pricing page: per-message
+pricing since **1 Jul 2025**, four categories (marketing, utility, authentication, service); **all non-template messages
+inside an open 24-hour customer-service window are free, and utility templates delivered inside that window are
+free.** The Brazil rate card is a separate CSV/PDF not fetched (404/redirect). **So the postage-scissors risk for
+SINAL depends on whether the reminder is a utility template outside the window (paid) or a reply inside one (free) —
+design the flow so the deposit request rides the booking conversation.** Rate UNVERIFIED.
