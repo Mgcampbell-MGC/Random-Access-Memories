@@ -1048,6 +1048,26 @@ strangers' dead parents, alone, in year three?"**
   valuation (CREA/CAU), notarial acts (cartório monopoly), customs (despachante), law (OAB).
   See `THE_PRESENCE_HUNT.md`.
 
+- **★★★ THE OPEN-STATE INVERSION — Brazil's language barrier protects NOTHING that the Brazilian state
+  publishes, and it publishes almost everything.** LAI · dados abertos · ECADNET (24,8M works, free) ·
+  `registrocivil.org.br` (certidões nationwide online at counter price) · DataJud · PNCP · SICAR · Comex Stat ·
+  CEIS/CNEP · and **Selo Verde**, a free UFMG platform that runs the EUDR legality cross-check and issues
+  reports for EU authorities. **The "badly formatted, Portuguese-only, hard-to-reach Brazilian data" premise —
+  the basis of `THE ASYMMETRIC PAIR` — is FALSE at the source layer.** ⇒ **Portuguese is a moat only where the
+  record is PRIVATE, UNDIGITISED or HELD BY A PERSON: an estate, a workshop, a dealer, a shelf, an object.
+  HUNT BRAZILIAN ARBITRAGE IN THINGS AND PEOPLE, NEVER IN REGISTERS.**
+  ★ **And the corollary that outranks it: a foreigner's EXCLUSION FROM A TRANSACTION is worth far more than a
+  foreigner's difficulty READING A FILE.** Worked instance — Brazilian auction houses: *"Estrangeiro somente
+  poderá participar mediante a procuração em nome de um representante legal estabelecido no Brasil"*, plus CPF
+  and Receita fiscal regularity. **The foreign buyer is barred from the transaction itself.**
+- **★★ ASKING PRICE IS NOT CLEARING PRICE — ON BOTH SIDES OF AN ARBITRAGE.** A 3,1× spread built from a São
+  Paulo dealer's ask (R$15.000) against a 1stDibs ask (US$8.900) collapsed to **~1,6×** once the auction result
+  was pulled: **Wright, 13 Dec 2023 lot 331, Jean Gillon Jangada armchair AND ottoman, estimate US$4.000–6.000,
+  SOLD US$7.560** — against a US$18.500 asking for the same pairing, i.e. **dealer asks run ~2,4× the clearing
+  price.** ⇒ **Before believing any import/export spread, pull one AUCTION RESULT on each side. Two asks are not
+  a spread.** *(The corrected business is not "buy retail here, sell retail there" — it is "reach the supply
+  BELOW retail", which is a different and harder business.)*
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
