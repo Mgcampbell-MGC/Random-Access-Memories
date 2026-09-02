@@ -14,25 +14,28 @@ every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 GateLedger passed every structural test and died on it) · is the distribution free and enumerable · how fast to a
 first paying stranger. The detail for 1–6 is the board below; 7–10 are drawn from the reserve and parked sections.**
 
-| | Candidate | Reaches the bar with | Price | Stock or flow | Fastest evidence | The one thing that kills it |
-|---|---|---|---|---|---|---|
-| **1** | **★ GUARDA** — counterfeit removal for foreign brands on Mercado Livre and Shopee, run as an automated weekly perimeter. **`GUARDA_THE_BUSINESS.md`** | **6–8 clients at US$390/mo + US$750 setup**, ~7–9 h/mo | invented; enterprise incumbents sit far above, law firms far away | **FLOW — reappearing listings, if measured** | **measure the 30-day reappearance rate on client one** | wrongful-takedown liability; the routine is copyable, so the ledger is the only moat |
-| **2** | **CONFORMIDADE v2** — ⚠ **reclassified: a Sept–Dec CASH CAMPAIGN with a written stop date, to fund #1** | 8–10 packs/mo at R$1.500 — **now 2,2× a R$679 incumbent** | invented; **floor measured R$97,90 / R$679** | **STOCK**, then thin | the amended 60-email probe | the R$679 pack with support; the deadline passing |
-| **3** | **SCAN KEEPSAKE MACHINE** — built, 264 ms/unit | 2–4 studios, or 16–20 direct at $149 | comparables | **FLOW — births** | 20 scans + a stopwatch | the redact stage on a real 2D scan |
-| **4** | **#64 BEFORE YOU** — English pregnancy memoir | 16–21 orders/mo at $149, 6–8 h | comparables | FLOW | **three books, one print run, ~$30** | S1 (`RULE 1`); price capped by $48–129 incumbents |
-| **5** | **SINAL** — no-show recovery, Pix deposit | 21–26 clinics at R$600 | anchored low | FLOW | 20 clinics, one question | Clinicorp at R$159–370; per-message postage |
-| **6** | **#66 SCOPED** — Shopify variant rebuild + verified import | 1 job/mo at £2.500 | council-stated | flow (launches) | one real merchant quote | ~190 h build |
-| **7** | **FUNERAL BOOK V1** — hands-on, high ticket | 5–6 units/mo at $400–500, ~6 homes | GPL-anchored | FLOW — deaths | pull one GPL, email 20 homes | persistence, not economics |
-| **8** | **CONFERÊNCIA DE CRÉDITO** — RJ creditor reconciliation | 10–13 engagements/yr at R$12–25k | observed band | FLOW — filings | count contingency offers in 20 editais | the êxito lawyer doing it free |
-| **9** | **BRAZIL DESK** — Portuguese customer-ops seats | 2–3 seats, foreign USD payer | observed-ish | flow | 10 buyer-side quotes | a staffing business at a screen all day |
-| **10** | **VERA** — counterfeit-injectable evidence, wholesale | ONE partner at US$2.500–3.000/mo | invented | flow | 15 partner emails | **dominated by #1's GUARDA leg**: free portal vs bespoke subcontract, enumerable buyer vs no partner programme, no licensed test purchases |
+| | Candidate | Reaches the bar with | Price basis | Stock or flow | Fastest evidence |
+|---|---|---|---|---|---|
+| **1** | **SCAN KEEPSAKE MACHINE** — built, 264 ms/unit, small format | 2–4 studios, or 16–20 direct at $149 | comparables | **FLOW — births** | 20 real 2D scans + a stopwatch |
+| **2** | **#64 BEFORE YOU** — English pregnancy memoir, gift-bought | 16–21 orders/mo at $149, 6–8 h | **three incumbents at $48–199, mechanic proven** | FLOW | **three books, one print run, ~$30** |
+| **3** | **CONFERÊNCIA DE CRÉDITO** — creditor reconciliation in Brazilian restructuring ⚠ *never killed on evidence, never tested, C8 cold* | **10–13 engagements/yr at R$12–25k ≈ 1/month** | observed engagement band | FLOW — filings at a record | read 20 published editais, count contingency offers |
+| **4** | **GUARDA, as a CLEANUP SPRINT** — not a retainer *(founder's pick; corrected 2 Sep)* | ~3 sprints/mo at US$750–1.000 | reviewer-anchored | project, until reappearance is measured | hand-sweep 3 qualifying brands, count actionable listings |
+| **5** | **CONFORMIDADE, as a Sept–Dec CAMPAIGN** — a funding event with a written stop date | 8–10 packs/mo, **re-priced against R$679** | **floor measured R$97,90 / R$679** | **STOCK** | the amended 60-email probe |
 
-**KILLED 2 Sep — VARREDURA RDC 1.030** *(cosmetics prohibited-ingredient scan, proposed by a second opinion at
-R$5.900/50 SKUs)*. Its facts all verified — RDC 1.030/2026, 13 entries, Lilial and Lyral, June and December 2027
-— and it fails `THE SPLIT TEST`: the cosmetics company owns its own formulas, RDC 894/2024 art. 46 §1º requires
-it to employ the professional who does the work and forbids outsourcing the role, ANVISA publishes an INCI/CAS
-lookup with .xlsx export free, and this file already measured the category's full document bundle at $30.
-See `THE_GUARDA_ASSESSMENT.md` §1.
+**Below these:** SINAL (21–26 clinics, crowded at R$159–370) · #66 scoped (£2.500/job, ~190 h build) · funeral
+book V1 (5–6 units, ~6 homes) · BRAZIL DESK (2–3 seats, poor fit) · CertGap and ADV-Check (better evidence than
+most, held on C8 alone).
+
+> ### ★ THE PATTERN 2 SEP EXPOSED — worth more than the ranking
+> **Everything demolished today died on a PRICE or a PERMISSION that was checkable in ten minutes, and that I
+> checked late:** Conformidade's R$679 incumbent · the representation seat's R$810/year and US$460-once
+> comparables · Shopee §3.1 banning automated monitoring and §8.4(g) demanding an indemnity. **Three candidates,
+> three ten-minute checks, all run after the design work rather than before it.**
+> **And what survived shares one property: the price is anchored on an observed CONSUMER transaction for an
+> object, not on an invented B2B retainer.** The compliance and enforcement family keeps dying on *"someone
+> already sells this cheaper"* or *"the platform forbids it."* The artifact family keeps standing because what a
+> person pays for a printed object has been stable for a century. ⇒ **Run the price and permission check FIRST,
+> and weight the artifact family accordingly.**
 
 **RETIRED 2 Sep — the representation seat as a PRODUCT.** Founder: *"this won't work unless it was the counterfeit fake takedown; this business is dead to me."* The seat survives as **plumbing** — Mercado Livre's programme admits a *procurador* on documented authority, so the power of attorney is how GUARDA gets its trigger — and as a year-two upsell. `THE_REBUILD_REPRESENTANTE.md` is now a parts document; its liability architecture and its INPI findings carry straight into GUARDA.
 
