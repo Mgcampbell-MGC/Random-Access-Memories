@@ -955,6 +955,30 @@ strangers' dead parents, alone, in year three?"**
   nobody had checked. **48 generated candidates (22 + 20 + 6) were never screened at all, and all were generated
   under the wrong bar.** See `THE_SCENARIO_B_BOARD.md`.
 
+- **★★★ THE DEADLINE-HARVEST LAW — a compulsion with a ONE-TIME TRANSITION DATE creates a BACKLOG, not a
+  business.** The stock is bought once; afterwards only the FLOW remains — new entrants, renovations, ownership
+  changes, and whatever periodic revision the rule compels. **SIZE THE FLOW BEFORE CALLING A DEADLINE A MARKET.**
+  Worked on CONFORMIDADE: before ≈11 Dec 2026 every Brazilian dental establishment shares one dated problem;
+  after it, the offer degrades to *"repair your noncompliance"* against incumbents already at R$679, and the only
+  compelled recurrence is a **two-year** revision (RDC 1.002 art. 111 IV) — *"a 5- and 10-year clock in
+  monthly-subscription costume"*, the CONFORME kill again. **The maintenance pivot is the wrong SHAPE, not just
+  harder:** R$250–500/clinic/month needs 25–50 active clinics against the permanent 8–10 client cap.
+  ⇒ **Ask of every candidate: is the revenue STOCK or FLOW?** *(Merged REPRESENTANTE+GUARDA: flow, ≈13.100
+  newly granted foreign trademarks a year with no representative. Scan keepsake: flow, births. Conformidade:
+  stock.)* **★ And the useful half: a harvest is not worthless — against a US$3.000 one-time capital cap, a
+  four-month campaign clearing R$20–40.000 is ten times the budget, EARNED. Run it as a funding event with a
+  written stop date, never as the main business wearing a deadline.**
+- **★★ THE FREE PORTAL IS THE ONBOARDING ANSWER, AND THE REPLACEMENT-COST CEILING IS THE PRICE ANSWER.** Mercado
+  Livre's Brand Protection Program is **free** and explicitly admits *"titulares… e seus procuradores"* on a
+  documented power of attorney, with the trademark *"deferido ou concedido"* — so a platform-portal business
+  escapes `THE ONBOARDING LAW` entirely. **But strip the language and the weekly work is: run a saved search,
+  paste URLs into a free bulk form, email a tally — which a VA can rebuild.** ⇒ **When a platform gives the
+  enforcement tool away, what is sold is ACCOUNTABILITY, not scarcity, and it prices accordingly.** ⚠ **And the
+  measured dispute load is the real risk: Brazil's public BPP complaint record is wrongful takedowns** —
+  *"denúncias aceitas de forma automática, sem análise técnica mínima"* — where the hard cases are grey-market
+  resellers of genuine stock (lawful under LPI art. 132 III), telling them apart is a legal judgement, and the
+  operator who clicked submit is named. **Counsel before the first notice.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
