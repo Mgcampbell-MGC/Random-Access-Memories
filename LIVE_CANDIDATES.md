@@ -16,7 +16,7 @@ first paying stranger. The detail for 1–6 is the board below; 7–10 are drawn
 
 | | Candidate | Reaches the bar with | Price | Stock or flow | Fastest evidence | The one thing that kills it |
 |---|---|---|---|---|---|---|
-| **1** | **★ PROCURADOR BR (REPRESENTANTE v2)** — Brazilian representative of record on INPI marks + a weekly docket watch, one machine serving delivery and acquisition. **Rebuilt 2 Sep: `THE_REBUILD_REPRESENTANTE.md`** | **15–20 clients at US$149/mo**, 9–11 h/mo | ⚠ **the bare role's price is THE open question** — the observed US$400–1.300 prices the CNPJ role, not this one | **FLOW — ≈4.100/yr compelled, 313/mo named** | **20 provider quotes asking for representation ALONE** | the bare role turns out to be an annuity, or included free with filings |
+| **1** | **★ GUARDA** — counterfeit removal for foreign brands on Mercado Livre and Shopee, run as an automated weekly perimeter. **`GUARDA_THE_BUSINESS.md`** | **6–8 clients at US$390/mo + US$750 setup**, ~7–9 h/mo | invented; enterprise incumbents sit far above, law firms far away | **FLOW — reappearing listings, if measured** | **measure the 30-day reappearance rate on client one** | wrongful-takedown liability; the routine is copyable, so the ledger is the only moat |
 | **2** | **CONFORMIDADE v2** — ⚠ **reclassified: a Sept–Dec CASH CAMPAIGN with a written stop date, to fund #1** | 8–10 packs/mo at R$1.500 — **now 2,2× a R$679 incumbent** | invented; **floor measured R$97,90 / R$679** | **STOCK**, then thin | the amended 60-email probe | the R$679 pack with support; the deadline passing |
 | **3** | **SCAN KEEPSAKE MACHINE** — built, 264 ms/unit | 2–4 studios, or 16–20 direct at $149 | comparables | **FLOW — births** | 20 scans + a stopwatch | the redact stage on a real 2D scan |
 | **4** | **#64 BEFORE YOU** — English pregnancy memoir | 16–21 orders/mo at $149, 6–8 h | comparables | FLOW | **three books, one print run, ~$30** | S1 (`RULE 1`); price capped by $48–129 incumbents |
@@ -33,6 +33,8 @@ R$5.900/50 SKUs)*. Its facts all verified — RDC 1.030/2026, 13 entries, Lilial
 it to employ the professional who does the work and forbids outsourcing the role, ANVISA publishes an INCI/CAS
 lookup with .xlsx export free, and this file already measured the category's full document bundle at $30.
 See `THE_GUARDA_ASSESSMENT.md` §1.
+
+**RETIRED 2 Sep — the representation seat as a PRODUCT.** Founder: *"this won't work unless it was the counterfeit fake takedown; this business is dead to me."* The seat survives as **plumbing** — Mercado Livre's programme admits a *procurador* on documented authority, so the power of attorney is how GUARDA gets its trigger — and as a year-two upsell. `THE_REBUILD_REPRESENTANTE.md` is now a parts document; its liability architecture and its INPI findings carry straight into GUARDA.
 
 **Below the line, and only on C8** — both have BETTER evidence than most of the ten and sit in the exact shape the
 founder rejected in four words: **CertGap** (defect rate 6,1–9,7% *independently reproduced*, 3–4 audits/mo at $650)
