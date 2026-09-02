@@ -148,6 +148,40 @@ self-serve, US-priced **chasing** shape (l.3111 — *"not one was ever tested in
 **MCP registries** (l.634–637); and the observation at US$8.000/month that *"too small to matter is a real moat"*
 (l.640) — **at US$2.500 that moat is wider, and no entry in the record has yet used it.**
 
+### 3f. The candidate and assessment files (7–21 Aug), swept — cut off by the rate limit at row 31, the rows that matter landed
+A second agent re-read ~30 of the ~40 named candidate files and recomputed each recorded kill at the new bar.
+*(Not reached before the limit: WHATSAPP_DISTRIBUTION_MODEL, TEST_01, LineProof, THE_CHANNEL_AUDIT, THE_AD_REP_INDUSTRY_EXISTS,
+the three S3/S4 hunt files and the B2C hunt — the S3/S4 files record "not one died on economics" and are
+target-independent; the B2C hunt's pick, AGENCY ATLAS, is a modelling product and dies on the founder's fashion exclusion.)*
+
+**RESURRECTS on arithmetic — six, all with the C8 question unanswered:**
+
+| Candidate | Its own numbers | At the new bar | What still stands |
+|---|---|---|---|
+| **ADV-Check** — SEC Form ADV Part 1 vs Part 2A mismatch report to registered investment advisers (`research/digital-product-decision/`) | US$650/report; 16.779 advisers, 15.445 with a website; 68% file in March; its own averaged projection **US$2.400–8.100/month** | **3–4 reports/month.** Its only recorded shortfall was against US$7.400–8.300 | Mismatch rate unmeasured; minutes per report unmeasured. **Test: hand-diff 40 firms, $0.** Same shape as GateLedger and DECRS — **the founder said "not her at all" to that shape once** |
+| **CertGap** — ENERGY STAR vs DOE certification contradictions, per brand (`research/backup-candidate/`) | $650 audit + $350/quarter; **mismatch measured 6,1–9,7% by independent reproduction** (clean 2–4%); 46 brands with ≥1 mismatch from 4 of 73 categories | **3–4 audits/month, or ~20 subscribers at $117/month.** The recorded objection was a pool too small for 12–13 one-offs a month | Manual curation per report (the headline rate is inflated by artifacts). **Test: 40 emails, $20–50.** Same C8 flag as above — appliance filings, US-industrial |
+| **#66 SCOPED — the Shopify variant rebuild + "repair and press the import"** (`CANDIDATE_66_COUNCIL_*`) | $1.290/job at 10,4 h; the merchant seat said it would pay **£2.500–3.000** for repair + verified import with rollback | **ONE import job a month at £2.500 ≈ US$3.200 at 12–13 h**, or two at $1.290 at 21 h. C4's relaxation is what buys the merchant's own stated want (pressing the import needed a login) | **Build ≈190 h** — four months of all her hours, or a contracted developer at ~US$2.900, the whole of C5. The £2.500 figure came from a council seat played by an agent, not a transaction. Offshore BPO at $0,30–1,50/SKU still holds the floor on the content half |
+| **#71 — the insurance submission narrative, plain version** (not RISKSTORY) | $200/submission; one broker × ~150 accounts ≈ 12/month = **$2.400 from a single relationship** | **11–14 narratives/month = ONE broker**, 12–21 h. RISKSTORY's kills ($5–13k launch, Ohio opinion, LC 126 insurance) belong to the blueprint, not to this version | S1 (`RULE 1`); **state "solicit/negotiate/sell" licensing still unread**; no published price anywhere; chatbot substitute. **Test: count 20 brokers' submission volume, $0** |
+| **#70 — the written memorial, wholesale to funeral homes** | wholesale $99–199; ~8 families/month per home; Aftercare.com $150/month "no contracts" as the comparable | **$150 × 15–19/month = 2–3 funeral homes.** Both recorded blockers (death veto, C1 onboarding) are off | 800–2.000 words per unit, untimed — at 1,5–2 h it is 22–38 h/month, at the cap. **PARKED at the founder's instruction (a book)** |
+| **Trademark office-action response tooling** (`research/idea-hunt-final/`) | $147 one-off → maintained subscription (price unstated); firms bill $300–1.500/response; the buyer is the lawyer | 15–20 subscribers | **Never killed, never checked**: Alt Legal occupancy; whether the USPTO already emails the attorney of record. Two free checks |
+
+**MARGINAL:** the 50-State charity solicitation monitor (18–22 subscribers of ~5.000 solvent orgs — but the file's
+later finding stands: *nobody sells an alert to the party it is about*) · STONEPROOF as a stampless $300–500 residue
+(C5, uninsurability and SGS remain) · cosmetics allergen/claims documents at €160 (**the file's own "a gig" verdict
+was rendered at exactly this target**; $30 Fiverr floor real) · #72 celebrants (its 8-celebrant floor was this
+target, and its own correction says the volume is not there) · Prateleira Perfeita at the Batch/Mutirão tiers only.
+
+**STILL DEAD, structural, target-independent:** DeckProof (ECRM ToS + chat window) · lien-waiver and Amazon
+reinstatement (free incumbents) · DeductionDelta (free audits) · TITLE FORGE, RECOMPETE and the $250k blueprint
+family (credential, E&O, presence, headcount) · PERMITCLOSE (four structural kills) · import-export (C5) ·
+**card decks (its $2.600/month kill figure IS the new target — already dead here)** · #66 as proposed (63 h at 3
+clients) · RFP drafting (Fiverr $15–150, free APEX) · the department-play eliminations.
+
+**What the sweep adds to the board:** nothing enters the top 5. ADV-Check and CertGap are the strongest arithmetic
+in the sweep and sit in the exact domain the founder rejected with GateLedger; #66-scoped has the best price story
+but a four-month build; #71 needs one statute read. **They go on the reserve list with the C8 question written on
+each, to be answered by the founder in one word each, the way GateLedger was.**
+
 ## 4. THE BOARD — five live, ranked by what actually reaches the number with the fewest unverified inputs
 
 ### #1 · CONFORMIDADE v2 — the RDC 1.002/2025 dental document pack

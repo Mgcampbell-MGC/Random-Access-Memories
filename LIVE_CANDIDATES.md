@@ -18,9 +18,20 @@ every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 | **5** | **SINAL** — no-show recovery layer, Pix deposit + waitlist | S3 layer · Brazil clinics | **21–26 clinics** at R$600 | anchored low (Clinicorp R$370) | clinic world | 20 clinics: no-shows last week? take a sinal? |
 | 6 | BRAZIL DESK — Portuguese customer-ops seats for foreign cos. *(first reserve)* | contractor retainer · USD | 2–3 seats | observed-ish | weak | — |
 
+## RESERVES from the two sweeps (1 Sep) — each passes arithmetic; each needs the founder's one-word C8 answer first
+| Reserve | Reaches the bar with | Price basis | C8 | Free check |
+|---|---|---|---|---|
+| **#66 scoped** — Shopify variant rebuild + verified import | 1 job/month at £2.500 | council-stated, not observed | neutral · ~190 h build | a real merchant quote |
+| **CertGap** — ENERGY STAR vs DOE contradictions per brand | 3–4 audits/month at $650 | measured defect rate 6,1–9,7% | **GateLedger's domain** | 40 emails, $20–50 |
+| **ADV-Check** — Form ADV Part 1 vs 2A mismatch | 3–4 reports/month at $650 | own projection US$2.400–8.100 | **GateLedger's domain** | hand-diff 40 firms, $0 |
+| **#71 plain** — insurance submission narrative, one broker | 11–14/month at $200 | invented | S1 (`RULE 1`) | read one state licensing statute |
+| **US scale-service-agency software** | $249 × 10 | SmarterCerts $210–335 | US-industrial | do the five largest states publish a free portal? |
+| **Trademark office-action tooling** | 15–20 subscribers | unstated | neutral | Alt Legal; does the USPTO email the attorney of record? |
+
 ## RESURRECTED, PARKED at the founder's instruction
-**#64 BEFORE YOU (English, $149, 16–20 books, 6–8 h/month)** · **funeral book V1 / V3** · **CONFERÊNCIA DE
-CRÉDITO** (R$12–25k/engagement, never killed on evidence, C8 doubtful) · COROA and #66 (marginal).
+**#64 BEFORE YOU (English, $149, 16–20 books, 6–8 h/month)** · **funeral book V1 / V3** · **#70 written memorial
+(2–3 funeral homes at $150 wholesale)** · **CONFERÊNCIA DE CRÉDITO** (R$12–25k/engagement, never killed on evidence,
+C8 doubtful) · COROA, #72, cosmetics documents and Prateleira (marginal).
 
 ## PARKED / DEAD, unchanged by the cut
 GATELEDGER (C8) · DECRS (parked) · VIGIA 18 (C8) · RAIZ (compelled-document family; SisGen 3.0 not live) ·

@@ -15,20 +15,11 @@ Reserves: BRAZIL DESK (2–3 seats) · US scale-service-agency software ($249 ×
 for a free registration portal first). Parked at the founder's instruction: the books (64 English, funeral V1/V3),
 CONFERÊNCIA DE CRÉDITO.
 
-## Pending when the session paused
-- **A background sweep of ~40 older candidate/assessment files** (DECKPROOF_V2, TITLE_FORGE, RECOMPETE, PERMITCLOSE,
-  STONEPROOF, PRUMO, VOLTA, IMPORT_EXPORT, COSMETICS_*, CANDIDATE_69/70/71/72, THE_DEPARTMENT_PLAY,
-  THE_AD_REP_INDUSTRY_EXISTS, BUSINESS_BLUEPRINT*, WHATSAPP_DISTRIBUTION_MODEL, TEST_01, LineProof, THE_CHANNEL_AUDIT,
-  THE_SECOND_SWEEP_14AUG, HUNT_14AUG_TRANSPOSITION, SYNTHESIS_14AUG, CANDIDATE_66_*, CANDIDATE_64_*,
-  THE_MACHINE_VERIFIABLE_HUNT, THE_CONTINUOUS_OPERATION_HUNT, THE_DATASET_HUNT, research/digital-product-decision/
-  ADV_CHECK_verification, research/backup-candidate/backup_verdict, research/b2c-hunt/verdict,
-  research/idea-hunt-final/README, research/solicitation-monitor/README) recomputing every recorded kill at the new
-  bar. **If its result never landed, re-run it**: for each candidate, one row — own numbers · causes of death tagged
-  A (arithmetic) / S (structural) / C (constraint, naming it; C1/C2/C3/C4/C7 are RELAXED and do not count) ·
-  recomputation at US$2.200–2.800 export / R$12.300–15.400 domestic gross, 43 h/month · verdict RESURRECTS / STILL
-  DEAD / MARGINAL. Append as §3f of `THE_SCENARIO_B_BOARD.md`. **Watch CertGap**: its own plan was 60 customers at
-  $350/quarter for ~$7.000/month ⇒ ~20 at the new bar.
-- The graveyard sweep (GRAVEYARD.md, 3.113 lines) is DONE and is §3e of the board.
+## Sweeps — BOTH DONE
+- Graveyard sweep (3.113 lines): `THE_SCENARIO_B_BOARD.md` §3e. One arithmetic-only resurrection (US scale-service agencies).
+- Candidate-file sweep: §3f. Cut off by the rate limit at row 31; the uncovered files are target-independent (listed
+  there). Six resurrect on arithmetic, none enters the top 5; all six are on the reserve table in `LIVE_CANDIDATES.md`
+  with a C8 question each. **Nothing here needs re-running.**
 
 ## Next actions, in order — all written, no phone, under R$100 together
 1. **Ten minutes:** confirm RDC 1.002/2025 art. 182's 360-day term was not deferred during 2026 (`THE VENDOR-URGENCY
