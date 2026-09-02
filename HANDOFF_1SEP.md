@@ -22,8 +22,8 @@ CONFERÊNCIA DE CRÉDITO.
   with a C8 question each. **Nothing here needs re-running.**
 
 ## Next actions, in order — all written, no phone, under R$100 together
-1. **Ten minutes:** confirm RDC 1.002/2025 art. 182's 360-day term was not deferred during 2026 (`THE VENDOR-URGENCY
-   LAW`). If deferred, #1 drops to a reserve.
+1. ~~Ten minutes: confirm art. 182 not deferred~~ **DONE 2 Sep: not deferred; ANVISA's own Q&A of 9 Jul 2026 restates 360 days.
+   Template floor measured at R$97,90–297 (Hotmart kit, 186 Word templates). Both recorded under #1 in the board.**
 2. **The two-arm deadline probe on #1** (`THE_BRAZIL_HUNT_VERDICT.md` §3): one domain ~R$40; CNAE 8630-5/04 from the
    CNPJ file via `publica.cnpj.ws` (never `minhareceita`/`brasilapi`); 30 clinics asked what they paid for their last
    pack and who signed it; 30 offered the pack at R$1.500 against the deadline. Five days. **PASS ≥3 replies naming

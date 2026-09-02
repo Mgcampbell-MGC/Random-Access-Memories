@@ -105,7 +105,7 @@ revenue a domestic Simples Anexo III election (fator R ≥28% via pró-labore) p
 ### 3d. The 21–30 Aug board, re-priced
 | Candidate | Was (US$10k) | **Now (Scenario B)** |
 |---|---|---|
-| CONFORMIDADE v2 (RDC 1.002 dental pack, R$1.500 one-off) | 42 packs/month, 61 min each | **8–10 packs/month at R$1.500; 41–51 at a R$300 template floor** |
+| CONFORMIDADE v2 (RDC 1.002 dental pack, R$1.500 one-off) | 42 packs/month, 61 min each | **8–10 packs/month at R$1.500; 41–51 at the R$300 template floor — floor MEASURED 2 Sep at R$97,90–297 (a 186-template Hotmart kit), art. 182 NOT deferred** |
 | SINAL (no-show layer, R$600/mo) | 104 clinics | **21–26 clinics** (33–42 at Clinicorp's R$370 anchor) |
 | Scan keepsake machine | ~220 wholesale units or ~75 direct | **35–70 wholesale units (2–4 studios) or 16–20 direct at $149** |
 | Iris / retina art | one-day crux | unchanged — the crux is capture, not arithmetic |
@@ -199,6 +199,26 @@ non-compliance is an *infração sanitária* (Lei 6.437/1977). Questionnaire →
 | **What kills it** | `THE TEMPLATE FLOOR TEST` (R$100–300 sellers — UNVERIFIED); a **free model pack** from CFO/CRO/ANVISA or a dental-supply vendor (`THE FREE FRONT DOOR`); **art. 182 deferred** (`THE VENDOR-URGENCY LAW` — the reforma tributária play died exactly so); a municipal vigilância rejecting a generated pack |
 | **Price basis** | **Invented.** R$700 and R$1.500 are both untested; no consultancy publishes a number |
 | **THE TEST** | **(i) Ten minutes first:** confirm art. 182's 360-day term has not been deferred in 2026. **(ii) The two-arm deadline probe** (`THE_BRAZIL_HUNT_VERDICT.md` §3): one domain ~R$40, 30 dental clinics asked what they paid for their last pack and who signed it, 30 more offered the pack at R$1.500 against the deadline; five days; **PASS ≥3 replies naming ≥R$800.** If the modal number is R$100–300, price at the floor and the business is 40–50 packs/month through the email rail — still on the bar |
+
+**★ VERIFIED 2 Sep 2026, at source — the ten-minute check and the template floor, both run:**
+
+| | Finding | Source |
+|---|---|---|
+| **Art. 182 not deferred** | Consolidated text carries **no** *alterado / revogado / prorrogado* annotation. Art. 182 verbatim: *"Fica estabelecido o prazo de 360 (trezentos e sessenta) dias, contado da data de publicação desta Resolução, para a realização das adequações necessárias…"* §1º: new establishments comply *"na íntegra… a partir da data de sua aplicação."* Art. 185: non-compliance is an *infração sanitária* under Lei 6.437/1977 | `anvisalegis.datalegis.net` consolidated RDC 1.002/2025, fetched 2 Sep |
+| **ANVISA restates the clock in its own Q&A, 9 Jul 2026** | *Perguntas e Respostas – RDC 1002/2025*, 1ª edição, GGTES/GRECS, dated **09/07/2026** (file `PR__1002_2025_versao2_2026.pdf`, page metadata 21/07/2026): Q 3.2.1 *"Sim, no prazo de 360 dias, inclusive para estrutura física"*; Q 3.3.13 *"Todos os estabelecimentos já cadastrados/licenciados na Visa local devem adequar-se no prazo de 360 dias."* **Two Q&A editions in seven months and no deferral — the opposite of the reforma tributária pattern** | `gov.br/anvisa/…/temas-em-destaque/PR__1002_2025_versao2_2026.pdf` |
+| **No free ANVISA model pack** | The Q&A names the SDBPF eight times and never a *modelo*; the only "modelo" hits are *"modelo de ambiente compartilhado"* and *"não impõe um modelo único de estrutura."* Art. 111 III: the pack is *"formalmente aprovada e assinada pelo responsável legal do serviço"* — no credential on either side. The RT does the initial complexity classification *"na elaboração da SDBPF"* (Q 3.1.5) | same Q&A |
+| **★ THE TEMPLATE FLOOR, MEASURED: R$97,90** | `clinicaodontologicaregular.site` sells a *"Kit Regulatório Odontologia — 186 Documentos para a RDC ANVISA nº 1.002/2025"*: **list R$297, launch R$97,90 (12× R$8,16)**, 186 **editable Word templates** in 10 modules (7 SDBPF docs), sold by an individual via Hotmart, *"o RT adquire os modelos em Word pré-estruturados… adapta com os dados reais da clínica"*, and **explicitly "não garante aprovação em fiscalizações da VISA."** | fetched 2 Sep |
+
+**What the floor does to #1.** The cheapest conforming artefact is **R$97,90–297 for 186 blanks the dentist must fill
+in themself.** So the R$1.500 pack is not competing with the template on *conformance*; it competes on **the dentist's
+own hours** — filling 186 Word files with the clinic's real data is the work the kit pushes back onto the buyer, and
+`THE CONSTRAINT-SIDE LAW` says that sells only to a buyer short of hours, which a solo dentist against a dated deadline
+is. **The defensible price is therefore bounded by the dentist's adaptation time × their hourly rate** (10–20 h ×
+R$150–300/h ≈ R$1.500–6.000, UNVERIFIED — that is exactly what the probe measures), **not by the template.** It also
+means the delivered pack must be *personalised from a questionnaire and internally consistent* — a generated pack,
+never a re-skinned template — or it is a R$97,90 product. And the kit's existence is the first evidence that someone
+is already selling into this deadline. **The probe stands as written; the pass bar of ≥3 replies naming ≥R$800 is
+the right one, because R$800 is 3–8× the measured floor.**
 
 ### #2 · REPRESENTANTE — the Brazil-resident legal representative for foreign companies
 **Shape: an access right she holds by birth · export, paid in USD · the only candidate with OBSERVED prices and a COMPELLED buyer.**
