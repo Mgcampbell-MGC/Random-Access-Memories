@@ -44,7 +44,7 @@ CONFERÊNCIA DE CRÉDITO.
    CNPJ file via `publica.cnpj.ws` (never `minhareceita`/`brasilapi`); 30 clinics asked what they paid for their last
    pack and who signed it; 30 offered the pack at R$1.500 against the deadline. Five days. **PASS ≥3 replies naming
    ≥R$800.** Re-measure the dental email fill rate on the way.
-3. **#2:** pull four weeks of INPI RPI XML, count `titulares` with a foreign `país`; email 20 providers as a buyer
+3. **#1 PROCURADOR BR:** run the rebuild's four tests (`THE_REBUILD_REPRESENTANTE.md` §11). **Test 1 first: 20 provider quotes asking the fee for REPRESENTATION ALONE, separated from filing fees.** If the median is annual, or firms include it free with a filing, the candidate dies there and nothing else needs running.
    for a monthly quote and 20 recent foreign applicants asking who represents them and what they pay.
 4. **#3:** the founder collects 20 real 2D scans (friends, WhatsApp groups); run `pipeline/scan_pipeline.py`;
    stopwatch. PASS ≤3 min/unit and ≥18/20.
