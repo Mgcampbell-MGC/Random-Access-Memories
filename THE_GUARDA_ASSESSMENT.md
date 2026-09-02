@@ -228,3 +228,88 @@ RDC 1.030/2026 (ANVISA legis, fetched) · RDC 1.002/2025 consolidated text + ANV
 (fetched) · Mercado Livre BPP help pages and enrolment terms · MKaPlus SDBPF product listing · Hotmart kit
 listing · Reclame Aqui BPP complaint records · ANVISA cosmetics ingredient panel (INCI/CAS, xlsx export) ·
 `COSMETICS_VERDICT.md` 14 Aug · INPI RPI editions 2901–2904 parsed with `bin/inpi_foreign_applicants.py`.
+
+
+---
+
+# 7. WINGS AND LEGS — the founder's question, answered with two more measurements
+
+**Founder, 2 Sep: fashion is not a bar — *"this is many many other types of business this can be"* — and the
+measured class mix agrees** (Nice 09 electronics 307 · 42 software 161 · 35 services 141 · 05 pharma 109 ·
+41 · 03 cosmetics 99 · 07 · 10 medical · 01 · 25 clothing 77 · 12 · 11). **The exclusion is retired for this
+candidate.** The remaining question was *does it have wings and legs*, and answering it honestly required two
+numbers nobody had.
+
+## 7a. ⚠ FIRST, A CORRECTION TO MY OWN FRAMING — the 13.100 is NOT a compelled pool
+
+WIPO and the Brazilian IP bar both sell the Madrid Protocol on precisely the opposite point:
+> *"Uma das vantagens da gestão centralizada pelo Protocolo de Madri é a **não obrigatoriedade de contratar um
+> representante/agente local** em cada país de interesse."*
+
+**So the 1.007-a-month holding a granted Brazilian mark with no procurador are not an unserved market — they
+are a correctly-served one.** They have no duty until they act. `THE PRESENT-TENSE DUTY TEST` applied to my own
+finding: the obligation is **conditional**, and I let the merge framing drift into treating it as standing.
+**The addressable number is not who lacks a representative; it is who lacks one AT THE MOMENT A DEADLINE LANDS.**
+
+## 7b. The number that replaces it — measured from the same four weeks
+
+Counting foreign-held processos carrying a **hard-deadline event** (exigência de mérito, notificação de
+oposição, indeferimento, caducidade, nulidade, recurso, sobrestamento — anything that must be answered or the
+right is lost):
+
+| | Four weeks | Annualised |
+|---|---|---|
+| Foreign-held processos with a hard-deadline event | 1.442 | ≈18.700 |
+| — already have a Brazilian procurador | 1.075 **(75%)** | — |
+| **★ NO procurador on record — must appoint one to respond** | **367 (25%)** | **≈4.800** |
+| **★ distinct COMPANIES behind those** | **313** | **≈4.100** |
+
+> ### **≈4.100 foreign companies a year hit a Brazilian deadline they cannot answer without appointing someone resident here. That is the real market, it is a FLOW, and she needs five.**
+
+## 7c. ⚠ AND THE FINDING THAT BREAKS THE "CATCH THEM AT THE CRISIS" PLAY
+**Of the 367 unrepresented hard-deadline processos, ZERO were Madrid designations.** Every Madrid case carrying
+an exigência or refusal already had a procurador printed. **By the time the gazette publishes the crisis, the
+appointment has already happened** — INPI notifies, and they appoint within days. **So the gazette cannot be
+used as a distress signal; it is a lagging record of a solved problem.** The addressable 313 are
+**national-route** filings by foreign parties who filed directly. *(INPI expressly permits this: any interested
+party may act before it **"em nome próprio, diretamente, sem a interveniência de qualquer procurador."**)*
+
+## 7d. WINGS — yes, and better than anything else on the board. But not from the leg GUARDA emphasises.
+
+| Leg | Hours per client per month | Clients inside C9 | Gross at observed price |
+|---|---|---|---|
+| **Representative (compelled)** | **1–2 h** — receive, forward, occasionally sign | **15–20** | **US$8.000–12.000/mo** |
+| Enforcement / takedowns | **6–8 h** — GUARDA's own 1,5–2 h/week | **4–5** | US$2.700–3.500/mo |
+
+> **The scaling leg is the boring one. GUARDA's proposal makes takedowns the product and the representative
+> role a US$250 upsell; the arithmetic says the reverse — the representative role is the engine (4–5× the
+> target before her hours bind) and enforcement is a garnish that consumes four times the hours per real.**
+
+## 7e. LEGS — one exceptional strength, three untested weaknesses
+
+> ### ★★★ THE STRENGTH IS AN AMENDMENT TO MY OWN LAW. `THE REPLACEMENT-COST CEILING` says a machine prices at its rebuild cost, and that the only escapes are **accumulated history** (zero at launch), **a credential** (expert veto) or **an access right owned by a platform** — *"all three are closed to her."* **The enumeration was incomplete. There is a fourth: AN ACCESS RIGHT OWNED BY HER OWN RESIDENCE.** A foreign buyer cannot commission Brazilian residency at any price, it costs her nothing to hold, it needs no credential *(confirmed twice: "may be an IP agent, a specialized lawyer, or **any Brazilian citizen** (since June 2014)")*, and it does not decay. **In ~130 candidates this is the only one that passes that ceiling.**
+
+**The three weaknesses, none of them measured, in the order they should be tested:**
+1. **Will a foreign company appoint an individual it met by email?** The role receives legal notices. The
+   default instinct is to ask a law firm, and law firms hold the relationship at exactly the moment of need.
+   **This is the whole business, and it is untested.**
+2. **★ THE APOSTILLE FRICTION, and nobody has priced it.** The power of attorney *"must be executed in the
+   applicant's country and either notarized and apostilled… before the agent can act."* That is a one-to-two
+   week client-side errand with a notary — **for a US$400/month service.** A compelled purchase with a
+   two-week paperwork tail is not an impulse close, and it is the likeliest reason a warm reply goes cold.
+3. **A regulator can delete the duty.** Precedent from next door: **Res. Conjunta BCB/CVM 13/2024** waived the
+   representative requirement for small foreign investors from 1 Jan 2025. Quarterly diary on IN RFB 2.119 and
+   LPI art. 217.
+
+*(And one honest constraint note: 15–20 light clients is more relationships than she asked for, even at 1–2 h
+each. The business is a portfolio of small standing obligations, not a machine.)*
+
+## 7f. ⇒ THE TEST CHANGES. The pool is measured; stop counting it.
+**Not "how many are there" — that is answered. The two questions that decide it:**
+- **20 provider quotes** as a prospective foreign client *(already written, `PROBE_KIT_1SEP.md` B2)* — does the
+  observed US$400–800 hold, and **what do they say about the apostille**?
+- **★ NEW, and it is now the decisive one: 15 emails to the measured 313** — foreign companies with a live
+  hard-deadline event and no representative on record — offering to act as their Brazilian representative.
+  **PASS: 2 replies that engage with terms. KILL: 0 of 15, or every reply says "our attorneys will handle it."**
+  Cost: one domain. **This is the first test in this project that puts a compelled, named, dated buyer in front
+  of an offer.**

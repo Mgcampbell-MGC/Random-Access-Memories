@@ -925,6 +925,20 @@ strangers' dead parents, alone, in year three?"**
   platform). All three are closed to her.** ★ And the new failure direction: **SUB-LINEAR IN HER HOURS,
   LINEAR IN SOMEONE ELSE'S METER** — WhatsApp bills per message, so a "machine" whose delivery rides a
   metered rail is not sub-linear at all.
+  **★★★ AMENDED 2 Sep 2026 — THE ENUMERATION WAS INCOMPLETE. There is a FOURTH escape: AN ACCESS RIGHT OWNED BY
+  HER OWN RESIDENCE.** Brazilian law compels a foreign party to appoint a Brazil-resident representative (IN RFB
+  2.119/2022 art. 6 §1 · LPI art. 217 · Registro.br), and the qualification is residence plus civil capacity —
+  *"may be an IP agent, a specialized lawyer, or **any Brazilian citizen** (since June 2014)."* **A foreign buyer
+  cannot commission residency at any price; it costs her nothing to hold; it needs no credential; it does not
+  decay.** In ~130 candidates it is the only input found that the buyer cannot rebuild. ⚠ **But run
+  `THE PRESENT-TENSE DUTY TEST` on it: the duty is CONDITIONAL, not standing** — measured, only **25%** of
+  foreign-held INPI hard-deadline events (exigência, oposição, indeferimento, caducidade, nulidade) had no
+  procurador on record, ≈**4.100 companies a year**, and **ZERO of them were Madrid designations** because those
+  appoint within days of being notified. **The gazette is a lagging record of a solved problem, not a distress
+  signal.** *(And the Madrid Protocol is SOLD on "não obrigatoriedade de contratar um representante local" — so
+  the unrepresented majority is correctly served, not unserved.)* ★ **The unpriced friction is the APOSTILLE:**
+  the power of attorney must be notarised and apostilled in the client's country before the agent may act — a
+  two-week errand attached to a US$400/month purchase.
 - **★★★ THE TARGET IS THE BINDING CONSTRAINT — TWO EDITS MULTIPLIED AND WERE NEVER EVALUATED TOGETHER.**
   19 Aug raised the target **US$2.600 → US$10.000 net (×3,85)**; 21 Aug cut hours **130 → 43 h/month
   (×3,02)**. **Product: ×11,6 on the rate she must realise — US$20/h to US$233/h.** At observed Brazilian
