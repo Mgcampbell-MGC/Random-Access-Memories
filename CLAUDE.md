@@ -1104,6 +1104,39 @@ strangers' dead parents, alone, in year three?"**
   not economics: the statutory interview is 6–10 short video calls a month FOREVER, which is DELIVERY contact,
   and every loosening so far has covered SALES contact only.** See `THE_CARTA_VERIFICATION.md`.
 
+- **★★★ THE ACCEPTANCE FINDING — SELL THE CONSEQUENCE OF BEING WRONG, NOT THE WORK.** `THE FREE-VALIDATOR
+  SCREEN` kills selling **the check**; it does NOT kill selling **the acceptance**. Measured 3 Sep: the
+  passport-photo category has a published spec, free tooling and native phone support — and still transacts at
+  **US$3 (`get-passport-photo.com`) to US$16,95 (`passport-photo.online`)**, because every operator's advertised
+  differentiator is a GUARANTEE, not software: PhotoAiD *"100% acceptance rate guarantee"*, ePassportPhoto
+  *"200% refund if your photo is rejected"*, PhotoBooth Online 60 days. ⇒ **FIND A TASK CHEAP TO PERFORM AND
+  EXPENSIVE TO GET WRONG, AND PRICE OFF WHAT A REJECTION COSTS THE BUYER IN MONEY AND DAYS.** ⚠ **A guarantee
+  is credible only in proportion to what BACKS it — a licence, an escrow, a platform, a partner — never a
+  reputation, which C2 forbids; and it must be BOUNDED and survivable out of US$3.000 (Shopee §8.4(g) already
+  killed one candidate on an unbounded indemnity).** ★ **CARTA IS THIS EXACT STRUCTURE AT 100× THE PRICE and
+  that is WHY it prices at 100×:** same free task (check a document), but the guarantee is a signed Certificate
+  of Accuracy backed by a federal authorisation, and a rejection costs 7–11 weeks without a passport instead of
+  one resubmission. See `THE_ACCEPTANCE_FINDING.md`.
+- **★★★ THE TREADMILL TEST — IF IT MUST BE REBUILT EVERY QUARTER, SHE CANNOT RUN IT.** Volunteered by an AI
+  founder describing his own company: *"every month the whole industry resets… five leading research labs and
+  each lab is pushing massive updates every quarter… it typically requires to substantially rebuild the whole
+  product around those models."* **A moat made of MODEL CAPABILITY resets on somebody else's release schedule.**
+  At 87 h/month and US$3.000 once she cannot run a daily-iteration loop. ⇒ **Screen every candidate: does a
+  frontier release make this BETTER, or make it need REBUILDING?** Permission, physical possession, accepted
+  liability and an accumulated record all answer *better*; model capability answers *rebuilding*. **The
+  interview is an unintentional argument for the permission-plus-possession pair.** *(Same source also confirms
+  the two capabilities she lacks are the two the playbook requires — a 24-hour builder and a social-media
+  distributor — and that its distribution path "originated on X", i.e. audience, i.e. closed.)*
+- **★★★ EIGHT INTERVIEWS OUTRANK EIGHTY CANDIDATES — AND THIS IS AN INDICTMENT OF THIS FILE, NOT A TIP.**
+  Higgsfield: *"we interviewed eight people, eight out of eight said the same thing"* — Hollywood directors to
+  regional commercial producers — and it settled the product direction; the interviewer puts the usual number at
+  *"like 12 to 20… actually like around 10."* **THIS SEARCH: four weeks, ~130 candidates, ZERO conversations
+  with a potential buyer.** The archive already knew — *"not one candidate in four weeks has been priced in
+  front of a person who could say yes"* — and answered it with more hunts. ⇒ **A HUNT IS NOT A SUBSTITUTE FOR
+  AN INTERVIEW; screens built from other candidates' deaths cannot tell you what a buyer wants.** The founder's
+  objection *"the leads are weak"* was correct twice; the answer was never to stop testing but to make ONE lead
+  strong enough to test. Measure the RATE across ~20 approaches against a bar committed in advance.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
