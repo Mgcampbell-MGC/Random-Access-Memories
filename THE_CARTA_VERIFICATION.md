@@ -146,12 +146,14 @@ tolerating it. She does not have to be found. She is on the list a Brazilian sea
 
 ## 7. The four honest risks
 
-1. **★ THE INTERVIEW IS DELIVERY CONTACT, AND THE LOOSENING ONLY COVERED SALES CONTACT.** Six to ten short
-   video calls a month, forever, one per applicant, non-negotiable and statutory. It is the mildest possible
-   form of the violation — scripted, transactional, she holds a document and works a checklist, and she is
-   never being believed as an expert. **But it is contact on every unit, it never tapers, and it is the
-   founder's call, not mine.** `SELECTION ≠ PERSISTENCE`: the question is not *do you mind a call*, it is
-   *could you still be doing eight of these a month, alone, in year three?*
+1. **✅ THE INTERVIEW — ANSWERED 3 Sep 2026. THE FOUNDER: *"Yes she can do video calls."*** The statutory
+   per-applicant interview is 6–10 short video calls a month, permanently. That was the candidate's only
+   structural objection and **it is now cleared.** It is the mildest form of the old constraint — scripted,
+   transactional, she holds a document and works a checklist, never believed as an expert.
+   ⚠ **The residual is persistence, not permission.** `SELECTION ≠ PERSISTENCE`: willingness today is not the
+   same as still doing it on every unit, alone, in year three. Worth re-asking at unit 50, not now.
+   **★ AND THE ANSWER RETIRED C1 GENERALLY, WHICH IS WORTH MORE THAN CARTA** — see the C1 row in `CLAUDE.md`
+   and the archive-wide re-screen it triggered. Much of the graveyard died on speech.
 2. **The credit history check.** Rev. Proc. 2006-10 §6.01(2)(a) imposes a credit history check **and** an FBI
    background check. Pub 4520 expressly exempts foreign nationals without an SSN residing abroad from the
    *background* check; **it says nothing about the credit check, and she has no US credit file.** Unknown, not
@@ -192,3 +194,38 @@ candidate that sits on the right side of it with every number verified.**
 > certified copy, and explicitly refuses the *cartório* notarisation that Brazil uses for everything else. **Hunt
 > the places where a foreign regulator will not accept the local shortcut** — that refusal is the entire
 > business, and it is written down in the instructions to a form.
+
+
+---
+
+## The next action, and it costs nothing
+
+**The only open item is the credit history check.** Rev. Proc. 2006-10 §6.01(2)(a) imposes *both* a credit
+history check and an FBI background check on the applicant. Pub 4520 waives the **background** check for
+*"foreign nationals without a Social Security Number (SSN) residing outside the United States."* **It is silent
+on the credit check, and she has no US credit file.** Circular 230 practitioners are exempt from both — she is
+not one.
+
+**Settle it in writing, before anything is spent, before the forensic-document course is bought.** No telephone.
+
+> **To:** the IRS ITIN Policy Section
+> **Subject:** Acceptance Agent application — credit history check for a foreign applicant with no US credit file
+>
+> I am a Brazilian citizen, resident in São Paulo, Brazil, with no Social Security Number and no United States
+> credit history. I intend to apply to become a Certifying Acceptance Agent as a sole proprietorship
+> established outside the United States, as contemplated by Rev. Proc. 2006-10 §7.
+>
+> Publication 4520 lists *"foreign nationals without a Social Security Number (SSN) residing outside the
+> United States"* among the persons exempt from the background check requirement. Rev. Proc. 2006-10
+> §6.01(2)(a) separately imposes a credit history check.
+>
+> **How is the credit history check satisfied by an applicant who has no United States credit file?** Is it
+> waived, is a foreign credit report accepted, or is there an alternative procedure?
+
+**PRE-COMMITTED PASS BAR, stated before the answer arrives:** the reply must say the credit check is **waived,
+substituted, or satisfiable with a Brazilian credit report.** *"You must have a US credit file"* is a kill and
+the candidate is dropped that day. **A non-answer is not a pass** — the archive's own rule is that a flagged gap
+beats a plausible figure.
+
+**Only after a pass:** buy the forensic-document training (US$149–175), take the free IRS ITIN training, obtain
+the EIN (free), and submit. **Total exposure before the answer: US$0.**
