@@ -25,10 +25,42 @@ US$350 one-time subsidised inside US$3.997/yr bundles.
 agents instead of against the buyer's need. **Full record, and the three process laws it produced:
 `THE_CARTA_KILL.md`.**
 
-⚠ **CAMPO (#1 below) is under the same attack and probably falls too:** Brazil has a platformed market of
-*correspondentes jurídicos* — licensed lawyers who attend an address and return a dated written report —
-published at **R$230 for obtaining documents and R$370 for a despacho** (`smradvogados.com.br` own price list),
-against CAMPO's US$350–500 ask. **Verify before relying on it.**
+## ⚠ CAMPO — BADLY WOUNDED, verified 3 Sep. Not dead; the ask is not defensible as written
+
+**CAMPO priced a São Paulo field stop at US$350–500.** I pulled a Brazilian law firm's own published diligence
+price list (`smradvogados.com.br/p/tabela-de-preco-de-diligencias-smr.html`, retrieved 3 Sep):
+
+| Act performed by a licensed Brazilian lawyer | Price |
+|---|---|
+| **Despacho em qualquer órgão público** | **R$370** ≈ US$71 |
+| Protocolo de petição, qualquer área | R$130 |
+| Obtenção de certidões, escrituras, registros | R$100 + custas |
+| Extração de cópias dos autos | R$130 |
+| Audiência de conciliação / instrução | R$570 / R$730 |
+| Consultoria, demais áreas | R$250 |
+
+**A person with a law degree attends a public body and reports back for R$370.** CAMPO asks **5–7× that**.
+
+**★ THE NUANCE THE KILL MISSED, and it cuts CAMPO's way: the table states in terms that its prices are for the
+comarca of BELO HORIZONTE** — *"Para fora desta, os valores deverão ser consultados"* — **so São Paulo is
+unpriced.** And these are *judicial* diligences (file a petition, attend a hearing, fetch a certidão), not
+CAMPO's act: attending a commercial address and documenting what is physically there, in English, in a US
+report format.
+
+**★ BUT THE STRUCTURAL KILL IS THE ONE THAT BITES, AND IT DOES NOT DEPEND ON THE PRICE.** CAMPO's celebrated
+permission finding — Lei 13.432/2017 vetoed into a non-licence, so no council can stop her — **means nobody is
+barred, including the 215 million people who could do it and the platformed marketplace that already
+dispatches them.** *(`doc9.com.br/logistica` operates a national correspondente network with 24-hour
+confirmation and 24-hour delivery.)* **ABSENT PERMISSION IS NOT A GATE.** And the arbitrage is available to the
+BUYER directly: a foreign due-diligence firm that can find doc9 pays Brazilian rates plus a translation layer,
+which is the production this whole hunt assumes has gone to zero.
+
+⚠ **Counter-anchor, verified by me earlier and still standing:** the **US Commercial Service publishes US$90
+per staff hour and US$2.000 for a full International Company Profile** (`trade.gov/user-fees`). At 3–4 hours a
+stop that is US$270–360 — **CAMPO's band exactly.** So the price is defensible against the US government's own
+schedule and indefensible against Brazilian local supply. **THE OPEN QUESTION IS THEREFORE NOT "WHAT IS IT
+WORTH" BUT "WHICH MARKET DOES THE BUYER SOURCE FROM", and that is settled by asking buyers, not by more
+desk research.** Until then CAMPO is not on the board as a live #1.
 
 ## THE REST OF THE BOARD — end of 2 Sep 2026, after five hunt agents and six kills
 
