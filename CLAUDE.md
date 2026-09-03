@@ -175,7 +175,7 @@ auditing their own sources.
 | **C5** | **US$500–2.500, ONE TIME.** *(Raised 19 Aug from "a few hundred." Still one-time, not monthly. This buys an entity, tooling, domains and a small acquisition test. It does NOT buy paid acquisition at scale, a legal/licensing opinion, or acquiring an existing asset.)* |
 | **C6** | **~30 h/week** |
 | **C7** | Personal São Paulo network is not a sales channel |
-| **★ C9** | **~8–12 h/WEEK OF SCREEN TIME, not 30** *(added 21 Aug)*. The business stays digital; the machine runs itself and her hours are oversight, QA and selection. **This is a HARD constraint, not a preference, and it TRIPLES the arithmetic gate — see below.** |
+| **★ C9** | **~8–12 h/WEEK OF SCREEN TIME, not 30** *(added 21 Aug)*. **⚠ RELAXED BY THE FOUNDER 3 Sep 2026: *"she can work more than 43 hours a month .. lets say 20 hours a week"* ⇒ ~87 h/month, DOUBLE the 21-Aug figure.** Her required realisation therefore falls **from US$51–63/h to US$25–32/h**, and the field-stop floor **from US$180–250 to US$90–125 per stop**. The business still stays digital and her hours are still oversight, QA and selection. **What this readmits: hand-made units at a US$100–150 ticket, and a band of physical work that the US$180 floor excluded. What it does NOT change: the 8–10 concurrent CLIENT cap, because a retainer costs 3–5 h/month of contact whoever delivers — so the binding constraint is now DISTRIBUTION, not her capacity.** |
 
 **Vetoes:** construction as a buyer segment · labour-compliance document chasing · physical goods and
 inventory unless made-to-order · **anything requiring her to be believed as an expert** · ~~anything built
@@ -1079,6 +1079,30 @@ strangers' dead parents, alone, in year three?"**
   upholsterer) **and authentication built from reviewing 5.000 vintage Brazilian magazines page by page** —
   a warehouse, restoration lineage and connoisseurship, the last being the expert veto in its purest form.
   ⇒ **SIXTH kill in one day on a sub-30-minute check. PRICE, PERMISSION AND POPULATION FIRST; DESIGN SECOND.**
+
+- **★★★ THE PERMISSION-PLUS-POSSESSION PAIR — the only gate found in ~130 candidates that a frontier model, a
+  funded incumbent and a free government portal all fail to dissolve AT ONCE is A LICENCE THAT CAN ONLY BE
+  EXERCISED WITH A PHYSICAL OBJECT IN HAND.** Permission alone is abundant — Brazilian residence cost
+  **R$810/year** and killed the procurador seat. Physical access alone is commoditised — a São Paulo field stop
+  is a **US$3–20** gig task. **The two together are neither: a remote competitor holds the licence and cannot
+  reach the object; a local competitor reaches the object and may not certify it; a model does neither.**
+  Worked instance, every fact verified at source 3 Sep: **IRS Certifying Acceptance Agent, Brazil.** Form W-7
+  takes originals or an issuing-agency certified copy and **rejects notarised copies except for US military
+  dependents — so a Brazilian *cartório* authentication is worthless**; the mandatory per-applicant interview may
+  be by video **only while the agent physically holds the originals**; **Rev. Proc. 2006-10 §4: *"An eligible
+  person may be a U.S. person or a foreign person"*, §7 records *"sole proprietorship"* and *"outside the United
+  States"*, and Pub 4520 exempts *"foreign nationals without an SSN residing outside the United States"* from the
+  background check**; and the IRS lists **FOUR agents for all of Brazil** against **3.288 Brazilian ITIN filers
+  (TAS *ARC 2024* Fig. 5.3.8) = 822 per agent, versus the UK's 444 which the Taxpayer Advocate cites AS A
+  SHORTAGE.** **Screen for the pair, never for either half.**
+  ★ **AND THE COROLLARY THAT SAYS WHERE TO HUNT: the pair is almost always created by a FOREIGN REGULATOR
+  REFUSING TO ACCEPT THE CHEAP LOCAL SUBSTITUTE.** That refusal is the entire business and it is written down in
+  the instructions to a form. **Hunt foreign regulators' document rules for the sentence that voids the local
+  shortcut.** ★ It is also the first structure in the file where **DISTRIBUTION IS GRANTED RATHER THAN BUILT** —
+  approval buys a permanent listing on irs.gov's own Brazil page, i.e. regulator-granted inbound to an operator
+  with no audience, the property that made `THE CONVERGENCE` uniquely C2-neutral. ⚠ **Its own open risk is C1,
+  not economics: the statutory interview is 6–10 short video calls a month FOREVER, which is DELIVERY contact,
+  and every loosening so far has covered SALES contact only.** See `THE_CARTA_VERIFICATION.md`.
 
 ## The test design that works
 
