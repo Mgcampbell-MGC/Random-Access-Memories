@@ -1080,29 +1080,39 @@ strangers' dead parents, alone, in year three?"**
   a warehouse, restoration lineage and connoisseurship, the last being the expert veto in its purest form.
   ⇒ **SIXTH kill in one day on a sub-30-minute check. PRICE, PERMISSION AND POPULATION FIRST; DESIGN SECOND.**
 
-- **★★★ THE PERMISSION-PLUS-POSSESSION PAIR — the only gate found in ~130 candidates that a frontier model, a
-  funded incumbent and a free government portal all fail to dissolve AT ONCE is A LICENCE THAT CAN ONLY BE
-  EXERCISED WITH A PHYSICAL OBJECT IN HAND.** Permission alone is abundant — Brazilian residence cost
-  **R$810/year** and killed the procurador seat. Physical access alone is commoditised — a São Paulo field stop
-  is a **US$3–20** gig task. **The two together are neither: a remote competitor holds the licence and cannot
-  reach the object; a local competitor reaches the object and may not certify it; a model does neither.**
-  Worked instance, every fact verified at source 3 Sep: **IRS Certifying Acceptance Agent, Brazil.** Form W-7
-  takes originals or an issuing-agency certified copy and **rejects notarised copies except for US military
-  dependents — so a Brazilian *cartório* authentication is worthless**; the mandatory per-applicant interview may
-  be by video **only while the agent physically holds the originals**; **Rev. Proc. 2006-10 §4: *"An eligible
-  person may be a U.S. person or a foreign person"*, §7 records *"sole proprietorship"* and *"outside the United
-  States"*, and Pub 4520 exempts *"foreign nationals without an SSN residing outside the United States"* from the
-  background check**; and the IRS lists **FOUR agents for all of Brazil** against **3.288 Brazilian ITIN filers
-  (TAS *ARC 2024* Fig. 5.3.8) = 822 per agent, versus the UK's 444 which the Taxpayer Advocate cites AS A
-  SHORTAGE.** **Screen for the pair, never for either half.**
-  ★ **AND THE COROLLARY THAT SAYS WHERE TO HUNT: the pair is almost always created by a FOREIGN REGULATOR
-  REFUSING TO ACCEPT THE CHEAP LOCAL SUBSTITUTE.** That refusal is the entire business and it is written down in
-  the instructions to a form. **Hunt foreign regulators' document rules for the sentence that voids the local
-  shortcut.** ★ It is also the first structure in the file where **DISTRIBUTION IS GRANTED RATHER THAN BUILT** —
-  approval buys a permanent listing on irs.gov's own Brazil page, i.e. regulator-granted inbound to an operator
-  with no audience, the property that made `THE CONVERGENCE` uniquely C2-neutral. ⚠ **Its own open risk is C1,
-  not economics: the statutory interview is 6–10 short video calls a month FOREVER, which is DELIVERY contact,
-  and every loosening so far has covered SALES contact only.** See `THE_CARTA_VERIFICATION.md`.
+- **★★ THE PERMISSION-PLUS-POSSESSION PAIR — ⚰ ITS WORKED INSTANCE DIED THE SAME DAY. THE SHAPE MAY STILL BE
+  RIGHT; THE INSTANCE WAS NOT.** The claim was that a licence exercisable only with a physical object in hand
+  is the one gate a model, a funded incumbent and a free portal all fail to dissolve — worked instance, an IRS
+  Certifying Acceptance Agent seat in São Paulo (four agents for 215 million people). **KILLED 3 Sep at the
+  primary source: the Form W-7 instructions also permit *"officers at U.S. embassies and consulates overseas
+  [to] provide certification and authentication services"*, and `br.usembassy.gov` sells a *"True copy of
+  Foreign Passport… only available if you are applying for an Individual Taxpayer Identification Number"* at
+  **US$50 per consular seal, all nationalities, five locations in Brazil.** The US government is the cheapest
+  supplier of the thing the candidate sold at US$350** — and Openbiz, one of the four, already sells the package
+  at US$350 one-time while subsidising it inside US$3.997/yr bundles. ⇒ **Permission plus possession did not
+  fail; I never established that the pair was SCARCE, because I priced against other agents instead of against
+  the buyer's need. Treat the pair as a promising SHAPE with zero surviving instances, not as a law.**
+  See `THE_CARTA_KILL.md`.
+- **★★★ PRICE AGAINST THE NEED, NOT AGAINST THE CATEGORY — the single cheapest check in this file and I skipped
+  it on my own candidate.** CARTA was priced against other Certifying Acceptance Agents: the right answer inside
+  the wrong universe. The buyer's need is *"get a certified copy of my passport to the IRS without posting the
+  original"*, discharged by **the issuing agency, a US consulate, OR an agent** — and two of the three were
+  never checked. ⇒ **Write the buyer's need as a sentence with NO VENDOR IN IT, then enumerate every route that
+  satisfies it, including the regulator's own.** ★ **And make this a reflex: THE CHEAP STATE COUNTER — the state
+  often sells the service ITSELF, cheaply. It hides precisely because it is not FREE: a US$50 government price
+  does not look like a free incumbent and does not trip `THE FREE FRONT DOOR` or `THE FREE-VALIDATOR SCREEN`.**
+- **★★★ A SUMMARISED FETCH IS NOT A PRIMARY SOURCE — DOWNLOAD THE DOCUMENT AND GREP IT.** A retrieval tool
+  answers the question asked and is SILENT on the clause you did not think to ask about. I asked the W-7
+  instructions about notarised copies, got a correct answer, and never saw the embassy clause a few lines below
+  — then wrote *"verified at source"* over a summary and crowned the candidate. ⇒ **For any fact a candidate
+  rests on, fetch the actual PDF or HTML and read the whole section: `curl` + `pdftotext` + `grep`, thirty
+  seconds.** *(It also defeats the 403 — WebFetch was blocked on `travel.state.gov` and `br.usembassy.gov`;
+  `curl` with a browser user-agent returned both.)* **Fourth occurrence of `A COUNT OF STRUCTURES IS NOT A CHECK
+  OF CONTENT` in this file. Three of them mine.**
+- **★★ THE SAME-DAY CROWNING IS THE TELL — a candidate that survives every screen in one afternoon has not been
+  screened hard enough.** CARTA went from generated to top of the board in under four hours on five separate
+  *"verified at source"* claims. **Every one was true and the candidate was still dead.** The checks are cheap;
+  **the failure is choosing which to run, and the skipped one was the cheapest.**
 
 - **★★★ THE ACCEPTANCE FINDING — SELL THE CONSEQUENCE OF BEING WRONG, NOT THE WORK.** `THE FREE-VALIDATOR
   SCREEN` kills selling **the check**; it does NOT kill selling **the acceptance**. Measured 3 Sep: the

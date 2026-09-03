@@ -11,37 +11,24 @@ every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 > is the family the 19 Aug raise killed by fiat: hand-made units, the two candidates designed at this target (64,
 > 66), the book family, CONFERÊNCIA DE CRÉDITO, and BRAZIL DESK. **No candidate below has a validated buyer.**
 
-## ★★★ NEW #1 — CARTA, and it is the first candidate in ~130 whose every load-bearing fact I checked at source myself
+## ⚰ CARTA — CROWNED AND KILLED ON THE SAME DAY, 3 Sep 2026
 
-**She becomes an IRS Certifying Acceptance Agent in São Paulo.** A Brazilian needing a US taxpayer number (ITIN)
-must either post their original passport to Texas for 7–11 weeks, or hand it to a CAA who verifies it in person
-and hands it straight back. **The IRS lists FOUR such agents for the whole of Brazil.**
+**It was #1 for about four hours.** The premise was that a Brazilian needing a US taxpayer number must post
+their passport to Texas or use one of four IRS-authorised agents. **The Form W-7 instructions also permit
+*"officers at U.S. embassies and consulates overseas [to] provide certification and authentication services"*,
+and the US Mission to Brazil sells a *"True copy of Foreign Passport… only available if you are applying for an
+Individual Taxpayer Identification Number"* at **US$50 per consular seal**, all nationalities, five locations.**
+The US government is the cheapest supplier of the US$350 service. Openbiz, one of the four, closes the rest at
+US$350 one-time subsidised inside US$3.997/yr bundles.
 
-| | Verified | Source |
-|---|---|---|
-| **Permission** | *"An eligible person may be a U.S. person **or a foreign person**"*; the agreement records *"**sole proprietorship**"* and *"**outside the United States**"*; Pub 4520 names *"foreign nationals without an SSN residing outside the United States"* as **exempt from the background check** | Rev. Proc. 2006-10 §§4, 6, 7 · Pub 4520 |
-| **The gate is physical** | Notarised copies rejected except for US military dependents — **a Brazilian *cartório* authentication is worthless**; the interview may be by video **only if the agent physically holds the originals** | Form W-7 instructions · IRS AA programme pages |
-| **Price** | **US$350** ITIN · **US$900** ITIN+return · **US$550/return/year**, published | `itinabroad.com/services` |
-| **Population** | **Brazil 3.288 ITIN filers (TY 2022)**, 7th of the top 15 foreign countries — **822 per CAA against the UK's 444, which the Taxpayer Advocate cites AS A SHORTAGE** | IRS TAS, *ARC 2024*, Fig. 5.3.8 |
-| **Demand, from an IRS source** | non-CAA applicants are *"**over twice as likely**"* to be rejected; passports destroyed for want of contact **up +400% 2023→2024** | same |
-| **Distribution** | **a permanent listing on irs.gov's own Brazil page — one of four.** Inbound, granted by a regulator, to an operator with no audience | irs.gov acceptance-agents-brazil |
-| **Arithmetic** | 6 ITINs + 1 return = **US$2.650/month at 12 h against 87** ≈ **US$220/h** · 75–96 units/year ≈ **2–3% of the pool** · pool ≈US$1,15M ≈ **34× the ask** · setup **US$149–175** | derived |
+**Every permission and population fact I verified was true and none of it mattered.** I priced it against other
+agents instead of against the buyer's need. **Full record, and the three process laws it produced:
+`THE_CARTA_KILL.md`.**
 
-**⚠ THE ONE QUESTION FOR THE FOUNDER, and it is a yes/no: the statutory interview means 6–10 short video calls
-a month, one per applicant, forever.** That is **delivery** contact; the 3 Sep loosening covered **sales** contact
-only. It is the mildest form of the violation — scripted, transactional, she holds a document and works a
-checklist, never believed as an expert — **but it is on every unit and it never tapers.**
-
-**Second-cheapest open item, settled by one free email and no telephone:** §6.01 imposes a **credit history
-check** and Pub 4520 waives only the *background* check for foreign nationals. **She has no US credit file.**
-Ask the IRS ITIN Policy Section before a dollar is spent.
-
-**Corrected from the hunt:** the US$350 was attributed to Openbiz.io, which **publishes no price at all**. The
-figure is ITIN Abroad's. *(And Openbiz is the real competitive threat, not the price anchor — it is funded, in
-São Paulo capital, and bundles the ITIN into US-LLC formation, which is `THE NO-MARGIN-ON-THE-FLOW LAW` aimed
-straight at her. Her answer must be the US$550 recurring return, not the one-time ITIN.)*
-
-Full record, all URLs, the four honest risks and the technology judgement: `THE_CARTA_VERIFICATION.md`.
+⚠ **CAMPO (#1 below) is under the same attack and probably falls too:** Brazil has a platformed market of
+*correspondentes jurídicos* — licensed lawyers who attend an address and return a dated written report —
+published at **R$230 for obtaining documents and R$370 for a despacho** (`smradvogados.com.br` own price list),
+against CAMPO's US$350–500 ask. **Verify before relying on it.**
 
 ## THE REST OF THE BOARD — end of 2 Sep 2026, after five hunt agents and six kills
 
