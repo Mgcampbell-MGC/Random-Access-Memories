@@ -1,0 +1,138 @@
+[
+ {
+  "key": "seed01",
+  "domain": "fireworks and pyrotechnics",
+  "object": "a passport",
+  "juris": "Malaysia",
+  "mechanism": "a per-event witness fee",
+  "buyer": "a reinsurer"
+ },
+ {
+  "key": "seed02",
+  "domain": "dance and ballet",
+  "object": "a coin",
+  "juris": "France",
+  "mechanism": "a per-year custodianship fee",
+  "buyer": "a diagnostics laboratory"
+ },
+ {
+  "key": "seed03",
+  "domain": "cemeteries and crematoria",
+  "object": "a firearm",
+  "juris": "Malta",
+  "mechanism": "a per-consignment inspection fee",
+  "buyer": "a university registrar"
+ },
+ {
+  "key": "seed04",
+  "domain": "perfume and fragrance",
+  "object": "a breeding certificate",
+  "juris": "France",
+  "mechanism": "a fee to be named as an agent of record",
+  "buyer": "an auction house"
+ },
+ {
+  "key": "seed05",
+  "domain": "locksmithing and physical security",
+  "object": "a passport",
+  "juris": "Sweden",
+  "mechanism": "a percentage of an insured value",
+  "buyer": "a fertility clinic"
+ },
+ {
+  "key": "seed06",
+  "domain": "self-storage",
+  "object": "a core drill sample",
+  "juris": "Norway",
+  "mechanism": "a royalty on every resale",
+  "buyer": "a hospital procurement desk"
+ },
+ {
+  "key": "seed07",
+  "domain": "self-storage",
+  "object": "a rough diamond",
+  "juris": "South Africa",
+  "mechanism": "a listing fee",
+  "buyer": "a bank's compliance desk"
+ },
+ {
+  "key": "seed08",
+  "domain": "self-storage",
+  "object": "a frozen embryo",
+  "juris": "Thailand",
+  "mechanism": "a fee per document certified",
+  "buyer": "a fertility clinic"
+ },
+ {
+  "key": "seed09",
+  "domain": "commercial greenhouses and horticulture",
+  "object": "a race-day sample",
+  "juris": "Vietnam",
+  "mechanism": "a fee per sample handled",
+  "buyer": "a pedigree breeder"
+ },
+ {
+  "key": "seed10",
+  "domain": "film and television production",
+  "object": "a calibration weight",
+  "juris": "Greece",
+  "mechanism": "a listing fee",
+  "buyer": "a bank's compliance desk"
+ },
+ {
+  "key": "wide-domain",
+  "single_dim": "domain",
+  "values": [
+   "tattoo and body art",
+   "childcare and nurseries",
+   "rare books and manuscripts",
+   "beekeeping and apiculture",
+   "forensic science services",
+   "aquaculture and fish farming"
+  ]
+ },
+ {
+  "key": "wide-object",
+  "single_dim": "object",
+  "values": [
+   "a meteorite fragment",
+   "a seed lot",
+   "a tyre",
+   "a blood tube",
+   "a hive frame",
+   "a physical key"
+  ]
+ },
+ {
+  "key": "wide-mechanism",
+  "single_dim": "mechanism",
+  "values": [
+   "an annual attestation fee",
+   "a bonded guarantee premium",
+   "a per-consignment inspection fee",
+   "a per-unit stamp or seal",
+   "a membership subscription",
+   "a subscription to a change feed"
+  ]
+ },
+ {
+  "key": "wide-buyer",
+  "single_dim": "buyer",
+  "values": [
+   "a single family office",
+   "a pedigree breeder",
+   "a specialist courier",
+   "a customs broker",
+   "a museum registrar",
+   "a seed or plant breeder"
+  ]
+ },
+ {
+  "key": "wildcard-1",
+  "wildcard": true
+ },
+ {
+  "key": "wildcard-2",
+  "wildcard": true
+ }
+]
