@@ -1179,6 +1179,36 @@ strangers' dead parents, alone, in year three?"**
   constraint buys back candidates that failed on PRICE or PERMISSION; it never buys back the ones that failed
   on STRUCTURE.** *(Consistent with `THE SCENARIO B RESET`: 41 of 42 structural.)*
 
+- **★★★ BRAZILIAN INFORMATION PRODUCTS — HUNTED AND CLOSED 3 Sep, and the affiliate escape dies on a NUMBER.**
+  The hope was that on Hotmart/Kiwify/Eduzz the AFFILIATES hold the audiences so a faceless company-branded
+  producer needs none. **Half true.** Facelessness at the ENTITY level is genuinely fine — Hotmart's eleven
+  published Blueprint criteria mention **no face, no video, no author authority**, and of the top-rated
+  marketplace page **12 of 23 producers are companies or institutions** *(caveat: "most rated" ≠ volume, and a
+  company product can still front an instructor)*. **But the cold start is gated on sales she has not made:
+  Kiwify, verbatim — *"O produto precisa ter pelo menos mais de R$5 mil em vendas na vida toda"* to appear in
+  the affiliate marketplace AT ALL**, then ranked by *"faturamento recente"*; Hotmart's every sort is a
+  proof-of-sales sort and *"todos os produtos começam com a temperatura baixa"*; and its own fix, a **Gerente de
+  Afiliados, must be registered as a Coprodutor to be paid** — a third revenue share and a permanent
+  relationship job. ⇒ **AFFILIATES ARE RECRUITED BY PROOF OF SALES, WHICH IS EXACTLY WHAT AN OPERATOR WITH NO
+  AUDIENCE CANNOT MANUFACTURE. The face was never the gate; the SALES HISTORY is.** Two distribution kills worth
+  keeping separately: **★ PAID ADS ARE A C2 VIOLATION, NOT A BUDGET PROBLEM — Google's Ads Transparency Center
+  publishes the advertiser's NAME AND LOCATION**; and **★ SEO IS HALVING — Pew measured click-through at 8% with
+  an AI summary present against 15% without.** See `THE_INFOPRODUCT_CLOSURE.md`.
+- **★★★ INFORMATION DOES NOT PRICE. WHAT PRICES IS THE NON-INFORMATIONAL THING WELDED TO IT.** Only four things
+  price, and information is their delivery medium: **accepted liability for a rejection · a physical original
+  that exists exactly once · an access right the buyer is barred from holding · a signature.** **This archive
+  has repeatedly read the MEDIUM as the PRODUCT.** ⇒ **Strip the information away and ask what is left, and
+  whether THAT is what the buyer pays for. If nothing is left, the price is zero and four parties already fund
+  it there** — a frontier model, a standards body's free validator, the Brazilian state, and whoever earns
+  margin on the future flow. *(Compulsion does not rescue it: the measured floor for a Brazilian mandatory
+  document pack is **R$97,90 for 186 editable Word files**.)* ★ **AND THE CLAUSE CARTA'S DEATH SUPPLIES THE SAME
+  DAY: accepted liability prices only where NOBODY WHO COULD ACCEPT IT MORE CHEAPLY IS SELLING — a US consulate
+  certifies a foreign passport for ITIN purposes at US$50. Welding a non-informational thing to information is
+  NECESSARY, NOT SUFFICIENT; you must still price against the buyer's NEED, including the state's own counter.**
+  ⚰ **Also killed explicitly: THE PUBLISHER SHAPE** — she is the company-branded producer and contracts a named
+  expert as the face. **If the expert has an audience they do not need her; if not, there is no distribution;
+  the content is generatable; and a course has no second purchase.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
