@@ -1137,6 +1137,38 @@ strangers' dead parents, alone, in year three?"**
   objection *"the leads are weak"* was correct twice; the answer was never to stop testing but to make ONE lead
   strong enough to test. Measure the RATE across ~20 approaches against a bar committed in advance.
 
+- **★★★ COUNT THE BODIES BEFORE CROWNING A CONSTRAINT — measured 3 Sep across the whole archive.** Nine readers
+  swept all 2,35 MB for candidates killed by the three constraints that changed this week. **164 extracted, 162
+  distinct:** speech + an independent structural kill **71 (43%, STAY DEAD)** · old US$10.000 target ONLY **37
+  (23%)** · **speech ONLY 18 (11%)** · speech + old target 18 · old 43 h ONLY 17 · speech + old hours 3.
+  ⇒ **Speech was implicated in 67% of kills but was the SOLE cause in 11%. THE US$10.000 TARGET — ALIVE FOR
+  THIRTEEN DAYS — WAS THE SOLE CAUSE IN TWICE AS MANY.** A constraint's importance is not how often it appears
+  in a kill note, it is **how often it is the ONLY thing in the kill note.** Re-screen by SOLE cause, never by
+  mention. *(This vindicates the 1 Sep reset by counting bodies rather than re-deriving arithmetic — and it
+  corrects my own assumption, held all day, that speech was the great unlock.)*
+- **★★★ RE-SCREEN THE FILTERS BEFORE THE CANDIDATES — A CLASS-LEVEL FILTER IS WORTH MORE THAN ANY CANDIDATE.**
+  `THE NO-SALES-CALL TEST` (13 Aug): *"She cannot speak to anyone. So the product must be bought from a page —
+  which caps annual contract value at roughly **US$3.000/year**… **This kills essentially all mid-market and
+  enterprise B2B regardless of product quality.**"* **It had NO other cause of death and it is now REPEALED —
+  but it was never re-examined for three weeks because it was written as a LAW, and laws do not get
+  re-screened.** Repealing it moves the requirement from **44 customers to 3–5 at US$6.000–10.000/year**: 9–15
+  spoken hours in year one, 1,5–2,5 h/month of delivery calls, realisation **US$100–278/h against a required
+  US$25–32**, client count 3–5 against a cap of 8–10. ⚠ **Two conditions: origination stays 100% WRITTEN with a
+  call granted only after a prospect names a budget in writing; and the expert veto is untouched — it must
+  still be "the buyer supplies the domain, she supplies the throughput," with no asserted "before."**
+  ⇒ **When a constraint changes, re-screen the FILTERS first: a repealed filter reverses a whole band at once.**
+  ★ **The 18 speech-only candidates are the queue, and the strongest is `CONFERÊNCIA DE CRÉDITO` — the file says
+  in terms it was "never killed on evidence", only dropped on the 13 Aug no-speaking pivot.** Also freed:
+  ALT-DATA TO INVESTMENT FUNDS · DOL Form 5500 (61.210 filings, *"reachable only by telephone"*) · the glosa
+  spread (died on *"clinic owners are the most WhatsApp-native buyers in Brazil"*) · EU sanctions screening ·
+  DOOR 2 THE INVISIBLE DEPARTMENT · Upwork as a channel. **Correctly still dead: live workshops and productised
+  consulting — a room is not a video call, and the expert veto stands.** See `THE_C1_RESCREEN.md`.
+- **★★ 43% STAYED DEAD, AND THAT IS THE HEALTHY NUMBER.** Every relaxation to date has reversed **arithmetic and
+  permission** kills and **not one structural kill**. Free front doors, clearing parties, template floors,
+  platform arbiters and the split test do not care what the founder is now willing to do. **Relaxing a
+  constraint buys back candidates that failed on PRICE or PERMISSION; it never buys back the ones that failed
+  on STRUCTURE.** *(Consistent with `THE SCENARIO B RESET`: 41 of 42 structural.)*
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
