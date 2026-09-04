@@ -62,6 +62,12 @@ schedule and indefensible against Brazilian local supply. **THE OPEN QUESTION IS
 WORTH" BUT "WHICH MARKET DOES THE BUYER SOURCE FROM", and that is settled by asking buyers, not by more
 desk research.** Until then CAMPO is not on the board as a live #1.
 
+## ⚰ CLOSED CATEGORIES — hunted properly, 3–4 Sep, do not re-open without new facts
+**BRAZILIAN SaaS** — 19 published plans, median R$299, ⇒ 42–156 customers; the aggregator is itself an SME; and
+a one-time US$3.000 cannot fund a subscription base (`THE_BRAZIL_SAAS_CLOSURE.md`).
+**BRAZILIAN INFORMATION PRODUCTS** — the affiliate escape is gated on sales history she cannot manufacture
+(Kiwify: R$5.000 lifetime sales to list at all) (`THE_INFOPRODUCT_CLOSURE.md`).
+
 ## THE REST OF THE BOARD — end of 2 Sep 2026, after five hunt agents and six kills
 
 **Reordered on the three screens that did today's killing: PRICE EVIDENCE · PERMISSION · POPULATION.**

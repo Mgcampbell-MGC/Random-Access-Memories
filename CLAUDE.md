@@ -1209,6 +1209,41 @@ strangers' dead parents, alone, in year three?"**
   expert as the face. **If the expert has an audience they do not need her; if not, there is no distribution;
   the content is generatable; and a course has no second purchase.**
 
+- **★★★ BRAZILIAN SaaS — HUNTED AND CLOSED 4 Sep, with a price census attached.** 19 published plans across six
+  real Brazilian vendors, fetched by `curl`: **Bling R$60/120/650 + Elite *sob consulta* · ContaAzul
+  R$289,90/549,90/719,90/1.029,90 · Tiny R$66/177/390/948 · Omie *a partir de* R$309/419 · iClinic
+  R$99/129/169/299 **per professional** · Clinicorp R$159,90/369,90.** **Range R$60–1.029,90, MEDIAN R$299,
+  only 2 of 19 above R$720.** ⇒ against the domestic bar that is **42–156 paying SME customers**, and
+  **R$1.029,90 is what a funded incumbent charges for an ENTIRE financial back office** — a solo operator's
+  single feature does not price above a full ERP. **★ AND THE PINCER IS CONFIRMED IN REAIS: above ~R$1.000 the
+  published price DISAPPEARS** (Bling Elite *sob consulta*, Tiny *"GMV acima de R$400 mil — sob consulta"*,
+  Clinicorp *"Fale com um especialista"*, Omie behind a calculator, **`sankhya.com.br/planos/` and
+  `totvs.com/precos/` both HTTP 404**). See `THE_BRAZIL_SAAS_CLOSURE.md`.
+- **★★★ THE AGGREGATOR IS ITSELF AN SME — "sell to someone who holds many small clients" does NOT escape a
+  small-business price ceiling, it INHERITS it.** An accounting firm with 200 clients bills
+  **200 × R$450–1.200 × 12 = R$1,08–2,88 M/year — BELOW the R$4,8 M Simples ceiling.** To sit above it a
+  Brazilian accounting firm needs **≈334 clients at R$1.200, or ≈889 at R$450** *(verified: 4.800.000 ÷ 14.400 =
+  333,3; ÷ 5.400 = 888,9)*. ⇒ **COMPUTE THE AGGREGATOR'S OWN REVENUE BEFORE PRICING TO IT.** **This MERGES two
+  of the three escapes named in `THE R$1.200 CEILING` — "sell above Simples" and "sell to an aggregator" are ONE
+  escape — and leaves only "SELL ABROAD IN DOLLARS" genuinely independent.**
+- **★★★ THE STEADY-STATE KILL — A ONE-TIME CAPITAL BUDGET CANNOT FUND A SUBSCRIPTION BUSINESS. N\* = a/c, and
+  when *a* → 0, N → 0.** Churn is perpetual; **US$3.000 once, ever, is not.** After the v1 build (R$8–12.000 of
+  R$15.600) only **R$3.600–7.600 remains for acquisition, non-renewing** ⇒ the base **decays geometrically to
+  zero; there is no steady state.** Holding just 45 customers at the R$299 median needs **1,4 / 2,3 / 3,2 new
+  customers EVERY MONTH FOREVER at 3 / 5 / 7% churn** *(churn rates UNVERIFIED — the decay result does not
+  depend on them, only the replacement rate does)*; year one ⇒ ~65 sign-ups ⇒ **CAC ≤ R$77**, and the budget
+  does not reload. **Her only two live channels — cold written outreach and a partner who already holds the
+  customers — are both one-to-few and produce single digits.** ⇒ **SCREEN EVERY RECURRING-REVENUE CANDIDATE ON
+  REPLACEMENT RATE, NOT CUSTOMER COUNT: "how many must I add every month forever, and what channel produces
+  that after the money runs out?"** Needs no research and kills a whole shape in one line. ⚠ **It does NOT touch
+  per-unit or one-off work — there is no base to decay — which is precisely why the survivors in this archive
+  are per-unit.**
+- **★★ A SECOND MEASUREMENT IN A DIFFERENT CATEGORY BEATS A LARGER SAMPLE IN THE SAME ONE.** `THE R$1.200
+  CEILING` was measured on accountancy **LABOUR**; the SaaS census measured **SOFTWARE** — different sellers,
+  different product, no shared derivation, **same R$1.000–1.200 answer.** ⇒ **To confirm a ceiling, do not
+  re-sample the same market; find a DIFFERENT market serving the same budget.** *(Run the multiply-out check
+  first, as the judge did.)*
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
