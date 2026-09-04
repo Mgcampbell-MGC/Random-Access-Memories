@@ -1283,6 +1283,31 @@ strangers' dead parents, alone, in year three?"**
   about ITSELF, then show the conclusion holds across the whole plausible band.** A missing source is neither a
   licence to accept a folk number nor a reason to stop.
 
+- **★★★ THE RE-SCREEN VERDICT, 4 Sep — 17 OF 22 STILL-DEAD CANDIDATES DIE ON ONE LAW, AND IT IS NOT A FOUNDER
+  CONSTRAINT.** 34 archived candidates re-screened against the current bar: **3 ALIVE · 9 MARGINAL · 22
+  STILL_DEAD.** Causes among the dead: **THE FREE FRONT DOOR / NO-MARGIN-ON-THE-FLOW 17 (77%)** · expert veto 2
+  · replacement-cost ceiling 1 · observed-price ceiling 1 · founder bar 1. ⇒ **THE BINDING CONSTRAINT ON THIS
+  SEARCH IS NOT SPEECH, THE TARGET, HER HOURS OR HER CAPITAL. It is that somebody upstream who earns margin on
+  the future flow GIVES THE THING AWAY.** *(Speech was the sole cause of 11% of the original kills; the free
+  front door is the sole surviving cause of 77% of the re-screened ones, and it is indifferent to everything the
+  founder has relaxed.)* Measured today at the vendor's own source: **ANS compels the payer to produce the glosa
+  deliverable · Tribute Technology ships free obituary writing, free AI photo editing and a free Tribute Center
+  · the eSocial/DCTFWeb reconciliation is inside the accounting vendor's software · the recordkeeper serves the
+  Form 5500 population · "Preço: Gratuito" on the export-agency deliverable · two of two suppliers give away the
+  representante seat · #64's differentiator is now a free feature inside a US$99 catalogue product
+  (`life-story.ai`).** ⇒ **Screen FIRST: am I selling IDENTIFICATION, which somebody upstream will fund to zero,
+  or COMPLETED HISTORY, which nobody can?** ⚠ **And the bound from the same run: ALT-DATA and O CADERNO are both
+  completed-history candidates and both died on `THE HEAD-START ASYMMETRY`. The escape from the free front door
+  leads straight into the head-start problem, and the only thing resolving BOTH is `THE LOOKBACK-WINDOW LAW` —
+  run it, it is one question long.** See `THE_RESCREEN_VERDICT.md`.
+- **★★★ THE ORIGINATION-BUDGET TEST — THE CONSTRAINT WAS NEVER ACV, IT IS THE NUMBER OF FIRST CONVERSATIONS SHE
+  WILL EVER HAVE.** `THE NO-SALES-CALL TEST`'s US$3.000/year ceiling had **no source, no URL and no observed
+  listing** — a bare assertion under this repo's own evidence standard — and is repealed. **What actually binds
+  is ~10–15 SPOKEN HOURS IN YEAR ONE ⇒ ROUGHLY 15–20 FIRST CONVERSATIONS, EVER.** ⇒ **Stop asking "what can be
+  sold from a page" and start asking "WHICH 15–20 CONVERSATIONS."** *(⚠ And #64 does NOT come back: two
+  re-screeners split ALIVE/STILL_DEAD on it and both found the same fact — its differentiator is now a free
+  feature inside a US$99 catalogue product. The economics work; the reason to buy it from her does not.)*
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
