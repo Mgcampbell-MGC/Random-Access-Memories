@@ -65,6 +65,10 @@ desk research.** Until then CAMPO is not on the board as a live #1.
 ## ⚰ CLOSED CATEGORIES — hunted properly, 3–4 Sep, do not re-open without new facts
 **BRAZILIAN SaaS** — 19 published plans, median R$299, ⇒ 42–156 customers; the aggregator is itself an SME; and
 a one-time US$3.000 cannot fund a subscription base (`THE_BRAZIL_SAAS_CLOSURE.md`).
+**FACELESS YOUTUBE / ATTENTION** — the trilemma did NOT close it (AdSense is programmatic), but Shorts pays
+US$0,37/1.000 in a physically impossible best case, the YPP entry bar doubles 1 Feb 2027, Brazil has no US tax
+treaty so the best audience is withheld at 30%, and a 10–20% channel hit rate needs a PORTFOLIO she cannot hold
+at 87 h/month (`THE_FACELESS_ATTENTION_CLOSURE.md`).
 **BRAZILIAN INFORMATION PRODUCTS** — the affiliate escape is gated on sales history she cannot manufacture
 (Kiwify: R$5.000 lifetime sales to list at all) (`THE_INFOPRODUCT_CLOSURE.md`).
 

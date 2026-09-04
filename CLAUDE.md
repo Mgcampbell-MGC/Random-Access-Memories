@@ -1244,6 +1244,45 @@ strangers' dead parents, alone, in year three?"**
   re-sample the same market; find a DIFFERENT market serving the same budget.** *(Run the multiply-out check
   first, as the judge did.)*
 
+- **★★★ FACELESS YOUTUBE — HUNTED AND CLOSED 4 Sep. ⚠ AND `THE ATTENTION TRILEMMA` DID NOT CLOSE IT — its
+  ad-sales blade was derived about a newsletter sponsor won IN PERSON, and YouTube AdSense is FULLY
+  PROGRAMMATIC: no sponsor, no negotiation, no call. That is a fourth door the trilemma never considered, and a
+  faceless channel is the ONE attention business C2 actively PERMITS rather than tolerates.** It dies on three
+  other things. **(1) ARITHMETIC:** creator share is **55%** long-form / **45%** Shorts (`answer/72902`); **no
+  primary RPM source exists anywhere** — every table is a blog, a course or a tool's marketing — so the ceiling
+  was DERIVED from Alphabet's own *"surpassed $60 billion"* × 55% ÷ views ⇒ **≈US$5,65/1.000 global**, and
+  YouTube's own *"200 billion daily views"* makes **Shorts pay US$0,37/1.000 in a physically impossible best
+  case ⇒ 17–42 MILLION Shorts views/month.** Long-form needs **137k–321k views/month** in the best geography =
+  **17.000–40.000 views per video, every video, forever.** **(2) THE ENTRY GATE DOUBLES INSIDE HER WINDOW,
+  verified verbatim:** *"Starting Feb. 1, 2027, YPP entry thresholds for new creators are changing to **8,000
+  qualified watch hours in the last 365 days, or 20M qualified Shorts views in the last 90 days**… If you are
+  already in YPP, your status is not impacted"* (`answer/12843009`) — **the guru's claim was TRUE**; 8.000 hours
+  ≈ 96.000 views before a single dollar. **(3) THE KILL, below.** See `THE_FACELESS_ATTENTION_CLOSURE.md`.
+- **★★★ THE PORTFOLIO REQUIREMENT — A LOW HIT RATE IS NOT A RISK, IT IS A CAPACITY REQUIREMENT.** The founder's
+  own transcript gives the base rate as an admission against interest: *"more than 30 successful channels, but
+  also **hundreds of total flop channels**"*, and *"three months… six videos and **only one** blew up."*
+  **A 10–20% hit rate is a fine business for someone running five to ten attempts in parallel — which is exactly
+  what that operator does, funded by a tool-subscription business — and a coin-flip disaster for someone running
+  one. A serious channel costs 40–60 h/month; at 87 h SHE CAN HOLD ONE TICKET.** ⇒ **Ask of every candidate with
+  a hit rate below ~50%: how many SIMULTANEOUS attempts does the base rate require, what does one attempt cost
+  in her hours, and can she hold enough?** **The visible operators in any lottery-shaped category are PORTFOLIO
+  operators — their hours per attempt matter, not their success stories.** *(Generalises past YouTube: app and
+  product launches, prospecting-heavy sales, speculative-capture archives.)*
+- **★★★ THE WITHHOLDING GATE — FOR A BRAZILIAN THE HIGHEST-PAYING AUDIENCE IS THE ONE TAXED HARDEST AT SOURCE.**
+  YouTube withholds *"30% of earnings from viewers in the U.S."* where no treaty exists, or *"up to 24% of your
+  total earnings worldwide"* if no tax info is filed (`answer/10391362`) — **and BRAZIL HAS NO US INCOME TAX
+  TREATY, verified by fetching the IRS A-to-Z list and reading the B-section: Bangladesh, Barbados, Belarus,
+  Belgium, Bulgaria, no Brazil.** For a US-heavy channel ~90% of revenue is US-sourced ⇒ **~27% of gross gone
+  before Brazil sees it, which INVERTS the "chase the US RPM" instinct.** ⇒ **Price withholding BEFORE choosing
+  an audience for any candidate earning from US consumers through a US platform.** ⚠ **And check the CONTRACTING
+  ENTITY AND PAYMENT CURRENCY: if a platform pays a Brazilian in BRL, the PIS/COFINS export exemption's
+  *ingresso de divisas* condition may fail and the domestic 15,5% load replaces 8,1%.** *(Both UNVERIFIED, both
+  cheap accountant questions.)*
+- **★★ WHEN NO PRIMARY SOURCE EXISTS FOR A LOAD-BEARING RATE, DERIVE A CEILING FROM PUBLISHED TOTALS AND SHOW
+  THE VERDICT IS INVARIANT ACROSS THE RANGE.** ⇒ **Bound the unknown from figures the counterparty publishes
+  about ITSELF, then show the conclusion holds across the whole plausible band.** A missing source is neither a
+  licence to accept a folk number nor a reason to stop.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
