@@ -52,9 +52,9 @@ structurally interesting part is not the money — it is what these businesses a
 
 | Operator | Price | What it advertises as the differentiator |
 |---|---|---|
-| `get-passport-photo.com` | **US$3** digital | *"Expert-Verified & Compliant"* |
+| `get-passport-photo.com` | **US$3** digital | *"Expert-Verified & Compliant"*, **"Compliant or refunded"** |
 | Snap2Pass | **US$9,95** digital / **US$14,90** with review | *"AI Expert Review"* |
-| PhotoAiD | — | **"100% acceptance rate guarantee"**, money back |
+| **PhotoAiD** = `passport-photo.online` ⚠ **ONE FIRM, NOT TWO** | US$16,95 digital / US$19,95 printed | **"Expert check & acceptance guarantee"** — a priced, declinable line item |
 | ePassportPhoto | — | **"200% refund if your photo is rejected"** |
 | PhotoBooth Online | — | 60-day money back, refund or a new photo |
 
@@ -187,3 +187,87 @@ faceless supplier is the number that matters, and it is not his.
 > ZERO buyer conversations.** ⇒ **A hunt is not a substitute for an interview, and screens built from other
 > candidates' deaths cannot tell you what a buyer wants.** Measure the RATE across ~20 approaches with a
 > numeric bar committed in advance — never chase one success.
+
+
+---
+
+# ⚠ CORRECTIONS AND HARDENING — 4 Sep 2026
+
+**The Higgsfield-port hunt returned zero candidates and instead audited this file. It found two errors, both
+mine, and produced one law that converts CARTA's death from a process mistake into a predictable one.**
+
+## Correction 1 — I counted one company twice
+
+**`passport-photo.online` IS PhotoAiD.** Verified by me: its own page carries **`PhotoAiD S.A.`**, *"Powered by
+PhotoAiD®"*, and Android/Apple apps under the same name. **My five-operator table this morning was four
+operators**, and the claim *"every one of them advertises a guarantee"* rested on thinner corroboration than
+recorded. **It survives — `get-passport-photo.com` is independent and sells the same thing — but the finding
+is now two independent firms, not four.** *(Same failure family as `CHECK WHETHER YOUR TWO CORROBORATING
+NUMBERS ARE ONE NUMBER`. I wrote that law and then broke it inside a day.)*
+
+## Correction 2 — my own sub-clause is REFUTED at low ticket
+
+I wrote: *"a guarantee is credible only in proportion to what BACKS it — a licence, an escrow, a platform, a
+partner — never a reputation."*
+
+**Wrong, and the category proves it. A US$17 guarantee is backed by nothing but the vendor's own money and it
+works**, because the buyer's exposure is US$17 and the loss ratio is tiny.
+
+> ### THE CORRECT STATEMENT: THE REQUIRED BACKING SCALES WITH THE PRICE OF THE GUARANTEE, NOT WITH THE DIFFICULTY OF THE TASK.
+
+## The evidence got HARDER, in both directions
+
+**The free validator is stronger than I recorded — this is `THE FREE-VALIDATOR SCREEN` at maximum strength.**
+`tsg.phototool.state.gov/photo` returns **HTTP 200 with no login** *(verified by me, 4 Sep)*. It is not a
+cropper: the page carries `PHOTO_REJECTION_TITLE`, `PHOTO_WARNING_HEADER`, **"Automated check indicates photo
+may be non-compliant"**, **"has been rejected for the following reason(s):"**, plus `calculateCropArea` (auto-crop
+from detected eye positions) and a server-side `checkImageQuality`. It also says **"Do not use this tool if you
+are renewing your passport online"** — because the renewal application has its own check built in.
+**The issuing authority publishes the validator AND embeds a second one in its own filing flow. The category
+transacts anyway.**
+
+**And the guarantee is harder evidence than "they advertise one" — it is a PRICED, DECLINABLE SKU.**
+PhotoAiD's checkout carries an optional upgrade named verbatim **"Expert check & acceptance guarantee"** —
+*"backed by a 200% refund guarantee"*, badged **"Recommended"** — in the same `extraServices` list as photo
+retouching and an RFID passport holder, with the warning **"If you proceed, you will NOT receive our acceptance
+guarantee."**
+> **A thing you can decline in a shopping cart, and lose by declining, is a thing you bought.**
+
+**⚠ Counter-evidence, reported rather than buried:** `get-passport-photo.com` prices itself against a
+photographer (US$10–20) and a booth (US$7–12), **not** against the free tool, and its stated axis is speed and
+price. **Part of what the category sells is not making a trip.** ⇒ **The defensible claim is that acceptance is
+*A* PRICED COMPONENT, proven at the checkout — not that it is the whole reason the category exists.**
+
+---
+
+## ★★★ THE ACCEPTANCE SCISSORS — and it predicts CARTA's death instead of merely explaining it
+
+> ### An accepted-liability product is backed either by MONEY or by a SCARCE PERMISSION. Both blades close.
+>
+> **BLADE ONE — BACKED BY MONEY.** Then *anyone* can offer it: at a 99%+ pass rate the guarantee costs roughly
+> **0,6% of revenue** to underwrite. The guarantee is not scarce, so **the winner is whoever ranks in search.**
+> PhotoAiD is a 492 KB per-country SEO estate plus a Play Store app; get-passport-photo.com advertises
+> **2.897.329 photos processed** *(vendor's own count, SECONDARY)*. **That is a marketing business she cannot
+> run — and at US$3–17 the bar needs 130–930 sales a month.**
+>
+> **BLADE TWO — BACKED BY A SCARCE PERMISSION.** Then the permission has an **ISSUER**, the issuer is usually a
+> **state**, and **the state sells the acceptance itself at cost.** CARTA at US$350 against a **US$50 consular
+> seal**, five locations in Brazil, all nationalities.
+>
+> **Two instances, both measured, at opposite ends of the price range, same conclusion.**
+> ### ⇒ BEFORE PRICING ANY ACCEPTANCE, ASK WHAT BACKS IT — THEN ASK WHAT THE BACKER CHARGES TO DO IT ITSELF.
+
+**This is why CARTA died, stated as a mechanism rather than as my mistake.** `PRICE AGAINST THE NEED, NOT
+AGAINST THE CATEGORY` was the diagnosis; **the scissors is the cause.** A permission scarce enough to price is
+a permission somebody ISSUES, and an issuer that can revoke can also supply.
+
+## Two smaller corrections from the same audit
+
+- **The vertical-agent-gap donation FAILS her constraints and is dropped.** Its own worked example — *learn
+  about the property, get details, **call**, show up, leave a deposit* — is a telephone operation, and every
+  solo-servable instance needs a connection to the customer's CRM, which C4 forbids. Its third leg, *"no
+  vendor"*, is a claim about the searcher. **A screen whose only worked example violates two hard constraints
+  is not a screen for her.**
+- **The eight-interview finding was at risk of being misread, and the correct reading matters:** *eight is a
+  SAMPLE SIZE for a convergence test, not a sales target.* Higgsfield's result was that **eight out of eight
+  said the same unprompted thing.** **"Get eight yeses" would be a worse test than none.**

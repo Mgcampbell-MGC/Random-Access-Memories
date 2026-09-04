@@ -1308,6 +1308,31 @@ strangers' dead parents, alone, in year three?"**
   re-screeners split ALIVE/STILL_DEAD on it and both found the same fact — its differentiator is now a free
   feature inside a US$99 catalogue product. The economics work; the reason to buy it from her does not.)*
 
+- **★★★ THE ACCEPTANCE SCISSORS — an accepted-liability product is backed either by MONEY or by a SCARCE
+  PERMISSION, and BOTH BLADES CLOSE.** **Blade one, backed by money:** anyone can offer it — at a 99%+ pass rate
+  the guarantee costs ~0,6% of revenue to underwrite — so the guarantee is not scarce and **the winner is
+  whoever RANKS IN SEARCH** (PhotoAiD is a 492 KB per-country SEO estate plus a Play Store app), which is a
+  marketing business she cannot run, and at US$3–17 the bar needs **130–930 sales a month**. **Blade two, backed
+  by a scarce permission:** the permission has an **ISSUER**, the issuer is usually a **state**, and **the state
+  sells the acceptance itself at cost — CARTA at US$350 against a US$50 consular seal.** ⇒ **BEFORE PRICING ANY
+  ACCEPTANCE, ASK WHAT BACKS IT, THEN ASK WHAT THE BACKER CHARGES TO DO IT ITSELF.** **This converts CARTA's
+  death from a process error into a predictable one: a permission scarce enough to price is a permission
+  somebody ISSUES, and an issuer that can revoke can also supply.**
+  ⚠ **AND TWO CORRECTIONS TO MY OWN `THE ACCEPTANCE FINDING`, both mine, both from the same audit: (1)
+  `passport-photo.online` IS PhotoAiD S.A. — the five-operator table was FOUR operators, so the corroboration
+  is two independent firms, not four *(I wrote `CHECK WHETHER YOUR TWO CORROBORATING NUMBERS ARE ONE NUMBER`
+  and then broke it inside a day)*; (2) the clause *"a guarantee is credible only in proportion to what backs
+  it… never a reputation"* is **REFUTED at low ticket** — a US$17 guarantee backed by nothing but the vendor's
+  money works, because the buyer's exposure is US$17. **THE REQUIRED BACKING SCALES WITH THE PRICE OF THE
+  GUARANTEE, NOT THE DIFFICULTY OF THE TASK.**** ★ **The evidence also HARDENED both ways: `tsg.phototool.state.gov/photo`
+  is a free official validator at HTTP 200 with no login (`PHOTO_REJECTION_TITLE`, `checkImageQuality`,
+  *"Automated check indicates photo may be non-compliant"*) AND a second is embedded in the online renewal flow
+  — the screen at maximum strength, and the category transacts anyway; while the guarantee is a **priced,
+  declinable SKU** (*"Expert check & acceptance guarantee"*, *"If you proceed, you will NOT receive our
+  acceptance guarantee"*). **A thing you can decline in a cart, and lose by declining, is a thing you bought.**
+  ⚠ But `get-passport-photo.com` prices against a photographer and a booth, not the free tool — **part of what
+  sells is not making a trip — so acceptance is A priced component, not the whole reason the category exists.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
