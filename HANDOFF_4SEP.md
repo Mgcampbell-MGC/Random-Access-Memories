@@ -12,6 +12,12 @@ today: the re-screen went 15 → 43 → 69 across one)*, **but not a new session
 ⇒ **Their partial results are therefore already banked into `THE_RESCREEN_PARTIAL.md`. Nothing important is
 trapped in a journal.**
 
+## ⏸ STOPPED CLEANLY, 4 Sep — all three runs halted at the founder's request
+
+Partial output banked before stopping: **`THE_RESCREEN_PARTIAL.md`** (60 verdicts) and
+**`THE_PARTIAL_HUNTS.md`** (22 unscreened candidates from the random-collision and 12-lens generate stages —
+raw leads, never screened or refuted, and they must be treated that way).
+
 ## To resume, in this session
 
 ```
