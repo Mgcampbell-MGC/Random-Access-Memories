@@ -50,3 +50,38 @@ every partner-count candidate.
 
 **`THE LOOKBACK-WINDOW LAW` is the hinge on alt-data and has never been run on it: if the buyer's question has
 a horizon of 18 months or less, a 12-month archive is a FINISHED PRODUCT and starting today costs nothing.**
+
+---
+
+## ⚠ A COMPARABLE FOUND MID-HUNT, AND IT CUTS BOTH WAYS — 4 Sep 2026
+
+A research agent fetched `sageveterinary.com/veterinary-imaging-dataset` while working the channel lens. The
+page is a working instance of the exact intersection this hunt is exploring — **a party that already owns
+capture hardware, licensing the accumulated output as a dataset:**
+
+> *"For AI, ML & Diagnostics Developers — **The World's Largest Standardized Veterinary Imaging Dataset.** A
+> uniquely clean, expert-labeled collection of small-animal MRI, CT, and ultrasound studies — acquired on
+> identical hardware across three high-volume centers and read to a single standard by board-certified
+> radiologists… **Now available for licensing and partnership.**"*
+
+**Why it matters as evidence:** it confirms that clinics with imaging hardware do license their accumulated
+studies, and that "AI training data" is a live buyer for it. That is the channel lens and the record lens
+crossing, which is precisely the recombination this archive has never tried.
+
+**⚠ AND WHY IT IS ALSO A WARNING, which is the more important half.** Read what actually creates the value:
+**3T MRI on identical Philips scanners · 128-slice CT at all sites · THREE high-volume centres · a DACVR
+board-certified report on every study · a single reader for all MRI interpretations.**
+
+> ### The asset is not the dataset. It is OWNING THE CLINICS. Every defensible property on that page —
+> identical hardware, one acquisition standard, one reader — is only available to the party that operates the
+> imaging centres.
+
+⇒ **A third party cannot assemble this, and that is the entire point of the page** — it says so itself, that
+most medical imaging datasets are *"assembled after the fact from many machines, many sites"* and are worth
+less for it. **The capture layer is the moat and she cannot hold it.** ⇒ **THE CAPTURE-RIG SPLIT, confirmed at
+a new instance: where a dataset's value comes from CONTROLLING the capture, the operator keeps it. A remote
+party can only ever own the processing half — and here the processing (the radiologist's read) is credentialled
+as well.**
+
+⚠ **No price is published.** *"Request Dataset Access"* and *"See Licensing Options"* — the monitoring pincer
+again, above the self-serve line. **UNVERIFIED and not usable as an anchor.**
