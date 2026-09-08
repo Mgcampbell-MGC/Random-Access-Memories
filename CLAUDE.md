@@ -1333,6 +1333,24 @@ strangers' dead parents, alone, in year three?"**
   ⚠ But `get-passport-photo.com` prices against a photographer and a booth, not the free tool — **part of what
   sells is not making a trip — so acceptance is A priced component, not the whole reason the category exists.**
 
+- **★★★ THE MACHINE TEST — REVEALED BY THE FOUNDER 4 Sep, AND IT OUTRANKS C8.** Shown a ranked board of ten
+  candidates she picked exactly three — the scan keepsake machine, eCTD publishing, alt-data to funds — and the
+  seven rejects are the finding. **All three share: NO CLIENT RELATIONSHIP TO HOLD · NO BELIEF REQUIRED (an
+  object, a pass/fail against a published spec, a dataset — all verifiable without trusting her) · THE UNIT IS
+  MADE BY A MACHINE, not her hands.** **Six of the seven rejections are relationship-heavy or
+  hands-on-every-unit** (CONFERÊNCIA per-engagement · GUARDA monthly service with disputes · funeral book's 6
+  homes · buy-side agency holding client money · invisible department's 10–13 partners · CICLO the retainer).
+  ⇒ **ASK FIRST: does a MACHINE make the unit, can the buyer VERIFY it without trusting her, and does selling
+  it create a RELATIONSHIP SHE MUST THEN HOLD?** Free, one line, and had it run from day one it would have
+  deleted the entire contractor-retainer hunt (16 candidates) and the whole white-label family before any
+  research was spent. ★ **AND IT DEMOTES C8 FROM A GATE TO A TIE-BREAKER: two of her three are export, USD,
+  technical and entirely outside beauty and fashion. "IS IT A MACHINE" BEATS "IS IT MY WORLD."** *(Domain still
+  decides between two machine-shaped candidates; it no longer decides against one. `SELECTION ≠ PERSISTENCE`
+  still stands — a machine in a dull domain must still be tolerable in year three.)*
+  ★★ **AND THE EVIDENCE CLASS MATTERS: every other constraint in this file is STATED — she was asked and
+  answered. This one is REVEALED — she was shown ten things and chose. What someone picks from a real list
+  beats what they say in the abstract.** See `THE_MACHINE_TEST.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
