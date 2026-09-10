@@ -1351,6 +1351,37 @@ strangers' dead parents, alone, in year three?"**
   answered. This one is REVEALED — she was shown ten things and chose. What someone picks from a real list
   beats what they say in the abstract.** See `THE_MACHINE_TEST.md`.
 
+- **★★★ PROJECT CLIMATE 2.0 — A FULLY-WRITTEN EXTERNAL PLAN, VERIFIED AND KILLED, 10 Sep. A supplied plan
+  arriving polished is not evidence — it gets the same primary-source standard as anything else.** Founder's
+  offer: real capital and time for the RIGHT brand idea; corrected same day — *"she can start the brand for
+  3000 usd... more of it is padded."* Both questions were run. **THE REBUILT US$3.000-CEILING BUDGET: seven of
+  nine lines really were padding (R$25–40k → R$15,3–22,6k, central ≈R$18k) — the founder's instinct was right.
+  The one line that does NOT compress: INITIAL FINISHED INVENTORY, because Hibiscus's own site confirms 500
+  units is a real, structural, stick-specific MOQ** — at the plan's own unverified R$24/unit that alone
+  consumes 77% of the entire ceiling. **★★★ THE CATALOGUE SCISSORS, FIRING AT FULL STRENGTH: 64 results for
+  "stick finalizador cabelo" and 30 for "stick anti frizz cabelo" on Amazon.com.br ALONE — not even TikTok
+  Shop, the plan's channel — 20–25+ distinct brands, prices clustering R$88–300 (ABOVE the plan's own R$78–120
+  range), 47 of 64 listings carrying a visible review count up to 1.444.** The plan's own five-competitor table
+  was a favourably-selected slice of a shelf an order of magnitude larger and already saturated. **★ A SECOND
+  FABRICATED STATISTIC, independently re-checked by me: the plan claims Hidratei's stick shows "more than
+  5.000 ratings"; the real count is ~350 (363 via schema.org, 346 via a fresh independent check) — off by an
+  order of magnitude, the file's fourth-plus caught fabrication, this time arriving in someone else's polished
+  document rather than an agent's own output.** ⚠ **TWO LIVE BLOCKERS INDEPENDENT OF THE MARKET: (1) RDC
+  814/2023's "pomada" trigger is UNVERIFIABLE for a stick specifically — every named competitor calls its
+  product a "stick," never a "pomada," almost certainly deliberately, and a wrong guess costs R$5.229–7.262,
+  a third to half the ceiling, not in the budget at all. (2) A GENUINE COLLISION WITH C3: RDC 894/2024 art. 46
+  §1º forbids outsourcing cosmetovigilance to an autonomous third party but does NOT reserve the role to a
+  licensed council — art. 20's bar is "formação adequada… nível técnico ou superior." IF Sol does not qualify,
+  the role needs an EMPLOYEE, which C3 forbids outright, and whether "find the money and time" also silently
+  lifts C3 was never asked.** Four of five kill-laws fire (free front door — TRESemmé already owns the
+  humidity-tested narrative at scale; observed-price ceiling; catalogue scissors; replacement-cost ceiling —
+  the plan's own "moat" is empty at launch by construction). **Comfort/C8 passes, but thinly: beauty is
+  genuinely her domain, yet the plan draws on no proprietary insight from her modelling background specifically
+  — it fits her world without using what she knows about it.** ⇒ **NO-GO on the plan as written.** One narrow
+  gap earns diligence, not a PO: no stick-format competitor pairs portability with a real instrumentally-
+  substantiated humidity claim — but it needs unbudgeted testing spend, no durable moat, and may worsen the
+  RDC 814 risk rather than avoid it. See `THE_PROJECT_CLIMATE_VERDICT.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
