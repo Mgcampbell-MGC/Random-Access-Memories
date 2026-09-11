@@ -127,3 +127,50 @@ Sources fetched today: `planalto.gov.br` (Lei 14.133 arts. 4, 75, 141; Decreto 1
 15.266/2025; Decreto 13.106/2026 arts. 2–33; LC 123 arts. 44–48, Anexo I), `gov.br/compras` (IN 67/2021 art.
 7), `dadosabertos.compras.gov.br` (modulo-pesquisa-preco, modulo-contratacoes, modulo-material),
 `pncp.gov.br/api`, `kalunga.com.br`, plus Effecti/Mattos Filho/Conjur notes on Sicx status (secondary).
+
+---
+
+## 8. "Factoring takes care of this" — measured, 11 Sep 2026
+
+**Half right, and the half that is right is bigger than the founder's version of it.** The federal government
+runs the factoring itself: **AntecipaGov** (`antecipagov.comprasnet.gov.br`, MGI/SEGES), free to the supplier,
+banks and fintechs credentialed by edital (Edital 7/2025, Nov 2025), **IN 82/2025 extended it to state and
+municipal suppliers** (secondary: gov.br/compras news). Mechanics from the portal's own help page:
+
+- **What is anticipated:** *"contratos ou empenho(s) com força de contrato"* — an active contract or an
+  empenho with force of contract; the portal tracks *valores liquidados* (delivered, NF issued) and *a liquidar*.
+- **Ceiling:** *"O valor da operação de crédito não poderá exceder a 70% do saldo a receber atualizado."*
+- **Repayment:** the UASG pays the bank directly into a blocked linked account (*Termo de Vinculação de
+  Domicílio Bancário*). The supplier never touches the money — which is why a NEW company qualifies: the
+  bank's counterparty is the federal treasury, not her balance sheet.
+- **Cost:** platform fee charged to the institution 0,17–0,42% of the operation (Edital 485/MGI); interest set by
+  each institution's proposal — **UNVERIFIED band; private public-receivable factors quote ~1,5–4%/month**.
+- **⚠ Speed, from the same page:** UASG review **10 business days** → bank proposals **15** → selection **5** →
+  formalisation **20** → bank-account registration **2**. **Up to ~52 business days for a first operation.** It
+  is built for CONTRACTS WITH BALANCES (a 12-month ata de registro de preços, a term supply), not for a R$1.790
+  dispensa line paid in 30 days.
+
+### What factoring does and does not move — the cycle arithmetic
+
+Monthly shipped capacity ≈ capital in flight × 30 ÷ cycle days (pay converter → cash back).
+
+| Configuration | Cycle days | Capacity on R$12k in flight | Gross margin at 25% |
+|---|---|---|---|
+| Prepay converter, federal buyer pays day 40–50 | ~45 | ≈ R$8.000/month | ≈ R$2.000 |
+| + factoring of the attested NF (advance ~day 15–20) | ~18 | ≈ R$20.000/month | ≈ R$5.000 − ~2% factoring |
+| + converter net-30 (after 2–3 clean orders) **and** factoring | ≤ 0 | **capital-free — bounded by supplier credit line, not by her cash** | the whole margin |
+| Almir's observed level | — | R$30.000/month shipped | — |
+| The bar (≈R$50–60k shipped at 20–25%) | — | needs ≈R$40–60k in flight **or** supplier terms | — |
+
+⇒ **Factoring closes the POST-delivery leg (the state's 30–45 days) and roughly doubles-to-triples capacity. It
+does nothing for the PRE-delivery leg — the converter must still be paid before the state has anything to
+attest — and that leg is closed only by supplier credit.** The sequence that makes the business capital-free
+is therefore: (1) first orders prepaid inside R$12k, small and federal; (2) factor the attested NFs from order
+one; (3) convert two or three clean deliveries into net-30 from the converter; (4) move onto term contracts
+(atas de registro de preços) where AntecipaGov's 70%-of-balance line finally fits its own timeline. **The
+founder's instinct is right on direction; the mechanism that actually removes the cap is the converter's
+credit, and factoring is what earns it.**
+
+⚠ **And run the margin test before the cost:** 2–4% a month of revenue is a rounding error on a specified
+ribbon at 30–70% gross and fatal on commodity thermal paper at ~8%. Factor the specified lines; never the
+commodity ones.
