@@ -11,6 +11,18 @@ every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 > is the family the 19 Aug raise killed by fiat: hand-made units, the two candidates designed at this target (64,
 > 66), the book family, CONFERÊNCIA DE CRÉDITO, and BRAZIL DESK. **No candidate below has a validated buyer.**
 
+## ★ A FORNECEDORA — FIELDTAG GOV transposed to Brazil, measured 11 Sep 2026. Full file: `THE_FIELDTAG_BRASIL.md`
+
+**A SICAF-registered ME selling a narrow, data-picked catalogue of specified consumables to federal buyers by
+pregão/dispensa, drop-shipped from two converters, credentialed on Sicx the day its first edital opens.** Passes
+all three limbs of the machine test; distribution is statutory (IN 67/2021 art. 7 auto-email · LC 123 art. 48 I
+exclusivity ≤R$80k · Sicx ranking). **Proof: two one-person operators already run the exact niche — P H P de
+Freitas Rodrigues R$1,78M/yr, Almir Guerieri R$365k/yr (PNCP, 12 months).** Government pays a median R$11,84 for
+a 110×74 ribbon that retails at ≈R$5,12. **Binding constraint: working capital — R$15.600 carries ~R$10–12k of
+goods in flight ⇒ R$2–4,5k/month gross margin until a converter extends credit; the bar needs R$40–60k in flight.**
+Sicx platform and first editais not yet published (rules in force 8 Sep 2026). **Cheapest test: SICAF
+registration (free, written) + pick three CATMAT lines by the four painel filters + two converter RFQs for net-30.**
+
 ## ★ THE FIVE — 11 Sep 2026, built from the parts bin, every anchor re-fetched. Full file: `THE_FIVE.md`
 
 **The founder's brief was "FIND AND BUILD, at least five." 112 agents decomposed 160 files into 344 verified

@@ -1403,6 +1403,28 @@ strangers' dead parents, alone, in year three?"**
   five for the third time.** `THE MACHINE TEST` sorted the five: #1 passes all three limbs; #2 fails limb 3
   (her hands on every unit) and is presented to the founder as that exact question, not hidden.
 
+- **★★★ THE DISPENSA ORACLE + SICX — 11 Sep 2026. THE BRAZILIAN STATE PUBLISHES WHO WON, AT WHAT PRICE, AND EMAILS
+  THE NEXT ORDER — AND A GOVERNMENT E-COMMERCE CATALOGUE CAME INTO FORCE THREE DAYS AGO.** Measured today:
+  **8.395 lines won by *Empresário Individual* suppliers in 12 days (≈250k/yr), median R$932/line** — goods resale by
+  tiny firms is the dominant shape of small-value procurement. FIELDTAG's own niche (thermal media, 10 CATMAT lines)
+  is **R$52,3M/yr federal, 4.733 lines, 1.129 by dispensa**, and two named one-person operators already run it:
+  **P H P de Freitas Rodrigues R$1,78M/yr (196 lines, median R$4.189) and Almir Guerieri R$365k/yr (104 lines)** —
+  both mostly by PREGÃO, bid by the platform's own robot (IN 73/2022 art. 19). Rails FIELDTAG must buy are free
+  here: PNCP + painel de preços (winner's name and price), SICAF + **IN 67/2021 art. 7 auto-email**, **LC 123 art.
+  48 I — items ≤R$80k EXCLUSIVE to ME/EPP**, dispensa ≤**R$65.492,11** (Decreto 12.807/2025). ★ **AND THE
+  CLOCK-START: Decreto 13.106/2026 (Sicx) in force 8 Sep 2026** — permanent credentialing, per-locality offers,
+  automated ranking with a statutory duty to *"mitigar a concentração de mercado"*, **supplier reputation as a
+  ranking input, starting at zero for everyone**, payment on definitive receipt ≤10 days. Platform and first
+  editais NOT yet published. ⇒ **`S2 IS CLOSED` reopens for exactly one cell: DOMESTIC goods · PUBLIC buyer ·
+  Simples ME (4–7,3% on gross, no import, no card).** The binding constraint is **working capital, not demand:
+  R$15.600 carries ~R$10–12k of goods in flight; the bar needs R$40–60k or converter credit.** See
+  `THE_FIELDTAG_BRASIL.md`. ★ **Reusable tool: any candidate that sells a GOOD to the state can be sized, priced
+  and benchmarked against named competitors in thirty minutes from `dadosabertos.compras.gov.br`.**
+- **★ THE ORACLE'S NEGATIVE HALF: machine-made DIGITAL services are a thin slice of what the state buys in small
+  lots** — of 10.000 homologated service lines, transcription 2, captions 5, digitisation 1; federally, degravação
+  R$10M/yr (mixed with event video), editoração/diagramação R$8,5M, "acessibilidade" R$58M but it is LIVE LIBRAS
+  in booths. **"MOLDE PÚBLICO with a machine instead of hands" does not exist at bar-clearing size.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
