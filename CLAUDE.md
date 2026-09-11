@@ -1425,6 +1425,16 @@ strangers' dead parents, alone, in year three?"**
   R$10M/yr (mixed with event video), editoração/diagramação R$8,5M, "acessibilidade" R$58M but it is LIVE LIBRAS
   in booths. **"MOLDE PÚBLICO with a machine instead of hands" does not exist at bar-clearing size.**
 
+- **★★ ACOLHE — the newborn-kit niche, measured 11 Sep 2026: ≥600 municipal editais in 2026, median R$102k, 97%
+  municipal, annual re-tendering measured (Presidente Venceslau 2024/25/26, Porteiras 2025/26), 69 of 112 kit lines
+  reserved to ME/EPP, haircut estimate→award median 21% / p75 50%.** Two laws from it: **(1) THE DESK IS THE ASSET,
+  THE NICHE IS A PARAMETER** — a government-supply machine (scout → parse → BOM → quote → bid → fulfil → invoice)
+  serves thermal media to federal buyers and newborn kits to municípios from one SICAF registration; choose the
+  niche by cash cycle and comfort, not by building twice. **(2) MUNICIPAL RESULTS ARE NOT ON PNCP** — 15 of 109
+  closed kit items had a published award; the incumbent/price database must be built from Portal de Compras
+  Públicas, Licitanet, BLL and diários. ⚠ Factories bid the big lots directly (the R$414k award went to a
+  confecção); her space is the R$50–150k lot a factory will not chase. See `THE_ACOLHE_ASSESSMENT.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the

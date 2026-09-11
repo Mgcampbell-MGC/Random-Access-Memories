@@ -11,6 +11,16 @@ every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 > is the family the 19 Aug raise killed by fiat: hand-made units, the two candidates designed at this target (64,
 > 66), the book family, CONFERÊNCIA DE CRÉDITO, and BRAZIL DESK. **No candidate below has a validated buyer.**
 
+## ★ ACOLHE — newborn kits for municipal social assistance, measured 11 Sep 2026. Full file: `THE_ACOLHE_ASSESSMENT.md`
+
+**The same government-supply desk as A FORNECEDORA, pointed at a niche in her world.** PNCP: **≥600 newborn-kit
+editais in 2026, 97% municipal**, estimated median R$102k per tender (p75 R$308k), 23 of 44 sampled are SRPs with
+parcelled delivery; 69 of 112 kit lines carry ME/EPP cota or exclusivity; homologated kits R$162–1.036; haircut
+estimate→award median 21% (p75 50%). Plan's cited tenders: Curionópolis R$649.895 CONFIRMED (+R$672.980 twin),
+Carutapera R$320k→R$200k, Porteiras and Presidente Venceslau re-tender annually; Parintins/Boquim UNVERIFIED.
+**Factories bid the big lots; results are on PNCP for 1 closed item in 7; municipal cash is slow.** Verdict: a
+second NICHE on the FIELDTAG-BR desk, not a second company — comfort and size here, cash cycle there.
+
 ## ★ A FORNECEDORA — FIELDTAG GOV transposed to Brazil, measured 11 Sep 2026. Full file: `THE_FIELDTAG_BRASIL.md`
 
 **A SICAF-registered ME selling a narrow, data-picked catalogue of specified consumables to federal buyers by
