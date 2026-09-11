@@ -109,3 +109,62 @@ Sources fetched today: `pncp.gov.br/api/search`, `/api/pncp/v1/.../itens`, `/api
 `/api/consulta/v1/orgaos/.../compras/...`; `planalto.gov.br` (Lei 14.133 arts. 4, 75, 141; LC 123 arts. 44–48);
 MDS *Orientações Técnicas sobre Benefícios Eventuais no SUAS* and Decreto 6.307/2007 (via search summary —
 SECONDARY; the PDF should be grepped before the diaper clause is relied on).
+
+---
+
+## Addendum, 11 Sep 2026 — two corrections from the primary documents, and the private layer the founder added
+
+### 1. ★★ "KIT" IN THESE TENDERS USUALLY MEANS A PACK OF ONE ITEM, NOT AN ASSEMBLED LAYETTE — and it moves the unit price
+Re-measured on the same 112 item lines pulled for this assessment: **76 of 112 lines (68%) carry the word *kit*,
+but the median such line is R$63,54** (p25 R$28,58, p75 R$169,16). Reading the descriptions shows why — Santa
+Bárbara/MG buys *"KIT COM 05 UNIDADES DE BABADOR INFANTIL"* at R$46,91, *"KIT COM 05 UNIDADES DE BODY INFANTIL"*
+at R$66,49, *"KIT HIGIENE INFANTIL"* at R$40,85, *"KIT COM 03 PEÇAS – JOGO DE LENÇOL"* at R$70,44. **These are
+per-garment-type packs, not the assembled enxoval this assessment priced at R$161,80–1.035,95.** The itemised
+(non-"kit") lines sit lower still, median R$30,12.
+⇒ **The assembly value-add exists in fewer lines than the headline implied, and where it is absent she is
+reselling commodity baby clothing at menor preço against clothing wholesalers** — `THE CATALOGUE SCISSORS` on the
+component leg. The big assembled contracts are real (line totals to R$380.196, p75 R$36.600) but they are the
+minority shape.
+
+### 2. ★★ THE TENDER TYPE IS OFTEN "MENOR PREÇO POR ITEM", WHICH DISSOLVES THE KIT
+São Pedro do Iguaçu/PR's termo de referência, verbatim: **"A licitação deverá ser do tipo menor preço por item"**,
+for *"bens de consumo… utilizados na montagem de kit's de enxoval de bebê"* — the município buys the components
+and assembles the kit itself. Its whole purchase is R$22.900,80 across two annexes (a glove-hat-shoe set at
+R$18,99, a brush-and-comb set at R$6,10). **Where the TR says *por item*, there is no kit to assemble and no
+assembly margin; where it says *kit completo*, there is.** ⇒ **Read the tender TYPE, not only the object, before
+bidding — it is the same discipline as `THE TR IS THE PRODUCT`, one level down.**
+*(A related shape worth reading before the first bid: Jaguariúna/SP ARP 170/2025 awarded NOCKAUT COMERCIO three
+underwear lines totalling **R$3.774** inside a larger kit tender. Many suppliers each take a few lines. That is
+good news for a small entrant — she need not supply the whole kit — and bad news for ticket size.)*
+
+### 3. ★ A CHANNEL THIS ASSESSMENT MISSED: THE INTERMUNICIPAL CONSORTIUM
+**CIMAMS (Consórcio Intermunicipal, MG) holds a registro de preços for kit enxoval and makes it available to its
+member municipalities** — one auction, many buyers, no separate bid per município. Consortia are the cheapest
+route into the municipal market and were not in the original channel list. **Enumerate the consórcios
+intermunicipais de saúde/assistência in São Paulo, Minas and Paraná and read their ARPs before building a
+per-município bidding cron.** ⚠ It cuts both ways: whoever holds a consortium ARP holds that whole region, so a
+live ARP is a barrier where she is not the winner.
+
+### 4. ★★ THE PRIVATE LAYER — founder's direction, 11 Sep 2026: *"with the kit business we can do PRIVATE business as well, don't have to only be government contracts; we can add B2B as an additional layer later"*
+**Recorded as a design decision, and it is the right one structurally** — it attacks the exact weakness this
+assessment named. Public kits pay ≤30 days after an attested nota fiscal and need working capital of R$70–90k a
+month at the bar; private buyers pay on ordinary commercial terms and can pay on order. The same assembled unit,
+the same suppliers, no procurement cycle.
+**What already exists there, fetched today — this is a channel with occupants, not an empty field:**
+- **FirstHug** sells *"Kit Maternidade Para Empresas"*, assembled to the company's demand, delivered to the
+  company or to each mother's home with shipping included nationwide.
+- **Brindes Demais** runs a personalised maternity-bag category on a platform of *"mais de 300 fornecedores"*.
+- **Meu Mundo Personalizado** sells personalised maternity kits retail.
+⇒ **The B2B leg is real and the buyers are employers, health-plan gestante programmes and private maternities.**
+Before counting it in any arithmetic, three checks, all written and all free: **(a)** price against FirstHug's
+published corporate offer, not against the municipal clearing price, because the private buyer pays for
+assembly and delivery-to-home that the município does not want; **(b)** ask whether the buyer is procuring a
+GIFT (a marketing decision, relationship-sold, with a brand on it — closer to `THE ATTENTION TRILEMMA`'s ad-sales
+blade than to a supply contract) or a BENEFIT (a rule-driven repeat purchase); **(c)** run `THE CONSUMPTION-CLOCK
+TEST` on it — an employer's maternity kit fires once per employee birth, which is exogenous and non-stretchable,
+so it passes if the employer population is large enough to give a steady flow.
+**Sequencing stands as the founder put it: public first, private as a second layer.** The public leg supplies the
+SICAF registration, the supplier relationships and the assembled-kit specification; the private leg then reuses
+all three with a better cash cycle. **Do not let the private leg become a consumer brand** — that is Project
+Climate's grave, and the catalogue shelf there is already deep.
+

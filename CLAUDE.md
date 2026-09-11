@@ -1536,8 +1536,29 @@ strangers' dead parents, alone, in year three?"**
   median dispensa line of R$1.500. A minimum order above the typical line is working capital spent on stock nobody
   ordered — the inventory veto through the back door.
   ⇒ **A niche passes only if the pushed pool is large enough, no self-serve shelf undercuts the state's median, some
-  suppliers demonstrably reach her volume, and the supplier's MOQ fits one order.** Kits (ACOLHE) and thermal media
-  (FIELDTAG) pass; recognition objects fail on all four.
+  suppliers demonstrably reach her volume, and the supplier's MOQ fits one order.** Recognition objects fail all four.
+  ⚠ **AND THE SCREEN HAS A KNOWN BLIND SPOT, measured the same day: the federal painel carries only 38,3% municipal
+  lines on kit components, while ACOLHE's own editais are 97% municipal.** So for a MUNICIPAL niche the painel
+  undercounts the pool and the screen must be run on PNCP items instead. **My claim that "kits pass" was therefore
+  unverified when written; running it properly produced two corrections to ACOLHE** — 68% of its lines say *kit* but
+  the median such line is **R$63,54**, a five-piece garment pack rather than an assembled layette, and the TR often
+  says *"menor preço POR ITEM"*, in which case the município assembles the kit itself and there is no assembly
+  margin at all. ⇒ **READ THE TENDER TYPE, NOT ONLY THE OBJECT** — one level below `THE TR IS THE PRODUCT`.
+- **★★ THE PRIVATE LAYER ON A GOVERNMENT-SUPPLY NICHE — founder's direction, 11 Sep 2026: the kit desk may sell
+  B2B as well, public first and private second.** Structurally it attacks the desk's named weakness: public pays
+  ≤30 days after an attested nota fiscal and needs R$70–90k/month of working capital at the bar, while a private
+  buyer pays on commercial terms for the same assembled unit. **It is a channel with occupants, not an empty
+  field** — FirstHug sells corporate maternity kits assembled to demand and shipped to each mother's home,
+  Brindes Demais runs a personalised maternity-bag category over "mais de 300 fornecedores". ⇒ **Three written
+  checks before it enters any arithmetic: price against the private incumbent's published offer rather than the
+  municipal clearing price; establish whether the buyer treats it as a GIFT (relationship-sold marketing, the
+  attention trilemma's ad-sales blade) or a BENEFIT (rule-driven repeat); and run `THE CONSUMPTION-CLOCK TEST` —
+  one kit per employee birth is exogenous and non-stretchable, so it passes given a large enough employer pool.**
+  ⚠ **Never let the private leg drift into a consumer brand — that is Project Climate's grave.**
+- **★ AND A CHANNEL THE ACOLHE ASSESSMENT MISSED: THE INTERMUNICIPAL CONSORTIUM.** CIMAMS holds a kit-enxoval
+  registro de preços available to all its member municípios — one auction, many buyers. **Enumerate the consórcios
+  and read their ARPs before building a per-município bidding cron**; a live ARP held by someone else locks that
+  whole region.
 
 ## The test design that works
 
