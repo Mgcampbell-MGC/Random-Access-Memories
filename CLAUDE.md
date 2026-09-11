@@ -1382,6 +1382,27 @@ strangers' dead parents, alone, in year three?"**
   substantiated humidity claim — but it needs unbudgeted testing spend, no durable moat, and may worsen the
   RDC 814 risk rather than avoid it. See `THE_PROJECT_CLIMATE_VERDICT.md`.
 
+- **★★★ THE PARTS-BIN RUN — 11 Sep 2026. RULE 2 RUN BACKWARDS PRODUCED FIVE BUSINESSES IN ONE PASS WHERE FOUR
+  WEEKS OF WHOLE-CANDIDATE GENERATION PRODUCED ZERO.** 160 files decomposed into **344 verified components**
+  (buyer populations 41 · distributions 57 · price anchors 85 · machines 46 · non-commissionable inputs 30 ·
+  access rights 32 · revenue mechanics 53), recombined across candidates that had never been paired: **45
+  assemblies, 0 STRONG, 27 PROMISING.** Not one of the five is a candidate that survived intact — every one is a
+  component verified true inside a candidate that died for an unrelated reason (the CNES register from the dead
+  dental harvest · the mould cell from O MOLDE · the RFC 3161 seal from GateLedger · the "asking ≠ clearing"
+  law from GARIMPO · the free ApexBrasil list that KILLED the maker desk and COMPLETES the quote desk).
+  ⇒ **WHEN A HUNT RETURNS ZERO, MINE THE GRAVEYARD FOR PARTS BEFORE GENERATING AGAIN.** See `THE_FIVE.md`.
+  ★ **And the re-verification found three errors in a 112-agent verdict, none fatal, all of one kind — a
+  number read without its UNIT:** (1) **STATE THE BILLING PERIOD** — Via Consulti's R$1.500 is a QUARTERLY plan
+  (annual R$5.000 = R$417/month); a "monthly" comparable was 3× overstated. (2) **NAME THE TIER A COGS BELONGS
+  TO** — Printi's R$0,75–4,73 is the POSTER ladder; the framed quadro is R$58,62–93,49; the judge welded the
+  cheap COGS to the expensive price. (3) **A MASK IS PER-PUBLISHER, NOT PER-PLATFORM** — Superbid event 234911
+  masks 60/60 closed lots; a different auctioneer's lot on the same site shows the hammer for five weeks, then
+  ages it out to *"Lance inicial"*. **Test ≥3 publishers before claiming a platform-wide property.**
+- **★★ THE FARM WAS A TIE-BREAKER, AS INSTRUCTED, AND THE RESULT CONFIRMS IT.** Two of five use it as vocabulary
+  (*tratores, arremate, safra, cooperado*); zero use it as a source. **Fashion and modelling produced zero of
+  five for the third time.** `THE MACHINE TEST` sorted the five: #1 passes all three limbs; #2 fails limb 3
+  (her hands on every unit) and is presented to the founder as that exact question, not hidden.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the

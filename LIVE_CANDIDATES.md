@@ -1,4 +1,4 @@
-# LIVE CANDIDATES — the board as at 3 Sep 2026 (Scenario B, hours doubled)
+# LIVE CANDIDATES — the board as at 11 Sep 2026 (THE FIVE on top; Scenario B, hours doubled)
 
 **Target reset 1 Sep: US$2.000–2.500/month net. HOURS DOUBLED 3 Sep to ~20 h/week = ~87 h/month.**
 **Her required realisation therefore falls from US$51–63/h to US$25–32/h, and the field-stop floor from
@@ -10,6 +10,25 @@ every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 > **The cut reverses arithmetic kills only. 41 of 42 hunt kills were structural and stay dead.** What came back
 > is the family the 19 Aug raise killed by fiat: hand-made units, the two candidates designed at this target (64,
 > 66), the book family, CONFERÊNCIA DE CRÉDITO, and BRAZIL DESK. **No candidate below has a validated buyer.**
+
+## ★ THE FIVE — 11 Sep 2026, built from the parts bin, every anchor re-fetched. Full file: `THE_FIVE.md`
+
+**The founder's brief was "FIND AND BUILD, at least five." 112 agents decomposed 160 files into 344 verified
+components and recombined them; a judge ranked five; I re-fetched every load-bearing number.** One anchor
+corrected 3× downward (Via Consulti is quarterly), one COGS conflation fixed (Printi poster vs framed), one
+mask claim bounded (Superbid masks per-auctioneer). No candidate died. **This is the board now.**
+
+| # | Business | Shape | Units at price | Anchor, re-verified 11 Sep | Cheapest test |
+|---|---|---|---|---|---|
+| **1** | **A CLÍNICA** — the built scan pipeline, wholesaled to Brazilian imaging clinics *(founder's own pick + a Brazilian channel)* | S5 machine via channel · export or domestic | ~70 units/mo at US$65 wholesale (130 at US$40) | **Alta Diagnósticos R$350** (3D tier) · **CNES 75,8% email, n=600** · COGS US$21,32 (Lulu, UK/US) | **20 real 2D exports → stopwatch; PASS ≤3 min & ≥18/20** — written, never run |
+| **2** | **MOLDE PÚBLICO** — cast teaching/simulation models sold by *dispensa de licitação* | S5 object · domestic · statute-distributed | 9–16 units/mo at R$958–1.450 | **compras.gov.br PDM 9837 dispensa: 197 items, median R$958, R$613.916/yr — exact**; single-person CNPJs already winning; **IN 67/2021 art. 7 verbatim** | SICAF registration; price 2 silicone lines from a supplier quote. ⚠ **Fails limb 3 of `THE MACHINE TEST` (her hands) — the founder's question** |
+| **3** | **A COTAÇÃO** — 20-maker RFQ pack + the domestic sample order a foreigner cannot place | S6-ish desk · export USD · chamber-referred | 3 Quote Packs/mo at US$950 clears the bar | **EpicSourcing US$499 + 15% entry tier** (re-fetched; "$500–1.500" amended) | one real spec to 20 makers in Portuguese; PASS ≥8 replies with a number |
+| **4** | **O MARTELO** — sealed clearing-price archive for used farm machinery | S3/S4 archive · domestic · her vocabulary | 20 extracts × R$390 + subs — **MARGINAL after correction** | **Superbid evento 234911: 60/60 masked**; hammer visible on other auctioneers for weeks then aged out; **Via Consulti R$1.500 = QUARTERLY (R$417/mo annual)** | free bidder account → 5 closed lots; bank events 2 weeks; counsel on Terms §9.2 |
+| **5** | **A TERRA VISTA DE CIMA v2** — cooperative tenure insert from SICAR + Sentinel-2 | S5 machine via channel · domestic · farm-legible | insert R$8–15/member × 3–4 coops; framed upsell R$220–260 | **Printi poster R$4,73→0,53; framed R$93,49→58,62** (two tiers) · **MyTopo US$49,95** · Copasul programme UNVERIFIED by me | 6 coop directors: "what did you print for members last safra, at what cost per member?" |
+
+**Runners-up from the same run (27 PROMISING, 0 STRONG):** DEGRAVAÇÃO (council-session transcription by
+tender, CATSER 13749 median R$2.000) · 31 DE DEZEMBRO (FDA SPL acceptance) · O SELO DO LOTE · PRAÇA · A CONTA ·
+O SEU OLHAR (the scan pipeline repointed at the retina). Full shortlist in the run output.
 
 ## ⚰ CARTA — CROWNED AND KILLED ON THE SAME DAY, 3 Sep 2026
 
