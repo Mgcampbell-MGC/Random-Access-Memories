@@ -316,3 +316,48 @@ change the verdict above unless the fetch does.**
 
 ---
 *Scratch evidence for every fetch above is under the session scratchpad (`hunt2/`, `verify_*/`): Anatel's register CSV, FDA's DMF list, JUCESP VRE query results, the Cebraspe results PDF, the Siscomex calendar PDFs, the DOJ IFR, the compras.gov painel pulls and PNCP award pulls for clipping, and every vendor page quoted.*
+
+---
+
+## Appendix, 18:40 UTC — the workflow's one STRONG grade, verified and demoted
+
+The resumed workflow graded **A PLACA** (recognition objects — plaques, trophies, medals, insignia — made on a
+vendor's machine and sold to the state by dispensa) **STRONG**, the only STRONG in the hunt. Its scorecard passed
+eight of nine gates and failed only G7 (no moat). Its own cheapest test named the decisive unknown: *"vendor
+WHOLESALE is UNVERIFIED — every vendor site is quote-only."* I measured it. **It is the government-supply desk on a
+niche whose pushed slice is too small and whose large slice is a reverse auction against machine owners. Demoted.**
+
+**The market, measured by me from the price panel (CATMAT PDMs 1453 TROFÉU · 1451 MEDALHA · 8382 INSÍGNIA ·
+1505 PLACA SINALIZADORA, 1 Sep 2025 – 11 Sep 2026, `dadosabertos.compras.gov.br/modulo-pesquisa-preco/1_consultarMaterial`):**
+
+| | |
+|---|---|
+| Lines / suppliers | 4.916 lines · **760 distinct suppliers** · R$76,8 M |
+| By modality | pregão 3.569 lines / **R$70,1 M (91% of value)** · dispensa 1.276 / **R$5,67 M (7,4%)** · inexigibilidade 71 / R$1,0 M |
+| Trophy unit price | median **R$100,00**, p75 R$240 (n=1.590) |
+| Medal unit price | median **R$12,50**, p75 R$98,75 (n=1.804) |
+| Dispensa line value | median **R$1.500**, p75 R$4.177 |
+| Supplier concentration | median supplier-year **R$7.628**; **42% of suppliers won exactly one line all year**; only **4 of 760** won ≥10 lines a month; 89 (11,7%) earned ≥R$148k |
+
+**★ The kill is arithmetic, and it is the market-multiple rule.** At 50–60% COGS the reseller's bar is
+**R$24–40k/month of billings ≈ R$360–480k/year**. The dispensa pool — the slice the state's own robot e-mails to
+SICAF suppliers — is **R$5,67 M a year nationally across all four codes**, and the screen's own measurement puts the
+open *com disputa* share at 38% ⇒ **≈R$2,16 M**. She would need **17–22% of every open dispensa real in Brazil for
+trophies, medals, insignia and signage plates.** The 91% of value that sits in pregão is the robot reverse auction,
+where the local shop with the engraver and the freight advantage sets the price.
+
+**★ And the catalogue scissors fire on the object itself, with a published number.** Afixgraf sells a
+**personalised acrylic trophy self-serve at R$134,60–160,90, "5 dias úteis + envio"**, no quote, no conversation
+(`loja.afixgraf.com.br/acrilico/trofeus-em-acrilico.html`, fetched today). **58% of the 1.590 trophy lines the state
+awarded cleared BELOW that retail price.** A reseller without an engraver buys above the median at which the state
+buys. The winners clear below retail because they hold the machine — the screen's own CNAE check found 34% of
+winners are makers or gráficas. Medals are worse for a middleman: the foundries quote only, at **100 units minimum
+per reference** (Titan, Premiar, Faros, Empório dos Metais), against a median dispensa line of R$1.500.
+
+**What survives from it, and it is not nothing.** The push is real and now measured at the line level: 1.276
+dispensa lines a year on these codes, 703 of them federal. **The desk is right; this niche is wrong** — it sells a
+catalogue object at a price a self-serve shop already beats. `THE DESK IS THE ASSET, THE NICHE IS A PARAMETER`
+holds, and the parameter to choose is a good with a spec a machine can meet and no self-serve shelf above the
+clearing price. ACOLHE's kits and FIELDTAG's thermal media both pass that filter; recognition objects do not.
+
+**Twelve verified, twelve dead. The verdict above is unchanged.**

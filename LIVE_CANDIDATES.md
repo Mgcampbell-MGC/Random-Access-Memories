@@ -17,8 +17,12 @@ every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 > 2027/2028; CivicPlus–Allyant inside the clerk's contract) · **O CATÁLOGO / DUIMP** (mandatory since 27 Apr 2026;
 > despachantes "fazendo free") · **O EMBRIÃO** (≈190 clinics, ≈10–20k positive betas/yr, image and video given free,
 > LGPD art. 11 §4) · **GÔNDOLA** (8 of 15 tickers block; Data Market R$999/month; public endpoint). **A MARCAÇÃO**
-> demoted: 27 attested SciELO providers incl. offshore giants. **One name, as asked: A CLÍNICA stays #1 — its 20-scan
-> test is still the next hour.** Laws and every URL: `THE_GREAT_HUNT.md`.
+> demoted: 27 attested SciELO providers incl. offshore giants. **A PLACA** — the workflow's only STRONG — verified and
+> demoted the same evening: the dispensa pool it depends on is **R$5,67 M/yr nationally** (7,4% of the category's
+> value; the other 91% is the pregão robot auction), so she would need **17–22% of the entire open national flow**,
+> and a personalised acrylic trophy sells self-serve at **R$134,60** while **58% of the state's trophy lines clear
+> below that**. **One name, as asked: A CLÍNICA stays #1 — its 20-scan test is still the next hour.** Laws and every
+> URL: `THE_GREAT_HUNT.md`.
 
 > ### THE HONEST HEADLINE
 > **The cut reverses arithmetic kills only. 41 of 42 hunt kills were structural and stay dead.** What came back
