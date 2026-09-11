@@ -1469,6 +1469,31 @@ strangers' dead parents, alone, in year three?"**
   then check the TR and the free state machine (ALRN cedes the ata generator; streaming vendors bundle it at
   R$130/month) before anything else.
 
+- **★★★ THE NICHE SCREEN FOR THE GOVERNMENT-SUPPLY DESK — four numbers, thirty minutes, run it BEFORE choosing what
+  the desk sells.** Derived by killing A PLACA, 11 Sep 2026, on exactly these four. For any candidate good, pull
+  12 months from `dadosabertos.compras.gov.br/modulo-pesquisa-preco/1_consultarMaterial?tipo=codigoPdm&codigo=…`
+  (find the PDM by grepping `3_consultarPdmMaterial`, 19.500 PDMs, paged 500 at a time) and compute:
+  **(1) THE PUSHED POOL, NOT THE MARKET.** Split value by modality. Only **dispensa** carries the IN 67/2021 art. 7
+  auto-e-mail; pregão is a robot reverse auction against whoever holds the machine and the freight. For recognition
+  objects the market was R$76,8 M and **the dispensa pool was R$5,67 M — 7,4%.** Size her share against the pushed
+  pool times the open-dispute share (~38%), never against the market. **If she needs more than ~5% of it, stop**
+  (`THE MARKET-MULTIPLE RULE`).
+  **(2) THE RETAIL-VERSUS-CLEARING CHECK — the cheapest kill in the set.** Find ONE self-serve price for the finished
+  object and compare it with the distribution of unit prices the state actually paid. A personalised acrylic trophy
+  is R$134,60 buy-now with 5-day delivery at Afixgraf, and **58% of the state's trophy lines cleared below it** ⇒ a
+  reseller buys above the median at which the state buys. **If a self-serve shelf sits at or below the state's
+  median, there is no seat for a middleman** — the winners hold the machine (34% of them are makers).
+  **(3) SUPPLIER CONCENTRATION AS A CAPACITY PROOF.** Count distinct winners and their annual take. Recognition
+  objects: **760 suppliers, median supplier-year R$7.628, 42% won exactly one line all year, and only 4 of 760 won
+  ≥10 lines a month.** A market where nobody reaches the volume she needs is telling you the volume is not winnable,
+  not that it is unoccupied.
+  **(4) THE MOQ AGAINST THE LINE SIZE.** Medal foundries quote only at **100 units minimum per reference** against a
+  median dispensa line of R$1.500. A minimum order above the typical line is working capital spent on stock nobody
+  ordered — the inventory veto through the back door.
+  ⇒ **A niche passes only if the pushed pool is large enough, no self-serve shelf undercuts the state's median, some
+  suppliers demonstrably reach her volume, and the supplier's MOQ fits one order.** Kits (ACOLHE) and thermal media
+  (FIELDTAG) pass; recognition objects fail on all four.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
