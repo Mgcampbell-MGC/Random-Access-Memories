@@ -1461,9 +1461,54 @@ strangers' dead parents, alone, in year three?"**
   JUCESP seniority because the reverse auction collapsed to 0%.
 - **★★ THE CLOCK MOVED — date-check the regulator's page before believing a deadline, even one in this file.** DOJ
   pushed ADA Title II to 26 Apr 2027 / 2028 on 20 Apr 2026 and may loosen the rule; DUIMP became mandatory on
-  27 Apr 2026, so its "coming" deadline was five months behind. ★ **LGPD art. 11 §4 is a channel kill for any
-  health-data keepsake routed through the provider** — A CLÍNICA's clinic contract must be an *operador*
-  agreement with the frame de-identified before it leaves the clinic; add to its first-week test.
+  27 Apr 2026, so its "coming" deadline was five months behind. ★ **LGPD art. 11 §4 — MY OWN CLAIM, CORRECTED THE SAME
+  DAY AT THE STATUTE.** I wrote that §4 is "a channel kill for any health-data keepsake routed through the
+  provider." **It is not. §4 prohibits `a comunicação ou o uso compartilhado ENTRE CONTROLADORES`** — it does not
+  reach a controller instructing an **operador** (art. 5 VII + art. 39), and ANPD's own *Guia de Agentes de
+  Tratamento* ¶35–36 gives the worked example (a company hires an advertising agency to make creative material
+  from people's images; the agency is an operador). **The operador structure is still the right one — but because
+  it keeps §4 from ever being engaged, not because §4 forbids the transfer.** Three teeth survive and they are
+  sharper than the original claim: the characterisation is **functional, not contractual** (Guia fn. 9, adopting
+  EDPB 07/2020 — "o status legal… deve ser determinado por suas ações concretas… ao invés da designação formal…
+  em um contrato"), so a sample portfolio of real scans, model training on retained frames or one direct sale
+  makes her a **controlador**; once she is, **§4 is an outright prohibition with NO consent cure** (the
+  legislator wrote one in art. 7 §5 for ordinary data and deliberately did not repeat it in art. 11 §4), and a
+  keepsake is not `prestação de serviços de saúde… serviços auxiliares de diagnose e terapia`; and **stripping
+  headers is PSEUDONYMISATION, not anonymisation** (art. 13 §4 — the business needs the job-ID mapping to reach
+  the right mother), so "she never sees an identified record" does not exit the LGPD. ⚠ **And a budget item found
+  with it: Resolução CD/ANPD 19/2024's standard-contractual-clause deadline EXPIRED 23 Aug 2025, so a foreign
+  print or hosting leg is a live art. 33 non-compliance from day one — the US print COGS anchor is void; re-quote
+  in Brazil before setting the wholesale price.**
+- **★★★ THE COUNTER CANNOT SAY THE ONE SENTENCE THAT SELLS IT — a distribution kill wearing a compliance costume,
+  found by checking the CHANNEL's rulebook instead of hers.** Hunting A CLÍNICA's data risk turned up a bigger one
+  in the medical council's rules, which bind the CLINIC: **Res. CFM 2.336/2023 art. 13 VIII** bans `anunciar
+  abatimentos e descontos em campanhas promocionais, sendo proibido vincular as promoções a vendas casadas,
+  premiações e outros`, and the resolution's own gloss names the banned idiom — `"faça a consulta e ganhe o
+  exame"`. *"Faça seu ultrassom aqui e leve o quadro do seu bebê"* is that sentence. **CEM art. 75** forbids
+  exhibiting `imagens que os tornem reconhecíveis… mesmo com autorização do paciente`, and **Res. 2.336/2023 art.
+  14** adds `é vedada qualquer edição, manipulação ou melhoramento das imagens` — a literal description of the
+  deliverable — so the clinic can never display a real example. **CEM Princípio IX + art. 58** (`O exercício
+  mercantilista da medicina`) hang over a diagnostic clinic running a souvenir counter as a general clause.
+  ⇒ **The channel cannot advertise it, cannot show it, and its counsel has a mercantilism argument for refusing.**
+  *(The predicted risk did NOT fire: the frame comes from a routine prenatal scan, exactly as the incumbent
+  structures it, and no CFM or ANVISA rule restricting non-diagnostic obstetric ultrasound exists in Brazil —
+  searched and not found. The danger is drift, i.e. a clinic booking a scan BECAUSE someone wants the print.)*
+  ⇒ **ASK OF EVERY CHANNEL CANDIDATE: what may the PARTNER legally say and show about this? A partner forbidden
+  to advertise or display the product is a shelf, not a channel.**
+- **★★ THE PATIENT CAN CARRY HER OWN DATA, AND IT IS AN ESCAPE HATCH THAT COSTS THE BUSINESS ITS THESIS.** CFM
+  1.821/2007 (`os dados ali contidos pertencem ao paciente`), CFM 1.605/2000 art. 6, CFM 2.314/2022 art. 3 §6
+  (`É direito do paciente… solicitar e receber cópia em mídia digital`) and LGPD art. 18 II/V give the mother an
+  unconditional right to her own frame. **A patient-initiated transfer takes art. 11 §4 off the table entirely** —
+  and converts a wholesale business into direct-to-consumer, which is the free-front-door acquisition problem this
+  file has killed candidates over, and puts her in the customer relationship `THE MACHINE TEST` limb 3 forbids.
+  **Keep it as a fallback, never as the plan.**
+- **★ AND A PREMISE OF THE #1 CANDIDATE IS AN INFERENCE, NOT A MEASUREMENT.** `THE_FIVE.md` says the clean
+  overlay-off frame is "already normal practice at the one incumbent in this channel." That came from one
+  marketing page. Alta's own page says `é necessário que o rosto do bebê esteja visível durante o exame para que
+  o médico consiga capturar uma boa imagem e enviá-la`, and the CBR/FEBRASGO consensus requires every documented
+  frame to carry written structure labels — **so the clean frame is a DELIBERATE EXTRA CAPTURE by the physician,
+  a workflow ask on the clinic, not something already sitting in the record.** Ask it in writing alongside the
+  20-scan test; a PASS on the pipeline with a FAIL here is a machine with nothing to feed it.
 - **★ RULE 1 FIRED INSIDE THE HUNT BUILT TO BREAK IT:** session transcription arrived from four of ten lenses. The
   new local optimum is *"machine output invoiced to a public body"* — the nota-fiscal front door. Name the shape;
   then check the TR and the free state machine (ALRN cedes the ata generator; streaming vendors bundle it at

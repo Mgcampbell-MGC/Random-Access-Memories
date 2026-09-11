@@ -19,8 +19,11 @@ and the first thing to do this week.**
 **What it is.** A machine turns a mother's own 2D/3D ultrasound export into a small personalised printed object
 — enhanced portrait, heartbeat-waveform print, birth star chart — with **zero generated prose**. The clinic buys
 it wholesale and sells it at the counter under its own name. She never sees an identified record: the
-sonographer captures one overlay-off frame (already normal practice at the one incumbent in this channel) and
-the pipeline composes it.
+sonographer captures one overlay-off frame and the pipeline composes it. ⚠ **CORRECTED 11 Sep 2026 — that frame
+is a DELIBERATE EXTRA CAPTURE, not something already in the record.** Alta's own page: *"é necessário que o rosto
+do bebê esteja visível durante o exame para que o médico consiga capturar uma boa imagem e enviá-la"*, and the
+CBR/FEBRASGO consensus requires every documented frame to carry written structure labels. It is a workflow ask
+on the clinic, and it must be asked in writing alongside the 20-scan test.
 
 **Why it works — five for.**
 1. **It is the founder's own pick.** Shown ten candidates on 4 Sep she chose three; this is one of them, with a
@@ -49,13 +52,55 @@ the pipeline composes it.
    fotolivro / Digipix R$64,90–139,90 retail) must be quoted for the actual object.
 5. Arithmetic is wholesale-price sensitive: at US$65 wholesale, ~70 units/month clears the target; **at US$40 it
    needs ~130**, because tax runs on gross and COGS is not deductible under Lucro Presumido.
+6. **★★★ ADDED 11 Sep 2026, AND IT IS NOW THE BIGGEST SINGLE RISK: THE CHANNEL CANNOT SAY THE ONE SENTENCE THAT
+   SELLS IT.** The medical council's rules bind the CLINIC, not her, and they attack the counter sale directly.
+   **Res. CFM 2.336/2023 art. 13 VIII** forbids `anunciar abatimentos e descontos em campanhas promocionais,
+   sendo proibido vincular as promoções a vendas casadas, premiações e outros`, and the resolution's own gloss
+   names the banned idiom — `"faça a consulta e ganhe o exame"`. *"Faça seu ultrassom aqui e leve o quadro do
+   seu bebê"* is that sentence. **CEM art. 75** forbids exhibiting `imagens que os tornem reconhecíveis… mesmo
+   com autorização do paciente`; **Res. 2.336/2023 art. 14** adds `é vedada qualquer edição, manipulação ou
+   melhoramento das imagens`, which describes the deliverable. **CEM Princípio IX + art. 58** (`O exercício
+   mercantilista da medicina`) give a clinic's counsel a general-clause reason to refuse. ⇒ **The partner cannot
+   advertise it and cannot display a real example.** *(What did NOT fire, checked and not found: no CFM or ANVISA
+   rule restricts non-diagnostic obstetric ultrasound in Brazil, and the frame comes from a routine prenatal scan
+   exactly as the incumbent structures it. The residual danger is drift — a clinic booking a scan BECAUSE
+   someone wants the print, which would engage CEM art. 14.)*
+7. **The data structure is solvable but unforgiving.** LGPD art. 11 §4 does **not** forbid the transfer — it
+   binds `entre controladores`, and a contracted pipeline that decides nothing is an **operador** (art. 5 VII +
+   art. 39; ANPD's *Guia de Agentes* ¶35–36 gives the advertising-agency example). But the characterisation is
+   **functional, not contractual** (Guia fn. 9), so one sample portfolio of real scans, one model trained on
+   retained frames or one direct sale makes her a controlador — and then §4 is an outright prohibition with **no
+   consent cure**, because the legislator wrote one in art. 7 §5 for ordinary data and did not repeat it for
+   health data. Stripping headers is **pseudonymisation, not anonymisation** (art. 13 §4): the job-ID mapping
+   must exist for the object to reach the right mother. ⚠ **And a budget correction: Resolução CD/ANPD 19/2024's
+   standard-contractual-clause deadline expired 23 Aug 2025, so a foreign print or hosting leg is a live art. 33
+   non-compliance — the US print anchor (Lulu US$21,32) is void and the object must be re-quoted in Brazil before
+   the wholesale price is set.** *(Fallback if the operador characterisation is ever refused: the mother has an
+   unconditional right to her own frame — CFM 1.821/2007, CFM 1.605/2000 art. 6, CFM 2.314/2022 art. 3 §6, LGPD
+   art. 18 II/V — so a patient-initiated transfer removes §4 entirely. It also converts the business to
+   direct-to-consumer and destroys the wholesale thesis. Escape hatch, never the plan.)*
 
 **Arithmetic.** 70 units × US$65 = US$4.550 gross → contribution ≈ US$3.060 → after 8,1% on gross ≈ US$2.690 net.
 Hours ≈ 14–16/month. Capital ≤ US$1.000.
 
 **First thing this week.** The test already written and never run: **20 real de-identified exports from ≥2
 vendors → run `pipeline/scan_pipeline.py` → stopwatch.** PASS: median ≤3 min/unit AND ≥18/20 ship clean. KILL:
->5 min OR <14/20. Cost ≈ US$0–100, no phone, one sitting.
+>5 min OR <14/20. Cost ≈ US$0–100, no phone, one sitting. **★ FOUR ADDITIONS, 11 Sep 2026, all free and all in
+the same week — because a PASS on the pipeline with a FAIL on any of these is a machine with nothing to feed it
+or nowhere to sell it:**
+1. **Ask the workflow question with the same email.** *"Does your sonographer routinely capture an overlay-off
+   frame, and if not, would adding one to the obstetric protocol need anything beyond the sonographer's own
+   agreement?"* The clean frame is an extra capture, not a record artefact.
+2. **★ THE MARKETING QUESTION, WITH A BAR COMMITTED IN ADVANCE.** Ask each prospect: *"under Res. CFM 2.336/2023,
+   how would you display and describe this at the counter?"* **KILL if two or more of the first five clinics say
+   they could not advertise it, or that it would need CODAME review.** This measures the rate, which is what this
+   file's test design calls for, and it tests the biggest risk for the price of five emails.
+3. **Write the two documents before the first conversation**, not after the first yes: a one-page *operador*
+   contract (purpose, data types, duration, no secondary use, deletion on completion, sub-operador disclosure)
+   and a one-page *destacado* consent clause naming the external supplier. They are the entry ticket, they cost
+   nothing, and they force the discipline that keeps her an operador.
+4. **Fix the infrastructure in the budget now:** Brazilian VPS, Brazilian print vendor, Brazilian storage, and
+   re-quote the object domestically before setting the wholesale price.
 
 ---
 

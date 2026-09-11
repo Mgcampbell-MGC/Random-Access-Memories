@@ -361,3 +361,38 @@ holds, and the parameter to choose is a good with a spec a machine can meet and 
 clearing price. ACOLHE's kits and FIELDTAG's thermal media both pass that filter; recognition objects do not.
 
 **Twelve verified, twelve dead. The verdict above is unchanged.**
+
+---
+
+## Closing entry, 19:00 UTC — the workflow is finished, and the last check hardened the winner
+
+**The workflow never reached its judge.** It hit the account session limit a second time (22:00 UTC reset) with
+sixteen screens, all eight verifications, the judge and the adversary unrun. **Final tally of what it did return:
+14 candidates screened — 1 STRONG, 1 PROMISING, 2 WEAK, 10 DEAD.** Both positives were verified by me at source
+the same evening and both were demoted (A PLACA above; A MARCAÇÃO in the field notes). **Every screen it produced
+agreed with an independent source check.** There is no judge verdict to wait for and the verdict in this file is
+the final one.
+
+**The last hour went to the winner instead of to a 55th candidate, and it found two things.** Checking the
+data-protection position of A CLÍNICA:
+
+- **★ A correction to my own claim, made today and corrected today.** I wrote that LGPD art. 11 §4 forbids a
+  clinic routing a health image to a paid third party. **It does not** — §4 binds `entre controladores`, and a
+  contracted pipeline that decides nothing about purpose is an **operador** (art. 5 VII + art. 39; ANPD's *Guia
+  de Agentes de Tratamento* ¶35–36 gives the worked advertising-agency example). The operador structure is still
+  the right one, for a different reason: it keeps §4 from ever engaging. What survives is sharper than the
+  original claim — the characterisation is functional rather than contractual, so one portfolio of real scans or
+  one direct sale makes her a controlador, and then §4 is absolute with no consent cure.
+- **★★★ And the bigger risk was in the CHANNEL's rulebook, not hers.** Res. CFM 2.336/2023 art. 13 VIII bans the
+  tied offer by name, CEM art. 75 bans displaying identifiable patient images even with consent, Res. 2.336 art.
+  14 bans `qualquer edição, manipulação ou melhoramento das imagens`, and CEM art. 58 hangs mercantilism over a
+  diagnostic clinic running a souvenir counter. **The partner cannot advertise the product and cannot show a real
+  example of it.** That is a distribution problem wearing a compliance costume, and it is now a kill-bar inside
+  the candidate's first-week test: five emails, and two refusals end it.
+
+⇒ **THE GENERAL LAW: ASK OF EVERY CHANNEL CANDIDATE WHAT THE PARTNER MAY LEGALLY SAY AND SHOW. A partner
+forbidden to advertise or display the product is a shelf, not a channel.** Cheaper than any market sizing, and it
+was never once run in four weeks of channel candidates.
+
+**Twelve verified, twelve dead, and the thirteenth check went to the survivor. That is the right ratio, and it is
+how this hunt ends.**
