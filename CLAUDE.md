@@ -1435,6 +1435,40 @@ strangers' dead parents, alone, in year three?"**
   Públicas, Licitanet, BLL and diários. ⚠ Factories bid the big lots directly (the R$414k award went to a
   confecção); her space is the R$50–150k lot a factory will not chase. See `THE_ACOLHE_ASSESSMENT.md`.
 
+- **★★★ THE GREAT HUNT RETURNED NULL — 11 Sep 2026 — AND THE NULL IS THE EVIDENCE FOR THE BOARD.** The founder
+  asked for *"ONE LAST HUNT… BETTER THAN ALL OF THIS."* Ten lenses, 54 candidates, a POSITIVE scorecard (G1–G9)
+  instead of a kill list, and every structurally new shape fetched at its primary source the same day: **eleven
+  verified, eleven dead, zero beat the five.** The one name is the one already at the top: A CLÍNICA. See
+  `THE_GREAT_HUNT.md`. Three laws and a test came out of it:
+  ★ **THE PROPERTIES THAT SCORE HIGHEST ON A POSITIVE CARD ARE THE ONES THAT LET THE INCUMBENT GIVE THE UNIT AWAY** —
+  machine-makeable + rule-compelled + pass/fail acceptance ⇒ the buyer's existing vendor bundles it at zero (FDA
+  templates and LORENZ tokens; FranConnect's Item 20 report; CivicPlus–Allyant; Thomson Reuters "sem custos
+  adicionais"; Huntington sharing the embryo video). **Run G6 first.** ★ **THE FREE FRONT DOOR IN THE BUYER'S OWN
+  WORDS is a fetch, not an argument** — every clearing party found was named by a forum, a help centre, a blog, a
+  press release or a token store; find that page before sizing anything. ★ **THE SEAT-FOR-SALE TEST** — for any
+  permission the state issues ask (1) is it being issued now (sworn translators: STF ADI 7196 suspended the
+  proficiency route, 2.434 passers queued); (2) what must be posted (auctioneer caução **R$120.000**, 7,7× her
+  capital); (3) how many hold it — **THE REGISTER IS THE COMPETITOR CENSUS** (Anatel: 2.747 holders, one a
+  person-named CNPJ with 44 makers; JUCESP: 620 auctioneers); (4) what the holder answers for (nationwide warranty;
+  the platform's R$50M fines; every arrematante's grievance). No seat passed more than two of four.
+- **★★★ THE TR IS THE PRODUCT — read the termo de referência before sizing a SERVICE to the state.** The painel shows
+  what the state pays (clipping: 58 awards/yr at R$1–6k/month, 26 winners, some one-person); the TR shows what it
+  buys (7/7 print, 6/7 radio + TV, 2/7 a registered journalist — *"vedada a automação exclusiva"* — 3/7 atestados).
+  **The dispensa oracle sizes GOODS correctly; services only after the TR is read.** Useful half: a continuous
+  service to the state has NO working-capital problem (monthly invoice, art. 141, art. 107 renewals to ten years)
+  — A FORNECEDORA's exact weakness — so the service whose TR a machine can satisfy is worth hunting; none found.
+  ★ And **a state-distributed flow can be a LOTTERY, not a push**: auction credentialing assigns by sorteio or
+  JUCESP seniority because the reverse auction collapsed to 0%.
+- **★★ THE CLOCK MOVED — date-check the regulator's page before believing a deadline, even one in this file.** DOJ
+  pushed ADA Title II to 26 Apr 2027 / 2028 on 20 Apr 2026 and may loosen the rule; DUIMP became mandatory on
+  27 Apr 2026, so its "coming" deadline was five months behind. ★ **LGPD art. 11 §4 is a channel kill for any
+  health-data keepsake routed through the provider** — A CLÍNICA's clinic contract must be an *operador*
+  agreement with the frame de-identified before it leaves the clinic; add to its first-week test.
+- **★ RULE 1 FIRED INSIDE THE HUNT BUILT TO BREAK IT:** session transcription arrived from four of ten lenses. The
+  new local optimum is *"machine output invoiced to a public body"* — the nota-fiscal front door. Name the shape;
+  then check the TR and the free state machine (ALRN cedes the ata generator; streaming vendors bundle it at
+  R$130/month) before anything else.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the

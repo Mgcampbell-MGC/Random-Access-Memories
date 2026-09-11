@@ -6,6 +6,20 @@ US$180–250 to US$90–125.** Bar: US$2.200–2.800 gross export or
 R$12.300–15.400 gross domestic at zero COGS. Full derivation, the law-by-law reversal table and the re-screen of
 every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 
+> ### THE GREAT HUNT — 11 Sep 2026. *"ONE LAST HUNT… BETTER THAN ALL OF THIS."* 54 challengers, 11 verified at source, 0 survivors. THE BOARD IS UNCHANGED, AND NOW BETTER EVIDENCED.
+> Ten lenses, a positive G1–G9 scorecard, every structurally new shape fetched at its primary source the same day —
+> **A LEILOEIRA** (JUCESP caução R$120.000; 620 active auctioneers; assignment by lottery or seniority) · **A FÉ PÚBLICA**
+> (STF ADI 7196 suspended the proficiency route; 2.434 English passers queued; degree required) · **O CLIPPING PÚBLICO**
+> (58 awards/yr at R$1–6k/month — but 7/7 TRs buy print + radio + TV curated by a journalist, with atestados) ·
+> **O REQUERENTE / Anatel** (2.747 holders in the register, nationwide warranty undertaking) · **O REPRESENTANTE
+> DIGITAL** (abundant, answers for the platform's R$50M fines) · **SEQUÊNCIA / DMF** (FDA templates free; LORENZ
+> US$104–220/sequence) · **ITEM 20** (FranConnect outputs the tables) · **A PÁGINA DE 2027** (DOJ moved the deadline to
+> 2027/2028; CivicPlus–Allyant inside the clerk's contract) · **O CATÁLOGO / DUIMP** (mandatory since 27 Apr 2026;
+> despachantes "fazendo free") · **O EMBRIÃO** (≈190 clinics, ≈10–20k positive betas/yr, image and video given free,
+> LGPD art. 11 §4) · **GÔNDOLA** (8 of 15 tickers block; Data Market R$999/month; public endpoint). **A MARCAÇÃO**
+> demoted: 27 attested SciELO providers incl. offshore giants. **One name, as asked: A CLÍNICA stays #1 — its 20-scan
+> test is still the next hour.** Laws and every URL: `THE_GREAT_HUNT.md`.
+
 > ### THE HONEST HEADLINE
 > **The cut reverses arithmetic kills only. 41 of 42 hunt kills were structural and stay dead.** What came back
 > is the family the 19 Aug raise killed by fiat: hand-made units, the two candidates designed at this target (64,
