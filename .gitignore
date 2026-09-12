@@ -6,6 +6,10 @@ node_modules/
 clt.html
 *.html.gz
 
+# Stray scratch scripts dropped in the repo ROOT by background agents.
+# Real tooling lives in bin/, pipeline/ or research/ - never at the root.
+/*.py
+
 __pycache__/
 node_modules/
 package-lock.json
