@@ -24,6 +24,18 @@ every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 > below that**. **One name, as asked: A CLÍNICA stays #1 — its 20-scan test is still the next hour.** Laws and every
 > URL: `THE_GREAT_HUNT.md`.
 
+> ### ★★★ THE SHORTLIST CUT — founder's decision, 12 Sep 2026. THE FINAL JUDGEMENT IS BETWEEN THREE, NOT SIX.
+> Shown the six live candidates she cut three in one line: *"A COTAÇÃO… O MARTELO… A TERRA VISTA DE CIMA. These are
+> cool but should not make the final judgement."* **They stay in the file as parts and as evidence; they are out of
+> the decision.** ⇒ **THE DECISION SET IS: A CLÍNICA · A FORNECEDORA (the government-supply desk) · ACOLHE (the same
+> desk on kits, public then private).**
+> ★ **And the cut is not arbitrary — the three she removed are the three where SHE must go and get every unit of
+> demand, forever.** A COTAÇÃO originates a new foreign brand per project; O MARTELO must recruit and replace
+> subscribers; A TERRA VISTA must sign a cooperative for each print run. **The three she kept all originate ONCE
+> and then the demand arrives by itself** — a clinic's counter sells to every mother who walks in, and the state's
+> own system e-mails the next order to a registered supplier without being asked. See `ORIGINATION ONCE VS
+> ORIGINATION FOREVER` in `CLAUDE.md`.
+
 > ### THE HONEST HEADLINE
 > **The cut reverses arithmetic kills only. 41 of 42 hunt kills were structural and stay dead.** What came back
 > is the family the 19 Aug raise killed by fiat: hand-made units, the two candidates designed at this target (64,

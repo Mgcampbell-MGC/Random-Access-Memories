@@ -1585,6 +1585,23 @@ strangers' dead parents, alone, in year three?"**
   12-month warranty and an atestado. ⇒ **Read the CATMAT material attribute before proposing any manufacturing
   method for a state buyer.** See `THE_MOLDE_AUTOMATION_TEST.md`.
 
+- **★★★ ORIGINATION ONCE VS ORIGINATION FOREVER — REVEALED BY THE FOUNDER AGAIN, 12 Sep 2026, and it is the
+  sharper half of `THE MACHINE TEST`'s third limb.** Shown six live candidates she cut three in one line:
+  *"A COTAÇÃO… O MARTELO… A TERRA VISTA DE CIMA. These are cool but should not make the final judgement."*
+  **The three cut are exactly the three where she must go and get every unit of demand, forever** — a new foreign
+  brand per sourcing project, a replaced subscriber every month, a cooperative signed per print run. **The three
+  kept all originate ONCE and then the demand arrives unbidden**: a clinic's counter sells to every mother who
+  walks in, and the state e-mails the next order to a registered supplier without being asked.
+  ⇒ **ASK: after the FIRST yes, does the next unit of demand arrive by itself, or must she fetch it?** Limb 3 of
+  the machine test asks whether selling creates a relationship she must HOLD; this asks whether it creates one she
+  must KEEP FILLING. **A candidate can pass the first and fail the second** — O MARTELO holds no client
+  relationship at all and still needs a new subscriber every month (`THE STEADY-STATE KILL` is the arithmetic of
+  exactly this, and the founder reached it by instinct without the arithmetic).
+  ★★ **Same evidence class as the machine test and worth as much: REVEALED, not stated.** She was shown a real
+  list and cut it. **Two independent cuts, months apart, have now both selected for "demand that arrives on its
+  own" — that is the most stable preference in this record, and it should be the FIRST screen on any future
+  candidate, ahead of economics.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
