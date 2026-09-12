@@ -1560,6 +1560,31 @@ strangers' dead parents, alone, in year three?"**
   and read their ARPs before building a per-município bidding cron**; a live ARP held by someone else locks that
   whole region.
 
+- **★★★ AUTOMATION ANSWERS "CAN SHE MAKE IT", NEVER "IS THERE ENOUGH OF IT TO SELL" — 12 Sep 2026, from the
+  founder's own question about MOLDE PÚBLICO: *"how can we make it better, what can be automated, it's 2026."***
+  The candidate's one named flaw was her hands on every cast unit. **Removing them turned out to be possible,
+  cheap and C3-clean** — a 3D-print bureau that quotes from an uploaded file is a VENDOR, not a contractor
+  (Koios 3D: *"você envia o arquivo… mostra o preço na hora"*, R$35 minimum, 2–5 days, its whole cost engine
+  published in the page), and **BodyParts3D gives 2.905 anatomical parts free** under a commercially-usable
+  licence *(⚠ stated as CC-BY 4.0 on the site and CC-BY-SA 2.1 JP inside every .obj — both allow commercial use;
+  resolve before selling)*. **And it changed nothing, because the channel that delivers the buyers carries 1,83%
+  of the money in the category.** PDM 9837 is R$30,4–30,8 M/yr; **dispensa is R$557–623k**; at 50–60% COGS she
+  needs **47–77% of the entire national pool**; the other 92% is pregão and **ANATOMIC (39,3%) + LAERDAL (24,8%)
+  hold 64% as manufacturers bidding direct**; median supplier-year **R$3.999–12.398** and 43–49% won one line all
+  year. ⇒ **RUN LIMB 1 OF `THE NICHE SCREEN` BEFORE ASKING WHAT THE UNIT COSTS TO MAKE. The visible flaw and the
+  fatal one are rarely the same, and production is almost never the fatal one in this file.**
+  ★ **Corollary on evidence class: A CATALOGUE PRICE IS A HARDER FACT THAN A PRODUCTION COST.** The printed unit's
+  cost had to be derived from a vendor's published constants; the catalogue price was a number on a page with a
+  buy button — 195 products censused, median **R$526,35**, **72,3% at or below the state's R$958 unit median**,
+  and printing a liver (R$311–545) costs MORE than buying a painted multi-part PVC liver (**R$305,25**).
+  **The check that killed it took one fetch and no arithmetic.**
+  ★ **And the buyer's spec excluded the automation independently: material is binding on 94,4% of 1.257 lines**
+  (PVC · silicone · resina · acrílico) and **"PLA", "PETG", "ABS", "impressão 3D" appear ZERO times** — the TR
+  copies the CATMAT spec verbatim, so an FDM part is not forbidden, it is simply non-conforming. Tenders also name
+  the reference product (*"3B SCIENTIFIC B50 OU SIMILAR/SUPERIOR"*), demand a sample at the bidder's cost, a
+  12-month warranty and an atestado. ⇒ **Read the CATMAT material attribute before proposing any manufacturing
+  method for a state buyer.** See `THE_MOLDE_AUTOMATION_TEST.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the

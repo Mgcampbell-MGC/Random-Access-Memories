@@ -106,6 +106,29 @@ or nowhere to sell it:**
 
 ## #2 — MOLDE PÚBLICO · made-to-order teaching models, sold through *dispensa de licitação*
 
+> ### ⚠ DEMOTED 12 Sep 2026 — AND NOT FOR THE REASON THIS ENTRY EXPECTED. Full working: `THE_MOLDE_AUTOMATION_TEST.md`
+> The founder asked whether 2026 automation could remove the one flaw named below (her hands on every unit).
+> **It can: a 3D-print bureau is a vendor not a contractor, so C3 is clean, and BodyParts3D gives 2.905 anatomical
+> parts free under a commercially-usable licence. Both limbs close. The candidate dies anyway, three times over.**
+> **(1) THE PUSHED POOL IS 1,83% OF THE CATEGORY.** PDM 9837 is R$30,4–30,8 M a year and **dispensa — the
+> auto-email channel this entry's whole distribution rests on — is R$557–623 THOUSAND.** At 50–60% COGS she needs
+> **47–77% of the entire national dispensa pool.** The other 92% is pregão, and **ANATOMIC (39,3%) and LAERDAL
+> (24,8%) hold 64% of the code as manufacturers bidding direct.** Median supplier-year in the channel: R$3.999–12.398;
+> 43–49% of suppliers won exactly one line all year — including the two one-person operators cited below, who took
+> five and eight lines, i.e. roughly R$8–13k each.
+> **(2) A PRINTED UNIT COSTS MORE THAN THE FINISHED ONE.** Printing a liver R$311–545 against a painted multi-part
+> PVC liver on a buy-now shelf at **R$305,25**; 195 catalogue products censused, median **R$526,35**, and **72,3%
+> sit at or below the state's R$958 unit median.**
+> **(3) THE SPEC EXCLUDES IT.** Material is a binding attribute on **94,4% of 1.257 lines** — PVC, silicone, resina,
+> acrílico — and **"PLA", "PETG", "ABS" and "impressão 3D" appear ZERO times.** Tenders also name the reference
+> product (*"3B SCIENTIFIC B50 OU SIMILAR/SUPERIOR"*), demand a sample at the bidder's cost, a 12-month warranty
+> and an atestado.
+> ⇒ **Automated, this is not a machine that makes objects — it is the government-supply desk with a different
+> CATMAT code, and the catalogue-to-state spread is genuinely wide (heart R$159,77 → R$437,02). Keep *modelo
+> anatômico* on the DESK'S NICHE LIST; do not keep it as a standalone candidate.**
+> ⚠ Unit correction to this entry: **"median R$958/line" is the UNIT median; the LINE median is R$1.442–1.618.**
+
+
 **What it is.** Small anatomical and simulation models (muscle groups, organ sections, silicone skins, suture
 pads) cast in silicone/resin from a home workshop and sold to federal institutes, universities and teaching
 hospitals through the non-competitive small-purchase channel the law forces the buyer to advertise **and to push
