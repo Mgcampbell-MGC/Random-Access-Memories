@@ -1602,6 +1602,64 @@ strangers' dead parents, alone, in year three?"**
   own" — that is the most stable preference in this record, and it should be the FIRST screen on any future
   candidate, ahead of economics.**
 
+- **★★★ THE WORKING-CAPITAL ANSWER — 12 Sep 2026, and the founder was right on every premise.** Challenged that
+  Brazilian supplier terms are normal, that the government runs a programme, and that *"modern financial
+  institutions must be able to solve this"*, ~90 primary sources were fetched. **All three premises check out, and
+  the answer is one instrument nobody in this file had found plus a free lever worth more than the instrument.**
+  See `THE_WORKING_CAPITAL_ANSWER.md`.
+  ★ **THE CASH-CYCLE MODEL FIRST: terms roughly TRIPLE her capacity.** At 60% COGS her R$15.600 carries **R$19.500
+  of billings with no terms and R$65–78.000 with 28–30 day terms** against a bar of R$24.400–39.800 — so the
+  *"needs R$40–60k"* figure in `THE_FIELDTAG_BRASIL.md` §8 is the NO-TERMS case.
+  ★ **SUPPLIER TERMS ARE PUBLISHED, AND SO IS THE GATE EXCLUDING HER:** All Nations *"no mínimo 1 ano de fundação"*
+  + two years of accounts; Peixoto *"Para clientes novos, apenas… boleto/pix antecipado"*; one cadastro form has
+  **five blank slots for supplier references** she cannot fill. **But the permissive end is TWO PURCHASES, not
+  twelve months** — Flora Saúde: *"avaliado pelo setor financeiro a partir da segunda compra… prazo inicial 21
+  dias"*. ⇒ **SUPPLIER SELECTION BY CREDIT GATE, NOT NEGOTIATION. Read the credit policy before the price list.**
+  ★★★ **FGI PEAC IS THE ONLY INSTRUMENT IN BRAZIL WHOSE PUBLISHED ELIGIBILITY A COMPANY WITH NO HISTORY PASSES.**
+  BNDES FAQ Q4: *"receita bruta anual de até R$ 300 milhões"* — **no minimum revenue, no minimum time in business,
+  no prior accounts**; Q11: *"É dispensada a exigência de garantias pessoais e reais"*. Minimum **R$1.000**,
+  carência 12–36 months, permanent (Lei 14.554/2023), **48 agents including Stone, Nubank, Sicoob, Sicredi**, and
+  Stone publishes a three-line test (CND · in good standing · revenue ≤R$300M). ⚠ A TERM LOAN, not a revolving
+  line, and **no agent publishes a rate (UNVERIFIED)** — budget against BizCapital's published unsecured CET of
+  2,91–6,60% a.m.
+  ⚠⚠ **TWO CORRECTIONS TO `THE_FIELDTAG_BRASIL.md` §8, ONE EACH WAY. (a) ANTECIPAGOV DOES REACH THE PRE-DELIVERY
+  LEG** — Serpro's integration manual publishes the formula *"Margem contábil = (70% (A − B)) − C… O valor
+  empenhado será utilizado quando for maior"*, the base is COMMITTED minus PAID, and Lei 14.133 art. 95 I makes
+  the nota de empenho the contract instrument for dispensa by value. **(b) BUT "a new company qualifies because
+  the counterparty is the Treasury" IS FALSE** — the portal's own FAQ 9: *"O Governo Federal será solidário (ou
+  garantidor)…? **Não.**"*, and it publishes a 6-C analysis including *"Capacidade"* and *"Capital"*. Plus
+  ~40 business days to first operation, and **only 50,7% of federal units are enabled** (149/294 sampled).
+  ⇒ §8's *"second-year instrument"* conclusion was right for the wrong reason.
+  ⚰ **Dead, so nobody reopens them:** **Cartão BNDES** (*"Capital de giro não é item financiável"*, and purchases
+  are confined to Portal catalogue items); **Pronampe** (capped by CAPITAL SOCIAL not revenue — BNB requires
+  *"capital social… pelo menos 150% do valor do empréstimo"*, so R$15.600 buys a R$10.400 loan and raising capital
+  to chase it is self-defeating); **secured PJ cards** (Cora's R$5.000 cap, *"sem necessidade de análise"* — it
+  reshuffles her own money; value is the Cadastro Positivo record, not the capital); **cessão de crédito outside
+  AntecipaGov** (PGDF Parecer 525/2022: *"IMPOSSIBILIDADE"*, *"não vincula de qualquer modo o Poder Público"*);
+  **SEBRAE and state programmes** (SEBRAE does not lend; the state route IS FGI PEAC with a local badge).
+  ★ **And one free grep on every edital: `pagamento antecipado`** — Lei 14.133 art. 145 permits it only where
+  *"expressamente prevista no edital"*; rare, and where it appears the problem is zero.
+- **★★★ WHEN A CONSTRAINT LOOKS LIKE A MONEY PROBLEM, CHECK WHETHER IT IS A COUNTERPARTY-SELECTION PROBLEM FIRST.**
+  Measured on **2.276 small goods invoices** through the free unauthenticated `contratos.comprasnet.gov.br/api/
+  contrato/{id}/faturas` (it publishes `emissao`, `ateste` and `data_liquidacao` per invoice): identical purchases
+  under the identical statute clear in **15 days at IF de São Paulo and 67 days at SAA-MS** — 4× apart — and
+  **the delay is in the ATESTE, not the payment** (`ateste→liquidação` median 1–6 days; `emissão→ateste` 14 vs 60).
+  The statutory clock is faster than anyone assumed: **IN SEGES/ME 77/2022 art. 7 §2 halves the deadlines for
+  dispensa-by-value purchases ⇒ 5 + 5 business days ≈ 14 calendar days.** ⇒ **Bid only where the median is under
+  ~30 days; it is worth ~3× her capacity at the same capital and costs nothing.** **Buyer selection bought what
+  the entire credit market could not.** Ask of any cash-cycle constraint: *is the lag a property of the RULE or of
+  the COUNTERPARTY?* If the counterparty, the fix is a filter, not a loan.
+- **★★ EVERY CREDIT INSTRUMENT PRICES OFF HER BALANCE SHEET, NOT THE GOVERNMENT'S — INCLUDING THE ONE BUILT FOR
+  GOVERNMENT SUPPLIERS. THE ONLY ESCAPE IS A GUARANTEE FUND. ⇒ Hunt guarantee funds, not lenders, for a founder
+  with no history.** ★ **And INSURANCE AGAINST A RISK CAN INCREASE THE COUNTERPARTY'S CAUTION:** the founder's
+  trade-credit-insurance idea backfires because the insured is the SELLER (SUSEP: *"o devedor… não é parte
+  integrante do seguro"*) and the policy obliges it to verify the buyer has *"um histórico de bom pagamento"* and
+  *"comprovar, no caso de Perda, que cumpriu"* — so an insured distributor has a contractual reason to refuse a
+  new buyer that an uninsured one does not. *(And Junto Seguros, named by the founder, sells surety, not credit
+  insurance.)* ★ **Distributor-side fintechs are multipliers, not originators** — Trademaster: limits *"40%
+  maiores do que o histórico de compras"* and *"50% maior do que o inicial concedido pela indústria"*, both
+  multiplying zero.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
