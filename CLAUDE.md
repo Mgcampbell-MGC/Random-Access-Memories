@@ -1660,6 +1660,57 @@ strangers' dead parents, alone, in year three?"**
   maiores do que o histórico de compras"* and *"50% maior do que o inicial concedido pela indústria"*, both
   multiplying zero.
 
+- **★★★ THE COMPELLED-ANNOUNCEMENT LAW — BEFORE BUILDING AN OUTREACH LIST, ASK WHETHER THE BUYER IS LEGALLY
+  COMPELLED TO ANNOUNCE ITSELF.** The founder's own frame for the kit business was *"about 700 buyers we can
+  get a list for to email or call."* **The list is a nice-to-have and the CRON is the business.** `Lei 14.133
+  art. 54` forces the *"inteiro teor do ato convocatório e de seus anexos"* onto PNCP before any body buys,
+  free and machine-readable; `art. 55 I a` sets an 8-working-day floor for goods and `IN 67/2021 art. 6 par.
+  único` 3 days for dispensa. **Measured on 105 open kit tenders: median 10 working days' notice, 98,1% ≥5,
+  0 under 3, and `dataEncerramentoProposta` present on 105/105.** ⇒ **THE TENDER DESK HAS NO ORIGINATION
+  PROBLEM** — the first candidate in this archive whose distribution is a statute, in a file where *"not one
+  of seventeen S3 candidates died on economics — all died on distribution."* **This is the MIRROR of `THE
+  POSTAL LIST LAW`: there, enumerable ≠ contactable; here, contactable is IRRELEVANT because the buyer
+  contacts her.** *(What the list is still worth, and it is smaller and honest: pesquisa de preços, where a
+  supplier on the list shapes the `valorUnitarioEstimado` the tender is later bid under; direct dispensa
+  quotes below R$65.492,11; and the private layer. It does not win lots — bidding wins lots.)*
+  ★ **And the rail costs R$0: five FREE registrations (Compras.gov.br/SICAF · Portal de Compras Públicas ·
+  BLL · BNC · Licitanet) reach 74,3% of open kit tenders, eight reach 82,9%, and `art. 87 §2º` PROHIBITS a
+  município demanding its own complementary cadastro.** Money is owed only per bid (≈R$75 weighted; **R$0 on
+  Compras.gov.br, and BLL charges 1,5% capped R$600 ONLY IF SHE WINS** — Regulamento BLL 2026 art. 17 II).
+  ⚠ **The one real design constraint: only 28% of kit tenders carry a kit keyword in `objetoCompra` — the
+  cron MUST descend to `/itens`, and that per-item classification is exactly the labour the paid alert
+  services sell** (Alerta Licitação R$369,90/yr publishes a price; ConLicitação and Effecti publish none —
+  `THE MONITORING PINCER` in reais). See `THE_KIT_BUSINESS_BUILD.md`.
+- **★★★ THE BID-SELECTION FILTER IS THE MARGIN — in tender supply there is no pricing skill that rescues a
+  lot she should not have entered.** Measured on 843 homologated award rows from 230 editais against
+  published wholesale: median margins are healthy (body 55%, fralda pack 51%, kit higiene 52%) and **EVERY
+  SKU IS LOSS-MAKING AT THE OBSERVED AWARD FLOOR** (body −10%, fralda pack −19%), two of those floors set by
+  confecções bidding direct. Three real lots priced end to end: **+21,6% · +30,8% · −3,1%** — the loser being
+  an 18-item *kit completo*. **Blended 18–27% net on winnable lots.** ⇒ **The parser's filters ARE the
+  business.** Two derived: **reject any edital carrying an ATESTADO DE CAPACIDADE TÉCNICA clause** (TCE-SP
+  Súmula 24 permits demanding 50–60% of the tendered quantity as prior delivered experience — **a first-time
+  supplier is excluded by construction, and THIS, not certification, is the entry gate**: textiles need only
+  labelling under Portaria Inmetro 118/2021, rigid baths are uncertified — Portaria 563/2016 covers inflatable
+  only — while **mamadeiras and chupetas ARE certified under Portaria 490/2014, so keep them out of the SKU
+  set**); and **reject kit-completo lots over ~14 items.**
+  ★ **AND THE ASSEMBLER PROBLEM DISSOLVES BY READING THE TENDER TYPE: on *menor preço POR ITEM* lots NOBODY
+  ASSEMBLES** — the município buys components and the CRAS staff assemble, so she drop-ships packs and the
+  assembly margin she feared losing never existed, along with its cost. *(Second time in two days that reading
+  the tender type rather than the object changed the answer — one level below `THE TR IS THE PRODUCT`.)*
+  **MOQ is NOT a kill** (published minimums R$600–800 against a median dispensa lot of R$58.475 = 1,0–1,4%),
+  and **223 distinct winners, 212 of them (95%) winning in ONE UF only**, mostly generalist tender desks
+  rather than baby-goods firms, with one-person operators already winning. ⚠ **Unbudgeted line: substituição
+  tributária on interstate purchases into a Simples ME** — the wholesaler warns of it on its own product pages.
+- **★★ LC 123 art. 48 I IS PER ITEM, NOT PER TENDER — AND THE IMPUGNAÇÃO IS FREE, WRITTEN AND STATUTORY.**
+  Items **up to R$80.000** are reserved *exclusivamente* to ME/EPP. CISARP's April 2026 kit ARP has **9 of 38
+  lines at or below R$80.000** and **all 38 are flagged `Sem benefício` on PNCP.** ⇒ **Build the
+  R$80.000-per-line check into any government-supply parser**; it converts open lines into reserved ones with
+  a letter. ★ **And the consortium channel is real but must be bid BY THE LINE: ≥221 consortia publish on
+  PNCP, 83% in MG/PR/SP/SC/RS, ≥6 buying kits and ≥4 re-tendering annually; ONE CIMINAS ARP serves 103 member
+  municípios and `art. 86 §5` lets adesões reach 3× the registered quantity — but CIMINAS's R$4,5M is ONE
+  undivided lot with no ME/EPP reservation (a factory lot), while CISARP's R$8,7M is 38 separate per-item
+  lines of R$32–79k. Consortia are only 2,1% of kit editais: few, enormous, lumpy, not a stream.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the

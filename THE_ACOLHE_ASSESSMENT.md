@@ -168,3 +168,35 @@ SICAF registration, the supplier relationships and the assembled-kit specificati
 all three with a better cash cycle. **Do not let the private leg become a consumer brand** — that is Project
 Climate's grave, and the catalogue shelf there is already deep.
 
+
+---
+
+# ADDENDUM 2 — 12 Sep 2026: THE BUILD STREAMS
+
+**Full working file: `THE_KIT_BUSINESS_BUILD.md`.** Three things in this assessment are now measured rather
+than assumed, and one of its framing assumptions is repealed.
+
+**1. REPEALED — the outreach list was never the channel.** This assessment sized a buyer population and asked
+how to reach it. `Lei 14.133 art. 54` compels every one of those buyers to publish its own tender in full to
+PNCP before buying. **Median 10 working days of notice, 98,1% of 105 open tenders ≥5 days, 0 under 3.**
+The cron is the business; the list is worth only pesquisa de preços, direct dispensa quotes, and the private
+layer.
+
+**2. MEASURED — the cost of being able to bid is R$0,00 up front.** Five free registrations (SICAF · Portal
+de Compras Públicas · BLL · BNC · Licitanet) reach **74,3%** of open kit tenders; `art. 87 §2º` forbids a
+município demanding a complementary cadastro. ≈R$75 per bid weighted, R$0 on Compras.gov.br, and BLL charges
+only if she wins.
+
+**3. MEASURED — margins, and the filter that produces them.** 843 award rows against published wholesale:
+blended **18–27% net on winnable lots**, every SKU loss-making at the observed floor, one real 18-item lot at
+**−3,1%**. **The bid-selection filter is the margin.** Entry gate is the **atestado de capacidade técnica**
+(TCE-SP Súmula 24), not certification. **MOQ is not a kill** (R$600–800 against a R$58.475 median lot).
+**On *menor preço por item* lots nobody assembles** — the co-packer question dissolves.
+
+**4. CORRECTED, and it AMENDS this assessment's own consortium section.** The consortium channel is larger
+than recorded here — **≥221 consortia on PNCP, 83% in MG/PR/SP/SC/RS, one CIMINAS ARP serving 103
+municípios** — **and it must be bid by the LINE, not the kit.** CIMINAS's R$4,5M is one undivided lot with no
+ME/EPP reservation; CISARP's R$8,7M is 38 separate per-item lines of R$32–79k, **nine of which are below the
+LC 123 art. 48 I R$80.000 threshold and wrongly flagged `Sem benefício`** — a free written impugnação.
+
+**Unchanged and still binding: working capital and lot size.** See `THE_WORKING_CAPITAL_ANSWER.md`.
