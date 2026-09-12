@@ -181,10 +181,9 @@ is the second time in two days that reading the tender type, not the object, cha
 - **Rigid baths are NOT certified** — Portaria 563/2016 covers inflatable baths only.
 - **Mamadeiras and chupetas ARE certified** (Portaria 490/2014) ⇒ **keep them out of the 3–5 SKU set.**
 
-The actual entry barrier is the **ATESTADO DE CAPACIDADE TÉCNICA**. **TCE-SP Súmula 24** permits an edital to
-demand 50–60% of the tendered quantity as prior delivered experience. **A first-time supplier is excluded
-from any lot carrying one, by construction.** ⇒ **THE PARSER'S FIRST FILTER IS NOT PRICE, IT IS THE ATESTADO
-CLAUSE.**
+The actual entry barrier is the **ATESTADO DE CAPACIDADE TÉCNICA** — ⚠ **but see §9: this paragraph as
+originally written was too strong and is corrected below.** Only a *quantitative* atestado excludes a
+first-timer; a *qualitative* one is satisfied by a single prior sale, **including to a private buyer.**
 
 **Competition, measured: 223 distinct winners, 212 of them (95%) win in ONE UF only.** Most are generalist
 tender desks, not baby-goods firms. **One-person operators are already winning these lots** — the same shape
@@ -387,3 +386,81 @@ more importantly **the cron cannot see that programme at all.**
 ⇒ **The board does not change. The kit desk's engine is municipal + consortium per-item lines; the state tier
 is four to five lottery tickets a year, two of which carry ME/EPP reservations she qualifies for; the private
 layer is margin on top. And the private hospital list, though excellent, is not a buyer list for this.**
+
+
+---
+
+# 9. ⚠ CORRECTIONS FROM THE LEGAL STREAM — 12 Sep 2026
+
+Two claims in this file were too strong when written. Both are corrected at the statute.
+
+## 9.1 The atestado is TWO gates, and only one of them excludes her
+
+§3 above said *"a first-time supplier is excluded from any lot carrying one, by construction"* and made the
+atestado clause the parser's first filter. **That would have discarded most of the market.** Five live 2026
+kit editais from five different publishers, read end to end:
+
+| Edital | Atestado | Balanço | Capital/PL | Garantia |
+|---|---|---|---|---|
+| **Paracatu/MG** PE-SRP 17/2026, R$228.039 | **none — no qualificação técnica section at all** | none | none | none |
+| **Rio Vermelho/MG** Kit Natalidade | none substantive | none | none | none |
+| **Nerópolis/GO** PE 023/2026 | **qualitative only** — no quantity | **expressly waived, with published reasons** | none | none |
+| **Cotia/SP** PE 025/2026 | **quantitative, 50%** — but somatória allowed, private issuer accepted | 2 exercises | none | none |
+| **Chã de Alegria/PE** PE 006/2026 | **qualitative only**, public **or private** issuer | none | none | *"Não haverá exigência de garantia contratual"* |
+
+⇒ **The filter is "an atestado clause carrying a NUMBER", not "an atestado clause".** One of five.
+
+**★ And the finding that reorders the whole plan: the atestado may be issued by a PRIVATE buyer.** The AGU
+*Modelo de TR – Compras* (dez/2025) and both editais that demand one say *"pessoas jurídicas de direito
+público **ou privado**"*. **One private B2B kit sale — even R$2.000 — mints the credential that opens the
+quantitative half of the public market**, and art. 67 §2º's somatório lets small ones accumulate
+(Acórdão 2291/2021-TCU-Plenário: barring the soma without justification is unlawful; Acórdão 1983/2014: its
+absence from an edital is not an irregularity, so soma is the default).
+
+**This is a better reason to run the private layer first than the cash-cycle argument in §7.**
+
+⚠ **And two source corrections.** TCE-SP Súmula 24 is anchored to **Lei 8.666/93 art. 30 II — a revoked
+statute — and speaks of *"serviços similares"*, not goods.** Under **Lei 14.133 art. 67 §2º** the ceiling is
+**50%, not 60%**, with *"vedadas limitações de tempo e de locais específicos"*. And **there is no TCU acórdão
+flatly forbidding atestados for common goods** — what exists is **Enunciado IBDA nº 22/2024** on TCU's own
+portal, which puts the burden of justifying *materialidade, relevância e risco* on the Administração. That is
+an impugnação ground, not a prohibition. **The sharper lever is art. 67 §1º: atestados are restricted to
+parcelas worth ≥4% of the estimated total, so on a multi-item kit lot most items cannot carry one at all.**
+
+## 9.2 The municipal payment deadline is in the buyer's own decree, not in any national rule
+
+`THE_WORKING_CAPITAL_ANSWER.md` derived *"IN SEGES/ME 77/2022 art. 7 §2 ⇒ 5 + 5 business days ≈ 14 calendar
+days."* **The arithmetic is right; the scope is wrong.** Art. 1º of that IN governs *"no âmbito da
+Administração Pública **federal**"*, and art. 2º reaches a município **only** when it is *"executarem recursos
+da União decorrentes de **transferências voluntárias**."* **The kit market is 97% municipal.**
+
+What governs instead: **art. 141** (ordem cronológica, all levels) · **art. 92 VI** (the deadline is a
+mandatory contract clause) · **and the município's own decree.** Paracatu quotes its own **Decreto 7.088/2024**
+inside the edital: *"05 dias úteis para a liquidação… 15 dias úteis para pagamento"* ⇒ **28 calendar days.**
+
+⇒ **Parser addition: grep the pagamento clause for `Decreto Municipal` and extract both numbers.** There is no
+national figure to assume. *(Open question worth an hour: whether SUAS fundo-a-fundo transfers count as
+"transferências voluntárias" — if so, a large slice of kit buyers returns to the federal clock. UNVERIFIED.)*
+
+**Three levers found in the same read:** art. 141 §1º II lets an **ME/EPP jump the payment queue** on a
+demonstrated risk of discontinuity; art. 141 §3º makes every body publish its queue monthly; art. 137 §2º
+gives the right to terminate on **two months' arrears**. And **Sicx caps payment at 30 days by statute**
+(art. 79 §1º VII "e", inserted by Lei 15.266/2025) — the best term in Brazilian procurement, though whether
+kits will be catalogued there is UNVERIFIED.
+
+## 9.3 The two feared habilitação blockers are dead
+
+**Balanço patrimonial:** Decreto 8.538/2015 **art. 3º** waives it for ME/EPP on *"fornecimento de bens para
+pronta entrega"*; Lei 14.133 **art. 65 §1º** lets a first-year company substitute a **balanço de abertura**;
+**art. 69 §2º** forbids demanding minimum prior turnover at all.
+
+**Capital social at 10%:** **art. 69 §4º** is a *"poderá"*, confined to *"compras para entrega futura"*, and
+the AGU model uses it only as a remedy where liquidity indices come in ≤1. **Zero of five editais demanded
+it.** Carry **R$20–30.000 integralizado** anyway — her own money, not a fee, and it caps what any edital may
+lawfully demand on a R$200–300k lot.
+
+**And MEI is dead on arithmetic, date-checked:** the ceiling is still **R$81.000** (LC 123 art. 18-A §1º) —
+LC 227/2026 touched ~20 points of LC 123 and not this one, so the reported raise **has not passed**. A
+business billing R$360–720k is 4,4–8,9× over, and **Resolução CGSN 140/2018 Anexo XI contains the string
+"ATACADISTA" exactly zero times.** The vehicle is an **ME/EPP on Simples Anexo I**: **4,00% at R$180k · 5,65%
+at R$360k · 6,73% at R$500k · 7,58% at R$720k.**

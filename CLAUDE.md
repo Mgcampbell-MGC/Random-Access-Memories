@@ -1687,9 +1687,9 @@ strangers' dead parents, alone, in year three?"**
   SKU IS LOSS-MAKING AT THE OBSERVED AWARD FLOOR** (body −10%, fralda pack −19%), two of those floors set by
   confecções bidding direct. Three real lots priced end to end: **+21,6% · +30,8% · −3,1%** — the loser being
   an 18-item *kit completo*. **Blended 18–27% net on winnable lots.** ⇒ **The parser's filters ARE the
-  business.** Two derived: **reject any edital carrying an ATESTADO DE CAPACIDADE TÉCNICA clause** (TCE-SP
-  Súmula 24 permits demanding 50–60% of the tendered quantity as prior delivered experience — **a first-time
-  supplier is excluded by construction, and THIS, not certification, is the entry gate**: textiles need only
+  business.** Two derived: **reject any edital whose atestado clause carries a NUMBER** (⚠ **CORRECTED 12 Sep
+  — see `THE ATESTADO IS TWO DIFFERENT GATES` below; the original "reject any atestado clause" was too strong
+  and would have discarded most of the market**: textiles need only
   labelling under Portaria Inmetro 118/2021, rigid baths are uncertified — Portaria 563/2016 covers inflatable
   only — while **mamadeiras and chupetas ARE certified under Portaria 490/2014, so keep them out of the SKU
   set**); and **reject kit-completo lots over ~14 items.**
@@ -1774,6 +1774,91 @@ strangers' dead parents, alone, in year three?"**
   homologado ÷ estimado = SE 37% · RO 42% · PB 68%, against ACOLHE's measured municipal median of 79%.
   Price against the state's HOMOLOGATED award, never its estimate** — `THE REFERENCE-PRICE ILLUSION` scales with
   lot size.
+
+- **★★★ THE ATESTADO IS TWO DIFFERENT GATES, AND ONLY ONE OF THEM EXCLUDES A FIRST-TIMER — MY OWN CLAIM OF
+  11 Sep, CORRECTED AT THE STATUTE 12 Sep.** I wrote that *"a first-time supplier is excluded from any lot
+  carrying an atestado clause, by construction"* and made it the parser's first filter. **Too strong, and it
+  would have discarded most of the market.** Measured on five live 2026 kit editais from five different
+  publishers: **one demands a QUANTITATIVE atestado (Cotia/SP, 50%, citing art. 67 §1º); two demand a
+  QUALITATIVE one** (Nerópolis/GO — *"se o atestado comprova fornecimento anterior de bens compatíveis ou
+  similares"*, no quantity; Chã de Alegria/PE, public **or private** issuer); **two demand none at all**
+  (Paracatu/MG has no qualificação técnica section whatsoever). **A qualitative atestado is satisfied by ONE
+  PRIOR SALE OF ANY SIZE** ⇒ **the filter is "an atestado clause carrying a numeric percentage or quantity",
+  not "an atestado clause".**
+  ★★ **AND THE FINDING THAT REORDERS THE PLAN: THE ATESTADO MAY BE ISSUED BY A PRIVATE BUYER.** The AGU
+  *Modelo de TR – Compras* (dez/2025) and both live editals that demand one say *"pessoas jurídicas de direito
+  público **ou privado**"* (Cotia 9.9.9.1; Chã de Alegria 12.9.1, which adds that a self-issued one is not
+  accepted). ⇒ **ONE private B2B sale, even R$2.000, mints the credential that opens the quantitative half of
+  the public market** — and `art. 67 §2º`'s somatório (AGU model: *"o somatório de diferentes atestados
+  relativos a contratos executados de forma concomitante"*; Acórdão 2291/2021-TCU-Plenário: barring the
+  somatório without justification is unlawful; Acórdão 1983/2014: its ABSENCE from an edital is not an
+  irregularity, so soma is the default) lets small ones accumulate. **This is a new and much better reason to
+  run the private layer FIRST than the cash-cycle argument that put it there.**
+  ⚠ **TWO SOURCE CORRECTIONS WHILE WE ARE HERE. (1) TCE-SP Súmula 24 is anchored to `Lei 8.666/93 art. 30 II`
+  — a REVOKED statute — and speaks of *"serviços similares"*, not goods.** Under **Lei 14.133 art. 67 §2º** the
+  ceiling is **50%, not 60%**, and *"vedadas limitações de tempo e de locais específicos relativas aos
+  atestados"*; TCE-SP's own article concedes *"Doravante, à luz da LF nº 14.133/2021, passa-se a observar a
+  limitação ao percentual de 50%."* **(2) There is NO TCU acórdão flatly forbidding atestados for common
+  goods** — do not claim one. What exists is **Enunciado IBDA nº 22/2024**, reproduced on TCU's own portal:
+  an atestado for a goods purchase is admissible *"desde que a materialidade, relevância e risco relacionados
+  ao fornecimento demonstrem essa necessidade"* ⇒ **the burden of justification sits on the Administração**,
+  which is an impugnação ground, not a prohibition. **`art. 67 §1º` is the sharper lever: atestados are
+  restricted to parcelas worth ≥4% of the estimated total, so on a multi-item kit lot most individual items
+  cannot carry one at all.**
+- **★★★ THE TWO FEARED HABILITAÇÃO BLOCKERS ARE NOT BLOCKERS, AND BOTH DIE IN THE SAME DECREE.** (1) **A
+  first-year company with no balanço patrimonial**: **Decreto 8.538/2015 art. 3º** — *"Na habilitação em
+  licitações para o fornecimento de bens para pronta entrega…, **não será exigida da microempresa ou da empresa
+  de pequeno porte a apresentação de balanço patrimonial**"*; and **Lei 14.133 art. 65 §1º** — *"As empresas
+  criadas no exercício financeiro da licitação… ficarão autorizadas a **substituir os demonstrativos contábeis
+  pelo balanço de abertura**."* Plus **art. 69 §2º**: *"é vedada a exigência de valores mínimos de faturamento
+  anterior."* (2) **Capital social at 10% of contract value**: **art. 69 §4º** makes it a *"poderá"* confined to
+  *"compras para entrega futura"*, and the AGU model deploys it only as a REMEDY where liquidity indices come
+  in ≤1. **Measured: 0 of 5 live kit editais demanded capital social, PL mínimo, garantia de proposta or
+  garantia de execução.** ⇒ **Carry R$20–30.000 of capital social integralizado anyway** — it is her own money,
+  not a fee, it caps out the maximum an edital may lawfully demand on a R$200–300k lot, and it makes the
+  opening balance sheet clear LG/LC/SG > 1.
+  ★ **And MEI is arithmetically dead here, date-checked at the statute: the ceiling is still R$81.000
+  (LC 123 art. 18-A §1º, LC 188/2021 redaction) — LC 227/2026 touched ~20 points of LC 123 and NOT this one, so
+  the widely-reported raise HAS NOT PASSED.** A business billing R$360–720k is 4,4–8,9× over. **And Resolução
+  CGSN 140/2018 Anexo XI contains the string "ATACADISTA" exactly ZERO times** — no wholesale CNAE is open to a
+  MEI at all. The vehicle is an **ME/EPP on Simples Anexo I**: effective rate **4,00% at RBT12 R$180k · 5,65% at
+  R$360k · 6,73% at R$500k · 7,58% at R$720k** (computed from the Anexo, LC 155/2016 redaction).
+- **★★★ THE MUNICIPAL PAYMENT DEADLINE IS NOT IN ANY NATIONAL RULE — IT IS IN THE BUYER'S OWN DECREE, INSIDE
+  THE EDITAL. A SECOND CORRECTION TO MY OWN WORK, AND IT BITES 97% OF THE KIT MARKET.** `THE_WORKING_CAPITAL_
+  ANSWER.md` derived *"IN SEGES/ME 77/2022 art. 7 §2 halves the deadlines for dispensa-by-value ⇒ 5 + 5 business
+  days ≈ 14 calendar days."* **The arithmetic is right and the scope is wrong.** Same IN, **art. 1º**: it
+  governs *"no âmbito da Administração Pública **federal** direta, autárquica e fundacional"*; **art. 2º** reaches
+  a município **only** *"quando executarem recursos da União decorrentes de **transferências voluntárias**."*
+  ⇒ **For a município spending its own budget the federal clock does not apply — and `THE_ACOLHE_ASSESSMENT.md`
+  measured the kit market at 97% municipal.** What governs instead: **Lei 14.133 art. 141** (ordem cronológica,
+  binding on every federative level via art. 1º) · **art. 92 VI** (the deadline is a MANDATORY CLAUSE of the
+  contract) · **and the município's own decree**, which is where the number actually lives. Worked example,
+  Paracatu/MG quoting **Decreto Municipal 7.088/2024** inside its own edital: *"05 (cinco) dias úteis para a
+  liquidação… 15 (quinze) dias úteis para pagamento"* ⇒ **20 working days ≈ 28 calendar days.**
+  ⇒ **ADD TO THE PARSER: grep every edital's pagamento clause for `Decreto Municipal` and extract the two
+  numbers. There is no national figure to assume, so the cash-cycle screen must be read per buyer, per tender**
+  — which is the same verdict `WHEN A CONSTRAINT LOOKS LIKE A MONEY PROBLEM` reached from the federal `faturas`
+  API, arrived at independently and now the ONLY available method. *(Open and worth an hour: whether SUAS
+  fundo-a-fundo transfers count as "transferências voluntárias" under art. 2º — if they do, a large slice of kit
+  buyers falls back under the federal 5+5 clock. **UNVERIFIED**.)*
+  ★ **Three levers found in the same read.** **`art. 141 §1º II`** permits the chronological queue to be jumped
+  for *"pagamento a microempresa, empresa de pequeno porte… desde que demonstrado o risco de descontinuidade do
+  cumprimento do objeto"* — a lever only an ME/EPP holds; **`art. 141 §3º`** obliges every body to publish its
+  payment queue monthly, so her position in it is public; and **`art. 137 §2º`** gives the contratada the right
+  to terminate on *"atraso superior a 2 meses"*. ★ **And the best payment term in Brazilian procurement is brand
+  new: `art. 79 §1º VII "e"`, inserted by Lei 15.266/2025 for Sicx, caps payment at *"prazo não superior a 30
+  dias"* by statute.** Whether kits will appear in the Sicx catalogue is UNVERIFIED — the platform was not yet
+  published at this check.
+- **★★ FILE THE IN 1.234 ANEXO IV DECLARATION WITH EVERY CONTRACTING BODY OR BE WITHHELD AT SOURCE.**
+  **IN RFB 2.145/2023** inserted **art. 2º-A into IN RFB 1.234/2012**, obliging *"os órgãos da administração
+  pública direta dos estados, do Distrito Federal e dos **municípios**"* to withhold IRRF on payments for goods.
+  The carve-out is **art. 4º XI** (*"pessoas jurídicas optantes pelo Simples Nacional"*) and **art. 6º** requires
+  the Anexo IV declaration to be handed over **per contract**. *(That art. 4º XI reaches the new art. 2º-A
+  follows from art. 4º's own wording and LC 123 art. 13 I, but **no COSIT ruling squarely on the point was
+  found — UNVERIFIED**; file the declaration in every case regardless.)* ⚠ **And a wrong nota fiscal restarts
+  the whole cash cycle** — Paracatu item 11.1.2 returns an incorrect NF and recounts the clock from
+  resubmission, so the empenho number must be on the face of it (`art. 95 I` makes the nota de empenho the
+  contract instrument for dispensa by value).
 
 ## The test design that works
 
