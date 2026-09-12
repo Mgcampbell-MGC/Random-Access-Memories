@@ -1677,9 +1677,10 @@ strangers' dead parents, alone, in year three?"**
   BLL · BNC · Licitanet) reach 74,3% of open kit tenders, eight reach 82,9%, and `art. 87 §2º` PROHIBITS a
   município demanding its own complementary cadastro.** Money is owed only per bid (≈R$75 weighted; **R$0 on
   Compras.gov.br, and BLL charges 1,5% capped R$600 ONLY IF SHE WINS** — Regulamento BLL 2026 art. 17 II).
-  ⚠ **The one real design constraint: only 28% of kit tenders carry a kit keyword in `objetoCompra` — the
-  cron MUST descend to `/itens`, and that per-item classification is exactly the labour the paid alert
-  services sell** (Alerta Licitação R$369,90/yr publishes a price; ConLicitação and Effecti publish none —
+  ⚠⚠ **THE "ONLY 28% ARE TITLE-VISIBLE" CLAIM IS REFUTED — see `THE INVISIBILITY CLAIM WAS WRONG` below.
+  Measured properly on a complete national descent (14.560 tenders, 178.413 items, three full days):
+  75% ARE found by title search, not 28%.** The cron should still descend to `/itens`, because it costs
+  ~5.560 calls and four minutes a day, but it buys ~25% more market, not ~72% (Alerta Licitação R$369,90/yr publishes a price; ConLicitação and Effecti publish none —
   `THE MONITORING PINCER` in reais). See `THE_KIT_BUSINESS_BUILD.md`.
 - **★★★ THE BID-SELECTION FILTER IS THE MARGIN — in tender supply there is no pricing skill that rescues a
   lot she should not have entered.** Measured on 843 homologated award rows from 230 editais against
@@ -1859,6 +1860,89 @@ strangers' dead parents, alone, in year three?"**
   the whole cash cycle** — Paracatu item 11.1.2 returns an incorrect NF and recounts the clock from
   resubmission, so the empenho number must be on the face of it (`art. 95 I` makes the nota de empenho the
   contract instrument for dispensa by value).
+
+- **★★★ THE SEAT IS TAKEN — "NOBODY OPERATES NATIONALLY" WAS THE THESIS AND IT IS FALSE. A SÃO PAULO EPP
+  ALREADY HOLDS 10,4% OF THE NATIONAL NEWBORN-KIT MARKET.** **CONDAFE COMERCIO DE ROUPAS LTDA, CNPJ
+  10.430.444/0001-10, EPP, São Paulo/SP, `licitacao@condafe.com.br` — 15 UFs, 36 municípios, 44 editais,
+  R$6.135.997 homologado in 12 months.** Verified at two primary endpoints (Palmas/TO R$455.984 at
+  R$689,84/kit; Itaquaquecetuba/SP R$1.346.437 at R$359,05/kit). Behind it: **AMA COMERCIO 16 UFs / 38
+  editais · DEBECHE + HIGI TEX 14 and 9 UFs and THE SAME OPERATION** (both publish `roberto.daud@uol.com.br`)
+  **· FB COMERCIO 4 UFs · J.J.A. ENXOVAIS, a Micro Empresa registered 17 Jan 2024, already winning in MG, MS,
+  PR and SP.** ~36 firms operate multi-state. ⇒ **A pitch built on empty space is factually wrong and the
+  founder would discover it in her first disputa.** ★ **But the numbers reframe rather than kill it: 92,2% of
+  451 winners are single-UF BY HEADCOUNT, while multi-UF firms (7,8%) take 33,6% OF THE VALUE.** The model is
+  **PROVEN, NOT VACANT** — which is a better fact than white space, because the playbook is observable and the
+  target is ~half of what one existing São Paulo operator already does. **Count winners by VALUE before
+  calling a market unoccupied; a headcount concentration hides the money.**
+- **★★★ THE INVISIBILITY CLAIM WAS WRONG — MY OWN LAW OF 12 Sep, REFUTED THE SAME DAY BY A COMPLETE DESCENT.**
+  I wrote *"only 28% of kit tenders carry a kit keyword in `objetoCompra`… the cron MUST descend to `/itens`,
+  and that per-item classification is exactly the labour the paid alert services sell."* **Measured properly
+  — every tender published nationally in modalidades 6/7/8 on three full days, 14.560 tenders and 178.413
+  item records — 75% ARE title-visible and only 25% are hidden.** Of the four hidden rows, **exactly one was a
+  genuine hidden layette purchase** (Sapezal/MT, *"TECIDOS, AVIAMENTOS, CAMA, MESA E BANHO"*, containing body,
+  bolsa maternidade, lençol de berço, toalha com capuz); **one was a gap in my own regex**, not a hidden
+  tender. ⚠ **n=16 is small — the 95% interval on "25% hidden" runs 7%–52% — but even the upper bound is below
+  my 72%.** An independent cross-check agrees: 16/14.560 ⇒ ~1.375 kit tenders/year against 1.012 actually
+  harvested by title = 74% recall, two methods, same answer. ⇒ **The descent is still right (it costs ~5.560
+  calls and 158–265 seconds a day at 10 connections — trivial on a cheap VPS) but it buys a QUARTER more
+  market, not three-quarters. Do not sell it as the moat.** ★ **And a hard operational finding: CATMAT
+  FILTERING DOES NOT WORK AT MUNICIPAL LEVEL** — on municipal kit items `catalogoCodigoItem`, `catalogo` and
+  `categoriaItemCatalogo` are **null** and `itemCategoriaNome` is *"Não se aplica"*. Municipal buyers free-type
+  the description. **Any plan depending on a CATMAT code to find municipal lines is dead.**
+  ⚠ **Two rail corrections worth banking: `ordenacao=-data` on `/api/search/` does NOT sort by date (results
+  are relevance-ranked) and its `total` field is a fuzzy-OR match count that is NOT a market size** — any
+  number taken from it is wrong. And `/api/consulta/v1/…` rate-limits hard (**HTTP 429 on 744 of 821 calls**);
+  `/api/pncp/v1/…/itens` and `/resultados` are far more tolerant.
+- **★★★ LC 123 art. 48 §3 IS A RIGHT OF LAST LOOK, NOT A 10% HANDICAP — AND I WAS ABOUT TO GET IT BACKWARDS.**
+  The statute lets an edital *"estabelecer a prioridade de contratação para as ME e EPP **sediadas local ou
+  regionalmente, até o limite de 10% do melhor preço válido**"*, which reads like a bid penalty on a distant
+  supplier. **It is not.** `Decreto 8.538/2015 art. 9º II` sets the mechanics: where the local firm's offer is
+  *"iguais ou até dez por cento superiores ao menor preço"*, it *"**poderá apresentar proposta de preço
+  inferior àquela considerada vencedora**"* — the *empate ficto* shape of arts. 44–45. **The distant bidder's
+  price becomes a ceiling a local firm may UNDERCUT; her bid is not marked up.** Measured prevalence: **10,8%
+  of 222 kit editais** (9,5% state the explicit 10% band). ⇒ **Cost it as ~11% of the field lost to a last
+  look, never as 10% off every bid.**
+  ★★ **AND THE LOCAL-ADVANTAGE CLAUSES DO NOT BIND, MEASURED AGAINST OUTCOMES RATHER THAN ARGUED.** Across 169
+  editais holding both full PDF text and award records, the multi-state (≥3 UF) win rate is **HIGHER** where
+  the supposedly-protective clause exists: **amostra 43% vs 30% · entrega parcelada 38% vs 30% · atestado 37%
+  vs 31%** — and the price is identical (**median assembled-kit unit award R$239,80 single-UF vs R$238,50
+  multi-UF**). Prevalence: operative amostra **27,9%** (median deadline **5 days**, only 2 of 62 permit post,
+  only 8 of 62 return it), entrega parcelada **38,3%**, delivery to a named municipal address 44,1%, atestado
+  38,7%, visita técnica 5,0%; **median prazo de entrega 10 days**, 31,2% at ≤5 days. **96,4% of kit lines are
+  judged on `Menor preço`.** ⇒ **Test a suspected barrier against WHO ACTUALLY WINS before pricing it as one.**
+- **★★★ THE FREE MUNICIPAL PAYMENT-RISK SCREEN — SICONFI RREO ANEXO 07, AND IT IS THE BEST THING FOUND IN THIS
+  HUNT.** There is **no per-invoice municipal rail** — PNCP's `/contratos/{ano}/{seq}/faturas` returns **404**,
+  and `contratos.comprasnet.gov.br` (which produced the federal 15-vs-67-day finding) is **federal UASGs
+  only**. What works instead is free, national, keyless and one call per buyer:
+  `apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2026&nr_periodo=3&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2007&co_esfera=M&id_ente={cod_ibge}`
+  — it returns the prior year's **restos a pagar PROCESSADOS** (invoices already delivered, attested and
+  liquidated but unpaid) split into inscritos / pagos / cancelados / saldo. **That is literally "how much of
+  what suppliers already earned has this buyer actually paid."** The CNPJ↔IBGE join is free at
+  `/siconfi/tt/entes` and **matched 699 of 699 kit-buying municípios (100%)**. Measured on 148 of the 200
+  largest: **median 76,7% paid, p25 44,9%, p10 23,5%** ⇒ **43,2% still owed >30% of the prior year's liquidated
+  invoices at mid-year and 29,1% owed >50%**, while **only 6,1% wrote off more than 5% — so the risk is DELAY,
+  NOT DEFAULT.** Named and live: **Nhamundá/AM paid 0,0% and published a R$2,12M kit tender**; Icatu/MA 0,0% on
+  R$1,09M; Aparecida de Goiânia/GO 19,2% on R$161M with a R$1,33M kit tender running. Against Pinheiro/MA,
+  Bertioga/SP and Colíder/MT at 100%. ⇒ **One GET before bidding; reject where saldo ÷ inscritos > ~0,30 or
+  cancelados > ~2%.** Back it with **RGF Anexo 05** (`no_anexo=RGF-Anexo%2005&co_poder=E`) for *Disponibilidade
+  de Caixa Líquida*, which resolved at 9 of 10 random small municípios including ones of 2.557 inhabitants.
+  ★★ **THIRD INDEPENDENT ARRIVAL AT THE SAME LAW: the same kit sells at the same price everywhere, so BUYER
+  SELECTION IS WORTH MORE THAN ANY PRICE ADVANTAGE SHE COULD ENGINEER.** The federal ateste study found it
+  (15 vs 67 days), the supplier-terms study found it, and now the municipal fiscal data finds it — three
+  different rails, one conclusion.
+- **★★ AND THE CAPACITY OBJECTION IS DEAD: 23 FIRMS CLEAR R$400k AND 13 CLEAR R$700k OF NEWBORN-KIT REVENUE
+  ALONE IN 12 MONTHS.** Median winner takes R$22.474 and **78,5% win exactly one edital a year** — a long tail
+  of one-shot local winners with a small professional head. **A market where nobody reaches the needed volume
+  is telling you the volume is not winnable; this one is telling the opposite.** Sizing, measured across 1.012
+  kit editais: **R$118,2M estimated / R$59,1M homologado, 979 municipal · 3 consórcio · 6 estadual · 0
+  federal**, 699 distinct buying municípios, **~4,0 kit editais published per working day**, median
+  homologated per edital **R$31.080**, haircut **74,9%**. ⇒ the bar needs **0,6–1,2% of the market, 12–23
+  editais a year, a win rate of 1,2–2,3% of the field.** ⚠ **Three deflations to keep with the number: most
+  of it is SRP, so `valorTotalHomologado` is a REGISTERED CEILING, NOT A SALE (the contract rail shows only
+  R$54,2M actually contracted); only 713 of 6.170 kit lines are assembled-kit lines against 5.457 component
+  lines; and some large state programmes are not on PNCP at all** — the R$18,98M *"Kit Maternidade Mãe
+  Gaúcha"* (31.508 kits, won by a confecção in MATO GROSSO DO SUL, ~1.800 km away) has a contract on PNCP and
+  no matching edital, the same invisibility already recorded for Paraná.
 
 ## The test design that works
 
