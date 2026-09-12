@@ -200,3 +200,16 @@ ME/EPP reservation; CISARP's R$8,7M is 38 separate per-item lines of R$32–79k,
 LC 123 art. 48 I R$80.000 threshold and wrongly flagged `Sem benefício`** — a free written impugnação.
 
 **Unchanged and still binding: working capital and lot size.** See `THE_WORKING_CAPITAL_ANSWER.md`.
+
+**5. THE PRIVATE LAYER, SIZED — smaller by an order of magnitude, better in price and cash cycle.** Private
+maternities do **not** buy kits (they publish a *Lista de Enxoval* of what the mother must bring; Pro Matre's
+own answer is a shop inside the hospital). The two visible private B2B sub-channels publish **~3.356 kits/year
+in total** — she would need ~43% of it. **Margin layer on top of a public desk, never a second engine**, and
+the founder's public-first sequencing was right. ⚠ A kit also competes with **money**: the same CCT natalidade
+clause is discharged with a R$450 cesta by one administrator and a **R$600 gift card** by another.
+
+**6. THE STATE TIER EXISTS AND RIDES THE SAME RAIL — four tenders, not a stream.** SE **R$6,0M** (per-item,
+SRP), PB R$1,0M (one undivided factory lot), RO R$844k (**explicit ME/EPP exclusivity on individual lines**),
+RJ (**80.000 units per line**). Estadual is **2,1%** of kit editais. **Nascer Bem Paraná is NOT on PNCP** under
+eight keyword sweeps — unverified, and invisible to the cron. **And the haircut worsens with lot size:
+homologado ÷ estimado = 37% / 42% / 68% at state level against 79% municipal.**

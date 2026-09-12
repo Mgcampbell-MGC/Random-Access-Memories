@@ -1711,6 +1711,70 @@ strangers' dead parents, alone, in year three?"**
   undivided lot with no ME/EPP reservation (a factory lot), while CISARP's R$8,7M is 38 separate per-item
   lines of R$32–79k. Consortia are only 2,1% of kit editais: few, enormous, lumpy, not a stream.**
 
+- **★★★ THE GIFT OBLIGATION IS DISCHARGED BY MONEY — when a rule compels a party to mark an event, the cheapest
+  conforming discharge is a prepaid card, not a physical unit.** Measured 12 Sep on the SAME collective-agreement
+  *natalidade* clause: Central dos Benefícios settles it with a **R$450 cesta** whose 24-item BOM is written into
+  the CCT, and Bem Mais Benefícios / Icatu Seguros settles it with a **R$600 gift card** (*"cartão presente…
+  poderá ser utilizado em qualquer estabelecimento"*, SUSEP 15414.001273/2006-81) — while the employer-gifting
+  trade press ranks the card as idea **#1** (*"Pay X: a opção mais completa… liberdade real… o RH pode acompanhar
+  todos os envios, controlar orçamentos"*). **A card has no MOQ, no freight, no SKU risk and a manager
+  dashboard.** ⇒ **Before selling a physical unit into a compelled-gift channel, ask what the SAME obligation
+  costs to discharge in cash.** *(`THE TEMPLATE FLOOR TEST` in a benefits costume — and it explains why the
+  PRIVATE kit channel is small while the PUBLIC one, where the statute names an in-kind benefício eventual the
+  município must hand over, is large.)*
+- **★★★ PRIVATE BRAZILIAN MATERNITIES DO NOT BUY NEWBORN KITS — THEY PUBLISH A LIST OF WHAT THE MOTHER MUST
+  BRING. Settled 12 Sep at the buyers' own pages, not merely unfound.** Grupo Santa Joana's Hospital Santa Maria
+  runs a page titled *"Lista de enxoval"* (*"Macacão: 6 peças · Body: 6 peças…"*); HNSG publishes the same and
+  adds *"Monte kits para cada dia"*; and **Pro Matre Paulista's own paid Plano Maternidade lists its "cortesias"
+  as online courses, a pezinho test, PARKING and WIFI.** The structural tell: **the hospital's answer to the
+  enxoval need is a RETAIL SHOP inside the hospital** (Pro Matre Baby), not a gift. Five searches for a
+  private-hospital courtesy kit returned only PUBLIC programmes. ⇒ **The CNES maternity register is a superb
+  list of the WRONG BUYER for this product** — 4.414 active establishments with a centro obstétrico, **2.099
+  private, 70,5% email, 91,2% phone** — so do not spend any of the 15–20 first conversations on it. ⚠ And
+  private hospitals are **SLOWER to onboard than a município**: Sírio-Libanês requires SAP Ariba homologação
+  plus contrato social, procuração, cartão CNPJ, FGTS, CNDs and alvará; Hapvida runs Coupa and holds a supplier
+  in a database *"a ser pesquisado conforme necessidade"*. **The private channel's speed advantage exists only
+  in gifting firms and benefits administrators — a quote and a PO, no homologação.**
+  ★ **AND A REUSABLE CNES TRAP THAT FAILS IN THE DIRECTION OF A FALSE COMPLETE: paging the national list WITHOUT
+  `codigo_uf` SILENTLY DRIFTS** — a flat run returned 4.414 rows holding only **3.051 distinct** `codigo_cnes`
+  (932 duplicated, one six times, identical payloads at different offsets), i.e. **it skipped ~31% of the
+  population while looking finished.** Sharding by UF returned 4.414 distinct and the flat set is a strict
+  subset. **Shard CNES paging by UF and dedupe on `codigo_cnes`, always.** *(Same day, same API:
+  `/assistencia-a-saude/hospitais-e-leitos` claims in its own summary to return "endereço, telefone e e-mail"
+  and returns neither — `A COUNT OF STRUCTURES IS NOT A CHECK OF CONTENT`, fired by the publisher's own docs.)*
+- **★★ THE PRIVATE LAYER IS A MARGIN LAYER, NOT A VOLUME LAYER — SIZE A SECOND CHANNEL AGAINST ITS VISIBLE
+  TOTAL BEFORE CALLING IT A SECOND ENGINE.** The two visible private B2B kit sub-channels publish their own
+  annual volumes: **Bird "+2.180 Kits Bebê corporativos atendidos só em 2025" across "+250 Empresas" (8,7 kits
+  per client per year, each through a consultative quote), and Central dos Benefícios "entrega 1.176 kits
+  natalidade em 2024"** — **~3.356 kits/year in total.** At a R$400 ticket and 30% gross the bar needs ~1.440
+  ⇒ **~43% of the entire visible private market, against `THE MARKET-MULTIPLE RULE`'s 15–25%. It fails by ~2×.**
+  Against that, the public side is 561 bodies, ≥600 editais/year and a homologated municipal median of R$58.475
+  — **ten R$60k contracts clear the bar at a 3–5% share.** ⇒ **The founder's sequencing (public first, private
+  second) was right and only the SIZING needed resetting: the private leg is worth R$100–300k/year of
+  high-margin, fast-paying revenue ON TOP OF a public desk — which is exactly the working capital the public leg
+  is short of.** ⚠ **And the private employer channel's incumbent already solved the problem she would sell
+  against**: Glim names it (*"A quantidade mínima obriga a comprar 50 kits e estocar… Chega atrasado"*) and
+  answers it with *"lojinha + produção sob demanda… Zero estoque parado"* over a *"Prateleira Infinita — 10.000+
+  produtos… White-label, sem estoque mínimo"* — `THE FREE FRONT DOOR` and `THE CATALOGUE SCISSORS` together.
+  *(Price census worth keeping: the only published corporate kit prices in Brazil are Meu Mundo Personalizado's
+  **n=12, R$139,55–659,11, median R$405,50** — every other operator quotes. The premium over municipal is
+  PERSONALISATION plus per-mother home delivery, i.e. the second blade of the catalogue scissors, i.e. per-unit
+  handling that must be a vendor's minutes or it is a job.)*
+- **★★ THE STATE TIER OF A MUNICIPAL NICHE IS A THIRD LOTTERY, NOT A THIRD STREAM — AND IT RIDES THE RAIL
+  ALREADY BUILT.** Verified by me 12 Sep against a SECONDARY lead (Nascer Bem Paraná, ~R$625/kit × 16.000):
+  **eight keyword sweeps × six pages returned 1.538 distinct editais, 713 with a kit keyword — and Paraná is NOT
+  ON PNCP under any of them, so its headline stays UNVERIFIED and the cron cannot see that programme at all.**
+  What IS there are the four largest kit tenders in the dataset: **SE R$6.005.600 est / R$2.228.150 homologado,
+  SRP, PER-ITEM** (bolsa 5.000 @R$220 · toalha 5.000 @R$40) · **PB R$1.031.016 / R$700.272 but ONE undivided lot
+  at R$979.465 "Sem benefício" — a factory lot** · **RO R$843.870 / R$357.660, per-item and EXPLICITLY reserved
+  (*"Participação exclusiva para ME/EPP"* on toalha 3.000 @R$20,20 and camiseta 3.000 @R$13,77; *"Cota
+  reservada"* on vestimenta and bolsa)** · **RJ at 80.000 units PER COMPONENT LINE**, on its own portal
+  `compras.rj.gov.br`. **Estadual is 15 of 713 core editais (2,1%) — the same few/enormous/lumpy shape as the
+  consortia, and it must not be modelled as a stream.** ★ **AND THE HAIRCUT IS WORSE THE BIGGER THE LOT:
+  homologado ÷ estimado = SE 37% · RO 42% · PB 68%, against ACOLHE's measured municipal median of 79%.
+  Price against the state's HOMOLOGATED award, never its estimate** — `THE REFERENCE-PRICE ILLUSION` scales with
+  lot size.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the

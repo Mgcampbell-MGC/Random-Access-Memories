@@ -271,3 +271,119 @@ And three written asks, none of them a sales call:
 *Sources: all URLs above fetched 12 Sep 2026 unauthenticated. Reproducible from
 `scratchpad/kits/push/` and `scratchpad/kits/buyers/`.
 Stream 3 — the private maternity channel and CNES contacts — was still running when this was written.*
+
+---
+
+# STREAM 3 — THE PRIVATE LAYER, AND WHAT VERIFYING IT TURNED UP INSTEAD
+
+*(12 Sep 2026. The founder: "what about private hospitals, and are all of those 1.100 maternity and delivery
+for new babies?")*
+
+## 6. THE ANSWER ON PRIVATE HOSPITALS: **NO — AND IT IS SETTLED, NOT MERELY UNFOUND**
+
+**Brazilian private maternities do not buy newborn kits. They publish a list of what the mother must BRING.**
+Three of the country's leading private maternities, in their own words:
+
+> *"Enxoval do bebê: Macacão: 6 peças · Body: 6 peças · Calça com pé: 6 peças · Manta ou cobertor: 2 peças ·
+> Luva: 2 pares · Meia: 2 pares"* — Hospital e Maternidade Santa Maria (Grupo Santa Joana), page titled
+> **"Lista de enxoval"**, `maternidadesantamaria.com.br/guia-de-internacao/lista-de-enxoval/`
+
+> *"o HNSG relacionou os itens necessários para o enxoval do bebê e da mamãe na ida à maternidade… **Monte
+> kits para cada dia**"* — Hospital Nossa Senhora das Graças, `hnsg.org.br/internacao/lista-de-enxoval/`
+
+> *"Também oferecemos algumas cortesias para você. Veja quais são: Curso para Gestante Online…; Teste do
+> pezinho ampliado…; **Pacote de Estacionamento** – até 72 horas…; **Wifi**."* — Pro Matre Paulista's own
+> **Plano Maternidade** (the paid birth package), `promatre.com.br/plano-maternidade/`
+
+**And the structural tell: the hospital's answer to the enxoval need is a RETAIL SHOP, not a gift** — *Pro
+Matre Baby*, inside the hospital, selling pelúcias, mordedores, sapatinhos, mantas. Five independent searches
+for a private-hospital courtesy kit returned only **public** programmes (Mãe Paulistana, Cegonha Carioca,
+Nascer Bem Paraná). Rede D'Or's maternity page greps **zero** hits on `kit|cortesia|enxoval|presente|brinde`.
+
+**The list itself is real and good — it is just the wrong buyer.** Measured properly from CNES:
+**4.414 active establishments with a centro obstétrico**, of which **2.099 (47,6%) are private**:
+**70,5% publish an email, 91,2% a phone.** *(File written: `maternidades_privadas_cnes.csv`.)*
+⚠ Three caveats from reading the rows rather than counting them: the CNES address is the **licensing**
+contact, not purchasing (`licenciamentosp@rededor.com.br`, `societario@…`, one hospital's accountant at a
+gmail address); **chains collapse the buyer count** (Hapvida 30 + Rede D'Or 21 + Intermédica 9 ≈ two
+purchasing centres); and the filter is *has a centro obstétrico* — units with obstetric beds but no obstetric
+centre are UNVERIFIED, because the API exposes no leitos endpoint.
+
+**★ A REUSABLE TRAP, worth more than the list: paging CNES nationally WITHOUT `codigo_uf` SILENTLY DRIFTS.**
+A flat run returned 4.414 rows containing only **3.051 distinct** CNES codes — 932 duplicated, one six times,
+identical payloads at different offsets — i.e. it **skipped ~31% of the population while appearing complete**.
+Sharding by UF returned 4.414 distinct codes, and the flat run's set is a strict subset. **Always shard CNES
+paging by UF and dedupe on `codigo_cnes`.** *(And `/assistencia-a-saude/hospitais-e-leitos`, whose own summary
+claims it returns "endereço, telefone e e-mail", returns neither in the actual row —
+`A COUNT OF STRUCTURES IS NOT A CHECK OF CONTENT`, fired by the publisher's own docs.)*
+
+## 7. ★★ THE GIFT OBLIGATION IS DISCHARGED BY MONEY
+
+The employer channel is occupied and its own trade press ranks a **prepaid card as idea #1**:
+
+> *"**1. Pay X: a opção mais completa, prática e personalizável** … oferecer um **cartão pré-pago** como parte
+> do kit maternidade é uma forma inteligente de dar liberdade real… Para o RH… é possível acompanhar todos os
+> envios, controlar orçamentos"* — Incentive, `incentive.com.br/kit-maternidade-corporativo-6-ideias…`
+
+And the **same collective-agreement clause** is discharged two ways by two administrators — **a R$450 cesta**
+(Central dos Benefícios) or **a R$600 gift card** (Bem Mais Benefícios / Icatu Seguros, SUSEP
+15414.001273/2006-81): *"cartão presente no valor de R$600,00 que poderá ser utilizado em qualquer
+estabelecimento."*
+
+⇒ **A kit competes not with other kits but with money — zero MOQ, zero freight, zero SKU risk, and a manager
+dashboard.** `THE TEMPLATE FLOOR TEST` in a benefits costume.
+
+**★ THE ONE GENUINE RULE FOUND ON THE PRIVATE SIDE — and it dies on size.** *Kit natalidade* is a
+**collective-bargaining obligation with the BOM written into the CCT**, carried identically by FENATIBREF
+(national), SINTIBREF-MG, SINTIBREF-ES, SEIBREF-SP, SECOHTUH-ES and SINBRAF/RS — a 24-item table, declared
+value **R$450**, and the duty sits on the employer: *"as empresas são obrigadas a contratar um seguro de vida,
+no qual está embutida a entrega de uma Cesta Natalidade… composta por **16 itens pré-estabelecidos na
+Convenção Coletiva**"* (SECHSAR). **Exogenous clock, non-stretchable unit, BOM written by someone else, no
+relationship to hold — it passes limbs 1 and 2 of `THE MACHINE TEST` cleanly.** And then the administrator
+publishes its own annual volume in its page title: **"Central dos Benefícios entrega 1.176 kits natalidade em
+2024."** *(Title and slug are the publisher's own — PRIMARY; the article body is UNVERIFIED, Cloudflare 403.)*
+
+**The private arithmetic, honestly:** the two visible private sub-channels together deliver **~3.356 kits/year**
+(Bird's own published *"+2.180 Kits Bebê corporativos atendidos só em 2025"* plus Central's 1.176). At a R$400
+ticket and 30% gross she needs ~1.440 kits/year ⇒ **~43% of the entire visible private B2B kit market**,
+against `THE MARKET-MULTIPLE RULE`'s 15–25%. **It fails by about 2×.**
+
+⇒ **THE PRIVATE LAYER IS A MARGIN LAYER, NOT A VOLUME LAYER.** Worth R$100–300k/year of high-margin,
+fast-paying revenue *on top of* a public desk — which is precisely the working capital the public leg is short
+of — and it cannot be an engine. **The founder's sequencing (public first, private second) was right; only the
+sizing needed resetting.** ⚠ And private *hospitals* are **slower** to onboard than a município: Sírio-Libanês
+requires **SAP Ariba homologação** plus contrato social, procuração, cartão CNPJ, FGTS, CNDs and alvará;
+Hapvida runs **Coupa** and holds you in a database *"a ser pesquisado conforme necessidade."* The private
+channel's speed advantage lives entirely in the gifting firms and benefits administrators — a quote and a PO,
+no homologação at all.
+
+## 8. ★★★ WHAT VERIFYING THE LEAD ACTUALLY FOUND — THE STATE TIER, AND IT IS ON THE SAME RAIL
+
+The stream ended by pointing at a state programme (*Nascer Bem Paraná*, ~R$625/kit × 16.000 kits, SECONDARY).
+**I ran the check myself — 8 keyword sweeps × 6 pages of PNCP, 1.538 distinct editais, 713 with a kit keyword
+in the object — and the result corrects the lead in both directions.**
+
+**Paraná is NOT on PNCP.** Zero hits under any of eight terms. Its headline number stays **UNVERIFIED**, and
+more importantly **the cron cannot see that programme at all.**
+
+**But four other states are, and they are the largest kit tenders in the entire dataset:**
+
+| State | Object | Estimated | Homologated | Shape |
+|---|---|---|---|---|
+| **SE** | *itens de enxoval de bebê… PROGRAMA…* | **R$6.005.600** | **R$2.228.150** | SRP, **per-item** — bolsa 5.000 @R$220, toalha 5.000 @R$40, sabonete 5.000 @R$20,89 |
+| **PB** | *kits de enxoval para recém-nascidos* | R$1.031.016 | R$700.272 | ⚠ **ONE undivided lot at R$979.465, "Sem benefício"** — a factory lot |
+| **RO** | *montagem de kit maternidade, enxoval e higiene* | R$843.870 | R$357.660 | per-item, and **explicitly reserved**: *"Participação exclusiva para ME/EPP"* on toalha (3.000 @R$20,20) and camiseta (3.000 @R$13,77); *"Cota reservada para ME/EPP"* on vestimenta and bolsa |
+| **RJ** | *Kits de Enxoval personalizado para Puérperas* | not published | — | **80.000 units per component line** — the largest volume seen anywhere |
+
+**Three things this changes:**
+1. **The state tier is 15 of 713 core editais (2,1%) — the same shape as consortia: few, enormous, lumpy.**
+   It is not a stream and must not be modelled as one.
+2. **It is reachable by the cron already built.** Same PNCP endpoint, same five free registrations *(plus one:
+   RJ runs `compras.rj.gov.br`, its own portal)*. **No new capability.**
+3. **★ AND THE HAIRCUT IS WORSE AT STATE LEVEL THAN MUNICIPAL: homologated ÷ estimated = SE 37% · RO 42% ·
+   PB 68%**, against ACOLHE's measured municipal median of 79%. **Price against the state's homologated award,
+   never its estimate — `THE REFERENCE-PRICE ILLUSION` fires harder the bigger the lot.**
+
+⇒ **The board does not change. The kit desk's engine is municipal + consortium per-item lines; the state tier
+is four to five lottery tickets a year, two of which carry ME/EPP reservations she qualifies for; the private
+layer is margin on top. And the private hospital list, though excellent, is not a buyer list for this.**
