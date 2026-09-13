@@ -1944,6 +1944,88 @@ strangers' dead parents, alone, in year three?"**
   Gaúcha"* (31.508 kits, won by a confecção in MATO GROSSO DO SUL, ~1.800 km away) has a contract on PNCP and
   no matching edital, the same invisibility already recorded for Paraná.
 
+- **★★★ THE REPAIR PASS — 13 Sep 2026. THE FOUNDER CHANGED ONE WORD IN THE BRIEF AND IT CHANGED THE OUTPUT
+  CLASS.** *"Adversarial pass should lead to a BETTER business not a dead business… not another KILL the idea,
+  but a better idea."* The workflow had been launched with the archive's reflex — *"YOUR JOB IS TO KILL IT.
+  Default to REFUTED if uncertain"* — and was stopped and rewritten mid-flight into a **repair brief**: find
+  the strongest buildable version, find the seam inside the category, propose the fix for every problem, and
+  only then state the honest floor. Same rigour, opposite objective. **21 agents, 189 PDMs, 8 families — and
+  it returned a business where the kill brief would have returned eight nulls.** ⇒ **AN ADVERSARIAL PASS MUST
+  BE BRIEFED TO REPAIR, NOT TO REFUTE. This archive has ~130 dead candidates and zero businesses because
+  every pass has been a kill pass.** ★ **And the board agent proved the framing mattered rather than asserting
+  it: every family that died, died on a limb measured on the WRONG DENOMINATOR, the WRONG COST BASIS or the
+  WRONG SLICE — the sweep's numbers were individually defensible and its conclusions were wrong.**
+  See `THE_EXPEDIENTE_DESK.md`.
+- **★★★ THE UNIT OF SALE IS THE EDITAL, NOT THE PRODUCT — and this is what makes a government supply desk a
+  business instead of a catalogue.** Measured: of 871 tenders buying pencils, **83,7% bought pens in the same
+  tender**, 78% bought ≥2 of pen/eraser/clip, and **the median material-de-expediente edital carries 33 item
+  lines** (p75 62, p90 98). One bid, one nota fiscal, one delivery, one freight. ⇒ **Do not screen a
+  government-supply candidate PDM by PDM: no single PDM clears** (pasta arquivo, the largest of 179, needs
+  **13,2%** of its addressable pool and only **10 of 973 suppliers reach R$570k in it**; caneta needs 63,9%;
+  lápis 58–72%). **Screen the BASKET.** ≈R$18.235 of addressable content per edital ⇒ **35 won baskets a year
+  for R$640k of billings.** ★ **THE ANSWER TO "PRODUCT-AGNOSTIC OR DEEP?" IS BOTH, ON DIFFERENT AXES: DEEP IN
+  ONE CLASS, AGNOSTIC ACROSS ITS PDMs, NEVER ACROSS CLASSES.** Limpeza, têxtil, copa and saúde each returned a
+  family-wide null for a structural reason worth keeping — **continuous-consumption institutional commodities
+  get centralised into enormous SRP frameworks precisely BECAUSE demand is forecastable**, and they need
+  different wholesalers, which breaks the single-supplier-account model venda à ordem depends on.
+- **★★★ QUANTITY IS THE PRICE VARIABLE, NOT VALUE BAND — A 12,6× SPREAD, MONOTONIC, MEASURED ON ONE SPEC.**
+  Caneta esferográfica azul, spec-controlled, n=1.492: **qty ≤60 → R$6,70 · 60–150 → R$3,19 · 250–450 → R$1,73
+  · 1.100–2.400 → R$1,04 · 2.400–5.000 → R$0,82 · 5.000–12.000 → R$0,70 · >12.000 → R$0,53.** ⇒ **The state's
+  MONEY sits in the quantities where the price is below her cost; the MARGIN sits in quantities too small to
+  matter alone — which is why the basket is mandatory and why every "big market" reading is a trap** (R$42M of
+  caneta reduces to **R$1,00M** of addressable pool). **The bid rule is a QUANTITY CEILING (~2.400 units), not
+  a value floor.** Above it she is bidding against BIGNARDI (capital R$359.626.755), MASTER (R$78.215.000) and
+  BRINK MOBIL (R$32.018.254). ⚠ **And the "R$5–80k band pays +43–78% more" finding was a PRODUCT-MIX ARTEFACT
+  — it INVERTS within sub-type** (aba+elástico −8%, catálogo −2%, sanfonada −9%, suspensa −1%): expensive
+  sub-types simply form bigger lines. **`A COUNT OF STRUCTURES IS NOT A CHECK OF CONTENT` has now fired a
+  FIFTH time in this file, three of them on agents' own output. Any cross-sectional premium must be
+  re-measured inside a single spec before it is believed.**
+- **★★★ COMPUTE DISPENSA SHARE BY VALUE, NEVER BY LINE — AND THE AUTO-EMAIL THESIS DOES NOT TRANSFER.**
+  Verified on three independent PDMs: **dispensa is 2,81% (pasta), 2,39% (caneta) and 0,30% (lápis) of VALUE
+  — while being 20,8% of LINES.** The by-line number is **7–70× more flattering** and every family in this
+  sweep was initially scored on it. ⇒ **`THE DISPENSA ORACLE`'s distribution thesis — the IN 67/2021 art. 7
+  auto-email that made FIELDTAG work in thermal media — DOES NOT GENERALISE to office supplies.** There the
+  distribution is Lei 14.133 art. 54 publication plus a per-item cron, and the selling is a robot auction.
+  ★ **But dispensa has a second use nobody had named: IT IS A PERFECT ATESTADO FACTORY.** Median dispensa line
+  **R$281**, decided in days, **1.316 of them a year in PDM 20 alone** — smallest lots, fastest cycle, lowest
+  capital, no certification gate, and **3 of 5 editais demand an atestado and ALL THREE ARE QUALITATIVE**, so
+  one completed delivery of any size discharges it **and it transfers across all 179 PDMs of class 7510**
+  because the object is "material de expediente". **Use the dead channel to mint the credential that unlocks
+  the live one.**
+- **★★ WHOSE COST BASIS IS THE "RETAIL" PRICE? — ONE CNPJ LOOKUP, AND IT INVERTED A WHOLE FAMILY'S VERDICT.**
+  Every LIMB-0 kill in the expediente sweep compared a **Kalunga retail shelf** to a state median and called
+  the category dead. **Retail is not her cost.** And the one open wholesale catalogue any agent found —
+  trading as **"ATACADO SAO PAULO LTDA"** — is registered in **Vitória, ESPÍRITO SANTO** (`publica.cnpj.ws/
+  cnpj/28410074000115`), so every margin priced off it is an **interstate** price: **LC 123 art. 13 §1 XIII h
+  adds ~6 points, and papelaria sits on the RICMS-SP art. 313-Z13 ST list so art. 426-A antecipação fires on
+  entry.** ⇒ **Before killing a category on price, establish that the number you are calling COGS is a price
+  she can be invoiced at IN HER OWN STATE. A trading name is not an address.** ⚠ **There is currently no
+  verified São Paulo wholesale price anywhere in this record, and the entire expediente build gates on
+  getting one.**
+- **★★ REJECT EVERY *LOTE ÚNICO* — THE CHEAPEST BID RULE IN THE FILE, WITH A MEASURED PRICE TAG.** Per-item
+  municipal lines clear at **97, 98, 99, 99, 100, 100, 100%** of estimate; **LOTE ÚNICO lines clear at 46, 46,
+  46, 63, 36%** — and two of them awarded pencils at **R$0,102 and R$0,069, below the R$0,282 wholesale
+  floor.** Detect with `^\s*LOTE` on the item description. **Costs 15% of the funnel (22 of 150 sampled
+  editais) and saves 100% of the losses.** ★ Three more rules from the same read: **read
+  `siglaUnidadeFornecimento` before pricing** (533 PCT + 234 CX lines sit inside PDM 20's 6.343 — comparing a
+  box price to a unit cost is the archive's own unit error in a third costume, and it moved a margin by **81
+  points**); **reject "CONFORME MODELO DO ÓRGÃO"** (custom spec, and the two largest lines in the dataset
+  carry it); and **reject any numeric atestado.**
+- **★★★ THE INCUMBENT IS THE PROOF, AND ONE OF THEM HAS EXACTLY HER CAPITAL.** Reverse-engineering the small
+  winners was the single most valuable instruction in the repair brief. **P H P DE FREITAS RODRIGUES, CNPJ
+  38.261.300/0001-05, Empresário Individual, capital social R$50.000 — the same figure this plan budgets —
+  wins 79 tenders a year averaging R$14.073 = R$1.111.800 in expediente, AND is the same operator this archive
+  already recorded at R$1,78M/yr in thermal media.** One person, R$50.000, **~R$2,9M/year across two
+  categories.** Alongside him **POLLYANA MELO DA SILVA LUSTOSA** (CNPJ 37.722.924/0001-01, EI, capital
+  R$80.000) at **30 tenders/yr averaging R$35.182 = R$1.055.475.** ⇒ **The target of 35 baskets/year sits
+  BELOW both measured incumbents, which is the first time in this archive a plan's volume assumption has been
+  bracketed by real operators rather than asserted.** ⚠ **And the honest floor: at 35 baskets the net is
+  R$110–140k/yr ≈ US$1.770–2.250/month — the BOTTOM EDGE of the bar. The comfortable number is the
+  incumbents' R$1,0–1,1M of billings, i.e. 55–75 baskets.** ★ **There is no moat and the head start is ZERO:
+  PDM 20 has 973 suppliers and PDM 99 has 978, so `THE BUILDABILITY THRESHOLD`'s "one quarter of absence" does
+  not apply — nobody is absent. The edge is a persistent execution differential, and the evidence that
+  competitors do not run it is that they keep losing money in public.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
