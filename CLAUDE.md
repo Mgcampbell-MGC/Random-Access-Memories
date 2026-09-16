@@ -1997,8 +1997,9 @@ strangers' dead parents, alone, in year three?"**
   the category dead. **Retail is not her cost.** And the one open wholesale catalogue any agent found —
   trading as **"ATACADO SAO PAULO LTDA"** — is registered in **Vitória, ESPÍRITO SANTO** (`publica.cnpj.ws/
   cnpj/28410074000115`), so every margin priced off it is an **interstate** price: **LC 123 art. 13 §1 XIII h
-  adds ~6 points, and papelaria sits on the RICMS-SP art. 313-Z13 ST list so art. 426-A antecipação fires on
-  entry.** ⇒ **Before killing a category on price, establish that the number you are calling COGS is a price
+  adds ~6 points** *(⚠ and the second half of this claim — "papelaria sits on the RICMS-SP art. 313-Z13 ST
+  list so art. 426-A antecipação fires on entry" — is **FALSE since 1 Jul 2026**; see `SÃO PAULO IS THE
+  WORST STATE TO SELL TO` below).** ⇒ **Before killing a category on price, establish that the number you are calling COGS is a price
   she can be invoiced at IN HER OWN STATE. A trading name is not an address.** ⚠ **There is currently no
   verified São Paulo wholesale price anywhere in this record, and the entire expediente build gates on
   getting one.**
@@ -2101,8 +2102,8 @@ strangers' dead parents, alone, in year three?"**
   and neither is membership of a São Paulo trade association.** `atacadosaopaulo.com.br` → **ES**;
   `oceanob2b.com` → **BRS SUPRIMENTOS CORPORATIVOS S/A, RS**; `officesuprimentos.com.br` → **JM PAPEIS, SC**
   (and a Simples ME on a *varejista* CNAE); `rymo.com.br`, listed by the SP sindicato itself → **AM**.
-  **Interstate costs ~6 points (LC 123 art. 13 §1 XIII h) plus RICMS-SP art. 426-A antecipação, so an
-  out-of-state supplier must beat an SP one by MORE THAN 6% to be worth using.**
+  **Interstate costs ~6 points (LC 123 art. 13 §1 XIII h); the art. 426-A antecipação that used to stack
+  on top of it was REVOKED for papelaria on 1 Jul 2026, so the rule is now a clean 6% hurdle.**
   ⇒ **THE TEST, and it costs nothing and needs no phone: fifteen emails to the SINAPEL register asking for a
   faturado price on four SKUs plus venda-à-ordem and first-purchase terms. Bar committed in advance — papel
   A4 ≤R$19,50/resma and caneta azul ≤R$0,70/un, faturado in SP. Count how many of fifteen answer with a number
@@ -2186,6 +2187,50 @@ strangers' dead parents, alone, in year three?"**
   **year 1 no account, 25–45 wins, net R$45–80k ≈ US$720–1.280/month — BELOW the bar; year 2 with account,
   terms and atestado, 35–55 wins, net R$125–200k ≈ US$2.000–3.200/month — AT it. 18–24 months, not 12.**
   See `THE_EXPEDIENTE_DESK.md` § THE REBUILT MODEL.
+
+- **★★★ SÃO PAULO IS THE WORST STATE IN BRAZIL TO SELL OFFICE SUPPLIES TO, AND THE EXPEDIENTE PLAN WAS BUILT
+  ON IT. 16 Sep 2026 — the founder asked *"why only SP, why not Bahia"* and the plan had it backwards.**
+  `THE_EXPEDIENTE_DESK.md` §2 defines its addressable pool as **four states (SP/MG/PR/RJ)** — which includes
+  the cheapest buyer in the country and excludes the dearest. Measured on three PDMs **inside each quantity
+  band**: **caneta azul SP R$1,3390 / 0,6700 / 0,5570 against BA R$8,80 / 3,35 / 1,1750 (+557% / +400% /
+  +111%)** · **perfurador SP R$28,39 / 26,04 / 14,53 against BA R$40,01 / 39,00 / 18,75 (+41% / +50% /
+  +29%)** · **fita SP R$7,10 / 3,7360 / 1,5070 against BA R$13,14 / 7,80 / 4,21 (+85% / +109% / +179%)**.
+  Top of the caneta ladder inside her band: **RO R$4,00 · MS R$3,98 · AM R$3,60 · PI R$3,07 · BA R$3,00
+  against SP at R$0,7114.**
+  ⚠ **AND THE QUANTITY CONTROL PASSES, which is the only reason this is a finding and not this file's SIXTH
+  cross-sectional artefact:** the premium survives inside every band, and **Bahia's median caneta line is
+  2.628 units — LARGER than São Paulo's — and BA still pays 111–557% more.** Twelve band-comparisons, three
+  independent PDMs, same direction every time.
+  ⇒ **BLENDED GROSS ON THE FIVE LIVE LINES: 15,5% selling to SP buyers, 49,7% selling to everyone else —
+  same goods, same São Paulo purchase price, a 3,2× swing decided only by which state's tender she bids.**
+  Caneta is **−40,5%** in São Paulo and **+52,8%** outside it. Route A's requirement falls from **98 wins a
+  year to 73**, below the measured incumbent's 79. ⇒ **THE BUSINESS IS AN ARBITRAGE: BUY IN SÃO PAULO, SELL
+  TO THE CENTRE-WEST, NORTH AND NORTHEAST** — which is exactly what **CONDAFE (São Paulo EPP, 15 UFs,
+  R$6.135.997/yr)** already does, and the same fact as *"multi-UF firms are 7,8% of winners and take 33,6%
+  of the VALUE."*
+  ★ **THE SUPPLY side genuinely IS São Paulo-only, and it is arithmetic: LC 123 art. 13 §1 XIII (h) charges
+  a Simples optante the internal-minus-interstate difference — SP internal 18% vs interstate-into-SP 12% =
+  ~6 points. AND BAHIA IS NOT SPECIAL: the 7% interstate rate runs S/SE → N/NE/CO/ES and NOT the reverse, so
+  BA→SP is the general 12%, identical to SC or RS.** An out-of-state supplier must beat an SP one by **more
+  than 6%.**
+  ⚠⚠ **CORRECTION TO THIS FILE, ONE DAY OLD, VERIFIED VERBATIM TODAY: ICMS-ST ON PAPELARIA IN SÃO PAULO WAS
+  REVOKED ON 1 JULY 2026.** Portaria CAT 68/2019 at `legislacao.fazenda.sp.gov.br`: **"ANEXO XIX ( Revogado,
+  a partir de 1º de julho de 2026, pela Portaria SRE-09/26, de 17-03-2026; DOE 18-03-2026 ) PRODUTOS DE
+  PAPELARIA E PAPEL (artigo 313-Z13 do RICMS)"** *(wider rollback: Portaria SRE 64/2025 revoked Anexos IX, X,
+  XV and items of XIV from 1 Jan 2026)*. **`THE CLOCK MOVED` firing on a law this file wrote four days ago —
+  DATE-CHECK THE REGULATOR'S PAGE EVEN ON YOUR OWN ENTRIES.** ⚠ **And it cuts both ways, net UNCOMPUTED:
+  under ST a Simples reseller segregated the ST receita and paid ~3,7–5,0% instead of 5,65%; with ST gone
+  there is nothing to segregate, so the SELL-side rate rises ~1,9 points of revenue while the purchase price
+  should fall by the MVA no longer embedded. An accountant's question with a real number attached.**
+  ★ **Three checks before acting: FREIGHT is the one real cost against the spread and is UNQUOTED** (a
+  50-unit perfurador line to Salvador is ~20 kg against R$2.000 of revenue ⇒ an estimated 2–15% against
+  50–75% gross — it does not close the gap but it has not been measured); **DELIVERY DEADLINES bind harder
+  than distance** (median prazo 10 days, **31,2% at ≤5 days** — the Centre-West and Northeast capitals are
+  serviceable from São Paulo, the far North is not, so **screen on `prazo de entrega`, not on km**); and
+  **STF ADI 5464 suspended the EC 87/2015 DIFAL for Simples SENDERS**, so an interstate sale should carry no
+  extra state tax on her side — **UNVERIFIED as applied.**
+  ⇒ **PARSER RULE: SOURCE IN SÃO PAULO, BID EVERYWHERE THE PRAZO ALLOWS, AND DE-PRIORITISE SÃO PAULO'S OWN
+  TENDERS.** See `THE_EXPEDIENTE_DESK.md`.
 
 ## The test design that works
 

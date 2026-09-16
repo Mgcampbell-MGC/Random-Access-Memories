@@ -309,3 +309,99 @@ free, machine-readable, no origination problem. The registrations cost **R$0**. 
 and 978 suppliers in the two largest PDMs) and the edge is a persistent execution differential. It passes
 `THE MACHINE TEST` on all three limbs and `ORIGINATION ONCE VS ORIGINATION FOREVER` — which is why the
 founder kept it.
+
+---
+
+# ★★★ SÃO PAULO IS THE WORST STATE IN BRAZIL TO SELL TO — 16 Sep 2026
+
+**The founder asked "why only SP, why not Bahia" and then "if this niche is great why not scale it
+nationally." Both questions are the same question and the answer is that the plan had it backwards.**
+
+Everything above — and the four-state "addressable pool (SP/MG/PR/RJ)" that §2's whole ranked board is
+built on — **restricted the SELL side to the cheapest buyers in the country.**
+
+## Measured, three PDMs, inside each quantity band
+
+| Product | band | **SP median** | **BA median** | rest of Brazil | BA vs SP |
+|---|---|---|---|---|---|
+| **Caneta azul** | 0–60 | R$1,3390 | R$8,80 | R$6,00 | **+557%** |
+| | 150–450 | R$0,6700 | R$3,35 | R$1,9950 | **+400%** |
+| | 450–1.100 | R$0,5570 | R$1,1750 | R$0,9250 | **+111%** |
+| **Perfurador** | 0–60 | R$28,39 | R$40,01 | R$36,00 | **+41%** |
+| | 60–150 | R$26,04 | R$39,00 | R$30,00 | **+50%** |
+| | 450–1.100 | R$14,53 | R$18,75 | R$24,00 | **+29%** |
+| **Fita adesiva** | 0–60 | R$7,10 | R$13,14 | R$9,75 | **+85%** |
+| | 60–150 | R$3,7360 | R$7,80 | R$5,20 | **+109%** |
+| | 450–1.100 | R$1,5070 | R$4,21 | R$2,98 | **+179%** |
+
+**SP is the cheapest buyer at every band of every product measured.** Top of the ladder for caneta inside
+her competitive band: **RO R$4,00 · MS R$3,98 · AM R$3,60 · PI R$3,07 · BA R$3,00 — against SP at R$0,7114.**
+
+> ### ⚠ AND THE QUANTITY CONTROL PASSES, WHICH IS WHY THIS IS A FINDING AND NOT THE FILE'S SIXTH ARTEFACT
+> `QUANTITY IS THE PRICE VARIABLE` predicts that a cheap state is simply a state buying bigger lines.
+> **It is not.** The premium survives inside every band, and the median line quantity runs the WRONG way for
+> the artefact explanation: **Bahia's median caneta line is 2.628 units — larger than São Paulo's — and BA
+> still pays 111–557% more.** Three independent PDMs, twelve band-comparisons, same direction every time.
+
+## What it does to the economics
+
+| | Blended gross on the five live lines |
+|---|---|
+| Selling to **SP** buyers | **15,5%** — caneta is **−40,5%**, fita is +2,8% |
+| Selling to **non-SP** buyers | **49,7%** — caneta +52,8%, perfurador +57,0%, clipe +62,0% |
+
+**Same goods, bought at the same São Paulo price. A 3,2× difference in gross margin decided entirely by
+which state's tender she bids.** Route A's win requirement falls from **98 to 73 a year** on this alone —
+below P H P de Freitas Rodrigues's measured 79.
+
+## So the business is an arbitrage, and it already has a proven operator
+
+**Buy in São Paulo. Sell to the Centre-West, North and Northeast.**
+
+That is not a new idea — it is what **CONDAFE COMERCIO DE ROUPAS LTDA (São Paulo EPP) already does in the
+kit niche: 15 UFs, 36 municípios, R$6.135.997 in twelve months**, and what this archive already measured as
+*"92,2% of winners are single-UF by headcount, while multi-UF firms (7,8%) take 33,6% OF THE VALUE."*
+**The value concentration and the price ladder are the same fact seen from two ends.**
+
+## Why the supply side genuinely IS São Paulo-only — and it is arithmetic, not preference
+
+**LC 123 art. 13 §1 XIII (h)** makes a Simples optante pay the difference between the internal and
+interstate rates on goods acquired in another state. SP internal **18%**, interstate into SP **12%** ⇒
+**~6 points on every purchase from outside the state.** ⚠ **And Bahia is not special: the 7% interstate
+rate runs from the South/Southeast to the North/Northeast/Centre-West/ES, NOT the reverse — BA→SP is the
+general 12%, exactly like SC or RS.** ⇒ **An out-of-state supplier must beat a São Paulo one by more than
+~6% to be worth using. That is the whole rule.**
+
+> ### ⚠⚠ AND A CORRECTION TO MY OWN FILE, ONE DAY OLD, VERIFIED VERBATIM AT THE SOURCE TODAY
+> `THE_SP_WHOLESALE_PRICE.md` and `CLAUDE.md` both say *"papelaria sits on the RICMS-SP art. 313-Z13 ST
+> list so art. 426-A antecipação fires on entry."* **FALSE since 1 July 2026.** Portaria CAT 68/2019 on
+> `legislacao.fazenda.sp.gov.br`, verbatim:
+> **"ANEXO XIX ( Revogado, a partir de 1º de julho de 2026, pela Portaria SRE-09/26, de 17-03-2026;
+> DOE 18-03-2026 ) PRODUTOS DE PAPELARIA E PAPEL (artigo 313-Z13 do RICMS)"**
+> *(Part of a wider rollback: Portaria SRE 64/2025 revoked Anexos IX, X, XV and items of XIV from
+> 1 Jan 2026.)* ⇒ **The interstate penalty is now a clean ~6 points of DIFAL with NO antecipação stacked on
+> top, and the bigger of the two hits is gone.** `THE CLOCK MOVED` firing on a law this file wrote four days
+> ago — **date-check the regulator's page even on your own entries.**
+> ⚠ **It cuts both ways and the net is UNCOMPUTED: under ST a Simples reseller segregated the ST receita and
+> paid a reduced rate (~3,7–5,0% instead of 5,65%). With ST revoked there is nothing to segregate, so the
+> SELL-side Simples rate rises by roughly the ICMS share of Anexo I (~1,9 points of revenue) — while the
+> purchase price should fall by roughly the MVA that is no longer embedded. Which dominates is an
+> accountant's question with a real number attached. UNVERIFIED.**
+
+## The three things that must be checked before this is acted on
+
+1. **FREIGHT — the one real cost against the spread, and it is unquoted.** Order of magnitude: a 50-unit
+   perfurador line to Salvador is ~20 kg against R$2.000 of revenue; a 2.628-unit caneta line is ~16 kg
+   against R$7.884. Estimated 2–15% of revenue against gross margins of 50–75% — **it does not close the
+   gap, but it has not been quoted.** One transportadora quote, SP→Salvador/Goiânia/Belém, settles it.
+2. **DELIVERY DEADLINES.** Measured on kits: **median prazo de entrega 10 days, 31,2% at ≤5 days.** A
+   five-day deadline from São Paulo to Acre is not serviceable. **Screen on `prazo de entrega` before
+   distance** — the Centre-West and the Northeast capitals are reachable; the far North is not.
+3. **INTERSTATE SALE BY A SIMPLES OPTANTE.** A Simples optante sells at its own Simples rate regardless of
+   destination, and STF **ADI 5464** suspended the EC 87/2015 DIFAL clause for Simples senders — so selling
+   to a Bahian órgão should carry no extra state tax on her side. **UNVERIFIED as applied; confirm with the
+   accountant before the first out-of-state bid.**
+
+⇒ **Corrected rule for the parser: SOURCE IN SÃO PAULO, BID EVERYWHERE THE PRAZO ALLOWS, AND DE-PRIORITISE
+SÃO PAULO'S OWN TENDERS — they are the cheapest in the country and caneta is loss-making in them at any
+quantity above ~60 units.**
