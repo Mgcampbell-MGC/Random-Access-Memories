@@ -2109,8 +2109,9 @@ strangers' dead parents, alone, in year three?"**
   that clears it. Below three, A EXPEDIENTE is a small-quantity business permanently and its volume assumption
   must come down to match.** See `THE_SP_WHOLESALE_PRICE.md`.
 
-- **★★★ THE 45% TIER GAP — A EXPEDIENTE IS NOT A SOURCING-AND-BIDDING BUSINESS, IT IS A SUPPLIER-ACCOUNT
-  BUSINESS. 16 Sep 2026, nine SKUs measured, TWO clear.** Against the verified SP costs: **LIVE — caneta
+- **★★★ THE 45% TIER GAP. 16 Sep 2026, twelve SKUs measured, FIVE clear.** *(⚠ First written as "nine SKUs,
+  TWO clear" and CORRECTED the same hour — see `MATCH THE GRADE` below. Three PDMs finished pulling minutes
+  after the verdict was written and all three were LIVE; the headline was drawn before the data was in.)* Against the verified SP costs: **LIVE — caneta
   esferográfica azul to ~1.100 un (45–92% at R$0,9414) and clips 4/0 at 150–1.100 un (21–80% at R$0,0515).**
   **DEAD at every band — papel A4** (R$29,00 vs R$19,83 SP / R$20,72–23,50 at volume) · **grampo 26/6**
   (R$8,50/cx 5.000 against a state median of **R$4,38 per 5.000**, n=3.808) · **tesoura** (R$18,90 vs
@@ -2133,6 +2134,29 @@ strangers' dead parents, alone, in year three?"**
   BIC both sides — and it is one of the two lines that clears.)* ⚠ **Method: grampo must be priced PER BOX OF
   5.000** (3.124 of its rows carry `capacidadeUnidadeFornecimento = 5000`, 636 carry 1000); a per-staple
   reading of PDM 28 is meaningless. See `THE_SP_WHOLESALE_PRICE.md` §7.
+
+- **★★★ MATCH THE GRADE THE STATE BUYS — NOT THE TIER — AND THE EXPEDIENTE BASKET IS BIDABLE TODAY.
+  CORRECTION TO MY OWN VERDICT, WITHIN THE HOUR.** Three more PDMs landed after `THE 45% TIER GAP` was
+  written and **all three clear at the published São Paulo retail tier**: **PERFURADOR DE PAPEL 2 furos
+  (Jocar R$12,90 against a state ladder of R$35,00 / 29,83 / 29,15 / 22,15 / 19,93 — LIVE AT EVERY BAND,
+  35–63%, n=4.720)** · **ENVELOPE branco 114×229 (R$0,1399 against R$0,38–0,455 — 63–99%, n=201 ⚠ thin)** ·
+  **FITA ADESIVA 12×40 (R$2,90 against R$8,90 / 4,85 / 3,65 — LIVE to ~450 un, 20–67%, n=15.000)**, joining
+  caneta (≤1.100 un) and clips (150–1.100). ⇒ **FIVE of twelve, not two of nine.**
+  ★★ **AND THE SPLIT IS NOT RANDOM — IT IS BRAND GRADE.** **Every dead line is one where the micro-retailer
+  stocks a PREMIUM BRAND and the state buys an unbranded conforming generic**: apontador **Maped** R$5,90 vs
+  R$0,68 (9×) · tesoura **Mundial** R$18,90 vs R$4,99 (4×) · lápis **Faber-Castell** R$1,325 vs R$0,60 ·
+  borracha **Mercur** R$1,30 vs R$0,95. **Every live line is one where the grade matches**: perfurador
+  **Jocar** · clips **Wireplast** · fita **sem marca** · envelope **branco comum** · caneta **BIC** (the one
+  case where the brand is the generic). ⇒ **THE PUBLISHED RETAIL TIER IS NOT UNIFORMLY HOPELESS — IT IS
+  HOPELESS WHEREVER THE CATALOGUE IS BRANDED. Read the state's own `descricaoItem` for a brand name BEFORE
+  pricing against its median; pricing a Maped against a generic tender manufactures a 9× "gap" that has
+  nothing to do with wholesale.** ⇒ **Papel A4, the biggest line, still needs the distributor account and
+  its 45% — but a five-line basket is bidable NOW, with no account, at 20–99% gross, which is exactly enough
+  to mint the qualitative atestado that opens the rest.**
+  ⚠ **AND THE PROCESS LESSON IS THE SHARPER HALF: THE VERDICT WAS WRITTEN WHILE THE DATA WAS STILL
+  DOWNLOADING.** "Nine SKUs, two clear" was committed with three of twelve pulls unfinished, and the missing
+  three reversed the headline. **`THE SAME-DAY CROWNING IS THE TELL` has a mirror image — the same-day BURIAL
+  — and this file is far more prone to it. Do not write a verdict until every job you started has returned.**
 
 ## The test design that works
 

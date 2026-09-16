@@ -280,3 +280,44 @@ paper *atacadista* is more expensive per ream than buying one ream at retail.
 **Note on method:** grampo was priced **per box of 5.000** rather than per staple — 3.124 of the rows carry
 `capacidadeUnidadeFornecimento = 5000` and 636 carry 1000, so a per-piece reading of this PDM is meaningless.
 Same discipline as §3's caneta trap.
+
+---
+
+## 8. ⚠ CORRECTION TO §7, SAME DAY — FIVE LINES CLEAR, NOT TWO, AND THE PATTERN IS GRADE, NOT TIER
+
+§7 was written on nine SKUs and said two clear. **Three more PDMs finished pulling minutes later and all
+three are LIVE.** The corrected board, same verified São Paulo costs, same method:
+
+| Line | Her SP cost | State pays | Verdict |
+|---|---|---|---|
+| **Perfurador de papel 2 furos** | **R$12,90** *(Jocar, 12 fls)* | R$35,00 / 29,83 / 29,15 / 22,15 / **19,93** | **✅ LIVE AT EVERY BAND — 35–63%** (n=4.720) |
+| **Envelope branco 114×229** | **R$0,1399** *(cx 1.000, 63 g)* | R$0,80 / 0,375 / 0,455 / **0,38** | **✅ LIVE AT EVERY BAND — 63–99%** (n=201 ⚠ thin) |
+| **Fita adesiva transparente 12×40** | **R$2,90** | R$8,90 / 4,85 / 3,65 | **✅ LIVE to ~450 un — 20–67%** (n=15.000) |
+| **Caneta esferográfica azul** | R$0,9414 | R$11,89 → R$1,715 | ✅ LIVE to ~1.100 un — 45–92% |
+| **Clips 4/0** | R$0,0515 | R$0,264 / 0,065 | ✅ LIVE 150–1.100 — 21–80% |
+| Papel A4 · grampo 26/6 · tesoura · apontador · lápis · borracha · pasta c/ elástico | — | — | ❌ dead as recorded in §7 |
+
+⚠ Two caveats kept with the numbers: **envelope n=201 is thin** and its ≤60 band (R$20,25) is plainly a box
+price leaking in; **fita's >1.100 band reads R$0,2167**, which is a packaging artefact, not a price — treat
+both bands as unusable and read the middle of each ladder only.
+
+> ### ★★★ MATCH THE GRADE THE STATE BUYS — THIS, NOT THE TIER, IS WHAT SORTS THE BASKET
+> Twelve SKUs, one verified São Paulo source, and the split is not random. **Every line that DIES is one
+> where the micro-retailer stocks a PREMIUM BRAND and the state buys an unbranded conforming generic:**
+> apontador **Maped** R$5,90 vs R$0,68 (9×) · tesoura **Mundial** R$18,90 vs R$4,99 (4×) · lápis
+> **Faber-Castell** R$1,325 vs R$0,60 · borracha **Mercur** R$1,30 vs R$0,95. **Every line that LIVES is one
+> where the grade matches:** perfurador **Jocar** (the generic) R$12,90 vs R$29,15 · clips **Wireplast**
+> R$0,0515 vs R$0,065 · fita **sem marca** R$2,90 vs R$3,65 · envelope **branco comum** R$0,1399 vs R$0,38 ·
+> caneta **BIC** R$0,9414 vs R$1,715 *(BIC on both sides — the one case where the brand IS the generic in
+> this category)*.
+> ⇒ **The published retail tier is NOT uniformly hopeless. It is hopeless wherever the catalogue is
+> branded.** Before pricing any SKU against a state median, read the state's own `descricaoItem` and check
+> whether it names a brand. If it does not, price against a no-name supplier line — pricing a Maped against
+> a generic tender manufactures a 9× "gap" that has nothing to do with wholesale.
+> ⇒ **And it rescues the build's shape from §7's overstatement: papel A4 — the biggest line — still needs
+> the distributor account and its 45%. But a five-line basket of caneta, clips, fita, envelope and
+> perfurador is bidable TODAY at prices already verified, with no account, at 20–99% gross.** That is a
+> starting basket, not a business, and it is enough to mint the qualitative atestado that opens the rest.
+
+**Method note, unchanged:** every band above is normalised by `capacidadeUnidadeFornecimento`, and grampo
+is priced per box of 5.000 rather than per staple.
