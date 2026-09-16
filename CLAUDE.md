@@ -2063,6 +2063,52 @@ strangers' dead parents, alone, in year three?"**
   on argument.** Paid acquisition still dies, on **C5** (*"does NOT buy paid acquisition at scale"*), not on C2.
   **Cite the constraint that actually fires.** See `THE_AGENT_CONTENT_SCREEN.md`.
 
+- **★★★ THE SÃO PAULO WHOLESALE PRICE — MEASURED 16 Sep 2026, AND THE PUBLISHED-PRICE TIER IS THE RETAIL
+  TIER.** The build's own named gate (*"there is currently no verified São Paulo wholesale price anywhere in
+  this record"*) is closed. **A verified SP price exists and most of the expediente basket is LOSS-MAKING at
+  it.** Two SP sellers, CNPJ-verified, bought self-serve: **COMERCIAL SOUZA ATACADISTA (37.257.536/0001-05,
+  São Paulo/SP) BIC Cristal cx 50 = R$47,07 ⇒ R$0,9414/caneta**, and **SUPRI MAIS SP (18.838.822/0001-01, São
+  Paulo/SP, Simples ME): papel A4 Report 75 g resma R$29,00 · Chamex R$32,00 · BIC azul cx 50 R$61,90
+  (R$1,238) · lápis Faber cx 12 R$15,90 (R$1,325) · borracha Mercur R$1,30 · clips 4/0 cx 500 g R$18,90
+  (R$0,0515) · pasta aba+elástico R$6,90 · grampo 26/6 cx 5.000 R$8,50 · envelope 114×229 cx 1.000 R$139,90.**
+  ★ **THE TELL: the SP "wholesale" web price is ABOVE SP retail** — Supri Mais sells a 50-pen box at
+  R$1,238/pen while **Kalunga SA (43.283.811/0001-50, São Paulo/SP) sells ONE pen over the counter at
+  R$1,20.** Only the genuine atacadista comes in 22% under retail. ⇒ **A WHOLESALE PRICE THAT IS PUBLISHED IS,
+  BY THAT FACT, NOT A WHOLESALE PRICE.** Measured at the register: **SINAPEL** (the SP sector sindicato)
+  publishes fifteen member distributors at `sinapel.com.br/distribuidores.html` and **14 of 15 display ZERO
+  prices**; the one with a working B2B cart is in **AMAZONAS**. And the gate is the same one the terms study
+  found — **VPA Atacadista (R. Tiers 550, Pari, SP): *"valor mínimo para faturamento por pedido é de R$600,00…
+  a empresa deverá ter 12 meses de atividade ou mais."*** `THE MONITORING PINCER` on the supply side: above
+  the retail line the published price disappears.
+  ★★ **THE MARGIN TABLE, against my own 12-month recomputation from `dadosabertos.compras.gov.br` (PDMs: 99
+  caneta · 12 lápis · 20 pasta arquivo · 11 clipe · 205 borracha · 28 grampo · **19746 papel para impressão
+  formatado**, which is the real A4 PDM — 65 and 127 hold 1 and 7 rows and are DECOYS).** **PAPEL A4 IS OUT:**
+  state median **R$22,00/resma, R$19,83 for SP buyers**, by quantity **≤50 R$32,29 · 50–200 R$23,50 · 200–600
+  R$21,00 · >2.000 R$20,72** (n=1.357) ⇒ at her R$29,00 cost it is **+10% at ≤50 resmas and −23% to −40%
+  everywhere else.** **The single biggest line in an expediente basket is unbidable at the retail tier.**
+  **BORRACHA and PASTA C/ ELÁSTICO are out at EVERY quantity** (her R$1,30 vs state R$0,95 at ≤60; her R$6,90
+  vs state R$4,34). **LÁPIS is out above 60 units.** **LIVE: caneta ≤1.100 units (92 / 67 / 61 / 45% gross at
+  R$0,9414) and clips 150–1.100 (80 / 21%).** ⇒ **THE QUANTITY CEILING IS ~450–1.100 UNITS, NOT ~2.400** — the
+  archive's ceiling was set against an unverified cost; the shape of `QUANTITY IS THE PRICE VARIABLE` survives
+  and the bidable band narrows by half.
+  ★ **AND THE UNIT TRAP FIRED AGAIN, a SIXTH time: on PDM 99 azul, 891 of 1.433 rows carry
+  `capacidadeUnidadeFornecimento = 0.0` and 541 are CX-of-50.** Banding raw `quantidade` against raw
+  `precoUnitario` puts the ≤60 band at **R$29,55/pen**; normalising to pieces gives **R$5,04**; unambiguous
+  single-unit rows give **R$11,89.** The file's published ladder (6,70/3,19/1,73/1,04/0,82/0,70/0,53) sits
+  between the last two — **the monotonic shape reproduces independently, the band medians move ±30–50% on
+  handling. STATE THE HANDLING OR THE NUMBER IS NOT A NUMBER.**
+  ★ **`WHOSE COST BASIS IS THE "RETAIL" PRICE?` EXTENDS AND IS NOW 4-FOR-4: a trading name is not an address,
+  and neither is membership of a São Paulo trade association.** `atacadosaopaulo.com.br` → **ES**;
+  `oceanob2b.com` → **BRS SUPRIMENTOS CORPORATIVOS S/A, RS**; `officesuprimentos.com.br` → **JM PAPEIS, SC**
+  (and a Simples ME on a *varejista* CNAE); `rymo.com.br`, listed by the SP sindicato itself → **AM**.
+  **Interstate costs ~6 points (LC 123 art. 13 §1 XIII h) plus RICMS-SP art. 426-A antecipação, so an
+  out-of-state supplier must beat an SP one by MORE THAN 6% to be worth using.**
+  ⇒ **THE TEST, and it costs nothing and needs no phone: fifteen emails to the SINAPEL register asking for a
+  faturado price on four SKUs plus venda-à-ordem and first-purchase terms. Bar committed in advance — papel
+  A4 ≤R$19,50/resma and caneta azul ≤R$0,70/un, faturado in SP. Count how many of fifteen answer with a number
+  that clears it. Below three, A EXPEDIENTE is a small-quantity business permanently and its volume assumption
+  must come down to match.** See `THE_SP_WHOLESALE_PRICE.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
