@@ -2026,6 +2026,43 @@ strangers' dead parents, alone, in year three?"**
   not apply — nobody is absent. The edge is a persistent execution differential, and the evidence that
   competitors do not run it is that they keep losing money in public.**
 
+- **★★★ THE CONTENT-ECONOMY SELECTION BIAS — EVERY BUSINESS IDEA THAT CIRCULATES AS CONTENT IS AN
+  ORIGINATION-FOREVER SERVICE, AND THAT IS A SELECTION EFFECT, NOT A COINCIDENCE.** Four unrelated transcripts
+  supplied 16 Sep (an agent-revived Instagram page · 100–1.000-site rank-and-rent · "50 ways to use an agent" ·
+  local-SEO jingle retainers) reduce to **ONE shape: find a business, sell it a recurring service, repeat
+  forever.** Cause: a method is only sellable AS CONTENT if it is **teachable and repeatable by the viewer in
+  twelve minutes**, which selects for businesses whose engine is the operator's own repeated origination — an
+  agency. **The shapes that survive in this archive (a statute that publishes the order, a permission the buyer
+  cannot hold, an accumulated record, a channel partner who owns the moment of need) cannot be taught in twelve
+  minutes and therefore NEVER APPEAR IN THE GENRE AT ALL.** ⇒ **`ORIGINATION ONCE VS ORIGINATION FOREVER`
+  disposes of the whole genre before any economics is run** — the founder's own 12 Sep cut, applied to supplied
+  material instead of to her own board.
+  ★ **AND THE MEASURED NUMBER INSIDE THE GENRE IS ITS OWN REFUTATION: FIND THE ONE NUMBER THE VIDEO MEASURED,
+  NOT THE ONE IT CLAIMS.** The single transcript reporting results produced, in seven days, **668.000
+  impressions · 151.000 unique accounts · 13.900 interactions · −242 FOLLOWERS · 18 leads · ONE CLOSE AT $50**,
+  with the DM pipeline described as *"zero replies, zero objections, zero purchase intent"* — while being
+  **sponsored by the tool it was testing**, i.e. the most favourable number its operator could produce.
+  *(Three of the four sell a tool, a community or an agency; the operator's revenue is from selling the method.
+  Under this file's evidence standard that is vendor marketing, which is never evidence an opportunity exists.)*
+  ★ **THE ONE GENUINELY NEW MECHANISM IN THE BATCH, AND THE CLAUSE THAT FORBIDS IT: a tracked number routed to
+  an AI voice agent is the first answer this file has found to the phone-only half of `THE POSTAL LIST LAW`** —
+  but OUTBOUND it is a *daily phone-sales operation*, which is the one clause **C1 kept** when it was
+  substantially retired, and the registers it would unlock died on **POOL SIZE and INCENTIVE**, never on
+  contactability (`THE 75-FIRM CEILING`). **Live mechanism, zero live applications — its whole value is
+  INBOUND** (a município confirming a delivery or an ateste), ~R$30/month, a cost-of-operating improvement.
+  ★ **RULE 3 RUN PROPERLY RETURNS THE BOARD.** Stripped of costume, rank-and-rent is *"own many cheap permanent
+  assets that sit where demand appears and charge for what they intercept"* — **HER VERSION IS THE TENDER
+  CRON**, where the interception is compelled by `Lei 14.133 art. 54` instead of bought from Google, costs
+  **R$0** instead of $11/site/year against five free registrations reaching 74,3% of the field, captures
+  **nothing** speculatively, and **cannot be re-ranked overnight by an adversary.** *(Four unrelated outside
+  sources describing a worse, more fragile form of the structure the board already has is the strongest
+  endorsement of the board they could have produced.)*
+  ⚠ **AND A CORRECTION TO THIS FILE'S OWN LAW: *"PAID ADS ARE A C2 VIOLATION, NOT A BUDGET PROBLEM"* IS TOO
+  STRONG AS WRITTEN.** Google's Ads Transparency Center publishes the **advertiser's name and location**, which
+  kills a PERSONAL-BRAND advertiser — but **C2's default is anonymous with a COMPANY brand expressly permitted
+  on argument.** Paid acquisition still dies, on **C5** (*"does NOT buy paid acquisition at scale"*), not on C2.
+  **Cite the constraint that actually fires.** See `THE_AGENT_CONTENT_SCREEN.md`.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
