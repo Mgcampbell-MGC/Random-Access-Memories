@@ -211,3 +211,101 @@ The only live prices I could pull are the ES catalogue: **caneta Economic 100UN 
 **The truthful bottom line:** no single category clears — the best of 189, pasta arquivo, needs 13,2% of its addressable pool and only 1,0% of its suppliers reach the bar. **The basket clears, at the bottom edge of the target (US$1.770–2.250/month at R$640k), and comfortably at the incumbents' measured volume of R$1,0–1,1M.** Two named one-person Empresários Individuais already run exactly this, one of them on exactly R$50.000 of capital. **It is a wage for discipline, not a moat — and it is the first candidate in this archive that can be falsified for under R$5.000 in thirty days, by bidding.**
 
 Working files: `/tmp/claude-0/-home-user-Random-Access-Memories/9aef20de-742c-52a2-b11a-a33d815230ea/scratchpad/desk/build/` — `pdm20_1..13.json` (6.343 distinct pasta lines), `c99_1..10.json` (4.506 caneta lines), `asp_cnpj.json`, `asp_*.json` (live wholesale probes), `gimba*`/`probe_*` (failed catalogue probes, kept as evidence of the login gate).
+
+---
+
+# ★ THE REBUILT MODEL — 16 Sep 2026, after the São Paulo price was measured
+
+**§1 and §4 above were written against an UNVERIFIED cost basis. The cost is now measured
+(`THE_SP_WHOLESALE_PRICE.md`) and three things in them are wrong.** The structure survives; the numbers and
+the order of operations do not.
+
+## What changed
+
+1. **§4's sequence starts with PASTA ARQUIVO. Pasta is loss-making at the verified São Paulo price** —
+   her R$6,90 against a state median of R$4,34 at ≤60 units and R$2,33 at 450–1.100. **The sequence must
+   be reordered.**
+2. **§1's ≈R$18.235 of addressable content per edital was extrapolated from pasta + caneta ×10,5.** Pasta
+   is dead and **papel A4 — R$197M, the largest single PDM in the class — is dead at −23% to −40%.** The
+   figure is an *account-tier* number, not a *today* number.
+3. **§1 says "supplying from two São Paulo wholesalers under venda à ordem."** No such account exists, and
+   **14 of 15 SINAPEL-member SP wholesalers publish no prices at all.** That sentence describes year two.
+
+## The five lines that are bidable TODAY, at prices already verified
+
+**Perfurador 2 furos (Jocar R$12,90 vs R$19,93–35,00 — live at EVERY band, 35–63%, n=4.720)** ·
+**Envelope branco 114×229 (R$0,1399 vs R$0,38–0,455 — 63–99%, n=201 ⚠ thin)** ·
+**Caneta BIC azul (R$0,9414 vs R$1,715–11,89 — 45–92% to ~1.100 un)** ·
+**Fita adesiva 12×40 (R$2,90 vs R$3,65–8,90 — 20–67% to ~450 un)** ·
+**Clips 4/0 (R$0,0515 vs R$0,065–0,264 — 21–80%, 150–1.100 un)**.
+
+**Measured value share: those five are 24,5% of the twelve PDMs priced** (live R$150,0M vs dead R$461,1M;
+papel A4 alone is R$196,9M). ⚠ **That 24,5% is a FLOOR, not the answer — twelve of class 7510's 179 PDMs
+have been priced. The grade rule predicts many of the other 167 will clear too, wherever the state buys
+unbranded.** Pricing them is a day's work and it is the highest-value day available.
+
+## The arithmetic, and it reduces to ONE number: how many wins
+
+| Route | Addressable per edital | Blended gross | Net per edital | **Wins needed for R$130k net** |
+|---|---|---|---|---|
+| **A — published tier, five live lines only** | ≈R$4.470 | ~40% | ≈R$1.325 | **≈98/year** |
+| **B — half the basket sourced at matched grade** | ≈R$9.100 | ~38% | ≈R$2.400 | **≈54/year** |
+| **C — supplier account, full basket** | R$18.235 | ~30% | ≈R$3.600 | **≈36/year** |
+
+*(Net is after Simples Anexo I at 5,65–6,73%, freight ~3%, and ~R$75 of platform fees per bid.)*
+
+**Against the two measured one-person incumbents — P H P DE FREITAS RODRIGUES at 79 wins/year and
+POLLYANA MELO at 30 — route A needs MORE wins than the best of them and route C needs FEWER than the
+weaker of them.** That is the whole business in one line.
+
+## And working capital gates it independently
+
+R$15.600 with **no terms** carries ≈R$19.500/month of billings. That is **52 small baskets a year (route A)
+or 13 full ones (route C)**. Route A needs 98 and cannot be financed; route C needs 36 at R$54.700/month of
+billings, which **requires 28–30 day supplier terms** — and terms are gated on twelve months of trading
+(VPA) or, at the permissive end, **two prior purchases** (Flora Saúde: *"avaliado pelo setor financeiro a
+partir da segunda compra… prazo inicial 21 dias"*).
+
+> ### ⇒ EVERY ROAD RUNS THROUGH THE SUPPLIER ACCOUNT, AND IT PAYS TWICE
+> It supplies the **price** (~45% on a like-for-like line) **and** the **terms** (~3× capacity at the same
+> capital). Nothing else in this build is worth a fraction of either. **The fifteen SINAPEL emails are not
+> diligence; they are the first operation of the company.**
+
+## Corrected sequence
+
+1. **Entity + five free registrations + R$20–30k capital social integralizado.** One week.
+2. **The fifteen emails**, bar committed in advance (papel A4 ≤R$19,50/resma, caneta azul ≤R$0,70/un,
+   faturado in SP, venda à ordem, first-purchase terms). **Count how many of fifteen answer with a number.**
+3. **Dispensa lines for the ATESTADO, not the money** — median R$281, decided in days, qualitative in 3 of 5
+   editais, transferable across all 179 PDMs of class 7510. ~Five deliveries out of pocket. *(This part of
+   §4 stands unchanged and is the one thing that should start on day one.)*
+4. **Buy twice from whichever supplier's published credit policy is permissive**, to trip the terms review.
+5. **Bid the five live lines per item** while 2–4 run: reject *lote único*, reject numeric atestados, reject
+   "conforme modelo do órgão", respect the quantity ceilings, and run the **SICONFI RREO Anexo 07** screen on
+   every buyer before bidding.
+6. **Price the other 167 PDMs at matched grade** as the cron accumulates editais — this is what moves route
+   A toward route B without any supplier account at all.
+
+## The honest timeline
+
+- **Year 1 — no account, small basket:** 25–45 wins, billings R$150–250k, **net R$45–80k ≈ US$720–1.280/month.
+  BELOW the bar.**
+- **Year 2 — account, terms, atestado, full basket:** 35–55 wins, billings R$640k–1,0M, **net R$125–200k ≈
+  US$2.000–3.200/month. AT or ABOVE the bar.**
+
+**That is 18–24 months to target, not 12.**
+
+## The one number nobody has measured, and it is cheap
+
+**The WIN RATE.** Every figure above is expressed in *wins*, and nothing in this archive measures how many
+bids produce one. P H P wins 79 a year — from how many attempts? **PNCP publishes the bidder count and the
+result per item**; a week of the cron's own output answers it. **Until it is measured, "98 wins" and "36
+wins" are equally unfalsifiable, and the difference between them is the entire investment case.**
+
+## What is unchanged and still true
+
+The unit of sale is the **edital**, not the PDM. Distribution is **Lei 14.133 art. 54** — compelled,
+free, machine-readable, no origination problem. The registrations cost **R$0**. There is **no moat** (973
+and 978 suppliers in the two largest PDMs) and the edge is a persistent execution differential. It passes
+`THE MACHINE TEST` on all three limbs and `ORIGINATION ONCE VS ORIGINATION FOREVER` — which is why the
+founder kept it.

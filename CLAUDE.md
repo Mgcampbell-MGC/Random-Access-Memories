@@ -2158,6 +2158,35 @@ strangers' dead parents, alone, in year three?"**
   three reversed the headline. **`THE SAME-DAY CROWNING IS THE TELL` has a mirror image — the same-day BURIAL
   — and this file is far more prone to it. Do not write a verdict until every job you started has returned.**
 
+- **★★★ A EXPEDIENTE REBUILT ON THE MEASURED COST — AND THE WHOLE BUSINESS REDUCES TO ONE NUMBER: HOW MANY
+  WINS.** With the São Paulo price now measured, the desk's addressable content per edital splits three ways
+  and each implies a different company: **(A) published tier, five live lines only — ≈R$4.470/edital, ~40%
+  gross, ≈R$1.325 net ⇒ ≈98 WINS/YEAR. (B) half the basket sourced at matched grade — ≈R$9.100, ≈R$2.400 net
+  ⇒ ≈54. (C) supplier account, full basket — R$18.235, ~30% gross, ≈R$3.600 net ⇒ ≈36.** Against the two
+  measured one-person incumbents (**P H P DE FREITAS RODRIGUES 79 wins/yr · POLLYANA MELO 30**), **route A
+  needs MORE wins than the best of them and route C needs FEWER than the weaker.** ⇒ **Express a
+  government-supply plan in WINS PER YEAR and bracket it against named operators; every other metric hides
+  the question.** ★ **And working capital gates it independently: R$15.600 with NO TERMS carries ≈R$19.500/month
+  of billings = 52 small baskets or 13 full ones — so route A cannot be financed at all and route C needs
+  28–30 day terms.** ⇒ **EVERY ROAD RUNS THROUGH THE SUPPLIER ACCOUNT AND IT PAYS TWICE — the price (~45%
+  like-for-like) AND the terms (~3× capacity at the same capital). The fifteen SINAPEL emails are not
+  diligence; they are the first operation of the company.**
+  ⚠ **THREE CORRECTIONS TO `THE_EXPEDIENTE_DESK.md`, all from the cost measurement: its SEQUENCE starts with
+  PASTA ARQUIVO, which is loss-making at every band (her R$6,90 vs a state median of R$4,34 at ≤60);
+  its ≈R$18.235/edital was extrapolated from pasta + caneta ×10,5 and is an ACCOUNT-TIER number, not a today
+  number — papel A4 alone, R$197M and the largest PDM in the class, is dead at −23% to −40%; and its
+  *"supplying from two São Paulo wholesalers under venda à ordem"* describes a year-two state that does not
+  exist yet.** ★ **The 24,5% live share is a FLOOR, not a finding — twelve of class 7510's 179 PDMs have been
+  priced, and the grade rule predicts many of the other 167 clear wherever the state buys unbranded. Pricing
+  them is a day's work and it moves route A toward route B with NO supplier account at all.**
+  ★★ **AND THE ONE NUMBER NOBODY HAS MEASURED IS THE WIN RATE.** Every figure in this build is denominated in
+  *wins* and nothing in this archive measures how many bids produce one. **PNCP publishes the bidder count and
+  the per-item result** — a week of the cron's own output answers it. **Until it is measured, "98 wins" and
+  "36 wins" are equally unfalsifiable, and the gap between them IS the investment case.** ⇒ Honest timeline:
+  **year 1 no account, 25–45 wins, net R$45–80k ≈ US$720–1.280/month — BELOW the bar; year 2 with account,
+  terms and atestado, 35–55 wins, net R$125–200k ≈ US$2.000–3.200/month — AT it. 18–24 months, not 12.**
+  See `THE_EXPEDIENTE_DESK.md` § THE REBUILT MODEL.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
