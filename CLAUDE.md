@@ -2109,6 +2109,31 @@ strangers' dead parents, alone, in year three?"**
   that clears it. Below three, A EXPEDIENTE is a small-quantity business permanently and its volume assumption
   must come down to match.** See `THE_SP_WHOLESALE_PRICE.md`.
 
+- **★★★ THE 45% TIER GAP — A EXPEDIENTE IS NOT A SOURCING-AND-BIDDING BUSINESS, IT IS A SUPPLIER-ACCOUNT
+  BUSINESS. 16 Sep 2026, nine SKUs measured, TWO clear.** Against the verified SP costs: **LIVE — caneta
+  esferográfica azul to ~1.100 un (45–92% at R$0,9414) and clips 4/0 at 150–1.100 un (21–80% at R$0,0515).**
+  **DEAD at every band — papel A4** (R$29,00 vs R$19,83 SP / R$20,72–23,50 at volume) · **grampo 26/6**
+  (R$8,50/cx 5.000 against a state median of **R$4,38 per 5.000**, n=3.808) · **tesoura** (R$18,90 vs
+  R$3,40–7,90, n=7.581) · **apontador** (R$5,90 vs R$0,60–1,00, n=4.306) · lápis above 60 un · borracha ·
+  pasta c/ elástico. ★ **AND THE A4 LINE WAS RE-HUNTED AT THE CLOSED-BOX TIER AND DOES NOT MOVE:** a sealed
+  caixa of 10 resmas is **GCE Papéis R$306,00 (R$30,60/resma, tiered 1/5 caixas, CNPJ 08.048.153/0001-10,
+  Itajaí/SC with a Brooklin SP office, CNAE 4686-9/01 atacadista de papel) · Cavuca R$315,60 (R$31,56) ·
+  Kalunga ~R$310** — **so buying a sealed box of ten from a paper wholesaler costs MORE per ream than buying
+  one loose ream at a São Paulo micro-retailer (R$29,00).** ⇒ **Chamex to Chamex: published R$30,60, the state
+  pays R$19,83 in SP, so the winners are invoiced at ~R$16–18. THE UNPUBLISHED DISTRIBUTOR TIER IS WORTH ~45%
+  OFF THE BEST PUBLISHED PRICE, and nothing else in the build is worth a fraction of that.** The cron, the
+  parser and the seven bid rules are worth ZERO until an account sits behind them — **the fifteen SINAPEL
+  emails are not a validation step, they are step one and the only step that matters.**
+  ★★ **AND TWO DIFFERENT GAPS ARE STACKED — SEPARATE THEM BEFORE DIAGNOSING EITHER.** **A ~45% gap is a TIER
+  gap; a 4–9× gap is not.** Apontador Maped R$5,90 against a state median of R$0,68 is **9×**; tesoura Mundial
+  R$18,90 against R$4,99 is **4×**. **No wholesale tier closes 9× — those are SPEC gaps: the state buys an
+  unbranded conforming generic and a micro-retailer stocks brands.** ⇒ **Like-for-like on the same brand, the
+  answer is a better SUPPLIER; at multiples, the answer is a different PRODUCT and no amount of
+  account-opening touches it.** *(Paper is the clean tier case — Chamex both sides, 45%. Caneta is clean too —
+  BIC both sides — and it is one of the two lines that clears.)* ⚠ **Method: grampo must be priced PER BOX OF
+  5.000** (3.124 of its rows carry `capacidadeUnidadeFornecimento = 5000`, 636 carry 1000); a per-staple
+  reading of PDM 28 is meaningless. See `THE_SP_WHOLESALE_PRICE.md` §7.
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the

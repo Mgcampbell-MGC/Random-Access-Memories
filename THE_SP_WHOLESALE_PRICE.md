@@ -224,3 +224,59 @@ from the trading name.
 - `dadosabertos.compras.gov.br/modulo-material/3_consultarPdmMaterial` (20.000 PDMs paged)
 - `dadosabertos.compras.gov.br/modulo-pesquisa-preco/1_consultarMaterial?tipo=codigoPdm&codigo=…&tamanhoPagina=500`
   *(⚠ `tamanhoPagina` must be 10–500 or the endpoint returns HTTP 400)*
+
+---
+
+## 7. "Find that one line" — nine SKUs measured, two clear, and the gap is now quantified
+
+Run on 16 Sep after the tables above, against the same verified São Paulo costs.
+
+| Line | Her verified SP cost | What the state pays | Verdict |
+|---|---|---|---|
+| **Caneta esferográfica azul** | **R$0,9414** *(Souza, cx 50)* | R$11,89 / 2,84 / 2,40 / 1,72 to 1.100 un | **✅ LIVE — 45–92% to ~1.100 units** |
+| **Clips 4/0** | **R$0,0515** *(cx 500 g)* | R$0,264 (150–450) · R$0,065 (450–1.100) | **✅ LIVE — 21–80%** |
+| Papel A4 75 g | R$29,00 *(Report, resma)* | R$19,83 SP · R$20,72–23,50 at volume | ❌ −23 to −40% |
+| Grampo 26/6 | R$8,50 *(cx 5.000)* | **R$4,38 median per 5.000** (n=3.808; R$4,95 ≤20 cx) | ❌ −94% |
+| Tesoura | R$18,90 *(Mundial 21 cm)* | R$7,90 / 5,37 / 4,99 / 3,40 (n=7.581) | ❌ −139% to −456% |
+| Apontador | R$5,90 *(Maped c/ depósito)* | R$1,00 / 0,78 / 0,69 / 0,60 (n=4.306) | ❌ −490% to −883% |
+| Lápis preto | R$1,3250 | R$1,645 ≤60, then R$0,60 | ❌ above 60 un |
+| Borracha | R$1,30 | R$0,95 ≤60 | ❌ every band |
+| Pasta c/ elástico | R$6,90 | R$4,34 ≤60 | ❌ every band |
+
+### The A4 line was re-hunted at the CLOSED-BOX tier and it does not move
+
+The cheapest published form of the product — a sealed caixa of 10 reams, which is what a reseller would
+actually buy — was fetched at five more vendors:
+
+| Vendor | Caixa 10 resmas | Per resma | Identity |
+|---|---|---|---|
+| **GCE Papéis** *(tiered: "A PARTIR DE R$306,00 · 1 caixa / 5 caixas")* | **R$306,00** | **R$30,60** | GCE COMERCIO INTERNACIONAL DE PAPEIS LTDA, **08.048.153/0001-10, Itajaí/SC** *(SP office at R. Barão do Triunfo 520, Brooklin)*, CNAE 4686-9/01 atacadista de papel |
+| Cavuca | R$315,60 (R$299,82 à vista) | R$31,56 | — |
+| Kalunga | ~R$310,00 | R$31,00 | Kalunga SA, SP |
+| Supri Mais SP *(single resma, Report)* | — | **R$29,00** | SP, Simples ME |
+| Supri Mais SP *(single resma, Chamex)* | — | R$32,00 | — |
+
+**Every published route to A4 in Brazil clusters at R$29–32/resma, and the single cheapest published price
+found anywhere is a LOOSE ream at a São Paulo micro-retailer.** Buying a sealed box of ten from a
+paper *atacadista* is more expensive per ream than buying one ream at retail.
+
+> ### ★★ THE 45% TIER GAP — THE SIZE OF WHAT THE FIFTEEN EMAILS ARE ACTUALLY BUYING
+> Chamex to Chamex, like for like: **published R$30,60 · state pays R$19,83 in São Paulo · so the winners
+> are being invoiced at roughly R$16–18.** The unpublished distributor tier is worth **~45% off the best
+> published price**, and nothing else in this analysis is worth a fraction of that. ⇒ **A EXPEDIENTE IS NOT
+> A SOURCING-AND-BIDDING BUSINESS. IT IS A SUPPLIER-ACCOUNT BUSINESS.** The cron, the parser and the seven
+> bid rules are worth zero until an account exists behind them; the fifteen emails are not a validation
+> step, they are step one and the only step that matters.
+
+> ### ★★ AND TWO DIFFERENT GAPS ARE STACKED — SEPARATE THEM BEFORE DIAGNOSING ANY OF THEM
+> **A gap of ~45% is a TIER gap.** A gap of 5–10× is not: **apontador Maped R$5,90 against a state median of
+> R$0,68 is 9×, and tesoura Mundial R$18,90 against R$4,99 is 4×.** No wholesale tier closes 9×. **Those are
+> SPEC gaps — the state is buying an unbranded conforming generic and the micro-retailer stocks brands.**
+> ⇒ **Where the gap is like-for-like on the same brand, the answer is a better supplier. Where it is
+> multiples, the answer is a different PRODUCT, and no amount of account-opening touches it.** *(Paper is the
+> clean case: Chamex on both sides, 45%. Caneta is also clean: BIC on both sides, and it is one of the two
+> lines that clears.)*
+
+**Note on method:** grampo was priced **per box of 5.000** rather than per staple — 3.124 of the rows carry
+`capacidadeUnidadeFornecimento = 5000` and 636 carry 1000, so a per-piece reading of this PDM is meaningless.
+Same discipline as §3's caneta trap.
