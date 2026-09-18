@@ -2350,6 +2350,43 @@ strangers' dead parents, alone, in year three?"**
   CENTO (100 units), not one piece** — a third costume for the unit trap that has now fired eight times in
   this file.
 
+- **★★★ THE BUSINESS, DESIGNED 18 Sep 2026 — THE BALANCE SHEET PICKS THE MARGIN, AND THE MARGIN PICKS THE
+  MARKET. See `THE_BUSINESS.md`.** R$15.600 non-reloading turns ~8×/yr with no supplier terms, so
+  **billings = capital ÷ (1 − gross) × turns** ⇒ at 25% gross the whole company nets **R$27k/yr** and at 55%
+  it nets **R$122k**, against a R$150k bar. ⇒ **A 25–30% RESELLER CANNOT EXIST ON THIS BALANCE SHEET AT ANY
+  VOLUME. The company must hold ≥50% gross and be financed to ≈R$22–25k.** *(The basket plan was never a
+  margin measured wrongly — it was the right margin for the wrong company. Compute this table BEFORE choosing
+  what a capital-constrained business sells; it is four lines of arithmetic and it eliminates whole
+  categories.)* **The design: 60 won lines/yr at ≈R$6.000 and 52% gross ⇒ R$360k billings, ≈R$146k net
+  ≈ US$2.340/mo, five wins a month — inside the measured range of real one-person operators.** ⚠ **Above
+  ~R$35k of float, CAPITAL STOPS BINDING AND WIN COUNT BINDS** (R$50k would need 137 wins/yr, beyond her
+  hours and beyond every observed operator) ⇒ **the right FGI PEAC raise is R$15–20k, once, and no more.**
+- **★★★ THE CLEARING PRICE IS SET BY WHO BOTHERED TO BID — AND THIS FILE'S OWN ARBITRAGE NUMBER WAS ~5×
+  OVERSTATED.** Same pen, same spec, same 250–5.000 band, 12 months, lot-total rows dropped: **AM R$2,1000
+  (3,75× SP) · RN R$1,1550 · RO R$1,0400 · AC R$0,9600 · CE R$0,8988 … RS R$0,5645 · SP R$0,5600.** Nothing
+  about a pen changes between São Paulo and Manaus — **the 3,75× is the price of nobody else showing up.**
+  ⚠⚠ **CORRECTION: `SÃO PAULO IS THE WORST STATE…` recorded Bahia at +111% to +557%; measured cleanly BA is
+  −8,4%**, and only AM, RN, RO, AC and CE clear on a commodity pen at all. **The gradient is REAL and it is a
+  COMPETITION gradient, not a cost one; its size was contamination.** ⇒ **Bid thin fields, not far ones.**
+- **★★★ MARGIN LIVES WHERE THE PRICE IS NOT PUBLISHED — SO POINT THE DESK AT KITS, NOT AT EXPEDIENTE.**
+  `THE LEGIBILITY–MARGIN ANTI-CORRELATION` predicted this and nobody applied it to the desk's own product
+  choice. **A BIC Cristal has a national price everyone knows; a *"body manga curta 100% algodão M"* does
+  not.** Expediente: 25–30% gross, every line fails spec control, and BIGNARDI (capital R$359.626.755) bids
+  direct. Kits: **R$59,1M homologado/yr · 979 editais · 699 buying municípios · 78,5% of winners win exactly
+  ONE edital a year · lines of R$32–79k sitting INSIDE the `LC 123 art. 48 I` ≤R$80.000 ME/EPP reservation ·
+  2,5× price dispersion inside one SKU · measured 51–55% gross.** ⇒ **Office supplies are the most legible
+  category in Brazilian procurement, which is exactly why they carry no margin.** ⚠⚠ **GATE: the kit margins
+  were measured the OLD way, before `A PDM IS NOT A PRODUCT` and the lot-total filter, and every expediente
+  number measured that way collapsed today. RE-RUN THE 843 KIT AWARD ROWS UNDER THE CORRECTED METHOD FIRST —
+  one day, R$0 — with a bar of ≥R$8M/yr clearing 50% at a verified SP cost.**
+- **★★ AND THE ENVELOPE — the one line still standing this morning — DID NOT SURVIVE ITS OWN AUDIT EITHER.**
+  `siglaUnidadeFornecimento = 'MIL'` (milheiro) was not in the normaliser, so 33 rows counted a thousand
+  envelopes as one. Strictly 114×229, MIL and CENTO handled, plausible window applied: **median R$0,2200 and
+  +36,4% gross, not R$0,33 and +57,6%; pool R$525.545, not R$1,74M; value clearing ≥50% gross R$191.084.**
+  ⇒ **NOTHING in class 7510 clears 50% where the money is, at the published São Paulo tier. The demolition is
+  complete and it is the finding — it is what forces the market change above.** ★ **Add MIL/MILHEIRO=1000 to
+  the normaliser; the unit trap has now fired NINE times in this file and three of the nine were mine.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
