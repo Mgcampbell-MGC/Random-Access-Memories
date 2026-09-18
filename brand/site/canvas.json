@@ -1,0 +1,77 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Inicio.dc.html": {
+      "h": 2420,
+      "is_interactive": true,
+      "title": "Início",
+      "w": 1280,
+      "x": 0,
+      "y": 0
+    },
+    "Licitacoes.dc.html": {
+      "h": 1720,
+      "is_interactive": true,
+      "title": "Licitações",
+      "w": 1280,
+      "x": 2720,
+      "y": 0
+    },
+    "Produtos.dc.html": {
+      "h": 1620,
+      "is_interactive": true,
+      "title": "Produtos",
+      "w": 1280,
+      "x": 1360,
+      "y": 0
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-09-18T16:10:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "n1": {
+      "color": "gray",
+      "text": "Três páginas, é tudo o que precisa.\n\nO site não existe para atrair clientes — a lei já entrega os compradores. Ele existe para que um pregoeiro, o setor de crédito de um atacadista e um banco confirmem em dez segundos que a empresa é real.\n\nPor isso: sem loja, sem preços, sem foto de fundadora, sem redes sociais, sem nada dirigido a mães.",
+      "w": 340,
+      "x": 4110,
+      "y": 0
+    },
+    "n2": {
+      "color": "orange",
+      "text": "Tudo entre [colchetes] é um dado que só existe depois de abrir a empresa: CNPJ, inscrição estadual, endereço, telefone e banco.",
+      "w": 340,
+      "x": 4110,
+      "y": 470
+    },
+    "n3": {
+      "color": "green",
+      "text": "Clique em Play em qualquer prancheta: os links do menu navegam entre as três páginas.",
+      "w": 340,
+      "x": 4110,
+      "y": 760
+    },
+    "t1": {
+      "color": "teal",
+      "kind": "title1",
+      "maxW": 4000,
+      "text": "ACOLHE — site institucional",
+      "w": 240,
+      "x": 0,
+      "y": -240
+    }
+  },
+  "order": [
+    "Inicio.dc.html",
+    "Produtos.dc.html",
+    "Licitacoes.dc.html"
+  ],
+  "pages": [],
+  "title": "ACOLHE — site institucional"
+}
