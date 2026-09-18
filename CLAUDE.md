@@ -2411,7 +2411,11 @@ strangers' dead parents, alone, in year three?"**
   ★★ **BUT THREE FAMILIES ARE GENUINELY LIVE TODAY WITH NO ACCOUNT, and they are the first lines in this
   archive to clear 50% where the money is: FRALDA PANO +79,9%** (Emilio Inconfral *Especial* 5-pack R$12,26 =
   **R$2,452/piece** against a state per-piece median of **R$12,20**; 82% of its value clears 50%) · **COBERTOR/
-  MANTA +39,3%** (R$12,18) · **BANHEIRA +22,9% at the median and +49,9% in the large band** (R$22,90).
+  MANTA +39,3%** (R$12,18 — ⚠ holds for lines NAMED *manta* only, 139 lines/R$910.918; the 26 lines named
+  *cobertor* median R$19,92 against a R$21,47 cobertor cost = **−7,8%**, a different product) · ~~**BANHEIRA +22,9% at the median and +49,9% in the large band** (R$22,90)~~ ⚠⚠ **WITHDRAWN SAME DAY:
+  R$22,90 is a 17,2 L bathtub conforming to ONE line in the country; at the cheapest CONFORMING cost
+  (R$29,71, 24 L) the 20–25 L band — 115 lines, R$1.038.317 — is −13,4%. BANHEIRA IS NOT LIVE. See
+  `THE_KIT_DESK.md` §4.1.**
   **R$3,66M addressable against R$360k of billings = a 9,8% share, INSIDE `THE MARKET-MULTIPLE RULE`.**
   ⇒ **A three-SKU business exists today; the full one needs the account.**
   ★ **And an inversion worth keeping: in kits the BIG lines pay MORE per unit** — banheira medians R$45,66
@@ -2479,12 +2483,77 @@ strangers' dead parents, alone, in year three?"**
   · MA R$246.994 · CE R$166.681 · PA · RJ · RN — the top eight hold 86%.** Against **SP: 204 lines across 37
   municípios at a −10,1% median gross · ES −30,4% · MT −1,7% · MS +0,9%.** ⇒ **BUY IN SÃO PAULO, NEVER SELL
   THERE** — which is exactly what CONDAFE (SP EPP, 15 UFs, R$6.135.997/yr) already does, now measured on her
-  own cost basis rather than asserted. ★ **MG and AM are 56% of the clearing value for OPPOSITE reasons: MG
-  is 128 lines at a 4,1% median with a fat clearing tail; AM is FIFTEEN lines across FIVE municípios at a
-  40,9% median** — `THE CLEARING PRICE IS SET BY WHO BOTHERED TO BID` in its purest observed form.
+  own cost basis rather than asserted. ⚠⚠ **CORRECTED SAME DAY — AM WAS ONE BUYER: Coari/AM alone is 34,8% of the entire clearing pool** (a
+  banheira line at R$62,70 and a macacão line at R$43,00, 12.960 units each, from one tender), **and the top
+  10 municípios are 63,4%.** The original claim — *"MG and AM are 56% of the clearing value for OPPOSITE
+  reasons: MG is 128 lines at a 4,1% median with a fat clearing tail; AM is FIFTEEN lines across FIVE
+  municípios at a 40,9% median"* — — `THE CLEARING PRICE IS SET BY WHO BOTHERED TO BID` in its purest observed form.
   **Bid thin fields, not far ones.** ⚠ **And MT's R$5,9M headline is not kits** — it is the Mato Grosso
   school-uniform programme bleeding through the harvest; **ignore its value column, its −1,7% margin is the
   real signal.** *(`DEDUPLICATE, AND CHECK YOU HARVESTED ONE PROGRAMME` still firing three runs later.)*
+
+- **★★★ THE BUNDLE ESCAPES THE COMPONENT MEDIAN — PRICE WHAT IS SOLD, NOT WHAT IS IN IT. 18 Sep 2026, and it
+  is the finding that rebuilt the #1 candidate.** A body costs R$15,32 in São Paulo and the state's
+  standalone body line medians R$12,66 — **−21%, dead.** Inside a 17-item assembled kit awarded at
+  **R$359,05** the same body is one of seventeen lines and is absorbed: BOM **R$169,35–229,75** ⇒
+  **+36,0% to +52,8% AT THE PUBLISHED RETAIL TIER**, clearing 50% at a **30%** account discount against the
+  **45%** the components need. ⇒ **A MARGIN COMPUTED ON A COMPONENT DOES NOT TRANSFER TO A BUNDLE CONTAINING
+  IT, IN EITHER DIRECTION.** This is the escape from `THE CATALOGUE SCISSORS` the archive kept looking for:
+  every component has a published national price and *"17 specified baby items in one bag"* has none —
+  `THE LEGIBILITY–MARGIN ANTI-CORRELATION` operating one level up. ⚠ **My own `THE_KIT_REMEASUREMENT.md`,
+  written that morning, priced component families ONLY and declared the market dead by 2,2×. The band it
+  skipped is R$11.110.510 — 19,4% of the market, median award R$288,00.** **ASK OF ANY COMPONENT KILL: is
+  the thing the buyer actually buys the component, or a bundle the component sits inside?**
+- **★★★ SEGMENT BY WINNER SIZE BEFORE PRICING — THE BANDS A GIANT WINS ARE LOSS-MAKING BY CONSTRUCTION, AND
+  `porte` IS A FREE FIELD ON EVERY PNCP AWARD ROW.** Measured on the same kit market, by VALUE:
+  **assembled kits 75,1% ME/EPP and 15,7% Demais** (91 winners, median winner-year **R$60.520**) against
+  **body + macacão 18,5% ME/EPP and 74,9% DEMAIS** — where **BRINK MOBIL alone (capital social
+  R$32.018.254, the same firm that dominates office supplies) takes R$5,66M of R$11,1M** and GPADOVANO
+  R$1,35M. ⇒ **THE TWO FAMILIES THIS ARCHIVE SPENT A MORNING MEASURING AND DECLARING LOSS-MAKING ARE
+  LOSS-MAKING BECAUSE A R$32M-CAPITAL MANUFACTURER BIDS THEM DIRECT — and the band where three quarters of
+  the money goes to firms her own size had no cost basis at all.** **Run the porte-by-value split FIRST; it
+  costs one `collections.defaultdict` and it says which half of a market is even addressable.** *(Same shape
+  as `QUANTITY IS THE PRICE VARIABLE` — there the giants sat above a quantity ceiling, here above a product
+  line. Find the axis the giants sit on, then bid the other side of it.)*
+- **★★★ A CLEARING POOL IS NOT A MARKET UNTIL YOU COUNT ITS BUYERS — ONE MUNICÍPIO WAS 34,8% OF MINE.**
+  After every correction the kit pool clearing ≥50% gross was **R$4.380.049 across 147 municípios** — and
+  **Coari/AM alone was R$1.522.728 (34,8%)**, two lines from one tender (banheira anatômica **R$62,70**
+  against a R$29,71 cost, macacão de soft **R$43,00** against R$19,60, 12.960 units each). **Top 10
+  municípios = 63,4%.** ⇒ **THE "THIN FIELD PREMIUM" I CROWNED THAT MORNING WAS ONE BUYER**, and the UF
+  table that put Amazonas second in the country was reporting a single município that may never repeat.
+  ⇒ **ALWAYS REPORT AN ADDRESSABLE POOL EX-ITS-LARGEST-BUYER, AND PLAN ON THAT NUMBER.** Ex-Coari the pool
+  is R$2,86M and the required share for the bar goes 8,2% → 12,6%. *(`A NINE-ROW SAMPLE IS NOT A MARKET`
+  and `THE CLEARING PRICE IS SET BY WHO BOTHERED TO BID` colliding — the second law is TRUE and its
+  measured magnitude was one tender.)*
+- **★★ TWO MORE OF MY OWN KIT NUMBERS FAILED THE SAME AUDIT, BOTH IN THE FLATTERING DIRECTION.**
+  **(1) THE COST MUST CONFORM TO THE SPEC, NOT MERELY TO THE CATEGORY.** Step 0 priced banheira at
+  **R$22,90** — the cheapest of 24 on the page and a **17,2 L "Sensitive Feminino"**. Of 259 banheira lines,
+  **131 state a capacity and the 20–25 L band alone is 115 lines / R$1.038.317**, medianing R$26,19: at the
+  cheapest *conforming* cost (**R$29,71**, 24 L Monte Libano) that band is **−13,4%**, and the 17,2 L item
+  conforms to **exactly ONE line in the country**. **BANHEIRA IS NOT A LIVE FAMILY.** ⇒ **Before quoting a
+  cost, ask which rows your product is actually admissible for — "cheapest in the category" is not a cost,
+  it is a different product.** **(2) A REGEX FAMILY IS NOT A PRODUCT FAMILY.** BODY showed R$1,08M clearing
+  50% against a −21% median; the two largest lines were **"CONJUNTO BODY + BERMUDA"** and **"CONJUNTO BODY +
+  CALÇA"** (Taiobeiras/MG, R$594.368 + R$384.120) — **two-piece sets swept in by `\bBODY`**, whose cost
+  basis is two garments. Genuine single-body clearing value ≈R$77k. ⇒ **When a family's tail clears and its
+  median does not, READ THE TAIL BEFORE BANKING IT** — that is where the misclassification always is.
+  *(Eighth and ninth occurrences of `A COUNT OF STRUCTURES IS NOT A CHECK OF CONTENT`; both mine, both
+  within twelve hours of my writing `A PDM IS NOT A PRODUCT`.)*
+- **★★ THE FREIGHT STUDY DOES NOT TRANSFER ACROSS DENSITY — AND A KIT IS LOW-DENSITY BY CONSTRUCTION.**
+  `FREIGHT DOES NOT KILL THE SP→CO/N/NE ARBITRAGE` was measured on **paper**: 3,6 kg, dense, R$4,72–10,04/kg
+  at 28,8 kg. A **24 L banheira is ~0,5 kg actual and ships at DIMENSIONAL weight**, and an assembled kit is
+  a bag of air by design. **Correios hard-caps a parcel at ~29 kg and every B2B road carrier — Braspress,
+  Jadlog, TNT, Total Express, Melhor Envio, SuperFrete, Kangu — refuses to quote without a contract**, so at
+  3.750 kits this is a truckload and stays **UNQUOTED**. ⚠ And the edital settles who eats it: Riachão do
+  Bacamarte/PB cl. 9.8 — *"Não será admitida a previsão de preços diferentes em decorrência do local de
+  entrega do objeto"*, with *frete*, *CIF* and *FOB* appearing **ZERO times in 43 pages.** ⇒ **Re-quote
+  freight whenever the product's DENSITY changes, not merely when its price does.**
+- **★ AND THE HAIRCUT IS FLAT ACROSS BANDS, WHICH IS GOOD NEWS NOBODY HAD CHECKED.** award ÷ estimate on
+  1.854 matched kit lines: **median 0,75–0,80 in EVERY band** (assembled 0,75 · three live components 0,80 ·
+  body+macacão 0,79), p25 0,52, p75 0,99, **~60% clearing ≥70% of estimate.** ⇒ **Assembled kits are NOT
+  riskier to price than components**, and the −62% outlier (Marília/SP, R$392,81 estimated → R$149,00) is
+  p10, not typical. **The estimate is a usable bid anchor at ~75%** — but pull the homologated award, never
+  the estimate, when sizing (`THE REFERENCE-PRICE ILLUSION`).
 
 ## The test design that works
 

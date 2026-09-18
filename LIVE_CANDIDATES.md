@@ -6,6 +6,21 @@ US$180–250 to US$90–125.** Bar: US$2.200–2.800 gross export or
 R$12.300–15.400 gross domestic at zero COGS. Full derivation, the law-by-law reversal table and the re-screen of
 every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 
+> ### ★★★ THE KIT DESK REBUILT FROM THE GROUND UP — 18 Sep 2026. IT CLEARS THE BAR AT THE PUBLISHED SUPPLIER TIER, WITH NO ACCOUNT AND NO CREDIT LINE. See `THE_KIT_DESK.md`.
+> The morning's `THE_KIT_REMEASUREMENT.md` said the kit market failed its own bar by 2,2× and cleared only at a 45%
+> distributor discount. **It measured component families only.** The band it skipped — the **assembled kit** — is
+> **R$11.110.510, 19,4% of the market, median award R$288,00, and 75,1% of its value is won by ME/EPP firms** against
+> **74,9% "Demais" in body+macacão, where BRINK MOBIL (capital R$32.018.254) alone takes R$5,66M.** The archive had
+> priced her into the giants' band and left the small-firm band with no cost basis. A real 17-item BOM
+> (Itaquaquecetuba/SP, CONDAFE won at R$359,05) costs **R$169–230** ⇒ **+36% to +53% at the published São Paulo
+> retail tier.** ⇒ **Pool clearing ≥50% gross R$4,38–8,28M; the bar (R$360k billings) needs 4,3–8,2% of it, and
+> 12,6% excluding the one outlier buyer.** ⚠ **Four live uncertainties, all measurable in sixty days for under
+> R$5.000: 11 of 17 BOM lines unpriced (worst is the mochila, not stocked by her one verified supplier) · Coari/AM is
+> 34,8% of the clearing pool · freight on a low-density kit is UNQUOTED and the paper study does not transfer ·
+> the win rate is structurally unmeasurable until she bids.** ⚠ **And two of my own numbers from that morning are
+> withdrawn in it: banheira (a 17,2 L bathtub conforming to one line in the country) and BODY's clearing value (a
+> `\bBODY` regex that swept in two-piece conjuntos).**
+
 > ### THE GREAT HUNT — 11 Sep 2026. *"ONE LAST HUNT… BETTER THAN ALL OF THIS."* 54 challengers, 11 verified at source, 0 survivors. THE BOARD IS UNCHANGED, AND NOW BETTER EVIDENCED.
 > Ten lenses, a positive G1–G9 scorecard, every structurally new shape fetched at its primary source the same day —
 > **A LEILOEIRA** (JUCESP caução R$120.000; 620 active auctioneers; assignment by lottery or seniority) · **A FÉ PÚBLICA**
