@@ -253,3 +253,159 @@ line. **This is the daily work and it is the only thing in the company that accu
 
 **Each of these is measurable, cheap, and has a number attached. None of them requires her to speak to
 anyone, and none of them costs more than a day.**
+
+---
+
+## 10. Which states — measured, and São Paulo is the one to avoid
+
+Twelve months, six spec-controlled kit families, non-SP buyers, pieces-normalised, lot-total rows dropped.
+`value clearing ≥50%` is the only column that matters: it is the money she could actually take at a margin
+that lets the company exist.
+
+| UF | lines | municípios | 12-mo value | median gross | **value clearing ≥50%** | share |
+|---|---|---|---|---|---|---|
+| **MG** | 128 | 30 | R$1.999.101 | 4,1% | **R$1.117.778** | 30,9% |
+| **AM** | 15 | 5 | R$2.015.276 | **40,9%** | **R$908.987** | 25,1% |
+| **BA** | 53 | 17 | R$573.817 | 13,0% | R$361.115 | 10,0% |
+| **MA** | 53 | 16 | R$563.069 | **42,7%** | R$246.994 | 6,8% |
+| **CE** | 64 | 24 | R$665.811 | 28,3% | R$166.681 | 4,6% |
+| MT | 43 | 7 | R$5.947.953 | −1,7% | R$104.944 | 2,9% |
+| **SP** | 204 | 37 | R$1.389.920 | **−10,1%** | R$98.980 | 2,7% |
+| ES | 41 | 6 | R$417.703 | **−30,4%** | R$96.364 | 2,7% |
+| PR | 118 | 27 | R$487.558 | 14,8% | R$96.146 | 2,7% |
+| PA | 16 | 9 | R$274.313 | 31,6% | R$86.154 | 2,4% |
+| RJ | 61 | 7 | R$424.512 | 27,0% | R$83.240 | 2,3% |
+| GO | 85 | 18 | R$478.055 | 8,4% | R$76.786 | 2,1% |
+| RN | 90 | 21 | R$241.315 | 18,9% | R$71.151 | 2,0% |
+| MS | 80 | 14 | R$473.900 | 0,9% | R$42.293 | 1,2% |
+| | | | **R$17.392.369** | | **R$3.615.604** | |
+
+**BID: MG · AM · BA · MA · CE · PA · RJ · RN.** The top eight hold **86% of the clearing value.**
+**DE-PRIORITISE: SP (−10,1%) · ES (−30,4%) · MT (−1,7%) · MS (+0,9%).**
+
+Three readings:
+
+1. **São Paulo has the most lines in the country (204, across 37 municípios) and the worst margin of any
+   large state.** She buys in São Paulo and must not sell there. That is exactly the arbitrage **CONDAFE**
+   already runs — a São Paulo EPP taking R$6.135.997 across 15 UFs — and it is now measured on her own cost
+   basis instead of asserted.
+2. **MT's R$5,9M headline is not kits.** It is the Mato Grosso school-uniform programme bleeding into the
+   harvest (`DEDUPLICATE, AND CHECK YOU HARVESTED ONE PROGRAMME`). Ignore MT's value column; its **−1,7%**
+   margin is the real signal.
+3. **MG and AM together are 56% of the clearing value, for opposite reasons.** MG is volume at a thin median
+   (128 lines, 4,1%, with a fat tail that clears). **AM is fifteen lines across five municípios at a 40,9%
+   median** — the competition gradient in its purest observed form, and consistent with
+   `THE CLEARING PRICE IS SET BY WHO BOTHERED TO BID` (AM pays 3,75× São Paulo for an identical pen).
+   **Bid thin fields, not far ones.**
+
+---
+
+## 11. Can year one reach US$4.500–5.000/month? Yes — and the credit line is the wrong lever
+
+Target **US$4.500–5.000/month net = R$281.000–312.222/year net**, PTAX 5,2037, Simples Anexo I computed from
+the Anexo, opex R$24.000/yr.
+
+### 11.1 What it costs, by gross margin
+
+| gross | billings for US$4.500/mo | billings for US$5.000/mo | COGS | net % |
+|---|---|---|---|---|
+| 48% *(no account)* | R$755.416 | R$834.829 | R$434.111 | 37,4% |
+| **52%** *(no account, good lines)* | R$684.514 | R$757.732 | R$363.711 | 41,2% |
+| **58%** *(with the 45% account)* | **R$599.378** | **R$663.993** | R$278.877 | **47,0%** |
+| 62% | R$553.924 | R$613.178 | R$233.008 | 50,9% |
+
+### 11.2 The constraint in its only legible form — HOW MANY LOTS CAN SHE HOLD AT ONCE
+
+One median homologated municipal kit edital is **R$31.080** (measured, n=979). Cycle order → deliver →
+ateste → paid ≈ **45 days**.
+
+| | COGS/lot | float | supplier terms | cash held per lot | **concurrent lots** | lots/yr | billings/yr |
+|---|---|---|---|---|---|---|---|
+| no account | R$14.918 | R$15.600 | **none** | R$14.918 | **1,0** | 8,5 | R$263.611 |
+| no account | R$14.918 | R$15.600 | 21d | R$7.956 | 2,0 | 15,9 | R$494.271 |
+| no account | R$14.918 | R$15.600 | **28d** | R$5.636 | 2,8 | 22,5 | **R$697.794** |
+| no account | R$14.918 | +R$20k credit | none | R$14.918 | 2,4 | 19,4 | R$601.574 |
+| **45% account** | R$13.054 | R$15.600 | none | R$13.054 | 1,2 | 9,7 | R$301.270 |
+| **45% account** | R$13.054 | R$15.600 | **28d** | R$4.931 | **3,2** | 25,7 | **R$797.479** |
+| 45% account | R$13.054 | +R$20k credit | 28d | R$4.931 | 7,2 | 58,6 | R$1.819.888 |
+
+> ### ★ **WITH HER OWN R$15.600 AND NO SUPPLIER TERMS SHE CAN HOLD EXACTLY ONE MEDIAN KIT EDITAL AT A TIME.**
+> That is the whole business in one line, and it is why nothing else in the plan matters until the account
+> exists. **28-day supplier terms are worth MORE concurrent capacity than R$20.000 of borrowed money
+> (2,8 lots vs 2,4), and they cost nothing.**
+
+### 11.3 The credit line, priced
+
+FGI PEAC is the only instrument in Brazil whose published eligibility a company with no history passes — no
+minimum revenue, no minimum time in business, guarantees waived (BNDES FAQ Q4/Q11). **But no agent publishes
+a rate.** Against the only published unsecured Brazilian anchor, BizCapital's CET of **2,91–6,60% a.m.**:
+
+| principal | at 2,91%/mo | at 6,60%/mo | as % of target net |
+|---|---|---|---|
+| R$15.000 | R$6.163/yr | R$17.298/yr | 2,0–5,5% |
+| **R$20.000** | **R$8.218/yr** | **R$23.064/yr** | **2,6–7,4%** |
+| R$30.000 | R$12.326/yr | R$34.596/yr | 3,9–11,1% |
+
+**Survivable, not free. And largely unnecessary if the account lands:** at 58% gross with 28-day terms the
+float needed is **R$12.989 — less than she already has.**
+
+### 11.4 Wins, and the finding that changes the risk
+
+| avg won line | wins/yr | wins/mo | context |
+|---|---|---|---|
+| R$6.000 | 110,7 | 9,2 | the expediente basket line |
+| R$12.000 | 55,3 | 4,6 | small kit lot |
+| **R$31.080** | **21,4** | **1,8** | **MEDIAN municipal kit edital (measured)** |
+| R$35.182 | 18,9 | 1,6 | POLLYANA's measured average |
+| R$58.475 | 11,4 | 0,9 | median dispensa kit lot |
+| R$139.454 | 4,8 | 0,4 | CONDAFE's average edital |
+
+**21 won editais a year is 2,1% of the 979 published, and R$664.000 is 1,2% of the R$57,2M market.** Both
+measured multi-UF operators already exceed it (POLLYANA 30/yr, CONDAFE 44/yr).
+
+And the hours table kills the risk that was supposed to be fatal:
+
+| avg win | wins | win rate | bids/yr | h/month | |
+|---|---|---|---|---|---|
+| R$6.000 | 111 | **5%** | 2.213 | **138** | **OVER the 87 h ceiling** |
+| R$6.000 | 111 | 10% | 1.107 | 83 | OK |
+| **R$31.080** | **21** | **5%** | **427** | **36** | **OK** |
+| R$31.080 | 21 | 20% | 107 | 20 | OK |
+| R$58.475 | 11 | 5% | 227 | 21 | OK |
+
+> ### ★★ **LOT SIZE IS THE RISK CONTROL ON AN UNMEASURABLE WIN RATE.** The win rate cannot be known in
+> advance — PNCP never publishes who lost. At a R$6.000 line a 5% win rate is **138 h/month and the business
+> is impossible**; at a R$31.080 line the *same* 5% win rate is **36 h/month and it is comfortable.**
+> **Bidding bigger lots does not raise the return — it removes the dependence on the one number nobody can
+> measure.**
+
+### 11.5 Market share — and why the account decides this too
+
+| | pool clearing ≥50% gross | billings needed | **share** | verdict |
+|---|---|---|---|---|
+| published tier (no account) | R$3.664.085 | R$757.732 *(52% gross)* | **20,7%** | top of `THE MARKET-MULTIPLE RULE`'s 15–25% band, on a **three-SKU** pool |
+| **45% account** | **R$10.010.000** | **R$663.993** *(58% gross)* | **6,6%** | comfortable |
+
+### 11.6 The answer
+
+**The supplier account is not one step of several. It is the only step, and it does three separate things
+that nothing else does even one of:**
+
+| | published tier | with the account | what it is worth |
+|---|---|---|---|
+| **price** | 52% gross | 58% gross | R$94.000 less billings needed for the same net |
+| **terms** | 1,0 concurrent lot | 3,2 concurrent lots | **more than R$20.000 of borrowed money, at zero cost** |
+| **market** | R$3,66M pool ⇒ 20,7% share | R$10,01M pool ⇒ 6,6% share | the difference between a stretch and a plan |
+
+**And the gate is measured, not guessed.** The strict end of the supplier credit policies is *"no mínimo
+1 ano de fundação"* (All Nations) — which would put terms in month 13. **The permissive end is
+`Flora Saúde: "avaliado pelo setor financeiro a partir da segunda compra… prazo inicial 21 dias"` — month
+two or three.** ⇒ **SELECT SUPPLIERS BY CREDIT POLICY, NOT BY PRICE.** Read the cadastro page before the
+price list. That single decision is the difference between year one and year two, and it costs nothing.
+
+⚠ **The honest gap: the 45% is an INFERENCE, not a quote.** It was derived backwards — Chamex published at
+R$30,60, the state pays R$19,83, so the winners are invoiced at ~R$16–18. **Nobody has been asked.** The
+fifteen emails now carry a number per SKU (body ≤R$8,40 · macacão ≤R$13,70 · toalha c/ capuz ≤R$10,50 ·
+banheira ≤R$14,85 · manta ≤R$10,00) and **they are the entire investment case.** Below three clearing
+answers out of fifteen, section 11 does not happen and the company is the three-SKU version at
+US$2.000–2.400/month.

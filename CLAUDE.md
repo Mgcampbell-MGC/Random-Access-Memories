@@ -2433,6 +2433,59 @@ strangers' dead parents, alone, in year three?"**
   found anywhere (Atacadão da Roupa, 10-pack at R$7,99/piece) carries a **(81) Pernambuco** phone — interstate,
   +6 points. **Every margin in this archive measured before 18 Sep should be assumed inflated until re-run.**
 
+- **★★★ THE CONCURRENT-LOT TEST — EXPRESS A CAPITAL CONSTRAINT AS *HOW MANY UNITS OF WORK SHE CAN HOLD AT
+  ONCE*, NEVER AS A FLOAT FIGURE. 18 Sep 2026, and it answered in one line a question four turns of
+  arithmetic had circled.** One median homologated municipal kit edital is **R$31.080** (measured, n=979);
+  the cycle order → deliver → ateste → paid is ≈45 days. ⇒ **WITH HER OWN R$15.600 AND NO SUPPLIER TERMS SHE
+  CAN HOLD EXACTLY ONE MEDIAN EDITAL AT A TIME** (COGS R$13.054–14.918 per lot against a R$15.600 float),
+  which caps her at **8,5–9,7 lots a year ≈ R$263–301k of billings** whatever the win rate, whatever her
+  hours, whatever the market. **Terms and credit are then directly comparable in the same unit: 28-day
+  supplier terms buy 2,8–3,2 concurrent lots; R$20.000 of borrowed money buys 2,4.** ⇒ **SUPPLIER TERMS ARE
+  WORTH MORE CONCURRENT CAPACITY THAN A CREDIT LINE AND THEY COST NOTHING** — at 58% gross with 28-day terms
+  the float needed is **R$12.989, LESS THAN SHE ALREADY HAS**, so the FGI PEAC raise becomes optional rather
+  than structural. *(Priced, for when it is not optional: at the only published unsecured Brazilian anchor,
+  BizCapital CET **2,91–6,60% a.m.**, R$20.000 costs **R$8.218–23.064/yr = 2,6–7,4% of the target net** —
+  survivable, not free. No FGI PEAC agent publishes a rate; still **UNVERIFIED**.)*
+  ★★ **AND THE SEQUENCING DECISION IT PRODUCES, WHICH IS FREE: SELECT SUPPLIERS BY CREDIT POLICY, NOT BY
+  PRICE — READ THE CADASTRO PAGE BEFORE THE PRICE LIST.** The strict end of the measured policies is
+  *"no mínimo 1 ano de fundação"* (All Nations), which puts terms in month 13; **the permissive end is
+  `Flora Saúde: "avaliado pelo setor financeiro a partir da segunda compra… prazo inicial 21 dias"` — month
+  two.** **That single choice is the difference between year one and year two, and it is made by reading.**
+- **★★★ LOT SIZE IS THE RISK CONTROL ON AN UNMEASURABLE WIN RATE — AND IT BOUNDS `THE ONE NUMBER NOBODY HAS
+  MEASURED IS THE WIN RATE`.** PNCP never publishes who lost, so the win rate cannot be known before
+  operating. **At a R$6.000 line a 5% win rate needs 2.213 bids ⇒ 138 h/month and the business is
+  IMPOSSIBLE; at a R$31.080 line the SAME 5% win rate needs 427 bids ⇒ 36 h/month and it is comfortable**
+  (0,6 h/bid plus per-win fulfilment, C9 ceiling 87 h). ⇒ **BIDDING BIGGER LOTS DOES NOT RAISE THE RETURN —
+  IT REMOVES THE DEPENDENCE ON THE ONE NUMBER NOBODY CAN MEASURE.** The win-rate law was derived at the
+  expediente basket line and is true there; it does not survive a change of lot size. **Ask of any
+  volume-driven plan: at what unit size does the unmeasurable input stop mattering?** *(Sizing check:
+  R$664.000 of billings = **21 won editais = 2,1% of the 979 published and 1,2% of the R$57,2M market** —
+  below both measured multi-UF operators, POLLYANA 30/yr and CONDAFE 44/yr.)*
+- **★★★ THE ACCOUNT IS NOT ONE STEP OF SEVERAL — IT IS THE ONLY STEP, BECAUSE IT DOES THREE SEPARATE THINGS
+  AND NOTHING ELSE DOES EVEN ONE OF THEM.** Against the US$4.500–5.000/month target (R$281–312k/yr net):
+  **PRICE** 52% → 58% gross ⇒ R$94.000 less billings needed for the same net · **TERMS** 1,0 → 3,2
+  concurrent lots ⇒ more than R$20.000 of credit, free · **MARKET** the pool clearing ≥50% goes
+  **R$3,66M → R$10,01M**, so her required share falls from **20,7% (top of `THE MARKET-MULTIPLE RULE`'s
+  band, on a three-SKU pool) to 6,6%.** ⇒ **WHEN ONE UNRESOLVED INPUT MOVES PRICE, CAPACITY AND ADDRESSABLE
+  MARKET SIMULTANEOUSLY, IT IS NOT A DILIGENCE ITEM — IT IS THE INVESTMENT CASE, AND EVERY OTHER STEP IS
+  IDLE UNTIL IT RETURNS.** ⚠ **And the 45% is an INFERENCE, not a quote** — derived backwards from Chamex
+  published R$30,60 against a state-paid R$19,83. **Nobody has been asked.** The fifteen emails now carry a
+  number per SKU (body ≤R$8,40 · macacão ≤R$13,70 · toalha c/capuz ≤R$10,50 · banheira ≤R$14,85 · manta
+  ≤R$10,00); **below three clearing answers out of fifteen the company is the three-SKU version at
+  US$2.000–2.400/month.**
+- **★★ THE KIT MARKET BY UF — AND SÃO PAULO HAS THE MOST LINES IN THE COUNTRY AND THE WORST MARGIN.** Twelve
+  months, six spec-controlled families, pieces-normalised, lot-total rows dropped, scored on **value clearing
+  ≥50% gross** (the only column that matters): **MG R$1.117.778 (30,9%) · AM R$908.987 (25,1%) · BA R$361.115
+  · MA R$246.994 · CE R$166.681 · PA · RJ · RN — the top eight hold 86%.** Against **SP: 204 lines across 37
+  municípios at a −10,1% median gross · ES −30,4% · MT −1,7% · MS +0,9%.** ⇒ **BUY IN SÃO PAULO, NEVER SELL
+  THERE** — which is exactly what CONDAFE (SP EPP, 15 UFs, R$6.135.997/yr) already does, now measured on her
+  own cost basis rather than asserted. ★ **MG and AM are 56% of the clearing value for OPPOSITE reasons: MG
+  is 128 lines at a 4,1% median with a fat clearing tail; AM is FIFTEEN lines across FIVE municípios at a
+  40,9% median** — `THE CLEARING PRICE IS SET BY WHO BOTHERED TO BID` in its purest observed form.
+  **Bid thin fields, not far ones.** ⚠ **And MT's R$5,9M headline is not kits** — it is the Mato Grosso
+  school-uniform programme bleeding through the harvest; **ignore its value column, its −1,7% margin is the
+  real signal.** *(`DEDUPLICATE, AND CHECK YOU HARVESTED ONE PROGRAMME` still firing three runs later.)*
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
