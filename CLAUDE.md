@@ -2012,15 +2012,34 @@ strangers' dead parents, alone, in year three?"**
   box price to a unit cost is the archive's own unit error in a third costume, and it moved a margin by **81
   points**); **reject "CONFORME MODELO DO ÓRGÃO"** (custom spec, and the two largest lines in the dataset
   carry it); and **reject any numeric atestado.**
-- **★★★ THE INCUMBENT IS THE PROOF, AND ONE OF THEM HAS EXACTLY HER CAPITAL.** Reverse-engineering the small
-  winners was the single most valuable instruction in the repair brief. **P H P DE FREITAS RODRIGUES, CNPJ
-  38.261.300/0001-05, Empresário Individual, capital social R$50.000 — the same figure this plan budgets —
-  wins 79 tenders a year averaging R$14.073 = R$1.111.800 in expediente, AND is the same operator this archive
-  already recorded at R$1,78M/yr in thermal media.** One person, R$50.000, **~R$2,9M/year across two
-  categories.** Alongside him **POLLYANA MELO DA SILVA LUSTOSA** (CNPJ 37.722.924/0001-01, EI, capital
-  R$80.000) at **30 tenders/yr averaging R$35.182 = R$1.055.475.** ⇒ **The target of 35 baskets/year sits
-  BELOW both measured incumbents, which is the first time in this archive a plan's volume assumption has been
-  bracketed by real operators rather than asserted.** ⚠ **And the honest floor: at 35 baskets the net is
+- **★★★ THE INCUMBENT IS THE PROOF — ⚠⚠ BUT THE NAMED INCUMBENT WAS THE WRONG MAN. CORRECTED 18 Sep 2026;
+  see `THE_SWEEP_VERIFICATION.md` §5.** The claim below — *"P H P DE FREITAS RODRIGUES wins 79 tenders a year
+  averaging R$14.073 = R$1.111.800 in expediente… ~R$2,9M/year across two categories"* — **is FALSE.
+  CNPJ 38.261.300/0001-05 appears ZERO times in 82.650 award rows across all twelve priced expediente PDMs**
+  (two independent pulls, mine and an agent's 92.777-row pull, agree). His entire PNCP contract record is
+  **103 contracts over 3,7 years = R$1.681.186 ≈ R$454k/yr, or ≈R$184k/yr excluding one R$1,00M Ceará
+  etiqueta contract that is 60% of the sum**, median contract R$1.900, object tally ETIQUETA 38 / BOBINA 21 /
+  RIBBON 3. **He is a thermal-and-label consumables specialist who does not compete in this basket at all.**
+  ⇒ **THE BRACKET THAT MADE "35 BASKETS A YEAR" LOOK CONSERVATIVE WAS BUILT ON AN OPERATOR IN A DIFFERENT
+  BUSINESS.** ★ **Four real anchors, all CNPJ-verified 18 Sep, and the best one is better than the old one:
+  DAIANE DOS SANTOS MARTINS (45.930.390/0001-37, Empresário Individual, Micro Empresa, capital R$10.000 —
+  LESS than Sol's budget — Belo Horizonte, opened Apr 2022) wins across 25 UFs and ALL TWELVE PDMs, 669
+  lines** · A D S QUEIROZ (34.590.793/0001-68, EI, EPP, R$200.000, Fortaleza) 11 of 12 PDMs, ≈R$2,66M/yr ·
+  **KINGDOM COMÉRCIO DE LICITAÇÕES (48.500.314/0001-80) and ARAÚJO LICITAÇÕES (28.485.774/0001-79) — two firms
+  whose registered NAME says the business is winning tenders**, 9 and 22 UFs, all 12 PDMs. **A four-year-old
+  ME with R$10.000 of capital running the exact playbook is a better proof than any of it.**
+  *(Kept below for the record, and because the POLLYANA half checks out and is LARGER than stated.)*
+  ~~P H P DE FREITAS RODRIGUES, CNPJ 38.261.300/0001-05, Empresário Individual, capital social R$50.000 —
+  the same figure this plan budgets — wins 79 tenders a year averaging R$14.073 = R$1.111.800 in expediente,
+  AND is the same operator this archive already recorded at R$1,78M/yr in thermal media. One person,
+  R$50.000, ~R$2,9M/year across two categories.~~ Alongside him **POLLYANA MELO DA SILVA LUSTOSA** (CNPJ 37.722.924/0001-01, EI, capital
+  R$80.000) at **30 tenders/yr averaging R$35.182 = R$1.055.475** — ★ **re-measured 18 Sep and REVISED UP:
+  487 award lines and R$1.394.440 across the twelve PDMs in twelve months; 160 contracts; 2024 R$295.049 →
+  2025 R$687.051 → 2026 R$1.316.553 through 8,5 months, annualising ≈R$1,86M; 85% of it in Amazonas; and she
+  is a MULTI-CATEGORY institutional basket operator (EXPEDIENTE 63 / CONSUMO 39 / LIMPEZA 25 / HIGIENE 17),
+  not an office-supplies specialist.** ⇒ **The target of 35 baskets/year sits BELOW the measured incumbents,
+  which is the first time in this archive a plan's volume assumption has been bracketed by real operators
+  rather than asserted — but bracket it against POLLYANA and DAIANE, never against P H P.** ⚠ **And the honest floor: at 35 baskets the net is
   R$110–140k/yr ≈ US$1.770–2.250/month — the BOTTOM EDGE of the bar. The comfortable number is the
   incumbents' R$1,0–1,1M of billings, i.e. 55–75 baskets.** ★ **There is no moat and the head start is ZERO:
   PDM 20 has 973 suppliers and PDM 99 has 978, so `THE BUILDABILITY THRESHOLD`'s "one quarter of absence" does
@@ -2110,7 +2129,9 @@ strangers' dead parents, alone, in year three?"**
   that clears it. Below three, A EXPEDIENTE is a small-quantity business permanently and its volume assumption
   must come down to match.** See `THE_SP_WHOLESALE_PRICE.md`.
 
-- **★★★ THE 45% TIER GAP. 16 Sep 2026, twelve SKUs measured, FIVE clear.** *(⚠ First written as "nine SKUs,
+- **★★★ THE 45% TIER GAP. 16 Sep 2026, twelve SKUs measured, FIVE clear. ⚠⚠ RE-MEASURED 18 Sep WITH SPEC
+  CONTROL: ONE clears where the money is. The gap was understated, not overstated — see `THE REPAIR PASS
+  VERDICT`.** *(⚠ First written as "nine SKUs,
   TWO clear" and CORRECTED the same hour — see `MATCH THE GRADE` below. Three PDMs finished pulling minutes
   after the verdict was written and all three were LIVE; the headline was drawn before the data was in.)* Against the verified SP costs: **LIVE — caneta
   esferográfica azul to ~1.100 un (45–92% at R$0,9414) and clips 4/0 at 150–1.100 un (21–80% at R$0,0515).**
@@ -2136,8 +2157,13 @@ strangers' dead parents, alone, in year three?"**
   5.000** (3.124 of its rows carry `capacidadeUnidadeFornecimento = 5000`, 636 carry 1000); a per-staple
   reading of PDM 28 is meaningless. See `THE_SP_WHOLESALE_PRICE.md` §7.
 
-- **★★★ MATCH THE GRADE THE STATE BUYS — NOT THE TIER — AND THE EXPEDIENTE BASKET IS BIDABLE TODAY.
-  CORRECTION TO MY OWN VERDICT, WITHIN THE HOUR.** Three more PDMs landed after `THE 45% TIER GAP` was
+- **★★★ MATCH THE GRADE THE STATE BUYS — NOT THE TIER. ⚠⚠ THE "BIDABLE TODAY" HALF IS WITHDRAWN 18 Sep 2026:
+  spec control on MATERIAL, SIZE and CAPACITY (not only brand) kills three of these five lines. ENVELOPE
+  survives and strengthens (+57,6% at EVERY band on a R$1,74M pool); PERFURADOR survives but only on the
+  conforming ≤25-folha spec, a R$225k pool; FITA survives below 250 units; CANETA and CLIPS do not survive.
+  See `A PDM IS NOT A PRODUCT` and `THE_SWEEP_VERIFICATION.md`. The GRADE RULE ITSELF IS VINDICATED — it was
+  simply applied one level too shallow.** **ORIGINAL, KEPT FOR THE RECORD — "AND THE EXPEDIENTE BASKET IS
+  BIDABLE TODAY. CORRECTION TO MY OWN VERDICT, WITHIN THE HOUR."** Three more PDMs landed after `THE 45% TIER GAP` was
   written and **all three clear at the published São Paulo retail tier**: **PERFURADOR DE PAPEL 2 furos
   (Jocar R$12,90 against a state ladder of R$35,00 / 29,83 / 29,15 / 22,15 / 19,93 — LIVE AT EVERY BAND,
   35–63%, n=4.720)** · **ENVELOPE branco 114×229 (R$0,1399 against R$0,38–0,455 — 63–99%, n=201 ⚠ thin)** ·
@@ -2160,7 +2186,10 @@ strangers' dead parents, alone, in year three?"**
   — and this file is far more prone to it. Do not write a verdict until every job you started has returned.**
 
 - **★★★ A EXPEDIENTE REBUILT ON THE MEASURED COST — AND THE WHOLE BUSINESS REDUCES TO ONE NUMBER: HOW MANY
-  WINS.** With the São Paulo price now measured, the desk's addressable content per edital splits three ways
+  WINS. ⚠⚠ ROUTE A IS WITHDRAWN 18 Sep — the "published tier, five live lines, ≈R$4.470/edital" basket does
+  not survive spec control, and the incumbent bracket named below rests on the wrong operator. Routes B and C
+  stand; both require the supplier account. See `THE_SWEEP_VERIFICATION.md`.**
+  With the São Paulo price now measured, the desk's addressable content per edital splits three ways
   and each implies a different company: **(A) published tier, five live lines only — ≈R$4.470/edital, ~40%
   gross, ≈R$1.325 net ⇒ ≈98 WINS/YEAR. (B) half the basket sourced at matched grade — ≈R$9.100, ≈R$2.400 net
   ⇒ ≈54. (C) supplier account, full basket — R$18.235, ~30% gross, ≈R$3.600 net ⇒ ≈36.** Against the two
@@ -2231,6 +2260,95 @@ strangers' dead parents, alone, in year three?"**
   extra state tax on her side — **UNVERIFIED as applied.**
   ⇒ **PARSER RULE: SOURCE IN SÃO PAULO, BID EVERYWHERE THE PRAZO ALLOWS, AND DE-PRIORITISE SÃO PAULO'S OWN
   TENDERS.** See `THE_EXPEDIENTE_DESK.md`.
+
+- **★★★ A PDM IS NOT A PRODUCT — SPEC-CONTROL ON MATERIAL, SIZE AND CAPACITY, NOT ONLY ON BRAND. 18 Sep 2026,
+  and it killed or gutted every headline line the 16 Sep PDM sweep returned — CADERNO, PRANCHETA, APONTADOR
+  and CAIXA ARQUIVO — plus PASTA A-Z, which the sweep never found and which looked better than all of them.** `MATCH THE GRADE THE STATE BUYS` said
+  read the state's `descricaoItem` for a BRAND before pricing against its median. **Necessary and nowhere near
+  sufficient: a PDM is a CATALOGUE HEADING containing materially different objects at 2–10× different prices,
+  and a margin computed across them is manufactured out of nothing.** Five worked cases, all from one session:
+  **CADERNO** — a Sixpel *1/4 brochura 96 fl* at R$6,46 was priced against a PDM whose top lines are a 200-fl
+  320 mm hardback (R$8,9M), an R$11.126-**per-unit** fichário de couro, and *"CADERNO DO ALUNO"* printed
+  workbooks at R$109–207/un; controlled to **96 fl AND ≤230×170 mm** the gross falls from **+23–28% to +4,2%**
+  and the pool from a claimed **R$67,3M to R$5,47M**, with R$4,69M of it in a band that loses 20 points.
+  **APONTADOR** — R$0,41 *simples* priced against a PDM that is **78% *com depósito*** (cost R$1,03, state
+  R$0,73 = −41%); the conforming market is **R$77.492 A YEAR, NATIONALLY**, not the R$3,0M it showed.
+  **PRANCHETA** — a wood clipboard priced against **331 acrylic rows**; controlled, it is **−19,4%** and dead
+  above 15 units. **CAIXA ARQUIVO** — papelão cost against a PDM that is **69% polionda**; +23,3% → **+10,9%**.
+  **PASTA A-Z** — looked like the best line in the file (+59–68% at every band, R$5,04M/yr) for four minutes,
+  until the cost was fetched: **Dac A-Z lombo largo R$33,68 against a state median of R$11,70. Dead by 3×.**
+  ⇒ **BEFORE BELIEVING ANY MARGIN, PRINT THE SPEC DISTRIBUTION OF THE PDM AND ASK WHICH ROWS YOUR PRODUCT
+  ACTUALLY CONFORMS TO.** *(Seventh occurrence of `A COUNT OF STRUCTURES IS NOT A CHECK OF CONTENT`, in its
+  most expensive costume yet: cross-spec price comparison INSIDE a single PDM.)* See `THE_SWEEP_VERIFICATION.md` §2.
+- **★★★ THE LOT-TOTAL ROW — A NEW DATA TRAP, AND IT HAS BEEN INFLATING THIS FILE'S SMALL-LOT LADDER ALL
+  ALONG.** Brazilian buyers routinely type the **LOT TOTAL** into `precoUnitario` with `quantidade = 1`.
+  Measured on PDM 99: `qty=1, preço=R$673.553,00` for one caneta (RJ); `qty=1, R$59.500` (MA); `qty=59,
+  R$790,00/un` (RO) — **126 of 1.934 rows carrying R$2,33M of phantom "value", and they land in the SMALLEST
+  quantity band by construction, because a lot entered as one unit IS a quantity of one.** Dropping rows
+  outside a plausible price window for the SKU moves the ≤60 band from **R$5,34 to R$1,68 per pen and its
+  annual value from R$1.004.109 to R$12.980.** ⇒ **THE PUBLISHED CANETA LADDER'S TOP RUNG (`≤60 → R$6,70`) IS
+  98,7% DATA-ENTRY ERROR, and with it the entire "the margin lives in the micro-lots" reading.** The monotonic
+  SHAPE above 250 units survives; the LEVEL at the bottom does not. **PARSER RULE: attach a plausible
+  unit-price window to every SKU and drop rows outside it before computing any median. One line of code.**
+- **★★★ THE REPAIR PASS VERDICT — AT THE PUBLISHED SÃO PAULO TIER THERE IS NO A EXPEDIENTE. 18 Sep 2026.**
+  A second and better São Paulo source was found and CNPJ-verified — **SIXPEL DISTRIBUIDORA LTDA,
+  13.328.409/0001-83, São Paulo capital, capital social R$2.000.000, CNAE 4647-8/01 *atacadista de artigos de
+  escritório*, active since 2011, ~700 SKUs priced with no login, and it stocks the GENERIC grade
+  (RedBor borracha R$0,68, Leo&Leo apontador R$0,41, Acrinil régua R$1,03) the previous micro-retailer source
+  did not.** It should have rescued the basket. **Spec-controlled, it does not.** Twelve months, non-SP buyers,
+  pieces-normalised, lot-total rows dropped, like-for-like on material/size/capacity: **ENVELOPE 114×229
+  +57,6% and live at EVERY band (R$1,74M/yr) · PERFURADOR 2-furos ≤25 fl +43,9% (R$225k/yr) · FITA 12 mm
+  +12,2% but only below 250 un · CAIXA ARQUIVO papelão +10,9% and flat · RÉGUA +6 to +15% · CADERNO +4,2% ·
+  and DEAD: caneta −28%, lápis −58%, borracha −13%, pasta −15%, prancheta −19%, lápis de cor −44%, capa −24%,
+  A-Z −188%, tesoura, grampo, papel A4.** ⇒ **EXACTLY ONE LINE CLEARS A WORKABLE MARGIN WHERE THE MONEY IS,
+  AND IT IS THE ENVELOPE.** Spec-controlled addressable pool at the published tier, whole country:
+  **≈R$4,5–5,0M**, against ≈R$640.000 of billings for the bar = **13–16% share, which fails
+  `THE MARKET-MULTIPLE RULE`.** ⇒ **`THE 45% TIER GAP` UNDERSTATED ITSELF: the distributor account is not
+  step one of many, it is the only step, and the fifteen emails now have a NUMBER PER SKU instead of a
+  percentage — caneta ≤R$0,52 · lápis ≤R$0,29 · pasta aba+elástico ≤R$2,80 · caderno 1/4 96 fl ≤R$5,40 ·
+  A4 ≤R$16,00**, each being 20% under the spec-controlled state median in the band where that SKU's money
+  sits. ★ **And spec-splitting produced the only two unpriced pockets worth an hour: a 26–50-folha perfurador
+  (state median R$34,30, R$967.390/yr) and a >50-folha one (R$91,83, R$705.259/yr) — live against any cost
+  under ~R$27 and ~R$73, and this archive has no cost for either.**
+- **★★ PNCP NEVER PUBLISHES WHO LOST — SO HER OWN BID LOG IS THE ONE ASSET IN THIS PLAN THAT COMPOUNDS AND
+  CANNOT BE BOUGHT.** `/itens/{n}/resultados` returns **exactly one row, the homologated winner, even on a
+  genuine multi-bidder pregão**, and `/propostas`, `/lances`, `/classificacao`, `/fornecedores`,
+  `/participantes` all 404. Win rate is therefore structurally unmeasurable in advance — **it can only be
+  bounded** (both measured anchors' 2,5–8,3 wins/month fit inside her 58–116 bids/month at any win rate above
+  ~3–15%, so capacity is unlikely to bind). ⇒ **INSTRUMENT THE CRON FROM DAY ONE: date, PDM, spec, quantity
+  band, her cost, her bid, result, and the winning price when she loses.** Nothing else in this business
+  accumulates, and the same opacity that makes the number unmeasurable is what makes her copy of it private.
+- **★★ SOMEBODY IS ALREADY SELLING THE "NOBODY IS DOING THIS" HALF — AND THE PART THEY CANNOT SELL IS THE
+  COST SIDE.** Verified at the vendor's own page 18 Sep: **SIGA Pregão ships *"Novo · Pagômetro: Avalie a
+  capacidade de pagamento do órgão antes de disputar, e venda apenas para quem está com as contas em dia"* on
+  its Ultra plan at 12× R$389,42 / R$3.997 à vista**, plus an auto-lance module sold as *"proteja sua margem"*
+  and AI edital-reading. **The free SICONFI RREO Anexo 07 municipal payment screen this file crowned on 12 Sep
+  as "the best thing found in this hunt" is a commercial feature, launched as new, at R$3.997/year.** Alerting
+  and AI edital-reading are commodity across eight-plus vendors from R$0 to R$580/month. ★ **What eleven
+  inspected vendors do NOT sell — checked one by one — is a MARGIN COMPUTED FROM THE SUPPLIER'S OWN COST
+  TABLE, spec-controlled, driving a bid/no-bid decision. Every "análise de mercado" shows competitor and
+  historical AWARD prices; none has a cost input.** ⇒ **A vendor can sell what the STATE paid because the
+  state publishes it; no vendor can sell what SHE pays, because that is her own invoice — the same structural
+  reason her losing-bid log is unbuyable. The white space is the cost side, and only the cost side.**
+- **★★ FREIGHT DOES NOT KILL THE SP→CO/N/NE ARBITRAGE, AND THE EDITAL SAYS WHY IT IS THE COMPLETE BASIS.**
+  Measured, not estimated, by reverse-engineering a verified SP wholesaler's own no-login checkout
+  (`POST suprimaissp.com.br/frete/`): a 3,6 kg ream ships PAC at **R$35,34 SP / 44,49 Salvador / 40,82 Goiânia
+  / 48,46 Belém / 40,83 Campo Grande / 57,06 Porto Velho**, falling to **R$4,72–10,04/kg at 28,8 kg** — i.e.
+  freight has the same quantity-discount curve as the goods. On the three named lots it is **1–19% of line
+  revenue, median 5–8%**, against 20–90% gross. **All five target UFs clear a 10-business-day bar by PAC.**
+  ★ **And a live 2026 municipal edital settles the accounting: Riachão do Bacamarte/PB PE 7/2026 cl. 9.8 —
+  *"Não será admitida a previsão de preços diferentes em decorrência do local de entrega do objeto"* — with
+  the words *frete*, *CIF* and *FOB* appearing ZERO times in 43 pages. Freight is embedded in the single bid
+  price, and under venda à ordem the supplier ships to the órgão's own CEP, so the SP-origin leg IS the whole
+  freight cost — there is no second leg to price.** *(Same edital: a **3-day** delivery deadline, against this
+  file's 10-day median.)* ⚠ **Correios hard-caps a parcel at ~29 kg (8 reams ship, 9 do not) and every B2B
+  road carrier — Braspress, Jadlog, TNT, Total Express, Melhor Envio, SuperFrete, Kangu — refuses to quote
+  without a contract, so the ~100 kg tier is a constructed 4-parcel proxy and stays UNVERIFIED.**
+- **★ AND THE PESQUISA-PREÇO ENDPOINT HAS TWO MORE TRAPS, BOTH FAILING TOWARD A FLATTERING NUMBER:**
+  **(1) it silently returns ~5 YEARS of history with no recency filter** — an "annual" pool computed off a raw
+  pull is overstated ~3×, so **always filter `dataResultado`**; **(2) `siglaUnidadeFornecimento = 'C'` means
+  CENTO (100 units), not one piece** — a third costume for the unit trap that has now fired eight times in
+  this file.
 
 ## The test design that works
 
