@@ -7,18 +7,18 @@ const W=9866;                      // content width (A4 minus 1020 twip margins)
 const S=24;                        // 12pt body
 
 const T=(t,o={})=>new TextRun({text:t,font:"Calibri",size:o.size||S,bold:o.b,italics:o.i,color:o.c||INK});
-const P=(t,o={})=>new Paragraph({alignment:o.al,spacing:{before:o.before??0,after:o.after??100,line:264},
+const P=(t,o={})=>new Paragraph({alignment:o.al,spacing:{before:o.before??0,after:o.after??92,line:254},
   children:Array.isArray(t)?t:[T(t,o)]});
-const H=(t,o={})=>new Paragraph({keepNext:true,spacing:{before:o.before??200,after:70},
+const H=(t,o={})=>new Paragraph({keepNext:true,spacing:{before:o.before??165,after:62},
   children:[new TextRun({text:t,font:"Calibri",size:25,bold:true,color:TEAL})]});
-const BUL=t=>new Paragraph({numbering:{reference:"b",level:0},spacing:{after:46,line:258},
+const BUL=t=>new Paragraph({numbering:{reference:"b",level:0},spacing:{after:42,line:250},
   children:Array.isArray(t)?t:[T(t)]});
 
 const BOX=(lines,fill=CREAM,edge="C9C0B0")=>new Table({columnWidths:[W],width:{size:W,type:WidthType.DXA},
   borders:{top:{style:BorderStyle.SINGLE,size:10,color:edge},bottom:{style:BorderStyle.SINGLE,size:10,color:edge},
     left:{style:BorderStyle.SINGLE,size:10,color:edge},right:{style:BorderStyle.SINGLE,size:10,color:edge},
     insideHorizontal:{style:BorderStyle.NONE},insideVertical:{style:BorderStyle.NONE}},
-  rows:[new TableRow({children:[new TableCell({width:{size:W,type:WidthType.DXA},
+  rows:[new TableRow({cantSplit:true,children:[new TableCell({width:{size:W,type:WidthType.DXA},
     shading:{type:ShadingType.CLEAR,fill},margins:{top:110,bottom:110,left:150,right:150},children:lines})]})]});
 
 function TBL(rows,widths,o={}){
@@ -32,7 +32,7 @@ function TBL(rows,widths,o={}){
     borders:{top:{style:BorderStyle.SINGLE,size:4,color:"D6CEC0"},bottom:{style:BorderStyle.SINGLE,size:4,color:"D6CEC0"},
       left:{style:BorderStyle.NONE},right:{style:BorderStyle.NONE},
       insideHorizontal:{style:BorderStyle.SINGLE,size:2,color:"E8E2D7"},insideVertical:{style:BorderStyle.NONE}},
-    rows:rows.map((r,i)=>new TableRow({cantSplit:true,children:r.map(c=>cell(c,widths[r.indexOf(c)]??widths[0],i%2===1))}))});
+    rows:rows.map((r,i)=>new TableRow({cantSplit:true,tableHeader:(i===0&&!!o.hdr),children:r.map(c=>cell(c,widths[r.indexOf(c)]??widths[0],i%2===1))}))});
 }
 const GAP=(n=100)=>new Paragraph({spacing:{after:n},children:[]});
 
@@ -64,41 +64,52 @@ push(
   [{t:"Dia 15",b:true,c:TEAL},"Monta, embala e despacha para o endereço do edital"],
   [{t:"Dia 45",b:true,c:TEAL},"Nota atestada, prefeitura paga"]],[1250,8616]),
  P([T("Você nunca compra nada por aposta. ",{b:true}),
-    T("Se perder, gastou R$ 0 e não tem estoque. Sem galpão e sem mercadoria parada.")],{before:110}),
+    T("Se perder, gastou R$ 0 e não tem estoque. Sem galpão, sem mercadoria parada. O que o negócio precisa cobrir é só o intervalo entre pagar o atacadista e receber — cerca de 34 dias.")],{before:110}),
+
+ H("O que a máquina faz — e o que você faz"),
+ TBL([
+  [{t:"A MÁQUINA, todo dia, sozinha",b:true,c:TEAL},{t:"VOCÊ, algumas horas por semana",b:true,c:CLAY}],
+  ["Lê todos os editais publicados no país","Olha a lista curta e decide em quais entrar"],
+  ["Descarta o que não serve: lote único, atestado com número, prazo curto demais, prefeitura que não paga","Dá o lance na plataforma — pregão eletrônico, tudo por tela"],
+  ["Precifica cada item contra a sua tabela de custo","Ganhou: pede a mercadoria ao atacadista, confere e despacha"],
+  ["Entrega uma lista curta: vale ou não vale","Emite a nota com o número do empenho e acompanha o pagamento"],
+  ["","Anota o resultado de cada lance"]],[4933,4933],{hdr:true}),
+ P("Sem funcionário, sem cliente para segurar, sem reunião, sem câmera. É escrito, é por tela, e cada contrato termina quando a entrega termina.",{before:110}),
 
  H("O que você vende"),
- P([T("O kit montado — nunca os itens soltos. "),
-    T("Todo mundo sabe quanto custa um body; ninguém publica preço de “17 itens de bebê dentro de uma bolsa”. "),
-    T("Um kit real de 17 itens foi vendido a R$ 359. A mercadoria custa R$ 169 a R$ 230. ",{b:true}),
-    T("A margem só existe no kit inteiro: vendidos um a um, quase todos dão prejuízo — nessas linhas quem disputa é fábrica.")]),
+ P([T("O kit montado — nunca os itens soltos. Todo mundo sabe quanto custa um body; ninguém publica preço de “17 itens de bebê dentro de uma bolsa”. "),
+    T("Um kit real de 17 itens foi vendido a R$ 359, e a mercadoria dentro dele custa R$ 169 a R$ 230. ",{b:true}),
+    T("Vendidos um a um, quase todos esses itens dão prejuízo — nessas linhas quem disputa é fábrica. A margem só existe no conjunto.")]),
+ P([T("Em edital de “preço por kit” você monta as bolsas e entrega prontas — é onde está a margem. Em “preço por item” a prefeitura compra os componentes separados e a equipe dela monta; você só despacha as caixas.")]),
 
- H("O que você faz, na prática"),
- BUL("O programa varre os editais e calcula. Você decide em quais entrar."),
- BUL("Dá o lance na plataforma — pregão eletrônico, tudo por tela."),
- BUL("Ganhou: manda o pedido aos atacadistas do Brás, confere e despacha."),
- BUL("Emite a nota fiscal com o número do empenho e acompanha o pagamento."),
- BUL([T("Registra cada lance numa planilha: seu custo, seu lance, quem ganhou e por quanto. "),
-      T("Esse arquivo é o único ativo que ninguém consegue comprar.",{b:true})]),
- P("Sem funcionário, sem cliente para segurar, sem reunião, sem câmera. É escrito, é por tela, e cada contrato termina quando a entrega termina.",{before:80}),
-
- H("Os números"),
+ H("Licitações reais — todas fechadas, todas do último ano"),
  TBL([
-  ["Licitações de kit publicadas por ano",{t:"1.012",b:true,al:AlignmentType.RIGHT}],
-  [{t:"Quantas você precisa ganhar",b:true},{t:"21  (2,1%)",b:true,c:TEAL,al:AlignmentType.RIGHT}],
-  ["Faturamento",{t:"R$ 360.000",al:AlignmentType.RIGHT}],
-  [{t:"Lucro líquido no ano",b:true},{t:"R$ 146.000  ·  US$ 2.340/mês",b:true,c:TEAL,al:AlignmentType.RIGHT}]],
-  [5500,4366]),
- P([T("Duas empresas de uma pessoa só já fazem mais que isso hoje: a CONDAFE, de São Paulo, ganha 44 licitações por ano e entrega em 15 estados; e uma microempresa aberta em janeiro de 2024 já ganha em quatro estados. "),
-    T("O caminho não é secreto — é só trabalho que quase ninguém faz com cuidado.",{b:true})],{before:110}),
+  [{t:"Prefeitura",b:true,c:TEAL},{t:"O que comprou",b:true,c:TEAL},{t:"Qtd",b:true,c:TEAL,al:AlignmentType.RIGHT},{t:"Fechou a",b:true,c:TEAL,al:AlignmentType.RIGHT}],
+  ["Itaquaquecetuba / SP","Kit maternidade, 17 itens",{t:"5.000",al:AlignmentType.RIGHT},{t:"R$ 359,05",b:true,al:AlignmentType.RIGHT}],
+  ["Campos dos Goytacazes / RJ","Kit bebê montado",{t:"1.560",al:AlignmentType.RIGHT},{t:"R$ 353,07",b:true,al:AlignmentType.RIGHT}],
+  ["Maués / AM","Kit enxoval montado",{t:"1.265",al:AlignmentType.RIGHT},{t:"R$ 298,00",b:true,al:AlignmentType.RIGHT}],
+  ["Icatu / MA","Kit enxoval recém-nascido",{t:"1.172",al:AlignmentType.RIGHT},{t:"R$ 296,84",b:true,al:AlignmentType.RIGHT}],
+  ["Coari / AM","Banheira anatômica (item avulso)",{t:"12.960",al:AlignmentType.RIGHT},{t:"R$ 62,70",b:true,al:AlignmentType.RIGHT}],
+  ["Aracaju / SE","Pagão 100% algodão (item avulso)",{t:"3.750",al:AlignmentType.RIGHT},{t:"R$ 40,00",b:true,al:AlignmentType.RIGHT}]],
+  [2750,3900,1250,1966],{hdr:true}),
+ P([T("Quatro kits montados entre R$ 297 e R$ 359 — exatamente a faixa em que a mercadoria custa R$ 169 a R$ 230. "),
+    T("A banheira de Coari fechou a R$ 62,70 e custa R$ 29,71 no Brás; o pagão de Aracaju fechou a R$ 40,00 e custa R$ 19,60.",{b:true})],{before:110}),
+ P([T("E uma para NÃO dar lance: ",{b:true,c:CLAY}),
+    T("Marília / SP fechou kit completo a R$ 149,00 — 62% abaixo do valor que a própria prefeitura tinha estimado. Nesse preço a mercadoria não paga a conta. O programa marca essas e você simplesmente passa.")]),
 
- H("O dinheiro"),
- P([T("Você tem R$ 15.600 e isso dá para começar. Não é dinheiro de estoque: é dinheiro de intervalo. "),
-    T("Você paga o atacadista por volta do dia 11 e a prefeitura paga por volta do dia 45 — são uns 34 dias a cobrir. "),
-    T("Sem prazo de fornecedor você segura um pedido por vez; com 28 dias de prazo, três. Prazo de fornecedor vale mais que empréstimo e é de graça.",{b:true})]),
+ H("Por que isso se sustenta"),
+ BUL([T("O canal é uma lei.",{b:true}),T(" Não dá para comprar, copiar nem desligar. Ele publica de novo amanhã de manhã, você tendo feito algo ou não.")]),
+ BUL([T("Ninguém sabe o que você paga.",{b:true}),T(" O estado publica o que ELE pagou — isso todo mundo vê. O seu custo está na sua nota de compra, e é ele que decide se o lance vale. Nenhum software consegue vender isso.")]),
+ BUL([T("O Brasil publica quem ganhou, nunca quem perdeu.",{b:true}),T(" Seu registro de lances vira, mês a mês, a única leitura real do mercado — e ela é só sua.")]),
+
+ H("Quem já faz isso"),
+ P([T("A CONDAFE, uma EPP de São Paulo, ganha 44 licitações por ano em 15 estados; uma microempresa aberta em janeiro de 2024 já ganha em quatro. "),
+    T("Ganhar 21 por ano — 2,1% das que são publicadas — é menos do que qualquer uma das duas faz hoje. ",{b:true}),
+    T("Não é segredo: é trabalho que quase ninguém faz com cuidado.")]),
 
  H("O que ainda não sabemos"),
- P([T("Falta preço confirmado de 11 dos 17 itens (o pior é a mochila) · uma única cidade responde por um terço do mercado bom · o frete de volume ainda não foi cotado · e quantos lances dão uma vitória ninguém sabe até começar a dar lance. "),
-    T("Nada disso impede começar, e tudo isso se resolve em dois meses por menos de R$ 5.000.",{b:true})]),
+ P([T("Falta preço confirmado de 11 dos 17 itens (o pior é a mochila) · uma única cidade responde por um terço do mercado bom · o frete de volume não foi cotado · e quantos lances dão uma vitória ninguém sabe até bidar. "),
+    T("Nada disso impede começar, e tudo isso se resolve em dois meses.",{b:true})]),
 
  GAP(60),
  BOX([
@@ -113,5 +124,5 @@ const doc=new Document({creator:"ACOLHE",title:"ACOLHE — o negócio em uma lei
  numbering:{config:[{reference:"b",levels:[{level:0,format:LevelFormat.BULLET,text:"•",
    alignment:AlignmentType.LEFT,style:{paragraph:{indent:{left:300,hanging:180}},run:{color:TEAL}}}]}]},
  styles:{default:{document:{run:{font:"Calibri",size:S,color:INK}}}},
- sections:[{properties:{page:{margin:{top:900,bottom:820,left:1020,right:1020}}},children:body}]});
+ sections:[{properties:{page:{margin:{top:780,bottom:620,left:1020,right:1020}}},children:body}]});
 Packer.toBuffer(doc).then(b=>{fs.writeFileSync("ACOLHE_Uma_Leitura.docx",b);console.log("written",b.length)});
