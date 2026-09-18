@@ -232,6 +232,9 @@ the order of operations do not.
    **14 of 15 SINAPEL-member SP wholesalers publish no prices at all.** That sentence describes year two.
 
 ## The five lines that are bidable TODAY, at prices already verified
+> ⚠⚠ **WITHDRAWN 18 Sep 2026.** Spec control (material, size, capacity — not only brand) leaves ONE of these
+> five clearing where the money is. See `# ★★★ THE MODEL AFTER VERIFICATION` at the end of this file and
+> `THE_SWEEP_VERIFICATION.md`. The section is kept because the METHOD was right and the level was wrong.
 
 **Perfurador 2 furos (Jocar R$12,90 vs R$19,93–35,00 — live at EVERY band, 35–63%, n=4.720)** ·
 **Envelope branco 114×229 (R$0,1399 vs R$0,38–0,455 — 63–99%, n=201 ⚠ thin)** ·
@@ -405,3 +408,99 @@ general 12%, exactly like SC or RS.** ⇒ **An out-of-state supplier must beat a
 ⇒ **Corrected rule for the parser: SOURCE IN SÃO PAULO, BID EVERYWHERE THE PRAZO ALLOWS, AND DE-PRIORITISE
 SÃO PAULO'S OWN TENDERS — they are the cheapest in the country and caneta is loss-making in them at any
 quantity above ~60 units.**
+
+
+---
+
+# ★★★ THE MODEL AFTER VERIFICATION — 18 Sep 2026
+
+**Everything above this line was measured against a cost basis that had not been spec-controlled. It has now
+been. One headline survives, and the business is simpler and harder than the version above.**
+
+## What the business IS, in five sentences
+
+1. **A one-person government supply desk, run from São Paulo, that never speaks to a buyer.**
+2. **Distribution is a statute, not a sales motion.** `Lei 14.133 art. 54` compels every Brazilian public body
+   to publish the full text of every tender on PNCP before it may buy anything. A cron reads the national feed
+   daily (~5.560 calls, ~5 minutes, R$0), descends to the item lines, and matches each free-typed line against
+   her own cost table.
+3. **The margin is the bid-selection filter, not the price.** She bids only lines where her measured cost
+   clears a margin at that line's spec, brand grade and quantity band — and skips everything else. Seven reject
+   rules are already derived and measured (lote único, numeric atestado, "conforme modelo do órgão", quantity
+   ceiling, per-item only, buyer payment risk, delivery prazo).
+4. **The trade is geographic arbitrage.** She buys in São Paulo, the cheapest market in Brazil, and sells to
+   the Centre-West, North and Northeast, which pay 30–500% more for identical goods. Freight is measured at
+   1–19% of line revenue and is embedded in the bid price; the goods never touch her hands (venda à ordem —
+   the wholesaler ships to the órgão's own address).
+5. **She is paid by a public body against a nota fiscal, with no client relationship to hold and no demand to
+   originate — the state publishes the next order by law.**
+
+**It passes every screen this archive has: `THE MACHINE TEST` (a machine makes the unit, the buyer verifies a
+price not a person, no relationship to hold) · `ORIGINATION ONCE VS ORIGINATION FOREVER` (demand arrives
+unbidden) · `THE COMPELLED-ANNOUNCEMENT LAW` (no origination problem at all) · C1, C2, C3, C4 and C9.**
+
+## What today's verification changed, and it is one thing
+
+**At the published São Paulo supplier tier, the goods do not clear.** Measured over 12 months, non-SP buyers,
+pieces-normalised, lot-total rows dropped, like-for-like on material, size and capacity:
+
+| clears where the money is | thin, small lots only | dead at the median |
+|---|---|---|
+| **ENVELOPE 114×229 — +57,6%, live at EVERY band, R$1,74M/yr** | perfurador 2-furos ≤25 fl (+43,9%, R$225k/yr) · fita 12 mm (+12,2% below 250 un) · caixa arquivo papelão (+10,9%, flat) · régua (+6 to +15%) · caderno (+4,2%) | caneta −28% · lápis −58% · borracha −13% · pasta −15% · prancheta −19% · lápis de cor −44% · capa −24% · pasta A-Z −188% · tesoura · grampo · **papel A4, the biggest line in the class** |
+
+**Spec-controlled addressable pool at the published tier, whole country: ≈R$4,5–5,0M** against ≈R$640.000 of
+billings for the bar = **13–16% share, which fails `THE MARKET-MULTIPLE RULE`.**
+
+**And it is not for lack of a good supplier.** A genuine São Paulo atacadista was found and CNPJ-verified this
+session — **SIXPEL DISTRIBUIDORA LTDA, 13.328.409/0001-83, capital R$2.000.000, CNAE 4647-8/01, ~700 SKUs
+priced with no login, stocking exactly the generic grade the state buys** (RedBor borracha R$0,68, Leo&Leo
+apontador R$0,41, Acrinil régua R$1,03, BIC Cristal R$0,84). It is the best published cost basis this archive
+has ever had, and the basket still does not clear.
+
+## ⇒ THE BUSINESS REDUCES TO ONE GATE, AND EVERYTHING ELSE IS BUILT
+
+**The cron, the parser, the seven bid rules, the freight table, the municipal payment-risk screen, the habilitação
+route, the tax vehicle and the arbitrage direction are all measured, verified and worth ZERO until a distributor
+account sits behind them.** The gap between the published tier and the invoiced tier is ~45% like-for-like
+(Chamex to Chamex: published R$30,60, the state pays R$19,83 in SP, so the winners are invoiced at ~R$16–18),
+and it pays twice — the price, and 28–30 day terms, which are worth ~3× her capacity at the same capital.
+
+**So the first operation of the company is fifteen emails, and they now carry a number per SKU instead of a
+percentage.** Each target is 20% under the spec-controlled state median in the band where that SKU's money
+actually sits:
+
+| SKU | ask for, faturado in SP | today's published SP price |
+|---|---|---|
+| caneta esferográfica azul BIC | **≤ R$0,52** | R$0,84 |
+| lápis preto nº2 | **≤ R$0,29** | R$0,57 |
+| pasta aba + elástico ofício | **≤ R$2,80** | R$3,99 |
+| caderno capa dura 1/4 96 fl | **≤ R$5,40** | R$6,46 |
+| papel A4 75 g, resma | **≤ R$16,00** | R$29,00 |
+
+**Bar committed in advance: count how many of fifteen reply with a number that clears. Three or more and route
+C is live. Fewer than three and this SKU set is permanently a small-lot business and the desk should be pointed
+at a different one.**
+
+## The honest state of it
+
+**This is not a business yet. It is a verified machine with an unresolved supply question and one product
+(envelopes) that would work today.** The correct description is *a machine that is finished and a cost basis
+that is not.*
+
+⚠ **And the alternative is already on the board, from this archive's own law `THE DESK IS THE ASSET, THE NICHE
+IS A PARAMETER`:** the same cron, parser, registrations and bid rules serve **O ENXOVAL** (newborn kits) without
+being rebuilt, and that niche's margins were measured against published wholesale at **body 55%, fralda pack
+51%, kit higiene 52%**, with three real lots priced end to end at **+21,6% / +30,8% / −3,1%**. ⚠⚠ **But those
+numbers were measured the OLD way — before `A PDM IS NOT A PRODUCT` and before the lot-total filter — and
+today's session broke every expediente number measured that way. Re-run the kit SKUs under the new method
+before preferring them.** That is a day's work and it decides which product the desk points at.
+
+## Two unpriced pockets found by spec-splitting, worth an hour each
+
+Both are inside a PDM the archive had already "priced" and dismissed as one number:
+
+- **PERFURADOR 26–50 folhas** — state median **R$34,30**, **R$967.390/yr**, live against any cost under ~R$27.
+- **PERFURADOR >50 folhas** — state median **R$91,83**, **R$705.259/yr**, live against any cost under ~R$73.
+
+This archive holds no cost for either. A punch is a machine with a wide price ladder, which is where a
+published price is most likely to still clear.
