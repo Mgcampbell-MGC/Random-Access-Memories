@@ -2387,6 +2387,52 @@ strangers' dead parents, alone, in year three?"**
   complete and it is the finding — it is what forces the market change above.** ★ **Add MIL/MILHEIRO=1000 to
   the normaliser; the unit trap has now fired NINE times in this file and three of the nine were mine.**
 
+- **★★★ STEP 0 RAN: THE KIT MARKET RE-MEASURED, 18 Sep 2026 — IT FAILS ITS OWN BAR AND CLEARS AT EXACTLY THE
+  DISCOUNT A DISTRIBUTOR ACCOUNT IS WORTH. See `THE_KIT_REMEASUREMENT.md`.** Bar set in advance: **≥R$8M/yr
+  clearing ≥50% gross at a verified SP cost. Result R$3.664.085 — fails by 2,2×.** But the sensitivity is the
+  finding: **0% → R$3,66M · 20% → R$5,94M · 30% → R$6,48M · 40% → R$7,68M · 45% → R$10,01M**, and the
+  papelaria distributor tier was already measured at **~45% under published**. ⇒ **THE KIT MARKET CLEARS AT
+  EXACTLY THE DISCOUNT A REAL ACCOUNT IS WORTH AND NOT ONE POINT BEFORE IT**, and the jump is a **CLIFF, not
+  a ramp** — MACACÃO and BODY cross their thresholds together between 30% and 45%, so **a 30% account buys
+  almost nothing and a 45% account doubles the business. There is no partial win.** ★ **The ask is now a
+  number per SKU: body ≤R$8,40 · macacão ≤R$13,70 · toalha c/capuz ≤R$10,50 · banheira ≤R$14,85 · manta
+  ≤R$10,00.**
+- **★★★ THE PUBLISHED WHOLESALE PRICE IS A RETAIL CHANNEL WEARING A CNPJ — THREE CATEGORIES, SAME ANSWER.**
+  Papelaria, limpeza and now newborn kits: **the published wholesale price sits at or above what the state
+  pays at the quantities where the money is.** Measured today against **CONFECCOES EMILIO LTDA
+  (50.191.584/0001-06, Rua Mendes Gonçalves 181, Brás, São Paulo/SP, since 1978, CNAE 4642-7/01, publishes
+  per-unit prices with no login, *"Preço exclusivo para compras com CNPJ"*)**: **MACACÃO −27,0% on R$6,8M and
+  BODY −21,0% on R$4,2M — 61% of the classified component market, both loss-making** (BODY's large band, which
+  holds R$3,5M of its R$4,2M, medians **R$6,96** against a R$15,32 cost = **−120%**). **Cause is GRADE, not
+  tier: Emilio stocks Baby Dufy, Petutinha, Korte Rekorte; the state buys unbranded.** `MATCH THE GRADE` and
+  `A PDM IS NOT A PRODUCT` firing in a category they were never derived in. ⚠ **And the supply side here is
+  MORE gated than papelaria: Brascol (ONESHOP DISTRIBUIDORA, 1.480 body SKUs) and Yanai (44.040.459/0001-94,
+  Brás/SP) both show *"Cadastre-se para ver o preço"* on every item.**
+  ★★ **BUT THREE FAMILIES ARE GENUINELY LIVE TODAY WITH NO ACCOUNT, and they are the first lines in this
+  archive to clear 50% where the money is: FRALDA PANO +79,9%** (Emilio Inconfral *Especial* 5-pack R$12,26 =
+  **R$2,452/piece** against a state per-piece median of **R$12,20**; 82% of its value clears 50%) · **COBERTOR/
+  MANTA +39,3%** (R$12,18) · **BANHEIRA +22,9% at the median and +49,9% in the large band** (R$22,90).
+  **R$3,66M addressable against R$360k of billings = a 9,8% share, INSIDE `THE MARKET-MULTIPLE RULE`.**
+  ⇒ **A three-SKU business exists today; the full one needs the account.**
+  ★ **And an inversion worth keeping: in kits the BIG lines pay MORE per unit** — banheira medians R$45,66
+  above 3.000 pieces against R$30,50 below 600, because the large lines specify *anatômica, polipropileno*
+  and the small ones do not. **`QUANTITY IS THE PRICE VARIABLE` is a papelaria law, not a universal one.**
+- **★★★ DEDUPLICATE, AND CHECK YOU HARVESTED ONE PROGRAMME — A KEYWORD HARVEST PULLS IN WHOLE ADJACENT
+  MARKETS.** Of 7.549 kit-harvest award rows: **432 were duplicate shadow rows** (same `vt`, `qt=0, vu=0`)
+  and **4.052 rows carrying R$155,7M were a MATO GROSSO SCHOOL-UNIFORM programme** — *tênis escolar* R$17,6M,
+  *camiseta* R$10,8M, *bermuda* R$10,5M, *jaqueta* R$6,9M — which a `\bMEIA` regex also swept in as "baby
+  socks" at R$9,3M. **Uncaught, the market would have been sized 3,7× too large.** Clean denominator:
+  **3.065 rows, R$57,2M** *(cross-check: the archive's independent figure was R$59,1M — 3% apart)*.
+  ★ **Two more per-row traps in the same data: whole-kit and LOTE rows land inside component families** (a
+  R$215.000 *"600 KITS CONTENDO: Banheira… Mamadeira…"* line counted as FRALDA) **and PACK COUNTS LIVE IN
+  FREE TEXT, not a field** (*"FRALDA COM BAINHA - 3 UNIDADES"*, *"BODY COM DECOTE CANOA (2 UNIDADES)"*) —
+  PNCP items carry no `capacidade`, so the per-piece divisor must be regexed out of the description.
+  ⚠⚠ **AND THE CORRECTION TO THIS FILE'S OWN KIT NUMBERS: `THE BID-SELECTION FILTER IS THE MARGIN` records
+  body 55% / fralda pack 51% / kit higiene 52%. Re-measured, BODY IS −21,0%.** The 55% rested on a R$5,64
+  cost never sourced to a named São Paulo seller; the cheapest verified one is R$15,32, and the cheapest
+  found anywhere (Atacadão da Roupa, 10-pack at R$7,99/piece) carries a **(81) Pernambuco** phone — interstate,
+  +6 points. **Every margin in this archive measured before 18 Sep should be assumed inflated until re-run.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
