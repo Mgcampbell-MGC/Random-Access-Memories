@@ -6,6 +6,22 @@ US$180–250 to US$90–125.** Bar: US$2.200–2.800 gross export or
 R$12.300–15.400 gross domestic at zero COGS. Full derivation, the law-by-law reversal table and the re-screen of
 every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 
+> ### ★★★ THE SECOND GREAT HUNT — 19–20 Sep 2026. ACOLHE is being built elsewhere; the founder asked for a
+> DIFFERENT NICHE, A DIFFERENT BUSINESS MODEL, entirely. Sixteen repair-briefed lenses, a judge's twelve, two
+> adversarial audits each. **No clean ALIVE — six MARGINAL, six DEAD — and one name: A ESCRITURA**, a
+> machine-personalised property-closing print wholesaled to São Paulo real-estate brokerages on their own
+> closing cadence. **The only candidate in the batch that came out of adversarial audit STRONGER than it went
+> in** — a fresher SECOVI-SP transaction series made the pool bigger, cutting required share from the edge of
+> `THE MARKET-MULTIPLE RULE`'s band to comfortably inside it. **Honest floor US$800–1.200/month; the R$0 next
+> test (15–20 written CRECI-SP emails, bar ≥4 replies naming a price ≥R$30) has not been run.** Niche: private
+> brokerages, no government buyer, no tender. Model: a standing private wholesale order paid on commercial terms,
+> near-zero inventory — the opposite of ACOLHE's bid-and-wait-on-a-município-ateste cycle. Six DEAD candidates
+> died on three newly-named free-front-door patterns (a public marketplace wearing a private-channel costume; an
+> auction body that already publishes its own full history free; a demand anchor built on 23 years of advantages
+> Sol lacks) and one process finding — a repair's own "required share" headline is never self-verifying, however
+> well-sourced its facts, and four ~10×-or-worse arithmetic errors were caught only by recomputing it
+> independently. Full file, every candidate, every law: `THE_SECOND_GREAT_HUNT.md`.
+
 > ### ★★★ THE KIT DESK REBUILT FROM THE GROUND UP — 18 Sep 2026. IT CLEARS THE BAR AT THE PUBLISHED SUPPLIER TIER, WITH NO ACCOUNT AND NO CREDIT LINE. See `THE_KIT_DESK.md`.
 > The morning's `THE_KIT_REMEASUREMENT.md` said the kit market failed its own bar by 2,2× and cleared only at a 45%
 > distributor discount. **It measured component families only.** The band it skipped — the **assembled kit** — is

@@ -2555,6 +2555,53 @@ strangers' dead parents, alone, in year three?"**
   p10, not typical. **The estimate is a usable bid anchor at ~75%** — but pull the homologated award, never
   the estimate, when sizing (`THE REFERENCE-PRICE ILLUSION`).
 
+- **★★★ THE SECOND GREAT HUNT — 19–20 Sep 2026. A DIFFERENT NICHE, A DIFFERENT BUSINESS MODEL FROM ACOLHE,
+  REPAIR-BRIEFED THROUGHOUT. Full file: `THE_SECOND_GREAT_HUNT.md`.** Sixteen generator lenses, forbidden from
+  government goods/services supply in any costume and from every domain already exhausted in this file, each
+  forced to fetch before proposing, screened on the two REVEALED preferences first (`THE MACHINE TEST`,
+  `ORIGINATION ONCE VS FOREVER`), then on the free-front-door family, then on economics → 53 candidates → a
+  judge's shape-diverse twelve → an independent REPAIR pass on each (fetch every claim, name the fix, state the
+  honest floor) → two adversarial audits per candidate (one hunting the free front door, one recomputing every
+  multiplication from the repair's own stated inputs). **No clean ALIVE. Six MARGINAL, six DEAD.** ⇒ **THE NAME:
+  A ESCRITURA — a machine-personalised property-closing print, wholesaled to São Paulo real-estate brokerages on
+  their own closing cadence.** The only candidate in the batch that came out of adversarial audit STRONGER than it
+  went in: a fresher SECOVI-SP transaction series made the pool bigger and cut required share from the edge of
+  `THE MARKET-MULTIPLE RULE`'s band (~19,6%) to comfortably inside it (~14–15%), and OpenStreetMap's own
+  Attribution Guidelines confirm free commercial print resale (Google Maps and Mapbox/MapTiler both flatly forbid
+  it — fetched at their own ToS). **Honest floor US$800–1.200/month; next test costs R$0** (15–20 written CRECI-SP
+  emails, bar ≥4 replies naming a price ≥R$30 committed in advance) **and has not been run.**
+  ★ **Six candidates DIED on THREE reusable free-front-door patterns, all newly named:** *the public marketplace
+  in a private-channel costume* — Cronoshare (killed a site-verification correspondent business) and Eye.Photo
+  (killed an iris-keepsake business) are both self-serve marketplaces the end buyer could reach directly, so a
+  "vendor-dispatch" repair that routes through either exposes a channel rather than creating one; *the originator's
+  own free archive* — the Cup of Excellence auction body itself already publishes its complete cross-year,
+  cross-origin results at an ordinary URL back to 1999, killing a coffee-auction price ledger outright (this
+  GENERALISES `THE FREE FRONT DOOR`: the search must include the event's ORIGINATOR, not only competing resellers,
+  because an originator has zero incentive to charge for its own past results); *an anchor built on advantages you
+  lack* — a São Paulo micro-export desk's demand pool was anchored to a comparable brand that took its own founder
+  **23 years** (~17,4 net new stores/yr, via in-person trade shows and physical retail — both closed to Sol by
+  construction) to reach, which EXTENDS `THE OBSERVED-PRICE CEILING` to observed-REACH ceilings: ask not only what
+  a comparable charges but what it cost the comparable, in years and relationships, to get there.
+  ★★ **AND A PROCESS FINDING THAT SHOULD OUTLAST THE SPECIFIC CANDIDATES: A REPAIR AGENT'S OWN "REQUIRED SHARE"
+  HEADLINE IS NEVER SELF-VERIFYING, HOWEVER WELL-SOURCED ITS FACTS.** Four separate ~10×-or-worse arithmetic
+  errors were caught only by independently recomputing a repair's OWN stated inputs — a reachable pool overstated
+  10× by a clients-per-partner scale slip; a "required share is only 1–6%" that recomputes to 75–96% at the
+  pool's own low end; a Brazil-only required share of 90–120% reported as 51–113%; a one-time-payment ceiling
+  whose own cited multiplication (1–3 buyers × R$8–15k) was mis-added. **Recompute every multiplication from a
+  repair's own stated numbers before ranking on its headline — the evidence standard already demanded this of
+  every OTHER number in this file and it had never been pointed at the repair pipeline's own arithmetic before.**
+  ★ **And check the BLOG and SITEMAP, not only the pricing page, for a bundled free competitor** — a repair
+  checked an incumbent's marketing page, found no mention of the exact compliance duty it was selling, and
+  concluded the risk was low; the auditor found a live SEO blog post (reachable only via `sitemap.xml`) already
+  bundling that exact feature free into an existing paid subscription serving "hundreds" of the same buyers.
+  Vendors bury a differentiation-gutting bundle in content marketing, not on the price list.
+  ⚠ **Shape diversity converged hard despite domain diversity: four of the six survivors are S5 or an S5 hybrid —
+  a machine makes a document/object and a channel partner distributes it on a cadence Sol never fetches.** Read
+  as this hunt's own instance of `RULE 1` — not a failure, since the two revealed preferences point at this shape
+  family by construction, but worth naming so a third hunt doesn't mistake domain variety for shape variety.
+  ⚠ **Nothing here has been tested. Every next-test is R$0, written, no-phone, with a bar committed in advance,
+  and none has been run — this whole board is pre-test.**
+
 ## The test design that works
 
 **Twenty real instances, and count how many clear a numeric bar.** Not "get three customers" — measure the
