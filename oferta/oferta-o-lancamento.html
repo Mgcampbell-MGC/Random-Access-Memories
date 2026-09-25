@@ -1,0 +1,229 @@
+<title>Oferta O Lançamento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,600;62..125,800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --paper:#FBFBFA; --sheet:#FFFFFF; --ink:#16171B; --muted:#5B5F6B; --rule:#DADBE0;
+    --accent:#C8006A; --accent-soft:#FBE6F0; --ok:#1E7D46; --ok-soft:#E4F3EA;
+    --c:#00A3E0; --m:#C8006A; --y:#F2C400; --k:#16171B;
+    --display:"Archivo", "Helvetica Neue", Arial, sans-serif;
+    --body:"Archivo", "Helvetica Neue", Arial, sans-serif;
+    --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme: dark;
+      --paper:#0F1013; --sheet:#17181D; --ink:#ECECEF; --muted:#A3A6B1; --rule:#2C2E36;
+      --accent:#FF5AA8; --accent-soft:#3A1629; --ok:#5CD08F; --ok-soft:#14301F; --k:#ECECEF;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --paper:#0F1013; --sheet:#17181D; --ink:#ECECEF; --muted:#A3A6B1; --rule:#2C2E36;
+    --accent:#FF5AA8; --accent-soft:#3A1629; --ok:#5CD08F; --ok-soft:#14301F; --k:#ECECEF;
+  }
+
+  body{ background:var(--paper); color:var(--ink); font-family:var(--body); font-size:15px; line-height:1.5; }
+  .wrap{ padding-inline:16px; padding-block:24px 40px; }
+  .sheet{
+    position:relative; max-width:860px; margin-inline:auto; background:var(--sheet);
+    border:1px solid var(--rule); padding:44px clamp(20px,5vw,56px) 36px;
+    display:grid; gap:28px;
+  }
+  /* crop marks: a detail from the print-proof world */
+  .crop{ position:absolute; width:22px; height:22px; border-color:var(--ink); border-style:solid; opacity:.55; }
+  .crop.tl{ top:10px; left:10px; border-width:1px 0 0 1px; }
+  .crop.tr{ top:10px; right:10px; border-width:1px 1px 0 0; }
+  .crop.bl{ bottom:10px; left:10px; border-width:0 0 1px 1px; }
+  .crop.br{ bottom:10px; right:10px; border-width:0 1px 1px 0; }
+
+  .label{ font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+  .top{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap; }
+  .brand{ font-family:var(--display); font-weight:800; font-stretch:112%; font-size:18px; letter-spacing:.02em; text-transform:uppercase; }
+  .bar{ display:flex; gap:0; height:10px; width:120px; }
+  .bar span{ flex:1; } .bar .c{background:var(--c)} .bar .m{background:var(--m)} .bar .y{background:var(--y)} .bar .k{background:var(--k)}
+
+  h1{ font-family:var(--display); font-weight:800; font-stretch:88%; font-size:clamp(34px,6.2vw,56px); line-height:1.02; letter-spacing:-.01em; margin:0; text-wrap:balance; }
+  h1 em{ font-style:normal; color:var(--accent); }
+  .lede{ max-width:62ch; color:var(--muted); font-size:16px; margin:12px 0 0; }
+
+  h2{ font-family:var(--display); font-weight:800; font-stretch:100%; font-size:14px; letter-spacing:.06em; text-transform:uppercase; margin:0 0 12px; display:flex; align-items:center; gap:10px; }
+  h2::after{ content:""; flex:1; height:1px; background:var(--rule); }
+
+  .tiers{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+  .tier{ border:1px solid var(--rule); padding:16px 16px 14px; display:grid; gap:8px; align-content:start; }
+  .tier.main{ border-color:var(--accent); box-shadow:inset 0 3px 0 var(--accent); }
+  .tier .name{ font-family:var(--display); font-weight:800; font-size:18px; font-stretch:95%; }
+  .price{ font-family:var(--display); font-weight:800; font-size:26px; font-variant-numeric:tabular-nums; }
+  .price small{ font-family:var(--mono); font-size:11px; font-weight:400; color:var(--muted); letter-spacing:.04em; }
+  .tier ul{ margin:0; padding-left:18px; display:grid; gap:3px; font-size:13.5px; }
+  .when{ font-family:var(--mono); font-size:11.5px; color:var(--muted); }
+  .also{ font-size:13.5px; color:var(--muted); margin:10px 0 0; }
+  .also b{ color:var(--ink); }
+
+  .steps{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+  .steps li{ border-top:2px solid var(--ink); padding-top:8px; display:grid; gap:4px; align-content:start; font-size:13.5px; }
+  .steps .d{ font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+  .steps b{ font-size:14.5px; }
+
+  .proof{ display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1fr); gap:20px; align-items:start; }
+  .guarantee{ font-size:15px; display:grid; gap:10px; }
+  .guarantee .promise{ font-family:var(--display); font-weight:800; font-size:20px; line-height:1.2; font-stretch:95%; text-wrap:balance; }
+  .report{ border:1px dashed var(--muted); padding:12px 14px; font-family:var(--mono); font-size:12px; }
+  .report .head{ display:flex; justify-content:space-between; gap:10px; border-bottom:1px solid var(--rule); padding-bottom:6px; margin-bottom:6px; color:var(--muted); letter-spacing:.04em; }
+  .report table{ width:100%; border-collapse:collapse; font:inherit; font-variant-numeric:tabular-nums; }
+  .report td{ padding:3px 0; vertical-align:top; }
+  .report td:last-child{ text-align:right; }
+  .pass{ color:var(--ok); background:var(--ok-soft); padding:1px 6px; font-weight:500; }
+  .report .foot{ border-top:1px solid var(--rule); margin-top:6px; padding-top:6px; color:var(--muted); }
+
+  .need{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:6px 24px; margin:0; padding-left:18px; font-size:14px; }
+  .fine{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px 24px; border-top:1px solid var(--rule); padding-top:14px; font-size:13px; color:var(--muted); }
+  .contact{ font-family:var(--mono); color:var(--ink); font-size:12.5px; display:grid; gap:2px; }
+  .contact span{ user-select:all; }
+
+  @media (max-width:720px){
+    .tiers{ grid-template-columns:1fr; }
+    .steps{ grid-template-columns:1fr 1fr; }
+    .proof{ grid-template-columns:1fr; }
+    .need{ grid-template-columns:1fr; }
+  }
+
+  /* A4 PDF version */
+  @page{ size:A4; margin:8mm; }
+  @media print{
+    :root{ --paper:#FFFFFF; --sheet:#FFFFFF; --ink:#16171B; --muted:#5B5F6B; --rule:#DADBE0; --accent:#C8006A; --ok:#1E7D46; --ok-soft:#E4F3EA; --k:#16171B; color-scheme: light; }
+    .wrap{ padding:0; }
+    .sheet{ border:none; max-width:none; padding:14px 18px 10px; gap:10px; font-size:12px; line-height:1.4; }
+    h1{ font-size:33px; }
+    .lede{ font-size:13.5px; margin-top:8px; }
+    .tier{ padding:11px 12px 10px; gap:5px; }
+    .tier ul, .steps li, .need{ font-size:11px; } .tier ul{ gap:1px; } .need{ gap:2px 24px; } .also{ font-size:11px; margin-top:6px; }
+    .price{ font-size:19px; } .tier .name{ font-size:15px; }
+    .guarantee .promise{ font-size:15px; }
+    .guarantee{ font-size:11.5px; gap:5px; }
+    .report{ font-size:10px; padding:8px 10px; } .report td{ padding:1px 0; }
+    .fine{ font-size:10.5px; padding-top:8px; } .crop{ display:none; } .contact{ display:flex; gap:20px; font-size:11px; }
+    h2{ margin-bottom:8px; font-size:12px; }
+    .crop{ opacity:.8; }
+  }
+</style>
+
+<div class="wrap">
+  <article class="sheet" aria-label="Oferta O Lançamento">
+    <i class="crop tl"></i><i class="crop tr"></i><i class="crop bl"></i><i class="crop br"></i>
+
+    <header class="top">
+      <div>
+        <div class="brand">O Lançamento</div>
+        <div class="label">Estúdio virtual de campanhas para marcas de beleza</div>
+      </div>
+      <div style="display:grid;gap:6px;justify-items:end">
+        <div class="bar" aria-hidden="true"><span class="c"></span><span class="m"></span><span class="y"></span><span class="k"></span></div>
+        <div class="label">Proposta comercial · 2026</div>
+      </div>
+    </header>
+
+    <section>
+      <h1>Você manda o produto.<br><em>Nós entregamos a campanha.</em></h1>
+      <p class="lede">Campanha de lançamento completa para cabelo e skincare, feita com produção virtual: sem estúdio, sem modelo, sem produtora. Sua embalagem aparece exatamente como na arte aprovada, em todas as peças.</p>
+    </section>
+
+    <section>
+      <h2>O que você recebe</h2>
+      <div class="tiers">
+        <div class="tier">
+          <div class="label">Para marketplace e redes</div>
+          <div class="name">Vitrine</div>
+          <div class="price">R$&nbsp;490 <small>por produto</small></div>
+          <ul>
+            <li>6 fotos do produto em um cenário</li>
+            <li>Imagem principal de fundo branco</li>
+            <li>Formatos 1:1, 4:5 e 9:16</li>
+            <li>Relatório de fidelidade</li>
+          </ul>
+          <div class="when">Entrega em 48 horas</div>
+        </div>
+        <div class="tier main">
+          <div class="label">A campanha completa</div>
+          <div class="name">O Lançamento</div>
+          <div class="price">R$&nbsp;2.990 <small>por produto</small></div>
+          <ul>
+            <li>Key visual da campanha</li>
+            <li>6 imagens de campanha</li>
+            <li>Filme de 15 s, vertical e horizontal, com música licenciada</li>
+            <li>2 cortes de 6 s para anúncios</li>
+            <li>3 peças comerciais: marketplace, banner, distribuidor</li>
+            <li>Relatório de fidelidade</li>
+          </ul>
+          <div class="when">Entrega em 5 a 7 dias úteis</div>
+        </div>
+        <div class="tier">
+          <div class="label">Para o próximo produto</div>
+          <div class="name">Extensão</div>
+          <div class="price">R$&nbsp;690 <small>por produto</small></div>
+          <ul>
+            <li>Novo produto no cenário que já é da sua marca</li>
+            <li>6 fotos e kit de marketplace</li>
+            <li>Mesma luz, mesma identidade</li>
+          </ul>
+          <div class="when">Entrega em 48 horas</div>
+        </div>
+      </div>
+      <p class="also">Também: <b>A Linha</b>, até 3 produtos no mesmo universo de campanha, R$&nbsp;6.900. <b>Temporada</b>, 4 lançamentos pagos antecipadamente, R$&nbsp;9.900. <b>Prévia</b> gratuita: uma imagem de conceito com o seu produto, para você ver antes de decidir.</p>
+    </section>
+
+    <section>
+      <h2>Como funciona</h2>
+      <ol class="steps">
+        <li><span class="d">Dia 1</span><b>Você envia os arquivos</b>Foto do produto, arte do rótulo em PDF, logo e as frases aprovadas.</li>
+        <li><span class="d">Dia 2</span><b>Você aprova a ficha</b>Uma página com embalagem, cores e textos. Depois, escolhe um de 3 conceitos.</li>
+        <li><span class="d">Dia 3 a 4</span><b>Você aprova o key visual</b>A imagem principal que define toda a campanha.</li>
+        <li><span class="d">Dia 5 a 7</span><b>Tudo na sua pasta</b>Arquivos organizados por formato e o relatório de fidelidade. Uma rodada de ajustes incluída.</li>
+      </ol>
+    </section>
+
+    <section class="proof">
+      <div class="guarantee">
+        <h2>A garantia</h2>
+        <div class="promise">Todo caractere da embalagem idêntico à arte aprovada, ou refazemos a peça sem custo.</div>
+        <div>A IA cria o cenário e a luz. A embalagem é sempre a sua, aplicada a partir da arte original, nunca redesenhada. Cada peça sai com um relatório que confere o rótulo contra o seu PDF.</div>
+        <div><b>Sua arte não entra em nenhuma IA antes do lançamento.</b> E só usamos frases que você aprovou por escrito: nada de promessa de resultado que o rótulo não sustenta.</div>
+      </div>
+      <div class="report" aria-label="Exemplo de relatório de fidelidade">
+        <div class="head"><span>RELATÓRIO DE FIDELIDADE</span><span>peça 03/06</span></div>
+        <table>
+          <tr><td>Nome do produto</td><td><span class="pass">OK</span></td></tr>
+          <tr><td>Logo e posição</td><td><span class="pass">OK</span></td></tr>
+          <tr><td>Destaques do rótulo</td><td><span class="pass">OK</span></td></tr>
+          <tr><td>Lista de ativos</td><td><span class="pass">OK</span></td></tr>
+          <tr><td>Cor da embalagem</td><td><span class="pass">OK</span></td></tr>
+          <tr><td>Proporção da embalagem</td><td><span class="pass">OK</span></td></tr>
+          <tr><td>Frases usadas na peça</td><td><span class="pass">APROVADAS</span></td></tr>
+        </table>
+        <div class="foot">Resultado: APROVADA · exemplo ilustrativo</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>O que precisamos de você</h2>
+      <ul class="need">
+        <li>Foto do produto (a melhor que você tiver)</li>
+        <li>Arte do rótulo em PDF ou AI</li>
+        <li>Logo e cores da marca</li>
+        <li>Lista de frases e benefícios aprovados</li>
+        <li>Nome do produto, exatamente como é vendido</li>
+        <li>Referências de que você gosta (opcional)</li>
+      </ul>
+    </section>
+
+    <footer class="fine">
+      <div>Pagamento via Pix: 50% no pedido e 50% na entrega, com nota fiscal. As imagens são suas para usar no site, nas redes, em marketplaces e em anúncios. Não fazemos maquiagem com cor exata, antes e depois ou simulação de resultado.</div>
+      <div class="contact">
+        <div>WhatsApp: <span>[inserir número]</span></div>
+        <div>E-mail: <span>[inserir e-mail]</span></div>
+      </div>
+    </footer>
+  </article>
+</div>

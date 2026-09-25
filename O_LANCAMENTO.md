@@ -523,3 +523,56 @@ Two YouTube transcripts were supplied, both sponsored:
   - **one call**;
   - **the campaign world kept on file for the next launch.**
 - The tutorials make her cheaper and faster. They make every competitor cheaper and faster too.
+
+## PART F — the first real sample, and the offer sheet (25 Sep 2026)
+
+### F1. Higgsfield on one real bestselling tube: the label test
+
+The founder asked to *"run the Higgsfield sample on one real bestseller bottle… so you can see the actual quality."*
+The subject was one real bestselling Brazilian skincare tube, a public packshot. Its label has rotated text and small
+ingredient lines, which is the hard case. **The images stay out of this repository, because they show a real brand's
+product.**
+
+| | Method | Label result |
+|---|---|---|
+| **A** | Higgsfield image model, packshot as reference (ran as `nano_banana_2`) | **FAILED: 2 errors.** *"CEKAMIDAS"*, *"alfo-bisaboiol"* |
+| **B** | Higgsfield Marketing Studio, one click | **FAILED: 4 errors.** Product name, *"CERANIDAS"*, *"PANIENOL"*, *"biaobolol"* |
+| **C** | **Her method.** Higgsfield generates the scene with a blank placeholder tube. The real packshot is composited locally over it with shading matched from the placeholder, and the label is checked locally. | **PASSED: text identical.** High-pass correlation on the label block **0,984** |
+
+**What it proves:**
+- **Both of the tool vendor's own best options misspell the label, including its one-click product-ad product.**
+  The words they break are ingredient names, which is exactly where a brand's regulatory copy lives.
+- **So the guarantee on the offer sheet is not decoration. It is the one thing the US$49 tool visibly cannot do.**
+  It holds because the label never passes through the generator, which also means the generator never sees
+  unreleased art (Higgsfield's terms, §4.4).
+
+**What it does NOT prove:**
+- **One product, three images.** A tube with a flat front label is the easy geometry. A curved bottle, a pump, glass
+  and a metallic cap are UNTESTED. The composite relies on the scene's placeholder matching the product's
+  silhouette, so it needs a placeholder per packaging shape.
+- **The fidelity number measures structure, not meaning.** 0,984 says the label pixels were not redrawn. It does not
+  check that the approved claims were used. The claim lock is still a human reading, until it is automated against
+  the brand's approved-claims list.
+- **Time was not measured as production time.** This was a first build, not a run of the pipeline. Part D6's
+  ≤3 h per kit bar is still open.
+- **Cost:** 6 of the trial's 7,88 credits. Some models are plan-gated: `gpt_image_2_5` requires a paid plan, and
+  `flux_2` returned a 429 rate limit once before succeeding.
+
+### F2. The offer sheet
+
+**`oferta/oferta-o-lancamento.html` and `oferta/oferta-o-lancamento.pdf`**: one A4 page in Portuguese, meant to be
+sent after a call.
+- **Main tiers:** VITRINE R$490 · **O LANÇAMENTO R$2.990** · EXTENSÃO R$690.
+- **Also listed:** A LINHA R$6.900, TEMPORADA R$9.900, and PRÉVIA free.
+- **Other sections:** a four-step process, the label guarantee with a sample fidelity report, what the brand must
+  send, and payment by Pix plus nota fiscal (50% on order, 50% on delivery).
+- **Placeholders to fill before use:** her phone and email.
+
+The sheet deliberately makes **no efficacy claim** and uses no before/after or result simulation, and it says so. It
+also names what is excluded: exact makeup colour matching and results simulation.
+
+⚠ **Two cautions before it goes out:**
+- **Prices are the Part D ladder, which is still untested in front of a buyer.** The sheet is the instrument for the
+  §10 call test, not evidence that the prices hold.
+- **"As imagens são suas" needs checking** against the paid Higgsfield and Artlist licences, so that commercial and
+  ad use of outputs is confirmed on the plan she actually buys. It is UNVERIFIED on the trial.

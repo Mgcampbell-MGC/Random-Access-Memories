@@ -1,0 +1,250 @@
+{
+ "agent": "SH1",
+ "shelf": [
+  {
+   "product": "O'Keeffe's Working Hands Tube (5-pack, K0290001) — Gorilla Glue Co.",
+   "size": "3.0 oz",
+   "price": "$35,22 per 5 = $7,04/tube",
+   "price_per_oz": "$2,35",
+   "url": "https://www.homedepot.com/s/okeeffes%2520working%2520hands",
+   "status": "VERIFIED (observed listing, 479 reviews 4,8)"
+  },
+  {
+   "product": "O'Keeffe's Working Hand Cream Unscented tube (K0290001)",
+   "size": "3 oz",
+   "price": "$9,75 each (B2B industrial channel)",
+   "price_per_oz": "$3,25",
+   "url": "https://www.zoro.com/search?q=working%20hands%20hand%20cream",
+   "status": "VERIFIED (observed listing; Zoro = Grainger's B2B store)"
+  },
+  {
+   "product": "O'Keeffe's Working Hands Jar (8-pack, K0680001)",
+   "size": "6.8 oz",
+   "price": "$101,31 per 8 = $12,66/jar",
+   "price_per_oz": "$1,86",
+   "url": "https://www.homedepot.com/s/okeeffes%2520working%2520hands",
+   "status": "VERIFIED (536 reviews 4,8)"
+  },
+  {
+   "product": "O'Keeffe's Working Hands Hand Cream Unscented (Target A-51188533)",
+   "size": "3 oz",
+   "price": "UNVERIFIED (Target price module deferred to blocked API)",
+   "price_per_oz": "UNVERIFIED",
+   "url": "https://www.target.com/p/-/A-51188533",
+   "status": "ratings VERIFIED: 1.288 ratings, avg 4,71"
+  },
+  {
+   "product": "Gloves In A Bottle Botanical Shielding Lotion tube",
+   "size": "3.4 oz",
+   "price": "$19,95 (exactly SHIFT's single-unit price)",
+   "price_per_oz": "$5,87",
+   "url": "https://glovesinabottle.com/products.json",
+   "status": "VERIFIED (brand DTC, Shopify feed)"
+  },
+  {
+   "product": "Gloves In A Bottle Hand Shielding Lotion tube, 24-pack",
+   "size": "3.4 oz x 24",
+   "price": "$399 = $16,62/tube (vs SHIFT PRO CASE $239 = $9,96/unit)",
+   "price_per_oz": "$4,89",
+   "url": "https://glovesinabottle.com/products.json",
+   "status": "VERIFIED"
+  },
+  {
+   "product": "Gloves In A Bottle Shielding Lotion bottle, 24-pack",
+   "size": "2 oz x 24",
+   "price": "$199,95 = $8,33/unit",
+   "price_per_oz": "$4,17",
+   "url": "https://glovesinabottle.com/products.json",
+   "status": "VERIFIED"
+  },
+  {
+   "product": "CeraVe Therapeutic Hand Cream (fragrance-free; 'fast-absorbing, non-greasy', 'frequent handwashing')",
+   "size": "3 oz",
+   "price": "UNVERIFIED (Amazon/Target/Walmart price blocked)",
+   "price_per_oz": "UNVERIFIED",
+   "url": "https://www.cerave.com/skincare/moisturizers/therapeutic-hand-cream ; https://www.target.com/p/-/A-79856531",
+   "status": "claims VERIFIED at brand page; Target 688 ratings avg 4,45"
+  },
+  {
+   "product": "Neutrogena Norwegian Formula Hand Cream Fragrance-Free",
+   "size": "2 oz",
+   "price": "UNVERIFIED",
+   "price_per_oz": "UNVERIFIED",
+   "url": "https://www.target.com/p/-/A-12921123",
+   "status": "Target 2.737 ratings avg 4,59 VERIFIED; price UNVERIFIED"
+  },
+  {
+   "product": "Eucerin / Aveeno / Burt's Bees / Aquaphor hand creams",
+   "size": "n/a",
+   "price": "UNVERIFIED",
+   "price_per_oz": "UNVERIFIED",
+   "url": "walmart.com/target.com/cvs.com/walgreens.com/kroger.com all bot-blocked (PerimeterX/Akamai/DataDome)",
+   "status": "UNVERIFIED"
+  },
+  {
+   "product": "Kiehl's Ultimate Strength Hand Salve",
+   "size": "2.5 oz / 5.0 oz",
+   "price": "$22 / $34",
+   "price_per_oz": "$8,80 / $6,80",
+   "url": "https://www.ulta.com/p/ultimate-strength-hand-salve-pimprod2002977",
+   "status": "VERIFIED (Ulta, 3.078 reviews)"
+  },
+  {
+   "product": "L'Occitane Shea Butter Hand Cream",
+   "size": "1.0 oz / 5.1 oz",
+   "price": "$14 / $34",
+   "price_per_oz": "$14,00 / $6,67",
+   "url": "https://www.ulta.com/p/shea-butter-hand-cream-dry-skin-pimprod2016150",
+   "status": "VERIFIED (Ulta, 1.841 reviews)"
+  },
+  {
+   "product": "Jack Black Industrial Strength Hand Healer",
+   "size": "16 oz (as shown on Ulta)",
+   "price": "$48",
+   "price_per_oz": "$3,00",
+   "url": "https://www.ulta.com/p/industrial-strength-hand-healer-xlsImpprod18881055",
+   "status": "VERIFIED (Ulta, 400 reviews)"
+  },
+  {
+   "product": "La Roche-Posay Cicaplast Hand Repair Cream",
+   "size": "1.69 oz",
+   "price": "$14,99 list ($11,24 sale)",
+   "price_per_oz": "$8,87 list",
+   "url": "https://www.ulta.com/p/cicaplast-hand-repair-cream-dry-hands-pimprod2043465",
+   "status": "VERIFIED (Ulta, 251 reviews)"
+  },
+  {
+   "product": "Aesop Resurrection Aromatique Hand Balm",
+   "size": "n/a",
+   "price": "UNVERIFIED (aesop.com 403)",
+   "price_per_oz": "UNVERIFIED",
+   "url": "https://www.aesop.com/us/p/body-hand/hand-balm/resurrection-aromatique-hand-balm/",
+   "status": "UNVERIFIED"
+  },
+  {
+   "product": "Ecolab Daily Renewal Hand Cream (healthcare; CHG + latex/non-latex glove compatible; dye and fragrance free)",
+   "size": "2.5 oz tube, case of 12",
+   "price": "$187,99/case = $15,67/tube (third-party reseller ASK, not contract price)",
+   "price_per_oz": "$6,27",
+   "url": "https://axiommedicals.com/products/ecolab-hand-and-body-moisturizer-daily-renewal-2-5-oz-tube-unscented-cream-chg-compatible-m-1045209-3112-case-of-12",
+   "status": "VERIFIED (asking price); claims VERIFIED at ecolab.com"
+  },
+  {
+   "product": "GOJO PROVON Moisturizing Hand & Body Lotion ('CHG and latex compatible', 'for healthcare patients and staff')",
+   "size": "700 mL dispenser refill",
+   "price": "UNVERIFIED",
+   "price_per_oz": "UNVERIFIED",
+   "url": "https://www.gojo.com/en/productsku/8746-04",
+   "status": "claims VERIFIED"
+  },
+  {
+   "product": "Elegance Natural Skin Care Hairdressers Hand Cream (UK-made, sold in USD to US)",
+   "size": "100 g (~3,5 oz)",
+   "price": "$20,00",
+   "price_per_oz": "$5,67",
+   "url": "https://natural-skin-care.com/products/hairdresser-s-hand-cream",
+   "status": "VERIFIED"
+  },
+  {
+   "product": "R&R Lotion I.C. Hand Lotion (nurse-positioned, CHG compatible)",
+   "size": "n/a",
+   "price": "UNVERIFIED",
+   "price_per_oz": "UNVERIFIED",
+   "url": "https://rrlotion.com/2024/05/26877/",
+   "status": "positioning VERIFIED; price UNVERIFIED"
+  },
+  {
+   "product": "Nurse Hand Cream ('made for nurses, created by a nurse, non greasy, fast absorbing, fragrance free')",
+   "size": "n/a",
+   "price": "UNVERIFIED",
+   "price_per_oz": "UNVERIFIED",
+   "url": "https://nursehandcream.com/product/nurse-hand-cream-for-sensitive-skin/",
+   "status": "UNVERIFIED (TLS name mismatch; WebFetch 503; search snippet only)"
+  },
+  {
+   "product": "SHIFT (the plan)",
+   "size": "3–3,4 oz",
+   "price": "$19,95 single; PRO CASE $239/24 = $9,96/unit",
+   "price_per_oz": "$5,87–6,65 single; $2,93–3,32 in case",
+   "url": "SHIFT_PLAN.md",
+   "status": "plan figure"
+  }
+ ],
+ "shelf_summary": "At $19,95 for 3–3,4 oz SHIFT is $5,87–6,65/oz: 2–2,8x O'Keeffe's Working Hands ($2,35–3,25/oz for the same 3 oz tube at Home Depot/Zoro), which calls itself 'America's #1 Hand Cream Brand' (footnote: Nielsen 52 weeks to 10/5/2024), belongs to The Gorilla Glue Company, sells a money-back 'Guaranteed Relief', and already runs healthcare-worker testimonials on its own hand page ('I wash and sanitize my hands at least a hundred times a day… absorbs… without feeling greasy'). It is IDENTICAL to Gloves In A Bottle's Botanical 3.4 oz tube ($19,95), and GIB already runs the whole SHIFT playbook: 'Reviews by Profession' (Nurses, Beautician, Veterinarians…), a 'Healthcare Professional Sample Request' page (= PRO TEST), an affiliate program (ReferralCandy), a wholesale/retail-partner page, a 24-pack of 3.4 oz tubes ($399) and Walgreens distribution. CeraVe's Therapeutic Hand Cream (3 oz, fragrance-free, 'fast-absorbing, non-greasy', written for 'frequent handwashing') is the plan's product description, from L'Oréal. Per oz, SHIFT's single unit equals prestige large sizes (Kiehl's $6,80, L'Occitane $6,67) without their brands, and a UK micro-brand already sells a 'Hairdressers Hand Cream' to US buyers at $20/100 g. The PRO CASE ($9,96/unit) is priced at what a salon pays for one O'Keeffe's tube at Zoro ($9,75). This is THE CATALOGUE SCISSORS at full strength, the Project Climate pattern in a US costume. Mass-brand prices (CeraVe, Neutrogena, Eucerin, Aveeno, Burt's Bees, Aquaphor) are UNVERIFIED: every mass retailer blocked automated access; Target review counts were readable (Neutrogena 2.737, O'Keeffe's 1.288, CeraVe 688).",
+ "tagline": "'FOR HANDS THAT WORK' is next to a live registered mark. TSDR: WORKING HANDS, Reg. 3.940.976 (sn 85975113), registered 5 Apr 2011, renewed, LIVE, Class 3 'Skin creams, cleaning preparations for automobiles', owner THE GORILLA GLUE COMPANY LLC. Also WORKING HANDS Reg. 1.577.236 (sn 73803065), 'LOTION TYPE HAND SOAP', first use 16 Jul 1982, renewed, LIVE. So the plan's later 'hand wash' extension sits against it too. O'KEEFFE'S GUARANTEED HARD WORKING SKIN CARE (Reg. 5.147.352) is live, and the brand line is 'Hardworking Skincare®' / 'Guaranteed Relief for the Hardest Working Hands'. Gloves In A Bottle runs 'Hard Work Usually Means Rough Hands'; Workman's Friend runs 'for Hardworking Hands'. The positioning is OWNED by the category leader and its nearest rival. Whether the exact phrase 'FOR HANDS THAT WORK' is itself registered is UNVERIFIED: tmsearch.uspto.gov sits behind an AWS WAF challenge (HTTP 429). Likelihood of confusion is a legal judgment, not made here; it needs trademark counsel, which is not in C5. Repair: drop the work/working-hands axis entirely.",
+ "healthcare_front_door": "CLOSED for hospitals, and verified at primary sources. (1) CDC 2002 Hand-Hygiene Guideline (MMWR RR-16), Rec. 5.A: 'Provide HCWs with hand lotions or creams to minimize the occurrence of irritant contact dermatitis… (IA)'. Rec. 5.B: 'Solicit information from manufacturers regarding any effects that hand lotions… may have on the persistent effects of antimicrobial soaps… (IB)'. The text also says 'the availability of free skin-care lotion is recommended', 'Use of petroleum-based hand lotions or creams may adversely affect the integrity of latex gloves', and chlorhexidine 'activity can be reduced by… hand creams containing anionic emulsifying agents'. (2) Hospital policies forbid personal lotion at work. UCSF Policy 1.2 (last approval 06/26): 'Healthcare personnel should only use hospital-approved hand moisturizers or lotions to ensure compatibility with the hospital's hand hygiene products and gloves… available on clinical units'; 'EVS provides one facility approved hand lotion dispenser at patient care unit stations'; 'Do not use petroleum-based… (mineral oil, petrolatum)'. U. Toledo Medical Center 3364-109-GEN-102: 'Staff with patient contact may only use hospital-approved hand lotion while at work.' (3) The hand-hygiene vendors already sell the SHIFT product to the facility. GOJO PROVON: 'CHG and latex compatible', 'A lotion formulated for healthcare patients and staff'. Ecolab Daily Renewal Hand Cream: 'Compatible with CHG, latex and non-latex gloves', 'Dye and fragrance free', a 2.5 oz squeeze tube, 12 per case, so even the pocket-tube format exists. Medline Remedy/MedSpa and 3M Cavilon are UNVERIFIED (403/HTTP2 errors). Whether lotion is literally BUNDLED FREE in sanitizer contracts is UNVERIFIED; what is verified is that it is free to the worker and supplied by the facility. ⇒ 'Put SHIFT where your team's hands work' cannot happen on a hospital unit; nurses remain reachable only as off-shift DTC buyers, against GIB and O'Keeffe's. DENTAL is softer. CDC dental guideline 2003 (MMWR RR-17): 'Use hand lotions to prevent skin dryness associated with handwashing (IA)' and 'Consider the compatibility of lotion and antiseptic products and the effect of petroleum or other oil emollients on the integrity of gloves (IB)'; 'Dental practitioners should obtain information from lotion manufacturers regarding interaction between lotions, gloves, dental materials, and antimicrobial products.' So a dental office needs glove- and CHG-compatibility DATA that the plan's cosmetic-claims-only formula brief does not budget (test cost UNVERIFIED). BEAUTY PROS (stylists, nail techs, estheticians) have no institutional issuer. That is the only segment the plan can reach, and GIB (hairdresser blog, 'Beautician' reviews) and a UK 'Hairdressers Hand Cream' are already there.",
+ "mocra_foreign_founder": "Text read at uscode.house.gov. The responsible person (21 USC 364(4)) is 'the manufacturer, packer, or distributor… whose name appears on the label'. There is NO US-residence requirement for the RP. The label must include 'a domestic address, domestic phone number, OR electronic contact information, which may include a website' for adverse-event (AE) reports (364e(a), FD&C §609), so a website suffices and no US agent is needed for the label. A US agent is required only in the facility registration of a FOREIGN facility (364c(b)(2)(B)); with a US contract manufacturer, the manufacturer registers. AE reporting (364a(b)(1), §605): serious AE reports go to FDA 'no later than 15 business days after the report is received', with a copy of the label, plus new medical information for 1 year. Records must be kept 6 years, or 3 years for a small business. Safety substantiation (364d, §608): the RP 'shall ensure, and maintain records supporting… adequate substantiation of safety', judged by 'experts qualified by scientific training'. The manufacturer's data can supply it, but the duty and the file sit with Sol. ★ SMALL-BUSINESS EXEMPTION (364h, §612): an RP with average US cosmetic sales under $1.000.000 over 3 years (inflation-adjusted) is 'not subject to the requirements of section 364b [GMP] or 364c [registration AND PRODUCT LISTING]'. The exclusions (eye-area, injected, internal, >24h appearance change) do not cover a hand cream. So the plan's 'the RP files product listings' is optional, not required. AE reporting, safety substantiation, labelling and records are NOT exempt. Net: MoCRA does not force a US entity. It forces a 15-business-day AE intake desk (the plan's 'customer experience agent escalating adverse events') and a safety file — both manageable in writing. MoCRA is not the blocker.",
+ "us_selling_setup": "(1) SHOPIFY PAYMENTS: 'You can use Shopify Payments… if your business is located in one of the supported countries'. The fetched list includes the US, UK, Canada, Mexico, Japan and ~35 others, and Brazil appears ZERO times. A Brazil-resident founder therefore needs a business located in a supported country (in practice a US LLC with a US bank) or a third-party gateway. The exact EIN/SSN/ITIN text on the US requirements page is UNVERIFIED (403). (2) AMAZON: sell.amazon.com/global-selling offers 'Based outside the US? Sell to US customers' via a 'North America and Brazil unified selling account', so no US entity is implied. The document list (W-8BEN, KYC) is UNVERIFIED at primary source. (3) SALES-TAX NEXUS FROM 3PL INVENTORY — CDTFA (California): 'retailers with a physical presence in California are still generally required to be registered… Examples of a physical presence… include… Maintaining inventory or office locations in California.' Whichever state holds the 3PL inventory creates a registration and collection duty. (4) UNVERIFIED accountant questions: US federal income tax on a foreign owner's effectively-connected income from US-held inventory; Form 5472 for a foreign-owned single-member LLC; and Brazil's Lei 14.754/2023 treatment of profits of a foreign entity controlled by a Brazilian individual. None is in the plan's budget.",
+ "moq_cogs": [
+  {
+   "source": "Metro Private Label — THE PLAN'S OWN SOURCE",
+   "claim": "Verbatim: 'For some stock bottles or jars, the starting MOQ can be around 1,000 units per SKU… For custom printed soft tubes, the typical MOQ is usually around 5,000 units per SKU'. But the same page: 'Founded in 2014 in Guangzhou, Metro Private Label is the international trading division of Guangzhou Baiyanhui Cosmetics Co., Ltd.' ⇒ a CHINESE maker, in an SEO listicle ranking itself #1. The plan's 'US private-label maker' is FALSE.",
+   "url": "https://www.metroprivatelabel.com/top-trusted-private-label-hand-cream-manufacturers/",
+   "status": "VERIFIED text; attribution in plan FALSE"
+  },
+  {
+   "source": "Bulk Apothecary (US contract filler/co-packer)",
+   "claim": "'Our minimums start at 10,000 pieces per item'",
+   "url": "https://www.bulkapothecary.com/private-label/",
+   "status": "VERIFIED"
+  },
+  {
+   "source": "Pravada Private Label (8820 Business Park Dr, Fort Myers FL; 'FDA Registered, ISO 22716, cGMP, MoCRA Compliant')",
+   "claim": "Restorative Hand Cream with Vitamin C: 'MOQ: 50 pieces'. Samples $3,95 (max 5 per product). 'Private label pricing is separate and available upon request' / 'Log In to View Private Label Pricing'. ⇒ a US maker with a 50-unit floor exists, which is the C5-compatible route, but its unit price is UNVERIFIED.",
+   "url": "https://www.pravadaprivatelabel.com/products/restorative-hand-cream",
+   "status": "MOQ VERIFIED; unit price UNVERIFIED"
+  },
+  {
+   "source": "Blanka (zero-minimum private label / dropship)",
+   "claim": "Nourish Hand Cream 120 mL, 'non-greasy', but contains Fragrance (so not the SHIFT spec). $17,00 per unit, 'Price starting at 21.00 PROFIT' (implied suggested retail $38). Volume discounts: 5% at 12–48, 10% at 49–96, 15% at 97+ units. 'ZERO minimums'. ⇒ the made-to-order route that satisfies the inventory veto costs 3,1–4,3x the plan's $4,00–5,50 and leaves $2,95 of margin at $19,95 before shipping.",
+   "url": "https://blankabrand.com/products/nourish-hand-cream",
+   "status": "VERIFIED"
+  },
+  {
+   "source": "Genie (formulation platform blog — VENDOR MARKETING, SECONDARY)",
+   "claim": "Serum example: '1,000 units $5-8' per unit and '500 units $7-10'. Custom packaging MOQ 2.500–10.000 units; stock bottles/jars 50–500. Consistent with the plan's $4,00–5,50 only at the low end, and excludes freight to the 3PL.",
+   "url": "https://www.madebygenie.com/blog/low-moq-cosmetic-manufacturing-guide",
+   "status": "SECONDARY"
+  },
+  {
+   "source": "Plan's landed COGS $4,00–5,50",
+   "claim": "No US maker published a per-unit price at 1.000 units that could be fetched. Pravada is behind a login; Blanka at zero-MOQ is $17.",
+   "url": "SHIFT_PLAN.md",
+   "status": "UNVERIFIED"
+  }
+ ],
+ "bls": "VERIFIED against the BLS news release 'Occupational Employment and Wages — May 2025' (USDL-26-0725, released 15 May 2026), Table 1: Hairdressers, hairstylists, and cosmetologists 305.710 (plan 305.700 ✓); Manicurists and pedicurists 152.770 (plan 152.800 ✓); Skincare specialists 72.890 (plan 72.900 ✓). Also: dental hygienists 222.740, dental assistants 387.790, registered nurses '3.4 million'. The bls.gov occupation pages and the API were bot-blocked or over quota; the PDF was retrieved and grepped. ⚠ SCOPE: the Technical Note says OEWS is 'an employer survey measuring… wage and salary workers in nonfarm establishments'. It EXCLUDES the self-employed and booth renters, who are a large share of stylists and nail techs (share UNVERIFIED). So these are counts of employees, not of buyers or workplaces, and the 'workplace buys a case' flywheel applies only to the employer-salon subset.",
+ "constraint_collisions": "C5: the plan needs $10.250–18.000 (aim $12–15k) against C5's US$500–2.500 one-time, i.e. 4,1–7,2x over (4,8–6,0x at the aim). The first-run line alone ($4.000–6.000) is 1,6–2,4x the whole C5 ceiling. The Project Climate precedent found the inventory line was the one line that does not compress. INVENTORY VETO ('physical goods and inventory unless made-to-order'): a 1.000-unit speculative run held at a 3PL is exactly what the veto forbids. It is a direct hit, not a grey area. The only compliant routes are zero-MOQ dropship (Blanka, $17/unit, margin dead at $19,95) or pre-sold batches. C1: US buyers mean ENGLISH, which stays written-only; Portuguese calls buy nothing here. Written cold email to US salons and dental offices is permitted; hospital and dental procurement (value-analysis committees, distributor reps) is conversational and out of reach. C2: a company brand is fine and creators front the content, so C2 is satisfied only by renting other people's faces. C3: 'professional micro-creators on affiliate commission, with seeding and performance bonuses' are paid, per-deliverable independent contractors in the ordinary sense. Commission-only affiliates via a platform program sit in the brief's grey area; paid seeding plus performance bonuses cross it. Outsourced accounting, 3PL and contract manufacturer are vendors (OK). C8: hand care is beauty-adjacent, but nothing in the plan uses what Sol knows from modelling (the Project Climate note again: 'fits her world without using what she knows about it'). REVEALED PREFERENCES: a replenishment DTC brand is origination-FOREVER (a new customer every month, funded by one-time capital — THE STEADY-STATE KILL), and the unit is made by a factory, not a machine she owns. It trades away both tie-breakers and does not compensate with high value per unit ($19,95).",
+ "false_or_unverified_in_plan": [
+  "FALSE: 'A US private-label maker publishes MOQs of ~1.000… against ~5.000 for custom printed soft tubes' — the sentence is verbatim from Metro Private Label, the trading arm of Guangzhou Baiyanhui Cosmetics Co., Ltd. (China), in a self-ranking SEO listicle. The US data points found are 50 pieces (Pravada) and 10.000 pieces (Bulk Apothecary contract filling).",
+  "MISSTATED: 'MoCRA: the responsible person files product listings' — under 21 USC 364h a responsible person with <$1M average US sales is exempt from 364c (registration AND product listing) and 364b (GMP). What binds is 364a (serious AE report within 15 business days), 364d (safety substantiation file), 364e (label contact) and records (3 years for a small business).",
+  "CONTRADICTED BY PRIMARY SOURCE: the nurse/healthcare B2B leg ('put SHIFT where your team's hands work') — CDC IA says the facility provides lotion; UCSF and U. Toledo policies allow only hospital-approved lotion; GOJO and Ecolab already supply CHG- and glove-compatible, fragrance-free lotion, including a 2.5 oz tube.",
+  "UNVERIFIED: landed COGS $4,00–5,50 — no fetchable US per-unit price at 1.000 units; the zero-MOQ benchmark is $17,00 (Blanka).",
+  "INCOMPLETE: '~77% product gross margin' — the arithmetic is right ((19,95−4,50)/19,95 = 77,4%), but USPS Ground Advantage RETAIL for a 4–8 oz parcel is $7,90–9,45 (zones 1–9), i.e. 40–47% of a $19,95 unit, before 3PL pick/pack (UNVERIFIED), payment fees (rate UNVERIFIED) and affiliate commission. Commercial postage is lower; not extracted.",
+  "COLLIDES: tagline 'FOR HANDS THAT WORK' sits next to the live WORKING HANDS Reg. 3.940.976 (skin creams, Class 3, Gorilla Glue). The planned hand-wash extension sits next to WORKING HANDS Reg. 1.577.236 (lotion-type hand soap).",
+  "CAVEAT: the BLS counts are correct but cover wage-and-salary employees only (the OEWS scope). They are neither a buyer count nor a workplace count.",
+  "CORRECT: budget lines sum to $10.250–18.000 as stated; PRO CASE $239/24 = $9,96/unit, a 54,8% gross margin at $4,50 COGS.",
+  "UNPRICED: glove- and CHG-compatibility testing, which the CDC dental guideline says practitioners should obtain from the lotion manufacturer — the cost is UNVERIFIED and not in the plan.",
+  "UNPRICED: US entity/LLC, EIN, Form 5472, state sales-tax registration where the 3PL holds inventory, and Brazilian taxation of the foreign entity — all UNVERIFIED and not budgeted."
+ ],
+ "repair_if_us": "The strongest buildable version inside the constraints is a test, not a launch. (1) Drop hospitals outright. Drop 'working hands' as the axis; Gorilla Glue and GIB own it. (2) Pick the one gap the shelf shows: an institutional-grade formula (glove- and CHG-compatible, fragrance-free, non-petrolatum — the Ecolab/GOJO spec) sold in a pocket tube to BEAUTY and DENTAL pros who have no facility issuer. It must carry published compatibility data. GIB is the named incumbent there, and SHIFT must beat it on something other than price. (3) Replace the 1.000-unit run with a pre-sold 50-piece batch from a US 50-MOQ maker (Pravada). Get the price first, by written request. Sell PRO CASES before producing them, so the inventory is made-to-order and the veto holds. (4) Sell on Amazon via Global Selling (no US LLC needed per Amazon's page) before building Shopify, which needs a supported-country business; accept that inventory at a 3PL or FBA creates state tax duties. (5) Affiliates on commission only via a platform program; no paid seeding or bonuses (C3). (6) Cheapest next test, US$0, written, English: email 30 US nail salons and dental offices, finding each address on its own website. Ask one question: 'Would you buy a 24-tube case of a fragrance-free, glove-compatible hand cream at $239?' BAR, committed in advance: ≥4 of 30 reply with a yes or a counter-price ≥$200/case. Below that, stop. Before any of this, ask Sol the year-three question: 'could you still be running a US hand-cream DTC brand alone, in English, in year three?'",
+ "honest_floor_usd_month": "US$0–300/month in the first 12 months. At C5 capital the realistic first batch is 50–100 units, and even sold out at $19,95 that is ~$1.000–2.000 of total GROSS, once. Reaching the US$2.000–2.500 net target would take roughly 200–400 DTC orders a month or ~20+ PRO CASEs a month against O'Keeffe's (Nielsen #1) and Gloves In A Bottle, with no audience, no paid acquisition (C5) and written-only English selling. That volume assumption is UNVERIFIED, and nothing in the evidence supports it.",
+ "verdict": "DEAD",
+ "unverified": [
+  "Mass-brand shelf prices: CeraVe, Neutrogena, Eucerin, Aveeno, Burt's Bees, Aquaphor (Walmart/Target/CVS/Walgreens/Kroger/Amazon all bot-blocked; Target review counts only)",
+  "Aesop price (403)",
+  "Nurse Hand Cream page (TLS mismatch / 503)",
+  "Whether 'FOR HANDS THAT WORK' is itself a registered or pending mark (tmsearch.uspto.gov behind AWS WAF, HTTP 429)",
+  "Whether hand-hygiene vendors bundle lotion FREE in sanitizer contracts (verified only: free to the worker, facility-supplied)",
+  "Medline Remedy/MedSpa and 3M Cavilon CHG-compatibility claims (403 / HTTP2 errors)",
+  "Pravada private-label unit price at 50–1.000 units (behind login)",
+  "Plan's landed COGS $4,00–5,50",
+  "3PL pick/pack fee; Shopify US card rate; USPS commercial Ground Advantage rate (retail only extracted)",
+  "Glove/CHG compatibility test cost",
+  "Shopify Payments US tax-ID requirement text (403)",
+  "Amazon Global Selling document requirements (W-8BEN, KYC)",
+  "US federal income tax / Form 5472 for a foreign-owned LLC; Brazil Lei 14.754/2023 treatment",
+  "Share of stylists and nail techs who are self-employed (outside OEWS)",
+  "Legal likelihood of confusion with WORKING HANDS (a legal judgment; counsel not in C5)"
+ ]
+}
