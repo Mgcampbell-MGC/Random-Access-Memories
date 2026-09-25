@@ -303,3 +303,103 @@ generator.**
   - What survives it: taste, speed, the claim lock, the brand's campaign world on file, and repeat clients.
   - The supplied positioning ("the campaign, not images") is already the right defence. Keep the price at the
     campaign level; never itemise per image.
+
+---
+
+## PART D — O LANÇAMENTO, AUTOMATED: MORE CUSTOMERS, LESS OF HER TIME (founder's ask, 25 Sep 2026)
+
+> *"must be a way for O LANÇAMENTO to make more .. automate it some how make it easy as anything so more customers
+> can use it"*
+
+**Automation alone cannot deliver this.** It cuts her cost and time; it does not create buyers or raise what they
+pay. Four changes together do.
+
+### D1 — Automate HER side: from ~9–15 h per launch to a target of 1,5–3 h
+
+The customer's side stays: *send two files, pick one of three looks, approve.* Everything behind it becomes a
+pipeline. **Her hours go only to taste, selection and the call.**
+
+| Step | Today (manual) | Automated | Tool (verified 25 Sep) |
+|---|---|---|---|
+| Intake | Emails, a Truth Sheet by hand | One link or WhatsApp form. Label PDF + packshot + approved claims arrive as FILES (C4-clean). The Product Truth Sheet is auto-drafted from the PDF (text, colours, proportions); the client approves one page | local script |
+| Cutout | Photoshop | Automatic | Photoroom Remove Background API **US$0,02/image** (training opt-out in Data Control), or local open-source for unreleased art |
+| Scenes | Prompting per client | **A library of pre-built "campaign worlds" per route (Clean Luxury / Beauty Editorial / Product World) that she curates ONCE and re-uses.** New scenes are generated WITHOUT the product in them | **Gemini API paid tier: *"Google doesn't use your prompts… or responses to improve our products"*** (free tier does, so never use it for client work); Photoroom AI Backgrounds/Shadows **US$0,10/image** |
+| Composite | Hand work | **The label region is locked. Grade the world to the bottle, never the bottle to the world** | local |
+| **Fidelity check** | Her eyes | **A machine compares every asset's label region with the approved packshot (pixel similarity + OCR of visible text against the PDF text) and writes a one-page *Relatório de Fidelidade* per asset: pass/fail.** Failures are regenerated before she ever sees them | local |
+| Film | 3–6 h | 15 s built from the approved stills with depth-parallax camera moves rendered LOCALLY (no generator ever sees the label), supers from approved claims, licensed music, cutdowns automatic | local |
+| Exports | 30–40 files by hand | Automatic: vertical / square / landscape + marketplace specs | local |
+
+- **Cost per launch in API calls: roughly US$2–10.** (ESTIMATE: ~60 scene generations + cutouts.)
+- **The fidelity report is the automation that sells.**
+  - It turns the guarantee into something the buyer checks without trusting her (`THE MACHINE TEST`, limb 2).
+  - VER1 found fidelity is table stakes at the cheap end, where every studio promises it and nobody proves it.
+  - **Proving it on every asset is the differentiator.**
+
+### D2 — A price ladder so more brands can buy: price the automated tier INSIDE the band buyers already pay
+
+**VER1's negative finding flips into the design:**
+
+- the budgets buyers post are under ~US$500 a project;
+- **so the automated tier sits there, where demand is proven**;
+- the premium tier is kept for the ~1/3 of launches that replace a model shoot.
+
+| Tier | What | Price | Her time (target) |
+|---|---|---|---|
+| **PRÉVIA** | Private, watermarked key visual from the brand's current BESTSELLER (the new SKU has no public packshot yet; VER1: 0 of 15) | free | 10–20 min |
+| **VITRINE** | 6 label-exact stills + marketplace set + fidelity report, one look, **48 h, fully automated** | **R$490** | ~1 h |
+| **O LANÇAMENTO** | The full spec (Part A) | R$2.990 | ~3 h |
+| **A LINHA** | Up to 3 SKUs in one world | R$6.900 | ~5 h |
+| **EXTENSÃO** | One more SKU in a campaign world already on file | **R$690** | ~1 h |
+| **TEMPORADA** | 4 launches PREPAID (not a subscription, so `THE STEADY-STATE KILL` does not apply) | R$9.900 (vs R$11.960) | — |
+
+⚠ **VITRINE competes with Orne (~R$280–360 for a set) and Villo (free test image).** It wins only on:
+
+- the fidelity report;
+- the claim lock;
+- speed;
+- a campaign world the brand can extend later.
+
+**That is a hypothesis; the calls test it.**
+
+### D3 — Repeat purchases are the real "make more"
+
+- A fitting brand launches **~3 times a year** (median, H6A).
+- **Keep every client's Truth Sheet and campaign world on file.** The next SKU is an EXTENSÃO at R$690 and costs her
+  ~1 h.
+- Sell TEMPORADA to any brand that bought twice.
+- **Track the second-purchase rate from the first ten clients.** It decides whether this is a business or a
+  treadmill.
+
+### D4 — The arithmetic after automation: capacity stops binding, demand is the only question
+
+The bar is ≈R$12.200–15.800 gross a month.
+
+| Mix (per month) | Gross | Her production hours |
+|---|---|---|
+| 2 LANÇAMENTO + 6 VITRINE + 4 EXTENSÃO | R$11.680 | ≈16 h |
+| 1 LANÇAMENTO + 1 LINHA + 6 VITRINE + 4 EXTENSÃO | **R$15.590** | ≈18 h |
+| 12 VITRINE + 6 EXTENSÃO + 1 LANÇAMENTO | R$13.010 | ≈21 h |
+
+- Production at **≈16–21 h** plus 25–35 h of calls plus ~5 h of admin makes **≈50–60 h of 87.**
+- **Before automation the same revenue needed 45–80 h of production alone.**
+- The time freed goes to calls: more brands reached, not more hours worked.
+- ⚠ The hours are TARGETS until the first ten launches are timed.
+
+### D5 — What automation does NOT change, stated plainly
+
+- **Demand and price are still unmeasured.** Automation raises the ceiling; only the calls establish the floor.
+- **The treadmill:** build the pipeline modular, so a new model is swapped in, not rebuilt. What lasts:
+  - her curated world library;
+  - clients' worlds on file;
+  - the fidelity report;
+  - the relationships.
+- **Self-serve with no call** (a web checkout) is where Orne and Villo already live at R$5–20 an image. **Keep one
+  call in the sale.** She is willing to make it, and it is the one thing they don't do.
+
+### D6 — Two additions to the fortnight's tests
+
+1. **Before any call, time the pipeline** on 3 real public bestseller packshots (Photoroom's 1.000 free sandbox
+   images are enough).
+   - **Bar:** a full O LANÇAMENTO set in ≤3 h of her time, with **100% of stills passing the fidelity check.**
+2. **In the 20 calls, offer VITRINE at R$490 alongside the full kit.**
+   - **Bar:** ≥5/20 buy VITRINE within 14 days, or ≥2/20 buy the full kit.
