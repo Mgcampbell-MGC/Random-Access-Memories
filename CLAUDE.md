@@ -168,7 +168,7 @@ auditing their own sources.
 
 | | |
 |---|---|
-| **C1** | **★★★ SUBSTANTIALLY RETIRED 3 Sep 2026 — READ THIS BEFORE APPLYING ANY C1 KILL IN THIS FILE.** Original: *never speaks in ONGOING OPERATIONS; no customer calls, video, meetings or voice notes, ever.* Relaxed 19 Aug to a bounded number of ONE-OFF SETUP calls. Relaxed 3 Sep to a bounded number of SALES calls (~10–15 h in year one). **Then relaxed again the same day, and this is the big one — the founder, asked whether Sol could take the 6–10 short per-applicant video calls a month that CARTA's statutory interview requires: *"Yes she can do video calls."* ⇒ RECURRING, PER-UNIT, PERMANENT VIDEO CALLS IN DELIVERY ARE NOW PERMITTED.** What remains: **no daily phone-sales operation**, and **C2 still governs PUBLIC facing** — a private client call is not a camera, a personal brand or an audience. **WHAT THIS REOPENS, and it is a large part of the graveyard: `THE ONBOARDING LAW` (written-only survives selling but not being onboarded) · `THE DISPUTE-IS-THE-PRODUCT LAW` (the arbitration is spoken) · `THE GETNINJAS KILL` (C1 fails at the exact moment revenue begins) · the funeral-book V3 phone kill · every white-label and partner candidate that died on a conversation. RE-SCREEN ANY CANDIDATE WHOSE ONLY CAUSE OF DEATH WAS SPEECH.** ⚠ **But the persistence question is now the live one, not the permission question: `SELECTION ≠ PERSISTENCE` — a call she is willing to take is not the same as a call she will still be taking, on every unit, alone, in year three. Ask about YEAR THREE, never about willingness.** |
+| **C1** | **★★★★ 25 Sep 2026 — OUTBOUND PORTUGUESE SALES CALLS AND VIDEO CALLS ARE PERMITTED, COLD CALLS INCLUDED.** Founder: *"SOL is willing to call and make sales calls … she can talk in portgurese calls is what she is willing to make."* This retires the last clause (*no daily phone-sales operation*) FOR PORTUGUESE-SPEAKING BUYERS. English-language selling stays WRITTEN. C2 (no public face) is untouched. See `THE_SIXTH_HUNT.md` §6 for the filters it reopens. **★★★ SUBSTANTIALLY RETIRED 3 Sep 2026 — READ THIS BEFORE APPLYING ANY C1 KILL IN THIS FILE.** Original: *never speaks in ONGOING OPERATIONS; no customer calls, video, meetings or voice notes, ever.* Relaxed 19 Aug to a bounded number of ONE-OFF SETUP calls. Relaxed 3 Sep to a bounded number of SALES calls (~10–15 h in year one). **Then relaxed again the same day, and this is the big one — the founder, asked whether Sol could take the 6–10 short per-applicant video calls a month that CARTA's statutory interview requires: *"Yes she can do video calls."* ⇒ RECURRING, PER-UNIT, PERMANENT VIDEO CALLS IN DELIVERY ARE NOW PERMITTED.** What remains: **no daily phone-sales operation**, and **C2 still governs PUBLIC facing** — a private client call is not a camera, a personal brand or an audience. **WHAT THIS REOPENS, and it is a large part of the graveyard: `THE ONBOARDING LAW` (written-only survives selling but not being onboarded) · `THE DISPUTE-IS-THE-PRODUCT LAW` (the arbitration is spoken) · `THE GETNINJAS KILL` (C1 fails at the exact moment revenue begins) · the funeral-book V3 phone kill · every white-label and partner candidate that died on a conversation. RE-SCREEN ANY CANDIDATE WHOSE ONLY CAUSE OF DEATH WAS SPEECH.** ⚠ **But the persistence question is now the live one, not the permission question: `SELECTION ≠ PERSISTENCE` — a call she is willing to take is not the same as a call she will still be taking, on every unit, alone, in year three. Ask about YEAR THREE, never about willingness.** |
 | **C2** | **Permanently faceless.** No camera, no personal brand, no audience-building. *(Governs PUBLIC facing, not private KYC to a payment processor.)* **On a company brand or a pen-name persona, 19 Aug: *"open to it if it makes sense, but the idea needs to make sense."* So the DEFAULT IS ANONYMOUS. A persona is a lever available on argument — it must never be the thing that rescues a weak idea.** |
 | **C3** | **No employees, no contractors, ever.** Vendors and suppliers are allowed; hiring a person is not |
 | **C4** | **Never takes custody of a customer credential** or standing access to their system. Work arrives as a file they send |
@@ -2601,6 +2601,55 @@ strangers' dead parents, alone, in year three?"**
   family by construction, but worth naming so a third hunt doesn't mistake domain variety for shape variety.
   ⚠ **Nothing here has been tested. Every next-test is R$0, written, no-phone, with a bar committed in advance,
   and none has been run — this whole board is pre-test.**
+
+- **★★★ THE SIXTH HUNT — 25 Sep 2026: PORTUGUESE CALLS ALLOWED, A SUPPLIED BEAUTY-STUDIO PLAN VERIFIED, ACOLHE
+  CLOSED, AND THE BEST-EVIDENCED CANDIDATE IN THE ARCHIVE — WHICH IS OUTSIDE HER WORLD.** See `THE_SIXTH_HUNT.md` and
+  `O_LANCAMENTO.md`; ~25 agents, source logs in `research/hunt6-sources/`.
+  - **What the founder said:**
+    - *"NOT IT"* to A ESCRITURA;
+    - *"no need to repair it lets focus on new"* on ACOLHE — **CLOSED.** The field report — freight and municipal
+      corruption — was tested and was real: the archive's largest "thin field", Coari/AM (34,8% of its clearing
+      pool), was a pregão PRESENCIAL posted to PNCP 367 days late at 99–100% of estimate. Its 2026 electronic
+      re-tender cleared at **0,593** (verified on PNCP);
+    - **Portuguese sales calls allowed** (C1 above).
+  - **⇒ A THIRD REVEALED PREFERENCE:** she cut the cleanest machine-made, origination-once candidate and
+    volunteered to sell. **`THE MACHINE TEST` and `ORIGINATION ONCE` are now TIE-BREAKERS, not gates. Ask the
+    year-three question directly; do not infer it from a board.**
+  - **THE SUPPLIED "VIRTUAL BEAUTY PRODUCTION HOUSE" (another model's plan) — REFUTED AS PRICED:**
+    - **no Brazilian beauty buyer post with a stated budget exceeds US$500 per project** (the best: 30 AI videos
+      for US$250–500);
+    - Orne sells the whole launch set for ≈R$280–360; Estúdio Fábrica publishes AI campaign images at R$53;
+    - **Higgsfield itself sells "one-click product ads" at US$49/month.**
+    - Repaired as **O LANÇAMENTO** (the founder's own spec, R$2.990), with fidelity BY CONSTRUCTION: **the
+      generator never sees the label** — the real packshot is composited locally. That is doubly right, because
+      **Higgsfield's terms (26 Jul 2026, §4.4) let it train on uploaded inputs** outside an Enterprise Agreement.
+    - It remains MARGINAL, with weak price evidence.
+  - **★★★ A PAYER-PUBLISHED COMMISSION PLUS A UNIT-LEVEL STATE REGISTER — A CONTA LIVRE, the energy free-market
+    channel partner:**
+    - **Cemig's SINERGIA regulation v8.0** (from 10/08/2026, verified in the PDF) pays **R$7 × average monthly MWh ×
+      contract months, 100% AT SIGNING** — ≈R$5.500–9.200 per 22 MWh client — **so the bar needs ≈2–3 contracts a
+      month.**
+    - **ANEEL's BDGD `UCMT_PJ.csv`** (verified, keyless, updated 1 Sep 2026) lists every medium-voltage unit with
+      CNAE, address, a free-market flag and 12 months of consumption: **8.458 captive private SP units at ≥10
+      MWh/month.**
+    - **Against:** free-market prices up ~59% in two years; free comparators (Clarke; **CCEE's own, ordered by
+      Decreto 13.097 art. 10**); ten traders in judicial recovery; reps being recruited by the thousand; **and C8.**
+  - **The rest, and the laws each named:**
+    - the contract-manufacturer channel — factories bundle design and marketing free, and **stop at the shelf**;
+    - A REVISTA — **a calendar is not a clock unless it consumes the unit**: 25–86% face reuse; the refreshers buy
+      stock at R$1,27/image;
+    - host casting (A BANCADA) — the no-AI-voice rule's value goes to the host, and **TikTok funds recruiting
+      itself**;
+    - the TikTok affiliate agency — **the platform squeezes the spread it funds**: −2 points on 23 Sep 2026;
+    - agency wholesale — agencies buy at labour prices;
+    - consent — **unrecognised consent is abundant**;
+    - channel — **THE MIRROR LAW**;
+    - deadlines — **the regulator pre-fills the migration**;
+    - lead arbitrage — energy pays per activation or meeting, not per lead, and São Paulo has no buyer.
+  - **★ THE MARGIN LAW IS A FUNCTION OF THE CATEGORY:** cosmetics reps are paid 10–15% (Êxodo, verified at the reps'
+    council board), not 3–6%.
+  - **⇒ THE NEXT FILE IN THIS REPOSITORY SHOULD BE A CALL LOG.** Two R$0 call tests with bars committed in advance
+    (`THE_SIXTH_HUNT.md` §10), preceded by the year-three question on each track.
 
 ## The test design that works
 

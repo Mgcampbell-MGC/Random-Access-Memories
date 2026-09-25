@@ -1,11 +1,14 @@
 # THE SIXTH HUNT — 25 Sep 2026
 
-**What changed today, why the hunt ran, and what it found.** This file covers five things:
+**What changed today, why the hunt ran, and what it found.** This file covers:
 
 - a new founder permission (Portuguese sales calls);
 - a supplied plan from another model, the *Virtual Beauty Production House* (VBPH);
 - a late-2026 new-tech lens;
 - a re-screen of the graveyard under the new permission;
+- a second wave of six lenses built on what still holds a price (§8b);
+- three deep dives the founder's challenge produced, including the energy channel partner the founder liked (§8c–8e);
+- a lead-arbitrage hunt the founder proposed (§8f);
 - the field report on ACOLHE, the newborn-kit desk, which the founder then closed (*"no need to repair it lets
   focus on new"*).
 
@@ -41,21 +44,42 @@ to sell every month is admissible now if she will sell it in Portuguese, and she
 
 ---
 
-## 1. THE VERDICT
+## 1. THE VERDICT — final, after wave 2, three deep dives and the lead-arbitrage hunt
 
-**No clean ALIVE. The supplied VBPH plan is REFUTED AS PRICED and survives REPAIRED as a smaller business. That
-repaired version is the lead, subject to one R$0 test.** No generator lens, and no re-screen of about 45
-speech-killed archive candidates, beat it on fit plus evidence.
+**No clean ALIVE. Two candidates lead, for opposite reasons. Both are decided by the same two weeks of R$0
+Portuguese calls.**
 
-| # | Candidate | Verdict | Honest floor (US$/month) | What decides it |
-|---|---|---|---|---|
-| **1** | **O LANÇAMENTO** — VBPH repaired: a one-product LAUNCH KIT at R$2.500–3.500, packshot-locked, claim-checked, prospected off ANVISA's daily notification file and sold by Portuguese calls | **MARGINAL — lead** | **700–1.500** (pool ceiling ≈1.900 at the measured external-buy rate) | 20 calls: do ≥6/20 launching brands name ≥R$2.500 of external spend per launch? |
-| 2 | **A REVISTA** — the catalogue-cycle image layer for direct-sales (venda direta) brands | **DEAD as a business; survives as a segment of #1** | 150–600 | Faces reused 25–86% across revistas; refreshers buy stock at R$1,27/image (§3) |
-| 4 | **KIT DO RÓTULO** — R$390/SKU-line launch images on the day the label is approved, via manufacturers that push design to the client | MARGINAL-to-DEAD | 0–300 (ceiling 1.200–1.900) | ≥2/10 manufacturers refer in writing AND ≥5/20 micro-brands pay ≥R$300 |
-| 5 | **O PLEITO** — Ex-tarifário duty-reduction desk, best as RENOVA 2027 (the renewal wave) | MARGINAL on economics, **likely C8 fail** | ≈450 | Ask Sol the year-three question first |
-| — | Contract-manufacturer RESALE channel | **DEAD** | — | The manufacturers are the free front door (§4) |
-| — | VBPH HERO at R$5.900 / FAMILY at R$9.900 as the core offer | **REFUTED** | — | No buyer evidence at any price ≥R$2.500 (§2) |
-| — | GÊMEO LICENCIADO, COLEÇÃO, REDE, DESDOBRA, A FAIXA DO LANÇAMENTO, O FORMULÁRIO DO BEM, A VOLTA DA FEIRA | speculative or below bar | 0–900 | §6 |
+- **A CONTA LIVRE (energy) has the best EVIDENCE of anything this archive has produced, and the worst fit.** The payer
+  publishes its commission and pays at signing. A state file lists every eligible buyer with twelve months of
+  consumption. The bar needs only ≈2–3 contracts a month. It is outside her world.
+- **O LANÇAMENTO (beauty) has the best FIT and weak evidence.** Every buyer budget observed is below its price.
+
+| # | Candidate | Verdict | Honest floor (US$/month) | Evidence of money | What decides it |
+|---|---|---|---|---|---|
+| **1** | **A CONTA LIVRE** — energy free-market channel partner. Calls to São Paulo medium-voltage businesses still on the regulated tariff, ranked from ANEEL's unit file (consumption known before dialling); paid by the retail trader at signing (§8e) | **MARGINAL — best evidenced** | **500–1.500** | **Payer-published:** Cemig SINERGIA v8.0, R$7 × avg MWh × contract months, 100% at signing (verified in the PDF). ≈R$5.500–9.200 per 22 MWh client | ≥5 of 20 decision-makers send their bill in 10 days AND ≥1 signs in 45 days, ≤25 h of calling. **Sol's year-three answer first** |
+| **2** | **O LANÇAMENTO** — the founder's spec, repaired: a one-product launch campaign at R$2.990, label-exact by compositing, claim-locked, prospected off ANVISA and sold by calls (`O_LANCAMENTO.md`) | **MARGINAL — best fit, weak price evidence** | 700–1.500 *if* the price test passes | **Negative so far:** every beauty buyer post with a budget is <US$500 per project; Orne sells the whole set for ≈R$280–360 | ≥6/20 launching brands name ≥R$2.500 of external spend per launch; ≥2/10 previews convert |
+| 3 | **A PRATELEIRA** — commission sell-in of debut beauty lines to SP shops, launch kit as the onboarding deliverable (§8b) | MARGINAL, slow | 90–800 at month 12; ≈2.080 at month 18 | Cosmetics reps paid **10–15%** (Êxodo, verified at the reps' council board) | ≥6/30 debut brands agree 10% in writing; ≥10/40 shops buy from reps by phone |
+| — | Add-ons to #2: COR CERTA (ΔE colour guarantee), A CADEIRA (real salon results), launch-week TikTok creators, the Lilial/Lyral relaunch trigger, packaging agencies as the source of pre-launch artwork | add-ons | +100–700 each | — | Two questions each inside test #2 |
+| — | A CONTA VERIFICADA / A FECHADORA — paid-ad energy leads (§8f) | MARGINAL-to-DEAD | 0–750 | Buyers pay per ACTIVATION or MEETING, not per lead | Only if ≥3 operators pre-pay an order before any ad spend |
+| — | O PLEITO (Ex-tarifário) | MARGINAL, likely C8 fail | ≈450 | Cone-Ex already sells pay-on-grant | Year-three question |
+| — | A REVISTA · A BANCADA · TikTok affiliate agency · agency wholesale · contract-manufacturer resale · VBPH HERO at R$5.900 · GÊMEO · TOM REAL · the ANVISA-deadline desks | **DEAD or add-on only** | — | §3, §4, §8b–8d | — |
+| — | ACOLHE | **closed by the founder** | — | §7 | — |
+
+**Why energy outranks beauty on evidence:**
+
+- The price is written by the PAYER in a regulation, not inferred from a studio's asking price.
+- The buyer list is a state file with each buyer's consumption, not a scrape.
+- The unit count is 2–3 a month, not 4–5 launches plus previews.
+
+**Why it might still lose:**
+
+- nobody knows the call-to-contract rate;
+- free-market prices rose ~59% in two years, so the savings pitch is thinner than in 2024;
+- free comparators already exist and the state's own arrives with the Nov 2027 opening;
+- **she may not want to spend year three selling electricity contracts** — the GATELEDGER lesson.
+
+**Run both call tests in the same fortnight** (§10). Pick by the numbers and by her answer to the year-three
+question. Do not pick by this table.
 
 **Answer to "maybe high value something" from the new tech: no.** The late-2026 tools cut the buyer's cost at
 least as much as hers. The tool vendor itself sells the deliverable self-serve (Higgsfield *"One-click product
@@ -697,7 +721,103 @@ that publishes its rate and pays at signing, and a bar of ~2–3 contracts a mon
 - **PASS: ≥5 send their bill within 10 days AND ≥1 signs within 45 days, in ≤25 hours of calling.**
 - **Before calling, ask Sol the year-three question.**
 
+## 8f. Lead arbitrage via TikTok/Meta ads, energy first (LA1) — the founder's combination
+
+*"a lead arbitrage business via TikTok … run TikTok ads and get leads for energy … I combined two things."*
+
+**Verdict: MARGINAL-to-DEAD. Energy buyers pay per ACTIVATED CUSTOMER or per MEETING, not per lead.** The one slice
+with a lead market is in Minas Gerais, not São Paulo.
+
+- **Who pays, and how:**
+  - **Desperta:** 40% of one monthly bill, or up to 60% in 3 instalments, **after the customer's first paid
+    invoice.**
+  - **Lead Energy:** 0,5% of the bill, capped at R$300, **per qualified meeting** (terms PDF read in full).
+  - **CompareSolar** is the only per-lead seller in energy (R$35–150, prepaid credits), and it is still in
+    pre-launch.
+- **Where the leads are:** low-voltage *"energia por assinatura"* (shared distributed generation) is concentrated in
+  **Cemig/MG, 1,92M of ~2,2M customers nationally.** The Enel SP capital area has **341**, so **a São Paulo energy
+  lead has no buyer.**
+- **The Nov 2027 low-voltage opening is given away by the state:** Decreto 13.097/2026 art. 10 orders CCEE to run a
+  free offer-comparison platform. Low-voltage free-market leads are killed.
+- **Other verticals:**
+  - Rooftop-solar leads: dead (Solar Task is free).
+  - Clinic appointments: dead on the medical ethics code (per-patient payment barred).
+  - Health-plan leads: oversupplied at R$9,51–24.
+- **Ad mechanics:** TikTok needs ≥US$20/day per ad group, so start on Meta, whose ad costs rose 12,15% for Brazilian
+  advertisers in Jan 2026.
+- **LGPD:** reselling a lead needs specific consent (art. 7 §5); ANPD's first fine went to a microempresa selling a
+  contact list. **Whether Meta/TikTok native-form leads may be resold at all is UNVERIFIED.**
+
+**Two candidates, both weak:**
+
+- **A CONTA VERIFICADA.**
+  - What it is: ads + an AI WhatsApp agent that reads the bill; a bill-verified lead sold once, prepaid, at 10% of
+    the verified bill.
+  - Floor: US$0–750.
+  - Flaw: operators already get leads free-until-activation from 1.000-rep affiliate programmes.
+- **A FECHADORA.**
+  - What it is: Sol closes small-business subscriptions by phone and takes the per-activation commission.
+  - Floor: US$400–700 after the float period.
+  - Flaw: the commission lands 60–120 days after the ad spend, so the float breaks C5.
+
+**Test:** 20 calls to operators from ANEEL's plant register. **≥3 must pay a prepaid order BEFORE any ad money is
+spent.** Then ≤R$1.000 of Meta ads, where a bill-verified lead must cost ≤R$50.
+
+**⇒ What survives of the founder's combination is its best half, and it belongs to A CONTA LIVRE:** the AI bill
+parser and the pre-computed saving. The call opens with the unit's own consumption from the ANEEL file, not with an
+ad. **Buy attention only once a buyer has pre-paid for it.**
+
 ## 9. LAWS FROM THIS HUNT
+
+**From waves 2 and 3 (evening, 25 Sep):**
+
+- **★★★ A PAYER-PUBLISHED COMMISSION PLUS A UNIT-LEVEL STATE REGISTER IS THE STRONGEST PRICE-AND-DISTRIBUTION
+  EVIDENCE THIS ARCHIVE HAS FOUND.**
+  - Cemig publishes its partner rate in a dated regulation and pays 100% at signing.
+  - ANEEL's BDGD lists every eligible buyer with twelve months of consumption and a free-market flag.
+  - Price, buyer and prospect are all published by the counterparty or the state; nothing is inferred.
+  - **Hunt for this pair: a regulation that fixes what an intermediary is paid, and a state file listing each
+    buyer's size.**
+  - It is `THE COMPELLED-ANNOUNCEMENT LAW` with the price attached.
+- **★★★ BUYER POSTS CAP AI PRODUCTION PRICES — CHECK THEM BEFORE BELIEVING ANY SUPPLIED PLAN'S PRICE.**
+  - Every Brazilian beauty visual-production post with a budget is <US$500 per project; the best is 30 AI videos
+    for US$250–500.
+  - Orne sells the whole launch set for ≈R$280–360.
+  - A plan arriving at R$5.900 had **no buyer at any price above R$2.590.**
+  - 99Freelas hides 99,6% of budgets, so read Workana's stated ranges.
+- **★★ THE PLATFORM SQUEEZES THE SPREAD IT FUNDS.**
+  - TikTok does fund an intermediary slot (TAP, Brazil listed). Then, on 23 Sep 2026, it cut default creator rates by
+    2 points, auto-enrolled every product and took affiliate commission itself.
+  - **A platform-paid slot is real and REPRICEABLE by the platform. Prefer a payer that fixes the rate in a
+    published regulation.**
+- **★★ THE STATE COUNTER ARRIVES WITH THE OPENING.**
+  - The decree that opens the low-voltage energy market (13.097/2026) orders CCEE, in art. 10, to run a free
+    offer-comparison platform.
+  - **When a statute creates a market for comparison, read it for a free comparator before selling comparison.**
+  - (`THE CHEAP STATE COUNTER`, dated inside the enabling act itself.)
+- **★★ THE MARGIN LAW IS A FUNCTION OF THE CATEGORY, NOT A CONSTANT.**
+  - On the reps' council board: goods 1–7%, software/services 15–40%, **cosmetics 10–15%** (Êxodo, verified).
+  - At the current bar, cosmetics sell-in needs R$1,0–2,0M/year of sales, not R$12,5–25M.
+  - ⚠ The 10% is paid to reps who bring a client portfolio and a car.
+- **★★ UNRECOGNISED CONSENT IS ABUNDANT.**
+  - R$30–45 buys a real-person product video with ad rights; US$99/month leases a licensed twin.
+  - Consent prices only as FAME, or welded to a checkable result.
+  - Kills the consent-as-price-holder thesis for anyone without a famous face.
+- **★★ THE MIRROR LAW.**
+  - In beauty the subject is the customer's own face and body, which her phone and free AI serve best.
+  - At the chair, money pays for the professional's hands.
+  - Screen each partner for R$1.100–1.400/month of margin potential at 40 partners before recruiting.
+- **★★ THE REGULATOR PRE-FILLS THE MIGRATION.**
+  - 56.289 cosmetic notifications expire Oct 2026–Dec 2027.
+  - ANVISA auto-imports each in ~15 minutes, free.
+  - **Read the regulator's migration manual before sizing any renewal wave.**
+  - And **grep every substance-ban RDC for a sell-through clause.**
+- **★ THE PREVIEW NEEDS AN INPUT THAT EXISTS WHEN THE SIGNAL FIRES.**
+  - 0 of 15 genuinely new SKUs had a public packshot at notification.
+  - Build the free sample from something that already exists: the bestseller, or the packaging agency's approved
+    art.
+
+**From wave 1 (afternoon, 25 Sep):**
 
 - **★★★ THE TOOL VENDOR IS THE FRONT DOOR.**
   - In late 2026 the company that sells the generator also sells the deliverable as a template: Higgsfield
@@ -765,17 +885,36 @@ that publishes its rate and pays at signing, and a bar of ~2–3 contracts a mon
 
 ---
 
-## 10. THE TESTS, in order — all R$0, all Portuguese calls, all with bars committed above
+## 10. THE TESTS — one fortnight, all R$0, all Portuguese calls, bars committed in advance
 
-1. **O LANÇAMENTO price test.** 20 launching own-brand holders from the ANVISA file.
-   - PASS ≥6/20 name ≥R$2.500 of external spend per launch.
-   - FAIL ≤2.
-   - **This is the one that decides the lead.**
-2. **A REVISTA calls, run with test 1.** The 12 named catalogue brands, three questions, one pilot offer.
-   - Bar: ≥3 buy outside (not stock) at ≥R$3.000 per revista.
-3. **Two founder questions, one message each:**
-   - Is a coffee-cooperative map print also "not it"?
-   - Could Sol still be drafting machine dossiers for importers in year three (O PLEITO)?
+**0. First, one message to Sol — the year-three question, twice:**
 
-**The pattern this archive has repeated for five weeks — hunt, screen, crown, never price in front of a buyer —
-ends here only if test 1 is actually run.** The call permission removes the last reason not to.
+- *"Could you still be phoning factory owners about their electricity contracts, alone, in year three?"*
+- *"Could you still be making beauty launch campaigns and chasing the next brand, alone, in year three?"*
+
+Anything short of an unprompted yes on either removes that track before a single call.
+
+**Week 1–2, run in parallel (~25 h of calling each; together they fill the fortnight):**
+
+1. **A CONTA LIVRE.**
+   - Download ANEEL `UCMT_PJ.csv`. Filter São Paulo, `LIV = 0`, private commercial/industrial, no GD, average
+     `ENE` ≥15 MWh/month. Join to CNPJ by address (`publica.cnpj.ws`).
+   - Register as a Cemig SINERGIA participant; it takes an ME/MEI CNPJ.
+   - Hold 20 decision-maker conversations, each opening with the unit's own consumption and an estimated saving.
+   - **PASS: ≥5 send their bill within 10 days AND ≥1 contract is signed within 45 days, in ≤25 h of calling.**
+2. **O LANÇAMENTO.**
+   - Call 20 own-brand EPP/Demais hair/skin brands with a launch in the last 60 days, or an *"em breve"*.
+   - **PASS: ≥6/20 name ≥R$2.500 of external spend per launch.**
+   - Then send the bestseller-based preview to the 10 best. **≥2 must buy at R$2.990 within 30 days.**
+   - Add the questions for the add-ons (§8b) and the 12 catalogue brands (§3).
+   - **FAIL (≤2/20): stop. Do not discount into the R$280–1.150 band the studios already occupy.**
+3. **Optional, only if 1 or 2 passes:** A PRATELEIRA's 30-brand / 40-shop sell-in test (§8b).
+
+**The two remaining founder questions, one message each:**
+
+- Is a coffee-cooperative map print also "not it"?
+- O PLEITO: year three?
+
+**The pattern this archive has repeated for six weeks — hunt, screen, crown, never price in front of a buyer —
+ends only if these calls are made.** The call permission removed the last reason not to. **The next file in this
+repository should be a call log, not a hunt.**

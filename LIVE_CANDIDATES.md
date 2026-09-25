@@ -1,10 +1,33 @@
-# LIVE CANDIDATES — the board as at 11 Sep 2026 (THE FIVE on top; Scenario B, hours doubled)
+# LIVE CANDIDATES — the board as at 25 Sep 2026 (THE SIXTH HUNT on top; older boards below)
 
 **Target reset 1 Sep: US$2.000–2.500/month net. HOURS DOUBLED 3 Sep to ~20 h/week = ~87 h/month.**
 **Her required realisation therefore falls from US$51–63/h to US$25–32/h, and the field-stop floor from
 US$180–250 to US$90–125.** Bar: US$2.200–2.800 gross export or
 R$12.300–15.400 gross domestic at zero COGS. Full derivation, the law-by-law reversal table and the re-screen of
 every kill in the record: `THE_SCENARIO_B_BOARD.md`.
+
+> ### ★★★★ THE SIXTH HUNT — 25 Sep 2026. THE BOARD AS IT STANDS. ACOLHE CLOSED BY THE FOUNDER; A ESCRITURA "NOT IT"; PORTUGUESE CALLS NOW ALLOWED.
+>
+> **1. A CONTA LIVRE — energy free-market channel partner. MARGINAL, the best-EVIDENCED candidate in the archive.**
+> - **The payer publishes the rate:** Cemig SINERGIA v8.0 pays **R$7 × average MWh × contract months, 100% at
+>   signing** (verified).
+> - **The state publishes the buyers:** ANEEL BDGD lists every medium-voltage unit with 12 months of consumption
+>   (verified); 8.458 captive SP units at ≥10 MWh.
+> - **The bar needs ≈2–3 contracts a month.** Floor US$500–1.500.
+> - Against: prices up ~59%, free comparators, occupancy — and **it is outside her world (C8)**.
+>
+> **2. O LANÇAMENTO — the founder's own beauty launch-campaign spec at R$2.990.** Label-exact by compositing,
+> claim-locked, ANVISA-prospected (`O_LANCAMENTO.md`). **MARGINAL: the best FIT, weak price evidence** — every
+> beauty buyer post with a budget is <US$500 per project. Floor US$700–1.500 if its test passes.
+>
+> **3. A PRATELEIRA — commission sell-in of debut beauty lines** (cosmetics reps are paid 10–15%, verified). Slow:
+> ≈US$2.080 only by month 18.
+>
+> **Dead or add-on:** A REVISTA · A BANCADA · TikTok affiliate agency · agency wholesale · contract-manufacturer
+> resale · lead arbitrage · VBPH at R$5.900 · O PLEITO (C8).
+>
+> **NEXT: the year-three question on each track, then two R$0 call tests in one fortnight** (`THE_SIXTH_HUNT.md`
+> §10). **The next file here should be a call log.**
 
 > ### ★★★ THE SECOND GREAT HUNT — 19–20 Sep 2026. ACOLHE is being built elsewhere; the founder asked for a
 > DIFFERENT NICHE, A DIFFERENT BUSINESS MODEL, entirely. Sixteen repair-briefed lenses, a judge's twelve, two

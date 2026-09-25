@@ -1,0 +1,246 @@
+{
+ "agent": "LA1",
+ "lead_buyers": [
+  {
+   "vertical": "Energy ACL (Grupo A)",
+   "buyer": "Lead Energy SA (CNPJ 38.422.829/0001-55, São Paulo, capital R$3,53M, porte Demais)",
+   "price": "Nível Ouro: bonificação 0,5% of the indicated monthly bill, capped R$300 per client (calculator: R$238,10 'Reunião' on a R$47.619 bill); Esmeralda→Diamante: +R$4,00→R$7,00 per MWh monthly over the contract (avg 3 yrs); R$1.200 fixed per multi-UC (≥20 UCs) management client; R$1.800 per UC for large wholesale clients",
+   "unit": "per 'Cliente Elegível' = simulation completed on its platform + valid meeting with its rep (the 0,5%); per MWh consumed for signed clients; paid on the 20th, only after the client's invoice is liquidated ('cerca de 60 dias desde a emissão da nota fiscal'); buyer's internal records prevail (cl. 3.8); leads from its own 'campanhas internas' are void (3.7)",
+   "url": "https://afiliados.leadenergy.com.br/termo_adesao.pdf",
+   "status": "observed payer-side published terms (primary PDF, read)"
+  },
+  {
+   "vertical": "Energy GD 'energia por assinatura' (low voltage)",
+   "buyer": "Desperta Energia (41 shared/remote GD plants in its own name across CEMIG-D, COPEL, CELESC, COELBA, CPFL per ANEEL)",
+   "price": "Comissão única = up to 60% of the client's monthly consumption value: 40% in one payment, or up to 60% split in up to 3x; OR 3,5% of every paid invoice 'por prazo indefinido'; OR a combination",
+   "unit": "per activated client, paid only after the client's 1st invoice is paid; clients must have bill ≥R$300/month, be titular, in a served region; first partner to register the CPF/CNPJ wins",
+   "url": "https://despertaenergia.com/blog/parcerias-energia-solar",
+   "status": "observed payer-side published fee schedule (payer's own blog, 29/10/2025)"
+  },
+  {
+   "vertical": "Energy GD (low voltage)",
+   "buyer": "CompareSolar = PERFORMANCE DIGITAL SERVICOS EM COMUNICACAO LTDA (CNPJ 26.704.902/0001-00, EPP, Fortaleza) selling to GD operators/cooperatives",
+   "price": "Shared lead R$35–75 (sent to 3–5 suppliers), exclusive R$70–150 ('2× o compartilhado'); final price by contract on monthly volume; PREPAID credits, unused credits returned; automatic refund in 24h if a lead fails any of 4 machine-checked criteria (valid CEP, bill value filled, WhatsApp, distributor resolved)",
+   "unit": "per lead",
+   "url": "https://comparesolar.com.br/seja-parceiro/",
+   "status": "seller asking — page says 'Pré-lançamento · Reserve cobertura na sua região' (no evidence yet that any buyer pays)"
+  },
+  {
+   "vertical": "Energy ACL (Grupo A)",
+   "buyer": "Cemig SINERGIA (from DD3, not re-researched)",
+   "price": "R$7/MWh × contract months, one-off at CCVEE signing (e.g. 22 MWh × 7 × 48 = R$7.392); PLUS +R$3/MWh/month if exclusive",
+   "unit": "per signed Grupo A contract",
+   "url": "https://energialivre.cemig.com.br/wp-content/uploads/2026/08/regulamento-programa-sinergia.pdf",
+   "status": "observed payer-side rule (DD3, primary)"
+  },
+  {
+   "vertical": "Energy ACL (Grupo A)",
+   "buyer": "Neoenergia — Parceiro Neoenergia",
+   "price": "'comissões por cada contrato fechado' — amount unpublished; targets bills ≥R$5.000/month",
+   "unit": "per closed contract, paid 'após a finalização das negociações'",
+   "url": "https://www.neoenergia.com/web/produtos-e-solucoes/parceiro-neoenergia",
+   "status": "programme page; rate UNVERIFIED"
+  },
+  {
+   "vertical": "Health plans (PME/PF)",
+   "buyer": "brokers via Salyd marketplace",
+   "price": "Observed live listings: R$9,51 (Hapvida GO, CNPJ 3–5 vidas, 4 days old), R$12,40, R$14,80, R$11,20; 'Start Marketplace' R$9–15/lead; 'Piloto Automático' R$10–22; 'PRO' R$13 average from 300 leads/month; all 'exclusivos', 'Reposição Automática/Garantida'",
+   "unit": "per exclusive lead, prepaid credits",
+   "url": "https://salyd.com.br/",
+   "status": "observed listings with buy buttons (seller asking; several listings 1–6 days old still unsold ⇒ oversupply)"
+  },
+  {
+   "vertical": "Health plans (PME/PF)",
+   "buyer": "brokers via Doutor Leads",
+   "price": "R$1.449 for 60 leads (R$24,15), R$2.760 for 120 (R$23,00), R$13.125 for 600 (R$21,88); regional = own city + 17 km",
+   "unit": "per lead in prepaid packs",
+   "url": "https://venda.doutorleads.com/Pacote-de-leads-para-vender-planos-de-sa%C3%BAde-PF-e-PME",
+   "status": "seller asking with 'Comprar Agora' buttons"
+  },
+  {
+   "vertical": "Home services (all categories incl. solar)",
+   "buyer": "professionals on GetNinjas (GetNinjas LTDA, CNPJ 55.744.877/0001-89)",
+   "price": "500 moedas R$69,90 (≈R$0,14/moeda) promotional pack up to 4.800 moedas 'diamante'; coins per request vary by category and location (not published); coins expire in 3 months",
+   "unit": "per contact unlock; each request unlockable by up to 3 providers",
+   "url": "https://blog.getninjas.com.br/como-funcionam-as-moedas-do-getninjas/",
+   "status": "seller published (platform's own blog/help)"
+  },
+  {
+   "vertical": "B2B appointment setting (energy listed as a vertical)",
+   "buyer": "WeSow outsourced SDR clients",
+   "price": "R$3.000–15.000/month outsourced SDR; market 15–25 qualified meetings/month per SDR ⇒ ≈R$120–1.000 per meeting (derived)",
+   "unit": "per month (per-meeting figure derived, not quoted)",
+   "url": "https://wesow.com.br/quanto-custa-terceirizar-a-prospeccao-b2b/",
+   "status": "vendor marketing; per-meeting price UNVERIFIED; energy case page returned 403"
+  },
+  {
+   "vertical": "Private clinics / medical appointments",
+   "buyer": "physicians/clinics",
+   "price": "n/a — paying per patient is forbidden",
+   "unit": "CEM art. 59: 'Oferecer ou aceitar remuneração ou vantagens por paciente encaminhado ou recebido'",
+   "url": "https://portal.cfm.org.br/images/PDF/cem2019.pdf",
+   "status": "statute-level ethics rule (primary) — per-appointment medical leads closed"
+  },
+  {
+   "vertical": "Rooftop solar installation",
+   "buyer": "integradores",
+   "price": "Solar Task: free to consumer, 'até 3 propostas por pedido', '8.000+ empresas instaladoras, 5.000+ cidades'; Meu Site Solar R$99/month incl. free Solar Task listing (search snippet, site unreachable); Solar Ideal R$49,90/month unlimited leads simulator (search snippet)",
+   "unit": "—",
+   "url": "https://solartask.com.br/",
+   "status": "free front door observed; the two SaaS prices UNVERIFIED (connection reset)"
+  }
+ ],
+ "lead_costs": [
+  {
+   "platform": "TikTok",
+   "vertical": "any (budget floor, not a CPL)",
+   "cpl": "Minimum daily budget US$50 per campaign and US$20 per ad group (≈R$260 and ≈R$104/day at PTAX 5,2037; ≈R$3.122/month for ONE ad group); TikTok's own best practice: 3–5 ad groups, each with a daily budget ≥10× expected CPA",
+   "url": "https://ads.tiktok.com/help/article/about-daily-budgets?lang=en ; https://ads.tiktok.com/help/article/lead-generation-objective?lang=en",
+   "status": "primary (TikTok help)"
+  },
+  {
+   "platform": "TikTok",
+   "vertical": "US case studies (no Brazilian lead-gen case with a CPL found)",
+   "cpl": "Stepful CPA US$23 → US$13,29 after switching to Lead Generation; Qatch −24% CPL; Invisalign −11% CPL with Question Card instant form",
+   "url": "https://ads.tiktok.com/business/en/inspiration/small-business-stepful-uses-lead-generation-to-reach-prospects",
+   "status": "platform marketing (vendor), not Brazil"
+  },
+  {
+   "platform": "Meta",
+   "vertical": "all (Brazil tax)",
+   "cpl": "From 1 Jan 2026 Meta passes PIS/Cofins 9,25% + ISS 2,9% to Brazilian advertisers: +≈12,15%; prepaid R$1.000 delivers R$878,50 of ads",
+   "url": "https://www.reformatributaria.com/wp-content/uploads/2025/09/Comunicado-oficial-Meta.pdf",
+   "status": "Meta's own customer letter (hosted copy)"
+  },
+  {
+   "platform": "Meta",
+   "vertical": "local services Brazil",
+   "cpl": "R$8–35 per native-form lead, R$15–80 via landing page; R$8–25 local services, >R$40 competitive niches",
+   "url": "https://babitonhela.com/blog/custo-por-lead-brasil-benchmarks/ ; https://altavance.media/blog/reduza-o-custo-por-lead-no-meta-ads-em-2026",
+   "status": "vendor/agency blogs (search snippets) — UNVERIFIED"
+  },
+  {
+   "platform": "Meta",
+   "vertical": "solar energy (Brazil)",
+   "cpl": "265 contacts at R$9 per contact (agency post)",
+   "url": "https://www.linkedin.com/pulse/sucesso-marketing-digital-para-energia-solar-gera-500-contatos-b8die",
+   "status": "vendor case via search snippet — UNVERIFIED"
+  },
+  {
+   "platform": "TikTok/Meta",
+   "vertical": "health plans",
+   "cpl": "R$3–15 per lead (agency blog); consistent with Salyd selling EXCLUSIVE leads at R$9,51 (its all-in CPL must sit below that — inference)",
+   "url": "https://givanildo.com.br/blog/tiktok-corretores-plano-saude-guia-2026/",
+   "status": "vendor + inference — UNVERIFIED"
+  },
+  {
+   "platform": "Meta",
+   "vertical": "móveis planejados",
+   "cpl": "R$15–80",
+   "url": "https://www.telescopiomarketingdigital.com.br/blog/leads-para-moveis-planejados-comprar-lead-pronto-ou-gerar-o-seu",
+   "status": "vendor via search snippet — UNVERIFIED"
+  },
+  {
+   "platform": "any",
+   "vertical": "energy GD bill-verified lead (the number that matters)",
+   "cpl": "NOT FOUND anywhere. No source publishes the cost of a lead that has SENT ITS BILL and is eligible. Modelled: raw CPL R$8–25 × 1,1215 tax ÷ (40–45% send the bill × 50–55% eligible) ⇒ R$36–140 per verified lead",
+   "url": "—",
+   "status": "UNVERIFIED — this is what the ≤R$1.000 test measures"
+  }
+ ],
+ "ad_policy": "TikTok: paid Lead Generation objective is 'Full GA' (lead-generation FAQ); instant-form leads downloadable for 90 days; a privacy policy on the landing page is mandatory and sharing with 'commercial partners' must be disclosed (TikTok help 'About privacy policies for lead generation ads', Feb 2025). No energy/utility/solar restriction exists in 'Other products and services' (the only 'energy' hit is energy drinks); the binding rules are 'Misleading claims' (no promised/exaggerated results, no absolute terms; price/discount info must match the landing page incl. T&C — so 'até 20% de desconto' must be sourced to the buyer's actual offer) and AIGC: fully AI-generated creatives MUST carry the AIGC label or a clear disclaimer, undisclosed AIGC is rejected. Financial services (e.g. solar financing, consórcio, credit) need local licences in Brazil — keep financing out of the ad. TikTok's Lead Generation Terms page is JS-rendered and could not be read; a search snippet says an advertiser using lead gen 'on behalf of a third party… will only use or share the Lead Generation Data on behalf of that third party' — UNVERIFIED, and it would bite a native-form lead RESOLD to several buyers ⇒ capture on her own landing page/WhatsApp, not native forms, until read. Meta: +12,15% tax pass-through since 1 Jan 2026 (Meta letter); Meta's Lead Ads Terms and minimum-budget pages are JS-blocked from this environment — UNVERIFIED. No energy-specific special ad category found (UNVERIFIED). Telephone: Anatel made the 0303 telemarketing prefix OPTIONAL (Acórdão 201, 14 Aug 2025; page modified 28/08/2026); mandatory call authentication only above 500.000 calls/month; 'Não Me Perturbe' covers telecom and consignado only — her Portuguese call-backs to opted-in leads are unrestricted by Anatel.",
+ "lgpd": "Consent is the only clean basis for RESELLING a lead. LGPD art. 7 I (consent) and art. 7 §5 verbatim: 'O controlador que obteve o consentimento… que necessitar comunicar ou compartilhar dados pessoais com outros controladores deverá obter consentimento específico do titular para esse fim'. Art. 8 §4: 'autorizações genéricas… serão nulas'; art. 9 V requires disclosure of 'uso compartilhado… e a finalidade' and §1 voids consent obtained with misleading or non-prior information; art. 18 VII gives the titular the right to know every entity it was shared with. ANPD's legitimate-interest guide (Feb 2024) lists 'foram obtidos por meio de compartilhamento realizado por terceiros?' as a legitimate-expectation factor — resale on legitimate interest is weak. Energy-specific: Decreto 13.097/2026 art. 9 §2 — sharing of consumer personal data 'somente poderá ocorrer mediante o prévio consentimento do usuário ou… base legal'. B2B contacts (the owner's name/phone on a CNPJ bill) are still personal data; the electricity bill of a residence is personal data in full. Enforcement precedent: ANPD's FIRST-EVER sanction (DOU 06/07/2023) was Telekall Infoservice, a MICROEMPRESA offering a WhatsApp contact list — fined R$14.400 (capped at 2% of revenue per infraction, art. 52 II) for processing without legal basis (art. 7) plus a warning for no encarregado (art. 41: it could not prove it was not high-risk processing). Buyers push liability down: Lead Energy cl. 3.4 makes the affiliate warrant consent; 3.9 voids 'listas não autorizadas'. COMPLIANT FORM (draft): unticked box 'Autorizo a [MARCA/razão social, CNPJ] a compartilhar meu nome, WhatsApp e os dados da minha conta de luz com até 3 fornecedoras de energia por assinatura parceiras que atendem a minha distribuidora [lista nominal no link], exclusivamente para me enviarem propostas de desconto na conta de luz. Posso revogar a qualquer momento por [e-mail/WhatsApp]; as fornecedoras que receberem meus dados serão informadas a mim.' + separate unticked box for contact by phone call; log timestamp, IP, page version and the exact named recipient list; ship the consent receipt with each lead (CompareSolar already does: 'Compartilhamos esses dados na entrega do lead pra defesa LGPD'). Name an encarregado (or document the small-agent exemption and why the processing is not high-risk) — the Telekall second count.",
+ "disputes": "THE DISPUTE-IS-THE-PRODUCT LAW holds in this market and the market has already found the repair: define validity as machine-checkable fields at capture and replace automatically. CompareSolar: refund 'automaticamente em até 24 horas. Sem disputa, sem burocracia' on 4 objective criteria (valid CEP via ViaCEP, numeric bill value, WhatsApp mask, distributor resolved); Salyd: 'Reposição Automática' / 'Reposição Garantida'. The GetNinjas seller-side record (already in THE_COROA_KILL.md) is about money for invalid leads ('cobrança por lead inválido e falta de reembolso', 'dados de contato falsos… se recusou a realizar o estorno'); a Reclame Aqui title for a solar lead vendor reads 'Prometem leads qualificados para energia solar e não entregam' (DIGITAL MEDIA) — Reclame Aqui is Cloudflare-blocked (403) so complaint bodies and counts are UNVERIFIED. Pay-per-appointment/-activation moves the fight to THE SELF-REPORTED-CONVERSION TRAP, and the buyers write the trap into their terms: Lead Energy cl. 3.8 'prevalecerão os registros da Plataforma e do sistema interno da LEAD ENERGY', 5.3 lets it re-cut past commissions on its own consumption measurements, 5.4 claws back on any later cancellation; Desperta pays only after the client's first invoice is paid. Third-party measurement: none public per customer — CCEE has no consumer-by-CNPJ dataset (DD3, UNVERIFIED) and ANEEL's GD register gives only a per-PLANT count of beneficiary UCs. The one third-party record is the CUSTOMER'S OWN DISTRIBUTOR BILL, which shows the compensated GD energy after activation (UNVERIFIED per distributor) — a file the customer can forward, C4-clean.",
+ "free_front_door": "Strong, in five layers. (1) The operators fund their own acquisition: Cemig SIM consortia alone hold 590.238 of 2.167.000 shared-GD beneficiary UCs (27,2%) — the distributor group's own arm; Lead Energy voids leads 'originadas de campanhas internas' (3.7), i.e. it runs its own. (2) Affiliate armies deliver leads FREE until activation: Desperta's partner programme (no fee, no minimums), Sunne, Solarien, Enerlivre; DD3 found Desperta and Ecom each recruiting 1.000 PJ reps — so an operator has a zero-risk alternative to buying a lead, which is the core objection to per-lead pricing. (3) Lead marketplaces: CompareSolar (organic SEO, pre-launch, prepaid per lead); Portal Solar collects bills for ACL ('Anexe uma ou mais contas de Luz'); Clarke and UC Livre compare ACL suppliers free (DD3). (4) SaaS sells the operator the qualifier itself: GDASH (self-service simulation, digital adhesion 'sem depender de agendamentos ou envio de documentos'); Lead Energy's own site 'possui uma inteligência capaz de ler o pdf original de uma conta de luz'. (5) THE CHEAP STATE COUNTER for low-voltage ACL from 25 Nov 2027: Decreto 13.097/2026 art. 10 orders CCEE to run a 'plataforma centralizada que permita a comparação de ofertas'; art. 10 par. único has CCEE notify ALL varejistas of consumers stranded on supplier-of-last-resort; art. 1 §1 III imposes a standard product with a reference price; art. 9 §1 contemplates non-discriminatory sharing of distributor-held consumer data 'com amplo e isonômico acesso aos interessados'. For rooftop solar the seat is free (Solar Task, 8.000+ installers). For São Paulo capital there is almost no GD buyer at all (ELETROPAULO concession: 341 shared-GD beneficiary UCs out of ~2,2M nationally).",
+ "ai_edge": "Bill parsing is TABLE STAKES, not an edge: Lead Energy's site reads the bill PDF with AI; Portal Solar attaches bills; CompareSolar resolves CEP→distributor and requires the bill value; an 'IA via WhatsApp' pre-budget SaaS is sold to solar integrators (leadssolar.com.br, search snippet only — site reset the connection). What is left for a solo operator in Oct 2026: (1) ROUTING — GD credits can only go to consumers in the same concession as the plant (87% of shared-GD beneficiaries are in MG), so an operator's own funnel wastes every lead outside its concessions and capacity; a neutral router sells each verified bill to whichever of 5–10 buyers can serve it (and routes a rare Grupo A bill to a Cemig-SINERGIA-type CPA worth R$2–9k); (2) PRICE-BY-THE-BILL — price each lead as a fixed % of the verified monthly bill (Lead Energy already prices its meeting bonus at 0,5% of the bill), so value is legible and disputes are arithmetic; (3) a LIVE PORTUGUESE VERIFICATION CALL (now permitted) as a premium tier — the price ladder is observed: raw indication R$0 at Lead Energy vs 'Cliente Elegível' (simulation + meeting) 0,5% of bill ≤R$300; shared R$35–75 vs exclusive R$70–150 at CompareSolar (2×); activation 40–60% of one monthly bill at Desperta; (4) near-zero creative cost (AI video, AIGC-labelled) to test many hooks per concession; (5) a consent receipt shipped with every lead. None of these is a moat; (1) and (3) are the defensible parts because they are a position and a labour the buyer does not want in-house.",
+ "cash_cycle": "Per-LEAD with PREPAID credits is the only form compatible with C5: the category runs on prepayment (CompareSolar 'créditos pré-pagos… créditos não consumidos retornam'; Salyd and Banca de Leads 'adicione créditos'; GetNinjas moedas prepaid, 3-month expiry; Doutor Leads packs), so buyer cash funds the media and working capital is ≈0 — self-funding within days, not 30. Per-ACTIVATION is not: Desperta pays after the client's first invoice is paid; Lead Energy pays on the 20th after the client's invoice is liquidated, 'cerca de 60 dias desde a emissão da nota fiscal'; GD activation itself needs 1–2 billing cycles (UNVERIFIED) ⇒ 60–120 days of media float. At the bar in the CPA model (≈R$10,7–13,1k media/month at R$320 per activation) the float is R$32–39k — 2,5–15× the US$500–2.500 (R$2,6–13k) C5. Platform floors: TikTok requires ≥US$20/day per ad group (≈R$3.122/month for one) and recommends 3–5 ad groups at ≥10× CPA each — TikTok's learning phase alone can exceed C5; Meta has no such published floor from here (UNVERIFIED) and costs +12,15% tax. ⇒ Start on Meta with buyer-prepaid budgets; add TikTok only once a concession's CPA is known. THE STEADY-STATE KILL does not bite per-lead sales (each unit's media is paid before it is spent) but it bites BUYER demand: an operator buys leads only while a plant has unallocated capacity or churn holes, and new shared plants (≥20 beneficiary UCs) fell 956 (2024) → 605 (2025) → 92 (Jan–Aug 2026) by ANEEL cadastral-update year.",
+ "candidates": [
+  {
+   "name": "A CONTA VERIFICADA — a bill-verified energy-lead router for GD subscription operators in the Cemig (MG) concession",
+   "one_line": "Company-branded Meta (then TikTok) ads with AI-made, AIGC-labelled creatives invite MG households and small businesses to send their electricity bill for a subscription-discount quote; an AI WhatsApp agent parses the bill; each eligible, consented bill is sold ONCE, prepaid, to the GD operator that has capacity in that concession (Grupo A bills routed to a CPA programme).",
+   "offer_and_price": "Exclusive verified lead priced at 10% of the verified monthly bill, floor R$60, cap R$200 (≈R$90 at a R$900 bill) — inside CompareSolar's R$70–150 exclusive band and ≈ the value implied by Desperta's CPA (40% of one bill ÷ ~4 verified leads per activation, UNVERIFIED conversion); or shared to max 3 operators at 5% of the bill each; prepaid packs of 10–50 via Pix; automatic replacement within 24h on 5 machine-checked criteria (bill image/PDF legible, titular name = lead, bill ≥R$400, distributor/concession served by the buyer, no GD credit line already on the bill) + consent receipt; optional 'verificado por ligação' tier +R$30 after her 5-minute Portuguese call.",
+   "units_for_bar": "Need contribution R$11.400–13.950/month (net R$10.400–12.950 + R$1.000 stack), tax 8% on gross (UNVERIFIED annex). Optimistic (raw CPL R$8, 45% send bill, 55% eligible ⇒ R$36 per verified lead): 245–300 exclusive leads/month at R$90 (revenue R$22–27k) OR 130–159 shared-×3 leads at R$135 total (revenue R$17,5–21,4k). Central (CPL R$15, 40%, 50% ⇒ R$84): exclusive at R$90 is DEAD (−R$1,3/lead); shared ×3 needs 284–348 leads/month (revenue R$38–47k). Pessimistic (CPL R$25 ⇒ R$140): dead at any price in the observed band.",
+   "ad_spend": "R$4,7–10,9k/month in the optimistic case (paid from buyers' prepaid credits); R$24–29k/month in the central shared case. Test ≤R$1.000.",
+   "hours": "≈40–65 h/month: AI agent handles capture and bill parsing; her 5–6-minute verification/consent call on each lead 13–30 h; selling and holding 5–10 buyers by Portuguese calls 10–16 h; ad/creative ops 12 h; admin 6 h. Within 87 h.",
+   "pool_div4": "Buyers: ANEEL register (Aug 2026) — 396 shared-GD owner CNPJ roots with ≥100 beneficiary UCs hold 98,7% of ~2,2M beneficiaries; 179 with ≥500; 124 with ≥500 present in MG; 86 with ≥1.000 in MG (owners ≠ commercial groups — several consortia per gestora, so the true buyer count is lower, UNVERIFIED). She needs 5–10 buyers ≈ 4–8% of the MG ≥500 set, inside pool÷4 (31). Demand: 1,92M MG beneficiary UCs; at an UNVERIFIED 10% annual churn that is ≈192k replacements/yr (≈16k/month) before any new-plant fill; her 130–300 verified leads/month ≈ 1–2% of that. Pool is not binding; buyer WILLINGNESS to pay per lead instead of per activation is.",
+   "biggest_flaw": "The buyers already get leads FREE UNTIL ACTIVATION from 1.000-rep affiliate armies (Desperta, Ecom) and run their own ads (Cemig SIM, Lead Energy 'campanhas internas'); per-lead pricing asks them to take conversion risk they currently push onto affiliates — and the only per-lead seller found in energy (CompareSolar) is still pre-launch, so NO buyer-side per-lead payment in energy is observed. Second flaw: the verified-lead cost is unmeasured and the spread is razor-thin (dead above ≈R$50 exclusive / ≈R$90 shared). Third: the market is a harvest — new shared plants collapsing (956 → 605 → 92), Fio B on new plants 75% in 2027 and 90% in 2028 (Lei 14.300 art. 27), low-voltage ACL from 25 Nov 2027 with a state comparator.",
+   "repair": "(1) Never buy media before a written PREPAID order — the test gate. (2) Sell to the operators who need speed, not to everyone: those with a new plant filling or visible churn holes (ANEEL register + cadastral date shows who), in the concessions where GD actually lives (Cemig first; also Copel, Celesc, EDP ES) — never São Paulo capital (341 beneficiaries). (3) Price by the bill (10%/5%) so the buyer's own CPA arithmetic makes the price obviously cheaper than its affiliate CPA per activation. (4) Machine-arbitrated validity + auto-replacement ⇒ no spoken disputes. (5) Capture on her own landing page/WhatsApp with a named-recipient consent (art. 7 §5), not native instant forms, until the TikTok/Meta lead-gen terms are read. (6) Treat it as a 2027–2028 harvest with a written stop rule; if varejistas pay for low-voltage ACL leads after Nov 2027 the same machine re-points, but plan on nothing (state comparator). (7) If buyers refuse per-lead, switch to candidate 2 on the same machine.",
+   "honest_floor_usd_month": "US$0 if fewer than 3 operators prepay; US$200–750 if 3–5 operators prepay ~30 exclusive leads/month each at ≈R$90 and the verified-lead cost lands at R$50–60 (90–150 leads × R$23–33 contribution − R$1.000 stack); the US$2.000–2.500 bar only in the optimistic case (verified lead ≤R$36, 5–10 buyers taking 25–60 leads/month each).",
+   "next_test": "Week 1 (R$0): from the ANEEL GD register (out/LA1_gd_owners_top60.csv) pick 20 operators with ≥500 beneficiary UCs in CEMIG-D/COPEL/CELESC/EDP ES; find the commercial contact; Portuguese calls + a one-page written offer: exclusive bill-verified leads in your concession at 10% of the verified bill (min R$60, max R$200), prepaid pack of 10, 24h auto-replacement on 5 named criteria, consent receipt attached. Week 2–3 (≤R$1.000 of Meta, spent ONLY against orders already paid): run ads in the concessions of the buyers who paid; AI agent collects bills; she calls each lead; deliver; count.",
+   "bar": "Committed in advance: ≥3 of 20 operators pay a prepaid order (Pix) of ≥10 leads at ≥R$60 average within 14 days — else stop, spend R$0 on ads, and go to candidate 2. Then, on ≤R$1.000 of media: cost per verified eligible lead ≤R$50 AND replacement claims ≤10% AND ≥2 of the paying buyers reorder within 30 days. Miss any one ⇒ stop.",
+   "unverified": [
+    "cost per bill-verified eligible GD lead (no source anywhere)",
+    "share of form leads that send the bill (40–45% assumed) and share eligible (50–55% assumed)",
+    "lead→activation conversion at the buyers (≈25% assumed)",
+    "annual churn of GD subscribers (10% assumed)",
+    "whether ANY GD operator pays per lead (CompareSolar is pre-launch)",
+    "Simples annex/effective rate for lead intermediation (8% assumed)",
+    "TikTok Lead Generation Terms and Meta Lead Ads Terms on resale of lead data (pages JS-rendered/blocked)",
+    "ANEEL cadastral-update year as a proxy for plant connection date",
+    "whether the distributor bill shows existing GD credits for every concession",
+    "owner CNPJ roots ≠ commercial buyers (consortia managed by gestoras)"
+   ]
+  },
+  {
+   "name": "A FECHADORA — she sells the ACTIVATION, not the lead: a Portuguese-call closer for GD energy subscriptions to small businesses in GD concessions, beauty businesses first",
+   "one_line": "The same ad + AI-bill machine, aimed at salon, estética, barbershop and small-commerce owners in the Cemig/Copel/Celesc concessions; she closes each qualified bill by a Portuguese call as a registered, non-exclusive CPA partner of 2–3 GD operators, earning the operator's published activation commission; leads she cannot close are sold prepaid through candidate 1's rail.",
+   "offer_and_price": "Free to the business owner (the operator's discount). Payer: operator CPA — Desperta publishes 40% of one monthly bill in one payment, or up to 60% in up to 3x, or 3,5% of every paid invoice indefinitely; Lead Energy pays 0,5% of the bill (≤R$300) per eligible meeting plus R$4–7/MWh for signed Grupo A; a rare Grupo A bill goes to Cemig SINERGIA (R$7/MWh × months at signing, DD3). At a R$1.200 small-business bill: R$480 (40%) or R$720 (60% in 3x) per activation.",
+   "units_for_bar": "Need contribution R$11.400–13.950/month. Cost per activation = CPL ×1,1215 ÷ (bill sent × eligible small business × her close rate). Central (CPL R$12, 40%, 35%, 30% ⇒ R$320): at the 60%-in-3x CPA of R$720, 33–41 activations/month; at the 40% one-off R$480, 94–115/month (impossible in 87 h). Optimistic (CPL R$8, 45%, 40%, 35% ⇒ R$142): 22–27 activations/month. Pessimistic (CPL R$20, close 25% ⇒ R$641): dead.",
+   "ad_spend": "R$3,1–3,8k/month optimistic; R$10,7–13,1k/month central — with a 60–120-day lag before the CPA arrives (paid after the client's first paid invoice).",
+   "hours": "≈1,5 h per activation (3–4 call attempts, proposal walk-through, adhesion follow-up) ⇒ 33–40 h optimistic, 50–61 h central, plus 10–15 h ads/admin ⇒ 45–76 h of 87.",
+   "pool_div4": "Same MG operator pool as candidate 1 (she needs 2–3 payers). Small-business customers: MG beneficiary base 1,92M UCs; the number of MG beauty/small-commerce businesses with bills ≥R$800 is UNVERIFIED (Receita CNAE 9602-5/01 and 9602-5/02 counts not pulled; most are MEI with small bills). 25–40 activations/month is a rounding error on the flow; pool÷4 not binding.",
+   "biggest_flaw": "FLOAT AND TRUST. The CPA arrives 60–120 days after the ad spend, so the bar at central cost needs R$32–39k of media in flight — far above C5 — and the payer's own records decide whether an activation happened (Lead Energy 3.8, 5.3, 5.4 clawback). It is also ORIGINATION FOREVER (every unit is a fresh paid lead and a fresh call) in a market that is harvesting down (Fio B 75%/90% in 2027/28 for new plants; low-voltage ACL from Nov 2027), and energy is outside her world except through the salon opener.",
+   "repair": "(1) Take the payer's split option that pays soonest and keep all three non-exclusive (Desperta forbids nothing; the Ecom contract forbids non-exclusivity — avoid it, DD3). (2) Fund the float with candidate 1: every verified lead she does not close within 7 days is sold prepaid to another operator — the leads that fail her call pay for the ones that pass. (3) Proof without C4: ask each activated customer (in the consent) to forward their first discounted distributor bill — a third-party record showing compensated GD energy — and reconcile it against the payer's dashboard monthly. (4) Size to C5: cap media in flight at R$10k; at central cost that is ≈10 activations/month (≈R$3,3k media/month over a 3-month cycle) until the first CPA cycle returns. (5) Choose the 3,5%-recurring option on a slice of clients once cash allows — it is the only piece that builds a book that pays without new origination. (6) Beauty businesses first (salons, estética, barbershops: heavy dryers/AC, owners on TikTok, and her language) — an opener, not a moat.",
+   "honest_floor_usd_month": "US$0–400 in months 1–4 (float); US$400–700 thereafter at C5-capped media (10–13 activations × ≈R$342 contribution − R$1.000 stack); US$2.000+ only if cost per activation proves ≤≈R$150 (optimistic case), in which case the bar needs 22–27 activations/month and ≈R$9–11k of float — just inside C5's top.",
+   "next_test": "R$0 first: register as partner with Desperta (and one more GD operator with a published CPA and capacity in CEMIG-D); obtain the partner terms in writing incl. payment timing. Then ≤R$1.000 of Meta in one Cemig-area city cluster, creatives aimed at salon/estética/small-commerce owners; AI agent collects bills; she calls every eligible bill within 2 hours.",
+   "bar": "Committed in advance: from ≤R$1.000 of media, ≥4 signed adhesions with the operator (cost ≤R$250 per signed adhesion) within 30 days, ≥30% of eligible bills reached by phone convert to a signed adhesion, and ≥1 CPA actually paid within 120 days matching the forwarded distributor bill. Miss the 30-day bar ⇒ stop.",
+   "unverified": [
+    "her close rate by phone on ad-sourced GD leads (30% assumed)",
+    "share of MG small businesses with bills ≥R$800 among ad respondents (35% assumed)",
+    "time from adhesion to first paid invoice (60–120 days assumed)",
+    "Desperta's capacity by concession and whether its blog terms equal its current partner contract",
+    "whether beauty businesses respond better than generic small commerce",
+    "whether distributor bills show compensated GD energy clearly enough to serve as proof",
+    "same CPL assumptions as candidate 1"
+   ]
+  }
+ ],
+ "killed_while_hunting": [
+  {
+   "idea": "Paid ads to find Grupo A (ACL free-market) companies and sell them as leads/appointments",
+   "cause": "The universe is ENUMERABLE — ANEEL BDGD lists every medium-voltage unit with CNAE, address, consumption and free-market flag (DD3: 18.017 SP captive private units) — so ads pay to find what a free list already names; the only per-meeting payer found pays 0,5% of the bill capped at R$300 (Lead Energy) and the real money is per signed contract, which is DD3's outbound-call model, not ad arbitrage.",
+   "url": "https://afiliados.leadenergy.com.br/termo_adesao.pdf"
+  },
+  {
+   "idea": "A pre-opening low-voltage ACL lead desk for the 25 Nov 2027 opening",
+   "cause": "THE CHEAP STATE COUNTER, legislated: Decreto 13.097/2026 art. 10 (CCEE centralised offer-comparison platform), art. 10 par. único (CCEE notifies all varejistas of stranded consumers), art. 1 §1 III (standard product + reference price), art. 9 §1–2 (non-discriminatory consented data sharing); and DD3 prices a low-voltage commercial contract at ≈R$181 under Cemig's formula.",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/D13097.htm"
+  },
+  {
+   "idea": "GD 'energia por assinatura' leads from São Paulo capital consumers",
+   "cause": "No buyer: GD credits only serve the plant's own concession, and the ELETROPAULO (Enel SP) concession has 341 shared-GD beneficiary UCs out of ~2,2M nationally; MG holds 1,92M (87%).",
+   "url": "https://dadosabertos.aneel.gov.br/dataset/5e0fafd2-21b9-4d5b-b622-40438d40aba2/resource/cd29f6eb-e08d-4db7-b6fb-ed6e3b682d27/download/empreendimento-geracao-distribuida.parquet"
+  },
+  {
+   "idea": "Rooftop-solar installation leads for integradores",
+   "cause": "THE FREE FRONT DOOR: Solar Task is free to consumers with '8.000+ empresas instaladoras', up to 3 proposals per request; integrator SaaS with built-in lead capture at R$49,90–99/month (search snippets).",
+   "url": "https://solartask.com.br/"
+  },
+  {
+   "idea": "Pay-per-appointment leads for medical clinics",
+   "cause": "CEM (Res. CFM 2.217/2018) art. 59 forbids a physician to 'Oferecer ou aceitar remuneração ou vantagens por paciente encaminhado ou recebido'; art. 72 forbids ties with firms selling financing/consórcio for medical procedures.",
+   "url": "https://portal.cfm.org.br/images/PDF/cem2019.pdf"
+  },
+  {
+   "idea": "Health-plan lead arbitrage",
+   "cause": "Oversupplied at R$9,51–24 per EXCLUSIVE lead (Salyd live listings still unsold after 1–6 days; Doutor Leads packs R$21,88–24,15) — no spread for a newcomer without scale, and the seat is occupied by ≥5 sellers.",
+   "url": "https://salyd.com.br/"
+  },
+  {
+   "idea": "TikTok as the launch channel",
+   "cause": "Not killed, demoted: TikTok's minimum is US$20/day per ad group and US$50/day per campaign, and its own guidance is 3–5 ad groups at ≥10× CPA — the learning phase alone can exceed the whole C5 capital; start on Meta with buyer-prepaid budgets.",
+   "url": "https://ads.tiktok.com/help/article/about-daily-budgets?lang=en"
+  }
+ ],
+ "notes": "Energy holds only in one corner: low-voltage GD subscriptions in the concessions where GD actually lives (Cemig/MG = 87% of 2,2M shared-GD beneficiaries per ANEEL, Aug 2026). The founder's literal model (TikTok ads → sell leads) is repaired to: Meta first, own landing page/WhatsApp capture with named-recipient consent, bill verified by an AI agent, sold ONLY against prepaid orders, priced as a % of the verified bill, with machine-arbitrated replacement. The observed buyer money in energy is per ACTIVATION (Desperta 40–60% of one bill; Lead Energy per eligible meeting 0,5% of bill ≤R$300; Cemig per signed Grupo A contract) — per-lead in energy is only ASKED (CompareSolar, pre-launch). That gap is exactly what the R$0 week-1 test measures. Dates verified at planalto.gov.br: Lei 15.269 of 24 Nov 2025 (DOU 25 Nov 2025) and Decreto 13.097 of 12 Aug 2026 art. 1: 25 Nov 2027 for low-voltage industrial/commercial, 25 Nov 2028 for everyone else. Lei 14.300 art. 27: Fio B on compensated energy for post-2022 GD 60% (2026), 75% (2027), 90% (2028), art. 17 rule from 2029 — the GD subscription discount erodes for new plants. C8: energy is outside her world (DD3 agrees); candidate 2's salon opener is cosmetic. Revealed preferences: candidate 1 keeps the MACHINE TEST (ads + AI make the unit, the bill verifies it without trusting her) and trades ORIGINATION ONCE on the consumer side (media bought forever) while buyer demand recurs by prepaid top-ups; candidate 2 trades both for a higher unit price. Arithmetic recomputed in work/la1 (both candidates) — the whole case turns on one unmeasured number: the cost of a bill-verified eligible lead. Reclame Aqui, Meta legal pages and TikTok's lead-gen terms were unreadable here (Cloudflare/JS)."
+}
