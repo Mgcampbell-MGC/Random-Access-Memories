@@ -335,6 +335,47 @@ pipeline. **Her hours go only to taste, selection and the call.**
   - VER1 found fidelity is table stakes at the cheap end, where every studio promises it and nobody proves it.
   - **Proving it on every asset is the differentiator.**
 
+### D1b — THE STACK IS HIGGSFIELD (founder, 25 Sep 2026: *"HIGGSFIELD is what she would use"*)
+
+Run the pipeline on Higgsfield. Photoroom and the Gemini API are fallbacks only. Higgsfield covers:
+
+- image and video generation;
+- background removal, outpainting and upscaling;
+- consistent synthetic faces (Soul ID);
+- product-photoshoot recipes;
+- an agent-drivable interface.
+
+**Plans and credits (primary, the Higgsfield plan page read this session):**
+
+- **PLUS US$49/month** (US$39 annual): 1.000 credits ≈ 600 Nano Banana Pro images or ~200 Kling videos.
+- **ULTRA US$129/month** (US$99 annual): 3.000 credits.
+- Top-ups: 18 credits per US$.
+- **Estimated use:**
+  - a full O LANÇAMENTO ≈700 credits ≈US$34;
+  - a VITRINE ≈50–100 credits (ESTIMATE);
+  - so PLUS carries ~1 full launch + several VITRINEs a month, and ULTRA is needed from ~2 full launches a
+    month.
+
+**Two rules the stack must obey. Both were verified at Higgsfield's own pages.**
+
+1. **No unreleased artwork goes into a self-serve plan.** `higgsfield.ai/terms-of-use-agreement` (26 Jul 2026)
+   §4.4: *"Your Content, Inputs, and Outputs may be used by Company to train… Different terms apply to…
+   an Enterprise Agreement"*; deletion does not reach content already trained on (§16.5). So:
+   - **Pre-launch:** Higgsfield makes the WORLD — scenes, a model's hands and pose, light, camera motion — with
+     no label in it. The real packshot is composited locally.
+   - **Post-launch** (the product is public on the brand's site or a marketplace): uploading the public packshot
+     to Higgsfield exposes nothing new, so the product can go in directly.
+   - **The PRÉVIA always uses a public bestseller packshot**, so it is safe from day one.
+   - An Enterprise Agreement removes the rule entirely; its price is not public, so ask once volume justifies it.
+2. **Fidelity is checked OUTSIDE Higgsfield.** Its own product-photoshoot workflow says *"Do not claim tiny text
+   or full-resolution sharpness is verified from a thumbnail."* The per-asset *Relatório de Fidelidade* stays a
+   local check (label region vs approved art, plus OCR vs the PDF text).
+
+**Say it to the client, because it sells:**
+
+> *"Sua arte nunca entra numa IA antes do lançamento — e cada imagem sai com um relatório de fidelidade da
+> embalagem."*
+
 ### D2 — A price ladder so more brands can buy: price the automated tier INSIDE the band buyers already pay
 
 **VER1's negative finding flips into the design:**
