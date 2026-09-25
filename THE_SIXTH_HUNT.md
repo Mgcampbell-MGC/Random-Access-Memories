@@ -570,7 +570,23 @@ measures the sales and pays the intermediary. **DD1 is testing it (§8d).**
 - **DD1 — the platform pays the agent.** A beauty-focused TikTok Affiliate Partner agency: the platform counts and
   pays, the brand pays nothing upfront, no standing access.
 - **DD2 — the wholesale version of O LANÇAMENTO.** Label-exact launch production sold white-label to the agencies
-  that already hold beauty clients.
+  that already hold beauty clients. **Result: DEAD standalone. It adds US$250–700/month as a second channel;
+  standalone floor US$500–1.100.**
+  - **Demand is real, but priced as labour.** 17.216 99Freelas pages (26 Jun–25 Sep 2026) held 37–54 agency
+    posts buying creative work, every one open-budget with a R$50–60 minimum and 13–62 proposals. The only stated
+    agency price was R$1.500/month for 5–6 edited videos a day. None was beauty launch production.
+  - **The free front door is stronger at agencies than at brands:**
+    - Adobe *Firefly Pro para equipes* R$95/licence, *Creative Cloud Pro para equipes* R$383,95–480;
+    - agencies already sell AI photography and mockups in-house;
+    - AI studios court agencies at published prices (ANIMAI ≈R$1.100 per one-product set; Nobreak R$597–1.797 a
+      month).
+  - **Each order still costs her 5–12 h, so by `THE WHOLESALE ESCAPE DOES NOT TRANSPOSE` it is a job.** 5,3–13,2
+    orders a month are needed at R$1.200–2.300. Pool ÷ 4 needs a 52–100% share.
+  - Population: CEMPRE 2024 **28.542** advertising-agency units (5.974 in SP city); CENP 1.090 certified; only ~6
+    identifiable beauty-product specialists.
+  - **The one useful find: packaging and branding agencies hold the APPROVED ARTWORK before launch.** That answers
+    VER1's "0 of 15 new SKUs have a public packshot". Entry product: *O FILME*, a label-locked 15 s film + 2
+    cutdowns at R$1.290, sold on the agency's standard 15% production mark-up.
 
 ## 9. LAWS FROM THIS HUNT
 

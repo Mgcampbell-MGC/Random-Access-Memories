@@ -1,0 +1,167 @@
+{
+ "agent": "DD2",
+ "model": "white-label AI launch production for agencies",
+ "summary": "Agencies DO buy outside AI production and ARE short of hours, but they buy it as labour (open budgets, R$50 platform minimums, 13-62 proposals per post, R$1.500/month for ~120 simple edits), they already own the tools (Creative Cloud Pro para equipes R$383,95-480/licence, Firefly Pro para equipes R$95/licence with Nano Banana 2 'gerações ilimitadas'), and AI studios already court them at published prices (ANIMAI 'Equipes e agências… parceira de produção', R$70/image, R$15/s video). White label re-routes a SUBSET of the same ~300-brand launch pool at a LOWER price, and each order still costs her 5-12 h, so by the archive's own test it is a job, not the wholesale escape. Standalone: DEAD. As a second leg of the direct O LANÇAMENTO (agency rate card, produtora-parceira pass-through seat, packaging/branding agencies that hold the artwork before launch): MARGINAL.",
+ "demand_evidence": [
+  {
+   "buyer": "Unnamed agency ('Marcelo P.') whose clients serve international markets",
+   "is_agency": true,
+   "what": "'Criação de vídeos promocionais com IA para agência' — 3 AI promo videos 15-30 s (Kling, Veo, Runway, Higgsfield, Seedance named); 'grande possibilidade de parceria contínua para produção de vídeos promocionais para diversos clientes da agência'",
+   "budget": "Orçamento: Aberto; platform minimum R$50,00; 18 proposals, 21 interessados; offers private",
+   "url": "https://www.99freelas.com.br/project/criacao-de-videos-promocionais-com-ia-para-agencia-773485",
+   "date": "2026-08-04",
+   "status": "observed buyer-side post; price not disclosed"
+  },
+  {
+   "buyer": "Infoproduct launch agency ('Tenho uma agência que lança infoprodutos')",
+   "is_agency": true,
+   "what": "5 AI creatives made from zero with an avatar of the expert, because the expert will not record every creative",
+   "budget": "Aberto; minimum R$50,00; 13 proposals",
+   "url": "https://www.99freelas.com.br/project/criacao-de-videos-realistas-com-ia-786999",
+   "date": "2026-09-24",
+   "status": "observed buyer-side post; price not disclosed"
+  },
+  {
+   "buyer": "Bravens Mídia (paid-traffic and digital marketing agency)",
+   "is_agency": true,
+   "what": "Video editor for client work across food, retail, automotive, hotels, law, health: 5-6 videos a day, ≤2 min, CapCut",
+   "budget": "'Remuneração fixa de R$ 1.500,00 por mês' ⇒ ~R$11-14 per video at 110-130 videos/month",
+   "url": "https://www.99freelas.com.br/project/editor-de-video-para-agencia-de-marketing-digital-fixo-mensal-ndash-r-1-500-786070",
+   "date": "2026-09-21",
+   "status": "observed buyer-side PRICE (the only agency post in the sample that states one)"
+  },
+  {
+   "buyer": "TBX Digital (marketing agency for law firms)",
+   "is_agency": true,
+   "what": "Recurring designer, 12 posts per client per month, Canva; 'Aceitar atuação em formato white label, sem contato direto com os clientes da TBX Digital'",
+   "budget": "Aberto; minimum R$50,00; 62 proposals",
+   "url": "https://www.99freelas.com.br/project/criacao-recorrente-de-posts-para-redes-sociais-779385",
+   "date": "2026-08-26",
+   "status": "observed buyer-side post; explicit white-label clause; price not disclosed"
+  },
+  {
+   "buyer": "Medical-marketing agency ('Thiago H.')",
+   "is_agency": true,
+   "what": "Social media for clinics; 'Não há contato direto com o médico ou a secretária - isso é sempre feito pela agência'; 'Acesso a Drive e Meta Business Suite é sempre pela conta da agência'; asks 'expectativa de valor por entrega/mês por cliente atendido'",
+   "budget": "Aberto; minimum R$60,00; 40 proposals",
+   "url": "https://www.99freelas.com.br/project/social-media-para-agencia-de-marketing-medico-784322",
+   "date": "2026-09-15",
+   "status": "observed buyer-side post; white-label norms (no client contact, agency-held access = C4-compatible)"
+  },
+  {
+   "buyer": "Agency ('Nicole B.')",
+   "is_agency": true,
+   "what": "Short-video editor, ~10 videos/month, and a graphic designer with 24-hour turnarounds ('2 criativos para entregar em 24 horas'); 'A demanda varia bastante'",
+   "budget": "Aberto; minimum R$50,00; 53-54 and 48 proposals",
+   "url": "https://www.99freelas.com.br/project/editor-de-videos-para-agencia-de-marketing-786616",
+   "date": "2026-09-23",
+   "status": "observed buyer-side; evidence the buyer is short of HOURS at peaks (constraint-side law passes)"
+  },
+  {
+   "buyer": "Agency ('Gabriel V.') / agency ('Malu P.')",
+   "is_agency": true,
+   "what": "'Em média 60 vídeos por mês… edições muito parecidas'; 'editor que trabalhe com valores acessíveis… São 3 clientes'",
+   "budget": "Aberto; minimum R$50,00; 41 and 28 proposals",
+   "url": "https://www.99freelas.com.br/project/edicao-de-videos-para-agencia-de-marketing-aproximadamente-60-videos-mes-764449 ; https://www.99freelas.com.br/project/editor-de-videos-para-agencia-60-videos-781522",
+   "date": "2026-06-30 / 2026-09-03",
+   "status": "observed buyer-side; buys volume at 'valores acessíveis'"
+  },
+  {
+   "buyer": "Aprimora Web (agency) and 'Mary C.' agency",
+   "is_agency": true,
+   "what": "Recurring partner designer; asks 'Valor unitário para post estático / carrossel / criativo de anúncio'; package quote (15 posts + 4 reels + banners)",
+   "budget": "Aberto; minimum R$50,00; 38 and 40 proposals",
+   "url": "https://www.99freelas.com.br/project/designer-para-agencia-de-marketing-parceria-recorrente-772663 ; https://www.99freelas.com.br/project/pacote-de-design-para-agencia-artes-banners-e-reels-768802",
+   "date": "2026-08-01 / 2026-07-17",
+   "status": "observed buyer-side; priced per piece"
+  },
+  {
+   "buyer": "Unnamed ('Nycollas R.')",
+   "is_agency": true,
+   "what": "'Parceria White Label: Agência de Marketing Digital e Social Media' — seeks an agency or specialist for white-label paid traffic, landing pages and sites",
+   "budget": "Workana listing: Menos de USD 50 (< R$259 at PTAX 5,1795)",
+   "url": "https://www.workana.com/job/parceria-white-label-agencia-de-marketing-digital-e-social-media",
+   "date": "2026-09-01",
+   "status": "observed buyer-side budget band"
+  },
+  {
+   "buyer": "COUNT, 99Freelas 26 Jun-25 Sep 2026 (17.216 project pages, VER1 crawl re-filtered by me)",
+   "is_agency": true,
+   "what": "37 titles (strict filter; 54 loose) are an agency buying creative production (design/video/editing). Of 256 AI creative-production posts, 3-5 are agencies or resellers buying for their clients (773485, 786999, 765005, 776947, 764878). ZERO agency posts for beauty/cosmetics launch production. Every agency post is 'Aberto' with a R$50-60 minimum.",
+   "budget": "≈12-18 agency creative posts/month nationally; ≈1-2 AI-production agency posts/month; none priced above labour rates",
+   "url": "https://www.99freelas.com.br/projects (crawl ids 763000-787500; VER1 nn_titles.tsv)",
+   "date": "2026-06-26 to 2026-09-25",
+   "status": "observed population count (one marketplace; a floor, not the market)"
+  },
+  {
+   "buyer": "Agencies as BUYERS of an AI studio's published list (seller side)",
+   "is_agency": true,
+   "what": "ANIMAI Studio targets '03 Equipes e agências Que buscam uma parceira de produção rápida e sofisticada' with a public price list: 'Imagem avulsa R$ 70 / imagem', 'Vídeo avulso R$ 15 / segundo', 'Vídeo extra de até 60 segundos: R$ 300', Combo Pro R$2.900/mês (8 videos + 40 artes). A one-product launch set at this list ≈ R$1.100-1.150 (10 images R$700 + 15 s film R$225 + 2 cutdowns R$150-240).",
+   "budget": "R$70/image; R$15/s; ≈R$1.100 per launch-set equivalent",
+   "url": "https://animaistudio.com.br/",
+   "date": "fetched 2026-09-25",
+   "status": "seller asking (published, buy-by-WhatsApp)"
+  },
+  {
+   "buyer": "Agencies as buyers of design-by-subscription (seller side)",
+   "is_agency": true,
+   "what": "Nobreak Design: 'Starter R$597 mês/usuário… Pacote com 10 Projetos… Geração de Imagens IA'; 'Standard R$1.797 mês/usuário… Solicitações Ilimitadas'; 'Empresas e agências em crescimento de todo o Brasil, confiam em nós!'; '+11.200 Pedidos Atendidos mensalmente'",
+   "budget": "R$597-1.797/month per seat, AI image generation included",
+   "url": "https://nobreakdesign.com.br/preco/",
+   "date": "fetched 2026-09-25",
+   "status": "seller asking (published price; the volume claim is seller marketing)"
+  },
+  {
+   "buyer": "Beauty e-commerce agency's own cost reference to its clients",
+   "is_agency": true,
+   "what": "Five Performance (agency for cosmetics e-commerce), on a cosmetics product-visual package per SKU (texture macro, ingredient close, white-background + context, 10-15 s application video): 'Custo: R$ 120-280 por sessão por SKU em estúdio.'",
+   "budget": "R$120-280 per SKU session",
+   "url": "https://fiveperformance.com.br/lojas-virtuais/cosmeticos-beleza",
+   "date": "fetched 2026-09-25",
+   "status": "seller-stated reference cost (what a beauty agency tells clients product visuals cost)"
+  }
+ ],
+ "population": {
+  "count": "ALL agencies (IBGE CEMPRE 2024, table 9528): CNAE 73.11-4 'Agências de publicidade' = 28.542 local units in Brazil (73.106 persons ⇒ 2,6/unit), 10.254 in São Paulo state, 5.974 in São Paulo city (21.506 persons ⇒ 3,6/unit); plus 73.19-0 'outras atividades de publicidade' 138.319 units in Brazil / 27.557 in SP city. CENP-certified full-service agencies: 1.090 in Brazil, 481 in the Sudeste (01/09/2026). ABRE (packaging association): 274 members, ~15 of them packaging-design agencies (Tátil, Narita, Team Créatif, Mind the Pack, Mudrá, Quadrante, Sapien, Spice, Obah, Bendito, Brainbox, Dudi, A10, 100% Design, Zoom Mais). BEAUTY-SPECIALIST agencies found by name in one search pass: ~10 (Let's Flow Digital [Natalia Beauty + Grupo Duo&Co], Beauty Marketing, Cavalini, Carcará [Brasília], Five Performance, The BeClub, Beauty Co, Vejjo, ThinkLab [consultancy], plus Target Design / Kombi on packaging); of these ~6 serve product BRANDS rather than salons/clinics. Agencies with ≥1 beauty product-brand client: NOT COUNTABLE from any source reached (UNVERIFIED). The ONE 'agência' in the ANVISA holder file, '+ BRIEFING AGENCIA DE PUBLICIDADE E REPRESENTACOES LTDA' (~998 brand keys), is a cosmetics FACTORY (CNPJ 21.566.221/0001-00, primary CNAE 2063-1/00, ME, capital R$200.000, Guarapari/ES, trade name 'SUPORTT PROJETOS EXCLUSIVOS') — factory-as-agency, i.e. the W2 free-front-door finding again, not a channel.",
+  "method": "IBGE SIDRA API (servicodados.ibge.gov.br/api/v3/agregados/9528, 2024; 6450 for 2021 cross-check: 12.881 units of 73.11-4 in 2021 → 28.542 in 2024); CENP certification page; ABRE members page parsed; WebSearch + direct fetch of specialist agency sites; ANVISA TA_CONSULTA_COSMETICOS.CSV holder grep + publica.cnpj.ws. Agency COUNT is not the binding number — the binding number is launch EVENTS that pass through an agency and get outsourced.",
+  "needed": "At a realistic wholesale R$1.500-2.000 per one-product set: 6,1-10,5 orders/month (gross R$12.218-15.806 needed, fator-r 9,1-9,4%, stack R$750-1.379) = 73-126 a year. Orders per agency (UNVERIFIED): beauty-specialist with 5-15 launching brand clients × 3 windows/yr (H6A median) × 50% sent out = 0,6-1,9/month; generalist with 1-3 beauty clients = 0,1-0,4/month. ⇒ 3-18 specialist accounts or 15-100 generalist accounts; realistic mix 8-20 active agencies — against ~6 specialists identified by name.",
+  "pool_div4": "Pool = ~300 own-brand launchers (225-425) × 2-3 launch windows/yr × P(brand uses an agency for launch creative) × P(agency outsources production) × wholesale price. Central: 300×2-3×0,45×0,40 = 108-162 events × R$1.750 = R$189-284k/yr ⇒ pool÷4 = R$47-71k against R$147-190k/yr needed ⇒ required share 52-100%: FAILS the market-multiple rule by 2-4×. Low corner (225×1×0,3×0,3 × R$1.500) R$30k ⇒ ÷4 R$7,6k. High corner (425×4×0,6×0,5 × R$2.000) R$1,02M ⇒ ÷4 R$255k: passes only here. Five stacked multipliers, the two agency ones fully unmeasured ⇒ a hypothesis, not a number. NOTE: because the direct plan excludes brands with an entrenched agency, this pool is COMPLEMENTARY to the direct pool (the agency-served segment), not the same brands twice — it can add to direct, it cannot replace it."
+ },
+ "free_front_door": "STRONGER than for the direct version, because agencies are the tool vendor's own customer. (1) THE TOOLS ARE ALREADY ON THEIR DESKS: Adobe BR 'Creative Cloud Pro para equipes… Regularmente em R$480,00/mês Ou a R$383,95/mês por licença… além da IA criativa do Adobe Firefly'; 'Firefly Pro para equipes R$95,00/mês por licença' with 'Acesso aos principais modelos de IA da Adobe, do Google e muito mais' and 'Gerações ilimitadas em modelos selecionados, incluindo Nano Banana 2 (1K), Flux.2 Pro… no primeiro ano' (adobe.com/br/products/firefly/plans.html, fetched). CENP's own site carries Adobe-sponsored content selling AI production to agencies ('Como reduzir o tempo de produção com inteligência artificial', 24 Aug). Compositing a real packshot into a generated scene is ordinary Photoshop work for an agency designer — the 'fidelity by construction' method is a native agency skill, not a secret (Adobe Harmonize page, per H6D). (2) AGENCIES ALREADY SELL AI PRODUCTION THEMSELVES: Carcará (cosmetics-industry agency) lists 'Fotografia publicitária criada com IA'; Beauty Marketing lists 'Fotografia', 'Mockups', 'Campanha' in-house; packaging agency Kombi delivers 'Simulações realistas de mockups… como sua embalagem ficará no ponto de venda' inside the packaging job — the label-exact pre-launch visual is BUNDLED. (3) AI STUDIOS ALREADY COURT AGENCIES AT PUBLISHED PRICES: ANIMAI R$70/image, R$15/s video, 'Equipes e agências'; Nobreak R$597-1.797/month incl. 'Geração de Imagens IA', 'agências… confiam em nós'; eDesign Criação 'Suporte Criativo White Label para agências… CGI & 3D, Motion Graphics' (no price); Composer Invent AI video 'para empresas, marcas e agências'. Orne (R$5,50-6,90/image, 'Fidelidade total ao produto' as a bullet) has no agency programme text; Villo and Estúdio Fábrica none either. (4) What label-exact compositing + claim lock + 5-7 days adds that an agency cannot get cheaper: only (a) label-locked MOTION — a 15 s film whose label does not warp — which static/Canva agency designers do not produce quickly and which the 99Freelas agency posts show they outsource; (b) a written fidelity guarantee with remake at her cost; (c) peak capacity on a 5-day clock. Static composited stills: nothing — that is their own designer's afternoon.",
+ "price_and_hours": {
+  "wholesale_price": "Evidence brackets it at R$1.100-2.300 per one-product set. FLOOR: what agencies can already buy — ANIMAI list ≈R$1.100-1.150 for the set-equivalent; Orne ≈R$280-360; labour posts at R$11-14/edited video. CEILING: the direct price the brand would pay (R$2.500-3.500, AUD3) less the agency's cut. If she takes the PASS-THROUGH seat of the Normas-Padrão (agency 'remunerada pelo cliente no percentual de 15% sobre o valor dos serviços… contratados com esses mesmos fornecedores', Sinapro list quoting CENP 3.11.2) her price can be R$2.290-2.490 and the client pays R$2.630-2.860 (< her R$2.990 direct: no channel conflict). In the WHITE-LABEL seat small agencies price outsourcing as labour and keep the spread: realistic R$1.200-1.800 (UNVERIFIED — no agency quoted a number for this product). Narrower product that best survives: label-locked 15 s film + 2 cutdowns from the agency's approved packshot/KV at R$1.290 (≈5-6× ANIMAI's R$225 list for 15 s, justified only by the label lock + guarantee; UNVERIFIED).",
+  "hours_per_order": "Production (AUD3/H6D, estimates, no stopwatch): start 9,5-18 h; mature 6-10 h; re-specced grammar 4-6 h per one-product set; film-only 3-5 h. PLUS agency layer 1-2 h per order (agency brief, two-layer approval agency→client, relayed revisions; UNVERIFIED). ⇒ 7-12 h mature, 5-8 h re-specced, 4-6 h film-only. Account management 2-4 h/month per active agency in Portuguese calls/WhatsApp (UNVERIFIED). Acquisition 10-20 h per agency won (20-30 calls + 2-3 free test pieces + onboarding/NDA; UNVERIFIED), ~0,5-1 agency/month in year 1. THE ARCHIVE'S WHITE-LABEL TEST FAILS: each of the partner's marginal orders costs her 5-12 h, so this is 'a job, not the wholesale escape' (CLAUDE.md, THE WHOLESALE ESCAPE DOES NOT TRANSPOSE…).",
+  "units_needed": "Gross needed R$12.218-15.806/month. Orders/month: R$1.200 → 10,2-13,2 · R$1.290 → 9,5-12,3 · R$1.500 → 8,1-10,5 · R$1.800 → 6,8-8,8 · R$2.000 → 6,1-7,9 · R$2.290 → 5,3-6,9 · (direct R$2.990 → 4,1-5,3). White label needs 1,3-2,6× the units of direct for the same net.",
+  "accounts_needed": "3-18 beauty-specialist agencies at 0,6-1,9 orders/agency/month, or 15-100 generalists at 0,1-0,4; realistic 8-20 active accounts. Only ~6 beauty-product-brand specialists were identified by name; ABRE has ~15 packaging-design agencies (mostly big-brand accounts). The account count is not obviously smaller than the direct model's ~25-30 brands, and each account is heavier (NDA, two-layer approvals, pay-when-paid).",
+  "fits_87h": "ONLY IF wholesale ≥ ~R$2.000 AND production is re-specced to ≤5-6,5 h per order including the agency layer. Central estimates: R$1.500 mature (9,3 orders × 9,5 h + 8 accounts × 3 h + 15 h acquisition) ≈ 128 h — DOES NOT FIT; R$2.000 mature ≈ 100 h — does not fit; R$2.290 mature ≈ 88 h — edge; R$2.000 re-specced (6,5 h) ≈ 79 h — fits; film-only R$1.290 at 5 h with 8 accounts ≈ 93 h — does not fit. At the labour-rate prices agencies actually post, it never fits."
+ },
+ "risks": "(1) CASH CYCLE — pay-when-paid is the contractual norm: a public agency contract (Heads Propaganda / Paraná, 2024) says 'Os pagamentos a fornecedores… serão efetuados pela CONTRATADA em até 5 (cinco) dias úteis após o recebimento da ordem bancária do CONTRATANTE', and the agency itself has up to 90 days after veiculação to invoice (cl. 13.1). The Sinapro norms note: the client pays agency fees at sight 'prevalecendo, porém, o prazo de vencimento das faturas de serviços de terceiros' — i.e. the SUPPLIER's own terms govern, so 50% on order is defensible, but small agencies will push 30-60 days or pay-when-paid (UNVERIFIED for private small agencies). With R$15.600 of one-time capital and ~91-94% gross margin the exposure is receivables risk, not float — cap open receivables per agency at 2 orders. (2) PRICE SQUEEZE — the agency keeps the spread and benchmarks her against ANIMAI (R$70/image), Nobreak (R$1.797/month unlimited) and 13-62 freelance proposals per post; every agency post seen asks for unit prices or 'valores acessíveis'. (3) CONFIDENTIALITY / NO PORTFOLIO — white-label posts require no client contact ('sem contato direto com os clientes', 'sempre feito pela agência'); she cannot show the work, which starves her own acquisition (C2 already forbids a public portfolio; a private one needs the agency's permission). Pre-launch artwork arrives from a third party → must never go to a generator that trains on inputs (O LANÇAMENTO Part C §2). (4) DISPUTES LAND ON HER BLIND — the end client's objections arrive relayed and distorted through the agency, revisions multiply across two approval layers, and she cannot talk to the person deciding; liability does not disappear (CDC art. 67 reaches whoever 'faz' the ad; CBAP names the creation chain) — so the claim lock must be the AGENCY's written approval of every claim and visual, contractually. (5) CHANNEL CONFLICT / NON-SOLICIT — agencies will demand she never sell direct to their clients; incompatible with a direct O LANÇAMENTO outbound to the same ANVISA launch list unless the agency-served brands are carved out. (6) TREADMILL — agencies are the most tool-literate buyers and Adobe is actively selling them the capability; this segment goes 'obsolete' first (self-serve product-lock estimated 12-18 months, H6D).",
+ "vs_direct": "WORSE on price, pool and treadmill; BETTER only on origination. Direct: R$2.990, 4,1-5,3 kits/month, ~25-30 active brands, honest floor US$700-1.500/month (AUD3/O_LANCAMENTO). White label: R$1.200-2.300, 5,3-13,2 orders/month, 8-20 active agencies, honest floor US$500-1.100/month (3-4 orders at R$1.500-1.750 ⇒ R$2.700-5.614 net ⇒ US$521-1.084; US$0 if the test fails). Pool÷4 central R$47-71k vs direct's R$148,5k (AUD3, P=33% central). What it TRADES: it keeps ORIGINATION-ONCE per agency (a signed agency sends several launches without new outbound) and it reaches the agency-served brands the direct plan excludes; it trades away price (−25 to −60%), the MACHINE TEST (5-12 h of her hands per order, and a relationship she must hold), portfolio rights, and cash-cycle control. As a replacement: no. As a second leg on top of direct: yes, if the test clears.",
+ "candidate": {
+  "name": "O LANÇAMENTO — TABELA AGÊNCIA (produtora parceira, not white label)",
+  "offer": "A second channel for the direct O LANÇAMENTO. To beauty-specialist, branding and packaging-design agencies (the ones holding the brand AT the pre-launch moment WITH the approved artwork): (a) the one-product label-locked launch set at an agency rate of R$2.290 (vs R$2.990 direct), invoiced by her as a named third-party supplier so the agency adds its 15% Normas-Padrão honorários and the client pays ≈R$2.630 — below the direct price; or (b) O FILME: a label-locked 15 s film + 2 cutdowns built from the agency's own approved packshot/mockup render, R$1.290, 5 business days, written guarantee ('todo caractere da embalagem idêntico à arte aprovada ou refazemos sem custo'), NDA, no end-client contact, 50% on order / 50% on delivery by Pix against nota fiscal, claims and visuals approved in writing by the agency. Packaging agencies already make the label-exact mockup render from artwork (Kombi 'simulações realistas de mockups'); she supplies the campaign world and the motion they do not make — complementary halves, and it solves VER1's finding that 0 of 15 genuinely new SKUs had a public packshot when the ANVISA signal fired.",
+  "biggest_flaw": "Agencies buy outside production as LABOUR at labour prices (open budgets, R$50 minimums, R$1.500/month for ~120 edits, 13-62 proposals per post) and already hold the tools (Creative Cloud Pro para equipes R$383,95-480; Firefly Pro para equipes R$95 with Nano Banana 2) and cheap AI studios (ANIMAI R$70/image); each order still costs her 5-12 h, so it is a job, not the wholesale escape — and the agency-mediated launch pool clears only 25-50% of the market-multiple bar centrally.",
+  "repair": "(1) Sell only what an agency designer cannot do by Friday: label-locked MOTION with a written remake guarantee, priced per film, never per hour or per image. (2) Take the pass-through supplier seat (CENP 15%), not the white-label discount seat; target the ~6 beauty-product specialists + ~15 ABRE packaging-design agencies + CENP Sudeste agencies with a cosmetics client, not SME social-media shops. (3) Supplier terms govern (Sinapro note 10): 50% on order, refuse pay-when-paid, cap receivables at 2 open orders per agency. (4) Carve agency-served brands out of the direct ANVISA outbound list to avoid non-solicit conflict. (5) Keep it a SECOND LEG; never let it replace direct pricing.",
+  "honest_floor_usd_month": "As a standalone white-label business: US$500-1.100/month at months 12-18 (3-4 orders at R$1.500-1.750); US$0 if the test fails. As a second leg on top of direct O LANÇAMENTO: adds ≈US$250-700/month (1-3 agency orders at R$1.290-2.290).",
+  "next_test": "R$0, Portuguese calls, 2 weeks: call 20 agencies — 10 beauty-specialist/branding/packaging-design agencies with a named beauty PRODUCT client (Beauty Marketing, Cavalini, Let's Flow, Five Performance, Target Design, Kombi, Tátil, Narita, Team Créatif, Mind the Pack …) + 10 CENP-certified Sudeste agencies whose portfolio shows a cosmetics client. Three questions, no pitch first: (a) 'No último lançamento de produto de um cliente de beleza, quem produziu as imagens e o filme, e quanto a agência pagou a esse fornecedor?' (b) 'Vocês compraram produção com IA de fora nos últimos 6 meses? De quem, a que preço?' (c) 'Qual o prazo de pagamento que vocês praticam com fornecedores de produção?' Then offer ONE paid pilot: O FILME at R$1.290 on a current client packshot.",
+  "bar": "Committed in advance. ALIVE as a second leg if ≥5/20 name an EXTERNAL production spend ≥R$2.000 for a one-product launch AND ≥2/20 buy the R$1.290 pilot within 30 days AND ≤half name pay-when-paid or >30-day terms. DEAD (stop, do not discount) if ≤2/20 name ≥R$2.000 external spend — the agency channel is then capped at ANIMAI's ≈R$1.100 set-equivalent, where the arithmetic needs 11-14 orders/month and does not fit 87 h."
+ },
+ "verdict": "DEAD",
+ "verdict_note": "DEAD as the tested model (white label REPLACING the direct kit): it fails THE WHOLESALE ESCAPE test (5-12 h of her hands per partner order), the market-multiple rule (central pool÷4 R$47-71k vs R$147-190k needed), the free front door is stronger at agencies than at brands (tools on their desks, AI studios courting them at R$70/image), and the only agency money observed is at labour rates. The REPAIRED form — an agency rate card / produtora-parceira pass-through seat with O FILME as the entry product, run as a SECOND LEG of the direct O LANÇAMENTO — is MARGINAL pending the 20-call test.",
+ "unverified": [
+  "P(a launching beauty brand uses an outside agency for launch creative) — unmeasured; drives the pool.",
+  "P(the agency outsources launch production to a third party rather than its own designer/photographer) — unmeasured.",
+  "Orders per agency per month (0,6-1,9 specialist; 0,1-0,4 generalist) — derived from H6A's median 3 launch windows/yr and an assumed 50% send-out share.",
+  "Number of Brazilian agencies with ≥1 beauty PRODUCT-brand client — not countable from any reachable source; only ~10 specialists identified by name in one search pass.",
+  "What small agencies actually PAY a white-label producer for a launch set — no agency post states a price for this product; 99Freelas budgets are 'Aberto' and offers private.",
+  "Agency white-label markup (15% is the CENP Normas-Padrão pass-through for full-service agencies; small digital agencies' markup not found).",
+  "Payment terms of small private agencies to suppliers (30-60 days / pay-when-paid) — the only primary clause found is a public-sector agency contract (5 business days after the client pays).",
+  "Agency-layer hours (+1-2 h/order), account management (2-4 h/agency/month) and acquisition (10-20 h/agency) — estimates, no stopwatch.",
+  "Production hours per order (6-10 h mature, 4-6 h re-specced, 3-5 h film-only) — H6D/AUD3 bottom-up estimates, never timed.",
+  "Adobe Photoshop 'Generate Background' (keeps the product pixels, generates the scene): not fetched — helpx.adobe.com returned 403 and adobe.com product pages returned empty replies/404 today; Harmonize is sourced only via H6D.",
+  "Whether Higgsfield sells a Teams/Business/agency plan — higgsfield.ai/pricing is JS-rendered and the reader proxy was rate-blocked; HIGGSFIELD_FACTS lists only FREE/PLUS/ULTRA.",
+  "Imaginy ('Sua agência está recusando projetos por falta de capacidade técnica?') and Nobreak ('+11.200 pedidos… mensalmente', '66% de redução') claims are seller marketing, not evidence of agency demand.",
+  "LinkedIn, Vagas.com (irrelevant results), GetNinjas, Sortlist (502), Clutch (403) and Semrush agencies (no Brazil pages) were not usable for agency enumeration or in-house AI hiring.",
+  "Whether a R$1.290 label-locked 15 s film would clear against ANIMAI's R$225 list for 15 s — no buyer observed at either price for this product."
+ ]
+}
