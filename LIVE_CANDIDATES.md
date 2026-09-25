@@ -8,7 +8,11 @@ every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 
 > ### ★★★★ THE SIXTH HUNT — 25 Sep 2026. THE BOARD AS IT STANDS. ACOLHE CLOSED BY THE FOUNDER; A ESCRITURA "NOT IT"; PORTUGUESE CALLS NOW ALLOWED.
 >
-> **1. A CONTA LIVRE — energy free-market channel partner. MARGINAL, the best-EVIDENCED candidate in the archive.**
+> **⚰ UPDATE, same evening: A CONTA LIVRE KILLED ON C8 — *"SHE WILL DIE SLOWLY IF SHE HAD TO BE CALLING and talking to
+> factory owners."* The board is now #1 O LANÇAMENTO · #2 A PRATELEIRA, both sold to launching beauty brands, one call
+> fortnight tests both.**
+>
+> ~~**1. A CONTA LIVRE — energy free-market channel partner. MARGINAL, the best-EVIDENCED candidate in the archive.**~~
 > - **The payer publishes the rate:** Cemig SINERGIA v8.0 pays **R$7 × average MWh × contract months, 100% at
 >   signing** (verified).
 > - **The state publishes the buyers:** ANEEL BDGD lists every medium-voltage unit with 12 months of consumption

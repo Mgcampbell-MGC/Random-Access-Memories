@@ -46,6 +46,18 @@ to sell every month is admissible now if she will sell it in Portuguese, and she
 
 ## 1. THE VERDICT — final, after wave 2, three deep dives and the lead-arbitrage hunt
 
+> ### ⚰ UPDATE, same evening — A CONTA LIVRE KILLED ON C8, IN THE FOUNDER'S WORDS
+> Asked the year-three question — *"Could you still be phoning factory owners about electricity contracts, alone,
+> in year three?"* — the answer was: ***"SHE WILL DIE SLOWLY IF SHE HAD TO BE CALLING and talking to factory
+> owners."*** **The best-evidenced candidate in the archive dies exactly as GATELEDGER did** (*"not her at all"*).
+> ⇒ **THE CALL PERMISSION IS POPULATION-SPECIFIC.** She will call; she will not call just anyone. **Beauty-brand
+> founders, marketing leads and shop owners are her world; factory owners and energy buyers are not.** Ask the
+> year-three question about the PEOPLE on the other end of the phone, not about the phone.
+> **The board is therefore: #1 O LANÇAMENTO · #2 A PRATELEIRA** — both sold to the SAME population (launching
+> Brazilian beauty brands, from the ANVISA file), so **one fortnight of calls tests both**. The energy material
+> below is kept as the record and as parts (the payer-published-commission + unit-register pattern is the
+> reusable half).
+
 **No clean ALIVE. Two candidates lead, for opposite reasons. Both are decided by the same two weeks of R$0
 Portuguese calls.**
 
@@ -56,7 +68,7 @@ Portuguese calls.**
 
 | # | Candidate | Verdict | Honest floor (US$/month) | Evidence of money | What decides it |
 |---|---|---|---|---|---|
-| **1** | **A CONTA LIVRE** — energy free-market channel partner. Calls to São Paulo medium-voltage businesses still on the regulated tariff, ranked from ANEEL's unit file (consumption known before dialling); paid by the retail trader at signing (§8e) | **MARGINAL — best evidenced** | **500–1.500** | **Payer-published:** Cemig SINERGIA v8.0, R$7 × avg MWh × contract months, 100% at signing (verified in the PDF). ≈R$5.500–9.200 per 22 MWh client | ≥5 of 20 decision-makers send their bill in 10 days AND ≥1 signs in 45 days, ≤25 h of calling. **Sol's year-three answer first** |
+| ~~1~~ ⚰ | **A CONTA LIVRE (KILLED ON C8 — see box above)** — energy free-market channel partner. Calls to São Paulo medium-voltage businesses still on the regulated tariff, ranked from ANEEL's unit file (consumption known before dialling); paid by the retail trader at signing (§8e) | **MARGINAL — best evidenced** | **500–1.500** | **Payer-published:** Cemig SINERGIA v8.0, R$7 × avg MWh × contract months, 100% at signing (verified in the PDF). ≈R$5.500–9.200 per 22 MWh client | ≥5 of 20 decision-makers send their bill in 10 days AND ≥1 signs in 45 days, ≤25 h of calling. **Sol's year-three answer first** |
 | **2** | **O LANÇAMENTO** — the founder's spec, repaired: a one-product launch campaign at R$2.990, label-exact by compositing, claim-locked, prospected off ANVISA and sold by calls (`O_LANCAMENTO.md`) | **MARGINAL — best fit, weak price evidence** | 700–1.500 *if* the price test passes | **Negative so far:** every beauty buyer post with a budget is <US$500 per project; Orne sells the whole set for ≈R$280–360 | ≥6/20 launching brands name ≥R$2.500 of external spend per launch; ≥2/10 previews convert |
 | 3 | **A PRATELEIRA** — commission sell-in of debut beauty lines to SP shops, launch kit as the onboarding deliverable (§8b) | MARGINAL, slow | 90–800 at month 12; ≈2.080 at month 18 | Cosmetics reps paid **10–15%** (Êxodo, verified at the reps' council board) | ≥6/30 debut brands agree 10% in writing; ≥10/40 shops buy from reps by phone |
 | — | Add-ons to #2: COR CERTA (ΔE colour guarantee), A CADEIRA (real salon results), launch-week TikTok creators, the Lilial/Lyral relaunch trigger, packaging agencies as the source of pre-launch artwork | add-ons | +100–700 each | — | Two questions each inside test #2 |
@@ -633,7 +645,7 @@ measures the sales and pays the intermediary. **DD1 is testing it (§8d).**
     VER1's "0 of 15 new SKUs have a public packshot". Entry product: *O FILME*, a label-locked 15 s film + 2
     cutdowns at R$1.290, sold on the agency's standard 15% production mark-up.
 
-## 8e. A CONTA LIVRE — the energy free-market channel partner (DD3), the founder's pick of direction
+## 8e. A CONTA LIVRE — the energy free-market channel partner (DD3) — ⚰ KILLED ON C8 the same evening (§1 box)
 
 The founder, on the energy direction: *"not mad at this — must be [a] unique clever easy AI October 2026 way to do
 this."* **Verdict: MARGINAL. It is the best-EVIDENCED candidate of the day and it is outside her world (C8).**
@@ -896,7 +908,8 @@ Anything short of an unprompted yes on either removes that track before a single
 
 **Week 1–2, run in parallel (~25 h of calling each; together they fill the fortnight):**
 
-1. **A CONTA LIVRE.**
+1. ~~**A CONTA LIVRE.**~~ **⚰ Removed: C8 — *"SHE WILL DIE SLOWLY IF SHE HAD TO BE CALLING and talking to factory
+   owners."*** Kept for the record only:
    - Download ANEEL `UCMT_PJ.csv`. Filter São Paulo, `LIV = 0`, private commercial/industrial, no GD, average
      `ENE` ≥15 MWh/month. Join to CNPJ by address (`publica.cnpj.ws`).
    - Register as a Cemig SINERGIA participant; it takes an ME/MEI CNPJ.
