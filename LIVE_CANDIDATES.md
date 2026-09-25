@@ -25,7 +25,7 @@ every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 > beauty buyer post with a budget is <US$500 per project. Floor US$700–1.500 if its test passes.
 >
 > ~~**3. A PRATELEIRA — commission sell-in of debut beauty lines** (cosmetics reps are paid 10–15%, verified). Slow:
-> ≈US$2.080 only by month 18.~~ **⚰ KILLED BY THE FOUNDER, 26 Sep: *"NO FUCK NO."*** Second commission-rep candidate
+> ≈US$2.080 only by month 18.~~ **⚰ KILLED BY THE FOUNDER, 25 Sep (later the same evening): *"NO FUCK NO."*** Second commission-rep candidate
 > rejected in two days. **Working reading, to confirm: she sells her own work, not someone else's product on
 > commission. The board is O LANÇAMENTO alone.**
 >

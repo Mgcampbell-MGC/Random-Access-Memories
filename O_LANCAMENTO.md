@@ -576,3 +576,46 @@ also names what is excluded: exact makeup colour matching and results simulation
   §10 call test, not evidence that the prices hold.
 - **"As imagens são suas" needs checking** against the paid Higgsfield and Artlist licences, so that commercial and
   ad use of outputs is confirmed on the plan she actually buys. It is UNVERIFIED on the trial.
+
+## PART G — the film keeps the label exact, and the checker that proves it (25 Sep 2026)
+
+**The open question after Part F:** the stills were proven label-exact, but the 15 s film was not. If a generator
+animates the product, it redraws the label in every frame, which is exactly where Higgsfield misspelled it.
+
+**The test (local, no credits, same private sample as Part F; files stay out of the repo):**
+- The composite was split into two layers: the clean scene (placeholder removed by inpainting) and the real
+  packshot layer.
+- A 15 s, 24 fps, 3:4 film was rendered locally: a slow push-in, a pan and a moving light on the scene. The
+  product layer only ever scales and translates, so its pixels are the approved packshot throughout.
+- Every 6th frame of the compressed video (60 of 360) was checked.
+
+**The checker, now a tool: `tools/relatorio_fidelidade.py`.**
+- It finds the label in any image or video frame by feature matching, warps it back onto the approved packshot,
+  and compares it **tile by tile** (24 px tiles, band-pass), so one misspelled word shows as one bad tile instead
+  of being averaged away.
+- ⚠ A whole-label correlation was tried first and is NOT safe: compressed exact frames scored 0,89 and a label
+  with two spelling errors scored 0,87. The tile rule is what separates them.
+
+| Asset | Worst tile | 5th-percentile tile | Verdict |
+|---|---|---|---|
+| Static composite (her method) | 0,959 | 0,985 | APROVADA |
+| **15 s film, 60 frames checked** | **0,872** | **0,964** | **APROVADA** |
+| Higgsfield image model (2 errors) | 0,269 | 0,806 | REPROVADA |
+| Higgsfield Marketing Studio (4 errors) | −0,001 | 0,494 | REPROVADA |
+
+**Pass rule:** worst tile ≥0,80 and 5th-percentile tile ≥0,95.
+
+**What it proves:** a film made by moving a locked product layer through an AI-made world keeps the label exact
+through compression, and a machine can show it frame by frame.
+
+**What it does NOT prove, and the design rules that follow:**
+- **One packaging shape.** The thresholds were calibrated on one flat-faced tube. Recalibrate on each new shape
+  (bottle, pump, jar, glass) before relying on them.
+- **The film is 2.5D, not a product turn.** The product can move, scale, slide and catch light. It cannot rotate to
+  show its back. A true 360° turn needs a 3D model of the package (a CGI vendor), priced separately, or a real
+  turntable video supplied by the brand. **Say so in the offer: "o produto nunca é redesenhado; movimento de câmera
+  e cenário, sem giro 3D."**
+- **Integration quality is still manual.** The sample shows a faint halo at the tube's edge and a contact shadow that
+  drifts against the moving product, because the shadow was baked into the scene. Production must cut a clean matte
+  and put the contact shadow on the product layer. **This quality gap is where a composite looks "pasted", and it is
+  what a buyer will judge before any report.**

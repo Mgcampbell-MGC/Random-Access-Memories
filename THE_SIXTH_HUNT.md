@@ -53,7 +53,7 @@ to sell every month is admissible now if she will sell it in Portuguese, and she
 > ⇒ **THE CALL PERMISSION IS POPULATION-SPECIFIC.** She will call; she will not call just anyone. **Beauty-brand
 > founders, marketing leads and shop owners are her world; factory owners and energy buyers are not.** Ask the
 > year-three question about the PEOPLE on the other end of the phone, not about the phone.
-> ### ⚰ UPDATE, next day — A PRATELEIRA KILLED BY THE FOUNDER: *"NO FUCK NO."*
+> ### ⚰ UPDATE, later the same evening — A PRATELEIRA KILLED BY THE FOUNDER: *"NO FUCK NO."*
 > Shown the one-line description — *"Sol becomes the sales representative for brand-new small beauty brands. She
 > gets their products onto the shelves of independent perfume and cosmetics shops in São Paulo."* — the answer was
 > immediate. **Second commission-rep candidate rejected in two days** (A CONTA LIVRE sold other people's energy
