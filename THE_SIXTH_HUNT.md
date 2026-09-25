@@ -532,7 +532,45 @@ Together with the launch kit they make **one call list and three questions.**
 
 ## 8c. A BANCADA — audit
 
-*(AUD5 running; filled in when it lands.)*
+**Verdict: DEAD as a standalone business.** Two host questions survive inside the O LANÇAMENTO calls. Floor
+US$200–1.000/month (AUD5).
+
+- **The price-holder belongs to the HOST, not to the recruiter.** TikTok's no-AI-voice rule creates demand for a
+  human host, and the host collects it as her wage: R$1.620–5.500 plus commission. Hosts are abundant: TikTok cites
+  500 mil criadores, and ads hire *"sem experiência"*.
+- **Most employers recruit for free.**
+  - Paging the aggregator to its end gives **84 real live-host listings from ~54 employers, not "728".**
+  - Only 5–6 employers (~10–12%) use a recruiter.
+  - The live agencies (Tec-Do, iGoal, StarLive, Commerce Lab, Fuzze) recruit and train in-house.
+  - Catho and Empregga let brands post free.
+  - **TikTok itself pays LIVE "Agências" bonuses to recruit creators**, so platform money funds this layer.
+- **R$2.000 per hire is above market.** Empregga publishes an average ticket of R$1.516 per vacancy and sells
+  30/60-day replacement as a paid add-on. One R&S proposal charges 55% of one month's salary. No published fee for
+  recruiting live hosts exists.
+- **The law is sharper than W2E reported.** Decreto 82.385 art. 5 lets only firms registered under Lei 6.019
+  (≥R$100.000 capital) place "artistas". A beauty sales host is probably not an artista; a fashion try-on host is
+  close to the listed "Manequim".
+- **Hours and pool both fail:**
+  - 12,5–24 h per paid hire;
+  - 5,7–13,6 hires a month needed;
+  - the hours cap is ≈US$1.410 at the market price;
+  - pool ÷ 4 fails by 1,5–14×;
+  - only ~2 of ~54 host-hiring employers are active ANVISA launchers, so there is little overlap with the lead.
+
+**⇒ The finding worth keeping is the last bullet under "most employers recruit for free": when the platform FUNDS a
+layer, do not compete with the free layer — become the party it funds.** TikTok's Partner Center lists **"Affiliate
+Partner — registration region Brazil → target market Brazil: Seller and Scalable Creator Match-up"** (verified by me,
+`partner.tiktokshop.com` document `64f1989064ed2e0295f3c1b5`, updated 30 Oct 2025). That is a slot where TikTok
+measures the sales and pays the intermediary. **DD1 is testing it (§8d).**
+
+## 8d. The deep dives the founder's challenge produced
+
+*(Running at the time of writing.)*
+
+- **DD1 — the platform pays the agent.** A beauty-focused TikTok Affiliate Partner agency: the platform counts and
+  pays, the brand pays nothing upfront, no standing access.
+- **DD2 — the wholesale version of O LANÇAMENTO.** Label-exact launch production sold white-label to the agencies
+  that already hold beauty clients.
 
 ## 9. LAWS FROM THIS HUNT
 
