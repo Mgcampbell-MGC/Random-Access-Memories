@@ -53,7 +53,17 @@ to sell every month is admissible now if she will sell it in Portuguese, and she
 > ⇒ **THE CALL PERMISSION IS POPULATION-SPECIFIC.** She will call; she will not call just anyone. **Beauty-brand
 > founders, marketing leads and shop owners are her world; factory owners and energy buyers are not.** Ask the
 > year-three question about the PEOPLE on the other end of the phone, not about the phone.
-> **The board is therefore: #1 O LANÇAMENTO · #2 A PRATELEIRA** — both sold to the SAME population (launching
+> ### ⚰ UPDATE, next day — A PRATELEIRA KILLED BY THE FOUNDER: *"NO FUCK NO."*
+> Shown the one-line description — *"Sol becomes the sales representative for brand-new small beauty brands. She
+> gets their products onto the shelves of independent perfume and cosmetics shops in São Paulo."* — the answer was
+> immediate. **Second commission-rep candidate rejected in two days** (A CONTA LIVRE sold other people's energy
+> contracts; A PRATELEIRA sold other people's products into shops). Different buyers, same role.
+> ⇒ **Working reading (an inference — confirm with the founder before treating it as a law): SHE SELLS HER OWN
+> WORK; SHE DOES NOT CARRY SOMEONE ELSE'S PRODUCT ON COMMISSION.** Do not propose representation, agency or
+> sell-in again without asking first. **The board is now O LANÇAMENTO alone.** The launch kit (the part A PRATELEIRA
+> borrowed) stays with O LANÇAMENTO; the rep role is dead.
+>
+> **The board was then: #1 O LANÇAMENTO · #2 A PRATELEIRA** — both sold to the SAME population (launching
 > Brazilian beauty brands, from the ANVISA file), so **one fortnight of calls tests both**. The energy material
 > below is kept as the record and as parts (the payer-published-commission + unit-register pattern is the
 > reusable half).
@@ -70,7 +80,7 @@ Portuguese calls.**
 |---|---|---|---|---|---|
 | ~~1~~ ⚰ | **A CONTA LIVRE (KILLED ON C8 — see box above)** — energy free-market channel partner. Calls to São Paulo medium-voltage businesses still on the regulated tariff, ranked from ANEEL's unit file (consumption known before dialling); paid by the retail trader at signing (§8e) | **MARGINAL — best evidenced** | **500–1.500** | **Payer-published:** Cemig SINERGIA v8.0, R$7 × avg MWh × contract months, 100% at signing (verified in the PDF). ≈R$5.500–9.200 per 22 MWh client | ≥5 of 20 decision-makers send their bill in 10 days AND ≥1 signs in 45 days, ≤25 h of calling. **Sol's year-three answer first** |
 | **2** | **O LANÇAMENTO** — the founder's spec, repaired: a one-product launch campaign at R$2.990, label-exact by compositing, claim-locked, prospected off ANVISA and sold by calls (`O_LANCAMENTO.md`) | **MARGINAL — best fit, weak price evidence** | 700–1.500 *if* the price test passes | **Negative so far:** every beauty buyer post with a budget is <US$500 per project; Orne sells the whole set for ≈R$280–360 | ≥6/20 launching brands name ≥R$2.500 of external spend per launch; ≥2/10 previews convert |
-| 3 | **A PRATELEIRA** — commission sell-in of debut beauty lines to SP shops, launch kit as the onboarding deliverable (§8b) | MARGINAL, slow | 90–800 at month 12; ≈2.080 at month 18 | Cosmetics reps paid **10–15%** (Êxodo, verified at the reps' council board) | ≥6/30 debut brands agree 10% in writing; ≥10/40 shops buy from reps by phone |
+| ~~3~~ ⚰ | **A PRATELEIRA (KILLED BY THE FOUNDER: *"NO FUCK NO"*)** — commission sell-in of debut beauty lines to SP shops, launch kit as the onboarding deliverable (§8b) | MARGINAL, slow | 90–800 at month 12; ≈2.080 at month 18 | Cosmetics reps paid **10–15%** (Êxodo, verified at the reps' council board) | ≥6/30 debut brands agree 10% in writing; ≥10/40 shops buy from reps by phone |
 | — | Add-ons to #2: COR CERTA (ΔE colour guarantee), A CADEIRA (real salon results), launch-week TikTok creators, the Lilial/Lyral relaunch trigger, packaging agencies as the source of pre-launch artwork | add-ons | +100–700 each | — | Two questions each inside test #2 |
 | — | A CONTA VERIFICADA / A FECHADORA — paid-ad energy leads (§8f) | MARGINAL-to-DEAD | 0–750 | Buyers pay per ACTIVATION or MEETING, not per lead | Only if ≥3 operators pre-pay an order before any ad spend |
 | — | O PLEITO (Ex-tarifário) | MARGINAL, likely C8 fail | ≈450 | Cone-Ex already sells pay-on-grant | Year-three question |
@@ -1024,7 +1034,8 @@ Anything short of an unprompted yes on either removes that track before a single
    - Then send the bestseller-based preview to the 10 best. **≥2 must buy at R$2.990 within 30 days.**
    - Add the questions for the add-ons (§8b) and the 12 catalogue brands (§3).
    - **FAIL (≤2/20): stop. Do not discount into the R$280–1.150 band the studios already occupy.**
-3. **Optional, only if 1 or 2 passes:** A PRATELEIRA's 30-brand / 40-shop sell-in test (§8b).
+3. ~~**Optional, only if 1 or 2 passes:** A PRATELEIRA's 30-brand / 40-shop sell-in test (§8b).~~ **⚰ Removed:
+   killed by the founder (*"NO FUCK NO"*).** Do not add the commission question to the O LANÇAMENTO calls.
 
 **The two remaining founder questions, one message each:**
 

@@ -2652,7 +2652,15 @@ strangers' dead parents, alone, in year three?"**
     - lead arbitrage — energy pays per activation or meeting, not per lead, and São Paulo has no buyer.
   - **★ THE MARGIN LAW IS A FUNCTION OF THE CATEGORY:** cosmetics reps are paid 10–15% (Êxodo, verified at the reps'
     council board), not 3–6%.
-  - **⇒ THE BOARD AFTER THE C8 KILL: #1 O LANÇAMENTO · #2 A PRATELEIRA — one population (launching beauty brands from
+  - **⚰ A PRATELEIRA KILLED BY THE FOUNDER, 26 Sep: *"NO FUCK NO."*** Shown *"Sol becomes the sales representative for
+    brand-new small beauty brands… gets their products onto the shelves of… shops"*. **The second commission-rep
+    candidate rejected in two days** (energy contracts, then shop sell-in): different buyers, same role. ⇒ **Working
+    reading, an INFERENCE to confirm with the founder: SHE SELLS HER OWN WORK; SHE DOES NOT CARRY SOMEONE ELSE'S
+    PRODUCT ON COMMISSION. Do not propose representation, agency or sell-in again without asking first.** This cuts
+    against the agency family recorded above (`THE AGENT EXEMPTION`, `THE COMMISSION-AGENT RESOLUTION`, `THE MARGIN LAW
+    IS A FUNCTION OF THE CATEGORY`): the legal and price findings stand, but the role is hers to refuse.
+    **The board is now O LANÇAMENTO alone.**
+  - **⇒ THE BOARD AFTER THE C8 KILL (superseded next day, see above): #1 O LANÇAMENTO · #2 A PRATELEIRA — one population (launching beauty brands from
     the ANVISA file), one fortnight of calls tests both. THE NEXT FILE IN THIS REPOSITORY SHOULD BE A CALL LOG**
     (`THE_SIXTH_HUNT.md` §10).
   - **★ THE FIRST REAL SAMPLE, same night (`O_LANCAMENTO.md` Part F):** on one real bestselling tube, **both of
