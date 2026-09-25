@@ -1,0 +1,198 @@
+{
+ "agent": "W2E",
+ "lens": "MONEY FIRST — start from observed money Brazilian beauty, fashion and apparel sellers pay to outside firms and freelancers in 2026, then find the slice a solo operator can take. Money flows enumerated with prices: UGC per video (R$100–250, R$169 with rights), marketplace assessoria (R$1.080–1.242/month), live studio day rates (R$3.500–8.500), fit modelling (R$120/h), TikTok Shop seller fees (6–10% + R$4–6/item), affiliate commission (seller-set, 8–15% claimed, UNVERIFIED), in-house affiliate/creator analysts (R$47–76 k/yr aggregator range), live hosts (R$1.900–2.500 base + 1,5–5% commission), and recruitment firms placing live hosts (fee unpublished). The legible commodity flows carry no margin for her. Margin appears in two places: (a) where TikTok's OWN RULE forces a real human (LIVE: no AI voices), and (b) where the PLATFORM pays on an outcome it measures itself (the TikTok Affiliate Partner slot, which is listed for Brazil).",
+ "candidates": [
+  {
+   "name": "A BANCADA — live-seller casting and placement desk for beauty/fashion TikTok Shop sellers and live-commerce agencies",
+   "one_line": "She scouts TikTok live-sellers from their public live replays, runs private video auditions in Portuguese, and delivers a shortlist of 3 audition-tested hosts with a 20-minute mock live of the client's own product. The client pays a success fee only on hire, with one free replacement within 60 days. Live agencies buy hires in batches.",
+   "price_holder": "consent",
+   "why_tool_vendor_cannot_give_it_away": "TikTok Shop Brazil's own rule forbids exactly what Higgsfield sells for this format. Verbatim, BR academy: 'Durante uma transmissão ao vivo: Não use interações verbais que não sejam em tempo real, como vozes geradas por IA, gravações de áudio ou rádio' (https://seller-br.tiktok.com/university/essay?knowledge_id=5635030781101840&lang=pt-BR). LIVE is the fastest-growing format: daily live GMV ×161 in a year, and the top lives are cosmetics (TikTok newsroom). It needs a real person who consents to sell on camera in real time, for hours a day. An AI presenter at US$49/month cannot legally fill the seat. The input priced here is a willing, able human plus the eye that picks her. Secondary layer: a bounded replacement guarantee.",
+   "buyer": "(1) Beauty, fragrance and fashion brands running their own TikTok Shop LIVE, e.g. Perfumistta, Malibu Glasses, Ela Decora, EMIGÊ Moda Circular, P H Jeans, Grupo Minimal, an unnamed cosmetics group via Talent&Tech. (2) Live-commerce agencies and TSPs that staff hosts in volume, e.g. StarLive via Recruta Simples, iGoal Media, Commerce Lab Lives, Tec-Do, Tokz ('Live Sellers internos'). (3) HR firms already running these searches (Comunica RH, Talent Gestão de Pessoas) as a possible wholesale channel. Sold by Portuguese calls.",
+   "observed_buyer_money": [
+    {
+     "what": "Brand hires a TikTok Shop live host through an HR firm (Comunica RH): R$2.500 + 1,5–3% of sales, PJ, ~4 h of live a day",
+     "price": "R$2.500/month base + 1,5–3% commission (the HR firm's fee is not published)",
+     "unit": "per host per month; the recruiter is paid per placement",
+     "url": "https://br.trabajo.org/emprego-2251-b3ad975a35591f391ee9f32727714358",
+     "status": "observed buyer-side (employer-stated pay in the ad text; the intermediary fee is UNVERIFIED)"
+    },
+    {
+     "what": "Perfumistta 'Vendedora Apresentadora de Live': R$1.900 base + R$2.000–7.000 commission/month",
+     "price": "R$3.900–8.900/month total comp",
+     "unit": "per host per month",
+     "url": "https://br.trabajo.org/emprego-5470-f42cb32ba506bfccf5eccd427a2b1698",
+     "status": "observed buyer-side (ad text)"
+    },
+    {
+     "what": "Malibu Glasses 'Apresentador de Live Shop': R$2.500 fixed + 2,5–5% on targets",
+     "price": "R$2.500/month + 2,5–5%",
+     "unit": "per host per month",
+     "url": "https://br.trabajo.org/emprego-5234-f21b86afa5d98a92bfcb844498afe4cf",
+     "status": "observed buyer-side (ad text)"
+    },
+    {
+     "what": "Live agency StarLive recruits live-sellers through the HR firm Recruta Simples (agencies hire hosts in volume)",
+     "price": "aggregator range R$67–112 k/yr (UNVERIFIED)",
+     "unit": "per host per year",
+     "url": "https://br.trabajo.org/emprego-2251-a61dc124da9c6006fea564b50cecdf8e",
+     "status": "observed buyer-side (the listing is observed; the pay shown is the aggregator's)"
+    },
+    {
+     "what": "Snapshot of live-host demand: 728 listings for 'apresentadora live tiktok'. The 120 parsed listings name 66 distinct employers, including ≥7 recruitment firms placing hosts for clients",
+     "price": "n/a (demand count)",
+     "unit": "listings, one snapshot, 25 Sep 2026",
+     "url": "https://br.trabajo.org/empregos-apresentadora+live+tiktok",
+     "status": "observed (aggregator; the unique count is UNVERIFIED)"
+    },
+    {
+     "what": "R&S fee schedule: 55% of one monthly salary for R$2.000–4.000 roles; 45-day replacement guarantee",
+     "price": "≈R$1.265–1.375 per hire at a R$2.300–2.500 base",
+     "unit": "per placement",
+     "url": "http://atle.com.br/Proposta_R&S_Atle.pdf",
+     "status": "seller asking (a real proposal, ~2015)"
+    },
+    {
+     "what": "Live/streaming studio day rate (the capital-heavy alternative way to 'solve' LIVE)",
+     "price": "R$3.500–8.500",
+     "unit": "per day",
+     "url": "https://www.blackframestudios.com.br/",
+     "status": "seller asking"
+    }
+   ],
+   "free_front_door_check": "(1) Free job boards: brands can post themselves, and Perfumistta and Malibu do. Her edge is not reach but SELECTION. She sources from TikTok's public live replays (actual on-camera selling, not CVs) and hands over audition tapes on the client's own product. The client judges the tapes with its own eyes and pays only on hire. (2) Affiliate live-sellers are a free substitute for an in-house host (Johnson's Baby: 727 hours of affiliate lives). This is a real partial substitute, and it is why candidate 2 exists: the same scouting feeds both. (3) HR firms already do this (Comunica RH, Talent&Tech, Talent Gestão de Pessoas, RHEVO, Roma RH). They are generalist, and none TikTok-native; they are competitors and also a possible wholesale buyer. (4) TikTok Partner Center lists 'Host/Operations Recruitment and Training' as a partner category for cross-border and UK, but NOT for Brazil (https://partner.tiktokshop.com/api/v1/document/detail?document_id=64f1989064ed2e0295f3c1b5&workspace_id=3). So the platform does not supply hosts in BR. (5) Tool vendor: blocked by the LIVE human-voice rule above. Blog/sitemap check of Tokz: it sells in-house hosts as part of full management (bespoke price) and does not place hosts into brands.",
+   "offer_and_price": "CASTING DE LIVE: 3 audition-tested hosts in 10 business days, each with a 20-min mock live of the client's product (a recorded private video call, never published). Success fee R$2.000 per hire, paid on hire. One free replacement within 60 days, capped at one. AGENCY PACK: 3 hires for R$5.000, for live agencies and TSPs that staff in volume. Optional later: R$600 'live-seller bootcamp' tape review per new hire (UNVERIFIED demand). All prices are her proposed asking prices and UNVERIFIED; the test measures them.",
+   "units_for_bar": "Gross needed ≈R$11.800–17.000/month. That is the net bar R$10.359–12.949 plus a R$750–1.400 stack, over (1 − 6–15,5% tax). The Simples annex for CNAE 7810-8/00 is UNVERIFIED. ⇒ 5,9–8,5 hires/month at R$2.000, or 4,7–6,8 at R$2.500.",
+   "hours": "Per hire ≈6–8 h: 2 h scouting live replays with AI transcription and a scoring assist, 1 h WhatsApp/calls, 2 h for 3–5 video auditions, 1 h compiling tapes and the shortlist, 1 h follow-up. At 6 hires that is 36–48 h. Add 12–15 h of Portuguese sales calls and 5 h admin, for 53–68 h/month against 87 h. At 8,5 hires it reaches ~80 h, the ceiling.",
+   "pool": "Demand snapshot: 728 live-host listings; 66 distinct employers in the 120 read, incl. ≥7 recruiters, ≥6 live agencies and ≥10 fashion/beauty brands. Flow assumption: ~150–300 new TikTok/live host hires a month nationally (UNVERIFIED; derived from listing stock and high host churn, not measured). Growth: daily lives ×20 and live GMV ×161 in year one (TikTok newsroom, primary).",
+   "pool_div4_vs_bar": "Pool ÷ 4 ≈ 37–75 hires/month against a need of 5–8.5, so it passes on paper. But the flow is UNVERIFIED (derived from a listing stock), so treat this as a hypothesis.",
+   "c8_fit": "Strongest in the archive for her. Casting on-camera talent is literally what a working model sat through: who holds energy for four hours, who reads as credible holding a perfume, who looks expensive versus cheap on a phone camera. The buyer verifies with its own eyes (audition tapes of its own product), so no credential or belief is required. She stays off camera: auditions are private calls, which C2 permits.",
+   "revealed_preferences": "TRADES the MACHINE TEST: her eye is on every hire, and there is a relationship per client. PARTLY KEEPS ORIGINATION ONCE: live agencies and brands with live operations hire repeatedly, because host churn is high, so one 'yes' produces repeat searches. In exchange it gives high value per unit relative to hours, her domain (C8), a sale that Portuguese calls make, per-project cash (exempt from THE STEADY-STATE KILL), and a bounded guarantee.",
+   "biggest_flaw": "The fee ceiling is low, because hosts are paid R$1.900–2.500 base. Five to eight hires a month is a real sales and scouting load for one person. Free job boards set a price floor. And there is a legal grey: Lei 6.533/78 art. 3 par. único plus art. 4 require agencies that place 'artistas' to be registered with the Ministério do Trabalho, if a live host counts as an artist (https://www.planalto.gov.br/ccivil_03/leis/l6533.htm).",
+   "repair": "(1) Sell to live agencies and TSPs first: they hire in batches, so one relationship brings recurring searches. Price the batch (3 for R$5.000), not the head. (2) Cap the guarantee at one replacement within 60 days, voided if the client changes the brief. (3) Position the role as 'vendedor(a) de live': commercial and commission-paid, which is how every observed ad frames it (PJ/CLT sales). Get one accountant/lawyer opinion on Lei 6.533 before scaling; registration at the MTE is a filing, not a credential. (4) Never supply a host as her own contractor; that would be labour resale and a C3 breach. The brand or agency always contracts the host. (5) Recycle the funnel: hosts she scouts who are not hired become creators in candidate 2's TAP campaigns, so scouting hours pay twice.",
+   "treadmill": "BETTER: each model release makes her scouting cheaper (transcribe and score live replays, draft outreach). The right to charge rests on TikTok's human-voice rule, which a model cannot change. OBSOLETE only if TikTok relaxes the LIVE rule to allow AI voices. It currently allows avatars with a live human voice (Duoke summary; the BR academy text bans AI voices). Named platform-rule risk.",
+   "honest_floor_usd_month": "US$600–1.500. At 2–5 hires/month × R$2.000 = R$4.000–10.000 gross, less 6% tax and a R$750 stack, net is R$3.010–8.650 ≈ US$580–1.670 at PTAX 5,1795. Reaching the bar needs 6–8 hires/month, or batch buyers.",
+   "next_test": "R$0, Portuguese calls, in 14 days. DEMAND: call 25 employers currently advertising live-host roles (the brands and live agencies named above, from the trabajo.org listings) with the fixed offer: 3 audition-tested hosts in 10 business days, R$2.000 only on hire, one replacement in 60 days. SUPPLY, in parallel: from TikTok LIVE search in beauty/fragrance, find 15 candidates with ≥3 recorded lives each and get ≥6 to do a 20-min private video audition.",
+   "bar": "Committed in advance. ≥3 of 25 employers commission a search at ≥R$1.800 per hire within 14 days, AND ≥1 hire invoiced within 45 days, AND ≥6 of 15 scouted hosts complete an audition. If fewer than 3 of 25 commission a search, or the accepted price is below R$1.500, stop.",
+   "unverified": [
+    "The success-fee level buyers will accept (R$2.000 is her asking price; the only anchors are an old 55%-of-salary table and an SEO range)",
+    "The national flow of new live-host hires per month (150–300 is assumed)",
+    "The Simples annex and tax rate for CNAE 7810-8/00, and whether MEI is excluded",
+    "Whether Lei 6.533 art. 3 par. único / art. 4 applies to TikTok live-sales hosts",
+    "Aggregator salary ranges on trabajo.org (the ad-text figures are the verified ones)",
+    "Duoke's summary that avatars with a human voice are allowed (the BR academy page verifies only the AI-voice ban)"
+   ]
+  },
+  {
+   "name": "O ELENCO — a TikTok Affiliate Partner (TAP) campaign desk for fragrance, bodysplash and skincare brands, paid by the platform on attributed GMV",
+   "one_line": "She registers as a Brazilian TikTok Affiliate Partner and runs agency campaigns that brands join at no upfront cost by registering products at 'open plan + ~5pp'. She casts and activates live-sellers and video creators into those products and keeps a share of the added commission. TikTok measures and pays that share from settled orders.",
+   "price_holder": "outcome",
+   "why_tool_vendor_cannot_give_it_away": "The unit is a sale by a real creator on TikTok, attributed and paid by TikTok. Neither Higgsfield nor any generator can manufacture a creator with an audience or a LIVE human voice (BR rule above). The platform, which earns 6–10% + R$4–6 per item on the flow, gives away DISCOVERY: the seller's 'Descobrir criadores' with creator cards. But it created a PAID intermediary slot for ACTIVATION, and the paid slot exists for Brazil. Partner service categories list Affiliate Partner, registration region Brazil → target market Brazil, 'Seller and Scalable Creator Match-up' (https://partner.tiktokshop.com/api/v1/document/detail?document_id=64f1989064ed2e0295f3c1b5&workspace_id=3). The BR seller centre carries a TAP GMV leaderboard and tells sellers to 'register your products within their preferred commission rate range'. On NO-MARGIN-ON-THE-FLOW: the party earning on the flow funds activation instead of giving it away.",
+   "buyer": "Beauty sellers on TikTok Shop BR, starting with fragrance and bodysplash: #1–#3 beauty products per TikTok, and the category behind Lua Blossom's R$1 M in fragrance lives. Skincare/haircare launchers from the ANVISA daily file (wave 1) and fashion sellers (fashion +154% in H1 2026) come next. Brands are reached by Portuguese calls and also find her campaigns in the TAP campaign marketplace themselves. Supply side: independent live-sellers and micro-creators, reached by WhatsApp and calls.",
+   "observed_buyer_money": [
+    {
+     "what": "Perfumistta pays a full-time 'Analista de Afiliados e Creators | TikTok Shop' to do exactly this work for one brand: find, invite, sample, brief, rank and track creators",
+     "price": "R$47.000–76.000/yr (aggregator range)",
+     "unit": "per analyst per year (replacement cost of the service)",
+     "url": "https://br.trabajo.org/emprego-2251-46f127372b85e473d4d4e9ac50b28319",
+     "status": "observed buyer-side (the job is observed; the salary range is the aggregator's)"
+    },
+    {
+     "what": "Sallve + Contém1g hiring a 'Coordenador(a) de Creator Commerce | TikTok Shop, Afiliados e Seeding'; Snack Content, Recruta Simples and Tec-Do hiring affiliate/creator specialists for TikTok Shop",
+     "price": "R$60–300 k/yr (aggregator ranges)",
+     "unit": "per role per year",
+     "url": "https://br.trabajo.org/emprego-4037-6c656fb72e33f34132c4664a806b4b94",
+     "status": "observed buyer-side (jobs observed; pay is the aggregator's)"
+    },
+    {
+     "what": "EXX Nutrition posts a freelance 'SDR para captação de creators no TikTok Shop'; a 30-year lingerie manufacturer's TikTok Shop brief includes 'Recrutamento dos primeiros 50 criadores'",
+     "price": "budget 'Aberto' (open), minimum bid R$60",
+     "unit": "per project",
+     "url": "https://www.99freelas.com.br/project/sdr-para-captacao-de-creators-no-tiktok-shop-786669",
+     "status": "observed buyer-side demand (price not stated)"
+    },
+    {
+     "what": "TikTok's own mechanism (US doc): sellers typically add +5% over open plan for partner campaigns, and 'Agencies can choose how to split the added commission between themselves and the creators'",
+     "price": "+5 percentage points of GMV, split between TAP and creators",
+     "unit": "% of settled GMV",
+     "url": "https://seller-us.tiktok.com/university/essay?knowledge_id=6543118107477774&lang=en",
+     "status": "observed platform fee schedule (US; the BR split norm is UNVERIFIED)"
+    },
+    {
+     "what": "Brands already pay affiliate commission on every creator sale in BR; TikTok's own example is a 10% default",
+     "price": "8–15% (secondary) / 10% (TikTok example)",
+     "unit": "% of item price",
+     "url": "https://ads.tiktok.com/help/article/about-setting-different-affiliate-commission-rates-for-tiktok-shop-ads?lang=pt",
+     "status": "seller asking / example (the market rate is UNVERIFIED)"
+    },
+    {
+     "what": "Scale of affiliate selling per brand (TikTok newsroom): BigHome averages 300 active affiliates with sales in 28 days and R$17 M in 2026; Moderna >9.000 active affiliates and >10.000 units/day",
+     "price": "R$17 M (BigHome 2026 YTD)",
+     "unit": "per brand",
+     "url": "https://newsroom.tiktok.com/tiktok-shop-cresce-102-vezes-em-seu-primeiro-ano-no-brasil?lang=pt-BR",
+     "status": "observed (platform-published)"
+    }
+   ],
+   "free_front_door_check": "(1) Open Plan and Target Collaboration are free to sellers: the brand can invite creators itself. But the observed job posts show brands STAFF this at R$47–300 k/yr, so the free tool does not do the work (Perfumistta: 'dezenas de creators por dia por mensagem'). (2) The strategy layer is free: a GitHub agent skill (NanoSkill/nexscope) and TikTok academy. She does not sell strategy. (3) Competing TAPs and agencies exist: Tokz ('parceira oficial'), Continuum and others with bespoke prices. Occupied, not free, and TikTok ranks TAPs by GMV, so a small TAP can surface by performance. (4) TikTok 'Exclusive' campaigns (US) pair sellers with agencies at zero upfront cost. That is a channel TO TAPs, not a replacement. (5) C4 is clean: sellers register products into her campaign; she never holds shop credentials. Samples ship seller → creator on creator authorisation (TAP sample doc).",
+   "offer_and_price": "To brands: 'register 3–10 SKUs in my Fragrance & Body campaign at your open-plan rate +5pp. You pay nothing unless a creator sells.' She keeps ~3pp and passes ~2pp to creators as an exclusive bonus. The split is her choice per the US mechanism; BR is UNVERIFIED. Optional fixed CLOCK fee: 'Black Friday / 12.12 live-seller sprint' at R$2.500 per brand for ≥8 live-sellers booked for the date window (her asking price, UNVERIFIED).",
+   "units_for_bar": "Gross needed ≈R$11.800–17.000/month ⇒ attributed GMV ≈R$394–566 k/month at a 3% take (R$295–425 k at 4%). That is ~113–377 active creators at R$1.500–3.500 GMV each per month (derived from the BigHome and Moderna newsroom figures; UNVERIFIED for beauty), OR ~10 strong live-sellers at ~R$40 k/month each. The top live-sellers publish R$1–2,4 M lifetime.",
+   "hours": "Sub-linear in brands, linear in creators. About 50–60 h/month on creator scouting, activation, WhatsApp and calls, and weekly rankings from TAP Data Overview. About 10–15 h of brand calls, 5 h admin. Total 65–80 h against 87 h. AI drafts outreach and reads TikTok's creator diagnostics; she does the selection.",
+   "pool": "Beauty ≈21% of TikTok Shop BR GMV (secondary) on ~US$46 M/month total (secondary; a conflicting secondary figure is ~3,7× higher) ⇒ ≈R$50 M/month beauty. If ~50% of that is affiliate-driven (UNVERIFIED; Insider says 90% is creator-influenced) ⇒ ≈R$25 M/month of affiliate beauty GMV. Her need is 1,6–2,3% of it.",
+   "pool_div4_vs_bar": "Pool ÷ 4 ≈ R$6,3 M/month of affiliate beauty GMV against a need of R$0,39–0,57 M, so it passes on paper. It is built from three stacked unverified multipliers (total GMV × beauty share × affiliate share), so per the Hunt-5 rule it is a HYPOTHESIS, not a number.",
+   "c8_fit": "High. Casting and activating the people who sell beauty on camera uses her modelling knowledge of presence and what reads as expensive. Fragrance and bodysplash are her world. The insight is hers and the selling is the creators', so she stays faceless (C2) and needs no credential: the platform shows everyone the GMV.",
+   "revealed_preferences": "KEEPS 'buyer verifies without trusting her': TikTok attributes and pays the outcome, and the brand sees agency-level GMV. KEEPS ORIGINATION ONCE on the brand side: brands register products once and stay in the campaign, and new brands find the campaign marketplace unbidden. Machine-ish: the platform plus creators make each sale. TRADES 'no relationship to hold': a creator community must be held and refilled, which is origination-forever on the supply side. Compensated by domain, platform-paid outcome and zero upfront price to brands.",
+   "biggest_flaw": "Cold start. Income is a share of GMV her creators have not generated yet: she needs ~100–350 active creators or ~10 strong live-sellers before it matters. The TAP application needs a CNPJ plus one proof (a signed creator or seller agreement, or another affiliate platform with 7 days of sales). The BR commission-split norm and payout entity/tax are unverified. And TikTok can re-price or re-route the TAP slot (platform-rule risk).",
+   "repair": "(1) Go narrow: fragrance and bodysplash lives, the #1 beauty category, which is live-heavy. Lead with live-sellers (few, high GMV) rather than hundreds of micro-creators. (2) Fund the cold start with candidate 1's placement fees: the same scouting session yields a hire for a brand or a TAP recruit. (3) Add a fixed clock-priced sprint fee around the mega-dates (11.11, Black Friday 27 Nov 2026, 12.12) so year-1 cash does not depend on commission alone. (4) Satisfy the TAP proof with one signed creator agreement plus one seller LOI from the R$0 test, then apply. (5) Keep the creator-level ledger, which TikTok shows the TAP and not the brand (US doc). That is her compounding, unbuyable asset.",
+   "treadmill": "BETTER: models make scouting, outreach and diagnostics cheaper, TikTok supplies the data, and the right to charge is a platform-paid share of real creators' sales. OBSOLETE only if TikTok itself automates matchmaking without agencies. Today it does the opposite: it ranks TAPs and routes 'Exclusive' campaigns through them.",
+   "honest_floor_usd_month": "US$300–1.200 in months 12–18: 40–100 active creators ⇒ R$80–250 k GMV × 3% = R$2.400–7.500 gross ⇒ net ≈US$290–1.220. Upside above the bar if 2–3 live-sellers break out (Vitória Merlos-class ≈R$200 k/month). Treat it as the compounding leg on top of candidate 1, not as a standalone year-1 income.",
+   "next_test": "R$0, Portuguese calls/WhatsApp, in 14 days. CREATOR SIDE: 40 fragrance/bodysplash/skincare micro-creators and live-sellers (5–50 k followers, a TikTok Shop showcase, ≥1 shoppable live or video in 14 days; all public), offered '+2pp exclusive commission + free sample'. BRAND SIDE: 20 fragrance/bodysplash/skincare sellers active on TikTok Shop, asked to register ≥3 SKUs in a partner campaign at open plan +5pp, paying only on sales. Then apply at partner.tiktokshop.com with one signed creator agreement as the proof.",
+   "bar": "Committed in advance: ≥10 of 40 creators agree in writing AND ≥5 of 20 brands agree in writing to register SKUs AND the TAP application is approved within 30 days. Any leg short ⇒ drop to candidate 1 alone.",
+   "unverified": [
+    "TAP commission split and payout mechanics in Brazil (documented for the US; BR has only the leaderboard string plus the category listing)",
+    "The paying entity and tax treatment of TAP commission (TikTok BR vs foreign; Simples annex for intermediação)",
+    "Whether a MEI/CCMEI satisfies 'company registration' for TAP",
+    "Beauty share (21%) and total GMV (US$46 M/month): both secondary and conflicting",
+    "Affiliate share of beauty GMV (~50% assumed)",
+    "GMV per active beauty affiliate (R$1.500–3.500/month derived from non-beauty brands)",
+    "That BR sellers accept +5pp for partner campaigns (US norm)"
+   ]
+  }
+ ],
+ "killed_while_hunting": [
+  {
+   "idea": "UGC video brokerage or production for beauty brands (per-video)",
+   "cause": "LEGIBILITY–MARGIN: published per-unit commodity prices on marketplaces with escrow and bundled rights — Creatify 'a partir de R$100 / R$100–250 por vídeo', Noovid 'a partir de R$169 · Direitos vitalícios', with one-click send to Meta/TikTok ads. The platform is the free front door for rights and escrow; no margin for a middleman",
+   "url": "https://noovid.com/"
+  },
+  {
+   "idea": "Marketplace (ML/Shopee) account management for cosmetics/fashion sellers",
+   "cause": "Legible retainer at R$1.080–1.242/month (Mercato Flux). It needs standing access to the seller account (C4), is origination-forever, and Mercado Livre bonuses certified agencies to give assessoria FREE",
+   "url": "https://www.ecommercebrasil.com.br/noticias/mercado-livre-lanca-servico-de-assessoria-gratuita-para-vendedores-e-estima-ate-70-de-crescimento"
+  },
+  {
+   "idea": "Live-commerce studio / produced lives for brands",
+   "cause": "Capital-heavy physical asset (studios sell at R$3.500–8.500/day), and she cannot host (C2). The occupied TSP 'LIVE Stream Management' seat needs in-house hosts, i.e. contractors (C3)",
+   "url": "https://www.blackframestudios.com.br/"
+  },
+  {
+   "idea": "Fit modelling (modelo de prova) for Bom Retiro/Brás confecções — her own body-hours",
+   "cause": "A job, not a business: R$120/h, measurement-gated (exact busto/cintura/quadril/altura), in-person, a few hours a week per confecção; field-stop floor and year-three persistence",
+   "url": "https://www.carreirafashion.com.br/vaga-de-moda/modelo-de-prova-freelancer/195396"
+  },
+  {
+   "idea": "TikTok Shop affiliate STRATEGY / playbook consulting",
+   "cause": "FREE FRONT DOOR: a free GitHub agent skill writes the whole program (commission tiers, 'recruit 50 creators for my beauty brand', KPIs), and TikTok's academy publishes the rest",
+   "url": "https://nanoskill.ai/pt/skills/tiktok-shop-affiliate-skill"
+  },
+  {
+   "idea": "AI-generated presenter videos / AI live hosts for TikTok Shop sellers",
+   "cause": "TikTok BR rule: no AI voices in LIVE, and shoppable videos should show 'seu rosto e o produto físico'. On top of that, the tool vendor (Higgsfield) and 99Freelas bidders from R$50 already sell AI product video",
+   "url": "https://seller-br.tiktok.com/university/essay?knowledge_id=5635030781101840&lang=pt-BR"
+  },
+  {
+   "idea": "Influencer seeding / PR-box logistics",
+   "cause": "TikTok's free-sample flow ships seller → creator on request inside the Affiliate Center and TAP campaigns (the platform is the front door). What remains is physical per-unit handling (catalogue scissors)",
+   "url": "https://seller-br.tiktok.com/university/essay?knowledge_id=6580476438529809&default_language=pt-BR"
+  }
+ ],
+ "notes": "MONEY-FIRST RESULT: every legible flow in her domain prices as a commodity: UGC R$100–250/video, assessoria R$1.080–1.242/month, studio R$3.500–8.500/day, fit model R$120/h. The two slices with evidence of margin share one mechanism. TikTok Shop BR, where beauty is the #1 category and daily live GMV grew ×161 in a year, (a) forbids AI voices in LIVE, which makes a real human the priced input, and (b) created a platform-paid Affiliate Partner slot listed for Brazil. That defeats THE SELF-REPORTED-CONVERSION TRAP because TikTok measures and pays. The strongest buyer-side evidence is job posts: Brazilian beauty brands staff creator/affiliate managers at R$47–300 k/yr (aggregator ranges), and brands and live agencies recruit TikTok live hosts at R$1.900–2.500 base + commission, often through ≥7 HR firms. RECOMMENDED SHAPE: ONE scouting engine, two monetisations, run in sequence. A BANCADA first, for per-project cash that Portuguese calls can sell now. O ELENCO second, as the compounding, platform-paid leg fed by the same scouting (hosts not hired become TAP creators). Combined honest floor ≈US$900–2.000/month at 12–18 months (HYPOTHESIS; the hours conflict at the top of both ranges). Beats the VBPH launch-kit floor (US$700–1.500) only if the A BANCADA test clears. HONEST WEAKNESSES: the placement fee is her asking price, not an observed fee; TAP economics in Brazil rest on a US mechanism doc plus BR category and leaderboard strings; the TikTok GMV and beauty-share figures are secondary and conflict. Etsy and Faire not attempted; Workana and br.indeed.com returned 403."
+}

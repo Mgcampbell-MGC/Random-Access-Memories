@@ -1,0 +1,177 @@
+{
+ "agent": "W2A",
+ "lens": "CONSENT — a real person's licensed likeness, voice, body or data as the scarce, priceable input in late 2026",
+ "candidates": [
+  {
+   "name": "TOM REAL — calibrated shade swatches on licensed Brazilian skin tones for colour-cosmetics launches (the category the launch kit had to exclude)",
+   "one_line": "Once or twice a month Sol runs a batched 'swatch day': the same 6 licensed models spanning Brazil's skin-tone range, a fixed light rig and a ColorChecker in frame; each brand's new shades go on those 6 arms, are shot, colour-corrected by script and delivered in 5 working days with a ΔE report and a 12-month e-commerce image licence — so the shade online is the shade in the bottle, which no image model can certify.",
+   "price_holder": "outcome",
+   "why_tool_vendor_cannot_give_it_away": "Consent is the second holder, not the first: a licensed real arm plus a colour target in frame is a physical MEASUREMENT of the product; a generated shade on generated skin is a picture of a claim. The supplied VBPH plan itself lists 'makeup shade fidelity' among buyers to avoid, and Higgsfield's own product-photoshoot recipe tells the agent not to claim fine detail is verified from a thumbnail (HIGGSFIELD_FACTS.md). Mercado Livre's free AI photo tool and Higgsfield both generate model imagery; neither measures colour on real skin. What the vendor sells is production; what this sells is a colour number on a person who signed a licence.",
+   "buyer": "Own-brand colour-cosmetics launchers on the ANVISA daily file (~79 days' notice before shelf, per wave 1). Last 12 months (DT_VENCIMENTO−10y window): base/corretivo/foundation 782 notifications from 150 holders; lip 3.374 from 423; eye/cheek 3.086 from 376 (overlapping holders; many are importers of coded generic lines, e.g. 'BATOM CREMOSO BN8517 | SOLLIS TRADING', who will not pay). Bases/corretivos first: a wrong shade online is a return.",
+   "observed_buyer_money": [
+    {
+     "what": "Squareshot (US studio) publishes a 'BEAUTY (Swatches)' service line; hand-model image = 3 credits at US$45–60/credit",
+     "price": "≈US$135–180",
+     "unit": "per hand-model image",
+     "url": "https://www.squareshot.com/services",
+     "status": "seller asking (US; the studio has a US market she lacks)"
+    },
+    {
+     "what": "Real-person product videos on Vintepila with 3-month ad image rights",
+     "price": "R$30–45 per video (+R$30 for 'Ads e Direito de imagem 3 meses'); 390 and 753 sales on two gigs",
+     "unit": "per video",
+     "url": "https://www.vintepila.com.br/servicos/publicidade/eu-vou-fazer-video-ugc-para-seu-produto-servico/",
+     "status": "observed buyer-side (the crowd ceiling for 'a real person with the product', uncalibrated)"
+    },
+    {
+     "what": "Boca Rosa Beauty's own TikTok posts a shade swatch of its 7 darkest Stick Pele shades made by influencer @estojodabeleza",
+     "price": "UNVERIFIED (PR or paid)",
+     "unit": "per launch",
+     "url": "https://www.tiktok.com/@bocarosabeauty/video/7428700533755628805",
+     "status": "UNVERIFIED — shows the free/PR route brands use today"
+    },
+    {
+     "what": "Synthetic substitute: AI persona at Estúdio Fábrica (wave 1)",
+     "price": "R$53",
+     "unit": "per AI persona",
+     "url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+     "status": "seller asking"
+    }
+   ],
+   "free_front_door_check": "Four routes exist and none is a clean kill, none is clear either: (1) influencers swatch launches as PR (Boca Rosa example) — free but uncalibrated, one skin tone per creator, not licensed for product pages; (2) the brand's in-house shoot — a phone, a light and a ColorChecker are cheap, so the REPLACEMENT-COST CEILING is roughly one in-house shoot day; (3) iStock sells generic 'skin tone swatches' stock (not the brand's product); (4) contract manufacturers bundle label and marketing (wave 1) — whether any shoots on-skin swatches is UNVERIFIED. Perfect Corp's shade finder is a virtual try-on, not photographs. No Brazilian vendor publishing a swatch price was found — the gap may be real or may mean nobody pays.",
+   "offer_and_price": "R$150 per shade: 6 licensed skin tones, arm composite plus single crops, ΔE report against the ColorChecker, 12-month e-commerce/marketplace image licence. Packs: 'Lançamento' up to 12 shades R$1.800; 'Linha' up to 30 shades R$3.900 (≈R$130/shade). Optional jaw swatch on 3 tones +R$90/shade (needs a makeup artist — a vendor). 50% on booking, balance on delivery, NF-e + Pix/boleto.",
+   "units_for_bar": "Per shade: R$150 − Simples ~11% (R$16,5) − COGS ~R$33 (a swatch day ≈R$2.600 for 6 licensed models + transport, ÷ ~80 shades) = ≈R$100 contribution (67%). Bar net R$10.400–12.950 + stack R$750–1.400 ⇒ R$11.150–14.350 contribution ⇒ 111–143 shades/month ≈ R$16.600–21.500 gross/month ≈ 1,5–2 batched swatch days ≈ 8–12 launches/month from ~15–25 active brands.",
+   "hours": "2 swatch days × 10 h = 20 h; scripted colour correction/layout + QA ≈0,08 h/shade ≈ 10–12 h; product receipt/returns/invoicing ≈ 8 h; Portuguese sales calls + follow-up ≈ 25 h ⇒ ≈65 of 87 h/month.",
+   "pool": "HYPOTHESIS (three stacked unverified multipliers): 7.242 colour notifications/yr × share from brands that pay for official swatches (20%, UNVERIFIED) × shades per notification (1–5, UNVERIFIED) × R$150 ⇒ R$217k–1,09M/yr.",
+   "pool_div4_vs_bar": "R$54–272k/yr vs bar gross ≈R$200–257k/yr ⇒ clears only at the top of the hypothesis (≥4 shades per notification); fails ~4× at the bottom. Treat as unproven until the desk check counts shades.",
+   "c8_fit": "Very high — castings, skin tones, makeup, set light and image-usage licences are her grind knowledge. Faceless: she is never in frame; the arms belong to licensed models.",
+   "revealed_preferences": "Keeps limb 2 of the machine test (the buyer checks the shade with their own eyes and a ΔE number, no trust in her). Trades limb 3 and origination-once: each launch is a small sale to a brand she must hold, though repeat brands re-arrive on the ANVISA cadence 2–6 times a year. Pays for it with the strongest C8 fit in this lens, a sale Portuguese calls can make, and the one beauty visual the tool vendor cannot certify.",
+   "biggest_flaw": "No Brazilian brand has been observed PAYING cash for official shade swatches. The visible route is influencer swatches (free/PR) and in-house shoots, and a brand can buy a ColorChecker and a light itself — the price is capped at about one in-house shoot day.",
+   "repair": "(1) Sell the MEASUREMENT and the CONTINUITY, not the photo: the same 6 licensed arms every launch, so a brand's whole range stays comparable across years — something a one-off in-house day or an influencer swatch never is, and which builds up per brand. (2) Batch many brands into one monthly swatch day so COGS per shade stays ~R$30 and her hours ~20/month. (3) Sell it as the colour-truth module beside the launch kit, which excluded colour cosmetics because AI cannot hold a shade — together they cover the whole ANVISA beauty list. (4) Book models through an agency (a vendor issuing NF) or with a written cessão + LGPD consent per session — flag C3. (5) Bases/corretivos first, lips second.",
+   "treadmill": "better — every frontier release makes the AI launch world cheaper, while colour on real skin stays a physical measurement no image model can certify. The real risk is not the treadmill but self-supply (a phone + ColorChecker).",
+   "honest_floor_usd_month": "300–800 at 12–18 months standalone (≈R$1.600–4.200 net); its larger value may be as the colour module that lets the launch-kit lead sell to the ~40% of beauty launches it excluded",
+   "next_test": "R$0, in two steps. (a) Desk check, 1–2 hours: open 20 own-brand makeup product pages from the ANVISA 12-month list (bases first) and record whether they show on-skin swatches, on how many skin tones, and whether a colour target or consistent light is visible; also record shades per base launch (this measures the pool's weakest multiplier). (b) Then 20 Portuguese calls to the same brands: 'Who made the skin swatches for your last base/corretivo, what did it cost in cash, and would you pay R$150 per shade for calibrated swatches on 6 licensed Brazilian skin tones, 5 working days after the product arrives?'",
+   "bar": "Committed in advance. Desk check: ≥8 of 20 pages show official on-skin swatches; fewer than 5 ⇒ stop before calling. Calls: ≥5 of 20 say they paid CASH (not product) for their last official swatches or swatch shoot, AND ≥3 accept a paid pilot ≥R$1.500 within 60 days. Miss either ⇒ kill.",
+   "unverified": [
+    "shades per ANVISA notification (single shade vs whole line)",
+    "share of colour holders that are own-brands vs importers of generic coded lines",
+    "model cachê for a swatch half-day in São Paulo (R$300–400 assumed)",
+    "ColorChecker and light-kit prices (≈R$1.500–2.500 assumed)",
+    "Simples annex/rate for photography services (11% assumed, brief range 6–16%)",
+    "whether contract manufacturers already supply on-skin swatches",
+    "whether Brazilian marketplaces (Sephora BR, Beleza na Web, Mercado Livre) require or reward on-skin swatches",
+    "whether the influencer swatch in the Boca Rosa post was paid"
+   ]
+  },
+  {
+   "name": "ACERVO REAL — consented Brazilian textured-hair and skin-tone capture, licensed to AI data buyers (written English, USD)",
+   "one_line": "Sol casts and shoots a controlled set of 60–100 Brazilians across hair types 2A–4C and the skin-tone range (stills, 10-second hair-motion clips, product-application sequences, colour-checked light), each with a signed licence and LGPD art. 11 specific consent for AI training, then licenses it non-exclusively through Defined.ai's data-partner marketplace and direct to data vendors and beauty-tech — and takes paid in-country collection jobs from the same vendors.",
+   "price_holder": "consent",
+   "why_tool_vendor_cannot_give_it_away": "The tool vendor is a CONSUMER of licensed human data, not a seller. A crowd platform can buy a selfie for about R$30, but a controlled studio capture of textured hair in motion, with per-person commercial AI-training consent in Portuguese, is a physical session in Brazil. Synthetic data cannot be used to evaluate the model that produced it. Defined.ai lists only data 'ethically sourced, including proper consent, documentation, and the right to commercialize the data for AI training'.",
+   "buyer": "AI data marketplaces and vendors (Defined.ai, Shaip, LXT, Pangeanic, Unidata, Nexdata, FutureBeeAI, Appen, TELUS Digital, Toloka), beauty-tech (Perfect Corp, L'Oréal ModiFace, Haut.AI, Revieve, Banuba) and generative-video labs. Foreign, so sold in written English only.",
+   "observed_buyer_money": [
+    {
+     "what": "Shutterstock 'Data, Distribution, and Services' revenue, citing demand for ML/gen-AI training",
+     "price": "US$203,3M (2025), 175,3M (2024), 137,3M (2023)",
+     "unit": "per year, one company",
+     "url": "https://www.sec.gov/Archives/edgar/data/1549346/000154934626000008/sstk-20251231.htm",
+     "status": "observed buyer-side (aggregate, primary 10-K)"
+    },
+    {
+     "what": "AI buyers hiring Portuguese speakers directly for speech/data work",
+     "price": "US$10–36/h",
+     "unit": "per hour",
+     "url": "https://www.opentrain.ai/jobs/language/pt/",
+     "status": "observed buyer-side (job posts with budgets)"
+    },
+    {
+     "what": "Unidata data-collection request form: smallest budget bracket",
+     "price": "US$5.000–25.000",
+     "unit": "per project",
+     "url": "https://unidata.pro/datasets/facial-skin-condition-image-dataset/",
+     "status": "seller asking (vendor form)"
+    },
+    {
+     "what": "Datarade: Nexdata face datasets 'start at $10,000', Unidata 'at $30,000'",
+     "price": "US$10.000 / 30.000",
+     "unit": "per dataset purchase",
+     "url": "https://datarade.ai/search/products/face-datasets",
+     "status": "UNVERIFIED (search snippet; page 403)"
+    },
+    {
+     "what": "Defined.ai data-partner programme marketing",
+     "price": "'$600K+ Average partner revenue', '319% YoY growth in dataset sales'",
+     "unit": "vendor claim",
+     "url": "https://defined.ai/partnership-programs",
+     "status": "seller asking (vendor marketing — not an expectation)"
+    }
+   ],
+   "free_front_door_check": "Faces are taken: Nexdata advertises 500.605 multi-race face images and Unidata 670.190 (search snippets); a free academic Brazilian face benchmark with self-declared race labels exists (arXiv 2608.30688); crowd collection in Brazil pays about R$30 a session; and buyers hire Brazilians directly on OpenTrain. THE HEAD-START ASYMMETRY applies to faces. The only open cell is textured hair in motion plus beauty application sequences under controlled light — whether that is under-supplied is UNVERIFIED. AWS Data Exchange and Snowflake exclude Brazilian sellers (THE_DATASET_HUNT.md); Defined.ai is the channel to test.",
+   "offer_and_price": "(a) Non-exclusive dataset licence (training + evaluation, 3 years) at US$3.000–8.000 per buyer, through the Defined.ai marketplace or by direct invoice (Wise USD). (b) In-country collection projects for data vendors at US$40–60 per participant-session to her. Both invoiced as exported services/licences (≈8,1% tax + ≈2% rail).",
+   "units_for_bar": "Export bar US$2.200–2.800/month at zero COGS (CLAUDE.md). Participant cost ≈US$1.500–2.000 per dataset, spread over its licences ⇒ ≈US$30–36k/yr gross needed ⇒ 4–12 licence sales a year at US$3–8k each (after any marketplace share, UNVERIFIED), or ≈2 licences + 400–600 participant-sessions of collection work.",
+   "hours": "Build ≈60–80 h per dataset over 6–8 weeks (casting by Portuguese calls/WhatsApp, 2–3 capture days, scripted processing, hair-type and skin-tone labels, consent file). Selling ≈5–8 h/month in written English. ≈2 h per licence delivered. Collection jobs ≈1 h per participant-session all-in.",
+   "pool": "UNVERIFIED. The aggregate is real (Shutterstock alone books US$203M a year in data/distribution/services) but the Brazilian textured-hair and skin slice is unmeasured. No honest ÷4 is possible.",
+   "pool_div4_vs_bar": "Not computable honestly; the R$0 test below is the measurement.",
+   "c8_fit": "Good — hair types, skin, casting and directing a set are her knowledge; she stays off camera. The buyer is a foreign tech firm, not a beauty brand.",
+   "revealed_preferences": "Keeps both on the marketplace route: built once and licensed many times, the buyer inspects samples, the marketplace holds the buyer, and demand arrives through the listing. Trades both on the collection-job route, where each project is fetched.",
+   "biggest_flaw": "Demand is unproven and the category is sales-led with hidden prices (the archive's rule: if the comparable hides its price, the category is sales-led). Incumbents hold 500k+ face images and run custom collection. Most of C5 would go on participant fees before a buyer exists.",
+   "repair": "Never capture on spec. Write the spec first and get a named buyer, a collection job or Defined.ai approval before paying one participant. Start as the in-country collection supplier to data vendors (paid per session, no capital at risk) and keep non-exclusive resale rights where the contract allows. Narrow to where generators fail (textured hair in motion, application on dark skin), not faces. Pay participants a flat licence fee under a written cessão + LGPD art. 11 consent (flag C3), and RFC 3161-timestamp each consent so provenance is auditable per record (THE PROOF-GRANULARITY LAW).",
+   "treadmill": "mixed — better generators raise the value of REAL data for evaluation and provenance (a model cannot be graded on its own output), but synthetic data may replace real data for training, so value retreats to evaluation sets and hard cases.",
+   "honest_floor_usd_month": "0–500",
+   "next_test": "R$0, written English: a one-page spec (BR-TEXTURE-100: 100 consented Brazilians, hair 2A–4C, 4 lights, stills + 10-s motion, application sequences, skin-tone labels, per-person licence and LGPD consent) submitted through Defined.ai's data-partner form and emailed to 19 others (Shaip, LXT, Pangeanic, Unidata, Nexdata, FutureBeeAI, TrainingData, Appen, TELUS Digital, Toloka, Perfect Corp, ModiFace, Haut.AI, Revieve, Banuba + 4 generative-video labs), asking for an indicative licence price or a collection project.",
+   "bar": "Committed in advance: ≥3 of 20 reply within 30 days with a number, and ≥1 of them is a licence ≥US$3.000 for a ≤100-person set OR a collection project paying ≥US$40 per participant-session. Fewer ⇒ kill before spending a single real.",
+   "unverified": [
+    "licence prices for niche human datasets",
+    "Defined.ai revenue share, approval rate (~30% per a search snippet) and whether it pays a Brazilian partner",
+    "demand for textured-hair data specifically",
+    "whether current generators still fail on textured hair (not tested — no credits)",
+    "participant fee (R$80–120 assumed)",
+    "ANPD position on AI-training consent under LGPD art. 11",
+    "whether a per-session participant payment counts as a contractor under C3"
+   ]
+  }
+ ],
+ "killed_while_hunting": [
+  {
+   "idea": "PT-BR VOICE LABEL — publish licensed Brazilian professional voices on the ElevenLabs Voice Library and split royalties",
+   "cause": "Two structural walls in the vendor's own docs: (1) 'You can only create a Professional Voice Clone of your own voice. Even with their consent, you cannot clone someone else's voice' — no agent or label can hold the talent's voice; (2) Brazil is absent from the Stripe Connect payout country list (Argentina, Chile, Mexico, Peru, Uruguay, Portugal are on it). Economics are a lottery anyway: base US$0,03 per 1.000 characters; US$22M across 10.400+ creators ≈US$2.115 each over the life of the programme; the top PT-BR voice ('Keren', 4,28 bn characters in 12 months ≈US$128k/yr at the base rate) is the head of 6.057 PT voices.",
+   "url": "https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning/professional-voice-cloning"
+  },
+  {
+   "idea": "LICENSED LIKENESS / TWIN LIBRARY for brands (and wave 1's GÊMEO LICENCIADO, further weakened)",
+   "cause": "Consent is already a self-serve commodity: ModelManagement.com offers '100,000+ pre-consented AI twins' with an API; getdigitaltwin.ai leases any twin at US$99/month; Pixelz sells digital twins; HeyGen's FREE plan includes 500+ stock avatars; Mercado Livre generates AI model photos free for its sellers; Estúdio Fábrica sells an AI persona for R$53. A non-famous licensed face clears around US$99/month.",
+   "url": "https://www.modelmanagement.com/digital-twins/"
+  },
+  {
+   "idea": "PROVA REAL — CONAR-compliant real-consumer testimonial desk (CONAR Anexo Q forbids professional models posing as consumers and demands written authorisation and proof of veracity; 16 CFR 465.2 forbids testimonials by people who don't exist or never used the product — so AI UGC actors cannot legally testify)",
+   "cause": "The rule is real (verified in the CONAR 2026 code and eCFR) but compliance is cheap: real people with the product and 3-month ad rights sell on Vintepila at R$30–45 per video with 390 and 753 sales, plus R$30 for the ad-rights add-on. Consent from a non-famous person clears at crowd prices; a desk in the middle is also white-label human services (exhausted) and C3.",
+   "url": "https://www.vintepila.com.br/servicos/publicidade/eu-vou-fazer-video-ugc-para-seu-produto-servico/"
+  },
+  {
+   "idea": "LIKENESS-PROTECTION / TAKEDOWN desk for Brazilian models, voice actors and influencers (unauthorised clones of Faustão, Silvio Santos and Neymar are sold from R$19 at papagaioai.com)",
+   "cause": "Loti AI offers 'Likeness Protection for Everyone — Track your face and voice across the internet, for free' with automated takedowns; paid tiers only for public figures, partnered with WME/CAA.",
+   "url": "https://www.lotiai.com/"
+  },
+  {
+   "idea": "CONSENTED CROWD DATA SUPPLY (head-mounted chore video, voice recordings, selfies) from Brazil",
+   "cause": "Buyers go direct: OpenTrain posts Portuguese AI data jobs at US$10–36/h; Brazilian contributors reportedly earn R$30 a session for chore video; LXT, Pangeanic and Appen already collect in Brazil. Reselling that is THE POSTO CONSTANT.",
+   "url": "https://www.opentrain.ai/jobs/language/pt/"
+  },
+  {
+   "idea": "EXCLUSIVE BRAND VOICE for Brazilian companies' AI voice agents / URA",
+   "cause": "Uniqueness no longer needs a human: ElevenLabs Voice Design makes new synthetic voices, stock PT-BR voices are included, voice-agent platforms bundle voices (Toolzz Voice plans from R$999/month, search snippet), and an employee can make a PVC of their own voice and share it to the company workspace. Consent only prices where the voice is RECOGNISED — the celebrity tier, held by agencies (CMG Worldwide for ElevenLabs' Iconic Marketplace).",
+   "url": "https://elevenlabs.io/docs/eleven-creative/voices/voice-library"
+  },
+  {
+   "idea": "DIGITAL-REPLICA CONSENT PAPERWORK on a Brazilian regulatory clock",
+   "cause": "No clock exists: PL 2338/2023 is still 'Aguardando Parecer' in the Câmara (2 Sep 2026); the SP actors' CCT 2026–27 has zero AI/replica clauses; CONAR's 2026 code contains no 'inteligência artificial' string and its new influencer guide expressly creates no AI-disclosure duty. Without a clock, the paperwork falls to THE TEMPLATE FLOOR.",
+   "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2487262"
+  },
+  {
+   "idea": "CELEBRITY / ESTATE LIKENESS AND VOICE BROKERAGE for Brazilian icons (the Iconic Marketplace model localised)",
+   "cause": "Recognition is the only consent that prices, and it is held by people with networks: CMG Worldwide brokers ElevenLabs' Iconic voices; Dafiti's Vitória Strada twin went through the agency House of Rabbits (search snippet). C7 plus her small network; every deal is fetched (origination forever); unauthorised clones already sell at R$19.",
+   "url": "https://elevenlabs.io/iconic-marketplace"
+  }
+ ],
+ "notes": "THE LENS'S OWN PREMISE FAILED THE MONEY TEST, and that is the main finding. In late 2026 consent from a NON-FAMOUS person is necessary but abundant, and it clears at crowd prices: R$30–45 for a real-person product video with ad rights (753 sales), US$99/month for a licensed twin, US$0,03 per 1.000 characters for a licensed voice, R$30 for a chore-video session. ★ THE CONSENT CHECKBOX LAW: the platforms capture consent in-flow FROM THE PERSON THEMSELVES (HeyGen's spoken consent phrase, ElevenLabs' own-voice verification, getdigitaltwin's 20-second consenting take). That makes consent free AND cuts out any consent agent, because the person must hold the account. Consent prices only as RECOGNITION (a face or voice the public knows, which agencies already hold) or when welded to a verifiable OUTCOME (colour on real skin, a real result) — which is why the lens's best candidate (TOM REAL) rests on outcome with consent second. ★ THE PAYOUT-RAIL EXCLUSION: Brazil is missing from ElevenLabs' payout countries while Argentina, Chile, Mexico, Peru and Uruguay are on it. Stripe's own docs limit self-serve cross-border payouts to US/UK/EEA/CA/CH platforms. Check the payout country list before assuming a Brazilian can sell consent on any foreign marketplace; add the 30% US withholding on US-customer usage (Brazil has no treaty). ★ CONAR 2026 Anexo Q (verified at the official PDF): 3.b professional models may not pose as ordinary consumers; 5.a the advertiser must prove a testimonial is true on request; 6.a written authorisation before publication, which the media may demand. Read with 16 CFR 465.2, AI-actor 'I used it' ads are non-compliant in Brazil (self-regulation) and unlawful in the US. The rule is real; compliance is cheap. Treadmill verdict for the lens: better synthetic media makes consent IRRELEVANT for most uses (a synthetic persona is free and needs no consent) and NECESSARY-but-cheap for real-person uses. Only recognition and outcome-truth keep a price. Useful fact for any future voice idea: Portuguese demand on ElevenLabs is large (6.057 PT voices; the top three pt-BR voices used 4,28 bn, 0,96 bn and 0,74 bn characters in 12 months), and Brazilians are locked out of monetising it. Neither candidate clears the US$700 floor on current evidence: TOM REAL 300–800, ACERVO REAL 0–500. TOM REAL has the better test: a 2-hour desk check, then 20 Portuguese calls. Etsy/Faire not attempted (unreadable here). The generator-failure claim on textured hair was NOT tested (no Higgsfield credits spent)."
+}

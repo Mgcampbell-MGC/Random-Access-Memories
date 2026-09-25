@@ -1,0 +1,201 @@
+{
+ "agent": "W2C",
+ "lens": "CHANNEL in her world. I tested whether partners that ALREADY hold beauty, fashion or aesthetics customers at the moment of need could sell a unit Sol makes (ideally machine-made, zero partner minutes), now that Portuguese calls let her recruit 20–40 partners. Partner types screened: cabeleireiros and barbearias, kids' salons, nail/lash, tattoo, bridal/15 anos, photo studios and maternity photographers, modelling/acting schools, cosmetology schools, image consultants (consultoras de imagem), perfumeries, pro-cosmetics distributors, beauty franchises, dermatology/aesthetic clinics, gyms/pilates.",
+ "candidates": [
+  {
+   "name": "A CADEIRA — licensed real-results from a salon network, sold to pro-haircare brands at launch",
+   "one_line": "Sol signs 15–25 São Paulo salons by call. When a pro-haircare brand launches (triggered from the ANVISA daily file), she places its product on 10 consenting real clients across the network. Each application is captured to a fixed standard (framing, 5500K light, 4 angles plus a 10-s motion clip) with a 15–20 s spontaneous testimonial. She returns a licensed, provenance-sealed REAL-RESULTS pack: signed image and testimonial licences, unedited originals, an RFC-3161-timestamped capture log. Sold standalone (R$3.500) or as the non-generatable add-on to the wave-1 LAUNCH KIT (+R$2.000).",
+   "price_holder": "consent",
+   "why_tool_vendor_cannot_give_it_away": "CBAP 2026 art. 27 §9(a) admits only 'depoimentos personalizados e genuínos, ligados à experiência … de quem presta o depoimento'. §9(b) says 'o testemunho utilizado deve ser sempre comprovável'. §9(c) lets an unpersonalised model speak only as 'licença publicitária', never confused with a testimonial. Art. 34(a) requires 'prévia e expressa autorização' to use images of living people. Higgsfield's AI presenters and AI 'results' are therefore licença publicitária at best and cannot be a result or a testimonial. A real client, a real professional application and a provable capture record are things no model release produces. Each frontier release makes fakes more convincing, which raises the value of PROVABLE real results.",
+   "buyer": "Brazilian professional-haircare brands launching salon-applied products (progressiva, selagem, botox capilar, descolorante, coloração, reconstrução). The EPP/Demais own-brand ones are the target: brands without an educator bench and not founded by a working hairdresser.",
+   "observed_buyer_money": [
+    {
+     "what": "Real-person UGC video with lifetime usage rights, fixed price, bought self-serve by brands",
+     "price": "from R$169",
+     "unit": "per video, one-time, rights 'vitalícios'",
+     "url": "https://noovid.com/",
+     "status": "observed buyer-side (published fixed price with a buy flow). This is the CEILING the pack must beat, not a floor."
+    },
+    {
+     "what": "'Agência tradicional' for the same UGC",
+     "price": "R$3.000+",
+     "unit": "per engagement (Noovid's own framing)",
+     "url": "https://noovid.com/",
+     "status": "seller asking (a competitor's marketing claim)"
+    },
+    {
+     "what": "Salon-client model: a brand's own technical educators run demonstrations and produce before/after in-house",
+     "price": "salaried staff (no per-result price)",
+     "unit": "n/a",
+     "url": "https://www.infojobs.com.br/vaga-de-educadora-tecnicoa-mercado-da-beleza-em-minas-gerais__11742519.aspx",
+     "status": "UNVERIFIED price; search snippet showing the role exists at Keune, Olenka and Gera Partner"
+    },
+    {
+     "what": "External paid real-results pack for a pro-hair launch",
+     "price": "none found",
+     "unit": "n/a",
+     "url": "https://noovid.com/",
+     "status": "UNVERIFIED — zero buyer-side observations of a brand paying for salon-applied, licensed real results"
+    }
+   ],
+   "free_front_door_check": "Four routes to the buyer's need ('proof that the product works on real hair, usable in ads'). (1) The brand's own educators and partner salons: free. Pro brands employ 'educador técnico' staff whose job is demonstrations, and among micro pro brands the founder is often the hairdresser (product names carry her own name in the ANVISA file). (2) UGC marketplaces: real people with lifetime rights from R$169/video (Noovid). But home creators cannot legitimately apply salon-only products, which is the pack's one structural edge. (3) Consumer testing clubs (Testaisso, Home Tester Club Brasil, LifePoints) cover home-use cosmetics, not salon procedures. (4) CROs, for claims substantiation: credentialled, outside the veto line. The state gives nothing here. Verdict: the front door is PARTIALLY open. The un-served cell is 'salon-applied product + real consumer + licensed + provable', and it exists only for brands with no educator bench.",
+   "offer_and_price": "PROVA REAL pack: 10 salon applications on consenting clients matched to the brand's hair-type brief; standardised 4-angle before/after plus motion; 5 testimonial clips; 24-month licences (CC art. 20, LGPD art. 7 I, CBAP art. 34(a)); unedited originals plus timestamped log (CBAP §9(b)); a one-page client-perception tally (explicitly NOT a claims study). Delivered 10–15 working days after product arrives. R$3.500 standalone; R$2.000 when bundled with the LAUNCH KIT (bundle R$4.500–5.500). Salons are paid R$120 per application and keep the content for their own feed.",
+   "units_for_bar": "Standalone margin ≈ R$1.923 per pack (R$3.500 − 10×R$120 salons − R$50 light-kit amortisation − ~9,35% tax, fator-r route per AUD3). The bar is net R$10.400–12.950 plus a R$400–800 stack = R$10.800–13.750 a month, so 5,6–7,2 packs a month (67–86 a year). As an add-on the margin is ≈R$613 per pack, so 1–3 add-ons a month add only R$613–1.839 (≈US$118–355).",
+   "hours": "8–10 h per pack: brief the salons by call/WhatsApp, verify consent, QA the captures, cut to spec, handle licence admin. So 45–72 h a month at the bar, plus 15–20 h of Portuguese sales and salon recruitment: 60–92 h against a cap of 87. At or over capacity at the bar.",
+   "pool": "ANVISA daily file (my recount, 12 months to 24 Sep 2026): 3.782 professional or procedure-type hair notifications from 570 holder CNPJs, of which 156 have ≥6. The top holders are contract manufacturers making many micro-brands. Brand-level pro-hair launch windows were not re-clustered; estimated ~1.000/yr (UNVERIFIED). The share of launches that would buy external real results, P(external), is unmeasured and likely low (educators, founder-hairdressers).",
+   "pool_div4_vs_bar": "The gross needed is R$235–302k a year. At P(external)=10%: 100 launches × R$3.500 = R$350k, ÷4 = R$87,5k, FAILS by ~3×. At P=30%: R$1,05M ÷4 = R$262k, which only just passes. The candidate lives only if ≥25–35% of pro-hair launches buy external real results. Nothing observed supports that.",
+   "c8_fit": "Strong. Hair, real models, castings, usage-rights licences and 'what looks expensive' capture are her grind knowledge. The taste is in the capture standard and the casting of clients, never in claiming expertise. The expert veto stays clean: the brand supplies the product and the claims, she supplies throughput and proof.",
+   "revealed_preferences": "Trades away THE MACHINE TEST: every pack needs coordination, and ten real people are hands-on-every-unit through vendors. Trades away ORIGINATION ONCE: each launch is a fresh sale, although the salon side is originated once. Compensates with her domain, a price-holder the tool vendor cannot give away, and a sale Portuguese calls can make on both sides.",
+   "biggest_flaw": "Demand is unobserved and the free route is strong. Brands with educators or hairdresser-founders produce before/afters free, and real-person UGC with lifetime rights sets a R$169/video anchor. There is ZERO buyer-side evidence of anyone paying for salon-applied licensed results.",
+   "repair": "Do not sell it standalone first. Sell it as the one non-generatable line inside the LAUNCH KIT: 'AI builds the world around your product; A CADEIRA proves it on ten real heads'. The target is only brands with no educator bench (EPP/Demais own-brand pro lines outside the hairdresser-founder tail). Price the add-on against 10 Noovid videos (R$1.690) plus the salon-application premium. Lead the pitch with CBAP §9(b) provability and art. 34(a) licences rather than with 'content'. Recruit salons on idle Tuesday/Wednesday chairs.",
+   "treadmill": "better — frontier releases make fake results more convincing, which raises the premium on provably real, licensed ones, and they make capture QA and editing cheaper. The right to charge rests on real people and a record, which models cannot produce.",
+   "honest_floor_usd_month": "US$0–450 standalone (1–1,5 packs a month at months 12–18 ≈ US$290–480 after a R$400 stack at PTAX 5,1795). As a LAUNCH KIT add-on, +US$100–350 a month. Below the US$700 bar either way.",
+   "next_test": "R$0, Portuguese calls, piggy-backed on wave 1's 20-call LAUNCH KIT price test (the same 20 EPP/Demais pro-hair launchers from the last 14 days of ANVISA notifications). Add two questions. (1) 'No último lançamento, de onde vieram os antes-e-depois / depoimentos reais, e vocês pagaram por eles?' (2) 'Pagariam R$2.000 a mais por 10 resultados reais, aplicados em salão, com licença de imagem de 24 meses e originais comprováveis?' In parallel call 10 SP salons: 'aceitaria R$120 por aplicação num horário ocioso, com cliente consentida e protocolo de captura?'",
+   "bar": "Committed in advance. LIVE only if ≥5/20 brands name EXTERNAL spend ≥R$1.000 on real results for their last launch OR say yes to +R$2.000, AND ≥6/10 salons accept R$120 per application. If fewer than 3/20 brands clear, or fewer than 4/10 salons, kill it and keep the salon list for nothing.",
+   "unverified": [
+    "Any buyer-side payment for salon-applied licensed real results (none found)",
+    "Share of pro-hair launches without an educator bench or hairdresser-founder",
+    "Brand-level pro-hair launch windows per year (~1.000 is an estimate; notifications were not clustered to brands)",
+    "Salon acceptance of R$120 per application",
+    "Whether CONAR enforcement against unprovable before/afters is frequent enough to make brands pay for provability (the archive has AI deep-fake sustações via H6C, but no filter or before/after ruling was fetched here)",
+    "Tax rate on the pack (fator-r route per AUD3; service mix not modelled)"
+   ]
+  },
+  {
+   "name": "O ENSAIO EM MINIATURA — full-colour figurine of the session pose, wholesaled to newborn, maternity and family photographers",
+   "one_line": "During a newborn, gestante or family session, the photographer shoots a 60-s phone orbit (or 40–60 stills) of the posed subject; that adds 2 minutes. Sol's pipeline (multiview-to-3D at US$0,20–0,40, likeness QA, print file) sends it to a colour 3D-print bureau (a vendor). A 12-cm full-colour figurine of THAT pose on a named plinth ships in 10–15 days. The photographer sells it as a product tier (retail R$450, she keeps R$135). Hospital-credentialed maternity studios can sell it through the QR codes they already post around the ward.",
+   "price_holder": "channel",
+   "why_tool_vendor_cannot_give_it_away": "Higgsfield (generate_3d) and Tripo output a GLB mesh, not an object. The unit is a physical colour print plus a likeness-QA'd mesh sold inside a photographer's product ladder at the moment the package is bought. What the vendor sells is the mesh at US$0,20–0,40, i.e. the COST side.",
+   "buyer": "Parents and families buying newborn, gestante or family sessions (package ladders R$1.350–4.150 à vista at a SP studio). The partner is the photographer, or a hospital-credentialed maternity studio such as Estúdio Mater at Maternidade Star.",
+   "observed_buyer_money": [
+    {
+     "what": "Newborn session package ladder; the tier steps are physical products (album 20×20 at 10 lâminas, then album 25×20 at 15 lâminas + box)",
+     "price": "R$1.350 / R$1.680 / R$2.650 / R$4.150",
+     "unit": "per session, à vista",
+     "url": "https://www.thamiandrade.com.br/ensaio-newborn",
+     "status": "seller asking (published price list)"
+    },
+    {
+     "what": "Colour-printed 3D figurine from a scan or phone video",
+     "price": "R$595 (12 cm, colour print) / R$900 (14 cm, hand-painted)",
+     "unit": "per figurine, D2C",
+     "url": "https://www.mm3d.com.br/",
+     "status": "seller asking"
+    },
+    {
+     "what": "Personalised 3D miniature, 1 person",
+     "price": "R$799 (25 reviews)",
+     "unit": "per figurine, D2C",
+     "url": "https://queropersonalizado.com/products/sua-miniatura-personalizada-em-3d",
+     "status": "seller asking; the review count is weak evidence of clearing"
+    },
+    {
+     "what": "Hand-painted digital-sculpt miniature",
+     "price": "R$295,80 (12 cm) – R$730 (20 cm)",
+     "unit": "per figurine, D2C",
+     "url": "https://www.cliqueadesivos.com.br/miniatura-3d-personalizada",
+     "status": "seller asking"
+    },
+    {
+     "what": "Figurine from ONE photo, 15–25 cm, 30-day guarantee",
+     "price": "R$84,90 (list R$169,90)",
+     "unit": "per figurine, D2C",
+     "url": "https://miniaturaartistica.com/",
+     "status": "seller asking — the catalogue FLOOR"
+    },
+    {
+     "what": "Image/multiview to 3D mesh",
+     "price": "US$0,20–0,40",
+     "unit": "per mesh (20–30 credits + HD texture)",
+     "url": "https://developers.tripo3d.ai/en/pricing",
+     "status": "observed vendor price (Sol's cost)"
+    }
+   ],
+   "free_front_door_check": "FAILS the inaccessible-subject screen at the primary source. MM3D states it accepts 'um video de celular, gravado em 4k, no conforto de sua casa', and Miniatura Artística sells a figurine from a single photo at R$84,90. So parents can reach both the capture and the object without the photographer. This is the 'public marketplace in a private-channel costume' law: what remains is the moment, the pose and the photographer's sales process. MM3D could wholesale to photographers directly. No photographer was found offering a figurine tier, so the seat looks empty, but that absence is UNVERIFIED rather than proved.",
+   "offer_and_price": "Wholesale to the photographer at R$315, suggested retail R$450, or bundled into the top package tier. 12 cm full-colour, one subject (+R$120 per extra person). The photographer's only extra work is the 60-s orbit capture and one upload. A 'redo free if likeness is rejected' guarantee is bounded by one reprint.",
+   "units_for_bar": "Margin per unit ≈ R$315 − print COGS (UNVERIFIED, bracketed R$120–200) − R$30 packaging and shipping − ~R$16 tax (Simples Anexo I ~5%) − R$2 mesh = R$67–147, central R$107. The bar is R$10.800–13.750 a month, so 101–129 units a month at central COGS (73–205 across the bracket). At 30–40 partners that is 2,5–4,3 units per partner per month, which needs 15–50% attach on ~8–20 sessions a month (UNVERIFIED).",
+   "hours": "20–25 min per unit (likeness QA, mesh repair, print file, logistics), so 35–50 h a month at the bar. Year-1 partner recruitment is 30–40 h of calls. Fits inside 87 h.",
+   "pool": "SP newborn, family and gestante photographers plus maternity-credentialed studios: count UNVERIFIED (thousands nationally). Illustrative: 40 partners × 12 sessions × 12 months = 5.760 sessions a year; at 15% attach, 864 units, R$272k of Sol wholesale revenue.",
+   "pool_div4_vs_bar": "R$272k ÷ 4 = R$68k against a gross need of R$382–484k a year. FAILS by ~6×. It would need ~200+ partners (a sales force) or several high-volume maternity concessionaires (births per month UNVERIFIED).",
+   "c8_fit": "Moderate. Photo shoots are her world (sets, light, pose), but the subject is babies and families, not beauty.",
+   "revealed_preferences": "Keeps THE MACHINE TEST (a machine makes the unit and parents judge the likeness with their own eyes) and ORIGINATION ONCE (after a photographer says yes, each session carries its own demand). ⚠ It is the SAME SHAPE as A ESCRITURA (a machine-made keepsake wholesaled through a channel), which the founder cut as 'NOT IT' today. Expect the same verdict.",
+   "biggest_flaw": "The subject is not inaccessible (MM3D's home 4K-video route; the R$84,90 single-photo floor), and the market-multiple test fails ~6× at 40 partners. Print COGS is also unknown and decides whether the margin is R$67 or R$147.",
+   "repair": "Sell only what the D2C floor cannot: the exact POSE from the session, in the session's styling, bundled inside the photographer's top tier (it replaces the courino box as the tier-maker at R$4.150), not as an impulse add-on. Add hospital-credentialed maternity studios as high-volume partners that already sell by QR. Get a bureau quote before anything else.",
+   "treadmill": "better on cost (image and multiview-to-3D keep improving, so likeness from fewer frames gets cheaper), obsolete on the right to charge (consumer capture plus D2C figurines keep eroding the channel premium). Net: leaning obsolete.",
+   "honest_floor_usd_month": "US$0–550. At 15–30 units a month (0,5–1 per partner at 30 partners), central margin R$107 less a R$400 stack gives ≈US$230–540. Reaches ~US$1.160 only at 60 units a month, which the pool test says is not sustainable at 40 partners.",
+   "next_test": "R$0, in writing and by calls. (1) Ask 3 colour 3D-print bureaus in SP plus MM3D for a wholesale quote: a 12-cm full-colour figurine from a supplied textured mesh, 10 a month. (2) Call 20 SP newborn/family photographers from Google Maps and Instagram: 'Colocaria uma Miniatura do Ensaio de R$450 (você fica com R$135) no seu pacote mais alto, e gravaria um vídeo de 60 s em volta do bebê posado?' (3) Run Tripo multiview-to-3D on 3 posed subjects (a doll is acceptable) and judge the likeness side by side with a R$84,90 Miniatura Artística listing photo.",
+   "bar": "Committed in advance. LIVE only if a landed print quote is ≤R$180 per unit AND ≥6/20 photographers say yes with ≥3 agreeing to show it in their next 5 consultations. Kill if every quote is >R$220 or fewer than 3/20 photographers say yes.",
+   "unverified": [
+    "Colour 3D-print bureau price per 12-cm figurine in Brazil (no published price found)",
+    "Sessions per month per newborn/family photographer",
+    "Attach rate of a figurine tier",
+    "Births per month at credentialed maternity studios (e.g. Estúdio Mater at Star) and whether they accept third-party products",
+    "Likeness quality of AI multiview-to-3D on newborns",
+    "Whether any Brazilian photographer already sells a figurine tier (none found in two searches)"
+   ]
+  }
+ ],
+ "killed_while_hunting": [
+  {
+   "idea": "Salon hair-colour / cut preview unit sold at the chair (AI try-on of the client's own face)",
+   "cause": "THE FREE FRONT DOOR in the brand's own words. L'Oréal Professionnel gives salons 'My Hair [iD] — o aplicativo profissional definitivo para coloração … diagnóstico capilar combinado com … teste virtual' as a free download. On the consumer side, ChatGPT/Gemini do the same from a selfie. The subject is the one in the mirror.",
+   "url": "https://www.lorealprofessionnel.com.br/my-hair-id-para-pros"
+  },
+  {
+   "idea": "Salon home-care replenishment / reorder desk with salon commission",
+   "cause": "THE NO-MARGIN-ON-THE-FLOW LAW. The brand already pays the salon for the future flow: L'Oréal social commerce 'comissões iniciais são de 6% para o salão e de 6% para os profissionais'.",
+   "url": "https://negociosdebeleza.beautyfair.com.br/saloes-de-beleza-e-cabeleireiros-podem-vender-produtos-cosmeticos-mediante-comissao-na-internet/"
+  },
+  {
+   "idea": "Salon sampling / media network (brands pay per sample, lead or screen in 20–40 salons)",
+   "cause": "SEAT OCCUPIED at scale. b.drops runs '+886 pontos + 6.241 telas 24 estados + DF + 180 cidades' in salons plus 187 barbershops. Salons pay nothing for screens or clips, and O Boticário, Arezzo, Eudora and Nestlé advertise. A 30-salon network is a rounding error beside it.",
+   "url": "https://bdrops.tv/"
+  },
+  {
+   "idea": "Kids' salon 'first haircut' premium keepsake (framed lock + certificate + photo)",
+   "cause": "THE PARTNER GIVES IT AWAY. Corte Kids hands parents 'um lindo certificado e mechinha' free on the first cut. Arithmetic also fails: a first cut happens once per child, so per-salon volume is tiny.",
+   "url": "https://www.trinks.com/corte-kids-mooca-plaza-shopping"
+  },
+  {
+   "idea": "Machine-made personalised colour-analysis cartela sold through image consultants",
+   "cause": "THE CATALOGUE SCISSORS. Per-client cartelas are season-generic catalogue items at R$12,90–46,90 (Studio Immagine) and R$35,90 (Sintonize); personalising adds only a name.",
+   "url": "https://loja.studioimmagine.com.br/paletas-de-cores/"
+  },
+  {
+   "idea": "Per-client illustrated style/colour dossier produced for image consultants (throughput, not expertise)",
+   "cause": "TEMPLATE FLOOR + TOOL VENDOR + TREADMILL. '12 Dossiês … editáveis no Canva gratuito … +700 páginas' sells at R$197 for lifetime access. The Mosty app delivers the dossier in-app. And the consultant's own service is being commoditised: TechTudo (28/04/2026) reports 'o ChatGPT é o novo consultor de imagem' with a viral free prompt.",
+   "url": "https://anizanoni.com.br/12-dossies-de-coloracao-pessoal-v2/"
+  },
+  {
+   "idea": "Scan-based life-size newborn hand/foot keepsake via maternity or newborn photographers",
+   "cause": "THE CATALOGUE SCISSORS / DIY FLOOR. Alginate DIY casting kits sell at R$45,90–64,21 and parents do it at home (Elo7 page 404 to curl; price from search snippet).",
+   "url": "https://www.elo7.com.br/escultura-mao-e-pe-de-recem-nascido-molde-mao-do-bebe/dp/1BBAF34"
+  },
+  {
+   "idea": "Custom-coloured / made-to-measure mega hair supplied to extension salons (the only per-customer third-party supply in beauty services)",
+   "cause": "SEAT OCCUPIED. MOJO already sells 'Personalização sob medida … personalização de cor' to 'profissionais e salões a partir de 300gr' (Inject Mega Hair R$1.550). Hair distributors are many and WhatsApp-native. It is also inventory and quality-dispute territory.",
+   "url": "https://meumojo.com.br/pages/atacado-cabelos-humanos"
+  },
+  {
+   "idea": "Physician-channel unit (derm, plastic surgery, clinics) carrying a margin or referral fee: compression garments, post-op drenagem referrals, simulations",
+   "cause": "STATUTORY BAR ON THE CHANNEL. CEM art. 69 forbids physicians to 'obter vantagem pelo encaminhamento de procedimentos … comercialização de … órteses, próteses'; art. 68 forbids interaction with sellers of prescribed products. The CFM 2.336/2023 bans on promotions and image editing are already in the archive.",
+   "url": "https://portal.cfm.org.br/images/PDF/cem2019.pdf"
+  },
+  {
+   "idea": "Perfumery 'scent wardrobe' sample/decant sets personalised at the counter",
+   "cause": "COMPELLED-BUT-CREDENTIALLED. Fractioning perfume for direct sale is regulated under ANVISA RDC 108/2005 (licensed fractionator). The page returned 503; the rule is from the search snippet, so PARTIALLY VERIFIED.",
+   "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2005/rdc0108_27_04_2005.html"
+  },
+  {
+   "idea": "Modelling/acting-school channel: comp card, digitals or agency-submission package for students",
+   "cause": "THE HONEST PRODUCT IS FREE. Agencies take submissions free (Models Face: no selection fee, free registration), and her own grind knowledge says real digitals, not books, are what count. Paid 'book' packages are the scam end of the market, and the students are often minors (LGPD art. 14).",
+   "url": "https://modelsface.com.br/"
+  },
+  {
+   "idea": "Consumer real-results via home testers (the non-salon version of A CADEIRA)",
+   "cause": "OCCUPIED. Testing clubs (Testaisso, Home Tester Club Brasil, LifePoints) already run cosmetics and hair tests for brands, and Noovid sells real UGC from R$169 with lifetime rights.",
+   "url": "https://www.correiobraziliense.com.br/aqui/2026/07/13/quer-ser-um-testador-de-produtos-sites-pagam-para-voce-dar-sua-opiniao/"
+  }
+ ],
+ "notes": "HEADLINE: in her world, the channel route is structurally empty for a Sol-made unit at 20–40 partners, and the binding constraint is THE UNIT, not partner recruitment. The new call permission solves a problem this lens does not have. Four findings:\n(1) THE MIRROR LAW (proposed). In beauty and aesthetics channels the customer's subject is her own face, hair and body: the one subject her phone and free consumer AI serve best (ChatGPT colour-analysis trend, TechTudo 28/04/2026; L'Oréal's free My Hair [iD]). No image or analysis unit passes THE INACCESSIBLE-SUBJECT SCREEN. Every machine that turns a phone capture into an object is already a public D2C catalogue: MM3D takes '4k … no conforto de sua casa'; a single-photo figurine costs R$84,90; DIY hand/foot casts R$45,90.\n(2) THE HANDS ECONOMY. The money at the beauty moment pays for the professional's HANDS. The only per-customer third-party supply in beauty services is hair, and custom-coloured hair to salons is already sold (MOJO, from 300 g). Add-on objects clear at keepsake prices, and partners give keepsakes away (Corte Kids).\n(3) THE SUPPLY CHAIN FUNDS THE PARTNER LAYER (no-margin-on-the-flow, applied to channels). Brands give salons the preview app and a 6%+6% commission. b.drops gives 886 salons screens and clips free. Consultant tooling sells lifetime dossier templates at R$197. Physician channels are barred from any margin (CEM art. 69).\n(4) THE PER-PARTNER POOL TEST (new, reusable, one line). With N partners and the market-multiple rule, each partner must carry 4 × bar ÷ N of Sol-margin POTENTIAL a month: R$1.100–1.400 at 40 partners, R$2.200–2.800 at 20. Divide by the partner's monthly customer moments to get the margin-per-moment the unit must carry at 100% attach. A 12-session photographer needs ~R$92–117 of margin per session. A salon with 800 visits needs R$1,4–1,75 per visit, but no salon unit exists. Photo studios have the unit but not the flow; salons have the flow but not the unit. Run this BEFORE recruiting partners.\nThe two candidates are the least-bad survivors, both below US$700. A CADEIRA is the one in her world and rests on a price-holder the tool vendor structurally cannot give away (CBAP 2026 art. 27 §9(b) 'sempre comprovável', art. 34(a)); its best form is a non-generatable add-on to the wave-1 LAUNCH KIT, tested by adding two questions to that test's 20 calls. O ENSAIO EM MINIATURA passes both revealed preferences but is A ESCRITURA's shape (machine keepsake through a channel), which the founder cut today, and it fails the inaccessible-subject and market-multiple screens. Not pursued, with no URL fetched: tattoo-design fine-art print via tattoo studios (the artist can print at any gráfica; ~US$0–400); a self-portrait booth in premium salons (capex per booth ≈ the whole C5 budget, and salons already offer free 'paredes instagramáveis'); a new-unit launch kit via beauty franchisors (franchisors bundle the inauguração kit inside the franchise fee — UNVERIFIED); bridal/15 anos (events domain exhausted; debutantes are minors). Overlap flag: A CADEIRA touches the CONSENT price-holder, which W2A's folder suggests is another agent's lens. Mine is sourced through the salon channel and priced for pro-hair launches."
+}

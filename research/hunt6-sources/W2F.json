@@ -1,0 +1,230 @@
+{
+ "agent": "W2F",
+ "lens": "Reuse the one validated asset: the daily ANVISA notification file (about 79 days before shelf) plus Portuguese phone calls. Question: what a launching Brazilian cosmetic brand needs in that window that (a) its contract manufacturer does not bundle free, (b) the tool vendor does not sell self-serve, and (c) is paid for today at an observable price. Tested: retail sell-in (reps and distributors), marketplace setup, trademark clearance, GS1 barcodes, retail media and pharmacy listing, B2B sampling, and export registration. Only SELL-IN survived. Factories say in their own words that they leave 'vendas, distribuição' to the brand. Brands publish a price for it: 10–15% commission on invoiced sales.",
+ "candidates": [
+  {
+   "name": "A PRATELEIRA — launch sell-in desk (launch kit + representation) for newly notified indie beauty brands",
+   "one_line": "Each month she picks 4–6 non-competing debut hair, skin and body lines from the ANVISA diff, before they post a rep vacancy. Each brand pays a small onboarding fee that covers the lojista launch kit (the VBPH kit, now her own sales tool). She then sells the lines by phone and WhatsApp in Portuguese into independent perfumarias and lojas de cosméticos in SP, on a Lei 4.886 contract paying 10% of paid invoices for 24 months. The store carteira she builds is resold across every new brand.",
+   "price_holder": "outcome",
+   "why_tool_vendor_cannot_give_it_away": "Higgsfield and every other generator sell images, not shelf placement. No model holds a lojista's buying relationship, credit terms or reorder habit. The factories' own pages leave sales to the brand: AMÓS 'A marca contratante foca em posicionamento, vendas, distribuição'; MZ 'foco do contratante em branding, distribuição'; BeHub 'foca exclusivamente em marca, marketing e vendas'. The most any factory offers is commercial ADVICE (Stoa 'assessoria comercial', Frosini 'Consultoria comercial', Florus 'Formação do Canal de Vendas'). None takes orders or places product. The one paid incumbent found, BeHub Market Sales, asks R$4.900/month + 28% royalties on sales, so the published price sits well above this offer. Commission on paid invoices is also the second price-holder named in the brief: CHANNEL (the carteira) plus OUTCOME (the NF-e).",
+   "buyer": "Owner or commercial lead of a debut or early-stage Brazilian hair, skin or body brand whose line sells in shops. ≈1.270 brand keys had their first-ever electronic hair/skin notification in the last 12 months with ≥4 notifications; at ≈75–90% key precision that is ≈900–1.100 debut lines a year (≈75–90 a month). 86% are made by contract manufacturers. Filter out salon-exclusive, influencer-DTC-only, multinational and importer lines; the share that sells in shops is UNVERIFIED. Store side (her other counterparty): independent perfumarias and lojas de cosméticos. IBGE CEMPRE 2021 counts 37.074 cosmetic-retail units (CNAE 47.72-5), 11.710 of them in SP, excluding MEI and including franchise stores.",
+   "observed_buyer_money": [
+    {
+     "what": "Êxodo Cosmética (Hactoon professional haircare) pays reps a commission on sales, and publishes a sales target per region",
+     "price": "'Ganho base de 10% a 15% + Bônus'; region target R$15–25k/month in semester 1, R$25–50k/month in semester 2",
+     "unit": "% of the rep's sales; R$ of sales per month per region",
+     "url": "https://www.confere.org.br/oportunidades.php",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "Kah Noa Cosméticos rep commission",
+     "price": "'10% do valor líquido vendido + bônus por meta' + fuel aid",
+     "unit": "% of net sales",
+     "url": "https://centraldosrepresentantes.com.br/ad_listing/kah-noa-cosmeticos-busca-representantes-e-distribuidores/",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "KB Distribuidora (Karseell) rep commission, SP",
+     "price": "'Comissão de 10% + bonificação'",
+     "unit": "% of sales",
+     "url": "https://centraldosrepresentantes.com.br/ad_listing/kb-distribuidora-karseell-busca-representante-comercial/",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "Haircare line, autonomous rep, SP state",
+     "price": "'Comissão: 10% sobre as vendas · Bônus: 5% sobre a meta líquida'; 'Não oferecemos ajuda de custo'",
+     "unit": "% of sales",
+     "url": "https://centraldosrepresentantes.com.br/ad_listing/representante-comercial-autonomo-cosmeticos/",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "Haircare line sold to LOJAS",
+     "price": "'comissionamento 10% + bônus por meta'",
+     "unit": "% of sales",
+     "url": "https://centraldosrepresentantes.com.br/ad_listing/vaga-para-representante-de-linha-cosmetica-capilar/",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "Distribuidora Dom José (Embelleze, Salon Line, Ruby Rose…) rep benchmark",
+     "price": "wants a carteira of '>50 clientes ativos e R$70 mil mês' (≈R$1.400 per active client per month); commission paid on invoicing; stores get 30/60/90-day terms",
+     "unit": "R$ of sales per month per carteira",
+     "url": "https://centraldosrepresentantes.com.br/ad_listing/distribuidora-dom-jose-busca-representantes-no-interior-de-sp/",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "Cosmetics company (via Pra Gente RH), door-to-door rep, SP",
+     "price": "'PJ fixo + comissão' (fixed amount not published)",
+     "unit": "monthly fixed + %",
+     "url": "https://portaldorepresentante.com.br/vagas-para-representantes/52006-representante-pap-cosmeticos-e-perfumaria-/",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "Cross-sector precedent for a fixed launch fee paid to a rep (auto parts, Novare RH, CONFERE board)",
+     "price": "'R$ 3.000,00 nos primeiros 3 meses + comissão de 2,5%'",
+     "unit": "R$/month for 3 months + % of sales",
+     "url": "https://www.confere.org.br/oportunidades.php",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "BeHub Market Sales, outsourced B2B sales for cosmetic brands",
+     "price": "'R$ 4.900 /mês fixo + 28% royalties sobre vendas' (2 dedicated sellers)",
+     "unit": "R$/month + % of sales",
+     "url": "https://behub.com.br/market-sales",
+     "status": "seller asking"
+    },
+    {
+     "what": "Stores' minimum order with indie cosmetic brands",
+     "price": "'Pedido mínimo de R$ 500,00' (two brands)",
+     "unit": "R$ per order",
+     "url": "https://centraldosrepresentantes.com.br/ad_listing/cosmeticos-especiais-dermocosmeticos/",
+     "status": "observed buyer-side"
+    }
+   ],
+   "free_front_door_check": "(1) Factories: read at source (AUD2 pages re-grepped). None sells order-taking or placement. Three sell commercial advice. Veneza-made Alther and SDK-made Glam Professional are publicly recruiting their OWN reps and distributors, so even the largest full-service factories leave sell-in to the brand. (2) Tool vendor: none. (3) Multi-brand distributors are the real free-to-the-brand channel for ESTABLISHED lines. EBC sells by 'Televendas · WhatsApp · Representante Comercial'; Official Distribuidora serves 'mais de 20 mil lojistas… mais de 80 marcas'. A debut line has no sell-through, so distributors are a closed door during exactly the window she works. That is the seam, and it closes once the line is proven (see candidate 2). (4) Rep portals (CONFERE, Central dos Representantes, Portal do Representante) are free matching; the introduction is free, the selling is not. (5) The state: none. (6) BeHub is the paid incumbent at R$4.900 + 28%. (7) Beauty Fair is the annual brand↔distributor meeting (≈500 exhibitors); a booth is out of reach for a debut micro-brand and off-cycle for 11 months of the year.",
+   "offer_and_price": "LANÇAMENTO NA PRATELEIRA, per brand. Onboarding R$1.500–2.500 one-time: a lojista launch kit (sell sheet, WhatsApp catalogue cards, 6 AI launch visuals, price list), plus sample logistics paid by the brand. Then 10% of every PAID invoice in her zone (SP capital plus named municipalities) for 24 months, under a written Lei 4.886 representação contract, never corretagem. Art. 32 §1º makes the brand send NF copies with each commission payment by the 15th; the art. 31 zone clause covers direct reorders in her zone. Brands that refuse the onboarding fee get commission-only at 12%. From 100 active stores, she adds a monthly curated 'lançamentos do mês' WhatsApp catalogue for lojistas.",
+   "units_for_bar": "Gross needed R$12.334–17.033/month: net R$10.400–12.950, stack R$750–1.400, all-in 9,6% (Anexo III with fator R: 6,5% DAS + 11% INSS on 28% pró-labore) to 15,75% (Anexo V; representação comercial is LC 123 art. 18 §5-I VII). Commission-only at 10% needs R$123–170k/month of PAID sales (R$1,48–2,04M/year). That is 88–122 active stores at Dom José's R$1.400/store/month, or 137–189 at R$900 (UNVERIFIED for debut lines). Base month-18 mix: 1,5 new principals/month × R$2.000 onboarding + 110 active stores × R$900 × 10% ⇒ gross R$12.900 ⇒ net ≈R$10.760 ≈ US$2.080.",
+   "hours": "Month 18 ≈84 h/month against the 87 h cap: 110 active stores × 25 min (reorder call or WhatsApp, order file to the brand, follow-up) = 46 h; new-store prospecting 15 h; 1,5 new principals × (kit 5 h + onboarding 3 h) = 12 h; 6 active principals × 1 h = 6 h; NF reconciliation and admin 5 h. Sales calls are the product. There is no slack, so above ~110 stores the carteira must graduate to distributors (candidate 2).",
+   "pool": "Principals: ≈900–1.100 debut lines a year (ANVISA, precision-adjusted); she needs 12–18 a year. Stores: 11.710 cosmetic-retail units in SP (CEMPRE 2021); she needs ≈90–190 active. Money: she needs R$1,5–2,0M/year of paid sales through her carteira. SP cosmetic retail employs 50.561 people (CEMPRE 2021); total retail revenue for her target lines is UNVERIFIED.",
+   "pool_div4_vs_bar": "Principals ÷ 4 ≈ 225–275/year against 12–18 needed (passes 12–20×). SP stores ÷ 4 ≈ 2.900 against ≤190 needed (passes 15×). The pool does not bind. What binds is her conversion rate with no carteira at the start, and her hours above ~110 stores.",
+   "c8_fit": "Beauty is her domain. Her aesthetic judgement is used as SELECTION: which debut lines will look premium on a perfumaria shelf and sell. Her Portuguese phone work was volunteered. Nothing requires her face or name publicly; the company brand is the catalogue. Persistence question for her: 'could you still be calling 110 perfumaria owners every month, alone, in year three?'",
+   "revealed_preferences": "TRADES AWAY the machine test: she personally sells and services every store; only the kit is machine-made. PARTLY KEEPS origination-once: each store and each principal is won once and reorders recur, but she must usually prompt the reorder. Compensation: her domain (C8); high value per relationship (a store is worth R$700–1.400/month of sales); outcome pricing, so there is no fee to justify; and a compounding, sellable asset (the carteira; the art. 27(j) indemnity on unjust termination).",
+   "biggest_flaw": "THE OBSERVED-PRICE CEILING. The 10–15% is paid to reps who already bring a carteira and a car. Êxodo requires 'Carteira de clientes ativa e consolidada… Estrutura de transporte própria'; one SP haircare posting calls the carteira an 'exigência fundamental'; Dom José wants '>50 clientes ativos e R$70 mil mês' and 'capacidade de visitação'. She starts with zero stores and no visits. On each call she offers 4–6 unknown lines, while distributors' televendas offer 80+ known ones. Year-1 volume is the unmeasured variable, and the pessimistic month-12 case is ≈US$90/month.",
+   "repair": "(1) Choose principals by TIMING. The ANVISA diff reaches a debut brand before it posts a rep vacancy: 10 of 12 brands seen recruiting reps or distributors notified ANVISA in the last 12 months, including Veneza- and SDK-made lines. Debut brands with no reps are exactly the ones that cannot demand a carteira. (2) Sell NOVELTY, not range. Pitch lojistas the lines their distributor does not carry, as a monthly 'lançamentos do mês' pack with a mixed-brand minimum around R$500 (the observed pedido mínimo). This is the one thing a distributor's 80-brand televendas cannot say. (3) Fixed onboarding fee to fund the ramp, with the launch kit as its deliverable. Precedents exist: the cosmetics 'PJ fixo + comissão' posting, the auto-parts 'R$3.000 nos 3 primeiros meses', and BeHub's R$4.900 fixed as the ceiling. The kit also answers wave 1's VBPH flaw, because the brand is now buying shelf access and the visuals are the rep's tools. (4) Verify by FILE: art. 32 §1º NF copies with each payment, and an art. 31 zone clause, never deleted. (5) Graduate proven lines to multi-brand distributors (candidate 2) once they sell through in 50+ stores. That keeps her hours under 87 and turns the carteira into distributor proof.",
+   "treadmill": "better. Each frontier release cheapens her prospect list, catalogue, order capture and follow-up drafting, and no model gives a brand a lojista's reorder relationship. Tail risk, not measured: brands point AI voice or WhatsApp agents at lojistas directly. Adoption in Brazilian cosmetic retail is UNVERIFIED.",
+   "honest_floor_usd_month": "US$90–800 at month 12 (commission-only with 25 stores ⇒ ≈US$90; base with 1 principal/month × R$2.000 plus 50 stores × R$700 ⇒ ≈US$790). The bar (≈US$2.080) is reached only at month 18+ with ≈110 active stores at ≈R$900/store/month plus onboarding fees accepted. Year one is below the repaired VBPH launch-kit floor (US$700–1.500), but this compounds and the kit does not.",
+   "next_test": "R$0, Portuguese calls, 10 working days, two legs. (a) BRANDS: from the ANVISA diff of the last 60 days, list 30 debut lines (≥4 hair/skin/body SKUs; not salon-exclusive, influencer-DTC-only, multinational or importer) and phone the owners (brand via Instagram or site; holder CNPJ via publica.cnpj.ws). Script: 'Quem vai vender a linha em perfumarias e lojas de cosméticos em SP? Vocês fechariam representação com 10% sobre notas pagas, zona SP, com cópia das NFs (art. 32)? E R$2.000 de entrada pelo kit de lançamento para lojistas?' (b) STORES: phone 40 independent perfumarias and lojas de cosméticos in one SP zone. Script: 'Vocês compram de representante por telefone ou WhatsApp? Querem receber um catálogo mensal com 5 lançamentos independentes, pedido mínimo R$500 misturando marcas?'",
+   "bar": "Committed in advance. ALIVE if BOTH: (a) ≥6 of 30 brands agree IN WRITING (e-mail or signed contract) to 10% commission-only representation for her zone, AND ≥2 of 30 accept an onboarding fee ≥R$1.000; and (b) ≥10 of 40 stores confirm they buy from reps by phone or WhatsApp, AND ≥4 of 40 ask for the catalogue. If (a) passes and (b) fails, the store leg dies and effort moves to candidate 2. If (a) fails, the whole lens dies.",
+   "unverified": [
+    "Average monthly purchases per active store for unknown debut lines. R$600–900 is assumed; Dom José's R$1.400 is for 10+ established brands.",
+    "Her prospecting conversion rate on cold lojista calls without a carteira (≈5–10% assumed).",
+    "Share of debut lines that sell through perfumarias and lojas rather than salons or DTC only.",
+    "Store-side phone contactability of CNAE 4772 CNPJs. Not measured: Receita bulk hosts unreachable, casadosdados blocked.",
+    "Whether brands accept an onboarding fee from a rep. Only precedents seen: 'PJ fixo + comissão' with no amount in cosmetics, R$3.000×3 in auto parts, and BeHub's asking price.",
+    "CORE-SP registration and annual fee (not in the HTML). Brands request 'CORE ativo'; STJ REsp 1.678.551 (archive) says it is not legally required.",
+    "Pravda's '10% representação / 45–50% distributor discount / 82–100% rentabilidade' is a search snippet only; the site was unreachable.",
+    "The Simples bracket depends on fator R; pró-labore INSS is computed at 11% (per AUD3, not checked against IN RFB).",
+    "Debut-brand counts inherit H6A's brand-key precision (~85%). A 25-key sample showed ~25% noise keys."
+   ]
+  },
+  {
+   "name": "O CATÁLOGO DO DISTRIBUIDOR — distributor-placement agent for proven debut lines",
+   "one_line": "Once a debut line has sell-through (ideally proven in her own store carteira), she phones multi-brand cosmetic distributors and, for professional lines, exclusive regional distributors, and places the line in their catalogue. She is paid a % of the opening order plus a % of every later distributor purchase for 24 months, verified by NF copies under Lei 4.886 art. 32 §1º. One yes from a distributor puts the line in front of its whole televendas and rep force, and the distributor reorders without her.",
+   "price_holder": "channel",
+   "why_tool_vendor_cannot_give_it_away": "Getting a line into a distributor's catalogue is a negotiated decision (margin, zone exclusivity, marketing support, terms, returns). Only a person can make that call. Distributors are the incumbent channel that already holds the stores at the moment they buy: Official Distribuidora 'mais de 20 mil lojistas… mais de 80 marcas'; EBC 'Televendas · WhatsApp · Representante Comercial'. Neither the factory nor the generator sells access to them.",
+   "buyer": "The same principals as candidate 1, filtered to lines with proven sell-through, plus professional haircare brands that sell through exclusive regional distributors (Olenka: distributor minimum 'R$15 mil'; Pravda: 'Rentabilidade de até 100%', exclusive region). Counterparty pool: 2.173 CNPJs holding ONLY a cosmetics/saneantes 'Distribuir' AFE (768 with cosmetic names; SP 614). This is an upper bound, because brand owners also hold 'Distribuir'. CEMPRE 2021 counts 6.649 cosmetics-wholesale units (SP 2.176).",
+   "observed_buyer_money": [
+    {
+     "what": "Olenka Cosméticos: what a new exclusive distributor must invest",
+     "price": "'no mínimo R$15 mil' / 'R$15.000,00 para áreas pequenas'",
+     "unit": "R$ opening investment per distributor",
+     "url": "https://olenkastore.com.br/",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "Pravda Cosmética: distributor economics",
+     "price": "'Rentabilidade de até 100% · Região fechada com exclusividade · até 10X'",
+     "unit": "distributor markup",
+     "url": "https://portaldorepresentante.com.br/vagas-para-representantes/29089-distribuicao-de-cosmeticos-profissional-/",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "Salon-distribution posting",
+     "price": "'Ganhos de 40% ou mais'",
+     "unit": "distributor margin",
+     "url": "https://centraldosrepresentantes.com.br/ad_listing/distribuicao-em-saloes-de-beleza/",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "Sun Nails (equipment) pays reps who sell to distributors, cosmetics shops and salons",
+     "price": "'Comissao de 3%'",
+     "unit": "% of sales",
+     "url": "https://centraldosrepresentantes.com.br/ad_listing/sun-nails-brasil-procura-representantes/",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "Agent commission on distributor purchases of a cosmetic line",
+     "price": "NOT FOUND — assumed 3–5%",
+     "unit": "% of distributor purchases",
+     "url": "https://www.confere.org.br/oportunidades.php",
+     "status": "UNVERIFIED"
+    },
+    {
+     "what": "Pravda: 10% rep commission vs 45–50% distributor discount",
+     "price": "10% / 45–50%",
+     "unit": "%",
+     "url": "https://pravdacosmetica.com.br/distribuidor-cosmeticos",
+     "status": "UNVERIFIED"
+    }
+   ],
+   "free_front_door_check": "Distributors recruit brands and brands recruit distributors for free on the rep portals, and at Beauty Fair (annual, a booth, ≈500 exhibitors, 22,35% of visitors retailers/distributors/reps per trade press). Professional brands run their own distributor landing pages (Olenka, Pravda). The INTRODUCTION is therefore free; the negotiated placement of an unknown line is not. No factory sells distributor placement: Florus sells 'Formação do Canal de Vendas' as advice, and Stoa and Frosini sell commercial consultoria. The state: none. The tool vendor: none.",
+   "offer_and_price": "COLOCAÇÃO EM DISTRIBUIDOR, per brand. 5% of the distributor's opening order (a typical R$10–15k opening pays R$500–750), plus 3% of that distributor's purchases for 24 months under a Lei 4.886 contract. NF copies by the 15th under art. 32 §1º. Contract clause: indirect orders from placed distributors count. Alternative if brands prefer it: a flat R$1.000 per signed distributor plus 2% trailing.",
+   "units_for_bar": "Gross needed R$12.334–17.033/month. At R$8k/month of average distributor purchases per placement: 51–71 active placements at 3%, or 31–43 at 5%. Month-18 base: 25 placements × R$8k × 3% + 2 openings × R$600 ⇒ gross R$7.200 ⇒ net ≈US$1.080. It reaches the bar only at a ≥5% rate or around month 24.",
+   "hours": "≈46 h/month at month 18: 2 signings × 12 h (≈40 calls, samples, negotiation) = 24 h; 25 placements × 0,5 h maintenance = 12,5 h; 1 new principal × 4 h; admin 5 h. This leaves ≈40 h to run candidate 1's store leg in the same month. The two legs are one business staged in sequence.",
+   "pool": "Distributors: 2.173 cosmetics-only AFE 'Distribuir' holders (upper bound) or 6.649 wholesale units (CEMPRE 2021); she needs 31–71 placements across 6–12 principals. Principals: as in candidate 1, but only lines with proven sell-through (share UNVERIFIED).",
+   "pool_div4_vs_bar": "Distributors ÷ 4 ≈ 540–1.660 against 31–71 placements needed (passes ≥8×). The binding limit is the rate and distributors' willingness to take a debut line, not pool size.",
+   "c8_fit": "Same domain, fewer and bigger conversations (distributor buyers, not shop owners), and more of her taste: choosing which launches are worth a distributor's shelf. Less grind than candidate 1.",
+   "revealed_preferences": "KEEPS origination-once: one distributor yes produces recurring reorders that arrive without her. TRADES AWAY the machine test (every placement is a negotiated sale). This is closer to what the founder has selected twice than candidate 1.",
+   "biggest_flaw": "The load-bearing rate is UNVERIFIED. No published posting shows what a cosmetic brand pays an agent on DISTRIBUTOR purchases; the only distributor-facing figure seen is Sun Nails' 3%, which is for hardware. Distributors also reject lines with no sell-through, so a cold debut line is the wrong product to place. On top of that sits THE SELF-REPORTED-CONVERSION TRAP: reorders go from distributor to brand without passing through her.",
+   "repair": "(1) Sequence it after candidate 1: place only lines that already have sell-through in her store carteira. That sell-through is the proof a distributor asks for, and it is data only she holds. (2) Price the opening as a % of a closed, visible event (the distributor's first NF-e). Make trailing commission statutory-verifiable: art. 32 §1º NF copies, plus a contract clause counting the placed distributor's purchases as her business. (3) Contract as representação/agência, never corretagem (CC art. 726 cuts the other way). (4) If brands refuse a trailing %, fall back to a flat fee per signed distributor. That trades origination-once for certainty.",
+   "treadmill": "better. AI cheapens distributor research, pitch decks and the sell-through dashboard. A distributor's decision to list a line stays a negotiated human decision.",
+   "honest_floor_usd_month": "US$0–300 at month 12 (≈10 placements × R$7k × 3% + 1 opening ⇒ ≈US$300; US$0 if distributors refuse unproven lines). ≈US$1.080 at month 18 at 3%. The bar needs a ≥5% rate or ~24 months. As a standalone business it is weaker than candidate 1 in year 1; as candidate 1's second stage it is the thing that lifts the combined business past ~110 stores within 87 h.",
+   "next_test": "R$0, Portuguese calls, run inside candidate 1's brand calls plus 10 extra days. (a) Ask each of the 30 debut brands: 'Que % sobre as compras de um distribuidor multimarcas vocês pagariam a quem colocar a linha no catálogo dele?' (b) Phone 20 cosmetics-only AFE distributors (phones via publica.cnpj.ws). Ask: 'Vocês incluem marcas novas? O que precisam ver (giro, margem, exclusividade)? Qual o pedido de abertura típico e a compra mensal de uma marca nova depois de 6 meses?'",
+   "bar": "Committed in advance. ALIVE if ≥4 of 30 brands name, in writing, a distributor-level commission ≥4% OR a flat fee ≥R$750 per signed distributor, AND ≥5 of 20 distributors say they add new brands through agents or reps, with a typical opening order ≥R$5.000. Otherwise it is dead as a standalone, and only survives as a free service inside candidate 1.",
+   "unverified": [
+    "Agent commission rate on distributor purchases in cosmetics (the load-bearing number).",
+    "Average monthly purchases of a debut line by one distributor (R$7–8k assumed).",
+    "How many of the 2.173 'Distribuir-only' AFE holders are real multi-brand distributors rather than brand owners.",
+    "Pravda's 45–50% distributor discount and 10% representation rate (snippet only).",
+    "Bim Distribuidora's '40+ representantes' (snippet only)."
+   ]
+  }
+ ],
+ "killed_while_hunting": [
+  {
+   "idea": "GS1 barcode setup for launching brands",
+   "cause": "CHEAP STATE-LIKE COUNTER. GS1 Brasil sells direct and self-serve ('taxa de inscrição R$ 683,00… + metade do valor da anuidade'), and code resellers already exist.",
+   "url": "https://www.gs1br.org/tabela-de-valores"
+  },
+  {
+   "idea": "Launch-name trademark clearance, conflict watch or opposition service",
+   "cause": "FREE FRONT DOOR plus an exhausted domain. INPI search is free, and registration firms sell the whole process from R$462 with 'Busca por marcas similares' included. 123 Marcas itself warns 'Cuidado com buscas gratuitas que visam apenas a venda' (free searches are the category's lead magnet). The trademark-seat domain is already exhausted (GUARDA-BR tier occupied). INPI fee table: gov.br PDF returned 404, UNVERIFIED.",
+   "url": "https://www.123marcas.com.br/"
+  },
+  {
+   "idea": "Mercosur/LatAm export registration desk sold to Brazilian brands by phone",
+   "cause": "FREE FRONT DOOR plus COMPELLED-BUT-CREDENTIALLED. ABIHPEC/Beautycare Brazil publish the export regulatory manuals as 'material de livre consulta… todo o conteúdo em português'. ApexBrasil and Beauty Fair run free buyer programmes (162 supported firms, US$363,4M FOB in 2025). The foreign registration must be held by a local registered importer or agent (Paraguay Decree 2942; secondary source).",
+   "url": "https://abihpec.org.br/comunicado/abihpec-e-beautycare-brazil-lancam-manuais-de-regulamentacao-tecnica-para-exportacao/"
+  },
+  {
+   "idea": "Marketplace launch setup (Beleza na Web, Mercado Livre, Amazon catalogue and category approval)",
+   "cause": "Self-serve integration hubs are the gate ('precisa de um Hub de Integração', secondary). Operating the brand's seller account would be standing access to their system (C4). Beleza na Web's page returned 403.",
+   "url": "https://plugg.to/exigencia-marketplace-beleza-na-web/"
+  },
+  {
+   "idea": "Pharmacy-chain listing and retail-media campaigns for a launch",
+   "cause": "Listing fees are not published (UNVERIFIED). Retail media needs the SKU to be listed first, and chain listing is a key-account relationship a debut brand cannot get. Not a launch-window service.",
+   "url": "none found: one web search returned no primary listing-fee source (UNVERIFIED)"
+  },
+  {
+   "idea": "Outsourced SAC / cosmetovigilance line for launching brands",
+   "cause": "STATUTORY KILL. RDC 894/2024 art. 46 §1º forbids outsourcing cosmetovigilance to an autonomous third party (archive-verified, CLAUDE.md).",
+   "url": "https://anvisalegis.datalegis.net"
+  },
+  {
+   "idea": "B2B sampling / beauty-box placement for launches",
+   "cause": "The channel owner sells it. Glambox's model has brands supply samples, with no published brand-side fee, and its own partnership team. Physical kitting would be her hands on every unit.",
+   "url": "https://glam.com.br/loja/marcas"
+  },
+  {
+   "idea": "Sell the ANVISA launch feed to distributors or retailers as a sourcing subscription",
+   "cause": "NO-MARGIN-ON-THE-FLOW plus STEADY-STATE. Brands pitch distributors for free (the rep portals, Beauty Fair), so identification is funded to zero by the party that earns on the flow, and a subscription would need churn replacement.",
+   "url": "https://www.confere.org.br/oportunidades.php"
+  },
+  {
+   "idea": "Single-brand field representative (the standard rep job)",
+   "cause": "Postings require a car, visits and an existing carteira (Êxodo 'Estrutura de transporte própria'; Pra Gente RH 'Visitas comerciais porta a porta… Veículo próprio'; Lokram '3–4x na semana'). This is THE OBSERVED-PRICE CEILING, and at 10% of one brand's R$25–50k/month region target it pays R$2,5–7,5k. It is below the bar and is the job, not a business.",
+   "url": "https://www.confere.org.br/oportunidades.php"
+  }
+ ],
+ "notes": "RULE 1: both candidates are ONE molecule, commission sell-in agency (S6/agency), in two stages (stores, then distributors). They are returned as two because they trade the founder's revealed preferences differently and the same R$0 call campaign discriminates between them. Do not read them as two independent ideas. The findings that change the archive: (1) THE MARGIN LAW is bounded, not broken. On 170 live postings on the Conselho Federal dos Representantes Comerciais board, goods pay 1–7%, software and services 15–40%, and cosmetics 10–15% (Êxodo). At the current bar, cosmetics needs R$1,0–2,0M/year of sales against R$2,5–6,8M at industrial rates. The archive's R$12,5–25M figure dates from the US$10k target. (2) THE AGENCY SCISSORS' second blade (a spoken order is forbidden by C1) is gone for Portuguese buyers. The first blade (a written order can be broadcast) does not fire on distributor placement or debut-line sell-in, because both are negotiated. S6 reopens for Brazilian domestic cosmetics, and ONLY in the debut window, where distributors will not yet carry the line. (3) The ANVISA feed and the rep market are the same brands: 10 of 12 brands seen recruiting reps or distributors notified in the last 12 months, including lines made by Veneza and SDK. So the full-service factories' free front door stops at the shelf. (4) Lei 4.886 art. 32 §1º already obliges the principal to send invoice copies with every commission payment. That is a statutory, file-based answer to THE SELF-REPORTED-CONVERSION TRAP and is C4-compatible. (5) Repair of wave 1's VBPH: sold on its own, the launch kit meets 'no brand pays ≥R$2.500 for visuals'. Sold as the onboarding deliverable of a representation, the brand is buying shelf access and the visuals are her sales tools, so the tool vendor's front door no longer sets the price. Honest ranking: neither candidate clearly beats the repaired VBPH floor in year one. Candidate 1 with candidate 2 as its second stage is the stronger angle on the same buyers, because it addresses the one launch need nobody bundles and it compounds. Rails that failed: Receita CNPJ bulk, casadosdados, glamprofessional, pravdacosmetica, vnzconsult, INPI fee PDF, escalada.com.py, belezanaweb."
+}

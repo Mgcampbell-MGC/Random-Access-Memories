@@ -1,0 +1,177 @@
+{
+ "agent": "W2D",
+ "lens": "OUTCOME / BOUNDED GUARANTEE (THE ACCEPTANCE FINDING) in Brazilian beauty and fashion commerce — tasks cheap to perform and expensive to get wrong, selling the acceptance, not the work",
+ "candidates": [
+  {
+   "name": "ANÚNCIO CONFORME — the 22-Jun-2026 textile e-commerce rule sold as a certified catalogue fix to fashion D2C brands (a harvest with a written stop date, 31 Dec 2027)",
+   "one_line": "Sol's crawler reads a fashion brand's live product pages and shows, SKU by SKU, which of the six mandatory Portaria 118/2021 items (marca/CNPJ, país de origem, composição, cuidados, tamanho, in Portuguese) the listing omits under the ABIT/IPEM-SP e-commerce guide launched 22 Jun 2026 (and, for shoes, Portaria 459/2025, whose e-commerce sell-through ends 31 Dec 2027). She builds the bulk fix-file from the brand's own label files, re-crawls to certify, and carries a capped guarantee: if IPEM fines a certified SKU for a listing item she passed, she refunds the fee and pays the fine up to R$3.000.",
+   "price_holder": "clock",
+   "why_tool_vendor_cannot_give_it_away": "Higgsfield sells production, not conformity. The free or cheap listing checkers found all sit INSIDE marketplaces: ML's own mandatory attributes, and Consultor Platinum at R$149,90/month, which already flags 'Atributos obrigatórios da categoria em branco'. None found audits a brand's OWN D2C store against the textile rule or stands behind the result. The price-holder is the clock (a guide only 3 months old) plus an accountable, capped guarantee. CAVEAT: Etiqueta Certa already holds label data for 1.100 brands and could ship a free 'etiqueta no anúncio' export. A scan of its 178 CMS titles found no such module, but that is UNVERIFIED either way.",
+   "buyer": "Mid-size Brazilian fashion brands (≥300 textile SKUs) running their own store on VTEX/Shopify/Nuvemshop. Secondary buyer: online multi-brand footwear retailers, who must sell only Portaria-459-compliant shoes from 31 Dec 2027. The buyer is NOT marketplaces, which enforce attributes themselves.",
+   "observed_buyer_money": [
+    {
+     "what": "Etiqueta Certa textile-label compliance SaaS (the label side of the same rule)",
+     "price": "R$590–2.500/month; 225 paying clients; average ticket R$700/month; revenue R$1,5M in 2023",
+     "unit": "per client per month",
+     "url": "https://revistapegn.globo.com/startups/noticia/2024/05/startup-fatura-r-15-milhao-com-etiquetas-inteligentes-para-a-industria-textil.ghtml",
+     "status": "observed buyer-side (seller-reported via press, May 2024)"
+    },
+    {
+     "what": "C&A put Etiqueta Certa in front of ALL its suppliers to cut 'reprovações e devoluções por etiquetas incorretas'. A retailer already rejects lots over label errors",
+     "price": "n/a (retailer-imposed; the cost falls on the supplier)",
+     "unit": "per rejected lot",
+     "url": "https://www.noticenter.com.br/n.php?ID=39442&T=em-blumenau-c-a-anuncia-parceria-com-etiqueta-certa",
+     "status": "observed buyer-side (press release)"
+    },
+    {
+     "what": "IPEM-SP textile enforcement, i.e. the consequence being insured",
+     "price": "2025: 1.475 autos from 5.088 firms inspected (~29%); Jan–Aug 2026: 695 autos. Fine values not published (Lei 9.933: R$100–1.500.000); recidivism doubles",
+     "unit": "autos per year, São Paulo state",
+     "url": "https://www.ipem.sp.gov.br/images/00transparencia/DMQA/textil.pdf",
+     "status": "observed buyer-side (state enforcement series; fine amounts UNVERIFIED)"
+    },
+    {
+     "what": "Marketplace listing-conformity tool (commodity ceiling for marketplace listings)",
+     "price": "R$149,90/month Starter",
+     "unit": "per seller per month",
+     "url": "https://consultor-platinum.vercel.app/",
+     "status": "seller asking"
+    },
+    {
+     "what": "Mercado Livre consultancy (the flow-earner that bundles listing work)",
+     "price": "R$1.500–5.000/month for small operations; diagnosis free",
+     "unit": "per client per month",
+     "url": "https://gosmarter.com.br/consultoria-mercado-livre-comissao-vendas/",
+     "status": "seller asking"
+    }
+   ],
+   "free_front_door_check": "The state gives the ANSWER away, not the AUDIT. IPEM-SP answers textile questions free by phone (11 3581-2203) and by email (duvidatextil@ipem.sp.gov.br), and the ABIT/IPEM guide is free. Marketplaces enforce their own attributes, and ML AI tools sell listing checks at R$149,90/month, so marketplace listings are excluded. Etiqueta Certa gives its guides away free and holds the label data. Nobody was found selling a D2C catalogue audit or certificate. Measured gap on 25 Sep 2026, sampling 13 major D2C fashion brands (26 product pages): composição shown on all sampled pages at 11/13 brands, country of origin at 2/13, care instructions at 4/13. The gap is concentrated in origin and care, three months after the guide.",
+   "offer_and_price": "One-off. R$1.500 for ≤1.000 SKUs, R$3.000 for ≤5.000 SKUs. Includes: (1) a gap report per SKU per channel (own site plus the brand's own marketplace stores, read as public pages, no login, C4-clean); (2) a bulk fix-file (VTEX specification import / Shopify CSV) built from label files the brand sends; (3) a re-crawl certificate at +30 days; (4) a 12-month capped guarantee: fee refund plus IPEM fine paid up to R$3.000 per auto on a certified SKU for a listing item she passed. Optional re-certificate per new collection, R$400. No subscription. Written stop date: 31 Dec 2027. The door-opener is a FREE pre-computed gap report of the prospect's own site, produced by her crawler before the call.",
+   "units_for_bar": "Gross needed ≈ (R$10.400–12.950 net + R$750–1.400 stack) ÷ (1 − ~12% Simples) = R$12,7–16,3k/month. That is 8–11 audits/month at R$1.500, or 4–5 at R$3.000, i.e. 50–130 new brands a year, each fetched by a call. NOT reachable on origination; realistic 1–3 audits/month.",
+   "hours": "≈6–8 h per audit (machine crawl + extraction, her QA, fix-file mapping, one delivery call). Closing 2–3/month needs ~20–30 Portuguese calls at ~0,5 h plus prep, ≈15–20 h. Total ≈35–45 h/month, within 87 h. Hours do not bind; demand does.",
+   "pool": "UNVERIFIED count. Hypothesis: 1.500–3.000 mid-size D2C fashion brands × R$1.500–3.000 once ≈ R$2,3–9M across a ~15-month harvest window ≈ R$150–600k/month-equivalent. Proxies: Etiqueta Certa says '+100 mil confecções'; IPEM-SP alone inspects ~5.000 textile firms a year. Three stacked unverified multipliers make this a hypothesis, not a number.",
+   "pool_div4_vs_bar": "Pool ÷ 4 ≈ R$37–150k/month against a R$12,7–16,3k gross bar. Passes on paper, but the pool is a hypothesis. The binding constraints are willingness to pay (expected fine × inspection probability per brand is UNVERIFIED and probably small) and origination forever.",
+   "c8_fit": "Fashion is her world, but the work is compliance data, not aesthetics. Her knowledge helps only at the edges (how collections and ficha técnica actually flow). The persistence risk is low because it is designed to END on 31 Dec 2027.",
+   "revealed_preferences": "KEEPS the machine test: a crawler plus extraction makes the unit; the buyer verifies by opening their own pages; nothing is believed; no relationship to hold after delivery. TRADES AWAY origination-once: every brand is fetched by a call. The compensation is a dated, regulator-published reason to call, plus evidence of the prospect's own gap before the first word.",
+   "biggest_flaw": "The fix is a one-time template field (origin and care) that any e-commerce team can add after reading the free guide. Once added, it stays. The risk being insured is probably small per brand: online IPEM enforcement is UNVERIFIED and fine values are unpublished, so realistic willingness to pay is R$500–1.500, not R$3.000. And the one incumbent that holds the per-SKU label data (Etiqueta Certa) can bundle it free.",
+   "repair": "(1) Run it by the DEADLINE-HARVEST LAW: a funding event with a written stop date (31 Dec 2027), never the main business. (2) Lead every call with the prospect's own free gap report: evidence before explanation. (3) Price per SKU with an R$800 floor, so the ticket matches the fine-avoidance value. (4) Target brands whose labels are made by facções or suppliers, not in Etiqueta Certa, because they have no clean per-SKU label data; the fix-file (mapping their label photos/PDFs to fields) is the part they cannot do in an afternoon. (5) Add the footwear leg for online shoe retailers only if the IPEM-SP written answer (below) confirms that listings are inspected.",
+   "treadmill": "obsolete — agents make catalogue crawling and field extraction trivial, and the rule is simple and public. The right to charge exists only while the clock is fresh; each frontier release shortens the window.",
+   "honest_floor_usd_month": "US$150–600/month during the harvest window (1–3 audits/month at ~R$1.500–2.000; net after ~12% tax and ~R$750 stack, at ~R$5,2/US$); ~US$0–200 after 31 Dec 2027. BELOW the wave-1 lead's US$700–1.500.",
+   "next_test": "All R$0 and written first. (a) Email duvidatextil@ipem.sp.gov.br asking whether IPEM-SP inspects online listings for the six mandatory items and whether autos have been issued against e-commerce listings since 22 Jun 2026. (b) Extend the crawl from 13 to 100 D2C fashion brands. (c) Make 20 Portuguese calls to the worst offenders from the crawl, each opened with that brand's own gap report, offering the R$1.500 audit.",
+   "bar": "Committed in advance: proceed only if ALL THREE hold: (a) IPEM-SP confirms in writing that online listings are inspected or autuados; (b) ≥40% of the 100 crawled brands omit origin or care; (c) ≥3 of 20 called brands agree to pay ≥R$1.000. Any one failing → kill, and keep only the crawler as a lead source for the launch kit.",
+   "unverified": [
+    "Whether IPEM has autuado any e-commerce listing since 22 Jun 2026",
+    "Fine values per textile auto (not published)",
+    "Count of mid-size D2C fashion brands (pool)",
+    "Whether Etiqueta Certa already exports label data to listings (title scan found nothing)",
+    "False-absence risk in the crawl: specs rendered client-side would read as missing",
+    "Portaria 459/2025 dates at primary (DOU text not fetched; two secondary summaries agree: 31 Jul 2026 and 31 Dec 2027)",
+    "Guide PDF not yet located for download ('será gratuito e em breve disponibilizado')"
+   ]
+  },
+  {
+   "name": "COR CERTA — a measured-colour acceptance clause that opens colour cosmetics (lip, nail, complexion) to the wave-1 launch kit",
+   "one_line": "For a colour-cosmetic launch, Sol measures each shade on the PHYSICAL product with a spectrophotometer (drawdown, D65/10°). She locks that Lab value into every AI-made packshot, swatch and texture frame and certifies ΔE00 ≤ 2,0 per frame. The buyer can re-measure; any frame that fails is redone free and 20% refunded. It is a guarantee on product-colour depiction, never on-skin appearance.",
+   "price_holder": "outcome",
+   "why_tool_vendor_cannot_give_it_away": "A tool vendor never holds the physical product, so it cannot measure it. Higgsfield's own product-photoshoot recipe checks colours BY EYE and admits it cannot verify fine detail from a thumbnail. Estúdio Fábrica's AI service states 'não garantindo fidelidade'. Perfect Corp sells shade TRY-ON (a different artefact) and claims 100% accuracy there. The measured input exists only where the physical sample is: possession is the backer.",
+   "buyer": "Brazilian colour-cosmetic brands launching shade ranges. ANVISA daily file, last 12 months: 7.303 colour-cosmetic notifications from 583 holders; 206 holders with ≥5, 132 with ≥10. Many of the top holders are importers of low-price makeup.",
+   "observed_buyer_money": [
+    {
+     "what": "Perfect Corp makeup virtual try-on (the tool vendor's version of the shade need)",
+     "price": "¥56.907/month (200 SKUs, Essential); ¥84.581/month (400 SKUs, Premium); JPY display by geolocation",
+     "unit": "per brand per month",
+     "url": "https://www.perfectcorp.com/business/solutions/online-service/makeup/plan",
+     "status": "seller asking"
+    },
+    {
+     "what": "Estúdio Fábrica studio content period / AI images, with an explicit no-fidelity clause",
+     "price": "R$1.250 per period (up to 50 images); AI campaign image R$53; AI lookbook R$35 per 3 images",
+     "unit": "per period / per image",
+     "url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+     "status": "seller asking"
+    },
+    {
+     "what": "Anyone paying for MEASURED colour on catalogue imagery",
+     "price": "none found",
+     "unit": "n/a",
+     "url": "https://www.perfectcorp.com/business/blog/commerce/how-ai-foundation-shade-matcher-helps-customers-find-their-shades",
+     "status": "UNVERIFIED"
+    }
+   ],
+   "free_front_door_check": "Contract manufacturers bundle labels and some marketing, but not measured imagery. A brand's own studio can shoot with a ColorChecker, which is the real substitute and cheap. Perfect Corp owns 'which shade am I' via try-on from ~¥56.907/month. Nobody was found selling a ΔE certificate on catalogue imagery, which is either a gap or a sign of no demand. No state counter: colour depiction is unregulated.",
+   "offer_and_price": "A clause inside the launch kit: +R$100 per shade measured (minimum 6 shades). A 12-shade lip range on a R$2.500 kit ≈ R$3.700. Lead with NAIL POLISH (opaque, so the swatch IS the result) and lip. Never certify on-skin foundation renders; those stay 'ilustrativo'.",
+   "units_for_bar": "Standalone: ≈4 colour kits/month at R$3.500 against a R$12,7–16,3k gross bar. As a clause: +1 colour kit/month plus ~R$1.000 add-on on other kits.",
+   "hours": "≈2 h measuring (drawdowns + spectro) + 8–10 h production/QA + ~4 h Portuguese sales per kit ≈ 14–16 h/kit. At 4 kits/month ≈ 60 h, within 87 h.",
+   "pool": "Premium own-brand colour launchers UNVERIFIED: ~40–65 of the 132 holders with ≥10 colour notifications × 2 kits/yr × R$3.500 ≈ R$280–455k/yr ≈ R$23–38k/month.",
+   "pool_div4_vs_bar": "Pool ÷ 4 ≈ R$5,8–9,5k/month < R$12,7–16,3k gross bar. FAILS as a standalone segment; it works only as a ~20–35% extension of the wave-1 lead's ~300 hair/skin launchers.",
+   "c8_fit": "The strongest in this lens: colour, make-up, skin tones, what reads as expensive. It is her eye, but proven by an instrument, so she is never 'believed'.",
+   "revealed_preferences": "Partly keeps the machine test: the render is machine-made and the buyer verifies ΔE with any spectro, so no belief is needed. But measuring is hands-on per shade (~5–10 min) and needs the physical product shipped to her. Trades away origination-once (per launch), softened by colour brands' repeat seasonal collections.",
+   "biggest_flaw": "Shoppers misjudge colour ON SKIN, and the guarantee cannot honestly cover on-skin appearance, so it certifies the easier half. No buyer was found paying for measured colour. The premium colour segment is too small to stand alone, and the spectro (Nix Spectro 2, CAD 1.984 ≈ US$1.430) eats ~57% of the US$2.500 capital cap.",
+   "repair": "Sell it only as a clause of the existing launch kit, which opens the colour-cosmetics segment that the VBPH plan explicitly avoided ('Avoid: makeup shade fidelity'). Start with nail and lip, where swatch = result. Buy the instrument only after the bar is met; before that, run the test on price acceptance alone. State the ΔE method (CIEDE2000, D65/10°, drawdown on the brand's card) on the certificate so the buyer can re-run it.",
+   "treadmill": "better — generation gets cheaper every release, while the measured input can only come from someone holding the product. Frontier colour-accurate models still need that input.",
+   "honest_floor_usd_month": "+US$150–500/month as a clause of the launch kit; US$100–300/month standalone. BELOW US$700.",
+   "next_test": "R$0, Portuguese calls allowed: 15 calls to own-brand colour-cosmetic companies with ≥10 colour notifications in the ANVISA file (exclude importers). Ask: (1) in the last launch, did colour depiction cause complaints, returns or a reshoot, and what did it cost? (2) what did launch/swatch imagery cost? (3) would they pay +R$100 per shade for a measured-colour certificate?",
+   "bar": "Committed in advance: ≥4 of 15 name a colour-depiction cost from their last launch AND accept +R$100/shade. Otherwise drop the clause and do not buy the spectro.",
+   "unverified": [
+    "Any buyer paying for measured colour on imagery",
+    "Own-brand share among the 583 colour holders",
+    "Return/complaint rates caused by colour depiction in Brazil",
+    "Nix Spectro 2 accuracy on cosmetic drawdowns",
+    "Whether Perfect Corp's foundation shade finder is in the self-serve tiers (page lists 'All 14 Makeup Try-On' only for Enterprise)"
+   ]
+  }
+ ],
+ "killed_while_hunting": [
+  {
+   "idea": "PROVA DE RÓTULO — pre-print cosmetic label check with a reprint guarantee",
+   "cause": "FREE FRONT DOOR in the factory's own words: Veneza includes 'Orientação sobre rotulagem' and 'suporte e orientação técnica para garantir que tudo fique correto para produção'; label printers sell 'consultoria técnica' (Microrar); the titular's RT is required by statute. The consequence is small: 1.000 BOPP labels cost R$340 self-serve (R$0,17/un at 5.000), so a guarantee is worth tens of reais (passport-photo economics, blade one). RDC 907/2024 art. 47's relabelling deadline passed on 3 Oct 2025, so no harvest is left.",
+   "url": "https://vnz.ind.br/termos-terceirizacao/ ; https://www.graficaalmeida.com/etiquetas-rotulos/bopp/etiquetas-rotulos-adesivo-bopp-branco-resistente-a-agua-recorte-eletronico-652 ; https://www.microrar.com.br/blog/rotulos-para-cosmeticos-checklist-anvisa-e-como-evitar-multas/"
+  },
+  {
+   "idea": "Marketplace listing acceptance for cosmetics (ML / Shopee / TikTok Shop) sold with a 'aprovado de primeira' guarantee",
+   "cause": "TEMPLATE FLOOR + FREE VALIDATOR + PLATFORM ARBITER: ML's rule is two lines (show the ANVISA number; no therapeutic claims) and the ANVISA consulta is free. ANVISA monitors ML directly. TikTok Shop beauty is pre-approval at the platform's discretion; even a seller of activation 'não garante aprovação'. TikTok Shop Official Partners bundle setup inside GMV-based operation. ML listing checks (including blank mandatory attributes) are a R$149,90/month AI tool; ML consultancies (R$1.500+/month) give the diagnosis free. A rejection costs hours, not money.",
+   "url": "https://vendedores.mercadolivre.com.br/nota/como-cumprir-as-normas-da-anvisa-e-evitar-o-cancelamento-do-seu-anuncio ; https://consultor-platinum.vercel.app/ ; https://tspbrasil.com/ ; https://zibshop.com.br/ativar-tiktok-shop/requisitos-tiktok-shop"
+  },
+  {
+   "idea": "Textile label compliance (Portaria 118/2021) for confecções / authorial brands, per collection, with a fine guarantee",
+   "cause": "OCCUPIED WITH OBSERVED MONEY + CHEAP STATE COUNTER: Etiqueta Certa (SaaS R$590–2.500/month, 225 clients, 1.100 brands, R$1,5M 2023, angel-funded) explicitly targets 'os pequenos' and is wired into C&A's supplier base. IPEM-SP answers label questions free by phone and email. The long tail pays for neither.",
+   "url": "https://revistapegn.globo.com/startups/noticia/2024/05/startup-fatura-r-15-milhao-com-etiquetas-inteligentes-para-a-industria-textil.ghtml ; https://www.ipem.sp.gov.br/index.php/servicos/consultas/processos-ipem-sp"
+  },
+  {
+   "idea": "Footwear labelling harvest (Portaria 459/2025: NBR 16679 + GTIN, manufacturers from 31 Jul 2026)",
+   "cause": "DEADLINE HARVEST with the front doors already open: Etiqueta Certa published its Portaria-459 guide in Aug 2025 and covers footwear. GS1 sells the GTIN, and NF-e's centralised GTIN registry validates it free at invoicing (cheap state counter). The retailer leg (31 Dec 2027) is kept only as an add-on to ANÚNCIO CONFORME.",
+   "url": "https://www.cleolabs.co/en/blog/brazil-footwear-gtin-labeling-2026"
+  },
+  {
+   "idea": "Beauty ad-claim pre-clearance (CONAR / ANVISA / PROCON) sold as a guarantee",
+   "cause": "COMPELLED-BUT-CREDENTIALLED + LOW ENFORCEMENT on legit brands: claim review is sold by regulatory consultancies (pharmacist RTs) at unpublished bespoke prices, i.e. expert veto. CONAR does no pre-clearance. ANVISA's 2026 Resoluções-RE target clandestine products and therapeutic claims. The low-ticket version is the $20–120 floor already in COSMETICS_DOCUMENT_MARKET. Wave 1 already folded it into the launch kit as a QA gate.",
+   "url": "https://suaconsultoriaregulatoria.com.br/ ; https://formulajr.com.br/claims-cosmeticos-o-que-voce-pode-e-nao-pode-prometer-segundo-a-anvisa/"
+  },
+  {
+   "idea": "AI-image claim check for beauty ads (deceptive filters, before/after, AIGC labels) as a standalone per-asset guarantee",
+   "cause": "PLATFORM ARBITER + TOOL-VENDOR FRONT DOOR + TREADMILL→OBSOLETE: TikTok Shop's content policy itself bans deceptive beauty filters and before/after; Higgsfield's recipe runs visual QA and IP checks; a rejection costs a resubmission. It is a feature of the launch kit, not a business.",
+   "url": "https://seller-br.tiktok.com/university/essay?knowledge_id=1413208980588305&default_language=pt-BR"
+  },
+  {
+   "idea": "IPEM auto-de-infração defence service (10-day clock after a textile fine; recidivism doubles)",
+   "cause": "NO CHANNEL + EXPERT VETO: IPEM-SP process consultation 'deve ser feita pessoalmente', so there is no enumerable list of autuados. Writing administrative defences is assessoria jurídica (OAB exclusivity risk). Sindilojas gives members legal help.",
+   "url": "https://www.ipem.sp.gov.br/index.php/servicos/consultas/processos-ipem-sp ; https://sindilojas-sp.org.br/setor-de-vestuario-como-evitar-multas-do-inmetro/"
+  },
+  {
+   "idea": "Shade-finder / virtual try-on for indie makeup brands",
+   "cause": "TOOL VENDOR IS THE FRONT DOOR: Perfect Corp sells self-serve makeup try-on at ~¥56.907/month for 200 SKUs and claims '100% accuracy' foundation matching even for 'smaller companies'. Only the catalogue-imagery ΔE clause (COR CERTA) survives.",
+   "url": "https://www.perfectcorp.com/business/solutions/online-service/makeup/plan"
+  },
+  {
+   "idea": "Net-content / metrology (INMETRO pre-packaged) label check for cosmetics",
+   "cause": "WRONG HALF: IPEM rejections of pre-packaged goods are about actual fill weight or volume (the factory's process), not artwork. The factory owns the fix. (Source: search summary of an IPEM-SP Aug-2026 pre-medidos operation, 41% of lots rejected for quantity vs declared; page not fetched, so UNVERIFIED at source.)",
+   "url": "https://www.ipem.sp.gov.br/index.php/areas-de-atuacao/fiscalizacao-e-verificacao/produtos-pre-medidos/fiscalizacao"
+  },
+  {
+   "idea": "Receiving-dock label check for multimarca fashion retailers (IPEM fines retailers too)",
+   "cause": "Micro WTP + free help: Sindilojas legal consulting and IPEM-SP free textile doubts; the retailer's escape is a free 'Declaração de Rastreabilidade' pointing at the supplier.",
+   "url": "https://home.etiquetacerta.com/pt/blog/como-proceder-apos-ser-multado"
+  }
+ ],
+ "notes": "LENS VERDICT: the acceptance lens is PRE-OCCUPIED in Brazilian beauty and fashion commerce, and by four different parties, which is why nothing clears US$700. (1) THE STATUTE'S OWN CREDENTIAL: every cosmetic notification has a titular with AFE and an RT (RDC 907/2024 art. 37), so label and claim review is structurally inside the factory, which gives it away ('Orientação sobre rotulagem' at Veneza). (2) THE FLOW-EARNER: label printers sell 'consultoria técnica', TikTok Shop Official Partners bundle setup into GMV operation, and ML consultancies give the diagnosis free and sell at R$1.500+/month, with a R$149,90/month AI tool already flagging blank mandatory attributes. (3) THE STATE ANSWERS FREE: ANVISA consulta; IPEM-SP's duvidatextil@ phone/email line; NF-e's centralised GTIN validation. (4) A FUNDED SAAS WITH A RETAILER CHANNEL holds the one uncredentialled compelled check (textile labels): Etiqueta Certa, R$590–2.500/month, 225 clients, integrated by C&A. That is the only OBSERVED BUYER-SIDE MONEY for acceptance found in the lens, and it is taken. At low ticket the consequence is too small to price a guarantee: 1.000 BOPP labels reprint for R$340 (ACCEPTANCE SCISSORS blade one). The only unoccupied gap is LISTING conformity on brands' own D2C sites after the 22-Jun-2026 ABIT/IPEM-SP guide (measured: country of origin on 2/13 major brands, care on 4/13). It is a HARVEST, not a business, and it is ranked #1 here only as a funding event with a stop date. #2 (COR CERTA) is best read as a clause that lets the wave-1 launch kit enter colour cosmetics, the segment VBPH avoided, using possession of the physical product as the one backer a tool vendor cannot copy. Neither beats the current lead (US$700–1.500). If the founder wants one action from this lens, it is the R$0 IPEM-SP email plus a 100-brand crawl. PROCESS NOTES: (a) Two statute dates re-checked at source: RDC 907 art. 47's relabelling deadline PASSED (3 Oct 2025). Portaria 459's footwear dates rest on two agreeing secondary summaries (primary DOU text paywalled or login-walled). (b) A vendor blog (Microrar) cites a revoked RDC (07/2015) and an unsourced 'ABIHPEC 42% of autos' figure; neither was used. (c) Etiqueta Certa's CMS was checked through its public Prismic API (178 documents) per the BLOG/SITEMAP rule; no e-commerce-listing module was found in the titles. (d) Etsy/Faire were not attempted. Workana, Reclame Aqui and STJ returned 403; INCQS and GS1 had TLS/503 failures."
+}

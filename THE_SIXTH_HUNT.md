@@ -497,6 +497,43 @@ foreign makers' Brazilian arms and through despachantes.
 
 ---
 
+## 8b. WAVE 2 — six lenses, each starting from what still holds a price
+
+After ACOLHE was closed (*"lets focus on new"*), a second wave of six generators ran. Each lens had to start from a
+price-holder the tool vendor cannot give away — consent, clock, channel, outcome/guarantee — or from observed
+money, or from the one validated asset: the ANVISA launch list. **Each had to show buyer-side money before
+proposing.** Source logs are `W2A`–`W2F` in `research/hunt6-sources/`.
+
+**Headline: no standalone candidate beats O LANÇAMENTO. Four lenses returned nothing above US$700/month.** Two
+returned a business the same launching brands would also buy:
+
+- **selling the product INTO SHOPS (A PRATELEIRA);**
+- **casting the real people who SELL IT LIVE (A BANCADA).**
+
+Together with the launch kit they make **one call list and three questions.**
+
+| Lens | Best candidate | Floor (US$/month) | Cause, or why it matters |
+|---|---|---|---|
+| **W2E money-first** | **A BANCADA** — casting of TikTok Shop live hosts for beauty/fashion brands and live agencies, paid per hire | 600–1.500 | TikTok BR's own rule, **verified by me**: *"Durante uma transmissão ao vivo: Não use interações verbais que não sejam em tempo real, como vozes geradas por IA, gravações de áudio ou rádio."* The fastest-growing beauty sales format needs a real person. ~728 aggregator listings; hosts paid R$1.900–2.500 + 1,5–5%; ≥7 recruitment firms already place hosts for clients. **Audit: §8c** |
+| **W2F launch-list reuse** | **A PRATELEIRA** — commission sell-in of debut lines to SP perfumarias and cosmetics shops, launch kit as the onboarding deliverable; later placement with distributors | 90–800 at month 12; ≈2.080 at month 18 | The ONE launch need the factory does not bundle: factories *stop at the shelf* (AMÓS, MZ, BeHub say so). **Cosmetics reps are paid 10–15%**, not the 3–6% of `THE MARGIN LAW` (Êxodo *"Ganho base de 10% a 15%"*; Kah Noa *"10% do valor líquido"*). 10 of 12 brands seen recruiting reps notified ANVISA in the last 12 months. Flaw: the 10% is paid to reps with a client portfolio and a car |
+| W2A consent | TOM REAL — shade swatches on 6 licensed Brazilian skin tones with a ΔE report, for colour cosmetics | 300–800 | **Unrecognised consent is abundant.** R$30–45 buys a real-person product video with ad rights (Vintepila, 390 and 753 sales); US$99/month leases a licensed twin; >100.000 pre-consented twins exist; ElevenLabs does not pay out to Brazil. Consent holds a price only as FAME or welded to a checkable result |
+| W2D outcome/guarantee | COR CERTA — spectrophotometer-backed colour guarantee (ΔE00 ≤2,0) as a clause that lets O LANÇAMENTO enter colour cosmetics | +150–500 as an add-on | The acceptance layer is given away four ways: the factory's legally required RT (Veneza *"Orientação sobre rotulagem"*), the flow-earners, the state (IPEM-SP's free textile line), and a funded incumbent (Etiqueta Certa, 225 clients, adopted by C&A). A 1.000-label reprint costs R$340 |
+| W2C channel | A CADEIRA — a licensed real-results pack from 10 salon clients per pro-hair launch | +100–350 as an add-on | **THE MIRROR LAW:** in beauty the subject is the customer's own face, which her phone and free AI already serve; the partner layer is funded by suppliers (L'Oréal's free colour app + 6% + 6% commissions; b.drops 886 salons) |
+| W2B clock | A PRATELEIRA DE DEZEMBRO — flag products hit by ANVISA's June 2026 substance bans (RDC 1.030/2026: Lilial/Lyral 11–15 Dec 2027) | 0–500, time-boxed | The migration wave is real — **56.289 products expire Oct 2026–Dec 2027** — but ANVISA auto-imports each record in ~15 minutes at no fee. Useful fact: **37 of 127 crawled VTEX listings from Mahogany, Dermage and Oceane still list Lilial or Lyral**, a relaunch trigger for O LANÇAMENTO |
+
+**Laws from wave 2 (full statements in §9):**
+
+- `UNRECOGNISED CONSENT IS ABUNDANT`
+- `THE MIRROR LAW`
+- `THE MARGIN LAW IS A FUNCTION OF THE CATEGORY`
+- `THE REGULATOR PRE-FILLS THE MIGRATION`
+- `GREP A SUBSTANCE BAN FOR A SELL-THROUGH CLAUSE`
+- `THE PER-PARTNER MARGIN SCREEN`
+
+## 8c. A BANCADA — audit
+
+*(AUD5 running; filled in when it lands.)*
+
 ## 9. LAWS FROM THIS HUNT
 
 - **★★★ THE TOOL VENDOR IS THE FRONT DOOR.**

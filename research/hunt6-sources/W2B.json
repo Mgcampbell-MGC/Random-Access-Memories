@@ -1,0 +1,186 @@
+{
+ "agent": "W2B",
+ "lens": "CLOCK in and around beauty, cosmetics, fashion and apparel in Brazil: buyers who must buy on a date they cannot move",
+ "candidates": [
+  {
+   "name": "A PRATELEIRA DE DEZEMBRO — a label-photo substance screen for beauty distributors and multi-brand retailers, sold ahead of the RDC 1.030/1.029 deadlines",
+   "one_line": "The stockholder sends a photo of each SKU's back label. A machine reads the INCI and flags every SKU containing a substance ANVISA banned or restricted in June 2026, with its deadline and its ANVISA status. The report comes with a supplier letter demanding a formula-change date and a written take-back of pre-deadline lots, so a distributor or perfumaria stops buying stock it cannot sell after 11–15 Jun 2027 or 11–15 Dec 2027.",
+   "price_holder": "clock",
+   "why_tool_vendor_cannot_give_it_away": "Nothing here is image, video, voice or text production, so Higgsfield's catalogue has nothing on this. The price rests on dated statutory clocks nobody can move: RDC 1.030/2026 art. 5 (12 months; 18 months for Lilial/Lyral, counted from DOU publication 15/06/2026) and RDC 1.029/2026 art. 2 (24 months). It also rests on an information asymmetry: the SUPPLIER knows its formula and has a reason to sell old stock through, while the STOCKHOLDER bears the risk if pre-deadline lots are recalled, as ANVISA did with the pre-ban TPO lots (RE 976/2026). ⚠ The general-purpose front door still applies: a buyer's intern plus a chat assistant plus ANVISA's free INCI panel can reproduce the screen (see free_front_door_check).",
+   "buyer": "Professional-beauty distributors (salon suppliers), multi-brand perfumarias and beauty e-commerce, and franchisees of fragrance networks, all buying from many small brands, all reachable by Portuguese calls. Only firms carrying ≥300 cosmetic SKUs.",
+   "observed_buyer_money": [
+    {
+     "what": "The cost of being wrong, observed: ANVISA ordered recall of Impala gel-polish lots made in 2024–25, before the TPO ban (RDC 995/2025 of 30/10/2025; recall RE 976/2026 on 16/03/2026)",
+     "price": "lots B24…/B25… withdrawn from sale",
+     "unit": "per recalled lot",
+     "url": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-determina-o-recolhimento-de-esmalte-em-gel-com-substancia-proibida",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "ANVISA seizure of irregular stock at the Mercado Livre Full warehouse, Cajamar/SP, 18/03/2026 (incl. 511 lubrificante íntimo, 14 pomada modeladora)",
+     "price": "stock seized, placed in 'fiel depositário'",
+     "unit": "per warehouse action",
+     "url": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-apreende-produtos-irregulares-em-deposito-do-mercado-livre",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "In-house regulatory analyst (the function she would partly replace), São Paulo, pleno",
+     "price": "R$6.016–8.481",
+     "unit": "per month salary, p25–p75, self-reported",
+     "url": "https://www.glassdoor.com.br/Sal%C3%A1rios/s%C3%A3o-paulo-analista-de-assuntos-regulatorios-pleno-sal%C3%A1rio-SRCH_IL.0,9_IM1009_KO10,49.htm",
+     "status": "UNVERIFIED"
+    },
+    {
+     "what": "Regulatory consultancy selling 'auditorias de portfólio' for RDC 1.029/1.030 (to manufacturers)",
+     "price": "no price published",
+     "unit": "per engagement",
+     "url": "https://www.verarosas.com.br/noticias/impactos-estrategicos-das-novas-rdcs-1-029-2026-e-1-030-2026-na-formulacao-de-cosmeticos-no-brasil",
+     "status": "seller asking"
+    }
+   ],
+   "free_front_door_check": "Checked four doors. (1) ANVISA's own INCI panel exports official translations free and marks a translation 'NÃO VIGENTE' when an ingredient enters the prohibited list (a free validator, but one formulation at a time and only after ANVISA updates it) — https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/traducao. (2) The supplier's declaration is free to request but conflicted: the supplier benefits from selling old lots before the date. (3) A consultancy (Vera Rosas) sells portfolio audits to MANUFACTURERS, not to stockholders — https://www.verarosas.com.br/noticias/impactos-estrategicos-das-novas-rdcs-1-029-2026-e-1-030-2026-na-formulacao-de-cosmeticos-no-brasil. (4) The contract manufacturer knows the formulas but works for the brand, not the distributor. A status API exists (Netrin, vencimento for 10 products per call), but it needs process numbers, which retailer catalogues do not carry. No vendor was found selling a substance-deadline screen to STOCKHOLDERS. Absence is UNVERIFIED beyond these searches.",
+   "offer_and_price": "TRIAGEM DE PRATELEIRA R$2.400 one-off per catalogue up to 800 SKUs (+R$2/SKU above), from label photos or supplier spec sheets. It includes a per-SKU sheet in closed vocabulary ('INCI lido contém X; X consta na RDC 1.030/2026, anexo nº 1416; prazo de adequação 11–15/12/2027'; 'NÃO ENCONTRADO NO ARQUIVO ANVISA de dd/mm'; 'NOTIFICAÇÃO VENCE EM dd/mm/aaaa, sem migração registrada'), plus one letter per affected supplier. RE-TRIAGEM R$600 at each list change (CP 1.399/2026 → part 2 of the restricted list). Optional VIGIA R$390/month: the daily ANVISA file and RE recall resolutions matched to the client's SKUs. Invoiced; pix/boleto; no card.",
+   "units_for_bar": "Gross needed ≈ R$14.300/month: (net R$12.000 + ~R$1.000 stack) ÷ (1 − ~9,3% Simples with fator r). ≈ 5 triagens (R$12.000) + 6 VIGIA (R$2.340) = R$14.340/month. In 12 months that is ~60 one-off screens, i.e. 60 distinct stockholders.",
+   "hours": "Per triagem ≈ 5 h: intake call 0,5; photo/OCR QA of flagged and unread rows 2–3; report call 1; letters 0,5. 5 × 5 = 25 h. VIGIA 6 × 1 h = 6 h. Portuguese sales ≈ 40 calls/month ≈ 15 h. Admin 5 h. Total ≈ 51 of 87 h/month.",
+   "pool": "UNVERIFIED. The number of Brazilian distributors, retailers and franchise units carrying ≥300 cosmetic SKUs was NOT measured (the Receita bulk file is the rail; CNAE 4646-0/01 atacadista de cosméticos and 4772-5/00 varejo). The exposure side IS measured: 37 of 127 INCI-bearing listings (29%) at 3 of the 4 brands that publish INCI list Lilial and/or Lyral (Mahogany 17/44, Dermage 13/32, Oceane 7/35), including products released 2025–26. The decennial side is measured too: 56.289 active notified SKUs expire Oct 2026–Dec 2027 across 1.555 holders, and only 6,7% of the 2027-due are already migrated.",
+   "pool_div4_vs_bar": "Hypothesis only. IF 1.000–3.000 qualifying stockholders exist (UNVERIFIED): one-off pool R$2,4–7,2M ÷ 4 = R$0,6–1,8M, against a bar of ≈R$172k/yr. That passes, but it rests on two unverified multipliers (pool count and willingness to pay), so it is not a number.",
+   "c8_fit": "Weak to moderate. It is inside the beauty trade and needs no credential, and she knows the salon and distributor world. But the work is reading ingredient lists, not aesthetics. It uses none of what a former model knows about looking expensive.",
+   "revealed_preferences": "KEEPS the machine test: a machine reads the labels and screens, and the buyer verifies each hit against the RDC annex and ANVISA's panel without trusting her. PARTLY KEEPS origination-once: each new MERCOSUL list update re-triggers existing clients without new selling. TRADES the steady business: it is a harvest with a stop date unless the list-update flow materialises.",
+   "biggest_flaw": "Demand is unproven, and the one fact that decides it is UNVERIFIED: whether lots made BEFORE the deadline may be sold after it. RDC 529/2021 art. 8 had an explicit sell-through clause ('comercializados até o final dos seus prazos de validade'); RDC 1.030/2026 art. 5 has none, and the TPO precedent recalled pre-ban lots. If ANVISA allows sell-through, the stockholder's risk disappears and so does the product. Second: in a recall the BRAND usually collects stock ('recolhimento voluntário'), so the stockholder's loss may be only admin and lost sales. Third: the free ANVISA panel plus a patient intern is the replacement cost.",
+   "repair": "(1) Before any selling, ask ANVISA one written question (Fale Conosco / Ouvidoria): may lots containing BMHCA/HICC made before 11–15/12/2027 be sold until their expiry? A 'yes' kills it at R$0. (2) Target only stockholders with the weakest supplier leverage: salon distributors and multi-brand perfumarias buying from dozens of small brands, not chains with regulatory teams. (3) Make the deliverable a NEGOTIATING INSTRUMENT, not a warning: the supplier letter asks for a formula-change date and a written take-back or credit for pre-deadline lots. That turns the finding into money (credit notes), which passes THE KNOWLEDGE-LIABILITY TEST. (4) Keep a closed vocabulary and cite the RDC entry number. Never say 'compliant' or 'irregular'. (5) Run it as a harvest with a written stop date of 31/12/2027. Keep VIGIA only if CP 1.399/2026 becomes an RDC with a new window.",
+   "treadmill": "Better for production: label OCR and INCI matching get cheaper every release. Obsolete for price within ~12–18 months: a buyer's staff with a chat assistant and ANVISA's free panel can do a small catalogue alone. The harvest window closes about when the treadmill catches up.",
+   "honest_floor_usd_month": "0–500 (time-boxed to Dec 2027). US$0 if ANVISA confirms sell-through. Ceiling ≈US$1.000–1.500/month for ~12 months if ≥5/20 calls pass. At PTAX ≈5,18.",
+   "next_test": "R$0, two steps. (a) The written ANVISA sell-through question, answered in writing. (b) 20 Portuguese calls to professional-beauty distributors and multi-brand perfumarias, asking: 'Has any supplier told you which SKUs change formula for RDC 1.030? Do you have a take-back clause? Would you pay R$2.400 for a screen of your catalogue from label photos, with a letter to each affected supplier?' Run (b) only if (a) is not a clear 'yes, sell-through allowed'.",
+   "bar": "PASS: ≥5/20 say no supplier has informed them AND they would pay ≥R$1.500. FAIL: ≤2/20, or ANVISA confirms sell-through. 3–4: sell 3 paid pilots at R$1.200 and time them against the 5-hour estimate.",
+   "unverified": [
+    "whether pre-deadline lots may be sold after 11–15/12/2027 (decisive)",
+    "count of distributors/retailers with ≥300 cosmetic SKUs",
+    "willingness to pay",
+    "whether ANVISA's panel already marks Lilial/Lyral 'NÃO VIGENTE'",
+    "whether the deadline is counted from 11/06 (signature, consultancy reading) or 15/06 (DOU publication, RDC text)",
+    "Glassdoor salary band (self-reported)",
+    "who carries the recall cost in practice (brand vs stockholder)"
+   ]
+  },
+  {
+   "name": "O RELANÇAMENTO — the Lilial/Lyral reformulation wave as a compelled trigger for O LANÇAMENTO (an add-on, not a standalone)",
+   "one_line": "Crawl brands' public INCI lists (their own VTEX/Shopify catalogue JSON) and find every live product carrying an ingredient banned from 11–15 Dec 2027 (Lilial/Lyral) or 11–15 Jun 2027 (borates, ketoconazole). Call the brand in Portuguese with the specific exposure, and sell the NEW-formula line's launch kit, packshot-locked from the new artwork, plus the all-channel composition update and a deadline sweep of stale retailer listings.",
+   "price_holder": "clock",
+   "why_tool_vendor_cannot_give_it_away": "The clock makes the reprint compulsory: every affected SKU needs a new back label and, for silk-screened bottles, new packaging by the deadline, and no tool vendor sells that date. The kit itself IS a production deliverable, so it inherits O LANÇAMENTO's defence: 'the generator never sees the label', composited from the approved new artwork with a label-lock redo guarantee. It does not escape THE TOOL VENDOR IS THE FRONT DOOR on its own.",
+   "buyer": "Own-brand beauty companies whose PUBLIC INCI lists a newly banned substance. Measured targets on 25 Sep 2026: Mahogany (17 listings, incl. Wild Cat line, releases 2025-07 to 2026-03), Dermage (13; Hyaluage Body, Revitrat shampoos), Oceane (7 listings on ~2 base products).",
+   "observed_buyer_money": [
+    {
+     "what": "Exposure (demand trigger), not money: Mahogany 'Fragrância Desodorante Corporal Wild Cat 100ml', released 2025-10-08, INCI '…Butylphenyl Methylpropional (Butilfenil Metilpropional)…'",
+     "price": "n/a",
+     "unit": "per SKU",
+     "url": "https://www.mahogany.com.br/api/catalog_system/pub/products/search?ft=perfume&_from=0&_to=49",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "Dermage 'Mini Hyaluage Body' (released 2024-11-14) lists Hydroxyisohexyl 3-cyclohexene carboxaldehyde and a misspelt Butylphenyl methylpropional",
+     "price": "n/a",
+     "unit": "per SKU",
+     "url": "https://www.dermage.com.br/api/catalog_system/pub/products/search?ft=hidratante&_from=0&_to=49",
+     "status": "observed buyer-side"
+    },
+    {
+     "what": "The deliverable's published price band: Estúdio Fábrica AI production R$53/campaign image, R$260 per 15–20 s video (wave 1); O LANÇAMENTO kit band R$1.030–3.000",
+     "price": "R$1.030–3.000",
+     "unit": "per one-product AI launch set",
+     "url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+     "status": "seller asking"
+    },
+    {
+     "what": "New cosmetic label design with 3D mockup (the relabel's price ceiling)",
+     "price": "R$200",
+     "unit": "per label",
+     "url": "https://orbelabel.com.br/",
+     "status": "seller asking"
+    }
+   ],
+   "free_front_door_check": "The relabel half is given away three ways. ANVISA's panel exports the official Portuguese composition free (RDC 898 art. 3) — https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/traducao. A designer charges R$200 for a whole new label. 13 of 20 contract manufacturers do labels in-house (wave-1 AUD2). So the relabel is NOT sold standalone. Only the relaunch kit and the stale-listing sweep are priced.",
+   "offer_and_price": "Free: a per-brand exposure report (public INCI → RDC entry → deadline), the door-opener. Paid: NOVA FÓRMULA kit R$2.500–3.500 per product line (O LANÇAMENTO's kit, built from the new artwork); FAMILY by quote. VARREDURA DE CANAIS R$600 per brand at the deadline: every retailer or marketplace listing still showing the banned INCI, with URL and timestamp, so the brand can demand updates before ANVISA's marketplace inspections find them.",
+   "units_for_bar": "Not standalone. It adds 0–1 kits/month to O LANÇAMENTO's 2–3 kits/month during Q4 2026–Q4 2027.",
+   "hours": "Per kit as in O LANÇAMENTO (central ≈15–25 h at maturity per AUD3). The crawl is a script; the sweep ≈2 h per brand.",
+   "pool": "The measured exposure is 37 of 127 INCI-bearing listings at 3 of 4 brands that publish INCI. The national count of affected own-brand holders is UNVERIFIED. Most small brands publish no INCI online (Bioextratus, We Pink, Ciclo, Feito Brasil, Boca Rosa: 0 INCI in catalogue data), so the crawl sees only the minority that do.",
+   "pool_div4_vs_bar": "Not computable standalone. As an add-on it only has to raise O LANÇAMENTO's hit rate.",
+   "c8_fit": "Good. Same buyer and same aesthetic judgement as O LANÇAMENTO (fragrance, body, skin); the clock only supplies the reason to call now.",
+   "revealed_preferences": "Same as O LANÇAMENTO. It TRADES the machine test (her taste on every kit) and origination-once (she fetches every brand). It compensates with high value per unit, her domain, and a statutory reason to call.",
+   "biggest_flaw": "A reformulation is usually SILENT. The point of a fragrance rematch is that the consumer notices nothing, so the compelled event is a back-label reprint, not a relaunch. And a 'sem Lilial' claim advertises the absence of a now-prohibited substance, which may itself mislead under RDC 907 art. 12 I (UNVERIFIED).",
+   "repair": "Do not sell the reformulation. Sell the REPRINT: when silk-screened or printed primary packaging must be reprinted anyway before the deadline, the marginal cost of a front refresh and a relaunch is lowest. Pitch it to brands whose affected SKUs are hero lines with printed bottles (Mahogany's Wild Cat, Dermage's Hyaluage). Fold the test into O LANÇAMENTO's 20 calls rather than running a separate campaign.",
+   "treadmill": "Better: generation gets cheaper and the INCI crawl is a script. But the kit's price follows O LANÇAMENTO's post-treadmill decline toward ≈R$2.000/set.",
+   "honest_floor_usd_month": "+0–300 on top of O LANÇAMENTO, only until Dec 2027.",
+   "next_test": "R$0. Add 5 calls to O LANÇAMENTO's 20: Mahogany, Dermage, Oceane, plus 2 more found by crawling INCI-publishing brands. Ask: 'Your listing X shows Butylphenyl Methylpropional, prohibited by RDC 1.030/2026 from Dec 2027 — is the reformulated line getting new packaging or a relaunch, and who produces its images?'",
+   "bar": "PASS: ≥2/5 name a visible relaunch or packaging refresh tied to the reformulation, with external visual spend ≥R$2.500. FAIL: 0/5. Then keep only the free exposure report as a door-opener.",
+   "unverified": [
+    "share of reformulations that become visible relaunches",
+    "whether 'sem Lilial/Lyral' claims are permitted",
+    "national count of affected own-brand holders",
+    "whether Mahogany/Dermage have already reformulated (the web copy may lag the factory)"
+   ]
+  }
+ ],
+ "killed_while_hunting": [
+  {
+   "idea": "O DECÊNIO — a desk preparing the SGAS→Solicita migration (the decennial continuity) for holders of the 56.289 active SKUs due Oct 2026–Dec 2027",
+   "cause": "THE REGULATOR PRE-FILLS THE MIGRATION. ANVISA's own webinar: 'Inserir o número de processo do SGAS no formulário → Internalização dos dados no sistema (15 min)', 'NÃO POSSUI TAXA'. The per-SKU clerical work is 15 minutes and free, the petition needs the holder's login and RT signature (C4, credential), and the contract manufacturer holds ~55% of brands' notifications. The clock is real and measured; the work is not.",
+   "url": "https://www.gov.br/anvisa/pt-br/assuntos/educacaoepesquisa/webinar/cosmeticos/arquivos/apresentar-o-formulario-eletronico-para-peticionamento-de-produtos-cosmeticos.pdf/@@download/file"
+  },
+  {
+   "idea": "RDC 907/2024 relabel harvest (all cosmetics must adopt the new labelling chapter)",
+   "cause": "The clock has passed: art. 47 deadline was 3 Oct 2025; art. 49 cancelled the laggards.",
+   "url": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=RDC&numeroAto=00000907&seqAto=000&valorAno=2024&orgao=RDC%2FDC%2FANVISA%2FMS"
+  },
+  {
+   "idea": "Portuguese-composition label service (RDC 898/2024) and a QR-hosted composition page",
+   "cause": "The regulator ships the translator: ANVISA's panel exports official translations to .xlsx free; 36-month stock windows ride the normal reprint cycle; no petition needed (art. 5); a brand's own product page satisfies the QR option (§3).",
+   "url": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/traducao"
+  },
+  {
+   "idea": "Standalone RDC 1.030 relabel pack (INCI minus banned substance + PT composition)",
+   "cause": "Squeezed from both sides: ANVISA's free panel makes the text, a designer makes a whole new label for R$200 (Orbe), and 13/20 contract manufacturers bundle labels. Survives only inside candidate 2 as a door-opener.",
+   "url": "https://orbelabel.com.br/"
+  },
+  {
+   "idea": "Nail-gel TPO/DMPT reformulation or stock-clearance harvest",
+   "cause": "The clock has passed: RDC 995/2025 (30/10/2025) gave 90 days; recalls were executed by March 2026 (RE 976/2026). The precedent is kept for candidate 1.",
+   "url": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-determina-o-recolhimento-de-esmalte-em-gel-com-substancia-proibida"
+  },
+  {
+   "idea": "Footwear label compliance (Portaria Inmetro 459/2025, GTIN + ABNT NBR 16679)",
+   "cause": "The manufacturers' deadline passed 31/07/2026. A label SaaS already serves the chain ('+200 fornecedores… +1.100 marcas… +400 mil modelos de etiquetas'). The retail deadline of 31/12/2027 only requires preserving labels, not buying anything.",
+   "url": "https://home.etiquetacerta.com/pt"
+  },
+  {
+   "idea": "Textile labelling clock (Portaria Inmetro 118/2021 successor)",
+   "cause": "There is no clock. Inmetro's 2026–27 regulatory agenda (Portaria 210/2026) contains no textile, apparel or cosmetic item.",
+   "url": "https://www.legisweb.com.br/legislacao/?id=495239"
+  },
+  {
+   "idea": "IBS/CBS price-tag or catalogue re-classification for beauty retail (2027)",
+   "cause": "THE VENDOR-URGENCY LAW. No consumer price-tag duty was found (UNVERIFIED negative); ERP vendors run the adaptation; NF-e validations were postponed (archive, Ato Técnico Conjunto 1/2026).",
+   "url": "https://espacolegislacao.totvs.com/reforma-tributaria/"
+  },
+  {
+   "idea": "Marketplace cosmetic-listing compliance desk for sellers",
+   "cause": "It is a standing gate, not a dated clock. The platform is the arbiter and now self-polices after ANVISA's seizure in the ML Full warehouse (18/03/2026): THE PLATFORM-ARBITER LAW.",
+   "url": "https://vendedores.mercadolivre.com.br/nota/como-cumprir-as-normas-da-anvisa-e-evitar-o-cancelamento-do-seu-anuncio"
+  },
+  {
+   "idea": "Dia dos Namorados / season-driven lingerie and swimwear on-model imagery (hoping tool filters block intimate apparel)",
+   "cause": "THE TOOL VENDOR IS THE FRONT DOOR for intimate apparel too: VesteGO from R$49,99/month for 100 looks incl. bikini and lingerie (search summary, SECONDARY); Pic Copilot and Photta sell AI lingerie models.",
+   "url": "https://www.piccopilot.com/ai-model/lingerie-models"
+  },
+  {
+   "idea": "Seasonal vitrine (window) dressing for independent fashion/beauty boutiques on the retail calendar",
+   "cause": "No buyer-side money found for recurring seasonal dressing (99Freelas: none; GetNinjas guide 404). THE CHEAP STATE COUNTER sells the design project: Sebraetec MG 'Vitrines e Expositores' De R$3.960 Por R$1.188, a 70% subsidy. It is a one-off, not a clock. Parked for a CHANNEL lens: the deliverable is an AI-renderable 'imagem gráfica do ambiente proposto'.",
+   "url": "https://sebraetec.sebraemg.com.br/produto/vitrines-e-expositores/"
+  },
+  {
+   "idea": "ANVISA-status monitoring of retailer catalogues by process number",
+   "cause": "Commodity: Netrin sells an 'API Anvisa Produtos' returning vencimento for 10 products per call, and retailer catalogues do not carry process numbers anyway (Época/Ikesaki VTEX data checked).",
+   "url": "https://netrin.com.br/api/anvisa-produtos/"
+  }
+ ],
+ "notes": "VERDICT: the clock lens produced NOTHING standalone above the US$700/month floor. Both candidates are returned with floors below it, as the brief requires. The regulatory clocks are real, dated and now MEASURED. RDC 1.030/2026: 11–15 Jun 2027 (borates, ketoconazole, PU-18/19, DCM), 11–15 Dec 2027 (Lilial, Lyral). RDC 1.029/2026: 11–15 Jun 2028 (restricted list and new label warnings). CP 1.399/2026: part 2, next. Decennial migrations: 56.289 active SKUs Oct 2026–Dec 2027; ~47k/54k/61k per year in 2027/28/29. Everywhere the clock forces a purchase, the purchasable unit is either credentialled (RT reformulation and petition), pre-filled or given away by the regulator (the 15-minute migration; the INCI translation panel), bundled by the contract manufacturer, or a R$200 commodity label. THE SEAM (19 Aug) said the clock half is free and the execution half credentialled; that still holds in Sep 2026, and the regulator has since automated part of the execution half as well. NEW LAWS: (1) THE REGULATOR PRE-FILLS THE MIGRATION: read the migration manual before sizing any register-migration wave. (2) A LIST CHANGE WITHOUT A SELL-THROUGH CLAUSE MOVES THE CLOCK DOWNSTREAM: grep the RDC for 'comercializados até o final dos seus prazos de validade'. RDC 529/2021 art. 8 had it; RDC 1.030/2026 does not; the TPO precedent recalled pre-ban lots. This one sentence decides whether the stockholder or only the brand carries the clock. (3) LABEL CLOCKS RIDE THE REPRINT CYCLE: 36-month (RDC 898) and 6-year (RDC 951/965) windows are absorbed by normal reprints, so only a window SHORTER than the reprint cycle, with no sell-through, forces a purchase. (4) PUBLIC INCI IS A DETECTION RAIL: brands publish full INCI (with PT translation) in their VTEX catalogue JSON (/api/catalog_system/pub/products/search). One crawl measured 37/127 INCI-bearing listings (29%) at 3 of 4 publishing brands still carrying Lilial/Lyral, some launched in 2025–26. It is reusable for any ingredient-driven candidate and as a trigger list for O LANÇAMENTO. (5) THE CSV's S/N flag does not flip on expiry: rows expired in 2011–2014 still read 'S'. Never read ST_SITUACAO_PRODUTO as 'currently regular'. DATE TRAP: consultancies count RDC 1.030/1.029 windows from 11/06/2026 (signature); the RDC text counts from publication (DOU 15/06/2026). Use 11/06 as the safe date. Etsy/Faire were not attempted. The Receita CNPJ bulk file was not attempted (CLAUDE.md reports it 404)."
+}
