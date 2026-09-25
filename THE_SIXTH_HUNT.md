@@ -50,7 +50,7 @@ speech-killed archive candidates, beat it on fit plus evidence.
 | # | Candidate | Verdict | Honest floor (US$/month) | What decides it |
 |---|---|---|---|---|
 | **1** | **O LANÇAMENTO** — VBPH repaired: a one-product LAUNCH KIT at R$2.500–3.500, packshot-locked, claim-checked, prospected off ANVISA's daily notification file and sold by Portuguese calls | **MARGINAL — lead** | **700–1.500** (pool ceiling ≈1.900 at the measured external-buy rate) | 20 calls: do ≥6/20 launching brands name ≥R$2.500 of external spend per launch? |
-| 2 | **A REVISTA** — the catalogue-cycle image layer for direct-sales (venda direta) brands | *see §3* | *see §3* | *see §3* |
+| 2 | **A REVISTA** — the catalogue-cycle image layer for direct-sales (venda direta) brands | **DEAD as a business; survives as a segment of #1** | 150–600 | Faces reused 25–86% across revistas; refreshers buy stock at R$1,27/image (§3) |
 | 4 | **KIT DO RÓTULO** — R$390/SKU-line launch images on the day the label is approved, via manufacturers that push design to the client | MARGINAL-to-DEAD | 0–300 (ceiling 1.200–1.900) | ≥2/10 manufacturers refer in writing AND ≥5/20 micro-brands pay ≥R$300 |
 | 5 | **O PLEITO** — Ex-tarifário duty-reduction desk, best as RENOVA 2027 (the renewal wave) | MARGINAL on economics, **likely C8 fail** | ≈450 | Ask Sol the year-three question first |
 | — | Contract-manufacturer RESALE channel | **DEAD** | — | The manufacturers are the free front door (§4) |
@@ -238,7 +238,57 @@ Sources: H6A, H6B, H6C, H6D, AUD3 in `research/hunt6-sources/`; Fábrica verifie
 
 ## 3. A REVISTA — the direct-sales catalogue layer
 
-*(AUD1 pending at the time of writing; filled below.)*
+**The claim:** a consumption clock. Direct-sales brands publish a revista every 3–6 weeks, so once a brand signs,
+the calendar forces the next order.
+
+**Verdict: DEAD as a business of its own.** What survives is a customer segment for O LANÇAMENTO. Floor
+US$150–600/month. (AUD1: 27 real revistas from 16 brands downloaded and face-matched; 1.428 face crops.)
+
+- **The buyers are few and slow.**
+  - About 38 venda-direta catalogue brands in beauty, lingerie and fashion (ABEVD, Revendi, BR Catálogos), minus
+    15 giants, groups, multinationals and non-VD brands, leaves **≈23 mid-size brands**.
+  - The giants were checked rather than assumed:
+    - **Hinode** runs in-house *"times de criação e agências"* (its own Gupy job ad, 23 Sep 2026);
+    - **Jequiti** uses the agency Mestiça (since Oct 2025);
+    - **DeMillus** carries R$255,7M of capital social.
+  - **The mid-size brands average ≈4,4 revistas a year, not 9.** Measured: Racco 12, Mahogany 6, Mawwal 6,
+    Odorata 4, Abelha Rainha 4, Amakha ~3, Avatim 2, A Sós 2. The "9" came from DeMillus, a giant.
+- **THE CLOCK DOES NOT FORCE THE NEXT PURCHASE — THE UNIT IS STRETCHABLE.** **5 of 11 brands reuse ≥25–86% of the
+  previous revista's faces:**
+  - Amakha ≥86%;
+  - Mahogany ≥57%;
+  - DeMillus ≥44%.
+
+  **`THE CONSUMPTION-CLOCK TEST` fails on the second clause:** the calendar is exogenous, but the image is not
+  consumed by it.
+- **The brands that DO refresh buy stock.** Racco (~28 new lifestyle images a month), Odorata (~70/quarter) and
+  Abelha Rainha (~59/quarter) use generic faces with no recurring cast; Avatim's file XMP carries
+  `photoshop:Credit = "Shutterstock"`. **Adobe Stock Brasil costs R$950/month for 750 images + unlimited AI
+  edits + a US$10k indemnity — R$1,27/image — against her R$50–75/image.**
+  **`THE TOOL VENDOR IS THE FRONT DOOR` has a sibling: THE STOCK VENDOR IS THE FRONT DOOR.**
+- **The R$4.500 price was Fábrica's own rate card.** 60 images + 4 reels = R$4.220 at R$53/image, so the "published
+  clearing anchor" was the done-for-you price of a competitor. **No price any venda-direta brand has paid for its
+  image layer was found anywhere.**
+- **Arithmetic:**
+  - The pool is R$198k/yr measured to R$508,5k generous. The realistic figure, counting only net-new on-model
+    images at R$53, is ≈R$110–140k.
+  - Pool ÷ 4 is R$49,5–127k against a bar of ≈R$150–185k, so she would need a **29–93% share. It fails `THE
+    MARKET-MULTIPLE RULE`.**
+  - Each revista takes 21–55 h of her time.
+- **What survives:** the 3–5 stock-dependent brands that refresh every cycle are a SEGMENT for O LANÇAMENTO.
+  - The offer is a per-launch "rosto da marca" kit: an exclusive recurring synthetic cast holding the brand's real,
+    label-exact packshot, print-ready.
+  - Price it at R$1.500–2.500 per refresh, against stock plus a designer, not against a shoot.
+  - ⚠ The hook *"your stock model is in your competitor's revista"* was **tested and NOT supported**: no identical
+    face was found across 16 brands.
+
+**Test (R$0, fold it into test 1):**
+
+- Call the marketing coordinator at 12 named brands: Racco, Odorata, Abelha Rainha, Mahogany, Amakha Paris, Água
+  de Cheiro, Mawwal, Moments Paris, A Sós, Akmos, Zyone, Avatim.
+- Ask: stock, studio or AI? How many new on-model images per revista? What did the last one's image layer cost?
+- **Bar:** ≥3 buy outside (not stock) at ≥R$3.000 per revista, AND ≥1 signs a R$2.000 pilot within 45 days.
+- Otherwise close it and fold the names into O LANÇAMENTO's list.
 
 ---
 
@@ -458,6 +508,13 @@ foreign makers' Brazilian arms and through despachantes.
   - **2026 tools help her SELL — first contacts, samples, speed — far more than they help her CHARGE.**
   - *(`THE BUILDABILITY THRESHOLD` confirmed a fourth time: capability changes her cost of operating, never her
     right to charge.)*
+- **★★ THE STOCK VENDOR IS THE FRONT DOOR, and A CALENDAR IS NOT A CLOCK UNLESS IT CONSUMES THE UNIT.**
+  - The catalogue brands that refresh imagery every cycle buy stock: Adobe Stock BR is R$950/month for 750 images +
+    AI edits + indemnity = R$1,27/image.
+  - The ones that do not refresh reuse 25–86% of last cycle's faces.
+  - ⇒ **A fixed publishing cadence proves the buyer PUBLISHES on schedule, not that it BUYS on schedule.**
+    Measure reuse across two consecutive editions before calling a calendar a consumption clock. Face-matching two
+    PDFs is an afternoon's work.
 - **★★★ THE COMPELLED ANNOUNCEMENT HAS A PRIVATE EDITION — ANVISA'S DAILY NOTIFICATION FILE.**
   - RDC 907/2024 forces every cosmetic onto a public register before sale.
   - ANVISA publishes the whole register daily, keyless: ~3.400 hair/skin launches a month, **about 79 days before
@@ -514,7 +571,8 @@ foreign makers' Brazilian arms and through despachantes.
    - PASS ≥6/20 name ≥R$2.500 of external spend per launch.
    - FAIL ≤2.
    - **This is the one that decides the lead.**
-2. **A REVISTA** — §3.
+2. **A REVISTA calls, run with test 1.** The 12 named catalogue brands, three questions, one pilot offer.
+   - Bar: ≥3 buy outside (not stock) at ≥R$3.000 per revista.
 3. **Two founder questions, one message each:**
    - Is a coffee-cooperative map print also "not it"?
    - Could Sol still be drafting machine dossiers for importers in year three (O PLEITO)?

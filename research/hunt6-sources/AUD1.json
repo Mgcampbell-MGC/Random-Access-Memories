@@ -1,0 +1,237 @@
+{
+ "auditor": "AUD1",
+ "candidate": "A REVISTA",
+ "buyers": [
+  {
+   "name": "DeMillus (lingerie) — EXCLUDED as giant",
+   "cnpj_or_url": "33.115.817/0001-64 (Demais, capital R$255.724.600,82, RJ)",
+   "revistas_per_year": "9 (19 campanhas; 2025 = 19-01, 02-03-04, 05-06 … 17-18)",
+   "on_model_images_per_revista": "~267 face boxes on 85 spreads (+ body-only lingerie crops the detector misses); ≥44% of faces repeat from the previous revista ⇒ ≥~150 new",
+   "who_makes_images": "Real-model photography at industrial scale on real garments; producer UNVERIFIED (flattened PDF, no XMP; no job posting found)",
+   "ai_already": "No sign",
+   "source_url": "https://www.revendi.app/catalogos/demillus"
+  },
+  {
+   "name": "Hinode Group — EXCLUDED (checked: in-house)",
+   "cnpj_or_url": "https://grupohinode.gupy.io/ (CNPJ UNVERIFIED)",
+   "revistas_per_year": "12 (ciclo 01–12)",
+   "on_model_images_per_revista": "~18 faces / 60 pages; mostly product still-life; ≥33% repeat",
+   "who_makes_images": "In-house 'times de criação e agências' (Gupy job 23 Sep 2026); launch-campaign assets reused in the revista",
+   "ai_already": "No sign",
+   "source_url": "https://www.revendi.app/catalogos/hinode"
+  },
+  {
+   "name": "Jequiti (SBT group) — EXCLUDED (checked: agency)",
+   "cnpj_or_url": "https://jequiti.gupy.io/ (CNPJ UNVERIFIED)",
+   "revistas_per_year": "16–17 (episódios 02–16 + vitrine 17, 2025)",
+   "on_model_images_per_revista": "~43 faces / 56 pages; ≥33% repeat; celebrity licensee fragrances (Rebeca Abravanel, Adriane Galisteu) not replaceable by synthetic faces",
+   "who_makes_images": "Agency Mestiça since Oct 2025 ('planejamento… execução criativa'); campaign films by MakeMeProud",
+   "ai_already": "No sign",
+   "source_url": "https://www.revendi.app/catalogos/jequiti"
+  },
+  {
+   "name": "Mahogany (Laboratório Sklean do Brasil)",
+   "cnpj_or_url": "62.635.669/0001-07 (Demais, capital R$5.648.199, Osasco)",
+   "revistas_per_year": "6 (bi-ciclo)",
+   "on_model_images_per_revista": "~49 faces / 96 pages; ≥57% repeat by hash, visually most of the library repeats ⇒ ~5–20 new",
+   "who_makes_images": "Outsourced: marketing job lists 'agências, fornecedores, designers, produtoras'",
+   "ai_already": "SUSPECTED (hyper-polished synthetic-looking lifestyle library, model + composited packshot, e.g. p.21 Eiffel scene) — UNVERIFIED, no provenance metadata",
+   "source_url": "https://www.revendi.app/catalogos/mahogany"
+  },
+  {
+   "name": "Racco",
+   "cnpj_or_url": "https://www.racco.com.br/ (CNPJ UNVERIFIED)",
+   "revistas_per_year": "12 (monthly)",
+   "on_model_images_per_revista": "~29 faces / 31 spreads; 3% repeat (mosaic confirms all-new faces month to month) ⇒ ~28 new lifestyle images per revista",
+   "who_makes_images": "Stock-style generic lifestyle imagery, no recurring cast — source UNVERIFIED (metadata stripped)",
+   "ai_already": "No sign",
+   "source_url": "https://www.revendi.app/catalogos/racco"
+  },
+  {
+   "name": "Odorata",
+   "cnpj_or_url": "odorata.com.br footer 48.928.103/0001-42 = GLOW WEB MARKETING E COMUNICACAO VISUAL LTDA (ME, Goiânia) — parent CNPJ UNVERIFIED",
+   "revistas_per_year": "4",
+   "on_model_images_per_revista": "~82 faces / 87 spreads; ≥11% repeat ⇒ ~70 new",
+   "who_makes_images": "Stock-style beauty headshots; site run by a web-marketing ME — catalogue producer UNVERIFIED",
+   "ai_already": "No sign",
+   "source_url": "https://www.revendi.app/catalogos/odorata"
+  },
+  {
+   "name": "Abelha Rainha",
+   "cnpj_or_url": "https://www.abelharainha.com.br/ (CNPJ UNVERIFIED)",
+   "revistas_per_year": "4",
+   "on_model_images_per_revista": "~61 faces / 91 pages; 3% repeat ⇒ ~59 new",
+   "who_makes_images": "UNVERIFIED (1 XMP packet; 'Imagens meramente ilustrativas')",
+   "ai_already": "No sign",
+   "source_url": "https://www.revendi.app/catalogos/abelha-rainha"
+  },
+  {
+   "name": "Amakha Paris",
+   "cnpj_or_url": "amakhaparis.com.br footer 54.101.165/0001-89 = AMK SHOP (ME, Campinas; e-commerce entity)",
+   "revistas_per_year": "~3 (ciclos 40/42/43 over Jul 2025–Jun 2026)",
+   "on_model_images_per_revista": "~58 faces / 80 pages; ≥86% repeat ⇒ ≤8 new",
+   "who_makes_images": "Photographer credit 'Marcelo Rayol' (XMP); library reused",
+   "ai_already": "No sign",
+   "source_url": "https://www.revendi.app/catalogos/amakha-paris"
+  },
+  {
+   "name": "Água de Cheiro",
+   "cnpj_or_url": "https://www.aguadecheiro.com.br/ (CNPJ UNVERIFIED)",
+   "revistas_per_year": "~4 (only ciclo 04/2025 and 01/2026 listed)",
+   "on_model_images_per_revista": "~18 faces / 64 pages",
+   "who_makes_images": "87 Photoshop composites + product macro photography, creator 'Carlos Eduardo Santinato' (XMP)",
+   "ai_already": "No sign",
+   "source_url": "https://www.revendi.app/catalogos/agua-de-cheiro"
+  },
+  {
+   "name": "Avatim",
+   "cnpj_or_url": "https://www.avatim.com.br/ (403; CNPJ UNVERIFIED)",
+   "revistas_per_year": "2",
+   "on_model_images_per_revista": "~3 faces / 59 pages (product-led)",
+   "who_makes_images": "Product studio (Capture One, Canon 5DS R, creator 'WILL HORAS') + SHUTTERSTOCK backgrounds (XMP photoshop:Credit='Shutterstock', licence 1017628444)",
+   "ai_already": "No sign",
+   "source_url": "https://www.revendi.app/catalogos/avatim"
+  },
+  {
+   "name": "Mawwal",
+   "cnpj_or_url": "https://www.mawwal.com.br/ (CNPJ UNVERIFIED)",
+   "revistas_per_year": "6 (bimonthly)",
+   "on_model_images_per_revista": "~8 faces / 64 pages; ≥25% repeat",
+   "who_makes_images": "Photoshop composites (XMP), producer UNVERIFIED",
+   "ai_already": "No sign",
+   "source_url": "https://www.revendi.app/catalogos/mawwal"
+  },
+  {
+   "name": "A Sós (intimate care / sensual)",
+   "cnpj_or_url": "UNVERIFIED",
+   "revistas_per_year": "2",
+   "on_model_images_per_revista": "~66 faces / 87 pages; 15% overlap with 2025 2nd edition",
+   "who_makes_images": "Real photographers 'Gabriela Otati', 'LEO CARDOSO' (XMP; Canon EOS RP/R, Lightroom)",
+   "ai_already": "No sign",
+   "source_url": "https://www.revendi.app/catalogos/a-sos"
+  },
+  {
+   "name": "Ciclo Cosméticos",
+   "cnpj_or_url": "UNVERIFIED",
+   "revistas_per_year": "1 (+ mini)",
+   "on_model_images_per_revista": "~19 faces / 71 pages",
+   "who_makes_images": "External studio: 'www.michelteosin.com.br / www.estudiocafeina.com.br' on 28 images (XMP)",
+   "ai_already": "No sign",
+   "source_url": "https://www.revendi.app/catalogos/ciclo"
+  },
+  {
+   "name": "Moments Paris",
+   "cnpj_or_url": "UNVERIFIED",
+   "revistas_per_year": "UNVERIFIED (only 'ciclo 6/2025' listed)",
+   "on_model_images_per_revista": "~14 faces / 87 pages",
+   "who_makes_images": "Photographer credit 'Eu.RuiSouza' (XMP)",
+   "ai_already": "No sign",
+   "source_url": "https://www.revendi.app/catalogos/moments-paris"
+  },
+  {
+   "name": "Mary Kay — EXCLUDED (US MNC, global assets)",
+   "cnpj_or_url": "UNVERIFIED",
+   "revistas_per_year": "9",
+   "on_model_images_per_revista": "~82 faces / 70 pages; 0% repeat by hash",
+   "who_makes_images": "UNVERIFIED (flattened PDF)",
+   "ai_already": "No sign",
+   "source_url": "https://www.revendi.app/catalogos/mary-kay"
+  },
+  {
+   "name": "Hiroshima (fashion, sub-brand books)",
+   "cnpj_or_url": "https://brcatalogos.com.br/catalogo-hiroshima",
+   "revistas_per_year": "blocks of 3 campanhas ('CP 07-08-09/2026') × several sub-brand books (Aline, Essencial, Fabiana, Larc, Narval, Pravocê) — count UNVERIFIED",
+   "on_model_images_per_revista": "UNVERIFIED (BR Catálogos CDN 403)",
+   "who_makes_images": "UNVERIFIED",
+   "ai_already": "UNVERIFIED",
+   "source_url": "https://brcatalogos.com.br/catalogo-hiroshima"
+  },
+  {
+   "name": "Quatro Estações (fashion, 3 sub-brands)",
+   "cnpj_or_url": "https://brcatalogos.com.br/catalogo-quatro-estacoes",
+   "revistas_per_year": "~12 books (Imbatível/Marcas/Winner each every 3 campanhas; 'Marcas CP 09-10-11-12/2026') — UNVERIFIED",
+   "on_model_images_per_revista": "UNVERIFIED (CDN 403)",
+   "who_makes_images": "UNVERIFIED",
+   "ai_already": "UNVERIFIED",
+   "source_url": "https://brcatalogos.com.br/catalogo-quatro-estacoes"
+  }
+ ],
+ "buyer_count": "≈38 beauty/lingerie/fashion venda-direta catalogue brands across ABEVD (22 members, 11 in-domain), Revendi (29 brands) and BR Catálogos (+8 fashion/lingerie); minus 15 giants/groups/MNCs/non-VD ⇒ ≈23 mid-size candidates. Giants CHECKED, not assumed: Hinode = in-house 'times de criação e agências' (Gupy, 23 Sep 2026); Jequiti = agency Mestiça since Oct 2025; DeMillus = capital R$255,7M and ~150+ new real-model images per revista (producer UNVERIFIED). Cadence measured for 16 brands (Revendi edition slugs): mid-size MEAN ≈ 4,4 revistas/yr (Racco 12, Mahogany 6, Mawwal 6, Odorata 4, Abelha Rainha 4, Água de Cheiro ~4, Amakha ~3, Avatim 2, A Sós 2, Ciclo 1) — NOT the 9/yr H6F used (9 is DeMillus, a giant).",
+ "price_evidence": [
+  {
+   "claim": "Done-for-you AI campaign image, SP studio, creative direction supplied by the client, fidelity to secondary pieces not guaranteed",
+   "price": "R$53/image; R$260 per 15–20 s video; R$53 per AI persona ⇒ 60 img + 4 reels = R$4.220, 90 + 4 = R$5.810",
+   "url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+   "status": "OBSERVED published list (asking); verified today (orchestrator + H6F cache)"
+  },
+  {
+   "claim": "Same studio, PHYSICAL half-day on real garments",
+   "price": "R$1.250 per ½ diária, ≤40 looks × 4 photos (≤160 photos) = R$7,81/photo, model cachê excluded; externa diária 80 images R$2.500",
+   "url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+   "status": "OBSERVED — for apparel volume a physical studio is CHEAPER per image than the R$53 AI rate"
+  },
+  {
+   "claim": "AI synthetic-casting studio (RJ), 1–2 models, 3 photos/piece + 5",
+   "price": "≤20 pieces R$3.000 (65 photos ≈ R$46/photo); 40 pieces R$5.000",
+   "url": "https://make-move-studio-fotos-ia-para-marcas.netlify.app/script.js",
+   "status": "OBSERVED (priceForPieces formula, fetched today)"
+  },
+  {
+   "claim": "Stock imagery — the incumbent for the refreshed lifestyle layer (Avatim XMP carries photoshop:Credit='Shutterstock')",
+   "price": "Adobe Stock BR: 10 img/mês R$139; 25 img/mês + AI Studio R$285; 750 img/mês + AI Studio R$950; 40-image pack R$1.700 ⇒ R$1,27–42,50/image; AI Studio 'Digitar para editar… Ilimitado'; indemnity up to US$10.000",
+   "url": "https://stock.adobe.com/br/plans",
+   "status": "OBSERVED published price (fetched today)"
+  },
+  {
+   "claim": "Agency catalogue fees EXCLUDE photography",
+   "price": "Capa R$7.404,20; miolo ≤16 pp R$22.435,18; note 06: 'não estão necessariamente inclusos… fotografias, ilustrações'",
+   "url": "https://static.poder360.com.br/2026/06/011-anexo-III-Sinapro-Lista-de-Custos-Referenciais-2025.pdf",
+   "status": "ASKING ceiling (Sinapro-MS list), H6F cache — confirms the image layer is a separate input"
+  },
+  {
+   "claim": "Per-image AI done-for-you, Goiânia",
+   "price": "R$70/image",
+   "url": "https://animaistudio.com.br/",
+   "status": "OBSERVED by H6B, not re-fetched by AUD1"
+  },
+  {
+   "claim": "Marketplace AI product-model gigs",
+   "price": "R$20–100 per gig (VintePila); Fiverr AI skincare image median US$15",
+   "url": "https://www.vintepila.com.br/servicos/design-grafico/eu-vou-fazer-uma-modelo-ia-para-seu-produto/",
+   "status": "OBSERVED by H6B, not re-fetched"
+  },
+  {
+   "claim": "What any venda-direta brand pays per revista for its image layer",
+   "price": "NONE FOUND",
+   "url": "n/a",
+   "status": "UNVERIFIED — no invoice, case study or tender; the whole candidate rests on this gap"
+  }
+ ],
+ "free_front_door": "YES, three doors, one of them already inside the buyer. (1) THE STOCK VENDOR IS THE FRONT DOOR: the refreshed lifestyle layer (Racco, Odorata, Abelha Rainha — 3–11% reuse, generic faces, no recurring cast) is stock-shaped, Avatim's XMP names Shutterstock, and Adobe Stock BR now bundles 750 images/month + unlimited 'Digitar para editar' AI edits + US$10k indemnity for R$950/month — R$1,27/image against her R$50–75/image. (2) THE TOOL VENDOR: Higgsfield product-photoshoot recipe / Soul ID consistent character at US$49/month, run by the in-house designer who already composites (Água de Cheiro: 87 Photoshop composites; Avatim: Capture One studio). (3) DONE-FOR-YOU AT THE SAME PRICE: Estúdio Fábrica R$53/image (her R$4.500 IS Fábrica's rate card for 60 img + 4 reels, R$4.220) and Make Move ≈R$46/photo with synthetic casting. And the clock does not force a new purchase: 5 of 11 brands re-run ≥25–86% of the previous revista's faces (Amakha ≥86%, Mahogany ≥57%, DeMillus ≥44%, Hinode/Jequiti ≥33%) — the unit is STRETCHABLE, so THE CONSUMPTION-CLOCK TEST fails its second limb. Mahogany's library already looks synthetic (UNVERIFIED).",
+ "what_remains_sellable": "Narrow: (a) an EXCLUSIVE recurring cast across ciclos — stock faces are non-exclusive (but no identical face was found across 16 brands' revistas: 1.428 face crops, matcher proven on within-brand repeats — so the 'your stock model is in your competitor's revista' hook is NOT supported by evidence); (b) the brand's REAL packshot, label-exact, in a model's hand at print resolution (CMYK/300 dpi) — the vendor's own recipe disclaims small-text verification; (c) deadline reliability to the gráfica every ciclo with one accountable supplier; (d) claim-safe imagery (no efficacy simulation, CONAR 2026 guide). (a) is copyable by any in-house designer with Soul ID in an afternoon; (b)–(d) are ordinary studio value. None is scarce enough to price above Fábrica/Make Move, and the buyers who refresh most are buying stock, not studios.",
+ "arithmetic": {
+  "pool": "UPPER BOUND (every mid-size revista buys a full 60–90-image layer outside at R$4.500): 44 measured revistas/yr (10 brands) = R$198.000; + listing-derived fashion books (Facinatus 4, Dicorpo ~5, Quatro Estações ~12, Hiroshima ~16) = 81 ⇒ R$364.500; + 8 unmeasured brands at 4/yr = 113 ⇒ R$508.500. REALISTIC (only NET-NEW on-model images, priced at Fábrica's R$53): Racco 28×12, Abelha 59×4, Odorata 70×4, A Sós 56×2, Água de Cheiro 18×4, Mahogany ~10×6, Ciclo 19×1, Amakha 8×3, Mawwal 6×6, Avatim 3×2 ⇒ ≈R$62.600/yr for the 10 measured cosmetics brands, + fashion books UNVERIFIED (CDN blocked; incumbent there is a R$7,81–20/photo physical studio) ⇒ ≈R$110–140k/yr all-in, before any stock/in-house substitution. H6F's R$810k (20 brands × 9 × R$4.500) used DeMillus's cadence for everyone and assumed 100% outside purchase.",
+  "pool_div4": "R$49.500 (measured core) · R$91.000 · R$127.000 (upper bound) · ≈R$28–35k (realistic) — ALL below the bar of ≈R$150–185k/yr gross (net R$126–156k + ~R$7,8k tools, ÷0,94 Simples). FAILS THE MARKET-MULTIPLE RULE at every price and count tried.",
+  "required_share": "Bar ÷ R$4.500 = 33–41 revistas/yr = 2,8–3,4 per month ⇒ 29–36% of the most generous pool (R$508,5k), 76–93% of the measured core (R$198k), 107–168% of the realistic pool.",
+  "hours_per_revista": "20,8–55,4 h at maturity (60–90 composited stills × 0,23–0,46 h each — H6D's post-learning per-still rate — + 4 reels 4–8 h + brief/QA/proof/revision call 3–6 h). H6F's 15–20 h is below the bottom of this range. Realisation R$81–216/h vs required ≈R$130–166/h (US$25–32).",
+  "capacity": "87 h − ~12 h sales/admin = 75 h ⇒ 1,35–3,6 revistas/month vs 2,8–3,4 needed ⇒ 58–190 h/month required. Fits only if every revista runs at the fast end; at the midpoint (~38 h) she can do ~2/month = R$108k/yr gross, below the bar even with a 100% win rate."
+ },
+ "refuted": true,
+ "verdict": "DEAD",
+ "strongest_version": "Not a per-revista desk but a per-LAUNCH 'rosto da marca' kit sold to the 3–5 stock-dependent mid-size cosmetics VD brands that actually refresh their lifestyle layer every revista (Racco monthly ~28 new images; Abelha Rainha and Odorata quarterly ~60–70): an exclusive recurring synthetic cast holding the brand's real, composited, label-exact packshot for each lançamento, delivered print-ready to the ciclo deadline plus 2–4 vertical clips for the revendedoras' WhatsApp/TikTok kit (Hinode's own job ad shows brands now build a per-ciclo 'kit de digitalização' for consultants). Price against stock + designer, not against a shoot: R$1.500–2.500 per refresh (≈R$40–60/image), invoiced, no retainer, sold by Portuguese calls to the gerente de marketing. It keeps ORIGINATION ONCE only for the refreshers and trades MACHINE-TEST limb 3 (a proof call per ciclo). Honestly, this is VBPH's HERO kit with a venda-direta buyer list attached — a customer SEGMENT for VBPH (≈10 named brands), not a separate business: the pool cannot carry the bar alone.",
+ "honest_floor_usd_month": "150–600 (1–2 refreshing brands at R$1.500–3.000 per revista × 12–16 revistas/yr = R$18–48k gross ⇒ R$9–37k net after 6% Simples and ~R$7,8k/yr tools, at R$5,2/US$). H6F's US$500–1.300 assumed 9 revistas/yr per client and R$4.500 each.",
+ "next_test": "R$0, Portuguese calls, 10 working days: call the marketing/catálogo coordinator at Racco, Odorata, Abelha Rainha, Mahogany, Amakha Paris, Água de Cheiro, Mawwal, Moments Paris, A Sós, Akmos, Zyone and Avatim (12). Three questions, no pitch: (1) as fotos com modelo da revista vêm de banco de imagens, estúdio/agência, ou IA? (2) quantas imagens novas com modelo entram por revista? (3) quanto custou a parte de imagem da última revista? Then offer ONE paid pilot refresh at R$2.000 with a 48-hour free sample on one of their current lançamentos built from their public packshot.",
+ "bar": "Committed in advance: ≥4 of 12 answer; of those, ≥3 say new on-model imagery is bought OUTSIDE (studio/agency/produtora, not stock) at ≥R$3.000 per revista, AND ≥1 signs a paid pilot at ≥R$2.000 within 45 days. Below either ⇒ close A REVISTA and fold the names into VBPH's prospect list. (Stock-only answers count AGAINST: they confirm the R$1,27–42,50/image incumbent.)",
+ "unverified": [
+  "What any venda-direta brand pays per revista for imagery (no observed price, invoice or case study anywhere)",
+  "Whether Racco/Odorata/Abelha Rainha lifestyle images are stock (metadata stripped; inferred from generic, non-recurring faces; Avatim's Shutterstock credit is the only proof)",
+  "Mahogany already using AI imagery (visual suspicion only)",
+  "DeMillus producer (in-house studio vs outsourced)",
+  "Fashion VD books (Hiroshima, Quatro Estações, Dicorpo, Lucy's, Facinatus): image counts and exact cadence — BR Catálogos CDN returned 403 'acesso_asset_nao_autorizado'",
+  "Cadence of Moments Paris, Água de Cheiro (partial), Akmos, Zyone, Crystallini, Jan Rose, Skelt",
+  "Parent CNPJs of Racco, Abelha Rainha, Hinode, Jequiti, Odorata (site footers show marketing/e-commerce MEs)",
+  "Face-count method accuracy (±30%: misses body-only lingerie crops and hands; double-counts group shots) and reuse shares (dHash is a LOWER bound; Mahogany visually higher than 57%)",
+  "Hours per revista (bottom-up from H6D's per-still estimates; no stopwatch)",
+  "ANIMAI and VintePila/Fiverr prices (H6B's, not re-fetched)"
+ ]
+}

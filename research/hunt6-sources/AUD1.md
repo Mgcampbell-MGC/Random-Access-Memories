@@ -47,3 +47,9 @@ Previous: racco 07/2026, hinode 08/2026, odorata 02/2026, demillus 13-14/2026, m
 
 ## 7. Blocked / not used
 - abevd.org.br (SiteGround captcha, used H6F cache); brcatalogos CDN (403 signed assets); shutterstock.com/pt/pricing (403); istockphoto BR plans (404); tagx.com.br (timeout); LinkedIn people search not attempted; Etsy/Faire not attempted.
+
+## 8. Derived (computed today from the files above)
+- Cross-brand stock-face test: 1.428 face crops from 27 revistas (16 brands), 16×17 dHash — 0 identical faces across brands at ≤40/256 (best cross pairs 41–45 = noise), while the same matcher finds within-brand repeats (DeMillus 559 pairs, Amakha 58, Mahogany 36) ⇒ the "your stock model also sells for your competitor" hook is NOT supported.
+- Pool: 44 measured mid-size revistas/yr × R$4.500 = R$198.000 (÷4 = R$49.500); generous 113 × R$4.500 = R$508.500 (÷4 = R$127.125); net-new images only at R$53 ≈ R$62.600/yr for 10 cosmetics brands. Bar ≈ R$150–185k/yr gross ⇒ 33–41 revistas/yr ⇒ 29–36% of the generous pool. FAILS.
+- Hours: 20,8–55,4 h per 60–90-image revista ⇒ capacity 1,35–3,6/month vs 2,8–3,4 needed.
+- Verdict: DEAD as specified (refuted). Strongest version = a venda-direta customer SEGMENT for VBPH (per-launch kit to 3–5 stock-dependent refreshers at R$1.500–2.500), not a standalone business. Floor US$150–600/month.
