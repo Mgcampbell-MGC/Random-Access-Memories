@@ -1,0 +1,422 @@
+{
+ "agent": "OL5",
+ "hole": "Exactly how does Sol legally open and run this in São Paulo, and what does it cost in tax and setup?",
+ "verdict": "closed",
+ "findings": [
+  {
+   "claim": "Audiovisual/cinematographic production (incl. artes visuais) is taxed in Anexo III directly",
+   "evidence_quote": "serão tributadas na forma do Anexo III ... XV - produções cinematográficas, audiovisuais, artísticas e culturais, sua exibição ou apresentação, inclusive no caso de música, literatura, artes cênicas, artes visuais, cinematográficas e audiovisuais.",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Design and publicidade are §5-I (Anexo V) activities",
+   "evidence_quote": "VI - engenharia, medição, ... pesquisa, design, desenho e agronomia; ... X - jornalismo e publicidade;",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "§5-I activities move to Anexo III when fator r >= 28%",
+   "evidence_quote": "As atividades de prestação de serviços a que se refere o § 5º-I serão tributadas na forma do Anexo III desta Lei Complementar caso a razão entre a folha de salários e a receita bruta da pessoa jurídica seja igual ou superior a 28%",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Fator r < 28% does NOT pull §5-B XV (audiovisual) into Anexo V",
+   "evidence_quote": "serão tributadas na forma do Anexo V ... as atividades previstas: I - nos incisos XVI, XVIII, XIX, XX e XXI do § 5º-B deste artigo; II - no § 5º-D deste artigo.",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Folha for fator r includes pró-labore and CPP/FGTS actually paid, 12 prior months",
+   "evidence_quote": "considera-se folha de salários, incluídos encargos, o montante pago, nos doze meses anteriores ao período de apuração, a título de remunerações a pessoas físicas decorrentes do trabalho, acrescido do montante efetivamente recolhido a título de contribuição patronal previdenciária e FGTS, incluídas as retiradas de pró-labore.",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Anexo III rates and split (ISS and CPP inside DAS)",
+   "evidence_quote": "1ª Faixa Até 180.000,00 6,00% – 2ª Faixa De 180.000,01 a 360.000,00 11,20% 9.360,00 ... 1ª Faixa 4,00% 3,50% 12,82% 2,78% 43,40% 33,50%",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Anexo V rates",
+   "evidence_quote": "1ª Faixa Até 180.000,00 15,50% - 2ª Faixa De 180.000,01 a 360.000,00 18,00% 4.500,00",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "CPP is inside the DAS except Anexo IV activities",
+   "evidence_quote": "VI - Contribuição Patronal Previdenciária - CPP ... exceto no caso da microempresa e da empresa de pequeno porte que se dedique às atividades de prestação de serviços referidas no § 5º-C do art. 18",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "MEI ceiling R$81.000/yr; start-of-activity R$6.750 × months",
+   "evidence_quote": "de até R$ 81.000,00 (oitenta e um mil reais) ... R$ 6.750,00 ... multiplicados pelo número de meses compreendido entre o início da atividade e o final do respectivo ano-calendário",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "MEI exceeding the limit by >20% is excluded retroactively",
+   "evidence_quote": "b) retroativamente ao início de atividade, na hipótese de ter ultrapassado o referido limite em mais de 20% (vinte por cento).",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Tax-free dividends above presumed profit need full bookkeeping",
+   "evidence_quote": "A isenção ... fica limitada ao valor resultante da aplicação dos percentuais de que trata o art. 15 da Lei nº 9.249 ... subtraído do valor devido na forma do Simples Nacional no período. § 2º O disposto no § 1º deste artigo não se aplica na hipótese de a pessoa jurídica manter escrituração contábil e evidenciar lucro superior àquele limite.",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Bank movements must be identifiable (exclusion ground)",
+   "evidence_quote": "VIII - houver falta de escrituração do livro-caixa ou não permitir a identificação da movimentação financeira, inclusive bancária;",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "SC COSIT 466/2017: advertising-film production is Anexo III unless doing publicity proper",
+   "evidence_quote": "A empresa optante pelo Simples Nacional contratada para prestar serviço de produção de filmes para publicidade, em relação a essa atividade, deve ser tributada na forma do Anexo III da Lei Complementar nº 123, de 2006, desde que não preste o serviço de publicidade propriamente dito.",
+   "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=86540 (ementa read on consulta.action search results)",
+   "status": "verified"
+  },
+  {
+   "claim": "SC COSIT 180/2019 treats design gráfico/videografismos within audiovisual production (XV)",
+   "evidence_quote": "Os serviços de produção audiovisual, design gráfico, videografismos, produção de áudios, vídeos institucionais e educacionais ... enquadrando-se como serviço de produção audiovisual constante do inciso XV do parágrafo 5º-B do art. 18 da LC nº 123",
+   "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action (search \"produção audiovisual\" \"videografismos\")",
+   "status": "verified"
+  },
+  {
+   "claim": "SC COSIT 243/2025: design is fator-r dependent",
+   "evidence_quote": "deve considerar as alíquotas do Anexo III, se o fator \"r\" for igual ou superior a 0,28 ... ou do Anexo V, quando o fator \"r\" for inferior a 0,28",
+   "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action (search \"design\" \"Simples Nacional\" \"Anexo V\")",
+   "status": "verified"
+  },
+  {
+   "claim": "SC COSIT 145/2023: undiscriminated bundles taxed at the higher annex",
+   "evidence_quote": "Se esses contratos conjugados não fizerem essa discriminação de maneira clara, então todo o valor recebido pelas duas atividades é considerado receita de prestação de serviço de limpeza, que deve ser tributada na forma do Anexo IV.",
+   "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=70528",
+   "status": "verified"
+  },
+  {
+   "claim": "IBGE: \"criação de imagens digitais\" is under 7410-2/99; 7410-2/03 is product design",
+   "evidence_quote": "7410299 ATIVIDADES DE DESIGN NÃO ESPECIFICADAS ANTERIORMENTE ... CRIAÇÃO DE IMAGENS DIGITAIS; ... 7410203 DESIGN DE PRODUTO",
+   "url": "https://servicodados.ibge.gov.br/api/v2/cnae/subclasses/7410299 ; .../7410203",
+   "status": "verified"
+  },
+  {
+   "claim": "IBGE: 7319-0/99 includes computação gráfica para publicidade; 7311-4/00 is campaign creation",
+   "evidence_quote": "COMPUTAÇÃO GRÁFICA PARA PUBLICIDADE; ATIVIDADE DE ... a criação e a produção de campanhas de publicidade para qualquer finalidade",
+   "url": "https://servicodados.ibge.gov.br/api/v2/cnae/subclasses/7319099 ; .../7311400",
+   "status": "verified"
+  },
+  {
+   "claim": "None of the candidate CNAEs is impeditive or ambiguous for Simples",
+   "evidence_quote": "ANEXO VI ... Códigos previstos na CNAE impeditivos ao Simples Nacional (101 codes; none of 5911/5912/7410/7420/7311/7319) ; ANEXO VII ... concomitantemente atividade impeditiva e permitida (none)",
+   "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=50966 ; ...=54769",
+   "status": "verified (2019 version of Anexo VI; later amendments UNVERIFIED)"
+  },
+  {
+   "claim": "MEI occupations available: editor de vídeo (5912-0/99), fotógrafo (7420-0/01); none for 5911-1/02, 7410-2/99, 7311-4/00",
+   "evidence_quote": "EDITOR(A) DE VÍDEO INDEPENDENTE 5912-0/99 ... FOTÓGRAFO(A) INDEPENDENTE 7420-0/01",
+   "url": "https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Anexo_XI.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "5911-1/02, 7410-2/99, 7420-0/01 are federal low-risk; 5912-0/99 not listed",
+   "evidence_quote": "CCXIX 5911-1/02 Produção de filmes para publicidade ... XXVI 7410-2/99 Atividades de design não especificadas anteriormente",
+   "url": "https://www.gov.br/empresas-e-negocios/pt-br/drei/cgsim/resolucoes-cgsim/arquivos/resolucao51alteradapela68.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "11% INSS on pró-labore applies to Simples companies",
+   "evidence_quote": "II - 11% (onze por cento), em face da dedução de 45% ... da contribuição patronal recolhida ou declarada pelo contratante ... Art. 41. As disposições contidas nesta Seção aplicam-se inclusive: I - ao contribuinte individual que presta serviços a empresa optante pelo Simples Nacional",
+   "url": "https://www.in.gov.br/web/dou/-/instrucao-normativa-rfb-n-2.110-de-17-de-outubro-de-2022-437619362",
+   "status": "verified"
+  },
+  {
+   "claim": "SC COSIT 178/2026: 20% INSS on pró-labore in a month with no revenue (Anexo I/IV case)",
+   "evidence_quote": "sem prejuízo da contribuição devida pelo sócio na qualidade de contribuinte individual sobre o pró-labore eventualmente pago no período, sob a alíquota de 20% (vinte por cento).",
+   "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action (search \"contribuinte individual\" \"Simples Nacional\" \"11%\")",
+   "status": "verified (scope to Anexo III UNVERIFIED)"
+  },
+  {
+   "claim": "2027 fator r: FS12 incl. pró-labore; first 2 months deemed 0,28",
+   "evidence_quote": "considera-se folha de salários ... remuneração a pessoas físicas decorrentes do trabalho e de pró-labore, acrescido do montante efetivamente recolhido a título de contribuição patronal previdenciária ... § 6º O fator \"r\" referente aos 2 (dois) primeiros meses de início de atividades será considerado 0,28",
+   "url": "https://www.in.gov.br/web/dou/-/resolucao-cgsn-n-190-de-4-de-agosto-de-2026-724454118",
+   "status": "verified"
+  },
+  {
+   "claim": "2027: revenue recognised at invoicing, including advances",
+   "evidence_quote": "§ 8º As receitas ... consideram-se auferidas no momento do faturamento da operação ... § 9º Aplica-se o disposto no § 8º também na hipótese de valores recebidos adiantadamente ... considera-se faturamento: I - a emissão de documento fiscal",
+   "url": "https://www.in.gov.br/web/dou/-/resolucao-cgsn-n-190-de-4-de-agosto-de-2026-724454118",
+   "status": "verified"
+  },
+  {
+   "claim": "New companies must opt for Simples at CNPJ registration (MAT) or wait for the next September window; cannot cancel",
+   "evidence_quote": "a partir de 01/12/2025 a nova empresa deve formalizar sua intenção de optar pelo Simples Nacional no exato momento que solicitar a inscrição do CNPJ ... Caso a opção não seja realizada no MAT no momento da inscrição do CNPJ, a empresa somente poderá solicitar o ingresso no Simples Nacional no próximo período regular de opção ... Não será possível cancelar o pedido de opção",
+   "url": "https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Roteiro%20da%20op%C3%A7%C3%A3o%20pelo%20Simles%20Nacional%20para%20o%20ano%20de%202027.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "Regular Simples option window is 1–30 September",
+   "evidence_quote": "A formalização da opção ... ocorrerá no período de 01 (um) de setembro a 30 (trinta) de setembro e produzirá efeitos a partir do primeiro dia do ano-calendário seguinte",
+   "url": "https://www.in.gov.br/web/dou/-/resolucao-cgsn-n-190-de-4-de-agosto-de-2026-724454118",
+   "status": "verified"
+  },
+  {
+   "claim": "Simples companies must issue NFS-e via the national Emissor from 1 Nov 2026",
+   "evidence_quote": "a Microempresa (ME) ou Empresa de Pequeno Porte (EPP) optante pelo Simples Nacional utilizará, obrigatoriamente, a Nota Fiscal de Serviço eletrônica (NFS-e) de padrão nacional, emitida pelo Emissor Nacional da NFS-e ... produzirá efeitos: I - a partir de 01 de novembro de 2026",
+   "url": "https://www.in.gov.br/en/web/dou/-/resolucao-cgsn-n-191-de-4-de-agosto-de-2026-724399487",
+   "status": "verified"
+  },
+  {
+   "claim": "SP ISS: 2% for 13.01–13.03 and 23.01; 13.02 = fotografia e cinematografia; 17.06 publicidade at 5%",
+   "evidence_quote": "q) no subitem 23.01 ... programação visual, comunicação visual e congêneres; r) nos subitens 13.01, 13.02 e 13.03 ... 13.02 - Fotografia e cinematografia, inclusive revelação, ampliação, cópia, reprodução, trucagem e congêneres.",
+   "url": "https://legislacao.prefeitura.sp.gov.br/leis/lei-13701-de-24-de-dezembro-de-2003",
+   "status": "verified"
+  },
+  {
+   "claim": "SP: 17.06 on the PJ-client ISS withholding list, subject to a schedule",
+   "evidence_quote": "c) descritos nos subitens 1.01, ... 17.01, 17.06, 17.15 e 17.19 ... por prestadores de serviços estabelecidos no Município de São Paulo, conforme cronograma a ser estabelecido pela Secretaria Municipal de Finanças",
+   "url": "https://legislacao.prefeitura.sp.gov.br/leis/lei-13701-de-24-de-dezembro-de-2003",
+   "status": "verified (whether the schedule is in force UNVERIFIED)"
+  },
+  {
+   "claim": "SP municipal service code 06808 (13.02, PJ, 2%)",
+   "evidence_quote": "06808 13.02 Fotografia e cinematografia, inclusive revelação, ampliação, cópia, retocagem, reprodução, trucagem e congêneres (inclusive para televisão). PJ 2%",
+   "url": "https://legislacao.prefeitura.sp.gov.br/instrucao-normativa-secretaria-municipal-da-fazenda-sf-surem-19-de-22-de-dezembro-de-2021/anexo/61f1544a1411920679f880ac/Anexo%20da%20Instru%C3%A7%C3%A3o%20Normativa%20SF-SUREM%20n%C2%BA%2019_2021.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "National NFS-e code 130301 and NBS codes",
+   "evidence_quote": "130301 | 13 | 3 | 1 | Fotografia e cinematografia, inclusive revelação, ampliação, cópia, reprodução, trucagem e congêneres. ; 1.1408.12.00 | Serviços fotográficos e videográficos para propaganda ; 1.2501.21.00 | Serviços de produção de programas de televisão, videoteipes e filmes",
+   "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual/anexo_b-nbs2-lista_servico_nacional-snnfse-v1-01-20260122.xlsx",
+   "status": "verified"
+  },
+  {
+   "claim": "ISS due at provider establishment; 13.03/17.06 not exceptions",
+   "evidence_quote": "O serviço considera-se prestado, e o imposto, devido, no local do estabelecimento prestador ... exceto nas hipóteses previstas nos incisos I a XXV",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "2026 IBS/CBS test rates do not apply to Simples",
+   "evidence_quote": "c) não serão aplicadas em relação às operações dos contribuintes optantes pelo Simples Nacional.",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "2027–28 Anexo III keeps the same rates; CBS/IBS replace PIS/COFINS in the split",
+   "evidence_quote": "Para os anos-calendário 2027 e 2028 ... 1ª Faixa Até 180.000,00 6,00% – 2ª Faixa ... 11,20% 9.360,00 ... IRPJ CSLL CBS CPP ISS (*) IBS 1ª Faixa 4,00% 3,50% 15,43% 43,40% 33,50% 0,17%",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm (Anexo XX)",
+   "status": "verified"
+  },
+  {
+   "claim": "Regular-regime buyers get only the IBS/CBS paid inside her DAS as credit",
+   "evidence_quote": "será permitida ao contribuinte sujeito ao regime regular do IBS e da CBS a apropriação de créditos ... correspondentes aos valores desses tributos pagos na aquisição de bens e de serviços de optante pelo Simples Nacional, em montante equivalente ao devido por meio desse regime.",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm (art. 47 §9 II)",
+   "status": "verified"
+  },
+  {
+   "claim": "NFS-e IBS/CBS obligation for Simples starts 1 Jan 2027",
+   "evidence_quote": "§ 1º Para os contribuintes optantes pelo Simples Nacional, a obrigatoriedade de emissão dos documentos de que tratam os incisos do caput deste artigo iniciar-se-á em 1º de janeiro de 2027.",
+   "url": "https://www.cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "Hybrid IBS/CBS option: September (for Jan–Jun) or March; DEFIS abolished",
+   "evidence_quote": "A empresa que já é optante pelo Simples Nacional poderá optar por recolher a CBS e o IBS fora do regime único entre 1º e 30 de setembro ... Defis deixa de existir como declaração separada",
+   "url": "https://www8.receita.fazenda.gov.br/SimplesNacional/Noticias/NoticiaCompleta.aspx?id=e595d010-1e04-4c3b-95d9-185fc58594b5",
+   "status": "verified"
+  },
+  {
+   "claim": "Salário mínimo 2026",
+   "evidence_quote": "A partir de 1º de janeiro de 2026, o valor do salário mínimo será de R$ 1.621,00",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12797.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "IRPF monthly table",
+   "evidence_quote": "Até 2.428,80 0 0 De 2.428,81 até 2.826,65 7,5 182,16 De 2.826,66 até 3.751,05 15 394,16 De 3.751,06 até 4.664,68 22,5 675,49 Acima de 4.664,68 27,5 908,73",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15191.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "IRPF reduction: zero tax to R$5.000; linear phase-out to R$7.350",
+   "evidence_quote": "até R$ 5.000,00 até R$ 312,89 (de modo que o imposto devido seja zero) de R$ 5.000,01 até R$ 7.350,00 R$ 978,62 - (0,133145 x rendimentos tributáveis sujeitos à incidência mensal)",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "No CSRF withholding on payments to Simples companies",
+   "evidence_quote": "A retenção de que trata o art. 30 não será exigida na hipótese de pagamentos efetuados a: ... III - pessoas jurídicas optantes pelo SIMPLES.",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.833.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "No IRRF withholding on payments to Simples companies",
+   "evidence_quote": "Dispõe sobre a dispensa de retenção do imposto de renda na fonte sobre as importâncias pagas ou creditadas a pessoas jurídicas inscritas no ... (Simples Nacional)",
+   "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action (IN RFB 765/2007 ementa)",
+   "status": "verified (ementa only)"
+  },
+  {
+   "claim": "SLU allowed; limited liability; limitada may use a denominação (EI must use own name)",
+   "evidence_quote": "§ 1º A sociedade limitada pode ser constituída por 1 (uma) ou mais pessoas. ... Art. 1.156. O empresário opera sob firma constituída por seu nome ... Art. 1.158. Pode a sociedade limitada adotar firma ou denominação",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "JUCESP 2026 fees: sociedade ME/EPP R$218,99; EI ME/EPP R$94,90",
+   "evidence_quote": "2.1 ... (Empresa enquadrada em ME ou EPP). 5,70 R$ 218,99 ; 1.1 Inscrição, Alteração (empresa enquadrada em ME ou EPP) 2,47 R$ 94,90",
+   "url": "https://www.institucional.jucesp.sp.gov.br/downloads/Portaria%20n%C2%BA%20146%20-%20Tabela%20de%20Pre%C3%A7os%202026.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "SP TFE 2026: R$236,35 for 0–5 employees; MEI exempt; due in full",
+   "evidence_quote": "De 0 a 5 empregados R$ 236,35 ; MEI- Microempreendedor Individual código 39994 não paga TFE ; A Taxa será devida integralmente, ainda que o estabelecimento seja explorado apenas em parte do período considerado.",
+   "url": "https://prefeitura.sp.gov.br/documents/d/fazenda/tabelavalorestfe2026-pdf ; https://prefeitura.sp.gov.br/web/taxas2026/tfe-taxa-de-fiscaliza%C3%A7%C3%A3o-de-estabelecimentos",
+   "status": "verified"
+  },
+  {
+   "claim": "Company opening time in SP state",
+   "evidence_quote": "O estado de São Paulo registrou o maior tempo de abertura de empresas no Brasil: 1 dia e 10 horas",
+   "url": "https://www.gov.br/empresas-e-negocios/pt-br/mapa-de-empresas/boletins/mapa-de-empresas-boletim-2o-quadrimestre-2025.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "Accountant price (Contabilizei) incl. free opening, certificate, PJ account; address protection R$60",
+   "evidence_quote": "PADRÃO ... a partir de R$280 R$ 195 /mês ... Contabilidade completa Processo de abertura grátis Certificado digital gratuito ... Conta PJ gratuita ... Proteção do endereço pessoal e agilidade no CNPJ por R$60/mês",
+   "url": "https://www.contabilizei.com.br/quanto-custa-contabilizei/",
+   "status": "verified"
+  },
+  {
+   "claim": "Cheapest published accountant",
+   "evidence_quote": "Simples Nacional a partir de R$ 99 ,99 / mês ... MEI a partir de R$ 49 ,00 / mês",
+   "url": "https://www.contweb.com.br/planos-mensais",
+   "status": "verified"
+  },
+  {
+   "claim": "PJ bank accounts with free Pix",
+   "evidence_quote": "Zero taxas de manutenção ... Pix gratuito e ilimitado Você não paga nada nem para receber nem para fazer pagamentos e transferências.",
+   "url": "https://nubank.com.br/conta-pj/",
+   "status": "verified"
+  },
+  {
+   "claim": "Cora free PJ account and 1 year certificate",
+   "evidence_quote": "Conta PJ gratuita Sem mensalidades ou taxa de manutenção ... Abra sua Conta PJ Cora e ganhe 1 ano de Certificado Digital",
+   "url": "https://www.cora.com.br/",
+   "status": "verified"
+  },
+  {
+   "claim": "Whether the CPP inside the DAS counts toward FS12",
+   "evidence_quote": "(no ruling found; SC COSIT 154/2020 repeats the statutory wording only)",
+   "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action",
+   "status": "UNVERIFIED"
+  },
+  {
+   "claim": "Whether AI-composited advertising stills are \"artes visuais\" (Anexo III direct) rather than design/publicidade",
+   "evidence_quote": "(no Solução de Consulta found on this exact activity)",
+   "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action",
+   "status": "UNVERIFIED"
+  }
+ ],
+ "design_changes": [
+  "Fator r is not what puts the films in Anexo III: LC 123 §5-B XV does, with no payroll (§5-M excludes XV). Keep the fator-r pró-labore only as insurance for the stills (design/publicidade risk) and because r is measured on total revenue and undiscriminated bundles go to the worse annex (SC 145/2023).",
+  "Set pró-labore at ~30% of trailing-12-month revenue (28% + margin, accountant checks monthly; floor R$1.621); do not pay it in zero-revenue months (SC COSIT 178/2026 applies 20% INSS).",
+  "\"≈9,1–9,4% on every tier\" holds only inside R$12,2–15,8k/month; at R$25k the fator-r route is 14,2% all-in because pró-labore above R$5.000 (revenue above ~R$17.860) pays IRPF. Re-evaluate above ~R$18k/month or after a favourable formal consulta.",
+  "CNAE list: 5911-1/02 (primary) + 7410-2/99. Remove 7410-2/03 (it is product/fashion design), and do not add 7420-0/01, 5912-0/99 (not on federal low-risk list), 7319-0/99 or 7311-4/00.",
+  "Entity: SLU (sociedade limitada unipessoal) with a denominação (e.g. \"O Lançamento Estúdio Ltda\") — limited liability and no civil name on the nota fiscal (C2). Not EI, not MEI.",
+  "Switch the Simples option ON in the MAT at CNPJ registration — missing it means no Simples until 1 Jan 2028; it cannot be cancelled.",
+  "Service code: national 130301 (Emissor Nacional, mandatory for Simples from 1 Nov 2026), NBS 1.1408.12.00 (stills) / 1.2501.21.00 (film); SP municipal 06808 (13.02, 2%). Not 17.06 (5%, SP withholding list).",
+  "Describe notas as production (filme publicitário; imagens por composição digital/trucagem), never \"planejamento/criação de campanha\" — SC 466/2017 keeps Anexo III only if she does not do publicity proper.",
+  "Issue one NFS-e per Pix payment (50% order / 50% delivery) into the PJ account only; from 2027 revenue is recognised at invoicing including advances. Clients withhold no IRRF/CSRF.",
+  "Stay inside the DAS for IBS/CBS (do not choose the hybrid regime; next window March 2027 only if a Lucro Real client demands credits).",
+  "Accountant must keep full books (escrituração contábil) so profits above the presumed-profit cap can be distributed tax-free (LC 123 art. 14 §2).",
+  "Budget R$280/month for the accountant (R$195 is promotional), R$236,35/yr TFE, optional R$60/month address protection (home address otherwise public on CNPJ).",
+  "Skip MEI: occupation mismatch, ceiling R$6.750/month vs target R$12–16k, >20% overrun = retroactive exclusion with fator r ≈ 0 (Anexo V on stills), exit only in January, and FS12 ≈ 0 in early 2027."
+ ],
+ "residual_risks": [
+  "No Solução de Consulta on AI-composited stills: artes visuais (III) vs design/publicidade (fator r) unresolved — neutralised by fator r at ~1,9 pts cost; a free formal consulta could remove the cost.",
+  "SC COSIT 178/2026: pró-labore INSS at 20% in months with zero revenue (scope beyond Anexo I/IV UNVERIFIED).",
+  "Whether DAS-embedded CPP counts in FS12 is UNVERIFIED (would lower needed pró-labore by ~R$390/month at R$15k).",
+  "SP municipal risk classification of the CNAEs for a home address UNVERIFIED (federal CGSIM list says low risk).",
+  "Exact IBS/CBS NFS-e fields for a Simples company from 1 Jan 2027 (NT 008/009) UNVERIFIED; expected to be handled by the Emissor Nacional.",
+  "SP 17.06 client-withholding schedule status UNVERIFIED (avoided by using 13.02/130301).",
+  "Anexo VI (impeditive CNAEs) copy is dated 2019; later amendments UNVERIFIED.",
+  "End-to-end opening time beyond JUCESP registration (bank, NFS-e, eSocial) UNVERIFIED; allow 1–2 weeks."
+ ],
+ "numbers": {
+  "all_in_tax_pct": {
+   "R$12.200/mo": {
+    "A_fator_r": 9.08,
+    "B_audiovisual_min_prolabore": 7.46,
+    "C_anexoV": 16.96
+   },
+   "R$15.000/mo": {
+    "A_fator_r": 9.08,
+    "B_audiovisual_min_prolabore": 7.19,
+    "C_anexoV": 16.69
+   },
+   "R$15.800/mo": {
+    "A_fator_r": 9.34,
+    "B_audiovisual_min_prolabore": 7.39,
+    "C_anexoV": 16.76
+   },
+   "R$25.000/mo": {
+    "A_fator_r": 14.19,
+    "B_audiovisual_min_prolabore": 8.79,
+    "C_anexoV": 17.21
+   }
+  },
+  "at_15000": {
+   "DAS": 900.0,
+   "pro_labore": 4200.0,
+   "INSS_11pct": 462.0,
+   "IRPF": 0.0,
+   "total": 1362.0
+  },
+  "at_25000": {
+   "DAS": 2020.0,
+   "anexoIII_eff_pct": 8.08,
+   "pro_labore": 7000.0,
+   "INSS_11pct": 770.0,
+   "IRPF": 757.92,
+   "total": 3547.92
+  },
+  "blend_40film_60stills_no_fator_r_at_15000_pct": 12.89,
+  "revenue_where_fator_r_prolabore_starts_paying_IRPF": 17857.14,
+  "fator_r_insurance_cost_pct": {
+   "R$15k": 1.89,
+   "R$25k": 5.4
+  },
+  "mei_das_monthly": 86.05,
+  "mei_ceiling_annual": 81000,
+  "mei_ceiling_monthly_start": 6750,
+  "one_time_setup_brl": {
+   "JUCESP_SLU_ME": 218.99,
+   "JUCESP_EI_ME_alt": 94.9,
+   "CNPJ_CCM_Simples_NFSe": 0,
+   "accountant_opening": 0,
+   "digital_certificate": 0,
+   "TFE_2026_first_year": 236.35,
+   "total": 455.34,
+   "total_usd_at_5_1795": 87.91
+  },
+  "monthly_fixed_brl": {
+   "accountant_contabilizei_promo": 195,
+   "accountant_contabilizei_list": 280,
+   "accountant_contweb_from": 99.99,
+   "bank_pix": 0,
+   "TFE_monthly_equiv": 19.7,
+   "address_protection_optional": 60,
+   "range": "215–360"
+  },
+  "salario_minimo_2026": 1621.0,
+  "sp_iss_13_02_pct": 2.0,
+  "sp_iss_17_06_pct": 5.0,
+  "iss_in_das_band1_pct": 2.01,
+  "sp_opening_time": "1 dia e 10 horas (registration only, 2Q2025)"
+ }
+}

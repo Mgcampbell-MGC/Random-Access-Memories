@@ -1,0 +1,295 @@
+{
+ "agent": "OL4",
+ "hole": "Do the tools' own terms let Sol (a) sell outputs for commercial and paid-ad use, (b) promise client artwork is never used to train AI, and (c) tell the client 'as imagens são suas'?",
+ "verdict": "closed",
+ "findings": [
+  {
+   "claim": "Higgsfield: outputs usable commercially and transferable to clients on any plan; rights survive cancellation (Terms last updated 26 Jul 2026, §4.4).",
+   "evidence_quote": "Company does not claim ownership of any of your Inputs or Outputs, nor does it restrict your commercial use of Outputs. Your rights in Outputs you have generated and exported survive cancellation ... and you may transfer or sublicense your rights in Outputs to your clients or other third parties.",
+   "url": "https://higgsfield.ai/terms-of-use-agreement",
+   "status": "verified"
+  },
+  {
+   "claim": "Higgsfield trains on all Inputs and Outputs on self-serve plans; no-train only under an Enterprise Agreement; the only stop is deletion (§4.4).",
+   "evidence_quote": "You acknowledge and agree that Your Content, Inputs, and Outputs may be used by Company to train, develop, enhance, evolve, and improve its (and its affiliates') AI models ... under those agreements, Company does not use the customer's content to train ... You can stop this going forward by deleting Your Content or your Account",
+   "url": "https://higgsfield.ai/terms-of-use-agreement",
+   "status": "verified"
+  },
+  {
+   "claim": "Higgsfield: content already trained on cannot be removed after deletion (§16.5(c)(iii)).",
+   "evidence_quote": "content already used to develop or improve Company's AI models before deletion, which cannot feasibly be disassociated from models already trained",
+   "url": "https://higgsfield.ai/terms-of-use-agreement",
+   "status": "verified"
+  },
+  {
+   "claim": "Higgsfield's own summary confirms training and points client work needing no-train to Enterprise (Jul 25, 2026).",
+   "evidence_quote": "Does Higgsfield train on my content? Yes. ... If your clients require that their data never be used for training, an enterprise agreement can include that (§4.4).",
+   "url": "https://higgsfield.ai/blog/terms-of-use-privacy-policy-update",
+   "status": "verified"
+  },
+  {
+   "claim": "Higgsfield PLUS/ULTRA plan features list no no-training or privacy option (MCP show_plans_and_credits, 25 Sep 2026): PLUS US$49/mo, ULTRA US$129/mo.",
+   "evidence_quote": "PLUS ... monthly_final_price_cents 4900 ... ULTRA ... 12900 (feature lists: parallel generations, Supercomputer, all models, early access, unlimited marketplace, lowest cost per credit)",
+   "url": "Higgsfield MCP show_plans_and_credits (vendor's live pricing config)",
+   "status": "verified"
+  },
+  {
+   "claim": "Higgsfield: paid plans download without watermark; IP indemnity only on Enterprise; client work and paid campaigns are expressly commercial use (help centre, Aug 2, 2026).",
+   "evidence_quote": "Commercial use includes advertising and paid campaigns, social media content for brands, client work and deliverables ... Paid plans include watermark-free downloads. ... Legal indemnification, protection against third-party IP claims, is available on the Enterprise plan only.",
+   "url": "https://higgsfield.ai/creator-hub/help-center/account/who-owns-my-generations-and-can-i-use-them-commercially",
+   "status": "verified"
+  },
+  {
+   "claim": "Higgsfield §4.2(a): by uploading, the user warrants rights to grant the §4.3/§4.4 licences, which include the training licence, so she cannot upload a brand's packshot without the brand's authorisation.",
+   "evidence_quote": "you have all necessary rights to Your Content to grant the licenses set forth in Sections 4.3 and 4.4 below",
+   "url": "https://higgsfield.ai/terms-of-use-agreement",
+   "status": "verified"
+  },
+  {
+   "claim": "Higgsfield forbids presenting outputs as human-made and removing provenance marks (§5.2(xi), §5.5, §6.4 C2PA).",
+   "evidence_quote": "represent that any Output is human-generated when it is not ... you will not remove, alter, or obscure any provenance signals or markings Company applies under Section 6.4",
+   "url": "https://higgsfield.ai/terms-of-use-agreement",
+   "status": "verified"
+  },
+  {
+   "claim": "Higgsfield: generations are private by default but an Auto-publish toggle exists; terms say an unset access level may default to most permissive (§3.2).",
+   "evidence_quote": "Turn off the Auto-publish new generations toggle in Manage Account → Personal Profile: new generations then stay private by default",
+   "url": "https://higgsfield.ai/creator-hub/help-center/getting-started/higgsfield-community-on-discord",
+   "status": "verified"
+  },
+  {
+   "claim": "Higgsfield MCP route: data also passes through the third-party MCP client under its own terms (§11.13); developer terms add no training difference (§11.1).",
+   "evidence_quote": "Each Third-Party MCP Client is governed by its own terms of service and developer terms, and is subject to its own privacy policy",
+   "url": "https://higgsfield.ai/terms-of-use-agreement",
+   "status": "verified"
+  },
+  {
+   "claim": "Higgsfield Enterprise offers a contractual no-train guarantee; price not public.",
+   "evidence_quote": "Higgsfield Enterprise never trains models on your data ... contractual no-train guarantee ... built for unreleased products, embargoed campaigns",
+   "url": "https://higgsfield.ai/enterprise",
+   "status": "verified"
+  },
+  {
+   "claim": "Higgsfield Enterprise price.",
+   "evidence_quote": "credit-based pricing on annual contracts with monthly payments, sized to your team's seats (Contact Sales)",
+   "url": "https://higgsfield.ai/enterprise",
+   "status": "UNVERIFIED"
+  },
+  {
+   "claim": "Artlist Pro licence covers client work and paid/promoted videos; Social does not (Pro licence effective 15 Feb 2026).",
+   "evidence_quote": "If you're hired to create the Project, your client is covered by your license and can use the Project. ... This also means that you can't publish your Projects in paid media. (Social)",
+   "url": "https://artlist.io/help-center/privacy-terms/artlist-license/",
+   "status": "verified"
+  },
+  {
+   "claim": "Artlist stock: clients may not modify/reuse the music independently.",
+   "evidence_quote": "Clients are not permitted to modify or use the assets independently.",
+   "url": "https://help.artlist.io/hc/en-us/articles/29490991524253-Understanding-Artlist-s-license",
+   "status": "verified"
+  },
+  {
+   "claim": "Artlist stock must be published while the subscription is active.",
+   "evidence_quote": "Artlist music, SFX, footage, and templates must be published or broadcast while your subscription is active for them to remain licensed. AI-generated outputs can be used as you wish, even after your subscription expires.",
+   "url": "https://help.artlist.io/hc/en-us/articles/29490991524253-Understanding-Artlist-s-license",
+   "status": "verified"
+  },
+  {
+   "claim": "Artlist may require Max Business for an 'agency' using stock (pricing FAQ says any size; help article says >50 employees; AI-only plans exempt). Max Business from US$4.788/yr (pricing payload).",
+   "evidence_quote": "if you work for an agency, broadcaster or for a company ... that has more than 50 employees, you must have a Max Business plan ... This requirement does not apply to subscription plans consisting solely of AI Services. / Max Business: Built for businesses with 50+ employees and agencies of any size",
+   "url": "https://artlist.io/page/pricing/max",
+   "status": "UNVERIFIED"
+  },
+  {
+   "claim": "Artlist AI outputs are assigned to the user, commercially unrestricted, and shareable with clients (ToU last update 2 Jul 2026, §14).",
+   "evidence_quote": "Artlist hereby assigns to you all of Artlist's right, title and interest, if any, in and to Output, and Artlist does not restrict your commercial use of such Output.",
+   "url": "https://artlist.io/help-center/privacy-terms/terms-of-use/",
+   "status": "verified"
+  },
+  {
+   "claim": "Artlist AI is not a guaranteed no-train route: some third-party models may train on data.",
+   "evidence_quote": "Artlist contractually prohibits most third-party Model providers from using data received from Artlist ... to train ... However, certain models or features may permit such use.",
+   "url": "https://artlist.io/help-center/privacy-terms/terms-of-use/",
+   "status": "verified"
+  },
+  {
+   "claim": "Artlist stock may not be fed into an AI service that trains on it.",
+   "evidence_quote": "You may use Assets as inputs in AI services, provided they are not used to train or fine-tune AI models.",
+   "url": "https://artlist.io/help-center/privacy-terms/artlist-license/",
+   "status": "verified"
+  },
+  {
+   "claim": "Artlist AI Starter price.",
+   "evidence_quote": "AI Starter ... $19.99 ... $11.99/month Billed annually ... Up to 110 AI songs ... License covers commercial use",
+   "url": "https://artlist.io/page/pricing/max",
+   "status": "verified"
+  },
+  {
+   "claim": "Photoroom trains on user content by default with an opt-out under Data Control; paid use is for the customer's own business, free is non-commercial (Terms effective 29 Jul 2026).",
+   "evidence_quote": "you ... expressly authorize Photoroom to use User Content to improve, train and develop Photoroom's products and services. You can opt-out of this at any time by changing the settings on your account in the app under Data Control.",
+   "url": "https://www.photoroom.com/legal/terms-and-conditions",
+   "status": "verified"
+  },
+  {
+   "claim": "Photoroom's API training statements contradict each other.",
+   "evidence_quote": "API images are discarded after each call, never used for training without your consent. / Enterprise contracts don't train by default; self-serve API plans do, with opt-out in settings.",
+   "url": "https://www.photoroom.com/platform/security",
+   "status": "UNVERIFIED"
+  },
+  {
+   "claim": "Gemini API paid tier (and AI Studio with an active billing account) does not use prompts or files to improve products (Additional Terms effective 23 Mar 2026).",
+   "evidence_quote": "When you use Paid Services ... Google doesn't use your prompts (including ... files such as images, videos, or documents) or responses to improve our products",
+   "url": "https://ai.google.dev/gemini-api/terms",
+   "status": "verified"
+  },
+  {
+   "claim": "Gemini: Google claims no ownership of generated content but may generate similar content for others.",
+   "evidence_quote": "Google won't claim ownership over that content. You acknowledge that Google may generate the same or similar content for others",
+   "url": "https://ai.google.dev/gemini-api/terms",
+   "status": "verified"
+  },
+  {
+   "claim": "Gemini paid prices: Nano Banana Pro US$0,134 per 1K/2K image; Veo 3.1 Fast US$0,10-0,12/s; Standard US$0,40/s; Lyria 3.5 US$0,08/song; each 'Used to improve our products: No'.",
+   "evidence_quote": "Equivalent to $0.134 per 1K/2K image ... Veo 3.1 Fast video with audio price (default) ... $0.10 (720p) $0.12 (1080p) ... Lyria 3.5 (Full Song) ... $0.08 per song",
+   "url": "https://ai.google.dev/gemini-api/docs/pricing",
+   "status": "verified"
+  },
+  {
+   "claim": "Adobe does not train generative AI on local or cloud content and will not sublicense others to train (General Terms published 3 Oct 2025).",
+   "evidence_quote": "We will not use these rights to train generative AI models on your Content and will not use the sublicense rights to have anyone else train generative AI models on your Content",
+   "url": "https://www.adobe.com/legal/terms.html",
+   "status": "verified"
+  },
+  {
+   "claim": "Adobe Firefly partner models (Google, OpenAI, Kling, Runway, Luma, BFL) do not train on user data per Adobe; commercial safety of partner outputs is the user's call.",
+   "evidence_quote": "Adobe and our partners do not train on your personal or project data. ... it is the responsibility of the creator to decide whether partner models are appropriate",
+   "url": "https://www.adobe.com/products/firefly/partner-models.html",
+   "status": "verified"
+  },
+  {
+   "claim": "Adobe IP indemnity is enterprise-only.",
+   "evidence_quote": "Adobe provides intellectual property indemnification for enterprise customers for content generated with Adobe Firefly.",
+   "url": "https://www.adobe.com/ai/overview/firefly/gen-ai-approach.html",
+   "status": "verified"
+  },
+  {
+   "claim": "Adobe forbids removing Content Credentials (Gen-AI User Guidelines, 15 May 2026).",
+   "evidence_quote": "You must not remove, alter, or disable any Content Credentials.",
+   "url": "https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html",
+   "status": "verified"
+  },
+  {
+   "claim": "Adobe prices (US): Photography US$19,99/mo (Photoshop desktop, 1.000 credits); Firefly Pro US$19,99 (4.000 credits, partner models); CC Pro US$69,99.",
+   "evidence_quote": "Photography ... Photoshop on desktop, web, and mobile, plus Lightroom. US$19.99/mo ... Firefly Pro ... US$19.99/mo ... Creative Cloud Pro ... Regularly at US$69.99/mo",
+   "url": "https://www.adobe.com/products/photoshop/plans.html",
+   "status": "verified"
+  },
+  {
+   "claim": "CapCut (US version, 15 Apr 2026): user content is non-confidential and confidential material must not be uploaded; perpetual sublicensable licence.",
+   "evidence_quote": "All User Content will be considered non-confidential. You must not upload or make available any User Content ... that you consider to be confidential or proprietary to any other person.",
+   "url": "https://www.capcut.com/clause/terms-of-service",
+   "status": "verified"
+  },
+  {
+   "claim": "CapCut Brazil/rest-of-world version (geo-served, not fetchable from here).",
+   "evidence_quote": "n/a — secondary reports describe the same non-confidential + perpetual wording",
+   "url": "https://www.capcut.com/clause/terms-of-service",
+   "status": "UNVERIFIED"
+  },
+  {
+   "claim": "Canva: narrow content licence; AI training governed by Privacy Settings; Business/Teams content not used for AI; outputs owned by user; C2PA must not be removed.",
+   "evidence_quote": "You grant Canva a royalty-free and sublicensable license to display, host, copy, store and use your User Content to provide the Service to you ... For users who have a Canva Business or Enterprise account ... we don't use your business, team or enterprise content to improve AI-powered features",
+   "url": "https://www.canva.com/trust/privacy/",
+   "status": "verified"
+  },
+  {
+   "claim": "Canva default AI-training setting for individual Pro accounts.",
+   "evidence_quote": "Canva won't use your user content to improve AI-powered features unless this is consistent with your Privacy Settings",
+   "url": "https://www.canva.com/trust/privacy/",
+   "status": "UNVERIFIED"
+  },
+  {
+   "claim": "Kling: paid members may use outputs commercially; free may not; Kling trains on and may promote user content (User Policy 21 Apr 2026).",
+   "evidence_quote": "KLING AI members' use of the Output for commercial purposes is not restricted. / (f) create, test, improve, train, or otherwise develop the artificial intelligence ... used by Kling AI",
+   "url": "https://kling.ai/docs/user-policy",
+   "status": "verified"
+  },
+  {
+   "claim": "Runway trains on inputs and outputs under a perpetual irrevocable licence while not restricting commercial use (Terms 15 Sep 2026).",
+   "evidence_quote": "You acknowledge that Inputs and Outputs may be used by the Company to train and improve its AI models ... non-exclusive, irrevocable, perpetual ... license",
+   "url": "https://runwayml.com/terms-of-use",
+   "status": "verified"
+  },
+  {
+   "claim": "Luma trains on inputs and outputs even on paid plans; commercial use only for outputs made under a paid subscription (Terms 14 May 2026).",
+   "evidence_quote": "create, test, improve, train, or otherwise develop the artificial intelligence or machine learning models ... can only use the Outputs for commercial purposes if the Outputs were produced during an active Subscription Term",
+   "url": "https://lumalabs.ai/legal/terms-of-service",
+   "status": "verified"
+  },
+  {
+   "claim": "Brazil: author is a natural person; purely AI-generated elements may not be protected.",
+   "evidence_quote": "Art. 11. Autor é a pessoa física criadora de obra literária, artística ou científica.",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l9610.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Brazil: transfer of rights must be written and specify uses; otherwise max 5 years, only the contracting country, restrictive reading.",
+   "evidence_quote": "II - somente se admitirá transmissão total e definitiva dos direitos mediante estipulação contratual escrita; III - ... o prazo máximo será de cinco anos; IV - a cessão será válida unicamente para o país em que se firmou o contrato ... VI - ... interpretado restritivamente",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l9610.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Meta labels content 'AI info' when it detects industry-standard AI indicators (organic content; ads UNVERIFIED).",
+   "evidence_quote": "We began adding these labels when we detected industry standard AI image indicators or when people disclosed that they were uploading AI-generated content.",
+   "url": "https://transparency.meta.com/governance/tracking-impact/labeling-ai-content/",
+   "status": "verified"
+  }
+ ],
+ "design_changes": [
+  "No client art (label PDF, packshot, prototype photo, logo/brand kit, unreleased names/claims) ever goes into any generator or editing cloud, pre- OR post-launch; generators get only Sol's generic prompts + a blank placeholder; label composited locally. Replaces O_LANCAMENTO.md D1 rule 1 'Post-launch... the product can go in directly' (breaks 'never trained', Higgsfield §4.2(a) warranty and Artlist's real-brands ban). Also bans Higgsfield brand-kit/product-id features on client assets.",
+  "PRÉVIA also composites locally: world with blank bottle generated, public packshot laid on offline (she has no right to feed another brand's packshot to a training service).",
+  "Settings/hygiene: no brand/product names or claims in prompts; Higgsfield Auto-publish OFF; Photoroom Data Control OFF or not used; Canva AI toggle OFF or Teams; Adobe Content Analytics opted out; CapCut never used; client files stay out of any chat assistant driving MCP.",
+  "Music: AI-generated (Artlist AI Starter, Firefly music or Lyria paid) instead of Artlist stock; never put Artlist stock into Higgsfield.",
+  "Keep C2PA/Content Credentials on export (Photoshop Content Credentials); disclose AI scenery to client; do not call deliverables 'fotos'.",
+  "Offer sheet wording: 'Sua arte nunca é enviada a nenhum gerador de imagem ou vídeo — nem antes, nem depois do lançamento. A IA cria só o cenário, com uma embalagem em branco; o seu rótulo é aplicado no nosso computador, a partir do seu arquivo. Por isso, por nosso intermédio, a sua arte nunca é usada para treinar IA.'",
+  "Offer sheet wording: 'Tudo o que entregamos é seu para usar, sem prazo e no mundo todo: site, redes, marketplaces, anúncios pagos, impressos e ponto de venda. Formalizamos isso num termo de cessão por escrito, junto com a nota fiscal, e não reutilizamos nem revendemos nada do seu projeto. A trilha do filme é criada para uso comercial e vai junto com o filme.'",
+  "Add a one-page written 'termo de cessão' (Lei 9.610 arts. 49-50) listing uses, worldwide, no term, non-reuse promise, AI-element and C2PA disclosure, free replacement on any rights claim, liability capped at order value.",
+  "Default stack: Higgsfield PLUS (worlds, generic inputs only) + Adobe Photography plan (Photoshop desktop, local composite) + Artlist AI Starter (music); 'sigilo total' option: Firefly Pro partner models or Google AI Studio with billing for world generation."
+ ],
+ "residual_risks": [
+  "No self-serve tool gives IP indemnity (Higgsfield and Adobe: enterprise only); Sol carries third-party IP risk — cap liability contractually, avoid celebrity lookalikes and other brands' trade dress.",
+  "AI scenery may not be copyrightable in Brazil (Lei 9.610 art. 11/7) and outputs 'may not be unique' (Higgsfield §4.4, Google, Artlist, Canva, Luma) — exclusivity can only be Sol's own non-reuse promise. Court treatment of AI+human composites UNVERIFIED.",
+  "Provenance marks must be kept; platforms may label the client's posts 'AI info' (Meta confirmed for organic; ads UNVERIFIED). Whether a local re-export that drops metadata counts as 'removal' is untested — export with Content Credentials.",
+  "Higgsfield changes its terms (previous version had a perpetual irrevocable licence); anything already trained cannot be removed — re-read terms quarterly.",
+  "Label tracking on the moving bottle in the film requires a local desktop compositor; feasibility for Sol UNVERIFIED (separate hole).",
+  "CapCut Brazil/ROW terms, Canva individual default setting, Photoroom API training default, Artlist 'agency' classification and Brazilian BRL prices are UNVERIFIED — the stack avoids depending on any of them.",
+  "Soul ID or any real face requires a signed image release and consent (Higgsfield §4.2(b), §5.3); not in the default stack."
+ ],
+ "numbers": {
+  "higgsfield_plus_usd_month": 49,
+  "higgsfield_plus_usd_month_annual": 39,
+  "higgsfield_ultra_usd_month": 129,
+  "higgsfield_ultra_usd_month_annual": 99,
+  "adobe_photography_usd_month": 19.99,
+  "adobe_photoshop_single_usd_month": 22.99,
+  "adobe_firefly_pro_usd_month": 19.99,
+  "adobe_cc_pro_usd_month": 69.99,
+  "artlist_ai_starter_usd_month": 19.99,
+  "artlist_ai_starter_usd_month_annual": 11.99,
+  "artlist_max_business_min_usd_year": 4788,
+  "photoroom_api_basic_usd_per_image": 0.02,
+  "photoroom_api_plus_usd_per_image": 0.1,
+  "photoroom_app_pro_usd_month_annual_UNVERIFIED": 7.5,
+  "gemini_nano_banana_pro_usd_per_image_1k_2k": 0.134,
+  "veo31_fast_usd_per_second": [
+   0.1,
+   0.12
+  ],
+  "veo31_standard_usd_per_second": 0.4,
+  "lyria35_usd_per_song": 0.08,
+  "default_stack_usd_month": 88.98,
+  "default_stack_brl_month_at_ptax_5_2037": 463,
+  "stack_with_ultra_usd_month": 168.98,
+  "stack_with_ultra_brl_month": 879,
+  "sigilo_total_addon_firefly_pro_usd_month": 19.99
+ }
+}

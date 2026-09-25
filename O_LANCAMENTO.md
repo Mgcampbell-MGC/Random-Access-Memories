@@ -2,6 +2,14 @@
 
 **VOCÊ MANDA O PRODUTO. NÓS ENTREGAMOS A CAMPANHA.**
 
+> **★ 25 Sep 2026, night — THE CURRENT DESIGN IS `O_LANCAMENTO_AIRTIGHT.md`.** It supersedes this file wherever the two
+> differ:
+> - tools: no Photoroom, no Gemini, no client file in any cloud;
+> - prices: per launch, A LINHA R$4.900;
+> - test bars: its §11 replaces D6 and Part C §7.
+>
+> This file keeps the history and the first tests (Parts F, G, G2).
+
 **Status: the lead candidate of `THE_SIXTH_HUNT.md`, and a weaker lead after verification.** MARGINAL until the
 call test in Part C §7 is run.
 

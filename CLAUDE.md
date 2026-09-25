@@ -2672,6 +2672,45 @@ strangers' dead parents, alone, in year three?"**
     approved lotion. In Brazil, **★ RDC 16/2014 art. 2 VI makes ANY sale "a profissionais para o exercício de suas
     atividades" cosmetics WHOLESALE ⇒ AFE + a council-registered RT (C3).** Check this before sizing any "pro"
     beauty channel.
+  - **★★★ O LANÇAMENTO MADE AIRTIGHT, 25 Sep 2026 (`O_LANCAMENTO_AIRTIGHT.md`; sources `research/hunt6-sources/OL1–OL6`).**
+    Founder: *"make it air tight."* Six repair-briefed agents closed every hole that can be closed at a desk. What
+    remains open is **price** and **repeat purchase**, and both are measurable only by calls.
+    - **★ A LABEL-EXACT PRODUCT-ON-SURFACE STILL IS NOT SCARCE:** ten self-serve routes keep the product's own pixels
+      (Google Product Studio free in Brazil; Pebblely US$9, Pixelcut US$10, Photoroom US$12,99…). **What is scarce is
+      the real pack IN A HAND and IN MOTION**, plus a written guarantee sold to a small brand. The headline moved.
+    - **★ THE TOOL'S TERMS ARE A DESIGN INPUT.**
+      - Higgsfield trains on uploads with no opt-out below Enterprise.
+      - §4.2(a) makes the uploader warrant she holds the rights.
+      - ⇒ **No client file ever goes into any generator or editing cloud, before or after launch.** The sample in
+        Part F broke this; it is recorded as a correction.
+      - Stock music needs a Pro licence, forbids clients re-editing the track, and must be published while
+        subscribed ⇒ **use AI-made tracks, which are assigned to her.**
+      - **Never CapCut**: its terms treat uploads as non-confidential.
+    - **★ "THE IMAGES ARE YOURS" IS FALSE FOR AI WORK IN BRAZIL.** Lei 9.610 art. 11 makes the author a natural
+      person, and AI elements may be unprotected. ⇒ **Sell an exclusive licence plus a written cessão plus her own
+      non-reuse promise**, and have Sol cede her rights to her company once.
+    - **★ A GUARANTEE MUST BE "REDO, THEN REFUND THAT PIECE", NEVER "REDO ONLY"** (CC art. 424 voids an advance
+      waiver in an adhesion contract).
+    - **★★ A CHECK THAT CANNOT FAIL PROVES NOTHING — PLANT AN ERROR IN EVERY DELIVERY.** The fidelity checker now
+      mirrors one lettered patch in a copy of each still and of each film's middle frame. **A pass counts only if the
+      planted error is caught** (it scores 0,28 against a 0,80 bar).
+      - **Sampling hid a failure:** a film passed at every 12th frame and failed at every 2nd, so check every frame.
+      - **One frame scoring 0,54 between neighbours at 0,98 was the ALIGNER, not the label**, because the pack moves as
+        one block. So retry stricter fits before failing; a wrong letter cannot be aligned away.
+    - **★ CALIBRATE THE FILM RULE FROM DATA AND SAY SO; NEVER MOVE A BAR TO PASS YOUR OWN TEST.**
+      - The still rule (worst tile ≥0,80, 5th percentile ≥0,95) stands.
+      - Exact films bottom at a 5th percentile of 0,945–0,957, and higher quality does not move it (CRF 6 = CRF 12).
+      - ⇒ The film rule is worst ≥0,80 in every frame and 5th percentile ≥0,93, with the planted control and an
+        altered-label film as the negative test. **The worst-tile rule, the one a wrong letter trips, did not move.**
+    - **Company:** SLU, CNAE 5911-1/02 + 7410-2/99. **Tick Simples at CNPJ registration or wait until 2028.**
+      Pró-labore ~30% keeps stills out of Anexo V. All-in 9,08–9,34% at the bar. Setup ≈R$455.
+    - **The test, bars committed before any call:**
+      - First, the R$0 Pixelcut "On Model" test on a FICTIONAL brand.
+      - Then three timed dry runs (≤3 h each, 100% pass).
+      - Then 20 calls:
+        - **KEEP R$2.990** if ≥6/20 state ≥R$2.500 of last-launch spend and ≥2 buy within 30 days (or ≥4 VITRINE);
+        - **SWITCH** to ESSENCIAL R$1.490 + FILME R$990 if ≥8/20 state ≥R$1.000;
+        - **STOP** if ≥12/20 state <R$1.000.
 
 ## The test design that works
 

@@ -1,0 +1,301 @@
+{
+ "agent": "OL1",
+ "hole": "Is the label-exact guarantee actually scarce? (do self-serve tools already keep the real product pixels?)",
+ "verdict": "partly_closed",
+ "findings": [
+  {
+   "claim": "Photoroom AI Backgrounds keeps the cut-out product and generates only the background (architecture).",
+   "evidence_quote": "Photoroom needs a source image to use as a starting point. It will remove the background from the source image so that it's ready for a new AI background.",
+   "url": "https://help.photoroom.com/en/articles/6741465-how-to-use-ai-backgrounds",
+   "status": "verified"
+  },
+  {
+   "claim": "Photoroom plan prices: Pro US$12,99/mo, Max US$34,99, Ultra US$99 (yearly 89,99/250/990); video only on Max/Ultra (50/150 generations).",
+   "evidence_quote": "JSON-LD offers: Pro (monthly) 12.99 USD; Max (monthly) 34.99; Ultra (monthly) 99.00; 'Video Generator ... Max : Up to 50 generations ... Ultra : Up to 150 generations'",
+   "url": "https://www.photoroom.com/pricing",
+   "status": "verified"
+  },
+  {
+   "claim": "Photoroom API price per image-edit call.",
+   "evidence_quote": "The Image Editing API is part of our \"Plus plan\" and each API call is priced at $0.10.",
+   "url": "https://docs.photoroom.com/image-editing-api-plus-plan/pricing",
+   "status": "verified"
+  },
+  {
+   "claim": "Photoroom Product Staging regenerates the product via GPT-Image-1.",
+   "evidence_quote": "Product Staging combines OpenAI's GPT-Image-1 model with Photoroom's deep expertise in visual merchandising to create realistic, context-rich scenes.",
+   "url": "https://www.photoroom.com/tools/product-staging",
+   "status": "verified"
+  },
+  {
+   "claim": "Photoroom video only promises 'recognisable', not exact.",
+   "evidence_quote": "It is designed to help keep the original product recognisable while creating videos for product pages, marketplaces, ads, and social content.",
+   "url": "https://www.photoroom.com/tools/video-generator",
+   "status": "verified"
+  },
+  {
+   "claim": "Photoroom sells a fidelity re-do guarantee, but enterprise-only, food/fashion, yearly contract.",
+   "evidence_quote": "Our proprietary fidelity model checks every output against your agreed criteria, then we rework any that miss. ... built for Enterprise teams running visual production at scale in food or fashion ... Pricing, contract minimums, and vertical eligibility are set with your account team.",
+   "url": "https://www.photoroom.com/enterprise/guarantee",
+   "status": "verified"
+  },
+  {
+   "claim": "Photoroom guarantee launched 1 Sep 2026 as a yearly contract.",
+   "evidence_quote": "it is available to food and fashion teams as a yearly-contract.",
+   "url": "https://www.photoroom.com/blog/enterprise-guarantee-pay-for-pass",
+   "status": "verified"
+  },
+  {
+   "claim": "Pebblely generates backgrounds around the uploaded product; US$9/30, US$19/200, US$39/500 images; no refunds.",
+   "evidence_quote": "The AI creates backgrounds based on your uploaded images and adds shadows and reflections accordingly. ... we are not able to offer refunds.",
+   "url": "https://pebblely.com/faq/",
+   "status": "verified"
+  },
+  {
+   "claim": "Claid states label preservation and cut-out architecture.",
+   "evidence_quote": "Every texture, label, and fine detail preserved. / Automatically isolate the product before generation... prepare a clean product cutout.",
+   "url": "https://claid.ai/ ; https://claid.ai/api-products/generate-background",
+   "status": "verified"
+  },
+  {
+   "claim": "Claid plan prices: Essentials US$15/mo (US$108/yr), Pro US$49/mo (US$420/yr); AI video 60 credits per 5 s.",
+   "evidence_quote": "plans API: basic price 1500 (usd, month), 10800 (year); professional 4900 (month), 42000 (year); pricing page: 'AI Video Max generations (60 credits for 5s)'",
+   "url": "https://api.claid.ai/v1-internal/billing/plans?active_only=true ; https://claid.ai/pricing",
+   "status": "verified"
+  },
+  {
+   "claim": "Mokker cuts out the product and generates the background; Starter US$13/mo 500 photos.",
+   "evidence_quote": "Upload a product photo. Mokker will remove the background with AI / Starter $13 / month ... 500 Photos / month",
+   "url": "https://mokker.ai/ ; https://mokker.ai/pricing",
+   "status": "verified"
+  },
+  {
+   "claim": "Pixelcut Product Studio claims the product (incl. label text) is fixed; Pro US$10/mo, Business US$30/mo.",
+   "evidence_quote": "Product Studio treats your uploaded product as the fixed part of the image, so the shape, label text, and colors stay true to the original.",
+   "url": "https://www.pixelcut.ai/ai-product-photography",
+   "status": "verified"
+  },
+  {
+   "claim": "Pixelcut's claim extends to its On Model format (product held/worn by AI person) - untested for cosmetics labels.",
+   "evidence_quote": "With Product Studio's On Model format, place your item on a lifelike AI model or pick a ready-made persona",
+   "url": "https://www.pixelcut.ai/ai-product-photography",
+   "status": "UNVERIFIED"
+  },
+  {
+   "claim": "Canva BG Generator generates backgrounds with optional relight; 200 images/24 h.",
+   "evidence_quote": "Select the Sun icon to choose between additional options such as Balanced relight or Maximum relight. ... You can generate backgrounds for 200 images every 24 hours.",
+   "url": "https://www.canva.com/help/bg-generator/ (via r.jina.ai reader; direct curl 403)",
+   "status": "verified"
+  },
+  {
+   "claim": "Adobe Photoshop Generate Background removes the background first, keeps the subject.",
+   "evidence_quote": "Select Remove background in the Contextual Task Bar ... Use Generate background to replace the background of your image with generated content that matches the lighting, shadows, and perspective of the subject.",
+   "url": "https://helpx.adobe.com/photoshop/desktop/repair-retouch/remove-objects-fill-space/replace-background-with-generate-background.html (reader)",
+   "status": "verified"
+  },
+  {
+   "claim": "Adobe Firefly IP indemnity is enterprise-only and excludes modified or combined outputs (a composite).",
+   "evidence_quote": "Adobe will have no liability ... (A) any modification of a Firefly Output ... (B) any combination of a Firefly Output with any other material, content or information",
+   "url": "https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeFireflySupplementalCoverage_2024v1.pdf (reader)",
+   "status": "verified"
+  },
+  {
+   "claim": "Photoshop segmentation runs on-device by default (supports the 'art never leaves our computer' claim if kept on Device).",
+   "evidence_quote": "By default, Photoshop uses Device processing to refine selections.",
+   "url": "https://helpx.adobe.com/photoshop/desktop/make-selections/automatic-color-based-selections/improved-select-subject-and-remove-background-results.html (reader)",
+   "status": "verified"
+  },
+  {
+   "claim": "Google Product Studio is free and live in Brazil; change-background places the product in a described scene; video US-only.",
+   "evidence_quote": "Google's Product Studio is a suite of free, AI-powered tools ... Describe the scene in which you want your product placed in. / existing presence in Australia, Austria, Belgium, Brazil ... generate video feature is currently only available to US merchants.",
+   "url": "https://support.google.com/merchants/answer/13708167?hl=en ; https://support.google.com/merchants/answer/15717899?hl=en",
+   "status": "verified"
+  },
+  {
+   "claim": "Amazon Ads image generator is free; product treated as already present (pixel preservation not stated; Brazil availability unknown).",
+   "evidence_quote": "at no additional cost / Reference the product as already-present in the product image",
+   "url": "https://www.aboutamazon.com/news/innovation-at-amazon/amazon-ads-ai-powered-image-generator ; https://advertising.amazon.com/library/guides/how-to-use-ai-image-generators",
+   "status": "UNVERIFIED"
+  },
+  {
+   "claim": "Pacdora maps uploaded artwork onto 3D cosmetic tube/bottle/jar templates and exports 4K images and MP4 rotation videos: label-exact motion, self-serve.",
+   "evidence_quote": "it only takes a few minutes to upload your design ... download your design as a 4K image or a high-quality MP4 video. / Cosmetic Bottle 402 / Cosmetic Jar 190 / Cosmetic Tube 185",
+   "url": "https://www.pacdora.com/mockups/tube-mockups (reader)",
+   "status": "verified"
+  },
+  {
+   "claim": "Pacdora prices: Pro US$17/seat/mo (US$199/yr, personal use only); Business US$59/seat/mo (US$708/yr, commercial and resale licence, 2K video).",
+   "evidence_quote": "Pro $17/seat/month Billed $199 annually ... For personal use only / Business $59/seat/month Billed $708 annually ... Commercial use and resale license",
+   "url": "https://www.pacdora.com/pricing (reader)",
+   "status": "verified"
+  },
+  {
+   "claim": "Flair regenerates the product (custom models) and ships repair tools for logo/text distortion; Pro+ US$26 = 80 images, Scale US$38 = 150.",
+   "evidence_quote": "Can I fix product distortion or proportion issues? Yes. Use the \"Regenerate Product\" option ... The Fix Logo & Text option is now available again.",
+   "url": "https://flair.ai/resources/faq ; https://flair.ai/pricing",
+   "status": "verified"
+  },
+  {
+   "claim": "Villo disclaims textual fidelity.",
+   "evidence_quote": "pequenas variações visuais, textuais ou compositivas podem ocorrer entre versões; ... obrigação de meio",
+   "url": "https://www.villo.ia.br/termos-condicoes",
+   "status": "verified"
+  },
+  {
+   "claim": "Brazilian CGI studio Criativoo already sells a label-exact CGI+AI hybrid, incl. 15-60 s product films, to indie cosmetics brands; no price published.",
+   "evidence_quote": "ambientação híbrida de produto (CGI + IA) / O rótulo técnico permanece 100% nítido e protegido contra qualquer distorção visual. / Produzimos comerciais em vídeo de 15 a 60 segundos utilizando as embalagens modeladas em 3D",
+   "url": "https://www.criativoo.com.br/",
+   "status": "verified"
+  },
+  {
+   "claim": "Criativoo builds from the PDF or 3 phone photos (works pre-launch).",
+   "evidence_quote": "desenvolvidos a partir do PDF técnico ou de 3 fotos simples de celular",
+   "url": "https://www.criativoo.com.br/portfolio/mockup-digital-3d-cosmeticos-we-sis/",
+   "status": "verified"
+  },
+  {
+   "claim": "WekArts publishes a CGI packaging price: R$2.590 (3D pack + print-ready label + 2 renders) and R$3.990 (4 renders + 20 s motion video), 20-40 working days.",
+   "evidence_quote": "Pacote Essencial 2590 Embalagem 3D Rotulo Pronto para Impressão 2 Renders ... Pacote Corporativo 3990 4 Renders ... Vídeo Motion de 20 Segundos ... 20 a 40 dias úteis",
+   "url": "https://wekarts.com.br/product/embalagem-3d-para-produtos/",
+   "status": "verified"
+  },
+  {
+   "claim": "Lou Studios' own market estimate for 3D product animation in Brazil (secondary: a vendor's blog).",
+   "evidence_quote": "Animação 3D Básica R$ 3.000 a R$ 12.000 ... Intermediária R$ 15.000 a R$ 45.000 ... Premium (Cinema/TV) R$ 50.000 a R$ 150.000+",
+   "url": "https://www.loustudios.com.br/post/quanto-custa-produzir-um-v%C3%ADdeo-de-anima%C3%A7%C3%A3o-3d-para-produtos",
+   "status": "UNVERIFIED"
+  },
+  {
+   "claim": "The composite method itself is published industry practice (secondary).",
+   "evidence_quote": "generate the setting, lighting, composition, and lifestyle context; keep verified product pixels or approved packaging artwork anywhere the SKU has to stay literal.",
+   "url": "https://uselamina.ai/blog/benchmark-can-ai-product-photography-generate-ecommerce-ready-images-without-changing-logos-labe",
+   "status": "verified"
+  },
+  {
+   "claim": "Booth.ai appears defunct (domain redirects to a domain-sale page).",
+   "evidence_quote": "booth.ai -> https://www.atom.com/name/Booth.ai (HTTP 403)",
+   "url": "https://www.booth.ai/",
+   "status": "UNVERIFIED"
+  }
+ ],
+ "design_changes": [
+  "Stop selling 'label-exact' on product-in-scene stills (table stakes: Google free in BR, Pebblely US$9, Mokker US$13, Pixelcut US$10, Photoroom US$12,99). New differentiator: 'Fotos com o produto em uso e um filme em movimento - a IA cria as mãos, a pele, o cenário e a luz; a sua embalagem nunca passa por ela. Campanha completa, num só universo visual, em 5 a 7 dias úteis.'",
+  "Guarantee rewrite: 'em nenhuma foto e em nenhum quadro do filme a IA inventa, troca ou deforma uma letra, o logo ou a forma da sua embalagem, e a cor fica dentro da tolerância aprovada na ficha; se falhar, refazemos sem custo em até 2 dias úteis. Partes podem ficar escondidas pela mão/ângulo/foco conforme o key visual aprovado - escondidas, nunca alteradas.'",
+  "Report rewrite: compare the pack pixel-by-pixel (film: frame-by-frame) against the client-approved MASTER image; OCR-check only legible text against the PDF. Drop 'Lista de ativos OK' from the sample unless it is actually legible and checked.",
+  "Define a colour tolerance and the occlusion rule on the ficha the client signs; otherwise integration grading breaks the 'Cor OK' promise.",
+  "Confidentiality rewrite: 'Sua arte e suas fotos nunca são enviadas a um gerador de imagens nem a nenhum serviço online de IA: o trabalho com a embalagem é feito no nosso computador.' Ops rule: Photoshop Select Subject/Remove Background on Device (the default), never Cloud; no Generate Background/Harmonize/Generative Fill on the pack layer; Higgsfield only sees the blank placeholder.",
+  "PRÉVIA must be an in-hand / in-use shot (the thing cutout tools cannot do label-exact), never product-on-surface (free at Google/Pebblely/Villo).",
+  "VITRINE: keep R$490 only if it includes >=2 in-use/in-hand shots and is sold as 'same world as your launch'; otherwise fold it into O LANÇAMENTO as an add-on.",
+  "Film: state 'movimento de câmera e luz sobre a sua embalagem; giro completo não incluso'. Optional 360-degree insert via Pacdora Business (US$59/mo, commercial and resale licence) for template shapes, after a test of shape match and alpha export.",
+  "Master-image sourcing for pre-launch SKUs (0/15 had a public photo): phone photo of a physical sample, OR a Pacdora render from the PDF (makes 'idêntico à arte' literally true), OR a one-off 3D model kept as part of the 'world on file'.",
+  "R$0 test before the first call: the founder runs the same bestseller tube through Pixelcut Product Studio On Model and Photoroom free tiers; if either keeps the label exact with a hand over it, in-hand scarcity falls, and only motion-in-world + coherence + speed + guarantee + service remain."
+ ],
+ "residual_risks": [
+  "No technology moat: the composite method is published (Lamina, Higgsfield's own brand-asset recipe composites logos); Criativoo already sells a CGI+IA label-exact hybrid to Brazilian indie cosmetics; any brand designer with Pacdora + Pixelcut can approach it. The position is price, speed and service between self-serve (R$0-300) and CGI (R$3.990 in 20-40 working days), not a moat.",
+  "Pixelcut's 'fixed product' claim may extend to on-model/in-hand shots (UNVERIFIED) - if true, the in-hand gap closes.",
+  "Photoroom's Enterprise Guarantee (launched 1 Sep 2026, beauty listed as an industry) could move down-market.",
+  "O LANÇAMENTO cannot do a full product rotation; CGI studios and Pacdora can, label-exact.",
+  "Pacdora: template shape mismatch, alpha export and training policy all UNVERIFIED; uploading unreleased art to its cloud weakens the confidentiality line.",
+  "Small text cannot be OCR-verified at campaign scale; the report must not claim it.",
+  "Untouched: the separate price-evidence problem (observed buyer budgets < US$500)."
+ ],
+ "numbers": {
+  "tools_preserving_product_pixels_stills": 12,
+  "of_which_self_serve": 10,
+  "of_which_cgi_services": 2,
+  "preserving_stated_in_words": 2,
+  "preserving_by_architecture": 6,
+  "preserving_implied_only": 2,
+  "tools_regenerating_product": 10,
+  "self_serve_label_exact_motion_tools": 1,
+  "sme_fidelity_guarantees_found": 0,
+  "enterprise_fidelity_guarantees_found": 1,
+  "prices_usd_month": {
+   "photoroom_pro": 12.99,
+   "photoroom_max": 34.99,
+   "photoroom_ultra": 99.0,
+   "pebblely": [
+    9,
+    19,
+    39
+   ],
+   "claid_essentials": 15,
+   "claid_pro": 49,
+   "flair_proplus": 26,
+   "flair_scale": 38,
+   "mokker_starter": 13,
+   "pixelcut_pro": 10,
+   "pixelcut_business": 30,
+   "pacdora_pro": 17,
+   "pacdora_business": 59,
+   "higgsfield_plus": 49,
+   "google_product_studio": 0,
+   "amazon_image_generator": 0
+  },
+  "prices_brl_month": {
+   "canva_pro": 34.9,
+   "photoshop": 65.0,
+   "photogen": [
+    25,
+    37,
+    87
+   ]
+  },
+  "per_image_usd": {
+   "photoroom_api_call": 0.1,
+   "pebblely": [
+    0.3,
+    0.095,
+    0.078
+   ],
+   "claid": [
+    0.12,
+    0.098
+   ],
+   "flair": [
+    0.33,
+    0.25
+   ],
+   "mokker": 0.026,
+   "higgsfield_product_shot_2k": 0.075
+  },
+  "per_video_usd": {
+   "photoroom_max": 0.7,
+   "photoroom_ultra": 0.66,
+   "claid_5s": 1.48,
+   "higgsfield_15s": 4.46
+  },
+  "brazil_ai_studios_brl": {
+   "orne_image": [
+    5.5,
+    6.9
+   ],
+   "orne_video": [
+    29.9,
+    89
+   ],
+   "villo_3_images": 19.9,
+   "villo_video_10s": 50,
+   "fabrica_ai_3_images": 35,
+   "make_move_65_photos": 3000
+  },
+  "cgi_brl": {
+   "wekarts_essencial_2_renders": 2590,
+   "wekarts_corporativo_4_renders_20s_video": 3990,
+   "wekarts_working_days": [
+    20,
+    40
+   ],
+   "lou_basic_animation": [
+    3000,
+    12000
+   ],
+   "lou_intermediate": [
+    15000,
+    45000
+   ],
+   "lou_premium_min": 50000,
+   "criativoo": "quote only"
+  }
+ }
+}

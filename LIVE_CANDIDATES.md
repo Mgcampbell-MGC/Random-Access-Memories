@@ -34,6 +34,17 @@ every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 >
 > **NEXT: the year-three question on each track, then two R$0 call tests in one fortnight** (`THE_SIXTH_HUNT.md`
 > §10). **The next file here should be a call log.**
+>
+> **★ UPDATE, 25 Sep night: O LANÇAMENTO designed airtight — `O_LANCAMENTO_AIRTIGHT.md`.**
+> - **Closed at a desk:** method, guarantee, law, tool licences, company, tax, contract (`oferta/CONTRATO_PADRAO.md`),
+>   offer-sheet wording, and the first call list.
+> - **Three working tools in `tools/`** (composite · film · fidelity check with a planted-error control).
+> - **Prices:** R$2.990 per LAUNCH (not per SKU) · A LINHA cut to R$4.900 · VITRINE R$490, credited, with in-hand
+>   shots · fallback ESSENCIAL R$1.490 + FILME R$990.
+> - **Still open: buyer price and repeat purchase — only calls measure them.**
+> - **Order of work:** the R$0 Pixelcut test on a fictional brand → three timed dry runs → open the SLU → 20 calls
+>   against the committed bars (§11).
+> - **Ask Sol the year-three question before the first call.**
 
 > ### ★★★ THE SECOND GREAT HUNT — 19–20 Sep 2026. ACOLHE is being built elsewhere; the founder asked for a
 > DIFFERENT NICHE, A DIFFERENT BUSINESS MODEL, entirely. Sixteen repair-briefed lenses, a judge's twelve, two

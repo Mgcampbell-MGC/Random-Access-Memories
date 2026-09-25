@@ -6,14 +6,22 @@ Usage:
 APPROVED.png is the brand's approved packshot as a cutout with an alpha channel (the flat front
 face works best). ASSET may be an image or a video. If ASSET has a sibling mask named
 <asset>.hidden.png (white = packaging deliberately covered, e.g. by fingers), covered tiles are
-excluded and reported: hidden is allowed, altered never. For each asset the label is located by SIFT
+excluded and reported: hidden is allowed, altered never. For a video the sibling is <asset>.hidden.mp4,
+read frame by frame (compor.py and filme.py write both). For each asset the label is located by SIFT
 feature matching, warped back onto the approved packshot, and compared tile by tile on a band-pass
 image, so a single misspelled word shows up as one bad tile instead of being averaged away.
+
+Every still that passes is also given a NEGATIVE CONTROL: one lettered patch of its label is mirrored in a copy
+and re-checked, and the still passes only if the check catches the planted error ("control_caught").
 
 Pass rule (calibrated 25 Sep 2026 on one real tube, see O_LANCAMENTO.md Part G):
     worst tile >= 0.80 AND 5th-percentile tile >= 0.95.
 Exact composites scored 0.96/0.99 as stills and >=0.87/0.96 in every checked frame of a compressed
 film; generated labels with 2 and 4 spelling errors scored 0.39/0.82 and 0.00/0.49.
+Films (recalibrated 25 Sep 2026): worst tile >= 0.80 in EVERY frame AND 5th-percentile >= 0.93. Five exact films of
+the same tube, every frame checked, bottomed at a 5th percentile of 0.945-0.957 (resampling each frame softens fine
+print a little); the worst-tile rule, which is the one a wrong letter trips (a planted one-patch error scored 0.28), is
+unchanged. Each film also gets the planted-error control on its middle frame.
 Recalibrate on each new packaging type before relying on the thresholds.
 """
 import argparse
@@ -26,6 +34,7 @@ import numpy as np
 TILE = 24
 MIN_TILE_PASS = 0.80
 P5_TILE_PASS = 0.95
+P5_FILM_PASS = 0.93  # films resample the pack every frame; see the calibration note above
 MAX_HIDDEN = 0.35  # above this share of the label covered, the asset needs a human look
 
 
@@ -64,9 +73,44 @@ class Checker:
             return {"found": False, "matches": len(good)}
         src = np.float32([self.kr[m.queryIdx].pt for m in good])
         dst = np.float32([k[m.trainIdx].pt for m in good])
-        H, inliers = cv2.findHomography(src, dst, cv2.RANSAC, 3.0)
-        if H is None:
-            return {"found": False, "matches": len(good)}
+        # Alignment can occasionally lock onto a wrong fit and fail a frame whose label is intact. A wrong fit can
+        # only LOWER the scores, and a misspelled letter cannot be aligned away by one global homography, so
+        # retrying stricter fits and keeping the best is safe.
+        best = None
+        for method, thr in ((cv2.RANSAC, 3.0), (cv2.USAC_MAGSAC, 2.0), (cv2.RANSAC, 1.5)):
+            H, inliers = cv2.findHomography(src, dst, method, thr)
+            if H is None:
+                continue
+            r = self._compare(img, H, hidden)
+            r["inliers"] = int(inliers.sum())
+            r["_H"] = H
+            if best is None or (r["pass"], r.get("p5_tile", -1)) > (best["pass"], best.get("p5_tile", -1)):
+                best = r
+            if best["pass"]:
+                break
+        return best or {"found": False, "matches": len(good)}
+
+    def control(self, img, H, hidden=None):
+        """Negative control on THIS asset: mirror one lettered patch of the label in a copy, re-check, and
+        report whether the check caught it. A pass that could not have failed proves nothing."""
+        h, w = self.ref.shape[:2]
+        free = [(y, x) for y, x in self.tiles]
+        y, x = max(free, key=lambda t: self.R[t[0]:t[0] + TILE, t[1]:t[1] + TILE].std())
+        warped = cv2.warpPerspective(img, H, (w, h), flags=cv2.WARP_INVERSE_MAP | cv2.INTER_LINEAR)
+        patch = warped.copy()
+        patch[y:y + TILE, x:x + TILE] = warped[y:y + TILE, x:x + TILE][:, ::-1]
+        m = np.zeros((h, w), np.uint8)
+        m[y:y + TILE, x:x + TILE] = 255
+        back = cv2.warpPerspective(patch, H, (img.shape[1], img.shape[0]), flags=cv2.INTER_LINEAR)
+        mb = cv2.warpPerspective(m, H, (img.shape[1], img.shape[0]), flags=cv2.INTER_NEAREST) > 0
+        altered = img.copy()
+        altered[mb] = back[mb]
+        r = self.score(altered, hidden)
+        # Caught means the WORST-TILE rule fired, the rule a single wrong letter must trip; failing only on the
+        # 5th percentile would not show the check can see one letter.
+        return {"control_caught": r.get("worst_tile", 1.0) < MIN_TILE_PASS, "control_worst_tile": r.get("worst_tile")}
+
+    def _compare(self, img, H, hidden):
         h, w = self.ref.shape[:2]
         warped = cv2.warpPerspective(img, H, (w, h), flags=cv2.WARP_INVERSE_MAP | cv2.INTER_LINEAR)
         B = bandpass(warped.astype(np.float32))
@@ -91,7 +135,6 @@ class Checker:
         p5 = float(np.percentile(s, 5))
         return {
             "found": True,
-            "inliers": int(inliers.sum()),
             "tiles": len(s),
             "hidden_share": round(hidden_share, 3),
             "worst_tile": round(worst, 3),
@@ -99,21 +142,37 @@ class Checker:
             "pass": worst >= MIN_TILE_PASS and p5 >= P5_TILE_PASS and hidden_share <= MAX_HIDDEN,
         }
 
-
-def check_asset(checker, path, every):
+def check_asset(checker, path, every, control=True):
     img = cv2.imread(path)
     if img is not None:
         hidden = cv2.imread(path.rsplit(".", 1)[0] + ".hidden.png", cv2.IMREAD_GRAYSCALE)
         r = checker.score(img, hidden)
+        H = r.pop("_H", None)
+        if control and H is not None and r.get("pass"):
+            r.update(checker.control(img, H, hidden))
+            if not r["control_caught"]:
+                r["pass"] = False  # the check was not sensitive enough on this asset: a human must look
         return {"asset": path, "type": "image", **r, "pass": r.get("pass", False)}
     cap = cv2.VideoCapture(path)
+    # filme.py writes <film>.hidden.mp4 when a hand covers the packaging; read it in lockstep.
+    hcap = cv2.VideoCapture(path.rsplit(".", 1)[0] + ".hidden.mp4")
+    has_h = hcap.isOpened()
     frames, results, i = 0, [], 0
     while True:
         ok, fr = cap.read()
         if not ok:
             break
+        hid = None
+        if has_h:
+            okh, hf = hcap.read()
+            hid = cv2.cvtColor(hf, cv2.COLOR_BGR2GRAY) if okh else None
         if i % every == 0:
-            results.append(checker.score(fr))
+            r = checker.score(fr, hid)
+            r.pop("_H", None)
+            if r.get("found"):
+                r["pass"] = (r["worst_tile"] >= MIN_TILE_PASS and r["p5_tile"] >= P5_FILM_PASS
+                             and r["hidden_share"] <= MAX_HIDDEN)
+            results.append(r)
         i += 1
     frames = i
     if not results:
@@ -121,15 +180,31 @@ def check_asset(checker, path, every):
     found = [r for r in results if r.get("found")]
     worst = min((r["worst_tile"] for r in found), default=0.0)
     p5 = min((r["p5_tile"] for r in found), default=0.0)
+    ctrl = {}
+    if control and found:
+        cap = cv2.VideoCapture(path)
+        cap.set(cv2.CAP_PROP_POS_FRAMES, frames // 2)
+        ok, fr = cap.read()
+        hid = None
+        if has_h:
+            hcap = cv2.VideoCapture(path.rsplit(".", 1)[0] + ".hidden.mp4")
+            hcap.set(cv2.CAP_PROP_POS_FRAMES, frames // 2)
+            okh, hf = hcap.read()
+            hid = cv2.cvtColor(hf, cv2.COLOR_BGR2GRAY) if okh else None
+        r = checker.score(fr, hid) if ok else {}
+        if r.get("_H") is not None:
+            ctrl = checker.control(fr, r["_H"], hid)
     return {
         "asset": path,
         "type": "video",
+        **ctrl,
         "frames": frames,
         "frames_checked": len(results),
         "frames_without_label": len(results) - len(found),
         "worst_tile": worst,
         "worst_p5_tile": p5,
-        "pass": bool(found) and all(r["pass"] for r in found),
+        "max_hidden_share": max((r.get("hidden_share", 0) for r in found), default=0.0),
+        "pass": bool(found) and all(r["pass"] for r in found) and ctrl.get("control_caught", not control),
     }
 
 
@@ -137,11 +212,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("approved")
     ap.add_argument("assets", nargs="+")
-    ap.add_argument("--every", type=int, default=6, help="check every Nth video frame")
+    ap.add_argument("--every", type=int, default=1, help="check every Nth video frame (1 = all; use 1 before delivery)")
     ap.add_argument("--json")
+    ap.add_argument("--sem-controle", action="store_true", help="skip the planted-error control on stills")
     args = ap.parse_args()
     checker = Checker(args.approved)
-    report = [check_asset(checker, a, args.every) for a in args.assets]
+    report = [check_asset(checker, a, args.every, not args.sem_controle) for a in args.assets]
     for r in report:
         print(f"{'APROVADA ' if r['pass'] else 'REPROVADA'}  {r['asset']}  {json.dumps({k: v for k, v in r.items() if k not in ('asset', 'pass')})}")
     if args.json:

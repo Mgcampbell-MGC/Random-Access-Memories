@@ -1,0 +1,348 @@
+{
+ "agent": "OL2",
+ "hole": "Is R$2.990 (and the ladder R$490 / R$690 / R$6.900) a price an established Brazilian indie hair/skin brand actually pays?",
+ "verdict": "partly_closed",
+ "findings": [
+  {
+   "claim": "Premium SP still studio's payment terms imply a typical still job around R$1.000; no price table published",
+   "evidence_quote": "Fatura de serviços still até R$ 1k à vista na entrega do serviço. Para valores superiores o serviço pode ser parcelado em até 3 vezes",
+   "url": "https://www.fotografiastill.com.br/serv",
+   "status": "verified"
+  },
+  {
+   "claim": "IWD (SP still studio) publishes no price",
+   "evidence_quote": "cobramos por foto finalizada",
+   "url": "https://fotografiaproduto.com.br/fotografia-still-preco/",
+   "status": "verified"
+  },
+  {
+   "claim": "Estúdio Fábrica still on white R$25 falling to R$18 per image",
+   "evidence_quote": "01 a 49 imagens: R$ 25,00 por imagem ... 100 imagens ou mais: R$ 18,00 por imagem",
+   "url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+   "status": "verified"
+  },
+  {
+   "claim": "Estúdio Fábrica content-production period (4 h) R$1.250 incl. up to 50 treated images or 5 edited videos, excluding model and make-up",
+   "evidence_quote": "Investimento: R$ 1.250,00 por período ... Incluso tratamento de até 50 imagens por período ou 5 vídeos editados ... Não inclui modelo e não inclui maquiagem.",
+   "url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+   "status": "verified"
+  },
+  {
+   "claim": "Estúdio Fábrica external shoot half-day 40 images R$1.600, day 80 images R$2.500, excluding models and make-up",
+   "evidence_quote": "Meia diária – 40 imagens: R$ 1.600,00 por período Diária – 80 imagens: R$ 2.500,00 por período ... Valores não incluem modelos e maquiagem",
+   "url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+   "status": "verified"
+  },
+  {
+   "claim": "Estúdio Fábrica studio hire R$530 half-day / R$850 day",
+   "evidence_quote": "1/2 diária: R$ 530,00 ... Diária: R$ 850,00",
+   "url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+   "status": "verified"
+  },
+  {
+   "claim": "Estúdio Fábrica kit-composite images R$53–80 per kit",
+   "evidence_quote": "Montagem com fotos EF: R$ 53,00 por kit Montagem com fotos do cliente: R$ 80,00 por kit com até 5 itens diferentes",
+   "url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+   "status": "verified"
+  },
+  {
+   "claim": "Estúdio Fábrica AI campaign image R$53; AI video 15–20 s R$260",
+   "evidence_quote": "Geração de Imagem Conceito/ Campanha/Redes sociais: R$ 53,00 por imagem. • Produção de vídeo de até 15 a 20 seg: R$ 260,00",
+   "url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+   "status": "verified"
+  },
+  {
+   "claim": "fotografiadeprodutos.com.br (SP) small products R$25/unit (3 photos), tiers down to R$7/photo with 120-photo minimum",
+   "evidence_quote": "VALORES PADRÃO R$ 25,00 por unidade ACIMA DE 50 PRODUTOS - 03 FOTOGRAFIAS por unidade; R$ 7,00 POR FOTOGRAFIA QUANTIDADE MÍNIMA 120",
+   "url": "http://www.fotografiadeprodutos.com.br/fotografia-de-produtos-tabela-de-preco.html",
+   "status": "verified"
+  },
+  {
+   "claim": "Estúdio Magotte (SP region) sells AI-made 'Fotografia de produtos' with models/scenes: 10 photos R$600, 20 R$1.080, 50 R$2.000; 10 working days; 3 adjustments",
+   "evidence_quote": "page JSON: option0 '10 fotos' price 600; '20 fotos' price_short 'R$1.080,00'; '50 fotos' price_short 'R$2.000,00'; copy: 'Fotos Humanizadas ... Fotos Ambientadas ... até 10 dias úteis ... até 3 ajustes sem custo'; image file 'freepik__coloque-a-img1-segurando-o-frasco...'",
+   "url": "https://www.estudiomagotte.com.br/produtos/ensaio-fotografico-digital-5hh4x/",
+   "status": "verified"
+  },
+  {
+   "claim": "Magotte's packaging-mockup service disclaims identical packaging",
+   "evidence_quote": "Não garantimos emabalagens idênticas na criação dos mockups.",
+   "url": "https://www.estudiomagotte.com.br/produtos/mockup/",
+   "status": "verified"
+  },
+  {
+   "claim": "Agência Wys (Sorocaba-SP) 10 photos from R$300, 20 from R$500; art-directed R$80–150 per photo",
+   "evidence_quote": "10 fotos: a partir de R$300 / 20 fotos: a partir de R$500 / Para fotos com direção de arte e composição de cenário, o valor pode subir para R$80 a R$150 por foto",
+   "url": "https://agenciawys.com.br/fotografia-de-produto-preco/",
+   "status": "verified"
+  },
+  {
+   "claim": "Armais Publicidade (Americana-SP) 500-photo e-commerce pack from R$1.700",
+   "evidence_quote": "Pacote fotográfico para e-commerce A partir de R$1.700,00",
+   "url": "https://www.armaispublicidade.com/product-page/pacote-fotogr%C3%A1fico-para-e-commerce-500-fotos",
+   "status": "verified"
+  },
+  {
+   "claim": "Photographer's own table: studio up to 8 h R$900–1.200, royalty-free",
+   "evidence_quote": "Foto estúdio Até 8h R$ 900,00 R$ 1000,00 R$ 1200,00 ... Todas as imagens são Royalty Free",
+   "url": "https://matheusdacosta.art.br/tabela-de-precos-para-fotografia",
+   "status": "verified"
+  },
+  {
+   "claim": "Destaquei photographer from R$1.690, videomaker from R$2.890",
+   "evidence_quote": "a partir de R$ 1.690 ... a partir de R$ 2.890 ... R$ 350/hora",
+   "url": "https://destaquei.com.br/contratar-online/",
+   "status": "verified"
+  },
+  {
+   "claim": "Estúdio Bala (Vila Madalena, SP) studio hire R$572–1.450",
+   "evidence_quote": "Estúdio I R$572 (4 h) / R$754 (8 h); Estúdio II R$800 / R$1.200; weekend to R$1.450 (price list)",
+   "url": "https://estudiobala.com.br/locacao/",
+   "status": "verified"
+  },
+  {
+   "claim": "Phoco Studio hire R$700/day or R$100/h (3 h min)",
+   "evidence_quote": "1 Diária: 08:00h as 17:00h – Valor R$ 700,00; b) Por hora, R$100,00 a hora ( Mínimo de 3 horas )",
+   "url": "https://phocostudio.com.br/locacao-estudio/",
+   "status": "verified"
+  },
+  {
+   "claim": "GetNinjas editorial: product photos from R$10 per photo",
+   "evidence_quote": "Fotografia de produtos (e-commerce): A partir de R$ 10 a foto",
+   "url": "https://www.getninjas.com.br/eventos/fotografia/preco/fotografo-comercial",
+   "status": "verified (platform editorial, secondary)"
+  },
+  {
+   "claim": "Cronoshare aggregate: 8-hour day R$1.000–1.600",
+   "evidence_quote": "uma diária completa de 8h por R$ 1.000 a R$ 1.600",
+   "url": "https://www.cronoshare.com.br/quanto-custa/fotografia-produto",
+   "status": "UNVERIFIED (aggregator, secondary)"
+  },
+  {
+   "claim": "Product video from R$3.500 (Destaquei calculator)",
+   "evidence_quote": "Vídeo de produto a partir de R$ 3.500",
+   "url": "https://destaquei.com.br/calculadora-de-orcamento/",
+   "status": "verified"
+  },
+  {
+   "claim": "Product video package R$8.000–25.000 for 1–10 products (Destaquei)",
+   "evidence_quote": "o investimento em vídeo de produto varia em média de R$8.000 a R$25.000 para um pacote de 1 a 10 produtos",
+   "url": "https://destaquei.com.br/videos/video-produto/",
+   "status": "verified"
+  },
+  {
+   "claim": "Matilde Filmes product video from R$7 mil; short social one-offs from R$4 mil",
+   "evidence_quote": "Vídeos de Produtos ➡️A vitrine do século XXI ... Valor: a partir de R$ 7 mil; avulsos a partir de R$ 4 mil",
+   "url": "https://www.matildefilmes.com.br/produtoras-de-videos-como-escolher-com-precos-e-exemplos/",
+   "status": "verified"
+  },
+  {
+   "claim": "Lou Studios guide: basic producer R$3.000–12.000",
+   "evidence_quote": "Produtora Básica — R$ 3.000 a R$ 12.000 Indicada para vídeos simples de até 1 minuto",
+   "url": "https://www.loustudios.com.br/post/quanto-custa-uma-produtora-de-v%C3%ADdeo-guia-de-pre%C3%A7os-2026-no-brasil",
+   "status": "verified (seller's own guide)"
+  },
+  {
+   "claim": "Small accessories brand shoot in SP posts R$1.500 per model day, 2 years image rights",
+   "evidence_quote": "Bruto: R$ 1.500,00 por diária ... Photoshoot para marca de acessórios masculino, bijuterias. Fotos e vídeos curtos serão publicados na rede social da marca e site ... 2 anos de direito de imagem",
+   "url": "https://jobformodel.com/public_jobs/29961f9f-b9b2-4988-a8d8-88e50fb1fae2",
+   "status": "verified"
+  },
+  {
+   "claim": "Ferrero Rocher campaign model day R$2.500, 2 years",
+   "evidence_quote": "Fotos para a campanha de Final de Ano Ferrero Rocher ... R$ 2.500,00 por diária ... 2 anos de direito de imagem",
+   "url": "https://jobformodel.com/public_jobs",
+   "status": "verified"
+  },
+  {
+   "claim": "SATED-SP × SIAESP CCT 2026/27 covers advertising; floors: internet video protagonist R$600/day, TV/streaming protagonist R$1.438,14",
+   "evidence_quote": "PRODUÇÃO DE CONTEÚDO AUDIOVISUAL e PUBLICITÁRIA ... VÍDEOS/INTERNET PROTAGONISTA R$ 600,00 ... TELEVISÃO/STREAMING PROTAGONISTA R$ 1.438,14",
+   "url": "https://satedsp.org.br/wp-content/uploads/2025/12/CCT-SATED-SP-E-SIAESP-2026-2027.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "SINDCINE minimums 2022/23: make-up artist and hairdresser R$627,52/day each; DoP R$2.509,98/day",
+   "evidence_quote": "CABELEIREIRO DIÁRIA 627,52 · MAQUIADOR DIÁRIA 627,52 · DIRETOR DE FOTOGRAFIA DIÁRIA 2509,98",
+   "url": "https://filmmakers.pro.br/tabela-22-23-de-precos-minimos-de-prestacao-de-servicos-para-filmes-publicitarios/",
+   "status": "UNVERIFIED (secondary reproduction, stale; SINDCINE notes CADE found tables cannot be imposed)"
+  },
+  {
+   "claim": "Brands set UGC budgets of ~R$100–250 per video on Creatify",
+   "evidence_quote": "você define seu próprio orçamento para cada projeto, com preços geralmente variando entre R$100 e R$250 por vídeo",
+   "url": "https://creatify.com.br/",
+   "status": "verified"
+  },
+  {
+   "claim": "Noovid UGC for beauty brands from R$169/video; claims 5.000+ brands",
+   "evidence_quote": "Vídeos UGC produzidos por criadores reais, a partir de R$169. Sem agência, sem contrato, sem mensalidade ... Marcas +5.000 marcas usando a Noovid",
+   "url": "https://noovid.com/pt-br/marcas/ugc-para-marcas-de-beleza",
+   "status": "verified"
+  },
+  {
+   "claim": "Villo AI image packs R$19,90–99,90, social creatives R$250–600, video R$50 per ≤10 s; terms disclaim textual variation",
+   "evidence_quote": "R$ 19,90 por pacote ... R$ 600,00 por pacote ... R$ 50,00 ... por vídeo *Conteúdos de até 10 segundos; terms: 'pequenas variações visuais, textuais ou compositivas podem ocorrer entre versões'",
+   "url": "https://www.villo.ia.br/precos ; https://www.villo.ia.br/termos-condicoes",
+   "status": "verified (VER1 capture, re-read)"
+  },
+  {
+   "claim": "Make Move Studio AI: up to 20 pieces R$3.000 (stills; video quoted separately)",
+   "evidence_quote": "if (pieces <= 20) return 3000; if (pieces <= 40) return 3000 + (pieces - 20) * 100;",
+   "url": "https://make-move-studio-fotos-ia-para-marcas.netlify.app/script.js",
+   "status": "verified"
+  },
+  {
+   "claim": "Freelance-board beauty visual budgets all below US$500 per project",
+   "evidence_quote": "see VER1 (17.077 99Freelas projects enumerated; Workana 33 queries)",
+   "url": "research/hunt6-sources/VER1.md",
+   "status": "verified (VER1)"
+  },
+  {
+   "claim": "Creamy reported R$1 bi cumulative revenue (funded digital native, outside ICP)",
+   "evidence_quote": "Como irmãos de 23 e 28 anos e um dermatologista criaram marca de skincare que já faturou R$ 1 bilhão (datePublished 2025-08-25)",
+   "url": "https://exame.com/negocios/como-irmaos-de-23-e-28-anos-e-um-dermatologista-criaram-marca-de-skincare-que-ja-faturou-r-1-bilhao/",
+   "status": "verified (press-reported)"
+  },
+  {
+   "claim": "Sallve: Shopify, 205 products, median single-SKU R$59,90, median 7 images/product; CNPJ porte Demais, capital R$133,6M",
+   "evidence_quote": "products.json; publica.cnpj.ws: 'SALLVE COMERCIO DE COSMETICOS LTDA. porte Demais capital 133613112.00'",
+   "url": "https://www.sallve.com.br/products.json ; https://publica.cnpj.ws/cnpj/32124385000195",
+   "status": "verified"
+  },
+  {
+   "claim": "Dermare: Shopify, 114 products, median single R$39,99, median 1 image/product; EPP, Simples, capital R$10k",
+   "evidence_quote": "products.json; 'CHAMMAS DERMOCOSMETICOS LTDA porte Empresa de Pequeno Porte capital 10000.00 simples Sim'",
+   "url": "https://dermare.com.br/products.json ; https://publica.cnpj.ws/cnpj/58229554000145",
+   "status": "verified"
+  },
+  {
+   "claim": "Rosa Selvagem: Shopify, 346 products (210 kits), median single R$49,90, median 1 image/product; operator EPP capital R$10k opened 2026-03-10",
+   "evidence_quote": "products.json; 'DERMAWEB COMERCIO DE COSMETICOS LTDA porte Empresa de Pequeno Porte capital 10000.00'",
+   "url": "https://rosaselvagem.com.br/products.json ; https://publica.cnpj.ws/cnpj/65722831000112",
+   "status": "verified"
+  },
+  {
+   "claim": "Nouê: Shopify, 212 products, median single R$147, 7 images/product; porte Demais capital R$100k",
+   "evidence_quote": "products.json; 'NOUE COSMETICOS LTDA porte Demais capital 100000.00'",
+   "url": "https://nouecosmeticos.com.br/products.json ; https://publica.cnpj.ws/cnpj/57791110000217",
+   "status": "verified"
+  },
+  {
+   "claim": "Apse: Shopify, 448 products (349 kits), median single R$49,90; porte Demais capital R$50k",
+   "evidence_quote": "products.json; 'AP COSMETICS LTDA porte Demais capital 50000.00'",
+   "url": "https://apsecosmetics.com.br/products.json ; https://publica.cnpj.ws/cnpj/48290289000157",
+   "status": "verified"
+  },
+  {
+   "claim": "Median single-SKU price across 9 Shopify indie brands = R$49,90",
+   "evidence_quote": "computed from products.json of Sallve, Simple Organic, Hidrabene, Kokeshi, Rosa Selvagem, Nouê, Dermare, Feito Brasil, Apse",
+   "url": "brands/shop_*.json (work/OL2)",
+   "status": "verified (computed)"
+  },
+  {
+   "claim": "Active indie brands file 15–90 ANVISA notifications a year (name match; includes re-filings)",
+   "evidence_quote": "Sallve 15, Kokeshi 20, Rosa Selvagem 27, Feito Brasil 28, Felps 31, Lowell 34, Lola from Rio 34, Nouê 36, Principia 38, Widi Care 53, Creamy 60, Aneethun 63, Hidrabene 67, Amend 90",
+   "url": "https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_COSMETICOS.CSV",
+   "status": "verified (computed; brand-by-name match is approximate)"
+  },
+  {
+   "claim": "Contract-manufacturer test batches of 500–2.000 units",
+   "evidence_quote": "Pequenas tiragens : para testar o mercado (lotes de 500 a 2.000 unidades)",
+   "url": "https://www.packforyou.com.br/blog/quanto-custa-criar-uma-marca-de-cosmeticos/",
+   "status": "UNVERIFIED (vendor blog)"
+  },
+  {
+   "claim": "No Brazilian beauty brand's stated launch-visual spend ≥R$2.500 or brief/RFP with such budget was found",
+   "evidence_quote": "(absence; trade-press searches returned only celebrity budgets such as Boca Rosa's R$1,2M campaign)",
+   "url": "https://exame.com/negocios/bianca-andrade-aposta-em-marca-propria-para-abocanhar-mercado-bilionario/",
+   "status": "UNVERIFIED"
+  }
+ ],
+ "design_changes": [
+  "Keep O LANÇAMENTO at R$2.990 as the list price for the test; it is 43,5% of the minimal verifiable traditional SP launch-with-film bill (R$6.878) and equals Make Move's AI minimum (R$3.000).",
+  "Redefine the unit as ONE LAUNCH (hero SKU + up to 2 supporting SKUs shown in the world) plus 1 kit composite; brands launch lines and kits (kits 12–78% of catalogues), so per-SKU pricing would bill an active brand R$45–270k/yr.",
+  "Lower A LINHA from R$6.900 to R$4.900 for up to 3 SKUs (or keep R$6.900 for up to 6 SKUs); traditional cost is per day, not per SKU, and R$6.900 exceeds her own LANÇAMENTO + 2×EXTENSÃO (R$4.370).",
+  "Keep VITRINE R$490 (inside the R$318–900 band for 6 styled images) and make it the first paid step with its price credited in full against O LANÇAMENTO within 30 days.",
+  "Keep EXTENSÃO R$690 and TEMPORADA R$9.900 (TEMPORADA offered only to repeat buyers).",
+  "Gate by CNPJ porte: offer LANÇAMENTO/LINHA to EPP and 'Demais' companies; ME brands are VITRINE-only.",
+  "Use products.json image counts as a free prospect signal (median ≤2 images per product = VITRINE lead; e.g., Dermare and Rosa Selvagem median 1).",
+  "Pre-commit a downshift product (LANÇAMENTO ESSENCIAL R$1.490, no film + FILME add-on R$990) instead of discounting R$2.990 on calls.",
+  "Use two anchor sentences on calls: traditional (R$1.250 studio period + R$1.500 model day + R$3.500 product video > R$6 mil) for brands that shoot; AI (R$53–60/image, Villo terms allow 'variações ... textuais') for brands that use AI/UGC.",
+  "Call-test bar: 20 pre-qualified brands; KEEP if ≥6/20 state ≥R$2.500 last-launch external spend AND (≥2 buy LANÇAMENTO or ≥4 buy VITRINE) within 30 days; DOWNSHIFT if <6 but ≥8/20 state ≥R$1.000; STOP if ≥12/20 state <R$1.000."
+ ],
+ "residual_risks": [
+  "No buyer was observed paying ≥R$2.500 per launch for beauty visuals; seller-side anchors support the price, buyer-side money remains unobserved above US$500.",
+  "The traditional anchor applies only to brands that shoot traditionally; phone/UGC/AI brands anchor at R$53–250 per asset.",
+  "Anchors are partly apparel-studio (Estúdio Fábrica) and one stale union table (SINDCINE 2022/23, CADE: not enforceable); cosmetics-specialist premium still studios do not publish prices.",
+  "AI done-for-you studios in SP (Magotte R$1.080/20 images, Fábrica R$53/image, Make Move R$3.000) will get cheaper; the guarantee, film and claim lock are the only wedge.",
+  "ICP revenue is UNVERIFIED; porte only bounds it (EPP ≤ R$4,8M/yr). Two ICP brands are EPPs with R$10k capital opened 2024/2026."
+ ],
+ "numbers": {
+  "traditional_stills_with_model_low_brl": 3377.52,
+  "traditional_launch_with_film_low_brl": 6877.52,
+  "traditional_launch_with_film_high_brl": 13255.04,
+  "lancamento_share_of_low_with_film": 0.435,
+  "lancamento_share_of_high_with_film": 0.226,
+  "lancamento_usd_ptax_5_1795": 577.28,
+  "freelance_top_bucket_usd": 500,
+  "lancamento_vs_freelance_top_bucket": 1.15,
+  "styled_image_band_brl_per_image": [
+   53,
+   150
+  ],
+  "six_styled_images_band_brl": [
+   318,
+   900
+  ],
+  "packshot_band_brl_per_photo": [
+   7,
+   25
+  ],
+  "studio_day_band_brl": [
+   850,
+   2500
+  ],
+  "model_day_brand_posted_brl": [
+   1200,
+   2500
+  ],
+  "product_video_floor_brl": [
+   3500,
+   7000
+  ],
+  "ugc_video_brand_budget_brl": [
+   100,
+   250
+  ],
+  "magotte_ai_photos_brl": {
+   "10": 600,
+   "20": 1080,
+   "50": 2000
+  },
+  "make_move_min_brl": 3000,
+  "median_single_sku_price_9_shopify_brands_brl": 49.9,
+  "anvisa_notifications_12m_range_active_indie": [
+   15,
+   90
+  ],
+  "launches_per_month_needed_at_2990": [
+   4.08,
+   5.28
+  ],
+  "vitrine_only_per_month_needed": [
+   24.9,
+   32.2
+  ],
+  "essencial_plus_40pct_film_avg_brl": 1886,
+  "essencial_launches_per_month_needed": [
+   6.5,
+   8.4
+  ],
+  "mix_1lanc_1linha4900_6vit_4ext_brl": 13590,
+  "mix_2lanc_6vit_4ext_brl": 11680,
+  "monthly_gross_bar_brl": [
+   12200,
+   15800
+  ],
+  "sp_still_studios_fetched_no_price": 6,
+  "sp_still_studios_unreachable": 4
+ }
+}

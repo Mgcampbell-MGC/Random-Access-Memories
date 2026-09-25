@@ -91,10 +91,10 @@
   }
 
   /* A4 PDF version */
-  @page{ size:A4; margin:8mm; }
+  @page{ size:A4; margin:6mm; }
   @media print{
     :root{ --paper:#FFFFFF; --sheet:#FFFFFF; --ink:#16171B; --muted:#5B5F6B; --rule:#DADBE0; --accent:#C8006A; --ok:#1E7D46; --ok-soft:#E4F3EA; --k:#16171B; color-scheme: light; }
-    .wrap{ padding:0; }
+    body{ margin:0; } .wrap{ padding:0; }
     .sheet{ border:none; max-width:none; padding:14px 18px 10px; gap:10px; font-size:12px; line-height:1.4; }
     h1{ font-size:33px; }
     .lede{ font-size:13.5px; margin-top:8px; }
@@ -104,9 +104,13 @@
     .guarantee .promise{ font-size:15px; }
     .guarantee{ font-size:11.5px; gap:5px; }
     .report{ font-size:10px; padding:8px 10px; } .report td{ padding:1px 0; }
-    .fine{ font-size:10.5px; padding-top:8px; } .crop{ display:none; } .contact{ display:flex; gap:20px; font-size:11px; }
-    h2{ margin-bottom:8px; font-size:12px; }
-    .crop{ opacity:.8; }
+    .fine{ font-size:9.5px; padding-top:6px; line-height:1.35; } .crop{ display:none; } .contact{ display:flex; gap:20px; font-size:10.5px; }
+    .sheet{ gap:8px; padding-top:10px; } h1{ font-size:29px; } .lede{ font-size:12px; margin-top:6px; }
+    .tier ul, .steps li, .need{ font-size:10.5px; } .also{ font-size:10.5px; } .guarantee{ font-size:10.8px; gap:4px; }
+    .guarantee .promise{ font-size:14px; } .report{ font-size:9.5px; }
+    .need{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px 18px; } .when{ font-size:10px; } .steps{ gap:10px; } .steps li{ padding-top:5px; gap:2px; } .sheet{ gap:6px; } h1{ font-size:27px; } h2{ margin-bottom:5px; } .tier{ padding:8px 10px 8px; } .fine{ font-size:9px; }
+    h2{ margin-bottom:5px; font-size:12px; }
+    .fine{ display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:start; } .contact{ display:grid; gap:2px; }
   }
 </style>
 
@@ -127,7 +131,7 @@
 
     <section>
       <h1>Você manda o produto.<br><em>Nós entregamos a campanha.</em></h1>
-      <p class="lede">Campanha de lançamento completa para cabelo e skincare, feita com produção virtual: sem estúdio, sem modelo, sem produtora. Sua embalagem aparece exatamente como na arte aprovada, em todas as peças.</p>
+      <p class="lede">Imagens com o produto na mão e em uso, e um filme em movimento. A IA cria as mãos, a pele, o cenário e a luz; <b>a sua embalagem nunca passa por ela</b>: é aplicada no nosso computador, a partir do seu arquivo. Campanha completa num só universo visual, sem estúdio, sem modelo, sem produtora.</p>
     </section>
 
     <section>
@@ -138,24 +142,24 @@
           <div class="name">Vitrine</div>
           <div class="price">R$&nbsp;490 <small>por produto</small></div>
           <ul>
-            <li>6 fotos do produto em um cenário</li>
+            <li>6 imagens, 2 delas com o produto na mão ou em uso</li>
             <li>Imagem principal de fundo branco</li>
             <li>Formatos 1:1, 4:5 e 9:16</li>
             <li>Relatório de fidelidade</li>
           </ul>
-          <div class="when">Entrega em 48 horas</div>
+          <div class="when">Entrega em 48 horas · valor abatido do O Lançamento em até 30 dias</div>
         </div>
         <div class="tier main">
           <div class="label">A campanha completa</div>
           <div class="name">O Lançamento</div>
-          <div class="price">R$&nbsp;2.990 <small>por produto</small></div>
+          <div class="price">R$&nbsp;2.990 <small>por lançamento</small></div>
           <ul>
-            <li>Key visual da campanha</li>
-            <li>6 imagens de campanha</li>
-            <li>Filme de 15 s, vertical e horizontal, com música licenciada</li>
+            <li>Produto principal + até 2 de apoio na cena</li>
+            <li>Key visual e 6 imagens de campanha</li>
+            <li>Filme de 15 s com movimento de câmera e luz, trilha criada para uso comercial</li>
             <li>2 cortes de 6 s para anúncios</li>
             <li>3 peças comerciais: marketplace, banner, distribuidor</li>
-            <li>Relatório de fidelidade</li>
+            <li>Relatório de fidelidade de cada peça</li>
           </ul>
           <div class="when">Entrega em 5 a 7 dias úteis</div>
         </div>
@@ -165,61 +169,61 @@
           <div class="price">R$&nbsp;690 <small>por produto</small></div>
           <ul>
             <li>Novo produto no cenário que já é da sua marca</li>
-            <li>6 fotos e kit de marketplace</li>
+            <li>6 imagens e kit de marketplace</li>
             <li>Mesma luz, mesma identidade</li>
           </ul>
           <div class="when">Entrega em 48 horas</div>
         </div>
       </div>
-      <p class="also">Também: <b>A Linha</b>, até 3 produtos no mesmo universo de campanha, R$&nbsp;6.900. <b>Temporada</b>, 4 lançamentos pagos antecipadamente, R$&nbsp;9.900. <b>Prévia</b> gratuita: uma imagem de conceito com o seu produto, para você ver antes de decidir.</p>
+      <p class="also">Também: <b>A Linha</b>, até 3 produtos no mesmo universo de campanha, R$&nbsp;4.900. <b>Temporada</b>, para clientes: 4 lançamentos pagos antecipadamente, R$&nbsp;9.900. <b>Prévia</b> gratuita: o seu produto mais vendido na mão, feito com a foto pública dele, com a sua autorização e só para você ver; não publicamos e apagamos se você não seguir. O filme não inclui giro 3D do produto.</p>
     </section>
 
     <section>
       <h2>Como funciona</h2>
       <ol class="steps">
-        <li><span class="d">Dia 1</span><b>Você envia os arquivos</b>Foto do produto, arte do rótulo em PDF, logo e as frases aprovadas.</li>
-        <li><span class="d">Dia 2</span><b>Você aprova a ficha</b>Uma página com embalagem, cores e textos. Depois, escolhe um de 3 conceitos.</li>
+        <li><span class="d">Dia 1</span><b>Você envia os arquivos</b>Imagem do produto, arte do rótulo em PDF e a ficha com as frases que podem aparecer.</li>
+        <li><span class="d">Dia 2</span><b>Você escolhe o conceito</b>Um de 3 universos visuais, com a sua embalagem já aplicada.</li>
         <li><span class="d">Dia 3 a 4</span><b>Você aprova o key visual</b>A imagem principal que define toda a campanha.</li>
-        <li><span class="d">Dia 5 a 7</span><b>Tudo na sua pasta</b>Arquivos organizados por formato e o relatório de fidelidade. Uma rodada de ajustes incluída.</li>
+        <li><span class="d">Dia 5 a 7</span><b>Tudo na sua pasta</b>Arquivos por formato e o relatório de cada peça. Uma rodada de ajustes; correções de embalagem não contam.</li>
       </ol>
     </section>
 
     <section class="proof">
       <div class="guarantee">
         <h2>A garantia</h2>
-        <div class="promise">Todo caractere da embalagem idêntico à arte aprovada, ou refazemos a peça sem custo.</div>
-        <div>A IA cria o cenário e a luz. A embalagem é sempre a sua, aplicada a partir da arte original, nunca redesenhada. Cada peça sai com um relatório que confere o rótulo contra o seu PDF.</div>
-        <div><b>Sua arte não entra em nenhuma IA antes do lançamento.</b> E só usamos frases que você aprovou por escrito: nada de promessa de resultado que o rótulo não sustenta.</div>
+        <div class="promise">Todo caractere legível da embalagem idêntico à arte aprovada, conferido peça a peça. Se não estiver, refazemos sem custo.</div>
+        <div>Em nenhuma imagem e em nenhum quadro do filme a IA inventa, troca ou deforma uma letra, o logo ou a forma da sua embalagem, e a cor fica dentro da tolerância da ficha. A mão, o ângulo ou o foco podem esconder parte dela: escondida, nunca alterada. Refazemos em até 5 dias úteis; se não der, devolvemos o valor daquela peça.</div>
+        <div><b>Sua arte nunca é enviada a nenhum gerador de imagem ou vídeo — nem antes, nem depois do lançamento.</b> A IA cria só o cenário, com uma embalagem em branco. Só usamos frases que você nos enviou e aprovou por escrito; as alegações do produto e a comprovação são da marca.</div>
       </div>
       <div class="report" aria-label="Exemplo de relatório de fidelidade">
         <div class="head"><span>RELATÓRIO DE FIDELIDADE</span><span>peça 03/06</span></div>
         <table>
-          <tr><td>Nome do produto</td><td><span class="pass">OK</span></td></tr>
-          <tr><td>Logo e posição</td><td><span class="pass">OK</span></td></tr>
-          <tr><td>Destaques do rótulo</td><td><span class="pass">OK</span></td></tr>
-          <tr><td>Lista de ativos</td><td><span class="pass">OK</span></td></tr>
-          <tr><td>Cor da embalagem</td><td><span class="pass">OK</span></td></tr>
-          <tr><td>Proporção da embalagem</td><td><span class="pass">OK</span></td></tr>
-          <tr><td>Frases usadas na peça</td><td><span class="pass">APROVADAS</span></td></tr>
+          <tr><td>Embalagem localizada na peça</td><td><span class="pass">OK</span></td></tr>
+          <tr><td>Blocos de texto e logo comparados</td><td>234</td></tr>
+          <tr><td>Pior bloco (mínimo 0,80)</td><td>0,94</td></tr>
+          <tr><td>Partes escondidas pela mão</td><td>0%</td></tr>
+          <tr><td>Erro plantado para teste foi detectado</td><td><span class="pass">SIM</span></td></tr>
+          <tr><td>Cor dentro da tolerância da ficha</td><td><span class="pass">OK</span></td></tr>
+          <tr><td>Frases da peça estão na ficha assinada</td><td><span class="pass">OK</span></td></tr>
         </table>
-        <div class="foot">Resultado: APROVADA · exemplo ilustrativo</div>
+        <div class="foot">Resultado: APROVADA · exemplo. Confere a embalagem e as frases contra os seus arquivos. Não é parecer regulatório.</div>
       </div>
     </section>
 
     <section>
       <h2>O que precisamos de você</h2>
       <ul class="need">
-        <li>Foto do produto (a melhor que você tiver)</li>
+        <li>Imagem do produto: foto de estúdio, render do seu designer ou foto de uma amostra</li>
         <li>Arte do rótulo em PDF ou AI</li>
         <li>Logo e cores da marca</li>
-        <li>Lista de frases e benefícios aprovados</li>
+        <li>As frases e selos que podem aparecer, e se estão no rótulo</li>
         <li>Nome do produto, exatamente como é vendido</li>
         <li>Referências de que você gosta (opcional)</li>
       </ul>
     </section>
 
     <footer class="fine">
-      <div>Pagamento via Pix: 50% no pedido e 50% na entrega, com nota fiscal. As imagens são suas para usar no site, nas redes, em marketplaces e em anúncios. Não fazemos maquiagem com cor exata, antes e depois ou simulação de resultado.</div>
+      <div>Pagamento via Pix: 50% no pedido e 50% na entrega, com nota fiscal. Você recebe licença exclusiva, mundial e sem prazo das peças finais — site, redes, marketplaces, anúncios pagos, impressos e ponto de venda — formalizada num termo de cessão; não reutilizamos nem revendemos nada do seu projeto. Imagens e filmes criados por computador, com pessoas e cenários de IA: não são fotografias. Não fazemos antes e depois, simulação de resultado, alegação de tratamento nem maquiagem com cor exata. Proposta válida por 30 dias; condições completas no contrato.</div>
       <div class="contact">
         <div>WhatsApp: <span>[inserir número]</span></div>
         <div>E-mail: <span>[inserir e-mail]</span></div>

@@ -1,0 +1,325 @@
+{
+ "agent": "OL3",
+ "hole": "Can Sol be held liable for, or be blocked by, the rules on cosmetic advertising and AI-generated imagery in Brazil — and what must the contract and the per-asset checklist say?",
+ "verdict": "closed",
+ "findings": [
+  {
+   "claim": "Lei 6.360 art. 59 forbids figures/drawings/indications in labelling OR advertising that mislead or attribute characteristics the product lacks (covers images).",
+   "evidence_quote": "Não poderão constar de rotulagem ou de propaganda dos produtos de que trata esta Lei designações, nomes geográficos, símbolos, figuras, desenhos ou quaisquer indicações que possibilitem interpretação falsa, erro ou confusão ... que atribuam ao produto finalidades ou características diferentes daquelas que realmente possua.",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l6360.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Cosmetic advertising was left to specific regulation that was never located; advertising contrary to the notified terms is a grave infraction.",
+   "evidence_quote": "art. 58 §2: A propaganda ... de cosméticos e de produtos de higiene, será objeto de normas específicas a serem dispostas em regulamento. / art. 67 I: rotular os produtos ... ou deles fazer publicidade ... contrariando os termos e as condições do registro ou de autorização respectivos",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l6360.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Decreto 8.077/2013 subjects advertising to sanitary surveillance and specific Anvisa regulation; it has no cosmetic-ad rule of its own.",
+   "evidence_quote": "art. 15 §3: A propaganda e a publicidade dos produtos e das marcas, por qualquer meio de comunicação, a rotulagem e a etiquetagem ficam sujeitas à ação de vigilância e à regulamentação específica da ANVISA",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d8077.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Sanitary infractions are imputed to whoever caused OR contributed; propaganda contrary to sanitary law is an infraction; fines R$2.000 to R$1.500.000.",
+   "evidence_quote": "art. 3º: O resultado da infração sanitária é imputável a quem lhe deu causa ou para ela concorreu. / art. 10 V: fazer propaganda de produtos sob vigilância sanitária ... contrariando a legislação sanitária / art. 2 §1: leves R$ 2.000,00 a R$ 75.000,00; graves R$ 75.000,00 a R$ 200.000,00; gravíssimas R$ 200.000,00 a R$ 1.500.000,00",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l6437.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "No recorded case of a Visa fining a cosmetic AD PRODUCER (as opposed to the brand) was found.",
+   "evidence_quote": "(negative search)",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l6437.htm",
+   "status": "UNVERIFIED"
+  },
+  {
+   "claim": "RDC 752/2022 covers definition, classification, labelling, packaging, micro and regularisation — not advertising.",
+   "evidence_quote": "Art. 1º Esta Resolução estabelece a definição, a classificação, os requisitos técnicos para rotulagem e embalagem, os parâmetros para controle microbiológico, bem como os requisitos técnicos e procedimentos para a regularização",
+   "url": "https://www.in.gov.br/en/web/dou/-/resolucao-rdc-n-752-de-19-de-setembro-de-2022-430784222",
+   "status": "verified"
+  },
+  {
+   "claim": "RDC 752 art. 12 bans images/words suggesting therapeutic claims, disinfection, or misleading properties on labels — the de facto list for ads via Lei 6.360 art. 67 I.",
+   "evidence_quote": "A rotulagem não deve conter nome comercial, marcas, imagens, links eletrônicos ou dizeres que: I - induzam a erro ... II - representem alegações terapêuticas atribuídas ao uso do produto ou de seus ingredientes ... IV - mencionem a propriedade desinfetante",
+   "url": "https://www.in.gov.br/en/web/dou/-/resolucao-rdc-n-752-de-19-de-setembro-de-2022-430784222",
+   "status": "verified"
+  },
+  {
+   "claim": "The notification holder (the brand) must hold the efficacy/safety proof and the soundness of label wording.",
+   "evidence_quote": "art. 5º I: possuir dados comprobatórios que atestem a qualidade, a segurança e a eficácia de seus produtos e a idoneidade dos respectivos dizeres de rotulagem",
+   "url": "https://www.in.gov.br/en/web/dou/-/resolucao-rdc-n-752-de-19-de-setembro-de-2022-430784222",
+   "status": "verified"
+  },
+  {
+   "claim": "No cosmetics-specific Anvisa advertising RDC exists; Anvisa's 'Regras básicas de propaganda' page holds only a registration-number table.",
+   "evidence_quote": "Regras básicas de propaganda ... Cosméticos 2 2.1888.0006.001-7 (page content)",
+   "url": "https://www.gov.br/anvisa/pt-br/assuntos/fiscalizacao-e-monitoramento/propaganda/propaganda",
+   "status": "UNVERIFIED"
+  },
+  {
+   "claim": "'Cruelty-free' is now a statutory claim restriction (Lei 15.183/2025).",
+   "evidence_quote": "não poderá incluir no rótulo ou no invólucro do produto a menção, logotipo ou selo 'não testado em animais', 'livre de crueldade' ou outras expressões similares.",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15183.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "CBAP has no cosmetics annex; art. 27 §2 makes VISUAL presentation misleading as to nature/composition/purpose a violation.",
+   "evidence_quote": "O anúncio não deverá conter informação de texto ou apresentação visual que direta ou indiretamente, por implicação, omissão, exagero ou ambiguidade, leve o Consumidor a engano quanto ao produto ... a. natureza do produto (natural ou artificial) ... c. composição; d. finalidade.",
+   "url": "https://conar.wpenginepowered.com/wp-content/uploads/2026/08/Codigo_CONAR_2026.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "CBAP: models in professional attire must not mislead; lookalikes need authorisation; unpersonalised models may not pass as testimonials; professional models may not pose as ordinary consumers.",
+   "evidence_quote": "27 §9 c) quando se usam modelos sem personalização, permite-se o depoimento como 'licença publicitária' que, em nenhuma hipótese, se procurará confundir com um testemunhal; d) o uso de modelos trajados com uniformes ... e) o uso de sósias depende de autorização / Anexo Q 3 b) Os modelos profissionais ... não deverão se fazer passar por Consumidor comum.",
+   "url": "https://conar.wpenginepowered.com/wp-content/uploads/2026/08/Codigo_CONAR_2026.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "CBAP Annex U defines environmental claims to include visual expressions.",
+   "evidence_quote": "Alegações socioambientais: quaisquer declarações, por meio de expressões visuais, som, símbolos e/ou sinais que indiquem, direta ou indiretamente, atributos, benefícios ou impactos relacionados à sustentabilidade",
+   "url": "https://conar.wpenginepowered.com/wp-content/uploads/2026/08/Codigo_CONAR_2026.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "CBAP arts. 45-47 put the advertiser in total responsibility, the agency jointly, and anyone taking part in creation within their decision power.",
+   "evidence_quote": "a. o Anunciante assumirá responsabilidade total ... b. a Agência ... com ele respondendo solidariamente ... Artigo 46 ... qualquer pessoa ... que tomem parte no planejamento, criação, execução e veiculação de um anúncio, respondem ... na medida de seus respectivos poderes decisórios.",
+   "url": "https://conar.wpenginepowered.com/wp-content/uploads/2026/08/Codigo_CONAR_2026.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "CONAR penalties are reputational (warning, alteration, suspension recommendation, public disclosure).",
+   "evidence_quote": "a. advertência; b. recomendação de alteração ou correção do Anúncio; c. recomendação aos Veículos no sentido de que sustem a divulgação do anúncio; d. divulgação da posição do CONAR",
+   "url": "https://conar.wpenginepowered.com/wp-content/uploads/2026/08/Codigo_CONAR_2026.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "CONAR actively polices beauty ads, often on competitor complaints (Boticário v. hair brand; Haleon v. Colgate) and sanctioned lab-coat imagery and AI deepfakes.",
+   "evidence_quote": "Rep. 093/25 Autores: Boticário ... Decisão: Sustação / Rep. 088/25 ... classificado como cosmético, sem ação terapêutica ... Decisão: Alteração / Rep. 190/24 ... ainda que ele traje jaleco e use estetoscópio ... Sustação e advertência / por meio de inteligência artificial, há uso indevido da imagem e voz do médico Drauzio Varella",
+   "url": "https://conar.wpenginepowered.com/wp-content/uploads/2026/08/BoletimConar227.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "CDC art. 67 criminalises whoever MAKES or promotes an ad they know or should know is misleading; art. 75 extends to anyone who contributes.",
+   "evidence_quote": "Art. 67. Fazer ou promover publicidade que sabe ou deveria saber ser enganosa ou abusiva: Pena Detenção de três meses a um ano e multa. / Art. 75. Quem, de qualquer forma, concorrer para os crimes referidos neste código, incide as penas a esses cominadas na medida de sua culpabilidade",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "CDC puts substantiation and burden of proof on the sponsor (the brand) but makes all co-authors jointly liable to consumers.",
+   "evidence_quote": "art. 36 p.ú.: O fornecedor ... manterá, em seu poder ... os dados fáticos, técnicos e científicos que dão sustentação à mensagem. / art. 38: O ônus da prova ... cabe a quem as patrocina. / art. 7 p.ú.: Tendo mais de um autor a ofensa, todos responderão solidariamente / art. 25 §1: Havendo mais de um responsável pela causação do dano, todos responderão solidariamente",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Even in a consumer relation, liability toward a PJ client may be limited in justifiable situations.",
+   "evidence_quote": "Nas relações de consumo entre o fornecedor e o consumidor pessoa jurídica, a indenização poderá ser limitada, em situações justificáveis",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "STJ (3ª Turma, Sep 2025): a media company is not liable for the truth of ads unless it participated directly in the deceptive practice — a producer who creates the image is direct participation.",
+   "evidence_quote": "A empresa de comunicação não possui responsabilidade sobre a veracidade dos produtos ou serviços anunciados, salvo comprovada participação direta na prática enganosa",
+   "url": "https://dadosabertos.web.stj.jus.br/dataset/espelhos-de-acordaos-terceira-turma",
+   "status": "UNVERIFIED"
+  },
+  {
+   "claim": "B2B risk allocation is to be respected (CC 421-A), but adhesion contracts void advance waivers of rights inherent to the deal (CC 424) — so 'redo only' needs a refund fallback.",
+   "evidence_quote": "421-A ... II - a alocação de riscos definida pelas partes deve ser respeitada e observada / 424. Nos contratos de adesão, são nulas as cláusulas que estipulem a renúncia antecipada do aderente a direito resultante da natureza do negócio.",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "CONAR 2026 influencer guide: CBAP applies fully to AI content and the whole creation chain stays responsible; it creates NO new AI disclosure duty.",
+   "evidence_quote": "aplicam-se integralmente ... aos conteúdos gerados, editados ou segmentados com o uso de sistemas ou ferramentas de Inteligência Artificial ... Anunciantes, Agências e demais partes da cadeia de criação da publicidade permanecem responsáveis ... / nota 6: não versando em particular sobre avisos (disclosure) acerca do uso de tais técnicas de produção.",
+   "url": "https://conar.wpenginepowered.com/wp-content/uploads/2026/05/260525_GUIA_INFLUENCIADORES_CONAR_v6.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "CONAR technical note opposes mandatory retouching labels (PL 4349/2019).",
+   "evidence_quote": "o simples fato de tentar identificar ou rotular fotos alteradas digitalmente pode ser inócuo",
+   "url": "https://www.conar.org.br/codigos?section=codigo",
+   "status": "verified"
+  },
+  {
+   "claim": "PL 2338/2023 (AI bill) is not law: 'Aguardando Parecer', last event 2026-09-02.",
+   "evidence_quote": "\"dataHora\": \"2026-09-02T15:06\" ... \"descricaoSituacao\": \"Aguardando Parecer\"",
+   "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2487262",
+   "status": "verified"
+  },
+  {
+   "claim": "PL 841/2024 (mandatory AI notice on ad images) is not law.",
+   "evidence_quote": "tornar obrigatória a exibição de aviso ao consumidor sobre imagem ou vídeo publicitário produzido com o uso de inteligência artificial ... Tramitando em Conjunto (2024-04-16)",
+   "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2421854",
+   "status": "verified"
+  },
+  {
+   "claim": "PL 4349/2019 (warning on digitally manipulated model photos) is not law.",
+   "evidence_quote": "2023-05-30 Aguardando Designação - Aguardando Devolução de Relator(a)",
+   "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2214213",
+   "status": "verified"
+  },
+  {
+   "claim": "Decreto 12.880/2026 art. 11 (synthetic-nature transparency) binds IT products interacting with children, not ad images.",
+   "evidence_quote": "Os fornecedores de produtos ou serviços de tecnologia da informação direcionados a crianças e adolescentes ... capazes de geração de conteúdo e interação com usuários ... I - ser transparentes ... quanto a seu caráter sintético e automatizado",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d12880.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "TikTok requires labels on realistic AI-generated scenes or people; unlabelled content may be removed or restricted.",
+   "evidence_quote": "we require creators to label AI-generated or significantly edited content that shows realistic-looking scenes or people. Unlabeled content may be removed, restricted, or labeled by our team",
+   "url": "https://www.tiktok.com/safety/en/policies-and-engagement/integrity-authenticity",
+   "status": "verified"
+  },
+  {
+   "claim": "TikTok ADS policy on AI-generated content could not be read (JS-rendered).",
+   "evidence_quote": "(page did not render)",
+   "url": "https://ads.tiktok.com/help/article/tiktok-ads-policy-ai-generated-content",
+   "status": "UNVERIFIED"
+  },
+  {
+   "claim": "Meta requires disclosure when posting organic photorealistic AI video (page dated 6 Feb 2024, updated 1 Apr 2025).",
+   "evidence_quote": "We'll require people to use this disclosure and label tool when they post organic content with a photorealistic video or realistic-sounding audio that was digitally created or altered, and we may apply penalties if they fail to do so.",
+   "url": "https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/",
+   "status": "verified"
+  },
+  {
+   "claim": "Higgsfield ToS (26 Jul 2026): no ownership claim, commercial use allowed, may sublicense to clients; outputs may not be unique; trains on inputs except Enterprise.",
+   "evidence_quote": "Company does not claim ownership of any of your Inputs or Outputs, nor does it restrict your commercial use of Outputs ... you may transfer or sublicense your rights in Outputs to your clients ... Outputs generated by the Service may not be unique across users",
+   "url": "https://higgsfield.ai/terms-of-use-agreement",
+   "status": "verified"
+  },
+  {
+   "claim": "Higgsfield ToS: do not remove provenance markings; via API/MCP, do not represent outputs as human-generated; user alone clears rights.",
+   "evidence_quote": "5.5 ... you will not remove, alter, or obscure any provenance signals or markings Company applies under Section 6.4. / 11.7 You shall not represent to End Users or third parties that Outputs are human-generated. / 13.2 You are solely responsible for conducting any necessary rights clearances",
+   "url": "https://higgsfield.ai/terms-of-use-agreement",
+   "status": "verified"
+  },
+  {
+   "claim": "Image and name rights: commercial use of a person's image can be prohibited and indemnified; name in commercial ads needs authorisation; CBAP requires prior express authorisation for living persons.",
+   "evidence_quote": "CC art. 20: ... a publicação, a exposição ou a utilização da imagem de uma pessoa poderão ser proibidas ... se se destinarem a fins comerciais. / art. 18: Sem autorização, não se pode usar o nome alheio em propaganda comercial. / CBAP art. 34 a. faça uso de imagens ou citações de pessoas vivas, a menos que tenha sido obtida a sua prévia e expressa autorização",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Copyright: the author is a natural person; protected works are 'criações do espírito' — purely AI-generated elements likely unprotected; rights transactions are read restrictively and transfers must be written.",
+   "evidence_quote": "Art. 11. Autor é a pessoa física criadora de obra literária, artística ou científica. / Art. 7º São obras intelectuais protegidas as criações do espírito / Art. 4º Interpretam-se restritivamente os negócios jurídicos sobre os direitos autorais. / Art. 50. A cessão total ou parcial dos direitos de autor, que se fará sempre por escrito",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l9610.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Compositing the brand's packshot is reproduction + adaptation of a photographic work needing the author's (often the photographer's) prior authorisation.",
+   "evidence_quote": "Art. 29. Depende de autorização prévia e expressa do autor a utilização da obra ... I - a reprodução ... III - a adaptação / Art. 79 §2º É vedada a reprodução de obra fotográfica que não esteja em absoluta consonância com o original, salvo prévia autorização do autor.",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l9610.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Citing a trademark is free only without commercial connotation — a portfolio needs the client's consent; confidentiality breach of contractual information is a crime.",
+   "evidence_quote": "LPI art. 132 IV: impedir a citação da marca em discurso, obra científica ou literária ou qualquer outra publicação, desde que sem conotação comercial / art. 195 XI: divulga, explora ou utiliza-se, sem autorização, de ... dados confidenciais ... a que teve acesso mediante relação contratual ... mesmo após o término do contrato",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l9279.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "Artlist: only the Pro (Unlimited) licence covers client work and paid ads; Social covers personal channels only; coverage tied to projects published during an active subscription.",
+   "evidence_quote": "Unlimited license covers all social and online platforms, client work, commercial work, paid ads, website, podcasts, broadcasting and TV / The Music & SFX Social plan covers your personal social channels only. / any projects you create and publish in any media during your active subscription are covered forever",
+   "url": "https://artlist.io/license",
+   "status": "UNVERIFIED"
+  },
+  {
+   "claim": "LGPD: synthetic faces not tied to an identifiable person are not personal data; a real face used as input is biometric sensitive data.",
+   "evidence_quote": "I - dado pessoal: informação relacionada a pessoa natural identificada ou identificável; II - dado pessoal sensível: ... dado genético ou biométrico, quando vinculado a uma pessoa natural",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709compilado.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "LGPD: prospecting business contacts can rest on legitimate interest with minimisation and transparency; public data reuse allowed for legitimate new purposes; the person may object.",
+   "evidence_quote": "art. 7 IX ... interesses legítimos do controlador / §3º ... deve considerar a finalidade, a boa-fé e o interesse público ... / §7º O tratamento posterior ... poderá ser realizado para novas finalidades, desde que observados os propósitos legítimos e específicos / art. 10 §1º somente os dados pessoais estritamente necessários ... §2º ... transparência",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709compilado.htm",
+   "status": "verified"
+  },
+  {
+   "claim": "ANPD guide (Feb 2024): legitimate-interest marketing example relies on an unsubscribe mechanism; a balancing test is recommended.",
+   "evidence_quote": "prevê um mecanismo de descadastramento da lista de envios ao final dos e-mails",
+   "url": "https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia_legitimo_interesse.pdf",
+   "status": "verified"
+  },
+  {
+   "claim": "ANPD Res. 2/2022: an ME is a small processing agent — simplified record, no DPO required but must offer a contact channel.",
+   "evidence_quote": "art. 9º ... de forma simplificada / art. 11. Os agentes de tratamento de pequeno porte não são obrigados a indicar o encarregado ... § 1º ... deve disponibilizar um canal de comunicação com o titular",
+   "url": "https://www.in.gov.br/en/web/dou/-/resolucao-cd/anpd-n-2-de-27-de-janeiro-de-2022-376562019",
+   "status": "verified"
+  },
+  {
+   "claim": "São Paulo telemarketing block list (Lei 17.832/2023 arts. 127-128) covers phone sales promotion incl. app messages, from day 30 after registration; no B2B exemption in the text.",
+   "evidence_quote": "Compreende-se como telemarketing, a promoção de vendas de produtos e serviços por telefone ... 4. o envio de mensagens (SMS) ... ou envio de mensagens de aplicativos associados à linha / A partir do 30° (trigésimo) dia do ingresso do usuário no cadastro ... não poderão efetuar ligações",
+   "url": "https://www.al.sp.gov.br/repositorio/legislacao/lei/2023/lei-17832-01.11.2023.html",
+   "status": "verified"
+  },
+  {
+   "claim": "Whether the SP block list reaches a B2B call to a founder's personal mobile; Anatel 0303 prefix; WhatsApp Business opt-in rule.",
+   "evidence_quote": "(pages returned 404/400)",
+   "url": "https://www.whatsapp.com/legal/business-policy",
+   "status": "UNVERIFIED"
+  },
+  {
+   "claim": "CDC art. 49 7-day withdrawal for phone sales applies to consumers (destinatário final); a brand buying production for its business is normally not one.",
+   "evidence_quote": "Art. 49. O consumidor pode desistir do contrato, no prazo de 7 dias ... especialmente por telefone / Art. 2° Consumidor é toda pessoa física ou jurídica que adquire ou utiliza produto ou serviço como destinatário final.",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+   "status": "verified"
+  }
+ ],
+ "design_changes": [
+  "Rename the promise from ownership to licence: 'licença exclusiva e sem prazo das peças finais' + cessão of whatever rights Sol holds; never warrant exclusivity/copyright of AI elements.",
+  "Add a signed Ficha de Alegações: every on-asset phrase/number/seal verbatim from it, each tagged 'está no rótulo notificado' or 'tenho laudo'; brand declares truth and substantiation (Lei 6.360 art. 59/67 I; CDC 36, 38; RDC 752 art. 5 I).",
+  "Add a refusal list (production policy, not advice): before/after, result simulation, therapeutic/cure claims, lab coats/clinics, synthetic-person testimonials/UGC reviews, lookalikes, ingredients not in the formula, child-directed appeals.",
+  "Per-asset written approval ('aprovado' + date + asset ID) filed before final delivery.",
+  "Fidelity guarantee = redo within 5 business days, then proportional refund of that piece if redo fails (survives CC art. 424); scope = legible characters at delivery resolution; exclusions for wrong source art and platform compression; report labelled 'não é parecer regulatório'.",
+  "Liability cap = fee paid for the order, except dolo; no lost profits/media/recall; regress + defence clause for claims arising from brand-supplied/approved content.",
+  "Client warranty + licence covering photographer and designer rights over packshot/label/logo/fonts (Lei 9.610 arts. 29, 79 §2).",
+  "PRÉVIA: ask permission on the call and confirm in writing; watermark 'PRÉVIA — uso interno, não publicar'; never post or portfolio it; delete after 30 days if no order; composite locally.",
+  "Portfolio only after public launch, with 10-day opt-out notice; never as brand endorsement.",
+  "Reword 'Sua arte não entra em nenhuma IA' to 'nunca é enviada a serviços de IA na nuvem' and keep cutout/OCR/upscale local so it is literally true; prompts carry no brand/product names.",
+  "Archive raw generator outputs with their provenance metadata; do not deliberately strip C2PA/watermarks (Higgsfield §5.5); never present outputs as human-made (§11.7).",
+  "Delivery note telling the brand to switch on TikTok/Instagram AI labels; voluntary 'imagem ilustrativa criada com IA' where a synthetic person appears (not legally required as of 25 Sep 2026).",
+  "Buy Artlist Pro (client work + paid ads), not Social; keep it active while clients publish.",
+  "Sol signs a one-page internal cessão of her authorial rights to her ME (author must be a natural person).",
+  "LGPD prospecting kit: one-page legitimate-interest balancing test, spreadsheet record (source/date/purpose), first-contact line with source + 'responda SAIR', delete non-responders after 6 months, no bought lists; ME is exempt from naming a DPO but must provide a contact channel.",
+  "Calls: dial published commercial numbers or numbers given in writing; otherwise e-mail/DM first for a slot; never close verbally — close on a signed proposal (SP Lei 17.832 art. 130)."
+ ],
+ "residual_risks": [
+  "Third-party exposure cannot be contracted away: CDC art. 67/75 (criminal), CDC arts. 7 and 25 §1 (joint civil liability to consumers), CBAP art. 46, Lei 6.437 art. 3 all can reach the producer; the contract only gives recourse against a possibly small, insolvent brand.",
+  "A CONAR decision naming her company brand would be public (reputational; CBAP art. 50 d).",
+  "Adhesion-contract doctrine (CC 423-424) or a 'consumer PJ' argument (CDC art. 2/51 I) could trim the cap or redo-only remedy for a very small client.",
+  "Platform AI-label rules change without notice; TikTok ads-policy text UNVERIFIED; Meta page dated 2024-2025.",
+  "SP block-list reach to B2B calls on personal mobiles, Anatel 0303 rule and WhatsApp opt-in rule UNVERIFIED.",
+  "Packshot copyright may sit with a third-party photographer who never granted adaptation rights; the brand's warranty is the only protection.",
+  "Ordinary re-export may drop C2PA metadata; whether that counts as 'removal' under Higgsfield §5.5 is UNVERIFIED.",
+  "Artlist full licence text not read (only plan strings in the page payload).",
+  "STJ 2025 media-company ruling retrieved from STJ open data via an index, not from stj.jus.br (403); Súmula 403 text not fetched.",
+  "PL 2338/2023 or PL 841/2024 could pass and create an AI-disclosure duty; re-check quarterly."
+ ],
+ "numbers": {
+  "sanitary_fines_BRL": {
+   "leve": "2.000-75.000",
+   "grave": "75.000-200.000",
+   "gravissima": "200.000-1.500.000",
+   "source": "Lei 6.437 art. 2 §1 (MP 2.190-34/2001)"
+  },
+  "CDC_art67_penalty": "detenção 3 meses a 1 ano e multa",
+  "CDC_art68_penalty": "detenção 6 meses a 2 anos e multa",
+  "CONAR_penalty_types": 4,
+  "RDC752_grau2_groups": 62,
+  "PL2338_status": "Aguardando Parecer, last event 2026-09-02, 384 tramitações",
+  "PL841_2024_status": "Tramitando em Conjunto since 2024-04-16",
+  "PL4349_2019_status": "Aguardando Designação since 2023-05-30",
+  "Higgsfield_tos_last_updated": "2026-07-26",
+  "Higgsfield_liability_cap": "greater of 6 months' fees or US$100",
+  "SP_block_list_effect_days": 30,
+  "fidelity_redo_days_proposed": 5,
+  "fidelity_claim_window_days_proposed": 30,
+  "portfolio_optout_days_proposed": 10,
+  "prospect_retention_months_proposed": 6,
+  "checklist_lines": 12,
+  "contract_clauses": 14
+ }
+}
