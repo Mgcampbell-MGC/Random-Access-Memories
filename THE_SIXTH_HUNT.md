@@ -568,7 +568,28 @@ measures the sales and pays the intermediary. **DD1 is testing it (§8d).**
 *(Running at the time of writing.)*
 
 - **DD1 — the platform pays the agent.** A beauty-focused TikTok Affiliate Partner agency: the platform counts and
-  pays, the brand pays nothing upfront, no standing access.
+  pays, the brand pays nothing upfront, no standing access. **Result: DEAD standalone. MARGINAL as an add-on to
+  O LANÇAMENTO (US$50–400/month; US$400–1.000 if one live-seller breaks out).**
+  - **TAP exists in Brazil; its PAYOUT is undocumented.** The BR seller academy mentions *"campanha de TAP"*
+    (12 Aug 2026), and the creator terms define affiliate-partner campaigns (23 Jul 2025). The finance docs cover
+    UK/SEA/US only, and the partner terms (15 Sep 2026) have no Brazil payment clause. Registration needs a company
+    plus one proof.
+  - **The mechanism (global/US docs):** the seller sets a total commission; the TAP sets each creator's rate and
+    keeps the spread.
+  - **THE PLATFORM IS SQUEEZING THE SPREAD:**
+    - on **23 Sep 2026 TikTok cut default creator rates by 2 points** (fragrance 12% → 10%, body 10% → 8%);
+    - it auto-enrols every product in open collaboration;
+    - its own accounts take affiliate commission.
+  - **C3 and tax:** the BR creator terms say creators in a TAP campaign serve the agency and are paid BY it. That
+    makes them her service providers, and if their share is her revenue, Simples on the gross eats 30–78% of the
+    margin. It needs an accountant's answer.
+  - **Occupied:** ECN/IEST; Amplify (*"Top 4"*, 500+ creators, 80+ brands, R$2M+ lifetime GMV); Tokz; Access;
+    Snack Content. Brands like Amend run 700+ creators in-house.
+  - **Arithmetic:** the bar needs R$229–825k of routed GMV a month, which is 11–41% of Amplify's LIFETIME GMV.
+  - Other rails: Shopee BR's MCN/Hub is the best-documented platform-pays-agency rail (split commission, each party
+    invoices). The TikTok LIVE agency programme pays on gifting, not shop sales. Mercado Livre, Amazon (13% beauty),
+    Kwai and Magalu showed no agency tier.
+  - **⇒ Kept as a launch-week add-on:** creators on the product in launch week, which Higgsfield cannot sell.
 - **DD2 — the wholesale version of O LANÇAMENTO.** Label-exact launch production sold white-label to the agencies
   that already hold beauty clients. **Result: DEAD standalone. It adds US$250–700/month as a second channel;
   standalone floor US$500–1.100.**

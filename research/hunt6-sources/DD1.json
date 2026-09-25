@@ -1,0 +1,132 @@
+{
+ "agent": "DD1",
+ "model": "platform pays the agent",
+ "tap_brazil": {
+  "exists": "YES — live in Brazil, but only partly documented in public. PRIMARY BR evidence: (1) the BR seller academy (12/08/2026) says 'A mesma condição se aplica a produtos inscritos em uma campanha de TAP'; (2) the BR creator terms (23/07/2025) define 'Parceiros de Afiliados' and 'Campanhas de Parceiros de Afiliados'; (3) the partner service categories (30 Oct 2025) list Affiliate Partner Brazil→Brazil 'Seller and Scalable Creator Match-up'; (4) the BR seller-centre i18n string says the TAP 'Creator Sales Ranking' ranks TAPs 'based on their monthly GMV from partner collaborations'. NOT documented for BR: the programme page (the Non-US TAP doc of 7 May 2025 lists ID/MY/PH/TH/VN/UK only), the finance/payout docs (UK/SEA/US only) and the payment clause (Global Partner ToS 15 Sep 2026: Section E Brazil has no TAP payment-service clause, unlike SEA, UK and US).",
+  "requirements": "Company registration: full name, registration number and a 'company document' by entity type. The entity list is on a Feishu page that could not be read, so MEI eligibility is UNVERIFIED. MEI is moot anyway: its R$81k/yr cap is below the bar, so she needs an ME on Simples. Also business-owner ID, logo and address, with UBO documents on request. Plus AT LEAST ONE of: a signed creator contract or a cooperated creator's profile; a seller partnership agreement, or 7 days of sales on another platform; an account on another e-commerce affiliate platform with 7 days of sales data; a self-developed affiliate tool. No minimum creator count and no minimum GMV (partner doc 64f19899…, updated 14 Sep 2026).",
+  "mechanism": "The global doc (Partner Collaboration, 30 Apr 2026) and the US doc describe the same flow; the BR-specific split norm is UNVERIFIED. The TAP publishes a campaign with a 'Commission rate requirement' equal to the TOTAL of partner plus creator commission (1–80%). The seller registers products 'as a package' and sets that total rate. The TAP approves the products, then sets each creator's rate, and keeps the spread. 'The agency can only collect commission from the Seller… cannot collect commission from the Creator (double dipping)'. US norm: sellers 'typically offer +5% commission above Open Plan', and 'Agencies can choose how to split the added commission'. Creators get an alert if a campaign rate is below the rate they already hold, so the TAP must pass at least the open-plan rate. The global order API carries partner_tap_bonus_commission_rate, a TikTok-funded partner bonus in 'specific campaigns'; whether it runs in BR is UNVERIFIED. ★ BR facts that shrink the spread: from 23 Sep 2026 TikTok CUT default creator rates in beauty (Fragrâncias, pele, cabelo 12→10%; maquiagem, banho & corpo 10→8%). All seller products are auto-opted into Open Collaboration at the suggested rate. And TikTok's own accounts (@earnorn4934 et al.) take affiliate commission on every open-collab product through the 'Programa de tráfego de campanhas da plataforma' (12/08/2026). ★ Legal form in BR: 'Nas Campanhas de Parceiros de Afiliados, você [criador] presta seus Serviços do Criador aos Parceiros de Afiliados e recebe comissão dos Parceiros de Afiliados, e não dos Vendedores'. So the creator is the TAP's service provider.",
+  "payout": "BR TAP payout is UNDOCUMENTED in public: no BR entry in Finance (Non-US) or the CAP/TAP finance guides, and no BR payment clause in the Partner ToS. The search-orders API has Mexico ISR/IVA fields and none for Brazil. What IS documented: BR creators are paid by EBANX IP Ltda. (CNPJ 21.018.182/0001-06) out of buyer payments, 'conforme acordado entre você e o Vendedor, Parceiro de Afiliado'. BR sellers settle through PIPO Brasil / dLocal, with ByteDance Brasil as intermediary. Currency is presumably BRL; the entity paying the TAP and the NF addressee are UNVERIFIED. Partner ToS §6: TikTok does not determine tax; the partner issues its own invoices. Elsewhere payout is 15 days after delivery (UK/US) and only after the seller's order settles. ★ TAX-BASE RISK: if the creators' share counts as HER receita bruta (they serve the TAP, per the BR creator terms), Simples is charged on the whole package. At a 15% package where she keeps 3%, tax is 0,9% of GMV at 6% or 2,3% at 15,5%, which leaves her 2,1% or 0,7%. That moves GMV needed from R$0,38–0,55 M to R$0,51–2,07 M/month. Contrast Shopee, which documents a split paid to each party, each invoicing the seller.",
+  "c4": "CLEAN. Sellers register products into her campaign from their own Seller Center, and samples ship seller → creator. The TAP sees campaign-level creator data (BR creator terms: 'o Parceiro de Afiliado poderá visualizar e exportar seus dados de desempenho'). No seller credentials and no standing access to the seller's store.",
+  "leaderboard_or_named_taps": [
+   "A BR TAP leaderboard EXISTS ('Creator Sales Ranking', monthly GMV from partner collaborations; seller-br i18n string). Its data is login/JS-gated: portal/leaderboard API → code 98001004, market/leaderboard → 98001002 'must log in'. The number of BR TAPs is UNVERIFIED.",
+   "ECN / IEST Group (Chinese-backed): states it runs CAP + TAP + TSP in Brazil. 'No TAP, o modelo é baseado em comissionamento' (china2brazil, 26 Jun 2025).",
+   "Amplify (amplifyugc.co, © 2026): '500+ Creators · 80+ Marcas · R$2M+ em GMV', 'Top 4# do TikTok Shop', creators keep 'mais da metade da comissão', weekly free-sample campaigns, a creator app. Self-published; Gmail contact.",
+   "Tokz (CNPJ 62.522.037/0001-37): 'PARCEIRA OFICIAL DO TIKTOK BRASIL', affiliate/creator recruitment and live sellers; bespoke pricing.",
+   "Access Agência: affiliate management across Shopee, TikTok One and TikTok Shop, 'Organização de comissionamento'.",
+   "Snack Content: homologated in the US May 2024; BR 'Always-On' clients on 'compartilhamento de GMV' (12 May 2025).",
+   "Continuum (search summary only, UNVERIFIED); Score Media, Tec-Do, StarLive, Commerce Lab (live-commerce; from AUD5/W2E)."
+  ],
+  "sources": [
+   "https://partner.tiktokshop.com/api/v1/document/detail?workspace_id=3&document_id=64f1989064ed2e0295f3c1b5",
+   "https://partner.tiktokshop.com/api/v1/document/detail?workspace_id=3&document_id=64f19899cb677b0286e75d67",
+   "https://partner.tiktokshop.com/api/v1/document/detail?workspace_id=3&document_id=64f198679495ef028184fa10",
+   "https://partner.tiktokshop.com/api/v1/document/detail?workspace_id=3&document_id=650a395adefece02be63046f",
+   "https://partner.tiktokshop.com/api/v1/document/detail?workspace_id=3&document_id=659e026753c4d402e1682ad4",
+   "https://partner.tiktokshop.com/api/v1/document/detail?workspace_id=3&document_id=69c3d3c26453bb04a3ed0513",
+   "https://partner.tiktokshop.com/api/v1/document/detail?workspace_id=3&document_id=650a33f2c16ffe02b8e4c4c4",
+   "https://partner.tiktokshop.com/api/v1/document/detail?workspace_id=3&document_id=6506bbf2de672602b7bc0697",
+   "https://seller-br.tiktok.com/university/essay?lang=pt-BR&knowledge_id=7846364793341713",
+   "https://seller-br.tiktok.com/university/essay?lang=pt-BR&knowledge_id=3355295847515925",
+   "https://seller-br.tiktok.com/university/essay?lang=pt-BR&knowledge_id=6872849933141776",
+   "https://seller-br.tiktok.com/university/essay?lang=pt-BR&knowledge_id=3275818982590224",
+   "https://seller-br.tiktok.com/university/essay?lang=pt-BR&knowledge_id=3268441302615809",
+   "https://seller-us.tiktok.com/university/essay?knowledge_id=6543118107477774&lang=en",
+   "https://seller-br.tiktok.com/partners"
+  ]
+ },
+ "live_agency_brazil": {
+  "exists": "YES. 'Agências de LIVE TikTok' in pt-BR, run through 'Bastidores da LIVE' (LIVE Backstage).",
+  "how_paid": "By TikTok, not by the streamer. The official page says agencies 'podem participar de programas de incentivo exclusivos para bônus mensais' and 'revisar bônus e pagamentos mensais'. Agencies say 'O próprio TikTok remunera essas agências… não pode descontar nada de seus ganhos' (Hotstage, seller claim). The agency's share or incentive rate is published NOWHERE (UNVERIFIED). Streamers are told they get 'até cerca de 50% do que o público gasta' and '200 diamantes ≈ US$1' (Moura Agency, seller claim).",
+  "requirements": "'Certificado de incorporação ou registro · Informações sobre acionistas · Principais informações sobre a gestão e o pessoal'. Review takes 5–7 business days. Recruiting tools and referral programmes sit inside Backstage.",
+  "overlap_with_shop": "Essentially none. It pays on Diamonds (gifts), i.e. entertainment/gifting LIVE, not TikTok Shop sales. The Shop side of LIVE is covered by the TSP 'LIVE Stream Management' category and by CAP/TAP.",
+  "observed_agencies": "Moura Agency (streamer bonus table 'US$3 a US$5.000', 'a agência não cobra nenhuma taxa'), Hotstage, Access, Bellucci Assessoria, Speed Agency ('Dançarina – LIVE TIKTOK', PJ, from AUD5). They tell streamers: no fee, monthly diamond targets unlock bonuses, coaching, events and raffles.",
+  "fit": "Poor. C8: this is gifting entertainment (dance, games, chat), not beauty commerce. Revenue is an unpublished platform incentive that TikTok can re-price. Applicants are expected to have management and personnel, which leans toward C3. Not pursued.",
+  "sources": [
+   "https://www.tiktok.com/live/creator-networks/pt-BR",
+   "https://www.tiktok.com/live/creator-networks/pt-BR/article/incentive-policy",
+   "https://www.tiktok.com/live/creator-networks/pt-BR/article/tiktok-live-creator-networks-guide",
+   "https://www.tiktok.com/live/creator-networks/pt-BR/blog/diamonds-for-tiktok-live",
+   "https://hotstage.com.br/agencia-de-live-tiktok/",
+   "https://www.mouraagency.com/tiktok.htm"
+  ]
+ },
+ "other_platforms": [
+  {
+   "platform": "Shopee Afiliados — MCN/'Hub' programme (BR)",
+   "pays_agency": true,
+   "rate": "The MCN runs 'Campanha MCN'. Sellers register products at a 'Taxa de Comissão do Vendedor Modelo MCN', which is deducted from buyer payments and 'distribuída entre o MCN e o afiliado conforme a divisão previamente acordada'. Paid within 60 days of approval. A PJ is paid only against an NFS-e (codes 10.08/17.06/17.25), issued to EACH SELLER. Shopee's own base rate is 3% (existing customers, lives, video); seller extra 'até 30%'. The affiliate is exclusive to one Hub for 15–90 days, then 15–360. Hub entry requirements UNVERIFIED. ★ The BEST-DOCUMENTED platform-pays-agency rail in Brazil: split payment, each party invoices its own share.",
+   "url": "https://help.shopee.com.br/portal/10/article/124094-Programa-de-Afiliados-Shopee-Termos-e-Condi%C3%A7%C3%B5es"
+  },
+  {
+   "platform": "TikTok Shop — CAP/MCN (BR)",
+   "pays_agency": null,
+   "rate": "The category exists for BR. The BR creator terms let an MCN/PAC 'atuar como seu agente', but TikTok does 'not' settle the agency's share: 'não somos parte… ao pagamento de valores'. The Fee Agreement/Commission Sharing tool lists UK/SEA only. UNVERIFIED for BR.",
+   "url": "https://partner.tiktokshop.com/api/v1/document/detail?workspace_id=3&document_id=650a34b4f1fd3102b9206dbc"
+  },
+  {
+   "platform": "TikTok LIVE Agências (BR, gifting)",
+   "pays_agency": true,
+   "rate": "Monthly incentive bonuses; the rate is unpublished (UNVERIFIED).",
+   "url": "https://www.tiktok.com/live/creator-networks/pt-BR"
+  },
+  {
+   "platform": "Mercado Livre — Programa de Afiliados e Criadores",
+   "pays_agency": false,
+   "rate": "'até 16%' to the affiliate (CPF or CNPJ). No MCN/agency split found; the T&C page returned 403, so this is UNVERIFIED.",
+   "url": "https://www.mercadolivre.com.br/l/afiliados-home"
+  },
+  {
+   "platform": "Amazon.com.br Associados / Influenciadores",
+   "pays_agency": false,
+   "rate": "Fixed standard commission of 13% for Beleza / Beleza de Luxo / Saúde e Cuidados Pessoais, paid to the account holder only.",
+   "url": "https://associados.amazon.com.br/help/node/topic/GRXPHT8U84RAYDXZ"
+  },
+  {
+   "platform": "Kwai Shop",
+   "pays_agency": false,
+   "rate": "No affiliate-agency payout programme found. The seller-centre strings show only a seller-referral field ('Nome do parceiro da Kwai Shop') and seller commission 'tão baixa quanto 2%'. UNVERIFIED.",
+   "url": "https://seller-shop.kwai.com/pages/home"
+  },
+  {
+   "platform": "Magalu Parceiro (Divulgador)",
+   "pays_agency": false,
+   "rate": "Individual storefront. 2–12% and 11% INSS for pessoa física (SECONDARY blogs; the official page did not render). No agency tier found. UNVERIFIED.",
+   "url": "https://contabilidade.com/blog/afiliado-magalu-precisa-abrir-cnpj-em-2026-mei-ou-simples-impostos-e-nota-fiscal/"
+  }
+ ],
+ "economics": {
+  "beauty_commission_rates": "PRIMARY, BR, effective 23 Sep 2026: default open-collab creator rates. Fragrâncias 10% (was 12), Cuidados com a pele 10 (12), Cabelo 10 (12), Cuidados masculinos 10 (12), Maquiagem 8 (10), Banho e corpo, where bodysplash sits, 8 (10), Unhas 8 (10). Auto opt-in uses the category's suggested-range midpoint (the BR worked example is 10–15% → ~13%). A TAP campaign must sit ABOVE these, since creators are warned when a campaign pays less: the US norm is open +5pp, so ~13–15% total on fragrance, of which she keeps ~2–5pp. Seller-side range '8–15%' is SECONDARY (W2E). Shopee base 3%; ML ≤16%; Amazon beauty 13%.",
+  "gmv_per_creator": "The only agency-level observation: Amplify's self-published '500+ creators · R$2M+ GMV' ⇒ ≤R$4.000 LIFETIME per creator, i.e. ~R$300–500/creator/month over 8–13 months. At the top (TikTok newsroom, primary): Vitória Merlos R$2,8 M lifetime (~R$215k/month; ≤R$12k per live over >200 lives); Lua Blossom >R$1 M from fragrance lives. Brand side: BigHome ~300 affiliates active per 28 days on R$17 M 2026 revenue (all channels, so it cannot be split per creator); Moderna >9.000 active affiliates for >10.000 units/day, i.e. about 1 unit per affiliate per day. ~200 creators >R$1 M is Momentum Works via search summary, UNVERIFIED. ⇒ An extreme power law: a mid-tail creator is worth hundreds of reais of GMV a month.",
+  "gmv_needed": "Net bar R$10.359–12.949/month (US$2.000–2.500 at PTAX 5,1795). Gross needed = (net + stack R$400–1.000)/(1 − 6–15,5%) = R$11.446–16.507/month. Attributed GMV she must route each month, by her take: 2% ⇒ R$572–825k; 3% ⇒ R$382–550k; 5% ⇒ R$229–330k. If the creators' share is taxed as her gross (15% package, 3% kept): R$512–664k at 6% and R$1,59–2,07 M at 15,5%. Creator count at Amplify's observed yield (R$300–500/creator/month): 458–1.834 active creators. At Merlos-class (~R$215k/month): 2–3 creators ROUTED EXCLUSIVELY through her campaigns; one such creator at 3% ≈ R$6.460/month.",
+  "plausibility": "LOW as a standalone business in 12–18 months. (1) Each MONTH the bar needs 11–41% of the GMV that Amplify (self-described 'Top 4' TikTok Shop agency, 500+ creators, 80+ brands) reports for its whole LIFETIME. (2) Hours: holding 450+ creators at ~0,3 h/creator/month is ≥135 h, against 87 h. (3) The spread is being compressed by the platform: a 2-point default cut on 23 Sep 2026, auto opt-in, and TikTok's own affiliate accounts. (4) Top creators already get targeted collaborations directly from brands and have no reason to give a TAP a cut. The pool is NOT the constraint: beauty ≈ R$350 M/month on BTG's R$20 bn annualised × 21% beauty (both SECONDARY, a two-multiplier hypothesis), and her need is 0,07–0,24% of it. The constraint is activation productivity plus occupancy.",
+  "portfolio_shape": "Lottery-shaped (THE PORTFOLIO REQUIREMENT). Revenue follows the few breakout creators, and the hit rate is unmeasured. Amplify's mean of ≤R$4k lifetime per creator implies a far lower median. With her hours she can hold ~30–60 creators plus ~5 live-sellers, which is a handful of 'tickets' where the base rate needs hundreds. Viable only if her casting eye picks pre-breakout LIVE-sellers in fragrance/body (the category TikTok names as top-selling in lives), where 1 breakout ≈ R$6k/month to her. That is one ticket, not a business."
+ },
+ "occupancy": "OCCUPIED, and the platform itself is a free front door. (a) Free tools funded by TikTok, which earns 6–10% + R$4–6/item on the flow (W2E): 'Descobrir criadores' with an 'Agência do criador' filter; Open and Target collaborations; ONE-CLICK auto opt-in of every product into Open Collaboration; free samples; and TikTok's own affiliate accounts taking open-collab commission ('Programa de tráfego de campanhas da plataforma', 12/08/2026). (b) Brands in-house: Amend Lab 700+ creators and 30k videos (Central do Varejo, 3 Sep 2026); Perfumistta and Sallve hiring affiliate/creator analysts (W2E). (c) Agencies already in the TAP/CAP seat in BR: ECN/IEST (explicit TAP), Amplify ('Top 4', 500+ creators, 80+ brands — the O ELENCO model, live), Tokz, Access, Snack Content (GMV-share), Continuum, Score Media and Tec-Do. The BR TAP leaderboard exists and ranks by monthly GMV, which favours incumbents with rosters. ⇒ What would make a brand pick her: the brand pays nothing unless sales happen and registers non-exclusively in many campaigns, so saying 'yes' is cheap and does not differentiate. What would make a creator pick her: only a higher rate (bounded by the seller's add-on), faster samples, and private 1:1 coaching from someone who knows on-camera presence. The coaching is her only non-generic asset; Amplify already sells 'treinamento completo e gratuito'.",
+ "c8_c2_c3": "C8 MODERATE. Scouting and coaching live-sellers uses exactly what a working model knows: on-camera stamina, product handling, what reads expensive on a phone. But the year-three job is creator-community operations: DMs, WhatsApp groups, sample chasing, weekly rankings, commission disputes, replacing churned creators. That is origination-forever on the supply side, the same verdict AUD5 gave A BANCADA. C2 CLEAN IF kept private: the TAP profile shown to creators is a company name and logo, linking a TikTok account is optional, and coaching happens on private calls. The drift risk is an Amplify-style public creator community or Instagram, i.e. company-brand audience-building toward creators. C3 GREY, FLAG IT: the BR creator terms make campaign creators 'contratantes independentes' who 'presta[m]… Serviços do Criador aos Parceiros de Afiliados e recebe[m] comissão dos Parceiros de Afiliados'. They are commission-only, platform-paid and per-campaign; not employees, but legally her service providers. That is the brief's 'gig marketplace booked per job' grey zone. Never charge creators (the TikTok 'double dipping' rule; the MPT stance on candidate fees). If TikTok BR makes her the payer of record, route through Shopee's MCN rail instead, where the split is paid to each party.",
+ "vs_lead": "WORSE STANDALONE, USEFUL AS A COMPLEMENT. The TAP leg alone floors at ~US$50–400/month at 12–18 months, against O LANÇAMENTO's US$700–1.500. The buyers are the SAME: fragrance, body and skincare brands, including ANVISA-file launchers, so it costs no extra origination on the brand side. It fixes the lead's biggest weakness, 'THE TOOL VENDOR IS THE FRONT DOOR': Higgsfield sells visuals at US$49/month; it cannot put 20 vetted creators and 3 live-sellers on a product in launch week. So the kit gains a CHANNEL/OUTCOME price-holder and a trailing, platform-paid income line. The brand registers once (origination once on the brand side). The costs: origination-forever on the creator side, a C3 grey, and an undocumented BR payout. Recommend: fold two questions into the lead's 20-call test; do NOT build it as a separate company.",
+ "candidate": {
+  "name": "O ELENCO (repaired) — launch-week creator activation sold inside O LANÇAMENTO, earning a platform-paid TAP/MCN share",
+  "offer": "To a fragrance/bodysplash/skincare brand buying the R$2.990 launch kit, or to any beauty seller already live on TikTok Shop: 'Register 3–10 SKUs in my Fragrância & Corpo partner campaign at open-plan +4–5pp. You pay nothing unless a creator sells; TikTok measures and settles.' For launch week, a roster she personally casts and privately coaches: ≤40 micro-creators and ≤5 live-sellers get samples, a brief built from the kit's visuals, and a live slot. She keeps ~2–3pp and passes the rest as an exclusive creator bonus. Mirror the same campaign on Shopee's MCN Hub, where the BR payout and per-party NFS-e are documented. Never charge creators.",
+  "price_holder": "outcome (platform-attributed and platform-settled GMV) + channel (her casted roster, available on the brand's launch date)",
+  "biggest_flaw": "GMV arithmetic. The bar needs R$229–825k of routed GMV EVERY MONTH; a 'Top 4' incumbent (Amplify) reports R$2M+ LIFETIME across 500+ creators. The seat is occupied (ECN/IEST, Amplify, Tokz, Access, Snack, Continuum), and TikTok is compressing the spread (2-point default cut on 23 Sep 2026, auto opt-in, its own affiliate accounts). BR TAP payout/tax is undocumented, and if creators' commissions count as her gross, Simples on the whole package eats 30–78% of her margin.",
+  "repair": "(1) Do not run it as a business. Run it as the retention and trailing-income layer of the launch kit: the kit pays the bills, and the campaign keeps each brand registered after the kit. (2) Narrow to fragrance and body LIVE (TikTok's top live category and top-3 beauty products) and to ≤5 live-sellers she scouts pre-breakout, plus ≤40 micro-creators; that caps her hours at ~30–40 h/month. (3) Before the first campaign, get a written accountant answer: is the creator share her receita bruta; which Simples annex applies to NFS-e code 10.08; who issues the NF to whom. If TikTok BR makes her the creators' payer, use Shopee MCN (split paid to each party) until TikTok's BR finance terms are published. (4) Apply for TAP with the cheapest valid proof: one signed creator agreement plus one seller LOI from the test. (5) Keep her own creator-level ledger. TikTok shows it to the TAP and not to the brand (US doc), so it is her only compounding asset.",
+  "honest_floor_usd_month": "US$50–400 from the TAP leg alone at months 12–18: 30–60 active creators at R$300–800 GMV/month each ⇒ R$12–48k GMV × 4% ⇒ ≈US$10–270 net, rounded up for some live GMV. US$400–1.000 if ONE live-seller breaks out (R$62–148k GMV/month × 4%). As a complement it adds that on top of the lead's US$700–1.500, and it may lift the kit's close rate (UNTESTED).",
+  "next_test": "R$0, 14 days, Portuguese calls and WhatsApp, run alongside O LANÇAMENTO's 20 calls. (A) 20 fragrance/body/skincare sellers active on TikTok Shop BR. Ask: have you ever registered products in a TAP/partner campaign? At what total rate, and how much GMV did it bring last month? Would you register 3 SKUs at open-plan +4pp for launch-week seeding by a casted roster? (B) 20 fragrance/body micro-creators and live-sellers, including some already in Amplify/ECN. Ask for a Creator Center screenshot of 30-day GMV, what share their agency keeps, and whether they would join for +2pp, samples and private on-camera coaching. (C) One written accountant question on the tax base, the Simples annex for NFS-e code 10.08, and who invoices whom.",
+  "bar": "Committed in advance. ALIVE as a complement only if ALL of: ≥5/20 sellers agree in writing at ≥open +4pp; AND ≥2 sellers report an existing TAP/partner campaign that delivered ≥R$10k GMV in one month; AND ≥8/20 creators agree, with ≥3 of them showing 30-day GMV ≥R$15k; AND the accountant confirms she is taxed only on her own share (or Shopee MCN is used). Otherwise DROP the TAP leg and keep the lead alone. Record every rate and GMV answer: they are the first BR TAP numbers in this archive."
+ },
+ "verdict": "MARGINAL",
+ "verdict_note": "MARGINAL only as a complement to O LANÇAMENTO; DEAD as a standalone business at the bar. The structure is real and passes (a) nothing upfront, (b) platform-measured and platform-paid (no self-reported-conversion trap) and (c) C4. It fails on arithmetic (routed GMV vs observed per-creator yield), occupancy, platform spread-compression and hours. It carries a C3 grey and an undocumented BR payout.",
+ "unverified": [
+  "BR TAP payout: paying entity, currency, NF addressee, timing, and whether the creator share counts as the TAP's receita bruta",
+  "Whether a MEI/CCMEI satisfies 'company document' for TAP (the Feishu guidance is unreadable; moot at the bar)",
+  "The BR TAP split norm (+5pp is the US norm) and whether TikTok funds partner_tap_bonus in BR",
+  "The BR TAP leaderboard contents and the number of BR TAPs (login-gated)",
+  "Amplify's 'R$2M+ GMV', '500+ creators' and 'Top 4#' (self-published; period unstated)",
+  "TikTok Shop BR GMV (BTG R$20 bn annualised via press; Momentum Works R$5,3 bn H1 2026 via search summary) and the 21% beauty share (agency blog)",
+  "The ~200 creators >R$1 M and 2,3 M registered influencers (Momentum Works via search summary)",
+  "The TikTok LIVE agency incentive rate (unpublished)",
+  "Shopee MCN Hub entry requirements; Mercado Livre agency tier (T&C 403); Kwai and Magalu agency tiers",
+  "The Simples annex for NFS-e code 10.08 'agenciamento de publicidade' (Anexo III vs V, fator R)",
+  "How many of the ~300 ANVISA own-brand launchers sell on TikTok Shop (the overlap with the lead is unmeasured)"
+ ]
+}
