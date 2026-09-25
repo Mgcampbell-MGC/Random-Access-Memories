@@ -609,6 +609,94 @@ measures the sales and pays the intermediary. **DD1 is testing it (§8d).**
     VER1's "0 of 15 new SKUs have a public packshot". Entry product: *O FILME*, a label-locked 15 s film + 2
     cutdowns at R$1.290, sold on the agency's standard 15% production mark-up.
 
+## 8e. A CONTA LIVRE — the energy free-market channel partner (DD3), the founder's pick of direction
+
+The founder, on the energy direction: *"not mad at this — must be [a] unique clever easy AI October 2026 way to do
+this."* **Verdict: MARGINAL. It is the best-EVIDENCED candidate of the day and it is outside her world (C8).**
+Floor US$500–1.500/month.
+
+**The commission is published by the payer. VERIFIED by me in the PDF.** Cemig's *Programa de Parceiros Comerciais
+SINERGIA*, Regulamento v8.0, *"VÁLIDO A PARTIR DE 10/08/2026"*
+(`energialivre.cemig.com.br/wp-content/uploads/2026/08/regulamento-programa-sinergia.pdf`):
+
+> *"PONTOS = MÉDIA MENSAL DE ENERGIA CONSUMIDA (MWH) × MULTIPLICADOR DE SUBMERCADO × PRAZO DO CONTRATO (MESES) ×
+> (1+BÔNUS DE CATEGORIA)"*
+>
+> *"MULTIPLICADOR de 7 (sete) PONTOS por MWh"* (N, SE/CO, S)
+>
+> *"cada PONTO equivale a R$1,00"*
+>
+> *"Na data de assinatura do CONTRATO pela CEMIG, 100% (cem por cento) dos PONTOS referentes àquele CONTRATO serão
+> contabilizados para RESGATE."*
+
+- Other terms: a cap of R$100.000 per unit per contract-year; *PARTICIPANTE PLUS* adds R$3,00/MWh monthly for
+  units outside MG, with exclusivity; pro-rata clawback if the contract ends early; renewals score nothing; MEI and
+  ME may participate.
+- **A 22 MWh/month client is worth ≈R$5.500 on a 36-month contract, ≈R$9.200 on 60, paid at signing.**
+- **So the bar needs only ≈2,2–2,7 signed contracts a month.** No other candidate today needs so few units.
+- Ecom's partner contract pays recurring, quarterly, after the client pays, with a rate Ecom may cut and a
+  12-month non-compete. ENGIE, Neoenergia and CPFL publish nothing.
+
+**The clock, verified at the statute and decree:**
+
+- Grupo A has been open since 1/1/2024 (Portaria MME 50/2022).
+- **Low voltage opens 25/11/2027** (Decreto 13.097/2026 art. 1).
+- ⚠ **Decreto 13.097 art. 10 orders CCEE to run a FREE offer-comparison platform:** `THE CHEAP STATE COUNTER`,
+  arriving with the low-voltage opening.
+
+**THE PROSPECTING RAIL — the strongest find, VERIFIED by me.** ANEEL's BDGD file `UCMT_PJ.csv` (160.323.011 bytes,
+`last-modified 01 Sep 2026`, keyless) lists every private medium-voltage unit with:
+
+- `CNAE`, `LGRD` (street), `CEP`, `MUN`;
+- **`LIV` (free-market flag)**, `GRU_TAR`;
+- **`DEM_01–12` and `ENE_01–12`: twelve months of demand and energy.**
+
+The first row is a hospital (CNAE 8610-1/01) on the captive tariff, using ~200 MWh/month. DD3's counts for São
+Paulo state:
+
+- 55.764 active Grupo A units, 24.848 already free;
+- **18.017 private captive units without distributed generation**, median 9,1 MWh/month;
+- **8.458 at ≥10 MWh (median 22,2)**; 6.218 at ≥15 MWh;
+- the stock falls ≈333 units a month.
+
+A CNPJ join worked once in two tries: an address match found Laboratório Avamiller (Impala Cosméticos), 57,8 MWh/month,
+captive, phone and email on file. ⇒ **She can know a unit's consumption, tariff and approximate saving BEFORE she
+dials.** That is the "AI-native" edge the founder asked for, and it is real.
+
+**Against it, all measured:**
+
+- **Free-market prices rose ~59% in two years.** Abraceel: long-term conventional R$147 → R$233/MWh (2024 → Mar
+  2026). CCEE calls the migration pace *"acomodação"*.
+- **Supplier credit risk:** a SECONDARY source citing CCEE counts **ten comercializadoras in judicial recovery (Jun
+  2026)**, including 2W Ecobank and Tradener. Choose the payer by balance sheet; Cemig is a listed, state-controlled
+  utility.
+- **Free comparison already exists:** Clarke Energia (*"+75 fornecedores competindo… análise gratuita"*), UC Livre,
+  and soon CCEE's own platform.
+- **Occupancy:** Ecom and Desperta are each recruiting ~1.000 reps.
+- **The conversion rate is UNVERIFIED, and the whole case rests on it.**
+- **Migration needs 180 days' notice to the distributor.** But Cemig pays at signing, so the first cash is ≈month
+  3–5.
+- **C8:** plainly outside her world. The beauty segment is cosmetic: 156 beauty-CNAE units ≥10 MWh in SP.
+
+**The AI-native angles the founder asked for, tested:**
+
+1. **Multi-trader broker (bill PDF → AI → ranked quotes):** keep the bill parser as a tool (ANEEL tariffs are
+   machine-readable). **The comparison itself is already free** (Clarke; CCEE soon).
+2. **Pre-signing low-voltage businesses and selling the book to traders: DEAD.** ≈R$181 per contract, and it arrives
+   after her window.
+3. **The prospecting rail: ALIVE.** The best find.
+4. **Beauty segment:** too small to matter.
+
+**⇒ "Prints money" is not justified.** What is justified: a call list nobody else is using this precisely, a payer
+that publishes its rate and pays at signing, and a bar of ~2–3 contracts a month.
+
+**Test (R$0, bar committed in advance):**
+
+- Rank ≥15 MWh captive units in SP from the BDGD file.
+- Hold 20 decision-maker conversations.
+- **PASS: ≥5 send their bill within 10 days AND ≥1 signs within 45 days, in ≤25 hours of calling.**
+- **Before calling, ask Sol the year-three question.**
+
 ## 9. LAWS FROM THIS HUNT
 
 - **★★★ THE TOOL VENDOR IS THE FRONT DOOR.**

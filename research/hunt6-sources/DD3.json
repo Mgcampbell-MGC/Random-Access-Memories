@@ -1,0 +1,149 @@
+{
+ "agent": "DD3",
+ "model": "energy free-market (ACL) channel partner — Portuguese phone origination of Grupo A SMEs for comercializadoras varejistas",
+ "commission": [
+  {
+   "company": "Cemig (Energia Livre Cemig) — Programa SINERGIA, Regulamento v8.0 valid from 10/08/2026",
+   "rate": "R$7 per MWh of the unit's average monthly consumption × contract months (SE/CO, S, N submarkets); R$14/MWh promo for Nordeste proposals 10/08–31/12/2026; +5–20% bonus only from the 31st active contract; cap R$100.000 per UC per contract-year",
+   "basis": "ONE-OFF, 100% credited at CCVEE signing (item 4.8), redeemed by invoice, processed monthly (5.2.2). Example: 22 MWh/month × 7 × 48 months = R$7.392 at signing",
+   "recurring": "Only for PARTICIPANTE PLUS (must be EXCLUSIVE to Cemig, UC outside MG, must support the client's denúncia to the distributor): +R$3,00 per MWh billed monthly for the contract's life, starting after the first Cemig bill (4.9.1). Renewals earn nothing unless a campaign says so (4.6). Clawback: points reversed pro rata if the contract ends early, and Cemig may demand repayment (6.1(e)). Public-tender clients excluded (4.3). Contract ≥12 months (4.3). Any PJ incl. MEI (FAQ).",
+   "url": "https://energialivre.cemig.com.br/wp-content/uploads/2026/08/regulamento-programa-sinergia.pdf",
+   "status": "observed payer-side published rule (primary, downloaded and read)"
+  },
+  {
+   "company": "Ecom Energia — Programa Parceiro Ecom (Parte B, registered 4º RTD São Paulo nº 5.446.202, 21/07/2023)",
+   "rate": "Unpublished amount; set per contract in a 'Termo de Remuneração' as R$/MWh = price billed to the client minus Ecom risk, energy cost and taxes (cl. 3.1(b),(e)); marketing page: 'potencial para faturar até R$50 mil por negócio fechado'",
+   "basis": "RECURRING for the client contract's life (3.1(f)), paid QUARTERLY (3.4) and only after the client pays Ecom (3.3(a)) — i.e. after migration (~180 days) + first bill",
+   "recurring": "Yes but fragile: ends automatically when the client contract ends for any reason (3.3(b)); Ecom may renegotiate the client price and cut the partner's R$/MWh, partner waives any claim (3.3(d)); renewals without the partner's 'influence' earn nothing (2.3(iii)); lead void if Ecom already prospecting it or another partner registered it first (2.2(b)) or not converted in 90 days (2.3(ii)); NON-COMPETE during contract + 12 months, breach forfeits all receivables (4.1–4.2)",
+   "url": "https://ecomenergia.com.br/hubfs/Parte%20B%20-%20Condi%C3%A7oes%20Gerais%20do%20Contrato%20de%20Parceria%20do%20Grupo%20Ecom.pdf",
+   "status": "observed payer-side contract terms (primary, scanned PDF read page by page); rate itself UNVERIFIED"
+  },
+  {
+   "company": "ENGIE Brasil — Programa de Afiliados / Parceiro de Negócios",
+   "rate": "Afiliados: 'Comissão fixa por indicação e variável por contrato efetivado' — amounts unpublished; Parceiro de Negócios: 'Remuneração proporcional às vendas realizadas'",
+   "basis": "Afiliado only indicates; ENGIE negotiates and sells. 'Todo tipo de CNPJ ativo pode participar, como consultorias, escritórios de engenharia e representantes comerciais B2B'",
+   "recurring": "UNVERIFIED",
+   "url": "https://www.engie.com.br/parcerias-comerciais/",
+   "status": "seller-side programme page; rate UNVERIFIED"
+  },
+  {
+   "company": "Neoenergia — Parceiro Neoenergia",
+   "rate": "'comissões por cada contrato fechado' — unpublished; PJ only; targets Grupo A with bill ≥R$5.000/month",
+   "basis": "paid 'após a finalização das negociações'",
+   "recurring": "UNVERIFIED",
+   "url": "https://www.neoenergia.com/web/produtos-e-solucoes/parceiro-neoenergia",
+   "status": "programme page; rate UNVERIFIED"
+  },
+  {
+   "company": "Enerlivre (sub-agent aggregator)",
+   "rate": "'Ganhe 60% da comissão total dos contratos fechados'; 'Comissão total de até 60% da conta de luz' for Energia Livre (bills > R$5.000), 'até 30%' for energia por assinatura (GD), 'até 5%' of project value for solar",
+   "basis": "ambiguous — reads as up to 60% of one monthly bill; 'comissões fixas ou recorrentes, conforme o perfil'",
+   "recurring": "'Possibilidade de comissão recorrente' — terms unpublished",
+   "url": "https://enerlivre.com.br/parceiros",
+   "status": "seller asking (recruiting page); UNVERIFIED"
+  },
+  {
+   "company": "CPFL Soluções — Seja Parceiro",
+   "rate": "not readable (HTTP 403 to curl and WebFetch)",
+   "basis": "search snippet only: 'comissão por negócio fechado'",
+   "recurring": "UNVERIFIED",
+   "url": "https://cpflsolucoes.com.br/seja-parceiro/",
+   "status": "UNVERIFIED (blocked)"
+  },
+  {
+   "company": "Channel-crowding evidence",
+   "rate": "Ecom recruiting 1.000 regional reps (CanalEnergia headline); Desperta Energia '1000' vagas PJ reps MG-SP-SC-PR-GO on the CONFERE board (16/06–16/12/2026); 6 of 173 live CONFERE listings are energy, all 100%-commission",
+   "basis": "—",
+   "recurring": "—",
+   "url": "https://www.confere.org.br/oportunidades.php",
+   "status": "observed listings"
+  }
+ ],
+ "pool_and_clock": {
+  "grupo_a_eligible": "Portaria Normativa 50/GM/MME/2022 art. 1º §1º: from 1 Jan 2024 every Grupo A consumer may buy from any supplier; §2º: load <500 kW must be represented by an agente varejista (verified at gov.br PDF). ANEEL SAMP July 2026, national Grupo A units: 146.821 CATIVO vs 94.934 LIVRE (Jan 2026: 152.483 vs 87.724 ⇒ captive −943/month). Of the national captive: 45.891 are in GD compensation (lose credits if they migrate) and 29.422 are Poder público (tender-bought; Cemig pays nothing on tenders).",
+  "migrated": "CCEE: 20.634 migrations Jan–Nov 2025 (SP 'quase 6.000'; >82 mil consumers in ACL); Q1 2026 4.827 (1.609/month); April 2026 1.213 with SP 290 and 'o ritmo de migrações passa por um período de acomodação' — pace down ~35% from 2025's ~1.876/month. ANEEL BDGD (base 31/12/2025): SP medium-voltage PJ units 55.764 active Grupo A, 24.848 already LIV=1.",
+  "remaining_sp": "ANEEL BDGD UCMT_PJ (base 31/12/2025): SP active Grupo A, captive (LIV=0), private (CO/IN), no GD = 18.017 units; median 9,1 MWh/month, mean 19,6; contracted demand median 81,6 kW. ≥10 MWh/month: 8.458 (median 22,2 MWh); ≥15 MWh: 6.218 (median 29,5). SAMP confirms the stock is depleting: SP captive Comercial+Industrial 'Regular' Grupo A 16.324 (Jan 2026) → 14.322 (Jul 2026) ≈ −333/month. Estimate for Oct 2026: ~6.500–7.500 units ≥10 MWh left (UNVERIFIED — assumes larger units migrate first). THIS IS A STOCK, NOT A FLOW (Deadline-Harvest Law): renewals do not pay the partner (Cemig 4.6, Ecom 2.3(iii)).",
+  "low_voltage_date": "VERIFIED at planalto.gov.br: Lei 15.269 de 24/11/2025 (Lei 9.074 art. 15 §17: 'até 24 meses' for industrial/commercial, 'até 36 meses' others, preceded by communication plan, tariff segregation, SUI rules, a 'produto padrão e preço de referência'); Decreto 13.097 de 12/08/2026 art. 1º: 25 Nov 2027 for LV industrial and commercial, 25 Nov 2028 for all others; art. 2º mandatory varejista; art. 3º 90-day notice; art. 3º §2º no meter swap required; art. 10: CCEE must provide a centralised offer-and-price comparison platform. ANEEL's regulatory agenda put the LV rules in 2027 (eixos, 2/12/2025 — secondary).",
+  "sources": [
+   "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2022/portaria-normativa-n-50-gm-mme-2022.pdf",
+   "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm",
+   "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/D13097.htm",
+   "https://dadosabertos.aneel.gov.br/dataset/3e153db4-a503-4093-88be-75d31b002dcf/resource/61dfadf0-518b-449e-bb62-fab89da3769b/download/samp-2026.parquet",
+   "https://dadosabertos.aneel.gov.br/dataset/4459e483-451f-4444-8022-bd8b5eac05c5/resource/f6671cba-f269-42ef-8eb3-62cb3bfa0b98/download/ucmt_pj.csv",
+   "https://www.ccee.org.br/pt/web/guest/-/varejo-representou-75-das-migracoes-ao-mercado-livre-de-energia-em-abril-de-2026-aponta-ccee",
+   "https://www.ccee.org.br/pt/web/guest/-/mais-de-20-5-mil-consumidores-migraram-para-mercado-livre-de-energia-ate-novembro-aponta-ccee",
+   "https://www.ccee.org.br/pt/web/guest/-/confira-tudo-que-a-ccee-entregou-ao-mercado-no-primeiro-trimestre-de-2026"
+  ]
+ },
+ "free_front_door": "The identification-and-comparison layer is already free, three times over. (1) Marketplaces free to the consumer: Clarke Energia ('Peça aqui a sua análise gratuita', '+75 fornecedores competindo em nosso marketplace', 'mais de 80 fornecedores diferentes') and UC Livre ('Comparador Fácil', '+35 fornecedores de energia qualificados'). (2) Every large comercializadora runs a self-serve simulator and inside sales (EDP varejista 'Simular economia', targets bills 'a partir de 10 mil reais'); the distributor groups own comercializadoras (Enel, CPFL, EDP, Neoenergia) and the distributor itself publishes the whole migration procedure and denúncia template (Enel SP). (3) THE CHEAP STATE COUNTER is legislated: Decreto 13.097 art. 10 orders CCEE to run a centralised offer/price comparison platform, and art. 1º §1º III + art. 2º §4º impose a standard product with a published reference price (built for LV but the platform clause is not limited to LV). What is NOT free: the outbound call that makes a busy owner act, and the counterparty screen — in June 2026 CCEE counted ten comercializadoras in judicial recovery and ~5,6 mil varejista consumers potentially affected (secondary, cocenergia substack citing CCEE; 2W Ecobank, Tradener, Electra, Elétron, Gold, Diferencial, IBS, Pontal-Thopen in RJ; Matrix and Safira restructuring). The commission is the comercializadora's CAC for that call — i.e. origination labour, sold per unit.",
+ "credential": "None found. Cemig SINERGIA and Neoenergia require only an active CNPJ (Cemig FAQ: 'MEI, ME ou outro formato'); ENGIE Afiliados 'todo tipo de CNPJ ativo'. No CREA/CFT: the technical study, proposal and CCEE representation are the varejista's (Neoenergia/ENGIE 'cuida da negociação'); the distributor designs and installs the SMF meter (Enel SP procedure). No CORE registration needed to earn commission (STJ REsp 1.678.551/DF, already in the archive). Expert veto: she is not believed as an expert — the saving is a contract price the buyer compares with its own bill; the comercializadora supplies technical support. C4 caution: the denúncia must be filed by the client's legal representative through the distributor portal (Enel SP); she drafts it, never logs in or holds a standing procuração.",
+ "arithmetic": {
+  "commission_per_client": "Cemig SINERGIA, SE submarket, one-off at signing = MWh/month × R$7 × months. SP captive ≥10 MWh median unit (22,2 MWh): R$5.594 at 36 months, R$7.459 at 48, R$9.324 at 60. Overall SP captive median (9,1 MWh): R$2.293 at 36 months. PLUS adds R$3/MWh/month recurring (≈R$66–67/month for a 22 MWh client) from ~month 7 after signing. ≈2,7% of contract value (22 MWh × 60 × R$260/MWh assumed ACL price, UNVERIFIED) — the margin-law band, rescued only because the base is 3–5 years of volume paid upfront.",
+  "clients_needed": "Net R$10.500–13.000 + ~R$800/month stack, Simples ~8% effective (Anexo III for intermediação — UNVERIFIED) ⇒ gross R$12.300–15.000/month. At R$5.594 (22 MWh, 36 mo): 2,2–2,7 signed/month (~27–32/yr). At R$7.459 (48 mo): 1,6–2,0/month. At R$2.293 (median unit): 5,4–6,5/month — too many. ⇒ call ONLY units ≥15–20 MWh. Ramp model (0,0,1,1,2,2 then 2,5/month; 22 MWh; 36 mo; PLUS): month-12 net ≈ US$2.320, month-18 ≈ US$2.490; same at 15 MWh: ≈US$1.530; at 1 signing/month of 15 MWh: ≈US$520.",
+  "hours_per_client": "UNVERIFIED — no published conversion data. Assumption: ~10 dials per decision-maker conversation, 20–25% of conversations send a bill, 20–30% of bills sign ⇒ ~15–25 conversations and ~150–250 dials per signing ⇒ 10–15 h per signed client incl. proposal and denúncia calls (+1–2 h PLUS denúncia support). At 2,5/month ≈ 30–42 h/month of 87. The whole case hangs on this unmeasured rate.",
+  "ramp": "Month 0–1: CNPJ (ME, Simples), SINERGIA/ENGIE registration ('prazo… pode variar'), build the ranked list (BDGD × CNPJ). Month 1–3: first calls; sales cycle 30–90 days (UNVERIFIED). Cemig pays at CCVEE signing via invoice, monthly processing ⇒ FIRST CASH ≈ month 3–5. Physical migration takes ≥180 days' denúncia notice (Enel SP: 'deve ser enviada com 180 dias de antecedência'; EDP: 'em geral é de 180 dias') ⇒ PLUS recurring starts ≈ month 9–11. Under a pay-after-client-pays programme (Ecom, quarterly) first cash ≈ month 9–12. Bar reachable ≈ month 8–12 only IF ~2,5 signings/month materialise.",
+  "pool_div4": "SP ≥10 MWh captive private no-GD ≈ 6.500–7.500 units (Oct 2026 est.) × ~R$5.600 = R$36–42M one-off stock; ÷4 ≈ R$9–10,5M vs her 18-month need ≈ R$220–270k (2–3% of pool÷4). Flow check: she needs ~27–32 of ~3.500 SP migrations/yr at the April-2026 pace (290×12) ≈ 0,8–0,9% of the SP flow. Pool is not binding; conversion and competition are. Horizon ~3–4 years before the ≥10 MWh stock is mostly migrated; LV (Nov 2027) is a new stock but at ~0,72 MWh/month per commercial unit (SAMP) it pays ~R$181/contract at Cemig's formula."
+ },
+ "c8": "Plainly outside her world. It is outbound phone selling of multi-year electricity contracts to factory finance managers and building managers — the kWh is the product in every conversation. The beauty angle is real but cosmetic: in SP's captive Grupo A pool (BDGD, Dec 2025) cosmetics manufacturing is 56 units (median 6,6 MWh), salons 16, estética 1, cosmetics retail 24, cosmetics wholesale 10, apparel manufacturing 72, footwear 60, apparel retail 55 — 359 'her-world' units, only 156 at ≥10 MWh (+186 hotels/gyms ≥10 MWh). At ~30 signings a year that segment is an opener, not a business. One verified join shows the flavour: Rua Santana de Ipanema 1182, Guarulhos (BDGD: CNAE 2063-1/00, 315 kW, 57,8 MWh/month, captive) = LABORATÓRIO AVAMILLER DE COSMÉTICOS (Impala), CNPJ 62.823.752/0001-00 — worth ≈R$14.575 at 36 months (57,84 × 7 × 36) under SINERGIA. The founder liking the direction is new information; ask the year-three question, not the willingness one: 'could you still be cold-calling finance managers about kWh, alone, in year three?'",
+ "ai_native": [
+  {
+   "angle": "1. BROKER, NOT REP — multi-trader quote from the client's bill PDF",
+   "what_it_is": "Client emails its bill PDF (C4-clean); AI extracts demand kW, ponta/fora-ponta MWh, modality, distributor; computes captive cost from ANEEL's published tariff table; requests 3–5 varejista offers; ranks them with a counterparty-risk screen; winning trader pays commission.",
+   "evidence": "Inputs are free and machine-readable: ANEEL 'tarifas-homologadas-distribuidoras-energia-eletrica.csv' (89 MB, updated 25/09/2026) — e.g. Enel SP (ELETROPAULO) A4 Verde, REH 3.596 of 3/07/2026, valid 4/07/2026–3/07/2027: TE fora ponta R$301,88/MWh, ponta R$482,42/MWh, TUSD fora ponta R$150,62, ponta R$922,41, demand R$19,04/kW. Non-exclusive programmes exist (Cemig non-PLUS; ENGIE Afiliados 'todo tipo de CNPJ'); Ecom's contract FORBIDS it (non-compete + 12 months, forfeiture). But the comparison is already offered FREE to the consumer by Clarke Energia (75–80+ suppliers) and UC Livre (35+), and the state comparator is legislated (Decreto 13.097 art. 10). Broker economics are WORSE than exclusive Cemig PLUS (loses the +R$3/MWh/month recurring).",
+   "verdict": "KEEP AS A TOOL, NOT AS THE BUSINESS. Use the bill parser + ANEEL tariff engine to make each call concrete and to screen counterparties; the comparison itself is a free front door.",
+   "url": "https://dadosabertos.aneel.gov.br/dataset/tarifas-distribuidoras-energia-eletrica ; https://clarke.com.br/ ; https://uclivre.com.br/"
+  },
+  {
+   "angle": "2. THE CLOCK-START BOOK — pre-sign LV small businesses, auction the book at the Nov-2027 opening",
+   "what_it_is": "Waiting list of salons/clinics/shops with an authorisation, sold to varejistas per contract when LV opens.",
+   "evidence": "Date verified: 25 Nov 2027 for LV commercial/industrial (Decreto 13.097 art. 1º I) = month ~14 of her window, with ANEEL's rules scheduled for 2027. SP LV pool is large (SAMP Jun 2026: 1.096.816 B3 commercial units, Regular) but tiny per unit: 0,72 MWh/month and R$594/month energy revenue ⇒ ≈R$181 per 36-month contract at Cemig's formula (no LV rate published anywhere — UNVERIFIED). The decree standardises the product, forces a published reference price, a CCEE comparator, and a 90-day notice; data sharing only with prior consent and non-discriminatory access (art. 9 §§1–2); a pre-signed authorisation cannot bind a consumer's later choice. No comercializadora LV 'pré-cadastro' list found.",
+   "verdict": "DEAD for this window and this price: stock arrives late, commoditised by statute, ~R$150–400 per contract.",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/D13097.htm"
+  },
+  {
+   "angle": "3. PROSPECTING RAIL — 'eligible minus migrated' as a named call list",
+   "what_it_is": "ANEEL BDGD UCMT_PJ.csv lists every medium-voltage legal-entity unit with LIV (free-market flag), CNAE, street address, CEP, municipality, contracted demand, 12 months of kWh and kW, GD participation (CEG_GD) and coordinates; identifier is encrypted, so join to the Receita CNPJ file on CEP + number + CNAE for name, phone and email.",
+   "evidence": "VERIFIED: 314.493 rows, base 31/12/2025, updated 01/09/2026. SP filter (active, Grupo A, LIV=0, CO/IN, no GD) = 18.017 units, 8.458 ≥10 MWh. Join test 1 of 2 succeeded (Avamiller/Impala, CNPJ 62.823.752/0001-00, publica.cnpj.ws gives phone (11) 2487-2700 and an email); test 2 (Av Ibirama 230, Taboão) not resolved by web search. CCEE dataset listing (partial) shows no consumer-by-CNPJ dataset; CCEE blocks curl ('Acesso bloqueado') — UNVERIFIED completeness. Caveats: 9 months stale (~2.500–3.000 SP units migrated since) and equally free to every competitor — the cheapest list, not a moat.",
+   "verdict": "THE BEST AI-NATIVE PIECE. It lets her rank by commission value before dialing (MWh × R$7 × months) and skip GD/public/small units — it roughly halves hours per signing on paper (UNVERIFIED).",
+   "url": "https://dadosabertos.aneel.gov.br/dataset/base-de-dados-geografica-da-distribuidora-bdgd"
+  },
+  {
+   "angle": "4. HER-WORLD SEGMENT — cosmetic factories, salons, hotels",
+   "what_it_is": "Target beauty/fashion CNAEs first.",
+   "evidence": "359 core units in SP's captive pool, 156 ≥10 MWh; cosmetics manufacturing median 6,6 MWh (small). Contract manufacturers named in the brief (Veneza, SDK, Império, TCI) were not individually checked against BDGD (UNVERIFIED).",
+   "verdict": "COSMETIC. A 2-month opening vertical and a conversational edge, not a way to make kWh selling feel like her world.",
+   "url": "https://dadosabertos.aneel.gov.br/dataset/4459e483-451f-4444-8022-bd8b5eac05c5/resource/f6671cba-f269-42ef-8eb3-62cb3bfa0b98/download/ucmt_pj.csv"
+  },
+  {
+   "angle": "TIMING and the 'prints money' framing",
+   "what_it_is": "When does cash arrive, and is the framing justified?",
+   "evidence": "Cemig pays one-off at CCVEE signing ⇒ first cash month 3–5; migration ≥180 days; PLUS recurring month 9–11; Ecom-type recurring month 9–12. Headwinds, all at primary sources: long-term ACL price R$147→R$233/MWh (+59%, Jan 2024–Mar 2026, Abraceel) against Enel SP A4 Verde TE of R$301,88/482,42 ⇒ energy-only saving thin (bill-level saving ~6–12% — my estimate, UNVERIFIED; vendor pages still say 'até 30–35%'); CCEE says migrations are in 'acomodação' (1.213 in Apr 2026 vs ~1.876/month in 2025); ten comercializadoras in RJ; 1.000-rep recruitment drives at Ecom and Desperta.",
+   "verdict": "'Prints money' is UNJUSTIFIED. It is a commission sales job whose rate and payer are unusually well documented, whose list is free, and whose conversion rate is unknown.",
+   "url": "https://abraceel.com.br/destaques/2026/04/preco-da-energia-no-mercado-livre-dispara-em-dois-anos/"
+  }
+ ],
+ "candidate": {
+  "name": "A CONTA LIVRE — a São Paulo Cemig-PLUS channel desk run off ANEEL's own unit register",
+  "offer": "She (Portuguese calls) works a ranked list of SP captive, private, no-GD Grupo A units ≥15 MWh/month built from ANEEL BDGD × Receita CNPJ; asks for the bill PDF; an AI engine prices the captive bill from ANEEL's published tariff and sets it against the supplier's proposal; she drafts the client's denúncia letter (client files it). Payer: Cemig SINERGIA — R$7/MWh × contract months at signing, +R$3/MWh/month for the contract life as an exclusive PLUS partner (SP is outside MG). Pitch in a crisis year: counterparty solidity (Cemig: state-controlled, 'maior número de clientes') — ten comercializadoras are in judicial recovery.",
+  "biggest_flaw": "Origination FOREVER into a crowded, commoditising channel: every unit is a cold call, renewals pay nothing, the stock depletes (~333 SP units/month leave the captive pool), savings are compressed by a +59% price rise, the comparison layer is free (Clarke, UC Livre, CCEE-to-come), and conversion is unmeasured. Plus a plain C8 miss.",
+  "repair": "(1) Call only ≥15–20 MWh units (commission R$7–10k each at 48–60 months) so the bar needs ~1,6–2,5 signings/month, not 6. (2) Take the payer that pays AT SIGNING (Cemig) — it fixes the cash timing that kills recurring-only programmes. (3) Stay non-exclusive during the test (Cemig non-PLUS + ENGIE Afiliados) and switch to exclusive PLUS only if Cemig's proposal wins ≥60% of her quoted clients. (4) Use the tariff engine + counterparty screen to make the call about solidity and a concrete R$ number, not 'até 30%'. (5) Treat it as a 3–4-year harvest with a written stop rule, not a permanent business.",
+  "honest_floor_usd_month": "US$500–1.500 (1 signing/month of 15 MWh ≈ US$520; 2,5/month of 15 MWh ≈ US$1.530). The bar (US$2.300–2.500 at month 12–18) needs ~2,5 signings/month of ~22 MWh units on ≥36-month contracts — unproven.",
+  "next_test": "R$0, 3 weeks: (a) register at Cemig SINERGIA and ENGIE Afiliados and ask ENGIE in writing for its rate; (b) build the top-200 list (SP, LIV=0, no GD, CO/IN, ≥15 MWh) from BDGD, join names/phones from the CNPJ data; (c) call until 20 decision-maker conversations are logged; count bills received within 10 days and proposals accepted within 45 days.",
+  "bar": "Committed in advance: ≥5 of 20 decision-maker conversations send a bill within 10 days AND ≥1 signed CCVEE (or written acceptance) within 45 days AND total calling time ≤25 h for the 20 conversations. Fewer than 3 bills ⇒ stop."
+ },
+ "verdict": "MARGINAL",
+ "unverified": [
+  "Conversion rates (dials→conversation→bill→signature) and hours per signed client — no primary source; the whole case depends on them",
+  "Commission rates of ENGIE, Neoenergia, CPFL Soluções, Ecom (amount), Comerc, EDP — unpublished or blocked",
+  "Typical varejista contract length for small Grupo A (36 vs 60 months) — Cemig minimum is 12",
+  "Bill-level saving in late 2026 (my estimate ~6–12%) — ACL retail price not published; only Abraceel wholesale reference R$233/MWh",
+  "Simples Nacional annex for intermediação/representação (Anexo III assumed, ~8% effective)",
+  "Share of the ≥10 MWh BDGD pool already migrated since 31/12/2025 (estimated 15–25%)",
+  "CNPJ join rate at scale (1 of 2 manual tests succeeded)",
+  "Whether CCEE publishes varejista-represented consumers by CNPJ (dataset listing only partly visible; CCEE blocks curl)",
+  "CCEE count of ten comercializadoras in RJ and ~5,6 mil affected varejista consumers (secondary: cocenergia substack citing CCEE)",
+  "SME early-termination rate driving Cemig's pro-rata clawback (6.1(e))",
+  "Clarke Energia / UC Livre business model and who pays them",
+  "LV commission rates (none published) and whether 25/11/2027 holds given ANEEL's 2027 rulemaking"
+ ]
+}
