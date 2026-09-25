@@ -444,3 +444,82 @@ The bar is ≈R$12.200–15.800 gross a month.
    - **Bar:** a full O LANÇAMENTO set in ≤3 h of her time, with **100% of stills passing the fidelity check.**
 2. **In the 20 calls, offer VITRINE at R$490 alongside the full kit.**
    - **Bar:** ≥5/20 buy VITRINE within 14 days, or ≥2/20 buy the full kit.
+
+---
+
+## PART E — two supplied tutorials, run through RULE 3 (25 Sep 2026)
+
+Two YouTube transcripts were supplied, both sponsored:
+
+1. an *"Artlist MCP + agent"* one-prompt cinematic film workflow;
+2. *"speedrunning an AI video agency"* for local service businesses: Seedance 2.5 via Higgsfield, a Blender MCP,
+   Whop for site, ads and payments, a US$700 one-time fee.
+
+`THE CONTENT-ECONOMY SELECTION BIAS` applies: both sell a method, and both are sponsored by the tools they show.
+**Take the parts, port the model, drop the costume.**
+
+**Verified today at Artlist's own pages:**
+
+- `artlist.io/mcp`: *"Artlist is now inside Claude… Builds the launch video, ads, and social content — without
+  the back-and-forth"*. Models: Nano Banana Pro, Seedance 2.5 / 5.0 Pro, Kling 3.0, Veo 3.1, GPT Image 2, ElevenLabs,
+  Lyria.
+- `artlist.io/pricing`:
+  - AI Starter US$19,99/month (US$11,99 annual): 16.500 credits, ≈1.650 images / 103 videos;
+  - **AI Core US$39,99/month (US$23,99 annual): 40.000 credits, ≈4.000 images / 250 videos**;
+  - *"License covers commercial use"*.
+- The licence page did not load (61 bytes), so **whether Artlist's terms allow training on uploaded inputs is
+  UNVERIFIED.** Apply the Higgsfield rule to it too: no unreleased artwork goes in.
+
+### Parts TAKEN — each makes Part D cheaper or faster to build
+
+1. **The machine needs no code. Agent + MCP + "skills" is the pipeline.**
+   - A chat agent connected to Higgsfield's MCP (founder's choice; this very session has it) or Artlist's runs
+     storyboard → frames → film in one guided conversation.
+   - **Her curated campaign worlds (D1) become written SKILLS:** one file per route with look, lighting, lens,
+     palette, pacing and banned claims, loaded before every job.
+   - **This matters because she is not a developer. Part D's pipeline mostly runs in chat, not in scripts.**
+   - The one piece that stays a small local check is the fidelity report.
+2. **The cost rail: preview cheap, upgrade only what is approved.** The tutorial storyboarded a whole film on a
+   low-cost image model for **130 credits**, then re-rendered only the chosen frames on Nano Banana Pro.
+   ⇒ **The PRÉVIA and the three-route choice are made on the cheap model; only the approved route is rendered in
+   full.** (`THE COST-RAIL SPLIT`, restated by a practitioner.)
+3. **Reference-ad breakdown as a skill.**
+   - Pull top-performing beauty ads from Meta's Ad Library or TikTok's Creative Center.
+   - Break each into hook, beats, timing and shot list, and rebuild the STRUCTURE around the client's real packshot
+     and approved claims.
+   - ⚠ Structure, not expression: copy the rhythm, never the footage, music or copy.
+4. **One detailed video prompt beats "make the video"** (the tutorial's own observation). The film step gets a
+   written prompt template in the skill: reference map, global look, audio, scene-by-scene timeline.
+5. **Licensed music is a real line item the film needs.** Artlist is a music-licensing company first, with
+   *"License covers commercial use"* on the AI plans. **Whether that licence covers work delivered to a CLIENT's
+   paid ads is UNVERIFIED;** read the licence before the first delivery.
+
+### Parts REJECTED — each with the constraint that fires
+
+- **Running the client's Meta ads** (the agency tutorial's core offer). It means connecting the client's Business
+  Manager, i.e. **standing access to their system: C4.** It is also where the ongoing relationship lives. **Deliver
+  files; never run their ads.**
+- **Local service businesses as buyers** (roofers, waterproofing, solar). In the US that is English selling, which
+  must be written. In Brazil it is `THE R$1.200 CEILING`. **And tonight's C8 answer rules out calling people outside
+  her world.**
+- **The "content leverage funnel":** audience-building plus paid ads. C2 permits a COMPANY portfolio page, but paid
+  acquisition dies on **C5**. **The ANVISA file plus calls is the funnel.**
+- **Whop checkout links:** a card checkout. **`INVOICE, DON'T CHECKOUT`: in Brazil it is Pix against a nota
+  fiscal.**
+- **Blender "how the active works" animations:** a mechanism-of-action animation **is an efficacy claim by image**
+  (Lei 6.360 art. 59; CDC arts. 37 and 67). Only ever animate what an approved claim literally says. Keep it out of
+  the first offer.
+- **"US$700 one-time for video ads":** an asking price stated in a sponsored video, UNVERIFIED. For what it is
+  worth it sits at ≈R$3.600, inside the O LANÇAMENTO band, not above it.
+
+### What the tutorials CONFIRM, and it cuts both ways
+
+- **Artlist's own page says it builds *"the launch video, ads, and social content — without the back-and-forth"*.**
+  That is `THE TOOL VENDOR IS THE FRONT DOOR` a second time, from a second vendor, in marketing copy.
+- **So nothing she sells can be "we make the video."** What she sells stays exactly Part D's list:
+  - **the label-exact guarantee with a machine-written fidelity report;**
+  - **the claim lock**;
+  - **her curated worlds**;
+  - **one call**;
+  - **the campaign world kept on file for the next launch.**
+- The tutorials make her cheaper and faster. They make every competitor cheaper and faster too.
