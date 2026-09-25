@@ -1,0 +1,403 @@
+{
+ "agent": "VER1",
+ "run_date": "2026-09-25",
+ "fx": "PTAX venda 24 Sep 2026 = 5,1795 (olinda.bcb.gov.br, fetched)",
+ "buyer_posts": [
+  {
+   "platform": "99Freelas",
+   "url": "https://www.99freelas.com.br/project/producao-de-videos-com-ia-para-e-commerce-e-marketplaces-768972",
+   "date": "2026-07-18 13:06 (page 'Data da publicação')",
+   "buyer_words": "\"Tenho uma loja de dermocosméticos e produtos de estética e preciso de vídeos de produtos para vendas online e redes sociais... Vídeos de produtos criados com IA generativa... Formatos adaptados para Mercado Livre, Shopee, TikTok Shop e Instagram Reels; Capacidade de transformar fotos e informações técnicas dos produtos em conteúdo atrativo. Forneço fotos PNG dos produtos, logotipo e descrições técnicas. Início: teste pago com 2 vídeos. Se o resultado for bom, demanda recorrente mensal.\"",
+   "budget": "Not disclosed: 'Orçamento: Aberto', platform minimum 'Valor Mínimo: R$ 50,00'; offers shown as 'Privado'",
+   "proposals": "9 (11 interessados)",
+   "status": "AWARDED: page shows 'Freelancer vencedor Claudia A.'; winning price private",
+   "note": "THE plan's 'July 2026 dermocosmetics buyer' - VERIFIED to exist. It is a STORE / reseller ('loja'), not a brand, buying marketplace listing videos with a 2-video paid test. It is not a launch campaign."
+  },
+  {
+   "platform": "99Freelas",
+   "url": "https://www.99freelas.com.br/project/criar-videos-e-imagens-para-3-produtos-na-shopee-773216",
+   "date": "2026-08-04 08:00",
+   "buyer_words": "\"Preciso de vídeos e imagens para anunciar na Shopee; são 3 produtos ao todo. Os produtos são esmaltes de unha... Geração de imagens ambientadas com IA, 6 por produto; Criação de clipes com IA... Devem ser entregues os arquivos editáveis ou os prompts e a indicação da ferramenta... para que possamos fazer pequenos ajustes no futuro.\"",
+   "budget": "Not disclosed ('Aberto', min R$50)",
+   "proposals": "11",
+   "status": "AWARDED ('Freelancer vencedor Adson J'); price private",
+   "note": "Nail polish seller. It asks for the PROMPTS AND TOOL so it can do the next round itself. The replacement-cost ceiling, in the buyer's own words."
+  },
+  {
+   "platform": "99Freelas",
+   "url": "https://www.99freelas.com.br/project/editor-para-vsl-estilo-tiktok-ugc-de-produto-de-beleza-784663",
+   "date": "2026-09-15 20:47",
+   "buyer_words": "\"VSL vertical de aproximadamente 10 a 12 minutos para um produto de cuidados com os lábios... A apresentadora... foi criada com IA\"",
+   "budget": "Not disclosed ('Aberto', min R$50)",
+   "proposals": "2",
+   "status": "open / no winner shown",
+   "note": "Editing work (AI presenter already made by the buyer). Adjacent, not production."
+  },
+  {
+   "platform": "Workana",
+   "url": "https://www.workana.com/pt/job/editor-de-videos-com-ia-para-reels-e-tiktok-personagem-consistente-para-perfumaria-premium",
+   "date": "2026-09-24",
+   "buyer_words": "\"marca de perfumaria premium... produção de 30 vídeos-base... integrar imagens fornecidas de perfumes, decants e embalagens em novos cenários e situações gerados por IA, preservando a autenticidade dos produtos... mãos segurando, utilizando e abrindo produtos ou embalagens, sem apresentar deformações... evitando qualquer aparência de conteúdo genérico de IA\"",
+   "budget": "USD 250-500 for the project (30 videos) = R$ 1.295-2.590 at PTAX 5,1795 = ~R$43-86 per video",
+   "proposals": "12",
+   "status": "open ('Analisando propostas'); client country not displayed in listing",
+   "note": "The richest beauty/AI brief in the window. Product-fidelity requirement, and still about R$43-86 per video."
+  },
+  {
+   "platform": "Workana",
+   "url": "https://www.workana.com/pt/job/editor-de-video-vertical-com-ia-para-tiktok-reels-de-marca-de-cosmeticos",
+   "date": "2026-08-19",
+   "buyer_words": "\"criar um vídeo piloto vertical de até 2 minutos para uma marca de cosméticos... É fundamental ter experiência com ferramentas de Inteligência Artificial aplicadas à produção de vídeo... Caso o resultado atenda... continuidade para a produção de uma série de vídeos\"",
+   "budget": "USD 50-100 = R$ 259-518",
+   "proposals": "15",
+   "status": "open ('Analisando propostas')",
+   "note": "Cosmetics brand, AI video pilot."
+  },
+  {
+   "platform": "Workana",
+   "url": "https://www.workana.com/pt/job/editor-de-video-para-campanha-de-marca-de-korean-beauty",
+   "date": "2026-09-11",
+   "buyer_words": "\"reeditar um filme vertical para o lançamento de uma nova marca brasileira de Korean Beauty. O material bruto já foi gravado... O vídeo final deve ter cerca de 30 segundos\"",
+   "budget": "USD 50-100 = R$ 259-518",
+   "proposals": "19",
+   "status": "open; client flag Brasil",
+   "note": "A LAUNCH film for a new Brazilian brand, shot traditionally. The buyer budgets the post-production at under R$520."
+  },
+  {
+   "platform": "Workana",
+   "url": "https://www.workana.com/pt/job/editor-de-video-para-conteudo-de-beleza-e-cosmeticos-tiktok-reels",
+   "date": "2026-08-19",
+   "buyer_words": "\"parceria de longo prazo com a Dudéa, uma nova marca de beleza e cosméticos... teste pago de 1 a 3 vídeos... pacote mensal\"",
+   "budget": "Menos de USD 50 (listing) = < R$259",
+   "proposals": "6",
+   "status": "open",
+   "note": "New beauty brand, editing, not AI production."
+  },
+  {
+   "platform": "Workana",
+   "url": "https://www.workana.com/job/edicao-profissional-de-video-de-beleza-maquiagem-2-minutos-de-duracao-final",
+   "date": "2026-09-25 (listing: 'há 28 minutos')",
+   "buyer_words": "(listing) \"edição completa de um vídeo focado no nicho de maquiagem, cabel[o]...\"",
+   "budget": "Menos de USD 50 = < R$259",
+   "proposals": "2",
+   "status": "open; Brasil",
+   "note": "Editing."
+  },
+  {
+   "platform": "Workana",
+   "url": "https://www.workana.com/job/editor-de-video-para-vsl-de-direct-response-nicho-skincare",
+   "date": "~2026-09-04 (listing: 'há 3 semanas')",
+   "buyer_words": "(listing) \"editor de vídeo com experiência em VSLs de direct response... produto digital do nicho [skincare]\"",
+   "budget": "Menos de USD 50 = < R$259",
+   "proposals": "13",
+   "status": "open; Brasil",
+   "note": "Editing."
+  },
+  {
+   "platform": "Workana",
+   "url": "https://www.workana.com/job/designer-para-desenvolvimento-de-identidade-visual-de-marca-de-cosmeticos",
+   "date": "~2026-09-11 (listing: 'há 2 semanas')",
+   "buyer_words": "(listing) \"desenvolver a identidade visual de uma nova marca de cosméticos. Já temos um direcionamento criativo avançado, construído com apoio de inteligência artificial\"",
+   "budget": "USD 100-250 = R$ 518-1.295",
+   "proposals": "26",
+   "status": "open; Brasil",
+   "note": "Nearest substitute (identity design), not campaign visuals."
+  },
+  {
+   "platform": "Workana",
+   "url": "https://www.workana.com/job/desenvolvimento-de-identidade-visual-e-branding-para-nova-marca-de-cosmeticos-infantis",
+   "date": "~2026-09-11 (listing: 'há 2 semanas')",
+   "buyer_words": "(listing) \"identidade visual completa de uma nova linha de cosméticos naturais para crianças\"",
+   "budget": "USD 500-1.000 = R$ 2.590-5.180",
+   "proposals": "30",
+   "status": "open",
+   "note": "Highest beauty-related budget observed. It buys branding and packaging identity, not AI visuals."
+  }
+ ],
+ "buyer_budget_summary": "CLAIM 1a (July 2026 dermocosmetics buyer, PNG + technical info): VERIFIED. 99Freelas #768972, 18 Jul 2026. The buyer is a dermocosmetics STORE (reseller) buying marketplace/social product videos. The budget is undisclosed ('Aberto', R$50 minimum). There were 9 proposals and it was awarded, price private, with a 2-video paid test. CLAIM 1b (August 2026 brief preserving packaging, logo, text, colors and geometry): NOT FOUND for any beauty or cosmetics buyer, so UNVERIFIED as stated. Sources checked: 99Freelas projects 763000-787500 (26 Jun to 25 Sep 2026; 17.077 live pages, 6.727 fetched in full by title filter) and Workana open listings on 33 queries. Fidelity clauses are COMMON in cheap non-beauty AI product briefs in Jul-Sep 2026: toys (#776283/#776351, 14-15 Aug), fashion (#771869), bags (#781340, 208 proposals, 'fidelidade ao produto físico deve ser 100%'), product swap (#784613), Mercado Livre (#766504). Also one perfume brand on Workana (24 Sep, 'preservando a autenticidade dos produtos'). Fidelity is a table-stakes requirement at the R$50-500 tier, not a premium signal. DISTRIBUTION OF WHAT BUYERS SAY THEY WILL PAY: every beauty/cosmetics visual-production post with a stated budget is between < USD 50 and USD 500 per PROJECT, i.e. about < R$259 up to R$2.590. The single highest is 30 AI videos for USD 250-500 (R$43-86 per video). Beauty AI-video or launch-film posts: < USD 50 (x3), USD 50-100 (x2), USD 250-500 (x1). The only beauty budget above USD 500 is USD 500-1.000 for BRANDING a new kids' line, not campaign visuals. On 99Freelas the buyer never states a budget: 6.702 of 6.727 fetched projects are 'Aberto' with a R$30-100 platform minimum, and offers are private. So 99Freelas proves the demand exists and says nothing about price. ZERO observed buyer posts at or near the plan's R$2.990 for a one-product set. The one launch-film buyer (a new Brazilian K-beauty brand, 11 Sep) budgets USD 50-100 for post-production. Coverage limits: 99Freelas covers Jul-Sep 2026 only, not 2025. Workana shows only OPEN jobs (closed ones are unsearchable, and the insight pages are 'Access Denied'). GetNinjas, Fiverr requests and LinkedIn were not searched.",
+ "orne": {
+  "site": "https://studio.orne.ai/tabeladepreco (SPA; prices read from the page's own JS chunk https://studio.orne.ai/assets/Dx6k-TZz.js, route '/tabeladepreco', title 'Tabela de preços — Orne.Studio')",
+  "operator": "Orne Studio, a unit of Orne.ai (Brazilian AI company, https://orne.ai/). JSON-LD: 'Plataforma de conteúdo visual com IA para moda'",
+  "prices_per_unit_BRL": {
+   "Imagens Ambientadas (produto em cenário IA)": "5,50/unidade (floor 3,90; 2 regenerations included; extra 1,50)",
+   "Mais Poses": "5,50/unidade (floor 3,90)",
+   "Cena com Modelo — Imagem": "6,90/unidade (floor 4,90; 'Fidelidade total ao produto')",
+   "Social Media Creator (post/carrossel ~5 slides)": "25/post (floor 18)",
+   "Vídeo 360° 5 s": "65 (floor 55)",
+   "Vídeo Ambientado 5 s": "85 (floor 72)",
+   "Cena com Modelo — Vídeo 5 s Essencial": "29,90 (floor 24)",
+   "Cena com Modelo — Vídeo 5 s Premium": "49,90 (floor 42; 'Fidelidade total')",
+   "Cena com Modelo — Vídeo 10 s Premium": "89 (floor 75; 'Fidelidade total')"
+  },
+  "volume_discount": "200+ = -10%, 500+ = -20%, 1000+ = -35% (floors apply); 'Orçamento válido por 15 dias'",
+  "plan_claim_check": "CONFIRMED with one correction: images R$5,50 ambient / R$6,90 model per unit are exact. Short AI videos run R$29,90-R$89, not R$29,90-R$85: R$85 is the 5 s product-only 'Vídeo Ambientado' and R$89 is the 10 s model video.",
+  "fidelity_promise": "MARKETING ONLY. 'Fidelidade total ao produto' / 'Fidelidade total' appear as feature bullets on the model-image and premium-video SKUs. The bundle has a 'Cosméticos & Beleza' preset whose prompt demands 'The EXACT cosmetic ... 100% identical: packaging form, label content, typography, color, finish, cap/pump/applicator design'. No guarantee, refund or acceptance clause was found. Its line list is fashion-first ('Joia, calçado, roupa, acessório').",
+  "cost_tell": "The client bundle ships Orne's own per-generation cost table (Freepik API endpoints): images R$0,06-0,85 (Seedream V4 R$0,17, Flux Pro 1.1 R$0,23); video R$0,21-1,06 per second (Kling 3 Pro R$0,89/s). So a R$5,50 image is about 20-30x its generation cost.",
+  "equivalent_of_plan_set": "1 KV + 6 campaign images (7 x R$6,90 = R$48,30) + 15 s film (10 s Premium R$89 + 5 s Premium R$49,90 = R$138,90) + 2 cutdowns (2 x R$29,90-49,90) + 6 commerce images (6 x R$5,50 = R$33) = about R$280-320 at list. Using two 10 s clips for the film instead: up to about R$360. The plan's R$2.990 is about 8-11x Orne's self-serve list for the same unit count (without creative direction)."
+ },
+ "villo": {
+  "site": "https://www.villo.ia.br/precos",
+  "operator": "Villo - Design & Technology, Luque Partners Ltda, CNPJ 18.681.190/0001-15 (site footer). NOT villo.ai, which is a Swedish AI property-video company.",
+  "prices": {
+   "Teste Grátis": "1 free image ('Produza 1 imagem grátis para conhecer o serviço')",
+   "START": "R$19,90 per pacote = 1 product x 3 variations (= R$6,63/image), jpg+png, 1 revision per image, + 'Brinde' formats (1 Feed, 1 Reels, 1 Stories)",
+   "IMPULSO": "R$59,90 per pacote = up to 5 products x up to 3 variations + 1 custom + 1 automatic human model",
+   "ESCALA": "R$99,90 per pacote = up to 10 products x up to 3 variations + 3+3 models",
+   "Módulo 2 Redes Sociais": "R$250 (≤10 posts/month) · R$350 (≤15) · R$600 (≤30) per pacote",
+   "Vídeo": "R$50 per video, 'Conteúdos de até 10 segundos'",
+   "Design & Criações / campanhas": "'Falar com consultor' (no price)"
+  },
+  "plan_claim_check": "CONFIRMED: 'product-image packages beginning at R$19,90' is correct. The unit is 1 product x 3 variations, so about R$6,63 per image.",
+  "fidelity_promise": "NONE. The terms (https://www.villo.ia.br/termos-condicoes) disclaim it: 'pequenas variações visuais, textuais ou compositivas podem ocorrer entre versões'. The service is 'obrigação de meio'. Liability is capped at 'valor efetivamente pago pelo cliente'. Client-supplied logos and product images remain the client's responsibility.",
+  "free_preview_note": "Villo already GIVES AWAY the free preview: a free test image of the client's own product ('ganhe Grátis uma imagem teste do seu produto'). The 'PRÉVIA DE CAMPANHA' free-sample mechanic is not unique; a R$19,90 competitor uses it as a front door."
+ },
+ "beauty_fair": {
+  "exists": true,
+  "url": "https://beautyfair.com.br/expositores/ (data: https://cms.beautyfair.com.br/beautyfair/wp-json/custom/v1/node?path=expositores&paged=1..33)",
+  "title_on_page": "'Descubra quais foram as marcas que marcaram presença em 2026' (a POST-EVENT list). ctaEvent: next edition 'Expo Center Norte, 4 a 7 setembro 2027'",
+  "exhibitors": 491,
+  "pagination": "33 pages, total_items 491 (counted 491 distinct ids myself)",
+  "categorised_by_specialty": "YES. 26 specialty tags in use, 75 labels including ES/EN duplicates. Top: Cabelos 161, Skincare 109, Maquiagem 104, Perfume 99, Cosméticos 77, Unhas 73, Acessórios 57, Estética 56, Cílios 48, Equipamentos 43, Higiene 43, Barber 40, Sobrancelhas 40 ... Proteção Solar e Bronzeadores 17, Embalagem 12",
+  "hair_or_skin": "229 tagged Cabelos OR Skincare OR Proteção Solar (161 hair, 111 skin incl. sun); 236 if Barber is added. 34 of the 229 are also tagged supplier categories (Equipamentos/Embalagem/Móveis/Mídia/Ferramentas etc.)",
+  "contacts": "NO. Each record has only id, title, url/link, thumbnail and categories. No email or phone anywhere in the 33 pages (0 email strings, 0 tel/WhatsApp). Of the 229 hair/skin records, 125 link Instagram, 95 a website, 9 nothing."
+ },
+ "preview_test": {
+  "method": "TA_CONSULTA_COSMETICOS.CSV (dados.anvisa.gov.br, downloaded today). Hair/skin keyword filter on rows with DT_VENCIMENTO 2036-07-27..2036-09-25, i.e. notified 2026-07-27..2026-09-23. That gives 4.929 rows from 792 holders. A random sample of 15 distinct holders (seed 20260925) was checked for a public packshot on the brand site, marketplaces and web search. Instagram could not be read: r.jina.ai returned 'Anonymous access to domain www.instagram.com blocked', and direct fetches hit a login wall. Mercado Livre served an account-verification wall. A secondary ICP sample of 6 established brands was checked the same way.",
+  "n": 15,
+  "public_packshot_exists": 3,
+  "sibling_only": 3,
+  "none": 9,
+  "key_finding": "All 3 exact packshots are RE-NOTIFICATIONS of products already on sale (Derma Fine 2017 notification, Keune 2023, Affirm 2007/2015), so none of them is a launch. Among the 12 genuinely new SKUs: 0 exact packshots, 3 sibling-only, 9 nothing public. The ICP sample of established brands (n=6) shows the same pattern: 3 exact, all re-notifications (Natura Faces, Neutrogena Hydro Boost, and Adcos, a RENAMED re-notification of its 2019 'STICK FPS UVB 80 PEACH'); 2 sibling-only (Wella Ultimate Hydra, a new line beside Ultimate Repair/Smooth; Widi Care Juba new SKU); 1 none (Alia Beauty PDRN). Pooled, 0 of 15 genuinely new SKUs had a public exact packshot when the ANVISA signal fired. 20,8% of all 4.929 recent hair/skin notifications carry a product name identical to an earlier notification (1.026 rows). That is a lower bound on re-notification noise, because renamed ones like Adcos are missed.",
+  "implication": "At the moment the ANVISA signal fires, a watermarked preview of THE launch cannot be built from public material. It can only be built from a sibling's packshot with the new label invented, which is the exact fidelity failure the plan's 'Product Lock' forbids, or not at all (10/15). Where a public packshot does exist, the 'launch' is usually a re-notification of an on-sale product, so there is nothing to launch. Fix options: (a) trigger on the brand's own public 'em breve'/launch post instead of ANVISA (later, but the pack exists); (b) use ANVISA only to FIND brands, and build the preview from the brand's CURRENT hero product; (c) ask for the die-line/artwork, which is unreleased client IP (see higgsfield_training).",
+  "rows": [
+   {
+    "proc": "25351147004202649",
+    "notified": "2026-08-18",
+    "product": "SAVIE MAGNIFIC - SHAMPOO RENOVE CARE - 300mL",
+    "holder": "Veromar Perfumes e Cosméticos (ME, private-label 'terceirização' factory, veromarcosmeticos.com.br)",
+    "renotification": false,
+    "result": "none",
+    "evidence": "No brand site found; WebSearch no match; the factory site lists no client brands"
+   },
+   {
+    "proc": "25351138336202632",
+    "notified": "2026-08-05",
+    "product": "Derma Fine Extrem Derme Hidratante Facial",
+    "holder": "LQF Laboratório Químico Farmacêutico Rio Preto (Demais)",
+    "renotification": true,
+    "result": "exact (re-notification; not a launch)",
+    "evidence": "Same name notified earlier (DT_VENC 2027-09-19). Packshot on https://www.caaspshop.com.br/derma-fine-extrem-derme-hidratante-facial-60ml-101530/p and https://www.superfumaria.com.br/derma-fine-extrem-derme-facial-60ml"
+   },
+   {
+    "proc": "25351152696202647",
+    "notified": "2026-08-26",
+    "product": "KEUNE AFTER COLOR SHAMPOO - KEUNE",
+    "holder": "Overseas Importadora (importer)",
+    "renotification": true,
+    "result": "exact (re-notification; imported global product)",
+    "evidence": "Earlier notification DT_VENC 2033-06-26. Packshots at https://www.walmart.com/ip/Keune-After-Color-Shampoo-pH4-33-8-oz-1000-ml/5673763482 etc."
+   },
+   {
+    "proc": "25351158125202616",
+    "notified": "2026-09-02",
+    "product": "AURAH BY LARY SANTI SKIN CODE SÉRUM ANTIAGING FACIAL",
+    "holder": "Ekobé Cosméticos (Demais, Franca SP)",
+    "renotification": false,
+    "result": "none",
+    "evidence": "WebSearch no match; aurah.com.br is an unrelated jewellery brand; ekobe.ind.br has no mention"
+   },
+   {
+    "proc": "25351101876202661",
+    "notified": "2026-09-14",
+    "product": "PROTETOR SOLAR SANCARE KIDS FPS 60",
+    "holder": "Cosmoderma Ind. e Com. (Demais, Pirassununga SP)",
+    "renotification": false,
+    "result": "none",
+    "evidence": "WebSearch no match; cosmoderma.com.br has no 'Sancare'; sancare.com.br does not resolve"
+   },
+   {
+    "proc": "25351155646202611",
+    "notified": "2026-08-28",
+    "product": "YOYO MAQUIAMOR LENÇOS DEMAQUILANTES REFRESCANTES VITAMINA C",
+    "holder": "Loovy Care (private-label factory, Boituva SP)",
+    "renotification": false,
+    "result": "sibling_only",
+    "evidence": "Sibling Yoyo Maquiamor 'Mask Stick Vitamina C' on https://www.mundodavaidade.com.br/produtos/mask-stick-vitamina-c-yoyo-maquiamor-kpuq1/ ; the wipes themselves were not found"
+   },
+   {
+    "proc": "25351141085202673",
+    "notified": "2026-08-10",
+    "product": "PERFUME CAPILAR - BS CACHOS",
+    "holder": "RS de Vargas Cosméticos / RB Cosméticos (ME, Vila Velha ES)",
+    "renotification": false,
+    "result": "none",
+    "evidence": "WebSearch no match"
+   },
+   {
+    "proc": "25351154722202671",
+    "notified": "2026-08-28",
+    "product": "AFFIRM NORMALIZING SHAMPOO",
+    "holder": "Syntonics do Brasil (Avlon licensee)",
+    "renotification": true,
+    "result": "exact (re-notification; US product since 2007)",
+    "evidence": "Earlier notifications 2007 and 2015. https://avlon.com/products/affirm-normalizing-shampoo"
+   },
+   {
+    "proc": "25351142899202625",
+    "notified": "2026-08-12",
+    "product": "SHAMPOO 2 EM 1 ARGAN LE BOTANIQUE",
+    "holder": "Estoril Ind. e Com. de Produtos do Toucador (EPP; hotel-amenity maker)",
+    "renotification": false,
+    "result": "sibling_only",
+    "evidence": "https://www.estorilcosmeticos.com.br/carrinho/le-botanique-olive/ shows a Le Botanique Olive '2 em 1'; there is no Argan variant on the site"
+   },
+   {
+    "proc": "25351159418202611",
+    "notified": "2026-09-03",
+    "product": "BOTOX CAPILAR DONNA PROFESSIONAL",
+    "holder": "Fabulous Indústria de Cosméticos (ME, Cabedelo PB)",
+    "renotification": false,
+    "result": "none",
+    "evidence": "WebSearch finds only unrelated 'Rocco Donna'/'Donna K'"
+   },
+   {
+    "proc": "25351168826202663",
+    "notified": "2026-09-18",
+    "product": "DP HAIR SHAMPOO TONALIZANTE",
+    "holder": "Etima Cosméticos (ME, Londrina PR)",
+    "renotification": false,
+    "result": "none",
+    "evidence": "WebSearch finds only the US 'dpHUE'"
+   },
+   {
+    "proc": "25351145529202640",
+    "notified": "2026-08-14",
+    "product": "Creme Antioxidante Facial Efeito Pele Radiante",
+    "holder": "NASS Dermocosmetique (ME)",
+    "renotification": false,
+    "result": "none",
+    "evidence": "https://www.nassdermocosmetique.com.br/ : 'A loja está temporariamente fora de serviço'"
+   },
+   {
+    "proc": "25351161228202663",
+    "notified": "2026-09-08",
+    "product": "LEAVE-IN MANTEIGA MANTEIGAS DO BRASIL S&A CARRIAS",
+    "holder": "Cosmoética / Ledebut (ME, Lauro de Freitas BA)",
+    "renotification": false,
+    "result": "none",
+    "evidence": "WebSearch no match; ledebut.com.br has no mention"
+   },
+   {
+    "proc": "25351171266202624",
+    "notified": "2026-09-23",
+    "product": "SHAMPOO MACADAMIA E MEL EAÊ BRAZIL",
+    "holder": "Beauty Lab Inovação Cosméticos (ME, Mairiporã SP)",
+    "renotification": false,
+    "result": "sibling_only",
+    "evidence": "https://eaebrazil.com.br/products.json : 'Condicionador Macadâmia & Mel 300ml' (created 2025-08-26) and 'Máscara Nutritiva Macadâmia & Mel 500g' exist; the shampoo is not in the 160-product catalogue"
+   },
+   {
+    "proc": "25351142652202617",
+    "notified": "2026-08-11",
+    "product": "PERFUME CAPILAR - ELI HENCKER",
+    "holder": "Beauline Ind. de Cosméticos (ME, private-label factory, Itapema SC)",
+    "renotification": false,
+    "result": "none",
+    "evidence": "WebSearch no match; beauline.com.br is a 'crie sua marca própria' factory"
+   }
+  ],
+  "icp_rows": [
+   {
+    "proc": "25351091613202636",
+    "notified": "2026-09-14",
+    "product": "ADCOS PROTETOR SOLAR STICK FPS 80 PELE MISTA À SECA COR 2.0 PEACH",
+    "result": "exact (RENAMED re-notification of 2019 'ADCOS PROTETOR SOLAR STICK FPS UVB 80 PEACH')",
+    "evidence": "https://www.belezanaweb.com.br/adcos-stick-fps-80-peach-protetor-solar-com-cor-12g/ ; Amazon ASIN B0CRC1M2ZF"
+   },
+   {
+    "proc": "25351137197202620",
+    "notified": "2026-08-04",
+    "product": "NATURA FACES MÁSCARA PARA OLHOS E SOBRANCELHAS",
+    "result": "exact (re-notification; earlier undated row, situação N)",
+    "evidence": "https://www.natura.com.br/p/mascara-para-olhos-e-sobrancelhas-incolor-faces-7-ml/NATBRA-67647"
+   },
+   {
+    "proc": "25351162020202661",
+    "notified": "2026-09-09",
+    "product": "NEUTROGENA HYDRO BOOST WATER GEL FPS 25",
+    "result": "exact (re-notification; earlier undated row N; global SKU)",
+    "evidence": "https://www.neutrogena.com/products/skincare/neutrogena-hydro-boost-city-shield-water-gel-sunscreen-broad-spectrum-spf-25/6811347"
+   },
+   {
+    "proc": "25351140947202641",
+    "notified": "2026-08-10",
+    "product": "WELLA ULTIMATE HYDRA CONDICIONADOR",
+    "result": "sibling_only (Ultimate Repair / Ultimate Smooth)",
+    "evidence": "WebSearch returns only Ultimate Smooth/Repair; no 'Ultimate Hydra' on the Wella search page"
+   },
+   {
+    "proc": "25351148547202683",
+    "notified": "2026-08-20",
+    "product": "JUBA TRANCAS SHAMPOO FLUIDO FORTALECEDOR - WIDI CARE",
+    "result": "sibling_only (Juba line)",
+    "evidence": "https://widicare.com.br/produto/juba-shampoo/ ; no 'fluido fortalecedor/tranças' SKU found"
+   },
+   {
+    "proc": "25351139530202635",
+    "notified": "2026-08-06",
+    "product": "ALIA BEAUTY PDRN PINK PEPTIDE SERUM",
+    "result": "none",
+    "evidence": "WebSearch returns only medicube's PDRN Pink Peptide Serum; aliabeauty.com.br gives a proxy 502"
+   }
+  ]
+ },
+ "higgsfield_training": {
+  "terms_url": "https://higgsfield.ai/terms-of-use-agreement",
+  "terms_version": "Last updated July 26, 2026; effective immediately for users registering on/after 26 Jul 2026, on 27 Aug 2026 for earlier users",
+  "clause_4_4": "\"You acknowledge and agree that Your Content, Inputs, and Outputs may be used by Company to train, develop, enhance, evolve, and improve its (and its affiliates’) AI models... Different terms apply to enterprise and business customers who use the Service under an Enterprise Agreement (see Section 1.3); under those agreements, Company does not use the customer's content to train or improve its AI models, and that content is handled as confidential. ... You can stop this going forward by deleting Your Content or your Account\"",
+  "clause_4_2": "User represents 'you have all necessary rights to Your Content to grant the licenses set forth in Sections 4.3 and 4.4' and that it does not infringe third-party trademark/copyright",
+  "clause_16_5": "Deletion does not reach '(iii) content already used to develop or improve Company's AI models before deletion, which cannot feasibly be disassociated from models already trained'",
+  "privacy_url": "https://higgsfield.ai/privacy-policy (Effective Aug 27, 2026; last updated Jul 26, 2026)",
+  "privacy_2_3": "'using your user-shared multimedia data, query and prompt data, and Inputs and Outputs ... to train and improve our (and our affiliates') AI models'. Also shares with 'third-party AI model and compute providers'",
+  "opt_out": "NONE on self-serve (Free/Plus/Ultra; the team-plan page https://higgsfield.ai/team-plan states no no-training term). The only stop is deleting the content or account, which is prospective only. The arbitration clause has an opt-out; training does not.",
+  "enterprise_no_training": "YES, contractual. https://higgsfield.ai/enterprise: 'Does Higgsfield train AI models on our data? No. Higgsfield Enterprise never trains models on your data... contractual no-train guarantee... built for unreleased products, embargoed campaigns, and confidential client material.' Price: 'credit-based pricing on annual contracts with monthly payments, sized to your team's seats' (no public price, 'Contact Sales'), so it is UNVERIFIED and very likely outside C5.",
+  "answer": "YES. On a self-serve plan, uploading a client's unreleased packaging artwork as an Input licenses Higgsfield (and affiliates) to train on it, and Sol warrants she holds the rights to grant that licence. A client NDA or confidentiality clause is breached by construction. Only an Enterprise Agreement (annual, sales-gated, unpriced) removes this."
+ },
+ "alternative_no_training": {
+  "adobe_firefly": {
+   "urls": [
+    "https://www.adobe.com/legal/terms.html (General Terms, 'Published October 3, 2025. Effective as of October 3, 2025')",
+    "https://www.adobe.com/ai/overview/firefly/gen-ai-approach.html"
+   ],
+   "quotes": [
+    "\"We will not use your Local or Cloud Content to train generative AI models except for Content you choose to submit to the Adobe Stock marketplace\"",
+    "\"User data and content within our applications are not, and will not be, used to train generative AI models—whether those models are from Adobe or its partners. This is explicitly stated in our agreements with partner companies providing access to partner models\""
+   ],
+   "note": "Direct curl to adobe.com returned an empty reply or an HTTP/2 INTERNAL_ERROR, so both pages were read verbatim through the r.jina.ai reader. The no-training term applies to individual plans too (it is in the General Terms), not only to enterprise."
+  },
+  "google_gemini_api_paid": {
+   "url": "https://ai.google.dev/gemini-api/terms (read via r.jina.ai; direct fetch hits an OAuth redirect loop)",
+   "quote": "\"When you use Paid Services, including, for example, the paid quota of the Gemini API, Google doesn't use your prompts (including associated system instructions, cached content, and files such as images, videos, or documents) or responses to improve our products\"",
+   "caveat": "Unpaid Services (AI Studio free, free quota) DO use content: 'Do not submit sensitive, confidential, or personal information to the Unpaid Services.' This matters because Higgsfield's own product-photoshoot recipe runs nano_banana_pro, a Gemini image model. The same model through a billed Gemini API project is under a no-train contract."
+  }
+ },
+ "corrections_to_plan": [
+  "July 2026 dermocosmetics buyer EXISTS (99Freelas #768972, 18 Jul 2026), but it is a reseller STORE buying marketplace videos (Mercado Livre/Shopee/TikTok Shop), budget undisclosed ('Aberto', R$50 minimum), awarded after a 2-video paid test. It is evidence of the cheap marketplace-content tier, not of a R$2.990 launch buyer.",
+  "The 'August 2026 brief preserving packaging, logo, text, colors and geometry' was NOT FOUND for any beauty buyer (99Freelas 26 Jun-25 Sep 2026; Workana open listings). Near-identical fidelity clauses appear in toys, fashion, bags and generic product-swap briefs at R$50-minimum 'Aberto' budgets. Packaging fidelity is a commodity REQUIREMENT, not a premium signal.",
+  "Observed buyer budgets for beauty visual production run < USD 50 to USD 500 per project (< R$259 to R$2.590). The richest AI brief pays USD 250-500 for 30 videos (R$43-86/video). No beauty buyer post was observed near R$2.990 for a one-product set.",
+  "Orne: 'short AI videos around R$29,90-R$85' should read R$29,90-R$89 (10 s model video = R$89). Its 'Fidelidade total ao produto' is a feature bullet, not a guarantee. The plan's full deliverable set prices at about R$280-360 on Orne's list: R$2.990 is 8-11x that.",
+  "Villo: the R$19,90 unit is 1 product x 3 variations (~R$6,63/image). Villo ALSO gives a free test image of the client's product, so the free-preview mechanic is already a competitor's front door. Its terms disclaim fidelity ('pequenas variações visuais, textuais ou compositivas podem ocorrer').",
+  "Beauty Fair 2026 directory = 491 exhibitors, 229 hair/skin (236 with Barber), categorised, but with NO email or phone (only an Instagram or website link), and it is a post-event 2026 list (next edition 4-7 Sep 2027). It is an annual list of ~229 names, not a trigger.",
+  "PREVIEW MECHANIC: at ANVISA-notification time, 0 of 15 genuinely new hair/skin SKUs had a public exact packshot (5 sibling-only, 10 nothing). Every 'exact packshot' case was a re-notification of a product already on sale. At least 20,8% of recent notifications are identical-name re-notifications, and renamed ones such as Adcos are uncounted. So the ANVISA-timed free preview can only be faked from a sibling (a label hallucination, which the Product Lock forbids) or must wait until launch, which forfeits the timing edge.",
+  "Higgsfield self-serve (the plan's stack) trains on Inputs with no opt-out. Uploading a client's unreleased packaging artwork licenses it for training and breaks any NDA. No-train needs a Higgsfield Enterprise Agreement (annual, unpriced) or a switch to Adobe Firefly / the paid Gemini API, both of which state no-training in their terms."
+ ],
+ "unverified": [
+  "The 'August 2026 brief' (packaging/logo/text/colors/geometry preservation) as a BEAUTY buyer post: not located.",
+  "Winning prices on 99Freelas #768972 and #773216: offers are 'Privado'.",
+  "Client country for the Workana perfume (24 Sep) and cosmetics-pilot (19 Aug) posts: the listing showed no flag.",
+  "Brazilian beauty buyer posts from 2025 and Jan-Jun 2026: not scanned (99Freelas IDs <763000; Workana closed jobs are unsearchable, insight pages 'Access Denied').",
+  "Instagram packshots for the 10 'none' sample products: Instagram unreadable from this environment, so 'none' means none on the open web.",
+  "Higgsfield Enterprise price and minimum seats: 'Contact Sales' only.",
+  "GetNinjas, Fiverr buyer requests and LinkedIn/Vagas job posts were not searched for buyer budgets."
+ ]
+}

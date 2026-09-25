@@ -2,8 +2,12 @@
 
 **VOCÊ MANDA O PRODUTO. NÓS ENTREGAMOS A CAMPANHA.**
 
-**Status: the lead candidate of `THE_SIXTH_HUNT.md`.** MARGINAL until the call test in §7 is run. **Honest floor
-US$700–1.500/month at months 12–18.**
+**Status: the lead candidate of `THE_SIXTH_HUNT.md`, and a weaker lead after verification.** MARGINAL until the
+call test in Part C §7 is run.
+
+- **Honest floor:** US$700–1.500/month at months 12–18 IF the price test passes.
+- **⚠ Every buyer-side budget observed on the freelance boards is below R$2.990** (Part B). The test is now more
+  likely to fail than to pass.
 
 The spec below is in three parts:
 
@@ -105,9 +109,71 @@ client picks one → key visual first → *(truncated)*.
 
 ## PART B — what verification found
 
-*(VER1 is verifying the plan's new factual claims: the July/August 2026 buyer briefs, the Orne and Villo prices,
-the Beauty Fair directory, whether a public packshot exists when the ANVISA signal fires, and Higgsfield's
-training-on-inputs terms. Filled in below when it lands.)*
+**VER1 checked the supplied plan's new factual claims.** 17.077 99Freelas projects were enumerated (26 Jun–25 Sep
+2026) and 6.727 read in full; Workana open listings were checked on 33 queries. Source log:
+`research/hunt6-sources/VER1.md`.
+
+**⚠⚠ THE PRICE EVIDENCE IS NEGATIVE. Read this before anything else in this file.**
+
+- **Every Brazilian beauty/cosmetics visual-production buyer post with a stated budget is between <US$50 and US$500
+  per PROJECT (<R$259 to R$2.590).**
+- The single best-paid brief: a premium perfumery brand wants **30 AI videos for US$250–500**, i.e. **R$43–86 per
+  video** (Workana, 24 Sep 2026).
+- AI-video and launch-film posts for beauty: <US$50 ×3, US$50–100 ×2, US$250–500 ×1.
+- **No buyer post anywhere was observed near R$2.990 for a one-product set.**
+- 99Freelas hides budgets: 6.702 of 6.727 say *"Aberto"*.
+- Freelance boards select for cheap buyers, so this is a floor on the market, not its ceiling. But it is the only
+  buyer-side money observed, and it points DOWN.
+
+**The plan's two buyer anecdotes, checked:**
+
+- **July 2026 dermocosmetics buyer: VERIFIED, but it is not the plan's buyer.** 99Freelas #768972 (18 Jul 2026,
+  *"Forneço fotos PNG… descrições técnicas"*) is a dermocosmetics STORE, a reseller buying marketplace videos. The
+  budget was undisclosed, 9 proposals came in, and it was awarded after a paid 2-video test at a private price.
+- **August 2026 brief demanding preserved packaging, logo, text, colours and geometry: NOT FOUND for any beauty
+  buyer.** The same clauses appear in CHEAP non-beauty briefs: toys, fashion, a bag brief with 208 proposals
+  (*"fidelidade ao produto físico deve ser 100%"*), Mercado Livre product swaps. **Packaging fidelity is a
+  table-stakes REQUIREMENT at the R$50–500 tier, not a premium signal.** This weakens the fidelity guarantee as a
+  price-holder: buyers expect it by default.
+
+**The price anchors, checked:**
+
+- **Orne: VERIFIED and cheaper than stated.**
+  - Prices: ambient image R$5,50, model image R$6,90; videos R$29,90–89 (not 85).
+  - *"Fidelidade total ao produto"* is a feature bullet, not a guarantee.
+  - **The plan's full deliverable set costs ≈R$280–360 at Orne: R$2.990 is 8–11× that.**
+- **Villo:** R$19,90 = 1 product × 3 variations (≈R$6,63/image). **Villo already gives a FREE test image of the
+  client's product**, so the preview mechanic is a competitor's front door too. Its terms disclaim fidelity
+  (*"pequenas variações visuais, textuais ou compositivas"*).
+
+**Prospecting, checked:**
+
+- **Beauty Fair directory: VERIFIED.** 491 exhibitors (2026, published after the fair), 229 hair/skin, sorted by
+  category, **no email or phone**. The next edition is Sep 2027.
+- **The free preview: `PART C §4` confirmed.** Of 15 genuinely new SKUs, at the moment the ANVISA notification
+  appeared:
+  - **0 had a public photo of the exact product**;
+  - 5 had only a related product's photo;
+  - 10 had nothing.
+
+  Every exact photo found belonged to a RE-notification of a product already on sale. **≥20,8% of recent hair/skin
+  notifications repeat an existing product name.** ⇒ Build the preview from the brand's current bestseller, as
+  Part C §4 says.
+
+**AI training on client artwork: `PART C §2` confirmed, verified by me at the source.**
+`higgsfield.ai/terms-of-use-agreement` (last updated 26 Jul 2026) says:
+
+> *"You acknowledge and agree that Your Content, Inputs, and Outputs may be used by Company to train, develop,
+> enhance, evolve, and improve its (and its affiliates') AI models… Different terms apply to enterprise and
+> business customers who use the Service under an Enterprise Agreement"*
+
+- Deletion does not reach content already used for training (§16.5).
+- **Adobe's General Terms (3 Oct 2025):** *"We will not use your Local or Cloud Content to train generative AI
+  models…"*.
+- **The paid Gemini API** says likewise.
+
+⇒ **Use a no-training route for anything a client supplies, and never upload unreleased artwork to a self-serve
+generator.**
 
 **Already settled by today's audits (see `THE_SIXTH_HUNT.md` §2):**
 
