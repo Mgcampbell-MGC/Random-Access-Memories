@@ -4,7 +4,9 @@ Usage:
     python3 relatorio_fidelidade.py APPROVED.png ASSET [ASSET ...] [--every N] [--json out.json]
 
 APPROVED.png is the brand's approved packshot as a cutout with an alpha channel (the flat front
-face works best). ASSET may be an image or a video. For each asset the label is located by SIFT
+face works best). ASSET may be an image or a video. If ASSET has a sibling mask named
+<asset>.hidden.png (white = packaging deliberately covered, e.g. by fingers), covered tiles are
+excluded and reported: hidden is allowed, altered never. For each asset the label is located by SIFT
 feature matching, warped back onto the approved packshot, and compared tile by tile on a band-pass
 image, so a single misspelled word shows up as one bad tile instead of being averaged away.
 
@@ -24,6 +26,7 @@ import numpy as np
 TILE = 24
 MIN_TILE_PASS = 0.80
 P5_TILE_PASS = 0.95
+MAX_HIDDEN = 0.35  # above this share of the label covered, the asset needs a human look
 
 
 def bandpass(img, s1=1.2, s2=5.0):
@@ -52,7 +55,7 @@ class Checker:
             if self.mask[y:y + TILE, x:x + TILE].mean() > 0.95 and self.R[y:y + TILE, x:x + TILE].std() > 4
         ]
 
-    def score(self, img):
+    def score(self, img, hidden=None):
         k, d = self.sift.detectAndCompute(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY), None)
         if d is None:
             return {"found": False}
@@ -67,30 +70,41 @@ class Checker:
         h, w = self.ref.shape[:2]
         warped = cv2.warpPerspective(img, H, (w, h), flags=cv2.WARP_INVERSE_MAP | cv2.INTER_LINEAR)
         B = bandpass(warped.astype(np.float32))
-        scores = []
+        hid = None
+        if hidden is not None:
+            hid = cv2.warpPerspective(hidden, H, (w, h), flags=cv2.WARP_INVERSE_MAP | cv2.INTER_LINEAR) > 127
+        scores, n_hidden = [], 0
         for y, x in self.tiles:
+            if hid is not None and hid[y:y + TILE, x:x + TILE].mean() > 0.10:
+                n_hidden += 1
+                continue
             a = self.R[y:y + TILE, x:x + TILE].ravel()
             b = B[y:y + TILE, x:x + TILE].ravel()
             a = a - a.mean()
             b = b - b.mean()
             scores.append(float((a * b).sum() / np.sqrt((a * a).sum() * (b * b).sum() + 1e-9)))
         s = np.array(scores)
+        hidden_share = n_hidden / len(self.tiles)
+        if not len(s):
+            return {"found": True, "hidden_share": 1.0, "pass": False}
         worst = float(s.min())
         p5 = float(np.percentile(s, 5))
         return {
             "found": True,
             "inliers": int(inliers.sum()),
             "tiles": len(s),
+            "hidden_share": round(hidden_share, 3),
             "worst_tile": round(worst, 3),
             "p5_tile": round(p5, 3),
-            "pass": worst >= MIN_TILE_PASS and p5 >= P5_TILE_PASS,
+            "pass": worst >= MIN_TILE_PASS and p5 >= P5_TILE_PASS and hidden_share <= MAX_HIDDEN,
         }
 
 
 def check_asset(checker, path, every):
     img = cv2.imread(path)
     if img is not None:
-        r = checker.score(img)
+        hidden = cv2.imread(path.rsplit(".", 1)[0] + ".hidden.png", cv2.IMREAD_GRAYSCALE)
+        r = checker.score(img, hidden)
         return {"asset": path, "type": "image", **r, "pass": r.get("pass", False)}
     cap = cv2.VideoCapture(path)
     frames, results, i = 0, [], 0

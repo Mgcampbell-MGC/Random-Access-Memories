@@ -619,3 +619,25 @@ through compression, and a machine can show it frame by frame.
   drifts against the moving product, because the shadow was baked into the scene. Production must cut a clean matte
   and put the contact shadow on the product layer. **This quality gap is where a composite looks "pasted", and it is
   what a buyer will judge before any report.**
+
+### G2. The in-hand shot — the one image the cheap tools cannot make (25 Sep 2026, evening)
+
+`OL1` found that a label-exact still of a product standing on a surface is NOT scarce: ten self-serve tools do it for
+free to ~US$15/month (Google Product Studio, Pebblely, Photoroom and others). **What they cannot do is put the real
+pack in a hand or on skin**: the cut-out tools only stand the product on a surface, and the tools that draw hands
+redraw the label. So this is the image the design now rests on, and it was tested the same evening.
+
+- **The scene was made from a text prompt only** (a hand holding a blank blue tube), costing 1 free credit. **No brand
+  art was uploaded.** *(Correction to Part F: that test uploaded a real brand's public packshot to Higgsfield, whose
+  terms let it train on uploads and make the uploader warrant the right to allow that. The design now forbids it: see
+  the airtight design file.)*
+- **The real tube was placed locally**, scaled to the placeholder's width, lit from the placeholder's own shading, and
+  **the fingers were put back on top of it.**
+- **Result: APROVADA — worst tile 0,913, 5th-percentile tile 0,964,** fingers in front of the pack, label exact.
+- **The checker caught a real bug on the way.** The first composite borrowed its lighting from a blur that included the
+  dark fingers, which painted a false shadow onto the label's green band. It failed at 0,521, and it was right to fail.
+  The fix samples light from the tube only. **The report checks the maker, not only the generator.**
+- **The checker now accepts a "hidden by design" mask** (`<asset>.hidden.png`). Covered tiles are excluded and
+  reported, up to 35% of the label: **hidden is allowed, altered never.**
+- **Still manual:** the white cap took on a grey cast from the body's lighting, and the edge matte needs care. These
+  are quality jobs, not fidelity failures, and they are what a buyer sees first.
