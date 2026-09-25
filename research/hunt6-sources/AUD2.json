@@ -1,0 +1,331 @@
+{
+ "auditor": "AUD2",
+ "candidate": "contract-manufacturer launch-kit channel",
+ "manufacturers": [
+  {
+   "name": "+ BRIEFING AGENCIA DE PUBLICIDADE E REPRESENTACOES LTDA (trades as Suportt Projetos Exclusivos, Guarapari/ES)",
+   "cnpj": "21566221000100",
+   "notifications_12m": 1072,
+   "offers_branding_or_visuals": "UNVERIFIED. The notification holder's legal name is an advertising agency. The trade listing says 'Fabricamos marcas próprias na forma de terceirização' and describes a Full Service offer. gruposuportt.com.br does not resolve (DNS ENOTFOUND, 25 Sep 2026).",
+   "price_or_package": "not published",
+   "produced_how": "UNVERIFIED. Probably in-house, since the legal entity is an 'agência de publicidade' (inference from the razão social only).",
+   "source_url": "https://portaldorepresentante.com.br/empresas/38009-suportt-projetos-exclusivos-/ ; https://publica.cnpj.ws/cnpj/21566221000100"
+  },
+  {
+   "name": "VENEZA - INDUSTRIA E COMERCIO DE COSMETICOS LTDA (VNZ, Cambé/PR)",
+   "cnpj": "02705260000198",
+   "notifications_12m": 1016,
+   "offers_branding_or_visuals": "NO for visuals, and it pushes design out. Termos: 'o custo do rótulo não está incluso no orçamento dos produtos … o cliente pode contratar designer/agência de preferência para um projeto mais completo'. Home page: 'Construção de marca: Do produto à identidade' (claim only). '+1.177 marcas já criadas'.",
+   "price_or_package": "TERC linha pronta from R$5.000 (24 units/SKU) · personalizada R$10.000 (240/SKU) · fórmula exclusiva R$20.000 · escala R$50.000. ANVISA regularização R$437,50 per item, one-time: a per-item add-on line already exists on its order form.",
+   "produced_how": "Outsourced to the client's own designer or agency; the label is negotiated client↔gráfica.",
+   "source_url": "https://vnz.ind.br/termos-terceirizacao/ ; https://vnz.ind.br/"
+  },
+  {
+   "name": "IMPERIO INDUSTRIA E COMERCIO DE COSMETICOS DO BRASIL LTDA (Uberlândia/MG)",
+   "cnpj": "09616409000101",
+   "notifications_12m": 614,
+   "offers_branding_or_visuals": "UNVERIFIED. The site imperiocosmeticos.com.br returned a connection reset (curl) and 503 (WebFetch).",
+   "price_or_package": "not obtained",
+   "produced_how": "UNVERIFIED",
+   "source_url": "https://www.imperiocosmeticos.com.br/ (unreachable) ; https://publica.cnpj.ws/cnpj/09616409000101"
+  },
+  {
+   "name": "SDK INDUSTRIA DE COSMETICOS LTDA (Mairiporã/SP)",
+   "cnpj": "40498582000100",
+   "notifications_12m": 485,
+   "offers_branding_or_visuals": "YES, packaging plus promo material: 'DESIGN Oferecemos uma assessoria integral no design de embalagens, incluindo layout, rótulos, silk ou hot e cold stamping, além de materiais promocionais'.",
+   "price_or_package": "not published (bundled in full service)",
+   "produced_how": "In-house design assessoria (stated)",
+   "source_url": "https://sdkcosmeticos.com.br/"
+  },
+  {
+   "name": "T.C.I INDÚSTRIA COSMÉTICA LTDA (Franca/SP)",
+   "cnpj": "07239476000129",
+   "notifications_12m": 447,
+   "offers_branding_or_visuals": "UNVERIFIED. No website found; the registered email is gmail.",
+   "price_or_package": "not obtained",
+   "produced_how": "UNVERIFIED",
+   "source_url": "https://publica.cnpj.ws/cnpj/07239476000129"
+  },
+  {
+   "name": "ALFAHAIR INDÚSTRIA E COMÉRCIO DE COSMÉTICOS LTDA (Cariacica/ES)",
+   "cnpj": "08541624000128",
+   "notifications_12m": 390,
+   "offers_branding_or_visuals": "UNVERIFIED. alfahair.com returned a connection reset (curl) and 503 (WebFetch).",
+   "price_or_package": "not obtained",
+   "produced_how": "UNVERIFIED",
+   "source_url": "https://alfahair.com/ (unreachable) ; https://publica.cnpj.ws/cnpj/08541624000128"
+  },
+  {
+   "name": "HF INDÚSTRIA E COMERCIO DE COSMETICOS LTDA (Vonshér, Criciúma/SC)",
+   "cnpj": "06195970000176",
+   "notifications_12m": 321,
+   "offers_branding_or_visuals": "YES, label and marketing support: '02 Aprove o design do produto'; 'mais de 350 fórmulas testadas e suporte de marketing e conformidade com a ANVISA'; 'Anexamos cores, acabamentos e informações para valorizar seu produto'. Positioned at influencers ('Transforme sua Influência em uma Marca').",
+   "price_or_package": "not published",
+   "produced_how": "In-house (stated as part of the service)",
+   "source_url": "https://lp.vonsher.com.br/"
+  },
+  {
+   "name": "SECULO INDUSTRIA DE COSMETICOS LTDA (Aparecida de Goiânia/GO)",
+   "cnpj": "36718809000109",
+   "notifications_12m": 245,
+   "offers_branding_or_visuals": "YES, packaging and label design: 'Criação completa de marca e design. Desde a escolha da embalagem até a criação dos rótulos'. It has a dedicated influencer page and buys Google Ads.",
+   "price_or_package": "not published",
+   "produced_how": "In-house ('Nossa equipe de especialistas')",
+   "source_url": "https://seculocosmeticos.com.br/marca-propria-de-cosmeticos-influencer"
+  },
+  {
+   "name": "DC BEAUTY COSMETICS LTDA (Maracaí/Assis, SP)",
+   "cnpj": "27057301000108",
+   "notifications_12m": 223,
+   "offers_branding_or_visuals": "YES, the full launch-visual kit is already bundled. Terceirização steps are 'INDUSTRIALIZAÇÃO · AGÊNCIA DE PUBLICIDADE · AGÊNCIA DE MARKETING DIGITAL'. Portfolio: 'Desenvolvimento de MARCA, PRODUTOS e CAMPANHAS. Profissionais de ilustração em 3D, ilustração convencional, produtora de vídeos e animações, retoque de imagens'.",
+   "price_or_package": "not published (part of terceirização)",
+   "produced_how": "In-house agency (stated)",
+   "source_url": "https://dcbeautycosmetics.com/inicio/ ; http://portfolio.dcbeautycosmetics.com/"
+  },
+  {
+   "name": "PACK TO YOU INDUSTRIA E COMERCIO DE COSMETICOS LTDA (Pack for You, Piratininga-Bauru/SP)",
+   "cnpj": "42773644000162",
+   "notifications_12m": 217,
+   "offers_branding_or_visuals": "YES: 'Somos Full Service! … Criação da Marca · Desenvolvimento da Identidade Visual · Criação do Rótulo · Publicidade'; 'equipe de marketing especializada'; 'Marketing … oferecemos assessoria de marketing completa'.",
+   "price_or_package": "not published",
+   "produced_how": "In-house marketing team (stated)",
+   "source_url": "https://www.packforyou.com.br/servicos/ ; https://www.packforyou.com.br/terceirizacao-de-cosmeticos/"
+  },
+  {
+   "name": "W. COSMETICOS PROFISSIONAIS LTDA (Boituva/SP)",
+   "cnpj": "28029473000130",
+   "notifications_12m": 215,
+   "offers_branding_or_visuals": "YES, label and identity: 'Design profissional de rótulos e identidade visual'; step 2 'Criamos os rótulos e identidade visual dos produtos'.",
+   "price_or_package": "not published",
+   "produced_how": "In-house (stated)",
+   "source_url": "https://www.wcosmeticos.com.br/"
+  },
+  {
+   "name": "NATURALLY BIOS LTDA (Jaraguá do Sul/SC)",
+   "cnpj": "42042158000174",
+   "notifications_12m": 156,
+   "offers_branding_or_visuals": "YES, label only. The white-label flow includes 'Desenvolvimento do rótulo'. No mention of photos or campaign.",
+   "price_or_package": "not published; white label 'Produto pronto em 28 dias úteis'",
+   "produced_how": "In-house (implied)",
+   "source_url": "https://naturallybios.com.br/"
+  },
+  {
+   "name": "ATHENAS INDÚSTRIA E TERCEIRIZAÇÃO DE COSMÉTICOS LTDA (Caieiras/SP; makes WePink, Jequiti, Eurofarma lines)",
+   "cnpj": "01287021000100",
+   "notifications_12m": 98,
+   "offers_branding_or_visuals": "NO mention on the site. Its clients are established brands that run their own marketing.",
+   "price_or_package": "n/a",
+   "produced_how": "n/a (client-side)",
+   "source_url": "https://athenascosmeticos.com.br/"
+  },
+  {
+   "name": "STOA INDUSTRIA COSMETICA LTDA",
+   "cnpj": "37088088000155",
+   "notifications_12m": 87,
+   "offers_branding_or_visuals": "YES: 'assessoria comercial, criação de marca, identidade visual e marketing digital'. Its Criação de Marca process includes 'Marketing de Conteúdo … posts publicados nas redes sociais'.",
+   "price_or_package": "not published",
+   "produced_how": "In-house 'setor de Criação de Marca' (stated)",
+   "source_url": "https://stoaindustria.com/ ; https://stoaindustria.com/blog/como-funciona-o-setor-de-criacao-de-marca-da-stoa/"
+  },
+  {
+   "name": "AMÓS INDÚSTRIA DE COSMÉTICOS E PRODUTOS DE HIGIENE PESSOAL LTDA",
+   "cnpj": "08682143000132",
+   "notifications_12m": 73,
+   "offers_branding_or_visuals": "NO. The page tells the brand to focus on 'posicionamento, vendas, marketing' while the factory produces.",
+   "price_or_package": "n/a",
+   "produced_how": "client-side",
+   "source_url": "https://amoscosmeticos.com.br/terceirizacao-de-cosmeticos-marca-propria/"
+  },
+  {
+   "name": "COSMETIC GROUP INDUSTRIA E COMERCIO DE COSMETICOS LTDA (Mauá/SP)",
+   "cnpj": "27995665000139",
+   "notifications_12m": 64,
+   "offers_branding_or_visuals": "NO. Production starts 'Com embalagens, rótulos e matérias-primas em posse', i.e. the client supplies its own art.",
+   "price_or_package": "n/a",
+   "produced_how": "client-side",
+   "source_url": "https://cosmeticgroup.com.br/"
+  },
+  {
+   "name": "NOSSA FABRICA TERCEIRIZAÇÃO DE COSMÉTICOS LTDA",
+   "cnpj": "31743223000172",
+   "notifications_12m": 64,
+   "offers_branding_or_visuals": "YES: 'Identidade Visual Inigualável: Criamos uma embalagem e rotulagem personalizadas' plus 'Marketing estratégico: Impulsionamos suas vendas com estratégias de marketing personalizadas'.",
+   "price_or_package": "not published (Full Service)",
+   "produced_how": "In-house (stated)",
+   "source_url": "https://nossafabrica.ind.br/como-funciona-o-sistema-full-service/"
+  },
+  {
+   "name": "FROSINI IND E COM DE COSMÉTICOS LTDA",
+   "cnpj": "04973351000130",
+   "notifications_12m": 41,
+   "offers_branding_or_visuals": "YES: 'Desenvolvimento de identidade visual: Criação de marca, rótulos e definição das embalagens'; 'Branding: Contamos com uma equipe de marketing capacitada'.",
+   "price_or_package": "not published",
+   "produced_how": "In-house marketing team (stated)",
+   "source_url": "https://frosinicosmeticos.com.br/"
+  },
+  {
+   "name": "LEW COSMETICOS LTDA (São Paulo/SP)",
+   "cnpj": "14777363000142",
+   "notifications_12m": 38,
+   "offers_branding_or_visuals": "PARTIAL. Labels are made 'de acordo com sua identidade visual' (the client's). It sells consultoria and 'marketing olfativo', not visuals.",
+   "price_or_package": "not published",
+   "produced_how": "client-side identity",
+   "source_url": "https://lewcosmeticos.com.br/"
+  },
+  {
+   "name": "MZ COSMETICOS LTDA",
+   "cnpj": "66166661000108",
+   "notifications_12m": 35,
+   "offers_branding_or_visuals": "NO. It describes terceirização as keeping 'o foco do contratante em branding, distribuição'.",
+   "price_or_package": "n/a",
+   "produced_how": "client-side",
+   "source_url": "https://www.mzcosmeticos.com.br/informacoes/terceirizacao-de-cosmeticos"
+  },
+  {
+   "name": "FLORUS BRASIL INDUSTRIA E COMERCIO DE COSMETICOS LTDA (Indaiatuba/SP)",
+   "cnpj": "05244203000147",
+   "notifications_12m": 31,
+   "offers_branding_or_visuals": "YES, identity and label: 'Identidade Visual: Design de logotipo e rótulo'. It also REFERS partners: 'Parcerias estratégicas e indicações de fornecedores … Designers'. Its budget guide tells clients to use Canva ('de forma gratuita ou a baixo custo') and micro-influencer kits.",
+   "price_or_package": "not published",
+   "produced_how": "In-house identity + referral to partner designers",
+   "source_url": "https://www.florus.com.br/ ; https://www.florus.com.br/blog/como-lancar-uma-marca-de-cosmeticos-com-pouco-dinheiro/"
+  },
+  {
+   "name": "PRIVATE COSMETICOS, INDUSTRIA E COMERCIO LTDA (Valinhos/SP)",
+   "cnpj": "06221095000150",
+   "notifications_12m": 23,
+   "offers_branding_or_visuals": "NO, it refers out: 'Se ainda não tem identidade visual ou rótulo definido, indicamos parceiros especialistas em branding e design gráfico'. A testimonial says the factory 'ainda ajudou com o design da embalagem'.",
+   "price_or_package": "n/a",
+   "produced_how": "Referral to partner agencies",
+   "source_url": "https://privatecosmeticos.com.br/"
+  },
+  {
+   "name": "MULTLABEL (Multquímica, Londrina/PR)",
+   "cnpj": "not captured (not a hair/skin holder in the 12-month file under that name)",
+   "notifications_12m": 0,
+   "offers_branding_or_visuals": "YES, and FREE: 'Criamos fórmulas, rótulos e embalagens sem custo adicional'; 'Desenvolvimento de design profissional e normatizado'.",
+   "price_or_package": "R$0 add-on (verbatim 'sem custo adicional')",
+   "produced_how": "In-house",
+   "source_url": "https://multlabel.multquimica.com.br/"
+  },
+  {
+   "name": "BEHUB SOLUÇÕES COSMÉTICAS LTDA (Uberlândia/MG, B2B hub, not a notification holder)",
+   "cnpj": "61551366000143",
+   "notifications_12m": 0,
+   "offers_branding_or_visuals": "YES, packshot layer included: the design service delivers a 'Manual de marca … Arte de rótulo … Mockups 3D fotorrealistas … Versões digitais (PNG/JPG otimizados)'; 'Mockups 3D fotorrealistas inclusos'.",
+   "price_or_package": "not published ('Diagnóstico gratuito')",
+   "produced_how": "In-house design team",
+   "source_url": "https://behub.com.br/servicos-de-design"
+  }
+ ],
+ "client_side_prices": [
+  {
+   "what": "Label design with 3D mockup included (freelance studio for private-label brands)",
+   "price": "R$200 per label; line of 3 labels R$450 (R$150 each); logo + label R$420; visual identity from R$800. 'Todo rótulo e embalagem sai com mockup 3D.' 50% upfront.",
+   "url": "https://orbelabel.com.br/"
+  },
+  {
+   "what": "AI campaign / social image, São Paulo studio (Estúdio Fábrica, centro expandido SP)",
+   "price": "R$53,00 per image ('Geração de Imagem Conceito/ Campanha/Redes sociais')",
+   "url": "https://www.estudiofabrica.com.br/servicos-e-precos/"
+  },
+  {
+   "what": "AI video 15-20 s, same São Paulo studio",
+   "price": "R$260,00 per video (client defines creative direction)",
+   "url": "https://www.estudiofabrica.com.br/servicos-e-precos/"
+  },
+  {
+   "what": "Still on white background, same studio",
+   "price": "R$25,00/image (1-49) falling to R$18,00/image (100+); studio half-day with 50 treated images R$1.250,00",
+   "url": "https://www.estudiofabrica.com.br/servicos-e-precos/"
+  },
+  {
+   "what": "Implied 'launch kit' at a real SP studio: 6 AI campaign images + 1 AI 15-20 s video",
+   "price": "R$578 (6 × R$53 + R$260; my sum of two published lines)",
+   "url": "https://www.estudiofabrica.com.br/servicos-e-precos/"
+  },
+  {
+   "what": "Vintepila gig 'Fazer o comercial do seu produto em até 24 horas'",
+   "price": "R$20,00 (★5,0, 340 reviews, 700 sold) + 20% buyer processing fee",
+   "url": "https://www.vintepila.com.br/servicos/video-e-animacao/eu-vou-criar-videos-com-ia-para-anuncios-reels-tiktok/"
+  },
+  {
+   "what": "Vintepila gig: AI product video",
+   "price": "R$29,00, plus R$20,00 per extra video; delivery 2 days",
+   "url": "https://www.vintepila.com.br/servicos/montagem-e-pos-producao/eu-vou-vou-criar-video-de-produto-profissional-com-ia/"
+  },
+  {
+   "what": "Vintepila gig: AI UGC video for beauty/cosmetics/skincare brands",
+   "price": "R$20,00 per video (new seller, no sales)",
+   "url": "https://www.vintepila.com.br/servicos/engenharia-de-prompt/eu-vou-videos-ugc-com-ia-para-produtos-de-beleza/"
+  },
+  {
+   "what": "Vintepila gig: AI model with your product ('Modelos com 100% de naturalidade para seu produto')",
+   "price": "R$100,00 (★5,0, 125 reviews, 170 sold)",
+   "url": "https://www.vintepila.com.br/servicos/design-grafico/eu-vou-fazer-uma-modelo-ia-para-seu-produto/"
+  },
+  {
+   "what": "Vintepila gigs: AI product-photo improvement / AI images",
+   "price": "R$20,00 (104 sold) and R$20,00",
+   "url": "https://www.vintepila.com.br/servicos/design-grafico/eu-vou-melhorar-fotos-dos-seus-produtos-com-ia/"
+  },
+  {
+   "what": "Implied micro-brand DIY kit on Vintepila: 6 AI images + 1 AI video",
+   "price": "≈R$149 before the 20% fee (6 × R$20 + R$29; my sum)",
+   "url": "https://www.vintepila.com.br/"
+  },
+  {
+   "what": "Brazilian AI-video SaaS paid in PIX (virtual presenter, PT-BR voice)",
+   "price": "R$67 / R$117 / R$297 per month",
+   "url": "https://influenciadoria.com/usos/criar-video-de-produto-com-ia/video-lancamento-produto"
+  },
+  {
+   "what": "Higgsfield self-serve product→campaign",
+   "price": "US$49/month PLUS (1.000 credits); Marketing Studio Product Shot 2K ≈US$0,075; 15 s 720p video ≈US$4,46",
+   "url": "HIGGSFIELD_FACTS.md (MCP show_plans_and_credits) ; https://higgsfield.ai/blog/new-marketing-studio-higgsfield"
+  },
+  {
+   "what": "What the manufacturer tells its budget clients to do instead",
+   "price": "R$0-low: 'Ferramentas como o Canva permitem criar logotipos, embalagens e materiais de marketing de forma gratuita ou a baixo custo'; send kits to micro-influencers",
+   "url": "https://www.florus.com.br/blog/como-lancar-uma-marca-de-cosmeticos-com-pouco-dinheiro/"
+  },
+  {
+   "what": "Client's total first production order at the #2 notifier (budget context)",
+   "price": "minimum R$5.000 (24 units/SKU) at Veneza TERC; plus R$437,50 ANVISA per item",
+   "url": "https://vnz.ind.br/termos-terceirizacao/"
+  },
+  {
+   "what": "Budget product photography, SP",
+   "price": "'R$ 7,00 por fotografia' (page title only; the page returned 503 and a connection reset, so the full text was NOT read: UNVERIFIED)",
+   "url": "https://fotografiasdeprodutos.com.br/fotografias-de-produtos-tabela-de-preco.html"
+  }
+ ],
+ "free_front_door": "CONFIRMED at the source, in the manufacturers' own words, for most of the channel. Of 20 manufacturer or hub pages read, 13 bundle label/identity design in-house. Multlabel says outright 'Criamos fórmulas, rótulos e embalagens sem custo adicional'. At least 7 bundle marketing beyond the label: DC Beauty runs an in-house 'AGÊNCIA DE PUBLICIDADE · AGÊNCIA DE MARKETING DIGITAL' with '3D, … produtora de vídeos e animações, retoque de imagens' and 'CAMPANHAS' (the launch kit itself, #12 by notifications); Pack for You sells 'Publicidade' and 'assessoria de marketing completa'; SDK sells 'materiais promocionais'; Vonshér 'suporte de marketing'; Stoa 'marketing digital / marketing de conteúdo'; Nossa Fábrica 'marketing estratégico'; Frosini 'Branding … equipe de marketing'. The #1 notifier's legal entity is literally an 'AGÊNCIA DE PUBLICIDADE'. This is THE NO-MARGIN-ON-THE-FLOW LAW exactly: the factory earns on the production flow, so it gives the design and marketing layer away to win the order. The packshot layer is free a second way: label designers include a photorealistic 3D mockup with every label (Orbe R$200 'Mockup 3D incluso'; BeHub 'Mockups 3D fotorrealistas inclusos … PNG/JPG'), so the micro-brand already holds a clean product image on the day its label is approved. What is NOT bundled by most is lifestyle scenes plus short film. That increment sells at R$20-100 per unit on Vintepila and R$53/image or R$260/video at a SP studio. Only 3 of 20 explicitly push design OUT to the client: Veneza (the #2 notifier, and the one real opening), Private and Florus (both by referral). The #1, #3, #5 and #6 notifiers (Suportt, Império, TCI, Alfahair) could not be read (DNS failure, reset or 503), so the top of the list is UNVERIFIED either way.",
+ "resale_evidence": "NO evidence that any manufacturer RESELLS a third party's creative service with a markup. What exists: (a) in-house bundling (DC Beauty, Pack for You, SDK and others above), which makes these manufacturers competitors, not resellers; (b) REFERRAL to partner designers (Florus 'indicações de fornecedores … Designers'; Private 'indicamos parceiros especialistas em branding e design gráfico'; Veneza 'o cliente pode contratar designer/agência de preferência'), in which the client pays the partner directly and each client remains a separate sale; (c) per-item add-on fees on the order form. Veneza charges 'Taxa por produto: R$ 437,50 por item' for ANVISA regularização and sells samples. This is the ONE structural precedent for a 'Kit Lançamento R$X por item' line, but it is the manufacturer's own service, not a resold one. Adjacent matchmaking exists: ABC's 'Terceiriza Beauty' matches brands to member terceiristas for free. No manufacturer partner or agency programme for visuals was found (search 'agências parceiras / programa de parceiros' returned nothing relevant).",
+ "arithmetic": {
+  "kits_per_mfr_month": "Recomputed from TA_CONSULTA_COSMETICOS.CSV, 12 months to 23 Sep 2026: electronic notifications only, midnight-stamped legacy rows dropped, exact-name re-notifications dropped, clustered per brand key at >21-day gaps. Launch windows per month: Veneza 35,2 · Briefing/Suportt 28,2 · Império 22,2 · SDK 21,1 · TCI 15,5 · HF/Vonshér 14,3 · Alfahair 13,8 · DC Beauty 9,6 · Século 9,2 · Emapem 8,8 · RS de Vargas 8,4 · Evolutions 8,1 · Cosmoética 7,8 · Pack to You 7,7 · Marliere 7,4 · AJ 6,9 · JK 5,8 · WB 2,8 · Cosmo 2,5 · Nossa Fábrica 2,0 · Florus 1,0. New brand keys per month (first appearance at that holder): Veneza 21 · Briefing 15 · Império 15 · SDK 14 · HF 10 · Alfahair 7,5 · TCI/DC 6 · Pack 5,7. Across all 158 manufacturer-like holders (≥50 notifications, ≥10 brand keys, known own-brand houses excluded): 8.261 windows/yr and 5.098 new brand keys/yr, both UPPER BOUNDS (brand-key precision ~85%; split keys inflate counts). Clients are micro: most holders and brands are ME porte, and Veneza's entry order is R$5.000. Two corrections to H6A. (1) The '73% made by multi-brand manufacturers' is definition-sensitive: recounted with 12-month brand keys it is 55% (917/1.667). (2) The '58 manufacturers = 30%' becomes 56 = 29,3%, and 52 = 27,7% once Unilever, Boticário, Natura and Gram/Haskell (own-brand multi-line houses) are removed.",
+  "price_per_kit": "Observed replacement band for 6 lifestyle images + 1 short film, bought by a micro-brand: ≈R$149 (Vintepila gigs) to R$578 (a SP studio's published AI lines). The packshot is already free inside a R$200 label. Sold to a MANUFACTURER, the ceiling is its own cost: an in-house designer (13 of 20 have one) plus US$49/month of Higgsfield. That implies a wholesale price of ~R$50-150 per kit (ESTIMATE; designer hourly cost UNVERIFIED). Realistic retail to a micro-brand: R$300-500. H6A's R$1.500-2.500 is 3-17× the observed band and should be dropped.",
+  "mfrs_needed": "Bar ≈R$150-190k/yr gross = R$12.500-15.800/month. At R$300/kit that is 42-53 kits/month; at R$500/kit, 25-32. Assume a partner converts 20% of NEW brands (UNVERIFIED): a Veneza-class partner gives ~4 kits/month and a mid-tier one (6-10 new brands/month) 1-2. So 6-12 referral partners are needed at R$500, and 10-20+ at R$300. They must come from the ~1/3 of manufacturers that do not bundle design in-house. Market-multiple on paper: 8.261 windows × R$400 = R$3,3M/yr, and ÷4 = R$826k > bar. So the pool is not the constraint. Willingness to pay above the R$20-100 gig price and the manufacturers' free bundle are.",
+  "hours": "From H6D: packshot-in-scene still 12-30 min, film 120-360 min at the start. A kit of 6 packshot-in-scene stills + 1 short camera-move motion + 3 ratios + QA = 2,6-5,7 h at the start and ~1,5-3 h after learning (ESTIMATE). A stock-bottle template library per manufacturer could bring it to ~1-1,5 h (UNVERIFIED). Veneza's packaging catalogue is a 30-page image-only PDF with no text to count SKUs from. Capacity: 87 h less 15-20 h of calls/sales ≈ 67-72 h ⇒ 22-48 kits/month at 1,5-3 h. So 42-53 kits at R$300 is over capacity, and 25-32 kits at R$500 fits only at ≤2,5 h/kit."
+ },
+ "refuted": true,
+ "verdict": "DEAD",
+ "strongest_version": "Drop resale. Keep ONE referral leg and make it a machine. 'KIT DE LANÇAMENTO NO DIA DO RÓTULO' for Veneza-class manufacturers, the minority that push design to the client. The trigger is label approval, the date Veneza's 30-day production clock starts ('o prazo começa a contar somente após a aprovação do rótulo'). Sol receives the client's print-ready label PDF and the stock-bottle code. It arrives as files, so C4 is clean. She maps the label onto that manufacturer's stock-bottle geometry and composites it into pre-built lit scenes without regenerating the label. She delivers 6 lifestyle stills + 1 camera-move motion + marketplace set within 5 days, i.e. ~25 days BEFORE stock exists, so the micro-brand can open pre-sales, Shopee/ML listings and Instagram teasers on day 1. It is fidelity-guaranteed ('any character that differs from your approved PDF is redone free'), which prices off the one thing the R$20 gig does not promise. Sold at R$390 per SKU line (≤3 SKUs) in Portuguese calls to brands the manufacturer refers, or listed next to the R$437,50 ANVISA fee if a manufacturer will add a line. The ANVISA daily file supplies extra direct leads: brands notified under manufacturer CNPJs. Preferences traded away: ORIGINATION-ONCE is lost, because every micro-brand is a fresh sale and the manufacturer only refers. The MACHINE TEST is mostly kept (template + composite). TREADMILL: a frontier release makes the manufacturer's in-house designer able to do it alone, so it moves toward OBSOLETE. This is an add-on leg or lead-in for a bigger ticket, not a business.",
+ "honest_floor_usd_month": "US$0-300/month. That is 0-5 kits/month from 1-2 referral partners at R$390, less ~15% tax/fees and ~R$330/month of tools, at PTAX ≈5,18. The realistic ceiling with 4-6 partners and 20-30 kits/month is R$7.800-11.700/month gross ≈ US$1.200-1.900/month net, still below the US$2.000-2.500 bar and needing 30-90 h/month.",
+ "next_test": "R$0, Portuguese calls, 10 working days, both legs. (A) Call 10 manufacturers that do NOT show in-house design: Veneza, Império, TCI, Alfahair, Suportt, Emapem/Liège, Carpe/Marliere, RS de Vargas/RB, AJ/Trizzi, JK Fórmulas. Ask: 'Quem produz hoje as fotos e vídeos de lançamento dos seus clientes de marca própria, e quanto eles pagam?' and 'Vocês colocariam um Kit de Lançamento de R$390 por linha no pedido, como a taxa ANVISA, ou indicariam formalmente no onboarding?' (B) From the ANVISA feed, take 20 brands notified in the last 14 days under those manufacturers' CNPJs. Find each on Instagram or its site and call. Ask what they paid for label + mockup and what they will spend on launch images/video.",
+ "bar": "Committed in advance. The channel is DEAD unless ≥2/10 manufacturers agree IN WRITING within 30 days to list or formally refer the kit, AND ≥5/20 micro-brands say they paid or will pay ≥R$300 for launch images/video beyond the free label mockup. If either leg misses, stop. If both clear, pilot 10 paid kits at R$390 and kill it if the stopwatch median exceeds 2,5 h/kit.",
+ "unverified": [
+  "Top-of-list manufacturers unreadable: Suportt/+Briefing (DNS failure), Império (reset/503), TCI (no site), Alfahair (reset/503), JK Fórmulas (DNS), WB Beauty (HTTP 500), CTEC, Ecoplus and Carpe (502/reset). Whether they bundle visuals is UNKNOWN. Together they hold ~3.250 of the 41.595 twelve-month hair/skin notifications (1.072+614+447+390+139+89+142+125+238).",
+  "No manufacturer publishes a price for its design/marketing bundle (except Multlabel's 'sem custo adicional'). Its price to the client is UNVERIFIED.",
+  "Take-up rate of a launch kit among micro-brands (20% assumed): not measured by anything.",
+  "Manufacturer in-house designer cost per hour (used to cap the wholesale price at ~R$50-150/kit): UNVERIFIED estimate.",
+  "Brand-key counts (new brands per month) inherit H6A's ~85% brand-key precision. Split and noise keys make the per-manufacturer figures upper bounds.",
+  "The notification holder is not always the manufacturer of record for every brand. Premium terceiristas (Cosmo, Lipson, K&G, Weckerle) often notify under the brand owner's CNPJ, so their true launch flow is under-counted.",
+  "Hours per kit (1,5-3 h; 1-1,5 h with templates) are estimates built on H6D's per-still/per-film estimates, not a stopwatch.",
+  "Veneza's stock-packaging catalogue (30-page image-only PDF): SKU count not extracted, so the size of a template library is unknown.",
+  "fotografiasdeprodutos.com.br 'R$7,00 por fotografia': page unreadable (503/reset), title only.",
+  "Estúdio Fábrica is one studio; its AI prices (R$53/image, R$260/video) are a single observed anchor, not a market median.",
+  "Vintepila prices are asking prices on a gig marketplace, and some sellers are new with 0 sales. Asking ≠ clearing, though the R$20 video gig shows 700 sold."
+ ]
+}

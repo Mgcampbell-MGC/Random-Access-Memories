@@ -1,0 +1,219 @@
+{
+ "agent": "H6G",
+ "capability_map": [
+  {
+   "capability": "Computer-use / browser agents that operate web pages by screen, cursor and keyboard",
+   "since": "2024-10-22 (public beta, 'experimental… error-prone'); OSWorld 42,2% ([an earlier 2025 frontier model], ~Jun 2025) → 61,4% ([a 2025 frontier model], 2025-09-29); Claude in Chrome announced 2025-08-25, page now 'available'",
+   "source_url": "https://www.anthropic.com/news/3-5-models-and-computer-use ; https://www.anthropic.com/news/[model-announcement] ; https://claude.com/blog/claude-for-chrome",
+   "what_it_admits": "A solo operator can run the reading/filling half of public, no-login state portals (MDIC consulta pública Power BI, Gecex resolution lists, DOU) that a 2024 desk staffed with analysts. It does NOT license operating a client's logged-in portal — C4 still forbids that; the useful pattern is 'she prepares files, the client uploads under its own gov.br login'."
+  },
+  {
+   "capability": "Cheap frontier reasoning/drafting models with long context",
+   "since": "[a late-2025 top-tier model] at US$5/US$25 per MTok on 2025-11-24; pricing page read 25 Sep 2026 lists [the current top-tier model] at US$4/US$20 per MTok (input/output) and a Pro seat at US$17–20/month",
+   "source_url": "https://www.anthropic.com/news/ [late-2025 model announcement] ; https://www.anthropic.com/pricing",
+   "what_it_admits": "Drafting regulatory prose in a fixed house style from a public corpus (e.g. thousands of published Ex-tarifário descriptions, MCTI's FORMP&D structure) at cents per dossier — the work of a technical writer plus a bilingual engineer in 2024. Changes her COST, not her right to charge."
+  },
+  {
+   "capability": "Reliable document OCR/extraction at scale",
+   "since": "Mistral OCR 2025-03-06: '1000 pages / $', 'up to 2000 pages per minute on a single node'",
+   "source_url": "https://mistral.ai/news/mistral-ocr",
+   "what_it_admits": "Ingesting foreign-language machine catalogues, proformas, datasheets and dialogue lists as files and turning them into structured, translated inputs — previously a translator + data-entry step."
+  },
+  {
+   "capability": "Image generation/editing at API prices",
+   "since": "Gemini 2.5 Flash Image 2025-08-26 at US$0,039 per image; Higgsfield (vendor MCP, 25 Sep 2026): PLUS US$49/month = 1.000 credits ≈ '~4800 images or ~200 videos', and a self-serve 'Marketing Studio — one-click product ads'",
+   "source_url": "https://developers.googleblog.com/en/introducing-gemini-2-5-flash-image/ ; HIGGSFIELD_FACTS.md (Higgsfield MCP show_plans_and_credits, 25 Sep 2026)",
+   "what_it_admits": "Production is no longer the cost driver for any visual deliverable — which is exactly why this lens found NO visual candidate whose price survives: the tool vendor sells the output self-serve (THE TOOL VENDOR IS THE FRONT DOOR)."
+  },
+  {
+   "capability": "Portuguese-capable voice agents (inbound/outbound telephony)",
+   "since": "Live pay-as-you-go pricing read Sep 2026: Retell 'US$0.07–0.31/minute', '20 [concurrent calls] included'; ElevenLabs Agents 'US$0.08 price per minute', '70+ languages'",
+   "source_url": "https://www.retellai.com/pricing ; https://elevenlabs.io/pricing/api",
+   "what_it_admits": "A first-pass qualification call to hundreds of leads in a day for ~US$0,10–0,30 per connected minute — the work of a 3–10-seat televendas pod in 2024. But the same tool is sold to the buyer directly, so voice alone never holds a price; it helps her SELL (volume of first contacts) more than it helps her CHARGE."
+  },
+  {
+   "capability": "Brazilian outbound-calling rule relaxed",
+   "since": "Anatel Acórdão nº 201 of 14 Aug 2025 made the 0303 telemarketing prefix OPTIONAL; intensive network users must still authenticate calls (page modified 28/08/2026)",
+   "source_url": "https://www.gov.br/anatel/pt-br/regulado/numeracao/telemarketing-ativo-prefixo-0303",
+   "what_it_admits": "Outbound B2B calls from an ordinary number are lawful without the 0303 prefix; AI outbound at volume still triggers the 'uso intensivo' authentication duties — budget for a carrier that authenticates."
+  },
+  {
+   "capability": "Agent-to-business-tool connectors (MCP) as an industry standard",
+   "since": "MCP released 2024-11-25; donated to the Linux Foundation's Agentic AI Foundation 2025-12-09",
+   "source_url": "https://www.anthropic.com/news/model-context-protocol ; https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation",
+   "what_it_admits": "A non-developer can wire Drive/Gmail/Calendar/spreadsheets into an agent pipeline without code — the ops glue of a small desk. Note it also means the BUYER can do the same, which is the treadmill."
+  },
+  {
+   "capability": "The Brazilian state is moving filings into gov.br self-service",
+   "since": "MDIC: Ex-tarifário pleitos move from SEI to the gov.br Portal de Serviços; SEI filings from 1 Oct 2026 get a 'pendência crítica'; manual dated 14.09.2026",
+   "source_url": "https://www.gov.br/mdic/pt-br/assuntos/sdic/ex-tarifario ; https://www.gov.br/mdic/pt-br/assuntos/sdic/ex-tarifario/ManualApresentaodepleitosdeExs_Gov.br_14.09.2026.pdf",
+   "what_it_admits": "A document desk whose client (or a named responsible person) uploads files into a structured state form — C4-clean — and receives every status change by e-mail. Six days from today."
+  }
+ ],
+ "candidates": [
+  {
+   "name": "O PLEITO — the Ex-tarifário desk, paid on publication in the DOU",
+   "shape": "S5/S1 hybrid: a machine-drafted regulatory dossier per investment project; success fee; sold through machine distributors (channel) and by Portuguese calls. NEW DOMAIN — 'ex-tarif' appears nowhere in the archive.",
+   "one_line": "Turn a foreign machine's catalogue and proforma into a complete Ex-tarifário pleito (TEC-style description, translated technical literature, investment project in MDIC's own model, 10-working-day rebuttal of any contestação) and get paid only when the Gecex resolution granting 0% duty is published.",
+   "who_pays": "Brazilian companies importing BK/BIT capital goods for their OWN production (Res. Gecex 512/2023 made the investment project mandatory and excluded pure resale), reached through the foreign makers' Brazilian reps/distributors, who need the 0% duty to close the machine sale; and, wholesale, despachantes/comex firms that hold importers but do not write pleitos.",
+   "observed_money": "Duty at stake: Res. Gecex 852 of 4 Feb 2026 moved NCMs that 'operavam com alíquota zero' to 7,2% or more (Conjur, 10 Mar 2026); an Ex returns them to 0%. Tradeworks: '380 pleitos de Ex-Tarifário… saving no Imposto de Importação de mais de US$ 53 milhões' (≈US$139k per pleito, vendor's own claim). Conterv: Klabin Puma II Ex-tarifários, 'Economia do Imposto de Importação: USD 20 milhões'. FecomercioSP sells the service and prices it bespoke ('calculamos o valor de acordo com a sua demanda'); ABIMEI 'mantém acordo com escritório paulista para consultoria na confecção de processos de ex-tarifários'. A pay-on-publication model 'com uma porcentagem da economia obtida' exists (search snippet attributed to agileappraisers.com; page 404 on fetch — % UNVERIFIED). NO published per-pleito fee was found anywhere — the price is quoted bespoke, which is where this archive says margin lives.",
+   "money_url": "https://tradeworks.com.br/category/ex-tarifario/",
+   "what_holds_price_up": "An outcome, not a capability: the duty saving (7,2–16% of machine value, cascading into the other import taxes) exists only if the pleito is granted, and the grant is published in the DOU — so a pay-on-grant fee is observable by HER (no self-reported-conversion trap) and the buyer never has to believe her. Plus a hostile counterparty and a clock: national makers may contest during the 30-day consulta pública and the pleiteante must rebut 'de maneira específica e detalhada' within 10 working days or the pleito is presumed abandoned (MDIC FAQ). Plus rule churn that keeps the in-house engineer out of date: 512/2023 (investment project), 852/853/866 of Feb 2026 (7,2% floor; exceptional window 9 Feb–31 Mar 2026), Gecex 952 of 3 Sep 2026 (vigência changes), gov.br portal from 1 Oct 2026.",
+   "why_demand_repeats": "(1) Every new machine investment is a new pleito; (2) Ex grants run two years and the renewal must be filed up to 180 days before expiry (MDIC FAQ) — a clock the buyer does not control, and non-renewal also strips every free-rider importer of the 0%; (3) each Gecex tariff move creates a wave; (4) one distributor partner = a recurring flow of its customers' machines (origination once per partner).",
+   "what_she_does_on_a_tuesday": "Opens two proformas + catalogues forwarded by distributor partners; runs the pipeline (OCR/translation → TEC-style description 'no plural, único e contínuo, sem marca' → investment project on MDIC's .docx model → national-equivalence screen against the free 'vigentes' list and past contestações); QA's against the FAQ checklist; one 30-min Portuguese video call with the client's plant engineer to confirm the machine's function in the line (the buyer supplies the technical truth); sends the finished files for upload on gov.br; checks the week's consulta pública for contestações against her clients and drafts rebuttals; makes 3 sales calls to distributors.",
+   "free_front_door": "PARTIAL — checked in the vendors' and the state's own words. Given away: (a) using an EXISTING Ex — once granted 'todo e qualquer importador poderá reclamar a aplicação da alíquota reduzida' (Conjur: 'free riders/caronistas') and MDIC publishes the vigentes list free — so matching is worth nothing; (b) MDIC's free investment-project template and FAQ; (c) the DEFENSIVE side is run by trade associations for members (ABIMO publishes the weekly pleitos spreadsheet; ABIMAQ lists Ex-Tarifário in its member service hub). Sold, not given: new pleitos and renewals (FecomercioSP, FI Group, PwC, EY, Tradeworks, Conterv, ABIMEI's preferred firm). UNVERIFIED and the biggest risk: how often machine distributors or despachantes bundle the pleito free into the machine sale — the first question on every call.",
+   "treadmill_verdict": "MIXED, leaning BETTER. Each release cuts her cost of translating and drafting (2024: bilingual engineer + technical writer + analyst). A buyer with a chat assistant and MDIC's template could self-draft, but no tool supplies (i) the risk transfer of a pay-on-grant fee, (ii) the 10-working-day contested rebuttal, or (iii) a corpus-level record of which wordings MDIC granted vs. which were contested. Her right to charge rests on (i)–(ii), not on capability. Real risk: incumbents adopt the same tools and cut fixed fees.",
+   "first_20_calls": "10 Brazilian reps/distributors of foreign machinery (ABIMEI associate list; TECHMEI 2026 exhibitors at São Paulo Expo) in packaging, plastics, laser/CNC, food processing; 5 SP industrial companies with announced expansion projects (MDIC 'Monitor de Investimentos'); 5 despachante/comex firms that do not write pleitos (wholesale white-label).",
+   "pool_estimate": "R$12–50M a year of pleito fees (HYPOTHESIS)",
+   "pool_derivation": "Gecex granted 105 Ex at the 27 Feb 2026 meeting (MDIC page, printed via poder360 PDF) and ~325 two-year Ex in May 2026 (MDIC news, search-engine snippet; page captcha-gated) ⇒ ~1.500–3.500 new/renewed Ex a year (two monthly points annualised — UNVERIFIED) × an assumed R$8–15k fee per granted pleito (UNVERIFIED; the test measures it) ⇒ R$12–52M. Two stacked unverified multipliers: a hypothesis, not a number. Sensitivity: if fees are a % of saving on Tradeworks' average (≈US$139k saved per pleito), 10% would be ≈R$72k per pleito and she would need only 2–3 grants a year.",
+   "pool_div4_vs_bar": "Pool÷4 ≈ R$3–13M/yr. Bar R$10.400–13.000/month net at ~15,5% tax (Simples Anexo V/Lucro Presumido, no payroll) and ~5% COGS ⇒ R$13.080–16.350/month gross ≈ R$157–196k/yr ⇒ 1,2–6,5% of pool÷4 — PASSES the market-multiple rule IF the fee assumption holds. In units: 11–25 granted pleitos a year at R$8–15k. ⚠ Observed-reach check: Tradeworks' 380 pleitos over its history is roughly 15–38 a year for an established firm — her unit requirement is AT an incumbent's run-rate, which is the real warning in this row.",
+   "revealed_preferences_traded": "MACHINE TEST — mostly kept: a machine drafts the unit and the buyer verifies by the DOU grant, not by trusting her; but her eyes QA every dossier and she holds a light 45–90-day relationship per pleito. ORIGINATION — traded partly: each pleito is a new project, softened by distributor channels and the 2-year renewal clock. C8 — traded fully: industrial machinery has zero affinity with her world. Paid for with a high value per unit, pay-on-outcome and a sale that Portuguese calls can make.",
+   "biggest_flaw": "The fee level, the win rate and the bundling rate are all unmeasured, in a market with named incumbents (Tradeworks, Conterv, FI Group, PwC, EY, FecomercioSP, ABIMEI's preferred firm) — and a 26-year-old non-engineer writing machine descriptions has a credibility gap on the first call.",
+   "repair": "Sell to the CHANNEL, not the end buyer: white-label dossier production for machine distributors and despachantes at a fixed wholesale price per pleito payable on DOU grant (they hold the importer and the technical relationship; she supplies throughput — THE WHOLESALE ESCAPE). The maker's catalogue and the client's engineer supply every technical fact, so she never asserts expertise. Start with RENEWALS: the Ex already exists, the expiry dates are public in the resolutions, the risk of refusal is lowest, and each one builds a record of grants to show the next caller.",
+   "honest_floor_usd_month": 540,
+   "next_test": "20 Portuguese calls, R$0: 10 machine distributors/reps, 5 despachante/comex firms, 5 importing manufacturers. Ask three questions: how many pleitos/renewals did you or your clients need in the last 12 months; who prepared them and what was paid (fixed and/or % on grant); does the distributor or despachante do it free as part of the sale.",
+   "bar": "PASS if ≥5 of 20 name a price ≥R$8.000 per granted pleito (or ≥5% of first-year saving) AND ≥3 have a pleito or renewal due within 6 months they would hand her on pay-on-grant terms. STOP if ≥8 of 20 say the distributor/despachante does it free.",
+   "confidence": "medium-low",
+   "unverified": [
+    "Per-pleito fee level — no published price anywhere; bespoke",
+    "% success-fee model — search snippet from agileappraisers.com, page 404 on fetch",
+    "Annual count of Ex grants (two monthly data points: 105 in Feb 2026, ~325 in May 2026)",
+    "Bundling rate by distributors/despachantes",
+    "Win rate of new pleitos and contestação frequency",
+    "Whether a non-employee consultant may be the 'pessoa física responsável' named on the gov.br form (manual: 'dados da pessoa responsável ou representante legal')",
+    "Tradeworks/Conterv savings figures are vendor self-reports"
+   ],
+   "sources": [
+    "https://www.gov.br/mdic/pt-br/assuntos/sdic/ex-tarifario",
+    "https://www.gov.br/mdic/pt-br/assuntos/sdic/ex-tarifario/perguntas-frequentes-faq",
+    "https://www.gov.br/mdic/pt-br/assuntos/sdic/ex-tarifario/ManualApresentaodepleitosdeExs_Gov.br_14.09.2026.pdf",
+    "https://www.gov.br/mdic/pt-br/assuntos/sdic/ex-tarifario/procedimentos",
+    "https://conjur.com.br/2026-mar-10/recomposicao-tarifaria-do-universo-bk-e-bit-caminhos-da-politica-comercial-brasileira-2/",
+    "https://abimed.org.br/noticias/elevacao-do-imposto-de-importacao-para-bk-e-bit-e-abre-prazo-excepcional-para-ex-tarifario/",
+    "https://static.poder360.com.br/2026/02/comunicado-gecex-27fev2026.pdf",
+    "https://efficienza.com.br/resolucao-gecex-no-952-de-3-de-setembro-de-2026/",
+    "https://tradeworks.com.br/category/ex-tarifario/",
+    "https://conterv.com.br/ex-tarifario/",
+    "https://representa.fecomercio.com.br/ex_tarifario",
+    "https://abimo.org.br/servicos/consulta-publica-mdic/consulta-publica-ex-tarifario/",
+    "https://abimaq.org.br/hub-de-servicos/38/comercio-exterior",
+    "https://www.abimei.org.br/"
+   ]
+  },
+  {
+   "name": "A FAIXA DO LANÇAMENTO — accessibility tracks for every theatrical release (new PRIVATE angle; the Great Hunt screened only public buyers)",
+   "shape": "S5 machine (AI-produced LSE captions + audiodescription script and synthetic narration) with human Libras bought from a licensed interpreter firm; per film.",
+   "one_line": "Deliver the LSE and audiodescription tracks (and resell a vendor's Libras window) in 7 days to independent film distributors and FSA-funded producers, who must supply all three for every theatrical release and every Depósito Legal.",
+   "who_pays": "Independent distributors releasing Brazilian and independent foreign films (the ANCINE rankings name H2O Films, Downtown/Paris, Paris Filmes, Sony for Brazilian titles) and producers of works funded with federal money managed by ANCINE/FSA.",
+   "observed_money": "LIBRAS.SE's own published base prices: 'Libras a R$ 100/min… LSE a R$ 28/min e audiodescrição a R$ 75/min'; ranges LSE R$20–35/min, AD R$60–90/min; 'Uma estimativa preliminar para um filme de 60 minutos com Libras, LSE e audiodescrição é de R$ 12.180'. ⇒ a 100-min feature ≈ R$20.300, of which the AI-admissible LSE+AD slice is ≈R$10.300. Public-sector comparables on PNCP (live-event-heavy): ALMG R$40.000 for AD of pre-recorded TV programmes; TSE R$52.000 and R$64.130 for Libras/legendagem/AD.",
+   "money_url": "https://libras.se/acessibilidade-para-longa-metragem/",
+   "what_holds_price_up": "A legal duty with an immovable date: since Jan 2023 (IN ANCINE 165/2022) exhibitors must offer accessibility and 'as distribuidoras precisam disponibilizar aos exibidores os filmes com legendagem, legendagem descritiva, LIBRAS e audiodescrição'; IN 116/2014 makes every ANCINE-funded project budget for the three and deposit them. The release date does not move. Libras is a regulated human profession (Lei 12.319/2010), which keeps a human-priced component inside the bundle.",
+   "why_demand_repeats": "One set of tracks per film, non-stretchable (THE CONSUMPTION-CLOCK TEST passes); distributors release titles every month; once a distributor's post coordinator trusts the delivery, the next title arrives by itself.",
+   "what_she_does_on_a_tuesday": "Receives a screener and dialogue list by secure link (files only); runs transcription→LSE timing and a vision-model AD draft placed in the dialogue gaps; reviews the AD against the picture herself (her eye for what is on screen); generates pt-BR narration and mixes the AD stem; orders the Libras window from a licensed firm; QC; delivers in the exhibitor/app format; one call to a distributor.",
+   "free_front_door": "No state or platform gives commercial-film tracks away (ANCINE publishes guides and an FAQ only; the public contracts found are live events). Incumbent specialists (LIBRAS.SE, CPL, Video Shack) sell it; big studios use global vendors. Not yet found: an exhibitor-app provider bundling production — UNVERIFIED.",
+   "treadmill_verdict": "OBSOLETE on the LSE/AD half over 2–4 years: compulsion proves demand, not price (THE TEMPLATE FLOOR TEST) — as captioning and AD tools go self-serve, a distributor's post house makes the tracks itself and the price falls toward the tool's cost. BETTER for her only in the window while incumbents still charge R$75/min for AD. The Libras half stays human and is not hers.",
+   "first_20_calls": "12 independent distributors with 2024–26 Brazilian releases (start with the ANCINE-ranking names), 5 São Paulo producers holding FSA contracts, 3 post-production houses (wholesale).",
+   "pool_estimate": "R$2–5M a year for the LSE+AD slice",
+   "pool_derivation": "ANCINE (via Metrópoles): '567 produções entraram em cartaz… até o dia 11 de setembro [2024]… 212 brasileiros e 355 internacionais' ⇒ ~400–500 new releases a year (UNVERIFIED annualisation) × ~100 min × R$103/min (LSE R$28 + AD R$75, LIBRAS.SE base) ≈ R$4,1–5,2M; minus big-studio titles with global vendors (assumed ~half, UNVERIFIED) ⇒ ~R$2–2,6M addressable, plus FSA series/documentaries (unsized).",
+   "pool_div4_vs_bar": "Pool÷4 ≈ R$0,5–0,65M/yr. Bar at 15,5% tax + ~10% COGS (voice, tools, QC) ⇒ R$13.960–17.450/month gross ≈ R$167–209k/yr ⇒ 26–42% of pool÷4 — FAILS the market-multiple rule on theatrical features alone. In units: 16–20 features a year at R$10.300. Clears only by adding FSA series/docs and streaming deliverables, which are unsized.",
+   "revealed_preferences_traded": "MACHINE TEST — kept (a machine makes the tracks; the buyer verifies them by watching; no ongoing relationship beyond per-title orders). ORIGINATION — mostly kept (distributors re-order per release). C8 — adjacent at best (film aesthetics, not fashion). Trades away nothing except size.",
+   "biggest_flaw": "Too small and on a price treadmill: the addressable pool fails the market-multiple rule, and AI will pull the incumbents' R$75/min AD price down for everyone, including her. And whether ANCINE, exhibitors and the blind community accept SYNTHETIC narration for cinema is UNVERIFIED — if they don't, the AD half needs a human voice (C3 grey zone).",
+   "repair": "Treat it as a 12–24-month window business, not a company: price at ~40–50% of the incumbents' per-minute rate with a 72-hour turnaround guarantee, sell by the title to independents, and bundle the FSA 'Depósito Legal' pack for producers. Before selling anything, confirm synthetic-narration acceptance in writing with two exhibitor accessibility providers and ANCINE's IN 165 FAQ.",
+   "honest_floor_usd_month": 400,
+   "next_test": "(1) Written: read ANCINE's IN 165/2022 FAQ and ask two exhibitor accessibility-app providers whether synthetic pt-BR AD narration is accepted. (2) 20 Portuguese calls to independent distributors and FSA producers: who makes your tracks, what do you pay per minute, how many titles in the next 12 months.",
+   "bar": "PASS if synthetic narration is accepted AND ≥5 of 20 would place a title at ≤R$60/min for LSE+AD combined AND those 5 name ≥20 titles for the next 12 months. STOP if synthetic narration is refused.",
+   "confidence": "low",
+   "unverified": [
+    "New theatrical releases per year (annualised from a September count of titles in cartaz)",
+    "Share of releases handled by global studio vendors",
+    "Acceptance of synthetic AD narration by ANCINE/exhibitors",
+    "Whether IN 165 FAQ or NBR 16452 requires a consultant with visual impairment (C3 grey zone)",
+    "Libras resale margin"
+   ],
+   "sources": [
+    "https://libras.se/acessibilidade-para-longa-metragem/",
+    "https://www.exibidor.com.br/noticias/mercado/12954-ancine-lanca-nova-instrucao-normativa-para-acessibilidade-de-conteudo",
+    "https://culturaemercado.com.br/ancine-publica-norma-sobre-acessibilidade-da-producao-audiovisual/",
+    "https://telaviva.com.br/15/04/2026/ancine-e-ministerio-dos-direitos-humanos-lancam-guias-para-acessibilidade-em-cinemas/",
+    "https://www.metropoles.com/entretenimento/cinema/2024-recuperacao-cinema-nacional",
+    "https://www.exibidor.com.br/noticias/mercado/14917-ancine-reformula-o-oca-e-apresenta-anuario-estatistico-com-recordes-do-audiovisual-brasileiro",
+    "https://pncp.gov.br/api/search/?q=audiodescri%C3%A7%C3%A3o&tipos_documento=contrato"
+   ]
+  },
+  {
+   "name": "O FORMULÁRIO DO BEM — the annual Lei do Bem project dossier, wholesaled through accounting firms",
+   "shape": "S1, a DELIBERATE RETURN (annual prose document from interviews), justified by an annual non-stretchable clock and tax money behind it; wholesale shape.",
+   "one_line": "Every season before the FORMP&D deadline, she interviews a company's engineers by Portuguese video call and delivers the MCTI project sheets (technological novelty, barrier, methodology, expense mapping) that unlock the Lei do Bem deduction — sold per project to accounting firms that hold Lucro Real clients.",
+   "who_pays": "Lucro Real companies doing R&D (4.252 beneficiaries in ano-base 2024), via the accounting firms that compute their IRPJ/CSLL; direct to mid-size industrials outside the big consultancies' books.",
+   "observed_money": "Ano-base 2024: 'R$ 51,59 bilhões' of private PD&I, '4.252 empresas beneficiárias, 14.877 projetos… renúncia fiscal estimada em R$ 11,98 bilhões' (Macke Consultoria quoting MCTI; MCTI's own page is captcha-gated and a search snippet of it reads '4,200+ companies… R$12 billion') ⇒ ≈R$2,8M of tax benefit per company on average. Consulting fees: NOT FOUND — bespoke (FI Group, Leyton, PwC, EY and boutiques).",
+   "money_url": "https://www.mackeconsultoria.com.br/recorde-na-lei-do-bem-confirma-avanco-da-inovacao-na-industria-brasileira/",
+   "what_holds_price_up": "Tax money and a rejection: the deduction is worth ≈R$2,8M a company on average, the FORMP&D has a hard deadline (Portaria MCTI 9.563/2025 art. 2 §2: 31 August each year; exceptionally 30 Sep 2026 for ano-base 2025), and MCTI reviews each project with at least two evaluators and 'análises automatizadas de dados' (art. 6 §1, art. 7) — a weak write-up is a glosa of the benefit.",
+   "why_demand_repeats": "One FORMP&D per company per ano-base, every year, on a date the buyer does not control (consumption clock) — once a client, next year's form arrives by itself (ORIGINATION ONCE).",
+   "what_she_does_on_a_tuesday": "In season (May–Sep): two recorded video interviews with R&D leads, the pipeline drafts the MCTI project sheets, she cuts and structures them, the accountant maps expenses; off season: sales calls to accountants and drafting contestações when MCTI pareceres land (10-day ciência windows).",
+   "free_front_door": "MCTI publishes the form and guidance free, and a company's own engineer with a chat assistant can draft. The incumbents earn on the flow (success fees) and offer free diagnostics, but do not give the drafting away.",
+   "treadmill_verdict": "MIXED: AI makes her cheaper AND makes the client's engineer more self-sufficient; MCTI's automated screening raises the bar, which favours specialists. Her right to charge is familiarity with what MCTI accepts — expertise, which sits in the veto zone.",
+   "first_20_calls": "10 São Paulo accounting firms serving Lucro Real industrial clients (wholesale); 10 CFOs of mid-size SP industrials in machinery, plastics and food.",
+   "pool_estimate": "R$64–255M a year of fees (HYPOTHESIS)",
+   "pool_derivation": "4.252 beneficiary companies × an assumed R$15–60k fee a year (UNVERIFIED — fees unpublished).",
+   "pool_div4_vs_bar": "Pool÷4 ≈ R$16–64M/yr vs bar ≈ R$157–196k/yr gross ⇒ ≤1,2% share — passes easily IF fees exist at that level; in units, 5–10 companies at R$20–35k a year, or ~50–65 project sheets at R$3.000 wholesale.",
+   "revealed_preferences_traded": "MACHINE TEST — failed: her hands and judgement are on every dossier, and the buyer must trust the write-up until MCTI rules. ORIGINATION — passed (annual recurrence). C8 — none.",
+   "biggest_flaw": "THE EXPERT VETO: the buyer is buying her judgement of what MCTI will accept, and a glosa years later lands on her. The market is dominated by named consultancies.",
+   "repair": "Wholesale only: the accounting firm holds the client, the benefit computation and the liability; the client's engineers supply the domain; she supplies structured throughput at a fixed price per project sheet and never asserts eligibility.",
+   "honest_floor_usd_month": 600,
+   "next_test": "20 Portuguese calls to SP accounting firms with Lucro Real industrial clients: how many use Lei do Bem, who writes the FORMP&D, what does it cost, would you buy project sheets at R$2.500–4.000 each for the 2027 cycle.",
+   "bar": "PASS if ≥4 of 20 say yes at ≥R$2.500 per project sheet with ≥3 projects each for the next cycle. STOP if ≥10 of 20 say their clients already use FI Group/Leyton-type success-fee firms and they will not intervene.",
+   "confidence": "low",
+   "unverified": [
+    "Consulting fee levels",
+    "Whether MCTI publishes the names of beneficiary companies",
+    "Share of beneficiaries served by accounting firms rather than specialist consultancies",
+    "MCTI's primary page body (captcha-gated) — figures via a consultancy's quotation and a search snippet"
+   ],
+   "sources": [
+    "https://www.mackeconsultoria.com.br/recorde-na-lei-do-bem-confirma-avanco-da-inovacao-na-industria-brasileira/",
+    "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/2026/06/mcti-lanca-formp-d-2026-e-lei-do-bem-registra-recorde-de-r-51-6-bilhoes",
+    "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/lei-do-bem/paginas/formulario-eletronico-formp-d/",
+    "https://antigo.mctic.gov.br/mctic/opencms/legislacao/portarias/Portaria_MCTI_n_9563_de_03112025.html"
+   ]
+  },
+  {
+   "name": "A VOLTA DA FEIRA — 72-hour post-fair lead follow-up by Portuguese voice agent plus her own calls (beauty fairs first)",
+   "shape": "S3/S6 hybrid: a continuous-operation voice machine run per trade fair, with a human closer; B2B trade fairs (a new angle — the exhausted 'events' were consumer weddings).",
+   "one_line": "Within 72 hours of a São Paulo trade fair, a Portuguese voice agent calls every badge-scanned lead an exhibitor collected, qualifies them against the exhibitor's criteria, and Sol personally calls the best 10% and books meetings into the exhibitor's calendar — a fixed fee per fair plus a fee per booked meeting.",
+   "who_pays": "Exhibitors: Beauty Fair (organiser: '4 dias de feira + 2 mil marcas + 500 expositores + 200 mil visitantes R$ 800 mi em volume de negócios'; 2026 edition 5–8 Sep, Expo Center Norte), Hair Brasil, then any São Paulo B2B fair.",
+   "observed_money": "What exhibitors already pay to be at the fair (booth sizes published — Salon Line 482 m², Coty 120 m²; prices unpublished) and what Brazilian firms pay for outsourced prospecting: 'R$ 3k a R$ 15k/mês' (SECONDARY blog). Machine cost: Retell US$0,07–0,31/min; ElevenLabs Agents US$0,08/min.",
+   "money_url": "https://www.beautyfair.com.br/",
+   "what_holds_price_up": "WEAKLY: the booth sunk cost and lead decay. THE CONSTRAINT-SIDE LAW passes — lead volume is set by the fair date and the cost is the exhibitor's sales hours in the week after; 'what breaks if volume doubled?' — follow-up. The booked meeting is visible to HER because she books it, so a per-meeting fee escapes the self-reported-conversion trap.",
+   "why_demand_repeats": "Exhibitors re-exhibit every year and at several fairs; once one says yes, the next fair's leads arrive by themselves.",
+   "what_she_does_on_a_tuesday": "Post-fair week: loads lead CSVs, sets the script per client, monitors the agent, personally calls the ~10% hot leads, books meetings, sends a daily report. Off-season: calls the next fair's exhibitor list.",
+   "free_front_door": "LIKELY FATAL for the salon-lead segment: a professional brand's DISTRIBUTORS earn margin on the future flow and follow up salon leads for free (NO-MARGIN-ON-THE-FLOW). Organisers sell lead-capture apps, and CRMs are adding AI calling. What is left is distributor, retailer and B2B-buyer leads.",
+   "treadmill_verdict": "OBSOLETE: this is capability-held. As CRM and fair apps embed voice agents the exhibitor does it alone; only her human calls and the per-meeting risk share survive a release.",
+   "first_20_calls": "20 Beauty Fair 2026 exhibitors — mid-size professional brands, equipment and packaging suppliers — asking what happened to their leads in the two weeks after the fair.",
+   "pool_estimate": "R$3–6M a year (beauty fairs only, HYPOTHESIS)",
+   "pool_derivation": "~500 Beauty Fair exhibitors + an assumed ~300 at Hair Brasil (UNVERIFIED) ≈ 800 exhibitor-fairs a year × R$4–8k per campaign (UNVERIFIED) ≈ R$3,2–6,4M.",
+   "pool_div4_vs_bar": "Pool÷4 ≈ R$0,8–1,6M/yr. Bar at 15,5% tax + ~20% COGS (minutes, telephony, tools) ⇒ R$16.100–20.200/month gross ≈ R$193–242k/yr ⇒ 12–30% of pool÷4 — BORDERLINE-FAIL on beauty alone; needs every São Paulo B2B fair. In units: 40–48 campaigns a year, ~10 h of her time each ⇒ ~33–40 h/month, which fits C9.",
+   "revealed_preferences_traded": "MACHINE TEST — partly (the agent makes the first unit; she makes the calls that matter). ORIGINATION — kept per exhibitor, but fair-by-fair. C8 — kept: her world (beauty fairs), and the calls are hers to make.",
+   "biggest_flaw": "Nothing but capability holds the price, and the distributors give the salon half away.",
+   "repair": "Sell only the leads a distributor will NOT chase (new distributors, retailers, salon chains, export buyers), price per booked meeting to hold the outcome, and widen from beauty to every São Paulo B2B fair so the calendar fills.",
+   "honest_floor_usd_month": 300,
+   "next_test": "20 Portuguese calls to Beauty Fair 2026 exhibitors: how many leads did you scan, what % were contacted within 7 days, who contacted them, would you pay R$150–300 per booked meeting with a qualified distributor or retailer.",
+   "bar": "PASS if ≥6 of 20 report <50% of leads contacted within 7 days AND ≥4 agree to a paid pilot at ≥R$150 per booked meeting for Hair Brasil 2027. STOP if ≥10 of 20 say distributors handle it.",
+   "confidence": "low",
+   "unverified": [
+    "Hair Brasil exhibitor count",
+    "Per-campaign price level",
+    "Booth prices",
+    "Share of leads distributors already chase"
+   ],
+   "sources": [
+    "https://www.beautyfair.com.br/",
+    "https://www.promoview.com.br/beauty-fair-2026-estandes-marcas/",
+    "https://wesow.com.br/quanto-custa-terceirizar-a-prospeccao-b2b/",
+    "https://www.retellai.com/pricing",
+    "https://elevenlabs.io/pricing/api",
+    "https://www.gov.br/anatel/pt-br/regulado/numeracao/telemarketing-ativo-prefixo-0303"
+   ]
+  }
+ ],
+ "notes": "RANKING: O PLEITO is the only candidate where something other than capability clearly holds the price (a published, observable outcome paid out of duty saved) AND the state just raised the stakes (Res. Gecex 852/2026 put a 7,2% floor on BK/BIT NCMs that were at 0%) AND filing moves to gov.br self-service on 1 Oct 2026. The other three are weaker: A FAIXA fails the market-multiple rule and sits on a price treadmill; O FORMULÁRIO DO BEM trips the expert veto; A VOLTA DA FEIRA is held only by capability. THE LENS FINDING: across 2025–26 capabilities, generative image/video and voice mostly cut the BUYER's cost as much as hers (the tool vendor is the front door), so the surviving candidates are document desks where the tools cut HER cost of producing a filing, while the price is held by a state outcome (a grant, a deadline, a deduction). Voice agents help her SELL (volume of first contacts, now lawful without 0303 since Anatel Acórdão 201/2025) far more than they help her CHARGE. KILLED OR DEMOTED WHILE HUNTING (causes of death reusable): (1) OFERTA DA SEMANA — weekly supermarket encarte + video machine: dead on THE FREE FRONT DOOR / SaaS ceiling — Ofertemais R$109,90–169,90/month, Encarte Fácil 'R$ 0 · pra sempre', DS Marketing free plan for 1 store (ofertemais.com.br, encartefacil.com, blog.dsmarketing.com.br). (2) A MIGRAÇÃO — channel partner for the free energy market: a real CLOCK-START (Lei 15.269/2025; Decreto 13.097 of 13 Aug 2026 opens low-voltage commercial/industrial consumers from 25 Nov 2027 — canalsolar/pv-magazine, SECONDARY) but the partner is paid by the margin-earner at commission rates (THE MARGIN LAW) and loses the channel when retail traders build direct sales; revisit mid-2027. (3) SBCE emissions reporting — regulation expected by Dec 2026, obligations not yet in force (VENDOR-URGENCY: date-check before selling). (4) Generic AI receptionist/voice agency for SMEs — THE CONTENT-ECONOMY SELECTION BIAS: origination forever, and vendors sell direct. (5) Cosmetics label review — already dead in COSMETICS_VERDICT.md ($20–120). EVIDENCE CAVEATS: gov.br MDIC/MCTI news pages and ANCINE PDFs returned a captcha to curl — figures from them are marked as snippets or taken from printed copies; Workana returned 403; PNCP search was intermittent (empty replies). No per-unit fee was found published for Ex-tarifário pleitos or Lei do Bem — both are bespoke-priced, which this archive predicts is where margin lives, but it also means the fee is the first thing the calls must measure."
+}

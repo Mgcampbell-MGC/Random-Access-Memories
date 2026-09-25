@@ -1,0 +1,232 @@
+{
+ "agent": "H6H",
+ "question": "Field report 25 Sep 2026: the newborn-kit desk is hurt by freight and municipal corruption. Test at primary sources whether the archive's 'thin-field premium' is partly a directed/uncontested premium, price freight on bulky kits, and find a repaired desk or say stop.",
+ "corruption": {
+  "findings": [
+   {
+    "municipio": "Coari/AM",
+    "source_url": "https://pncp.gov.br/pncp-api/v1/orgaos/04262432000121/compras/2025/238/arquivos/3",
+    "what_it_shows": "Pregão PRESENCIAL 010/2025-CCC (kits maternidade, SRP): 12.960 kits to VITÓRIA RÉGIA (Manaus, CNPJ 27.698.768/0001-37) at R$675,37/kit and a 1.440-kit ME quota to OLIVEIRA CONFECÇÃO E SERVIÇOS DE IMPRESSÃO at R$676,00; all 15 items awarded at 99,3-100,0% of estimate (banheira R$62,70 vs R$63,11; PNCP percentualDesconto 0,6496%). ARP ceiling R$9.726.235. This is the archive's 'thin field' worth 34,8% of its clearing pool.",
+    "status": "verified at primary source; no ruling on this lot found"
+   },
+   {
+    "municipio": "Coari/AM",
+    "source_url": "https://pncp.gov.br/api/search/?q=coari%20enxoval&tipos_documento=edital",
+    "what_it_shows": "Compra 2025/238 posted to PNCP 2026-03-16; proposals closed 2025-03-14; ARP signed 25 Mar 2025 (arquivos/4). Published 367 days after the session: invisible to an art. 54 PNCP cron, and its 'market value' entered a 12-month harvest after its ARP had expired.",
+    "status": "verified"
+   },
+   {
+    "municipio": "Coari/AM",
+    "source_url": "https://pncp.gov.br/pncp-api/v1/orgaos/04262432000121/compras/2025/238/arquivos/1",
+    "what_it_shows": "Edital: session in person at Coari city hall (river town, no road link), invokes art. 17 §§2º-5º with no stated reason, MENOR PREÇO POR LOTE, cartório-authenticated copies 2 working days before, atestado of ≥10% of quantities (=1.440 kits delivered), adesões up to 2× the registered quantity.",
+    "status": "verified"
+   },
+   {
+    "municipio": "Coari/AM",
+    "source_url": "https://apisidra.ibge.gov.br/values/t/2612/n6/1301209/v/218/p/2022,2023,2024",
+    "what_it_shows": "Births 1.440 / 1.429 / 1.300 per year: 14.400 kits registered = 11,1× a year of births (2026 eletrônico still 6.300 = 4,8×).",
+    "status": "verified"
+   },
+   {
+    "municipio": "Coari/AM",
+    "source_url": "https://pncp.gov.br/pncp-api/v1/orgaos/04262432000121/compras/2026/95/arquivos/2",
+    "what_it_shows": "NATURAL EXPERIMENT: same buyer, same object, Pregão ELETRÔNICO 47/2026 (homologated 3 Sep 2026): lot cleared at 0,593 of estimate (ME lot 0,773); banheira anatômica R$62,70→R$25,00 (-60%), macacão R$43,00→R$25,00 (-42%), kit cueiro R$43,95→R$26,00 (-41%), kit banho R$31,96→R$21,00 (-34%). At Sol's verified cost the 2026 banheira is -19% and the macacão +22%. Winners again Amazonas generalists (PONTO NORTE AMAZONIA, Manaus, 67 secondary CNAEs; VITALOG, Urucará, 94).",
+    "status": "verified"
+   },
+   {
+    "municipio": "Coari/AM",
+    "source_url": "https://www.mpam.mp.br/noticias-portal/18206-em-coari-ministerio-publico-recomenda-adocao-de-pregao-eletronico-apos-apuracao-de-editais-presenciais",
+    "what_it_shows": "9 Apr 2025, MPAM recommendation nº 2025/0000042102.02PROM_CIZ to mayor Adail Pinheiro after a complaint about 'sete editais de licitação em 2024, todos na modalidade presencial, sem justificativas compatíveis'.",
+    "status": "verified (institutional primary page)"
+   },
+   {
+    "municipio": "Coari/AM",
+    "source_url": "https://fatoamazonico.com.br/tce-am-barra-licitacao-da-prefeitura-de-coari-por-indicios-de-manobra-para-restringir-concorrencia/",
+    "what_it_shows": "27 May 2025: TCE-AM cautelar (cons. Ari Moutinho) suspends Coari Pregão Presencial 42/2025 for unjustified presencial form and non-publication of the full edital.",
+    "status": "SECONDARY (news); TCE-AM decision text not fetched"
+   },
+   {
+    "municipio": "Coari/AM",
+    "source_url": "https://portaltucuma.com.br/tce-am-denuncia-licitacoes-de-coari/",
+    "what_it_shows": "1 Sep 2026: TCE-AM admits a representation alleging 'direcionamento sistemático' in six 2026 Coari pregões eletrônicos (043, 046, 053, 057, 058, 063/2026); removal of two pregoeiros requested.",
+    "status": "SECONDARY (news); pending, no merit decision"
+   },
+   {
+    "municipio": "Coari/AM",
+    "source_url": "https://transparencia.coari.am.gov.br/download.php?file=app%2Fdocumentos_portal%2Fdocumentos%2Flicitacoes%2F134737803367d82c64c7f62%2Fata_de_registro_de_precos_29_2025.pdf",
+    "what_it_shows": "Same secretary, same winner (VITÓRIA RÉGIA) also took SEMAS uniforms by Pregão Presencial 019/2025 (ARP 29/2025, 14 Apr 2025): repeat winner across presencial tenders of one secretariat.",
+    "status": "verified"
+   },
+   {
+    "municipio": "Coari/AM",
+    "source_url": "https://publica.cnpj.ws/cnpj/04896372000107",
+    "what_it_shows": "ME-quota winner OLIVEIRA CONFECÇÃO E SERVIÇOS DE IMPRESSÃO (Presidente Figueiredo/AM) lists boat repair, sewage networks, earthworks, foundations, road works and building painting as secondary activities: a generic 'faz-tudo' tender vehicle.",
+    "status": "verified; circumstantial"
+   },
+   {
+    "municipio": "Coari/AM",
+    "source_url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2026&nr_periodo=3&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2007&co_esfera=M&id_ente=1301209",
+    "what_it_shows": "Restos a pagar processados: inscritos R$6.963.391, pagos R$4.462.227 => 35,9% unpaid; fails the archive's own reject rule (>30%).",
+    "status": "verified"
+   },
+   {
+    "municipio": "Coari/AM",
+    "source_url": "https://doe.tceam.tc.br/wp-content/uploads/2025/09/Edicao-de-n%C2%B03638-de-18-de-setembro-de-2025.pdf",
+    "what_it_shows": "TCE-AM gazette: embargos on the 2023 annual accounts of the Fundo Municipal de Assistência Social de Coari (the kit-buying fund).",
+    "status": "verified that the case exists; outcome UNVERIFIED"
+   },
+   {
+    "municipio": "Arinos/MG",
+    "source_url": "https://pncp.gov.br/api/pncp/v1/orgaos/18125120000180/compras/2025/12/itens/1/resultados",
+    "what_it_shows": "Archive top-10 clearing buyer: posted to PNCP 16 Oct 2025 for a session closed 28 Apr 2025 (5,5 months late); 300 kits at R$569,23 vs estimate R$581,57 (0,979); winner RUY COMERCIO DE VARIEDADES (Chapada Gaúcha/MG, armarinho).",
+    "status": "verified"
+   },
+   {
+    "municipio": "Maués/AM",
+    "source_url": "https://pncp.gov.br/api/pncp/v1/orgaos/04282869000127/compras/2026/6/itens",
+    "what_it_shows": "Archive fixture R$298: awarded at 0,992 of estimate (R$298,00 vs R$300,53) to F. B. PEREIRA LTDA (Manaus, minimercado CNAE, 79 secondary CNAEs).",
+    "status": "verified"
+   },
+   {
+    "municipio": "Nhamundá/AM",
+    "source_url": "https://pncp.gov.br/pncp-api/v1/orgaos/04283578000153/compras/2026/22/arquivos/2",
+    "what_it_shows": "ARP 013/2026 (PE 017/2026, 19 Aug 2026): 3.500 kits at R$320 (est R$604,57) to A. P. GOMES LTDA, Rua Furtado Belém 27 — the prefeitura is at Rua Furtado Belém 42; main CNAE hospital-materials wholesale + minimercado, opened Feb 2022. Births 318/yr => 11,0×. Archive: this buyer paid 0,0% of last year's restos a pagar.",
+    "status": "verified; interpretation circumstantial"
+   },
+   {
+    "municipio": "Icatu/MA",
+    "source_url": "https://pncp.gov.br/api/pncp/v1/orgaos/05296298000142/compras/2025/38/itens",
+    "what_it_shows": "1.172 + 390 kits at R$296,84 (0,75 of estimate, eletrônico, 13 days' notice) to J E C DA COSTA NETO (Arari/MA, department-store CNAE, 92 secondary CNAEs); births 223 => 7,0×; archive: 0,0% of restos a pagar paid.",
+    "status": "verified"
+   },
+   {
+    "municipio": "Benjamin Constant/AM",
+    "source_url": "https://pncp.gov.br/api/pncp/v1/orgaos/04243978000135/compras/2025/180/itens",
+    "what_it_shows": "Dispensa 2025: all 12 kit items awarded at exactly 100% of estimate to R. B. DA SILVA FERNANDES (local; main CNAE computer repair; opened Oct 2024; 81 secondary CNAEs), who then won the 2026 Pregão Presencial 2026/53 as well.",
+    "status": "verified"
+   },
+   {
+    "municipio": "Taiobeiras/MG",
+    "source_url": "https://pncp.gov.br/api/pncp/v1/orgaos/01172959000177/compras/2026/7/itens",
+    "what_it_shows": "4.850 bolsas maternidade registered (GPADOVANO) against 403 births => 12×.",
+    "status": "verified"
+   },
+   {
+    "municipio": "São Paulo/SP (Mãe Paulistana)",
+    "source_url": "https://diariooficial.prefeitura.sp.gov.br/md_epubli_visualizar.php?hgq9wGLwVFyfEjveFfexY-AyYdS0viJON0GRAWoIIL6cd4kS1zwd8KpWhdvurxxYLVYszIemu5EyM5fqtGn6vID_1fTXCP4iLYDd7PHmy7E2uelV8v_ltXg7GgqodO4-=",
+    "what_it_shows": "BRINK MOBIL's recurso on PE 90392/2025: alleges R$875,17/kit vs 'valor médio de mercado' R$594,06 x 72.000 kits = R$20.239.920 overpricing and three ignored requests to view the process.",
+    "status": "ALLEGATION by a losing bidder (itself CEIS-listed) — UNVERIFIED"
+   },
+   {
+    "municipio": "(national, all winners in sample)",
+    "source_url": "https://portaldatransparencia.gov.br/download-de-dados/ceis/20260924",
+    "what_it_shows": "CEIS+CNEP bulk 24 Sep 2026 matched against 400 distinct kit-line winners: 27 listed (6,8%), holding 1,5% of line value — mostly 'impedimento' by other municípios (local in scope, so they keep bidding). None of the Coari winners is listed. Sanction lists do not catch this pattern.",
+    "status": "verified"
+   }
+  ],
+  "red_flag_prevalence": "Full list of 2.751 newborn-kit compras on PNCP (2021-2026): Pregão Presencial 34 (1,2%), Dispensa 963 (35%). Posted to PNCP AFTER proposals closed: 7,8% of pregões eletrônicos (135/1.733), 22,9% of dispensas (123/538), 38,2% of presenciais (13/34). Line sample (2.518 award lines, 572 editais with results published since Jan 2025): award÷estimate median 0,64 on on-time pregão eletrônico (11,4% of lines at ≥0,98) vs 0,994 on presencial (53,1% at ≥0,98, n=32) and 0,97 on dispensa (45,9%). Margin at Sol's published São Paulo cost rises monotonically with award÷estimate: median gross −21,8% below 0,6 → +15,1% (0,6-0,8) → +20,9% (0,8-0,98) → +35,3% at ≥0,98. The component pool clearing ≥50% gross (R$7,48M in sample; R$5,38M ex-Coari): 89,9% won by a firm in the buyer's own state, 7,1% by São Paulo firms; 49,9% sits in presencial / post-hoc-published / no-discount lines (30,3% ex-Coari); only 5,3% (7,4% ex-Coari) is clean AND was won by an out-of-state firm — the only slice a distant bidder has demonstrably captured. When an out-of-state firm wins a component line it clears at 0,625 of estimate = −6,2% gross at her cost (São Paulo firms selling out of state: 0,537, −11,1%); local winners 0,809, +18,3%. Kits under 300 units: local 0,86 of estimate (median R$250) vs out-of-state 0,611 (R$178,85); 300-1.000 kits: 0,706 vs 0,518. Generalist winners (≥40 secondary CNAEs; 110 of 400 winners) take 31,1% of the clearing value vs 24,2% of the rest; median gross at her cost when they win +29,3% vs +11,8% when a specialist (<10 CNAEs) wins. Kits registered vs annual births (IBGE t.2612, 2024): median 0,89×, 16,2% of editais >2×, 3,2% >5× (Coari 11,1×, Nhamundá 11,0×, Icatu 7,0×, Taiobeiras bolsas 12×). CEIS/CNEP: 6,8% of winners listed, 1,5% of value — sanction lists are not the filter.",
+  "verdict": "PARTLY YES, AND IT DOES NOT MATTER WHICH PART. The thin-field premium is an UNCONTESTED-LOT premium: the margin lives in lines awarded at or near the estimate, ~90% of it is captured by in-state firms (disproportionately local generalist 'empresas balcão'), and the moment a distant firm wins, the price falls to where her cost is under water. At least some of it is directed: the archive's single largest thin field (Coari, 34,8% of its clearing pool) was a presencial pregão in a river town, posted to PNCP a year late, awarded at 99,3-100% of estimate on every item, for 11× the town's births, by a municipality under an MP recommendation for unjustified presencial tenders and a TCE-AM docket alleging systematic direcionamento — and when the same buyer went electronic in 2026 the same banheira cleared 60% lower. PNCP data cannot separate directed from honest-local, and no court or TCE has ruled on a kit lot (UNVERIFIED as fraud). For the desk the distinction is moot: neither premium is capturable by an out-of-state bidder — in a directed lot she is excluded, in an honest thin lot her arrival is what removes the premium."
+ },
+ "freight": {
+  "quotes": [
+   {
+    "route": "São Paulo 01310-100 → São Luís/MA, Teresina/PI, Icatu/MA, Manaus/AM",
+    "weight_basis": "Correios PAC balcão; one kit box 76×48×23 cm (Plasútil 21 L bathtub envelope); 5 kg and 14 kg quote identical (cubic weight governs)",
+    "price": "R$161,00 + R$11,19 manuseio especial (>70 cm) = R$172,19 per kit (SEDEX R$442,60); Icatu 14-18 working days, Manaus 20",
+    "url": "https://www2.correios.com.br/sistemas/precosPrazos/prazos.cfm"
+   },
+   {
+    "route": "São Paulo → Fortaleza/CE · Belo Horizonte/MG · Montes Claros/MG · SP capital",
+    "weight_basis": "same kit box, PAC",
+    "price": "R$141,59 · R$110,79 · R$177,29 · R$85,29 per kit",
+    "url": "https://www2.correios.com.br/sistemas/precosPrazos/prazos.cfm"
+   },
+   {
+    "route": "São Paulo → Coari/AM, Maués/AM",
+    "weight_basis": "same kit box, PAC",
+    "price": "R$306,99 per kit, 23-30 working days",
+    "url": "https://www2.correios.com.br/sistemas/precosPrazos/prazos.cfm"
+   },
+   {
+    "route": "São Paulo → São Luís/Teresina/Icatu · Fortaleza · BH · Coari",
+    "weight_basis": "Correios PAC; mochila-only kit (no bathtub) 45×32×24 cm, 4 kg",
+    "price": "R$81,70 · R$65,90 · R$50,50 · R$153,60 per kit",
+    "url": "https://www2.correios.com.br/sistemas/precosPrazos/prazos.cfm"
+   },
+   {
+    "route": "São Paulo → São Luís/Teresina · Fortaleza · Montes Claros · BH",
+    "weight_basis": "Correios PAC; DENSE textile box 40×30×25 cm, 10 kg (~25-28 fralda-de-pano 5-packs, pack weight UNVERIFIED)",
+    "price": "R$106,20 · R$86,00 · R$109,70 · R$65,60 per box (≈7% of ~R$1.500 of cloth diapers at the state median R$12,20/piece)",
+    "url": "https://www2.correios.com.br/sistemas/precosPrazos/prazos.cfm"
+   },
+   {
+    "route": "Alô Bebê store (origin UNVERIFIED) → Teresina · São Luís · Icatu · Fortaleza (Farrapos); BH · Montes Claros · Manaus (Translovato)",
+    "weight_basis": "LTL road carrier, Banheira Fontana Duo, package 89,8×35,1×47,3 cm (0,149 m³), 5,15 kg; q=1 / q=5 per unit / q=20 per unit",
+    "price": "q=1: R$134,48 · 146,04 · 172,11 · 150,13 | 109,60 · 134,08 · 575,69. q=5 per unit: R$118,94 · 129,46 · 153,71 · 123,64 | 44,68 · 57,51 · 293,79. q=20 per unit: NE 'cannotBeDelivered' (route cap) | BH R$20,66 · Montes Claros R$27,16 · Manaus R$127,75",
+    "url": "https://www.alobebe.com.br/api/checkout/pub/orderForms/simulation?sc=1"
+   },
+   {
+    "route": "São Paulo → Icatu/MA 2.974 km · São Luís 2.985 · Fortaleza 3.126 · Teresina 2.645 · Montes Claros 984 · BH 584 (OSRM road km)",
+    "weight_basis": "ANTT statutory FLOOR, carga lotação, carga geral, Res. 6.084/2026 Tabela A: piso = km × CCD + CC; 2 eixos CCD 3,9826/CC 451,84; 3 eixos 5,0977/541,86; 6 eixos 7,3547/671,93; tolls excluded",
+    "price": "SP→Icatu R$12.296 (2 eixos) · R$15.702 (3) · R$22.545 (6); SP→Fortaleza R$12.901 · 16.477 · 23.663; SP→Montes Claros R$4.371 · 5.558 · 7.909. Per kit at 0,10 m³/kit, 85% fill, 30/48/95 m³ trucks (volumes UNVERIFIED): Icatu R$48 / 39 / 28 = 16% / 13% / 9,4% of R$296,84; a median 105-kit lot on a dedicated 2-axle truck = R$117/kit = 39,5% (Montes Claros R$41,63 = 14%)",
+    "url": "https://anttlegis.antt.gov.br/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=RES&numeroAto=00006084&seqAto=000&valorAno=2026&orgao=DG%2FANTT%2FMT&cod_modulo=623&cod_menu=9230"
+   }
+  ],
+  "vs_margin": "The archive's kit margin is +36% to +53% gross at the published São Paulo tier on the award the WINNER got (Itaquaquecetuba R$359,05). Against that: a boxed kit with a bathtub costs 58% of a R$296,84 Maranhão kit by Correios PAC (37% even to Belo Horizonte); 40-52% per unit by observed LTL at 5 units to the Northeast, with no scale economy (Farrapos refuses 20 units); 9-10% only on a full 6-axle carreta at the ANTT floor, which needs ~800+ kits (≈R$240k of billings, ≈R$130k of COGS — 8× her R$15.600 float); a median ~105-kit lot on its own truck is 39,5% at the floor to Maranhão and 14% to northern Minas. Freight scales with VOLUME, not value, so it bites hardest on the bathtub-and-bag kits that carry the thin-field prices. And the margin itself is overstated for a distant bidder: at the price out-of-state firms actually clear (0,625 of estimate), the component gross at her cost is −6,2% before freight (banheira −18%, macacão −16%, toalha −12%). Only DENSE textiles survive both: fralda de pano +40,8% and manta +31,5% gross at out-of-state prices, with PAC freight ≈7% of value to the Northeast."
+ },
+ "repair_options": [
+  {
+   "option": "A. Contestability + integrity pre-bid filter (added to the 11 rules): reject Pregão Presencial; reject lots posted to PNCP <8 working days before close or after it; reject kits registered >2× the município's annual births (IBGE SIDRA t.2612, one call); reject where the same object's last award was ≥0,95 of estimate to an in-state winner; keep the SICONFI >30%-unpaid reject (Coari 35,9% fails it); treat 'local generalist with ≥40 secondary CNAEs won last time' as a warning.",
+   "evidence": "Flags catch Coari, Arinos, Maués, Nhamundá, Icatu, Benjamin Constant, Taiobeiras. But the market left after filtering is the contested one: out-of-state winners clear at 0,625 of estimate, −6,2% median gross at her published cost; only 5,3-7,4% of the clearing pool is clean and demonstrably winnable from outside.",
+   "verdict": "NECESSARY, NOT SUFFICIENT. It stops the losses the founder is describing (bids wasted on directed lots, amostra/presencial exclusion, non-payers) and removes most of the margin the archive counted. Build it anyway — it costs a few API calls per edital."
+  },
+  {
+   "option": "B. Dense-SKU desk: bid component lines of fralda de pano, manta (and cueiro/flanela, unmeasured) instead of bathtub-and-bag kits.",
+   "evidence": "Only families positive at out-of-state clearing prices at the published tier: fralda de pano +40,8%, manta +31,5%; dense 10 kg box PAC to MA/PI R$106 ≈ 7% of value. Size (archive, 12 months, spec-controlled): fralda pano R$525.524 + manta R$910.918 = R$1,44M/yr total, R$0,85M clearing ≥50% — a 15-25% share is R$215-360k of billings ⇒ ≈R$42-74k/yr net ≈ US$650-1.200/month.",
+   "verdict": "SURVIVES BOTH freight and corruption, FAILS THE BAR ALONE (below US$2.000). Keep it as the atestado-minting and cash-flow core."
+  },
+  {
+   "option": "C. Radius limit: bulky items only within ~1.300 road-km of São Paulo (MG, RJ, ES, PR, GO/DF, SC, MS, interior SP buyers are worst-priced — de-prioritise).",
+   "evidence": "LTL per bulky unit to BH/Montes Claros R$20,66/27,16 at 20 units; ANTT floor for a median lot on a toco 14% to Montes Claros vs 39,5% to Maranhão; MG lines won by out-of-state firms still clear +12,8% median gross at published cost (n=80; +39,0% at cost ×0,70), against −4,9% for all near-region and −8,5% for N/NE out-of-state wins. NE bulky kits are freight-dead below truckload.",
+   "verdict": "REPAIR — works only with a supplier discount: at cost ×0,70 the out-of-state median becomes +25,7% (banheira +17%, macacão +19%, toalha +22%), minus 7-14% freight and ~5,65% Simples."
+  },
+  {
+   "option": "D. Supplier account (the archive's unrun step 1) — now the gate for C.",
+   "evidence": "Out-of-state-cleared component gross at her cost: −6,2% at published tier → +25,7% at 30% off → +41,6% at 45% off. Still an inference: nobody has been asked.",
+   "verdict": "DECISIVE AND UNTESTED — with Portuguese calls now allowed this is a phone afternoon, not an email campaign."
+  },
+  {
+   "option": "E. Regional supply for Northeast lots (Pernambuco Agreste cluster: Santa Cruz do Capibaribe / Caruaru / Toritama) shipping direct under venda à ordem.",
+   "evidence": "PE→MA ≈1.400 km vs SP→MA ≈3.000 km; the archive recorded a PE-phone seller at R$7,99/body vs R$15,32 in the Brás. No verified CNPJ-priced PE wholesale or PE-origin LTL quote obtained; interstate ICMS on a triangular sale is an accountant question.",
+   "verdict": "UNVERIFIED — worth one day of calls; would reopen the NE only for dense+medium items, not for the local-incumbent premium."
+  },
+  {
+   "option": "F. Private layer only (corporate/benefits kits).",
+   "evidence": "Archive: visible private market ≈3.356 kits/yr (Bird 2.180 + Central dos Benefícios 1.176); the bar needs ≈43% of it; gift obligations are discharged by prepaid cards.",
+   "verdict": "NOT ALONE — margin layer on top of A-D."
+  },
+  {
+   "option": "G. Stop the Northeast/North bathtub-kit arbitrage as designed.",
+   "evidence": "Every leg of it fails: the premium there is local/uncontested (and at Coari, directed), freight is 40-58% of a kit below truckload, truckload needs 8× her capital, and several of the named high-price buyers are non-payers (Coari 35,9% unpaid; Icatu and Nhamundá 0% paid per the archive).",
+   "verdict": "STOP this part now."
+  }
+ ],
+ "law": "★★★ THE THIN-FIELD PREMIUM BELONGS TO WHOEVER IS ALREADY THERE — PRICE A LOT AT WHAT OUT-OF-STATE WINNERS CLEAR, NEVER AT WHAT THE WINNER GOT. Measured 25 Sep 2026 on 2.518 newborn-kit award lines (572 editais since Jan 2025): margin at Sol's São Paulo cost rises monotonically with award÷estimate (median −21,8% below 0,6 → +35,3% at ≥0,98); 89,9% of the value clearing ≥50% gross was won by a firm in the buyer's own state and 7,1% by São Paulo firms; only 5,3% (7,4% ex-Coari) was clean AND won from outside. When an out-of-state firm won, it cleared at 0,625 of estimate — −6,2% gross at her cost. The archive's largest thin field, Coari/AM (34,8% of its clearing pool), was a pregão PRESENCIAL in a river town, posted to PNCP 367 days after the session, awarded at 99,3-100% of estimate on all 15 items, for 11× the town's births, under an MP recommendation about unjustified presencial editais — and when the same buyer re-tendered electronically in 2026 the banheira fell R$62,70 → R$25,00 and the lot cleared at 0,593. ⇒ A thin field's premium is the price of nobody else arriving; a distant bidder either removes it by arriving or, where the field is directed, is removed. `THE CLEARING PRICE IS SET BY WHO BOTHERED TO BID` stays true; its corollary `bid thin fields` is withdrawn for any bidder who is not local. Screen every lot on the OUT-OF-STATE clearing ratio for that SKU, and reject presencial, post-hoc-published and >2×-births lots before pricing. ★ And FREIGHT SCALES WITH VOLUME, NOT VALUE: a kit boxed around a 21 L bathtub costs R$172 by PAC to Maranhão (58% of a R$296,84 kit), R$119-154 a unit by LTL at five units, and 9-10% only on a full 6-axle carreta at the ANTT floor — ~800 kits, 8× her capital — while a 10 kg box of cloth diapers costs ~7%. Dense goods survive distance; bulky goods survive only a truckload or a short road.",
+ "recommendation": "repair",
+ "recommendation_detail": "Repair, narrowly, with the NE/North bathtub-kit arbitrage stopped today. The repaired desk = dense textile components anywhere (fralda de pano, manta, cueiro) + bulky items only within ~1.300 road-km + the contestability/integrity filter (option A) + bids priced at the out-of-state clearing ratio, not the median award. Honest floor at the published tier: ≈US$650-1.200/month (dense SKUs alone). It reaches US$2.000-2.500 only if a supplier account at ≥30% off published materialises, which turns near-radius banheira/macacão/toalha positive at out-of-state prices. NEXT TEST (R$0, Portuguese calls now allowed, bar committed in advance): (1) call 15 Brás + 5 Agreste wholesalers for faturado prices — PASS if ≥3 quote at ≤0,70× the verified published cost (banheira 24 L ≤R$20,80, macacão ≤R$13,72, manta ≤R$8,53, fralda de pano ≤R$1,72/piece); (2) call 3 LTL carriers (e.g. Braspress, Patrus, Jamef) for SP→Montes Claros and SP→São Luís, 1 m³/150 kg — PASS if ≤R$300/m³ to Montes Claros; (3) re-screen every bid already placed through option A and count how many losses fell in flagged lots. If (1) fails: run the dense-SKU desk as a side business below the bar and stop investing in the kit desk.",
+ "unverified": [
+  "That any specific kit lot (including Coari 010/2025) was fraudulent or directed — no TCE, CGU, court or MP ruling on a kit tender was found; the evidence is process red flags plus a documented pattern at the same buyer.",
+  "TCE-AM decisions on Coari Pregão Presencial 42/2025 (suspension, May 2025) and the 2026 direcionamento representation are known only from news sites, not the TCE-AM decision texts.",
+  "BRINK MOBIL's R$20,2M overpricing allegation on São Paulo's Mãe Paulistana is a losing bidder's claim.",
+  "Truck useful volumes (30 / 48 / 95 m³) and the 0,10 m³ per boxed kit are assumptions; the ANTT figures are statutory FLOORS excluding tolls, insurance, GRIS and ICMS on freight — market prices are higher by an unmeasured amount.",
+  "No real fractional (LTL) quote for Sol's own kit from a B2B carrier; the Alô Bebê quotes are a consumer store's contracted rates for a 0,149 m³ bathtub package, origin not confirmed as São Paulo.",
+  "Correios contract (non-balcão) discounts for a new ME are unknown; the quotes used are retail counter prices.",
+  "The 6.000 cubic factor and 10 kg threshold come from secondary help pages (the identical 5 kg/14 kg quotes are consistent with them).",
+  "Line sample is partial: 572 of 1.100 kit editais with results since Jan 2025 (PNCP latency 0,5-15 s all afternoon); the component cost basis reuses the archive's single-supplier Emilio prices and a simplified spec filter; kit BOMs are not priced per edital.",
+  "The 'winner in same UF' metric uses the winner's registered head-office UF (minhareceita), which misses branches.",
+  "Pernambuco Agreste wholesale prices and PE→NE LTL rates; interstate ICMS/DIFAL treatment of a triangular (venda à ordem) sale into a São Paulo Simples ME.",
+  "The dense-SKU pool size is the archive's 12-month spec-controlled figure (R$1,44M total, R$0,85M clearing), not re-measured here; cueiro/flanela lines are unmeasured.",
+  "Nhamundá and Icatu payment records (0,0% paid) are the archive's SICONFI measurement, not re-fetched here; Coari's 35,9% was re-fetched."
+ ],
+ "metrics_file": "out/H6H_metrics.json"
+}

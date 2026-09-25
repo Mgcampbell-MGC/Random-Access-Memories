@@ -1,0 +1,417 @@
+{
+ "agent": "H6B",
+ "fx_note": "USD conversions at R$5,2037/US$ (the archive's PTAX convention), not re-fetched today. R$5.900 ≈ US$1.134; R$9.900 ≈ US$1.902.",
+ "traditional": [
+  {
+   "component": "Model (principal) campaign photo diária, brand-direct via marketplace, incl. 2 YEARS image rights",
+   "price": "R$2.500 bruto",
+   "unit": "per diária (9h–21h), 2 anos de direito de imagem",
+   "url": "https://jobformodel.com/public_jobs/a8ac9cdb-545e-4ebe-95e7-4761041a48b7",
+   "status": "OBSERVED live listing 25 Sep 2026 (Ferrero Rocher year-end campaign photos, São Paulo, shoot 14/10)"
+  },
+  {
+   "component": "Model video diária for brand social videos (up to 4–6 videos, all digital media)",
+   "price": "R$2.500 bruto",
+   "unit": "per diária, 2 anos de direito de imagem",
+   "url": "https://jobformodel.com/public_jobs/9b078bc0-5686-42b3-8735-b62fa0f2dc13",
+   "status": "OBSERVED live listing (São Paulo, snack brand, 28/09)"
+  },
+  {
+   "component": "Model photoshoot for accessories brand social + site (5–6 h)",
+   "price": "R$1.500 (SP) / R$1.200 (RJ) bruto",
+   "unit": "per diária, 2 anos de direito de imagem",
+   "url": "https://jobformodel.com/public_jobs/29961f9f-b9b2-4988-a8d8-88e50fb1fae2",
+   "status": "OBSERVED live listing"
+  },
+  {
+   "component": "Union floor claimed by SATED-SP for Ator/Modelo Principal in advertising (produtoras audiovisuais e estúdios fotográficos); max 12 months veiculação; ALSO demands that casting an AI artist triggers 100% of the cachê as a contribution to SATED-SP's fund (Cláusula 22 §3)",
+   "price": "R$3.000 + 20%",
+   "unit": "per diária",
+   "url": "https://satedsp.org.br/wp-content/uploads/2024/10/Pauta-Reivindicatoria-de-Artistas-em-PUBLICIDADE-exclusiva-ao-SIAESP_vf-1.pdf",
+   "status": "UNION DEMAND (minuta de pauta reivindicatória 2024/2026 to SIAESP) — NOT an agreed CCT; in-force SP table UNVERIFIED (MTE Mediador returned 503)"
+  },
+  {
+   "component": "Model agency's own statement of campaign/commercial cachê",
+   "price": "R$1.000–5.000 per day 'conforme veiculação e direitos de imagem'; prolonged image-rights fee +30% of base",
+   "unit": "per day",
+   "url": "https://www.forummodel.com.br/quanto-custa-em-media-contratar-uma-modelo/",
+   "status": "SECONDARY — agency marketing/blog content, not a rate card"
+  },
+  {
+   "component": "Studio rental, Estúdio Bala (Rua Fidalga 407, Vila Madalena, SP)",
+   "price": "Estúdio I R$754 / Estúdio II R$1.200 (weekday 8h); R$1.044 / R$1.450 weekend",
+   "unit": "per diária 8h",
+   "url": "https://estudiobala.com.br/locacao/",
+   "status": "OBSERVED published price"
+  },
+  {
+   "component": "Studio rental, PhocoStudio (SP, 11 area code)",
+   "price": "R$700 (08–17h); R$100/h min 3h",
+   "unit": "per diária",
+   "url": "https://phocostudio.com.br/locacao-estudio/",
+   "status": "OBSERVED published price"
+  },
+  {
+   "component": "Studio rental, budget tier (Estúdio i9 / Studio Petrangelo, SP centre & Guarulhos)",
+   "price": "R$49–80/h",
+   "unit": "per hour",
+   "url": "https://www.alugarestudio.com.br/",
+   "status": "OBSERVED published price"
+  },
+  {
+   "component": "Photographer diária with edited photos, bookable online at fixed price (Destaquei Filmes, Curitiba)",
+   "price": "a partir de R$1.690",
+   "unit": "per booking (diária)",
+   "url": "https://destaquei.com.br/contratar-online/",
+   "status": "OBSERVED published price"
+  },
+  {
+   "component": "Photographer studio session (independent photographer's own price table, royalty-free images)",
+   "price": "R$900 / R$1.000 / R$1.200 (three tiers)",
+   "unit": "studio up to 8h",
+   "url": "https://matheusdacosta.art.br/tabela-de-precos-para-fotografia",
+   "status": "OBSERVED published price (city not stated)"
+  },
+  {
+   "component": "Premium São Paulo still/beauty advertising photographer diária",
+   "price": "UNVERIFIED — no SP still/beauty studio found that publishes a day rate (fotografiastill.com.br, IWD, Sidney Marcelo, Sapienza all quote on request)",
+   "unit": "per diária",
+   "url": "https://fotografiaproduto.com.br/fotografia-still-preco/",
+   "status": "UNVERIFIED (legibility–margin: the premium tier quotes bespoke)"
+  },
+  {
+   "component": "E-commerce packshot (white background), per finished photo",
+   "price": "R$7–25 (volume ladder; min 80–120 photos)",
+   "unit": "per photo",
+   "url": "https://www.fotografiadeprodutos.com.br/fotografia-de-produtos-tabela-de-preco.html",
+   "status": "OBSERVED published price"
+  },
+  {
+   "component": "Videomaker diária, raw camera files (Destaquei)",
+   "price": "a partir de R$2.890 (edit 'sob consulta')",
+   "unit": "per booking",
+   "url": "https://destaquei.com.br/contratar-online/",
+   "status": "OBSERVED published price"
+  },
+  {
+   "component": "Product video / advertising video from a producer (Destaquei price book)",
+   "price": "Vídeo de produto a partir de R$3.500; Reels/social a partir de R$2.000; Vídeo publicitário a partir de R$10.000, 'podem superar R$40.000'",
+   "unit": "per project",
+   "url": "https://destaquei.com.br/calculadora-de-orcamento/",
+   "status": "OBSERVED published 'a partir de' prices (asking)"
+  },
+  {
+   "component": "Product video package 1–10 products incl. photo pack + social cuts (Destaquei)",
+   "price": "R$8.000–25.000; delivery 15–30 days",
+   "unit": "per package",
+   "url": "https://destaquei.com.br/videos/video-produto/",
+   "status": "OBSERVED — producer's stated range 'com base em nossos projetos anteriores' (closest thing to clearing in this ladder)"
+  },
+  {
+   "component": "SP motion/video studio minimum budget band (MonkeyBusiness, São Paulo)",
+   "price": "lowest selectable band R$5.000–10.000",
+   "unit": "per project",
+   "url": "https://monkeybusiness.com.br/blog/quanto-custa-a-producao-de-um-video/",
+   "status": "OBSERVED (budget selector on contact form)"
+  },
+  {
+   "component": "HMU (hair + make-up) diária for a publicity shoot",
+   "price": "R$1.200 (Fotomodel's comparison table); R$2.000 'equipe (assistente, beauty)' (Mádaras course page)",
+   "unit": "per diária",
+   "url": "https://fotomodel.com.br/",
+   "status": "VENDOR CLAIM (AI vendors' own 'traditional cost' tables) — publicity HMU diária UNVERIFIED; consumer makeup is R$150–350 per service (GetNinjas aggregate)"
+  },
+  {
+   "component": "Retouching / editing per image",
+   "price": "R$9–20 (basic, background removal; iphouse) · R$30–100, avg R$70 (GetNinjas aggregate) · R$525,85 'Tratamento de Imagens (simples)' (Sinapro list)",
+   "unit": "per image",
+   "url": "https://www.iphouse.com.br/precos-design-edicao.aspx",
+   "status": "OBSERVED (iphouse) / PLATFORM AGGREGATE (GetNinjas) / AGENCY LIST (Sinapro); high-end beauty skin retouch per image UNVERIFIED"
+  },
+  {
+   "component": "Agency creative fees, Sinapro 2025 'Custos Referenciais' (annex to a public tender): Planejamento de Lançamento/Relançamento de Produto R$21.033,81 · Post simples/anúncio redes sociais R$4.008,37 · Vídeos curtos redes sociais (sem captação) R$5.690,96 · Vinheta 5–7\" R$1.252,01 · Motion design até 15\" R$3.943,84 · Roteiro filme ofertas até 30\" R$9.981,50 · Master display R$4.462,51, adaptação R$1.712,22",
+   "price": "see component",
+   "unit": "per piece (list)",
+   "url": "https://static.poder360.com.br/2026/06/011-anexo-III-Sinapro-Lista-de-Custos-Referenciais-2025.pdf",
+   "status": "AGENCY LIST PRICE — a ceiling used in public ad contracts, typically discounted; creation only, excludes production"
+  }
+ ],
+ "traditional_hero_equivalent_total": "Lean São Paulo build of the HERO scope (1 product, 1 shoot day, 1 model, brand directs itself): model R$2.500 (2-yr usage) + studio R$700–1.200 + photographer R$1.200–1.690 + product video R$3.500 (from) to R$8.000 (package low end) + HMU R$1.200 (UNVERIFIED) + retouch 9 × R$30–70 = R$270–630 + formats/cuts R$500 (UNVERIFIED) to R$1.712 (Sinapro adaptação) ⇒ ≈R$9.900–17.000, delivered in 15–30 days (Destaquei's stated lead time). Agency-led at Sinapro 2025 list adds launch planning R$21.034 + a post R$4.008 ⇒ ≈R$35.000–42.000 before the usual discount. R$5.900 = ~35–60% of the lean build and ~14–17% of the agency list.",
+ "ai_competitors_br": [
+  {
+   "name": "Make Move Studio (RJ, WhatsApp +55 21)",
+   "offer": "AI 'diária': own synthetic casting (7 named models, 'direito de uso controlado'), beauty direction, 3 photos per piece + 5 banner photos, delivery 3 business days; segments include 'Joias & Beauty'; video 'orçado à parte'",
+   "price": "R$3.000 minimum (≤20 pieces = up to 65 photos); +R$100/piece to 40 pieces; 40 pieces = R$5.000; 50% upfront",
+   "unit": "per AI shoot",
+   "url": "https://make-move-studio-fotos-ia-para-marcas.netlify.app/ (formula in /script.js priceForPieces)"
+  },
+  {
+   "name": "ANIMAI Studio (Goiânia, WhatsApp +55 62)",
+   "offer": "AI images and video 'com direção humana'; à-la-carte and monthly plans",
+   "price": "Imagem avulsa R$70; vídeo avulso R$15/segundo; Social plans R$1.000–2.000/mês (20–60 artes); Vídeo plans R$1.200–3.500/mês (4–12 videos ≤60 s); Combo R$1.750–4.400/mês; extra video ≤60 s R$300",
+   "unit": "per image / per second / per month",
+   "url": "https://animaistudio.com.br/"
+  },
+  {
+   "name": "Destaquei Filmes (Curitiba; traditional producer with an AI line)",
+   "offer": "'Vídeo com IA' institutional, 60+ languages, optional avatar; ALSO refers low-budget buyers to a self-serve AI tool (Geramaker 'a partir de R$29/mês')",
+   "price": "AI institutional video R$5.000–8.000 ('com base nos nossos projetos'), 7–14 days; AI training video R$400–1.000 per minute",
+   "unit": "per video",
+   "url": "https://destaquei.com.br/videos/video-inteligencia-artificial/"
+  },
+  {
+   "name": "Estúdio AiA (Blumenau/SC; Galdino Estúdio + Unbox Filmes)",
+   "offer": "'1º estúdio de campanhas de moda com IA no Brasil'; campaigns, films, branding; clients Triton, Sommer (AMC Têxtil), Easy Lança Perfume, Dimy, Tex Cotton and Kyly groups",
+   "price": "NOT PUBLISHED",
+   "unit": "bespoke",
+   "url": "https://acontecendoaqui.com.br/marketing/aia-estreia-como-1o-estudio-de-campanhas-de-moda-com-ia-no-brasil/"
+  },
+  {
+   "name": "Composer Invent",
+   "offer": "AI video production for brands/agencies, concept to delivery; client list includes Rennova (aesthetics brand)",
+   "price": "NOT PUBLISHED",
+   "unit": "bespoke",
+   "url": "https://www.composerinvent.com.br/videos-com-inteligencia-artificial/"
+  },
+  {
+   "name": "Maestria",
+   "offer": "'Filmes com IA para grandes marcas' — 25+ years, 2.000+ films claimed",
+   "price": "NOT PUBLISHED",
+   "unit": "bespoke",
+   "url": "https://fazcommaestria.com.br/"
+  },
+  {
+   "name": "Miragem Content (São Paulo)",
+   "offer": "AI audiovisual production (institutional, commercials, conceptual films)",
+   "price": "NOT PUBLISHED",
+   "unit": "bespoke",
+   "url": "https://www.miragemcontentsp.com.br/intelig%C3%AAncia-artificial"
+  },
+  {
+   "name": "511 Filmes (São Paulo, since 1999)",
+   "offer": "traditional producer advertising 'processos otimizados com cinema digital e IA'",
+   "price": "NOT PUBLISHED",
+   "unit": "bespoke",
+   "url": "https://www.511filmes.com.br/"
+  },
+  {
+   "name": "Estúdio de Fotografia Still — fotografiastill.com.br (São Paulo)",
+   "offer": "traditional SP still studio headlining 'CAMPANHA HÍBRIDA, PRODUZIDA COM TECNOLOGIA DE IA E FOTOGRAFIA'; charges per finished photo",
+   "price": "NOT PUBLISHED (quote form)",
+   "unit": "per photo",
+   "url": "https://www.fotografiastill.com.br/"
+  },
+  {
+   "name": "Cinematik Studios + agency DeBrito (Confea campaign)",
+   "offer": "AI pipeline built on digitised images of 50 real contracted models (cast via Mega Model) with consent and paid rights",
+   "price": "NOT PUBLISHED (public autarchy — cost discoverable via the Lei 12.232 contract site)",
+   "unit": "bespoke",
+   "url": "https://adnews.com.br/post/confea-lanca-campanha-institucional-desenvolvida-inteiramente-com-inteligencia-artificial-e-modelos-reais"
+  },
+  {
+   "name": "MÁDARAS Studio × Haus of AI (supply-side signal)",
+   "offer": "sells a course teaching people to deliver 'editorial com IA' to fashion/beauty/cosmetics brands; claims a traditional editorial costs R$4.000–12.000 (R$12.800 itemised)",
+   "price": "R$497 one-time (12× R$41)",
+   "unit": "course",
+   "url": "https://metodo-realismo-ia.netlify.app/"
+  }
+ ],
+ "self_serve": [
+  {
+   "name": "Higgsfield",
+   "price": "PLUS US$49/mo (US$39 annual) = 1.000 credits; ULTRA US$129/mo; ≈US$34 of credits per campaign (facts file)",
+   "what_it_claims": "'Marketing Studio' one-click product ads (image + 12–15 s video); 'product-photoshoot' agent recipe keeps one product identity, QA compares markings; vendor admits 'Do not claim tiny text or full-resolution sharpness is verified from a thumbnail'",
+   "url": "HIGGSFIELD_FACTS.md (vendor MCP show_plans_and_credits / models_explore, 25 Sep 2026)"
+  },
+  {
+   "name": "Photoroom",
+   "price": "Pro US$7,50 · Max US$20,99 · Ultra US$82,50 per month, billed annually; Enterprise custom",
+   "what_it_claims": "AI backgrounds/images, 'Kit de marca: fontes, logotipos e cores', 'Consistência de marca em cada foto', Modelos Fashion IA, video generator (Max+), 4K (Ultra), and a 'Photoroom MCP — conector personalizado no Claude'",
+   "url": "https://www.photoroom.com/pt-br/precos"
+  },
+  {
+   "name": "Pebblely",
+   "price": "Lite US$9 (30 images) · Basic US$19 (200) · Pro US$39 (500) per month",
+   "what_it_claims": "'Get beautiful product photos in seconds'; 40+ background themes, custom prompts, bulk generate",
+   "url": "https://pebblely.com/pricing"
+  },
+  {
+   "name": "Claid.ai",
+   "price": "Essentials US$9/mo (500 credits) · Pro US$35/mo (2.000 credits) · Business custom",
+   "what_it_claims": "AI Photoshoot (4 credits; Pro = 500 standard or 200 studio-quality), AI Fashion models, AI video (60 credits per 5 s), brand kits on Pro, 2K/4K",
+   "url": "https://claid.ai/pricing"
+  },
+  {
+   "name": "Adobe Firefly (Brazil)",
+   "price": "Standard R$47 · Pro R$95 · Pro Plus R$235 · Premium R$950 per month (2.000–50.000 credits)",
+   "what_it_claims": "Premium: 'Os resultados dos modelos de IA do Adobe Firefly são seguros para uso comercial'; up to 20/40/100 five-second videos, unlimited on Premium",
+   "url": "https://www.adobe.com/br/products/firefly/plans.html"
+  },
+  {
+   "name": "Google AI (Brazil)",
+   "price": "AI Plus R$24,99 · AI Pro R$96,99 · AI Ultra from R$779,90 per month",
+   "what_it_claims": "AI Pro: 1.000 Google Flow credits 'para gerar cenas e histórias cinematográficas', Nano Banana Pro access, video generation",
+   "url": "https://gemini.google/br/subscriptions/?hl=pt-BR"
+  },
+  {
+   "name": "Canva",
+   "price": "Pro US$144/yr per person; Pro+ US$250/yr per person (shown in USD to this environment; BRL price UNVERIFIED)",
+   "what_it_claims": "'Insights de anúncios e criação de anúncios com IA', brand kits, AI resize/translate/background removal",
+   "url": "https://www.canva.com/pt_br/precos/"
+  },
+  {
+   "name": "ChatGPT (OpenAI)",
+   "price": "Go / Plus / Pro — BRL amounts render client-side; UNVERIFIED",
+   "what_it_claims": "image creation in chat ('Mais criação de imagens' on Go)",
+   "url": "https://chatgpt.com/pt-BR/pricing/"
+  },
+  {
+   "name": "Milano AI (BR, fashion)",
+   "price": "R$79 · R$299 · R$1.190 · R$2.990 per month (10–1.500 credits); top-ups R$50/20 credits",
+   "what_it_claims": "campaign images, photo edits, videos up to 12–1.875 s, 4K upscale; 'Agência' tier for agencies",
+   "url": "https://www.milano-ai.com/pt-BR/pricing"
+  },
+  {
+   "name": "PipClip (BR)",
+   "price": "R$49,90 · R$99,90 · R$199,90 · R$299 per month",
+   "what_it_claims": "7 models in one plan (Seedance 2.0, Veo 3, Kling, Runway, Midjourney, Nano Banana Pro, Grok); 'Uso comercial 100% liberado'; product photo → ad video",
+   "url": "https://pipclip.ai/"
+  },
+  {
+   "name": "Nevola (BR)",
+   "price": "R$29 (12 imgs) · R$69 (30) · R$149 (75) per month",
+   "what_it_claims": "create your AI model once and reuse; product photo in ~60 s",
+   "url": "https://www.nevola.com.br/"
+  },
+  {
+   "name": "PhotoGen (BR)",
+   "price": "R$25 for 10 credits; R$37/mo (annual) or R$87/mo for 25 credits",
+   "what_it_claims": "'Acesso à mais avançada IA do Google', try-on, commercial licence",
+   "url": "https://photogen.com.br/usos/gerador-de-imagens-ia-servico-agencia-fotos"
+  },
+  {
+   "name": "Vitriny AI (BR, fashion)",
+   "price": "from R$3,68 per editorial image",
+   "what_it_claims": "exclusive virtual casting; collections live in hours",
+   "url": "https://www.vitrinyai.com.br/"
+  },
+  {
+   "name": "FotoModel (BR, fashion)",
+   "price": "'menos de R$3,00 por foto'",
+   "what_it_claims": "AI model photos from a product photo; app",
+   "url": "https://fotomodel.com.br/"
+  },
+  {
+   "name": "Moda IA Studio (BR)",
+   "price": "R$97,90 one-time",
+   "what_it_claims": "virtual-model photos of your garments, lifetime access",
+   "url": "https://modaiastudio.com/"
+  },
+  {
+   "name": "Geramaker (BR; Destaquei's partner platform)",
+   "price": "'a partir de R$29/mês' (stated on Destaquei's page; Geramaker's own page did not render a price)",
+   "what_it_claims": "script, image, narration and soundtrack 'do brief ao vídeo pronto em minutos'",
+   "url": "https://destaquei.com.br/calculadora-de-orcamento/"
+  }
+ ],
+ "freelance_clearing": [
+  {
+   "platform": "VintePila (BR)",
+   "gig": "'Fazer uma modelo IA para seu produto' — 170 vendidos, 3 days",
+   "price": "R$100",
+   "url": "https://www.vintepila.com.br/servicos/design-grafico/eu-vou-fazer-uma-modelo-ia-para-seu-produto/"
+  },
+  {
+   "platform": "VintePila (BR)",
+   "gig": "'Criar vídeos com IA para seus produtos' — 175 vendidos, 2 days",
+   "price": "R$25",
+   "url": "https://www.vintepila.com.br/servicos/video-e-animacao/eu-vou-criar-videos-com-ia-para-seus-produtos/"
+  },
+  {
+   "platform": "VintePila (BR)",
+   "gig": "'Melhorar as fotos dos seus produtos com IA' — 104 vendidos",
+   "price": "R$20",
+   "url": "https://www.vintepila.com.br/servicos/design-grafico/eu-vou-melhorar-fotos-dos-seus-produtos-com-ia/"
+  },
+  {
+   "platform": "VintePila (BR)",
+   "gig": "'Criar vídeos comerciais com IA para o seu produto' — 15 s, AI avatar + voice, 2 days (+R$10 script)",
+   "price": "R$20",
+   "url": "https://www.vintepila.com.br/servicos/video-e-animacao/eu-vou-criar-videos-comerciais-com-ia-para-o-seu-produto/"
+  },
+  {
+   "platform": "VintePila (BR)",
+   "gig": "'Vídeo UGC cosmético com conteúdo que vende' (human UGC)",
+   "price": "R$25 (+R$20/extra minute)",
+   "url": "https://www.vintepila.com.br/servicos/video-e-animacao/eu-vou-fazer-video-ugc-cosmetico-com-conteudo-que-vende/"
+  },
+  {
+   "platform": "Fiverr",
+   "gig": "Search 'ai skincare product photography' — 48 gig cards, 'From' US$5–200, median US$15",
+   "price": "US$5–200 (median US$15)",
+   "url": "https://www.fiverr.com/search/gigs?query=ai%20skincare%20product%20photography"
+  },
+  {
+   "platform": "Fiverr",
+   "gig": "'Create ai product photography for skincare brands' (fabiohen) — 1 / 3 / 6 × 4K images",
+   "price": "US$20 / US$50 / US$95",
+   "url": "https://www.fiverr.com/fabiohen/create-high-level-ai-product-photography"
+  },
+  {
+   "platform": "Fiverr",
+   "gig": "Search 'ai cosmetic product video commercial' — 48 gig cards, 'From' US$5–590, median US$40",
+   "price": "US$5–590 (median US$40)",
+   "url": "https://www.fiverr.com/search/gigs?query=ai%20cosmetic%20product%20video%20commercial"
+  },
+  {
+   "platform": "Fiverr",
+   "gig": "'Realistic ai commercial video for skincare, beauty and cosmetics brands' (ericcinestudio) — 20 / 40 / 60 s; 6 reviews, 3,9★, one reads 'delivered work that did not match what I requested… AI-generated content that was completely different from my instructions'",
+   "price": "US$25 / US$50 / US$100",
+   "url": "https://www.fiverr.com/ericcinestudio/create-realistic-ai-commercial-video-for-skincare-beauty-and-cosmetics-brands"
+  },
+  {
+   "platform": "Fiverr",
+   "gig": "'AI video commercials for beauty and skincare brands' (anna1goncharova) — 15 s / 30 s / 2×15 s",
+   "price": "US$50 / US$70 / US$100",
+   "url": "https://www.fiverr.com/anna1goncharova/create-ai-video-commercials-for-beauty-and-skincare-brands"
+  },
+  {
+   "platform": "Workana (buyer budgets)",
+   "gig": "Cosmetics-brand projects: new cosmetics brand visual identity (26 proposals) USD 100–250; kids' natural cosmetics line identity (30 proposals) USD 500–1.000; 'campanha publicitária abrangente' (8 proposals) <USD 50; lip-product video script for Shopee <USD 50",
+   "price": "<USD 50 to USD 1.000",
+   "url": "https://www.workana.com/pt/jobs?language=pt&query=cosm%C3%A9ticos"
+  },
+  {
+   "platform": "99Freelas (buyer budget)",
+   "gig": "'Gerar imagens com IA ChatGPT e cadastrar 10 produtos no Mercado Livre' (6 images/product), 'Busco custo baixo' — 42 proposals",
+   "price": "Orçamento aberto; valor mínimo R$30",
+   "url": "https://www.99freelas.com.br/project/gerar-imagens-com-ia-chatgpt-e-cadastrar-10-produtos-no-mercado-livre-786854"
+  },
+  {
+   "platform": "GetNinjas (platform aggregate, secondary)",
+   "gig": "Fotógrafo comercial avg R$265 (R$30–500); editor de fotos avg R$70 (R$30–100)",
+   "price": "R$30–500",
+   "url": "https://www.getninjas.com.br/eventos/fotografia/preco/fotografo-comercial"
+  }
+ ],
+ "ladder_summary": "Seven observed rungs for a one-product launch set (KV + 8 stills + 15–20 s film + 3 cutdowns + kit): (1) SELF-SERVE tools R$25–1.000/month (Higgsfield US$49 ≈ R$255; Google AI Pro R$96,99; Photoroom US$7,50–82,50; BR SaaS R$29–2.990) — the whole set costs ≈US$34 of credits. (2) MARKETPLACE gigs: VintePila R$20–100 per gig; Fiverr median 'From' US$15 per AI skincare image gig and US$40 per AI cosmetic video gig; a HERO-equivalent bought on Fiverr ≈US$270–350 ≈ R$1.400–1.800. Buyer budgets on Workana/99Freelas sit at <USD 50–250. (3) AI DONE-FOR-YOU with PUBLISHED prices: ANIMAI R$70/image + R$15/second ⇒ HERO-equivalent ≈R$1.400–2.900; Make Move R$3.000 minimum for an AI shoot (stills only; 1 product = 8 photos). (4) Traditional producer's AI line: Destaquei AI video R$5.000–8.000. (5) AI/hybrid houses that do NOT publish (AiA, Maestria, Composer Invent, Miragem, 511, fotografiastill, Cinematik) — margin lives here, price invisible. (6) LEAN TRADITIONAL build from published components ≈R$9.900–17.000, 15–30 days. (7) AGENCY-LED at Sinapro list ≈R$35.000–42.000 (ceiling).",
+ "where_5900_sits": "HERO R$5.900 (≈US$1.134) sits at the TOP of the observed AI band and the BOTTOM of traditional: 2,0× Make Move's minimum, 2,0–4,2× ANIMAI's HERO-equivalent, 3,3–4,2× a Fiverr HERO-equivalent, ~23× a month of Higgsfield PLUS — and inside Destaquei's own AI-video range (R$5.000–8.000), ~35–60% of a lean traditional build, ~14–17% of an agency build at Sinapro list. FAMILY R$9.900 (≈US$1.902, R$2.475/product) is weaker: for 4 products Make Move still charges its R$3.000 minimum for stills, and R$9.900 sits INSIDE Destaquei's traditional 1–10-product package range (R$8.000–25.000, incl. photo pack and cuts) — the traditional day amortises across products, so the AI discount narrows as product count rises.",
+ "evidence_of_the_middle_band": "ASKING prices exist in the R$3.000–8.000 band from three unrelated sellers: Make Move R$3.000–5.000 (AI, with synthetic casting and beauty direction), Destaquei AI video R$5.000–8.000 (stated as the average of its own projects — the closest to clearing found), MonkeyBusiness's lowest budget band R$5.000–10.000. Buyers DO commission AI campaigns from studios (AiA names Triton, Sommer, Easy Lança Perfume, Dimy, Kyly-group brands; Composer Invent names Rennova) — but not one invoice, contract or published clearing price for an AI launch set in R$3–10k was found. Counter-evidence: public bodies buy the self-serve route + training (MPU CapCut Pro R$1.800/yr, Magnific Business R$7.072,30/yr; ANAC paid R$2.580 for two staff on an ESPM 'Produção criativa com IA' course), marketplace buyers budget <USD 50–250 even for 'campanha completa', and Destaquei itself routes budget-constrained buyers to a R$29/month AI tool. Verdict: the band is real on the SELL side and UNPROVEN on the BUY side.",
+ "biggest_flaw": "R$5.900 has no clearing evidence and every published AI done-for-you price in Brazil for the same scope is 2–4× lower (ANIMAI ≈R$1.400–2.900, Make Move R$3.000, Fiverr ≈R$1.400–1.800); the only seller at R$5–8k is a traditional producer (Destaquei) that already ships AI and also sells the R$29/month escape hatch — so incumbents occupy the bottom, the middle and the top, and the plan's two differentiators (taste, product fidelity) are not visibly priced by anyone. The sale will be benchmarked against Make Move/ANIMAI or the in-house route (Higgsfield US$49 + a marketer), not against a R$10–17k shoot, unless the proposal forces that comparison.",
+ "repair": "(1) Price against the REPLACED SHOOT, itemised in every proposal with public numbers the buyer can check — model day with 2-year usage R$2.500 (Job for Model), studio R$754–1.200 (Estúdio Bala), photographer from R$1.690 and product video from R$3.500 (Destaquei), HMU, retouch, 15–30 days — against R$5.900 in 7 business days; Sol's modelling background makes this line-by-line comparison credible without her being a 'credentialled expert'. (2) Sell what nobody on the ladder sells in writing: a FIDELITY GUARANTEE (client-approved 'Product Lock'; any label/geometry/colour error redone free, no revision cap on product truth) — the Fiverr review shows fidelity failure is the known pain at the bottom — and PERPETUAL, all-media usage of the synthetic model (human models are licensed for 1–2 years and the agency adds +30% for prolonged rights). (3) Add an entry rung for the first 15 campaigns: 'HERO STILLS' R$2.900–3.500 (KV + 8 stills, Product Lock, no film) priced at Make Move's level, keep HERO at R$5.900 only with film + guarantee + perpetual usage; measure which one clears. (4) Reprice FAMILY to R$11.900–12.900 or reposition it against traditional multi-product packages (R$8–25k), not as a discount. Honest floor if pricing clears at ~R$3.000 and she closes 2–3/month in year one: gross R$6.000–9.000 ⇒ ≈US$950–1.490/month net after ~6% Simples and ~R$700/month tools (R$6.000−360−700 = R$4.940; R$9.000−540−700 = R$7.760); at R$5.900 × 2/month ≈US$2.000 (R$11.800−708−700 = R$10.392). Cheapest next test (R$0, Portuguese calls): 20 calls to haircare/skincare brands that launched in the last 90 days (Beauty Fair 2026 exhibitors), one question — 'quanto custou o pacote visual (fotos + vídeo) do último lançamento, e com quem?' — bar committed in advance: ≥6/20 name ≥R$5.000 for a one-product set keeps HERO at R$5.900; 3–5 ⇒ lead with the R$2.900–3.500 rung; ≤2 ⇒ the middle band does not exist for this buyer and VBPH must sell to agencies (wholesale), not brands.",
+ "unverified": [
+  "Premium São Paulo still/beauty advertising photographer day rate — no SP studio publishes one (legibility–margin).",
+  "Publicity HMU diária — only AI vendors' comparison tables (R$1.200 Fotomodel; R$2.000 incl. assistant, Mádaras).",
+  "In-force SATED-SP publicity cachê table — the 2024/2026 document is a union DEMAND to SIAESP; MTE Mediador (www3.mte.gov.br) returned 503/timeout, so the registered CCT could not be read.",
+  "SATED-SP Cláusula 22 §3 (AI artist ⇒ 100% of cachê to the union fund) is a demand, not in force — status to be checked before using synthetic models commercially at scale.",
+  "Clearing price of any AI studio launch set in Brazil (AiA, Maestria, Composer Invent, Miragem, 511, fotografiastill, Cinematik publish nothing).",
+  "Make Move's calculator is built for garments ('peças'); its price for a single cosmetics SKU is inferred from the R$3.000 minimum.",
+  "ANIMAI HERO-equivalent (R$1.400–2.900) is my computation from its per-image and per-second prices; whether format exports count as new pieces is assumed.",
+  "Fiverr prices are 'From' (basic package) prices; delivered scope at that price not verified.",
+  "Job for Model 'Bruto' amounts — whether the client pays a platform fee on top was not checked.",
+  "ChatGPT BRL plan prices (render client-side); Canva BRL prices (shown in USD to this environment); Geramaker R$29/month (only via Destaquei's page).",
+  "Destaquei is in Curitiba, not São Paulo; SP producers may price higher (UNVERIFIED).",
+  "Fiverr and Workana were read through the r.jina.ai reader because direct fetches returned 403 (PerimeterX / Cloudflare).",
+  "USD conversion at the archive's R$5,2037 convention, not today's PTAX."
+ ]
+}

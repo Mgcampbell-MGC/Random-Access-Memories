@@ -1,0 +1,252 @@
+{
+ "sample": {
+  "kit_compras_since_2025_with_results": 1100,
+  "compras_in_line_sample": 572,
+  "lines": 2518,
+  "distinct_winners_looked_up": 400
+ },
+ "ratio": {
+  "all": {
+   "n": 2518,
+   "median_award_over_estimate": 0.754,
+   "share_at_or_above_0.98": 23.6
+  },
+  "eletronico_on_time": {
+   "n": 1458,
+   "median_award_over_estimate": 0.64,
+   "share_at_or_above_0.98": 11.4
+  },
+  "eletronico_late": {
+   "n": 164,
+   "median_award_over_estimate": 0.58,
+   "share_at_or_above_0.98": 9.1
+  },
+  "presencial": {
+   "n": 32,
+   "median_award_over_estimate": 0.994,
+   "share_at_or_above_0.98": 53.1
+  },
+  "dispensa": {
+   "n": 864,
+   "median_award_over_estimate": 0.97,
+   "share_at_or_above_0.98": 45.9
+  }
+ },
+ "gross_by_ratio_band_components": {
+  "0-0.6": {
+   "n": 570,
+   "median_gross_at_SP_published_cost": -21.8,
+   "share_lines_clearing_50pct": 10.4
+  },
+  "0.6-0.8": {
+   "n": 347,
+   "median_gross_at_SP_published_cost": 15.1,
+   "share_lines_clearing_50pct": 20.2
+  },
+  "0.8-0.98": {
+   "n": 370,
+   "median_gross_at_SP_published_cost": 20.9,
+   "share_lines_clearing_50pct": 23.2
+  },
+  "0.98-9": {
+   "n": 386,
+   "median_gross_at_SP_published_cost": 35.3,
+   "share_lines_clearing_50pct": 34.5
+  }
+ },
+ "clearing_pool_components": {
+  "lines": 348,
+  "value": 7482720,
+  "share_won_by_same_UF_firm": 89.9,
+  "share_won_by_SP_firm": 7.1,
+  "share_in_no_discount_lines": 42.4,
+  "share_late_published": 36.9,
+  "share_presencial": 28.7,
+  "share_dispensa": 7.1
+ },
+ "components_by_winner_location": {
+  "local": {
+   "n": 1184,
+   "median_ratio": 0.809,
+   "median_gross": 18.3
+  },
+  "out_of_state": {
+   "n": 490,
+   "median_ratio": 0.625,
+   "median_gross": -6.2
+  },
+  "SP_firm_selling_out_of_state": {
+   "n": 252,
+   "median_ratio": 0.537,
+   "median_gross": -11.1
+  }
+ },
+ "families": {
+  "BANHEIRA": {
+   "n": 331,
+   "median_gross": -7.1,
+   "median_gross_when_out_of_state_firm_wins": -18.1,
+   "n_out_of_state": 83,
+   "value": 5109685
+  },
+  "BODY": {
+   "n": 208,
+   "median_gross": -48.8,
+   "median_gross_when_out_of_state_firm_wins": -104.4,
+   "n_out_of_state": 74,
+   "value": 1644914
+  },
+  "FRALDA_PANO": {
+   "n": 282,
+   "median_gross": 54.4,
+   "median_gross_when_out_of_state_firm_wins": 40.8,
+   "n_out_of_state": 75,
+   "value": 3463831
+  },
+  "MACACAO": {
+   "n": 283,
+   "median_gross": 4.3,
+   "median_gross_when_out_of_state_firm_wins": -16.0,
+   "n_out_of_state": 96,
+   "value": 4216797
+  },
+  "MANTA": {
+   "n": 215,
+   "median_gross": 43.9,
+   "median_gross_when_out_of_state_firm_wins": 31.5,
+   "n_out_of_state": 53,
+   "value": 2132004
+  },
+  "TOALHA": {
+   "n": 355,
+   "median_gross": -6.3,
+   "median_gross_when_out_of_state_firm_wins": -11.9,
+   "n_out_of_state": 109,
+   "value": 2883038
+  }
+ },
+ "kits_by_winner_location_qty_band": {
+  "0-300 kits": {
+   "local_n": 179,
+   "local_median_ratio": 0.86,
+   "local_median_price": 250.0,
+   "out_n": 73,
+   "out_median_ratio": 0.611,
+   "out_median_price": 178.85
+  },
+  "300-1000 kits": {
+   "local_n": 38,
+   "local_median_ratio": 0.706,
+   "local_median_price": 262.0,
+   "out_n": 21,
+   "out_median_ratio": 0.518,
+   "out_median_price": 209.3
+  },
+  "1000-1000000000 kits": {
+   "local_n": 12,
+   "local_median_ratio": 0.75,
+   "local_median_price": 273.36,
+   "out_n": 3,
+   "out_median_ratio": 0.75,
+   "out_median_price": 334.82
+  }
+ },
+ "kits_by_channel": {
+  "presencial": {
+   "n": 8,
+   "median_ratio": 0.71,
+   "median_kit_price": 309.5
+  },
+  "late_published": {
+   "n": 39,
+   "median_ratio": 0.956,
+   "median_kit_price": 247.5
+  },
+  "eletronico_on_time": {
+   "n": 189,
+   "median_ratio": 0.696,
+   "median_kit_price": 246.04
+  },
+  "dispensa": {
+   "n": 112,
+   "median_ratio": 0.978,
+   "median_kit_price": 206.0
+  }
+ },
+ "ceis_cnep": {
+  "distinct_winners": 400,
+  "winners_listed": 27,
+  "share_value_won_by_listed": 1.51
+ },
+ "kits_registered_per_birth": {
+  "n_compras": 222,
+  "median": 0.89,
+  "p75": 1.64,
+  "p90": 2.92,
+  "share_over_2x": 16.2,
+  "share_over_5x": 3.2
+ },
+ "published_after_close_full_list": {
+  "Pregão - Eletrônico": {
+   "n": 1733,
+   "late": 135,
+   "pct": 7.8
+  },
+  "Dispensa": {
+   "n": 538,
+   "late": 123,
+   "pct": 22.9
+  },
+  "Pregão - Presencial": {
+   "n": 34,
+   "late": 13,
+   "pct": 38.2
+  }
+ },
+ "modality_full_list": {
+  "Pregão - Eletrônico": 1734,
+  "Dispensa": 963,
+  "Pregão - Presencial": 34,
+  "Inexigibilidade": 13,
+  "Credenciamento": 5,
+  "Inaplicabilidade da Licitação": 1,
+  "Pré-qualificação": 1
+ },
+ "generalist_winners": {
+  "winners_with_40plus_secondary_CNAEs": 110,
+  "of_winners": 400,
+  "share_of_clearing_value_won_by_them": 31.1,
+  "share_of_other_value": 24.2,
+  "median_gross_when_generalist_wins": 29.3,
+  "median_gross_when_specialist_lt10_wins": 11.8
+ },
+ "out_of_state_margin_vs_supplier_discount": {
+  "cost_x1.0": {
+   "median_gross_out_of_state_won": -6.2,
+   "BANHEIRA": -18.1,
+   "MACACAO": -16.0,
+   "TOALHA": -11.9,
+   "BODY": -104.4,
+   "FRALDA_PANO": 40.8,
+   "MANTA": 31.5
+  },
+  "cost_x0.7": {
+   "median_gross_out_of_state_won": 25.7,
+   "BANHEIRA": 17.3,
+   "MACACAO": 18.8,
+   "TOALHA": 21.7,
+   "BODY": -43.1,
+   "FRALDA_PANO": 58.5,
+   "MANTA": 52.0
+  },
+  "cost_x0.55": {
+   "median_gross_out_of_state_won": 41.6,
+   "BANHEIRA": 35.0,
+   "MACACAO": 36.2,
+   "TOALHA": 38.5,
+   "BODY": -12.4,
+   "FRALDA_PANO": 67.4,
+   "MANTA": 62.3
+  }
+ }
+}

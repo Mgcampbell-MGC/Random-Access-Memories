@@ -1,0 +1,180 @@
+{
+ "agent": "H6C",
+ "risks": [
+  {
+   "area": "1. AI advertising rules - CONAR disclosure",
+   "risk": "Is an 'AI-generated' label mandatory on commercial ads in Brazil? No. CONAR's newest AI text (Guia de Influenciadores v6, 25 May 2026, section 1.3.1) says the Code (CBAP) applies in full to AI-made ads and that the whole creation chain stays responsible for the result. Footnote 6 says in terms that it creates NO new disclosure duty. The CBAP 2026 PDF (Aug 2026) contains no AI article.",
+   "source_url": "https://conar.wpenginepowered.com/wp-content/uploads/2026/05/260525_GUIA_INFLUENCIADORES_CONAR_v6.pdf",
+   "quote": "1.3.1 ... aplicam-se integralmente ... aos conteúdos gerados, editados ou segmentados com o uso de sistemas ou ferramentas de Inteligência Artificial (IA). ... Influenciadores, Anunciantes, Agências e demais partes da cadeia de criação da publicidade permanecem responsáveis pelo seu resultado ... | fn 6: Este texto não cuida de diretrizes ou deveres novos ... não versando em particular sobre avisos (disclosure) acerca do uso de tais técnicas de produção.",
+   "rating": "negligible (disclosure) / manageable (chain responsibility, see producer-liability row)",
+   "fix": "No mandatory label. Still add a voluntary line wherever a RESULT on hair or skin is shown, e.g. 'Imagem ilustrativa criada com IA'. The line costs nothing and closes the CDC art. 37 par. 3 omission argument. Keep the prompt, approval and QA log for each asset."
+  },
+  {
+   "area": "1. AI advertising rules - CONAR decisions on synthetic people",
+   "risk": "CONAR already sanctions deepfake endorsements. It suspended ads and warned advertisers over the AI-generated image and voice of Dr Drauzio Varella (Reps. 256/24, 281/24, 296/24, rulings of Jul 2025, published in Boletim 227, May 2026). It did the same over a deepfake of a TV presenter in a beauty/body programme ad (Rep. 212/24, Boletim 226). The pattern: real-person likeness plus fake testimonial = sustação + advertência.",
+   "source_url": "https://conar.wpenginepowered.com/wp-content/uploads/2026/08/BoletimConar227.pdf",
+   "quote": "Em um dos anúncios, por meio de inteligência artificial, há uso indevido da imagem e voz do médico Drauzio Varella ... Decisão: Sustação e advertência (Rep. 256/24) | Rep. 212/24 (Boletim 226): influenciador faz uso de deep fake, falsificando depoimento de conhecida apresentadora de TV ... Decisão: Sustação e advertência",
+   "rating": "negligible if the SOP forbids it; would be blocking for any job that needs it",
+   "fix": "Hard SOP rule: no real person's face or voice, and no celebrity lookalike, without a written release. Synthetic models appear only as MODELS, never as consumers or experts giving testimony. CBAP art. 27 par. 9(a)-(c) allows unpersonalised models as 'licença publicitária' but never as a testimonial."
+  },
+  {
+   "area": "1. AI bill PL 2338/2023 (and PL 841/2024)",
+   "risk": "Not law as of 25 Sep 2026. The Senate passed it and sent it to the Câmara (received 17 Mar 2025). A Comissão Especial was created 4 Apr 2025 and named its rapporteur (Aguinaldo Ribeiro) 20 May 2025. Status: 'Aguardando Parecer'. The last event (2 Sep 2026) is an apensação, and no parecer has been filed. Senate text art. 19 puts the synthetic-content identifier duty on the AI SYSTEM (the tool), not on a user. Art. 19 par. 3 lets artistic works signal via credits or metadata. Art. 66 points image and voice use back to the Civil Code. Art. 80: 730-day vacatio. PL 841/2024 would amend the CDC to require an AI notice on ad images and video. It is apensado and not law.",
+   "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2487262",
+   "quote": "statusProposicao: dataHora 2026-09-02T15:06, descricaoSituacao 'Aguardando Parecer' | Art. 19. Quando o sistema de IA gerar conteúdo sintético, deverá ... incluir identificador em tais conteúdos ... § 3º ... poderá ... ser sinalizado ... nos créditos ou nos metadados",
+   "rating": "negligible now (watch-list)",
+   "fix": "Re-check the Câmara API quarterly. If it passes, the vendor's C2PA marking (Higgsfield ToS 6.4) plus a credits line already matches art. 19 par. 3. Nothing to build today."
+  },
+  {
+   "area": "2. Misleading efficacy by IMAGE (no words needed)",
+   "risk": "An AI 'result' shot (extra shine, poreless skin, a thicker-looking texture) is itself an advertising claim. Lei 6.360 art. 59 bans 'figuras, desenhos' that attribute characteristics the product lacks. CDC art. 37 par. 1 covers 'qualquer modalidade' of advertising communication. CBAP art. 27 par. 2 covers 'apresentação visual'. RDC 907/2024 art. 12 (labelling) bans 'imagens' that mislead or that show a physical form different from the one declared.",
+   "source_url": "https://www.planalto.gov.br/ccivil_03/leis/l6360.htm",
+   "quote": "Art. 59. Não poderão constar de rotulagem ou de propaganda ... símbolos, figuras, desenhos ou quaisquer indicações que possibilitem interpretação falsa, erro ou confusão quanto à ... natureza, composição ou qualidade, que atribuam ao produto finalidades ou características diferentes daquelas que realmente possua. | CDC art. 37 § 1º É enganosa qualquer modalidade de informação ou comunicação de caráter publicitário ... | RDC 907/2024 art. 12: ... imagens ... que: I - induzam a erro ... V - remetam à forma física distinta da declarada",
+   "rating": "manageable - the core legal risk of the business",
+   "fix": "CLAIM QA GATE (plan gate 4, made concrete): (1) every depicted effect maps to a line in the brand's approved-claims list, and the brand holds the substantiation (RDC 907 art. 5 I; CDC art. 36 sole para.); (2) no before/after, no split-screen 'result', no magnified skin or hair texture beyond what the claim supports; (3) product texture and physical form (gel, cream, oil, spray) match the registered form; (4) Grau 2 claims (anti-queda, anticaspa, photoprotection) only with the brand's dossier; (5) the brand's RT or marketing lead signs a per-asset claims approval on the proof board."
+  },
+  {
+   "area": "2. Who is liable - brand vs producer",
+   "risk": "The brand carries the main liability. It is the sponsor (CDC art. 38 burden of proof), the titular who must hold the efficacy data (RDC 907 art. 5 I), and 'responsabilidade total' under CBAP art. 45(a). But the producer is NOT immune. CDC art. 67 is a crime for whoever 'FAZER ou promover' an ad they know or SHOULD know is misleading. CBAP art. 45(b), art. 46 and Guia 1.3.1 reach everyone in the 'planejamento, criação, execução'. Lei 6.437 art. 3 imputes a sanitary infraction to whoever caused it 'ou para ela concorreu'. CDC art. 7 sole para. makes co-authors jointly liable in civil law (how far this reaches a production house is doctrinally contested - UNVERIFIED).",
+   "source_url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+   "quote": "Art. 38. O ônus da prova da veracidade e correção da informação ou comunicação publicitária cabe a quem as patrocina. | Art. 67. Fazer ou promover publicidade que sabe ou deveria saber ser enganosa ou abusiva: Pena Detenção de três meses a um ano e multa. | CBAP art. 46: Os diretores e qualquer pessoa ... que tomem parte no planejamento, criação, execução e veiculação de um anúncio, respondem ... | Lei 6.437 art. 3º O resultado da infração sanitária é imputável a quem lhe deu causa ou para ela concorreu.",
+   "rating": "manageable",
+   "fix": "Contract clauses: (a) the client is the anunciante and titular of the claims and supplies the approved-claims list; (b) the client approves each asset in writing before publication (the proof board is the record); (c) the client indemnifies for claims content and supplied materials; (d) the producer may refuse any depiction beyond the approved claims; (e) liability capped at the fee paid; (f) the producer does not place, publish or manage ads (this also supports the tax position below)."
+  },
+  {
+   "area": "2. Sanitary regularisation of the product",
+   "risk": "Advertising a product contrary to sanitary law is an infraction: Lei 6.437 art. 10 V (fines R$2.000-75.000 for 'leve', up to R$1,5M for 'gravíssima', doubled on repeat). If the SKU is not regularised at ANVISA, or its label differs from the registered one, the producer can be said to have 'concorrido'.",
+   "source_url": "https://www.planalto.gov.br/ccivil_03/leis/l6437compilado.htm",
+   "quote": "V - fazer propaganda de produtos sob vigilância sanitária ... contrariando a legislação sanitária: pena - advertência, proibição de propaganda, suspensão de venda, imposição de mensagem retificadora, suspensão de propaganda e publicidade e multa.",
+   "rating": "manageable",
+   "fix": "Intake check (free, 2 minutes): look up the SKU by CNPJ and product name in ANVISA's open file dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_COSMETICOS.CSV (HTTP 200 today, updated 24/09/2026). Refuse unregularised SKUs. The Product Truth Sheet uses the label artwork as regularised."
+  },
+  {
+   "area": "3. Synthetic model resembling a real person",
+   "risk": "Image right: CF art. 5 X; CC art. 20, where commercial use can be prohibited 'sem prejuízo da indenização'. STJ Súmula 403: no proof of harm is needed for damages over unauthorised commercial use of a person's image. CBAP art. 27 par. 9(e): lookalikes ('sósias') need the imitated person's authorisation. CBAP art. 34(a): images of living people need prior express consent. No Brazilian court precedent on an ACCIDENTAL AI lookalike was found (UNVERIFIED).",
+   "source_url": "https://arquivocidadao.stj.jus.br/index.php/sumula-403?sort=referenceCode&sortDir=asc&listLimit=100",
+   "quote": "Súmula 403: Independe de prova do prejuízo a indenização pela publicação não autorizada de imagem de pessoa com fins econômicos ou comerciais. | CC art. 20: ... a publicação, a exposição ou a utilização da imagem de uma pessoa poderão ser proibidas ... se se destinarem a fins comerciais. | CBAP 27 §9 e. o uso de sósias depende de autorização da pessoa retratada ou imitada",
+   "rating": "manageable",
+   "fix": "QA gate 'Model': (1) never prompt with a real name, and never use a real person's photo as a face reference, without a release; (2) run each hero face through a reverse-image search (Google Lens / TinEye) and a quick check against the client's category ambassadors and celebrities, and regenerate on any close match; (3) keep prompt and seed logs as proof of independent creation; (4) contract: prompt takedown-and-replace at no charge if a resemblance claim arrives; (5) one consistent synthetic 'house model' per client, documented as synthetic."
+  },
+  {
+   "area": "3. Voice, and real people's photos (Soul-ID / face references)",
+   "risk": "CC art. 20 also protects 'a transmissão da palavra' (voice). Using a real person's face or voice as input needs consent under Higgsfield ToS 5.3, OpenAI's usage policy and BytePlus's AUP. Under LGPD art. 5 II, biometric data is sensitive personal data.",
+   "source_url": "https://higgsfield.ai/terms-of-use-agreement",
+   "quote": "5.3 ... If you submit photographs, images, or videos containing an individual's face, or audio ... containing an individual's voice, as an Input ... you represent and warrant that: (a) you have obtained all consents, releases, and permissions required under applicable law ... | OpenAI usage policies: use of someone's likeness, including their photorealistic image or voice, without their consent in ways that could confuse authenticity",
+   "rating": "manageable",
+   "fix": "Default to synthetic faces and licensed synthetic voices. Where a client wants its own ambassador, the client supplies a written image-and-voice release that expressly covers AI processing, term, territory and media (termo de cessão de imagem e voz para uso com IA). Otherwise decline."
+  },
+  {
+   "area": "4. Higgsfield commercial-use rights (free vs paid)",
+   "risk": "None found. The Terms of Use (last updated 26 Jul 2026, effective 27 Aug 2026 for earlier users) grant output rights with NO tier distinction. The Jul 2026 version newly says you may pass Output rights to CLIENTS; the prior 23-07-2026 version lacks the phrase 'to your clients'. The live pricing configuration (show_plans_and_credits, 25 Sep 2026) lists no commercial-use feature gated by plan. Restriction: s1.2 licenses the SERVICE for 'your own personal or internal business purposes', and s5.1(i) bans reselling the Service, so client access to her account is not allowed.",
+   "source_url": "https://higgsfield.ai/terms-of-use-agreement",
+   "quote": "4.4 ... Company does not claim ownership of any of your Inputs or Outputs, nor does it restrict your commercial use of Outputs. Your rights in Outputs you have generated and exported survive cancellation of your subscription ... and you may transfer or sublicense your rights in Outputs to your clients or other third parties. | 5.1 (i) license, resell, rent, transfer, assign, reproduce, distribute, host, or otherwise commercially exploit the Service",
+   "rating": "negligible",
+   "fix": "Run production on a paid plan in the company's name (the free account holds 7,88 credits, which cannot make a campaign anyway). Never share logins with clients (this also keeps C4). Save a PDF of the ToS version in force with each project file."
+  },
+  {
+   "area": "4. Tool indemnity, liability cap, no clearance, model churn",
+   "risk": "Higgsfield gives no IP indemnity. SHE indemnifies Higgsfield. Outputs are as-is with no clearance. Liability is capped at the greater of 6 months' fees or US$100. Disputes go to AAA arbitration under US law. Outputs 'may not be unique across users'. Models may be swapped or retired at any time.",
+   "source_url": "https://higgsfield.ai/terms-of-use-agreement",
+   "quote": "13.2 ... Company does not control, verify, or perform clearance searches or rights verification on your Inputs or the resulting Outputs. You are solely responsible for conducting any necessary rights clearances ... | Company Parties will not be liable to you for more than the greater of (i) the total amount paid ... during the six-month period ... (ii) $100 | Outputs generated by the Service may not be unique across users.",
+   "rating": "manageable",
+   "fix": "Mirror the vendor's terms downstream. The client contract (a) caps her liability at the project fee, (b) gives no copyright, exclusivity or uniqueness warranty on generated backgrounds or models, only on the composed final assets delivered, (c) warrants only her own non-infringement of what she knowingly adds, (d) allows tool and model substitution. Optional E&O / RC profissional insurance (cost UNVERIFIED)."
+  },
+  {
+   "area": "4. Underlying model providers (pass-through AUPs)",
+   "risk": "Higgsfield s8 binds her to each third-party model provider's acceptable-use policy, 'the more restrictive terms govern'. BytePlus (Seedance) AUP: do not remove or conceal watermarks or metadata signalling AI generation, and 'provide appropriate notices ... that content is AI generated'. Google's Generative AI Prohibited Use Policy (17 Dec 2024): no 'misrepresenting the provenance of generated content by claiming it was created solely by a human, in order to deceive'. OpenAI usage policies: no likeness without consent. Higgsfield s5.5/6.4: do not remove its C2PA/provenance marks.",
+   "source_url": "https://docs.byteplus.com/en/docs/legal/acceptable_use_policy_byteplus_genai",
+   "quote": "must NOT use the services ... in any manner that may delete, remove, obscure, alter or conceal any credentials, watermarks, identifiers, metadata, or other marks ... that indicate that the content may be generated by a BytePlus GenAI Service | Responsible AI Requirements ... provide appropriate notices that users are interacting with an AI and that content is AI generated",
+   "rating": "manageable - a commercial constraint more than a legal one",
+   "fix": "Tell every client at the SALE, in the proposal, that assets carry provenance metadata, that film deliverables include a short AI-assistance credit, and that platforms may auto-label them. Never strip metadata on purpose. Deliver C2PA-bearing masters alongside the edited exports. If a client refuses any disclosure, price and produce with a model whose provider terms allow it (other providers' terms are UNVERIFIED), or decline the job."
+  },
+  {
+   "area": "5. Client trademarks and unreleased packaging fed into third-party models (confidentiality and training)",
+   "risk": "Higgsfield's standard terms license it to TRAIN on Inputs and Outputs, and it shares data with third-party model and compute providers. Only an Enterprise Agreement excludes training and treats content as confidential. The plan targets LAUNCHES and 'coming soon' products, so pre-launch artwork under NDA is exactly what gets uploaded. Direct use of other tools: ChatGPT consumer plans train unless you opt out (Business, Enterprise and API do not by default). Google AI Studio's unpaid tier trains, uses human reviewers, and says 'Do not submit sensitive, confidential, or personal information'.",
+   "source_url": "https://higgsfield.ai/terms-of-use-agreement",
+   "quote": "4.4 ... You acknowledge and agree that Your Content, Inputs, and Outputs may be used by Company to train, develop, enhance, evolve, and improve its (and its affiliates') AI models ... Different terms apply to enterprise and business customers who use the Service under an Enterprise Agreement ... Company does not use the customer's content to train or improve its AI models, and that content is handled as confidential. ... You can stop this going forward by deleting Your Content or your Account",
+   "rating": "manageable in general; BLOCKING for any client whose NDA forbids AI tools that train on inputs, unless an Enterprise Agreement is obtained",
+   "fix": "(1) The contract carries an explicit consent to processing by named AI vendors, including their training licence. (2) Ask Higgsfield for an Enterprise Agreement once revenue exists (price UNVERIFIED). (3) Delete project inputs and outputs from the tool at delivery and log it. (4) For embargoed products, generate scenes with a neutral placeholder bottle and composite the real label in Photoshop locally, so the unreleased artwork never leaves her machine. This doubles as the 'Product Lock' fidelity step. (5) Turn off 'Improve the model for everyone' in ChatGPT, and never use unpaid Google AI Studio for client files."
+  },
+  {
+   "area": "5. Pitch samples made from a PROSPECT's public product images (the plan's GTM step)",
+   "risk": "Uploading a prospect's packshots (copyrighted photographic works, Lei 9.610 art. 7 VII; reproduction needs prior authorisation, art. 29) into Higgsfield breaches its s4.2 warranty that you hold the rights, and grants it a training licence. The mark itself is reproduced without authorisation (LPI art. 189 I is aimed at confusing commercial use, so a private, non-published pitch is low risk).",
+   "source_url": "https://www.planalto.gov.br/ccivil_03/leis/l9610.htm",
+   "quote": "Art. 29. Depende de autorização prévia e expressa do autor a utilização da obra, por quaisquer modalidades, tais como: I - a reprodução parcial ou integral | Higgsfield 4.2: you represent that: (a) you have all necessary rights to Your Content ...",
+   "rating": "manageable (low)",
+   "fix": "C1 now allows Portuguese calls: phone first and ask 'posso fazer um estudo de uma imagem com a embalagem de vocês?'. Or buy the product at retail and photograph it herself, so she owns the input photo. Keep the sample private and watermarked, never post it, and delete it from the tool after the pitch."
+  },
+  {
+   "area": "4/5. Copyright in the deliverables",
+   "risk": "Brazilian copyright needs a human author (Lei 9.610 art. 11), so purely machine-generated elements may carry no copyright for the client to own or enforce. No Brazilian precedent found (UNVERIFIED). The vendors assign or disclaim only 'if any' rights: OpenAI assigns 'if any'; Google 'won't claim ownership' and may generate the same for others.",
+   "source_url": "https://www.planalto.gov.br/ccivil_03/leis/l9610.htm",
+   "quote": "Art. 11. Autor é a pessoa física criadora de obra literária, artística ou científica. | OpenAI ToU (eff. 1 Jan 2026): We hereby assign to you all our right, title, and interest, if any, in and to Output. | Gemini API terms: Google won't claim ownership over that content ... Google may generate the same or similar content for others",
+   "rating": "manageable",
+   "fix": "Assign 'todos os direitos patrimoniais que a contratada detenha, se houver' plus a perpetual worldwide licence. Do not warrant exclusivity or copyright. The client's real protection is its registered trademark and packaging, which appear in every asset. Keep her human-authorship trail (selection, composition, Photoshop repair) in the project log."
+  },
+  {
+   "area": "Music and audio in the hero film",
+   "risk": "Commercial music used without a licence infringes copyright (Lei 9.610 art. 29).",
+   "source_url": "https://www.planalto.gov.br/ccivil_03/leis/l9610.htm",
+   "quote": "Art. 29. Depende de autorização prévia e expressa do autor a utilização da obra, por quaisquer modalidades",
+   "rating": "manageable",
+   "fix": "Use only tool-generated audio (covered by the same Higgsfield s4.4 output grant) or a stock library with a commercial licence. File the licence receipt with each delivery."
+  },
+  {
+   "area": "6. Tax classification (Anexo III vs V)",
+   "risk": "The same campaign can be taxed at 6% or 15,5% at faixa 1, depending on how the service is characterised. Audiovisual production is Anexo III (LC 123 art. 18 par. 5-B XV). Receita's SC COSIT 466/2017 confirms advertising-film production is Anexo III, 'desde que não preste o serviço de publicidade propriamente dito'. 'Design' and 'publicidade' are Anexo V (par. 5-I VI and X) unless fator r >= 28% (par. 5-J). The IBGE CNAE text of 7311-4/00 (agency) says 'a criação e a produção de campanhas de publicidade', which describes the VBPH package. If a bundled contract does not split each activity's price, Receita taxes the whole under the higher annex (logic of SC COSIT 145/2023).",
+   "source_url": "http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=86540",
+   "quote": "SC Cosit 466/2017: A empresa optante pelo Simples Nacional contratada para prestar serviço de produção de filmes para publicidade, em relação a essa atividade, deve ser tributada na forma do Anexo III da Lei Complementar nº 123, de 2006, desde que não preste o serviço de publicidade propriamente dito.",
+   "rating": "manageable",
+   "fix": "Register 5911-1/02 (primary) and 7410-2/99 (secondary, which covers 'criação de imagens digitais'). Do NOT register 7311-4/00. Contract and NFS-e split the film production line (Anexo III) from the stills and design line (Anexo V or fator r). Do not buy media or manage ads. Confirm with an accountant or file a consulta for AI-only (camera-less) production (UNVERIFIED how it applies). Fallback: a pro-labore of about 28% of RBT12 (R$4.200/month at R$180k) moves the Anexo V line to III, at the cost of about 11% INSS on the pro-labore (UNVERIFIED rate), roughly 3,1% of revenue."
+  },
+  {
+   "area": "6. Tax reform 2027 (IBS/CBS) for B2B clients",
+   "risk": "From 2027 her buyers (brands on Lucro Presumido or Real) will care about IBS/CBS credits. A Simples supplier can opt to collect IBS/CBS under the regular regime (LC 214/2025 art. 41 par. 3).",
+   "source_url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+   "quote": "Art. 41 § 3º Os optantes pelo Simples Nacional poderão exercer a opção de apurar e recolher o IBS e a CBS pelo regime regular, hipótese na qual o IBS e a CBS serão apurados e recolhidos conforme o disposto nesta Lei Complementar.",
+   "rating": "negligible now (planning item for 2027)",
+   "fix": "Ask the accountant in Q4 2026 whether the hybrid option pays at her price point. Leave it until then."
+  }
+ ],
+ "tax": {
+  "cnae": "Primary 5911-1/02 Produção de filmes para publicidade (IBGE: 'a produção de filmes em qualquer suporte ... para publicidade de qualquer tipo'). Secondary 7410-2/99 Atividades de design não especificadas anteriormente (IBGE lists 'CRIAÇÃO DE IMAGENS DIGITAIS; ATIVIDADES DE') for key visuals, stills and the commerce kit. Optional 7420-0/01 (includes 'PRODUÇÃO FOTOGRÁFICA PARA PUBLICIDADE') only if she actually shoots. Avoid 7311-4/00 Agências de publicidade ('a criação e a produção de campanhas de publicidade'), which invites Anexo V treatment of everything.",
+  "anexo": "Split. FILM PRODUCTION = Anexo III with no fator r test (LC 123 art. 18 par. 5-B XV; SC COSIT 466/2017, conditional on not providing 'publicidade propriamente dita'). STILLS / DESIGN / DIGITAL IMAGE CREATION = Anexo V (par. 5-I VI 'design'; X 'publicidade'), moving to Anexo III if fator r >= 28% (par. 5-J). With no payroll she lands in Anexo V on that line unless she draws a pro-labore >= 28% of RBT12. A 50/50 film/stills split at faixa 1 blends to about 10,75%. Whether AI-only still images count as 'produções ... artes visuais' (par. 5-B XV, Anexo III) is UNVERIFIED.",
+  "effective_rate_180k": "Anexo III 6,00% (faixa 1, 6% with no deduction). Anexo V 15,50% (faixa 1). Blended 50/50 about 10,75%. Fator r route: 6,00% + ~3,08% INSS on a R$4.200/month pro-labore (11% rate UNVERIFIED; IRPF zero up to R$5.000/month from 2026 under Lei 15.270/2025) = about 9,1%.",
+  "effective_rate_360k": "Anexo III 8,60% = (360.000 x 11,20% - 9.360) / 360.000. Anexo V 16,75% = (360.000 x 18,00% - 4.500) / 360.000.",
+  "iss_sp": "Inside Simples, ISS is paid in the DAS, not at the municipal rate. The ISS share of the rate is 33,5% x 6% = 2,01% of revenue (Anexo III faixa 1) or 14% x 15,5% = 2,17% (Anexo V faixa 1); at faixa 2 about 2,75% (III) and 2,85% (V). For reference, the São Paulo municipal rates outside Simples (Lei 13.701/2003 art. 16, as amended by Lei 17.719/2021 from 1 Jan 2022) are 2% for SP list item 13.02 'Fotografia e cinematografia' and 23.01 'programação e comunicação visual', and 5% for 17.06 'Propaganda e publicidade ... planejamento de campanhas'. Needs a CCM registration in São Paulo to issue NFS-e.",
+  "entity_note": "An ME is fine: ME = gross revenue <= R$360.000 per year (LC 123 art. 3 I), which covers the target (~R$150-200k gross per year). MEI is impossible: the R$81.000 ceiling (art. 18-A par. 1) is below the bar.",
+  "sources": [
+   "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm (art. 3 I; art. 18 §§5-B XV, 5-F, 5-I VI/X/XII, 5-J, 5-K, 5-M; Anexo III and Anexo V tables and partilha)",
+   "http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=86540 (SC COSIT 466/2017, 26/09/2017, ementa read on the Receita normas search page)",
+   "https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=70528 (SC COSIT 145/2023: undiscriminated bundled contracts are taxed at the higher annex)",
+   "https://servicodados.ibge.gov.br/api/v2/cnae/subclasses/5911102 (plus 7410299, 7420001, 7311400, 5911199)",
+   "https://legislacao.prefeitura.sp.gov.br/leis/lei-13701-de-24-de-dezembro-de-2003 (art. 16 I 'q' and 'r'; list items 13.02, 17.06, 23.01)",
+   "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm (art. 3-A IRPF reduction: zero tax up to R$5.000/month from Jan 2026)",
+   "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm (art. 41 §3 Simples option for the regular IBS/CBS regime)"
+  ]
+ },
+ "blocking_issues": [
+  "NONE AT LAW. The plan is lawful in Brazil as of 25 Sep 2026: no statute or CONAR rule requires an AI label on commercial ads (CONAR Guia v6 fn 6; PL 2338/2023 and PL 841/2024 are not law).",
+  "CONDITIONAL, per client: pre-launch or embargoed packaging from a client whose NDA forbids AI tools that train on inputs cannot go through Higgsfield's standard terms (s4.4 training licence). It needs an Enterprise Agreement (availability and price UNVERIFIED) or the placeholder-bottle and local-composite workflow.",
+  "CONDITIONAL, per job: any request to use a real person's face or voice (celebrity, ambassador or lookalike) without a signed release must be refused. CONAR has already suspended ads over this (Reps. 212/24, 256/24, 281/24, 296/24).",
+  "CONDITIONAL, per client: a client that demands zero AI disclosure and metadata stripping on Seedance-generated film conflicts with the pass-through BytePlus AUP (if Higgsfield routes Seedance through BytePlus - UNVERIFIED)."
+ ],
+ "overall": "Legally BUILDABLE with no blocker. The binding risks are contractual and QA risks, not statutory ones. (1) Images are claims: under Lei 6.360 art. 59, CDC art. 37 and CBAP art. 27 §2, an AI shine or skin render can be a misleading efficacy claim with no words at all. The brand is the main defendant (CDC 38, RDC 907 art. 5), but the producer is exposed: CDC art. 67 criminalises whoever 'faz' a misleading ad, CBAP 45(b)/46 and Guia 1.3.1 name the whole creation chain, and Lei 6.437 art. 3 covers whoever 'concorreu'. So Claim QA gate 4 with per-asset client sign-off is the legal core of the product, not an add-on. (2) Confidentiality is the one issue that can block a specific client: Higgsfield trains on inputs unless there is an Enterprise Agreement, and the plan's buyer is by definition pre-launch. (3) Output rights are fine: Higgsfield ToS 26 Jul 2026 expressly lets her pass Output rights to clients, with no free/paid distinction. But nobody warrants uniqueness or copyright, so she must not either. (4) Tax is the only place the plan leaves money on the table: film production is Anexo III (SC COSIT 466/2017) at 6% against Anexo V at 15,5% for stills and design, so register 5911-1/02 plus 7410-2/99, avoid 7311-4/00, and split contracts. Cheap insurance that removes most residual risk: a voluntary 'imagem ilustrativa criada com IA' line wherever a result is depicted.",
+ "unverified": [
+  "Whether SC COSIT 466/2017 (Anexo III) covers camera-less, AI-generated film, and whether AI still images count as 'produções ... artes visuais' (Anexo III) or 'design/publicidade' (Anexo V). Needs an accountant or a formal consulta.",
+  "The INSS rate on pro-labore (11% assumed) and the IRPF effect at R$360k RBT12 in the fator r route were not fetched at statute in this pass.",
+  "Whether Higgsfield routes Seedance through BytePlus, so that the BytePlus AUP (watermark/metadata and AI-notice duties) binds. Kling (Kuaishou) and MiniMax provider terms were not fetched.",
+  "Whether Higgsfield offers an Enterprise Agreement (no-training, confidential) to a solo business, and at what price.",
+  "Whether Instagram, TikTok and Meta auto-label C2PA-marked uploads as AI. Meta's labelling page was not retrieved (the fetch returned an unrelated page).",
+  "Whether Higgsfield's library avatars / Marketing Studio presenters are derived from real people and carry category restrictions. The ToS says nothing on this.",
+  "Whether Higgsfield's MCP 'IP check' on product inputs would block a client's own trademarked packaging (operational, not tested; the account holds 7,88 credits).",
+  "No Brazilian court precedent found on accidental AI lookalike models, or on the liability of a non-agency production house for misleading ads. STJ REsp 1.157.228/RS (media and presenter, not agency) could not be fetched (STJ returned HTTP 403 to scon and arquivocidadao pages except Súmula 403).",
+  "No ANVISA RDC specific to cosmetics ADVERTISING was located (Lei 6.360 art. 58 §2 anticipates 'normas específicas'). Not searched exhaustively.",
+  "The copyrightability of AI-assisted images under Lei 9.610 art. 11 has no Brazilian precedent found.",
+  "Whether Higgsfield uses Google's paid Gemini API tier (no training) or unpaid for Nano Banana calls. It is irrelevant under Higgsfield's own training licence, but relevant to how far data travels.",
+  "The price of ChatGPT Business, and the cost of E&O / RC profissional insurance.",
+  "The BytePlus consolidated AUP shows 'Effective: Sep 30, 2026' (5 days from now). The standalone GenAI AUP quoted is the one currently in force and carries the same clauses."
+ ]
+}

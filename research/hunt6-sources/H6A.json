@@ -1,0 +1,200 @@
+{
+ "agent": "H6A",
+ "pool": {
+  "count": 300,
+  "count_range": "225-425 (plan-fit: established Brazilian hair/skin brand, own brand, EPP or Demais, not multinational/importer, >=6 new hair/skin ANVISA notifications in 12 months)",
+  "derivation": "ANVISA TA_CONSULTA_COSMETICOS.CSV (1.201.421 rows, 25 Sep 2026). Hair/skin classified by keyword on product name. Universe: 3.803 CNPJs hold >=1 active hair/skin product; 1.616 notified >=1 new hair/skin product in the last 12 months; 41.037 electronic hair/skin notifications in 12 months (~3.400/month), of which >=31,5% are re-notifications of an existing name. Brand level (brand keys mined from product names, ~85% precision on a 40-row check): 2.886 keys with >=4 and 1.667 with >=6 new hair/skin notifications in 12 months (~1.420 real brands at >=6). 1.209 of the 1.667 (73%) are made by multi-brand contract manufacturers. Leg A, own-notifying launchers (10-600 active hair/skin, >=6 new in 12 months, top brand >=50% of the holder's products): 262 CNPJs. publica.cnpj.ws on 38 random ones: Demais 14 / EPP 10 / ME 14. 6 of the 38 are multinationals, importers or group subsidiaries (Revlon/Elizabeth Arden, Galderma, Grupo Boticario's Vegan do Brasil, Quattror, TRL, Olita). Domestic EPP+Demais = 18/38 = 47%, so ~123 (95% CI ~84-165). Leg B, contract-manufacturer-made brands with >=6 new in 12 months: ~1.030 real brands. Share that is established (not micro/influencer private label) is UNVERIFIED, assumed 10-25%, so ~100-260. A+B ≈ 225-425, central ~300. Budget-signal cross-checks: Beauty Fair 2026 has 491 exhibitors; 236 are tagged hair/skin/barber/sun, 80 of which match an ANVISA brand with >=6 new notifications. ABIHPEC has 263 members; 100 fuzzy-match a hair/skin holder with >=6 new. Plan's literal profile (10-100 SKUs): 584 CNPJs have 10-100 active hair/skin products and >=2 new in 12 months, but a manual read of 30 found only 23% clear own-brand fits and the porte skews ME (13/20). Established indie brands (Truss 382, Haskell 243, Amend 518, Inoar 506, Dermage 184 active hair/skin notifications) sit in the 100-600 band, because shades, sizes and legacy SKUs are notified separately. The '10-100 SKU' filter is not a notification-count filter. Other rails: 15.451 CNPJs hold an active cosmetic AFE, 3.473 of them with 'Fabricar'. CNAE 2063-1/00 and 4646-0/01 counts by porte were NOT obtained (Receita bulk hosts unreachable). Hair Brasil 2026 exhibitor list NOT obtained (404/502).",
+  "contactable_share": "Phone: 19/20 random fitting-band holders (95%) and 35/38 own-brand launchers with a valid number (92%; 2 are placeholder 1199999999). Portuguese calls are now allowed, so phone is the operative rail. Email: 16/20 present but only 12/20 (60%) reach the business, because 4 are the accountant's address. In the own-brand launcher sample it is 37/38 present and ~32/38 (84%) business-reaching. Instagram or website: 226/236 (96%) of Beauty Fair 2026 hair/skin exhibitors link one (129 Instagram, 97 website). ANVISA AFE file: homepage in 18%, SAC phone in 36% of the 584 band holders. Instagram itself was unreadable (401 require_login).",
+  "sources": [
+   "https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_COSMETICOS.CSV",
+   "https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/TA_CONSULTA_FUNCIONAMENTO_EMPRESA_NACIONAL.CSV",
+   "https://publica.cnpj.ws/cnpj/{cnpj} (20 random band holders + 10 established-brand holders + 38 own-brand launchers; list in work/)",
+   "https://cms.beautyfair.com.br/beautyfair/wp-json/custom/v1/node?path=expositores&paged=1..33",
+   "https://abihpec.org.br/empresas-associadas/?letra=A..Z",
+   "https://www.packforyou.com.br/servicos/",
+   "https://anvisalegis.datalegis.net (RDC 907/2024 arts. 3 II, 35, 37, 41)"
+  ]
+ },
+ "launch_cadence": {
+  "sample_n": 34,
+  "median_launches_per_year": 3,
+  "distribution": "Measured from ANVISA notification timestamps, 24 Sep 2025 to 23 Sep 2026. Launch windows = clusters of hair/skin notifications split at gaps >21 days. All 34: median 3 windows (IQR 2-5); distribution {0:1, 1:4, 2:6, 3:7, 4:6, 5:2, 6:5, 7:3}. Median 21 new hair/skin notifications (IQR 11-37) and 10,5 distinct notification days a year. Established brands (n=24; Truss 4, Lowell 4, Haskell 7, Amend 2, Inoar 6, Cadiveu 2, Widi Care 6, Brae 7, Principia 7, Sallve 6, Nupill 6, Hidrabene 5, Adcos 6, Dermage 5, QOD 2, Felps 4, Soupleliss 4, Phallebeauty 2, Tracta 1, Payot 4, Charming 3, Biomarine 3, Melu 3, Davene 3): median 4. Small band-fit brands (n=10; Korban 2, Vitamedica 1, Madame Lis 2, Grazie 3, Cauli 0, Beautyderm 3, Aramath 1, Lanuty 4, Zantor 1, Atos 3): median 2. Deflator: windows over-count launches. Sallve shows 6 windows but only ~2 real new products in 12 months; the rest are re-notifications after a manufacturer switch, checked against Shopify publish dates. Nationally, >=31,5% of 12-month hair/skin notifications repeat an earlier name. Plausible campaign-sized projects per brand per year: ~1-2 for small brands, ~2-4 for established brands. Cross-check on own sites: Dermage released ~20 SKUs (incl. kits) across ~9 release dates in 12 months (VTEX releaseDate); Sallve published 2 genuinely new single products in 2026 (Shopify).",
+  "sources": [
+   "https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_COSMETICOS.CSV",
+   "https://sallve.com.br/products.json?limit=250",
+   "https://www.dermage.com.br/api/catalog_system/pub/products/search?_from=0&_to=49&O=OrderByReleaseDateDESC",
+   "https://hidrabene.com.br/products.json?limit=250"
+  ]
+ },
+ "trigger_feed": {
+  "exists": true,
+  "endpoint": "https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_COSMETICOS.CSV (full snapshot, 227,5 MB, latin-1, ';'-separated, no key, no login)",
+  "fields": "NU_PROCESSO; NO_PRODUTO; NU_CNPJ_EMPRESA; NO_RAZAO_SOCIAL_EMPRESA; DT_VENCIMENTO; ST_SITUACAO_PRODUTO; NU_REGISTRO; DS_TIPO_PETICAO; ST_REGISTRADO; DT_ATUALIZACAO. There is no notification-date field: notification timestamp = DT_VENCIMENTO minus 10 years for electronic 'Notificado' rows (RDC 907/2024 art. 41 §1, 10 years counted from the notification day; checked against the process-number year, ~99% agreement). There is no category or brand field: both must be parsed from NO_PRODUTO. The holder (CNPJ) is the notifying company, which for ~73% of actively launching brands is the contract manufacturer, not the brand owner.",
+  "update_frequency": "Daily. The file was stamped 2026-09-25 10:22 and its newest record is 2026-09-23 23:51, so publication lag is ~1,5 days. Hair/skin flow is ~3.400 electronic notifications a month (41.037 in 12 months); in Sept 2026, 311-558 records of all cosmetic types per weekday.",
+  "sample_entries": [
+   {
+    "notified": "2026-09-23 23:51:42",
+    "product": "SHAMPOO DE CRESCIMENTO VZZON FIT COSMÉTICOS",
+    "holder": "VALENZZA INDUSTRIA E COMERCIO DE COSMETICOS LTDA",
+    "cnpj": "38238464000103",
+    "processo": "25351171704202654",
+    "DT_VENCIMENTO": "23/09/2036 23:51:42"
+   },
+   {
+    "notified": "2026-09-23 23:51:42",
+    "product": "SHAMPOO CACHOS - LUNA PARIS PROFESSIONAL",
+    "holder": "JK FORMULAS E TERCEIRIZACAO DE COSMETICOS LTDA (contract manufacturer; brand = Luna Paris)",
+    "cnpj": "46804089000140",
+    "processo": "25351171701202611",
+    "DT_VENCIMENTO": "23/09/2036 23:51:42"
+   },
+   {
+    "notified": "2026-09-23 21:02:04",
+    "product": "SÉRUM FACIAL AMAVIVE",
+    "holder": "R.T.K INDUSTRIA DE COSMÉTICOS E ALIMENTOS NATURAIS LTDA EPP",
+    "cnpj": "09139778000150",
+    "processo": "25351171688202608",
+    "DT_VENCIMENTO": "23/09/2036 21:02:04"
+   },
+   {
+    "notified": "2026-09-23 21:02:03",
+    "product": "PROTEÍNA CAPILAR VC CURLS",
+    "holder": "NATURALISTA DO BRASIL LTDA",
+    "cnpj": "54040281000135",
+    "processo": "25351171682202622",
+    "DT_VENCIMENTO": "23/09/2036 21:02:03"
+   },
+   {
+    "notified": "2026-09-23 21:02:01",
+    "product": "SPA SHAMPOO MASK HAIR SCALP EQUILIBRIUM K´SCIENCE PROFESSIONAL",
+    "holder": "UNIK INDUSTRIA E COMERCIO DE COSMETICOS LTDA",
+    "cnpj": "33088530000192",
+    "processo": "25351171675202621",
+    "DT_VENCIMENTO": "23/09/2036 21:01:59"
+   }
+  ],
+  "notes": "Statute: RDC 907/2024 (in force; it revoked RDC 752/2022). Art. 3 II defines 'comunicação prévia' as informing ANVISA of the 'intenção de comercialização' by notification; art. 35 makes all non-registered groups subject to it; art. 37 requires AFE of titulares and fabricantes. So every Grau 1 hair/skin product must appear in this file before it may be sold: this is the archive's COMPELLED-ANNOUNCEMENT law applied to private buyers. Lead to market, measured on 18 notification-to-store-publication pairs across 3 brands (Sallve Shopify, Dermage VTEX releaseDate, Hidrabene Shopify): median ~79 days, range 16-148 days. The trigger typically arrives ~2,5 months before the product is on sale, which is inside the window when launch visuals are commissioned (inference). Four traps a parser must handle: (1) >=31,5% of hair/skin notifications repeat an earlier product name (exact token match; a lower bound). These are manufacturer switches or re-filings: Sallve re-notified ~8 products already on sale since 2022-24, and Felps' June-2026 Quiabo XBTX notification was for a product whose images are dated Aug 2025. Dedupe against all prior names for the brand before calling. (2) ~3,4% of rows are midnight-stamped legacy or renewal rows; drop them. (3) The holder is often the contract manufacturer (Veneza, Imperio, SDK, TCI, Alfahair, '+ BRIEFING AGENCIA DE PUBLICIDADE', which holds ~998 brand keys). The brand has to be parsed from the product name and its contact found separately (Instagram or site). (4) Grau 2 registrations (sunscreens, alisantes) and non-electronic rows have DT_VENCIMENTO that is not notification+10y. The per-product ANVISA consult API returned 403, so the daily CSV snapshot is the rail (diff day over day). Channel finding: 58 contract manufacturers with >=100 new hair/skin notifications a year produce 30,1% of all notifications, and 185 with >=50 produce 52,0%."
+ },
+ "current_production_mix": {
+  "sample_n": 15,
+  "classification": {
+   "studio_shoot_with_human_model": 5,
+   "of_which_full_face": 2,
+   "of_which_hand_or_body_part_only": 3,
+   "product_only_studio_or_3D_render": 8,
+   "already_AI_generated_likely": 2,
+   "UGC_influencer": 0,
+   "low_budget_phone": 0,
+   "caveat": "Brand-owned web pages only; Instagram (where UGC and influencer launches live) returned 401 require_login. AI use is a visual judgement, UNVERIFIED. The sample skews to larger e-commerce brands."
+  },
+  "examples": [
+   {
+    "brand": "Inoar",
+    "launch": "Baccarah Blue / Latifah (notified Dec 2025)",
+    "what_they_used": "product in rendered Arabian-night scene, no human: CGI or likely AI",
+    "url": "https://www.inoar.com.br/beleza-arabe-e-alta-performance-inoar-apresenta-as-linhas-latifah-e-baccarah-blue"
+   },
+   {
+    "brand": "Inoar",
+    "launch": "Korea Repair (notified May 2026)",
+    "what_they_used": "styled product-only photo on bathroom counter",
+    "url": "https://www.inoar.com.br/korea-repair-o-ritual-coreano-que-transforma-o-cuidado-dos-cabelos"
+   },
+   {
+    "brand": "Felps",
+    "launch": "Máscara Quiabo XBTX (images dated Aug 2025)",
+    "what_they_used": "white packshot front/back",
+    "url": "https://www.felps.com.br/mascara-redutora-quiabo-xbtx-antifrizz-felps-professional-300g"
+   },
+   {
+    "brand": "Nupill",
+    "launch": "Firmness Intensive Nano Hyaluronic (notified Apr 2026)",
+    "what_they_used": "packshot/render with carton on white",
+    "url": "https://www.nupill.com.br/creme-antirrugas-nupill-nano-hyaluronic"
+   },
+   {
+    "brand": "QOD",
+    "launch": "QOD Pro More Volume (notified Dec 2025)",
+    "what_they_used": "packshot plus typographic instructions card",
+    "url": "https://loja.qodcosmetics.com/qod-pro-more-volume-shampoo-300ml"
+   },
+   {
+    "brand": "Sallve",
+    "launch": "Máscara Renovadora Labial (published 5 Aug 2026)",
+    "what_they_used": "studio shoot with human models (lips, face, hand) plus packshot",
+    "url": "https://sallve.com.br/products/mascara-renovadora-labial"
+   },
+   {
+    "brand": "Sallve",
+    "launch": "Firmador Pró-Colágeno (published 6 Apr 2026)",
+    "what_they_used": "studio shoot with human model face, hand, texture swatch",
+    "url": "https://sallve.com.br/products/firmador-pro-colageno"
+   },
+   {
+    "brand": "Dermage",
+    "launch": "Photoage Water Gold FPS 50 (released 14 Aug 2026)",
+    "what_they_used": "packshot plus hand model in studio",
+    "url": "https://www.dermage.com.br/photoage-water-gold/p"
+   },
+   {
+    "brand": "Dermage",
+    "launch": "Clarité Mela Repair (released 26 Jun 2026)",
+    "what_they_used": "packshot plus hand model",
+    "url": "https://www.dermage.com.br/clarite-mela-repair/p"
+   },
+   {
+    "brand": "Dermage",
+    "launch": "Hidracare loção corporal (released 2 Jul 2026)",
+    "what_they_used": "packshot plus leg/hand with swatch",
+    "url": "https://www.dermage.com.br/hidracare-locao-hidratante-corporal/p"
+   },
+   {
+    "brand": "Hidrabene",
+    "launch": "K-sérum line PDRN / GHK-Cu / Harmonizador (published 12 Aug 2026)",
+    "what_they_used": "liquid-splash product scenes plus East-Asian model holding tube: looks AI-generated (UNVERIFIED)",
+    "url": "https://hidrabene.com.br/products/hidrabene-serum-facial-shot-pdrn"
+   },
+   {
+    "brand": "Amend",
+    "launch": "'Chegaram os lançamentos' banner, Aug 2026",
+    "what_they_used": "product-only 3D render on pedestals",
+    "url": "https://www.amend.com.br/ (image .26.Agosto/full_lancamentosv4.png)"
+   },
+   {
+    "brand": "Amend",
+    "launch": "Amend Science, Jun 2026",
+    "what_they_used": "product-only render",
+    "url": "https://www.amend.com.br/ (image .26.Junho/fullSCIENCE.png)"
+   },
+   {
+    "brand": "Principia",
+    "launch": "Lançamento CO-01 creme área dos olhos",
+    "what_they_used": "product-only CGI scene",
+    "url": "https://www.principiaskin.com/ (slide_desktop_CO_01.webp)"
+   },
+   {
+    "brand": "Principia",
+    "launch": "Lançamento PS-05 protetor solar com cor, 7 cores",
+    "what_they_used": "product-only studio photo plus shade swatches",
+    "url": "https://www.principiaskin.com/ (slide_desktop_protetor_solar_cores.webp)"
+   }
+  ]
+ },
+ "implication_for_plan": "(1) The plan's GTM line 'trigger-based outbound (new product…)' can be fully automated at R$0 from a statute-compelled daily file, with ~2,5 months' median lead before the product is on sale. It is the strongest element of the plan on the demand side. (2) The pool is real but narrow. ~300 (225-425) own-brand, EPP-or-larger, domestic hair/skin brands launch >=6 products a year, and ~2-4 campaign-sized windows per brand per year gives ~600-1.200 launch events a year. Hitting the target needs ~27-32 HERO-equivalents a year (R$160-190k gross), i.e. ~3-5% of launch events or ~10% of the brands buying once. The pool is 25-35x the revenue, so pool size is NOT the binding constraint (market-multiple passes); willingness to pay R$5.900 is. (3) Current production: 8/15 observed launches used only packshots or 3D renders; 5/15 used human models, and those were the two most premium DTC skincare brands (Sallve, Dermage). 2/15 already look AI-generated (Hidrabene Aug 2026, Inoar Baccarah). The market already buys professional product imagery, and mid-size brands have started generating it with AI, so the 'synthetic model scene' is a substitute for a cheap render at most brands and for a model shoot at only a few. (4) 73% of actively launching brands are made by contract manufacturers. The largest bundle 'Criação da Marca · Identidade Visual · Rótulo · Publicidade' (Pack For You) and 58 of them produce 30% of all notifications: a concentrated channel, and a partial free front door.",
+ "biggest_flaw": "The buyer the plan prices for (an established brand, 1-few approvers, R$5.900-9.900 without procurement) is the thin middle of a barbell. The volume end is micro and private-label: 73% of launching brands are made by contract manufacturers, and 37% of own-brand launchers declare ME porte, i.e. <=R$360k a year of revenue, where 2-3 launches x R$5.900 is 3-5% of total revenue. Their manufacturer already bundles visual identity and 'Publicidade'. The money end (Demais: Sallve, Dermage, Amend, Inoar, Principia) already runs studio model shoots, 3D renders or AI scenes with in-house teams or agencies. Nothing measured shows either end buying external 'campaign' production at R$5.900. The 10-100-SKU filter also mis-targets: established brands carry 100-600 notified products.",
+ "repair": "(a) Build the ANVISA diff as the prospecting engine. Daily download; keep electronic 'Notificado' hair/skin rows; drop names already notified by the same brand; parse the brand; join holder porte via publica.cnpj.ws; keep EPP/Demais own-brand holders plus known terceirista-made established brands; call in Portuguese within 14 days of notification, which is ~2 months before shelf. (b) Re-shape the offer to the measured cadence and budget. A per-line LAUNCH KIT for the EPP middle, sold per notification; HERO/FAMILY kept for the few that ask. (c) Add a channel leg that fits ORIGINATION ONCE: pitch the top 58 contract manufacturers (>=100 notifications a year each) to resell a white-label launch-visual kit to their private-label clients at the moment of notification, priced for micro-brands (R$1.500-2.500, UNVERIFIED willingness). One yes then brings a stream of launches. (d) Honest floor: US$0 if buyers will not pay; ~US$1.000-1.800/month at 1-2 HERO/month (R$5.900-11.800 gross less ~10% tax and ~R$1k tools). Cheapest next test, R$0, Portuguese calls: take the next 14 days of genuinely new notifications from EPP/Demais own-brand holders, call 20, and ask 'quem vai produzir as imagens/vídeo de lançamento de <produto> e qual o orçamento?'. Bar committed in advance: >=4/20 say external production with >=R$4.000 per launch, or else the HERO price point dies. In parallel call 10 contract manufacturers; bar >=2/10 agree to pilot a resale kit.",
+ "unverified": [
+  "Brand-key extraction precision ~85% (one 40-row check); the 1.420-brand figure inherits it.",
+  "Share of contract-manufacturer-made brands that are 'established' (10-25%) is an assumption, not measured; it drives ~half of the pool range.",
+  "CNPJ porte is self-declared and often stale (Suelym/Widi Care shows ME with R$20,6M capital; Mago ME with R$3,6M).",
+  "Re-notification share: 31,5% is an exact-name lower bound; the Sallve case suggests much higher for brands that switch manufacturers.",
+  "Lead-to-market from 18 pairs in 3 brands only (Sallve, Dermage, Hidrabene).",
+  "Production-mix classification from brand web pages only (Instagram 401); AI-generation of Hidrabene and Inoar Baccarah visuals is a visual judgement.",
+  "Hair/skin keyword classifier not audited row by row (DANA deodorant false positive seen).",
+  "Hair Brasil 2026 exhibitor list not obtained (hairbrasil.com.br redirects to a shop; /expositores 404; feirahairbrasil 502).",
+  "CNAE 2063-1/00 and 4646-0/01 counts by porte not obtained (Receita bulk hosts unreachable).",
+  "ABIHPEC to ANVISA match is fuzzy name matching, unaudited.",
+  "Nature of '+ BRIEFING AGENCIA DE PUBLICIDADE E REPRESENTACOES LTDA' (holder of ~12.057 active hair/skin products, ~998 brand keys) not investigated; possibly a regulatory/marketing bundler and therefore a competitor or channel.",
+  "Willingness to pay R$5.900 per launch: not measured by anything in this pass."
+ ]
+}

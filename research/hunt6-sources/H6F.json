@@ -1,0 +1,252 @@
+{
+ "agent": "H6F",
+ "capability_map": [
+  {
+   "capability": "Persistent identity lock: train one real (or invented) person once and reuse the face across every still and into video",
+   "since": "Soul ID help page dated 2026-08-01 (feature older); carries into Seedance as an Element",
+   "source_url": "https://higgsfield.ai/creator-hub/help-center/ai-models/how-do-i-create-and-use-a-soul-id-character",
+   "what_it_admits": "A licensed twin of a real working model built from 20–80 photos in minutes, reused for hundreds of catalogue/e-commerce images. Limits stated by the vendor: 'clearly the same person' not pixel-identical; identity NOT exportable (vendor lock-in); requires the person's permission. In 2024 one person could not hold a face across a catalogue cycle without a shoot."
+  },
+  {
+   "capability": "Multi-reference image generation/editing holding several people and products",
+   "since": "2025-11-20 (Nano Banana Pro)",
+   "source_url": "https://blog.google/technology/ai/nano-banana-pro/",
+   "what_it_admits": "'Up to 14 images… consistency and resemblance of up to 5 people' — a catalogue spread with a recurring cast and exact supplied packshots in one pass; group/family scenes."
+  },
+  {
+   "capability": "In-context editing that preserves supplied assets (image and video)",
+   "since": "2025-05-29 (FLUX.1 Kontext); 2025-07-25 (Runway Aleph)",
+   "source_url": "https://bfl.ai/announcements/flux-1-kontext",
+   "what_it_admits": "Restyle/relight/re-scene a real product or garment photo without regenerating it; swap people in existing footage (Aleph: https://runwayml.com/research/introducing-runway-aleph). Makes 'composite the real packshot, never generate the label' a workable QA rule."
+  },
+  {
+   "capability": "Multimodal reference video with native audio: many images + clips + audio in, 15–30 s multi-shot out",
+   "since": "2026-02-12 (Seedance 2.0: 9 img/3 video/3 audio); 2026-07-31 (Seedance 2.5: 30 s one-take, 30 img/10 video/10 audio refs); Veo 3.1 audio in Ingredients-to-Video 2025-10-15",
+   "source_url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+   "what_it_admits": "A single operator can make a 30-s catwalk/lookbook or reseller reel with a consistent licensed person, the exact product and voice, without a crew. Veo: https://blog.google/technology/ai/veo-updates-flow/ ; Kling 3.0 multi-shot (up to 6 cuts) + Elements — release-note date UNVERIFIED (JS page)."
+  },
+  {
+   "capability": "Garment virtual try-on as an API with explicit moderation control",
+   "since": "FASHN v1.6 docs (fetched 2026-09-25); Google Doppl 2025-06-26; Google Merchant Center auto opt-in apparel try-on",
+   "source_url": "https://docs.fashn.ai/api-reference/tryon-v1-6",
+   "what_it_admits": "Flat-lay/ghost photo → on-model image per SKU at ~US$0,10/credit; 'permissive' default ALLOWS swimwear/underwear (kills the 'lingerie gap' seed). Also means the buyer can self-serve: WearView US$29, VestiAI R$159,90/80 photos, Mercado Livre free 'Gerar fotos com IA'."
+  },
+  {
+   "capability": "Automatic dubbing with voice clone in 90+ languages",
+   "since": "ElevenLabs Dubbing v2 (page fetched 2026-09-25)",
+   "source_url": "https://elevenlabs.io/dubbing-studio",
+   "what_it_admits": "A licensed spokesperson/ambassador twin can speak localized offers (per city, per franchise unit) or other languages with lip-sync; also a self-serve front door (HeyGen US$29–149/month: https://www.heygen.com/pricing)."
+  },
+  {
+   "capability": "Agents that operate a browser / run a vendor's production recipe end to end",
+   "since": "2025-08-25 Claude in Chrome pilot (expanded Nov–Dec 2025); Higgsfield MCP workflows (HIGGSFIELD_FACTS.md)",
+   "source_url": "https://www.anthropic.com/news/claude-for-chrome",
+   "what_it_admits": "Batch production (brief → generate → auto-filter → QA checklist) runs unattended; her hours go to casting, selection and client calls. It is a COST-of-operating gain, not a right to charge: the same recipe is available to every in-house marketer (C4 still forbids her operating inside client systems)."
+  },
+  {
+   "capability": "Published done-for-you AI fashion production price in São Paulo (market capability, not a model)",
+   "since": "Estúdio Fábrica price page (archive 'maio 2025'; fetched 2026-09-25)",
+   "source_url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+   "what_it_admits": "The replacement-cost ceiling is now a price list: R$35 per 3 lookbook images, R$80–120/look with video, R$53 per AI persona, R$53 per campaign image, R$260 per 15–20 s video. Any AI-production candidate in her domain must price against it."
+  }
+ ],
+ "candidates": [
+  {
+   "name": "CICLO — the reseller-catalogue image desk for direct-sales beauty, lingerie and fashion brands (a sharper VBPH: same machine, buyer with a clock)",
+   "shape": "S5 production-on-a-consumption-clock (named as a deliberate sharpening of VBPH: the buyer is not a launching brand but a catalogue whose 'ciclo/campanha' forces the next order)",
+   "one_line": "Every 3–6 weeks a direct-sales company must publish a new revista/campanha for its resellers; Sol supplies the on-model/lifestyle layer (60–90 images + 4 reseller reels) with a recurring catalogue cast and composited real packshots, to the gráfica deadline, at ~R$4.500 per revista.",
+   "who_pays": "Marketing/catálogo heads of mid-size venda-direta companies (DeMillus, Abelha Rainha, Racco, Mahogany, Odorata, Hinode, Amakha Paris, Moments Paris, Mawwal, Avatim, Água de Cheiro, Skelt, Zyone, Crystallini, Hiroshima, Quatro Estações, Dicorpo, Sawary…). Not Natura/Avon/Boticário-group/L'Occitane/Granado (assumed in-house, UNVERIFIED).",
+   "observed_money": "CLEARING anchor (SP studio, published): AI campaign image R$53/image, 15–20 s video R$260, lookbook image R$11,67 (R$35/3) — Estúdio Fábrica. A 60-image + 4-reel pack at those rates = R$4.220. ASKING ceiling: SINAPRO-MS 2025 agency list — catalogue cover R$7.404,20, miolo ≤16 pp R$22.435,18, social post R$4.008,37, WhatsApp card R$4.461,72 (list warns >50% discounts occur). Per-revista imagery spend of any named company: UNVERIFIED.",
+   "money_url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+   "why_demand_repeats": "The ciclo is a CONSUMPTION CLOCK the buyer does not control after launch and cannot stretch: DeMillus published 9 revistas covering 19 campanhas in 2025 (Revendi listing); Jequiti cycle ~21 days (SECONDARY); Abelha Rainha 4 campanhas listed for 2026 so far (BR Catálogos). One yes = 6–17 orders a year without re-origination.",
+   "what_she_does_on_a_tuesday": "09:00 brief for Revista 19-01 arrives (product grid, supplied packshots, promo themes). 10:00 casts from the brand's 3 recurring catalogue faces (licensed twins or owned synthetic personas), runs batch generation via the Higgsfield/Nano Banana Pro recipe, composites the real packshots (labels never generated). 14:00 QA against the product truth sheet; 16:00 20-min video call with the catalogue coordinator to approve heroes; ships print-ready CMYK + 4 vertical reels. ~15–20 h per pack.",
+   "tool_vendor_front_door": "OPEN: an in-house designer can run Higgsfield's product-photoshoot recipe at US$49/month, and Estúdio Fábrica already sells done-for-you at R$53/image. What she sells that the vendor does not: guaranteed volume on a print deadline every ciclo, casting continuity across ciclos (same faces, same light), print-resolution compositing (the vendor's own recipe says it cannot verify tiny text or full-res sharpness), and a no-invented-efficacy claim check (CONAR 2026 makes advertiser and agency jointly liable for AI content — SECONDARY).",
+   "treadmill_verdict": "BETTER for 12–24 months (each release cuts her cost per revista), then drifts OBSOLETE wherever the buyer has an in-house designer who learns the recipe. Durable only where volume × deadline × continuity is the product, not the pixels.",
+   "first_20_calls": "DeMillus, Abelha Rainha, Racco, Mahogany, Odorata, Hinode, Jequiti, Amakha Paris, Moments Paris, Mawwal, Avatim, Água de Cheiro, Skelt, Farmasi (BR), Zyone, Crystallini, Hiroshima, Quatro Estações, Dicorpo, Sawary — ask for the gerente de marketing / coordenação de catálogo (names from ABEVD member list, Revendi and BR Catálogos).",
+   "pool_estimate": "≈R$810.000/yr (hypothesis, two of three multipliers partly verified)",
+   "pool_derivation": "~20 addressable mid-size catalogue brands (≈33 beauty/fashion catalogue brands across Revendi 29 + ABEVD 22 + BR Catálogos, minus in-house giants — UNVERIFIED who is in-house) × 9 revistas/yr (DeMillus verified; others 4–17 UNVERIFIED) × R$4.500/pack (Fábrica-rate bill of materials R$4.220).",
+   "pool_div4_vs_bar": "R$810k ÷ 4 = R$202k/yr vs bar ≈R$160–200k/yr gross (net R$10.500–13.000/mo at ~14% tax + ~8% tools) — PASSES AT THE EDGE. Needs 4–5 clients at DeMillus cadence (R$40.500/client/yr) or 2–3 at a 17-ciclo cadence. Hours: 3–3,75 packs/month × ~18 h + 15 h sales/admin = 69–83 h of 87.",
+   "revealed_preferences_traded": "Keeps ORIGINATION ONCE (the ciclo re-orders by itself) and the machine makes the unit; trades MACHINE-TEST limb 3 — she holds 2–5 marketing-team relationships and a proof call per revista. Compensated by a hard consumption clock, beauty/lingerie/fashion domain, and a sale made by Portuguese calls.",
+   "biggest_flaw": "Unknown whether mid-size catalogue brands buy imagery outside (in-house studios are plausible) and at what per-revista price; and cosmetic labels/lingerie lace are exactly where generation fails at print resolution.",
+   "repair": "(1) Sell only the MODEL/LIFESTYLE layer — the costliest part of a revista — and leave packshots and page layout to the in-house team, so she is additive not a replacement. (2) Hard rule: labels are always composited from the brand's supplied packshots, never generated; lingerie lace/prints are try-on-from-real-garment (FASHN permissive) with a human QA pass. (3) Price per revista, invoiced, no retainer, so a lost ciclo costs nothing to either side.",
+   "honest_floor_usd_month": "500–1.300 (1–2 clients at 9–17 revistas/yr in 12–18 months)",
+   "next_test": "(a) R$0 desk test this week: pull the last 3 revistas of 10 catalogue brands from Revendi/BR Catálogos and count on-model/lifestyle images and distinct faces per revista. (b) Then 20 Portuguese calls to the list above asking who produces the revista imagery, how many images per ciclo, and what one revista's model layer costs today; offer a paid pilot of one revista.",
+   "bar": "(a) median ≥40 on-model/lifestyle images per revista in ≥6 of 10 brands (else the unit is too small to matter). (b) ≥5 of 20 calls name a supplier and a per-revista spend ≥R$5.000, AND ≥2 accept a paid pilot at ≥R$3.500 within 45 days. Below either bar: kill.",
+   "confidence": "medium-low",
+   "unverified": [
+    "per-revista imagery spend of any named company",
+    "which catalogue brands produce imagery in-house",
+    "cadence for brands other than DeMillus (Jequiti 21-day cycle is secondary)",
+    "images per revista (desk test pending)",
+    "CONAR 2026 AI clause read only via secondary summaries"
+   ],
+   "sources": [
+    "https://www.revendi.app/catalogos",
+    "https://www.revendi.app/catalogos/demillus",
+    "https://www.abevd.org.br/empresas-associadas/",
+    "https://brcatalogos.com.br/abelha-rainha",
+    "https://www.estudiofabrica.com.br/servicos-e-precos/",
+    "https://static.poder360.com.br/2026/06/011-anexo-III-Sinapro-Lista-de-Custos-Referenciais-2025.pdf",
+    "https://docs.fashn.ai/api-reference/tryon-v1-6"
+   ]
+  },
+  {
+   "name": "GÊMEO LICENCIADO — the twin department for São Paulo model agencies (licensed real-model twins booked by brands)",
+   "shape": "S6+S5 hybrid: matches a consented real face (talent side) to a brand booking, then a machine makes the unit",
+   "one_line": "Sol builds and operates LGPD-consented, contract-cleared digital twins of working-level agency models, so a brand can 'book' a real, cleared face for an e-commerce/catalogue set without a shoot day; the model and agency are paid the usage fee, Sol invoices production and twin management.",
+   "who_pays": "Brands (e-commerce/catalogue buyers) pay the model/agency usage fee directly (pass-through, off her books) and pay Sol production (~R$2.900 at Fábrica rates) + twin management/clearance (~R$500) per digital booking. Agencies are the channel and co-sellers.",
+   "observed_money": "Talent side: signed SATED-SP/SIAESP CCT 2026–27 pisos per 8 h diária — internet video protagonist R$600, TV/streaming protagonist R$1.438,14 (actors; models' own CCT still in negotiation). Standard SP e-commerce booking licenses 'direito de imagem de 1 ano' (Job for Model). Synthetic alternative priced at R$53 per AI persona (Estúdio Fábrica). H&M pays twin usage 'exactly the same' as a normal job (CNN, SECONDARY). Terra's '30% diária / 70% usage' split is SECONDARY/UNVERIFIED.",
+   "money_url": "https://satedsp.org.br/wp-content/uploads/2025/12/CCT-SATED-SP-E-SIAESP-2026-2027.pdf",
+   "why_demand_repeats": "Per-booking, not per-subscription: a brand that likes a twin books it again each collection; each agency that adopts the department feeds bookings without her originating every one. Unproven in Brazil.",
+   "what_she_does_on_a_tuesday": "Morning: onboards a new model — capture spec (20–80 photos per Soul ID guidance, shot by the agency or the model), LGPD art. 11 specific consent + AI-derivative image licence (her template), trains the twin, runs a 12-image fidelity check the model approves. Afternoon: produces a booking (40 stills + 3 short films) for a brand, sends proofs to the booker. 17:00 30-min call with an agency director she has not yet signed.",
+   "tool_vendor_front_door": "PARTLY CLOSED — the one input no tool vendor sells: a real person's consent. Higgsfield itself requires permission; a synthetic face costs R$53 (Fábrica) or nothing. But a brand could recruit a model and train Soul ID itself in 5 minutes; what it cannot cheaply get is agency-sanctioned AI-derivative terms, LGPD biometric consent on file, and a face whose image rights are cleared. Legal exposure she sells against: CC art. 20 + STJ Súmula 403 (indemnity for unauthorized commercial image use 'independe de prova do prejuízo').",
+   "treadmill_verdict": "BETTER: every release improves twin fidelity and cuts production cost; the right to charge sits in consent contracts, which no model release supplies. Risk is not the treadmill but SUPPLY ABUNDANCE (thousands of models; any agency can do it — Joy announced 'Joy IA' in Apr 2025).",
+   "first_20_calls": "Agencies: Joy Management (JOY ID dept, Fernando Herbert — the Joy IA coordinator), Way Model Management, Mega Models, Ford Models Brasil, Elite Brasil, Bossa; Job for Model (SP booking marketplace); Manager Fashion (the SaaS that powers Joy's site — one partnership reaches many agencies); remaining ~12 SP agencies to be listed by hand (models.com returns 403 here) plus 4–6 brands that book the same e-commerce face every collection.",
+   "pool_estimate": "≈R$816.000/yr — HYPOTHESIS (three stacked unverified multipliers), not a number",
+   "pool_derivation": "10 partner agencies × 2 twin bookings/month × R$3.400 to Sol × 12. Agencies' convertible booking volume, conversion to twin, and brand willingness to pay a real-face premium over a R$53 synthetic persona are all UNVERIFIED.",
+   "pool_div4_vs_bar": "R$816k ÷ 4 = R$204k/yr vs bar ≈R$160–200k — passes only if 10 agencies each feed 2 bookings/month; needs 4–5 bookings/month total.",
+   "revealed_preferences_traded": "Trades BOTH: origination is partly per booking and the business holds three-way relationships (model, agency, brand). Compensates with the strongest C8 fit in the lens (her talent-side grind knowledge: usage terms, agency norms, how a set runs) and the only input in the hunt the tool vendor cannot sell.",
+   "biggest_flaw": "Demand is unproven in Brazil: a brand can get a free synthetic face, and Joy's announced platform is not visible on its site 17 months later (a first mover that apparently stalled).",
+   "repair": "Sell the twin as the agencies' DEFENSIVE product (it keeps the 20% commission alive as shoot days shrink) and as a Súmula-403 clearance for brands, not as cheaper content. Start with brands that already book the same face every collection (continuity is the demand), price the model's usage like a normal job (H&M norm), and keep her fee to production + management so the agency's economics improve. Use Manager Fashion as a distribution partner rather than calling agencies one by one.",
+   "honest_floor_usd_month": "0–700",
+   "next_test": "20 Portuguese calls (list above): 'In 2026, has any client asked to use a model's image with AI, or asked for AI lookbooks with a real model? Would you pilot one twin with one consenting model and one existing client, usage paid as a normal booking?'",
+   "bar": "≥3 of 20 report at least one 2026 client request for AI/twin use of a real model, AND ≥2 agree to a co-funded pilot (one model, one brand booking) within 60 days. Fewer than 3 reported requests ⇒ kill: the demand does not exist yet.",
+   "confidence": "low",
+   "unverified": [
+    "brand demand for real-model twins in Brazil",
+    "status of Joy IA (announced Apr 2025; not visible on joymgmt.com Sep 2026)",
+    "model usage-fee levels for e-commerce twins",
+    "number of SP agencies and their booking volumes",
+    "CONAR 2026 AI section (secondary)",
+    "whether models' CCT (still in negotiation) will add a synthetic-artist levy — the SATED demand exists but was absent from the signed 2026–27 audiovisual CCT"
+   ],
+   "sources": [
+    "https://hmgroup.com/news/hm-continues-its-exploration-of-creativity-with-ai/",
+    "https://www.terra.com.br/vida-e-estilo/autocuidado/moda/agencia-brasileira-transformara-com-ia-modelos-reais-em-avatares,4a4c717295414fa32f03764ddfc80c6bqu3cj4gu.html",
+    "https://www.joymgmt.com/",
+    "https://managerfashion.com/pt",
+    "https://jobformodel.com/job_examples",
+    "https://satedsp.org.br/wp-content/uploads/2024/10/Pauta-Reivindicatoria-de-Artistas-em-PUBLICIDADE-exclusiva-ao-SIAESP_vf.pdf",
+    "https://satedsp.org.br/wp-content/uploads/2025/12/CCT-SATED-SP-E-SIAESP-2026-2027.pdf",
+    "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+    "https://www.tjdft.jus.br/consultas/jurisprudencia/jurisprudencia-em-temas/dano-moral-no-tjdft/midia/uso-indevido-da-imagem-de-menor/hipoteses-de-nao-cabimento",
+    "https://higgsfield.ai/creator-hub/help-center/ai-models/how-do-i-create-and-use-a-soul-id-character",
+    "https://www.estudiofabrica.com.br/servicos-e-precos/"
+   ]
+  },
+  {
+   "name": "COLEÇÃO DE REPRESENTANTE — per-collection digital lookbook + catwalk clips for trade-fair and rep-sold fashion labels (the wholesaler seed, tested)",
+   "shape": "S5 per-collection production (seasonal clock); sharper buyer than Bom Retiro walk-in wholesale: labels that sell to multimarcas through reps and trade fairs, where 'the lojista buys from the catálogo'",
+   "one_line": "From the label's flat/ghost photos of its pilot pieces, Sol delivers the collection on a consistent house model (stills + 11-s catwalk clip per look) and a line sheet reps can sell from — R$3.200 per 40 looks, ahead of Minas Trend / showroom season.",
+   "who_pays": "Owners/commercial directors of fashion labels exhibiting at Minas Trend (>150 exhibitors/edition), labels recruiting sales reps (Santa Têxtil listings), and Bom Retiro/Brás/Goiânia/Fortaleza wholesale labels.",
+   "observed_money": "Estúdio Fábrica (SP): AI lookbook + basic video ≤11 s R$80/look; + poses/angles ≤15 s R$120/look; AI lookbook R$35/3 images; physical half-day R$1.250 for ≤40 looks (model fee extra), catwalk video R$35. Self-serve: VestiAI R$159,90/80 photos (R$2/photo), Vitriny from R$3,68/image, WearView US$29/month, Mercado Livre free AI photos.",
+   "money_url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+   "why_demand_repeats": "Seasonal clock: every label launches ≥2 collections/yr (Minas Trend runs two editions; MT36 is 20–22 Oct 2026); wholesale labels in Brás/Bom Retiro drop far more often. Origination once per label, then per collection.",
+   "what_she_does_on_a_tuesday": "Receives 40 flat-lay photos by WeTransfer from a Goiânia label; generates the looks on the label's house model with try-on-from-real-garment, renders 11-s catwalk clips (her runway eye on the walk), QA prints/drape against the flat photos, exports a line sheet PDF; calls 6 Minas Trend exhibitors.",
+   "tool_vendor_front_door": "FULLY OPEN: Higgsfield Fashion Factory (one item + one character → photoset) in the US$49 plan, VestiAI R$2/photo with Brazilian models and PT-BR WhatsApp support, Mercado Livre's free 'Gerar fotos com IA' (the marketplace earns on the flow and gives production away), and a SP studio already selling done-for-you AI at R$35–120/look. She sells only turnaround, the walk, and taste.",
+   "treadmill_verdict": "OBSOLETE: every release moves self-serve quality toward done-for-you quality; the price ceiling (R$80/look) is already published and falling.",
+   "first_20_calls": "Minas Trend 33 womenswear exhibitors: Ateliê Ana Ribeiro, Conceito Alagoas, Fabiana Milazzo, Fernanda Buzo, Glória Morais, Janine Passini, Juliana Manzini, Lia Rabello, Moni, Neusa Faria, Pauzzi, Plié, Pontos e Contos, Premier, Raquel de Queiroz, Severa Fitness, Victoria, Bixugrillo, Cleo Schanen, Da Isadora (Instagram handles in the FIEMG PDF) — plus rep-recruiting labels from Santa Têxtil (Lady Lella, Mimos Confecções).",
+   "pool_estimate": "≈R$2,9M/yr",
+   "pool_derivation": "~450 reachable labels (≈150 Minas Trend exhibitors, primary + ~300 Bom Retiro/Brás/rep-recruiting labels, UNVERIFIED) × 2 collections/yr × R$3.200 (40 looks × R$80, the published SP done-for-you price).",
+   "pool_div4_vs_bar": "R$2,9M ÷ 4 = R$720k/yr ≫ bar ≈R$160–200k — pool passes; the business fails on margin, not market. Needs 4–5 collections/month (170–210 looks) at ≤12 min/look to fit 87 h.",
+   "revealed_preferences_traded": "Mostly keeps both: machine makes the unit, buyer verifies with own eyes, per-collection re-orders. Trades a small relationship per label. Domain: fashion + runway (C8 core).",
+   "biggest_flaw": "A commodity with a published ceiling (R$80/look) and a R$2/photo self-serve floor; garment fidelity (drape, print scale) is where AI still misleads a B2B buyer, and a lojista who receives something unlike the image returns it.",
+   "repair": "Sell the one thing a self-serve tool does not: timing and the walk — a 'coleção pronta para o salão' delivered 10 days before Minas Trend / showroom week, with catwalk clips directed by someone who walked runways, and a fidelity guarantee (re-render free if a rep reports a mismatch). Target labels whose buyers are 1.000 km away (multimarcas that cannot see the mostruário).",
+   "honest_floor_usd_month": "300–900",
+   "next_test": "Before MT36 (20–22 Oct 2026): 20 Portuguese calls to the list offering 40 looks + 40 catwalk clips for R$3.200 delivered in 7 days; time the first real order end to end.",
+   "bar": "≥3 paid orders from 20 calls within 30 days AND measured production ≤12 min/look on the first order. Miss either ⇒ drop; it is a commodity she cannot win on price.",
+   "confidence": "low",
+   "unverified": [
+    "~300 non-Minas-Trend reachable labels",
+    "collections per year per label",
+    "whether labels pay above VestiAI self-serve for done-for-you",
+    "Bom Retiro ~1.200 and Brás 15.000 counts are secondary"
+   ],
+   "sources": [
+    "https://www.estudiofabrica.com.br/servicos-e-precos/",
+    "https://www.vestiai.com.br/",
+    "https://www.vitrinyai.com.br/",
+    "https://www.wearview.co/pt/pricing",
+    "https://vendedores.mercadolivre.com.br/nota/editor-de-fotos-uma-ferramenta-para-melhorar-seus-anuncios",
+    "https://www.fiemg.com.br/minas-trend/",
+    "https://www.fiemg.com.br/wp-content/uploads/2025/04/Expositores-MinasTrend-33.pdf",
+    "https://santatextil.com.br/representantes/contrata-se",
+    "https://conteudo.audaces.com/audaces-3d"
+   ]
+  },
+  {
+   "name": "REDE — monthly localized spokesperson content for beauty-service franchise networks, paid from the fundo de propaganda",
+   "shape": "Wholesale-escape shape: the franchisor supplies domain, fund and the 'yes'; a licensed ambassador twin + voice clone produce per-unit localized videos/posts every month",
+   "one_line": "For a laser/estética/sobrancelha franchise network, Sol turns the franchisor's monthly offer sheet into 4 short videos + 8 posts PER UNIT in which the network's licensed ambassador names that unit's city, shopping and price — ~R$180/unit/month.",
+   "who_pays": "Franchisor marketing managers, out of the franchisees' marketing fund (fundo de propaganda, reported ~2% of gross — UNVERIFIED at primary).",
+   "observed_money": "UNVERIFIED at primary for the fund. ASKING anchors: SINAPRO-MS list short social video R$5.690,96, post R$4.008,37 (agency list; >50% discounts common). Front-door price: HeyGen Creator US$29/month, Pro from US$49, Business US$149 + US$20/seat.",
+   "money_url": "https://www.heygen.com/pricing",
+   "why_demand_repeats": "Monthly promotions per unit; one franchisor yes brings N units (origination once, flow per unit).",
+   "what_she_does_on_a_tuesday": "First Tuesday of the month: receives the offer sheet (unit, city, price), runs templated generation with the licensed ambassador twin + voice clone for every unit, QA-samples 10%, uploads to the franchisor's drive; 30-min call with the marketing manager on next month's offer.",
+   "tool_vendor_front_door": "OPEN: HeyGen personalized avatar video with n8n/Make/Zapier integrations, Canva templates shared by franchisors. What she sells: the licensed ambassador (consent + contract), monthly operation, and casting/taste; not the capability.",
+   "treadmill_verdict": "OBSOLETE-leaning: per-unit personalization is a feature every avatar vendor ships; a franchisor marketing team can run it after one setup.",
+   "first_20_calls": "Maislaser, Onodera, Espaçolaser, Sóbrancelhas, Depyl Action, Lumini Estética, B'Laser/Cicatriclin, Pello Menos, Liso Laser, Ice Laser + 10 more from the ABF beauty-segment directory (names beyond the first seven UNVERIFIED).",
+   "pool_estimate": "≈R$5,2M/yr — HYPOTHESIS (three stacked unverified multipliers)",
+   "pool_derivation": "40 addressable beauty-service networks × 60 units × R$180/unit/month × 12. ABF: Saúde, Beleza e Bem-Estar revenue R$52,7 bn YTD 3Q25 (primary) but that segment includes pharmacies and gyms; network count for beauty services and the fund % are UNVERIFIED. (Caught: a search summary attributed 3.297 networks/202k units to this segment; those are ALL-franchising totals.)",
+   "pool_div4_vs_bar": "R$5,2M ÷ 4 = R$1,3M/yr vs bar ≈R$160–200k — passes on paper; needs 75–93 units ≈ 2–3 networks.",
+   "revealed_preferences_traded": "Keeps origination once (one franchisor = many units, monthly) and the machine; trades one relationship per network. Domain: aesthetics/beauty services (C8-adjacent). Uses her talent-side knowledge for the ambassador licence.",
+   "biggest_flaw": "No primary evidence that franchisors pay a third party for per-unit localized content, and the capability is a self-serve feature; CFM/aesthetics advertising limits may bind for medical-aesthetic networks.",
+   "repair": "Target networks WITHOUT an in-house video team and sell a licensed ambassador twin (not a stock avatar) — 'your face of the brand in every unit, every month' — priced per unit so the franchisor passes it through the fund; exclude medical networks.",
+   "honest_floor_usd_month": "0–900",
+   "next_test": "20 Portuguese calls to franchise marketing managers: do franchisees ask for localized monthly content, who makes it now, does the fund pay outside suppliers?",
+   "bar": "≥4 of 20 confirm franchisee demand AND that the fund pays third parties; ≥1 pilot at ≥R$1.800/month for 10 units within 45 days. Otherwise kill.",
+   "confidence": "low",
+   "unverified": [
+    "fundo de propaganda % (2% only in search snippets)",
+    "number of beauty-service networks with ≥30 units",
+    "whether franchisors outsource per-unit content",
+    "advertising limits for estética networks"
+   ],
+   "sources": [
+    "https://abf.com.br/mercado-de-franquias-supera-os-r-300-bilhoes-em-2025-e-impulsiona-o-crescimento-da-economia-brasileira/",
+    "https://www.abf.com.br/wp-content/uploads/2025/12/Desempenho_Franchising_3Tri_2025.pdf",
+    "https://www.heygen.com/pricing",
+    "https://elevenlabs.io/dubbing-studio",
+    "https://franquia.maislaser.com.br/",
+    "https://www.portaldofranchising.com.br/noticias/lumini-estetica-chega-ao-franchising/",
+    "https://static.poder360.com.br/2026/06/011-anexo-III-Sinapro-Lista-de-Custos-Referenciais-2025.pdf"
+   ]
+  },
+  {
+   "name": "DESDOBRA — retail-partner and retail-media adaptation desk for beauty brands and their agencies (the seed, tested)",
+   "shape": "S5 throughput sold wholesale (to agencies) or direct (to brand trade-marketing)",
+   "one_line": "Take a beauty brand's approved key visual + packshots and adapt it, asset-preserving, into every retailer/marketplace/retail-media spec for a launch (~25 formats) in 48 h, ~R$3.000 per launch kit.",
+   "who_pays": "Trade-marketing/e-commerce managers of beauty brands selling through Época, Beleza na Web, Sephora BR and marketplaces; or the brand's ad agency as white-label throughput.",
+   "observed_money": "ASKING only: SINAPRO-MS 2025 list — adaptation R$1.712,22/format, replication to other vehicles R$502,85/format, 'adaptações… 50% do valor original'; the list itself warns >50% discounts occur ⇒ clearing ≤R$251/format (UNVERIFIED). No observed clearing listing found.",
+   "money_url": "https://static.poder360.com.br/2026/06/011-anexo-III-Sinapro-Lista-de-Custos-Referenciais-2025.pdf",
+   "why_demand_repeats": "Every launch and every retail promotion calendar; one agency or brand yes repeats per launch.",
+   "what_she_does_on_a_tuesday": "Receives a KV, packshots and a retailer spec list; runs the brand-asset-preserving recipe into 25 formats; checks logos/claims/text by eye; delivers a zipped kit by 18:00.",
+   "tool_vendor_front_door": "OPEN and the weakest point: Higgsfield's brand-asset-creation workflow 'preserves supplied official assets exactly'; Canva Magic Resize (Canva page 403 here; R$290/yr per secondary); Mercado Livre generates listing photos free; Amazon Ads gives video/image generators free (video not listed for Brazil as of Nov 2025).",
+   "treadmill_verdict": "OBSOLETE: resizing/adaptation is the first thing every design tool automates.",
+   "first_20_calls": "Beauty brands with brand pages on Época Cosméticos / Beleza na Web and SP beauty-specialist agencies — list NOT built (UNVERIFIED); would be assembled from retailer brand indexes.",
+   "pool_estimate": "≈R$1,08M/yr — HYPOTHESIS",
+   "pool_derivation": "30 accounts × 1 launch kit/month × R$3.000 × 12; account count and clearing price UNVERIFIED.",
+   "pool_div4_vs_bar": "R$1,08M ÷ 4 = R$270k/yr vs bar ≈R$160–200k — passes on paper; needs 4,5–5,5 kits/month.",
+   "revealed_preferences_traded": "Keeps the machine and origination-once-per-agency; weak C8 fit (generic design throughput).",
+   "biggest_flaw": "No margin on a task every tool automates; the observed price is an agency LIST price, not a clearing price.",
+   "repair": "Only survives bundled into CICLO (the reseller-kit formats) or as a line item inside another engagement; do not sell standalone.",
+   "honest_floor_usd_month": "200–600",
+   "next_test": "10 calls to beauty trade-marketing managers: what do you pay per adapted format today, and to whom?",
+   "bar": "≥3 of 10 name a current supplier price ≥R$150/format; else fold into CICLO and stop.",
+   "confidence": "very low",
+   "unverified": [
+    "clearing price per format",
+    "account count",
+    "Canva BR price (secondary)",
+    "Amazon generator availability in Brazil"
+   ],
+   "sources": [
+    "https://static.poder360.com.br/2026/06/011-anexo-III-Sinapro-Lista-de-Custos-Referenciais-2025.pdf",
+    "https://vendedores.mercadolivre.com.br/nota/editor-de-fotos-uma-ferramenta-para-melhorar-seus-anuncios",
+    "https://advertising.amazon.com/resources/whats-new/video-generator-for-sponsored-brands-video-campaigns"
+   ]
+  }
+ ],
+ "notes": "RANKING: 1 CICLO (only candidate with a verified consumption clock and a published clearing anchor; pool÷4 passes at the edge), 2 GÊMEO LICENCIADO (the only input the tool vendor cannot sell — consent — but demand unproven), 3 COLEÇÃO (market exists, margin does not), 4 REDE, 5 DESDOBRA. KEY FINDING FOR THE WHOLE HUNT: a São Paulo studio (Estúdio Fábrica) PUBLISHES done-for-you AI fashion prices — R$11,67 per lookbook image, R$53 per campaign image, R$53 per AI persona, R$80–120 per look with video, R$260 per 15–20 s film. The replacement-cost ceiling is no longer an argument, it is a price list. At those rates VBPH's HERO bill of materials (1 KV + 8 stills + hero film + 3 cutdowns) costs ≈R$1.000–1.500, so R$5.900 is ~4–6× the published SP AI-studio price (caveat: Fábrica is e-commerce grade, not premium beauty). WHAT ONE PERSON COULD NOT DO IN 2024 AND CAN NOW: hold one real, consented face across hundreds of stills and 15–30 s multi-shot films with the exact product and a cloned voice (Soul ID; Nano Banana Pro 14 refs/5 people; Seedance 2.0/2.5 up to 30 image refs, 30 s one-take; ElevenLabs Dubbing v2), and run the whole brief→generate→QA loop through an agent. The flip side is identical for the buyer: all of it is self-serve at US$19–149/month, Mercado Livre gives listing photos away, and VestiAI sells Brazilian-model try-on at R$2/photo. So the only things with a price are consent (a real person), a clock (volume on a deadline), and a channel. REJECTED SEEDS: (a) SYNTHETIC CASTING HOUSE — dead at the observed price: 'Criação de modelo IA (persona): R$53' (Fábrica), free persona generators (WearView, Higgsfield AI Influencer), VestiAI 'Modelos brasileiros'. No labour-law moat either: SATED-SP demanded that casting an AI artist pay 100% of the cachê to its fund, but the SIGNED SATED/SIAESP CCT 2026–27 contains no AI clause (grepped). (b) 'ÍNTIMA' lingerie/swimwear gap — dead: FASHN's own docs set 'permissive' (swimwear/underwear allowed) as DEFAULT; the 'Botika NSFW filter' claim came only from competitor blogs. (c) Export localizer for Brazilian beauty exporters (SOTAQUE) — not pursued: dubbing is ElevenLabs/HeyGen self-serve and exporters' marketing sits with foreign distributors (untested). PROCESS CATCHES: a search summary attributed ABF's 3.297 networks / 202.444 units to the beauty segment — they are ALL-franchising totals (primary page). SINAPRO-MS prices are an agency LIST (asking), and the list itself concedes >50% discounts; Fábrica's are clearing prices — the spread is 20–75×. Terra's '70% of a cachê is usage rights' is secondary. LEGAL NOTES (not advice): twin training on face photos is biometric = sensitive data (LGPD art. 5 II; art. 11 I needs specific, highlighted consent); CC art. 20 + STJ Súmula 403 make unauthorized commercial image use indemnifiable without proof of damage — the tailwind for licensed twins and the risk for anyone training Soul ID on scraped faces; Higgsfield identities are not exportable (lock-in). PL 2338/2023 not verified as enacted. C3 FLAG: capture photos for twins must be shot by the agency, the model or a studio booked per job (vendor — grey area per brief). Blocked sources listed in out/H6F.md."
+}

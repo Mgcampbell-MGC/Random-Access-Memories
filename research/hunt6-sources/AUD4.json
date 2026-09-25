@@ -1,0 +1,95 @@
+{
+ "auditor": "AUD4",
+ "candidate": "O PLEITO",
+ "fees": [
+  {
+   "source": "Rogério Chebabi (customs lawyer), self-stated",
+   "fee": "R$4.500–5.500 fixed per pleito (2014) ≈ R$8.811–10.769 in 2026 reais (IPCA ×1,958, BCB SGS 433)",
+   "basis": "fixed, per pleito, not contingent; ~100 grants in 14 years ≈ 7/yr",
+   "url": "https://aduaneiroetributario.wordpress.com/2014/03/25/despachantes-e-advogados-podem-sim-formular-pleitos-de-ex-tarifario-e-cobrar-precos-fixos-por-isso-o-justo-come-ate-satisfazer-o-apetite-mas-os-impios-permanecem-famintos-proverbios-1325/",
+   "status": "VERIFIED at source (practitioner self-report, 12 years old)"
+  },
+  {
+   "source": "IPCA deflator",
+   "fee": "cumulative factor 1,958 Apr 2014–Aug 2026",
+   "basis": "used to restate the 2014 fixed fee",
+   "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados?formato=json&dataInicial=01/04/2014&dataFinal=31/08/2026",
+   "status": "VERIFIED"
+  },
+  {
+   "source": "Cone-Ex FAQ",
+   "fee": "amount not published",
+   "basis": "success only: 'cobramos pelo SUCESSO… você pagará somente após seu EX ser promulgado pela Resolução GECEX'; declines unviable pleitos at no charge",
+   "url": "https://cone-ex.com/faq.asp",
+   "status": "VERIFIED model, amount UNVERIFIED"
+  },
+  {
+   "source": "Agile Appraisers",
+   "fee": "'porcentagem da economia obtida', paid at publication (% not stated)",
+   "basis": "success % of duty saving",
+   "url": "https://agileappraisers.com/index.php/servicos/pleito-ex-tarifario.html",
+   "status": "UNVERIFIED — search snippet only; every page 404 on curl and WebFetch"
+  },
+  {
+   "source": "Engineering firms (per Chebabi's rebuttal of Interface Engenharia)",
+   "fee": "'percentuais de êxito escorchantes sobre o valor dos bens'",
+   "basis": "success % of MACHINE value",
+   "url": "https://aduaneiroetributario.wordpress.com/2014/03/25/despachantes-e-advogados-podem-sim-formular-pleitos-de-ex-tarifario-e-cobrar-precos-fixos-por-isso-o-justo-come-ate-satisfazer-o-apetite-mas-os-impios-permanecem-famintos-proverbios-1325/",
+   "status": "reported by a competitor, % UNVERIFIED"
+  },
+  {
+   "source": "buscadorextarifario.com.br blog",
+   "fee": "R$15–80 mil per pleito in consultoria; R$15–50 mil for an impugnação",
+   "basis": "unstated",
+   "url": "https://buscadorextarifario.com.br/blog/como-pesquisar-pleitos-indeferidos",
+   "status": "SECONDARY/SEO — UNVERIFIED, not used in the arithmetic"
+  },
+  {
+   "source": "FecomercioSP Ex-Tarifário",
+   "fee": "not published — 'calculamos o valor de acordo com a sua demanda'",
+   "basis": "bespoke",
+   "url": "https://representa.fecomercio.com.br/ex_tarifario",
+   "status": "VERIFIED (no price)"
+  },
+  {
+   "source": "PNCP public procurement",
+   "fee": "none — 0 editais/contratos/atas for ex-tarifário services",
+   "basis": "n/a",
+   "url": "https://pncp.gov.br/api/search/?q=ex-tarifario&tipos_documento=contrato",
+   "status": "VERIFIED null"
+  }
+ ],
+ "free_front_door": "PARTIAL, and stronger than H6G said. (1) THE STATE IS THE SELF-SERVE COUNTER. There is no government filing fee. MDIC publishes the FAQ, the criteria, the investment-project .docx model and a guided gov.br form (mandatory from 1 Oct 2026, pitched as 'serviço automatizado'), and Res. 512 art. 3 §1–2 lets any Brazilian company file, or name a representative. (2) THE SELLER FUNDS IT. Before Res. 512 the top filers of denied pleitos include the makers' own Brazilian arms (Canadian Solar 19, Chint 11, Trina 11, Huawei do Brasil 10, Schneider IT 5, SMA 5, Valmont 6), per MDIC's indeferidos file. Chebabi (2023) says resellers filed 'para facilitar suas vendas'. That is NO-MARGIN-ON-THE-FLOW: whoever earns margin on the machine pays for the Ex. Res. 512's investment project ended reseller-as-filer (Conjur), but the maker can still prepare the file with an end customer as the filer. The bundling rate today is UNVERIFIED; no maker copy offering it free was found. (3) FREE RIDER. Once granted, the Ex serves every importer, resale included (RFB solução de consulta). One pleito per machine family per two years satisfies a maker's whole customer base, which caps demand per channel partner. (4) H6G'S TWO DIFFERENTIATORS ARE ALREADY SOLD OR GIVEN AWAY. Pay-on-grant is Cone-Ex's published model ('você pagará somente após seu EX ser promulgado'), and Agile's too (snippet). The 'corpus of granted vs contested wordings' is free twice over: buscadorextarifario.com.br ('vigentes, revogados e indeferidos… monitore vencimentos — gratuito, sem cadastro') and MDIC's own public Power BI, which this audit queried for per-pleito outcomes. (5) CONTESTATION IS REAL AND MOSTLY LOST. In 2023, 26,4% of new pleitos were contested (1.053 of 3.989, by 168 firms), and 73% of decided contestations were upheld against the importer (191 of 261). The grant rate fell from 79,0% (2022 cohort) to 62,2–65,1% (2023–2025 cohorts) after Res. 512. Govt intent per the Res. 852 note is zero tariff as a 'porta estreita'. What survives is a paid market: FecomercioSP, FI Group, PwC, EY, Tradeworks, Conterv, Cone-Ex, Agile, Chebabi and ABIMEI's preferred firm all sell it. Buyers who pay are paying for accountability and contestation defence, not for drafting.",
+ "expert_veto": "LEGALLY CLEAR, COMMERCIALLY OPEN. Res. Gecex 512/2023 as compiled contains no engineer ART, no OAB signature and no sworn translation. Art. 3 §2 lets the filer 'constituir representante legal'. A customs lawyer with ~100 grants writes that 'qualquer cidadão pode formular este tipo de pleito… não é ato privativo de engenheiro'. So no credential she lacks is required. BUT the buyer carries a risk her pay-on-grant fee does not cover. A denial bars refiling for one year (art. 21); a contestation must be rebutted 'de maneira específica e detalhada' in 10 working days, on the machine's 'funções essenciais', or the pleito is archived; and after the grant, RFB can refuse the benefit at clearance if the machine does not match the wording (Cone-Ex FAQ). 36% of new pleitos in the 2023–2025 cohorts were archived or denied. Buyers therefore choose on track record, and incumbents sell with engineers ('Interface Engenharia': 'se fosse ele de graça, ainda assim estaria caro'). The client's plant engineer can supply the technical facts, so she does not have to be believed as an engineer. She does have to be trusted with the client's investment timeline, and a 26-year-old with zero grants has no evidence to offer on that. Speech is no longer the block (MDIC's 'dúvidas técnicas' calls are Portuguese); credibility on the first call is. Fix: renewals first, where by law the description is identical (art. 5-A §1 via Res. 760/2025) and the technical-judgement risk is lowest.",
+ "volume": {
+  "pleitos_per_year": "New concession pleitos by protocol year (MDIC 'Acompanhamento dos Processos', Consolidado): 2022 6.016 · 2023 4.644 · 2024 3.795 · 2025 5.248 · 2026 to 25 Sep 5.056 (≈6.900 annualised; surge after Res. 852/853). Published in consulta pública: 2023 3.989 · 2024 2.935 · 2025 2.747 · 2026 YTD 5.836. Renewal wave 2025: 5.632 filed. Stock in force: 8.076 Ex (26 Aug 2026). 4.781 of them expire Jun–Dec 2027, so the next renewal window opens from Dec 2026, inside her 12–18-month window.",
+  "grant_rate": "Deferimento ÷ protocols: 2022 79,0% · 2023 65,1% · 2024 62,2% · 2025 65,0% (cohort nearly closed) · 2025 renewals 68,0%. Arquivado 16–33%, indeferido 4–9%. Protocol→DOU on granted pleitos: median 90 days (2024 cohort), 199 days (2025 cohort), p90 263 days. 2023 contestations: 26,4% of new pleitos contested; 73% of decided contestations upheld against the pleiteante. Pre-512 history (older dashboard): 2019 3.065/3.823, 2021 4.652/6.087, 2022 5.033/6.005 granted/received.",
+  "source": "MDIC public Power BI reports, queried via the public querydata API: Acompanhamento dos Processos (key db40f502…, refreshed 2026-09-25), Consultas Públicas (key 337fca90…, 2026-09-24), Ex-Tarifários Vigentes (key a6a66832…, 2026-08-26), Concessão/Renovação (key ac358025…, stale 2023-05). Embeds on https://www.gov.br/mdic/pt-br/assuntos/sdic/ex-tarifario/acompanhamento-dos-processos, /consulta-publica, /estatisticas/ex-tarifarios-vigentes, /estatisticas/concessao-ou-renovacao-de-ex-tarifario. Decoded outputs in work/aud4/pbi_*.json."
+ },
+ "arithmetic": {
+  "pool": "Granted per year: 2.361–3.413 new, plus ≈1.900 renewals on a 2-year cycle. Fees: R$5.000–11.000 per new grant (2014 fixed fee restated to 2026, with a new-entrant discount at the low end); R$2.000–5.000 per renewal (UNVERIFIED). If 100% of pleitos were bought from a consultant, the national pool is R$15,6–47,0M/yr. The outsourced share is UNVERIFIED (makers, big importers and despachantes file in-house). At 30–60% outsourced the pool is ≈R$4,7–28,2M/yr. H6G's 'R$12–50M' is roughly right at 100% outsourced, and the outsourced share is the unmeasured multiplier.",
+  "pool_div4": "R$1,2–7,1M/yr. Her bar is R$158–196k/yr gross (R$10.500–13.000 net ÷ (1 − 15,5% tax − 5% COGS)) = 2–16% of pool÷4. Passes the market-multiple rule on paper. It fails the observed-reach check: see grants_needed.",
+  "grants_needed": "At R$10.000 per new grant: 16–20 grants/yr ⇒ 25–31 filings at a 64% grant rate. At R$6.000: 26–33 grants ⇒ 41–51 filings. Renewals only at R$3.000: 53–65 grants ⇒ 83–102 filings. Incumbent reach for comparison: Tradeworks ≈16 pleitos/yr (380 over 23+ yrs); Chebabi ≈7/yr (~100 in 14 yrs). Her requirement is at or above an established firm's run-rate, with zero track record. Cash lags work by 3–7 months (median 90–199 days to DOU), and ≈36% of new filings are never paid under pay-on-grant.",
+  "hours_per_pleito": "8–18 h (my estimate, UNVERIFIED): intake 1 · AI translation + QA 1–3 · TEC-style description and NCM 1–3 · investment project 1–2 · national-equivalence screen 1–2 · filing and MDIC exigências 1–3 · expected contestation rebuttal (26% × 4–8 h) 1–2 · client comms 1–2. At 25–51 filings/yr that is 17–77 h/month of delivery, plus ~15–20 h/month of Portuguese sales calls. It fits 87 h/month only at the R$10k fee level (≈37–67 h/month). At R$6k or renewals-only it breaks the hours cap."
+ },
+ "c8": "LIKELY TO FAIL ON PERSISTENCE. This is further from her world than A ESCRITURA, which she cut today with 'NOT IT'. Year three would be: industrial machine catalogues (chapters 84/85/90: CNC tools, inverters, lab gear), NCM codes, plural TEC-style descriptions, investment projects, and adversarial 10-working-day rebuttals against ABIMAQ-member manufacturers. That is the DOMAIN-DRIFT DIAGNOSIS again: compulsion and money here sit in industrial/regulatory work, exactly where GATELEDGER died with 'not her at all'. Her runway knowledge (what looks expensive, how a set runs, usage rights) contributes nothing. The candidate also trades away both revealed preferences: every unit is a new project (origination forever, softened only by the 2-year renewal clock), and her hands are on every dossier. Two things could make it tolerable, and neither makes it hers. (a) Tilt the book to machines that make things she cares about: cosmetics filling/packaging NCM 8422 (294 in force, 172 new), textile digital printing 8443 (265/100), apparel/textile/footwear machinery 8444–8453 (157 in force, ≈58 new grants a year nationally). The fashion slice alone is too thin: she would need 20–45% of it. (b) Run it as a time-boxed FUNDING EVENT on the 2027 renewal wave (4.781 Ex expiring Jun–Dec 2027) with a written stop date, per THE DEADLINE-HARVEST LAW, not as a three-year career. Ask her the year-three question before a single call.",
+ "refuted": true,
+ "verdict": "MARGINAL",
+ "strongest_version": "RENOVA 2027, the renewal-first maker-channel desk. 4.781 Ex in force expire Jun–Dec 2027, and each renewal window opens 180 days before expiry (Res. 512 art. 5). By law the renewal description must be IDENTICAL to the one in force (art. 5-A §1, Res. 760/2025), so the drafting risk and the expert-judgement exposure are at their lowest, and a late-2026 model does most of the work (translation, investment project on MDIC's model, document QA). Sell by Portuguese calls to whoever earns margin on the flow and loses sales if the Ex lapses: the Brazilian subsidiaries and distributors of foreign makers (ABIMEI associates such as DMG Mori, Trumpf, Mazak, Haitian, BLM, Tornos, Roland DG, plus cosmetics-packaging and textile-machinery reps). The maker recruits one importing customer as pleiteante (it needs its own investment project) and she produces the file. Price per granted renewal R$2.500–4.000, paid by the maker on DOU publication. The file is verifiable in the DOU, so the buyer never has to believe her. Then upsell new pleitos (R$6–10k per grant) to the same makers for new models, where the maker's engineer supplies the technical truth for any contestação. It is not pay-on-grant as a novelty (Cone-Ex already sells that). It sells capacity plus a renewal calendar, pulled free from MDIC's own Power BI, run across a maker's whole Ex portfolio. Run it as a 12-month funding event with a stop date unless she volunteers that she likes the work.",
+ "honest_floor_usd_month": "≈450 (range 450–900). Floor: 6 granted pleitos/yr at R$6.000, after 20,5% tax+COGS, at R$5,2/US$ ⇒ ≈US$460/month, with cash arriving 3–7 months after the work. Upside at 16–20 grants/yr at R$10k ⇒ the US$2.000–2.500 bar, but that is above an established incumbent's observed run-rate.",
+ "next_test": "STEP 0, R$0, one minute, run first: ask Sol whether she could be writing NCM descriptions of CNC machines and packaging lines, and rebutting national manufacturers alone, in year three. Anything short of an unprompted yes ⇒ STOP (C8), whatever the economics. STEP 1, R$0: pull the Jun–Dec 2027 expiries by NCM from MDIC's public Vigentes Power BI and map them to maker families. STEP 2, 20 Portuguese calls: 10 Brazilian subsidiaries or distributors of foreign makers holding 2027-expiring Ex (start with ABIMEI associates plus cosmetics-packaging and textile-machinery reps), 5 comex/despachante firms, 5 mid-size importers with 2025–26 pleitos. Ask three questions: who prepares your or your customers' pleitos and renewals today; what is paid (fixed / % / on grant, and how much); would you commission renewals of your 2027 Ex at R$3.000 per granted renewal, or new pleitos at R$8.000 per grant, payable on DOU publication.",
+ "bar": "PASS if ≥4 of 20 name a price they currently pay an outside party of ≥R$6.000 per new grant or ≥R$2.500 per renewal AND ≥2 name a specific renewal or pleito they would give her within 60 days on pay-on-grant terms. STOP if ≥10 of 20 say it is done in-house (maker HQ, own comex team or despachante, no separate charge), OR ≥8 already retain a named provider (Cone-Ex, Tradeworks, FI Group, FecomercioSP, Conterv, ABIMEI's firm). Also STOP at Step 0 on anything but an unprompted yes.",
+ "unverified": [
+  "Current per-pleito fee level: the only primary price is a 2014 fixed fee (R$4.500–5.500; ≈R$8,8–10,8k in 2026 reais); Cone-Ex's and Agile's success-fee amounts are unpublished",
+  "Agile Appraisers' '% da economia' model: search snippet only, pages 404",
+  "The 'R$15–80 mil' consultoria range: SEO/tool blog, unsourced",
+  "Renewal fee level (R$2.000–5.000 assumed)",
+  "Share of pleitos bought from outside consultants vs filed in-house by makers, importers or despachantes (the pool's key multiplier)",
+  "Whether foreign makers' Brazilian subsidiaries currently bundle pleito/renewal preparation free into the machine sale (no copy found either way)",
+  "Contestation rate after 2023: the MDIC contestation table covers 2023 only",
+  "Whether a third-party consultant can be the 'pessoa física responsável' on the new gov.br portal from 1 Oct 2026 (Res. 512 art. 3 §2 allows a representante legal in SEI)",
+  "Hours per pleito (8–18 h is the auditor's estimate)",
+  "Whether the 2027 renewal wave will be handled by a consolidated government 'migração' (Res. 823/2025 migrated 645–646 Ex without individual renewals), which would shrink the renewal market",
+  "Salary cost of an in-house comex analyst (the replacement-cost ceiling), not measured"
+ ]
+}

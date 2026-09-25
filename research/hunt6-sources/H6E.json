@@ -1,0 +1,357 @@
+{
+ "agent": "H6E",
+ "filters_reopened": [
+  {
+   "law": "THE ORIGINATION-BUDGET TEST (successor to THE NO-SALES-CALL TEST)",
+   "old_premise": "~10-15 spoken hours in year one = roughly 15-20 first conversations EVER; origination must stay 100% written, a call granted only after a prospect names a budget in writing.",
+   "what_it_now_permits": "For PORTUGUESE-speaking buyers the conversation budget becomes a share of her 87 h/month (e.g. 20-40 h/month of dialling and calls = a standing outbound operation). The binding question moves from 'which 15-20 conversations' to 'what close rate per 10 hours of calls'. English buyers: unchanged, still written-only.",
+   "file": "THE_RESCREEN_VERDICT.md; CLAUDE.md (THE ORIGINATION-BUDGET TEST); THE_C1_RESCREEN.md"
+  },
+  {
+   "law": "C1 residual clause - 'no daily phone-sales operation' (and its use in THE CONTENT-ECONOMY SELECTION BIAS against outbound AI voice agents)",
+   "old_premise": "C1 was retired except for a daily outbound phone-sales operation; an outbound AI voice agent was ruled out as exactly that operation.",
+   "what_it_now_permits": "Daily Portuguese cold calling by Sol. An outbound AI voice agent is a separate founder question (it is not 'Sol making calls'), but the Anatel constraint it was assumed to hit is weaker than thought: the 0303 telemarketing prefix was made FACULTATIVE by Anatel Acordao 201 of 14 Aug 2025 and call authentication is mandatory only above 500.000 calls/month (Anatel page modified 28/08/2026). A solo operation is nowhere near that.",
+   "file": "CLAUDE.md (C1 row; THE CONTENT-ECONOMY SELECTION BIAS); THE_AGENT_CONTENT_SCREEN.md"
+  },
+  {
+   "law": "THE WHATSAPP LAW - 'only escritorios de contabilidade are structurally written-only; every other Brazilian SME segment defaults to WhatsApp and a phone call, which breaks C1 at the moment it starts working'",
+   "old_premise": "Brazilian SME buyers (clinics, salons, studios, construtoras) were unreachable because their buying motion is spoken.",
+   "what_it_now_permits": "Every Brazilian SME segment is reachable by phone/WhatsApp voice. NOT reopened: THE R$1.200 CEILING (price) and the construction veto. Reachability was never the binding constraint once price is applied.",
+   "file": "THE_BRAZIL_BUYER.md; THE_COROA_KILL.md; CLAUDE.md"
+  },
+  {
+   "law": "THE MONITORING PINCER (sales-force-gated tier above ~US$300/month)",
+   "old_premise": "Self-serve monitoring clusters at US$0-100/month; above US$300 it is sold by a sales force, which she could not be.",
+   "what_it_now_permits": "She can be the sales force for Portuguese buyers, so the gated tier is open to her. Measured today: that tier in Brazil is occupied by funded incumbents with sales forces (Branddi '+300 marcas', Valinke, GoSmarter) - the pincer's upper blade is now OCCUPANCY, not speech.",
+   "file": "THE_WHOLESALE_ESCAPE.md; THE_GUARDA_CORRECTIONS.md; THE_RULEBREAKER_HUNT.md"
+  },
+  {
+   "law": "THE AGENCY SCISSORS - spoken blade",
+   "old_premise": "Wherever an introduction is worth something the order comes from a conversation, and C1 forbids it.",
+   "what_it_now_permits": "The spoken blade is gone for Brazilian principals/buyers. NOT reopened: THE MARGIN LAW (3-6% on goods), zero supply scarcity, THE R$1.200 CEILING, and the appointment/expertise claim for reps. S6 stays closed on arithmetic, not on speech.",
+   "file": "THE_AGENCY_SCISSORS.md; THE_AD_REP_INDUSTRY_EXISTS.md"
+  },
+  {
+   "law": "THE DISPUTE-IS-THE-PRODUCT LAW / THE GETNINJAS KILL",
+   "old_premise": "In pay-per-lead or success-fee models the recurring work is spoken arbitration of whether the lead was real; C1 failed at the moment revenue began.",
+   "what_it_now_permits": "Spoken dispute handling in Portuguese is permitted. NOT reopened: THE SELF-REPORTED-CONVERSION TRAP (a success fee on an outcome only the counterparty observes is uncollectable) - that is the kill that actually binds.",
+   "file": "CLAUDE.md; THE_COROA_KILL.md"
+  },
+  {
+   "law": "THE ONBOARDING LAW",
+   "old_premise": "Written-only survives selling but not being onboarded (reseller setup, risk review, partner kickoff are conversations).",
+   "what_it_now_permits": "Already softened 19 Aug / 3 Sep; now fully open for Portuguese onboarding - partner kickoffs, supplier cadastro calls, município/coop/brand onboarding by phone or video.",
+   "file": "CLAUDE.md; THE_WHOLESALE_ESCAPE.md"
+  },
+  {
+   "law": "THE POSTAL LIST LAW (phone-only half) / THE GATE-CONTACT ANTI-CORRELATION",
+   "old_premise": "Enumerable is not contactable; a phone-only register is a wall, not a buyer list.",
+   "what_it_now_permits": "Brazilian registers' phone columns become buyer lists: CNES phone 69,9-91,2% (archive measurement), CNPJ file landline ~97% in some CNAEs, CADASTUR, OCB coop directories. US/UK phone-only registers (NY Fashion Workers Act 75 agencies, DOL 5500) stay walls - English stays written.",
+   "file": "THE_POSTAL_LIST_LAW.md; THE_FEE_GATE_CENSUS.md; THE_FASHION_HUNT.md; GRAVEYARD.md (l.1994)"
+  },
+  {
+   "law": "THE STEADY-STATE KILL (N* = a/c; a one-time budget cannot fund churn replacement)",
+   "old_premise": "After capital runs out her only channels are cold email and one-to-few partners, producing single digits, so a subscription base decays to zero.",
+   "what_it_now_permits": "Outbound Portuguese calling is an acquisition channel paid in HOURS, not cash, so replacing 1-3 Brazilian B2B customers a month is feasible inside 87 h. Still binds: consumer subscriptions, cash-CAC channels, and any base needing more than ~3-4 new customers/month.",
+   "file": "THE_BRAZIL_SAAS_CLOSURE.md; CLAUDE.md"
+  },
+  {
+   "law": "W1 / '~30 partner relationships = a sales operation' (C9 second blade; funeral book; channel route)",
+   "old_premise": "Any channel business needing ~30 partners was a sales operation and therefore C1-fatal.",
+   "what_it_now_permits": "Recruiting 20-40 BRAZILIAN channel partners by phone is a bounded sales campaign. The channel route's other screens still apply (partner owns the moment of need, zero marginal minutes per order, free-front-door check).",
+   "file": "THE_FUNERAL_BOOK_TEST.md; THE_C8_KILL.md; CLAUDE.md (C9 IS A SECOND BLADE)"
+  },
+  {
+   "law": "THE ATTENTION TRILEMMA - ad-sales blade",
+   "old_premise": "Selling sponsorship is a negotiated relationship per sponsor (C1).",
+   "what_it_now_permits": "The C1 blade is gone for Portuguese sponsors, but C2 (no audience-building) still closes the trilemma. EFFECTIVELY NOT REOPENED.",
+   "file": "THE_ATTENTION_TRILEMMA.md"
+  },
+  {
+   "law": "ORIGINATION ONCE VS ORIGINATION FOREVER (founder's revealed preference, 12 Sep cut)",
+   "old_premise": "Candidates where she must fetch every unit of demand (A COTACAO, O MARTELO, A TERRA VISTA DE CIMA) were cut; the archive read this partly as a speech-avoidance preference.",
+   "what_it_now_permits": "Per the 25 Sep brief it is now a strong tie-breaker, not a gate: a Portuguese sales operation can carry 'origination forever' for Brazilian buyers. Candidates must say which preference they trade away and for what.",
+   "file": "LIVE_CANDIDATES.md; CLAUDE.md"
+  }
+ ],
+ "revived": [
+  {
+   "name": "A TERRA VISTA DE CIMA v2 - COFFEE/AGRO COOPERATIVE edition (member tenure print from SICAR polygon + Sentinel-2, ridden inside the coop's own member-relations run)",
+   "source_file": "THE_FIVE.md (#4); LIVE_CANDIDATES.md (shortlist cut 12 Sep)",
+   "sole_prior_cause": "Founder cut 12 Sep for ORIGINATION FOREVER ('must sign a cooperative for each print run') - no structural kill recorded; arithmetic short at one coop.",
+   "why_calls_fix_it": "The buyer is a coop's relationship/communications manager - a phone-native, relationship-sold institutional buyer. One call-driven signature per coop per year carries thousands of units; she speaks the farm's language (safra, talhao, cooperado) without bluffing.",
+   "value_per_unit": "R$8-15 per member per year (insert) x 1.000-5.000+ members = R$8-75k per coop-year; framed opt-in R$220-260 on R$58-96 COGS. Printi poster ladder from R$4,73/unit; framed quadro R$96,28 today.",
+   "domain_fit": "MEDIUM - farm/coffee upbringing, visual/aesthetic object; not beauty. WARNING: same SHAPE as A ESCRITURA (machine map print wholesaled via a channel), which the founder called 'NOT IT' today.",
+   "tool_landscape_effect": "BETTER: satellite composites, styling and layout are near-free in late 2026; the object and the coop's occasion are what is sold. Risk: coops employ 10,7 mil ATER staff and hold EUDR/CAR plot polygons, so a coop could self-supply the map (replacement-cost ceiling on the data, not on the ritual object).",
+   "rank": 1
+  },
+  {
+   "name": "GUARDA-BR - marketplace counterfeit + photo-theft takedown retainer for BRAZILIAN indie beauty/haircare/skincare brands (domestic variant, never tried)",
+   "source_file": "GUARDA_THE_BUSINESS.md; THE_GUARDA_ASSESSMENT.md; THE_GUARDA_CORRECTIONS.md; THE_RESCREEN_PARTIAL.md",
+   "sole_prior_cause": "Foreign-brand GUARDA: THE MONITORING PINCER (sales-gated tier) plus the Shopee automation ban. The domestic variant was never considered because Brazilian SME brands were 'phone/WhatsApp-native' (C1).",
+   "why_calls_fix_it": "A R$1.500+/month monitoring retainer in Brazil is bought after a call ('Falar com um especialista' is how the incumbents sell it); she can now make that call, and the list is the SAME indie beauty brand list VBPH would call - one origination, two products.",
+   "value_per_unit": "R$1.500-3.000 per brand per month (UNVERIFIED - no Brazilian incumbent publishes a price); 1-3 h/brand/month on Mercado Livre (BPP is free and admits a 'procurador'); Shopee must be hand-run (archive: §3.1 bans robots).",
+   "domain_fit": "STRONG - beauty brands, and the work is visual judgement (is this our photo / our product?).",
+   "tool_landscape_effect": "BETTER for production (AI vision match of a brand's own campaign images is near-free) but also lowers the brand's cost to self-serve via the free BPP portal - replacement-cost ceiling. Incumbents already sell 'IA + especialistas'.",
+   "rank": 2
+  },
+  {
+   "name": "CONFORMIDADE as a stop-dated PHONE HARVEST - RDC 1.002/2025 dental SDBPF pack, done-with-you, sold by calls before 11 Dec 2026",
+   "source_file": "THE_SCENARIO_B_BOARD.md (#1); THE_GUARDA_ASSESSMENT.md §2; LIVE_CANDIDATES.md (#6 CAMPAIGN)",
+   "sole_prior_cause": "Distribution: 60.000 dental establishments reachable only by written email probe (the 30+30 probe never ran); dentists are WhatsApp/phone-native. Price capped (not killed) by the R$97,90 template floor and a R$679 specialist kit.",
+   "why_calls_fix_it": "A dated statutory deadline is the easiest cold-call opener in Brazil ('your SDBPF is due 11 Dec'); CNES gives the phone numbers.",
+   "value_per_unit": "R$400-800 per pack, one-off (stock, not flow); after 11 Dec only the 2-year revision and new establishments remain.",
+   "domain_fit": "WEAK-MEDIUM - clinic world, harmonizacao orofacial adjacency; brief lists dental compliance as exhausted (new angle named: phone harvest).",
+   "tool_landscape_effect": "OBSOLETE as a product: a self-serve generator (Boaconta) already produces an 87-document pack pre-filled with the clinic's CNPJ and RT, instant download, across 12 segments including 'Beleza e estetica'. Only her time (done-with-you adaptation) is left to sell.",
+   "rank": 3
+  },
+  {
+   "name": "O MARTELO - sealed clearing-price extracts for used farm machinery, sold to NBR 14653 appraisers and bank recovery desks",
+   "source_file": "THE_FIVE.md (#3); LIVE_CANDIDATES.md (cut 12 Sep)",
+   "sole_prior_cause": "Founder cut 12 Sep for ORIGINATION FOREVER (replace subscribers every month); arithmetic MARGINAL after the Via Consulti correction (R$417/month annual anchor).",
+   "why_calls_fix_it": "Appraisal engineers and bank recovery desks are Portuguese B2B buyers; calls fund subscriber replacement in hours, which is what THE STEADY-STATE KILL said she lacked.",
+   "value_per_unit": "R$390 per extract; R$420-500/month per subscriber (observed ceiling).",
+   "domain_fit": "MEDIUM - farm-machinery vocabulary; dry data product.",
+   "tool_landscape_effect": "BETTER: capture, parse and RFC 3161 sealing are near-free; the asset is the dated archive, which models cannot generate. Superbid Terms §9.2 (commercial exploitation prohibited) still needs counsel. NOT re-verified today.",
+   "rank": 4
+  },
+  {
+   "name": "O ACERVO - exclusive representation of undigitised Sao Paulo photo archives (target: fashion/beauty/studio photographers' estates), perpetual licence share",
+   "source_file": "THE_ASSET_HUNT.md (Candidate A); LIVE_CANDIDATES.md (#7); THE_PARTIAL_HUNTS.md (O ARQUIVO LICENCIADO)",
+   "sole_prior_cause": "Never killed; stalled on an unrun written probe - acquiring archives from families/estates/clubs is a trust conversation in Portuguese that written outreach could not make.",
+   "why_calls_fix_it": "The supply side (holders) is exactly who answers a phone and not an email; the demand side (stock agencies' contributor portals) is self-serve, so no English selling is needed.",
+   "value_per_unit": "Per licence: Brazilian reference ask 'foto de arquivo' R$145,17, minimum R$108,72 (ArfocRN, undated union table - an ask, not clearing); Alamy pays 'up to 50%'. Revenue per archive UNVERIFIED and lottery-shaped.",
+   "domain_fit": "STRONG-MEDIUM if aimed at fashion/beauty photography archives (her eye for what looks expensive); an asset, not a service.",
+   "tool_landscape_effect": "BETTER: genuine historical images are evidence no model can generate, and AI keywording is near-free. But the big holders self-digitise (Folha indexed 2,5 M images on Google Cloud, 200k/day), leaving only small archives.",
+   "rank": 5
+  },
+  {
+   "name": "CONFERENCIA DE CREDITO - creditor-side claim reconciliation in recuperacao judicial",
+   "source_file": "STATE_OF_PLAY_13AUG.md §6; THE_C1_RESCREEN.md; THE_RESCREEN_PARTIAL.md",
+   "sole_prior_cause": "The 13 Aug no-speaking pivot ('never killed on evidence'); needed cold WhatsApp/phone inside a 15-day window.",
+   "why_calls_fix_it": "The sale is a call to a creditor's credit manager inside art. 7 §1's 15 days - calls fit the window exactly.",
+   "value_per_unit": "R$12-25k per engagement (archive, never observed).",
+   "domain_fit": "COLD - restructuring accounting, alone, for three years.",
+   "tool_landscape_effect": "Reconciling an AR ledger against a published list is near-free for ANYONE with a model in 2026, including the creditor's own clerk. RE-KILLED TODAY: the administrador judicial is statutorily obliged to do this verification (Lei 11.101 art. 7 caput) and AJs publish a free fill-in divergence form - THE CHEAP STATE COUNTER.",
+   "rank": 6
+  },
+  {
+   "name": "LEILAO COMP FEED - judicial/bank real-estate auction hammer-price archive for funds and peritos",
+   "source_file": "THE_SECOND_GREAT_HUNT.md (#5)",
+   "sole_prior_cause": "Written-only institutional sale to 20-60 funds/bank desks plus peritos; population uncounted.",
+   "why_calls_fix_it": "Institutional Portuguese buyers buy data after a call.",
+   "value_per_unit": "Honest floor US$680-820/month at month 18 (archive).",
+   "domain_fit": "COLD.",
+   "tool_landscape_effect": "Capture near-free; watch CNJ Provimento 255/2026 (national judicial-auction platform) as a state counter. Not re-verified today.",
+   "rank": 7
+  },
+  {
+   "name": "A CARTEIRA DO CTF - IBAMA CTF/RAPP annual pack wholesaled to environmental consultancies",
+   "source_file": "THE_SECOND_GREAT_HUNT.md (#3)",
+   "sole_prior_cause": "Partner recruitment by written outreach; the load-bearing unknown (obliged clients per consultancy) was to be asked by email.",
+   "why_calls_fix_it": "Consultancy owners answer a call; the portfolio-size question is one sentence on the phone.",
+   "value_per_unit": "R$50-65 per obliged client per year; honest floor US$178-881/month (archive).",
+   "domain_fit": "COLD; IBAMA compliance is on the exhausted list.",
+   "tool_landscape_effect": "Deterministic generator near-free; Ambisis already bundles RAPP guidance free (archive).",
+   "rank": 8
+  },
+  {
+   "name": "Grooming-visit growth keepsake via independent pet groomers",
+   "source_file": "THE_SECOND_GREAT_HUNT.md (#2)",
+   "sole_prior_cause": "Needed ~240 of a ~400 partner ceiling reachable by WRITTEN outreach; four stacked unverified multipliers.",
+   "why_calls_fix_it": "Groomers are phone/WhatsApp-native; calls raise the reachable partner ceiling.",
+   "value_per_unit": "R$19,90 digital certificate; honest floor US$366-641/month (archive).",
+   "domain_fit": "WEAK - pets; pet-grooming keepsakes on the exhausted list.",
+   "tool_landscape_effect": "Template merge near-free; nothing defends it.",
+   "rank": 9
+  },
+  {
+   "name": "Sponsorship/ad-sales rep for Brazilian BEAUTY trade media and fairs (commission on zero-marginal-cost inventory)",
+   "source_file": "THE_AGENCY_SCISSORS.md §6; THE_RESCREEN_PARTIAL.md",
+   "sole_prior_cause": "Originally speech ('Brazilian B2B media is more phone-native'); the 4 Sep re-screen then recorded a free-front-door kill (text truncated in the archive).",
+   "why_calls_fix_it": "Ad sales is a spoken job; the Portuguese half is now open.",
+   "value_per_unit": "Commission 15-30% of a placement (SECONDARY band); Brazilian beauty trade rate cards UNVERIFIED.",
+   "domain_fit": "STRONG (beauty trade), but getting APPOINTED rests on 'I know these advertisers', an expertise/relationship claim her small network cannot back (C7 + expert veto).",
+   "tool_landscape_effect": "Neutral.",
+   "rank": 10
+  }
+ ],
+ "top5_reverified": [
+  {
+   "name": "A TERRA VISTA DE CIMA v2 - coffee/agro cooperative edition",
+   "facts_checked": [
+    {
+     "claim": "Printi poster ladder from R$4,73/unit",
+     "url": "https://www.printi.com.br/posters/",
+     "status": "CONFIRMED 25 Sep (R$4,73 shown; single poster R$47,29)"
+    },
+    {
+     "claim": "Printi framed quadro R$93,49 single (11 Sep)",
+     "url": "https://www.printi.com.br/quadro-decorativo/",
+     "status": "CHANGED - R$96,28 today (+3%)"
+    },
+    {
+     "claim": "Pool: agro cooperatives and members",
+     "url": "https://somoscooperativismo.coop.br/noticias-representacao/anuariocoop-2025-25-8-milhoes-de-brasileiros-escolhem-cooperar",
+     "status": "CONFIRMED - 1.172 agro coops, R$438 bi ingressos 2024 (OCB); 1.091.560 members per search summary, not seen on page - UNVERIFIED at source"
+    },
+    {
+     "claim": "Coops already staff technical/geo teams (self-supply risk)",
+     "url": "https://rio.coop/anuariocoop-2026-cooperativismo-chega-a-29-milhoes-de-cooperados/",
+     "status": "CONFIRMED - agro coops provide 'mais de 10,7 mil profissionais de assistencia tecnica' (AnuarioCoop 2026, OCB/RJ)"
+    },
+    {
+     "claim": "A single large coffee coop can carry the bar",
+     "url": "https://www.cooxupe.com.br/quem-somos/",
+     "status": "PARTIAL - Cooxupe timeline: '2005 Cooxupe atinge 10.000 Cooperados'; current count UNVERIFIED"
+    },
+    {
+     "claim": "Sentinel-2 imagery free",
+     "url": "https://dataspace.copernicus.eu/",
+     "status": "CONFIRMED reachable (HTTP 200)"
+    },
+    {
+     "claim": "SICAR public polygon consultation free",
+     "url": "https://consultapublica.car.gov.br/publico/imoveis/index",
+     "status": "UNVERIFIED today - redirect loop through the proxy"
+    }
+   ],
+   "biggest_flaw": "It is the SAME SHAPE as A ESCRITURA (a machine-made map print of a property, wholesaled through a channel) and the founder said 'NOT IT' to that today; separately, one coop is 25-33% of revenue and renews once a year, and the coop's own ATER/geo staff hold the plot polygons (EUDR/CAR), so the map input is self-suppliable.",
+   "repair": "Ask the founder first whether a coffee-farm version is also 'not it' (R$0, one message). If not: sell the OCCASION + OBJECT, not the map - a tenure/'N safras' print for the coop's AGO or fim-de-safra event, co-branded, member name and plot, framed opt-in paid by the member through the coop store; target mid-size coffee coops (1.000-10.000 members, 1-3 person marketing) in Sul de Minas/Cerrado/Mogiana, where her coffee background is a real advantage on the call; two coops in year one, contract per event.",
+   "honest_floor_usd_month": "500-1.100 (1-2 mid coops at 4.000 members x R$10 = R$40k/yr each, after ~6% Simples and ~10% COGS, PTAX ~5,2); target needs 3-4 coops or one very large one.",
+   "next_test": "Step 0: founder yes/no. Then 20 Portuguese calls to relationship/communications managers of agro (coffee-first) cooperatives from the OCB state directories: 'what did you give cooperados at the last AGO/fim de safra, and at what cost per member?', offering a free sample print of one real member's plot.",
+   "bar": "PASS if >=5/20 name a per-member spend >=R$8 AND >=2 ask for the sample with a real member; KILL if <=1/20 names a number or the founder says 'not it'.",
+   "confidence": "LOW-MEDIUM"
+  },
+  {
+   "name": "GUARDA-BR - takedown/photo-theft retainer for Brazilian indie beauty brands",
+   "facts_checked": [
+    {
+     "claim": "Mercado Livre Brand Protection Program is free and admits a procurador",
+     "url": "https://www.mercadolivre.com.br/brandprotection/enforcement",
+     "status": "CONFIRMED 25 Sep - 'Ser membro do programa e totalmente gratis'; 'Qualquer titular de direitos ou procurador pode aderir'"
+    },
+    {
+     "claim": "No Brazilian incumbent serves this tier",
+     "url": "https://branddi.com/pt-br",
+     "status": "REFUTED - Branddi: '+300 marcas protegidas', 'IA + especialistas cuidam do monitoramento ao takedown, 24/7', monitors 'sellers nao autorizados... pirataria'; sales-gated ('Falar com um especialista'), no price"
+    },
+    {
+     "claim": "Occupancy - second and third incumbents",
+     "url": "https://valinke.com/pppi-e-o-novo-bpp/",
+     "status": "CONFIRMED occupied - Valinke sells marketplace monitoring, takedown, gray market, pirataria"
+    },
+    {
+     "claim": "Occupancy - bundled by marketplace agencies (no margin on the flow)",
+     "url": "https://gosmarter.com.br/brand-protection-mercado-livre/",
+     "status": "CONFIRMED - GoSmarter ('ex-Mercado Livre, +1.000 sellers', updated May 2026) runs brand protection as part of its official-store operation"
+    },
+    {
+     "claim": "Shopee §3.1 bans robots; §8.4(g) indemnity",
+     "url": "https://shopee.com.br/docs/3001",
+     "status": "NOT RE-VERIFIED - JS shell returned; archive verification 2 Sep stands"
+    },
+    {
+     "claim": "Price R$1.500-3.000/brand/month",
+     "url": "https://branddi.com/pt-br",
+     "status": "UNVERIFIED - no Brazilian vendor publishes a price"
+    }
+   ],
+   "biggest_flaw": "The tier is not empty: Branddi (300+ brands, AI + specialists, sales force), Valinke and GoSmarter already sell it, and the brand itself can file through the free BPP; a domestic brand reads Portuguese, so the language/absence advantage that justified foreign-brand GUARDA does not exist here.",
+   "repair": "Do not sell it standalone. Weld it to VBPH as a post-launch add-on for the same indie haircare/skincare brands: she watches marketplaces for copies of the campaign images SHE produced and for listings misusing the new SKU, files via BPP as procurador, one monthly written tally - origination once for two products. Price below the incumbents' sales-gated floor (e.g. R$600-900/month) because acquisition cost is already sunk. Check first whether AI-generated campaign images are protectable under Lei 9.610 (author = pessoa fisica) - UNVERIFIED and it decides whether 'uso de imagem' takedowns work on VBPH output.",
+   "honest_floor_usd_month": "300-1.200 (3-8 brands at R$600-1.500, as a VBPH add-on); standalone floor ~0-400.",
+   "next_test": "By hand (no robot), check 30 Brazilian indie haircare/skincare brands on Mercado Livre for listings using their own photos or copying their product; call the 20 with >=5 such listings.",
+   "bar": "PASS if >=4/20 name >=R$800/month or accept a paid 30-day cleanup at >=R$1.500; KILL if <=1/20, or >=10/20 say 'Branddi/our agency already does this'.",
+   "confidence": "LOW"
+  },
+  {
+   "name": "CONFORMIDADE - stop-dated phone harvest before the 11 Dec 2026 RDC 1.002 deadline",
+   "facts_checked": [
+    {
+     "claim": "Art. 182 (360 days from publication) not deferred",
+     "url": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00001002&seqAto=000&valorAno=2025&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=8542",
+     "status": "CONFIRMED 25 Sep - art. 182 verbatim, zero 'prorrog'/'Revogad'/'Alterad' annotations"
+    },
+    {
+     "claim": "Template floor R$97,90",
+     "url": "https://clinicaodontologicaregular.site/",
+     "status": "CONFIRMED 25 Sep - 'De R$ 297,00 Por apenas R$ 97,90 ou 12x de R$ 8,16'"
+    },
+    {
+     "claim": "R$679 specialist kit (MKaPlus)",
+     "url": "https://popsemanualdeboaspraticas.com.br/produto/sdbpf-odontologia/",
+     "status": "NOT RE-VERIFIED - HTTP 403 today"
+    },
+    {
+     "claim": "A personalised generated pack is her differentiator",
+     "url": "https://www.boaconta.com.br/pop/clinica-odontologica/",
+     "status": "REFUTED - Boaconta sells an 87-document RDC 1.002 kit 'pre-preenchido com os dados do seu negocio' (CNPJ, RT), 'Entrega imediata'; also covers 'Beleza e estetica'. Price not in HTML - UNVERIFIED"
+    }
+   ],
+   "biggest_flaw": "The machine already exists self-serve (Boaconta) and the template floor is R$97,90, so what is left to sell by phone is her own hours adapting documents per clinic - hands on every unit, stock not flow, and it ends on 11 Dec 2026.",
+   "repair": "Run it only as a written-stop-date FUNDING EVENT (Oct-Dec): phone the CNES list, sell a R$390-590 'done-with-you in one 40-minute video call + generated pack' before the deadline, cap at 40 packs, stop on 11 Dec. Never as the business.",
+   "honest_floor_usd_month": "0 recurring; one-off ~US$1.500-4.500 total over Oct-Dec (20-40 packs x R$390-590 net of tax), then zero.",
+   "next_test": "Founder yes/no first (dental compliance is on the exhausted list). Then 40 calls to São Paulo dental establishments from CNES: 'is your SDBPF done for 11 December?'",
+   "bar": "PASS if >=8/40 say not done AND >=3 buy at >=R$390 within 10 days; KILL if <3 purchases or most already bought a kit.",
+   "confidence": "MEDIUM on the deadline, LOW on the business"
+  },
+  {
+   "name": "O ACERVO - Sao Paulo photo-archive representation (fashion/beauty photographers' estates first)",
+   "facts_checked": [
+    {
+     "claim": "Stock agency pays up to 50%",
+     "url": "https://www.alamy.com/contributor/",
+     "status": "CONFIRMED 25 Sep - 'earn up to 50% commission on every sale'"
+    },
+    {
+     "claim": "Per-licence value of an archive photo",
+     "url": "https://arfocrn.webnode.page/tabela-de-pre%C3%A7os/",
+     "status": "PARTIAL - union reference table: 'FOTO DE ARQUIVO R$145,17', minimum 'R$108,72', 'FOTO AVULSA R$42,50'; undated, an ask not a clearing price"
+    },
+    {
+     "claim": "Big Brazilian archives are unmonetised",
+     "url": "https://cloud.google.com/customers/grupo-folha?hl=pt-br",
+     "status": "REFUTED for big holders - Folha indexed 2,5 M historical images on Google Cloud (200k/day) explicitly to let Folhapress exploit them commercially"
+    }
+   ],
+   "biggest_flaw": "Demand is lottery-shaped: at ~R$50-70 her share per licence she needs ~180-280 licences a month from small archives, and the large archives self-digitise with cloud AI.",
+   "repair": "Aim at a niche with buyers who pay for provenance: 1970s-2000s Sao Paulo fashion/beauty editorial and runway photography (brand-heritage teams, documentary producers, AI training-data buyers wanting licensed human-made images); sign 3-5 photographers' estates by phone; price direct licences, not only stock-agency royalties.",
+   "honest_floor_usd_month": "0-300 in year one.",
+   "next_test": "15 Portuguese calls to holders (photographers' estates, studios, clubs) + 10 written price questions to picture editors/heritage teams.",
+   "bar": "PASS if >=3 holders ask for a contract AND >=5 buyers name a number with median >=US$150 per image; else KILL.",
+   "confidence": "LOW"
+  },
+  {
+   "name": "CONFERENCIA DE CREDITO",
+   "facts_checked": [
+    {
+     "claim": "Creditors have 15 days to file habilitacao/divergencia with the AJ",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11101.htm",
+     "status": "CONFIRMED - art. 7 §1 '15 (quinze) dias'"
+    },
+    {
+     "claim": "Nobody else does the reconciliation for the creditor",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11101.htm",
+     "status": "REFUTED - art. 7 caput: 'A verificacao dos creditos sera realizada pelo administrador judicial, com base nos livros contabeis... do devedor e nos documentos que lhe forem apresentados pelos credores, podendo contar com o auxilio de profissionais ou empresas especializadas'"
+    },
+    {
+     "claim": "Filing needs a prepared package",
+     "url": "https://trusteeaj.com.br/wp-content/uploads/2022/06/MODELO-DE-HABILITACAO-E-DIVERGENCIA-DE-CREDITO-RJ.pdf",
+     "status": "REFUTED - an AJ publishes a free 4-page fill-in form for administrative habilitacao/divergencia"
+    },
+    {
+     "claim": "RJ volume at a record",
+     "url": "https://www.serasaexperian.com.br/conteudos/indicadores-economicos/",
+     "status": "CONFIRMED current - RJ requeridas 2026 through April: 268 processos, 602 CNPJs"
+    }
+   ],
+   "biggest_flaw": "THE CHEAP STATE COUNTER: the court-appointed administrador judicial is paid from the estate to verify every credit against the debtor's books and the creditor's documents, and hands the creditor a free form; the creditor's own AR clerk plus a 2026 chat model does the rest.",
+   "repair": "Only the flip side survives as a question: sell to the AJ (art. 7 caput lets the AJ hire 'empresas especializadas') - which is MESA 45, already killed on THE POSTO CONSTANT. No repair found.",
+   "honest_floor_usd_month": "0-500",
+   "next_test": "Diff debtor list vs AJ list for 10 cases from free PDFs; count how many debtor-list errors the AJ already corrected.",
+   "bar": "KILL if the AJ list already corrects >=70% of the differences; revive only if <30%.",
+   "confidence": "MEDIUM that it is dead"
+  }
+ ],
+ "notes": "HEADLINE: re-screened by SOLE cause, the Portuguese-calls unlock revives very little from the archive, and nothing it revives beats VBPH as a primary business. Of ~45 speech-implicated candidates checked: ~19 need English selling and stay written-only (ALT-DATA, DOL 5500, BRAZIL DESK, CAMPO/v2, A COTACAO's sale, BRASIL VERIFICA, eCTD, Upwork, Brazil channel model, foreign GUARDA, REPRESENTANTE, insurance/US ad-rep, DIA DE CAMPO, A LOCALIZADORA, MESA SP, A PROVA, EU sanctions, DOOR 2); ~16 Portuguese ones had a structural second kill and stay dead (glosa spread - ANS; SINAL - Clinicorp ships automatic WhatsApp confirmations, verified today; COROA; salon reactivation/CAIXA CHEIA - booking software; PASTA LIBERADA - construction veto + Sertras; Malha Zero; goods commission agency - margin law; SHELF RECORD - Involves/SAX/Tracking Trade + US$3-20 observed; MESA 45; PRACA; FIDUCIARIA; SINGLEBRAIN estetica content; Brazilian SaaS; SMB monitoring sub; CONFORMIDADE maintenance; trade-media rep - re-screened FFD); ~10 Portuguese ones had speech/origination as the sole cause and are listed in 'revived'. Today's primary-source checks then re-killed two of the top five (CONFERENCIA on the administrador judicial's statutory verification + free form; CONFORMIDADE on Boaconta's self-serve generated pack) and found the GUARDA-BR tier occupied (Branddi 300+ brands, Valinke, GoSmarter). The biggest beneficiaries of today's change are candidates ALREADY on the table, not archive corpses: VBPH's trigger-based outbound to Brazilian beauty brands now works as designed; ACOLHE's buyer screening (SICONFI) and supplier-credit-policy calls get faster; the 'MULTIPLIER' in LIVE_CANDIDATES (a few calls = 3,25x on price) is now free. Two cheap founder questions should precede any work: (1) is a coffee-coop map print also 'NOT IT' (same shape as A ESCRITURA)? (2) is a stop-dated dental phone harvest acceptable as a funding event? Correction worth banking: Anatel's 0303 telemarketing prefix is FACULTATIVE since Acordao 201/2025 (page modified 28/08/2026) - the search-engine summary said 'mandatory'; authentication is required only above 500.000 calls/month. Law candidate: RELAXING SPEECH REVIVES DISTRIBUTION KILLS, AND 2026 AI REVIVES THE FREE FRONT DOOR BEHIND THEM - every revived candidate whose unit is a document or a check (CONFERENCIA, CONFORMIDADE, CARTEIRA CTF) is now also cheap for the buyer or a self-serve generator to make; the survivors are the ones selling an object, an occasion or an asset (coop print, archive rights), never information. Not re-verified today: O MARTELO (Superbid masking, Via Consulti), Leilao Comp Feed, Shopee ToS (JS shell), MKaPlus R$679 (403), SICAR consulta (redirect loop). Etsy/Faire not attempted per brief."
+}

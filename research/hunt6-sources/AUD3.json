@@ -1,0 +1,174 @@
+{
+ "auditor": "AUD3",
+ "scope": "Arithmetic, units and price reality for the repaired VBPH offer (creative direction + label-exact fidelity guarantee + claim check; LAUNCH KIT R$2.500-3.500 / HERO R$5.900 / REVISTA R$4.500).",
+ "bar": {
+  "net_target_brl": "R$10.359-12.949/month (US$2.000-2.500 x PTAX venda 5,1795, BCB 24 Sep 2026, re-fetched today) = R$124.308-155.385/yr",
+  "gross_needed_brl": "R$12.218-15.806/month = R$146.600-189.700/yr (fator-r route, fixed stack R$750-1.379/month). RBT12 at the target straddles the R$180.000 faixa boundary, so faixa 2 applies at the top.",
+  "blended_tax": "Verified at LC 123 (planalto): Anexo III 6,00% to R$180k, 11,20% - R$9.360 above (6,27% at RBT12 R$190k); Anexo V 15,50% to R$180k, 18,00% - R$4.500 above (15,63% at R$190k); §5-J moves Anexo V services to III if folha >= 28% of receita. SPLIT ROUTE (film on III via §5-B XV, stills/design on V via §5-I VI and X), faixa 1-2: HERO (film share 40-65%) 9,3-11,9%; LAUNCH KIT (film 40-50%) 10,8-11,9%; REVISTA (film 18-25%, 4 reels vs 60-90 images) 13,1-14,0%; plus 11% INSS on at least a minimum-wage pro-labore (~R$178/month, minimum wage UNVERIFIED). FATOR-R ROUTE (pro-labore = 28% of RBT12 ~R$3.400-4.400/month, which is part of her take-home anyway): 6,00-6,27% DAS + 3,08% INSS (11% x 28%; 11% derived from Lei 8.212 art. 21 20% less the art. 30 §4 deduction capped at 9%) = 9,08-9,35% on EVERY tier. Fator r is cheaper for LAUNCH KIT and REVISTA, ties/beats HERO unless film > ~60% of the invoice, and removes the UNVERIFIED risk that Receita classes AI-only film as design/publicidade (Anexo V). IRPF on a pro-labore <= R$5.000/month is zero from 2026 (Lei 15.270/2025, per H6C, not re-fetched). Use 9,1-9,4% for all tiers.",
+  "stack_cost": "Fixed R$750-1.379/month = H6D non-generation stack R$387,11 (Photoshop/Photography plan, CapCut Pro, Canva, ChatGPT Plus, Google One; Frame.io free) + Higgsfield PLUS R$262,68 (1 HERO) or ULTRA R$691,54 (>=2 HEROs or ~4-5 kits, 3.000 credits) incl. IOF 3,5% + accountant R$99,99 (Contweb Simples 'a partir de', observed) to ~R$300 (typical, SECONDARY). OMITTED by H6B/H6D: the accountant and the pro-labore INSS. Generation inside ULTRA up to 3.000 credits, then R$0,298/credit (18 credits/US$ + IOF). NOT BUDGETED: Higgsfield Enterprise (no-training) for NDA clients, price UNVERIFIED."
+ },
+ "units_needed": [
+  {
+   "tier": "LAUNCH KIT",
+   "price": "R$2.500",
+   "units_per_month": "4,9-6,3"
+  },
+  {
+   "tier": "LAUNCH KIT",
+   "price": "R$3.000",
+   "units_per_month": "4,1-5,3"
+  },
+  {
+   "tier": "LAUNCH KIT",
+   "price": "R$3.500",
+   "units_per_month": "3,5-4,5"
+  },
+  {
+   "tier": "HERO",
+   "price": "R$5.900",
+   "units_per_month": "2,1-2,7 (2/month nets R$9.350-9.979 = US$1.805-1.927: BELOW the bar; H6B's 'R$5.900 x 2 = ~US$2.000' used a flat 6% tax, no accountant, and PTAX 5,2037)"
+  },
+  {
+   "tier": "REVISTA",
+   "price": "R$4.500",
+   "units_per_month": "2,7-3,5"
+  },
+  {
+   "tier": "REALISTIC MIX A",
+   "price": "1 HERO R$5.900 + 2,5 LAUNCH KIT @R$3.000 = R$13.400/month gross",
+   "units_per_month": "3,5 -> net R$10.768-11.434 = US$2.079-2.207 (clears the BOTTOM of the bar only)"
+  },
+  {
+   "tier": "REALISTIC MIX B",
+   "price": "1 HERO + 1 KIT @R$3.000 + 1 REVISTA = R$13.400/month gross",
+   "units_per_month": "3 -> net US$2.079-2.207 (same gross)"
+  },
+  {
+   "tier": "TREADMILL PRICE (month 24)",
+   "price": "R$2.000 per one-product set",
+   "units_per_month": "6,1-7,9 (R$1.500: 8,1-10,5)"
+  }
+ ],
+ "hours": {
+  "month3": "Target volume does NOT fit. HERO-only 2,1-2,7/month at start hours (14-28 h, H6D) + 100% new clients x 8-17 h sales (20-30 PT calls 3-5 h + 3-5 sample concepts x 1-2 h + proposal 1-2 h; conversion UNVERIFIED) + 4-6 h admin = 50-127 h (central 84); KIT-led 4,1-5,3 kits at 9,5-18 h = 75-190 h (central 127); Mix A 70-138 h (central 104). Realistic month-3 capacity ~2,4 HEROs or ~3,1 kits (central) = R$9-14k gross only if demand exists.",
+  "month9": "Fits. Hours per unit between start and after-15 (H6D 9-15 h HERO; KIT scaled 6-10 h), ~60% of units from new clients: HERO-only 33-74 h (central 51); KIT-led 48-112 h (central 77); Mix A 45-82 h (central 63).",
+  "month18": "Fits with headroom. ~45% new-client share: HERO-only 30-67 h (re-specced Product-Lock grammar 6-9 h/HERO: 24-51); KIT-led 43-99 h (re-specced 4-6 h/kit: 35-78); Mix A 41-73 h (33-57). REVISTA-led does NOT fit at H6D's composite rate: 60-90 images x 14-28 min/still (H6D steady state 1,8-3,7 h per 8 stills) = 19-52 h per pack -> 56-190 h/month for 2,7-3,5 packs; fits (46-78 h) only if CICLO's 15-20 h/pack (<=10-13 min per finished image) is real.",
+  "fits_87h": true,
+  "fits_detail": "TRUE from ~month 9 for HERO/KIT/Mix; FALSE at month 3 at target volume; FALSE for a revista-led desk unless catalogue images take <=~12 min each. At month 18 hours are NOT the binding constraint: the hours ceiling at R$3.000/kit is 6-11 kits/month (US$2.900-5.400 net); demand and pool bind first. Every sales-hour figure rests on an unmeasured call-to-sample-to-sale conversion."
+ },
+ "pool": [
+  {
+   "tier": "HERO R$5.900",
+   "pool_brl_yr": "Plan-implicit (every campaign event buys externally at R$5.900): 300 brands x 2 events x 5.900 = R$3,54M (range 225x1 R$1,33M to 425x4 R$10,0M). With the only measured purchase proxy, 5/15 observed launches used a human-model studio shoot (H6A, n=15): R$1,17M central, R$0,44M low.",
+   "pool_div4": "R$885k plan-implicit; R$292k at P=33% central; R$110k at P=33% low",
+   "required_share": "4,1-5,4% plan-implicit; 12,6-16,2% at P=33% central (inside the 15-25% band at its edge); 33,5-43,3% at P=33% low (FAILS the market-multiple rule). Required revenue R$146.600-189.700/yr.",
+   "unverified_multipliers": 4
+  },
+  {
+   "tier": "LAUNCH KIT R$3.000",
+   "pool_brl_yr": "300 x 2 x 3.000 = R$1,80M plan-implicit (R$0,68M-5,1M); R$0,59M at P=33% central; R$0,22M at P=33% low",
+   "pool_div4": "R$450k plan-implicit; R$148,5k at P=33% central (just BELOW the R$146,6-189,7k needed); R$56k low",
+   "required_share": "8,1-10,5% plan-implicit; 24,7-31,9% at P=33% central (top of / above the band); 66-85% low. Pool-bound ceiling at P=33% and a 25% share = R$148,5k/yr = US$1.906/month net: just under the bar.",
+   "unverified_multipliers": 4
+  },
+  {
+   "tier": "REVISTA R$4.500",
+   "pool_brl_yr": "H6F: 20 brands x 9 revistas x 4.500 = R$810k. Of the 18 firms H6F names, ~5-6 read as lingerie/apparel (DeMillus, Hiroshima, Quatro Estacoes, Dicorpo, Sawary; classification by name, UNVERIFIED), where a LABEL-exact packshot guarantee does not apply and garment fidelity is exactly what Fabrica disclaims. Beauty/fragrance-only 12-14 brands: R$486-567k.",
+   "pool_div4": "R$202,5k (20 brands) / R$121,5-141,8k (beauty-only 12-14)",
+   "required_share": "18,1-23,4% for 20 brands (edge of the band); 25,9-39,0% beauty-only (FAILS).",
+   "unverified_multipliers": 4
+  }
+ ],
+ "pool_multiplier_note": "Each pool is brands x events/yr x P(buys external production) x price. HERO/KIT: (1) brand count 300 (225-425) - PARTIAL (Leg B's 10-25% 'established' share assumed; 85% brand-key precision on one 40-row check); (2) 1-4 campaign-sized events/brand/yr - PARTIAL (notification windows deflated by inference from one brand, Sallve); (3) P(external) - UNMEASURED (H6A's pool silently sets it to 100%; the n=15 production-mix is the only proxy); (4) the price - ZERO clearing evidence. REVISTA: (1) 20 brands, who is in-house UNVERIFIED; (2) 9 revistas/yr verified for DeMillus only; (3) P(external) unmeasured and implicitly 100%; (4) R$4.500 is a BOM at an apparel studio's list, not a catalogue buyer's spend. Every pool has >=3 stacked unverified multipliers => per the Hunt 5 process finding, each is a hypothesis, not a number.",
+ "price_reality": [
+  {
+   "claim": "SP AI done-for-you, same studio the orchestrator cites: campaign/concept image R$53; AI video 15-20 s R$260; AI persona R$53; AI lookbook R$35 per 3 images; lookbook + video to 15 s R$120/look. 'Direcionamento criativo definido pelo cliente.' Fabrica-rate HERO-equivalent (KV + 8 stills + film + 3 cutdowns at R$80-120 + persona) = R$1.030-1.150; LAUNCH-KIT-equivalent (6 images + film) R$578-631. R$5.900 = 5,1-5,7x the Fabrica HERO-equivalent.",
+   "price": "R$53/image; R$260/video",
+   "url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+   "status": "OBSERVED published list (seller, SP 'centro expandido'); fetched and read today"
+  },
+  {
+   "claim": "CORRECTION: Fabrica's 'não garantindo fidelidade às demais peças' is about complementary GARMENTS in apparel AI lookbooks ('A geração sempre será focada na peça principal, não garantindo fidelidade às demais peças'). Fabrica is an apparel/e-commerce studio. It is NOT evidence that SP AI studios refuse packshot-label fidelity; that gap must rest on Photoroom (27-29% pass, 20,1% text/logo distortion) and the Higgsfield recipe admission, not on Fabrica.",
+   "price": "n/a",
+   "url": "https://www.estudiofabrica.com.br/servicos-e-precos/",
+   "status": "OBSERVED - orchestrator's reading CORRECTED"
+  },
+  {
+   "claim": "SP TRADITIONAL at the same studio: 'Produção de Conteúdo' R$1.250 per 4-h period incl. studio, scenery, lighting and treatment of up to 50 images or 5 edited videos (no model, no HMU); external shoot diária 80 images R$2.500, meia diária 40 images R$1.600; studio rental R$530 half / R$850 day. => a lean product-only one-product launch set costs R$1.250-2.500 traditionally in SP; with a model (Job for Model diária R$1.500-2.500 incl. 2-yr usage) + HMU (R$150-1.200) + location, R$4.150-7.050. R$5.900 = 84-142% of a lean MODEL shoot, not the 35-60% H6B computed against R$9.900-17.000 (which stacks a producer's 'vídeo de produto a partir de R$3.500' on separate photographer and studio days).",
+   "price": "R$1.250-2.500 product-only; R$4.150-7.050 with model",
+   "url": "https://www.estudiofabrica.com.br/servicos-e-precos/ ; https://jobformodel.com/public_jobs",
+   "status": "OBSERVED seller list prices (asking); model diárias are BUYER-posted but by non-beauty brands"
+  },
+  {
+   "claim": "Buyer-posted model diárias on Job for Model: Ferrero Rocher campaign photos R$2.500 (2-yr usage), snack brand social videos R$2.500, accessories brand R$1.200-1.500. Today the board holds 13 live jobs and NONE from a beauty brand.",
+   "price": "R$1.200-2.500 per model day",
+   "url": "https://jobformodel.com/public_jobs",
+   "status": "OBSERVED BUYER-SIDE (non-beauty) - the only buyer-posted prices found; indirect evidence that a model-scene launch set costs >= R$2.500 in model alone"
+  },
+  {
+   "claim": "AI studios with published prices, one-product HERO scope: ANIMAI R$70/image + R$15/s => R$1.400-2.900 (H6B computation); Make Move R$3.000 minimum (<=20 garment pieces), R$5.000 at 40 pieces. CORRECTION to 'other AI studios R$1.400-5.000 for the HERO scope': for ONE cosmetics SKU the band is R$1.030 (Fabrica) to R$3.000 (Make Move's minimum); R$5.000 is Make Move's 40-garment price.",
+   "price": "R$1.030-3.000",
+   "url": "https://animaistudio.com.br/ ; https://make-move-studio-fotos-ia-para-marcas.netlify.app/",
+   "status": "OBSERVED asking (via H6B); not re-fetched"
+  },
+  {
+   "claim": "The only R$5.000+ numbers stated as past-project averages: Destaquei (Curitiba) AI institutional video R$5.000-8.000 and product-video package (1-10 products, photos + cuts) R$8.000-25.000, 'com base em nossos projetos anteriores'. It also routes low-budget buyers to a R$29/month AI tool.",
+   "price": "R$5.000-25.000",
+   "url": "https://destaquei.com.br/videos/video-produto/ ; https://destaquei.com.br/videos/video-inteligencia-artificial/",
+   "status": "SELLER-STATED HISTORICAL RANGE (closest to clearing; not beauty-specific; not a buyer record)"
+  },
+  {
+   "claim": "Agency list ceiling: Sinapro 2025 'Planejamento de Lançamento de Produto' R$21.033,81; social post R$4.008,37; short social video R$5.690,96 (creation only).",
+   "price": "R$4.000-21.000 per piece",
+   "url": "https://static.poder360.com.br/2026/06/011-anexo-III-Sinapro-Lista-de-Custos-Referenciais-2025.pdf",
+   "status": "AGENCY LIST PRICE (ceiling for public ad contracts, discounted in practice) - via H6B"
+  },
+  {
+   "claim": "Buyer budgets on freelance marketplaces for cosmetics brands: Workana <USD 50 ('campanha publicitária abrangente') to USD 1.000 (a line identity); 99Freelas today: 'Produção de vídeo institucional para marca de cosméticos' and 'Social media para marca de beleza' both Orçamento Aberto, minimum R$50-60 (18 and 29 proposals); VintePila AI product gigs R$20-100 with 104-175 sold.",
+   "price": "R$20 to ~R$5.200 (USD 1.000)",
+   "url": "https://www.99freelas.com.br/project/producao-de-video-institucional-para-marca-de-cosmeticos-784923 ; https://www.workana.com/pt/jobs?language=pt&query=cosm%C3%A9ticos ; https://www.vintepila.com.br/servicos/design-grafico/eu-vou-fazer-uma-modelo-ia-para-seu-produto/",
+   "status": "OBSERVED BUYER-SIDE at the bottom (Workana via H6B; direct fetch 403 today; 99Freelas fetched today)"
+  },
+  {
+   "claim": "Any Brazilian BEAUTY brand observed paying >= R$2.500 or >= R$5.900 per launch for external visuals (invoice, contract, case with value, public purchase, budgeted job post).",
+   "price": "NONE FOUND",
+   "url": "searched: jobformodel.com/public_jobs; 99freelas.com.br/projects?q=cosméticos|skincare|campanha cosméticos|vídeo cosméticos; workana (403); web search for case values, TJSP collection suits, Sebraetec price tables (PDF URLs served an HTML shell)",
+   "status": "UNVERIFIED - the R$5.900 and R$4.500 price points rest on seller-side ranges only; >= R$2.500 is supported only indirectly (a model day alone costs R$1.500-2.500; 5/15 observed launches used model shoots)"
+  }
+ ],
+ "supported_price": "R$2.500-3.500 per one-product launch set is the most the evidence supports, and it is a CEILING, not a floor: it matches Fabrica's own SP traditional content day (R$1.250-2.500 product-only, R$2.500 for an 80-image day) and Make Move's R$3.000 AI minimum, and sits 2,2-6x above Fabrica's AI a-la-carte equivalent (R$578-1.150) and the in-house replacement (R$500-1.350, H6D). R$5.900 is defensible ONLY where it replaces a human-model shoot with usage rights (lean model shoot R$4.150-7.050 at Fabrica + Job for Model), i.e. ~1/3 of observed launches (5/15, n=15), concentrated in premium DTC brands that already run in-house or agency shoots (Sallve, Dermage); there is zero buyer-side evidence at R$5.900, R$9.900 or R$4.500/revista. At R$2.500-3.500: FLOOR ~US$730/month (2 kits at R$2.500 on the PLUS stack) and ~US$1.435 at 3 kits at R$3.000; CEILING set by the pool, not by hours: at P(external)=33% and a 25% share, R$148,5k/yr = ~US$1.900/month, just under the bar; the hours ceiling (6-11 kits/month at month 18, US$2.900-5.400) binds only if most launching brands buy externally.",
+ "treadmill_month24": "If self-serve product-lock arrives in 12-18 months (H6D's estimate; Photoroom's Fidelity Layer +9 pp already ships; Higgsfield's brand recipe already composites logos; Adobe Firefly Creative Production reportedly supports 3D digital-twin product fidelity for enterprise - SECONDARY search summary, page returned 503), the guarantee premium goes toward zero. What survives is creative direction + claim check + done-for-you, which the market already prices at R$1.030-1.150 (Fabrica SP, with the client directing), R$1.400-2.900 (ANIMAI 'com direção humana') and R$3.000 (Make Move with beauty direction), against R$500-1.350 in-house. Surviving share of price: 17-51% of a R$5.900 HERO; 50-100% of a R$3.000 LAUNCH KIT (the KIT is already priced near the post-treadmill band, which is the argument for leading with it). Month-24 business at ~R$2.000/set: 6,1-7,9 sets/month, production 24-47 h at 4-6 h/set, ~37-47 active client brands at ~2 buys/yr, ~1,7-2,2 new clients/month x 8-17 h = 14-37 h, total ~43-89 h: borderline on hours, and on the pool it needs 12-16% of the plan-implicit pool (R$1,2M) or 37-48% at P=33% (FAILS). Month 24 = a volume AI studio with origination forever, competing on price with published studios; the claim check is the one residual differentiator and has no observed price anywhere (UNVERIFIED), while CONAR's 2026 guide makes the whole creation chain liable, so it is a liability she carries as well as a feature she sells.",
+ "corrections": [
+  "FABRICA MISREAD: 'não garantindo fidelidade às demais peças' refers to complementary GARMENTS in an apparel studio's AI lookbook, not to packshot labels. Fabrica is not evidence of a label-fidelity gap.",
+  "TRADITIONAL ANCHOR OVERSTATED: the same SP studio publishes traditional content production at R$1.250/period (up to 50 treated images or 5 edited videos) and an 80-image day at R$2.500. A lean one-product set is R$1.250-2.500 product-only and R$4.150-7.050 with a model + HMU. H6B's R$9.900-17.000 is the high variant (producer film). R$5.900 is 84-142% of a lean model shoot, not 35-60%. 'Priced against a traditional shoot' therefore supports ~R$2.500-3.500 for product-only launches (8/15 observed) and ~R$4.000-6.000 only for model launches (5/15).",
+  "AI-STUDIO BAND: for one SKU it is R$1.030 (Fabrica, computed from its list) to R$3.000 (Make Move minimum), not R$1.400-5.000; R$5.000 is Make Move's 40-garment price.",
+  "TAX: H6B's and H6D's floors used a flat 6%. Correct all-in is 9,08-9,35% via fator r (all tiers), or 9,3-11,9% HERO / 10,8-11,9% KIT / 13,1-14,0% REVISTA via the Anexo III/V split plus minimum pro-labore INSS. Fator r dominates for stills-heavy tiers and removes the AI-film classification risk.",
+  "H6B FLOOR: '2 HEROs/month = US$2.000' recomputes to R$9.350-9.979 = US$1.805-1.927 at PTAX 5,1795 with the correct tax and an accountant: BELOW the bar. The target needs 2,1-2,7 HEROs/month.",
+  "H6D FLOOR: 1 HERO/month = R$4.114-4.314 = US$794-833 (not R$4.350-4.700) once tax is 9,08% and the accountant is in the stack.",
+  "STACK: add the accountant (Contweb Simples from R$99,99/month observed; R$250-600 typical, SECONDARY) and the pro-labore INSS. Fixed stack R$750-1.379/month. Higgsfield ULTRA is needed from ~2 HEROs or ~4-5 kits a month.",
+  "REVISTA HOURS: CICLO's 15-20 h per 60-90-image pack implies <=10-13 min per finished, composited image; H6D's own steady-state rate (14-28 min/still) gives 19-52 h per pack, so a revista-led desk needs 56-190 h/month at 2,7-3,5 packs. It fits 87 h only if catalogue images take <=~12 min each - stopwatch it.",
+  "REVISTA POOL: the 20-brand R$810k pool needs an 18-23% share (edge). Restricted to the beauty/fragrance firms where a label guarantee applies (~12-14 of the 18 named; lingerie/apparel excluded by name, UNVERIFIED), the pool is R$486-567k, pool/4 R$122-142k < the R$147-190k needed: FAILS the market-multiple rule. R$4.500 sits between Fabrica's lookbook-rate (R$1.740-2.090) and campaign-rate (R$4.220-5.810) BOM; which rate a buyer would compare against is UNVERIFIED.",
+  "H6A POOL: 'pool is 25-35x revenue, not binding' silently sets P(buys external production at the tier price) to 100%. With the only proxy (5/15 launches used a model shoot), HERO pool/4 is R$292k central (share 12,6-16,2%) and R$110k low (share 34-43%, fails); LAUNCH KIT pool/4 is R$148,5k central, just below the need. Every pool carries 4 stacked multipliers, at least 2 fully unverified: a hypothesis, not a number.",
+  "MONTH 3: target volume does not fit 87 h (HERO-only central 84 h with a range to 127; kit-led central 127 h). Realistic month-3 capacity is ~2-3 units. The 12-18-month clock is feasible on hours but is not a month-3 business."
+ ],
+ "refuted": true,
+ "refuted_note": "REFUTED AS PRICED: the offer's price anchor ('priced against a traditional shoot') is contradicted by the same SP source's own traditional list, and there is zero buyer-side evidence at R$5.900 or R$4.500. NOT refuted as a business: the structure survives at R$2.500-3.500 per one-product set, and hours fit from ~month 9.",
+ "honest_floor_usd_month": "US$700-1.500/month at month 12-18 (2-3 one-product sets/month at R$2.500-3.000; R$5.900 HEROs occasional). It reaches US$2.000-2.200 only at ~3,5 units/month of Mix A or 4-5 kits/month at >=R$3.000, which needs ~25-30 active client brands (8-10% of the ~300-brand pool). US$0 if the 20-call price test fails.",
+ "verdict": "MARGINAL",
+ "verdict_note": "Arithmetic works at the plan's prices (2,1-2,7 HEROs or 4,1-5,3 kits a month; 91-94% gross margin; hours fit from ~month 9), but the prices are unsupported: R$2.500-3.500 is the observed ceiling for a one-product set, and at that price the pool clears the market-multiple rule only if most launching brands buy external visuals (unmeasured; the n=15 proxy says ~1/3). The pool-bound ceiling at P=33% is ~US$1.900/month, just under the bar. The treadmill pushes the set toward R$1.500-2.000 by month 24, where it becomes an origination-forever volume studio. Lead with the LAUNCH KIT at R$2.500-3.500 (already near its post-treadmill price), sell the R$5.900 HERO only to replace a model shoot, drop the REVISTA tier unless the stopwatch shows <=12 min per catalogue image and a beauty-only list of >=20 firms is found, and run the 20-call price test (bar committed in advance: >=6/20 name >=R$2.500 external spend per launch) before building anything.",
+ "cheapest_next_test": "R$0, Portuguese calls: 20 EPP/Demais own-brand hair/skin launchers from the last 14 days of genuinely new ANVISA notifications. One question: 'quanto custou o pacote visual (fotos + vídeo) do último lançamento, e com quem?' Bar committed in advance: >=6/20 name >=R$2.500 of EXTERNAL spend per one-product launch => LAUNCH KIT lives; >=4/20 name >=R$5.000 => HERO lives; <=2/20 at >=R$2.500 => the brand-direct channel is dead at any price above Fabrica's R$1.030. This also measures P(external), the unmeasured multiplier under every pool.",
+ "unverified": [
+  "P(a launching brand buys external campaign production at the tier price): unmeasured; it drives every pool. The only proxy is H6A's n=15 production mix (5 model shoots, 8 product-only/3D, 2 likely AI).",
+  "Any buyer-side record of a Brazilian beauty brand paying >= R$2.500 or >= R$5.900 per launch: none found (Workana 403 today; 99Freelas budgets hidden as 'Aberto'; Job for Model has no beauty jobs live; TJSP and Sebraetec PDFs unreachable).",
+  "Sales hours per new client (8-17 h): assumes 20-30 calls, 3-5 sample concepts at 1-2 h each and ~1 in 4 samples converting; all UNVERIFIED.",
+  "Hours per unit: H6D's bottom-up estimates, and my 0,6-0,65x scaling for the LAUNCH KIT; the REVISTA range derives from H6D's per-still rate. No stopwatch data exists.",
+  "Anexo III treatment of AI-only film under §5-B XV (H6C UNVERIFIED); moot under the fator-r route.",
+  "11% INSS on pro-labore for a Simples company (derived from Lei 8.212 art. 21 and art. 30 §4; not checked against the IN RFB); the 2026 minimum wage (~R$1.621 assumed).",
+  "Accountant cost above Contweb's 'a partir de R$99,99' (R$250-600 is from secondary blogs).",
+  "Direct-sales firm classification (beauty vs lingerie/apparel) by name reading only.",
+  "Revistas/yr beyond DeMillus (9), and whether catalogue brands buy imagery externally.",
+  "Adobe Firefly Creative Production 'digital twin product fidelity': a search-result summary only; the business.adobe.com page returned 503/stream error.",
+  "Job for Model 'Bruto' prices: whether the client also pays a platform fee (H6B).",
+  "The ANIMAI and Fabrica HERO-equivalents are my computations from their per-piece lists; Fabrica's cutdown price is inferred from its R$80-120 lookbook/extra-video lines."
+ ]
+}

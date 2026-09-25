@@ -1,0 +1,225 @@
+{
+ "agent": "H6D",
+ "fidelity": {
+  "evidence": [
+   {
+    "claim": "Photoroom Product Fidelity Benchmark (6 Jul 2026): 850 real products (clothing, footwear, bags, jewelry, accessories), 4 models at 2K, same prompt, >=3 of 10 trained annotators per output, one flag = fail. Pass rate with no fidelity issue: Nano Banana 2 29,0% · Nano Banana Pro 28,2% · GPT Image 2 Medium 27,2% · FLUX.2 Klein 9B 16,8%. 'Logo and text distortion was the most common failure, affecting 20.1% of all base-model generations.' Photoroom's own Fidelity Layer lifts NB2 to 38,2%.",
+    "url": "https://www.photoroom.com/blog/top-editing-image-models-maintain-product-details-only-28-of-the-time",
+    "status": "PRIMARY (vendor-run benchmark with published method; vendor sells the fix, so incentive to show a low baseline; virtual-model try-on of soft goods, NOT rigid cosmetic bottles — direction reliable, cosmetic rate UNVERIFIED)"
+   },
+   {
+    "claim": "ProductConsistency benchmark (arXiv, 17 Jun 2026): 870 edits incl. 140 Personal Care; labels of 5-12 words; summed per-image character error: Nano Banana (2.5 Flash) 1,19 · GPT-Image-1 High 0,33 · Flux.1 Kontext-dev 0,149. Authors: closed models have 'relatively lower CER... but it is not sufficient for consistent product fidelity'. Limitation stated: pipeline covers 'straight and clearly visible text'; 'curved, stylized, or decorative text... remain challenging'. Fine-tuning cut CER ~5x — fidelity is a trainable, productisable capability.",
+    "url": "https://arxiv.org/abs/2606.19103",
+    "status": "PRIMARY (academic; tests older model generation; cosmetic labels are curved = the stated hard case)"
+   },
+   {
+    "claim": "ServImage (arXiv, Apr 2026): 1.070 PAID crowdsourced design tasks (median product task US$139). Nano Banana Pro alone: 70,5% task acceptance, 79,9% deliverable acceptance, 83,4% of product-category contract value by real payment decisions.",
+    "url": "https://arxiv.org/abs/2604.24023",
+    "status": "PRIMARY (academic). Cuts AGAINST the plan: at the ~US$139 end the model alone already satisfies paying buyers most of the time"
+   },
+   {
+    "claim": "Single-run video test on a serum bottle: Kling O3 Pro 'Dense side copy was invented as the bottle turned'; Veo 3.1 and Seedance 2.0 added coffee/steam absent from the source still (mug). One candidate per model; author says 'not a statistically powered benchmark'.",
+    "url": "https://masonry.so/blog/best-ai-video-model-for-product-ads",
+    "status": "SECONDARY (tool-vendor blog, n=1 per model, published 3 Jun 2026, updated 16 Aug 2026)"
+   },
+   {
+    "claim": "Kling 3.0 vendor claim (6 Feb 2026): model 'can automatically identify text content in uploaded images (such as signs, captions, or logos) and maintain text consistency, avoiding issues such as text displacement or blurring'.",
+    "url": "https://kling.ai/quickstart/klingai-video-3-model-user-guide",
+    "status": "VENDOR CLAIM — contradicted for rotating bottles by the masonry test above; no independent rate found"
+   },
+   {
+    "claim": "Higgsfield's own product-photoshoot recipe lists 'Warped text — label letters mangled or AI-fictional' as a common defect, caps each output at 3 generations (1 + 2 refinements) and admits 'Do not claim tiny text or full-resolution sharpness is verified from a thumbnail.' Its fix for warped text is another generation, not a composite.",
+    "url": "mcp://Higgsfield/get_workflow_instructions?workflow=product-photoshoot (+ references/refinement-pass.md), pulled 25 Sep 2026",
+    "status": "PRIMARY (vendor's own recipe)"
+   },
+   {
+    "claim": "Higgsfield Marketing Studio (18 Aug 2026): 1.500+ one-click templates; 'Only in the Posters category... can be edited directly... Other categories get regenerated instead of edited.' Prices: 15 s 720p video 89,2 credits (US$4,46); Product Shot 2K 1,5 credits (US$0,075).",
+    "url": "https://higgsfield.ai/blog/new-marketing-studio-higgsfield",
+    "status": "PRIMARY (vendor). The self-serve product has no deterministic label repair"
+   },
+   {
+    "claim": "Higgsfield brand-asset-creation recipe: 'Never redraw an uploaded logo when it can be placed or composited exactly'; mockups use GPT Image 2 as a second stage to apply readable text 'with locked placement' on a preserved base.",
+    "url": "mcp://Higgsfield/get_workflow_instructions?workflow=brand-asset-creation, pulled 25 Sep 2026",
+    "status": "PRIMARY (vendor recipe) — the vendor already composites for mockups; porting it to product photos is a small step (treadmill risk)"
+   },
+   {
+    "claim": "Adobe Photoshop Harmonize: 'blend an image into a new background in seconds without time-consuming masking or manual color grading'; 'adjusts the subject's lighting, shadows, colors, and reflections in a click'; and 'Your added element will be recreated with intelligently masked color tones and lighting' — the standard compositing shortcut itself regenerates the product, so label pixels must be re-overlaid after it.",
+    "url": "https://www.adobe.com/products/photoshop/harmonize-image-blender.html",
+    "status": "PRIMARY (vendor product page)"
+   },
+   {
+    "claim": "Practitioner method: the product 'is never AI-generated. It's the real product photo, composited into an AI-generated scene'; first-last-frame keyframes of two composited stills; 3-5 s clips because 'detail preservation degrades with clip length'; 2-3 seeds per segment; honest limits: 'on-product text under motion, and any occlusion'.",
+    "url": "https://primores.org/wiki/marketing/ai-product-video-fidelity/",
+    "status": "SECONDARY (practitioner wiki, Jun 2026, no rates)"
+   },
+   {
+    "claim": "Practitioner method: 'Animate the background scene, composite the product image as a locked still over it. The product never moves, so there is nothing to warp'; generate 4-6 takes per segment; check frame 1, frames 5-10 and final frame.",
+    "url": "https://domoai.app/blog/ai-product-videos-without-warping-the-product",
+    "status": "SECONDARY (tool-vendor blog, 23 Aug 2026)"
+   },
+   {
+    "claim": "Kalshi NBA Finals ad: '300 to 400 generations to get 15 usable clips', two days, US$2.000, essentially one creator (no product-fidelity constraint).",
+    "url": "https://www.yahoo.com/entertainment/articles/chaotic-kalshi-ad-during-nba-173937071.html",
+    "status": "SECONDARY (Business Insider via Yahoo, 13 Jun 2025, quoting the creator)"
+   },
+   {
+    "claim": "Coca-Cola 2025 AI holiday ad: 70.000+ clips, 5 AI specialists, 30 days.",
+    "url": "https://www.thewrap.com/coca-cola-ai-christmas-ad-2025/",
+    "status": "SECONDARY (press, 3 Nov 2025) — brand-grade AI film is labour-heavy"
+   },
+   {
+    "claim": "Unilever's enterprise answer to label fidelity is a 3D digital twin that 'contains all product variants, sizes, labels, language versions' — not diffusion; claims 2x faster, 50% lower imagery cost.",
+    "url": "https://www.nvidia.com/en-us/case-studies/unilever/",
+    "status": "SECONDARY (vendor case study; unilever.com press release returned 403)"
+   },
+   {
+    "claim": "Person identity drifts: mean identity similarity for GPT-Image-2 falls ~0,71 -> 0,56 and NB2 ~0,70 -> 0,49 as face scale shrinks; degradation worse under iterative edits — relevant to keeping ONE synthetic model consistent across 8 stills + film.",
+    "url": "https://arxiv.org/abs/2609.04151",
+    "status": "PRIMARY (vendor research lab, faces not products)"
+   },
+   {
+    "claim": "Gemini-app images from free and Google AI Pro tiers carry a visible watermark; all carry SynthID; clean output only in AI Ultra / AI Studio. Nano Banana Pro also shipped inside Google Ads, Slides and Vids.",
+    "url": "https://blog.google/innovation-and-ai/products/nano-banana-pro/",
+    "status": "PRIMARY (Google, 20 Nov 2025)"
+   }
+  ],
+  "repair_workflow": "Standard (and the only one with a deterministic result): never let the model draw the product. (1) PRODUCT LOCK: from the brand's own packshots make clean cutouts per angle, 100%-zoom crops of every label panel, colour references and the approved-claims list. (2) STILLS: generate the world (set, light, props, hands/model if any) with the product reference in place, then in Photoshop mask the generated bottle and COMPOSITE the real cutout over it, relight with Harmonize (Adobe: 'blend an image into a new background in seconds' — BUT 'Your added element will be recreated', i.e. Harmonize itself regenerates the product's pixels, so afterwards re-overlay the untouched packshot layer and carry over only light and shadow via masked/luminosity layers, or relight by hand), paint contact shadow/reflections, mask any fingers that overlap, check every label panel at 100% against the lock. Where the shot is packshot-in-scene, generate the background AROUND the real cutout so the product pixels are never regenerated. (3) FILM: build each 3-5 s shot from two composited keyframes (first/last frame), keep product rotation <=~15 deg or move the CAMERA not the bottle, run 4-6 takes per shot, keep the best, and where any frame drifts overlay a tracked/locked still of the real packshot (or cut to a locked-still shot); supers, logo end-card and claims are added in the editor, never generated. (4) QA gate at 100% zoom on stills and frame-by-frame on film (frames 1, mid, last) before the proof board. The vendor's self-serve path does none of step 2-3: it regenerates.",
+  "minutes_per_still": "ESTIMATE (no primary per-still timing found): packshot-in-scene with supplied cutout 12-30 min (place/perspective 1-3, Harmonize + pick variant 1-3, re-overlay the original label layer because Harmonize recreates the element 2-5, shadows/reflections 3-10, 100% label check 1-2, colour 2-5) plus 2-5 min to select from 4-6 candidates; hand/model-holding-product shots 25-60 min (occlusion masking, fingers, skin/hair QA). Floor for QA alone: Photoroom's annotators used a 30-second minimum review per image per reviewer.",
+  "minutes_per_film": "ESTIMATE: 15-20 s hero film of 4-6 shots = 180-360 min at start (storyboard 20-30; composited keyframes 40-90; 20-36 generations reviewed at 1-2 min each 30-70; locked-still/last-frame fixes on 1-3 shots 30-90; edit, music, supers, colour in CapCut 45-90) and ~120-210 min after ~15 campaigns. Anchors: Kalshi ~20-27 generations per usable clip and ~1-2 h per usable clip for one person WITHOUT a label constraint; practitioners run 2-3 or 4-6 takes per 3-5 s segment."
+ },
+ "hours_per_hero": {
+  "start": "14-28 h (ESTIMATE, bottom-up) for the plan's full HERO spec: intake + product lock 1-1,5 · 3 routes 1,5-2,5 · key visual 1,5-2,5 · 8 stills: selection 0,5-1 + composite/repair 2-5,3 · hero film 3-6 · 3 cutdowns 0,75-1,5 · exports (~30-40 files, 3 ratios) 1-2 · 4 QA gates 0,75-1,5 · proof board + one consolidated revision 1,5-3 · delivery + PT calls 1-1,5.",
+  "after_15": "9-15 h (ESTIMATE) for the same spec with templates, Photoshop actions and a failure library: lock 0,5 · routes 0,75-1 · KV 0,75-1,25 · stills 1,8-3,7 · film 2-3,5 · cutdowns 0,5-0,75 · exports 0,5-1 · QA 0,5-0,75 · revision 1-2 · delivery 0,75-1. The plan's 4-6 h is reachable only with a RE-SPECCED grammar (every product pixel = real packshot; product motion by camera moves over locked stills; no model-holding-product shots; no AI 'results' on hair/skin): ~6-9 h estimated. NOTE: the plan's '>8 h kill' is miscalibrated — at R$5.900 the founder's required realisation (US$25-32/h = R$129-166/h at PTAX 5,1795) is only breached above ~31-40 h per HERO; at 15 h she realises ~R$341/h. Excluded: spec samples for outbound (1-2 h each, UNVERIFIED conversion) — the real hours risk is sampling, not production.",
+  "method": "Bottom-up task list from the plan's own SKU spec; per-task minutes are labelled estimates anchored to: Higgsfield recipe (max 3 generations per final still), Photoroom (~27-29% base pass rate => ~3-4 generations per clean still if nothing is composited; 30 s minimum review per image), practitioner take counts (2-3 / 4-6 per video segment), Kalshi (300-400 generations -> 15 usable clips in 2 days by one creator), Adobe Harmonize ('in seconds'). No published practitioner timing for a label-locked beauty campaign was found — the whole estimate should be replaced by a stopwatch on the first 3 campaigns."
+ },
+ "cost_per_campaign": {
+  "generation_brl": "HERO steady state ~800-1.300 credits (≈76-133 image gens at ~2 credits = 150-270; ≈26-42 video gens at ~25 credits Seedance 2.0 = 650-1.050) = R$210-341 at the PLUS marginal rate (US$0,049/credit) or R$238-387 at the top-up rate (18 credits/US$), converted at PTAX 5,1795 + IOF 3,5%. At start (≈2x attempts) R$420-774. FAMILY steady ≈1.400-2.200 credits = R$368-655. Two HEROs/month exceed PLUS's 1.000 credits => ULTRA (US$129 = R$691,54/month for 3.000 credits). Generation is <7% of price.",
+  "stack_brl_month": [
+   {
+    "tool": "Higgsfield PLUS (1.000 credits)",
+    "price": "US$49/mo = R$262,68 incl. IOF 3,5% (annual US$39 = R$209,07; ULTRA US$129 = R$691,54)",
+    "url": "HIGGSFIELD_FACTS.md (MCP show_plans_and_credits 25 Sep 2026); PTAX 24 Sep 2026 venda 5,1795 https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/ ; IOF 3,5% https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12499.htm"
+   },
+   {
+    "tool": "Adobe Photoshop (single app)",
+    "price": "R$65,00/mês, annual plan billed monthly (Photography plan with Photoshop R$55,00/mês)",
+    "url": "https://www.adobe.com/br/products/photoshop/plans.html"
+   },
+   {
+    "tool": "CapCut Pro",
+    "price": "R$65,90/mês (Standard R$32,90) — App Store BR in-app listing",
+    "url": "https://apps.apple.com/br/app/capcut-editor-de-v%C3%ADdeo/id1500855883"
+   },
+   {
+    "tool": "Canva Pro",
+    "price": "R$34,90-35,00/mês (annual R$289,90) — App Store BR in-app listing",
+    "url": "https://apps.apple.com/br/app/canva-design-foto-e-v%C3%ADdeo/id897446215"
+   },
+   {
+    "tool": "Frame.io",
+    "price": "Free R$0 (2 members, 2 GB) or Pro US$15/member/month + tax = R$80,41",
+    "url": "https://frame.io/pricing"
+   },
+   {
+    "tool": "Google Workspace Business Starter",
+    "price": "R$40,90/user/month (SECONDARY, Jan 2025; current BRL price UNVERIFIED — page renders prices by JS). Lean substitute: Google One 200 GB R$14,99/mês (App Store BR)",
+    "url": "https://manualdousuario.net/google-workspace-gemini-ia-aumento/ ; https://apps.apple.com/br/app/google-one/id1451784328"
+   },
+   {
+    "tool": "ChatGPT Plus",
+    "price": "R$99,90/mês — App Store BR in-app listing",
+    "url": "https://apps.apple.com/br/app/chatgpt/id6448311069"
+   },
+   {
+    "tool": "TOTAL",
+    "price": "Full stack R$649,79/month; lean stack (Photography plan, Frame.io Free, Google One) R$533,47/month; non-generation stack R$387,11/month = R$129 per campaign at 3 campaigns/month",
+    "url": "computed"
+   }
+  ],
+  "gross_margin_hero": "R$5.900: steady-state COGS R$339-519 (generation R$210-390 + stack allocation R$129) => 91-94% gross, 85-88% after 6% Simples Anexo III. At start (1 campaign/month carrying the whole R$387 stack, generation R$470-800) => 80-86% gross, 74-80% after tax. Money is not the constraint; her hours and demand are.",
+  "gross_margin_family": "R$9.900: steady-state COGS R$497-759 => 92-95% gross, 86-89% after 6% Simples."
+ },
+ "replacement_cost": {
+  "in_house_cost_brl": "≈R$500-1.350 per HERO-equivalent (8-23% of R$5.900)",
+  "derivation": "An existing marketing analyst runs the vendor's self-serve path: Higgsfield Marketing Studio one-click templates (15 s film max, 720p at 89,2 credits) + the product-photoshoot agent recipe via a chat assistant + Canva resize: KV + 8 stills 2-4 h, film + 3 cutdowns 1-3 h, exports 1-2 h, internal review ~1 h => 5-10 h (ESTIMATE). Salary: Robert Half Guia Salarial 2026, São Paulo, Analista de marketing digital (P/M firms) p25 R$6.050 / p50 R$9.000 / p75 R$11.000 per month (salary only). Loaded ×1,3 (Simples employer) to ×1,65 (non-Simples: 13º 8,33% + férias+1/3 11,11% + FGTS 8% + INSS patronal 20% + RAT/terceiros) — multiplier DERIVED from statutory rates, not sourced as a single figure — over 168 h => R$47-108/h. 5 h × R$47 + R$263 tool = R$497; 10 h × R$108 + R$263 = R$1.343. Cheaper still: Gemini app NB Pro/NB2 (free quota with visible watermark, or Google AI Plus R$49,99) and Google Ads' built-in NB Pro asset generation.",
+  "what_remains_scarce": "The 20-30% the brand cannot get from R$500-1.350: (1) a GUARANTEED label-exact product in every frame — base models pass product-fidelity checks only 27-29% of the time and logo/text distortion hits 20,1% of generations (Photoroom), the vendor's self-serve path regenerates rather than composites, and its own recipe admits it cannot verify small text; a human composite of the real packshot converts a ~29% process into ~100%. (2) A hero FILM that keeps the label locked — the one-click path caps at 15 s/720p and regenerates; practitioners need 4-6 takes per shot plus locked-still composites. (3) Beauty taste that does not read as AI — NIQ: consumers readily identify AI ads and call them 'annoying, boring, confusing'; Ipsos Brazil: 62% prefer human-made ads. (4) Claim-safe design in Portuguese — CONAR's 2026 guide makes 'Anunciantes, Agências e demais partes da cadeia' responsible for AI visuals/simulations that mislead on 'atributos, desempenho', and TikTok ads require an AIGC label on fully AI content but not on background edits; knowing how to build a campaign that avoids both is judgement. (5) Coherence across KV/stills/film/3 ratios and (6) one accountable party on a 7-day clock. HOW SCARCE: (1) and (2) are scarce NOW but not durable — any Photoshop-literate designer can composite, Photoroom already sells a Fidelity Layer (+9 pp), fidelity is trainable (5x CER cut in ProductConsistency) and Higgsfield already composites logos in its brand recipe; (3) is Sol's real asset but only provable by a sample; (4) is moderately scarce; (5)-(6) are ordinary agency value.",
+  "scarcity_evidence": "Supply of 'AI production' as a skill is abundant: 99Freelas (national, one marketplace, 25 Sep 2026) returns 233 freelancers mentioning Midjourney, 62 Kling, 23 Nano Banana, 12 Higgsfield; of the 10 Higgsfield profiles listed, most registered 2023-2026 with 0 completed projects, e.g. an 'AI Creator' (joined Jul 2026) selling 'criativos publicitários... com IA (Kling, Seedance, Higgsfield) do briefing à peça'; live AI-video projects on 99Freelas draw 12-31 proposals each. ServImage shows the model alone already clears paying buyers on ~70% of US$139-median product tasks. No count of São Paulo art directors selling LABEL-GUARANTEED beauty campaigns was obtainable (Workana and Fiverr returned 403; Behance/LinkedIn not accessible) — that specific combination (beauty taste + fidelity guarantee + PT claim QA) is UNVERIFIED as scarce and is the only defensible positioning."
+ },
+ "treadmill": {
+  "verdict": "mixed",
+  "why": "Each release makes GENERATION cheaper and FILM better (better for her: same right to charge, lower cost), but it erodes exactly the two differentiators that are measurable today — label repair and multi-shot film — and it does so through vendor-side 'fidelity layers' and templates rather than through general model quality. Evidence: fidelity did NOT move with the general release cycle (Nano Banana Pro, Nov 2025: 28,2% -> Nano Banana 2, Feb 2026: 29,0% in Photoroom's July 2026 test) but DID move with a specialised layer (+9,2 pp) and with targeted fine-tuning (ProductConsistency ~5x CER cut). Google ships a new image model every ~3-4 months (26 Aug 2025, 20 Nov 2025, 26 Feb 2026, 30 Jun 2026) and pushes each into Google Ads/Slides/Vids for free; OpenAI GPT Image 2 (21 Apr 2026) -> 2.5 (8 Sep 2026); Seedance 2.0 (12 Feb 2026); Kling 3.0 (5 Feb 2026) already markets 'text consistency'; Higgsfield Marketing Studio reached 1.500+ one-click templates by 18 Aug 2026 and its brand recipe already composites logos exactly. 12-18 MONTH VIEW (estimate): a vendor-integrated 'product lock' (reference-conditioned generation + automatic composite of the uploaded packshot) reaches self-serve tools, the fidelity premium falls toward zero and one-click film reaches 20-30 s; what survives is taste, claim-safe direction, coherence and accountability — i.e. the business stays viable only if priced as creative direction against the brand's alternative (a real shoot), not as production. Expect price pressure on a R$5.900 HERO; a plan that needs R$5.900 for production alone becomes the brand intern's afternoon.",
+  "evidence": [
+   "https://blog.google/products/gemini/updated-image-editing-model/ (Nano Banana, 26 Aug 2025)",
+   "https://blog.google/innovation-and-ai/products/nano-banana-pro/ (Nano Banana Pro, 20 Nov 2025; also in Google Ads, Slides, Vids)",
+   "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/ (Nano Banana 2, 26 Feb 2026)",
+   "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/ (NB2 Lite, 30 Jun 2026)",
+   "https://en.wikipedia.org/wiki/GPT_Image (GPT Image 1 25 Mar 2025; gpt-image-2 21 Apr 2026; GPT Image 2.5 8 Sep 2026 — openai.com returned 403, SECONDARY)",
+   "https://seed.bytedance.com/en/blog/seedance-2-0-official-launch (Seedance 2.0, 2026-02-12)",
+   "https://www.prnewswire.com/news-releases/kling-ai-launches-3-0-model-ushering-in-an-era-where-everyone-can-be-a-director-302679944.html (Kling 3.0, 5 Feb 2026)",
+   "https://higgsfield.ai/blog/new-marketing-studio-higgsfield (1.500+ templates, 18 Aug 2026)",
+   "https://www.photoroom.com/blog/top-editing-image-models-maintain-product-details-only-28-of-the-time (NB Pro 28,2% vs NB2 29,0%; Fidelity Layer 38,2%)",
+   "https://arxiv.org/abs/2606.19103 (fidelity is trainable: ~5x CER reduction)"
+  ]
+ },
+ "backlash": {
+  "evidence": [
+   {
+    "claim": "Dove pledge (9 Apr 2024): never use AI in place of real people / to 'represent real women' in its advertising — scope is depictions of women, NOT product imagery.",
+    "url": "https://www.prnewswire.com/news-releases/dove-marks-20-years-of-real-beauty-with-a-renewed-commitment-to-real-and-pledge-to-never-use-ai-to-represent-real-women-in-its-advertising-302111130.html",
+    "status": "PRIMARY"
+   },
+   {
+    "claim": "Aerie (Oct 2025): 'never to use AI-generated bodies or people'; Cadbury, LEGO, Polaroid, Almond Breeze ran 'no AI' campaign claims.",
+    "url": "https://news.designrush.com/no-ai-disclaimers-brands-consumer-trust-2026",
+    "status": "SECONDARY"
+   },
+   {
+    "claim": "Guess ad with two AI-generated models in Vogue's Aug 2025 issue drew widespread backlash; disclosure was in tiny print.",
+    "url": "https://www.cnn.com/2025/07/31/style/vogue-ai-models-guess-campaign",
+    "status": "SECONDARY (press; search result, page not fetched)"
+   },
+   {
+    "claim": "Ipsos AI Monitor 2025, Brazil (fieldwork 21 Mar-4 Apr 2025, ~1.000 urban adults): 62% prefer ad campaigns made by humans vs 22% AI; 38% trust AI to create ad images/videos; 35% trust companies more when they use AI to enhance product images.",
+    "url": "https://www.meioemensagem.com.br/comunicacao/ia-avanca-mas-consumidor-ainda-prefere-criacao-humana",
+    "status": "SECONDARY (Meio & Mensagem reporting Ipsos; Ipsos PDF not fetched)"
+   },
+   {
+    "claim": "NIQ (12 Dec 2024, >2.000 participants, ~150 EEG): consumers readily identify AI-generated ads, describe them as 'annoying, boring, confusing'; even high-quality AI ads show weaker memory activation.",
+    "url": "https://nielseniq.com/global/en/news-center/2024/niq-research-uncovers-hidden-consumer-attitudes-toward-ai-generated-ads/",
+    "status": "PRIMARY (NIQ press release)"
+   },
+   {
+    "claim": "CONAR Guia de Marketing e Publicidade por Influenciadores (2026) §1.3.1: CBAP applies to AI-generated/edited content; 'Anunciantes, Agências e demais partes da cadeia' remain responsible and must ensure no 'apresentação visual... simulações' mislead on 'atributos, desempenho'; footnote: the guide does NOT create an AI-disclosure duty.",
+    "url": "https://conar.wpenginepowered.com/wp-content/uploads/2026/05/260525_GUIA_INFLUENCIADORES_CONAR_v6.pdf",
+    "status": "PRIMARY"
+   },
+   {
+    "claim": "TikTok ads policy: significantly AI-generated content must carry the AIGC label or a clear disclaimer, else 'your ad will be rejected or restricted'; 'Removing or modifying backgrounds' and lighting/colour tweaks are listed as INSIGNIFICANT AI edits.",
+    "url": "https://ads.tiktok.com/help/article/tiktok-ads-policy-misleading-and-false-content",
+    "status": "PRIMARY"
+   },
+   {
+    "claim": "CONAR opened (2023) and archived an ethics case on Volkswagen's AI-recreated Elis Regina ad, with a motion to monitor AI in advertising.",
+    "url": "https://www.kasznarleonardos.com/conar-arquiva-representacao-contra-campanha-publicitaria-da-volkswagen-que-recriou-imagem-da-cantora-elis-regina/",
+    "status": "SECONDARY (law firm; search result, page not fetched)"
+   }
+  ],
+  "implication": "It does not block; it STEERS. No Brazilian rule forbids AI in cosmetic ads and CONAR imposes no disclosure duty (primary), but Brazilian consumers say they prefer human-made ads (62%), AI people are the flashpoint (Dove, Aerie, Guess), fully-AI content needs a TikTok AIGC label while background edits do not, and CONAR puts the agency in the chain of responsibility for AI 'simulações' of performance. For haircare/skincare that points to campaigns built on the REAL packshot with AI-made worlds, textures, light, abstract/ingredient motifs and hands or non-result context — and away from synthetic models showing shiny hair or perfect skin as if it were the product's effect. Conveniently that is also the fastest, most compositable, label-safe production grammar. The plan's FAMILY SKU line 'synthetic-model scenes' should become optional and never depict product results."
+ },
+ "biggest_flaw": "The plan prices PRODUCTION — which the vendor already sells self-serve for about R$500-1.350 of a brand analyst's time plus a US$49 subscription — while leaving the one layer the vendor structurally does not sell (a guaranteed label-exact product in every frame, beauty-grade taste, claim-safe design) implicit and unguaranteed; and its HERO spec (bottle in motion, synthetic models, 8 stills + film + cutdowns) concentrates effort exactly where base models fail most (27-29% product-fidelity pass; text/logo distortion in 20% of outputs; invented copy on rotating bottles), which is also where each vendor release and 'fidelity layer' is closing the gap fastest. Its 4-6 h target is not reachable for that spec (estimate 14-28 h at start, 9-15 h after 15) — though its own '>8 h' kill line is miscalibrated: hours only break the founder's target above ~31-40 h per HERO; the real hours risk is unpaid spec sampling for outbound.",
+ "repair": "(1) RE-SPEC the HERO around a 'Product Lock' grammar: every product pixel is the brand's real packshot composited into AI-made worlds; product motion by camera over locked stills or <=15 deg keyframed turns; supers/claims added in the editor; no AI-rendered hair/skin results; synthetic models optional and never showing efficacy — this makes ~6-9 h per HERO plausible after ~15 campaigns, keeps most assets on TikTok's 'insignificant edit' side and out of CONAR 'simulação de desempenho' risk. (2) SELL THE GUARANTEE explicitly (THE ACCEPTANCE FINDING): 'every label letter matches your packshot at 100% zoom or we redo it free' — bounded to rework, backed by the composite method, which the vendor cannot offer. (3) PRICE AGAINST THE BRAND'S REAL ALTERNATIVE (a photo + video shoot with model, studio, retouch) not against AI tools, and target brands with no in-house designer; expect the production premium to fall over 12-18 months and move the value statement to direction + accountability. (4) RE-SET THE KILL LINE to realisation: kill if a HERO takes >25-30 h after campaign 5 or realises <R$166/h. (5) BANK a per-brand lock kit (cutouts, label crops, claims list, failure notes) so the second and third launch for the same brand are faster — the only accumulating asset and the closest thing to origination-once in this model. HONEST FLOOR (estimate, demand unmeasured): 1 HERO/month => ≈R$4.350-4.700 net ≈ US$840-905/month; the target needs ~2,0-2,5 HEROs/month at ~R$5.100 contribution each. CHEAPEST NEXT TEST (R$0-263, no client needed): take 3 public Brazilian haircare/skincare packshots; (a) run the intern path (Gemini NB free quota / Higgsfield Marketing Studio one-click) for 30 min per product and count label/logo errors at 100% zoom; (b) run the Product-Lock path for KV + 3 stills + one 5 s clip with a stopwatch. Bar committed in advance: intern path shows >=1 label/logo error in >=50% of outputs AND Sol's path is label-exact in 100% of outputs in <=5 h per product (=> HERO <=15 h). Then show the side-by-sides to 10 brand marketing leads by Portuguese call: >=4 of 10 say they would pay >=R$4.000 for the Product-Lock version on their next launch. Fail either bar => the fidelity gap is not the product; stop.",
+ "unverified": [
+  "Label-fidelity pass rate for RIGID CURVED COSMETIC BOTTLES specifically (Photoroom's 27-29% is soft goods try-on; ProductConsistency excludes curved text) — the 3-product test above measures it.",
+  "Any independent quantitative rate for label drift in video (Kling 3.0 / Seedance 2.x); only n=1 practitioner tests and vendor claims exist.",
+  "Every per-task minute in the hours model — no published practitioner timing for a label-locked beauty campaign was found; stopwatch the first 3 campaigns.",
+  "Credit cost per video generation beyond the facts-file equivalences (Seedance 2.0 ≈25 credits; Marketing Studio 15 s 720p = 89,2 credits); 1080p/longer clips and upscales cost more.",
+  "Google Workspace Business Starter current BRL price (R$40,90 is a Jan 2025 secondary figure); App Store in-app prices may differ from web prices.",
+  "Loaded-cost multiplier 1,3-1,65 for a CLT analyst (derived from statutory rates, not a single sourced figure); Robert Half salaries are a recruiter's placement sample and skew high.",
+  "Seedance 2.5 release date (secondary sources say 31 Jul 2026); GPT Image 2 / 2.5 dates are from Wikipedia because openai.com returned 403.",
+  "Whether Meta auto-labels ads carrying SynthID/C2PA from Nano Banana outputs.",
+  "Number of São Paulo art directors/studios already selling label-guaranteed AI beauty campaigns (Workana, Fiverr returned 403; Behance/LinkedIn not accessible).",
+  "Conversion rate of the plan's 'one private sample concept per prospect' outbound — each sample costs 1-2 h and is the largest hidden hour line.",
+  "Ipsos AI Monitor 2025 Brazil figures taken from Meio & Mensagem, not the Ipsos PDF.",
+  "Simples Anexo III 6% first-bracket rate assumed for the CNAE (produção fotográfica/audiovisual); fator R and CNAE choice need an accountant."
+ ]
+}
