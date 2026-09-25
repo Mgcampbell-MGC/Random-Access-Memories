@@ -76,6 +76,7 @@ Portuguese calls.**
 | — | O PLEITO (Ex-tarifário) | MARGINAL, likely C8 fail | ≈450 | Cone-Ex already sells pay-on-grant | Year-three question |
 | — | A REVISTA · A BANCADA · TikTok affiliate agency · agency wholesale · contract-manufacturer resale · VBPH HERO at R$5.900 · GÊMEO · TOM REAL · the ANVISA-deadline desks | **DEAD or add-on only** | — | §3, §4, §8b–8d | — |
 | — | ACOLHE | **closed by the founder** | — | §7 | — |
+| — | SHIFT HANDS (supplied hand-cream brand plan) and its Brazil ports MÃOS DE OFÍCIO / O RÓTULO DA CASA | **DEAD as written; ports below #2** | US 0–300 · BR 0–450 | O'Keeffe's at 2–2,8× cheaper per oz; the salon PRO CASE is cosmetics wholesale (RDC 16/2014 art. 2 VI ⇒ AFE + RT) | §8g |
 
 **Why energy outranks beauty on evidence:**
 
@@ -778,6 +779,108 @@ spent.** Then ≤R$1.000 of Meta ads, where a bill-verified lead must cost ≤R$
 **⇒ What survives of the founder's combination is its best half, and it belongs to A CONTA LIVRE:** the AI bill
 parser and the pre-computed saving. The call opens with the unit's own consumption from the ANEEL file, not with an
 ad. **Buy attention only once a buyer has pre-paid for it.**
+
+## 8g. SHIFT HANDS — the supplied hand-cream brand plan, verified (SH1 US, SH2 Brazil) — ⚰ DEAD AS WRITTEN
+
+**What was supplied:**
+- A US professional hand-care brand, *"FOR HANDS THAT WORK"*.
+- One fragrance-free 90–100 mL cream at US$19,95, plus a **PRO CASE of 24 at ~US$239**.
+- A 1.000-unit first run from a US contract manufacturer and a US$10.250–18.000 budget.
+- Sold to stylists, nail technicians, dental staff and nurses, with an n8n/agent stack running the operations.
+- Source log and working files: `research/hunt6-sources/SH1.*` and `SH2.*`.
+
+**Shape:** a physical own brand (`THE THREE-ROUTES-INTO-A-PRODUCT CHECK`, OWN BRAND route). It is the same shape as
+Project Climate, which this file already rejected.
+
+### The US plan (SH1) — honest floor US$0–300/month
+
+- **The shelf is occupied at a lower price.**
+  - **Price:** SHIFT works out to US$5,87–6,65/oz. That is **2–2,8× O'Keeffe's Working Hands** (US$2,35–3,25/oz at
+    Home Depot and Zoro). O'Keeffe's is owned by Gorilla Glue, calls itself *"America's #1 Hand Cream Brand"* and
+    already shows healthcare-worker testimonials.
+  - **Same price, same playbook:** **Gloves In A Bottle** sells a 3.4 oz tube at the identical **US$19,95**. It
+    already runs the plan's whole playbook: reviews by profession, a healthcare-professional sample page,
+    affiliates, wholesale, and a 24-pack at US$399.
+  - **The case:** the PRO CASE works out to US$9,96 a unit, about what Zoro charges for one O'Keeffe's tube.
+  - **The pitch:** CeraVe's page already makes the "frequent handwashing, fast-absorbing, non-greasy" pitch.
+  - *(Mass-retailer prices UNVERIFIED; the retailers blocked automated access.)*
+- **The tagline collides with a live trademark.** Gorilla Glue holds **WORKING HANDS, Reg. 3.940.976 (Class 3, skin
+  creams)** and **Reg. 1.577.236 (lotion-type hand soap)**, which the plan's later hand wash would also hit.
+  Whether the exact phrase is registered is UNVERIFIED; the USPTO search site blocked automated requests.
+- **Hospitals are closed by their own rules.**
+  - The CDC hand-hygiene guideline tells facilities to provide lotion to staff and recommends it be free.
+  - UCSF and U. Toledo policies allow only hospital-approved lotion at work.
+  - GOJO and Ecolab already supply lotion that works with chlorhexidine (CHG) and gloves, including a fragrance-free
+    2.5 oz tube.
+  - **⇒ The free front door, written into the buyer's own policy.**
+- **The plan's MOQ source is misattributed.** The "~1.000 vs ~5.000" sentence is copied word for word from **Metro
+  Private Label, a Guangzhou maker (China)**, not a US one.
+  - US data points: Pravada (Florida) has a 50-piece MOQ with prices behind a login; Bulk Apothecary's contract
+    filling starts at 10.000 pieces.
+  - The zero-minimum option, Blanka, costs about US$17 a unit, which is 3–4× the plan's COGS.
+- **The "77% margin" leaves out shipping.** USPS Ground Advantage retail for a 4–8 oz parcel is US$7,90–9,45, i.e.
+  40–47% of a US$19,95 sale.
+- **MoCRA is NOT the blocker.**
+  - Below US$1M in US sales, product listing and facility registration are not required. The plan says the
+    opposite.
+  - Serious adverse events must be reported within 15 business days, and a safety file must be kept.
+  - **Shopify Payments does not list Brazil**, so it needs a business in a supported country, in practice a US LLC.
+- **Founder rules it breaks:**
+  - capital 4–7× over **C5**;
+  - a 1.000-unit stock run breaks the **inventory veto** (made-to-order only);
+  - seeded creators paid bonuses are contractors (**C3**);
+  - US buyers mean English, which C1 keeps **written-only**.
+
+### The Brazil port (SH2) — two repairs, both below O LANÇAMENTO
+
+- **Supply is easy, and that is the problem.**
+  - **Veneza's own-label terms:** minimum R$5.000 per order and 24 units per product. Its sample shop lists a 30 mL
+    hand cream at R$9,79 and a 150 g pump at R$24,53. **The factory holds the ANVISA notification** (R$437,50 per
+    item), so the Project Climate cosmetovigilance problem does not apply.
+  - **Landed cost** ≈R$8,04–8,87 per tube at 500 units. It is UNVERIFIED that the sample price equals the
+    production price.
+- **The shelf is `THE CATALOGUE SCISSORS` again.**
+  - **Crowded:** 791 hand-cream notifications from 242 companies in 12 months, and the same Veneza formula under at
+    least 5 brands.
+  - **Cheap:** an "invisible glove" promise sells at R$17,99 for 75 g. Five readable retailers list 238 products
+    from 84 brands at a median R$59 per 100 g; manicure supply stores sell at R$5–25 per 100 g.
+  - **Only the positioning is free:** no product name targets the professional's own hands.
+- **★ The PRO CASE to a salon is cosmetics WHOLESALE, which needs an AFE. Verified verbatim by me at
+  `anvisalegis.datalegis.net`, RDC 16/2014:**
+  - **Art. 2 VI:** *"distribuidor ou comércio atacadista: compreende o comércio de … cosméticos … em quaisquer
+    quantidades, realizadas entre pessoas jurídicas **ou a profissionais para o exercício de suas atividades**"*.
+  - **Art. 3:** AFE *"é exigida de cada empresa que realiza as atividades de … distribuição"*.
+  - **Art. 5 III:** exempts only *"comércio varejista de cosméticos"*.
+  - The AFE needs an inspection report (art. 15 I c) and council-registered technical responsibility (art. 28 I e).
+    **A contracted RT breaks C3.**
+  - **⚠ And the definition reaches further than the salon.** A sale to an individual professional *"para o
+    exercício de suas atividades"* is also wholesale, so SH2's own repair, retail kits to each professional, is
+    **close to the line**. Its 150 g station pump is plainly for the workstation.
+- **Claims:**
+  - Hydration-only keeps it in Grau 1.
+  - *"EPI"* or protection-against-chemicals claims need a Labour Ministry CA (NR-6).
+  - *"Sensitive"* or *"antiseptic"* push it to Grau 2.
+
+| Repair | What it is | Honest floor | Test (bar committed in advance) |
+|---|---|---|---|
+| **MÃOS DE OFÍCIO** | Two-format kit at R$89,90 (150 g station pump + two 30 mL tubes), reserved by the salon owner by phone and prepaid before the factory order | **US$0–450/month at month 12**; needs 216–305 kits a month ≈ 80–190 active salons; capital ≈R$6,9–8,2k | 30 SP salon calls: ≥6 salons send written reservations for ≥40 kits in 10 working days AND ≥3 of them say they would reorder monthly. **Get the AFE line checked first.** |
+| **O RÓTULO DA CASA** | Own-label lines for beauty-supply stores and multi-unit nail studios; the store is the factory's client, Sol takes a project fee | **US$0–300/month** | 30 calls: ≥3 commit in writing to the R$5.000 factory order plus ≥R$800 to Sol within 30 days |
+
+**Verdict:** neither beats O LANÇAMENTO on evidence, and each fails a revealed preference.
+- **MÃOS DE OFÍCIO** has genuine repeat consumption, but at R$0,43/g it costs 2–8× the professional's usual shelf,
+  and it holds stock.
+- **O RÓTULO DA CASA** is a free front door: stores can deal with factories directly, most factories include label
+  design free, and a trade association matches brands to factories free. **Keep it as a lead source for O
+  LANÇAMENTO**: a store launching its own label is a launch.
+- **Run MÃOS DE OFÍCIO's test only if Sol answers yes to the year-three question** about selling hand cream to salon
+  owners.
+
+**Laws:**
+- **★ IN BRAZILIAN COSMETICS, "SELLING TO PROFESSIONALS" IS WHOLESALE BY DEFINITION.** RDC 16/2014 art. 2 VI makes a
+  sale to a professional *"para o exercício de suas atividades"* distribution, which needs an AFE and an RT. Only
+  retail to the consumer is exempt. **Any "pro" beauty channel must be checked against this before it is sized.**
+- **★ A SUPPLIED PLAN'S SUPPLY SENTENCE CAN COME FROM ANOTHER COUNTRY.** The US plan's MOQ line was copied verbatim
+  from a Chinese maker. **Grep a load-bearing sentence before believing its source, as well as its number.**
 
 ## 9. LAWS FROM THIS HUNT
 

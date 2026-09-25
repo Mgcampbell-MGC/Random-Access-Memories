@@ -1,0 +1,268 @@
+{
+ "agent": "SH2",
+ "supply": [
+  {
+   "factory": "VENEZA – INDÚSTRIA E COMÉRCIO DE COSMÉTICOS LTDA (VNZ, Cambé/PR, CNPJ 02.705.260/0001-98)",
+   "moq": "TERC (catalogue formula, your label): minimum 24 units per product AND a minimum order of R$5.000 in products. Custom formula or packaging (PROJ TERC): from 240 units per product and R$10.000. Lead time: up to 30 calendar days after the label is approved. Freight FOB. Label NOT included in the quote (client negotiates with a printer).",
+   "price": "The sample shop lists the TERC hand creams at R$9,79 (Creme Mãos e Unhas Retinol 30 mL, SKU 74705) and R$8,32 (Creme Mãos Luvas de Silicone 30 g, SKU 2200). The 150 g pump (Cream Polpa Hidratante, SKU 60300) is R$24,53 and the 60 g foot cream R$21,23. Published volume discounts: 24 units −7% … 120 units −35%.",
+   "unit_cost": "30 mL tube: R$6,36 of product at the 120+ class. Landed at 500 units ≈ R$8,04–8,87, i.e. product + ~R$0,40 label (UNVERIFIED) + R$437,50/500 ANVISA + ~R$0,40 freight (UNVERIFIED) + 0–13% interstate ICMS on entry (UNVERIFIED). At the 24-unit class ≈ R$29–30 each, but a 24-unit order cannot exist alone because of the R$5.000 order minimum (R$5.000 buys 549–785 tubes). ⚠ That the sample-shop price equals the TERC production price is UNVERIFIED.",
+   "anvisa": "Veneza is the titular: it notifies under its own CNPJ with the client's brand in the product name. R$437,50 per item, paid once. Verified in the ANVISA file: 15 hand-moisturiser notifications in 12 months under Veneza's CNPJ, carrying client brands (ID da Beleza, Angels Beauty, Cadoro, Teodoro Beauty, Tiarga & Inoue, Ceci Lavi, Plenna, BCharme…). 'Produtos de Grau 2 podem demandar exigências adicionais'. It also offers help with INPI.",
+   "url": "https://vnz.ind.br/termos-terceirizacao/ ; https://amostra.vnz.ind.br/produto/74705/ ; https://amostra.vnz.ind.br/produto/2200/ ; https://amostra.vnz.ind.br/produto/60300/",
+   "status": "VERIFIED (terms and sample prices read at source 25 Sep 2026). Sample price = TERC price is UNVERIFIED. Fragrance-free is not in the TERC catalogue; searches for 'neutro' returned 0, so it needs PROJ TERC at R$10.000."
+  },
+  {
+   "factory": "DERMAVITA Indústria e Comércio de Produtos Farmacêuticos (Brusque/SC)",
+   "moq": "'pedido mínimo de 300 unidades por tipo de produto'",
+   "price": "Not published. Terms: 'Entrada de 30% do valor do pedido + Custo Notificação Anvisa à vista e saldo parcelado a partir da data da aprovação da amostra'. Formulation and pricing within 20 days.",
+   "unit_cost": "UNVERIFIED (no published unit price)",
+   "anvisa": "'todos regularizados pela Anvisa com validade de 3 anos'; the notification cost is charged to the client.",
+   "url": "https://www.dermavita.com.br/terceirizacao/",
+   "status": "MOQ and terms VERIFIED; price UNVERIFIED"
+  },
+  {
+   "factory": "NOVA FIGUS (white label)",
+   "moq": "'a partir de 300 unidades por produto'; '300 unidades, a depender da embalagem'",
+   "price": "Not published. The client buys samples first.",
+   "unit_cost": "UNVERIFIED",
+   "anvisa": "'produzidos pela Nova Figus e regulamentados pela ANVISA, seja em registro ou notificação'. Label layout included: 'faremos todo o processo criativo de rótulo e escolha de embalagens com você'.",
+   "url": "https://novafigus.com.br/white-label/",
+   "status": "MOQ VERIFIED; price UNVERIFIED; hand cream in the catalogue UNVERIFIED"
+  },
+  {
+   "factory": "FÓRMULA ART – Indústria de Cosméticos (MG, DDD 37)",
+   "moq": "'Sem limite mínimo para produção', but 'projeto inicial à partir de R$ 5.000,00'",
+   "price": "Not published per unit.",
+   "unit_cost": "UNVERIFIED",
+   "anvisa": "'A única taxa cobrada é a da notificação do produto junto a ANVISA'; 'Registro na ANVISA (com sua marca própria)'. Freight is paid by the client.",
+   "url": "https://www.formulaart.com.br/",
+   "status": "Terms VERIFIED; price UNVERIFIED; hand cream SKU UNVERIFIED"
+  },
+  {
+   "factory": "LARIMAR Cosméticos (Novo Hamburgo/RS, CNPJ 10.361.294/0001-30)",
+   "moq": "Not published. The site sells 'Terceirização de Cosméticos em Pequena Quantidade'.",
+   "price": "Its product page for 'Creme Hidratante para as Mãos com Amêndoas e Karité 70g' (SKU 70141) shows 'R$ 0,00' (price not published). It publishes the INCI (Aqua … Paraffinum Liquidum … Dimethicone, Urea, Parfum). The same site also runs a 'Cremes de Proteção EPI' category (Isoluv 2 óleo-resistente 200 g).",
+   "unit_cost": "UNVERIFIED",
+   "anvisa": "'sempre seguindo as normas da ANVISA' (who holds the notification is not stated: UNVERIFIED)",
+   "url": "https://www.larimarcosmeticos.com.br/produtos/creme-hidratante-para-as-maos-70g ; https://www.larimarcosmeticos.com.br/category/cremes-de-proteção-epi",
+   "status": "SKU VERIFIED; MOQ and price UNVERIFIED"
+  },
+  {
+   "factory": "CONFORTO Cosméticos (São Paulo)",
+   "moq": "'no mínimo 500 unidades' (web-search snippet only; the site returned HTTP 500)",
+   "price": "not obtained",
+   "unit_cost": "UNVERIFIED",
+   "anvisa": "UNVERIFIED",
+   "url": "https://www.confortocosmeticos.com.br/",
+   "status": "UNVERIFIED (site unreadable)"
+  }
+ ],
+ "shelf_br": [
+  {
+   "product": "Monange Creme Mãos Anti-Idade Q10 e Vit. E",
+   "size": "75 g",
+   "price": "R$14,19 (R$18,9/100 g)",
+   "url": "https://www.drogariasaopaulo.com.br/locao-hidrante-monange-para-as-maos-anti-idade-e-toque-seco-75g/p",
+   "status": "observed 25 Sep 2026 (VTEX catalogue API)"
+  },
+  {
+   "product": "Carmed Nas Nuvens creme para mãos (Cimed)",
+   "size": "40 g",
+   "price": "R$13,64",
+   "url": "https://www.drogariasaopaulo.com.br/creme-para-maos-carmed-nas-nuvens-40g/p",
+   "status": "observed"
+  },
+  {
+   "product": "Nivea Creme para Mãos 3 em 1 Reparação",
+   "size": "75 g",
+   "price": "R$25,99 (R$34,7/100 g)",
+   "url": "https://www.paguemenos.com.br/creme-nivea-para-maos-3-em-1-reparacao-75g/p",
+   "status": "observed"
+  },
+  {
+   "product": "Avon Care Luvas de Silicone Creme Protetor para as Mãos",
+   "size": "75 g",
+   "price": "R$17,99",
+   "url": "https://epocacosmeticos.vtexcommercestable.com.br/avon-care-luvas-de-silicone-creme-protetor-para-as-maos-erva-doce-e-lavanda-75g-291772/p",
+   "status": "observed (the 'invisible glove' promise is already mass-market)"
+  },
+  {
+   "product": "Sensi (Jequiti) Creme Mãos Luva de Silicone",
+   "size": "40 g",
+   "price": "R$19,90",
+   "url": "https://www.drogariasaopaulo.com.br/creme-hidratante-para-as-maos-sensi-luva-de-silicone-40g-935339778/p",
+   "status": "observed"
+  },
+  {
+   "product": "Granado Terrapeutics Creme para Mãos Lavanda",
+   "size": "50 mL",
+   "price": "R$22,95–41,00 across retailers (R$27,95 at Época)",
+   "url": "https://epocacosmeticos.vtexcommercestable.com.br/creme-para-maos-terrapeutics-lavanda-50ml---granado-223296/p",
+   "status": "observed"
+  },
+  {
+   "product": "Granado Pink Creme Hidratante para as Mãos",
+   "size": "60 g",
+   "price": "R$28,69–36,00",
+   "url": "https://epocacosmeticos.vtexcommercestable.com.br/creme-hidratante-para-as-maos-granado-pink-60g-145427/p",
+   "status": "observed"
+  },
+  {
+   "product": "L'Occitane au Brésil Creme de Mãos Bacuri",
+   "size": "30 mL",
+   "price": "R$29,99 (Pague Menos); Bromélia/Amburana R$45,90 at Época",
+   "url": "https://www.paguemenos.com.br/creme-de-maos-loccitane-au-bresil-bacuri-30ml/p",
+   "status": "observed"
+  },
+  {
+   "product": "Neutrogena Norwegian Formula creme para mãos (the global 'working hands' incumbent)",
+   "size": "56 g",
+   "price": "R$46,90–61,39; FPS 30 version R$61,99–68,19",
+   "url": "https://www.paguemenos.com.br/creme-hidratante-para-as-maos-neutrogena-norwegian-formula-56g/p",
+   "status": "observed"
+  },
+  {
+   "product": "La Roche-Posay Lipikar Xerand mãos",
+   "size": "50 mL",
+   "price": "R$35,90",
+   "url": "https://www.drogariasaopaulo.com.br/creme-p-ressecamento-das-maos-la-roche-posay-lipikar-xerand-50ml/p",
+   "status": "observed"
+  },
+  {
+   "product": "Isdin Ureadin Manos Plus",
+   "size": "51,5 g",
+   "price": "R$74,99",
+   "url": "https://www.paguemenos.com.br/hidratante-para-as-maos-isdin-ureadin-manos-plus---515g/p",
+   "status": "observed"
+  },
+  {
+   "product": "CeraVe Creme Reparador para as Mãos",
+   "size": "100 g",
+   "price": "R$124,90",
+   "url": "https://www.drogariasaopaulo.com.br/creme-reparador-cerave-para-as-maos-100ml/p",
+   "status": "observed"
+  },
+  {
+   "product": "Dermage Compose creme para mãos",
+   "size": "UNVERIFIED",
+   "price": "R$89,90",
+   "url": "https://www.dermage.com.br/compose-creme-para-maos/p",
+   "status": "observed (VTEX API)"
+  },
+  {
+   "product": "Mavala Mava+ creme para as mãos",
+   "size": "50 mL",
+   "price": "R$134,90–174,90",
+   "url": "https://www.drogariasaopaulo.com.br/creme-para-as-maos-hidratante-mavala-mava-50ml-177sj072a9296691/p",
+   "status": "observed"
+  },
+  {
+   "product": "Repós Creme Mãos e Pés com Ureia (manicure-channel)",
+   "size": "120 g",
+   "price": "R$22,90 (Coprobel), R$22,99 (Ikesaki)",
+   "url": "https://www.coprobel.com.br/cr-maos-e-pes-repos-120g-ureia/p",
+   "status": "observed (beauty-supply store)"
+  },
+  {
+   "product": "Repós Creme Mãos e Pés com Ureia (backbar size)",
+   "size": "500 g",
+   "price": "R$39,90 (R$8,0/100 g)",
+   "url": "https://www.coprobel.com.br/cr-maos-e-pes-repos-500g-ureia/p",
+   "status": "observed"
+  },
+  {
+   "product": "D'agua Natural Creme Mãos e Pés Semente de Uva",
+   "size": "680 g",
+   "price": "R$56,99 (R$8,4/100 g)",
+   "url": "https://www.ikesaki.com.br/creme-hidratante-maos-e-pes-dagua-natural-semente-de-uva-680g/p",
+   "status": "observed"
+  },
+  {
+   "product": "Corpo Dourado Creme para Mãos & Pés",
+   "size": "300 g",
+   "price": "R$14,99 (R$5,0/100 g)",
+   "url": "https://www.iapcosmeticos.com.br/creme-para-maos---pes-corpo-dourado-300g/p",
+   "status": "observed"
+  },
+  {
+   "product": "Soft Hair Bio Soft Creme Lisa Mão (manicure-channel hand cream)",
+   "size": "120 g",
+   "price": "R$12,99 (IAP), R$19,90 (Coprobel)",
+   "url": "https://www.iapcosmeticos.com.br/creme-lisa-mao-bio-soft-acido-hialuronico-120g/p",
+   "status": "observed"
+  },
+  {
+   "product": "Ricca Flor creme para mãos (beauty-supply counter item)",
+   "size": "50 g",
+   "price": "R$18,90",
+   "url": "https://www.ikesaki.com.br/cr-hidr-ricca-50g-p-maos-flor-peonia/p",
+   "status": "observed"
+  },
+  {
+   "product": "Veromed Creme Luvas de Silicone para Mãos Diabetic",
+   "size": "60 mL",
+   "price": "R$34,90",
+   "url": "https://www.drogariasaopaulo.com.br/creme-luvas-de-silicone-para-maos-diabetic-60ml-veromed-1n7n5448x8508493/p",
+   "status": "observed"
+  },
+  {
+   "product": "byCorpus creme mãos e pés, pocket size 'pensada para profissionais de saúde' (Grau 2)",
+   "size": "UNVERIFIED",
+   "price": "UNVERIFIED",
+   "url": "https://bycorpus.com.br/enfermeiro-na-linha-de-frente-hidrate-suas-maos/",
+   "status": "the positioning is observed; the price was not obtained"
+  }
+ ],
+ "shelf_summary": "It is the catalogue scissors, with one narrow position lightly held. (1) The notification flow: in the ANVISA TA_CONSULTA_COSMETICOS file, 12 months to 24 Sep 2026, there are 791 hand-moisturiser notifications from 242 holders, about 66 new ones a month. They include ≥8 'luvas de silicone' ('invisible glove') brands (Avon, Jequiti Sensi, Ouribel, Sout, Daqua, Dermosqee, Review Care, Tiarga & Inoue) and ≥10 'mãos & unhas' creams. Only 1 notification carries 'PROFISSIONAL', and it is a hand-and-foot cream used on clients (Chico Beauty). 0 of 791 names target the professional's OWN hands. (2) The shelf: 5 readable retailers (Época, Drogaria São Paulo, Pague Menos, plus the beauty-supply stores Ikesaki, Coprobel and IAP) list 238 distinct hand-care products from 84 brands. The median price is R$32,90 and the median is R$59 per 100 g/mL (p25 R$38,5, p75 R$111). The manicure-channel tier the professional actually buys from sits at R$5–25 per 100 g (Repós 500 g R$39,90; D'agua 680 g R$56,99; Corpo Dourado 300 g R$14,99; Bio Soft 120 g R$12,99). (3) The only premium room is at the brand tier: Granado R$46–82, Neutrogena R$84–122, L'Occitane au Brésil R$100–153 per 100 mL. Brand equity holds that price, and she has none. (4) Her own cost from Veneza is R$21–30 per 100 mL of product before label and freight, which is already ABOVE the manicure channel's retail price per gram. (5) The formula is not hers: the same Veneza catalogue 'creme para mãos retinol/nano retinol' is notified under ≥5 brands in 12 months (matched by name; that it is one formula is an INFERENCE). Verdict: the 'for professionals' hands' position is unclaimed in product names but not in function ('luvas de silicone' is mass-market at R$17,99/75 g). Only positioning is available, not product difference. Mercado Livre (account-verification wall), Amazon.com.br (503), Shopee (403), Magalu (403) and natura.com.br (403) were unreadable, so marketplace listing counts and review counts are NOT measured.",
+ "buyer_channel": "The professional buys for her own hands; the salon does not. (a) Lei 13.352/2016 (salão-parceiro): the salon's cota-parte is 'a título de atividade de aluguel de bens móveis e de utensílios… e/ou… serviços de gestão, de apoio administrativo'. The contract must set 'direitos do profissional-parceiro quanto ao uso de bens materiais necessários ao desempenho das atividades'. Nothing makes the salon supply a professional's personal skin care; who pays for products is a contract clause (UNVERIFIED in practice, since the MTE model contract PDF returned 503). (b) The professional is overwhelmingly a MEI (a PJ) and buys consumables at 'casas de manicure / lojas de produtos para salão' (observed shelf: Ikesaki, Coprobel, IAP) at R$5–25/100 g. (c) The salon buys BACKBAR: the hand-and-foot cream used on clients in the service, in 300–680 g tubs. SENAC-ES's manicure course list includes '1 Hidratante para mãos e pés' for practice on clients; SENAC-SP's two lists include none. (d) ⚠ The real B2B buyer is therefore the beauty-supply store (retail) and its distributor (wholesale). But any sale by her company to a PJ (salon, store, or a MEI buying 'para o exercício de suas atividades') is 'comércio atacadista' under RDC 16/2014 art. 2 VI, which requires AFE (art. 3). (e) Store margin, observed at the state level: IBGE PAC 2024, group 47.7 retail (pharmacy, perfumery and cosmetics) has a 'taxa de margem de comercialização' of 66,2% (markup on cost ≈ 39,8% of net resale revenue). Wholesale 4644–4646 is 47,4% (≈32,2% of revenue). These are group-level and include pharmacies. Distributor postings seen by W2F: 'Rentabilidade de até 100%', 'Ganhos de 40% ou mais'; cosmetics reps are paid 10–15%.",
+ "population": "PRIMARY, measured 25 Sep 2026. MEI (SIMEI optants by main CNAE, Receita Federal Estatísticas do Simples Nacional, 'Posição Consolidada até 19/09/2026'; 27 UFs queried and summed): 9602-5/01 Cabeleireiros, manicure e pedicure = 1.074.566 in Brazil / 307.435 in SP (the #1 MEI activity in SP). 9602-5/02 Estética e outros serviços de beleza = 353.921 / 102.050. 4772-5/00 cosmetics retail = 210.165 / 49.784. All SIMEI in Brazil = 17.564.107. Non-MEI (IBGE CEMPRE 2021, table 6450, last year of the series): 96.02-5 = 41.148 local units, 123.861 people (73.811 salaried) in Brazil; SP 13.447 units, 41.037 people (25.417 salaried). 47.72-5 = 37.074 units in Brazil, 11.710 in SP. So SP holds ≈409.500 beauty-service MEIs plus ≈25.400 salaried beauty workers. Need evidence (primary): the Havmose et al. 2022 meta-analysis (Contact Dermatitis 86:254, PMID 35038179) puts hand eczema in hairdressers at 38,2% lifetime, 20,3% one-year and 7,7% point prevalence, with incidence of 51,8 per 1.000 person-years. A La Roche-Posay-run survey of 391 hairdressers (PMID 36698444, authors employed by the brand) found skin dryness the most intense issue and 28% discontinuing work. Consumption: the 'rule of hand' (Long, Finlay & Averill 1992, PMID 1497374) gives 4 hand areas = 2 FTU = 1 g, i.e. ~1 g per full two-hand application. At 3–5 applications per workday × 22 days that is 66–110 g/month for a diligent user. Actual application frequency among Brazilian professionals is UNVERIFIED; byCorpus quotes Darlenski & Tsankov 2020 that only 22% of health workers apply cream (secondary).",
+ "regulation": "(1) GRAU 1 if the claims stay at hydration. RDC 907/2024 (as amended by RDC 949/2024) Anexo I, Grau 1 list item 42: 'Preparações cosméticas para umectação, hidratação e/ou refrescância do rosto, mãos, pés'. It becomes GRAU 2 if it declares 'pele… sensível' (item 1b; list item 33, so no 'hipoalergênico/pele sensível'), 'antibacteriano ou antisséptico' (1g; item 22), 'fotoprotetora' (1h; item 25, so no FPS) or 'como equipamento de proteção individual (EPI) para o trabalho' (1k; item 23). 'Para profissionais' is NOT a listed trigger. (2) The EPI trap: NR-6 Anexo I F.2 lists 'creme protetor de segurança para proteção dos membros superiores contra agentes químicos', and NR-6 item 6.2 says an EPI 'só poderá ser posto à venda ou utilizado com a indicação do Certificado de Aprovação – CA' (gov.br PDF; version date UNVERIFIED). Claiming the cream protects a hairdresser's hands from dyes or chemicals turns it into an EPI (MTE CA + Grau 2). 'Luvas de silicone' marketing is notified by Avon and Jequiti as ordinary cosmetics, so the idiom is usable; the words 'EPI', 'barreira contra agentes químicos' and 'proteção no trabalho' are not. (3) TITULAR: RDC 907 art. 37 requires titulares of national products to hold an AFE to MANUFACTURE the class, so her company cannot be titular; the factory is. The label must show the titular's AFE, CNPJ and razão social (art. 13 II f–h); her brand appears only as 'marca'. (4) COSMETOVIGILANCE: RDC 894/2024 art. 1 binds 'as empresas titulares da regularização'. With the factory as titular, the art. 46 §1º bar on outsourcing the responsável pela cosmetovigilância binds the FACTORY, not her. The Project Climate C3 collision does NOT fire in the TERC model. (5) ★ THE COLLISION THE SUPPLIED STRUCTURE HITS: RDC 16/2014 art. 2 VI defines 'distribuidor ou comércio atacadista' as sales of cosmetics 'entre pessoas jurídicas ou a profissionais para o exercício de suas atividades'. Art. 3 requires AFE for 'distribuição'. Art. 5 III exempts only 'comércio varejista de cosméticos'. Art. 28 I e requires distributors to prove a responsável técnico registered with a professional council, and art. 15 I c requires a local inspection report. gov.br: AFE 'É obrigatória para empresas que desejam realizar… Distribuir'. ⇒ Pre-selling PRO CASES to salons, nail studios or stores makes her company a cosmetics wholesaler: AFE + RT (a contracted professional, which is C3) + premises. Retail sale to an individual for personal use is exempt. The AFE fee (TFVS) varies by porte and is UNVERIFIED.",
+ "candidates": [
+  {
+   "name": "MÃOS DE OFÍCIO — SHIFT MÃOS repaired: a two-format workstation hand-care kit sold RETAIL to beauty professionals, organised per salon",
+   "one_line": "A company brand, never Sol's face. Veneza TERC makes it and is ANVISA titular: a 150 g pump for the bancada plus two 30 mL pocket tubes, claims strictly Grau 1 hydration. Sol phones salon and nail-studio owners in Portuguese. The owner becomes the ORGANISER of a group reservation, not the buyer: each professional reserves and pays her own kit by Pix (retail, CPF, personal use, so no AFE). The Veneza PO is placed only after the reservations cover it (made-to-order, satisfying the inventory veto), one box ships to each salon, and reorders follow consumption.",
+   "offer_and_price": "'Kit Bancada' R$89,90 per professional (1 pump 150 g + 2 tubes 30 mL; the tube is R$24,90 alone). This sits at ~R$0,43/g: above Nivea (R$0,35/g), below Granado 50 mL (R$0,46–0,82/mL) and Neutrogena (R$0,84–1,22/g). Contribution per kit R$44,7–49,9: product R$28,67 at Veneza's −35% class on sample-shop list prices, plus 3 labels R$1,20 (UNVERIFIED), inbound freight R$1,50 (UNVERIFIED), 0–13% interstate ICMS on entry (UNVERIFIED), outbound box share R$5 (UNVERIFIED), and DAS at 4–5,65%.",
+   "units_for_bar": "216–305 kits/month for R$10.400–12.950 net after R$400–700/month fixed. At 1 g per two-hand application (rule of hand) and 3–5 applications per workday, a diligent user needs 0,31–0,52 kits/month. That means ≈410–970 ACTIVE repeat buyers, or ≈80–190 salons at 5 buyers each. Gross revenue R$19.400–27.400/month (R$233–329k/year).",
+   "capital_needed": "≈R$6.900–8.200 (US$1.320–1.580 at 5,20): a first Veneza order of R$4.968 (120 pumps + 480 tubes = 120 kits + 240 loose tubes); ANVISA 2 × R$437,50; labels ~R$240–300; freight R$300–400; interstate ICMS 0–R$650; INPI ~R$440 (archive figure); CNPJ ME R$0–500; samples R$60. The first run's retail value is R$16.764, so ~80 prepaid kits fund it. Inside C5 but consumes most of it.",
+   "hours": "Steady state ≈50–85 h/month against the 87 h cap. Acquisition: ~5–10 new salons/month at an assumed 10% call conversion (UNVERIFIED) = 50–100 calls × 10 min = 8–17 h. Reorder contact: 80–190 salons × 8 min = 11–26 h. Packing and shipping: kits × 3 min + boxes × 5 min = 18–31 h, her hands on every box unless Veneza ships to multiple addresses (UNVERIFIED). Factory and labels 4 h; Pix reconciliation and admin 8 h. The year-one ramp to 100 salons is ≈1.000 calls ≈ 170 h ≈ 14 h/month.",
+   "pool_div4": "SP beauty-service MEIs 409.485 ÷ 4 ≈ 102.000 professionals against 410–970 needed: passes about 100×. Money: even at an UNVERIFIED R$5/month per SP professional on hand care, the pool is R$24,6M/year ÷ 4 = R$6,1M against R$0,23–0,33M needed. Pool size does not bind; price acceptance and repeat rate do.",
+   "biggest_flaw": "Nothing she sells is scarce. The formula is a catalogue item any micro-brand buys for R$5.000 (the same Veneza hand cream is already notified under ≥5 brands; ~66 new hand-moisturiser notifications a month). The 'invisible glove' promise is mass-market at R$17,99/75 g (Avon). The professional's own supply store sells hand-and-foot cream at R$0,05–0,25/g, and she must pay R$0,43/g for a positioning. This is THE CATALOGUE SCISSORS plus THE REPLACEMENT-COST CEILING. Second flaw, legal and fatal to the supplied structure: a PRO CASE sold to a salon or store is cosmetics wholesale (RDC 16/2014 art. 2 VI + 3) → AFE + a council-registered responsável técnico (art. 28 I e) → C3.",
+   "repair": "(1) Channel: retail group order. The salon owner organises, each professional buys as a person (RDC 16 art. 5 III retail exemption), and there is no PRO CASE invoice to a PJ; the stores and distributor leg waits until a licensed distributor with its own AFE takes the brand. (2) The difference is the FORMAT and the RITUAL, not the formula. No shelf product sells hand care as a two-format workstation kit (pump at the bancada, tube in the apron). Name it for the trade (manicure, cabeleireira, esteticista), and sell only Grau 1 claims (hidratação, absorção rápida, toque seco). Never 'EPI', 'proteção contra químicos', 'hipoalergênico', 'antisséptico' or 'FPS'. (3) Made-to-order: no PO until prepaid reservations ≥ the R$5.000 minimum. (4) Test textures with Veneza's sample shop first (R$9,79 + R$24,53). (5) Later, a fragrance-free formula via PROJ TERC (R$10.000, 240 units/SKU), financed only from profit. (6) Do not build on TikTok Shop or creators for single tubes: Project Climate measured ~12% + R$6/item in fees. Affiliates only on the R$89,90 kit.",
+   "honest_floor_usd_month": "US$0–450/month at month 12: 30 active salons × 5 buyers × 0,4 kits ≈ 60 kits ≈ R$2.290 net ≈ US$440, and US$0 if the price test fails. ≈US$990 at 60 salons. The bar needs 80–190 active salons, i.e. month 18–30 if the repeat rate holds. Preferences traded: MACHINE TEST partly kept (the factory makes the unit; she packs boxes). ORIGINATION-ONCE partly kept (a salon, once won, reorders on consumption, but she must prompt it). Compensation: her domain, a recurring consumable, and a sale that Portuguese calls can make.",
+   "next_test": "R$0 plus R$34 of Veneza samples, Portuguese calls, 10 working days. (A) Call 30 SP salons and nail studios (owners), listed from Receita CNPJ CNAE 9602-5/01 with phone via publica.cnpj.ws or Google Maps. Script: 'Suas profissionais usam creme nas mãos no trabalho? Posso organizar com você uma reserva do Kit Bancada — bomba de 150 g na bancada + 2 bisnagas de 30 mL — por R$89,90 cada profissional, pagamento individual por Pix só quando a produção começar, entrega no salão em ~35 dias?' (B) In writing to Veneza: is the sample-shop price the TERC price? Can one R$5.000 order hold 2 SKUs? Will you ship to several addresses? Is any TERC hand cream fragrance-free?",
+   "bar": "Committed in advance. ALIVE only if ≥6 of 30 salons return WRITTEN (WhatsApp) reservations totalling ≥40 kits at R$89,90 within 10 working days, AND ≥3 of those 6 say they would reorder monthly. Below that, stop: the position does not carry the price.",
+   "unverified": [
+    "That the Veneza sample-shop price equals the TERC production price; the class discount above 120 units",
+    "Label cost per unit (R$0,40 assumed), inbound freight PR→SP, outbound box cost",
+    "Interstate ICMS on entry for a Simples ME in SP: SP's ICMS-ST annex for perfumaria/higiene (Anexo XI, Portaria CAT 68/2019) was revoked from 1 Apr 2026, but SP's internal rate for NCM 3304 is 25% (RICMS/SP art. 55 IV per RC 18477/2018) against 12% interstate. Whether any antecipação or DIFAL still applies is an accountant question: 0–13 points",
+    "Application frequency and repeat rate of Brazilian beauty professionals (0,31–0,52 kits/month is the FTU-rule arithmetic for a diligent user, not a measurement)",
+    "Call conversion (10% assumed)",
+    "Whether a MEI professional buying hand cream for her own skin is 'profissional para o exercício de suas atividades' under RDC 16 art. 2 VI: the retail reading is defensible, not ruled",
+    "Municipal licença sanitária for cosmetics e-commerce retail in SP",
+    "Whether Veneza ships to multiple addresses (if not, Sol packs every box)"
+   ]
+  },
+  {
+   "name": "O RÓTULO DA CASA — own-label hand-and-foot care for beauty-supply stores and multi-unit nail studios (factory titular, store is the factory's client)",
+   "one_line": "Sol sells, by Portuguese calls, a turnkey OWN-LABEL line (a 30 mL counter tube + a backbar hand-and-foot cream) to beauty-supply stores and nail-studio groups. The STORE becomes the brand owner and Veneza's TERC client. The factory is ANVISA titular and invoices the store directly. The store sells only at retail, so no AFE is needed anywhere but the factory's; Sol never holds stock or a notification. She is paid a project fee for curation, label, launch visuals (machine-made, O LANÇAMENTO-style) and managing the first order.",
+   "offer_and_price": "Project fee R$800–1.500 per store line. The store's own economics are the pitch: an own-label 30 mL tube lands at ≈R$8,04 and sells at the counter price of Ricca 50 g (R$18,90–19,90). That is a 57–60% gross margin, against the 39,8% average retail margin on revenue in IBGE PAC 2024 group 47.7. The store's buy-in is Veneza's R$5.000 minimum + R$437,50/SKU.",
+   "units_for_bar": "R$800 fee ⇒ 14–18 projects/month; R$1.500 fee ⇒ 8–10 projects/month (after 6% DAS and R$400–700 fixed). That is 96–216 store lines a year.",
+   "capital_needed": "≈R$0–500 (samples, phone, design tools). The store pays the factory; Sol holds no inventory and no ANVISA fee.",
+   "hours": "≈6–10 h per project (calls, curation, label brief, machine-made visuals, factory coordination) × 8–10 projects ≈ 50–100 h/month. Only the R$1.500 fee fits the 87 h cap.",
+   "pool_div4": "SP cosmetics-retail units: CEMPRE 2021 non-MEI 11.710 + SIMEI 4772-5/00 49.784 = 61.494; ÷ 4 ≈ 15.400 against 96–216 needed per year. What share are salon-supply stores rather than perfumarias is UNVERIFIED. The pool does not bind; the R$5.000 buy-in does.",
+   "biggest_flaw": "THE FREE FRONT DOOR. The store can go to the factory itself: Veneza sells TERC to anyone at a published R$5.000 minimum. AUD2 found 13 of 20 factories bundle label or identity design free (Multlabel: 'sem custo adicional'), and ABC's 'Terceiriza Beauty' matches brands to terceiristas free ('Tampouco somos comissionados para realizar tal atividade'; terceiristas associados participate 'sem custo adicional'). Her fee is capped by label anchors of R$200–578 (AUD2: Orbe R$200/label; a SP studio's AI kit R$578). Every store is a fresh sale (origination-forever), and the store's R$5.000 commitment is a large ask for a small shop.",
+   "repair": "(1) Target only the ~1/3 of factories that push design OUT (Veneza, Private, Florus per AUD2) and ask Veneza for a formal referral line. (2) Sell the STORE'S MARGIN ARITHMETIC, not the design: an own-label counter tube at 57–60% gross against a 40% branded average, with the factory as titular so the store takes no regulatory role and needs no AFE. (3) Bundle the reorder calendar: she prompts the store's reorder by phone each cycle for a per-reorder fee. That fee is UNVERIFIED; if the store refuses, drop it rather than take a hidden commission. (4) Treat it as a lead source and upsell for O LANÇAMENTO (the store launching a label is O LANÇAMENTO's buyer), not as a standalone business.",
+   "honest_floor_usd_month": "US$0–300/month at month 12 (0–2 projects/month at R$800–1.500). The bar needs 8–10 R$1.500 projects a month, which no evidence supports. Preferences traded: it KEEPS the machine test (the factory makes units, visuals are machine-made, nothing to hold) and LOSES origination-once (every store is new).",
+   "next_test": "R$0, Portuguese calls, 10 working days. Call 20 SP beauty-supply stores (casas de manicure / lojas de produtos para salão) and 10 multi-unit nail studios. Script: 'Vocês teriam uma linha própria de creme de mãos no balcão — a fábrica faz, registra na ANVISA e fatura direto para vocês, pedido mínimo R$5.000 — se eu entregasse rótulo, fotos de lançamento e o primeiro pedido organizados por R$1.000?' In writing to Veneza: 'Pagam comissão ou mantêm uma linha de indicação para quem traz clientes TERC?'",
+   "bar": "Committed in advance. ALIVE only if ≥3 of 30 confirm IN WRITING that they would commit the R$5.000 factory order AND pay ≥R$800 to Sol within 30 days. Otherwise fold it into O LANÇAMENTO as a lead list and stop.",
+   "unverified": [
+    "Share of CNAE 4772 units that are salon-supply stores",
+    "Whether any factory pays a referral commission (Terceiriza Beauty refers free)",
+    "Stores' appetite to commit R$5.000 to an own label",
+    "Realised counter price of an own-label tube (R$18,90–19,90 is the Ricca/Paixão shelf, not a test)",
+    "Veneza TERC price = sample price"
+   ]
+  }
+ ],
+ "vs_o_lancamento": "Neither beats O LANÇAMENTO on evidence. O LANÇAMENTO sells taste per project with no inventory, no ANVISA, no AFE and no freight, but it has weak price evidence and originates forever. MÃOS DE OFÍCIO is the only candidate here with a consumption clock (a professional who uses it reorders). It pays for that with the catalogue scissors, a physical packing chore, and a price (R$0,43/g) 2–8× above the professional's own shelf. O RÓTULO DA CASA is O LANÇAMENTO's buyer seen from the store side: fold it in as a lead source, not a second business. If the founder answers the year-three question ('could you still be organising salon reservations and shipping boxes of cream, alone, in 2029?') with yes, run MÃOS DE OFÍCIO's 30-call test. It costs R$0 and can run in the same week as O LANÇAMENTO's calls, because the buyers overlap (beauty, São Paulo, Portuguese).",
+ "notes": "RULE 3, what SHIFT HANDS ports to: a US single-SKU replenishment brand (a contract manufacturer does the product, creators and workplace PRO CASES do distribution). In Brazil the manufacturing half ports cleanly and cheaply: TERC catalogue formula, factory titular, R$5.000, 30 days. The distribution half does not. (a) The workplace does not buy (salão-parceiro professionals are independent MEIs; 1,07M nationally in 9602-5/01). (b) A PRO CASE to a PJ makes the brand owner a cosmetics WHOLESALER needing AFE and a council-registered RT (RDC 16/2014 art. 2 VI, 3, 28 I e). This is a new, general kill-check for any Brazilian marca-própria candidate with a B2B leg: THE TERC MODEL ONLY LICENSES THE FACTORY. (c) Creator/TikTok sales carry ~12% + R$6 per item. SHAPE (RULE 1): replenishment consumable brand, S2-adjacent but domestic and factory-titular (the S2 MoR tax kill does not apply). C2 is the S1/S6 project-service shape, the same as O LANÇAMENTO. Findings worth banking: (1) Grau 1 item 42 covers hand hydration; 'para profissionais' is not a Grau 2 trigger; 'EPI para o trabalho' is (RDC 907 Anexo I 1k, item 23) and also needs an MTE CA (NR-6 6.2 + Anexo I F.2). (2) Cosmetovigilance (RDC 894/2024) binds the titular, so the Project Climate C3 collision disappears when the factory is titular. (3) The SP ICMS-ST annex for perfumaria/higiene (Anexo XI, Portaria CAT 68/2019) was revoked from 1 Apr 2026 (SRE-94/25), while the internal rate on NCM 3304 is 25%: an interstate-purchase question for any SP beauty candidate. (4) SIMEI by-CNAE statistics are machine-readable by ASP.NET postback per UF (Receita Estatísticas do Simples Nacional); 9602-5/01 is the largest MEI activity in SP (307.435). (5) IBGE PAC 2024 gives a primary, state-level retail margin for perfumery and cosmetics retail: 66,2% markup, i.e. 39,8% of revenue. TREADMILL: neutral. AI cheapens her brand visuals and copy and everyone else's equally; the product is unaffected. C8: beauty/nails is her world, and her set experience (hair, makeup and nail crews washing all day) is the insight. The PERSISTENCE risk is the monthly box-and-Pix grind. Tolerable only if Veneza ships per address and SKUs stay at two. Unreadable: Mercado Livre, Amazon.com.br, Shopee, Magalu, natura.com.br, granado.com.br, Tray-hosted micro-brand stores (sigbeauty, bittes, vinilady), confortocosmeticos.com.br (500), multlabel (expired TLS certificate, not bypassed), MTE partnership-contract PDF (503)."
+}

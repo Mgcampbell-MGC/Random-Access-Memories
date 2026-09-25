@@ -2655,6 +2655,15 @@ strangers' dead parents, alone, in year three?"**
   - **⇒ THE BOARD AFTER THE C8 KILL: #1 O LANÇAMENTO · #2 A PRATELEIRA — one population (launching beauty brands from
     the ANVISA file), one fortnight of calls tests both. THE NEXT FILE IN THIS REPOSITORY SHOULD BE A CALL LOG**
     (`THE_SIXTH_HUNT.md` §10).
+  - **★ THE FIRST REAL SAMPLE, same night (`O_LANCAMENTO.md` Part F):** on one real bestselling tube, **both of
+    Higgsfield's own options misspelled the label (2 and 4 errors, on ingredient names); the composite method kept
+    it exact (high-pass correlation 0,984).** The guarantee is the one thing the US$49 tool visibly cannot do. The
+    Portuguese offer sheet is in `oferta/`. One product, flat tube only; other packaging shapes are untested.
+  - **⚰ SHIFT HANDS (a supplied hand-cream brand plan) — DEAD as written (`THE_SIXTH_HUNT.md` §8g).** In the US it
+    is 2–2,8× O'Keeffe's per ounce; Gloves In A Bottle runs the same playbook at the same price; hospitals allow only
+    approved lotion. In Brazil, **★ RDC 16/2014 art. 2 VI makes ANY sale "a profissionais para o exercício de suas
+    atividades" cosmetics WHOLESALE ⇒ AFE + a council-registered RT (C3).** Check this before sizing any "pro"
+    beauty channel.
 
 ## The test design that works
 
