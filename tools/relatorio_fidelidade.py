@@ -14,6 +14,10 @@ image, so a single misspelled word shows up as one bad tile instead of being ave
 Every still that passes is also given a NEGATIVE CONTROL: one lettered patch of its label is mirrored in a copy
 and re-checked, and the still passes only if the check catches the planted error ("control_caught").
 
+Colour: the median hue+chroma shift across the visible label (lightness excluded, because the scene re-lights the
+pack) must stay within --tolerancia-cor, default 2,0. Every film must be encoded BT.709-converted AND BT.709-tagged
+(codificar.py): a film converted BT.601 but tagged BT.709 shows the pack's colours shifted on phones.
+
 Pass rule (calibrated 25 Sep 2026 on one real tube, see O_LANCAMENTO.md Part G):
     worst tile >= 0.80 AND 5th-percentile tile >= 0.95.
 Exact composites scored 0.96/0.99 as stills and >=0.87/0.96 in every checked frame of a compressed
@@ -36,6 +40,10 @@ MIN_TILE_PASS = 0.80
 P5_TILE_PASS = 0.95
 P5_FILM_PASS = 0.93  # films resample the pack every frame; see the calibration note above
 MAX_HIDDEN = 0.35  # above this share of the label covered, the asset needs a human look
+# Colour: median shift of hue+chroma (ΔC in CIELAB a,b units) across the visible label, lightness excluded because
+# the scene legitimately re-lights the pack. Calibrated 26 Sep 2026: exact stills 0,2–0,4, correctly encoded films
+# ≈0,8, a film converted BT.601 but tagged BT.709 3,1–3,9, AI-regenerated labels 8–14.
+MAX_COLOR_DRIFT = 2.0
 
 
 def bandpass(img, s1=1.2, s2=5.0):
@@ -55,7 +63,16 @@ class Checker:
         self.matcher = cv2.BFMatcher()
         self.kr, self.dr = self.sift.detectAndCompute(cv2.cvtColor(self.ref, cv2.COLOR_BGR2GRAY), None)
         self.R = bandpass(self.ref.astype(np.float32))
+        self.refLab = cv2.cvtColor(self.ref, cv2.COLOR_BGR2LAB).astype(np.float32)
+        self.max_color = MAX_COLOR_DRIFT
         h, w = self.ref.shape[:2]
+        # Colour is judged on every interior tile, flat ones included.
+        self.ctiles = [
+            (y, x)
+            for y in range(0, h - TILE + 1, TILE // 2)
+            for x in range(0, w - TILE + 1, TILE // 2)
+            if self.mask[y:y + TILE, x:x + TILE].mean() > 0.95
+        ]
         # Textured tiles only: blank areas carry no text and would pass anything.
         self.tiles = [
             (y, x)
@@ -133,13 +150,24 @@ class Checker:
             return {"found": True, "hidden_share": 1.0, "pass": False}
         worst = float(s.min())
         p5 = float(np.percentile(s, 5))
+        lab = cv2.cvtColor(warped, cv2.COLOR_BGR2LAB).astype(np.float32)
+        drift = []
+        for y, x in self.ctiles:
+            if hid is not None and hid[y:y + TILE, x:x + TILE].mean() > 0.10:
+                continue
+            a = self.refLab[y:y + TILE, x:x + TILE].reshape(-1, 3).mean(0)
+            b = lab[y:y + TILE, x:x + TILE].reshape(-1, 3).mean(0)
+            drift.append(float(np.hypot(a[1] - b[1], a[2] - b[2])))
+        color = float(np.median(drift)) if drift else 0.0
         return {
             "found": True,
             "tiles": len(s),
             "hidden_share": round(hidden_share, 3),
             "worst_tile": round(worst, 3),
             "p5_tile": round(p5, 3),
-            "pass": worst >= MIN_TILE_PASS and p5 >= P5_TILE_PASS and hidden_share <= MAX_HIDDEN,
+            "color_drift": round(color, 2),
+            "pass": (worst >= MIN_TILE_PASS and p5 >= P5_TILE_PASS and hidden_share <= MAX_HIDDEN
+                     and color <= self.max_color),
         }
 
 def check_asset(checker, path, every, control=True):
@@ -171,7 +199,7 @@ def check_asset(checker, path, every, control=True):
             r.pop("_H", None)
             if r.get("found"):
                 r["pass"] = (r["worst_tile"] >= MIN_TILE_PASS and r["p5_tile"] >= P5_FILM_PASS
-                             and r["hidden_share"] <= MAX_HIDDEN)
+                             and r["hidden_share"] <= MAX_HIDDEN and r["color_drift"] <= checker.max_color)
             results.append(r)
         i += 1
     frames = i
@@ -204,6 +232,7 @@ def check_asset(checker, path, every, control=True):
         "worst_tile": worst,
         "worst_p5_tile": p5,
         "max_hidden_share": max((r.get("hidden_share", 0) for r in found), default=0.0),
+        "max_color_drift": max((r.get("color_drift", 0) for r in found), default=0.0),
         "pass": bool(found) and all(r["pass"] for r in found) and ctrl.get("control_caught", not control),
     }
 
@@ -215,8 +244,11 @@ def main():
     ap.add_argument("--every", type=int, default=1, help="check every Nth video frame (1 = all; use 1 before delivery)")
     ap.add_argument("--json")
     ap.add_argument("--sem-controle", action="store_true", help="skip the planted-error control on stills")
+    ap.add_argument("--tolerancia-cor", type=float, default=MAX_COLOR_DRIFT,
+                    help="max median colour shift (ΔC); set from the Ficha do Produto")
     args = ap.parse_args()
     checker = Checker(args.approved)
+    checker.max_color = args.tolerancia_cor
     report = [check_asset(checker, a, args.every, not args.sem_controle) for a in args.assets]
     for r in report:
         print(f"{'APROVADA ' if r['pass'] else 'REPROVADA'}  {r['asset']}  {json.dumps({k: v for k, v in r.items() if k not in ('asset', 'pass')})}")

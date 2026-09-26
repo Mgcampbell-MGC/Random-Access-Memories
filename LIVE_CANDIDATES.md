@@ -45,6 +45,10 @@ every kill in the record: `THE_SCENARIO_B_BOARD.md`.
 > - **Order of work:** the R$0 Pixelcut test on a fictional brand → three timed dry runs → open the SLU → 20 calls
 >   against the committed bars (§11).
 > - **Ask Sol the year-three question before the first call.**
+> - **26 Sep:** the film moved to HyperFrames (free, local, label-exact when the pack is an image layer). Its own MP4
+>   shifts colours on phones, so frames are encoded by `tools/codificar.py`, and the checker now measures colour.
+>   The same tool lowers the brand's own cost of a nice film. **The guarantee is what is left to sell**
+>   (`O_LANCAMENTO_AIRTIGHT.md` §4.3).
 
 > ### ★★★ THE SECOND GREAT HUNT — 19–20 Sep 2026. ACOLHE is being built elsewhere; the founder asked for a
 > DIFFERENT NICHE, A DIFFERENT BUSINESS MODEL, entirely. Sixteen repair-briefed lenses, a judge's twelve, two

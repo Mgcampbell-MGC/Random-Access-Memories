@@ -103,7 +103,7 @@ _______________________ CONTRATADA  _______________________ CONTRATANTE
 | Imagem-mestra aprovada (arquivo) | foto de estúdio, foto de amostra física ou render a partir do PDF |
 | Arte do rótulo (PDF/AI) | |
 | Forma: tubo · frasco · pump · pote · vidro · outro | |
-| Cor da embalagem: referência (HEX/Pantone) e tolerância aceita | ex.: ΔE ≤ 3 |
+| Cor da embalagem: referência (HEX/Pantone) e tolerância aceita | padrão: desvio mediano de matiz e croma (ΔC) ≤ 2 em relação à imagem-mestra. A luz da cena pode clarear ou escurecer a embalagem; o tom não muda |
 | Partes que podem ficar cobertas (mão, ângulo, foco) | ex.: laterais sim; nome e logo nunca |
 | Produto já lançado publicamente? Data prevista | |
 

@@ -12,7 +12,9 @@ differ; that file keeps the history.
 >    paying ≥R$2.500 for a launch.** Only the 20 calls answer it, and the bar is written below *before* the first call.
 > 3. **One cheap test could shrink what is scarce:** whether Pixelcut's "On Model" keeps a label exact in a hand. It
 >    costs R$0 and must run before the calls, on a made-up brand, never on a real one.
-> 4. **The founder question the file cannot answer:** could Sol still be doing this, alone, in year three? (§14.)
+> 4. **26 Sep: the film moved to HyperFrames** (free, open source, local) after a test, with two fixes it forced: films
+>    are now encoded colour-correctly, and the checker now measures colour. See §4.3.
+> 5. **The founder question the file cannot answer:** could Sol still be doing this, alone, in year three? (§14.)
 
 ---
 
@@ -85,7 +87,7 @@ her machine.
 | 5 | **World with a blank placeholder** | Higgsfield, **generic prompt, no brand or product name**, placeholder "the whole bottle, cap included, flat matte chroma blue, no text, no logo" | 60–90 min | **no client file ever uploaded** (§7) |
 | 6 | **Composite** | `tools/compor.py` lays the real pack into the placeholder, re-lights it, puts fingers back on top | 5 min/image | fit only, never stretch |
 | 7 | **Finish** | Photoshop, by hand: contact shadow, edge, cap tint, grade the WORLD to the pack, never the pack | 10 min/image | this is the quality step the machine does not do |
-| 8 | **Film** | `tools/filme.py` from the approved key visual: push-in, pan, parallax, light sweep; music laid under | 20 min | no 3D turn; parallax off for in-hand shots |
+| 8 | **Film** | `tools/filme_hyperframes.py` builds a HyperFrames project from the approved key visual: push-in, parallax, light sweep, type from the Ficha. Render as PNG frames, encode with `tools/codificar.py`. `tools/filme.py` stays as the no-install fallback | 20 min | no 3D turn; parallax off for in-hand shots; **type never crosses the pack** |
 | 9 | **Check** | `tools/relatorio_fidelidade.py` on every still and **every frame** of every film | 5 min | a fail is regenerated, never delivered |
 | 10 | **12-line checklist** (§6.3) and **written "aprovado"** per piece | Sol, then brand | 20 min | filed with date and asset ID |
 | 11 | **Delivery**: files, report, cessão, delivery note, second nota fiscal on the 50% balance | Sol | 20 min | Content Credentials kept on export |
@@ -153,8 +155,83 @@ single wrong word**, which is why that rule never moves and why a planted error 
   - The film rule is therefore **worst tile ≥0,80 in every frame, 5th percentile ≥0,93**. The still rule
     (0,80 / 0,95) is unchanged, and so is the worst-tile bar, the one that catches a wrong word.
   - **Recalibrate on each new packaging type.**
+- **Colour:** median hue+chroma shift ≤ the Ficha's tolerance (default 2,0), on stills and every film frame (§4.3).
 - **Integration quality is not measured by any tool:** halo, contact shadow, cap tint, the gap where a finger meets
   the pack. Step 7 is manual and it is where the work looks cheap or expensive.
+
+### 4.3 HyperFrames — tested 26 Sep 2026, adopted for the film, with two fixes it forced
+*Supplied by the founder with a creator's walkthrough of one-prompt video editing by a coding agent ("Tech is moving
+fast"). The walkthrough is a creator selling a community, so it is marketing; what follows was fetched and run here.*
+
+**What it is, verified at source.** HeyGen's open-source framework that renders HTML, CSS and GSAP animation to MP4
+(`github.com/heygen-com/hyperframes`, Apache-2.0, CLI 0.8.78, repository commit `e0e6442` of 26 Sep 2026).
+- It runs on her laptop: Node 22+, FFmpeg and a headless Chrome.
+- It ships 21 skills for coding agents, including `/product-launch-video`.
+- GSAP's licence covers client work in terms: *"If your client pays you a one-time fee to create the site/product,
+  that's perfectly fine"* (`gsap.com/standard-license`). A delivered MP4 does not redistribute GSAP anyway.
+
+**Why it keeps the label exact.** The pack is an `<img>` that the browser only scales and moves; nothing redraws it.
+
+**Measured, every frame checked, planted error caught in each passing film:**
+
+| Film | Label: worst / 5th pct | Colour shift | Verdict |
+|---|---|---|---|
+| Product on a sill, parallax, **PNG frames + `codificar.py`** | 0,895 / 0,975 | 0,97 | **APROVADA** |
+| In hand, **PNG frames + `codificar.py`** | 0,878 / 0,948 | 0,86 | **APROVADA** |
+| Same two films, **HyperFrames' own MP4** | 0,619–0,920 | **3,23 / 4,10** | **REPROVADA** |
+| Pack with ONE altered word, through HyperFrames | **0,207** | 0,85 | **REPROVADA** |
+
+- **Speed:** 8 seconds of film render in about 9 seconds on a 4-core machine.
+- **It checks design, which ours does not.** Its `check` rejected white type on the bright scene (contrast 1,7:1
+  against a 3:1 minimum) before anything rendered. **Run both checks: HyperFrames for layout and contrast, ours for the
+  label.**
+
+**★ FIX 1 — ITS MP4 SHIFTS THE PACK'S COLOURS ON A PHONE.**
+- In `packages/engine/src/services/streamingEncoder.ts`, standard video is tagged BT.709, but no `out_color_matrix` is
+  set, so FFmpeg converts with its BT.601 default.
+- A player that trusts the tag, which phones do, shows saturated colours shifted: **ΔE 7,4 on the tube's green band,
+  6,5 on its blue.**
+- **Never deliver its MP4.** Render `--format png-sequence` and encode with `tools/codificar.py`, which converts AND
+  tags BT.709.
+- **My own `filme.py` had the same class of bug** (BT.601, untagged). It now uses the same settings.
+
+**★ FIX 2 — THE CHECKER NOW MEASURES COLOUR.** Until today it measured structure only, while the offer sheet's sample
+report printed *"Cor dentro da tolerância da ficha: OK"*. It now computes the median hue+chroma shift (ΔC) across the
+visible label, lightness excluded because the scene re-lights the pack. It fails anything over the tolerance on the
+Ficha (default 2,0). Calibration:
+- exact stills: 0,15–0,31;
+- correctly encoded films: 0,47–0,97;
+- mis-tagged films: 3,2–4,1;
+- AI-regenerated labels: 8,1–14,3.
+
+**Rules for using it (each found in its own code or docs):**
+1. **`npx hyperframes telemetry disable`** once. Its telemetry states that *"video content… never collected"*; off
+   anyway.
+2. **Never `publish`, `cloud`, `lambda`, `cloudrun` or `feedback --file-issue` on a client project.** Each sends the
+   project off the computer (`publish` returns a public `hyperframes.dev` URL).
+3. **No `GEMINI_API_KEY`, `GOOGLE_API_KEY` or `OPENROUTER_API_KEY` in the environment where client films are built,
+   and always `snapshot --describe false`.** `snapshot` *"Runs by default when GEMINI_API_KEY is set"* and sends frames,
+   i.e. the client's label, to Google.
+4. **The pack goes in only as an `<img>`.** Never let an agent's media skill *"generate"* anything from a client file.
+   Its background removal is a local model (`u2net_human_seg`), so it is allowed but not needed.
+5. **Keep GSAP as a local file in the project,** so a render needs no network.
+
+**What "tech is moving fast" does to the business, both ways:**
+- **Better for her:** the film goes from a camera move over a still to real motion design at R$0, with a checker
+  stack stronger than yesterday's.
+- **Equally better for everyone else.** The same free tool and agent sit on every brand designer's laptop and in
+  every AI studio. A motion-graphics film around a flat pack is now do-it-yourself.
+- **The default do-it-yourself path redraws the product.** The walkthrough's own physical-product spec ad sent the
+  catalogue photos to a video generator. That is fine for leggings and is exactly the error measured on labels in
+  Part F.
+- **So the scarce thing narrows again** to the three things a free tool does not give:
+  - the label **proven** in every frame against the brand's own file, with a guarantee behind it;
+  - the pack integrated in a hand or a scene;
+  - done for you in 5–7 days.
+- **Expect the buyer's anchor for "a film" to fall,** which makes the ESSENCIAL + FILME split likelier. **Do not move
+  the price before the calls; add one question to the log: "Vocês já fazem vídeo com ferramenta de IA?"**
+- **`THE TREADMILL TEST` passes:** each release of such a tool makes her pipeline better and needs no rebuild. Its
+  shadow is that each release makes her competitors better too.
 
 ---
 
@@ -238,12 +315,13 @@ music and fonts licensed for client work, provenance marks kept · written "apro
 | Worlds, hands, placeholder | **Higgsfield PLUS** (ULTRA from ~2 full launches a month) | US$49 (US$129) | founder's choice; outputs may be transferred and sublicensed to clients (§4.4, terms of 26 Jul 2026) |
 | Cutout, finish, export with Content Credentials | **Adobe Photography plan** (Photoshop desktop) | US$19,99 | on-device segmentation; Adobe does not train on customer content |
 | Music | **Artlist AI Starter** (AI-made tracks) | US$19,99 | outputs assigned to her, commercial use, shareable with clients, survive cancellation; **stock Artlist would need Pro, forbids clients re-editing, and must be published while subscribed** |
-| Composite, film, check | `tools/` | R$0 | local |
+| Film (motion design) | **HyperFrames** (Apache-2.0) + GSAP (free for client work) | R$0 | local render; label stays an image layer (§4.3) |
+| Composite, encode, check | `tools/` | R$0 | local |
 
 **With ULTRA:** US$168,98 ≈ R$879. **Optional "sigilo total" worlds** for a brand that asks: Adobe Firefly partner
 models or Google AI Studio with billing (neither trains on inputs).
 
-**The seven hygiene rules — each exists because a tool's terms make the opposite true:**
+**The nine hygiene rules — each exists because a tool's terms make the opposite true:**
 1. **No client file ever goes into a generator or an editing cloud — before or after launch.** Higgsfield trains on
    uploads with no opt-out on PLUS/ULTRA, and §4.2(a) makes the uploader warrant she holds the rights. *(Correction
    recorded in `O_LANCAMENTO.md` G2: the Part F test uploaded a real brand's packshot. That is now forbidden.)*
@@ -255,6 +333,10 @@ models or Google AI Studio with billing (neither trains on inputs).
 6. **Keep provenance marks** (Higgsfield §5.5/§6.4, Adobe's guidelines). Export with Content Credentials; archive raw
    generator outputs with their metadata. **Never call the pieces "fotos"** — they are *imagens* and *filmes*.
 7. **Re-read Higgsfield's terms every quarter.** The previous version had a perpetual irrevocable licence.
+8. **HyperFrames: telemetry off; never `publish`/`cloud`/`lambda`/`cloudrun`/`feedback --file-issue` on client work; no
+   AI API keys in the environment and `snapshot --describe false`** (§4.3).
+9. **Every film is encoded by `codificar.py` (BT.709 converted AND tagged)** and checked on every frame, colour
+   included, before delivery.
 
 **What no self-serve tool gives: IP indemnity** (Higgsfield and Adobe offer it on enterprise plans only). Hence the
 liability cap, no lookalikes, and no other brand's trade dress in a scene.
@@ -436,6 +518,8 @@ lookbooks.)*
 | Sol can run the machine | **closed, pending dry runs** | three one-line commands + `tools/LEIA-ME.md` |
 | **Buyer pays R$2.990** | **OPEN** | the 20 calls, bar committed (§11) |
 | **Repeat purchases** | **OPEN** | first ten clients (§11 step 5) |
+| Film colour on phones | **closed 26 Sep** | BT.709-correct encoding; colour measured per frame (§4.3) |
+| Motion design quality | **closed 26 Sep** | HyperFrames + its contrast/layout check (§4.3) |
 | **Integration quality looks premium** | **OPEN** | manual finish step; the dry runs show it |
 
 ---
@@ -453,6 +537,9 @@ lookbooks.)*
 4. **Tool terms can change under her** (Higgsfield changed once already). The pipeline is built so the generator is
    swappable.
 5. **The integration step is manual and is where quality lives.** Only dry runs show whether her hand is good enough.
+6. **Tech moving fast lowers everyone's cost of a nice film, hers and her buyers'.** What it cannot lower is a label
+   proven against the brand's own file with a guarantee behind it. The calls will show whether that is worth R$2.990
+   or only R$1.490 (§4.3).
 
 ---
 

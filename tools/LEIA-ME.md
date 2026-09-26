@@ -1,11 +1,18 @@
 # Ferramentas do O LANÇAMENTO — como usar
 
-Três comandos. Rodam no seu computador; **nenhum envia arquivo da marca para a internet.**
+Poucos comandos. Rodam no seu computador; **nenhum envia arquivo da marca para a internet.**
 
 **Uma vez só, para instalar:** Python 3 e, no terminal:
 
 ```
 pip install opencv-python numpy imageio-ffmpeg
+```
+
+Para o filme com animação (recomendado): Node.js 22 ou mais novo e FFmpeg, e depois:
+
+```
+npx hyperframes telemetry disable
+npx hyperframes browser ensure
 ```
 
 ## O caminho de uma peça
@@ -34,16 +41,32 @@ python3 compor.py CENA.png EMBALAGEM.png PECA.png
 nunca a embalagem ao cenário.** Não use Preenchimento Generativo, Gerar Plano de Fundo nem Harmonizar na camada da
 embalagem.
 
-**4. Filme de 15 segundos:**
+**4. Filme (HyperFrames, recomendado):**
+
+```
+python3 filme_hyperframes.py PECA.png projeto --linhas "NOVO|Frase|aprovada" --final "EM BREVE|01 · 11"
+cd projeto && npx hyperframes check . && npx hyperframes render . --format png-sequence -o ../quadros && cd ..
+python3 codificar.py quadros FILME.mp4 --fps 30 --trilha musica.mp3 --segundos 8
+```
+
+- O texto vem **só** da Ficha de Alegações assinada. A ferramenta põe o texto ao lado ou acima/abaixo da embalagem,
+  **nunca por cima dela**.
+- O `check` do HyperFrames avisa se o texto está ilegível (contraste). Corrija antes de renderizar.
+- **Nunca entregue o MP4 que o HyperFrames gera sozinho:** ele altera as cores no celular. Sempre `--format
+  png-sequence` + `codificar.py`.
+- **Nunca use `publish`, `cloud`, `lambda`, `cloudrun` nem `feedback --file-issue` em projeto de cliente:** esses
+  comandos mandam o projeto para fora do seu computador.
+- **Não deixe chave de IA (`GEMINI_API_KEY`, `GOOGLE_API_KEY`, `OPENROUTER_API_KEY`) configurada** no computador em que
+  monta filmes de cliente; o comando `snapshot` mandaria os quadros para o Google.
+
+**4b. Filme simples, sem instalar nada além do Python:**
 
 ```
 python3 filme.py PECA.png FILME.mp4 --formato 9:16 --trilha musica.mp3
 ```
 
-- Formatos: `9:16`, `4:5`, `1:1`, `16:9`.
-- Cortes de 6 s: `--segundos 6`.
-- Com mão na embalagem, a paralaxe desliga sozinha.
-- O filme não gira o produto em 3D.
+- Formatos: `9:16`, `4:5`, `1:1`, `16:9`. Cortes de 6 s: `--segundos 6`.
+- Com mão na embalagem, a paralaxe desliga sozinha. Nenhum dos dois filmes gira o produto em 3D.
 
 **5. Confira TUDO antes de entregar:**
 
@@ -55,6 +78,8 @@ python3 relatorio_fidelidade.py EMBALAGEM.png PECA.png FILME.mp4 --json relatori
 - Em toda imagem, a ferramenta planta um erro de teste numa cópia e confere se o encontra (`control_caught: true`).
   Se não encontrar, a peça sai REPROVADA: um controle que não pode falhar não prova nada.
 - Filmes são conferidos **quadro a quadro**. Não use `--every` maior que 1 numa entrega.
+- A cor também é conferida: o desvio de tom da embalagem tem de ficar dentro da tolerância da Ficha
+  (`--tolerancia-cor`, padrão 2).
 - **Uma peça REPROVADA nunca é entregue.** Gere o cenário de novo ou refaça o encaixe.
 
 ## Antes do primeiro cliente de um tipo novo de embalagem

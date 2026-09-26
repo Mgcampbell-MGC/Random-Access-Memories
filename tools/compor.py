@@ -45,8 +45,11 @@ def placeholder_mask(scene, hue_deg, tol):
     cnts, _ = cv2.findContours(body, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     hull = np.zeros_like(body)
     cv2.fillPoly(hull, [cv2.convexHull(np.vstack(cnts))], 1)
-    # Glare and deep shadow on the placeholder are not something in front of it.
-    glare = ((hsv[..., 1] < 50) & (hsv[..., 2] > 170)) | ((d <= 2 * tol) & (hsv[..., 1] > 25)) | (hsv[..., 2] < 45)
+    # Glare and deep shadow on the placeholder are not something in front of it. Glare is pale AND neutral or tinted
+    # with the placeholder's hue; skin, nails and fingertip highlights are pale but WARM, so they stay occluders.
+    S, V = hsv[..., 1], hsv[..., 2]
+    tinted = d <= 2 * tol
+    glare = ((S < 50) & (V > 170) & (tinted | (S < 18))) | (tinted & (S > 25)) | ((V < 45) & (tinted | (S < 40)))
     return body, hull, loose, glare
 
 

@@ -29,11 +29,16 @@ try:
 except ImportError:
     sys.exit("pip install imageio-ffmpeg")
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from codificar import BT709  # noqa: E402
+
 
 def writer(path, w, h, fps, gray=False):
+    # Colour films are converted AND tagged BT.709 (see codificar.py); the hidden mask is data, not picture.
+    colour = ["-pix_fmt", "yuv420p"] if gray else BT709
     cmd = [imageio_ffmpeg.get_ffmpeg_exe(), "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt",
            "gray" if gray else "bgr24", "-s", f"{w}x{h}", "-r", str(fps), "-i", "-", "-c:v", "libx264",
-           "-preset", "slow", "-crf", "12", "-pix_fmt", "yuv420p", "-movflags", "+faststart", path]
+           "-preset", "slow", "-crf", "12", *colour, "-movflags", "+faststart", path]
     return subprocess.Popen(cmd, stdin=subprocess.PIPE)
 
 

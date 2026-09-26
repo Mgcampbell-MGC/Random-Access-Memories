@@ -2711,6 +2711,29 @@ strangers' dead parents, alone, in year three?"**
         - **KEEP R$2.990** if ≥6/20 state ≥R$2.500 of last-launch spend and ≥2 buy within 30 days (or ≥4 VITRINE);
         - **SWITCH** to ESSENCIAL R$1.490 + FILME R$990 if ≥8/20 state ≥R$1.000;
         - **STOP** if ≥12/20 state <R$1.000.
+  - **★★★ "TECH IS MOVING FAST" — HYPERFRAMES TESTED 26 Sep 2026 (`O_LANCAMENTO_AIRTIGHT.md` §4.3).** The founder sent a
+    creator's walkthrough of one-prompt video editing by a coding agent. The tool under it (HeyGen's HyperFrames,
+    Apache-2.0, renders locally) was cloned and run. It makes a label-exact film because the pack is an image layer the
+    browser only moves. Every frame passed, and a pack with one altered word failed. **Adopted for the film.**
+    - **★★ A FREE TOOL'S DEFAULT OUTPUT IS NOT ITS CORRECT OUTPUT — CHECK THE DELIVERABLE, NOT THE DEMO.** Its MP4 is
+      tagged BT.709 and converted BT.601 (in its own `streamingEncoder.ts`), so a phone shows the pack's colours
+      shifted, **ΔE 6,5–7,4**. No demo shows this, because nobody compares a demo against the approved art. Fix: render
+      PNG frames and encode with `tools/codificar.py`.
+    - **★★ A REPORT LINE MUST BE COMPUTED, NOT WRITTEN.** The offer sheet's sample report printed *"Cor dentro da
+      tolerância da ficha: OK"*, but the checker never measured colour, and `filme.py` had the same encoding bug. Both
+      are fixed. Colour is now a calibrated median hue+chroma shift:
+      - exact 0,15–0,97;
+      - mis-tagged films 3,2–4,1;
+      - AI-regenerated labels 8–14;
+      - pass line 2,0.
+    - **★ READ A TOOL'S CODE FOR ITS UPLOAD PATHS, NOT ITS HOMEPAGE.** `snapshot` sends frames to Gemini *"by default
+      when GEMINI_API_KEY is set"*; `publish` returns a public URL; `cloud`, `lambda` and `cloudrun` render elsewhere.
+      Each is now a hygiene rule.
+    - **★★ FAST TOOLS LOWER EVERYONE'S COST, NOT ONLY HERS.** The same free tool sits on every brand designer's laptop,
+      and the walkthrough's own physical-product ad sent the product to a video generator — the label-redrawing path —
+      by default. **What stays scarce is a label PROVEN against the brand's own file, with a guarantee behind it.**
+      Expect the price of "a film" to fall. Do not move the price before the calls; log *"Vocês já fazem vídeo com
+      ferramenta de IA?"*.
 
 ## The test design that works
 
