@@ -343,6 +343,15 @@ mine, and every one was caught by looking at output, not by a passing check.
 - Where the pack meets a surface, a hand-finished contact shadow would still improve them.
 - The 15-second film is a single scene: a slow push, copy, then a call to action.
 
+**The founder's verdict on the R$0 set:** *"everything was built from upscaled 720p ad frames… that's why it's so whack, I
+can't show people this."*
+- The labels were exact. The pictures were not good enough to show.
+- ⇒ **The generator line in the tool budget (§7: Higgsfield PLUS, US$49 a month) is not optional.** Label fidelity is
+  what makes the set sellable, but only resolution and variety make it showable, and upscaling someone else's frames
+  cannot supply them.
+- **Next:** when the founder has a card, regenerate every scene at 2K with a blank blue tube and composite the approved
+  pack locally, as the ladder specifies. Recheck every piece with the same tools.
+
 ---
 
 ## 5. The guarantee and the report
