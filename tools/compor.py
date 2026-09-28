@@ -130,9 +130,11 @@ def main():
     occ = cv2.morphologyEx(occ, cv2.MORPH_OPEN, np.ones((3, 3), np.uint8))
     occ = cv2.GaussianBlur(occ.astype(np.float32), (0, 0), 1.2)
 
-    # Paint out placeholder pixels the real pack does not cover.
-    rem = ((cv2.dilate(anychroma, np.ones((3, 3), np.uint8)) > 0) & (alpha < 0.5)).astype(np.uint8) * 255
-    base = cv2.inpaint(scene, cv2.dilate(rem, np.ones((3, 3), np.uint8)), 5, cv2.INPAINT_TELEA).astype(np.float32)
+    # Paint out the whole placeholder, plus a 2 px fringe, from the real scene around it; the pack is laid on top.
+    # Filling only the uncovered part let the blue under the pack bleed in as a pale band and a blue edge
+    # (found 28 Sep 2026 on a stand-in wider than the pack).
+    allc = (cv2.dilate(anychroma, np.ones((5, 5), np.uint8)) > 0).astype(np.uint8) * 255
+    base = cv2.inpaint(scene, allc, 5, cv2.INPAINT_TELEA).astype(np.float32)
 
     lay = alpha * (1 - occ)
     out = base * (1 - lay[..., None]) + prod * lay[..., None]

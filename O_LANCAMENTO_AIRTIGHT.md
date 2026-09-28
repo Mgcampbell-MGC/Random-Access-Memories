@@ -277,6 +277,72 @@ Ficha (default 2,0). Calibration:
 6. **Technical:** 720×1280 (post at 1080×1920), colour untagged, captions in DejaVu Sans (a system default font).
    Audio is fine at −17 LUFS.
 
+### 4.5 The recut and the full set, built from that ad — 28 Sep 2026: five faults in my own work, all found by looking
+
+The founder asked for the ad recut *"better and perfect"*, and for the whole ladder for the fictional brand: 6 images,
+a 15-second film with 2 shorter cuts, and 3 online-store images. Everything was made at R$0 from the ad's own 720p
+frames. **No generator was called:** the Higgsfield account holds 0,88 credits and one still. Every fault below was
+mine, and every one was caught by looking at output, not by a passing check.
+
+**1. A card that hides burnt-in text also hides the product.**
+- The first recut covered the ad's burnt-in captions with an opaque caption card.
+- The founder: *"the word block you put now covers the product"* — then *"why not just word not a whole card."*
+- In the last shot the ad's own caption sat on the tube she lifts, so any cover had to sit on the product too.
+- **Fix: erase, don't cover.**
+  - The old captions were removed from the footage with an open inpainting model (LaMa, OpenCV model zoo, ONNX, run
+    locally), at ~3,4 s a frame on 4 CPUs. Each result was blended with the previous frame's, warped forward by
+    optical flow, so the fill does not flicker.
+  - It rebuilt skin, hair, a phone, marble, a knit shirt and the tube's body convincingly.
+  - Captions are now words only (white, current word in lime). Each shot places them clear of the pack: above it in the
+    packshot, below the chin in the face close-up, and under the headline once she lifts the tube.
+- ⇒ **Covering is not removing. Erase anything burnt in before designing over it.**
+
+**2. A stand-in wider than the pack leaves its colour behind.**
+- `compor.py` painted out only the uncovered part of the placeholder, so blue under the pack's soft edge bled in as a
+  pale band.
+- **Fix:** paint out the whole placeholder from the real scene, then lay the pack on top.
+
+**3. Parallax is wrong for a pack standing ON something.**
+- In the film, the pack slid against the rock it stood on, and the plate's inpaint ring showed as a pale halo under the
+  base.
+- **Fix:** a new flag, `filme_hyperframes.py --sem-paralaxe`.
+
+**4. A pan at scale 1 uncovers the frame edge.**
+- The film layer scaled from 1,0 while panning 19 px, which left 6 px of black down the left edge for the first ~4 s
+  of all three films.
+- Nothing flagged it. The label check reads the pack, not the frame edge.
+- **Fix:** start zoomed in just enough to cover the pan on the nearer side: `s0 = 1 + (pan + 2) / min(cx, W − cx)`.
+  Keep the designed end scale; adding `s0` to it cut the cap off the top of the square cut.
+- **Result:** 0 dark-edge frames in 810, and every frame of all three films APROVADA (worst tile ≥0,81, 5th
+  percentile ≥0,95, colour shift ≤0,37). The planted error was caught in each film.
+
+**5. The label check failed four exact labels.**
+- It fitted a full homography from label features alone. Its perspective terms bent the far ends of the pack by
+  10–15 px, and the cap and base tiles then failed.
+- Those tiles scored 0,96–0,99 once shifted a few pixels, while every letter tile passed.
+- **Fix:** also try the model the placement actually used (similarity, then affine) and keep the best fit. This is safe
+  for the same reason the existing retry is: one global transform cannot align a wrong letter away while the rest of
+  the pack stays aligned.
+- The same pass treats any partly-covered pixel as covered (hidden threshold 20/255, was 127). Otherwise a finger's
+  soft edge is compared with the label.
+- **Result:** all 9 images APROVADA, the planted error caught on every one (control worst tile 0,53–0,57), and the
+  original *RESSCUE* frame still REPROVADA (−0,28).
+- A grid-search alignment step I added first changed no score once the right model was in, so it was removed. **A
+  simpler check is a stricter one.**
+- ⇒ **Before calling a label wrong, ask whether the letter tiles fail or only the seams.** Seams failing while letters
+  pass is the check, not the label.
+
+**What was delivered.**
+- 6 images at 4:5, 1080×1350: key visual, ritual, in hand, shelf, table, mood.
+- 3 store images at 1200×1200: white background, in use, routine.
+- 3 films, BT.709, 30 fps: 15 s at 9:16, 6 s at 9:16, 6 s at 1:1.
+- The recut ad at 1080×1920, with the old captions erased and word-only captions (§4.5 item 1).
+
+**Limits, stated plainly:**
+- The stills are softer than a generated set would be, because they are upscaled from 720p frames.
+- Where the pack meets a surface, a hand-finished contact shadow would still improve them.
+- The 15-second film is a single scene: a slow push, copy, then a call to action.
+
 ---
 
 ## 5. The guarantee and the report

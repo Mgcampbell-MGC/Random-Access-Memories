@@ -2746,6 +2746,18 @@ strangers' dead parents, alone, in year three?"**
       - Where the pack stays still, the placeholder-plus-composite method extends to video.
       - Moving hands need tracking, which is not built.
       - UNTESTED.
+  - **★★ THE RECUT AND THE SET, SAME DAY (`O_LANCAMENTO_AIRTIGHT.md` §4.5): FIVE FAULTS IN MY OWN WORK, EVERY ONE FOUND BY
+    LOOKING AT OUTPUT, NONE BY A PASSING CHECK.**
+    - **★ COVERING IS NOT REMOVING.** An opaque card over the ad's burnt-in captions also covered the product. The
+      founder: *"why not just word not a whole card."* Now the captions are erased: an inpainting model run locally
+      (LaMa ONNX, ~3,4 s a frame on 4 CPUs), stabilised by optical flow. Then words only, placed shot by shot clear of
+      the pack. **Erase anything burnt in before designing over it.**
+    - **★ FIT THE MODEL THE PLACEMENT USED.** The label check's homography, fitted on letters alone, bent the pack's ends
+      and failed four exact labels. Adding similarity and affine fits passed all 9 images, still caught the planted error
+      on every one, and still failed the original *RESSCUE*. **Before calling a label wrong, ask whether the letter tiles
+      fail or only the seams.** A grid-search fix I added first changed no score, and was removed.
+    - **A pan at scale 1 uncovers the frame edge:** 6 px of black in all three films, which no check saw. **Parallax is
+      wrong for a pack standing ON something. Paint out the WHOLE stand-in, not only its uncovered part.**
 
 ## The test design that works
 

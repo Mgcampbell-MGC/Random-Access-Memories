@@ -93,9 +93,18 @@ class Checker:
         # Alignment can occasionally lock onto a wrong fit and fail a frame whose label is intact. A wrong fit can
         # only LOWER the scores, and a misspelled letter cannot be aligned away by one global homography, so
         # retrying stricter fits and keeping the best is safe.
-        best = None
+        # A composited pack is placed by a similarity (compor.py, the film layer), so a full homography fitted
+        # from label features alone can bend the far ends of the pack: measured 28 Sep 2026, a shelf composite
+        # whose placement matched the master exactly failed on its base because the homography's perspective
+        # terms, fitted on the label, drifted 10-15 px by the foot. Similarity and affine fits are tried too.
+        fits = []
         for method, thr in ((cv2.RANSAC, 3.0), (cv2.USAC_MAGSAC, 2.0), (cv2.RANSAC, 1.5)):
-            H, inliers = cv2.findHomography(src, dst, method, thr)
+            fits.append(cv2.findHomography(src, dst, method, thr))
+        for est in (cv2.estimateAffinePartial2D, cv2.estimateAffine2D):
+            A, inl = est(src, dst, method=cv2.RANSAC, ransacReprojThreshold=2.0)
+            fits.append((None if A is None else np.vstack([A, [0, 0, 1]]), inl))
+        best = None
+        for H, inliers in fits:
             if H is None:
                 continue
             r = self._compare(img, H, hidden)
@@ -133,7 +142,8 @@ class Checker:
         B = bandpass(warped.astype(np.float32))
         hid = None
         if hidden is not None:
-            hid = cv2.warpPerspective(hidden, H, (w, h), flags=cv2.WARP_INVERSE_MAP | cv2.INTER_LINEAR) > 127
+            # A pixel even partly covered (a finger's soft edge) is covered: judging it would compare skin to label.
+            hid = cv2.warpPerspective(hidden, H, (w, h), flags=cv2.WARP_INVERSE_MAP | cv2.INTER_LINEAR) > 20
         scores, n_hidden = [], 0
         for y, x in self.tiles:
             if hid is not None and hid[y:y + TILE, x:x + TILE].mean() > 0.10:

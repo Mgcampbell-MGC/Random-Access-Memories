@@ -2,7 +2,7 @@
 
 Usage:
     python3 filme_hyperframes.py PECA.png PASTA [--linhas "NOVO|Linha 1|Linha 2"] [--final "EM BREVE|01 · 11"]
-                                 [--segundos 8] [--fonte marca.woff2]
+                                 [--segundos 8] [--fonte marca.woff2] [--sem-paralaxe]
     cd PASTA && npx hyperframes check . && npx hyperframes render . --format png-sequence -o ../quadros
     python3 codificar.py quadros FILME.mp4 --fps 30 [--trilha musica.mp3 --segundos 8]
     python3 relatorio_fidelidade.py EMBALAGEM.png FILME.mp4
@@ -13,6 +13,8 @@ Never deliver HyperFrames' own MP4: it is tagged BT.709 but converted BT.601, wh
 PECA.png is the output of compor.py; its sidecars PECA.alpha.png and (if present) PECA.hidden.png are read. The script
 splits the piece into a background plate and a packaging layer, and writes PASTA/index.html: the background moves more
 than the pack (parallax), a band of light crosses the background only, and the type lines come in and go out.
+Use --sem-paralaxe when the pack stands ON something in the scene (a rock, a shelf, a table): the surface is at the
+pack's own depth, so parallax slides it under the base and shows the painted-out plate (found 28 Sep 2026).
 
 Why this keeps the label exact: the pack is an <img> that the browser only scales and moves. Nothing redraws it.
 Tested 26 Sep 2026 on one tube, product-on-a-sill and in-hand (results in O_LANCAMENTO_AIRTIGHT.md §4.3).
@@ -63,6 +65,8 @@ def main():
     ap.add_argument("--segundos", type=float, default=8.0)
     ap.add_argument("--fonte", help="brand font file (.woff2/.ttf) the brand supplied")
     ap.add_argument("--gsap", help="local gsap.min.js to copy instead of downloading")
+    ap.add_argument("--sem-paralaxe", action="store_true",
+                    help="the pack stands ON something in the scene (a rock, a shelf): move it with the scene, no parallax")
     a = ap.parse_args()
 
     stem = a.peca.rsplit(".", 1)[0]
@@ -72,6 +76,7 @@ def main():
         sys.exit("need PECA.png and PECA.alpha.png from compor.py")
     hidden = cv2.imread(stem + ".hidden.png", cv2.IMREAD_GRAYSCALE)
     in_hand = hidden is not None and (hidden > 127).sum() > 50
+    static = in_hand or a.sem_paralaxe  # a hand moves with its arm; a pack standing on a surface moves with it
     H, W = img.shape[:2]
     W2, H2 = W - W % 2, H - H % 2
     img, alpha = img[:H2, :W2], alpha[:H2, :W2]
@@ -81,11 +86,16 @@ def main():
     lay = alpha.astype(np.float32) / 255
     if in_hand:
         lay = np.clip(lay + hidden[:H2, :W2].astype(np.float32) / 255, 0, 1)
-    m = cv2.dilate((lay > 0.05).astype(np.uint8) * 255, np.ones((31, 31), np.uint8))
+    # The layer also carries a soft margin of the scene around the pack (its contact shadow, the surface it stands
+    # on), fading into the plate. Without it the painted-out ring under the pack shows as a pale halo (28 Sep 2026).
+    core = (lay > 0.05).astype(np.uint8)
+    margin = cv2.GaussianBlur(cv2.dilate(core, np.ones((21, 21), np.uint8)).astype(np.float32), (0, 0), 6)
+    lay = np.maximum(lay, np.clip(margin * 1.6 - 0.3, 0, 1) * (1 - core) + core * lay)
+    m = cv2.dilate((lay > 0.02).astype(np.uint8) * 255, np.ones((15, 15), np.uint8))
     plate = cv2.inpaint(img, m, 9, cv2.INPAINT_TELEA)
     ys, xs = np.where(lay > 0.05)
     x0, y0, x1, y1 = xs.min(), ys.min(), xs.max() + 1, ys.max() + 1
-    cv2.imwrite(os.path.join(a.pasta, "plate.png"), plate if not in_hand else img)
+    cv2.imwrite(os.path.join(a.pasta, "plate.png"), plate if not static else img)
     cv2.imwrite(os.path.join(a.pasta, "pack_layer.png"), np.dstack([img, (lay * 255).astype(np.uint8)])[y0:y1, x0:x1])
 
     # Zoom grows everything about the pack centre; keep type clear of the pack at the END of the move too.
@@ -99,7 +109,7 @@ def main():
     col, shade = ink(plate, side)
     ecol, eshade = ink(plate, end)
     cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
-    par = 0.0 if in_hand else 0.5  # a hand must move with its arm
+    par = 0.0 if static else 0.5
 
     font_face, family = "", "sans-serif"
     if a.fonte:
@@ -120,6 +130,14 @@ def main():
     words = "".join(f'<span class="word" id="w{i}">{w}</span>' for i, w in enumerate(lines[1:], 1))
     word_ids = ", ".join(f'"#w{i}"' for i in range(1, len(lines)))
     endb = f'<span class="small" id="e1">{fin[0]}</span>' + (f'<span class="big" id="e2">{fin[1]}</span>' if len(fin) > 1 else "")
+    # The pan must never uncover the frame edge. The plate scales about (cx, cy), so at scale s its left edge sits at
+    # cx(1 - s) + x: a pan at scale 1 shows a strip of background (found 28 Sep 2026, 6 px of black down the left of
+    # a 15 s film for its first four seconds). Start zoomed in just enough to cover the pan on the nearer side.
+    pan = W2 * 0.018
+    s0 = 1 + (pan + 2) / max(1.0, min(cx, W2 - cx))
+    # Keep the designed end framing: adding s0 to the end scale cut the cap off the top of a 1:1 cut.
+    s1 = max(1 + zoom, s0 + 0.02)
+    s1p = max(1 + zoom * (par if par else 1), s0 + 0.02)
     doc = f"""<!doctype html>
 <html lang="pt-BR">
   <head>
@@ -157,9 +175,9 @@ def main():
     </div>
     <script>
       const tl = gsap.timeline({{ paused: true }});
-      const pan = {W2 * 0.018:.1f};
-      tl.fromTo("#plate", {{ scale: 1.0, x: pan }}, {{ scale: {1 + zoom:.2f}, x: -pan, duration: {T:g}, ease: "sine.inOut" }}, 0);
-      tl.fromTo("#pack", {{ scale: 1.0, x: pan }}, {{ scale: {1 + zoom * (par if par else 1):.3f}, x: -pan, duration: {T:g}, ease: "sine.inOut" }}, 0);
+      const pan = {pan:.1f};
+      tl.fromTo("#plate", {{ scale: {s0:.4f}, x: pan }}, {{ scale: {s1:.4f}, x: -pan, duration: {T:g}, ease: "sine.inOut" }}, 0);
+      tl.fromTo("#pack", {{ scale: {s0:.4f}, x: pan }}, {{ scale: {s1p:.4f}, x: -pan, duration: {T:g}, ease: "sine.inOut" }}, 0);
       tl.fromTo("#sweep", {{ x: -{W2} }}, {{ x: {int(W2 * 1.2)}, duration: {T * 0.75:.2f}, ease: "power1.inOut" }}, {T * 0.1:.2f});
       tl.fromTo("#kicker", {{ opacity: 0, y: 12 }}, {{ opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }}, 0.5);
       {f'tl.fromTo([{word_ids}], {{ opacity: 0, y: 28 }}, {{ opacity: 1, y: 0, duration: 0.6, stagger: 0.25, ease: "power3.out" }}, 0.9);' if word_ids else ''}
@@ -174,7 +192,7 @@ def main():
     with open(os.path.join(a.pasta, "index.html"), "w", encoding="utf-8") as f:
         f.write(doc)
     print(f"{W2}x{H2}, {T:g} s, texto em '{side[0]}', final em '{end[0]}', "
-          f"{'mão: paralaxe desligada' if in_hand else 'paralaxe ligada'} -> {a.pasta}/index.html\n"
+          f"{'mão: paralaxe desligada' if in_hand else 'paralaxe desligada' if static else 'paralaxe ligada'} -> {a.pasta}/index.html\n"
           f"próximo: npx hyperframes render {a.pasta} --format png-sequence -o quadros && "
           f"python3 codificar.py quadros FILME.mp4 --fps 30")
 
