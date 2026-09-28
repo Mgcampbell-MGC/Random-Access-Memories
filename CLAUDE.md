@@ -2734,6 +2734,18 @@ strangers' dead parents, alone, in year three?"**
       by default. **What stays scarce is a label PROVEN against the brand's own file, with a guarantee behind it.**
       Expect the price of "a film" to fall. Do not move the price before the calls; log *"Vocês já fazem vídeo com
       ferramenta de IA?"*.
+  - **★★ THE FOUNDER'S OWN FICTIONAL-BRAND AD MISSPELLED ITS PRODUCT — 28 Sep 2026 (`O_LANCAMENTO_AIRTIGHT.md` §4.4).**
+    - The ad: a 32,5-second UGC-style ad for *Climate Rescue*, made with an AI presenter, a good script, and a cut named
+      "final".
+    - **Its hero packshot, the largest view of the label, reads *RESSCUE* in every frame. The end card reads *RESCUE*.**
+    - **★ A MINIMALIST LABEL IS NOT A SAFE LABEL.** Two words, and the generator still inserted a letter, in the one shot
+      a customer reads.
+    - **★ A FICTIONAL BRAND'S FAILURE IS THE ONE DEMONSTRATION SHE MAY SHOW.** The Sallve failures must stay private;
+      this one is hers to publish, if the founder agrees.
+    - **★ THE PRESENTER/UGC FORMAT IS NOW DO-IT-YOURSELF, AND IT IS NOT IN THE LADDER.**
+      - Where the pack stays still, the placeholder-plus-composite method extends to video.
+      - Moving hands need tracking, which is not built.
+      - UNTESTED.
 
 ## The test design that works
 

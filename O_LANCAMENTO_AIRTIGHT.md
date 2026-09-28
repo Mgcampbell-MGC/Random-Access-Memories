@@ -233,6 +233,50 @@ Ficha (default 2,0). Calibration:
 - **`THE TREADMILL TEST` passes:** each release of such a tool makes her pipeline better and needs no rebuild. Its
   shadow is that each release makes her competitors better too.
 
+### 4.4 The founder's fictional-brand ad — 28 Sep 2026: the label broke in the shot a customer reads
+
+**What it is.**
+- A 32,5-second, UGC-style vertical ad for **Climate Rescue**, the fictional hair stick from `THE_CLIMATE_POSITIONING.md`.
+- An AI presenter appears in seven settings, with a Portuguese voice and burnt-in captions.
+- The script follows the positioning: a touch-up at 08:00 → 13:00 → 18:00 and *"Procuram-se field testers"*.
+- It was made outside this session. The tool is not recorded here: the Higgsfield account linked to this session holds
+  no video generations.
+
+**What held.**
+- The presenter is consistent from shot to shot.
+- The voice is natural.
+- The pack colours and the wordmark CLIMATE are right in every shot where they can be read.
+
+**What broke** (frames read one by one; evidence kept outside the repo):
+- **The hero packshot, 15,3–16,4 s, reads *RESSCUE* in every frame.** It is the largest and sharpest view of the label
+  in the whole film.
+- The end card, 30–32,5 s, reads *RESCUE*.
+- In hand, at 9 s, the product name smears until it cannot be read.
+- It sat in a cut named *"final"*.
+
+**What it means.**
+1. **This is the third measured label failure.** Part F found 2 and 4 misspellings on ingredient names. This one is an
+   inserted letter in a two-word label, **the simplest label possible**, in the one shot a customer reads. A minimalist
+   label is not a safe label.
+2. **This is the first failure Sol may show publicly,** because the brand is fictional. The Sallve samples must stay
+   private. **Using this frame on the offer sheet is the founder's call.**
+3. **It does not close step 1 of §11.** The tool is unknown, no fingers cover the label, and Pixelcut is untested. It
+   points the same way.
+4. **The presenter format is not in the ladder, and anyone can now make it.**
+   - In 4 of this film's 7 label shots the pack does not move (mirror, hero, table, end card). There the generator
+     could render the blue placeholder, and one composite laid on every frame would keep the label exact.
+   - The moving-hand shots need per-frame tracking, which is not built.
+   - **UNTESTED.** It needs one generated clip with a blue tube, and credits cost money: ask first.
+5. **Before posting anything like it, apply §6.4.**
+   - TikTok's own guidelines (2026H2) say: *"We require clear labeling when AI or editing is used to realistically
+     depict people or scenes."*
+   - CONAR's May 2026 influencer guide, §1.3.1, applies the whole code to AI content. It bars *"simulações, endossos ou
+     testemunhais"* that mislead, and adds no label duty of its own.
+   - The line *"Agora queremos mulheres reais em dias reais"*, spoken by a synthetic presenter, is the one that would
+     hurt an honesty-positioned brand. Label it, or cut the line.
+6. **Technical:** 720×1280 (post at 1080×1920), colour untagged, captions in DejaVu Sans (a system default font).
+   Audio is fine at −17 LUFS.
+
 ---
 
 ## 5. The guarantee and the report
