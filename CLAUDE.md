@@ -2770,13 +2770,26 @@ strangers' dead parents, alone, in year three?"**
       NFS-e, open a production card, deliver with the fidelity report, invoice 50%, nudge until paid. **Build it after
       the first paying client, not before.**
     - **★★ HIS SPONSOR IS OUR COMPETITOR, AND ITS HELP CENTRE CONTRADICTS ITS HOMEPAGE.**
-      - Riverflow (Sourceful Ltd) sells a *"six campaign ready images"* shoot through Claude's MCP at **US$99/month**.
+      - Riverflow (Sourceful Ltd, Manchester, England; US-facing, priced in USD) sells a *"six campaign ready images"*
+        shoot through Claude's MCP at **US$99/month**.
       - Its homepage says labels *"stay aligned to your reference"*.
       - Its help centre says *"small text is still one of the hardest details to preserve"*, and it sells **human label
         repair at US$35 per asset** after 5 free a month.
       - **⇒ The wedge is confirmed** (composite by construction plus a guarantee), and **the price is capped**: a brand
         with a designer does the set for ≈R$515–885.
       - **Read a funded competitor's HELP CENTRE, not its homepage.**
+  - **★★ THE AI-AVATAR AFFILIATE PAGE, SAME DAY (`THE_AI_AVATAR_AFFILIATE_SCREEN.md`): NOT HER BUSINESS, ONE QUESTION
+    KEPT.**
+    - An AI character on Instagram and Facebook sells another company's dog supplement for tracked commission. A
+      coaching community brokers the brands.
+    - The claim: $12.000 in 15 days, at 8–12 h a day. The host himself calls it unrepeatable.
+    - **Why not:** it is someone else's product on commission (the role she refused twice; ask, don't assume), a
+      lottery on one throttleable account, and the video sells the community.
+    - **★ And in the US it is a fake testimonial by rule, verified at source: 16 CFR 465.2(a)** bars a business from
+      creating a consumer testimonial that misrepresents *"that the reviewer or testimonialist exists"* or *"used…
+      the product"*, and §465.1(f) covers a *"likeness"*.
+    - **Kept:** ask brands on the calls whether their AI creators' videos get the label right. The *RESSCUE* failure
+      at scale is a buyer for O LANÇAMENTO.
 
 ## The test design that works
 

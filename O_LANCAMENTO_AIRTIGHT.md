@@ -397,7 +397,7 @@ can't show people this."*
 
 **The sponsor in his example is Riverflow — O LANÇAMENTO's closest funded competitor. Checked at source 29 Sep 2026:**
 - **What it sells:** *"Create a full product photo shoot… six campaign ready images"*, plus ads and a product video,
-  from Claude through an MCP connector. The operator is **Sourceful Ltd** (founded 2020; the app launched April 2026).
+  from Claude through an MCP connector. The operator is **Sourceful Ltd, CRN 11260656, Colony, 5 Piccadilly Place, Manchester, England** (its own privacy policy, updated 14 Sep 2026; founded 2020; the app launched April 2026). It prices in USD and sells mainly to US brands: **UK-registered, US-facing.**
 - **Price** (`help.riverflow.ai/…/14322110`, plans from 15 Sep 2026): **Growth US$99/month**, 6.000 credits, about
   600 images or 150 videos. Scale US$249; Business US$999.
 - **The homepage claims** *"Product details stay true: Labels, logos, packaging, colours and product shape stay aligned
