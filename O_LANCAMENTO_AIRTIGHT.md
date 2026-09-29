@@ -352,6 +352,75 @@ can't show people this."*
 - **Next:** when the founder has a card, regenerate every scene at 2K with a blank blue tube and composite the approved
   pack locally, as the ladder specifies. Recheck every piece with the same tools.
 
+### 4.6 A creator's "passive income" system, supplied 29 Sep 2026 — one part to copy, one to reject, and its sponsor is our competitor
+
+**The model, in his own numbers** (transcript supplied by the founder; his claims, not verified):
+- An AI system makes his short videos. They used to cost US$100 each from a team (US$1.500 for 15 a month); now he
+  posts daily for ≈US$250 a month, about US$8 a video.
+- The money comes from brand sponsorships, about US$2.000 a reel. An agent runs the sponsorship inbox:
+  1. it classifies each email;
+  2. it negotiates from his rate card;
+  3. it invoices 50% up front;
+  4. it opens a production card;
+  5. it researches the sponsor and makes the video;
+  6. it publishes the video;
+  7. it sends the link and collects the other 50%.
+- Anything contractual is flagged for him.
+- **The measured numbers are small and early:**
+  - his best AI video has 32.000 views, and he has posted four;
+  - sponsorships total about US$10.000 so far;
+  - **nothing was collected this month**; US$4.800 is outstanding and US$10.000 is in the pipeline.
+- The video also sells his Claude Code community (`THE CONTENT-ECONOMY SELECTION BIAS`).
+
+**Reject: the money engine.**
+- His audience existed before the AI system. It was built with his own face, a paid team and a community. The machine
+  cut the cost of feeding that audience; it did not create it.
+- Sol would start at zero followers and faceless. That is audience-building (C2), a lottery (`THE PORTFOLIO
+  REQUIREMENT`), and rent on attention (`THE ATTENTION TRILEMMA`).
+- Portuguese calls are now allowed (C1), so negotiating with a sponsor is no longer the kill. **Having no audience is.**
+
+**Copy: the deal desk around the machine (RULE 3: her version of the whole model is O LANÇAMENTO with this agent).**
+- **The steps:**
+  1. A brand's email arrives.
+  2. The agent classifies it and replies from the fixed ladder (VITRINE, ESSENCIAL, LANÇAMENTO…), with no bespoke
+     quotes.
+  3. 50% is charged by **Pix against an NFS-e**, not Stripe (`INVOICE, DON'T CHECKOUT`: a card costs ~8% all-in).
+  4. A production card opens: brief, approved art, placeholder scenes, composite, fidelity report.
+  5. The set is delivered with the report.
+  6. The second 50% is invoiced.
+  7. The agent nudges until it is paid.
+- **Only three things are flagged to her:** a contract question, a failed fidelity check, and a call request.
+- §9 already charges *"50% on order, 50% on delivery"*; this automates it.
+- It attacks the ≈5 h/month of admin and the follow-ups inside the 20–30 h of calls. **It does not create demand:
+  the 20 calls still do.**
+- **Build only after the first paying client.** Until then the admin is a spreadsheet.
+
+**The sponsor in his example is Riverflow — O LANÇAMENTO's closest funded competitor. Checked at source 29 Sep 2026:**
+- **What it sells:** *"Create a full product photo shoot… six campaign ready images"*, plus ads and a product video,
+  from Claude through an MCP connector. The operator is **Sourceful Ltd** (founded 2020; the app launched April 2026).
+- **Price** (`help.riverflow.ai/…/14322110`, plans from 15 Sep 2026): **Growth US$99/month**, 6.000 credits, about
+  600 images or 150 videos. Scale US$249; Business US$999.
+- **The homepage claims** *"Product details stay true: Labels, logos, packaging, colours and product shape stay aligned
+  to your reference."*
+- **Its own help centre says the opposite** (`help.riverflow.ai/…/15596922`): *"small text is still one of the hardest
+  details to preserve."* The fixes it offers are a re-edit, a mask, a *"Fix Product Details"* tool, and *"contact
+  support if the product is still not accurate."*
+- **It sells human label repair** (`…/14664834`):
+  - 24/7 *"artworking"* by experts in *"AI artifact cleanup"*;
+  - **5 asset fixes a month included on Growth, then US$35 per asset** (US$30 on Scale).
+  - Its photoshoot guide tells the user to review *"label or text accuracy"* after every generation.
+- **⇒ What this confirms:** the wedge is real. A funded incumbent regenerates the pack, admits text breaks, and charges
+  people to repair it. Composite-by-construction plus a written guarantee is still the one thing it does not sell.
+- **⇒ What this caps:** a brand with its own designer can make the whole set in one month of Growth plus a few paid
+  fixes, **≈US$99–170 ≈ R$515–885** (PTAX 5,2037), with no guarantee and its own hours.
+  - R$2.990 therefore has to be earned by: done-for-you, in Portuguese, with the pack in a hand and in motion, and a
+    guarantee.
+  - Ask on every call: *"Vocês já usam alguma ferramenta de IA para foto de produto?"*
+  - If most say yes, the SWITCH bar in §11 fires early.
+- **A reusable check: read a funded competitor's HELP CENTRE, not its homepage.** Here the homepage claimed exact
+  labels, and the help centre admitted the failure and priced the repair. It is the same move as *"check the blog and
+  sitemap"*, one level deeper.
+
 ---
 
 ## 5. The guarantee and the report

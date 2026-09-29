@@ -2758,6 +2758,25 @@ strangers' dead parents, alone, in year three?"**
       fail or only the seams.** A grid-search fix I added first changed no score, and was removed.
     - **A pan at scale 1 uncovers the frame edge:** 6 px of black in all three films, which no check saw. **Parallax is
       wrong for a pack standing ON something. Paint out the WHOLE stand-in, not only its uncovered part.**
+    - **The founder's verdict on the R$0 set: *"I can't show people this."*** Upscaled 720p frames give exact labels and
+      unshowable pictures, so the generator line in the tool budget is not optional.
+  - **★★ A CREATOR'S "PASSIVE INCOME" SYSTEM, 29 Sep 2026 (`O_LANCAMENTO_AIRTIGHT.md` §4.6): COPY THE DEAL DESK, REJECT
+    THE MONEY ENGINE.**
+    - His machine cut the cost of an audience he had already built, with his face, a team and a community. It
+      did not create that audience.
+    - **The measured numbers:** his best AI video has 32.000 views; sponsorships total about US$10.000; US$0 was
+      collected this month.
+    - Sol's version is O LANÇAMENTO with an agent-run deal desk: classify, quote from the ladder, invoice 50% by Pix and
+      NFS-e, open a production card, deliver with the fidelity report, invoice 50%, nudge until paid. **Build it after
+      the first paying client, not before.**
+    - **★★ HIS SPONSOR IS OUR COMPETITOR, AND ITS HELP CENTRE CONTRADICTS ITS HOMEPAGE.**
+      - Riverflow (Sourceful Ltd) sells a *"six campaign ready images"* shoot through Claude's MCP at **US$99/month**.
+      - Its homepage says labels *"stay aligned to your reference"*.
+      - Its help centre says *"small text is still one of the hardest details to preserve"*, and it sells **human label
+        repair at US$35 per asset** after 5 free a month.
+      - **⇒ The wedge is confirmed** (composite by construction plus a guarantee), and **the price is capped**: a brand
+        with a designer does the set for ≈R$515–885.
+      - **Read a funded competitor's HELP CENTRE, not its homepage.**
 
 ## The test design that works
 
