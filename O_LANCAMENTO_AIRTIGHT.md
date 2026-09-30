@@ -95,6 +95,11 @@ her machine.
 **Target: ≤3 h of her time for a full O LANÇAMENTO** (from `O_LANCAMENTO.md` D6). **Untimed** until the first three
 dry runs (§11, step 2).
 
+**⚠ Corrected 30 Sep 2026: this table's own step times do not sum to 3 h.** For the 9 stills of a real LANÇAMENTO
+(the Climate Rescue set) they give 20 + 10 + 10 + 20 + 75 + 9×5 + 9×10 + 20 + 5 + 20 + 20 = **335 min ≈ 5,5 h**. The
+3 h is a target the table does not support. The dry runs decide which is real; above 5 h, fix the pipeline before
+selling (§11). Sol's overview states the 5–6 h figure.
+
 ---
 
 ## 4. The machine — three commands, tested today
@@ -579,6 +584,8 @@ decides whether this is a business or a treadmill.**
 
 **Hours (targets, untimed):** production ≈3 h × 4 launches + ~1 h per VITRINE/EXTENSÃO ≈ **15–20 h** · calls and
 follow-up ≈20–30 h · admin ≈5 h ⇒ **≈45–55 h of the 87 available.** Capacity does not bind; demand does.
+*(At the §3 table's own ≈5,5 h per launch, production is ≈24–28 h and the total ≈50–65 h: still inside 87, so the
+verdict holds.)*
 
 **Money in:** Pix against a nota fiscal, 50% on order, 50% on delivery, into the company account (`INVOICE, DON'T
 CHECKOUT`). **Capital:** ≈R$455 setup + one month of tools before the first sale ≈ **R$1.000 (US$190)** of the
