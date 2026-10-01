@@ -426,6 +426,27 @@ can't show people this."*
   labels, and the help centre admitted the failure and priced the repair. It is the same move as *"check the blog and
   sitemap"*, one level deeper.
 
+### 4.7 The founder's Climate Rescue case study — read 1 Oct 2026: the stills hold, two film frames do not
+
+**What it is.** An 8-page designed case study (PDF, supplied by the founder, not committed): one visual world,
+*After the Rain*; 1 key visual, 6 campaign images, a 15 s film with 2 cuts of 6 s, and 3 store pieces. Its own
+transparency note says it was made *"com o packshot provisório já existente no projeto"*. The pictures are the first
+showable-quality set in this file. A second PDF, the UGC ad's production package (concept, 10-shot plan, voice, sound,
+prompts, QC), documents how the 32,5 s ad in §4.4 was planned.
+
+**Read label by label, zoomed:**
+- **Every still where the label is visible reads CLIMATE RESCUE correctly.**
+- **Two of the five film frames smear the label until it cannot be read:** the walk on the waterfront and the face
+  close-up. This is the motion failure of §4.4 again, in a better-looking film.
+- Its own fidelity page claims *"13 peças finais verificadas"* and *"geometria do pack: sem deformação óbvia"*. That is
+  a weaker standard than `relatorio_fidelidade.py`, which has not been run on these pieces.
+
+**What it means.**
+- ⇒ **Before the case is shown on a call:** run the checker on every piece against the packshot, and redo the two film
+  scenes with the pack composited. Sol's overview says so.
+- **A beautiful film does not mean the label is right.** The case study and the recut ad (§4.5) now each prove one
+  half: the pictures and the label. Nothing yet proves both in the same set.
+
 ---
 
 ## 5. The guarantee and the report
