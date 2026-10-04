@@ -2801,6 +2801,42 @@ strangers' dead parents, alone, in year three?"**
     - **The founder set aside the terms and confidentiality question; do not re-argue it.**
     - **Brazil knows Manus** (App Store ratings: BR 61.907 vs US 38.602). As the founder said, it changes nothing real:
       a known tool is not a proven label. **Sol sells the result, not the secret.**
+  - **★★ THE MANUS SETUP KIT, AND THREE FAULTS IT FOUND IN MY OWN TOOLS — 4 Oct 2026 (`kit-manus/`).**
+    - **What it is:**
+      - setup sheet (EN);
+      - project instruction;
+      - 4 knowledge-base files;
+      - the tools as a Manus Skill zip;
+      - Sol's copy-paste messages for every step (PT);
+      - two tests on a new fictional product, **ORVALHA** (pump serum, label printed *"PRODUTO FICTÍCIO · USO EM TESTE"*).
+      - The self-test passes 9/9 on a clean install.
+      - The Skill runs on her laptop through Manus Desktop's "My Computer", one authorised folder.
+    - **★★ THE CHECKER WAS CALIBRATED AT THE PACKSHOT'S OWN SIZE, AND REAL BRANDS SEND BIG FILES.** A 1.900 px master
+      placed at scale 0,51 failed its own EXACT pieces (worst tile 0,75). Climate passed only because its master was
+      916 px. **Fix:** compare at full size first, as before; only if that fails, compare against the master shrunk
+      to the piece's own scale. Every bar is unchanged, and each path carries its own planted-error control.
+      **Regression:** all 9 Climate verdicts identical, both known-wrong films still rejected. The shrink-only first
+      version broke one Climate piece at scale 0,45, which is why it is two-step.
+    - **★★ THE PLANTED ERROR MUST LOOK LIKE THE REAL ONE.** The control mirrors a patch, which is far easier to catch
+      than a look-alike letter.
+      - Measured: 5 misspellings at 2 sizes.
+      - **Caught:** a changed brand name (*ORVAHLA*) and a dropped letter (*capilr*), at both sizes; *30 ml → 50 ml* at
+        scale 0,51.
+      - **Missed:** *30 → 50* at 0,32; *secos → secas*; *CAMÉLIA → CAMELIA*.
+      - Finer tiles do not separate them: at 0,32 the exact label scored 0,82 and the wrong one 0,85.
+      - ⇒ **The checker proves "not redrawn, garbled, distorted or recoloured", not "every glyph".** The guarantee
+        still holds BY CONSTRUCTION, because the pixels are copied from the brand's file. So the one live risk is a
+        wrong or outdated file, closed by process: the cutout comes only from the file named in the signed Ficha, and
+        the brand approves the key visual in writing.
+    - **★ AN AI EDIT AFTER THE COMPOSITE IS THE NEW HOLE.**
+      - Design View is Nano Banana Pro, so *"add the headline"* regenerates the whole picture, label included.
+      - ⇒ Forbidden after the pack is in.
+      - `tools/texto.py` writes the Ficha's phrases by code beside the pack, and refuses to save unless every pack pixel
+        is byte-identical.
+    - **★ A FILM NEEDS THE PACK AT 45–50% OF FRAME HEIGHT.** At 42% an exact film failed one frame at 0,784, because the
+      fine print blurs under the camera move. The bar did not move; the layout rule did. Two more rules:
+      - **6 s cuts take half the camera move.**
+      - **Crop before adding text,** or the 1:1 cut loses the text.
 
 ## The test design that works
 

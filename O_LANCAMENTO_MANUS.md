@@ -85,6 +85,18 @@ moving pack. This rule removes that case by construction instead of hoping a che
 
 ### Set up once
 
+**Built, 4 Oct 2026: `kit-manus/`.** `kit-manus/SETUP.md` is the setup sheet; `kit-manus/dist/` holds the Skill zip,
+Sol's folder and the full kit. The decisions below changed while building it:
+- **The Skill runs on Sol's laptop through Manus Desktop's "My Computer"**, authorised on one folder, rather than in
+  the cloud sandbox. My Computer runs CLI commands in authorised folders (Manus help 14178443), so the files stay on
+  her disk and nothing is recycled after 21 days. The sandbox remains the fallback.
+- **The tools are `recortar.py`, `compor.py`, `texto.py`, `relatorio_fidelidade.py`, `filme.py` and `autoteste.py`.**
+  `codificar.py` and HyperFrames are left out: `filme.py` already writes BT.709, and HyperFrames needs Node.
+- **A clean install of `opencv-python-headless numpy imageio-ffmpeg pillow` ran the whole path** (OpenCV 5.0.0,
+  Pillow 12.3.0). Whether pip works in Manus's own sandbox is still UNVERIFIED; Test 1 answers it in one message.
+- The rest of this list is the original plan.
+
+
 1. **A Manus Pro account** (8.000 credits at US$40 a month to start, §What it costs).
    - Install **Manus Studio** on a Mac or Windows laptop. The Video Editor is desktop-only.
 2. **One Manus Project, "O LANÇAMENTO".**

@@ -52,10 +52,13 @@ def bandpass(img, s1=1.2, s2=5.0):
 
 
 class Checker:
-    def __init__(self, approved_path):
-        cut = cv2.imread(approved_path, cv2.IMREAD_UNCHANGED)
-        if cut is None or cut.ndim != 3 or cut.shape[2] != 4:
-            sys.exit("approved packshot must be a PNG with an alpha channel")
+    def __init__(self, approved_path=None, cut=None):
+        if cut is None:
+            cut = cv2.imread(approved_path, cv2.IMREAD_UNCHANGED)
+            if cut is None or cut.ndim != 3 or cut.shape[2] != 4:
+                sys.exit("approved packshot must be a PNG with an alpha channel")
+        self.cut = cut
+        self._scaled = {}
         self.ref = cut[..., :3]
         # Only judge the label interior: the edges of a cutout never match a new background.
         self.mask = cv2.erode((cut[..., 3] > 250).astype(np.uint8), np.ones((25, 25), np.uint8)) > 0
@@ -80,6 +83,38 @@ class Checker:
             for x in range(0, w - TILE + 1, TILE // 2)
             if self.mask[y:y + TILE, x:x + TILE].mean() > 0.95 and self.R[y:y + TILE, x:x + TILE].std() > 4
         ]
+
+    def pack_scale(self, img):
+        """How big the pack shows in img relative to the approved packshot (1.0 = same size), or None."""
+        k, d = self.sift.detectAndCompute(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY), None)
+        if d is None:
+            return None
+        good = [m for m, n in self.matcher.knnMatch(self.dr, d, k=2) if m.distance < 0.75 * n.distance]
+        if len(good) < 12:
+            return None
+        src = np.float32([self.kr[m.queryIdx].pt for m in good])
+        dst = np.float32([k[m.trainIdx].pt for m in good])
+        A, _ = cv2.estimateAffinePartial2D(src, dst, method=cv2.RANSAC, ransacReprojThreshold=2.0)
+        return None if A is None else float(np.hypot(A[0, 0], A[1, 0]))
+
+    def at_scale(self, s):
+        """A checker whose approved packshot is shrunk to scale s.
+        Why (measured 4 Oct 2026): the thresholds were calibrated with the pack shown at about the packshot's own
+        size. A brand's packshot is usually far larger than the pack appears in a piece, and comparing in the
+        packshot's resolution asks the piece for fine print it cannot hold: an exact composite at scale 0,51 scored
+        a worst tile of 0,75 and failed. Shrinking the reference to the piece's scale restores the calibrated
+        condition; it never enlarges, and it rounds DOWN so the reference is never sharper than the piece."""
+        if s is None or s >= 0.85:
+            return self
+        b = max(0.10, np.floor(s * 20) / 20)
+        if b not in self._scaled:
+            h, w = self.cut.shape[:2]
+            small = cv2.resize(self.cut, (max(1, int(round(w * b))), max(1, int(round(h * b)))),
+                               interpolation=cv2.INTER_AREA)
+            c = Checker(cut=small)
+            c.max_color = self.max_color
+            self._scaled[b] = c
+        return self._scaled[b]
 
     def score(self, img, hidden=None):
         k, d = self.sift.detectAndCompute(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY), None)
@@ -184,13 +219,51 @@ def check_asset(checker, path, every, control=True):
     img = cv2.imread(path)
     if img is not None:
         hidden = cv2.imread(path.rsplit(".", 1)[0] + ".hidden.png", cv2.IMREAD_GRAYSCALE)
-        r = checker.score(img, hidden)
-        H = r.pop("_H", None)
-        if control and H is not None and r.get("pass"):
-            r.update(checker.control(img, H, hidden))
-            if not r["control_caught"]:
-                r["pass"] = False  # the check was not sensitive enough on this asset: a human must look
+        s = checker.pack_scale(img)
+        # First at the packshot's own size, exactly as calibrated; then, only if that fails and the pack shows
+        # smaller, at the piece's own size (see Checker.at_scale). Each path carries its own planted-error control,
+        # so a pass on either still had to catch a deliberately wrong patch. Measured 4 Oct 2026: on a small master
+        # (Climate, 916 px) the full-size path passes a piece at scale 0,45 that the shrunk path cannot test; on a
+        # large one (ORVALHA, 1.900 px) only the shrunk path passes exact pieces.
+        r = None
+        for c, ref_scale in ((checker, 1.0), (checker.at_scale(s), s)):
+            if r is not None and c is checker:
+                break  # no smaller reference to try
+            q = c.score(img, hidden)
+            H = q.pop("_H", None)
+            if control and H is not None and q.get("pass"):
+                q.update(c.control(img, H, hidden))
+                if not q["control_caught"]:
+                    q["pass"] = False  # the check was not sensitive enough here: try the other path, or a human looks
+            q["ref_scale"] = None if ref_scale is None else round(ref_scale, 3)
+            if r is None or (q.get("pass", False), q.get("p5_tile", -1)) > (r.get("pass", False), r.get("p5_tile", -1)):
+                r = q
+            if r.get("pass"):
+                break
         return {"asset": path, "type": "image", **r, "pass": r.get("pass", False)}
+    cap = cv2.VideoCapture(path)
+    n = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    scales = []
+    for i in (0, n // 2, max(n - 1, 0)):
+        cap.set(cv2.CAP_PROP_POS_FRAMES, i)
+        ok, fr = cap.read()
+        if ok:
+            scales.append(checker.pack_scale(fr))
+    scales = [s for s in scales if s is not None]
+    s = min(scales) if scales else None
+    # Same two paths as for stills: the packshot's own size first, then the film's own size.
+    r = check_video(checker, path, every, control)
+    r["ref_scale"] = 1.0
+    small = checker.at_scale(s)
+    if not r["pass"] and small is not checker:
+        q = check_video(small, path, every, control)
+        q["ref_scale"] = round(s, 3)
+        if (q["pass"], q.get("worst_p5_tile", -1)) >= (r["pass"], r.get("worst_p5_tile", -1)):
+            r = q
+    return {"asset": path, "type": "video", **r}
+
+
+def check_video(checker, path, every, control):
     cap = cv2.VideoCapture(path)
     # filme.py writes <film>.hidden.mp4 when a hand covers the packaging; read it in lockstep.
     hcap = cv2.VideoCapture(path.rsplit(".", 1)[0] + ".hidden.mp4")
@@ -214,7 +287,7 @@ def check_asset(checker, path, every, control=True):
         i += 1
     frames = i
     if not results:
-        return {"asset": path, "type": "unreadable", "pass": False}
+        return {"type": "unreadable", "pass": False}
     found = [r for r in results if r.get("found")]
     worst = min((r["worst_tile"] for r in found), default=0.0)
     p5 = min((r["p5_tile"] for r in found), default=0.0)
@@ -233,8 +306,6 @@ def check_asset(checker, path, every, control=True):
         if r.get("_H") is not None:
             ctrl = checker.control(fr, r["_H"], hid)
     return {
-        "asset": path,
-        "type": "video",
         **ctrl,
         "frames": frames,
         "frames_checked": len(results),

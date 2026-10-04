@@ -5,8 +5,11 @@ Poucos comandos. Rodam no seu computador; **nenhum envia arquivo da marca para a
 **Uma vez só, para instalar:** Python 3 e, no terminal:
 
 ```
-pip install opencv-python numpy imageio-ffmpeg
+pip install opencv-python numpy imageio-ffmpeg pillow
 ```
+
+Para confirmar que tudo funciona: `python3 autoteste.py` (cerca de 5 minutos; tem de terminar em `AUTOTESTE: 9/9 OK`).
+O autoteste usa um produto inventado, ORVALHA, e inclui uma peça com rótulo errado que precisa ser REPROVADA.
 
 Para o filme com animação (recomendado): Node.js 22 ou mais novo e FFmpeg, e depois:
 
@@ -24,6 +27,17 @@ npx hyperframes browser ensure
 - Mesmo ângulo da imagem-mestra da marca (de frente, se a mestra é de frente).
 - **Nunca suba a foto, o PDF ou o logo da marca no Higgsfield nem em nenhum outro serviço de IA.**
 
+**1b. Leve a cena ao tamanho final antes de aplicar a embalagem:**
+
+```
+python3 recortar.py CENA.png CENA_9x16.png 1080x1920
+```
+
+- Key visual em 9:16 (1080x1920), com a embalagem no centro ocupando 45% a 50% da altura. Dele saem os recortes:
+  `python3 recortar.py PECA_9x16.png PECA_4x5.png 1080x1350` e `… PECA_1x1.png 1080x1080`, só recorte, sem
+  redimensionar.
+- Campanha 4:5 (1080x1350). Loja 1:1 (1200x1200).
+
 **2. Aplique a embalagem verdadeira:**
 
 ```
@@ -36,6 +50,16 @@ python3 compor.py CENA.png EMBALAGEM.png PECA.png
 - Se o azul for outro tom, use `--matiz` (em graus: azul 210, verde 120).
 - Se ficar pequena ou grande demais, use `--ajuste largura` ou `--ajuste altura`.
 - Se nada estiver na frente da embalagem, use `--sem-oclusao`.
+
+**2b. Texto, depois dos recortes, um formato por vez:**
+
+```
+python3 texto.py PECA_4x5.png PECA_4x5_texto.png --linhas "NOVO|Frase aprovada" --fonte fonte_da_marca.ttf
+```
+
+- Escolhe o maior espaço livre ao lado da embalagem.
+- Prova que nenhum pixel da embalagem mudou; se mudou, não salva.
+- Nunca ponha texto com um editor de imagem por IA: ele redesenha a imagem inteira, inclusive o rótulo.
 
 **3. Acabamento no Photoshop, à mão:** sombra de contato, borda, cor da tampa. **Ajuste o cenário à embalagem,
 nunca a embalagem ao cenário.** Não use Preenchimento Generativo, Gerar Plano de Fundo nem Harmonizar na camada da
