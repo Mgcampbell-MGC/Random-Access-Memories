@@ -107,6 +107,51 @@ These are published prices only (help 11711111, modified 2 Oct 2026):
 
 ⇒ **The cost per launch has to be measured in the dry runs.** It cannot be read off a page.
 
+### My estimate per launch (4 Oct 2026; an ESTIMATE, not a measurement)
+
+**Anchors I checked at the source:**
+- **One Manus credit = US$0,005 ≈ R$0,026.** Every Pro tier prices at the same rate: 4.000 for US$20, 8.000 for US$40,
+  40.000 for US$200.
+- **On iPhone it costs 2,5× more:** R$129,90 for 2.000 credits, or R$0,065 a credit. Buy on the web, never in the app.
+- **The model makers' own prices** (ai.google.dev/gemini-api/docs/pricing, fetched 4 Oct):
+  - Nano Banana Pro: **US$0,134 per 1K/2K image**, US$0,24 per 4K image.
+  - Veo 3.1 at 1080p: **US$0,40 per second** on Standard, **US$0,12** on Fast, **US$0,08** on Lite.
+- **Seedance 2.5 / 2.0**, Manus's main video model: ByteDance's price page needs a login, so its price is
+  **UNVERIFIED**. I assume it falls inside Veo's US$0,12–0,40 per second band.
+
+**My assumptions** (UNVERIFIED; they cover anything Manus adds to the model makers' prices):
+- Manus charges **about 1,5–2× the model's own price**, plus 200–900 credits of agent work per task. That range comes
+  from its only published task examples, which are web and data tasks.
+- **A launch needs about 40 image generations:** about 10 final stills, ~4 tries each, plus the three looks.
+- **A generated film is about 15 s of motion, generated ~3–4 times**, so 45–60 s of output.
+- **A UGC ad is 30–40 s across ~10 shots, generated ~3 times**, so 100–120 s of output.
+
+| Launch | Credits | US$ | R$ | Share of R$2.990 |
+|---|---|---|---|---|
+| **A. The plan's method:** stills from Manus, film built locally from the stills | 2.000–5.000 | 10–25 | 52–130 | 2–4% |
+| **B. The film's motion generated in Manus** (Seedance) | 3.600–14.600 | 18–73 | 94–380 | 3–13% |
+| **C. B plus a UGC ad** | 7.200–33.800 | 36–169 | 187–880 | 6–29% |
+
+*(How the rows add up: A = 40 images × US$0,134 × 1,5–2, plus 400–2.700 credits of agent work. B adds 45–60 s of video
+× US$0,12–0,40 × 1,5–2. C adds 100–120 s more at the same rates.)*
+
+**A month of 4 launches:**
+- Method A: about 8.000–20.000 credits, **US$40–100**.
+- Method B: about 14.400–58.400 credits, **US$72–292**.
+
+Method A is the same order of cost as the tool line already in §9.
+
+⇒ **For the launch itself, cost is not the risk:** 2–13% of the price on methods A and B. The risks stay Sol's hours and
+the label.
+⇒ **A UGC ad is the exception.** At the top of the range it could take almost a third of R$2.990. So it is priced as
+its own product, never thrown into O LANÇAMENTO.
+
+**Two things would replace this estimate with a fact:**
+1. **The founder's own Manus usage page.** It shows the credits the Climate case study and the UGC ad actually used.
+2. **The free-access campaign**, if it is still running. It allowed 200 images and 10 videos a day on paid plans at no
+   credit cost, which would push the generation cost near zero. Its article names an August end date, so this is
+   unconfirmed.
+
 ## The company behind it
 
 - Meta acquired Manus on 29 Dec 2025.
