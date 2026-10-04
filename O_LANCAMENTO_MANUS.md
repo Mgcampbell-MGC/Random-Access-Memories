@@ -76,6 +76,84 @@ RSS, a webhook and others. Pro allows 20 of them (docs/automations).
 
 **What it does not do:** keep a label exact by itself, issue an NFS-e, or take Pix.
 
+## The production line through Manus (founder, 4 Oct: *"Manus is what I'm thinking"*)
+
+**The one rule that makes it work: the AI makes every moving and every generated thing EXCEPT THE LABEL. The label
+only ever appears as the brand's own image, on its own layer, or composited by `compor.py`. Nothing the generator
+draws ever shows a readable label.** Both of the founder's Manus pieces failed only where the generator drew a
+moving pack. This rule removes that case by construction instead of hoping a check catches it.
+
+### Set up once
+
+1. **A Manus Pro account** (8.000 credits at US$40 a month to start, §What it costs).
+   - Install **Manus Studio** on a Mac or Windows laptop. The Video Editor is desktop-only.
+2. **One Manus Project, "O LANÇAMENTO".**
+   - **The master instruction:** the rule above, plus the stand-in prompt (*"the whole bottle including the cap in
+     flat matte chroma blue, no text, no logo, no glare"*), the output specs below, *"all text added as layers,
+     never generated"* and the 12-point checklist.
+   - **The knowledge base:** the ladder, the spec sheet and the world library. Pro allows 100 entries.
+3. **A Skill holding `tools/compor.py`, `relatorio_fidelidade.py` and `codificar.py`**, so Manus runs the composite
+   and the check in its own sandbox.
+   - **UNVERIFIED until tried:** whether `pip install opencv-python` works there. Python, scripts in Skills and
+     FFmpeg are documented.
+   - The fallback is to run the same three commands on Sol's laptop.
+4. **A world library of 6–10 base looks** (like *After the Rain*), made once with the blue stand-in and kept in the
+   Project. They are what a brand chooses from in step 4 below.
+5. **A Project folder per client brand**, so its world is on file for the next EXTENSÃO.
+6. **Keep masters off Manus as well**, on Drive or the laptop. An idle sandbox is recycled after 21 days.
+
+### One O LANÇAMENTO, step by step
+
+Times are ESTIMATES until the dry runs time them.
+
+| # | Step | Manus does | Sol does | Sol's time | Manus run time |
+|---|---|---|---|---|---|
+| 1 | Order in | — | Pedido, contract, both Fichas, 50% Pix and nota fiscal | 20 min | — |
+| 2 | Pack files | Cuts the background out of each angle | Checks the edges | 10 min | ~5 min |
+| 3 | Brief | — | One message in the brand's folder: product, world, the exact phrases from the Ficha de Alegações | 15 min | — |
+| 4 | Three looks | Three low-res boards from the library | Sends them; the brand picks one in writing | 15 min | 10–20 min |
+| 5 | Scenes | ~10 scenes (key visual, 6 campaign, 3 store) with the blue stand-in, 3–4 tries each | Picks the best of each | 30 min | 30–60 min |
+| 6 | Composite + check | Runs the Skill: `compor.py`, then `relatorio_fidelidade.py` on each | Reads APROVADA / REPROVADA; anything that fails goes back to step 5 | 15 min | 5–10 min |
+| 7 | Finish | Shadow and edge touch-ups, on the scene only, never the pack layer | Fixes the 3–4 images that still look pasted on (Photoshop) | 30–45 min | 10 min |
+| 8 | Store images | White background, in use, routine, with text as layers | Checks the text against the Ficha | 10 min | 5 min |
+| 9 | Film | In the Video Editor: a 15 s first cut from the key visual (scene plate + **pack as its own layer** + camera move + text from the Ficha + music), plus the two 6 s cuts. Generated shots with no label (rain, hair, street) may be cut in. | Fixes the last 10–20%: timing, a caption, music level | 30–40 min | 20–40 min |
+| 10 | Film check | Exports the frames; checker on every frame | Reads the report | 10 min | 5–10 min |
+| 11 | Checklist + approval | — | The 12 points; sends to the brand | 20 min | — |
+| 12 | One revision round | Re-runs the affected step | Briefs the change | 20–30 min | 10–30 min |
+| 13 | Delivery | — | Files, report, cessão, delivery note, second nota fiscal | 20 min | — |
+| | **Total** | | | **≈4,1–4,7 h** (≈3,7–4,2 h with no revision) | **≈2–4 h, while she does other work** |
+
+**Calendar time:** about 2 working days of production inside the promised 5–7. The rest is the brand choosing,
+approving and paying.
+
+**Against the plan's own table (≈5,5 h):** Manus takes over the cutout, the generation runs, the first cut of the
+film and the encode.
+- ⇒ **About 1–1,5 h saved per launch.**
+- ⇒ At 4 launches a month, production is **≈16–19 h**, against ≈24–28 h without Manus.
+
+### What comes out of one project (13 pieces)
+
+| Piece | Format |
+|---|---|
+| Key visual | 4:5, 1080×1350, plus 1:1 and 9:16 crops |
+| 6 campaign images | 4:5, 1080×1350 |
+| 3 store images (white background, in use, routine) | 1:1, 1200×1200 |
+| Film, 15 s | 9:16, 1080×1920, 30 fps, BT.709 (through `codificar.py`) |
+| 2 cuts, 6 s | 9:16 and 1:1 |
+| Fidelity report | One line per piece, the planted-error control on each |
+
+**Credits per project (estimate above):**
+- 2.000–5.000 if the film's motion comes from camera moves over the stills.
+- 3.600–14.600 if Manus generates video shots.
+
+**Limits to check in the first dry run:**
+- **Vertical export at 1080×1920.** The only published spec is a stale *"1080×720"*.
+- **That the Video Editor really keeps an image layer pixel-exact through export.** The checker answers this on
+  frame one.
+- **The credits each step actually burns.**
+- **Moving in-hand shots with a readable label stay OUT** until per-frame tracking exists. A hand holding the pack
+  label-away, or out of focus, is allowed. *"Hidden, never altered."*
+
 ## The evidence, against Manus's own work
 
 **The pre-2.0 Climate UGC ad** (Manus):
