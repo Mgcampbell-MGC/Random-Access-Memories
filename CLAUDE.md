@@ -2790,6 +2790,17 @@ strangers' dead parents, alone, in year three?"**
       the product"*, and §465.1(f) covers a *"likeness"*.
     - **Kept:** ask brands on the calls whether their AI creators' videos get the label right. The *RESSCUE* failure
       at scale is a buyer for O LANÇAMENTO.
+  - **★★ MANUS 2.0 IS THE STUDIO, AND THE LAYER IS THE RULE — 4 Oct 2026 (`O_LANCAMENTO_MANUS.md`).**
+    - The founder made both Climate Rescue pieces with Manus. 2.0 launched 28 Sep 2026 with a layered Video Editor
+      (Seedance 2.5/2.0, MiniMax H3, Veo 3.1), and Manus names *"the AI UGC ad"* as its best use for small teams.
+    - **Manus has no label-lock.** Its first cut is *"80 to 90 percent there"*, and the fix it sells is manual: *"Drag
+      in your own product shot to replace a generated one."*
+    - ⇒ **Use it for the world, the film, the UGC ad, prospect research, drafts and decks. Put the real pack on its own
+      layer wherever it is still, and run the checker on every frame.** Both Manus pieces failed only where the pack
+      moved.
+    - **The founder set aside the terms and confidentiality question; do not re-argue it.**
+    - **Brazil knows Manus** (App Store ratings: BR 61.907 vs US 38.602). As the founder said, it changes nothing real:
+      a known tool is not a proven label. **Sol sells the result, not the secret.**
 
 ## The test design that works
 
