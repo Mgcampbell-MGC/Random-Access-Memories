@@ -94,8 +94,12 @@ class Checker:
             return None
         src = np.float32([self.kr[m.queryIdx].pt for m in good])
         dst = np.float32([k[m.trainIdx].pt for m in good])
-        A, _ = cv2.estimateAffinePartial2D(src, dst, method=cv2.RANSAC, ransacReprojThreshold=2.0)
-        return None if A is None else float(np.hypot(A[0, 0], A[1, 0]))
+        A, inl = cv2.estimateAffinePartial2D(src, dst, method=cv2.RANSAC, ransacReprojThreshold=2.0)
+        # A frame with no pack can still yield a handful of chance matches; trust only a fit that 12+ agree on.
+        if A is None or inl is None or int(inl.sum()) < 12:
+            return None
+        s = float(np.hypot(A[0, 0], A[1, 0]))
+        return s if 0.1 <= s <= 4 else None
 
     def at_scale(self, s):
         """A checker whose approved packshot is shrunk to scale s.
@@ -215,7 +219,7 @@ class Checker:
                      and color <= self.max_color),
         }
 
-def check_asset(checker, path, every, control=True):
+def check_asset(checker, path, every, control=True, ranges=None):
     img = cv2.imread(path)
     if img is not None:
         hidden = cv2.imread(path.rsplit(".", 1)[0] + ".hidden.png", cv2.IMREAD_GRAYSCALE)
@@ -252,19 +256,27 @@ def check_asset(checker, path, every, control=True):
     scales = [s for s in scales if s is not None]
     s = min(scales) if scales else None
     # Same two paths as for stills: the packshot's own size first, then the film's own size.
-    r = check_video(checker, path, every, control)
+    r = check_video(checker, path, every, control, ranges)
     r["ref_scale"] = 1.0
     small = checker.at_scale(s)
     if not r["pass"] and small is not checker:
-        q = check_video(small, path, every, control)
+        q = check_video(small, path, every, control, ranges)
         q["ref_scale"] = round(s, 3)
         if (q["pass"], q.get("worst_p5_tile", -1)) >= (r["pass"], r.get("worst_p5_tile", -1)):
             r = q
     return {"asset": path, "type": "video", **r}
 
 
-def check_video(checker, path, every, control):
+def check_video(checker, path, every, control, ranges=None):
+    """ranges: list of (start_s, end_s) where the pack MUST be found. None means the whole film. A frame inside a
+    declared range where no label is found FAILS the film: a generated shot that shows the product with a label garbled
+    beyond recognition would otherwise be skipped as 'no label' and the film would pass. Frames outside the ranges
+    (an opening shot of rain, a hand without product) are not required to show the pack, but are still checked if a
+    label is found in them."""
     cap = cv2.VideoCapture(path)
+    fps = cap.get(cv2.CAP_PROP_FPS) or 30.0
+    expect = (lambda i: True) if ranges is None else (lambda i: any(a <= i / fps <= b for a, b in ranges))
+    missing = []
     # filme.py writes <film>.hidden.mp4 when a hand covers the packaging; read it in lockstep.
     hcap = cv2.VideoCapture(path.rsplit(".", 1)[0] + ".hidden.mp4")
     has_h = hcap.isOpened()
@@ -283,6 +295,8 @@ def check_video(checker, path, every, control):
             if r.get("found"):
                 r["pass"] = (r["worst_tile"] >= MIN_TILE_PASS and r["p5_tile"] >= P5_FILM_PASS
                              and r["hidden_share"] <= MAX_HIDDEN and r["color_drift"] <= checker.max_color)
+            elif expect(i):
+                missing.append(i)
             results.append(r)
         i += 1
     frames = i
@@ -310,11 +324,15 @@ def check_video(checker, path, every, control):
         "frames": frames,
         "frames_checked": len(results),
         "frames_without_label": len(results) - len(found),
+        "pack_required": "todo o filme" if ranges is None else ", ".join(f"{a:g}-{b:g} s" for a, b in ranges),
+        "frames_missing_pack": len(missing),
+        "first_missing_s": round(missing[0] / fps, 2) if missing else None,
         "worst_tile": worst,
         "worst_p5_tile": p5,
         "max_hidden_share": max((r.get("hidden_share", 0) for r in found), default=0.0),
         "max_color_drift": max((r.get("color_drift", 0) for r in found), default=0.0),
-        "pass": bool(found) and all(r["pass"] for r in found) and ctrl.get("control_caught", not control),
+        "pass": (bool(found) and all(r["pass"] for r in found) and not missing
+                 and ctrl.get("control_caught", not control)),
     }
 
 
@@ -325,12 +343,17 @@ def main():
     ap.add_argument("--every", type=int, default=1, help="check every Nth video frame (1 = all; use 1 before delivery)")
     ap.add_argument("--json")
     ap.add_argument("--sem-controle", action="store_true", help="skip the planted-error control on stills")
+    ap.add_argument("--com-embalagem", help="films: seconds where the pack must be visible, e.g. 3-15 or 0-6,9-15 "
+                    "(default: the whole film). Frames in these ranges where no label is found fail the film.")
     ap.add_argument("--tolerancia-cor", type=float, default=MAX_COLOR_DRIFT,
                     help="max median colour shift (ΔC); set from the Ficha do Produto")
     args = ap.parse_args()
     checker = Checker(args.approved)
     checker.max_color = args.tolerancia_cor
-    report = [check_asset(checker, a, args.every, not args.sem_controle) for a in args.assets]
+    ranges = None
+    if args.com_embalagem:
+        ranges = [tuple(float(x) for x in part.split("-")) for part in args.com_embalagem.split(",")]
+    report = [check_asset(checker, a, args.every, not args.sem_controle, ranges) for a in args.assets]
     for r in report:
         print(f"{'APROVADA ' if r['pass'] else 'REPROVADA'}  {r['asset']}  {json.dumps({k: v for k, v in r.items() if k not in ('asset', 'pass')})}")
     if args.json:

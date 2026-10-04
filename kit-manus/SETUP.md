@@ -1,5 +1,10 @@
 # Setting up Manus for Sol: one sitting, about 45 minutes
 
+> **PARKED, 4 Oct 2026.** Not needed to start. Make the portfolio and website with Manus alone (`site/PROMPT_SITE_MANUS.md`,
+> which needs only two script files). Set this kit up when the same steps repeat across paying clients. Before then, fix
+> the known gaps: `tools/LEIA-ME.md` still describes the old Higgsfield/HyperFrames path, and the file-routing wording
+> (which files go to Manus's cloud) must be made exact.
+
 This is for the person setting Sol up. Everything Sol touches afterwards is in Portuguese: `GUIA_DA_SOL.md` (her
 day-to-day messages) and `TESTE.md` (her two tests).
 
@@ -37,7 +42,7 @@ day-to-day messages) and `TESTE.md` (her two tests).
    - **Project → Skills → + Add → o-lancamento**, then click the lock icon so it can't be edited by accident.
    - **Pin the project.**
 8. **Run Test 1 with her.** In the project, open a new task and send the first message in `TESTE.md`. It must end
-   with `AUTOTESTE: 9/9 OK`.
+   with `AUTOTESTE: 11/11 OK`.
    - The first run installs the Python libraries and takes a few minutes.
    - If it fails, the screen says which of the 9 checks failed.
 9. **Hand her `GUIA_DA_SOL.md` and `TESTE.md`.** Test 2 is three practice launches of the fictional ORVALHA serum,

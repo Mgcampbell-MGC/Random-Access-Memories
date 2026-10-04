@@ -8,7 +8,7 @@ Poucos comandos. Rodam no seu computador; **nenhum envia arquivo da marca para a
 pip install opencv-python numpy imageio-ffmpeg pillow
 ```
 
-Para confirmar que tudo funciona: `python3 autoteste.py` (cerca de 5 minutos; tem de terminar em `AUTOTESTE: 9/9 OK`).
+Para confirmar que tudo funciona: `python3 autoteste.py` (cerca de 5 minutos; tem de terminar em `AUTOTESTE: 11/11 OK`).
 O autoteste usa um produto inventado, ORVALHA, e inclui uma peça com rótulo errado que precisa ser REPROVADA.
 
 Para o filme com animação (recomendado): Node.js 22 ou mais novo e FFmpeg, e depois:

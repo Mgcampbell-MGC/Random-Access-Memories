@@ -40,7 +40,7 @@ python3 -c "import cv2, numpy, imageio_ffmpeg, PIL" || python3 -m pip install op
 - No Windows, o comando pode ser `python` ou `py` em vez de `python3`.
 - Se o `pip` falhar, diga à Sol exatamente qual foi o erro.
 - **Autoteste** (quando a Sol pedir, ou depois de instalar): `python3 autoteste.py` na pasta das ferramentas. Tem de
-  terminar em `AUTOTESTE: 9/9 OK`. Mostre a tela inteira.
+  terminar em `AUTOTESTE: 11/11 OK`. Mostre a tela inteira.
 - Não tente outro método de composição.
 
 ## Pastas de cada cliente
@@ -140,7 +140,8 @@ Responda à Sol com uma tabela, uma linha por peça:
 - O key visual aprovado (`KV_9x16.png`, já com a embalagem e já APROVADA) entra inteiro como camada de imagem.
   Só mova, escale e anime a opacidade dele. Nada de efeito, filtro ou IA sobre essa camada.
 - Planos gerados entram só se não mostrarem rótulo legível (chuva, cabelo, rua, mão sem produto).
-- Exporte, depois rode a conferência no MP4, todos os quadros.
+- Exporte, depois rode a conferência no MP4, todos os quadros, declarando onde a embalagem aparece:
+  `--com-embalagem 3-15` (segundos). Quadro dentro desse trecho sem rótulo encontrado reprova o filme.
 
 **Caminho simples, sem editor:**
 

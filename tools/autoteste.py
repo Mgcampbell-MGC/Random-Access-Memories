@@ -3,10 +3,13 @@
 Usage:
     python3 autoteste.py
 
-It runs the whole still-and-film path on the fictional Climate Rescue pack (teste/EMBALAGEM_TESTE.png) and a test
-scene with a blue stand-in (teste/CENA_TESTE.png), writes everything to ./autoteste_saida/, and prints one line per
-check. The last check feeds the checker a piece with a deliberately WRONG label: the test passes only if that piece
-is REJECTED, because a check that cannot fail proves nothing.
+It runs the whole still-and-film path on the fictional ORVALHA pack (teste/EMBALAGEM_TESTE.png) and a test scene
+with a blue stand-in (teste/CENA_TESTE.png), writes everything to ./autoteste_saida/, and prints one line per check.
+Two checks feed the checker something WRONG and pass only if it is REJECTED: a film with an undeclared stretch where
+no label can be found, and a piece with a deliberately wrong label. A check that cannot fail proves nothing.
+
+What it does NOT prove: hands over the pack, a full 15 s client film, other pack shapes, or Manus's own exports.
+Test 2 in TESTE.md measures those.
 """
 import os
 import subprocess
@@ -77,7 +80,22 @@ def main():
     rc, msg = run("relatorio_fidelidade.py", pack, film, "--json", o("relatorio_filme.json"))
     ok("conferência do filme: todos os quadros APROVADOS", rc == 0 and "APROVADA" in msg)
 
-    # 7. a wrong label must be rejected
+    # 7. a film whose first second shows NO label (a plain opening card) must fail unless that second is declared
+    #    as a shot without the pack; this is what stops a garbled-label shot from being skipped as "no label"
+    frames = os.path.join(OUT, "quadros_mistos")
+    os.makedirs(frames, exist_ok=True)
+    kv = cv2.imread(o("kv_9x16.png"))
+    blank = np.full_like(kv, [int(c) for c in kv.reshape(-1, 3).mean(0)])
+    for i in range(90):
+        cv2.imwrite(os.path.join(frames, f"q{i:04d}.png"), blank if i < 30 else kv)
+    mixed = o("filme_com_abertura.mp4")
+    run("codificar.py", frames, mixed, "--fps", "30")
+    rc, msg = run("relatorio_fidelidade.py", pack, mixed)
+    ok("filme com trecho sem embalagem NÃO declarado é REPROVADO", rc != 0 and "REPROVADA" in msg)
+    rc, msg = run("relatorio_fidelidade.py", pack, mixed, "--com-embalagem", "1.1-3")
+    ok("o mesmo filme, com o trecho declarado, é APROVADO", rc == 0 and "APROVADA" in msg)
+
+    # 8. a wrong label must be rejected
     bad = cv2.imread(pack, cv2.IMREAD_UNCHANGED)
     g = cv2.cvtColor(bad[..., :3], cv2.COLOR_BGR2GRAY).astype(np.float32)
     ink = np.abs(g - cv2.GaussianBlur(g, (0, 0), 3)) * (bad[..., 3] > 200)

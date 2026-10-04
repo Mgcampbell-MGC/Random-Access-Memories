@@ -10,7 +10,7 @@ No projeto **O LANÇAMENTO**, crie uma tarefa nova e envie:
 
 > /o-lancamento Rode o autoteste: `python3 autoteste.py` na pasta das ferramentas. Me mostre a tela inteira.
 
-O autoteste usa um produto inventado, **ORVALHA**, e confere nove coisas sozinho:
+O autoteste usa um produto inventado, **ORVALHA**, e confere onze coisas sozinho:
 
 | # | O que confere |
 |---|---|
@@ -22,12 +22,16 @@ O autoteste usa um produto inventado, **ORVALHA**, e confere nove coisas sozinho
 | 6 | As 3 peças exatas são APROVADAS, com o erro plantado detectado |
 | 7 | O filme sai em 1080x1920, 30 fps, cor BT.709 |
 | 8 | Todos os quadros do filme são APROVADOS |
-| 9 | **Uma peça com o rótulo errado é REPROVADA** |
+| 9 | **Um filme com trecho sem embalagem não declarado é REPROVADO** |
+| 10 | O mesmo filme, com o trecho declarado, é APROVADO |
+| 11 | **Uma peça com o rótulo errado é REPROVADA** |
 
-**Passa se aparecer `AUTOTESTE: 9/9 OK`.**
+**Passa se aparecer `AUTOTESTE: 11/11 OK`.**
 - Se não passar, mande a tela inteira para quem configurou o kit.
-- Não comece o Teste 2 antes do 9/9.
-- O item 9 é o mais importante: uma conferência que não reprova nada não prova nada.
+- Não comece o Teste 2 antes do 11/11.
+- Os itens 9 e 11 são os mais importantes: uma conferência que não reprova nada não prova nada.
+- O autoteste não prova mão sobre a embalagem, filme completo de cliente, outros formatos de embalagem nem a
+  exportação do Manus. Isso é o Teste 2.
 
 ---
 
@@ -99,4 +103,5 @@ faltando. O mesmo vale para o número quando a embalagem aparece pequena.
 - A embalagem só sai do arquivo listado na Ficha do Produto assinada.
 - A marca aprova o key visual por escrito.
 
-A embalagem é copiada, pixel a pixel, do arquivo da marca. Uma letra só pode estar errada se o arquivo estiver errado.
+As letras vêm do arquivo da marca: a embalagem é redimensionada, girada e reiluminada por código, nunca redesenhada.
+A conferência confirma que ela não foi redesenhada, deformada ou recolorida. Ela não prova que cada pixel é idêntico.
