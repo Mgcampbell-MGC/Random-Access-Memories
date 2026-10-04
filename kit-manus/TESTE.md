@@ -41,7 +41,7 @@ O cliente é inventado: **ORVALHA, sérum capilar, frasco com pump**.
 
 > Cliente de prática: ORVALHA, sérum capilar, pedido O LANÇAMENTO. A pasta já existe em
 > clientes/orvalha_PRATICA. Crie as subpastas que faltam, preencha o BRIEFING.md a partir das duas fichas e me diga o
-> que falta. Nesta prática, eu faço o papel da marca.
+> que falta. Nesta prática, eu faço o papel da marca, e não há PDF do rótulo: a arte aprovada é o EMBALAGEM.png.
 
 Faça três rodadas, cada uma num mundo diferente:
 1. Depois da Chuva.
