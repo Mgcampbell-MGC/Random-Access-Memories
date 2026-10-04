@@ -152,6 +152,44 @@ its own product, never thrown into O LANÇAMENTO.
    credit cost, which would push the generation cost near zero. Its article names an August end date, so this is
    unconfirmed.
 
+### Against Higgsfield (its own live pricing, read through the connected Higgsfield tool, 4 Oct 2026)
+
+**Plans:**
+- **Plus:** US$49 a month, or US$39 a month billed yearly, for **1.000 credits**. Higgsfield says that is *"= 600 Nano
+  Banana Pro Generations"* or *"~200 Kling 3.0 videos"*.
+- **Ultra:** US$129, or US$99 yearly, for **3.000 credits**.
+
+**What one credit buys:**
+- **One credit costs US$0,033–0,049**, depending on the plan.
+- **One Nano Banana Pro image costs about 1,7–2 credits ≈ US$0,065–0,098.** The trial's own line, *"100 credits = 50
+  Nano Banana Pro images"*, gives the 2.
+- That is **cheaper than Google's own US$0,134**, and about a third of what I estimated Manus charges.
+- **One Seedance 2.0 clip costs about 25 credits ≈ US$1,0–1,2** (from *"~4 Seedance 2.0 videos"* per 100 trial
+  credits). That is for the default 5 s at 720p; 1080p is UNVERIFIED.
+
+**A promotion, which is marketing and needs re-checking:** Plus bought by 5 Oct includes **365 days of unlimited
+generations** on GPT Image, Seedream 4.5, Nano Banana (not Pro), Flux.2 Pro and Kling O1 Image. These work on the
+website only, not through the connector.
+
+| Per launch | Higgsfield | Manus (my estimate above) |
+|---|---|---|
+| A. Stills only (~40 images) | ~70–80 credits ≈ US$3–4 ≈ **R$14–20** | R$52–130 |
+| B. Plus ~45–60 s of generated film | ~290–380 credits ≈ US$11–19 ≈ **R$59–97** | R$94–380 |
+
+| Per month, 4 launches | Higgsfield | Manus |
+|---|---|---|
+| A | fits inside Plus: **US$39–49** | US$40–100 |
+| B | needs Ultra: **US$99–129** | US$72–292 |
+
+**What this means:**
+- ⇒ **Per image and per clip, Higgsfield is roughly half to a third of Manus.** The monthly bills come out closer,
+  because subscriptions are sold in fixed blocks.
+- ⇒ **The gap is at most ~US$150 a month against R$12–15k of revenue (≤5%). The tool choice should be made on SOL'S
+  HOURS, not on credits.**
+  - Manus edits, assembles and also runs the sales jobs.
+  - Higgsfield only generates. Sol, or this session through the connector, does the assembly.
+- **Decide in the dry run:** time the same Climate film made both ways.
+
 ## The company behind it
 
 - Meta acquired Manus on 29 Dec 2025.
