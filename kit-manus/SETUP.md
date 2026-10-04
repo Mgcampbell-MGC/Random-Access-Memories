@@ -73,3 +73,9 @@ Photoshop (already in her tool stack) is used for one step: hand-finishing shado
    - It cannot reliably see a single look-alike letter in tiny print (measured: *secos*→*secas* passed). That risk only
      exists if the wrong label file is used, so the guide makes the signed Ficha name the file, and the brand approves
      the key visual in writing.
+
+## Next: the website
+
+`site/PROMPT_SITE_MANUS.md` is the Manus prompt for the website and a three-case portfolio, made with the same method,
+so every portfolio piece is real proof with a real check report. Run it in a separate Manus project after Test 1
+passes. Attach `site/EMBALAGEM_climate.png`.
