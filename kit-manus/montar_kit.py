@@ -15,7 +15,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KIT = os.path.join(ROOT, "kit-manus")
 TOOLS = os.path.join(ROOT, "tools")
 DIST = os.path.join(KIT, "dist")
-SCRIPTS = ["recortar.py", "compor.py", "texto.py", "relatorio_fidelidade.py", "filme.py", "autoteste.py"]
+SCRIPTS = ["recortar.py", "compor.py", "texto.py", "relatorio_fidelidade.py", "filme.py", "codificar.py", "autoteste.py"]
+# codificar.py must ship: filme.py imports its BT.709 settings from it.
 TEST = ["teste/EMBALAGEM_TESTE.png", "teste/CENA_TESTE.png"]
 WORK = ["00_recebido", "01_mundos", "02_cenas", "03_pecas", "04_filme", "05_entrega"]
 
