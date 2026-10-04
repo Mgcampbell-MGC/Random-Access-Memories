@@ -81,6 +81,6 @@ Photoshop (already in her tool stack) is used for one step: hand-finishing shado
 
 ## Next: the website
 
-`site/PROMPT_SITE_MANUS.md` is the Manus prompt for the website and a three-case portfolio, made with the same method,
+`site/PROMPT_SITE_MANUS.md` (needs no kit) is the Manus prompt for the website and a three-case portfolio, made with the same method,
 so every portfolio piece is real proof with a real check report. Run it in a separate Manus project after Test 1
 passes. Attach `site/EMBALAGEM_climate.png`.
