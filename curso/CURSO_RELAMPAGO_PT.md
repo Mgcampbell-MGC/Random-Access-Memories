@@ -13,6 +13,7 @@ São uns 90 minutos: 35 de leitura e 55 de vídeo. No fim, você vai saber como 
 5. **Um lançamento, passo a passo, e as regras no Brasil** (5 min).
 6. **Os sete vídeos principais** (55 min), com o que observar em cada um.
 7. **O autoteste** no fim. Acertou oito de dez, está pronta.
+8. **Depois, numa segunda sessão:** os melhores vídeos em inglês (1 hora). Você entende inglês, então vale a pena: é onde a maior parte das ferramentas aparece primeiro.
 
 Você já segue o Miko ([@MikoxAI](https://www.youtube.com/@MikoxAI)). Ele é bom, mas é a ponta do iceberg: mostra uma ferramenta por vez, e quase sempre deixa a IA desenhar o produto. Este curso mostra o mapa inteiro.
 
@@ -201,7 +202,7 @@ Hoje nenhuma lei brasileira obriga a colocar "IA" num anúncio, mas as plataform
 
 ## Os vídeos
 
-Sete vídeos principais, 55 minutos, nesta ordem: cinco brasileiros e dois curtos em inglês. Para os em inglês, ligue a legenda: ⚙ (Configurações) → Legendas → Traduzir automaticamente → Português. Todos os links foram conferidos no YouTube em 4 out. 2026.
+Sete vídeos principais, 55 minutos, nesta ordem: cinco brasileiros e dois curtos em inglês. Depois, uma segunda sessão com os melhores em inglês, mais uma hora. Se quiser legenda num vídeo em inglês: ⚙ (Configurações) → Legendas → Traduzir automaticamente → Português. Todos os links foram conferidos no YouTube em 4 out. 2026.
 
 Antes de assistir, saiba duas coisas. A maioria dos criadores vende curso ou é patrocinada por uma ferramenta (vários pelo Higgsfield): trate o veredito deles como propaganda. E **nenhum deles aplica a embalagem verdadeira**: todos deixam a IA desenhar o produto. Repare no rótulo em cada vídeo; é ali que você vai ver o problema que o seu estúdio resolve.
 
@@ -239,15 +240,34 @@ Antes de assistir, saiba duas coisas. A maioria dos criadores vende curso ou é 
 | Foto still para e-commerce | [COMO Fazer FOTOGRAFIA STILL para E-COMMERCE](https://www.youtube.com/watch?v=d7TZVhJCcBQ) | Kiiro Cine Fotografia | 16:09 |
 | CONAR e publicidade | [Direito Publicitário, Conar e os desafios da publicidade contemporânea](https://www.youtube.com/watch?v=sLKzigKix4Y) | Daniel Law | 21:31 |
 
-**Em inglês, com legenda automática, os melhores:**
+**Segunda sessão: os melhores em inglês, nesta ordem (1 hora):**
+
+| # | Vídeo | Canal | Duração | Por que ver, e o que observar |
+| --- | --- | --- | --- | --- |
+| 1 | [Lighting & Styling Breakdown for Skincare Product Shoot](https://www.youtube.com/watch?v=WM78JenzGAc) | Amanda Campeanu | 6:22 | Uma sessão real de skincare, luz por luz. É o padrão de qualidade que a marca espera ver. |
+| 2 | [Nano Banana AI prompts for beauty brands](https://www.youtube.com/watch?v=VFXeOdQEMCs) | Amanda Campeanu | 6:06 | A mesma fotógrafa transformando o ofício em prompt, e dizendo onde a IA não ajuda. |
+| 3 | [Kling 4.0 vs Seedance 2.5 — Best AI Video Generator in 2026?](https://www.youtube.com/watch?v=YH1LLoBPx0Y) | Dom the AI Tutor | 9:47 | Os dois líderes de vídeo com os mesmos 11 prompts. Aos 8:47, um teste de rótulo num frasco de cosmético: veja o texto se desfazer. |
+| 4 | [How to Create Skincare Commercials with AI – Seedance 2.5 Ep. 03](https://www.youtube.com/watch?v=kKILF7Zx_OE) | AI Tech Pro | 6:14 | Um comercial de skincare com o Seedance, passo a passo. |
+| 5 | [I Tested Seedance 2.5 for Product Ads](https://www.youtube.com/watch?v=y6Zw5WFs62k) | Thomas Lundström | 8:42 | O Seedance em anúncio de produto; aos 1:52, como manter o mesmo cenário entre planos. Patrocinado. |
+| 6 | [How To Make Realistic AI UGC That Holds Your Product](https://www.youtube.com/watch?v=ikMdmEvMtmk) | Ads with Cami | 8:17 | UGC com uma pessoa segurando o produto. Repare no rótulo quando a mão se mexe. |
+| 7 | [How I Created an AI Skincare Ad for an Upwork Client](https://www.youtube.com/watch?v=1O8lbB01-nU) | Finaltouch | 17:47 | Um trabalho pago de verdade, para uma marca de skincare, do briefing à entrega. Bom para ver como um cliente pede e aprova. |
+
+**Mais em inglês, por assunto:**
 
 | Assunto | Vídeo | Canal | Duração |
 | --- | --- | --- | --- |
-| Uma sessão real de skincare, luz por luz | [Lighting & Styling Breakdown for Skincare Product Shoot](https://www.youtube.com/watch?v=WM78JenzGAc) | Amanda Campeanu | 6:22 |
-| A mesma fotógrafa, em prompts | [Nano Banana AI prompts for beauty brands](https://www.youtube.com/watch?v=VFXeOdQEMCs) | Amanda Campeanu | 6:06 |
-| Kling 4.0 contra Seedance 2.5 (aos 8:47, um teste de rótulo num frasco de cosmético) | [Kling 4.0 vs Seedance 2.5 — Best AI Video Generator in 2026?](https://www.youtube.com/watch?v=YH1LLoBPx0Y) | Dom the AI Tutor | 9:47 |
-| Seedance em anúncio de produto (patrocinado) | [I Tested Seedance 2.5 for Product Ads](https://www.youtube.com/watch?v=y6Zw5WFs62k) | Thomas Lundström | 8:42 |
-| Onde a IA de produto falha | [Why Your AI Product Images Are Failing](https://www.youtube.com/watch?v=R7Eml0ttQtg) | Escapism | 25:43 |
+| Google Flow, passo a passo | [How to Use Google Flow (Step-by-Step Tutorial)](https://www.youtube.com/watch?v=0vQ7UEe7rLg) | Kevin Stratvert | 9:15 |
+| Quadro inicial e final no Flow | [Mastering Start and End Frames in Google Flow (2026)](https://www.youtube.com/watch?v=Qg0VG_qqxww) | AI Mind Revolution | 19:48 |
+| 42 movimentos de câmera, com exemplos | [Mastering AI Video: 42 Camera Movement Vocabulary for Prompts](https://www.youtube.com/watch?v=HOjCT6TxlHM) | AI Shot Studio | 10:16 |
+| Seedance 2.5 a fundo | [Seedance 2.5 is an ABSOLUTE MONSTER - Master it in 20 minutes](https://www.youtube.com/watch?v=UxwV16jDglA) | Dan Kieft | 23:09 |
+| Kling 4.0, primeira olhada | [Kling 4.0 AI Video Generator: First Look](https://www.youtube.com/watch?v=nXlryGZLrg4) | JSFILMZ | 14:05 |
+| Ranking de todas as IAs de vídeo | [AI Video Generators Ranked from Worst to Best (2026)](https://www.youtube.com/watch?v=v6bqRIjwddE) | Youri van Hofwegen | 19:13 |
+| Onde a foto de produto com IA falha | [Why Your AI Product Images Are Failing](https://www.youtube.com/watch?v=R7Eml0ttQtg) | Escapism | 25:43 |
+| Recolocar o logo e o texto verdadeiros | [AI Product Image Problem Solved – Keep Logo & Text Same](https://www.youtube.com/watch?v=WQ_XUm9-Rr0) | Designshala | 8:25 |
+| Palavras de luz para o prompt | [The Ultimate Guide to Cinematic Lighting (20 Prompts)](https://www.youtube.com/watch?v=RCHw0PtE92M) | Dom the AI Tutor | 10:23 |
+| Luz de produto num set de verdade | [Product Lighting – Commercial Cinematography 101](https://www.youtube.com/watch?v=kjv-n7CeBNY) | Aputure | 7:41 |
+| Anúncios de beleza feitos pela própria Higgsfield (é propaganda da ferramenta) | [I Created 10+ Beauty Ads in 1 Hour](https://www.youtube.com/watch?v=fmgVm-fxPDM) | Higgsfield AI | 20:14 |
+| Manus 2.0, o lançamento oficial | [Introducing Manus 2.0](https://www.youtube.com/watch?v=hZVH-y1atWw) | Manus AI | 2:47 |
 | Miko: realismo com Nano Banana Pro | [Hyper-Realistic AI Images with Nano Banana Pro](https://www.youtube.com/watch?v=_D-7SamsJdY) | Miko | 10:23 |
 | Miko: anúncio UGC | [How to Make Viral AI UGC Ads in 2026](https://www.youtube.com/watch?v=x_TAoTi3ras) | Miko | 15:28 |
 | Miko: UGC com Seedance 2.5 | [Seedance 2.5 Just Changed AI UGC Ads (Full Breakdown)](https://www.youtube.com/watch?v=5jKsG3wTDrI) | Miko | 12:42 |
