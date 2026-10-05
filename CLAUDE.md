@@ -2875,6 +2875,20 @@ strangers' dead parents, alone, in year three?"**
     - **★ A FILTER WORD MATCHES INSIDE OTHER WORDS. "NATURA" removed about 125 small "Natural…" brands from the
       first CRM, and "ARAUJO" removed people with that surname.** Bound every token or use the full company
       name. Then list what the filter removed and read it, as you would read the first row of a table.
+  - **★★ THE EXPANSION PLAN, 5 Oct 2026 (`O_LANCAMENTO_EXPANSION_PLAN.md`; a Google Doc copy is in the shared Drive
+    folder).**
+    - **Add a market because it pays more or buys more often, never because the list ran out.** The beauty list has
+      1.239 brands with an owner and a contact, 9–10 months of calls at ~120 a month, and INPI adds 50–90 a week.
+    - **R$2.990 is not too low.** It looks cheap next to studios (R$6.878–13.255 for a traditional launch) and dear
+      next to buyers (every budget found was under US$500). For Sol it is R$665–1.000 an hour against R$290–360
+      needed. The market is low because the buyers are micro companies (≤R$360.000 a year).
+    - **A raise rule, proposed:** if ≥10 of the 20 spent R$5.000+ on their last launch, quote R$3.900 to the next 10.
+    - **Earn more per brand, not per job:** repeat purchases (≥3 of the first 10 within 6 months); 5 of the 20 calls to
+      the 176 larger grade-B companies, logged separately; dollars later.
+    - **AI UGC ad: an add-on only, ~R$990.** A real creator holding the real product costs R$100–250, and the label is
+      exact because the product is real, so the guarantee only beats other AI ads. Build moving-hand tracking only if
+      ≥5 of the 20 calls ask for it.
+    - **Expected closes from today's list: 10–25, about 15.** A guess; no call has been made.
 
 ## The test design that works
 
