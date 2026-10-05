@@ -15,3 +15,11 @@ node_modules/
 package-lock.json
 package.json
 ACOLHE_Business_Overview.pdf
+
+# CRM build data: contacts never go in git (research/crm holds scripts only)
+research/crm/*.xlsx
+research/crm/*.pkl
+research/crm/*.jsonl
+research/crm/*.json
+research/crm/*.CSV
+research/crm/reg/

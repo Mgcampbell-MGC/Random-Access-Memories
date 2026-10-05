@@ -2837,6 +2837,21 @@ strangers' dead parents, alone, in year three?"**
       fine print blurs under the camera move. The bar did not move; the layout rule did. Two more rules:
       - **6 s cuts take half the camera move.**
       - **Crop before adding text,** or the 1:1 cut loses the text.
+  - **★★ THE CUSTOMER LIST, 5 Oct 2026 (`research/crm/README.md`; scripts only, the sheet is never in git).**
+    - **What it is:** all 3.089 Brazilian beauty brands that notified a new product with ANVISA from 2 Jul to
+      30 Sep 2026, graded **A 289 · B 849 · C 1.951**. Owner found for 1.360, website 817, WhatsApp 834,
+      phone 1.330, e-mail 1.179. Two tabs: a Painel that scores the 20-call test by formula, and the Lista.
+    - **★ OpenCNPJ (`api.opencnpj.org/{cnpj}`) serves the registry e-mail with no quota.** That makes
+      `THE POSTAL LIST LAW`'s Brazilian rail usable per company without the bulk file.
+    - **★ CNPJá's `ACCOUNTING` e-mail flag added nothing:** on 712 companies it flagged 49 e-mails, and an
+      address regex had already caught all 49. Use the regex (`contab`, `.cnt.br`, `.adv.br`, `jurídico`,
+      `societário`, `admempresas`, `auditoria`); skip the rate-limited API.
+    - **★ THE ANVISA HOLDER IS OFTEN NOT THE BRAND.** Contract factories, importers, sales agents and
+      regulatory filers notify for others. One "soluções integradas" firm filed 13 brands under one Gmail.
+      Screen the holder's name for service words before calling it the owner.
+    - **Guessing a website:** a nonexistent `.com` takes ~10 s to fail, so try the guesses in parallel with
+      a short connect timeout. Brand names of 2–3 letters match unrelated sites; don't accept those on a
+      name match alone.
 
 ## The test design that works
 
