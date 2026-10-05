@@ -2852,6 +2852,23 @@ strangers' dead parents, alone, in year three?"**
     - **Guessing a website:** a nonexistent `.com` takes ~10 s to fail, so try the guesses in parallel with
       a short connect timeout. Brand names of 2–3 letters match unrelated sites; don't accept those on a
       name match alone.
+  - **★★ THE INPI FEED AND THE NEXT MARKETS, 5 Oct 2026 (`research/crm/README.md`).** Founder: *"this is about
+    building a business, not a hustle."*
+    - **★ INPI's weekly trademark gazette is a free, cross-category list of launches.** It's earlier than ANVISA,
+      because a brand is filed before its product exists. One week (RPI 2908) had 11.894 new applications;
+      Brazilian applicants included cosmetics 415, supplements/pharma 270, coffee/chocolate 367,
+      beer/juice 82, wine/spirits 55 and pet food 83.
+    - **The gazette has no CNPJ or contacts.** Sole traders' names carry the CNPJ root, so the number can be
+      computed. Nothing free searches the registry by company name.
+    - **The CRM is now one list with a Mercado column.** Beleza 3.463, Suplementos 144 and Casa e aroma 22.
+      The 20-call test formula counts Beleza only.
+    - **Expansion screen:** a free launch list, a label that matters, and a pack the checker can prove.
+      - Order: beauty in every pack shape, then supplements, then drinks (curved labels must be proven
+        first), then food and pet.
+      - Not a fit: electronics, clothing, jewellery, real estate, dental.
+    - **ANVISA's food list is richer than the cosmetics one:** a brand field, a date and the approved health
+      claim on every row. It is dominated by contract factories: 181 of 380 supplement filers file 6 or more
+      brands.
 
 ## The test design that works
 

@@ -65,3 +65,37 @@ Lei 13.709/2018 art. 7º IX, §3º, §4º and art. 10, checked verbatim at plana
 interest for business-to-business prospecting, using public data and data the companies publish themselves.
 The first message says where the contact came from and offers a way out. A row marked "Não contatar" is never
 contacted again.
+
+## The INPI feed (added 5 Oct 2026): new brands before they launch
+
+INPI's trademark gazette (Revista da Propriedade Industrial, Marcas) is free, weekly and covers every product
+category: `https://revistas.inpi.gov.br/txt/RM<number>.zip`, one XML of ~60 MB, published on Tuesdays.
+New applications are the `processo` elements with despacho `IPAS009`.
+
+| Step | Script | What it does |
+|---|---|---|
+| 1 | `inpi.py <xml> <rpi>` | Keeps Brazilian applicants in class 03 (cosmetics), class 05 with "suplement" in the specification, and class 04 with candles or diffusers |
+| 2 | `match.py <rpi>` | Finds the CNPJ: a sole trader's (MEI) registered name starts with the CNPJ's first 8 digits, so the full number is root + `0001` + check digits; other applicants are matched by name against the ANVISA cosmetics, food and cleaning-product lists |
+| 3 | `disc_inpi.py <rpi>` | Guesses the brand's website; a footer CNPJ counts only if its registered name shares a word with the trademark applicant |
+| 4 | `inpi_rows.py <rpi> <date>` → `merge_all.py` | Builds list rows with the same contact rules, merges them with the ANVISA list (`final_all.pkl`), and flags ANVISA brands whose owner just filed a new mark |
+
+**One week (RPI 2908, 29 Sep 2026):** 11.894 new applications. Brazilian applicants: cosmetics 415,
+supplements and pharma 270, coffee/chocolate/sweets 367, beer and juices 82, wine and spirits 55, pet food
+83, candles 49. After filtering: 602 filings, 547 rows, 7 already on the list. The rest had a CNPJ for 90
+(31 of them sole traders, all 31 found in the registry) and a contact for 87.
+
+**What doesn't work:** the gazette has no CNPJ, phone or e-mail. No free name-to-CNPJ search works:
+Casa dos Dados returns a bot challenge, and OpenCNPJ and CNPJá look up by number only. So most new
+brands get search links, not contacts.
+
+**Other lists checked the same day:**
+- **ANVISA food list** (`TA_CONSULTA_ALIMENTOS.CSV`): a real date, a brand field and the approved health
+  claim on every row. 5.593 supplement filings in 90 days, from 380 companies; 181 of those companies
+  file 6 or more brands (contract factories).
+- **ANVISA cleaning products** (`TA_CONSULTA_SANEANTES.CSV`): no date or category columns; the year comes
+  from the process number. Home fragrance is about 290–410 products a year.
+- **Agriculture ministry SIPEAGRO files** (drinks, veterinary): lists of establishments, not product
+  launches. The drinks file masks the CNPJ.
+
+**Bug fixed:** `build_xlsx.py` loaded the Painel notes only when no output name was given. The first
+workbook sent on 5 Oct had no subtitle and no notes.

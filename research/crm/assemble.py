@@ -131,9 +131,21 @@ for c,r in R.items():
     for a,o in r['emails']: emc[a]+=1
     for p in r['phones']: phc[p]+=1
 json.dump({'emc':{k:v for k,v in emc.items() if v>=3},'phc':{k:v for k,v in phc.items() if v>=3}},open('shared.json','w'))
+def cnpj_ok(c):
+    if len(c)!=14 or len(set(c))==1: return False
+    def dv(b,w):
+        r=sum(int(x)*y for x,y in zip(b,w))%11; return '0' if r<2 else str(11-r)
+    w1=[5,4,3,2,9,8,7,6,5,4,3,2]
+    return c[12]==dv(c[:12],w1) and c[13]==dv(c[:13],[6]+w1)
+VALID_DDD={11,12,13,14,15,16,17,18,19,21,22,24,27,28,31,32,33,34,35,37,38,41,42,43,44,45,46,47,48,49,51,53,54,55,61,62,63,64,65,66,67,68,69,71,73,74,75,77,79,81,82,83,84,85,86,87,88,89,91,92,93,94,95,96,97,98,99}
+IGJUNK=set('wix shopify google sephora facebook instagram meta tiktok youtube nuvemshop tiendanube tray vtex lojaintegrada wordpress woocommerce yampi bagy magazord loja_integrada traycommerce shopifybrasil wixbrasil'.split())
 def phone_kind(p):
     p=re.sub(r'\D','',p)
     if p.startswith('55') and len(p)>=12: p=p[2:]
+    if p.startswith(('800','300')) and len(p)==10: p='0'+p          # 0800/0300 typed without its zero
+    if p.startswith('0') and not p.startswith(('0800','0300')) and len(p) in (11,12): p=p[1:]   # trunk zero: 062 3230-4969
+    if p.startswith(('0800','0300','4004','4003')): return p,'0800'
+    if len(p)>=10 and int(p[:2]) not in VALID_DDD: return p,'?'
     if len(p)<10: return p,'?'
     ddd,num=p[:2],p[2:]
     if len(num)==9 and num[0]=='9': return p,'celular'
@@ -159,7 +171,7 @@ for b,r0 in K.iterrows():
     se_neg = b in SE and SE[b].get('brand_on_site') is False
     if not i and b in SE and SE[b].get('brand_on_site'):
         i=SE[b]; site_conf='site da empresa dona (domínio do e-mail no CNPJ; a marca aparece no site)'; foreign=False
-    scn=[c for c in (i.get('cnpjs',[]) if i else []) if len(c)==14 and c not in PLAT_CN]
+    scn=[c for c in (i.get('cnpjs',[]) if i else []) if len(c)==14 and c not in PLAT_CN and not c.startswith('12345678') and len(set(c[:8]))>2 and cnpj_ok(c)]
     owner=None; how=''
     for c in scn:
         if c in holders: owner=c; how='CNPJ no rodapé do site = titular na ANVISA'; break
@@ -189,7 +201,7 @@ for b,r0 in K.iterrows():
         owner=None; how='titular parece prestador de serviço (fábrica terceirizada, importação ou regulatório): o dono da marca não aparece no cadastro'
     if owner and se_neg and not how.startswith(('nome da empresa','CNPJ no rodapé')):
         owner=None; how='titular parece fábrica terceirizada (o site dessa empresa não mostra a marca)'
-    O=R.get(owner) if owner else None
+    O=(R.get(owner) or reg(owner)) if owner else None
     alerts=[]
     # contacts
     wa=[]; tel=[]; emails=[]
@@ -198,10 +210,12 @@ for b,r0 in K.iterrows():
             w2=w_[2:] if w_.startswith('55') else w_
             if placeholder(w2) or w2.startswith('0'): continue
             p,k=phone_kind(w_)
+            if k in ('?','0800'): continue
             wa.append((fmt(p),'WhatsApp no site da marca',p))
         for t in i.get('tel',[]):
             if placeholder(t[2:] if t.startswith('55') and len(t)>=12 else t): continue
             p,k=phone_kind(t)
+            if k=='?': continue
             tel.append((fmt(p),k+' (site da marca)',p))
         dom=re.sub(r'^https?://(www\.)?','',i['url']).split('/')[0]
         for e in i.get('emails',[]):
@@ -214,6 +228,7 @@ for b,r0 in K.iterrows():
         for p in O['phones']:
             if placeholder(p): continue
             q,k=phone_kind(p)
+            if k=='?': continue
             flag=''
             if phc.get(p,0)>=3: flag=' — ATENÇÃO: mesmo número em %d empresas (provável contador)'%phc[p]
             elif uf in DDD and q[:2].isdigit() and int(q[:2]) not in DDD[uf]: flag=' — DDD de outro estado (pode ser do contador)'
@@ -282,7 +297,7 @@ for b,r0 in K.iterrows():
         grade=grade,score=round(sc,1),marca=b.title(),categoria=cats.get(r0.main_cat,r0.main_cat),formato='Não testado (maquiagem/perfume)' if untested else 'Testado',
         n_new=int(r0.n_new),primeiro=first,ultimo=lastd,exemplos=r0.examples.title()[:400],
         site=(i or {}).get('url',''),site_conf=site_conf,plataforma=(i or {}).get('platform',''),
-        instagram=('https://instagram.com/'+i['ig'][0]) if i and i.get('ig') else '',
+        instagram=next(('https://instagram.com/'+h for h in (i.get('ig',[]) if i else []) if h.lower().strip('.') not in IGJUNK and len(h)>2),''),
         whatsapp=wa_best[0] if wa_best else '',whatsapp_link=('https://wa.me/55'+wa_best[2]) if wa_best else '',whatsapp_origem=wa_best[1] if wa_best else '',
         telefone=tel_best[0] if tel_best else '',telefone_tipo=tel_best[1] if tel_best else '',
         outros_tel='; '.join(f'{t[0]} [{t[1]}]' for t in tel_sorted[1:5]),

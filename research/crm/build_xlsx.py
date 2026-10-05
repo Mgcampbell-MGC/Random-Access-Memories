@@ -4,8 +4,9 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.worksheet.datavalidation import DataValidation
 from openpyxl.formatting.rule import FormulaRule, CellIsRule
 from openpyxl.utils import get_column_letter as L
-D=pd.read_pickle('final.pkl')
-meta=json.load(open('meta.json')) if len(sys.argv)<2 else {}
+import os
+D=pd.read_pickle('final_all.pkl' if os.path.exists('final_all.pkl') else 'final.pkl')
+meta=json.load(open('meta.json')) if os.path.exists('meta.json') else {}
 OUT=sys.argv[1] if len(sys.argv)>1 else 'O_LANCAMENTO_CRM.xlsx'
 wb=Workbook()
 P=wb.active; P.title='Painel'
@@ -16,7 +17,7 @@ STATUS=['Não contatado','Tentei – sem resposta','Conversei','Interessada(o)',
 COLS=[('Nº',6,'n'),('Nota',6,'grade'),('Marca',22,'marca'),
  ('Status',20,None),('Próximo passo',26,None),('Data do próximo passo',13,None),('Último contato',13,None),('Notas',30,None),
  ('WhatsApp',17,'whatsapp'),('Telefone',17,'telefone'),('E-mail',30,'email'),('Site',30,'site'),('Instagram',22,'instagram'),('Pessoas (sócios no CNPJ)',34,'pessoas'),
- ('Categoria',16,'categoria'),('Formato',16,'formato'),('Produtos novos (90 dias)',10,'n_new'),('Último registro ANVISA',13,'ultimo'),
+ ('Mercado',13,'mercado'),('Categoria',16,'categoria'),('Formato',16,'formato'),('Fonte',24,'fonte'),('Produtos novos (90 dias)',10,'n_new'),('Último registro ANVISA',13,'ultimo'),('Pedido de marca no INPI',13,'data_inpi'),
  ('Cidade',18,'cidade'),('UF',5,'uf'),('Porte',16,'porte'),('Por que esta nota',60,'motivo'),('Alertas',40,'alertas'),
  ('Gasto no último lançamento (R$)',14,None),('Comprou em 30 dias?',11,None),('Pacote de interesse',18,None),
  ('Origem do WhatsApp',30,'whatsapp_origem'),('Tipo e origem do telefone',34,'telefone_tipo'),('Origem do e-mail',26,'email_origem'),
@@ -42,7 +43,7 @@ for i,r in enumerate(D.itertuples(index=False),2):
         if k is None: continue
         v=r.get(k)
         if v is None or (isinstance(v,float) and pd.isna(v)): v=''
-        if k in ('ultimo','primeiro','abertura'):
+        if k in ('ultimo','primeiro','abertura','data_inpi'):
             d=todate(v); cell.value=d; cell.number_format='DD/MM/YYYY'; continue
         if k=='capital':
             try: cell.value=float(v) if v!='' else None; cell.number_format='#,##0'
@@ -93,6 +94,8 @@ P['B2']='O LANÇAMENTO — marcas lançando produtos agora'; P['B2'].font=Font(b
 P['B3']=meta.get('subtitle',''); P['B3'].font=Font(italic=True,color='555555')
 r=5; H(r,2,'Visão geral'); r+=1
 rows=[('Marcas na lista',f'=COUNTA({col("Marca")})'),('Nota A — ligar primeiro',f'=COUNTIF({col("Nota")},"A")'),('Nota B',f'=COUNTIF({col("Nota")},"B")'),('Nota C',f'=COUNTIF({col("Nota")},"C")'),
+      ('Mercado Beleza',f'=COUNTIF({col("Mercado")},"Beleza")'),('Mercado Suplementos (próximo)',f'=COUNTIF({col("Mercado")},"Suplementos")'),('Mercado Casa e aroma',f'=COUNTIF({col("Mercado")},"Casa e aroma")'),
+      ('Marcas novas do INPI (ainda não lançaram)',f'=COUNTIF({col("Fonte")},"INPI*")'),
       ('Com WhatsApp',f'=COUNTIF({col("WhatsApp")},"?*")'),('Com telefone',f'=COUNTIF({col("Telefone")},"?*")'),('Com e-mail',f'=COUNTIF({col("E-mail")},"?*")'),
       ('Com site encontrado',f'=COUNTIF({col("Site")},"?*")'),('Dono identificado (CNPJ)',f'=COUNTIF({col("CNPJ")},"?*")'),('Formato não testado (maquiagem/perfume)',f'=COUNTIF({col("Formato")},"Não testado*")')]
 for t,f in rows:
@@ -101,14 +104,15 @@ r+=1; H(r,2,'Funil (atualiza sozinho pela coluna Status)'); r+=1
 for s in STATUS:
     lab(r,2,s); c=P.cell(r,3,f'=COUNTIF({col("Status")},"{s}")'); c.font=Font(bold=True); r+=1
 r+=1; H(r,2,'Teste das 20 conversas'); r+=1
-lab(r,2,'Regras definidas antes das ligações. Preencha "Gasto no último lançamento" e "Comprou em 30 dias?" a cada conversa.'); P.cell(r,2).font=Font(italic=True,color='555555'); r+=1
+lab(r,2,'Regras definidas antes das ligações. Conta só o mercado Beleza. Preencha "Gasto no último lançamento" e "Comprou em 30 dias?" a cada conversa.'); P.cell(r,2).font=Font(italic=True,color='555555'); r+=1
 conv=r
-lab(r,2,'Conversas feitas'); P.cell(r,3,'='+'+'.join(f'COUNTIF({col("Status")},"{s}")' for s in ['Conversei','Interessada(o)','Proposta enviada','Fechou','Perdido'])).font=Font(bold=True); r+=1
-g25=r; lab(r,2,'Disseram gasto ≥ R$2.500'); P.cell(r,3,f'=COUNTIF({col("Gasto no último lançamento (R$)")},">=2500")').font=Font(bold=True); r+=1
-g10=r; lab(r,2,'Disseram gasto ≥ R$1.000'); P.cell(r,3,f'=COUNTIF({col("Gasto no último lançamento (R$)")},">=1000")').font=Font(bold=True); r+=1
-glo=r; lab(r,2,'Disseram gasto < R$1.000'); P.cell(r,3,f'=COUNTIF({col("Gasto no último lançamento (R$)")},"<1000")').font=Font(bold=True); r+=1
-buy=r; lab(r,2,'Compraram em 30 dias'); P.cell(r,3,f'=COUNTIF({col("Comprou em 30 dias?")},"Sim")').font=Font(bold=True); r+=1
-vit=r; lab(r,2,'Compraram VITRINE'); P.cell(r,3,f'=COUNTIFS({col("Comprou em 30 dias?")},"Sim",{col("Pacote de interesse")},"VITRINE")').font=Font(bold=True); r+=1
+BEL=f'{col("Mercado")},"Beleza"'
+lab(r,2,'Conversas feitas'); P.cell(r,3,'='+'+'.join(f'COUNTIFS({col("Status")},"{s}",{BEL})' for s in ['Conversei','Interessada(o)','Proposta enviada','Fechou','Perdido'])).font=Font(bold=True); r+=1
+g25=r; lab(r,2,'Disseram gasto ≥ R$2.500'); P.cell(r,3,f'=COUNTIFS({col("Gasto no último lançamento (R$)")},">=2500",{BEL})').font=Font(bold=True); r+=1
+g10=r; lab(r,2,'Disseram gasto ≥ R$1.000'); P.cell(r,3,f'=COUNTIFS({col("Gasto no último lançamento (R$)")},">=1000",{BEL})').font=Font(bold=True); r+=1
+glo=r; lab(r,2,'Disseram gasto < R$1.000'); P.cell(r,3,f'=COUNTIFS({col("Gasto no último lançamento (R$)")},"<1000",{BEL})').font=Font(bold=True); r+=1
+buy=r; lab(r,2,'Compraram em 30 dias'); P.cell(r,3,f'=COUNTIFS({col("Comprou em 30 dias?")},"Sim",{BEL})').font=Font(bold=True); r+=1
+vit=r; lab(r,2,'Compraram VITRINE'); P.cell(r,3,f'=COUNTIFS({col("Comprou em 30 dias?")},"Sim",{col("Pacote de interesse")},"VITRINE",{BEL})').font=Font(bold=True); r+=1
 lab(r,2,'Resultado',True)
 P.cell(r,3,f'=IF(C{conv}<20,"Faltam "&(20-C{conv})&" conversas",IF(AND(C{g25}>=6,OR(C{buy}>=2,C{vit}>=4)),"MANTER R$2.990",IF(C{g10}>=8,"MUDAR: ESSENCIAL R$1.490 + FILME R$990",IF(C{glo}>=12,"PARAR","Sem decisão: rever com o Matthew"))))').font=Font(bold=True,color='7A4E1D',size=12)
 r+=1
