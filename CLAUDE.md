@@ -2869,6 +2869,12 @@ strangers' dead parents, alone, in year three?"**
     - **ANVISA's food list is richer than the cosmetics one:** a brand field, a date and the approved health
       claim on every row. It is dominated by contract factories: 181 of 380 supplement filers file 6 or more
       brands.
+    - **Monthly, not weekly — the founder's cadence, so the team can work through each batch.**
+      `research/crm/monthly_inpi.py` runs from scratch and dedupes against SHA-1 fingerprints in git. It
+      delivers a separate "Novas marcas" tab and never overwrites the CRM, because the CRM holds Sol's notes.
+    - **★ A FILTER WORD MATCHES INSIDE OTHER WORDS. "NATURA" removed about 125 small "Natural…" brands from the
+      first CRM, and "ARAUJO" removed people with that surname.** Bound every token or use the full company
+      name. Then list what the filter removed and read it, as you would read the first row of a table.
 
 ## The test design that works
 

@@ -3,7 +3,7 @@ K=pd.read_pickle('brands_keep.pkl')
 import sys; sys.path.insert(0,'../hunt6/work/ol6'); from excl import EXCL
 EXN={re.sub(r'[^A-Z0-9]','',k) for k in EXCL}
 K=K[~K.index.map(lambda b: re.sub(r'[^A-Z0-9]','',b) in EXN)]
-BIG2=r'INDITEX|ZARA HOME|H&M|RENNER|RIACHUELO|C&A MODAS|O BOTICARIO|GRUPO BOTICARIO|NATURA'
+BIG2=r'INDITEX|ZARA HOME|\bH&M\b|LOJAS RENNER|RIACHUELO|C&A MODAS|BOTICARIO|\bNATURA (COSMETICOS|INDUSTRIA)|COSMETICOS NATURA LTDA|NATURA &CO'
 K=K[~K.holder_names.str.upper().str.contains(BIG2,regex=True)]
 _wb=pd.read_pickle('win_b.pkl')
 HNAME={str(c).zfill(14):n for c,n in zip(_wb.NU_CNPJ_EMPRESA,_wb.NO_RAZAO_SOCIAL_EMPRESA)}

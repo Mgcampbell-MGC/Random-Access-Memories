@@ -99,3 +99,36 @@ brands get search links, not contacts.
 
 **Bug fixed:** `build_xlsx.py` loaded the Painel notes only when no output name was given. The first
 workbook sent on 5 Oct had no subtitle and no notes.
+
+## Monthly run (set up 5 Oct 2026)
+
+`monthly_inpi.py` does the whole INPI job from an empty folder, so it doesn't need anything from a previous
+session:
+
+```
+cd research/crm && python3 monthly_inpi.py --work /tmp/inpi_work
+```
+
+- **Gazettes:** it processes every gazette after the one recorded in `inpi_state.json`, up to the latest
+  published one.
+- **Lookups:** it downloads the three ANVISA lists for name matching, applies the same contact rules, and
+  drops brands already on the CRM.
+- **Output:** one tab, "Novas marcas YYYY-MM", with the Lista's 46 columns, to add to the sheet with
+  File → Import → "Insert new sheet(s)". It never replaces the CRM, because Sol's notes live there.
+- **Already on the CRM:** `seen_brand_keys.txt` holds SHA-1 fingerprints of every brand key and owner CNPJ
+  already on the CRM. No names or contacts go into git. The run adds its new brands to it and updates
+  `inpi_state.json`; `--dry-run` changes neither.
+- **Tested 5 Oct 2026:** RPI 2908 gave 0 new brands, as expected (all already on the CRM). RPI 2907 gave
+  365 new brands, 47 with a contact.
+
+## Filter bug fixed 5 Oct 2026: match company names whole, never as fragments
+
+The big-company filters matched fragments of names.
+- **"NATURA"** (for Natura) removed every company with "Natural…" or "Naturais…" in its name: about 125
+  small beauty brands, including Astera (17 new products) and Yasmin Sense (12).
+- **"ARDEN"** (Elizabeth Arden) removed Garden Indústria de Cosméticos.
+- **"COSMED"** removed K-Cosmedic.
+- **"ARAUJO"** (Drogaria Araujo) removed two sole traders with that surname.
+
+Every token is now a whole company name or bounded by `\b`. v3 of the CRM restores these brands: 3.759 in
+all, A 293.
