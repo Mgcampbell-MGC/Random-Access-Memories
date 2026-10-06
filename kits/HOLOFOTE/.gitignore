@@ -3,3 +3,9 @@ __pycache__/
 _build/**/teste_cache/
 *.log
 _tmp_*
+# working files, not deliverables: raw downloads, test renders, caches
+_build/**/_fontes/
+_build/**/teste/
+_build/**/cache/
+_build/**/*.zip
+*.exr

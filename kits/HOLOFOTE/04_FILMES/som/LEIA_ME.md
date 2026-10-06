@@ -10,7 +10,7 @@ bash _build/sound/construir.sh
 ```
 
 Baixa as fontes e confere o SHA-256 → gera as vozes do público (TTS local) → música → efeitos e identidade →
-filmes → PNGs de verificação. Leva uns 4 minutos. **O resultado sai idêntico, bit a bit, a cada execução**
+filmes → PNGs de verificação. Leva de 4 a 6 minutos. **O resultado sai idêntico, bit a bit, a cada execução**
 (todo sorteio tem semente fixa).
 
 ## Volume (normalização)
