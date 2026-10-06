@@ -153,9 +153,18 @@ def main():
         x += 34 * ppm
     wb.save(os.path.join(OUT, 'PH_PULSEIRA_jacquard.png'))
     # Paper seal faces (the visible top face of the wrap, as seen; and the back face)
-    # paper seal: the 60 x 15 strip (x along the strip, which wraps round band + tail), front and back
-    face(60, 15, AMARELO, (0x55, 0x52, 0x40), 'SELO', ppm=20, arrow=True).save(os.path.join(OUT, 'PH_SELO_frente.png'))
-    face(60, 15, PAPEL, GREY_ON_LIGHT, 'SELO VERSO', ppm=20, arrow=True).save(os.path.join(OUT, 'PH_SELO_verso.png'))
+    # paper seal: ONE 60 x 15 strip printed outside (x = s along the strip): s 23-44 amarelo (sides + TOPO),
+    # TOPO 25,5-41,5 labelled with its tops toward +x, BAIXO 44-60 papel
+    ppm = 20
+    st = Image.new('RGBA', (60 * ppm, 15 * ppm), PAPEL + (255,))
+    d = ImageDraw.Draw(st)
+    d.rectangle([23 * ppm, 0, 44 * ppm, 15 * ppm], fill=AMARELO + (255,))
+    for s_ in (23, 25.5, 41.5, 44):
+        d.line([s_ * ppm, 0, s_ * ppm, 15 * ppm], fill=(0x55, 0x52, 0x40, 255), width=2)
+    lab = Image.new('RGBA', (15 * ppm, 16 * ppm), (0, 0, 0, 0))
+    ImageDraw.Draw(lab).text((20, 90), 'SELO TOPO', font=font(46), fill=(0x55, 0x52, 0x40, 255))
+    st.alpha_composite(lab.rotate(-90, expand=True), (int(25.5 * ppm), 0))
+    st.save(os.path.join(OUT, 'PH_SELO_faixa.png'))
     print('placeholders ->', OUT)
 
 

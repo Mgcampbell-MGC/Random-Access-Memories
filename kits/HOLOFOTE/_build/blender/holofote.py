@@ -43,7 +43,7 @@ PANEL_R, PANEL_D = 31.0, 1.0         # recessed base panel
 COAT_T = 0.08                        # coating thickness
 COAT_TOP = 87.0                      # coating stops 1,0 mm below the rim
 PRINT_Z0, PRINT_Z1 = 18.0, 82.0
-PRINT_PROUD = 0.05
+PRINT_PROUD = 0.02
 CAP_R, CAP_H, CAP_T, CAP_LIP = 34.0, 74.0, 0.3, 1.2
 WAX_TOP = 76.0
 WICK_PROUD = 5.0
@@ -541,6 +541,9 @@ def print_shell(path, aov=False, chroma=False, segs=720):
     bpy.context.collection.objects.link(ob)
     me.polygons.foreach_set('use_smooth', [True] * len(me.polygons))
     me.materials.append(chroma_material() if chroma else print_material(path, aov))
+    # Screen-print ink has no thickness: the shell must not shadow the coating it sits on. Found 6 Oct 2026 by the
+    # UV fidelity check on KV-45 — under the hard spot every letter cast an offset copy near the terminator.
+    ob.visible_shadow = False
     return ob
 
 

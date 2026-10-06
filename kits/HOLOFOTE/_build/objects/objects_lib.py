@@ -667,7 +667,7 @@ def case(state='open', open_deg=100.0, unit='HLF-CASE-02', copo=None, setlist=Tr
     copo   None or a holofote.copo() spec (lid forced 'on'), placed in the cut-out
     setlist  the folded setlist standing in its slot, setlist_rise_mm above the foam (setlist_kw -> setlist())
     band   the wristband doubled through the hasp slot, clasp + paper seal on the floor in front
-           (band_kw -> route 'side'|'drape', art_path, seal_art, seal_back, drop_mm, tail_turn_deg, with_seal)
+           (band_kw -> route 'drape'|'corner', art_path, seal_art, floor_turn_deg, tail_turn_deg, with_seal)
     Returns Built(root, base, lid, lid_pivot, tab, mirror, foam, copo, setlist, band, contract)."""
     K = case_contract(unit)
     K.update({k: v for k, v in art_override.items() if v})
@@ -1210,44 +1210,96 @@ def clasp(p, t, up, length=20.0, width=19.0, height=5.6, z_under=0.8):
     return ob
 
 
-def seal(p, t, up, stack_mm=2.0, length=15.0, strip_mm=60.0, front_art=None, back_art=None, paper=0.25):
-    """The paper seal (§C.6), uncoated papel-cartaz, wrapped round the stacked band and tail at p (mm, the centre of
-    the bottom layer's underside): `length` (15) along the band, the strip_mm (60) strip running round the stack.
-    Art = the packaging strips PULSEIRA_SELO_frente/verso.png (60 x 15 mm; x along the strip, y across): the strip's
-    centre sits on the top face (toward `up`), x increasing toward t x up (screen right when t points away from the
-    camera); its two ends overlap under the stack. The verso is the inside face, read once torn.
-    NB: a 60 mm strip round a ~16 x 2,5 mm stack shows only the middle ~16 mm of the strip on top (see LEIA_ME)."""
-    front_art = front_art or pfile('pulseira', 'PULSEIRA_SELO_frente.png') or ph('PH_SELO_frente.png')
-    back_art = back_art or pfile('pulseira', 'PULSEIRA_SELO_verso.png') or ph('PH_SELO_verso.png')
-    t, up = Vector(t).normalized(), Vector(up).normalized()
+SEAL = dict(size=(60.0, 15.0), stack=(16.0, 2.5),
+            panels=dict(left=(23.0, 25.5), top=(25.5, 41.5), right=(41.5, 44.0), bottom=(44.0, 60.0)))
+
+
+def seal_contract():
+    """The packaging team's seal: one strip PULSEIRA_SELO_faixa.png (60 x 15 mm, 20 px/mm, x = s along the strip,
+    y = across = along the band, printed OUTSIDE only) and its panel layout from PULSEIRA.json -> seal."""
+    c = dict(SEAL)
+    c['art'] = pfile('pulseira', 'PULSEIRA_SELO_faixa.png') or ph('PH_SELO_faixa.png')
+    j = pfile('pulseira', 'PULSEIRA.json')
+    if j:
+        import json
+        try:
+            S = json.load(open(j))['seal']
+            c['size'] = tuple(S['size_mm'])
+            c['stack'] = tuple(S['stack_mm'])
+            P = {p['name']: tuple(p['s_mm']) for p in S['panels']}
+            c['panels'] = dict(left=P['lado-esquerdo'], top=P['TOPO'], right=P['lado-direito'], bottom=P['BAIXO'])
+        except Exception as e:
+            print('seal_contract: json not read (%s); using defaults' % e)
+    return c
+
+
+def seal(p, t, up, read_up=(0, 1, 0), art_path=None, stack_mm=None, length=None, paper=0.25):
+    """The paper seal (§C.6, packaging redesign of 6 Oct): uncoated papel-cartaz wrapped round the stacked band and
+    tail at p (mm, the centre of the stack's underside, t along the band, `up` the outward face). The strip is
+    printed on the outside only; its panels land on the faces they were drawn for: left side, TOPO ("pode /
+    rasgar."), right side, BAIXO ("o que se guarda é a pulseira."); the inner glue wrap (s 0-23) is hidden.
+    On TOPO s increases toward read_up, so the letters' tops point toward the higher end of the strip and the text
+    reads upright for a camera that has read_up as its screen-up (default +Y: a front camera at -Y). The text lines
+    run ALONG the band, so the band must run across the frame at the seal for them to read upright.
+    art_path overrides the strip; stack_mm (default the json's 2,5) and length (15) set the wrap."""
+    C = seal_contract()
+    art_path = art_path or C['art']
+    stack_mm = stack_mm or C['stack'][1]
+    length = length or C['size'][1]
+    up = Vector(up).normalized()
+    t = Vector(t).normalized()
+    if t.cross(up).dot(Vector(read_up)) < 0:
+        t = -t                                     # choose the wrap sense: +b (= t x up) is screen-up
     b = t.cross(up).normalized()
-    w = BAND['W'] / 2 + 0.35
+    w = C['stack'][0] / 2 + 0.05                   # 16 mm stack (+ paper slack)
     z0, z1 = -0.08, stack_mm + 0.08
     rc = 0.55
-    # loop in the (b, up) plane starting at the BOTTOM centre and running counter-clockwise (-b along the top),
-    # with the start point repeated so the overlap seam lies under the stack
-    loop = [(0.0, z0)]
-    corners = [(w - rc, z0 + rc, 270), (w - rc, z1 - rc, 0), (-w + rc, z1 - rc, 90), (-w + rc, z0 + rc, 180)]
-    for cx, cz, a0 in corners:
-        for i in range(7):
-            a = math.radians(a0 + 90 * i / 6)
-            loop.append((cx + rc * math.cos(a), cz + rc * math.sin(a)))
-    loop.append((0.0, z0))
-    arc = [0.0]
-    for i in range(1, len(loop)):
-        arc.append(arc[-1] + math.hypot(loop[i][0] - loop[i - 1][0], loop[i][1] - loop[i - 1][1]))
-    P = arc[-1]
-    s_top = P / 2                                  # the top centre is half way round from the bottom centre
+    # rounded rectangle in the (b, up) plane, built panel by panel in strip order: left side (going up), top
+    # (-b -> +b), right side (going down), bottom (+b -> -b); each panel runs between corner mid-points
+    def arc(cx, cz, a0, a1, n=4):
+        return [(cx + rc * math.cos(math.radians(a0 + (a1 - a0) * i / n)),
+                 cz + rc * math.sin(math.radians(a0 + (a1 - a0) * i / n))) for i in range(n + 1)]
+    BL, TL, TR, BR = (-w + rc, z0 + rc), (-w + rc, z1 - rc), (w - rc, z1 - rc), (w - rc, z0 + rc)
+    segs = {
+        'left': arc(*BL, 225, 180) + [(-w, z0 + rc), (-w, z1 - rc)] + arc(*TL, 180, 135),
+        'top': arc(*TL, 135, 90) + [(-w + rc, z1), (w - rc, z1)] + arc(*TR, 90, 45),
+        'right': arc(*TR, 45, 0) + [(w, z1 - rc), (w, z0 + rc)] + arc(*BR, 0, -45),
+        'bottom': arc(*BR, -45, -90) + [(w - rc, z0), (-w + rc, z0)] + arc(*BL, -90, -135),
+    }
+    loop, svals = [], []
+    for name in ('left', 'top', 'right', 'bottom'):
+        pts = []
+        for q in segs[name]:
+            if not pts or math.hypot(q[0] - pts[-1][0], q[1] - pts[-1][1]) > 1e-6:
+                pts.append(q)
+        if name == 'top':                          # densify the printed face
+            dense = [pts[0]]
+            for q in pts[1:]:
+                d = math.hypot(q[0] - dense[-1][0], q[1] - dense[-1][1])
+                k = max(1, int(d / 0.4))
+                for i in range(1, k + 1):
+                    dense.append((dense[-1][0] + (q[0] - dense[-1][0]) * 1 / (k - i + 1),
+                                  dense[-1][1] + (q[1] - dense[-1][1]) * 1 / (k - i + 1)))
+            pts = dense
+        L = [0.0]
+        for i in range(1, len(pts)):
+            L.append(L[-1] + math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]))
+        s0, s1 = C['panels'][name]
+        start = 1 if loop else 0                   # panels share their boundary point
+        for q, l in list(zip(pts, L))[start:]:
+            loop.append(q)
+            svals.append(s0 + (s1 - s0) * l / L[-1])
+    W_strip = C['size'][0]
     verts, faces, uvs = [], [], []
     rows = 9
     nl = len(loop)
     for j in range(rows):
         sj = -length / 2 + length * j / (rows - 1)
-        for (x, z), sa in zip(loop, arc):
+        for (x, z), sv in zip(loop, svals):
             verts.append(Vector(p) * MM + (x * b + z * up + sj * t) * MM)
-            uvs.append((0.5 - (sa - s_top) / strip_mm, j / (rows - 1)))
+            uvs.append((sv / W_strip, j / (rows - 1)))
     for j in range(rows - 1):
-        for i in range(nl - 1):
+        for i in range(nl - 1):                    # open loop: the strip's end (s 60) meets s 23 at the corner
             a_, b_ = j * nl + i, j * nl + i + 1
             faces.append((a_, a_ + nl, b_ + nl, b_))
     ob = _mesh_obj('seal', verts, faces)
@@ -1266,21 +1318,23 @@ def seal(p, t, up, stack_mm=2.0, length=15.0, strip_mm=60.0, front_art=None, bac
     sol.material_offset_rim = 2
     me.polygons.foreach_set('use_smooth', [True] * len(me.polygons))
     # (with offset +1 the original faces end up outside and the generated shell inside)
-    ob.data.materials.append(paper_material('seal_outside', front_art, AMARELO, rough=0.85))
-    ob.data.materials.append(paper_material('seal_inside', back_art, PAPEL, rough=0.85))
+    ob.data.materials.append(paper_material('seal_outside', art_path, PAPEL, rough=0.85))
+    ob.data.materials.append(paper_material('seal_inside', None, PAPEL, rough=0.85))
     ob.data.materials.append(paper_material('seal_edge', None, PAPEL, rough=0.85))
     return ob
 
 
-def _band_through_case(C=None, closed=False, route='drape', art_path=None, seal_art=None, seal_back=None,
-                       drop_mm=34.0, tail_turn_deg=55.0, with_seal=True, length=None):
+def _band_through_case(C=None, closed=False, route='drape', art_path=None, seal_art=None, floor_turn_deg=-90.0,
+                       tail_turn_deg=55.0, with_seal=True, length=None):
     """The wristband doubled through the hasp's single aligned slot (tab + base front closed, base front open).
     Built as the OUTER leg's route from inside the slot to the clasp and on into the tail; the INNER leg is the
     same route offset one band thickness toward the case/floor and reversed, so the two layers nest exactly; a
     hidden 180 deg U-turn behind the wall joins them. Side 1 (jacquard) is outward on every visible run.
-      route 'drape' (default): straight down the front face and out across the floor toward the camera; the seal
-                    and clasp lie on the floor in front, the seal reading left to right from the front / from above
-                    (C05). It crosses ~15 mm of HOLOFOTE · AO VIVO (the slot sits at x = -13 mm, above the text).
+      route 'drape' (default): straight down the front face onto the floor, then (floor_turn_deg, -90 = to the
+                    left) along the front of the case: the seal and clasp lie on the floor running across the frame,
+                    so the seal's TOPO ("pode / rasgar.", lines along the band) reads upright from the front and
+                    from above (C05). floor_turn_deg=0 runs straight at the camera (the seal then reads sideways).
+                    It crosses ~15 mm of HOLOFOTE · AO VIVO (the slot sits at x = -13 mm, above the text).
       route 'corner': left along the front face ABOVE the text, round the front-left edge, the seal and clasp on
                     the upper left face (reading from the left), the tail down to the floor. Keeps the main panel
                     clear for a front-on closed shot. (The 350 mm band cannot reach the floor doubled on this route.)
@@ -1299,7 +1353,8 @@ def _band_through_case(C=None, closed=False, route='drape', art_path=None, seal_
     out.fwd_to('y', face + 0.2).bend_to((0, 0, -1), 1.7)            # out of the slot, down the face (n = -Y)
     if route == 'drape':
         out.fwd_to('z', 1.5 + 3.0).bend_to((0, -1, 0), 3.0)        # onto the floor, toward the camera (n = +Z)
-        out.fwd(drop_mm - 4.5 - 10.0 - 3.0 - 15.0 - 3.0)
+        out.fwd(1.0).turn(floor_turn_deg, 10.0)                     # then across the frame, in front of the case
+        out.fwd(1.0)
         read = Vector((0, 1, 0))
         tail = [('bend', -9.0, 30.0), ('bend', 9.0, 30.0), ('turn', tail_turn_deg, 34.0), ('fwd', 400.0)]
     else:
@@ -1343,8 +1398,7 @@ def _band_through_case(C=None, closed=False, route='drape', art_path=None, seal_
         # the seal sits on the doubled run just before the clasp (case side), its text reading left->right from -Y
         k = [smp_ for smp_ in out.samples if smp_[3] <= out.marks['seal0'][3] + 7.5]
         sp, st, sn, _ = k[-1]
-        st_read = st if st.dot(read) > 0 else -st
-        sl = seal(sp - sn * 1.5, st_read, sn, stack_mm=2.0, front_art=seal_art, back_art=seal_back)
+        sl = seal(sp - sn * 1.5, st, sn, read_up=read, art_path=seal_art)
     return Built(band=band, clasp=cl, seal=sl, length=tt.samples[-1][3])
 
 

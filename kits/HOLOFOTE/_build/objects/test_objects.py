@@ -78,9 +78,9 @@ elif scene == 'band_detail':
     setup(res, int(res * 0.75))
     lookdev(floor='#77777B')
     c = O.case(state='closed', copo=None, band=True)
-    area_light((-0.4, -0.5, 0.8), (-0.02, -0.1, 0.0), 0.4, 45)
-    t = (-0.012, -0.088, 0.008)
-    camera(sph(38, -22, 0.24, t), t, 60)
+    area_light((-0.4, -0.5, 0.8), (-0.03, -0.1, 0.0), 0.4, 45)
+    t = (-0.030, -0.080, 0.008)
+    camera(sph(40, -8, 0.24, t), t, 60)
 elif scene == 'props':
     setup(res, int(res * 0.75))
     lookdev(floor='#6C6C70')
