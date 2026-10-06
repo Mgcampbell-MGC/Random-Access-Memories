@@ -42,6 +42,22 @@ Fidelidade do rótulo no bloco 9–15 s: `06_PRODUCAO/fidelidade/ANUNCIO_animati
 - **Gesto, anúncio 3:** câmera girada ~18° para o dedo ler; coração e dedo acima de y 750, o título cruza a
   barriga. Entre o queixo e o coração há só ~10 cm: não cabe um título de 100 px ali.
 
+## Resultados medidos (6 out 2026, KV-45 das 09:05)
+
+- **Arquivos:** 8 × com som + 8 × mudo, 15,000 s, 360 quadros, 1080 × 1920, 24 fps, H.264 marcado BT.709 (codificar.py).
+  O mudo é o mesmo quadro a quadro (conferido: os 144 quadros do KV decodificados são idênticos ao com som).
+- **Som entregue (AAC decodificado):** −14,10 a −14,16 LUFS integrado; pico real −1,20 a −1,36 dBTP.
+- **Sincronia:** palmas nos quadros 151/167/184/200, segundo sinal 144, caixa 180, CLAC 216 (anúncio 2: sino 216,
+  CLAC 220), todos medidos na mixagem final (desvio 0,00 quadro).
+- **Rótulo no bloco 9–15 s: REPROVADO pela barra de filme** (`06_PRODUCAO/fidelidade/ANUNCIO_animatics_KV.json`).
+  Em todo quadro: 5º percentil ≥ 0,96, erro plantado pego, matiz −1,42°, saturação 0,998. Mas o pior bloco cai
+  abaixo de 0,80 em 63 dos 144 quadros (mínimo 0,60). O bloco que falha é sempre o fio sob *DOMINGO · 09.05* onde
+  ele entra na borda esquerda do copo (x ≈ 240, y ≈ 1330–1390), com só 2–6 % de tinta, que o render quase não
+  resolve. Não é o animatic que estraga: o quadro 216 é a placa intacta (só codificada) e já dá 0,799; e a própria
+  placa do diretor, sem empurrão nem codificação, cai abaixo de 0,80 em 19 de 64 posições da grade de blocos
+  (mínimo 0,41). A placa passa na posição (0, 0) por sorte de grade; qualquer empurrão ou codificação a encontra.
+  **A decisão é do diretor** (regra de blocos de fio no verificador, ou a placa); o animatic se refaz com um comando.
+
 ## Como refazer
 
 ```
