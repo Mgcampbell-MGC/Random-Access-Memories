@@ -8,13 +8,13 @@
     "corner_tiles_worst": null,
     "control": {
       "patch_px": [
-        3348,
-        1947,
-        300,
-        300
+        2605,
+        564,
+        1164,
+        1164
       ],
-      "worst_tile": 0.874,
-      "caught": false
+      "worst_tile": -0.164,
+      "caught": true
     },
     "hue_shift_deg": -10.05,
     "sat_ratio": 1.046,

@@ -503,9 +503,12 @@ def rim_spill(root, energy, coll=None):
     return L
 
 
-def b_c06(spill=0.02, lit=True, neutra=False):
+def b_c06(spill=0.02, lit=True, neutra=False, yaw=-4.0):
+    """C06 has no yaw in its spec. At the KV's −12 deg the first letters of HOLOFOTE APRESENTA sit on the left limb,
+    where the coat's diffuse albedo falls off (the albedo check failed one tile there, 0,54); −4 deg keeps the
+    panel frontal and the small type off the limb."""
     h = S.palco(at=(0, 0, 0), spot=False, rotunda_spill=0.0)
-    root = H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=lit), at=h['place'], rot_deg=-12)
+    root = H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=lit), at=h['place'], rot_deg=yaw)
     S.ride(root, h['lift'])
     if lit:
         S.flame_bounce(h, root)

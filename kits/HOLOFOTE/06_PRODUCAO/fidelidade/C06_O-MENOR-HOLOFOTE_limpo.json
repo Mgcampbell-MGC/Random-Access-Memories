@@ -1,0 +1,29 @@
+[
+  {
+    "asset": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/renders/C06_O-MENOR-HOLOFOTE_limpo.png",
+    "master": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/rotulos/HLF-02_ROTULO_wrap.png",
+    "tiles": 205,
+    "uv_agreement": 0.998,
+    "corner_tiles_skipped": 10,
+    "corner_tiles_worst": 0.724,
+    "control": {
+      "patch_px": [
+        1626,
+        1645,
+        507,
+        507
+      ],
+      "worst_tile": -0.308,
+      "caught": true
+    },
+    "hue_shift_deg": -19.36,
+    "sat_ratio": 1.481,
+    "worst_tile": -0.118,
+    "p5_tile": 0.292,
+    "bar_p5": 0.95,
+    "pass": false,
+    "label_id": null,
+    "glass_frac_altura": 0.29639774560928345,
+    "thumbnail_sem_alegacao": false
+  }
+]

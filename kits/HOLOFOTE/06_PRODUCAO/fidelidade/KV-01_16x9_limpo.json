@@ -8,12 +8,12 @@
     "corner_tiles_worst": 0.95,
     "control": {
       "patch_px": [
-        1404,
-        1935,
-        300,
-        300
+        1383,
+        1466,
+        536,
+        536
       ],
-      "worst_tile": 0.667,
+      "worst_tile": -0.622,
       "caught": true
     },
     "hue_shift_deg": -1.29,
