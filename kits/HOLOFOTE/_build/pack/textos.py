@@ -1,0 +1,189 @@
+"""Every consumer-facing string on the HOLOFOTE pack, copied character for character from
+00_estrategia/CREATIVE_PLATFORM.md (LOCKED). The art and the label_copy.json files both read from here, so a string
+can only ever be wrong in one place."""
+
+C = dict(preto='#121014', papel='#FFF8EC', amarelo='#FFE81A', rosa='#FF4FA0', laranja='#FF6A1A',
+         violeta='#8424F5', luz='#FFE9C4', cera='#F3E9D6', croma='#0047BB')
+
+# §B.1 / §B.2 / §C.2 per SKU
+SKUS = {
+    '01': dict(sku='HLF-01-200', faixa='01', show='CAMARIM', wdth=106, descriptor='pó de arroz e batom',
+               coating='rosa', ink='preto',
+               inci=['ALPHA-ISOMETHYL IONONE', 'COUMARIN'], pt=['alfa-isometil ionona', 'cumarina']),
+    '02': dict(sku='HLF-02-200', faixa='02', show='AO VIVO', wdth=125, descriptor='rosas no palco, luz quente',
+               coating='amarelo', ink='preto',
+               inci=['LIMONENE', 'LINALOOL', 'CITRONELLOL', 'GERANIOL'],
+               pt=['limoneno', 'linalol', 'citronelol', 'geraniol']),
+    '03': dict(sku='HLF-03-200', faixa='03', show='MAIS UM!', wdth=111, descriptor='laranja, cacau e mais um pouco',
+               coating='laranja', ink='preto',
+               inci=['LIMONENE', 'LINALOOL', 'COUMARIN'], pt=['limoneno', 'linalol', 'cumarina']),
+    '04': dict(sku='HLF-04-200', faixa='04', show='ACÚSTICO', wdth=102, descriptor='voz e violão, luz baixa',
+               coating='violeta', ink='papel',
+               inci=['LIMONENE', 'LINALOOL'], pt=['limoneno', 'linalol']),
+}
+
+# §C.2 front panel
+L1_LEFT = 'HOLOFOTE APRESENTA'
+L1_RIGHT = 'A TURNÊ · 2027'
+L4_LEFT = 'DOMINGO · 09.05'
+L4_RIGHT_PREFIX = 'abertura: '
+OPENING_DEFAULT = 'você'
+L6_LEFT = 'vela aromática'
+L6_RIGHT_CAPS = 'PESO LÍQUIDO '
+L6_RIGHT_FIG = '200 g'
+NET_WEIGHT = '200 g'
+
+# §C.3 back panel
+B1 = 'ELA ESTEVE EM TODAS.'
+B2_LEFT = 'TURNÊ «VOCÊ»'
+B2_RIGHT = 'DESDE O PRIMEIRO DIA'
+ESTREIA_RETAIL = 'ESTREIA · O DIA EM QUE VOCÊ NASCEU'
+ESTREIA_STATUS = 'QUEM FEZ O SHOW FOI ELA'
+TOUR = [  # lines 2..8 (line 1 is ESTREIA)
+    ('PRÉZINHO, DIA DAS MÃES', 'PRIMEIRA FILA'),
+    ('FESTA JUNINA', 'O BIGODE FOI ELA'),
+    ('FEIRA DE CIÊNCIAS', 'O VULCÃO TAMBÉM'),
+    ('PRONTO-SOCORRO, 3H', 'SEM INGRESSO. ENTROU.'),
+    ('FORMATURA', 'DE PÉ (COM O DEDO NA LENTE)'),
+    ('PRIMEIRO APÊ', '4 VIAGENS DE CARRO'),
+    ('09.05.2027', 'A ATRAÇÃO É ELA'),
+]
+ATENCAO = 'ATENÇÃO'
+WARNINGS = [  # the five printed lines, bullets included, continuation indented
+    '• Nunca deixe a vela acesa sem supervisão.',
+    '• Mantenha fora do alcance de crianças e animais.',
+    '• Acenda longe de cortinas, tecidos, papéis e correntes de ar,',
+    '  sobre superfície firme e resistente ao calor.',
+    '• O copo esquenta: não toque nem mova a vela acesa.',
+]
+B_FULL = 'Advertências completas e modo de uso: ver embalagem externa.'
+B_ODOR = 'ODORIZANTE DE AMBIENTE · Perfuma o ambiente com aroma agradável.'
+
+# §C.4 base
+PRECISAVA = 'PRECISAVA.'
+LOT = 'HLF0927'
+FAB = '03/2027'
+VAL = '03/2029'
+STICKER = ['LOTE HLF0927 · FAB 03/2027 · VAL 03/2029', 'INDÚSTRIA BRASILEIRA', 'PROTÓTIPO FICTÍCIO · NÃO COMERCIALIZAR']
+
+# §C.5 lid
+LID_TAPE = 'ela fica aqui.'
+LID_BRIM = 'a tampa vira palco.'
+
+# §C.6 wristband
+BAND = 'ACESSO TOTAL · ATRAÇÃO · 09.05.27 · HOLOFOTE ·'
+SEAL_FRONT = 'pode rasgar.'
+SEAL_BACK = 'o que se guarda é a pulseira.'
+
+# §C.7 O CASE
+CASE_NO = 'CASE Nº 09.05'
+CASE_CAMARIM = 'CAMARIM 1 · '  # + headliner
+CASE_LID_FRONT = 'acesso restrito'
+CASE_FRONT_SHOW = 'HOLOFOTE · '  # + show name
+CASE_FRAGIL = 'FRÁGIL · ESTE LADO PRA CIMA ↑'
+CASE_UNDER = 'O case é de papel. O copo é seu.'
+CASE_MIRROR = 'olha a atração.'
+RIDER_HEAD = 'RIDER DA ATRAÇÃO · TURNÊ DIA DAS MÃES 2027'
+RIDER = [
+    ('camarim', 'o sofá dela'),
+    ('exigências', 'nenhuma (ela vai dizer)'),
+    ('bis', 'obrigatório'),
+    ('água', 'ela vai perguntar se você bebeu'),
+    ('som', 'ela canta junto. deixa.'),
+    ('luz', 'uma vela. o menor holofote do brasil.'),
+    ('equipe técnica', 'você'),
+]
+BARCODE = 'CÓDIGO DE BARRAS FICTÍCIO'
+
+
+def manifesto(faixa, ver='case'):
+    s = SKUS[faixa]
+    inci = ', '.join(['HYDROGENATED COCONUT OIL', 'HYDROGENATED SOYBEAN OIL', 'PARFUM'] + s['inci']) + '.'
+    pt = ', '.join(['óleo de coco hidrogenado', 'óleo de soja hidrogenado', 'fragrância'] + s['pt']) + '.'
+    last_ver = ('Modo de uso e advertências completas: ver lateral e SETLIST no interior.' if ver == 'case'
+                else 'Modo de uso e advertências completas: ver lateral.')
+    return [
+        'MANIFESTO DE CARGA · TURNÊ DIA DAS MÃES 2027',
+        f'CONTEÚDO: HOLOFOTE {s["show"]} — vela aromática · ODORIZANTE DE AMBIENTE',
+        'PESO LÍQUIDO 200 g',
+        'COMPOSIÇÃO / INGREDIENTS (INCI): ' + inci,
+        'Ingredientes (português): ' + pt + ' Pavio de madeira. Cápsula de alumínio.',
+        '(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026 — exemplo; confirmar com o '
+        'certificado do fornecedor da fragrância.)',
+        'Fabricado e distribuído por: PALCO PEQUENO INDÚSTRIA DE VELAS LTDA. (EMPRESA FICTÍCIA)',
+        'CNPJ 00.000.000/0001-00 (FICTÍCIO)',
+        'Rua do Palco, 0 — Bairro Fictício — São Paulo/SP — CEP 00000-000 (ENDEREÇO FICTÍCIO)',
+        'AFE Anvisa nº 0.00000-0 · Processo Anvisa nº 25351.000000/0000-00 (FICTÍCIOS)',
+        'SAC 0800 000 0000 · sac@holofote.exemplo · holofote.exemplo (FICTÍCIOS)',
+        'INDÚSTRIA BRASILEIRA',
+        'LOTE: ver base do copo · FAB 03/2027 · VAL 03/2029 (FICTÍCIOS)',
+        last_ver,
+        'PROTÓTIPO FICTÍCIO · DADOS FICTÍCIOS · NÃO COMERCIALIZAR',
+    ]
+
+
+# §C.8 SETLIST
+SETLIST_P1 = ['SETLIST', 'DOMINGO · 09.05 · CAMARIM 1', '(ela abre. você acende.)']
+RUN_OF_SHOW = [  # (number, step lines, who or None)
+    ('1.', ['tira a pulseira do case e põe no pulso'], 'ela'),
+    ('2.', ['abre o case'], 'ela'),
+    ('3.', ['olha no espelho'], 'ela'),
+    ('4.', ['tampa na mesa, X pra cima: isso é o palco'], 'você (equipe técnica)'),
+    ('5.', ['vela em cima do X. mesa firme, longe de', 'cortina, papel e tecido'], 'você'),
+    ('6.', ['tira a parte queimada do pavio. deixa uns 5 mm'], 'você'),
+    ('7.', ['terceiro sinal: acende', 'primeira vez: deixa derreter até a borda (3 a 4 h).'], 'você'),
+    ('8.', ['bis permitido. sessões de até 4 h. temporada de aprox. 40 h.'], None),
+    ('9.', ['ninguém sai de perto da vela acesa. nem pra buscar o bolo.'], None),
+    ('10.', ['pra apagar: abafador, nunca água. encerra quando restar 1 cm de cera.'], None),
+]
+SETLIST_BIS = 'BIS: não guarda pra visita. o show é hoje.'
+P4_HEAD = 'BIS · 4 INGRESSOS'
+TICKETS = [
+    ('INGRESSO 01', '1 áudio de 7 minutos, ouvido até o fim.'),
+    ('INGRESSO 02', 'avisar quando chegar. sem você pedir.'),
+    ('INGRESSO 03', '1 domingo sem celular na mesa.'),
+    ('INGRESSO 04', '______________________________'),
+]
+STUB = 'ADMITE 1 · ELA'
+MODO_DE_USO = [
+    'MODO DE USO',
+    'Na primeira vez, deixe a cera derreter até a borda da cápsula (3 a 4 horas).',
+    'Antes de cada uso, retire a parte queimada do pavio de madeira, deixando cerca de 5 mm.',
+    'Não queime por mais de 4 horas seguidas. Deixe esfriar antes de acender de novo.',
+    'Para apagar, use um abafador. Não use água.',
+    'Encerre o uso quando restar cerca de 1 cm de cera no fundo.',
+    'Use a vela dentro do copo, sobre a tampa virada ou sobre superfície plana, firme e resistente ao calor.',
+]
+ADVERTENCIAS = [
+    'ADVERTÊNCIAS',
+    'Produto destinado exclusivamente à odorização de ambientes. Não aplicar sobre a pele.',
+    'Nunca deixe a vela acesa sem supervisão.',
+    'Mantenha fora do alcance de crianças e animais.',
+    'Mantenha a pelo menos 30 cm de cortinas, roupas de cama, livros e outros materiais inflamáveis.',
+    'Use sobre superfície plana, firme e resistente ao calor. Mantenha o ambiente ventilado.',
+    'Não mova a vela acesa ou com a cera ainda líquida. O copo e a cápsula ficam quentes durante e após o uso.',
+    'Evite contato com os olhos e mucosas. Em caso de contato, lave com água em abundância.',
+    'Não ingerir.',
+]
+DEPOIS = [
+    'DEPOIS DA TEMPORADA',
+    'A temporada acabou. O copo fica.',
+    'Com tudo frio, retire a cápsula pela borda. Lave o copo com água morna e sabão.',
+    'Nova temporada: encaixe uma cápsula de refil HOLOFOTE 200 g no copo limpo.',
+    'Ou use o copo pra pincéis, canetas ou flores. Não use o copo para bebidas ou alimentos.',
+    'Descarte a cápsula vazia na coleta de metais.',
+]
+TICKET_BACK = 'SETOR: PRIMEIRA FILA · ASSENTO: O DE SEMPRE · VALIDADE: VITALÍCIA · emitido por: você'
+P1B_HEAD = 'REGRAS DA CASA · MODO DE USO'
+
+# §C.9 carton O INGRESSO
+CT_FRONT = dict(ingresso='INGRESSO', platform='MÃE AO VIVO', date='DOMINGO · 09.05', setor='SETOR: PRIMEIRA FILA',
+                stub='ADMITE 1 · ATRAÇÃO')
+CT_SIDE2 = ['holofote nela.', 'ela vai dizer "não precisava". é a sua deixa.']
+CT_TOP = 'ESTE LADO PRA CIMA ↑'
+
+# §C.9 refill
+REF_LID = ['NOVA TEMPORADA', 'PESO LÍQUIDO 200 g', 'vela aromática · refil', 'Use dentro do copo HOLOFOTE.']
+REF_BAND = 'LOTE HLF0927 · FAB 03/2027 · VAL 03/2029'
+
+TAGLINE = 'holofote nela.'

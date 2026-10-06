@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>HOLOFOTE · O CARTAZ (template)</title>
+<link rel="stylesheet" href="../tokens.css"><link rel="stylesheet" href="base.css">
+<script src="metricas.js"></script><script src="wordmark.js"></script><script src="holofote.js"></script><script src="pilha.js"></script>
+</head><body>
+<script>
+/* O CARTAZ ● (plataforma §D.4, regras §D.5): HOLOFOTE APRESENTA / headliner / show / data / abertura.
+   Dados no hash da URL (JSON). Tudo é medido: unidades 'u' = medida/800 (a medida do KV-01 9:16).
+   modo 'cartaz' = o lineup + (opcional) a lista da turnê + assinatura.
+   modo 'itens'  = pilha livre de linhas de tipo de madeira (C01, C07, frases), mesma régua.
+   A arte sai CHAPADA (cores exatas da paleta). O LAMBE (lambe.py) é aplicado depois, em Python. */
+const D = HF.dados({
+  W: 2000, H: 3000, cor: 'amarelo', modo: 'cartaz',
+  margem: { x: 0.06, t: 0.05, b: 0.05 },      // frações de W (x) e H (t, b)
+  caixaY: null,                                  // [y0, y1] em px: zona segura (ex.: 9:16 orgânico 270–1500)
+  apresenta: ['HOLOFOTE APRESENTA', 'A TURNÊ · 2027'],
+  headliner: 'MÃE', coracao: false, show: null, data: 'DOMINGO · 09.05', abertura: 'você',
+  turne: null,                                   // {titulo, linhas:[[local, status], ...]}
+  rodape: 'assinatura',                          // 'assinatura' | {esq, dir} (Produção, dividida) | null
+  destaque: null,                                // cor do headliner (padrão: amarelo no violeta, senão a tinta)
+  itens: null,                                   // modo 'itens'
+});
+HF.pronto(() => {
+  const W = D.W, H = D.H;
+  document.body.style.width = W + 'px'; document.body.style.height = H + 'px';
+  document.body.style.background = HF.cor[D.cor] || D.cor;
+  const tinta = D.tinta || HF.tinta[D.cor] || 'preto';
+  const dest = D.destaque || (D.cor === 'violeta' ? 'amarelo' : tinta);
+  const x0 = Math.round(W * D.margem.x), x1 = W - x0, M = x1 - x0, u = M / 800;
+  const y0 = D.caixaY ? D.caixaY[0] : Math.round(H * D.margem.t), y1 = D.caixaY ? D.caixaY[1] : H - Math.round(H * D.margem.b);
+  const show = D.show || (HF.faixa[D.cor] ? HF.faixa[D.cor].show : 'AO VIVO');
+  const regua = Math.max(2, M * 0.25 / 72);
+  const cap = (f, c) => HF.fsDeCap(f, c * u);
+  const xh = (f, c) => HF.fsDeX(f, c * u);
+  const lamp = (D.cor === 'violeta' || D.cor === 'preto') ? 'amarelo' : tinta;   // impressão a 1 cor: O aceso chapado
+  const assinatura = (capU, antes) => ({ tipo: 'assinatura', fundo: true, antes,
+    esq: { t: 'holofote nela.', f: 'X', fs: cap('X', capU), lsEm: -0.01, cor: tinta },
+    marca: { ink: tinta, lamp }, capMarca: capU * u });
+  let itens = [];
+  if (D.modo === 'cartaz') {
+    itens.push({ tipo: 'dividida', esq: { t: D.apresenta[0], f: 'C', fs: cap('C', 30), lsEm: 0.08, cor: tinta },
+      dir: { t: D.apresenta[1], f: 'C', fs: cap('C', 30), lsEm: 0.08, cor: tinta, tnum: true } });
+    itens.push({ tipo: 'headliner', nome: D.headliner, capRef: M * 17.8 / 72, cor: dest, coracao: D.coracao, antes: 34 * u, flex: 1 });
+    itens.push({ tipo: 'cheia', s: { t: show, f: 'V', wght: 700, fs: cap('V', 112), cor: tinta }, modo: 'wdth', antes: 22 * u });
+    itens.push({ tipo: 'dividida', antes: 30 * u,
+      esq: { t: D.data, f: 'C', fs: cap('C', 46), lsEm: 0.02, cor: tinta, tnum: true },
+      dir: { t: 'abertura: ' + D.abertura, f: 'S', fs: xh('S', 18), cor: tinta } });
+    if (D.turne) {
+      itens.push({ tipo: 'regua', esp: regua, cor: tinta, antes: 44 * u, flex: 2 });
+      itens.push({ tipo: 'cheia', s: { t: D.turne.titulo, f: 'V', wght: 700, wdth: 125, fs: cap('V', 39), lsEm: -0.005, cor: tinta }, modo: 'tamanho', antes: 26 * u });
+      const capL = 24.4, passo = 37.8 * u;
+      D.turne.linhas.forEach((l, i) => itens.push({ tipo: 'pontilhada', passo: i === 0 ? null : passo, antes: i === 0 ? 24 * u : 0,
+        esq: { t: l[0], f: 'C', fs: cap('C', capL), lsEm: 0.02, cor: tinta, tnum: true },
+        dir: { t: l[1], f: 'V', wght: 700, wdth: 75, fs: cap('V', capL), lsEm: 0.01, cor: tinta },
+        opt: { passo: 0.409 * capL * u, folga: 0.45 * capL * u, fs: cap('C', capL) } }));
+      itens.push({ tipo: 'regua', esp: regua, cor: tinta, antes: 22 * u });
+    } else itens.push({ tipo: 'espaco', flex: 3 });
+    if (D.rodape === 'assinatura') itens.push(assinatura(D.capAssinatura || 30, 44 * u));
+    else if (D.rodape) itens.push({ tipo: 'dividida', antes: 44 * u, fundo: true,
+      esq: Object.assign({ f: 'C', fs: cap('C', 30), cor: tinta }, D.rodape.esq),
+      dir: Object.assign({ f: 'C', fs: cap('C', 30), cor: tinta }, D.rodape.dir) });
+  } else {
+    // modo itens: DSL simples — cap/x em unidades u
+    for (const e of D.itens) {
+      const it = Object.assign({}, e);
+      const S = (s) => {
+        if (!s) return s;
+        const o = Object.assign({ cor: tinta }, s);
+        if (s.cap != null) o.fs = cap(s.f, s.cap);
+        if (s.x != null) o.fs = xh(s.f, s.x);
+        if (o.cor === 'tinta') o.cor = tinta;
+        if (o.cor === 'destaque') o.cor = dest;
+        delete o.cap; delete o.x;
+        return o;
+      };
+      it.s = S(e.s); it.esq = S(e.esq); it.dir = S(e.dir);
+      if (e.antes != null) it.antes = e.antes * u;
+      if (e.passo != null) it.passo = e.passo * u;
+      if (e.capMax != null) it.capMax = e.capMax * u;
+      if (e.tipo === 'regua') { it.esp = regua; it.cor = it.cor === 'destaque' ? dest : (it.cor || tinta); }
+      if (e.tipo === 'headliner') { it.capRef = (e.capRef || 198) * u; it.cor = e.cor === 'tinta' || !e.cor ? dest : e.cor; }
+      if (e.tipo === 'assinatura') Object.assign(it, assinatura(e.cap || 30, (e.antes || 0) * u));
+      if (e.tipo === 'pontilhada' && e.opt) it.opt = { passo: e.opt.passo * u, folga: e.opt.folga * u, fs: cap('C', e.opt.cap), op: e.opt.op };
+      if (e.tipo === 'bloco') {
+        it.h = e.h * u;
+        it.desenhar = (parent, xa, xb, top) => {
+          const r = e.reserva, d = r.d * u;
+          HF.reserva(parent, { x: (xa + xb) / 2 - d / 2, y: top + (it.h - d) / 2, w: d, h: d, circulo: true, id: r.id,
+            rotulo: r.rotulo || 'RENDER', nota: r.nota, conteudo: r.conteudo, fundo: r.fundo || 'preto', tinta: r.tinta || 'papel' });
+        };
+      }
+      itens.push(it);
+    }
+  }
+  HF.pilha(document.body, itens, { x0, x1, y0, y1 });
+  window.HF_INFO = { u, x0, x1, y0, y1, itens: itens.map((i) => ({ tipo: i.tipo, baseline: i.baseline, passo: i.r && i.r.passo })) };
+});
+</script>
+</body></html>

@@ -1,0 +1,13 @@
+/* HOLOFOTE · base comum dos templates (cores e @font-face vêm de ../tokens.css) */
+html, body { margin: 0; padding: 0; overflow: hidden; }
+body { position: relative; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+.hf-t { position: absolute; left: 0; top: 0; white-space: pre; line-height: 1; margin: 0; padding: 0; }
+.hf-probe { display: inline-block; width: 0; height: 0; vertical-align: baseline; }
+.hf-r, .hf-b { position: absolute; }
+.palco { position: absolute; left: 0; top: 0; overflow: hidden; }
+/* espaço reservado: hachura a 45°, borda, rótulo */
+.hf-ph { position: absolute; box-sizing: border-box; --ph-bg: #FFF8EC; --ph-ink: #121014;
+  border: 2px solid var(--ph-ink);
+  background: repeating-linear-gradient(45deg, transparent 0 14px, color-mix(in srgb, var(--ph-ink) 26%, transparent) 14px 16px), var(--ph-bg); }
+.hf-ph-c { border-radius: 50%; }
+.hf-ph .hf-ph-l { background: var(--ph-bg); padding: 0; }
