@@ -140,9 +140,7 @@ def glass_frac(root, res):
         return None
     g = g[0]
     ys = []
-    for i, v in enumerate(g.data.vertices):
-        if i % 7:
-            continue
+    for v in g.data.vertices:
         p = world_to_camera_view(sc, sc.camera, g.matrix_world @ v.co)
         ys.append(p.y)
     return max(ys) - min(ys)
@@ -531,7 +529,9 @@ def vidro_transparente_para(lights, roots):
     for L in lights:
         c = bpy.data.collections.new(L.name + '_bloqueia')
         for o in bpy.context.scene.objects:
-            if o.type == 'MESH' and o not in vidro:
+            # objects that cast no shadow stay out (the print shell: visible_shadow False since 6 Oct, or every
+            # letter casts an offset shadow copy under a hard light)
+            if o.type == 'MESH' and o not in vidro and o.visible_shadow and not o.hide_render:
                 c.objects.link(o)
         L.light_linking.blocker_collection = c
 
@@ -544,7 +544,9 @@ def b_c08():
     rf = OL.refil(faixa='02', peel=0.5, at=(0.094, 0.030, 0.0), rot_deg=-120.0)
     vidro_transparente_para([h['spot']], [root])
     pts = pontos([root, rf.root])
-    cam_fit(pts, 9.0, -8.0, 50, (1080, 1350), (170, 560, 910, 1110), fstop=5.6, target=(0.045, 0.01, 0.045))
+    cam = cam_fit(pts, 9.0, -8.0, 50, (1080, 1350), (170, 560, 910, 1110), fstop=11.0, target=(0.045, 0.01, 0.045))
+    # focus on the label (the glass's front face), not on the middle of the pair: at f/5.6 the label went soft
+    cam.data.dof.focus_distance = (cam.location - Vector((0.0, -0.038, 0.050))).length
     return dict(labels=[lab(root, '02')])
 
 

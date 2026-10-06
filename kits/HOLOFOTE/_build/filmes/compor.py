@@ -120,7 +120,7 @@ class Fontes:
                  'L': os.path.join(C.RENDERS, 'KV-45_aceso_16bit.png'),
                  'U': os.path.join(C.RENDERS, 'KV-45_apagado_16bit.png'),
                  'B': os.path.join(C.RENDER, 'F15_blecaute_16bit.png')}
-        return self.get(nome, lambda: C.ler(paths[nome]))
+        return self.get(nome, lambda: C.ao_formato(C.ler(paths[nome])))
 
     def cena(self, nome):
         return self.get(nome + '_cena', lambda: C.para_cena(self.plate(nome)))

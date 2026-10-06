@@ -52,6 +52,13 @@ def ler_rgba(path):
     return a[..., [2, 1, 0, 3]]
 
 
+def ao_formato(img):
+    """A plate rendered supersampled (e.g. motor.still pct=200) is area-averaged to the film's 1080 x 1920."""
+    if img.shape[:2] == (H, W):
+        return img
+    return cv2.resize(img, (W, H), interpolation=cv2.INTER_AREA)
+
+
 def salvar(path, rgb01):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     a = (np.clip(rgb01, 0, 1) * 255.0 + 0.5).astype(np.uint8)
@@ -189,6 +196,7 @@ def centro_push(aov_path=None):
         ch = OpenEXR.File(aov_path).parts[0].channels
         m = next(v.pixels for k, v in ch.items() if k.split('.')[0] == 'label_mask')
         m = m[..., 0] if m.ndim == 3 else m
+        k = m.shape[0] / H                        # a supersampled AOV (pct 200) is measured in film pixels
         ys = np.nonzero((m > 0.5).any(axis=1))[0]
-        _CENTRO[aov_path] = (540.0, float(ys.min()) + 90.0)
+        _CENTRO[aov_path] = (540.0, float(ys.min()) / k + 90.0)
     return _CENTRO[aov_path]

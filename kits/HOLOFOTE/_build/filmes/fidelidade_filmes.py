@@ -49,6 +49,13 @@ def ler_aov(path):
         dc = get('DiffCol').astype(np.float32)[..., :3]
     except KeyError:
         dc = None
+    if mask.shape != (C.H, C.W):
+        # a supersampled render (motor.still pct=200): the AOVs are pixel-filtered, so area-averaging the raw
+        # (coverage-weighted) channels to the film's 1080 x 1920 is exactly what a 1080 x 1920 render would hold
+        r = lambda a: cv2.resize(np.ascontiguousarray(a), (C.W, C.H), interpolation=cv2.INTER_AREA)
+        uv = np.dstack([r(uv[..., 0]), r(uv[..., 1])])
+        ink, mask = r(ink), r(mask)
+        dc = r(dc) if dc is not None else None
     return dict(uv=uv, ink=ink, mask=mask, diffcol=dc)
 
 

@@ -23,7 +23,8 @@
     "bar_p5": 0.95,
     "pass": true,
     "label_id": null,
-    "glass_frac_altura": 0.1981152892112732,
-    "thumbnail_sem_alegacao": true
+    "glass_frac_altura": 0.2,
+    "thumbnail_sem_alegacao": false,
+    "nota_altura": "camera_glass solve: glass silhouette 384 px of 1920 = 20.0 % (platform §E.1); the 0.198 first recorded came from a 1-in-7 vertex subsample"
   }
 ]
