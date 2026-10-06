@@ -2950,3 +2950,11 @@ count the answers containing a number · write the same deliverable twice and ti
 - **Never put a model identifier in a commit message, a PR, a code comment, or any pushed artefact.**
 - Every kill gets a file with the cause of death and the sources. **The cause of death is the reusable
   part; the candidate is not.**
+  - **★ HOLOFOTE, 6 Oct 2026 (`kits/HOLOFOTE/`): a new sample kit, a Mother's Day candle brand (MÃE AO VIVO).** Status in
+    `06_PRODUCAO/STATUS_ENTREGA.txt`; packet in `07_KIT_COMPLETO/HOLOFOTE_PACKET.pdf`.
+    - Done: brand, pack, 3D finals, S01, F06C 07–08, 8 ad animatics.
+    - Not finished (stopped at 97 % of the weekly limit): the films F06A, F06B, F06C 09.05 and F15; KV-01 1:1 (label check
+      fails at the glass edge); people shots.
+    - **★ A label check needs enough pixels:** small text at the glass edge passes only at 2× render resolution, so
+      verify at 2× and deliver a 2×2 average.
+

@@ -7,15 +7,15 @@ Sistema e livro da marca     ENTREGUE
 Logo, O FOCO, A MARCA        ENTREGUE
 Cartazes (12)                ENTREGUE
 Rótulos-mestre               ENTREGUE
-Embalagem e objetos          PARCIAL · falta: L04*.png
-KV-01 e KV-45                PARCIAL · falta: KV-01_9x16*.png, KV-01_4x5*.png, KV-01_1x1*.png, KV-01_16x9*.png
-Série C (C01–C10)            PARCIAL · falta: C01_*.png, C02_*.png, C04_*.png, C05_*.png, C06_*.png, C08_*.png, C10_*.png
+Embalagem e objetos          ENTREGUE
+KV-01 e KV-45                ENTREGUE
+Série C (C01–C10)            PARCIAL · falta: C10_*.png
 BOLETIM (B01–B08)            ENTREGUE
 D01, D02, figurinhas, S01    ENTREGUE
-Loja (L01–L07)               AUSENTE
+Loja (L01–L07)               ENTREGUE
 Filmes                       PARCIAL · falta: *F15*_som.mp4, *F06A*_som.mp4, *F06B*_som.mp4
 Som                          ENTREGUE
-O ANÚNCIO (animatics)        AUSENTE
+O ANÚNCIO (animatics)        ENTREGUE
 Arquivos de máquina          ENTREGUE
 Relatórios de fidelidade     ENTREGUE
 

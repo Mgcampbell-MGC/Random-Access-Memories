@@ -5,7 +5,7 @@ Sem rótulo de IA nos anúncios (decisão da fundadora, 6 out 2026).
 Datas: os atos são os da plataforma (§E). Fixadas por ela: C07 (06.05), BOLETIM (02–09.05, 06:03), F06C (07, 08 e 09.05) e C08 (10.05). As outras datas são sugestão dentro do ato.
 
 C01 · O MURO · 19.04 · ato 1 O MURO
-ARQUIVO: AUSENTE
+ARQUIVO: 03_LANCAMENTO/C/C01_O-MURO.png
 LEGENDA:
 MÃE AO VIVO. 09.05. INGRESSOS COM VOCÊ.
 A TURNÊ: quatro velas aromáticas, quatro faixas do show dela.
@@ -28,7 +28,7 @@ holofote nela.
 TEXTO ALTERNATIVO: Cartaz lambe-lambe rosa escrito DONA CIDA AO VIVO, com seis momentos da turnê dela, e a chamada faz o cartaz dela.
 
 C02 · A PRIMEIRA FILA (a emocional) · 01.05 · ato 2 O PALCO
-ARQUIVO: AUSENTE
+ARQUIVO: 03_LANCAMENTO/C/C02_A-PRIMEIRA-FILA.png
 LEGENDA:
 A vida toda guardando lugar na primeira fila.
 Esse ano, o palco é dela.
@@ -46,7 +46,7 @@ Nunca deixe a vela acesa sem supervisão.
 TEXTO ALTERNATIVO: Cartaz amarelo com letras pretas grandes: ELA APLAUDIU DE PÉ O SEU PIOR SHOW., com a anotação à mão (girassol, 2007); embaixo, um círculo com a vela acesa e os textos Sua vez., holofote nela. e nunca deixe a vela acesa sem supervisão.
 
 C04 · A DISCOGRAFIA · 03.05 · ato 2 O PALCO
-ARQUIVO: AUSENTE
+ARQUIVO: 03_LANCAMENTO/C/C04_A-DISCOGRAFIA.png
 LEGENDA:
 A discografia dela. (até agora.)
 1. camarim · 2. ao vivo · 3. mais um! · 4. acústico
@@ -55,7 +55,7 @@ Nunca deixe a vela acesa sem supervisão.
 TEXTO ALTERNATIVO: Quatro velas acesas em fila num palco preto, cada uma sob seu próprio foco de luz branca; uma setlist colada no chão à frente.
 
 C05 · O CASE · 04.05 · ato 2 O PALCO
-ARQUIVO: AUSENTE
+ARQUIVO: 03_LANCAMENTO/C/C05_O-CASE_1x1.png | 03_LANCAMENTO/C/C05_O-CASE_9x16.png
 LEGENDA:
 Mãe não tem camarim. Agora tem.
 O CASE · com o nome dela · R$179
@@ -63,7 +63,7 @@ holofote nela.
 TEXTO ALTERNATIVO: Case de turnê preto aberto, visto de cima, com espelho na tampa, a vela tampada na espuma, a setlist e uma pulseira de tecido preta com letras amarelas.
 
 C06 · O MENOR HOLOFOTE · 05.05 · ato 2 O PALCO
-ARQUIVO: AUSENTE
+ARQUIVO: 03_LANCAMENTO/C/C06_O-MENOR-HOLOFOTE.png | 02_PRODUTO/renders/C06_O-MENOR-HOLOFOTE_neutra.png
 LEGENDA:
 O menor holofote do Brasil.
 Pra maior atração.
@@ -88,7 +88,7 @@ holofote nela.
 TEXTO ALTERNATIVO: Vídeo: num papel creme, alguém digita “mãe, você foi a melhor plateia d…”, para, apaga letra por letra e digita “domingo tô aí.”; no fim, holofote nela.
 
 C08 · NOVA TEMPORADA · 10.05 · ato 3 O BIS
-ARQUIVO: AUSENTE
+ARQUIVO: 03_LANCAMENTO/C/C08_NOVA-TEMPORADA.png
 LEGENDA:
 O copo fica. A turnê continua.
 refil 200 g · R$79
