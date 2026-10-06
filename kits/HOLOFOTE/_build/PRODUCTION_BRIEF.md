@@ -142,12 +142,13 @@ glyphs (HarfBuzz returned .notdef for every letter). Licences: OFL (copies in `f
      16–32 px), on a centred 1200 × 1200 square, area centroid on the centre, ink within 84 % of the radius (no clip in
      a circular avatar). Constants: `FOCO` in _build/logo.py = `HF.FOCO` in holofote.js. The wristband is unchanged.
   3. **The Locutor is CAPITALS everywhere except the lockup *holofote nela.*** — *SUA VEZ.* (C03, LIVRO-02, LIVRO-04);
-     LIVRO-02's product truth now reads *O MENOR HOLOFOTE DO BRASIL. / PRA MAIOR ATRAÇÃO.*
+     LIVRO-02's product truth now reads *O MENOR HOLOFOTE DO BRASIL. / PRA MAIOR ATRAÇÃO.*; LIVRO-13's wristband seal
+     reads *PODE / RASGAR.* as on the pack master (_build/pack/pulseira.py).
   4. **CARTAZ-12 (C01):** *AO VIVO.* in SG 700, wdth solved (cap 112 u, as on the other eleven); *09.05.* in Expanded One
      as on 05/06; *INGRESSOS COM* fills the measure by wdth and ***você.*** is the Fã at the glass's x-height, the
      smallest word. Same words.
-  5. **Tears:** every edge tear on a clean poster stays ≥ 40 px from any glyph (`folga_tinta=40`; old layers 09–11 tear
-     free); every tear shows a 6–12 px fibrous paper-core band, anti-aliased, no stair-steps (`lambe.fibra_borda`).
+  5. **Tears:** every edge tear on a clean poster stays ≥ 40 px from any glyph (`folga_tinta=40`, exact Euclidean
+     distance; measured 43,7–150 px on 01–08 and 12; old layers 09–11 tear free); every tear shows a 6–12 px fibrous paper-core band, anti-aliased, no stair-steps (`lambe.fibra_borda`).
   6. **Dot leaders: minimum 5 dots** (`HF.pontilhada`); the poster tour list is set at tracking 0, as on the glass back,
      so the retail ESTREIA line carries 6.
   7. **C03/C07 thumbnails get a 6 px preto keyline**, drawn after the render is composited (which stays after O LAMBE).
@@ -160,7 +161,7 @@ glyphs (HarfBuzz returned .notdef for every letter). Licences: OFL (copies in `f
   10. **D02 at 94 %** (measure 752), centred: the torn assembly sits in x 164–934, y 84–1266 (4:5 box x 140–940,
       y 64–1286). The tear follows the perforation (half-holes) with a 4–8 px fibrous core on both edges.
   11. **BOLETIM signature row 16 px higher** (pilha box ends at y1 − 16), and the 8 px baseline grid no longer
-      accumulates rounding from line to line (`pilha.js`): bottom ink ≤ 994 (1:1) and ≤ 1489 (9:16).
+      accumulates rounding from line to line (`pilha.js`): bottom ink ≤ 994 (1:1) and ≤ 1490 (9:16), measured on the delivered PNGs.
   12. **C09:** *faz o cartaz dela.* is the Fã's annotation with an arrow to DONA CIDA (between the header and the
       name); the URL is small Produção filled to the measure by a rule; the tour list is at the glass proportion (cap
       24, pitch 44) and the spare height is split over three equal gaps (no dead band). ⚠ C09 now carries two Shantell
@@ -180,3 +181,5 @@ glyphs (HarfBuzz returned .notdef for every letter). Licences: OFL (copies in `f
   blue root, more sway, and a 1,4 W flame light (was 0,25 W). The lit wood wick is charred over its exposed length.
   Glass roughness 0,06 (pinpoint lip glints read as embers). Tape gain 0,58 and lacquer roughness 0,32 (cup and X
   merged; the floor mirrored the coat as olive).
+- **C09, director 6 Oct:** two Shantell marks are accepted on C09 — *abertura: você* belongs to the poster generator's
+  own output (the sample poster), and the CTA *faz o cartaz dela.* is the layout's one Fã annotation.

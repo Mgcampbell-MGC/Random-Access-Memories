@@ -490,7 +490,7 @@ class Stream:
         vf = 'scale=in_color_matrix=bt709:in_range=tv:out_range=pc,format=rgb24'
         if start:
             vf = "select='gte(n,%d)'," % start + vf
-        self.p = subprocess.Popen([ffmpeg(), '-loglevel', 'error', '-i', mp4, '-vf', vf, '-vsync', '0', '-f', 'rawvideo',
+        self.p = subprocess.Popen([ffmpeg(), '-loglevel', 'fatal', '-i', mp4, '-vf', vf, '-vsync', '0', '-f', 'rawvideo',
                                    '-'], stdout=subprocess.PIPE)
         self.n = W * H * 3
 

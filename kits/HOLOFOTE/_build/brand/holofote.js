@@ -193,6 +193,7 @@
     const ini = (a ? a.inkX1 : x0 - folga) + folga, fim = b.inkX0 - folga;
     const n = Math.max(0, Math.floor((fim - ini - dotW) / passo) + 1);
     if (n < minP) (window.HF_QA = window.HF_QA || []).push({ item: 'pontilhada: só ' + n + ' pontos em ' + (a ? a.s.t : b.s.t), erro: minP - n });
+    (window.HF_PONTOS = window.HF_PONTOS || []).push({ linha: (a ? a.s.t : '') + ' … ' + b.s.t, pontos: n });
     const pontos = [];
     if (n >= 2) {
       const p = (fim - ini - dotW) / (n - 1);
