@@ -171,3 +171,12 @@ glyphs (HarfBuzz returned .notdef for every letter). Licences: OFL (copies in `f
   15. **O LAMBE:** wrinkle field at ~50 % scale (bubbles D/18, soft-edged; waves D/8) plus 3–5 directional creases;
       the 160 × 3 px "wood grain" in black ink is gone (it read as scanner lines); the black plate gets a 1–2 px
       misregistration ghost at 13 %. Re-run order: cartazes.py → lancamento.py → livro.py.
+- **UNVERIFIED regulation, 6 Oct 2026:** "RDC Anvisa nº 1.029/2026" (platform §B: *no lilial*; §C.8: allergen line)
+  could not be found (web search). It is no longer printed on any pack: the allergen line reads *(Alérgenos da
+  fragrância declarados na composição acima.)*. Before any real production, confirm with a regulatory consultant
+  which Anvisa rule governs a candle sold as *odorizante de ambiente* (a saneante, not a cosmetic).
+- **Hero 3D after the CCO review, 6 Oct 2026 (director):** the flame was a dim translucent sprite; it is now a defined
+  luminous envelope with an art-directed colour ramp (deep orange edge → candle yellow → warm-white core), a visible
+  blue root, more sway, and a 1,4 W flame light (was 0,25 W). The lit wood wick is charred over its exposed length.
+  Glass roughness 0,06 (pinpoint lip glints read as embers). Tape gain 0,58 and lacquer roughness 0,32 (cup and X
+  merged; the floor mirrored the coat as olive).

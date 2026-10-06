@@ -194,7 +194,7 @@
       if (it.passo && ant && ant.passoLista) base = ant.baseline + it.passo;      // lista de passo fixo: passo exato
       else if (grade && it.tipo !== 'bloco' && it.tipo !== 'espaco') {
         base = Math.round(bruto / grade) * grade;
-        if (it === ultimo && base + it.bot > cx.y1 + 0.5) base = Math.floor((cx.y1 - it.bot) / grade) * grade;
+        if (it === ultimo && base + it.bot > cx.y1 + 2) base = Math.floor((cx.y1 - it.bot + 2) / grade) * grade;   // 2 px: o overshoot do O
       }
       it.passoLista = !!(it.passo || (itens[i + 1] && itens[i + 1].passo));
       it.baseline = base;

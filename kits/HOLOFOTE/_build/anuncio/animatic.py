@@ -501,6 +501,8 @@ class Stream:
         return np.frombuffer(b, np.uint8).reshape(H, W, 3)
 
     def close(self):
+        if self.p.poll() is None:          # stopped reading early: end the decoder quietly (no broken-pipe noise)
+            self.p.terminate()
         self.p.stdout.close()
         self.p.wait()
 

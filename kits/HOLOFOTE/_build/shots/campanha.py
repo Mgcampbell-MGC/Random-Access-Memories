@@ -497,10 +497,16 @@ def b_c08():
 C10_COPOS = [('02', 'CASE-02_MAE-CORACAO'), ('01', 'CASE-01_DONA-CIDA'), ('03', 'CASE-03_MAINHA')]
 
 
-def b_c10():
-    h = S.muro(n=3, spacing=0.11, posters=False)
+def b_c10(d=0.90, spacing=0.092):
+    """C10 on bare plaster. The sets preset (85 mm at 1,12 m) puts the glasses at 20,5 % of the frame height, where the
+    label check could not catch its own planted error on MÃE ♥ (small type at ~3 px/mm). 0,90 m and a 92 mm pitch
+    bring each glass to ~25 % (the KV-01 4:5 scale that verifies) and the names read bigger."""
+    h = S.muro(n=3, spacing=spacing, posters=False)
     roots = [H.copo(dict(faixa=f, wrap=S.wrap(personal=p)), at=h['slots'][i], rot_deg=0) for i, (f, p) in enumerate(C10_COPOS)]
-    S.muro_camera(h, 'C10', res=(1080, 1350))
+    res = (1080, 1350)
+    cam = S.camera_pin((0.0, -d, h['ledge_z'] + 0.10), 0.0, 0.0, 85, res, (0.0, -0.06, h['ledge_z'] + 0.044),
+                       (540, 870), fstop=8.0, focus=d - 0.06)
+    h['flash'] = S.flash(cam, target_dist=d)
     S.clearance()
     return dict(labels=[lab(r, f, S.wrap(personal=p), p) for r, (f, p) in zip(roots, C10_COPOS)])
 
@@ -693,7 +699,7 @@ def shots():
     T['C06'] = dict(nome='C06_O-MENOR-HOLOFOTE_limpo', b=b_c06, res=(1080, 1350), s=64)
     T['C06_neutra'] = dict(nome='C06_O-MENOR-HOLOFOTE_neutra', b=lambda: b_c06(lit=False, neutra=True), res=(1080, 1350), s=24)
     T['C08'] = dict(nome='C08_NOVA-TEMPORADA_limpo', b=b_c08, res=(1080, 1350), s=64)
-    T['C10'] = dict(nome='C10_SALVA-COMO_limpo', b=b_c10, res=(1080, 1350), s=64)
+    T['C10'] = dict(nome='C10_SALVA-COMO_limpo', b=b_c10, res=(1080, 1350), s=96)
     for k, b, n in (('L00', b_l00, 'L00_FRENTE'), ('L01', b_l01, 'L01_FRENTE'), ('L02', b_l02, 'L02_VERSO'), ('L03', b_l03, 'L03_A-BASE'),
                     ('L04', b_l04, 'L04_O-CASE-ABERTO'), ('L05', b_l05, 'L05_A-TAMPA-PALCO'), ('L06', b_l06, 'L06_A-TURNE'),
                     ('L07', b_l07, 'L07_NOVA-TEMPORADA')):

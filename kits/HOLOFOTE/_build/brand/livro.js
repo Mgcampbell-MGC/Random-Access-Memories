@@ -547,9 +547,17 @@
     const n = Math.max(1, Math.floor((d1 - d0 - 48) / m.adv)); m.el.remove();
     T({ t: Array(n).fill(un).join(' '), f: 'C', cap: 22, lsEm: 0.12, cor: 'amarelo', tnum: true }, 24, 43, 'left', banda);
     caixa(d0 + (d1 - d0) * 0.62, yb - 18, 168, 100, { background: HF.cor.amarelo, transform: 'rotate(-3deg)' });
-    const sel = cheia({ t: 'pode rasgar.', f: 'X', cap: 22, lsEm: -0.01, cor: 'preto' }, 0, 132, 0);
-    sel.el.style.transform = 'rotate(-3deg)'; HF.posicionar(sel, d0 + (d1 - d0) * 0.62 + 18, yb + 42, 'left');
-    leg('A PULSEIRA', 'TRAMA REPETIDA · NUNCA CORTA PALAVRA · O SELO DE PAPEL: pode rasgar.', d0, d1, 840);
+    // o selo como no mestre da embalagem (_build/pack/pulseira.py): "PODE / RASGAR." no Locutor em CAIXA ALTA, duas
+    // linhas alinhadas à esquerda, a mais longa enchendo a medida (revisão do CCO, 6 out 2026: o Locutor só fica em caixa
+    // baixa na assinatura)
+    const sx = d0 + (d1 - d0) * 0.62 + 20;
+    const s2 = cheia({ t: 'RASGAR.', f: 'X', cap: 22, lsEm: -0.01, cor: 'preto' }, 0, 128, 0);
+    const s1 = T({ t: 'PODE', f: 'X', cap: 22, lsEm: -0.01, cor: 'preto' }, 0, 0);
+    HF.mudar(s1, { fs: s2.s.fs });
+    const cs = HF.capPx(s2.s), b1s = yb + 32 - cs * 0.35, b2s = b1s + cs * 1.45;
+    HF.posicionar(s1, sx, b1s, 'left'); HF.posicionar(s2, sx, b2s, 'left');
+    [s1, s2].forEach((o) => { o.el.style.transformOrigin = `${sx - parseFloat(o.el.style.left)}px 0`; o.el.style.transform = 'rotate(-3deg)'; });
+    leg('A PULSEIRA', 'TRAMA REPETIDA · NUNCA CORTA PALAVRA · O SELO DE PAPEL: PODE RASGAR.', d0, d1, 840);
     // A SETLIST
     const [e0, e1] = col(6, 11);
     caixa(e0, yb - 24, e1 - e0, 296, { background: HF.cor.papel, boxShadow: `inset 0 0 0 1.5px ${HF.cor.preto}` });

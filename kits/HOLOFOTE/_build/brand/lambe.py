@@ -238,6 +238,8 @@ def borda_rasgada(H, W, r, rasgo=0.3, evitar=None, folga=0.0, canto=None):
     corte = np.clip(d + tremor, 0, 1)
     dpap = np.full((H, W), 1e4, np.float32)
     info = []
+    # distância euclidiana exata até a tinta: dl (radial) superestima a distância onde a borda é oblíqua ao raio
+    dtinta = cv2.distanceTransform((~evitar).astype(np.uint8), cv2.DIST_L2, cv2.DIST_MASK_PRECISE) if evitar is not None else None
 
     def tenta(cx, cy, raio, rr_):
         """Aceita o rasgo se a tinta toda ficar a ≥ folga px da borda arrancada; senão encolhe."""
@@ -246,10 +248,10 @@ def borda_rasgada(H, W, r, rasgo=0.3, evitar=None, folga=0.0, canto=None):
             dl, jan = _rasgo_dist(H, W, cx, cy, raio * k, rr_)
             if dl is None:
                 return False
-            if evitar is not None:
+            if dtinta is not None:
                 y0, y1, x0, x1 = jan
-                tinta = evitar[y0:y1, x0:x1]
-                if tinta.any() and dl[tinta].min() < folga:
+                sai = dl < 0.5                                   # o papel que o rasgo arranca
+                if sai.any() and dtinta[y0:y1, x0:x1][sai].min() < folga:
                     rr_.bit_generator.state = st
                     continue
             y0, y1, x0, x1 = jan

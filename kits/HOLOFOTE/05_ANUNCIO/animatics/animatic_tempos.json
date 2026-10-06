@@ -1,0 +1,1307 @@
+{
+ "1A": {
+  "chaves": {
+   "kv_aceso_quadro": 216,
+   "clac_medido_s": 9.0,
+   "palmas_ou_caixa_quadros": [
+    151,
+    167,
+    184,
+    200
+   ],
+   "legenda_kv_s": "sem legenda: a fala é o título ou a assinatura já na tela (diretor, 6 out 2026)",
+   "abertura_s": null,
+   "placas": {
+    "fala": "SIT_H01",
+    "gesto": "CLAP_H01"
+   },
+   "arquivos": [
+    "05_ANUNCIO/animatics/HLF-AD-1A_O-PIOR-SHOW_animatic_som.mp4",
+    "05_ANUNCIO/animatics/HLF-AD-1A_O-PIOR-SHOW_animatic_mudo.mp4"
+   ]
+  },
+  "vo": {
+   "gancho": {
+    "inicio_audio_s": 0.1,
+    "fala_s": [
+     0.14,
+     1.83
+    ],
+    "arquivo_s": 1.835,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     0.0,
+     2.0
+    ]
+   },
+   "corpo": {
+    "inicio_audio_s": 2.05,
+    "fala_s": [
+     2.08,
+     5.08
+    ],
+    "arquivo_s": 3.179,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     2.0,
+     6.0
+    ]
+   },
+   "kv_vo": {
+    "inicio_audio_s": 9.25,
+    "fala_s": [
+     9.31,
+     9.85
+    ],
+    "arquivo_s": 0.725,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     9.0,
+     15.0
+    ]
+   }
+  },
+  "legendas": {
+   "gancho": [
+    {
+     "linhas": [
+      "Pior show que ela",
+      "já viu: você."
+     ],
+     "t0": 0.14,
+     "t1": 1.83,
+     "cps_fala": 17.8,
+     "cps_leitura": 15.5
+    }
+   ],
+   "corpo": [
+    {
+     "linhas": [
+      "Esqueceu a coreografia,",
+      "chorou, acenou pra mãe errada."
+     ],
+     "t0": 2.08,
+     "t1": 5.08,
+     "cps_fala": 17.7,
+     "cps_leitura": 13.5
+    }
+   ],
+   "kv_vo": [
+    {
+     "linhas": [
+      "Sua vez."
+     ],
+     "t0": 9.31,
+     "t1": 9.85,
+     "cps_fala": 14.8,
+     "cps_leitura": 5.3
+    }
+   ]
+  },
+  "som": {
+   "lufs_i": -14.05,
+   "true_peak_dbtp": -1.75,
+   "cues": [
+    {
+     "label": "tom de sala (auditório) 0–9 s",
+     "arquivo": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+     "inicio_s": 0.0,
+     "quadro": 0.0,
+     "sync": "start"
+    },
+    {
+     "label": "VO gancho",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/1A_gancho.wav",
+     "inicio_s": 0.1,
+     "quadro": 2.4,
+     "sync": "start"
+    },
+    {
+     "label": "VO corpo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/1A_corpo.wav",
+     "inicio_s": 2.05,
+     "quadro": 49.2,
+     "sync": "start"
+    },
+    {
+     "label": "VO kv_vo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/1A_kv_vo.wav",
+     "inicio_s": 9.25,
+     "quadro": 222.0,
+     "sync": "start"
+    },
+    {
+     "label": "quatro palmas no auditório (1ª em f151)",
+     "arquivo": "sfx/HLF-SFX-06f_palmas_quatro_auditorio.wav",
+     "inicio_s": 6.2917,
+     "quadro": 151.0,
+     "sync": "onset",
+     "onset_medido_na_mix_s": 6.2917,
+     "desvio_quadros": 0.0
+    },
+    {
+     "label": "cama KV 9–15 s (equipe de som), abaixada 8 dB sob a VO",
+     "arquivo": "filmes/HLF-AD_KV_9a15s_ads1e3_som.wav",
+     "inicio_s": 9.0,
+     "quadro": 216.0,
+     "sync": "start"
+    }
+   ]
+  }
+ },
+ "1B": {
+  "chaves": {
+   "kv_aceso_quadro": 216,
+   "clac_medido_s": 9.0,
+   "palmas_ou_caixa_quadros": [
+    151,
+    167,
+    184,
+    200
+   ],
+   "legenda_kv_s": "sem legenda: a fala é o título ou a assinatura já na tela (diretor, 6 out 2026)",
+   "abertura_s": null,
+   "placas": {
+    "fala": "SIT_H01",
+    "gesto": "CLAP_H01"
+   },
+   "arquivos": [
+    "05_ANUNCIO/animatics/HLF-AD-1B_O-PIOR-SHOW_animatic_som.mp4",
+    "05_ANUNCIO/animatics/HLF-AD-1B_O-PIOR-SHOW_animatic_mudo.mp4"
+   ]
+  },
+  "vo": {
+   "gancho": {
+    "inicio_audio_s": 0.1,
+    "fala_s": [
+     0.15,
+     1.77
+    ],
+    "arquivo_s": 1.792,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     0.0,
+     2.0
+    ]
+   },
+   "corpo": {
+    "inicio_audio_s": 2.05,
+    "fala_s": [
+     2.08,
+     5.03
+    ],
+    "arquivo_s": 3.115,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     2.0,
+     6.0
+    ]
+   },
+   "kv_vo": {
+    "inicio_audio_s": 9.25,
+    "fala_s": [
+     9.31,
+     9.85
+    ],
+    "arquivo_s": 0.725,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     9.0,
+     15.0
+    ]
+   }
+  },
+  "legendas": {
+   "gancho": [
+    {
+     "linhas": [
+      "Prezinho."
+     ],
+     "t0": 0.15,
+     "t1": 0.618,
+     "cps_fala": 19.2,
+     "cps_leitura": 19.2
+    },
+    {
+     "linhas": [
+      "Você era um girassol."
+     ],
+     "t0": 0.618,
+     "t1": 1.77,
+     "cps_fala": 18.2,
+     "cps_leitura": 14.4
+    }
+   ],
+   "corpo": [
+    {
+     "linhas": [
+      "Esqueceu a coreografia."
+     ],
+     "t0": 2.08,
+     "t1": 3.31,
+     "cps_fala": 18.7,
+     "cps_leitura": 16.9
+    },
+    {
+     "linhas": [
+      "Chorou."
+     ],
+     "t0": 3.44,
+     "t1": 3.847,
+     "cps_fala": 17.2,
+     "cps_leitura": 17.2
+    },
+    {
+     "linhas": [
+      "Acenou pra mãe errada."
+     ],
+     "t0": 3.847,
+     "t1": 5.03,
+     "cps_fala": 18.6,
+     "cps_leitura": 10.2
+    }
+   ],
+   "kv_vo": [
+    {
+     "linhas": [
+      "Sua vez."
+     ],
+     "t0": 9.31,
+     "t1": 9.85,
+     "cps_fala": 14.8,
+     "cps_leitura": 5.3
+    }
+   ]
+  },
+  "som": {
+   "lufs_i": -14.05,
+   "true_peak_dbtp": -1.75,
+   "cues": [
+    {
+     "label": "tom de sala (auditório) 0–9 s",
+     "arquivo": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+     "inicio_s": 0.0,
+     "quadro": 0.0,
+     "sync": "start"
+    },
+    {
+     "label": "VO gancho",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/1B_gancho.wav",
+     "inicio_s": 0.1,
+     "quadro": 2.4,
+     "sync": "start"
+    },
+    {
+     "label": "VO corpo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/1B_corpo.wav",
+     "inicio_s": 2.05,
+     "quadro": 49.2,
+     "sync": "start"
+    },
+    {
+     "label": "VO kv_vo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/1B_kv_vo.wav",
+     "inicio_s": 9.25,
+     "quadro": 222.0,
+     "sync": "start"
+    },
+    {
+     "label": "quatro palmas no auditório (1ª em f151)",
+     "arquivo": "sfx/HLF-SFX-06f_palmas_quatro_auditorio.wav",
+     "inicio_s": 6.2917,
+     "quadro": 151.0,
+     "sync": "onset",
+     "onset_medido_na_mix_s": 6.2917,
+     "desvio_quadros": 0.0
+    },
+    {
+     "label": "cama KV 9–15 s (equipe de som), abaixada 8 dB sob a VO",
+     "arquivo": "filmes/HLF-AD_KV_9a15s_ads1e3_som.wav",
+     "inicio_s": 9.0,
+     "quadro": 216.0,
+     "sync": "start"
+    }
+   ]
+  }
+ },
+ "1C": {
+  "chaves": {
+   "kv_aceso_quadro": 216,
+   "clac_medido_s": 9.0,
+   "palmas_ou_caixa_quadros": [
+    151,
+    167,
+    184,
+    200
+   ],
+   "legenda_kv_s": "sem legenda: a fala é o título ou a assinatura já na tela (diretor, 6 out 2026)",
+   "abertura_s": null,
+   "placas": {
+    "fala": "SIT_H02",
+    "gesto": "CLAP_H02"
+   },
+   "arquivos": [
+    "05_ANUNCIO/animatics/HLF-AD-1C_O-PIOR-SHOW_animatic_som.mp4",
+    "05_ANUNCIO/animatics/HLF-AD-1C_O-PIOR-SHOW_animatic_mudo.mp4"
+   ]
+  },
+  "vo": {
+   "gancho": {
+    "inicio_audio_s": 0.1,
+    "fala_s": [
+     0.14,
+     1.78
+    ],
+    "arquivo_s": 1.813,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     0.0,
+     2.0
+    ]
+   },
+   "corpo": {
+    "inicio_audio_s": 2.05,
+    "fala_s": [
+     2.08,
+     4.33
+    ],
+    "arquivo_s": 2.453,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     2.0,
+     6.0
+    ]
+   },
+   "kv_vo": {
+    "inicio_audio_s": 9.25,
+    "fala_s": [
+     9.29,
+     9.92
+    ],
+    "arquivo_s": 0.747,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     9.0,
+     15.0
+    ]
+   }
+  },
+  "legendas": {
+   "gancho": [
+    {
+     "linhas": [
+      "Prezinho."
+     ],
+     "t0": 0.14,
+     "t1": 0.653,
+     "cps_fala": 17.5,
+     "cps_leitura": 17.5
+    },
+    {
+     "linhas": [
+      "Você, de abelhinha."
+     ],
+     "t0": 0.653,
+     "t1": 1.78,
+     "cps_fala": 16.9,
+     "cps_leitura": 13.3
+    }
+   ],
+   "corpo": [
+    {
+     "linhas": [
+      "Errou o passo."
+     ],
+     "t0": 2.08,
+     "t1": 2.791,
+     "cps_fala": 19.7,
+     "cps_leitura": 19.7
+    },
+    {
+     "linhas": [
+      "Chorou."
+     ],
+     "t0": 2.791,
+     "t1": 3.159,
+     "cps_fala": 19.0,
+     "cps_leitura": 19.0
+    },
+    {
+     "linhas": [
+      "Acenou pra mãe errada."
+     ],
+     "t0": 3.159,
+     "t1": 4.33,
+     "cps_fala": 18.8,
+     "cps_leitura": 7.7
+    }
+   ],
+   "kv_vo": [
+    {
+     "linhas": [
+      "Sua vez."
+     ],
+     "t0": 9.29,
+     "t1": 9.92,
+     "cps_fala": 12.7,
+     "cps_leitura": 5.3
+    }
+   ]
+  },
+  "som": {
+   "lufs_i": -14.0,
+   "true_peak_dbtp": -1.63,
+   "cues": [
+    {
+     "label": "tom de sala (auditório) 0–9 s",
+     "arquivo": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+     "inicio_s": 0.0,
+     "quadro": 0.0,
+     "sync": "start"
+    },
+    {
+     "label": "VO gancho",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/1C_gancho.wav",
+     "inicio_s": 0.1,
+     "quadro": 2.4,
+     "sync": "start"
+    },
+    {
+     "label": "VO corpo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/1C_corpo.wav",
+     "inicio_s": 2.05,
+     "quadro": 49.2,
+     "sync": "start"
+    },
+    {
+     "label": "VO kv_vo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/1C_kv_vo.wav",
+     "inicio_s": 9.25,
+     "quadro": 222.0,
+     "sync": "start"
+    },
+    {
+     "label": "quatro palmas no auditório (1ª em f151)",
+     "arquivo": "sfx/HLF-SFX-06f_palmas_quatro_auditorio.wav",
+     "inicio_s": 6.2917,
+     "quadro": 151.0,
+     "sync": "onset",
+     "onset_medido_na_mix_s": 6.2917,
+     "desvio_quadros": 0.0
+    },
+    {
+     "label": "cama KV 9–15 s (equipe de som), abaixada 8 dB sob a VO",
+     "arquivo": "filmes/HLF-AD_KV_9a15s_ads1e3_som.wav",
+     "inicio_s": 9.0,
+     "quadro": 216.0,
+     "sync": "start"
+    }
+   ]
+  }
+ },
+ "2A": {
+  "chaves": {
+   "kv_aceso_quadro": 220,
+   "clac_medido_s": 9.1667,
+   "palmas_ou_caixa_quadros": [],
+   "legenda_kv_s": [
+    9.28,
+    11.08
+   ],
+   "abertura_s": 5.409,
+   "placas": {
+    "fala": "USHER_H01",
+    "gesto": "PHONE_H01"
+   },
+   "arquivos": [
+    "05_ANUNCIO/animatics/HLF-AD-2A_PRIMEIRO-SINAL_animatic_som.mp4",
+    "05_ANUNCIO/animatics/HLF-AD-2A_PRIMEIRO-SINAL_animatic_mudo.mp4"
+   ]
+  },
+  "vo": {
+   "gancho": {
+    "inicio_audio_s": 0.1,
+    "fala_s": [
+     0.14,
+     1.11
+    ],
+    "arquivo_s": 1.088,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     0.0,
+     2.0
+    ]
+   },
+   "corpo": {
+    "inicio_audio_s": 2.05,
+    "fala_s": [
+     2.09,
+     5.72
+    ],
+    "arquivo_s": 3.797,
+    "velocidade_tts": 1.023,
+    "janela_s": [
+     2.0,
+     6.0
+    ]
+   },
+   "kv_vo": {
+    "inicio_audio_s": 9.25,
+    "fala_s": [
+     9.28,
+     10.33
+    ],
+    "arquivo_s": 1.152,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     9.0,
+     15.0
+    ]
+   }
+  },
+  "legendas": {
+   "gancho": [
+    {
+     "linhas": [
+      "Primeiro sinal."
+     ],
+     "t0": 0.14,
+     "t1": 1.11,
+     "cps_fala": 15.5,
+     "cps_leitura": 7.7
+    }
+   ],
+   "corpo": [
+    {
+     "linhas": [
+      "Domingo, nove de maio."
+     ],
+     "t0": 2.09,
+     "t1": 3.24,
+     "cps_fala": 19.1,
+     "cps_leitura": 15.9
+    },
+    {
+     "linhas": [
+      "Atração principal: ela."
+     ],
+     "t0": 3.47,
+     "t1": 4.98,
+     "cps_fala": 15.2,
+     "cps_leitura": 14.4
+    },
+    {
+     "linhas": [
+      "Abertura: você."
+     ],
+     "t0": 5.07,
+     "t1": 5.72,
+     "cps_fala": 23.1,
+     "cps_leitura": 16.1
+    }
+   ],
+   "kv_vo": [
+    {
+     "linhas": [
+      "Terceiro sinal."
+     ],
+     "t0": 9.28,
+     "t1": 10.33,
+     "cps_fala": 14.3,
+     "cps_leitura": 8.3
+    }
+   ]
+  },
+  "som": {
+   "lufs_i": -14.05,
+   "true_peak_dbtp": -1.75,
+   "cues": [
+    {
+     "label": "tom de sala (auditório) 0–9 s",
+     "arquivo": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+     "inicio_s": 0.0,
+     "quadro": 0.0,
+     "sync": "start"
+    },
+    {
+     "label": "VO gancho",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/2A_gancho.wav",
+     "inicio_s": 0.1,
+     "quadro": 2.4,
+     "sync": "start"
+    },
+    {
+     "label": "VO corpo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/2A_corpo.wav",
+     "inicio_s": 2.05,
+     "quadro": 49.2,
+     "sync": "start"
+    },
+    {
+     "label": "VO kv_vo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/2A_kv_vo.wav",
+     "inicio_s": 9.25,
+     "quadro": 222.0,
+     "sync": "start"
+    },
+    {
+     "label": "primeiro sinal sob a palavra (f0)",
+     "arquivo": "sfx/HLF-SFX-09_sino_teatro.wav",
+     "inicio_s": 0.0,
+     "quadro": 0.0,
+     "sync": "onset",
+     "onset_medido_na_mix_s": 0.0,
+     "desvio_quadros": 0.0
+    },
+    {
+     "label": "segundo sinal 6,0 s (f144)",
+     "arquivo": "sfx/HLF-SFX-09_sino_teatro.wav",
+     "inicio_s": 6.0,
+     "quadro": 144.0,
+     "sync": "onset",
+     "onset_medido_na_mix_s": 6.0,
+     "desvio_quadros": 0.0
+    },
+    {
+     "label": "cama KV 9–15 s (equipe de som), abaixada 8 dB sob a VO",
+     "arquivo": "filmes/HLF-AD_KV_9a15s_ad2_sino_som.wav",
+     "inicio_s": 9.0,
+     "quadro": 216.0,
+     "sync": "start"
+    }
+   ]
+  }
+ },
+ "2B": {
+  "chaves": {
+   "kv_aceso_quadro": 220,
+   "clac_medido_s": 9.1667,
+   "palmas_ou_caixa_quadros": [],
+   "legenda_kv_s": [
+    9.28,
+    11.08
+   ],
+   "abertura_s": 5.409,
+   "placas": {
+    "fala": "USHER_H01",
+    "gesto": "PHONE_H01"
+   },
+   "arquivos": [
+    "05_ANUNCIO/animatics/HLF-AD-2B_PRIMEIRO-SINAL_animatic_som.mp4",
+    "05_ANUNCIO/animatics/HLF-AD-2B_PRIMEIRO-SINAL_animatic_mudo.mp4"
+   ]
+  },
+  "vo": {
+   "gancho": {
+    "inicio_audio_s": 0.4,
+    "fala_s": [
+     0.45,
+     1.92
+    ],
+    "arquivo_s": 1.621,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     0.0,
+     2.0
+    ]
+   },
+   "corpo": {
+    "inicio_audio_s": 2.05,
+    "fala_s": [
+     2.09,
+     5.72
+    ],
+    "arquivo_s": 3.797,
+    "velocidade_tts": 1.023,
+    "janela_s": [
+     2.0,
+     6.0
+    ]
+   },
+   "kv_vo": {
+    "inicio_audio_s": 9.25,
+    "fala_s": [
+     9.28,
+     10.33
+    ],
+    "arquivo_s": 1.152,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     9.0,
+     15.0
+    ]
+   }
+  },
+  "legendas": {
+   "gancho": [
+    {
+     "linhas": [
+      "Comunicado da produção."
+     ],
+     "t0": 0.45,
+     "t1": 1.92,
+     "cps_fala": 15.6,
+     "cps_leitura": 14.0
+    }
+   ],
+   "corpo": [
+    {
+     "linhas": [
+      "Domingo, nove de maio."
+     ],
+     "t0": 2.09,
+     "t1": 3.24,
+     "cps_fala": 19.1,
+     "cps_leitura": 15.9
+    },
+    {
+     "linhas": [
+      "Atração principal: ela."
+     ],
+     "t0": 3.47,
+     "t1": 4.98,
+     "cps_fala": 15.2,
+     "cps_leitura": 14.4
+    },
+    {
+     "linhas": [
+      "Abertura: você."
+     ],
+     "t0": 5.07,
+     "t1": 5.72,
+     "cps_fala": 23.1,
+     "cps_leitura": 16.1
+    }
+   ],
+   "kv_vo": [
+    {
+     "linhas": [
+      "Terceiro sinal."
+     ],
+     "t0": 9.28,
+     "t1": 10.33,
+     "cps_fala": 14.3,
+     "cps_leitura": 8.3
+    }
+   ]
+  },
+  "som": {
+   "lufs_i": -14.0,
+   "true_peak_dbtp": -1.67,
+   "cues": [
+    {
+     "label": "tom de sala (auditório) 0–9 s",
+     "arquivo": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+     "inicio_s": 0.0,
+     "quadro": 0.0,
+     "sync": "start"
+    },
+    {
+     "label": "VO gancho",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/2B_gancho.wav",
+     "inicio_s": 0.4,
+     "quadro": 9.6,
+     "sync": "start"
+    },
+    {
+     "label": "VO corpo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/2B_corpo.wav",
+     "inicio_s": 2.05,
+     "quadro": 49.2,
+     "sync": "start"
+    },
+    {
+     "label": "VO kv_vo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/2B_kv_vo.wav",
+     "inicio_s": 9.25,
+     "quadro": 222.0,
+     "sync": "start"
+    },
+    {
+     "label": "segundo sinal 6,0 s (f144)",
+     "arquivo": "sfx/HLF-SFX-09_sino_teatro.wav",
+     "inicio_s": 6.0,
+     "quadro": 144.0,
+     "sync": "onset",
+     "onset_medido_na_mix_s": 6.0,
+     "desvio_quadros": 0.0
+    },
+    {
+     "label": "cama KV 9–15 s (equipe de som), abaixada 8 dB sob a VO",
+     "arquivo": "filmes/HLF-AD_KV_9a15s_ad2_sino_som.wav",
+     "inicio_s": 9.0,
+     "quadro": 216.0,
+     "sync": "start"
+    }
+   ]
+  }
+ },
+ "3A": {
+  "chaves": {
+   "kv_aceso_quadro": 216,
+   "clac_medido_s": 9.0,
+   "palmas_ou_caixa_quadros": [
+    180
+   ],
+   "legenda_kv_s": "sem legenda: a fala é o título ou a assinatura já na tela (diretor, 6 out 2026)",
+   "abertura_s": null,
+   "placas": {
+    "fala": "SIT_H01",
+    "gesto": "HEART_H01"
+   },
+   "arquivos": [
+    "05_ANUNCIO/animatics/HLF-AD-3A_FA-DE-CARTEIRINHA_animatic_som.mp4",
+    "05_ANUNCIO/animatics/HLF-AD-3A_FA-DE-CARTEIRINHA_animatic_mudo.mp4"
+   ]
+  },
+  "vo": {
+   "gancho": {
+    "inicio_audio_s": 0.1,
+    "fala_s": [
+     0.14,
+     1.84
+    ],
+    "arquivo_s": 1.813,
+    "velocidade_tts": 1.263,
+    "janela_s": [
+     0.0,
+     2.0
+    ]
+   },
+   "corpo": {
+    "inicio_audio_s": 2.05,
+    "fala_s": [
+     2.08,
+     5.37
+    ],
+    "arquivo_s": 3.456,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     2.0,
+     6.0
+    ]
+   },
+   "kv_vo": {
+    "inicio_audio_s": 9.25,
+    "fala_s": [
+     9.3,
+     10.4
+    ],
+    "arquivo_s": 1.237,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     9.0,
+     15.0
+    ]
+   }
+  },
+  "legendas": {
+   "gancho": [
+    {
+     "linhas": [
+      "Dois dias de fila",
+      "por um ingresso."
+     ],
+     "t0": 0.14,
+     "t1": 1.84,
+     "cps_fala": 19.4,
+     "cps_leitura": 17.0
+    }
+   ],
+   "corpo": [
+    {
+     "linhas": [
+      "Chorou na grade."
+     ],
+     "t0": 2.08,
+     "t1": 3.01,
+     "cps_fala": 17.2,
+     "cps_leitura": 13.9
+    },
+    {
+     "linhas": [
+      "E ela te buscou",
+      "na porta, à uma da manhã."
+     ],
+     "t0": 3.23,
+     "t1": 5.37,
+     "cps_fala": 18.7,
+     "cps_leitura": 14.4
+    }
+   ],
+   "kv_vo": [
+    {
+     "linhas": [
+      "holofote nela."
+     ],
+     "t0": 9.3,
+     "t1": 10.4,
+     "cps_fala": 12.7,
+     "cps_leitura": 7.6
+    }
+   ]
+  },
+  "som": {
+   "lufs_i": -14.05,
+   "true_peak_dbtp": -1.75,
+   "cues": [
+    {
+     "label": "tom de sala (auditório) 0–9 s",
+     "arquivo": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+     "inicio_s": 0.0,
+     "quadro": 0.0,
+     "sync": "start"
+    },
+    {
+     "label": "VO gancho",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/3A_gancho.wav",
+     "inicio_s": 0.1,
+     "quadro": 2.4,
+     "sync": "start"
+    },
+    {
+     "label": "VO corpo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/3A_corpo.wav",
+     "inicio_s": 2.05,
+     "quadro": 49.2,
+     "sync": "start"
+    },
+    {
+     "label": "VO kv_vo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/3A_kv_vo.wav",
+     "inicio_s": 9.25,
+     "quadro": 222.0,
+     "sync": "start"
+    },
+    {
+     "label": "caixa no apontar (f180)",
+     "arquivo": "musica/pecas/HLF-MUS-02_caixa_acento.wav",
+     "inicio_s": 7.5,
+     "quadro": 180.0,
+     "sync": "onset",
+     "onset_medido_na_mix_s": 7.5,
+     "desvio_quadros": 0.0
+    },
+    {
+     "label": "cama KV 9–15 s (equipe de som), abaixada 8 dB sob a VO",
+     "arquivo": "filmes/HLF-AD_KV_9a15s_ads1e3_som.wav",
+     "inicio_s": 9.0,
+     "quadro": 216.0,
+     "sync": "start"
+    }
+   ]
+  }
+ },
+ "3B": {
+  "chaves": {
+   "kv_aceso_quadro": 216,
+   "clac_medido_s": 9.0,
+   "palmas_ou_caixa_quadros": [
+    180
+   ],
+   "legenda_kv_s": "sem legenda: a fala é o título ou a assinatura já na tela (diretor, 6 out 2026)",
+   "abertura_s": null,
+   "placas": {
+    "fala": "SIT_H01",
+    "gesto": "HEART_H01"
+   },
+   "arquivos": [
+    "05_ANUNCIO/animatics/HLF-AD-3B_FA-DE-CARTEIRINHA_animatic_som.mp4",
+    "05_ANUNCIO/animatics/HLF-AD-3B_FA-DE-CARTEIRINHA_animatic_mudo.mp4"
+   ]
+  },
+  "vo": {
+   "gancho": {
+    "inicio_audio_s": 0.1,
+    "fala_s": [
+     0.13,
+     1.85
+    ],
+    "arquivo_s": 1.835,
+    "velocidade_tts": 1.306,
+    "janela_s": [
+     0.0,
+     2.0
+    ]
+   },
+   "corpo": {
+    "inicio_audio_s": 2.05,
+    "fala_s": [
+     2.08,
+     5.05
+    ],
+    "arquivo_s": 3.136,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     2.0,
+     6.0
+    ]
+   },
+   "kv_vo": {
+    "inicio_audio_s": 9.25,
+    "fala_s": [
+     9.3,
+     10.4
+    ],
+    "arquivo_s": 1.237,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     9.0,
+     15.0
+    ]
+   }
+  },
+  "legendas": {
+   "gancho": [
+    {
+     "linhas": [
+      "Você sabe a setlist",
+      "de todo mundo."
+     ],
+     "t0": 0.13,
+     "t1": 1.85,
+     "cps_fala": 19.2,
+     "cps_leitura": 16.9
+    }
+   ],
+   "corpo": [
+    {
+     "linhas": [
+      "Menos a dela."
+     ],
+     "t0": 2.08,
+     "t1": 2.86,
+     "cps_fala": 16.7,
+     "cps_leitura": 13.8
+    },
+    {
+     "linhas": [
+      "Ela tá em turnê desde",
+      "que você nasceu."
+     ],
+     "t0": 3.02,
+     "t1": 5.05,
+     "cps_fala": 18.2,
+     "cps_leitura": 12.4
+    }
+   ],
+   "kv_vo": [
+    {
+     "linhas": [
+      "holofote nela."
+     ],
+     "t0": 9.3,
+     "t1": 10.4,
+     "cps_fala": 12.7,
+     "cps_leitura": 7.6
+    }
+   ]
+  },
+  "som": {
+   "lufs_i": -14.0,
+   "true_peak_dbtp": -1.63,
+   "cues": [
+    {
+     "label": "tom de sala (auditório) 0–9 s",
+     "arquivo": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+     "inicio_s": 0.0,
+     "quadro": 0.0,
+     "sync": "start"
+    },
+    {
+     "label": "VO gancho",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/3B_gancho.wav",
+     "inicio_s": 0.1,
+     "quadro": 2.4,
+     "sync": "start"
+    },
+    {
+     "label": "VO corpo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/3B_corpo.wav",
+     "inicio_s": 2.05,
+     "quadro": 49.2,
+     "sync": "start"
+    },
+    {
+     "label": "VO kv_vo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/3B_kv_vo.wav",
+     "inicio_s": 9.25,
+     "quadro": 222.0,
+     "sync": "start"
+    },
+    {
+     "label": "caixa no apontar (f180)",
+     "arquivo": "musica/pecas/HLF-MUS-02_caixa_acento.wav",
+     "inicio_s": 7.5,
+     "quadro": 180.0,
+     "sync": "onset",
+     "onset_medido_na_mix_s": 7.5,
+     "desvio_quadros": 0.0
+    },
+    {
+     "label": "cama KV 9–15 s (equipe de som), abaixada 8 dB sob a VO",
+     "arquivo": "filmes/HLF-AD_KV_9a15s_ads1e3_som.wav",
+     "inicio_s": 9.0,
+     "quadro": 216.0,
+     "sync": "start"
+    }
+   ]
+  }
+ },
+ "3C": {
+  "chaves": {
+   "kv_aceso_quadro": 216,
+   "clac_medido_s": 9.0,
+   "palmas_ou_caixa_quadros": [
+    180
+   ],
+   "legenda_kv_s": "sem legenda: a fala é o título ou a assinatura já na tela (diretor, 6 out 2026)",
+   "abertura_s": null,
+   "placas": {
+    "fala": "SIT_H02",
+    "gesto": "HEART_H02"
+   },
+   "arquivos": [
+    "05_ANUNCIO/animatics/HLF-AD-3C_FA-DE-CARTEIRINHA_animatic_som.mp4",
+    "05_ANUNCIO/animatics/HLF-AD-3C_FA-DE-CARTEIRINHA_animatic_mudo.mp4"
+   ]
+  },
+  "vo": {
+   "gancho": {
+    "inicio_audio_s": 0.1,
+    "fala_s": [
+     0.15,
+     1.72
+    ],
+    "arquivo_s": 1.813,
+    "velocidade_tts": 1.157,
+    "janela_s": [
+     0.0,
+     2.0
+    ]
+   },
+   "corpo": {
+    "inicio_audio_s": 2.05,
+    "fala_s": [
+     2.08,
+     5.37
+    ],
+    "arquivo_s": 3.499,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     2.0,
+     6.0
+    ]
+   },
+   "kv_vo": {
+    "inicio_audio_s": 9.25,
+    "fala_s": [
+     9.3,
+     10.4
+    ],
+    "arquivo_s": 1.259,
+    "velocidade_tts": 1.0,
+    "janela_s": [
+     9.0,
+     15.0
+    ]
+   }
+  },
+  "legendas": {
+   "gancho": [
+    {
+     "linhas": [
+      "Gritou o nome dele",
+      "o show inteiro."
+     ],
+     "t0": 0.15,
+     "t1": 1.72,
+     "cps_fala": 21.0,
+     "cps_leitura": 17.1
+    }
+   ],
+   "corpo": [
+    {
+     "linhas": [
+      "Ele não sabe o seu."
+     ],
+     "t0": 2.08,
+     "t1": 3.15,
+     "cps_fala": 17.8,
+     "cps_leitura": 14.7
+    },
+    {
+     "linhas": [
+      "Ela escolheu o seu",
+      "antes de você nascer."
+     ],
+     "t0": 3.37,
+     "t1": 5.37,
+     "cps_fala": 19.5,
+     "cps_leitura": 14.8
+    }
+   ],
+   "kv_vo": [
+    {
+     "linhas": [
+      "holofote nela."
+     ],
+     "t0": 9.3,
+     "t1": 10.4,
+     "cps_fala": 12.7,
+     "cps_leitura": 7.6
+    }
+   ]
+  },
+  "som": {
+   "lufs_i": -14.04,
+   "true_peak_dbtp": -1.75,
+   "cues": [
+    {
+     "label": "tom de sala (auditório) 0–9 s",
+     "arquivo": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+     "inicio_s": 0.0,
+     "quadro": 0.0,
+     "sync": "start"
+    },
+    {
+     "label": "VO gancho",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/3C_gancho.wav",
+     "inicio_s": 0.1,
+     "quadro": 2.4,
+     "sync": "start"
+    },
+    {
+     "label": "VO corpo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/3C_corpo.wav",
+     "inicio_s": 2.05,
+     "quadro": 49.2,
+     "sync": "start"
+    },
+    {
+     "label": "VO kv_vo",
+     "arquivo": "../../_build/anuncio/_tmp_animatic/vo/3C_kv_vo.wav",
+     "inicio_s": 9.25,
+     "quadro": 222.0,
+     "sync": "start"
+    },
+    {
+     "label": "caixa no apontar (f180)",
+     "arquivo": "musica/pecas/HLF-MUS-02_caixa_acento.wav",
+     "inicio_s": 7.5,
+     "quadro": 180.0,
+     "sync": "onset",
+     "onset_medido_na_mix_s": 7.5,
+     "desvio_quadros": 0.0
+    },
+    {
+     "label": "cama KV 9–15 s (equipe de som), abaixada 8 dB sob a VO",
+     "arquivo": "filmes/HLF-AD_KV_9a15s_ads1e3_som.wav",
+     "inicio_s": 9.0,
+     "quadro": 216.0,
+     "sync": "start"
+    }
+   ]
+  }
+ }
+}

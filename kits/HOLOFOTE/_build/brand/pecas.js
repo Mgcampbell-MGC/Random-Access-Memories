@@ -79,8 +79,9 @@
     itens.push({ tipo: 'espaco', flex: 1.4 });
     itens.push(HF.assinatura(k.ass, tinta, lampDe(D.cor), 32));
     // a linha da assinatura sobe 16 px (revisão do CCO, 6 out 2026): o wordmark (os O passam da linha de base) e o
-    // registro de O LAMBE chegavam a y 1009–1010 no 1:1 e 1503–1513 no 9:16, fora da caixa segura (1000 / 1500)
-    HF.pilha(document.body, itens, { x0: F.x0, x1: F.x1, y0: F.y0 + 4, y1: F.y1 - 16, grade: 8 });
+    // registro de O LAMBE chegavam a y 1009–1010 no 1:1 e 1503–1513 no 9:16, fora da caixa segura (1000 / 1500).
+    // Linha de base da assinatura na grade: 992 no 1:1 (era 1008) e 1488 no 9:16 (era 1496–1512, a grade somava erro)
+    HF.pilha(document.body, itens, { x0: F.x0, x1: F.x1, y0: F.y0 + 4, y1: q ? F.y1 - 12 : F.y1 - 8, grade: 8 });
   };
 
   /* ---- uma seta da Fã (traço de caneta, desenhada como vetor: a Shantell não tem seta) */
