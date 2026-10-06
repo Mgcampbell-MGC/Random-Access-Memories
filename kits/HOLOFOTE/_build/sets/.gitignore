@@ -1,0 +1,2 @@
+# regenerable texture cache (texturas.py rebuilds it on first use)
+_tex/

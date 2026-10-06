@@ -483,14 +483,14 @@ def flame_material(seed=0.0, strength=1.0):
     dens = M('MULTIPLY', M('MULTIPLY', M('POWER', core, 1.7), gap), top)
     # temperature: 1.400 K at the edge -> 1.900 K in the core
     tmp = nt.nodes.new('ShaderNodeMapRange')
-    tmp.inputs['To Min'].default_value = 1750     # tuned by eye: a 1.400-1.900 K ramp renders salmon-pink
-    tmp.inputs['To Max'].default_value = 2700     # under Khronos PBR Neutral; the point light stays at 1.900 K
+    tmp.inputs['To Min'].default_value = 2200     # tuned by eye (6 Oct): 1.400-1.900 K renders salmon-pink
+    tmp.inputs['To Max'].default_value = 3600     # under Khronos PBR Neutral; 2.200-3.600 reads candle-yellow. Point light stays 1.900 K
     nt.links.new(M('POWER', core, 0.6), tmp.inputs['Value'])
     bb = nt.nodes.new('ShaderNodeBlackbody')
     nt.links.new(tmp.outputs['Result'], bb.inputs['Temperature'])
     em = nt.nodes.new('ShaderNodeEmission')
     nt.links.new(bb.outputs[0], em.inputs['Color'])
-    nt.links.new(M('MULTIPLY', dens, 1.5e4 * strength), em.inputs['Strength'])
+    nt.links.new(M('MULTIPLY', dens, 1.2e4 * strength), em.inputs['Strength'])
     # faint blue root: the bottom 15 %, on the outside of the core
     blue = M('MULTIPLY', M('SUBTRACT', 1.0, smooth(z, 0.02, 0.22)), smooth(d, 0.45, 0.95))
     blue = M('MULTIPLY', blue, M('SUBTRACT', 1.0, smooth(d, 0.95, 1.25)))
@@ -772,6 +772,28 @@ def sticker(path):
     nt.links.new(mix.outputs[0], nt.nodes['Material Output'].inputs[0])
     s.data.materials.append(m)
     return s
+
+
+def add_print_aovs():
+    """Attach the label AOV outputs to every print material already in the scene (a set may have built the copo
+    without aov=True). Safe to call twice."""
+    for m in bpy.data.materials:
+        if not m.name.startswith('print') or not m.use_nodes:
+            continue
+        nt = m.node_tree
+        if any(n.bl_idname == 'ShaderNodeOutputAOV' for n in nt.nodes):
+            continue
+        tx = next((n for n in nt.nodes if n.bl_idname == 'ShaderNodeTexImage'), None)
+        uvn = next((n for n in nt.nodes if n.bl_idname == 'ShaderNodeUVMap'), None)
+        if tx is None or uvn is None:
+            continue
+        for name, sock in (('label_uv', uvn.outputs['UV']), ('label_ink', tx.outputs['Alpha'])):
+            n = nt.nodes.new('ShaderNodeOutputAOV')
+            n.aov_name = name
+            nt.links.new(sock, n.inputs['Color' if name == 'label_uv' else 'Value'])
+        n = nt.nodes.new('ShaderNodeOutputAOV')
+        n.aov_name = 'label_mask'
+        n.inputs['Value'].default_value = 1.0
 
 
 def enable_label_aovs(exr_dir=None):

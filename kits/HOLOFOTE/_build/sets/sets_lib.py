@@ -377,7 +377,7 @@ def solve_glass(res=(1080, 1920), lens=85.0, cam_height=0.160, tilt_deg=-5.0, gl
     return dict(location=tuple(C), rotation_euler=tuple(Euler((math.radians(90 + tilt_deg), 0, math.radians(yaw_deg)))),
                 shift_x=shift_x, shift_y=shift_y, distance=D, lens=lens,
                 check=dict(top_y=float(py.min()), base_y=float(py.max()), glass_px=float(py.max() - py.min()),
-                           axis_x=float(ax_px[0]), px_per_mm=float((py.max() - py.min()) / 88.0)))
+                           axis_x=float(ax_px[0]), px_per_mm=float((py.max() - py.min()) / H.H_GLASS)))
 
 
 def camera_glass(res=(1080, 1920), lens=85.0, cam_height=0.160, tilt_deg=-5.0, glass_px=883, top_y=610,
@@ -1572,7 +1572,7 @@ def flash(cam, offset=(-0.05, 0.15), size=0.03, energy=None, target_dist=1.0, st
 
 def muro_camera(h, preset='C01', res=None, flash_on=True, stop=0.0):
     """'C01' 4:5: the whole poster grid, the ledge at 1/3 height, the candles centred, 50 mm, straight on.
-    'C10' 4:5: closer, the ledge's three glasses ~32 % of frame height, 85 mm."""
+    'C10' 4:5: closer, 85 mm at 1,12 m: the ledge's three glasses (0,11 m apart) ~26 % of frame height."""
     g = h['grid']
     res = res or (1080, 1350)
     sx = res[0] / 1080.0
@@ -1585,7 +1585,7 @@ def muro_camera(h, preset='C01', res=None, flash_on=True, stop=0.0):
         dist = d
     else:
         lens = 85.0
-        d = 0.95
+        d = 1.12
         cam = camera_pin((0.0, -d, h['ledge_z'] + 0.10), 0.0, 0.0, lens, res, (0.0, -0.06, h['ledge_z'] + 0.044),
                          (540 * sx, 860 * sx), fstop=8.0, focus=d - 0.06)
         dist = d
@@ -1683,3 +1683,16 @@ def loja_plate(png_in, png_out, hexc=PAPEL_HEX):
     plate = Image.new('RGBA', im.size, tuple(int(hexc.lstrip('#')[i:i + 2], 16) for i in (0, 2, 4)) + (255,))
     Image.alpha_composite(plate, im).convert('RGB').save(png_out)
     return png_out
+
+
+def fila(sizes=('200', '200', '200', '200'), gap=0.018, at=(0.0, 0.0, 0.0)):
+    """Positions for a lineup (L06 · A TURNÊ, C04, C01's ledge): candles of the given sizes ('200' Ø76, '080' Ø58)
+    side by side along X with `gap` metres between glasses, centred on `at`. Extra widths (a capsule) as floats (m)."""
+    widths = [(2 * H.SIZES[s]['R_OUT'] * MM) if isinstance(s, str) else float(s) for s in sizes]
+    total = sum(widths) + gap * (len(widths) - 1)
+    x = at[0] - total / 2
+    out = []
+    for w in widths:
+        out.append((x + w / 2, at[1], at[2]))
+        x += w + gap
+    return out

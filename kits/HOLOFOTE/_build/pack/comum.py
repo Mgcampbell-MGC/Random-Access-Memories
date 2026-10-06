@@ -154,8 +154,8 @@ def break_words(words, widthf, measure, min_last=2):
                 slack = 0.0 if i == 0 else max(0.0, measure * 0.5 - w) ** 2
             else:
                 slack = (measure - w) ** 2
-                if words[j - 1].endswith(('.', ';', ':')):
-                    slack *= 0.25          # a line that ends a sentence may be shorter
+                if words[j - 1].endswith(('.', ';', ':', '·', '—')):
+                    slack *= 0.25          # a line that ends a sentence, or at a · / — separator, may be shorter
             cost = slack + best[j]
             if cost < best[i]:
                 best[i], nxt[i] = cost, j
@@ -177,9 +177,36 @@ def break_words(words, widthf, measure, min_last=2):
     return lines
 
 
+UNITS = {'mm', 'cm', 'g', 'h', 'horas', 'minutos', 'kg', 'ml'}
+
+
+def bind_words(words):
+    """Tokens that must never be split across a line: 'nº' + its number, a number + its unit (5 mm, 4 horas,
+    200 g), and a separator (· — /) stays at the end of its line rather than starting the next."""
+    out = []
+    i = 0
+    while i < len(words):
+        w = words[i]
+        if w in ('·', '—', '/', '–') and out:
+            out[-1] = out[-1] + ' ' + w
+            i += 1
+            continue
+        if w.lower() in ('nº', 'n.º') and i + 1 < len(words):
+            out.append(w + ' ' + words[i + 1])
+            i += 2
+            continue
+        if w[:1].isdigit() and i + 1 < len(words) and words[i + 1].strip('.,;:)(').lower() in UNITS:
+            out.append(w + ' ' + words[i + 1])
+            i += 2
+            continue
+        out.append(w)
+        i += 1
+    return out
+
+
 def para(text, fc, cap, measure, tracking=0.0, features=None, min_last=2):
     """Return a list of Lines for a paragraph broken to a measure (ink width)."""
-    words = text.split(' ')
+    words = bind_words(text.split(' '))
     feats = dict(FIG)
     if features:
         feats.update(features)

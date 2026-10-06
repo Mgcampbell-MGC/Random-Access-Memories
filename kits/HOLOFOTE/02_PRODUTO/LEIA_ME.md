@@ -134,7 +134,7 @@ Tudo aqui foi gerado por código em `_build/pack/` (um comando refaz tudo:
 - `HLF-CASE-03_tampa_topo.png` — HLF-CASE-03: painel tampa topo personalizado, 10 px/mm.
 - `HLF-CASE-03_tampa_topo.svg` — HLF-CASE-03: painel tampa topo em vetor.
 
-## cartucho/ · Cartucho O INGRESSO
+## cartucho/ · Cartuchos: O INGRESSO, O INGRESSO SINGLE e refil NOVA TEMPORADA
 
 - `HLF-01-200_CARTUCHO_ATLAS.png` — HLF-01-200 (CAMARIM): atlas 4 × 3 do cartucho 96 × 96 × 98 para candle_lib.box().
 - `HLF-01-200_CARTUCHO_frente.png` — HLF-01-200 (CAMARIM): painel frente, 20 px/mm.
@@ -151,7 +151,23 @@ Tudo aqui foi gerado por código em `_build/pack/` (um comando refaz tudo:
 - `HLF-01-200_CARTUCHO_topo.svg` — HLF-01-200 (CAMARIM): painel topo em vetor.
 - `HLF-01-200_CARTUCHO_verso.png` — HLF-01-200 (CAMARIM): painel verso, 20 px/mm.
 - `HLF-01-200_CARTUCHO_verso.svg` — HLF-01-200 (CAMARIM): painel verso em vetor.
-- `HLF-01-200_cartucho.json` — HLF-01-200 (CAMARIM): textos e medidas de cada painel.
+- `HLF-01-200_cartucho.json` — HLF-01-200 (CAMARIM): textos, medidas e desvios de cada painel.
+- `HLF-02-080_CARTUCHO_ATLAS.png` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): atlas 4 × 3 do cartucho 74 × 74 × 76 para candle_lib.box().
+- `HLF-02-080_CARTUCHO_frente.png` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): painel frente, 20 px/mm.
+- `HLF-02-080_CARTUCHO_frente.svg` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): painel frente em vetor.
+- `HLF-02-080_CARTUCHO_fundo.png` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): painel fundo, 20 px/mm.
+- `HLF-02-080_CARTUCHO_fundo.svg` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): painel fundo em vetor.
+- `HLF-02-080_CARTUCHO_lateral-1.png` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): painel lateral-1, 20 px/mm.
+- `HLF-02-080_CARTUCHO_lateral-1.svg` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): painel lateral-1 em vetor.
+- `HLF-02-080_CARTUCHO_lateral-2.png` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): painel lateral-2, 20 px/mm.
+- `HLF-02-080_CARTUCHO_lateral-2.svg` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): painel lateral-2 em vetor.
+- `HLF-02-080_CARTUCHO_planificado.png` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): folha de impressão planificada, 10 px/mm, sangria de 3 mm.
+- `HLF-02-080_CARTUCHO_planificado_preview.jpg` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): folha planificada com a faca por cima (revisão).
+- `HLF-02-080_CARTUCHO_topo.png` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): painel topo, 20 px/mm.
+- `HLF-02-080_CARTUCHO_topo.svg` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): painel topo em vetor.
+- `HLF-02-080_CARTUCHO_verso.png` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): painel verso, 20 px/mm.
+- `HLF-02-080_CARTUCHO_verso.svg` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): painel verso em vetor.
+- `HLF-02-080_cartucho.json` — HLF-02-080 (O INGRESSO SINGLE, AO VIVO): textos, medidas e desvios de cada painel.
 - `HLF-02-200_CARTUCHO_ATLAS.png` — HLF-02-200 (AO VIVO): atlas 4 × 3 do cartucho 96 × 96 × 98 para candle_lib.box().
 - `HLF-02-200_CARTUCHO_frente.png` — HLF-02-200 (AO VIVO): painel frente, 20 px/mm.
 - `HLF-02-200_CARTUCHO_frente.svg` — HLF-02-200 (AO VIVO): painel frente em vetor.
@@ -167,7 +183,7 @@ Tudo aqui foi gerado por código em `_build/pack/` (um comando refaz tudo:
 - `HLF-02-200_CARTUCHO_topo.svg` — HLF-02-200 (AO VIVO): painel topo em vetor.
 - `HLF-02-200_CARTUCHO_verso.png` — HLF-02-200 (AO VIVO): painel verso, 20 px/mm.
 - `HLF-02-200_CARTUCHO_verso.svg` — HLF-02-200 (AO VIVO): painel verso em vetor.
-- `HLF-02-200_cartucho.json` — HLF-02-200 (AO VIVO): textos e medidas de cada painel.
+- `HLF-02-200_cartucho.json` — HLF-02-200 (AO VIVO): textos, medidas e desvios de cada painel.
 - `HLF-03-200_CARTUCHO_ATLAS.png` — HLF-03-200 (MAIS UM!): atlas 4 × 3 do cartucho 96 × 96 × 98 para candle_lib.box().
 - `HLF-03-200_CARTUCHO_frente.png` — HLF-03-200 (MAIS UM!): painel frente, 20 px/mm.
 - `HLF-03-200_CARTUCHO_frente.svg` — HLF-03-200 (MAIS UM!): painel frente em vetor.
@@ -183,7 +199,7 @@ Tudo aqui foi gerado por código em `_build/pack/` (um comando refaz tudo:
 - `HLF-03-200_CARTUCHO_topo.svg` — HLF-03-200 (MAIS UM!): painel topo em vetor.
 - `HLF-03-200_CARTUCHO_verso.png` — HLF-03-200 (MAIS UM!): painel verso, 20 px/mm.
 - `HLF-03-200_CARTUCHO_verso.svg` — HLF-03-200 (MAIS UM!): painel verso em vetor.
-- `HLF-03-200_cartucho.json` — HLF-03-200 (MAIS UM!): textos e medidas de cada painel.
+- `HLF-03-200_cartucho.json` — HLF-03-200 (MAIS UM!): textos, medidas e desvios de cada painel.
 - `HLF-04-200_CARTUCHO_ATLAS.png` — HLF-04-200 (ACÚSTICO): atlas 4 × 3 do cartucho 96 × 96 × 98 para candle_lib.box().
 - `HLF-04-200_CARTUCHO_frente.png` — HLF-04-200 (ACÚSTICO): painel frente, 20 px/mm.
 - `HLF-04-200_CARTUCHO_frente.svg` — HLF-04-200 (ACÚSTICO): painel frente em vetor.
@@ -199,7 +215,71 @@ Tudo aqui foi gerado por código em `_build/pack/` (um comando refaz tudo:
 - `HLF-04-200_CARTUCHO_topo.svg` — HLF-04-200 (ACÚSTICO): painel topo em vetor.
 - `HLF-04-200_CARTUCHO_verso.png` — HLF-04-200 (ACÚSTICO): painel verso, 20 px/mm.
 - `HLF-04-200_CARTUCHO_verso.svg` — HLF-04-200 (ACÚSTICO): painel verso em vetor.
-- `HLF-04-200_cartucho.json` — HLF-04-200 (ACÚSTICO): textos e medidas de cada painel.
+- `HLF-04-200_cartucho.json` — HLF-04-200 (ACÚSTICO): textos, medidas e desvios de cada painel.
+- `HLF-REF-01_CARTUCHO_ATLAS.png` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): atlas 4 × 3 do cartucho 74 × 74 × 82 para candle_lib.box().
+- `HLF-REF-01_CARTUCHO_frente.png` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): painel frente, 20 px/mm.
+- `HLF-REF-01_CARTUCHO_frente.svg` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): painel frente em vetor.
+- `HLF-REF-01_CARTUCHO_fundo.png` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): painel fundo, 20 px/mm.
+- `HLF-REF-01_CARTUCHO_fundo.svg` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): painel fundo em vetor.
+- `HLF-REF-01_CARTUCHO_lateral-1.png` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): painel lateral-1, 20 px/mm.
+- `HLF-REF-01_CARTUCHO_lateral-1.svg` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): painel lateral-1 em vetor.
+- `HLF-REF-01_CARTUCHO_lateral-2.png` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): painel lateral-2, 20 px/mm.
+- `HLF-REF-01_CARTUCHO_lateral-2.svg` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): painel lateral-2 em vetor.
+- `HLF-REF-01_CARTUCHO_planificado.png` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): folha de impressão planificada, 10 px/mm, sangria de 3 mm.
+- `HLF-REF-01_CARTUCHO_planificado_preview.jpg` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): folha planificada com a faca por cima (revisão).
+- `HLF-REF-01_CARTUCHO_topo.png` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): painel topo, 20 px/mm.
+- `HLF-REF-01_CARTUCHO_topo.svg` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): painel topo em vetor.
+- `HLF-REF-01_CARTUCHO_verso.png` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): painel verso, 20 px/mm.
+- `HLF-REF-01_CARTUCHO_verso.svg` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): painel verso em vetor.
+- `HLF-REF-01_cartucho.json` — HLF-REF-01 (refil NOVA TEMPORADA, CAMARIM): textos, medidas e desvios de cada painel.
+- `HLF-REF-02_CARTUCHO_ATLAS.png` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): atlas 4 × 3 do cartucho 74 × 74 × 82 para candle_lib.box().
+- `HLF-REF-02_CARTUCHO_frente.png` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): painel frente, 20 px/mm.
+- `HLF-REF-02_CARTUCHO_frente.svg` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): painel frente em vetor.
+- `HLF-REF-02_CARTUCHO_fundo.png` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): painel fundo, 20 px/mm.
+- `HLF-REF-02_CARTUCHO_fundo.svg` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): painel fundo em vetor.
+- `HLF-REF-02_CARTUCHO_lateral-1.png` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): painel lateral-1, 20 px/mm.
+- `HLF-REF-02_CARTUCHO_lateral-1.svg` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): painel lateral-1 em vetor.
+- `HLF-REF-02_CARTUCHO_lateral-2.png` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): painel lateral-2, 20 px/mm.
+- `HLF-REF-02_CARTUCHO_lateral-2.svg` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): painel lateral-2 em vetor.
+- `HLF-REF-02_CARTUCHO_planificado.png` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): folha de impressão planificada, 10 px/mm, sangria de 3 mm.
+- `HLF-REF-02_CARTUCHO_planificado_preview.jpg` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): folha planificada com a faca por cima (revisão).
+- `HLF-REF-02_CARTUCHO_topo.png` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): painel topo, 20 px/mm.
+- `HLF-REF-02_CARTUCHO_topo.svg` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): painel topo em vetor.
+- `HLF-REF-02_CARTUCHO_verso.png` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): painel verso, 20 px/mm.
+- `HLF-REF-02_CARTUCHO_verso.svg` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): painel verso em vetor.
+- `HLF-REF-02_cartucho.json` — HLF-REF-02 (refil NOVA TEMPORADA, AO VIVO): textos, medidas e desvios de cada painel.
+- `HLF-REF-03_CARTUCHO_ATLAS.png` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): atlas 4 × 3 do cartucho 74 × 74 × 82 para candle_lib.box().
+- `HLF-REF-03_CARTUCHO_frente.png` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): painel frente, 20 px/mm.
+- `HLF-REF-03_CARTUCHO_frente.svg` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): painel frente em vetor.
+- `HLF-REF-03_CARTUCHO_fundo.png` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): painel fundo, 20 px/mm.
+- `HLF-REF-03_CARTUCHO_fundo.svg` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): painel fundo em vetor.
+- `HLF-REF-03_CARTUCHO_lateral-1.png` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): painel lateral-1, 20 px/mm.
+- `HLF-REF-03_CARTUCHO_lateral-1.svg` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): painel lateral-1 em vetor.
+- `HLF-REF-03_CARTUCHO_lateral-2.png` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): painel lateral-2, 20 px/mm.
+- `HLF-REF-03_CARTUCHO_lateral-2.svg` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): painel lateral-2 em vetor.
+- `HLF-REF-03_CARTUCHO_planificado.png` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): folha de impressão planificada, 10 px/mm, sangria de 3 mm.
+- `HLF-REF-03_CARTUCHO_planificado_preview.jpg` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): folha planificada com a faca por cima (revisão).
+- `HLF-REF-03_CARTUCHO_topo.png` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): painel topo, 20 px/mm.
+- `HLF-REF-03_CARTUCHO_topo.svg` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): painel topo em vetor.
+- `HLF-REF-03_CARTUCHO_verso.png` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): painel verso, 20 px/mm.
+- `HLF-REF-03_CARTUCHO_verso.svg` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): painel verso em vetor.
+- `HLF-REF-03_cartucho.json` — HLF-REF-03 (refil NOVA TEMPORADA, MAIS UM!): textos, medidas e desvios de cada painel.
+- `HLF-REF-04_CARTUCHO_ATLAS.png` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): atlas 4 × 3 do cartucho 74 × 74 × 82 para candle_lib.box().
+- `HLF-REF-04_CARTUCHO_frente.png` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): painel frente, 20 px/mm.
+- `HLF-REF-04_CARTUCHO_frente.svg` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): painel frente em vetor.
+- `HLF-REF-04_CARTUCHO_fundo.png` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): painel fundo, 20 px/mm.
+- `HLF-REF-04_CARTUCHO_fundo.svg` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): painel fundo em vetor.
+- `HLF-REF-04_CARTUCHO_lateral-1.png` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): painel lateral-1, 20 px/mm.
+- `HLF-REF-04_CARTUCHO_lateral-1.svg` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): painel lateral-1 em vetor.
+- `HLF-REF-04_CARTUCHO_lateral-2.png` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): painel lateral-2, 20 px/mm.
+- `HLF-REF-04_CARTUCHO_lateral-2.svg` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): painel lateral-2 em vetor.
+- `HLF-REF-04_CARTUCHO_planificado.png` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): folha de impressão planificada, 10 px/mm, sangria de 3 mm.
+- `HLF-REF-04_CARTUCHO_planificado_preview.jpg` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): folha planificada com a faca por cima (revisão).
+- `HLF-REF-04_CARTUCHO_topo.png` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): painel topo, 20 px/mm.
+- `HLF-REF-04_CARTUCHO_topo.svg` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): painel topo em vetor.
+- `HLF-REF-04_CARTUCHO_verso.png` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): painel verso, 20 px/mm.
+- `HLF-REF-04_CARTUCHO_verso.svg` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): painel verso em vetor.
+- `HLF-REF-04_cartucho.json` — HLF-REF-04 (refil NOVA TEMPORADA, ACÚSTICO): textos, medidas e desvios de cada painel.
 
 ## refil/ · Refil NOVA TEMPORADA
 
@@ -235,10 +315,10 @@ Tudo aqui foi gerado por código em `_build/pack/` (um comando refaz tudo:
 ## pulseira/ · A PULSEIRA
 
 - `PULSEIRA.json` — A PULSEIRA: medidas, fonte e repetições.
-- `PULSEIRA_SELO_frente.png` — Selo de papel 60 × 15 mm, frente.
-- `PULSEIRA_SELO_frente.svg` — Selo de papel, frente, em vetor.
-- `PULSEIRA_SELO_verso.png` — Selo de papel 60 × 15 mm, verso.
-- `PULSEIRA_SELO_verso.svg` — Selo de papel, verso, em vetor.
+- `PULSEIRA_SELO_face-baixo.png` — Selo de papel: a face baixo (15 × 16 mm) como aparece montada no maço, só revisão.
+- `PULSEIRA_SELO_face-topo.png` — Selo de papel: a face topo (15 × 16 mm) como aparece montada no maço, só revisão.
+- `PULSEIRA_SELO_faixa.png` — Selo de papel 60 × 15 mm: a tira inteira como é impressa (só por fora), 20 px/mm; TOPO "pode / rasgar.", BAIXO "o que se guarda é a pulseira.".
+- `PULSEIRA_SELO_faixa.svg` — Selo de papel: a tira inteira em vetor, em mm.
 - `PULSEIRA_padrao.png` — A PULSEIRA: desenho do jacquard 15 × 350 mm a 20 px/mm (preto + amarelo), duas repetições inteiras.
 - `PULSEIRA_padrao.svg` — A PULSEIRA: o desenho do jacquard em vetor.
 - `PULSEIRA_tecido.png` — A PULSEIRA: render do tecido (fios de trama, sarja preta, ourela).
@@ -246,6 +326,8 @@ Tudo aqui foi gerado por código em `_build/pack/` (um comando refaz tudo:
 
 ## facas/ · Facas e desenhos técnicos
 
+- `FACA_CARTUCHO_74x74x76.svg` — Faca do cartucho O INGRESSO SINGLE (corte, vinco, sangria).
+- `FACA_CARTUCHO_74x74x82.svg` — Faca do cartucho do refil NOVA TEMPORADA (corte, vinco, sangria).
 - `FACA_CARTUCHO_96x96x98.svg` — Faca do cartucho O INGRESSO (corte, vinco, sangria).
 - `FACA_CASE_base-130x130x102.svg` — Faca do forro da base do case, fenda do fecho e inserto de EVA.
 - `FACA_CASE_tampa-130x130x30.svg` — Faca do forro da tampa do case e da aba do fecho.
@@ -253,7 +335,7 @@ Tudo aqui foi gerado por código em `_build/pack/` (um comando refaz tudo:
 - `FACA_COPO-200_zona-impressao.svg` — Copo 200 g desenrolado: zona de impressão, painéis, lacunas e emenda.
 - `FACA_ETIQUETA-LOTE_32x10.svg` — Faca da etiqueta de lote 32x10 mm.
 - `FACA_ETIQUETA-LOTE_40x12.svg` — Faca da etiqueta de lote 40x12 mm.
-- `FACA_PULSEIRA_selo-60x15.svg` — Faca do selo de papel da pulseira.
+- `FACA_PULSEIRA_selo-60x15.svg` — Faca do selo de papel da pulseira, com o mapa dos painéis ao longo da tira (vincos, TOPO, BAIXO, colagem).
 - `FACA_SETLIST_105x400.svg` — Faca da setlist: dobras e picotes.
 - `FACA_TAMPA_70.svg` — Desenho da tampa Ø70: área útil, aba, anel de vedação e as fitas.
 - `FACA_TAMPA_90.svg` — Desenho da tampa Ø90: área útil, aba, anel de vedação e as fitas.

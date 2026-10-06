@@ -10,6 +10,20 @@ PROD = os.path.join(os.path.dirname(os.path.dirname(HERE)), '02_PRODUTO')
 
 FAIXA = {'1': 'CAMARIM', '2': 'AO VIVO', '3': 'MAIS UM!', '4': 'ACÚSTICO'}
 
+CT = r'(HLF-0\d-200|HLF-02-080|HLF-REF-0\d)'
+
+
+def ct(code):
+    """(name for the line, carton size) for a carton code."""
+    if code == 'HLF-02-080':
+        return 'HLF-02-080 (O INGRESSO SINGLE, AO VIVO)', '74 × 74 × 76'
+    m = re.fullmatch(r'HLF-REF-0(\d)', code)
+    if m:
+        return f'{code} (refil NOVA TEMPORADA, {FAIXA[m[1]]})', '74 × 74 × 82'
+    m = re.fullmatch(r'HLF-0(\d)-200', code)
+    return f'{code} ({FAIXA[m[1]]})', '96 × 96 × 98'
+
+
 RULES = [
     # rotulos
     (r'HLF-02-080_ROTULO_wrap\.png', 'O SINGLE: mestre do rótulo 7288 × 1960 px (182,2 mm × zona 14–63 mm, 40 px/mm), só tinta, fundo transparente.'),
@@ -58,13 +72,13 @@ RULES = [
     (r'(HLF-CASE-0\d)_case\.json', lambda m: f'{m[1]}: textos, medidas, contrato do atlas e posição da aba.'),
     (r'(HLF-CASE-0\d)_(tampa_topo|base_frente|base_tras)\.png', lambda m: f'{m[1]}: painel {m[2].replace("_", " ")} personalizado, 10 px/mm.'),
     (r'(HLF-CASE-0\d)_(tampa_topo|base_frente|base_tras)\.svg', lambda m: f'{m[1]}: painel {m[2].replace("_", " ")} em vetor.'),
-    # cartucho
-    (r'(HLF-0(\d)-200)_CARTUCHO_ATLAS\.png', lambda m: f'{m[1]} ({FAIXA[m[2]]}): atlas 4 × 3 do cartucho 96 × 96 × 98 para candle_lib.box().'),
-    (r'(HLF-0(\d)-200)_CARTUCHO_planificado_preview\.jpg', lambda m: f'{m[1]} ({FAIXA[m[2]]}): folha planificada com a faca por cima (revisão).'),
-    (r'(HLF-0(\d)-200)_CARTUCHO_planificado\.png', lambda m: f'{m[1]} ({FAIXA[m[2]]}): folha de impressão planificada, 10 px/mm, sangria de 3 mm.'),
-    (r'(HLF-0(\d)-200)_CARTUCHO_([a-z0-9-]+)\.png', lambda m: f'{m[1]} ({FAIXA[m[2]]}): painel {m[3]}, 20 px/mm.'),
-    (r'(HLF-0(\d)-200)_CARTUCHO_([a-z0-9-]+)\.svg', lambda m: f'{m[1]} ({FAIXA[m[2]]}): painel {m[3]} em vetor.'),
-    (r'(HLF-0(\d)-200)_cartucho\.json', lambda m: f'{m[1]} ({FAIXA[m[2]]}): textos e medidas de cada painel.'),
+    # cartucho (O INGRESSO 96 x 96 x 98, O INGRESSO SINGLE 74 x 74 x 76, refil NOVA TEMPORADA 74 x 74 x 82)
+    (CT + r'_CARTUCHO_ATLAS\.png', lambda m: f'{ct(m[1])[0]}: atlas 4 × 3 do cartucho {ct(m[1])[1]} para candle_lib.box().'),
+    (CT + r'_CARTUCHO_planificado_preview\.jpg', lambda m: f'{ct(m[1])[0]}: folha planificada com a faca por cima (revisão).'),
+    (CT + r'_CARTUCHO_planificado\.png', lambda m: f'{ct(m[1])[0]}: folha de impressão planificada, 10 px/mm, sangria de 3 mm.'),
+    (CT + r'_CARTUCHO_([a-z0-9-]+)\.png', lambda m: f'{ct(m[1])[0]}: painel {m[2]}, 20 px/mm.'),
+    (CT + r'_CARTUCHO_([a-z0-9-]+)\.svg', lambda m: f'{ct(m[1])[0]}: painel {m[2]} em vetor.'),
+    (CT + r'_cartucho\.json', lambda m: f'{ct(m[1])[0]}: textos, medidas e desvios de cada painel.'),
     # refil
     (r'HLF-REF-0(\d)_TAMPA-PEEL\.png', lambda m: f'Refil NOVA TEMPORADA {FAIXA[m[1]]}: tampa peel Ø66 com aba, cor da faixa + tinta, recorte em alfa, 40 px/mm.'),
     (r'HLF-REF-0(\d)_TAMPA-PEEL_tinta\.png', lambda m: f'Refil {FAIXA[m[1]]}: só a tinta da tampa peel.'),
@@ -85,17 +99,20 @@ RULES = [
     (r'PULSEIRA_padrao\.svg', 'A PULSEIRA: o desenho do jacquard em vetor.'),
     (r'PULSEIRA_tecido\.png', 'A PULSEIRA: render do tecido (fios de trama, sarja preta, ourela).'),
     (r'PULSEIRA_tecido_altura16\.png', 'A PULSEIRA: mapa de altura 16 bits do tecido.'),
-    (r'PULSEIRA_SELO_(frente|verso)\.png', lambda m: f'Selo de papel 60 × 15 mm, {m[1]}.'),
-    (r'PULSEIRA_SELO_(frente|verso)\.svg', lambda m: f'Selo de papel, {m[1]}, em vetor.'),
+    (r'PULSEIRA_SELO_faixa\.png', 'Selo de papel 60 × 15 mm: a tira inteira como é impressa (só por fora), 20 px/mm; TOPO "pode / rasgar.", BAIXO "o que se guarda é a pulseira.".'),
+    (r'PULSEIRA_SELO_faixa\.svg', 'Selo de papel: a tira inteira em vetor, em mm.'),
+    (r'PULSEIRA_SELO_face-(topo|baixo)\.png', lambda m: f'Selo de papel: a face {m[1]} (15 × 16 mm) como aparece montada no maço, só revisão.'),
     (r'PULSEIRA\.json', 'A PULSEIRA: medidas, fonte e repetições.'),
     # facas
     (r'FACA_COPO-200_zona-impressao\.svg', 'Copo 200 g desenrolado: zona de impressão, painéis, lacunas e emenda.'),
     (r'FACA_COPO-080_zona-impressao\.svg', 'Copo 80 g (O SINGLE) desenrolado: zona de impressão, painéis, lacunas e emenda.'),
     (r'FACA_CARTUCHO_96x96x98\.svg', 'Faca do cartucho O INGRESSO (corte, vinco, sangria).'),
+    (r'FACA_CARTUCHO_74x74x76\.svg', 'Faca do cartucho O INGRESSO SINGLE (corte, vinco, sangria).'),
+    (r'FACA_CARTUCHO_74x74x82\.svg', 'Faca do cartucho do refil NOVA TEMPORADA (corte, vinco, sangria).'),
     (r'FACA_CASE_base-130x130x102\.svg', 'Faca do forro da base do case, fenda do fecho e inserto de EVA.'),
     (r'FACA_CASE_tampa-130x130x30\.svg', 'Faca do forro da tampa do case e da aba do fecho.'),
     (r'FACA_SETLIST_105x400\.svg', 'Faca da setlist: dobras e picotes.'),
-    (r'FACA_PULSEIRA_selo-60x15\.svg', 'Faca do selo de papel da pulseira.'),
+    (r'FACA_PULSEIRA_selo-60x15\.svg', 'Faca do selo de papel da pulseira, com o mapa dos painéis ao longo da tira (vincos, TOPO, BAIXO, colagem).'),
     (r'FACA_ETIQUETA-LOTE_(\d+x\d+)\.svg', lambda m: f'Faca da etiqueta de lote {m[1]} mm.'),
     (r'FACA_TAMPA_(\d\d)\.svg', lambda m: f'Desenho da tampa Ø{m[1]}: área útil, aba, anel de vedação e as fitas.'),
 ]
@@ -109,7 +126,7 @@ Tudo aqui foi gerado por código em `_build/pack/` (um comando refaz tudo:
 """
 
 SECTIONS = [('rotulos', 'Rótulos do copo'), ('tampa', 'Tampa-palco'), ('base', 'Fundo do copo e etiqueta de lote'),
-            ('case', 'O CASE'), ('cartucho', 'Cartucho O INGRESSO'), ('refil', 'Refil NOVA TEMPORADA'),
+            ('case', 'O CASE'), ('cartucho', 'Cartuchos: O INGRESSO, O INGRESSO SINGLE e refil NOVA TEMPORADA'), ('refil', 'Refil NOVA TEMPORADA'),
             ('setlist', 'A SETLIST'), ('pulseira', 'A PULSEIRA'), ('facas', 'Facas e desenhos técnicos')]
 
 

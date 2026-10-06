@@ -1,5 +1,6 @@
 {
   "sku": "HLF-04-200",
+  "kind": "INGRESSO",
   "faixa": "04",
   "size_mm": [
     96.0,
@@ -385,6 +386,11 @@
         ],
         "text": "Não ingerir.",
         "cap_mm": 1.7
+      },
+      {
+        "label": "legal width",
+        "font": "Special Gothic wght 400 wdth 100",
+        "cap_mm": 1.7
       }
     ],
     "verso": [
@@ -392,9 +398,9 @@
         "label": "MANIFESTO head",
         "ink_mm": [
           6.0,
-          21.06,
+          20.65,
           90.0,
-          24.74
+          24.33
         ],
         "text": "MANIFESTO DE CARGA · TURNÊ DIA DAS MÃES 2027",
         "cap_mm": 2.903
@@ -403,9 +409,9 @@
         "label": "CONTEÚDO: HOLOFOTE ACÚSTICO — ",
         "ink_mm": [
           6.0,
-          27.39,
+          26.98,
           66.52,
-          29.64
+          29.23
         ],
         "text": "CONTEÚDO: HOLOFOTE ACÚSTICO — vela aromática · ODORIZANTE DE AMBIENTE",
         "cap_mm": 1.7
@@ -414,9 +420,9 @@
         "label": "PESO LÍQUIDO 200 g",
         "ink_mm": [
           6.0,
-          30.11,
+          29.7,
           21.66,
-          32.76
+          32.34
         ],
         "text": "PESO LÍQUIDO 200 g",
         "cap_mm": 1.7
@@ -425,9 +431,9 @@
         "label": "COMPOSIÇÃO / INGREDIENTS (INCI",
         "ink_mm": [
           6.0,
-          32.95,
+          32.54,
           76.47,
-          35.45
+          35.04
         ],
         "text": "COMPOSIÇÃO / INGREDIENTS (INCI): HYDROGENATED COCONUT OIL, HYDROGENATED SOYBEAN",
         "cap_mm": 1.7
@@ -436,9 +442,9 @@
         "label": "OIL, PARFUM, LIMONENE, LINALOO",
         "ink_mm": [
           6.0,
-          36.04,
+          35.63,
           32.88,
-          38.09
+          37.68
         ],
         "text": "OIL, PARFUM, LIMONENE, LINALOOL.",
         "cap_mm": 1.7
@@ -447,9 +453,9 @@
         "label": "Ingredientes (português): óleo",
         "ink_mm": [
           6.0,
-          38.67,
+          38.26,
           83.99,
-          40.92
+          40.5
         ],
         "text": "Ingredientes (português): óleo de coco hidrogenado, óleo de soja hidrogenado, fragrância, limoneno,",
         "cap_mm": 1.7
@@ -458,9 +464,9 @@
         "label": "linalol. Pavio de madeira. Cáp",
         "ink_mm": [
           6.0,
-          41.39,
+          40.98,
           41.61,
-          43.61
+          43.2
         ],
         "text": "linalol. Pavio de madeira. Cápsula de alumínio.",
         "cap_mm": 1.7
@@ -469,9 +475,9 @@
         "label": "(Alérgenos de fragrância decla",
         "ink_mm": [
           6.0,
-          44.11,
+          43.7,
           73.09,
-          46.36
+          45.94
         ],
         "text": "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026 — exemplo;",
         "cap_mm": 1.7
@@ -480,9 +486,9 @@
         "label": "confirmar com o certificado do",
         "ink_mm": [
           6.0,
-          46.88,
+          46.47,
           51.0,
-          49.08
+          48.66
         ],
         "text": "confirmar com o certificado do fornecedor da fragrância.)",
         "cap_mm": 1.7
@@ -491,9 +497,9 @@
         "label": "Fabricado e distribuído por: P",
         "ink_mm": [
           6.0,
-          49.15,
+          48.74,
           76.89,
-          51.77
+          51.36
         ],
         "text": "Fabricado e distribuído por: PALCO PEQUENO INDÚSTRIA DE VELAS LTDA. (EMPRESA FICTÍCIA)",
         "cap_mm": 1.7
@@ -502,9 +508,9 @@
         "label": "CNPJ 00.000.000/0001-00 (FICTÍ",
         "ink_mm": [
           6.0,
-          51.87,
+          51.46,
           35.65,
-          54.35
+          53.94
         ],
         "text": "CNPJ 00.000.000/0001-00 (FICTÍCIO)",
         "cap_mm": 1.7
@@ -513,9 +519,9 @@
         "label": "Rua do Palco, 0 — Bairro Fictí",
         "ink_mm": [
           6.0,
-          54.59,
+          54.18,
           74.95,
-          57.21
+          56.8
         ],
         "text": "Rua do Palco, 0 — Bairro Fictício — São Paulo/SP — CEP 00000-000 (ENDEREÇO FICTÍCIO)",
         "cap_mm": 1.7
@@ -524,9 +530,9 @@
         "label": "AFE Anvisa nº 0.00000-0 · Proc",
         "ink_mm": [
           6.0,
-          57.31,
+          56.9,
           71.92,
-          59.79
+          59.38
         ],
         "text": "AFE Anvisa nº 0.00000-0 · Processo Anvisa nº 25351.000000/0000-00 (FICTÍCIOS)",
         "cap_mm": 1.7
@@ -535,9 +541,9 @@
         "label": "SAC 0800 000 0000 · sac@holofo",
         "ink_mm": [
           6.0,
-          60.03,
+          59.62,
           65.01,
-          62.65
+          62.24
         ],
         "text": "SAC 0800 000 0000 · sac@holofote.exemplo · holofote.exemplo (FICTÍCIOS)",
         "cap_mm": 1.7
@@ -546,9 +552,9 @@
         "label": "INDÚSTRIA BRASILEIRA",
         "ink_mm": [
           6.0,
-          62.45,
+          62.86,
           44.81,
-          66.5
+          66.91
         ],
         "text": "INDÚSTRIA BRASILEIRA",
         "cap_mm": 3.0
@@ -557,9 +563,9 @@
         "label": "LOTE: ver base do copo · FAB 0",
         "ink_mm": [
           6.0,
-          67.55,
+          67.96,
           56.05,
-          70.17
+          70.58
         ],
         "text": "LOTE: ver base do copo · FAB 03/2027 · VAL 03/2029 (FICTÍCIOS)",
         "cap_mm": 1.7
@@ -568,9 +574,9 @@
         "label": "Modo de uso e advertências com",
         "ink_mm": [
           6.0,
-          70.79,
+          71.2,
           45.49,
-          72.89
+          73.3
         ],
         "text": "Modo de uso e advertências completas: ver lateral.",
         "cap_mm": 1.7
@@ -579,9 +585,9 @@
         "label": "PROTÓTIPO FICTÍCIO · DADOS FIC",
         "ink_mm": [
           6.0,
-          72.99,
+          73.4,
           52.95,
-          75.24
+          75.65
         ],
         "text": "PROTÓTIPO FICTÍCIO · DADOS FICTÍCIOS · NÃO COMERCIALIZAR",
         "cap_mm": 1.7
@@ -604,20 +610,20 @@
         "label": "quote a",
         "ink_mm": [
           6.0,
-          32.69,
+          32.7,
           90.0,
-          38.72
+          38.7
         ],
-        "text": "ela vai dizer \"não precisava\".",
-        "cap_mm": 4.769
+        "text": "ela vai dizer “não precisava”.",
+        "cap_mm": 4.746
       },
       {
         "label": "quote b",
         "ink_mm": [
           6.0,
-          39.6,
+          39.59,
           90.0,
-          50.97
+          50.96
         ],
         "text": "é a sua deixa.",
         "cap_mm": 10.193
@@ -692,6 +698,7 @@
     ],
     "fundo": []
   },
+  "deviations": [],
   "atlas": {
     "file": "HLF-04-200_CARTUCHO_ATLAS.png",
     "cell_px": [
@@ -700,5 +707,6 @@
     ],
     "layout": "[., top, ., .] / [left, front, right, back] / [., bottom, ., .] (candle_lib.box); top: image top = back; bottom: image top = front"
   },
+  "dieline": "02_PRODUTO/facas/FACA_CARTUCHO_96x96x98.svg",
   "generator": "_build/pack/cartucho.py"
 }

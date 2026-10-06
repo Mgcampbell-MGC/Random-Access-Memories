@@ -6,10 +6,12 @@ Writes 02_PRODUTO/facas/:
   FACA_COPO-200_zona-impressao.svg   O COPO DO SHOW unrolled (238,8 x 88 mm): print zone 18–82, panels, gaps, seam
   FACA_COPO-080_zona-impressao.svg   O SINGLE unrolled (182,2 x 66 mm): print zone 14–63
   FACA_CARTUCHO_96x96x98.svg         O INGRESSO reverse tuck end, SBS 400 g/m²
+  FACA_CARTUCHO_74x74x76.svg         O INGRESSO SINGLE · FACA_CARTUCHO_74x74x82.svg  NOVA TEMPORADA (refil)
   FACA_CASE_base-130x130x102.svg     O CASE base tray wrap (black tolex paper over 2 mm greyboard) + EVA insert
   FACA_CASE_tampa-130x130x30.svg     O CASE lid wrap + the hasp tab with its slot
   FACA_SETLIST_105x400.svg           A SETLIST concertina: folds, ticket perforations, the x = 83 stub perforations
-  FACA_PULSEIRA_selo-60x15.svg       the paper seal; FACA_ETIQUETA-LOTE_40x12.svg / _32x10.svg the lot stickers
+  FACA_PULSEIRA_selo-60x15.svg       the paper seal with its panel map along the strip (TOPO, BAIXO, sides, overlap)
+  FACA_ETIQUETA-LOTE_40x12.svg / _32x10.svg the lot stickers
   FACA_TAMPA_90.svg / FACA_TAMPA_70.svg  the lid discs: print area, brim band, gasket footprint, X geometry
 Layers (SVG <g id>): CORTE (cut, red), VINCO (crease, blue dashed), PICOTE (perforation, magenta dash-dot),
 SANGRIA (3 mm bleed, green), ZONA (print zones, grey), COTA (dimensions and labels, black). Board thickness
@@ -32,11 +34,12 @@ def f(v):
 
 
 # ------------------------------------------------------------------------------------------------- tuck-end carton
-def tuck_end(W, D, H, glue=12.0, tongue=16.0, dust=None):
+def tuck_end(W, D, H, glue=12.0, tongue=None, dust=None):
     """Reverse tuck end. Flat order left to right: glue | front | side 1 (right) | back | side 2 (left).
     Top tuck flap on the BACK panel (folds to the front), bottom tuck flap on the FRONT panel; dust flaps on the sides.
     Returns cut path, crease paths and panel rectangles (x, y, w, h) in mm, y down."""
     dust = dust or round(D * 0.42, 1)
+    tongue = tongue or round(min(16.0, D * 0.2), 1)
     Tz = D + tongue                       # closure zone height (top and bottom)
     xg, xf, x1, xb, x2, xe = 0.0, glue, glue + W, glue + W + D, glue + 2 * W + D, glue + 2 * W + 2 * D
     y0, y1 = Tz, Tz + H
@@ -115,8 +118,9 @@ def dust_flap_rev2(xa, xb_, y, dust):
 
 # ------------------------------------------------------------------------------------------------- SVG writer
 class Sheet:
-    def __init__(self, w, h, margin=12.0):
+    def __init__(self, w, h, margin=12.0, top=None):
         self.w, self.h, self.m = w, h, margin
+        self.top = margin if top is None else top
         self.g = {k: [] for k in ('SANGRIA', 'ZONA', 'CORTE', 'VINCO', 'PICOTE', 'COTA')}
 
     def path(self, layer, d):
@@ -137,8 +141,8 @@ class Sheet:
         self.g['COTA'].append(f'<path d="{K.placed_paths(p)}" fill="{fill}"/>')
 
     def svg(self, title):
-        m = self.m
-        W, H = self.w + 2 * m, self.h + 2 * m + 10
+        m, mt = self.m, self.top
+        W, H = self.w + 2 * m, self.h + mt + m + 10
         style = dict(SANGRIA=f'fill="none" stroke="{GREEN}" stroke-width="0.25" stroke-dasharray="1 1"',
                      ZONA=f'fill="none" stroke="{GREY}" stroke-width="0.2"',
                      CORTE=f'fill="none" stroke="{RED}" stroke-width="0.3"',
@@ -149,7 +153,7 @@ class Sheet:
         head = Line([run_cap(title, K.CN, 3.4, 60, CAPS)])
         hp = K.place_left(head, 0, -4.0)
         return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{f(W)}mm" height="{f(H)}mm" '
-                f'viewBox="{f(-m)} {f(-m - 10)} {f(W)} {f(H)}"><rect x="{f(-m)}" y="{f(-m - 10)}" width="{f(W)}" '
+                f'viewBox="{f(-m)} {f(-mt - 10)} {f(W)} {f(H)}"><rect x="{f(-m)}" y="{f(-mt - 10)}" width="{f(W)}" '
                 f'height="{f(H)}" fill="#fff"/><path d="{K.placed_paths(hp)}" fill="#000"/>{body}</svg>')
 
     def save(self, name, title):
@@ -205,8 +209,8 @@ def copo(size):
     return S.save(f'FACA_{tag}_zona-impressao.svg', title)
 
 
-def cartucho():
-    net = tuck_end(96.0, 96.0, 98.0)
+def cartucho(W=96.0, D=96.0, H=98.0, title='O INGRESSO', relabel=None):
+    net = tuck_end(W, D, H)
     S = Sheet(net['w'], net['h'])
     S.raw('SANGRIA', f'<path d="{net["cut"]}" stroke-width="6.25" stroke-opacity="0.25" stroke-dasharray="none"/>')
     S.path('CORTE', net['cut'])
@@ -215,13 +219,14 @@ def cartucho():
     labels = dict(cola='COLA', frente='FRENTE (painel principal)', lateral1='LATERAL 1 · MODO DE USO', verso='VERSO · '
                   'MANIFESTO', lateral2='LATERAL 2 · holofote nela.', topo='TOPO (aba de fechamento)',
                   fundo='FUNDO (aba de fechamento)')
+    labels.update(relabel or {})
     for k, (x, y, w, h) in net['panels'].items():
         if k == 'cola':
             continue
         S.text(x + w / 2, y + h / 2, labels[k], 2.6, 'middle', GREY)
-    S.text(net['w'] / 2, net['h'] + 6, 'O INGRESSO · 96 × 96 × 98 mm · cartucho de fundo e topo invertidos (RTE) · '
-           'SBS 400 g/m² · espessura do cartão NÃO compensada', 2.4, 'middle')
-    return S.save('FACA_CARTUCHO_96x96x98.svg', 'O INGRESSO · faca planificada')
+    S.text(net['w'] / 2, net['h'] + 7.5, f'{title} · {W:.0f} × {D:.0f} × {H:.0f} mm · cartucho de fundo e topo invertidos '
+           f'(RTE) · SBS 400 g/m² · espessura do cartão NÃO compensada', 2.4, 'middle')
+    return S.save(f'FACA_CARTUCHO_{W:.0f}x{D:.0f}x{H:.0f}.svg', f'{title} · faca planificada')
 
 
 def wrap_box(W, D, Hh, turn=15.0):
@@ -303,11 +308,34 @@ def setlist():
 
 
 def seal_and_stickers():
-    S = Sheet(60.0, 15.0, 8.0)
+    import pulseira as PU
+    S = Sheet(60.0, 15.0, 26.0, top=6.0)
     S.path('CORTE', rect(0, 0, 60, 15))
     S.raw('SANGRIA', f'<path d="{rect(-3, -3, 66, 21)}"/>')
-    S.text(30, 22, 'SELO DE PAPEL 60 × 15 · frente amarela / verso papel', 2.0, 'middle')
-    S.save('FACA_PULSEIRA_selo-60x15.svg', 'A PULSEIRA · selo')
+    a0, a1 = PU.AMARELO_S
+    S.raw('ZONA', f'<path d="{rect(a0, 0, a1 - a0, 15)}" fill="{K.T.C["amarelo"]}" fill-opacity="0.35"/>')
+    marks = sorted({v for s0, s1, *_ in PU.SEAL_PANELS for v in (s0, s1)})
+    prev, low = None, False
+    for v in marks:
+        if 0 < v < 60:
+            S.path('VINCO', f'M{f(v)},0 V15')
+        low = (not low) if prev is not None and v - prev < 4.0 else False   # stagger crowded marks
+        S.raw('COTA', f'<path d="M{f(v)},15.4 V{f(18.6 if not low else 20.8)}" fill="none" stroke="{GREY}" '
+                      f'stroke-width="0.15"/>')
+        S.text(v, 20.6 if not low else 22.8, f'{v:g}'.replace('.', ','), 1.5, 'middle', GREY)
+        prev = v
+    for s0, s1, name, where, vis in PU.SEAL_PANELS:
+        if name in ('TOPO', 'BAIXO'):
+            S.text((s0 + s1) / 2, 8.6, name, 2.4, 'middle')
+    S.text(15.0, 8.4, 'colagem', 1.8, 'middle', GREY)
+    S.text(15.0, 10.8, '(fica sob o BAIXO)', 1.4, 'middle', GREY)
+    notes = ['SELO DE PAPEL 60 × 15 mm · impresso só por fora · vincos a cada mudança de face',
+             'enrola no maço pulseira + ponta (≈16 × 2,5 mm) · volta de 37 mm + sobreposição de 23 mm por baixo',
+             'TOPO 25,5–41,5: \u201cpode / rasgar.\u201d · BAIXO 44–60: \u201co que se guarda é a pulseira.\u201d',
+             'amarelo de 23 a 44 (laterais + topo) · papel no BAIXO e na colagem (0–23)']
+    for k, t in enumerate(notes):
+        S.text(30, 28.0 + 3.0 * k, t, 1.7, 'middle')
+    S.save('FACA_PULSEIRA_selo-60x15.svg', 'A PULSEIRA · selo de papel')
     for w, h in ((40.0, 12.0), (32.0, 10.0)):
         S = Sheet(w, h, 8.0)
         S.path('CORTE', K.rrect_d(0, 0, w, h, 1.0))
@@ -339,6 +367,10 @@ def main():
     copo('200')
     copo('080')
     cartucho()
+    cartucho(74.0, 74.0, 76.0, 'O INGRESSO SINGLE')
+    cartucho(74.0, 74.0, 82.0, 'NOVA TEMPORADA (refil)',
+             dict(lateral1='LATERAL 1 · MODO DE USO', lateral2='LATERAL 2 · ADVERTÊNCIAS',
+                  topo='TOPO · ESTE LADO PRA CIMA', fundo='FUNDO · código + descarte'))
     case('base')
     case('tampa')
     setlist()
