@@ -2907,6 +2907,12 @@ strangers' dead parents, alone, in year three?"**
       calls: VITRINE R$690 · O LANÇAMENTO R$3.900 · O ANÚNCIO (AI presenter, Portuguese voice, 15 s, 3 openings)
       R$2.900 · both R$5.900 · EXTENSÃO R$990 · repeat launch R$3.300. Every film ships with sound and silent; the
       presenter never holds the pack in motion (talk 0–6 s, gesture 6–9 s, approved product image 9–15 s).
+      - **Kit audit, 6 Oct: no kit has a finished O ANÚNCIO.** Every hero film is silent by design (*"sem fala"*,
+        *"no dialogue or lip-sync"*, *"mix sem voz"*). Only AVELUNE and FAÍSCA (section 24) script a creator-style ad,
+        and neither is filmed. AVELUNE allows voice-over only. FAÍSCA allows one on-camera line per shot, with
+        voice-over *"quando a sincronização não for convincente"*. Both keep the pack in the approved still only and
+        forbid testimonial lines. **VOLTA uses a real model, and it forbids any voice imitating her.** So a talking ad
+        for a real face needs her written consent to a synthetic voice, or a separate fictional presenter.
     - At 3 hours, R$2.990 earns ≈R$870–980 an hour after R$52–380 of tool costs, against R$290–360 needed.
     - **At these hours the limit is sales, not production.** Even R$1.490 pays ≈R$370–480 an hour; a lower price
       doubles the sales count (8–10 a month), it doesn't break her rate.
