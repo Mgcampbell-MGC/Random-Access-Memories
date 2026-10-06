@@ -132,6 +132,194 @@ def stencil_rects(p, frac=0.5, gap_em=0.05, lower_xh=False):
     return rects
 
 
+# --------------------------------------------------------------------------------------------------- stencil, round 3
+# CCO review (director, 6 Oct 2026): the single horizontal bridge at 50 % cap cut the E/F middle arms into hairlines
+# and halved S and C. The stencil now cuts only where a stencil NEEDS a bridge: two short VERTICAL bridges per closed
+# counter (one through the stroke above the counter, one through the stroke below it, on the counter's tallest
+# vertical axis). Letters without a closed counter (E F S C H M T …) stay whole.
+from fontTools.pens.basePen import BasePen  # noqa: E402
+
+
+NO_CUT = {'ordmasculine', 'ordfeminine', 'degree', 'periodcentered', 'periodcentered.case', 'period', 'comma'}
+
+
+class _Flat(BasePen):
+    def __init__(self, n=12):
+        super().__init__(None)
+        self.n, self.cs, self.cur = n, [], None
+
+    def _moveTo(self, p):
+        self.cur = [p]
+
+    def _lineTo(self, p):
+        self.cur.append(p)
+
+    def _curveToOne(self, p1, p2, p3):
+        p0 = self.cur[-1]
+        for i in range(1, self.n + 1):
+            t = i / self.n
+            mt = 1 - t
+            self.cur.append((mt ** 3 * p0[0] + 3 * mt * mt * t * p1[0] + 3 * mt * t * t * p2[0] + t ** 3 * p3[0],
+                             mt ** 3 * p0[1] + 3 * mt * mt * t * p1[1] + 3 * mt * t * t * p2[1] + t ** 3 * p3[1]))
+
+    def _qCurveToOne(self, p1, p2):
+        p0 = self.cur[-1]
+        for i in range(1, self.n + 1):
+            t = i / self.n
+            mt = 1 - t
+            self.cur.append((mt * mt * p0[0] + 2 * mt * t * p1[0] + t * t * p2[0],
+                             mt * mt * p0[1] + 2 * mt * t * p1[1] + t * t * p2[1]))
+
+    def _closePath(self):
+        if self.cur and len(self.cur) > 2:
+            self.cs.append(self.cur)
+        self.cur = None
+
+    _endPath = _closePath
+
+
+def contours(fc, gid):
+    pen = _Flat()
+    for op, args in fc.outline(gid):
+        if op == 'closePath':
+            pen.closePath()
+        elif op == 'endPath':
+            pen.endPath()
+        else:
+            getattr(pen, op)(*args)
+    return pen.cs
+
+
+def inside(pt, poly):
+    x, y = pt
+    c = False
+    n = len(poly)
+    for i in range(n):
+        x1, y1 = poly[i]
+        x2, y2 = poly[(i + 1) % n]
+        if (y1 > y) != (y2 > y) and x < (x2 - x1) * (y - y1) / (y2 - y1) + x1:
+            c = not c
+    return c
+
+
+def xcuts(poly, x):
+    ys = []
+    n = len(poly)
+    for i in range(n):
+        x1, y1 = poly[i]
+        x2, y2 = poly[(i + 1) % n]
+        if (x1 <= x < x2) or (x2 <= x < x1):
+            ys.append(y1 + (y2 - y1) * (x - x1) / (x2 - x1))
+    return ys
+
+
+def counter_cuts(fc, gid):
+    """Font-unit vertical cuts (x, y_lo, y_hi) opening every closed counter: one through the stroke above it and one
+    through the stroke below it, on the counter's widest vertical axis."""
+    cs = contours(fc, gid)
+    cuts = []
+    for i, c in enumerate(cs):
+        depth = sum(1 for j, o in enumerate(cs) if j != i and inside(c[0], o))
+        if depth % 2 == 0:
+            continue                                   # an outer contour, not a counter
+        xs = [p[0] for p in c]
+        x0, x1 = min(xs), max(xs)
+        # the vertical axis: the x where the counter is tallest (robust for triangles, bowls and rings)
+        best = None
+        for k in range(1, 40):
+            x = x0 + (x1 - x0) * k / 40
+            ys = sorted(xcuts(c, x))
+            if len(ys) >= 2:
+                h = ys[-1] - ys[0]
+                if best is None or h > best[0] + 1e-6 or (abs(h - best[0]) < 1e-6 and abs(x - (x0 + x1) / 2) < abs(best[1] - (x0 + x1) / 2)):
+                    best = (h, x, ys[0], ys[-1])
+        if best is None:
+            continue
+        _, x, cb, ct = best
+        allys = sorted(y for o in cs for y in xcuts(o, x))
+        above = [y for y in allys if y > ct + 0.5]
+        below = [y for y in allys if y < cb - 0.5]
+        if above:
+            cuts.append((x, ct, above[0]))
+        if below:
+            cuts.append((x, below[-1], cb))
+    return cuts
+
+
+def stencil_counter_rects(p, gap_em=0.05, over=0.15):
+    rects = []
+    for g in p.line.glyphs:
+        if g.ops is not None or not g.bounds() or g.fc.name(g.gid) in NO_CUT:
+            continue
+        s = g.em / g.fc.upm
+        w = gap_em * g.em
+        for x, ylo, yhi in counter_cuts(g.fc, g.gid):
+            X = p.x + g.x + x * s
+            Ytop = p.y + g.y - yhi * s
+            Ybot = p.y + g.y - ylo * s
+            rects.append((X - w / 2, Ytop - over, w, Ybot - Ytop + 2 * over))
+    return rects
+
+
+# --------------------------------------------------------------------------------------------------- the logo
+LOGO_MONO = os.path.join(KIT, '01_MARCA', 'logo', 'HOLOFOTE_logo_mono-preto_transparente.svg')
+
+
+def logo_d(x0, baseline, ink_w):
+    """The logo team's HOLOFOTE wordmark (mono: the lit O as a solid disc), as one SVG path in page mm: ink left edge
+    at x0, baseline at baseline, ink width ink_w. The SVG is y-down with the baseline at 710 and the cap top at 0.
+    Returns (d, cap_mm, ink_box)."""
+    import re
+    src = open(LOGO_MONO, encoding='utf-8').read()
+    ds = re.findall(r'<path d="([^"]+)"', src)
+    toks = [re.findall(r'[MLHVQCZmlhvqcz]|-?\d+\.?\d*', d) for d in ds]
+    xs = []
+    for tk in toks:                               # ink extents from every coordinate
+        cmd, i = None, 0
+        nums = []
+        for t in tk:
+            if t.isalpha():
+                cmd = t
+                continue
+            nums.append((cmd, float(t)))
+        k = 0
+        while k < len(nums):
+            c, v = nums[k]
+            if c in 'MLQC':
+                xs.append(v)
+                k += 2
+            elif c == 'H':
+                xs.append(v)
+                k += 1
+            else:
+                k += 1
+    u0, u1 = min(xs), max(xs)
+    sc = ink_w / (u1 - u0)
+    out = []
+    for tk in toks:
+        cmd = None
+        nums = []
+        parts = []
+        for t in tk + ['Z']:
+            if t.isalpha():
+                if cmd is not None:
+                    if cmd in 'MLQC':
+                        pts = [f'{fmt(x0 + (nums[j] - u0) * sc)},{fmt(baseline + (nums[j + 1] - 710) * sc)}'
+                               for j in range(0, len(nums), 2)]
+                        parts.append(cmd + ' '.join(pts))
+                    elif cmd == 'H':
+                        parts.append('H' + ' '.join(fmt(x0 + (v - u0) * sc) for v in nums))
+                    elif cmd == 'V':
+                        parts.append('V' + ' '.join(fmt(baseline + (v - 710) * sc) for v in nums))
+                    elif cmd == 'Z':
+                        parts.append('Z')
+                cmd, nums = t, []
+            else:
+                nums.append(float(t))
+        out.append(' '.join(parts))
+    return ' '.join(out), 710 * sc, (x0, baseline - 722 * sc, x0 + ink_w, baseline + 12 * sc)
+
+
 # --------------------------------------------------------------------------------------------------- text blocks
 def break_words(words, widthf, measure, min_last=2):
     """Balanced ragged-right breaking: minimum squared slack, a bonus for ending a line at a sentence end, a penalty

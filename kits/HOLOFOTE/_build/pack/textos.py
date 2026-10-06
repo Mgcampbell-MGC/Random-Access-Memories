@@ -87,7 +87,7 @@ CASE_CAMARIM = 'CAMARIM 1 · '  # + headliner
 CASE_LID_FRONT = 'acesso restrito'
 CASE_FRONT_SHOW = 'HOLOFOTE · '  # + show name
 CASE_FRAGIL = 'FRÁGIL · ESTE LADO PRA CIMA ↑'
-CASE_UNDER = 'O copo é seu. O resto, separe: papel, plástico e metal.'   # director's decision, see CASE_UNDER_FIX
+CASE_UNDER = 'O copo é seu.'   # director's decisions rounds 2–3 (the disposal block says the rest), see CASE_UNDER_FIX
 CASE_BINS = ['papel', 'plástico', 'vidro', 'metal']
 CASE_MIRROR = 'olha a atração.'
 RIDER_HEAD = 'RIDER DA ATRAÇÃO · TURNÊ DIA DAS MÃES 2027'
@@ -135,7 +135,8 @@ MODO_FIX = dict(kind=DD, platform='Use a vela dentro do copo, sobre a tampa vira
                 'glass: it is always used inside the glass, and the glass stands on the lid or a flat surface')
 CASE_UNDER_FIX = dict(kind=DD, platform='O case é de papel. O copo é seu.', used=None,
                       reason='false as written: the case also has EVA, a PMMA mirror, magnets, a polyester band and a '
-                             'plastic clasp; disposal marks papel · plástico · vidro · metal')
+                             'plastic clasp. Round 3: "O resto, separe: papel, plástico e metal." dropped as redundant: '
+                             'the disposal block (CASE · PAPEL, PLÁSTICO E METAL · SEPARE …) says it')
 CT_TOP_FIX = dict(kind=DD, platform='ESTE LADO PRA CIMA ↑', used=None,
                   reason='an arrow is meaningless on a horizontal panel; the words stay')
 ALERG_NOTE = '— exemplo; confirmar com o certificado do fornecedor da fragrância.'
@@ -220,3 +221,20 @@ TAGLINE = 'holofote nela.'
 MODO_FIX['used'] = MODO_DE_USO[-1]
 CASE_UNDER_FIX['used'] = CASE_UNDER
 CT_TOP_FIX['used'] = CT_TOP
+
+# ---------------------------------------------------------------------------------------------------------------------
+# Round 3, director's decisions after the CCO visual review (6 Oct 2026)
+# 1. disposal: code-set Produção caps lines in the brand voice replace the clip-art bin pictograms
+DISPOSAL_CT = ['CARTUCHO · PAPEL · RECICLE', 'COPO · VIDRO · FICA', 'CÁPSULA · ALUMÍNIO · RECICLE']
+DISPOSAL_REF = ['CARTUCHO · PAPEL · RECICLE', 'CÁPSULA · ALUMÍNIO · RECICLE']      # a refill has no glass
+DISPOSAL_CASE = ['CASE · PAPEL, PLÁSTICO E METAL · SEPARE', 'COPO · VIDRO · FICA', 'CÁPSULA · ALUMÍNIO · RECICLE']
+DISPOSAL_FIX = dict(kind=DD, platform='disposal pictograms (generic bins) + material names',
+                    reason='clip-art bins replaced by code-set Condensed One caps lines in the brand voice, one per '
+                           'material; "O copo fica" is the brand\'s own idea, so the disposal block says it')
+# 3. the Locutor (Expanded / wght 700 display) is set in CAPITALS everywhere except the lockup "holofote nela."
+LOCUTOR_CAPS = dict(kind=DD, reason='Locutor lines are capitals everywhere except the lockup "holofote nela."; lower '
+                                    'case only in Shantell (the Fã) or Condensed One at 0 tracking (the Produção)')
+BODY_PRODUCAO = dict(kind=DD, platform='body text in Special Gothic wght 400 (sentence case)',
+                     used='Special Gothic Condensed One, sentence case, tracking 0 (the Produção)',
+                     reason='lower case is allowed only in Shantell or Condensed One at 0 tracking')
+ADMITE_BACK = 'ADMITE 1'      # round 3: the ticket backs on the setlist read as tickets

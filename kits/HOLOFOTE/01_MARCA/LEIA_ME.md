@@ -7,8 +7,8 @@ Python: `/home/user/venvs/web/bin/python`. Os comandos abaixo rodam da raiz do k
 
 | Pasta / arquivo | O que é |
 |---|---|
-| `logo/*.svg` | Wordmarks e O FOCO aprovados (não mexer). |
-| `logo/png/` | Os mesmos SVGs em PNG (logo 2400 px de largura, O FOCO 1200 px), fundo transparente onde o SVG é transparente. |
+| `logo/*.svg` | Wordmarks e O FOCO, gerados por `_build/logo.py`. No papel, no amarelo e no laranja o O aceso é PRETO (`preto-sobre-papel`, `preto_transparente` = o mono). O FOCO num quadrado 1200 × 1200 centrado pela área: disco d, vão 1,2 d, poça 3,2 d × 0,5 d (revisão do CCO, 6 out 2026). |
+| `logo/png/` | Os mesmos SVGs em PNG (logo 2400 px de largura, O FOCO 1200 × 1200), fundo transparente onde o SVG é transparente. |
 | `marca/A-MARCA_X_s927.*`, `A-MARCA_X_s4.*` | A MARCA, o X de fita gaffer: PNG 2048 transparente, versão sobre preto, SVG vetorial e JSON com a geometria das tiras. |
 | `marca/A-TIRA_s31.*` | Uma fita só (o pedaço da tampa, "ela fica aqui."), mesmos formatos. |
 | `lambe/LAMBE_<LxA>_s<n>_*.png` | O LAMBE em camadas soltas: `grao`, `rugas`, `borda` (alfa rasgado), `altura16` (16 bits). Tamanhos 1080×1080, 1080×1350, 1080×1920, 2000×3000. |
@@ -29,8 +29,9 @@ O JSON ao lado dá centro, ângulo, comprimento e largura de cada tira (para esc
 Uma por quadro.
 
 ### O LAMBE · papel colado na parede · `_build/brand/lambe.py`
-Separa as tintas da arte chapada, tira cada chapa de registro (1–2 px), dá falha e veio de tinta, grão de papel,
-rugas de cola, marcas de pincel e borda rasgada. A semente muda tudo; use uma por peça.
+Separa as tintas da arte chapada, tira cada chapa de registro (1–2 px) com uma batida fantasma de 1–2 px na preta, dá
+falha de tinta, grão de papel, rugas de cola (vincos, vincos direcionais, bolhas pequenas), marcas de pincel e borda
+rasgada com o miolo do papel em fibra (6–12 px). `folga_tinta=40` mantém todo rasgo de borda a ≥ 40 px dos glifos. A semente muda tudo; use uma por peça.
 ```
 python _build/brand/lambe.py aplicar arte_chapada.png saida.png --papel amarelo --semente 7 \
        [--rasgo 0.3] [--rugas 1.0] [--registro 2] [--sem-borda] [--albedo alb.png] [--altura alt.png]
@@ -105,6 +106,10 @@ python _build/brand/livro.py         # livro/ + placeholders.json (depende dos t
   §D.3. Diferença de 3 %.
 - **Eixo wdth da linha 3.** Resolvido na tinta, o motor dá CAMARIM 104, MAIS UM! 110, ACÚSTICO 100; o §C.2 (medido no
   avanço) dá 106, 111, 102. A prancha 10 mostra os dois.
-- **O aceso nos cartazes.** Segui os logos aprovados (§D.3): O aceso amarelo também no rosa e no laranja, embora o
-  §D.1 diga "amarelo e laranja nunca lado a lado". Só no amarelo o disco é preto.
+- **O aceso.** Decidido pelo diretor (6 out 2026, §D.1 vence §D.3): amarelo no preto, no rosa e no violeta; PRETO no
+  amarelo, no laranja (amarelo nunca encosta no laranja) e no papel (amarelo sobre papel é par "Nunca", 1,18:1).
+  Regra no código: `lampDe` em `pecas.js`, `lamp` em `cartaz.html`, `ways` em `_build/logo.py`.
+- **O FOCO.** Redesenhado na revisão do CCO (6 out 2026): o desenho do §D.3 (vão 0,5 d, poça 2,4 × 0,8 d) lia como o
+  ícone genérico de usuário a 16–32 px. Agora: vão 1,2 d, poça 3,2 d × 0,5 d, num quadrado centrado pela área com a
+  tinta dentro de 84 % do raio (o recorte redondo do avatar nunca corta). A pulseira (time de embalagem) não mudou.
 - **"Nunca deixe a vela acesa sem supervisão."** entra em C03 e C07 porque mostram a vela acesa (§D.8.6).

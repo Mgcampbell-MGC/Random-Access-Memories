@@ -10,8 +10,8 @@ zone is filled exactly, so nothing is ever truncated. Type: Special Gothic wght 
 the sturdy cut; Condensed One's hairline joins would break up at a 0,2 mm thread pitch).
 Seal (re-set 6 Oct 2026, director's decision, a deviation from §C.6 recorded in the json): a 60 x 15 mm strip of
 uncoated papel-cartaz wrapped round the band-and-tail stack (≈16 x 2,5 mm), printed on the outside only. Only a
-~15 x 16 mm face shows on top, so the front "pode rasgar." is set in two lines "pode / rasgar." (Expanded One lower
-case, the longer line filling 13,5 mm) on the TOP panel, amarelo; the back "o que se guarda é a pulseira." sits on the
+~15 x 16 mm face shows on top, so the front "pode rasgar." is set in two lines "PODE / RASGAR." (Expanded One caps,
+the Locutor, CCO review round 3; the longer line filling 13,5 mm) on the TOP panel, amarelo; the back "o que se guarda é a pulseira." sits on the
 outer UNDERSIDE panel in Shantell 500, papel, as many lines as fit 13,5 mm. The 23 mm overlap lies under the stack.
 
 Outputs in 02_PRODUTO/pulseira/ at 20 px/mm: PULSEIRA_padrao.png (the two-colour jacquard design, 7000 x 300),
@@ -103,10 +103,20 @@ def woven(a):
     bk = np.array([0.055, 0.05, 0.06], np.float32)
     rnd = np.random.default_rng(927)
     jitter = rnd.normal(0, 0.035, (cj.max() + 2, ci.max() + 2)).astype(np.float32)[cj, ci]
-    lum_a = 0.80 + 0.26 * weft_shape + jitter
-    lum_b = 0.75 + 0.55 * (warp_shape * (1 - twill) + weft_shape * twill) + jitter * 2
-    rgb = m[..., None] * am[None, None, :] * lum_a[..., None] + (1 - m)[..., None] * bk[None, None, :] * lum_b[..., None]
     hgt = m * (0.55 + 0.45 * weft_shape) + (1 - m) * (0.35 + 0.35 * (warp_shape * (1 - twill) + weft_shape * twill))
+    # thread shading (CCO review, round 3, 2D only: the height map above is unchanged): each weft float is one thread
+    # running the whole float, so its tone varies per THREAD (not per 5 x 4 cell, which read as pixel blocks), with a
+    # dark groove between neighbouring threads at the 5 px weft pitch and a fibre-twist striation at a 4 px pitch; the
+    # black ground gets the same treatment on its 4 px warp rows.
+    groove_x = np.abs(fx - 0.5) * 2.0
+    groove_y = np.abs(fy - 0.5) * 2.0
+    per_thread = rnd.normal(0, 0.03, ci.max() + 2).astype(np.float32)[ci]
+    per_row = rnd.normal(0, 0.05, cj.max() + 2).astype(np.float32)[cj]
+    twist = np.sin(2 * np.pi * (yy + 0.6 * xx) / 4.0).astype(np.float32)
+    lum_a = 0.80 + 0.24 * weft_shape - 0.22 * groove_x ** 5 + per_thread + 0.035 * twist
+    lum_b = (0.75 + 0.55 * (warp_shape * (1 - twill) + weft_shape * twill) - 0.30 * (groove_y ** 5 * (1 - twill) +
+             groove_x ** 5 * twill) + per_row + 0.06 * twist)
+    rgb = m[..., None] * am[None, None, :] * lum_a[..., None] + (1 - m)[..., None] * bk[None, None, :] * lum_b[..., None]
     # selvedges
     sel = ((yy < 0.6 * PP) | (yy > hh - 0.6 * PP)).astype(np.float32)
     rgb = rgb * (1 - sel[..., None]) + sel[..., None] * bk[None, None, :] * (0.8 + 0.5 * warp_shape)[..., None]
@@ -124,7 +134,7 @@ SEAL_PANELS = [  # (s0, s1, name, where, visible)
     (4.5, 7.0, 'interna-lado', 'inner layer, under the right side', False),
     (7.0, 23.0, 'interna-baixo', 'inner layer, under the underside panel (glue zone)', False),
     (23.0, 25.5, 'lado-esquerdo', 'left side of the stack', True),
-    (25.5, 41.5, 'TOPO', 'top face: the front, "pode / rasgar."', True),
+    (25.5, 41.5, 'TOPO', 'top face: the front, "PODE / RASGAR."', True),
     (41.5, 44.0, 'lado-direito', 'right side of the stack (outer layer)', True),
     (44.0, 60.0, 'BAIXO', 'underside: "o que se guarda é a pulseira."', True),
 ]
@@ -133,20 +143,20 @@ FACE_MARGIN = 0.75                # (15 - 13,5) / 2
 
 
 def face_front():
-    """'pode / rasgar.' — Expanded One lower case, two lines, flush left, the longer line ('rasgar.') filling 13,5 mm
-    of the 15 mm face; the block centred on the 15 x 16 face. Coordinates in FACE mm: x along the line (15), y across
-    the stack (16)."""
-    words = T.SEAL_FRONT.split(' ')
-    assert len(words) == 2 and ' '.join(words) == T.SEAL_FRONT
-    ln2, cap = K.fit_size(lambda c: Line([run_cap(words[1], K.XP, c, 0)]), SEAL_W - 2 * FACE_MARGIN, 0.5, 10)
-    ln1 = Line([run_cap(words[0], K.XP, cap, 0)])
+    """'PODE / RASGAR.' — the Locutor in capitals (CCO review, round 3: Expanded One is capitals everywhere except the
+    lockup 'holofote nela.'), two lines, flush left, the longer line ('RASGAR.') filling 13,5 mm of the 15 mm face;
+    the block centred on the 15 x 16 face. Coordinates in FACE mm: x along the line (15), y across the stack (16)."""
+    words = T.SEAL_FRONT.upper().split(' ')
+    assert len(words) == 2 and ' '.join(words) == T.SEAL_FRONT.upper()
+    ln2, cap = K.fit_size(lambda c: Line([run_cap(words[1], K.XP, c, 0, CAPS)]), SEAL_W - 2 * FACE_MARGIN, 0.5, 10)
+    ln1 = Line([run_cap(words[0], K.XP, cap, 0, CAPS)])
     b1, b2 = ln1.ink(), ln2.ink()
-    lead = b1[3] - b2[1] + 0.22 * cap              # line 1's descender to line 2's x-height, plus air
+    lead = 1.4 * cap                                # caps only: baseline to baseline
     top, bot = b1[1], lead + b2[3]
     y1 = STACK_W / 2 - (top + bot) / 2
     x = FACE_MARGIN
     lines = [(ln1, x - b1[0], y1), (ln2, x - b2[0], y1 + lead)]
-    return lines, dict(text=T.SEAL_FRONT, lines=words, font='Special Gothic Expanded One lower case',
+    return lines, dict(text=T.SEAL_FRONT.upper(), lines=words, font='Special Gothic Expanded One caps (the Locutor)',
                        cap_mm=round(cap, 3), longer_line_mm=round(b2[2] - b2[0], 3), lead_mm=round(lead, 3),
                        alignment='flush left, block centred on the face')
 
@@ -258,7 +268,9 @@ def main():
                                     reason='wrapped round the band and tail (≈16 x 2,5 mm) the seal shows only a '
                                            '~15 x 16 mm top face; at cap 4,0 "pode rasgar." is 41,6 mm wide and read '
                                            '"…de ras…" (3D team); director\'s decision 6 Oct 2026, exact strings '
-                                           'kept'))
+                                           'kept'),
+                     deviations=[dict(panel='TOPO', kind=T.DD, platform=T.SEAL_FRONT, used=T.SEAL_FRONT.upper(),
+                                      **{k: v for k, v in T.LOCUTOR_CAPS.items() if k != 'kind'})])
     R.write_json(dict(band=dict(size_mm=[Wb, L], ppmm=PP, px=[ww, hh], text=T.BAND, font='Special Gothic wght 700 '
                                 'wdth 75 caps', colours=dict(ground='preto (black polyester)', jacquard='amarelo'),
                                 thread_pitch_mm=dict(weft=WEFT, warp=WARP), **info,

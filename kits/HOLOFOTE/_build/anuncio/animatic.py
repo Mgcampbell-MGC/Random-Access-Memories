@@ -1,7 +1,7 @@
 """O ANÚNCIO previs animatics: 8 masters x (with sound, silent), 15,0 s, 1080 x 1920, 24 fps (platform §F, §D.10).
 
     /home/user/venvs/web/bin/python animatic.py [ETAPA ...] [--cortes 1A,2A]
-    ETAPAs, in order (default: all):  vo  camadas  som  quadros  folhas  fidelidade
+    ETAPAs, in order (default: all):  vo  camadas  som  quadros  folhas  fidelidade  audio   (prova: a proof sheet)
 
 Inputs (all regenerable):
   _tmp_animatic/vo/          temp VO, from  /home/user/venvs/kokoro/bin/python vo.py _tmp_animatic/vo
@@ -59,6 +59,7 @@ SLUG = {'1': 'O-PIOR-SHOW', '2': 'PRIMEIRO-SINAL', '3': 'FA-DE-CARTEIRINHA'}
 # VO placement: hook 0,10 s (2B 0,40 s: "a beat of silence, then she speaks"), body 2,05 s, KV line 9,25 s.
 STARTS = {'gancho': 0.10, 'corpo': 2.05, 'kv_vo': 9.25}
 STARTS_CUT = {'2B': {'gancho': 0.40}}
+TETO_WAV = -1.6                            # dBTP of the mix WAV (see som())
 VO_LUFS = -16.0                            # each line; the bed is ducked 8 dB under it (sound team: "baixe a cama ~8 dB")
 
 # Previs plates and their head pixel (1080 space; animatic_previs.SHOTS). Talk push: about the head.
@@ -254,7 +255,9 @@ def som(cuts, T):
         cues.append(dict(label='cama KV 9–15 s (equipe de som), abaixada 8 dB sob a VO', file=bed, start_s=9.0, gain_db=0,
                          envelope=[[0, 0], [round(d0 - 0.07, 3), 0], [round(d0 - 0.01, 3), -8], [round(d1 + 0.05, 3), -8],
                                    [round(d1 + 0.30, 3), 0], [6.0, 0]]))
-        spec = dict(duracao_s=15.0, fps=FPS, alvo_lufs=-14, teto_dbtp=-1, cues=cues)
+        # −14 LUFS integrated; the WAV ceiling is −1,6 dBTP so the delivered AAC, decoded, still measures ≤ −1 dBTP
+        # (measured on 1A at a −1,0 ceiling: AAC decoded to −0,72 dBTP)
+        spec = dict(duracao_s=15.0, fps=FPS, alvo_lufs=-14, teto_dbtp=TETO_WAV, cues=cues)
         cj = os.path.join(SOM, cut + '_cues.json')
         json.dump(spec, open(cj, 'w'), ensure_ascii=False, indent=1)
         wav = os.path.join(SOM, cut + '.wav')
@@ -473,8 +476,11 @@ def prova(cuts, T, SR_, frames):
 
 # ================================================================================================ 5. contact sheets
 def ffmpeg():
-    import imageio_ffmpeg
-    return imageio_ffmpeg.get_ffmpeg_exe()
+    try:
+        import imageio_ffmpeg
+        return imageio_ffmpeg.get_ffmpeg_exe()
+    except ImportError:                    # same fallback as tools/codificar.py
+        return 'ffmpeg'
 
 
 class Stream:
@@ -707,11 +713,33 @@ def fidelidade(cuts):
     return rep
 
 
+# ================================================================================================ 7. delivered audio
+def audio(cuts):
+    """Loudness and true peak of the AAC in each delivered _som.mp4, decoded (what a phone plays), into
+    animatic_tempos.json. The bar is the platform's: −14 LUFS integrated, ≤ −1 dBTP."""
+    sys.path.insert(0, os.path.join(B, 'sound'))
+    import dsp
+    import pyloudnorm as pyln
+    lj = os.path.join(OUT, 'animatic_tempos.json')
+    log = json.load(open(lj)) if os.path.exists(lj) else {}
+    for cut in cuts:
+        name = 'HLF-AD-%s_%s_animatic' % (cut, SLUG[cut[0]])
+        wav = os.path.join(TMP, 'aac_%s.wav' % cut)
+        subprocess.run([ffmpeg(), '-loglevel', 'error', '-y', '-i', os.path.join(OUT, name + '_som.mp4'), '-vn', '-ar',
+                        '48000', '-ac', '2', wav], check=True)
+        x = dsp.stereo(dsp.read(wav))
+        r = dict(lufs_i=round(pyln.Meter(48000).integrated_loudness(x), 2), true_peak_dbtp=round(dsp.true_peak(x), 2),
+                 duracao_s=round(len(x) / 48000, 3))
+        log.setdefault(cut, {})['som_entregue_aac'] = r
+        print('audio', cut, r)
+    json.dump(dict(sorted(log.items())), open(lj, 'w'), ensure_ascii=False, indent=1)
+
+
 # ================================================================================================ main
 def main():
     a = sys.argv[1:]
-    etapas = [x for x in a if x in ('vo', 'camadas', 'som', 'prova', 'quadros', 'folhas', 'fidelidade')] or \
-        ['vo', 'camadas', 'som', 'quadros', 'folhas', 'fidelidade']
+    etapas = [x for x in a if x in ('vo', 'camadas', 'som', 'prova', 'quadros', 'folhas', 'fidelidade', 'audio')] or \
+        ['vo', 'camadas', 'som', 'quadros', 'folhas', 'fidelidade', 'audio']
     cuts = cuts_from_args(a)
     os.makedirs(TMP, exist_ok=True)
     if 'vo' in etapas:
@@ -749,6 +777,8 @@ def main():
         folhas(cuts, T)
     if 'fidelidade' in etapas:
         fidelidade(cuts)
+    if 'audio' in etapas:
+        audio(cuts)
 
 
 if __name__ == '__main__':

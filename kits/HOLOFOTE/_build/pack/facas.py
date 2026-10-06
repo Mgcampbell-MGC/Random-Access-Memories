@@ -331,7 +331,7 @@ def seal_and_stickers():
     S.text(15.0, 10.8, '(fica sob o BAIXO)', 1.4, 'middle', GREY)
     notes = ['SELO DE PAPEL 60 × 15 mm · impresso só por fora · vincos a cada mudança de face',
              'enrola no maço pulseira + ponta (≈16 × 2,5 mm) · volta de 37 mm + sobreposição de 23 mm por baixo',
-             'TOPO 25,5–41,5: \u201cpode / rasgar.\u201d · BAIXO 44–60: \u201co que se guarda é a pulseira.\u201d',
+             'TOPO 25,5–41,5: \u201cPODE / RASGAR.\u201d · BAIXO 44–60: \u201co que se guarda é a pulseira.\u201d',
              'amarelo de 23 a 44 (laterais + topo) · papel no BAIXO e na colagem (0–23)']
     for k, t in enumerate(notes):
         S.text(30, 28.0 + 3.0 * k, t, 1.7, 'middle')

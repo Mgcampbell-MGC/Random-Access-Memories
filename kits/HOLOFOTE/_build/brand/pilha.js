@@ -180,12 +180,23 @@
     if (sobra < -0.5) console.warn('pilha: falta altura', sobra.toFixed(1));
     if (pesos > 0 && sobra > 0) for (const it of itens) it.antes += (sobra * (it.flex || 0)) / pesos;
     // 3. posiciona
+    // a posição corre SEM arredondar (y) e cada linha de base é arredondada para a grade sozinha: antes o erro de cada
+    // arredondamento entrava na linha seguinte e somava (revisão do CCO, 6 out 2026: a assinatura dos B variava 16 px
+    // entre cartões e saía da caixa segura). A última linha arredonda para baixo se passar do fim da caixa.
     let y = cx.y0;
     const grade = cx.grade || 0;          // grade de linha de base (px): 8 nas peças digitais (§D.10)
-    for (const it of itens) {
+    const ultimo = [...itens].reverse().find((it) => it.tipo !== 'espaco' && it.tipo !== 'bloco');
+    itens.forEach((it, i) => {
       y += it.antes;
-      let base = y + it.top;
-      if (grade && it.tipo !== 'bloco' && it.tipo !== 'espaco') base = Math.round(base / grade) * grade;
+      const bruto = y + it.top;
+      let base = bruto;
+      const ant = itens[i - 1];
+      if (it.passo && ant && ant.passoLista) base = ant.baseline + it.passo;      // lista de passo fixo: passo exato
+      else if (grade && it.tipo !== 'bloco' && it.tipo !== 'espaco') {
+        base = Math.round(bruto / grade) * grade;
+        if (it === ultimo && base + it.bot > cx.y1 + 0.5) base = Math.floor((cx.y1 - it.bot) / grade) * grade;
+      }
+      it.passoLista = !!(it.passo || (itens[i + 1] && itens[i + 1].passo));
       it.baseline = base;
       if (it.tipo === 'cheia') HF.posicionar(it.objs[0], it.al === 'right' ? x1 : x0, base, it.al);
       else if (it.tipo === 'dividida') {
@@ -219,8 +230,8 @@
         it.wm = HF.wordmark(parent, Object.assign({ x: x1, baseline: base, cap: capWm, align: 'right' }, it.marca));
       } else if (it.tipo === 'regua') HF.regua(parent, x0, x1, base, it.esp, it.cor);
       else if (it.tipo === 'bloco') it.desenhar(parent, x0, x1, y);
-      y = base + it.bot;
-    }
+      y = (it.passo && ant && ant.passoLista ? base : bruto) + it.bot;
+    });
     return itens;
   };
 })();

@@ -26,6 +26,7 @@ KIT = os.path.dirname(os.path.dirname(AQUI))
 SAIDA = os.path.join(KIT, '01_MARCA', 'cartazes')
 CACHE = os.path.join(AQUI, 'cache', 'cartazes')
 W, H = 2000, 3000
+FOLGA = 40      # px: distância mínima entre um rasgo de borda e qualquer glifo, nos cartazes limpos
 
 # A lista da turnê do verso do copo (§C.3), com a linha ESTREIA de varejo
 TURNE = dict(titulo='ELA ESTEVE EM TODAS.', linhas=[
@@ -85,7 +86,8 @@ CARTAZES = [
     dict(id='01', nome='MAE-AO-VIVO_amarelo', papel='amarelo', dados=lineup('amarelo'), semente=101, rasgo=0.30),
     dict(id='02', nome='MAE-AO-VIVO_rosa', papel='rosa', dados=lineup('rosa', 'AO VIVO'), semente=102, rasgo=0.35),
     dict(id='03', nome='MAE-AO-VIVO_laranja', papel='laranja', dados=lineup('laranja', 'AO VIVO'), semente=103, rasgo=0.25),
-    dict(id='04', nome='MAE-AO-VIVO_violeta', papel='violeta', dados=lineup('violeta', 'AO VIVO'), semente=104, rasgo=0.40),
+    dict(id='04', nome='MAE-AO-VIVO_violeta', papel='violeta', dados=lineup('violeta', 'AO VIVO'), semente=104, rasgo=0.40,
+         canto=True),     # o canto arrancado fica (encolhido/deslocado para ≥ 40 px dos glifos)
     dict(id='05', nome='MAE-AO-VIVO-0905_amarelo', papel='amarelo', dados=teaser('amarelo'), semente=105, rasgo=0.30),
     dict(id='06', nome='MAE-AO-VIVO-0905_rosa', papel='rosa', dados=teaser('rosa'), semente=106, rasgo=0.35),
     # dois dos quatro rasgados até as camadas antigas
@@ -140,7 +142,7 @@ def fazer(c, info):
     furo = c.get('furo')
     if c.get('antigo'):
         a = c['antigo']
-        topo = lambe.aplicar(img, c['papel'], c['semente'], rasgo=c['rasgo'])[:3]
+        topo = lambe.aplicar(img, c['papel'], c['semente'], rasgo=c['rasgo'], folga_tinta=FOLGA, canto=c.get('canto'))[:3]
         ant_img = lambe.ler(os.path.join(CACHE, f"CARTAZ-{c['id']}_antigo_chapado.png"))
         antigo = lambe.aplicar(ant_img, a['papel'], a['semente'], idade=a['idade'], borda=False)[:3]
         show = linha(info[c['id']], c['dados'].get('show') or 'AO VIVO')
@@ -160,17 +162,19 @@ def fazer(c, info):
             meta['rasgo'] = dict(tipo='corte', linha=[[W + 60, round(y + 34)], [-60, round(y - 22)]])
         meta['camada_antiga'] = dict(papel=a['papel'], show=a['dados']['show'], semente=a['semente'], idade=a['idade'])
     else:
-        assado, albedo, altura, _ = lambe.aplicar(img, c['papel'], c['semente'], rasgo=c['rasgo'], idade=c.get('idade', 0))
+        # cartaz limpo (sem idade): nenhum rasgo de borda a menos de 40 px de um glifo (revisão do CCO, 6 out 2026: o
+        # canto arrancado do CARTAZ-04 comia o H de HOLOFOTE APRESENTA); as camadas antigas rasgam livres
+        assado, albedo, altura, linfo = lambe.aplicar(img, c['papel'], c['semente'], rasgo=c['rasgo'], idade=c.get('idade', 0),
+                                                      folga_tinta=None if c.get('idade') else FOLGA, canto=c.get('canto'))
+        meta['rasgos_borda'] = linfo.get('rasgos', [])
         if furo == 'metade-direita':
             # sobra meio ACÚSTICO: o lado direito foi arrancado (rasgo quase vertical, cortando a palavra)
             show = linha(info[c['id']], 'ACÚSTICO')
             xm = show['x0'] + (show['x1'] - show['x0']) * 0.56
             p0, p1 = (xm + 120, -60), (xm - 150, H + 60)
             mant, franja = lambe.rasgo_linha(H, W, r, p0, p1, amp=0.03)
-            branco = np.array([0.985, 0.975, 0.955], np.float32)
             for arr in (assado, albedo):
-                fr = (franja * mant)[..., None] * 0.9
-                arr[..., :3] = arr[..., :3] * (1 - fr) + branco * fr
+                arr[..., :3] = lambe.aplicar_franja(arr[..., :3], franja * mant)
                 arr[..., 3] *= mant
             meta['rasgo'] = dict(tipo='metade', linha=[[round(p0[0]), p0[1]], [round(p1[0]), p1[1]]])
         if c.get('idade'):

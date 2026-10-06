@@ -4,7 +4,8 @@ Uma linha gera tudo, do zero (arte chapada no Chromium → O LAMBE / papel em Py
     /home/user/venvs/web/bin/python _build/brand/lancamento.py              (tudo)
     /home/user/venvs/web/bin/python _build/brand/lancamento.py B C           (só as famílias B e C)
 Encaixar a vela renderizada nas miniaturas de C03/C07 (o render entra DEPOIS de O LAMBE, intocado: o passe de papel
-reentinta e desregistra tudo o que toca, e o rótulo tem de continuar sendo o pixel do mestre):
+reentinta e desregistra tudo o que toca, e o rótulo tem de continuar sendo o pixel do mestre; o fio preto de 6 px em
+volta entra depois do render). Sem as opções, usa _build/brand/cache/vela_c03.png e vela_c07.png se existirem:
     ... lancamento.py C --vela-c03 render_vela.png --vela-c07 render_kv.png
 Saídas e espaços reservados: 03_LANCAMENTO/{B,C,D,STK}/ + 03_LANCAMENTO/C/placeholders.json.
 """
@@ -22,6 +23,8 @@ KIT = os.path.dirname(os.path.dirname(AQUI))
 L = os.path.join(KIT, '03_LANCAMENTO')
 CACHE = os.path.join(AQUI, 'cache', 'lancamento')
 PECA = os.path.join(AQUI, 'peca.html')
+VELA_C03 = os.path.join(AQUI, 'cache', 'vela_c03.png')       # recortes do KV-45_aceso (02_PRODUTO/renders)
+VELA_C07 = os.path.join(AQUI, 'cache', 'vela_c07.png')
 
 # §E.2: BOLETIM DA TURNÊ — data, cor da faixa, a linha do dia (exata) e as quebras escolhidas (comprimentos equilibrados)
 BOLETIM = [
@@ -69,6 +72,29 @@ def compor_miniatura(chapado, caixa, render_png, circulo):
     base.save(chapado)
 
 
+def fio_miniatura(png, caixa, circulo, esp=6, cor='preto'):
+    """Fio preto de 6 px em volta da miniatura (círculo do C03, caixa do C07), desenhado DEPOIS da composição do render,
+    como o próprio render: sem ele a fita amarela do X e o rótulo amarelo se dissolviam no papel amarelo (revisão do
+    CCO, 6 out 2026). O fio fica centrado 0,5 px para fora da borda da caixa: cobre a borda do render e 0,5 px do papel."""
+    im = np.asarray(Image.open(png).convert('RGB')).astype(np.float32) / 255
+    x, y, w, h = caixa
+    H, W = im.shape[:2]
+    m = esp + 4
+    y0, y1, x0, x1 = max(0, y - m), min(H, y + h + m), max(0, x - m), min(W, x + w + m)
+    yy, xx = np.mgrid[y0:y1, x0:x1].astype(np.float32) + 0.5
+    if circulo:
+        d = np.abs(np.hypot(xx - (x + w / 2), yy - (y + h / 2)) - (w / 2 - esp / 2 + 0.5))
+    else:
+        cx, cy, hx, hy = x + w / 2, y + h / 2, w / 2 - esp / 2 + 0.5, h / 2 - esp / 2 + 0.5
+        qx, qy = np.abs(xx - cx) - hx, np.abs(yy - cy) - hy
+        sd = np.hypot(np.maximum(qx, 0), np.maximum(qy, 0)) + np.minimum(np.maximum(qx, qy), 0)
+        d = np.abs(sd)
+    a = np.clip(esp / 2 - d + 0.5, 0, 1)[..., None]
+    c = np.array(lambe.rgb(cor), np.float32)
+    im[y0:y1, x0:x1] = im[y0:y1, x0:x1] * (1 - a) + c * a
+    Image.fromarray((np.clip(im, 0, 1) * 255 + 0.5).astype(np.uint8)).save(png)
+
+
 # ------------------------------------------------------------------ B
 def fazer_B():
     os.makedirs(os.path.join(L, 'B'), exist_ok=True)
@@ -110,8 +136,27 @@ def fazer_C(vela_c03=None, vela_c07=None):
             ph[nome] = [round(q['x']), round(q['y']), round(q['w']), round(q['h'])]
             if p[5]:
                 compor_miniatura(out, ph[nome], p[5], q['tipo'] == 'circulo')
-        print('  ', os.path.relpath(out, KIT))
+                fio_miniatura(out, ph[nome], q['tipo'] == 'circulo')
+        if p[0] == 'C03':
+            print('    C03 vãos da pilha', r['info'].get('vaos'), '· ar limpo sob APLAUDIU na coluna do agudo:',
+                  ar_c03(out, r['info']), 'px (bar ≥ 6)')
+        print('  ', os.path.relpath(out, KIT), '' if p[5] or p[0] == 'C09' else '(sem render: caixa RENDER hachurada)')
     json.dump(ph, open(os.path.join(L, 'C', 'placeholders.json'), 'w'), ensure_ascii=False, indent=1)
+
+
+def ar_c03(png, g):
+    """Papel limpo (linhas contíguas sem tinta, nem a batida fantasma) entre o fundo de APLAUDIU e o topo do agudo de PÉ,
+    na coluna do É, medido no PNG final, depois de O LAMBE."""
+    out = np.asarray(Image.open(png).convert('RGB')).astype(np.float32)
+    pap, pre = np.array([255, 232, 26], np.float32), np.array([18, 16, 20], np.float32)
+    col = out[:, 800:945]
+    t = ((col - pap) @ (pre - pap)) / float((pre - pap) @ (pre - pap))
+    tinta = (t > 0.12).any(axis=1)
+    run = best = 0
+    for y in range(int(g['aplaudiu']) - 4, int(g['dePeTopo']) + 20):
+        run = run + 1 if not tinta[y] else 0
+        best = max(best, run)
+    return best
 
 
 # ------------------------------------------------------------------ D
@@ -124,10 +169,17 @@ def papel_cartao(rgba, cor, semente, rugas=0.22):
     return np.dstack([assado[..., :3], a[..., 0]])
 
 
+# D02: o ingresso a 94 % (revisão do CCO, 6 out 2026: o canhoto rasgado descia até y 1336 e x 959, fora da caixa segura
+# 4:5 x 140–940, y 64–1286). Medida 752 = 800 × 0,94, centrada na medida; y0 centra a montagem RASGADA na caixa.
+D02_ING = dict(x=164, w=752, y=88, hCorpo=840, hCanhoto=272)
+D02_CANHOTO = dict(angulo=-3.2, dx=13, dy=50)
+CAIXA_4x5 = (140, 64, 940, 1286)
+
+
 def fazer_D():
     os.makedirs(os.path.join(L, 'D'), exist_ok=True)
     jobs = [dict(html=PECA, saida=os.path.join(CACHE, 'D01_chapado.png'), w=1080, h=1920, dados=dict(receita='D01')),
-            dict(html=PECA, saida=os.path.join(CACHE, 'D02_ingresso.png'), w=1080, h=1350, dados=dict(receita='ingresso'),
+            dict(html=PECA, saida=os.path.join(CACHE, 'D02_ingresso.png'), w=1080, h=1350, dados=dict(receita='ingresso', **D02_ING),
                  transparente=True)]
     res = renderizar(jobs, verbose=False)
     for j, r in zip(jobs, res):
@@ -152,26 +204,36 @@ def fazer_D():
     def sobre(base, cam):
         return base * (1 - cam[..., 3:4]) + cam[..., :3] * cam[..., 3:4]
 
-    lambe.salvar(sobre(fundo, tk), os.path.join(L, 'D', 'D02_O-INGRESSO_inteiro.png'))
-    # rasgado: o picote abre, o canhoto desce e gira (papel de verdade, fibra no rasgo)
+    # rasgado: o picote abre, o canhoto desce e gira. O rasgo é de papel, não de régua: segue o picote a ±1,5 px (corta
+    # cada furo em meia-lua), com fibra fina na borda, e as DUAS bordas mostram o miolo do cartão (4–8 px)
     r = ruido.rng(4021)
     yp = g['yPicote']
-    mant, franja = lambe.rasgo_linha(H, W, r, (g['x1'] + 40, yp), (g['x0'] - 40, yp), amp=0.0035)
+    mant, franja, sai, franja_c = lambe.rasgo_linha(H, W, r, (g['x1'] + 40, yp), (g['x0'] - 40, yp), amp=0.0016, outro=True,
+                                                    faixa=(4.0, 8.0))
     corpo = tk.copy()
     corpo[..., 3] *= mant
     canhoto = tk.copy()
-    canhoto[..., 3] *= (1 - mant)
-    branco = np.array([0.985, 0.975, 0.955], np.float32)
-    for peca, fr in ((corpo, franja), (canhoto, None)):
-        f = (franja if fr is not None else np.clip(cv2.dilate(franja, np.ones((3, 3), np.uint8)), 0, 1))[..., None] * 0.85
-        peca[..., :3] = peca[..., :3] * (1 - f) + branco * f
+    canhoto[..., 3] *= sai
+    corpo[..., :3] = lambe.aplicar_franja(corpo[..., :3], franja)
+    canhoto[..., :3] = lambe.aplicar_franja(canhoto[..., :3], franja_c)
     cx, cy = (g['x0'] + g['x1']) / 2, (yp + g['y1']) / 2
-    M = cv2.getRotationMatrix2D((cx, cy), -3.2, 1.0)
-    M[0, 2] += 14
-    M[1, 2] += 54
+    M = cv2.getRotationMatrix2D((cx, cy), D02_CANHOTO['angulo'], 1.0)
+    M[0, 2] += D02_CANHOTO['dx']
+    M[1, 2] += D02_CANHOTO['dy']
     canhoto2 = cv2.warpAffine(canhoto, M, (W, H), flags=cv2.INTER_CUBIC, borderValue=(0, 0, 0, 0))
+    montagem = np.maximum(corpo[..., 3], canhoto2[..., 3])
+    # centra a montagem rasgada na caixa 4:5 (a inteira usa o mesmo deslocamento: o ingresso não pula entre as duas)
+    ys, xs = np.where(montagem > 0.02)
+    bx0, by0, bx1, by1 = CAIXA_4x5
+    dy = round((by0 + by1) / 2 - (ys.min() + ys.max()) / 2)
+    desl = lambda cam: cv2.warpAffine(cam, np.float32([[1, 0, 0], [0, 1, dy]]), (W, H), flags=cv2.INTER_NEAREST, borderValue=(0, 0, 0, 0))
+    corpo, canhoto2, tk2 = desl(corpo), desl(canhoto2), desl(tk)
+    lambe.salvar(sobre(fundo, tk2), os.path.join(L, 'D', 'D02_O-INGRESSO_inteiro.png'))
     lambe.salvar(sobre(sobre(fundo, corpo), canhoto2), os.path.join(L, 'D', 'D02_O-INGRESSO_rasgado.png'))
-    print('   03_LANCAMENTO/D/D02_O-INGRESSO_inteiro.png · _rasgado.png')
+    ys, xs = np.where(np.maximum(corpo[..., 3], canhoto2[..., 3]) > 0.02)
+    ok = xs.min() >= bx0 and xs.max() <= bx1 and ys.min() >= by0 and ys.max() <= by1
+    print(f'   03_LANCAMENTO/D/D02_O-INGRESSO_inteiro.png · _rasgado.png  montagem x {xs.min()}–{xs.max()} y {ys.min()}–{ys.max()}'
+          f' {"dentro" if ok else "FORA"} da caixa 4:5 {CAIXA_4x5}')
 
 
 # ------------------------------------------------------------------ STK
@@ -237,7 +299,11 @@ def main():
     if 'D' in fam:
         print('D'); fazer_D()
     if 'C' in fam:
-        print('C'); fazer_C(opt('--vela-c03'), opt('--vela-c07'))
+        # as miniaturas: os recortes do KV-45 aceso do diretor em _build/brand/cache/ (vela_c03.png, vela_c07.png) entram
+        # sozinhos se existirem; --vela-c03/--vela-c07 trocam por outro arquivo (ex.: depois de re-renderizar o KV-45)
+        v3 = opt('--vela-c03') or (VELA_C03 if os.path.exists(VELA_C03) else None)
+        v7 = opt('--vela-c07') or (VELA_C07 if os.path.exists(VELA_C07) else None)
+        print('C', 'miniaturas:', v3 and os.path.relpath(v3, KIT), v7 and os.path.relpath(v7, KIT)); fazer_C(v3, v7)
     if 'B' in fam:
         print('B'); fazer_B()
     print(f'ok {time.time() - t:.0f}s')

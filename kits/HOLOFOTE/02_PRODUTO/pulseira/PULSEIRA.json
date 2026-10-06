@@ -90,7 +90,7 @@
           41.5
         ],
         "name": "TOPO",
-        "where": "top face: the front, \"pode / rasgar.\"",
+        "where": "top face: the front, \"PODE / RASGAR.\"",
         "visible": true
       },
       {
@@ -122,15 +122,15 @@
         25.5,
         41.5
       ],
-      "text": "pode rasgar.",
+      "text": "PODE RASGAR.",
       "lines": [
-        "pode",
-        "rasgar."
+        "PODE",
+        "RASGAR."
       ],
-      "font": "Special Gothic Expanded One lower case",
-      "cap_mm": 2.491,
+      "font": "Special Gothic Expanded One caps (the Locutor)",
+      "cap_mm": 1.799,
       "longer_line_mm": 13.5,
-      "lead_mm": 3.183,
+      "lead_mm": 2.519,
       "alignment": "flush left, block centred on the face"
     },
     "back": {
@@ -158,9 +158,18 @@
     ],
     "deviation": {
       "platform": "§C.6: front \"pode rasgar.\" Expanded One lower case cap 4,0 mm; back \"o que se guarda é a pulseira.\" Shantell x-height 1,8 on the reverse",
-      "used": "front in two lines at cap 2.491 mm on the top panel; back on the outer underside panel in 4 lines at x-height 1.58 mm",
+      "used": "front in two lines at cap 1.799 mm on the top panel; back on the outer underside panel in 4 lines at x-height 1.58 mm",
       "reason": "wrapped round the band and tail (≈16 x 2,5 mm) the seal shows only a ~15 x 16 mm top face; at cap 4,0 \"pode rasgar.\" is 41,6 mm wide and read \"…de ras…\" (3D team); director's decision 6 Oct 2026, exact strings kept"
-    }
+    },
+    "deviations": [
+      {
+        "panel": "TOPO",
+        "kind": "director's decision",
+        "platform": "pode rasgar.",
+        "used": "PODE RASGAR.",
+        "reason": "Locutor lines are capitals everywhere except the lockup \"holofote nela.\"; lower case only in Shantell (the Fã) or Condensed One at 0 tracking (the Produção)"
+      }
+    ]
   },
   "generator": "_build/pack/pulseira.py"
 }

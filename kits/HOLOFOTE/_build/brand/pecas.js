@@ -31,7 +31,10 @@
   // abre o tracking até +200 para encher, e MÃE com 5 % de folga vira M Ã E.
   HF.capMae = (medida) => (medida * 17.8) / 72;
   const tintaDe = (cor) => HF.tinta[cor] || 'preto';
-  const lampDe = (cor) => (cor === 'amarelo' || cor === 'laranja' ? 'preto' : 'amarelo');   // §D.3; §D.1 vence: amarelo nunca encosta no laranja
+  // O aceso (§D.3; §D.1 vence, decisões do diretor de 6 out 2026): amarelo no preto, rosa e violeta; PRETO no amarelo, no
+  // laranja (amarelo nunca encosta no laranja) e no papel (amarelo sobre papel é par 'Nunca', 1,18:1)
+  const lampDe = (cor) => (['amarelo', 'laranja', 'papel'].includes(cor) ? 'preto' : 'amarelo');
+  HF.lampDe = lampDe;
   const destDe = (cor) => (cor === 'violeta' || cor === 'preto' ? 'amarelo' : tintaDe(cor));
   HF.assinatura = (cap, tinta, lamp, antes) => ({ tipo: 'assinatura', antes: antes || 0,
     esq: S({ t: 'holofote nela.', f: 'X', cap, lsEm: -0.01, cor: tinta }), marca: { ink: tinta, lamp }, capMarca: cap });
@@ -58,7 +61,7 @@
     // os três sinais (7, 8 e 9 de maio): três discos, o sino que toca hoje cheio — o mesmo desenho da figurinha
     if (D.sinal) {
       const dd = q ? 44 : 36;
-      itens.push({ tipo: 'bloco', h: dd, antes: q ? 48 : 32, desenhar: (pa, xa, xb, top) => {
+      itens.push({ tipo: 'bloco', h: dd, antes: q ? 48 : 24, desenhar: (pa, xa, xb, top) => {
         const sv = HF.svg(pa, xa, top, dd * 4, dd, `0 0 ${dd * 4} ${dd}`), e = dd * 0.13;
         [0, 1, 2].forEach((i) => {
           const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
@@ -72,10 +75,12 @@
       } });
     }
     D.linhas.forEach((l, i) => itens.push({ tipo: 'cheia', s: S({ t: l, f: 'C', cap: k.dia, cor: tinta }),
-      modo: 'tamanho', antes: i === 0 ? (D.sinal ? (q ? 32 : 24) : (q ? 48 : 32)) : (q ? 24 : 16) }));
+      modo: 'tamanho', antes: i === 0 ? (D.sinal ? (q ? 32 : 16) : (q ? 48 : 32)) : (q ? 24 : 16) }));
     itens.push({ tipo: 'espaco', flex: 1.4 });
     itens.push(HF.assinatura(k.ass, tinta, lampDe(D.cor), 32));
-    HF.pilha(document.body, itens, { x0: F.x0, x1: F.x1, y0: F.y0 + 4, y1: F.y1, grade: 8 });
+    // a linha da assinatura sobe 16 px (revisão do CCO, 6 out 2026): o wordmark (os O passam da linha de base) e o
+    // registro de O LAMBE chegavam a y 1009–1010 no 1:1 e 1503–1513 no 9:16, fora da caixa segura (1000 / 1500)
+    HF.pilha(document.body, itens, { x0: F.x0, x1: F.x1, y0: F.y0 + 4, y1: F.y1 - 16, grade: 8 });
   };
 
   /* ---- uma seta da Fã (traço de caneta, desenhada como vetor: a Shantell não tem seta) */
@@ -109,16 +114,23 @@
     const F = FMT['9x16'];
     quadro(F.W, F.H, 'amarelo');
     const b = document.body, tinta = 'preto', med = F.x1 - F.x0, gap = 4;
-    const L = (t) => ({ tipo: 'cheia', s: S({ t, f: 'V', wght: 700, wdth: 125, cap: 100, lsEm: -0.01, cor: tinta }), modo: 'tamanho', antes: gap });
+    const L = (t) => ({ tipo: 'cheia', s: S({ t, f: 'V', wght: 700, wdth: 125, cap: 100, lsEm: -0.01, cor: tinta }), modo: 'tamanho', antes: gap, flex: 1 });
     // PIOR divide a linha com a nota da Fã (L/R que enche a medida): PIOR fica no corpo em que sobra lugar para a nota
-    // DE PÉ: the acute needs air under APLAUDIU (§D.2); 4 px closes under O LAMBE's misregistration (review, 6 Oct)
-    const dePe = Object.assign(L('DE PÉ'), { antes: 24 });
+    // DE PÉ: o agudo precisa de ar sob APLAUDIU (§D.2). Revisão do CCO, 6 out 2026: com 24 px o vão lia como duas frases;
+    // D.antesDePe (padrão 8) é o menor valor que ainda deixa ≥ 6 px de papel limpo entre o fundo de APLAUDIU e o topo
+    // do agudo DEPOIS de O LAMBE (registro + batida fantasma), medido a 100 % no PNG final (lancamento.py imprime).
+    // A altura que sobra é redistribuída por igual entre os cinco vãos (flex 1 em cada linha depois da primeira); a
+    // pilha termina onde terminava (SHOW. na linha de base 1320), então o círculo e a coluna da direita não andam.
+    const dePe = Object.assign(L('DE PÉ'), { antes: D.antesDePe == null ? 8 : D.antesDePe });
     const itens = [L('ELA'), L('APLAUDIU'), dePe, L('O SEU'),
-      { tipo: 'dividida', antes: gap, esq: S({ t: 'PIOR', f: 'V', wght: 700, wdth: 125, cap: 112, lsEm: -0.01, cor: tinta }),
+      { tipo: 'dividida', antes: gap, flex: 1, esq: S({ t: 'PIOR', f: 'V', wght: 700, wdth: 125, cap: 112, lsEm: -0.01, cor: tinta }),
         dir: S({ t: '2007)', f: 'S', x: 25, cor: tinta }) },
       L('SHOW.')];
-    itens[0].antes = 0;
-    HF.pilha(b, itens, { x0: F.x0, x1: F.x1, y0: F.y0 + 4, y1: 1400, grade: 8 });
+    itens[0].antes = 0; itens[0].flex = 0;
+    // sem grade de 8 px nesta pilha: arredondar cada linha de base para 8 desfazia a distribuição igual (vãos de 4 a 12 px)
+    HF.pilha(b, itens, { x0: F.x0, x1: F.x1, y0: F.y0 + 4, y1: 1320, grade: 0 });
+    window.HF_GEOM = { aplaudiu: itens[1].baseline, dePe: itens[2].baseline, dePeTopo: itens[2].baseline - itens[2].top,
+      vaos: itens.slice(1).map((it, i) => +(it.baseline - it.top - itens[i].baseline - itens[i].bot).toFixed(1)) };
     // a Fã: "(girassol, 2007)" em duas linhas de mão, encostada à direita da medida, na altura do PIOR; seta curta até o R
     const pr = itens[4], pior = pr.objs[0], an2 = pr.objs[1], capP = HF.capPx(pior.s);
     const an1 = HF.texto(b, S({ t: '(girassol,', f: 'S', x: 25, cor: tinta }));
@@ -137,7 +149,8 @@
     // à direita do círculo: a chamada, a assinatura e a linha de segurança (§D.8.6) — todo tipo acima de y 1500
     const xc = F.x0 + 360 + 48;
     const it2 = [
-      { tipo: 'cheia', s: S({ t: 'Sua vez.', f: 'X', cap: 60, lsEm: -0.01, cor: tinta }), modo: 'tamanho' },
+      // o Locutor é sempre CAIXA ALTA; só a assinatura "holofote nela." fica em caixa baixa (revisão do CCO, 6 out 2026)
+      { tipo: 'cheia', s: S({ t: 'SUA VEZ.', f: 'X', cap: 60, lsEm: -0.01, cor: tinta }), modo: 'tamanho' },
       { tipo: 'cheia', s: S({ t: 'holofote nela.', f: 'X', cap: 30, lsEm: -0.01, cor: tinta }), modo: 'tamanho', antes: 16 },
       { tipo: 'cheia', s: S({ t: 'nunca deixe a vela acesa sem supervisão.', f: 'C', cap: 20, cor: tinta }), modo: 'tamanho', antes: 16 },
     ];
@@ -174,33 +187,55 @@
     HF.pilha(b, it2, { x0: xc, x1: F.x1, y0: ty - 2, y1: ty + th, grade: 8 });
   };
 
-  /* ---- C09 · O CARTAZ DELA (9:16, saída de exemplo do gerador de cartaz) ● */
+  /* ---- C09 · O CARTAZ DELA (9:16, saída de exemplo do gerador de cartaz) ●
+     Revisão do CCO, 6 out 2026: (1) o vão morto de 136 px entre a data e a régua sumiu — a lista da turnê cresceu para a
+     proporção do verso do copo (versal 24, passo 44) e a sobra se divide por igual em três vãos; (2) a chamada
+     "faz o cartaz dela." virou a anotação da Fã (Shantell, caixa baixa) com uma seta até DONA CIDA, no vão entre o
+     cabeçalho e a atração; (3) o endereço continua a Produção, pequeno, e enche a medida com um fio (o rótulo de
+     seção do livro da marca), fechando a lista. */
   R.C09 = function (D) {
     const F = FMT['9x16'];
     const cor = D.cor || 'rosa';
     quadro(F.W, F.H, cor);
-    const b = document.body, tinta = tintaDe(cor), dest = destDe(cor), u = (F.x1 - F.x0) / 800;
-    const capL = 21;
+    const b = document.body, tinta = tintaDe(cor), dest = destDe(cor);
+    const capL = 24, passoL = 44;
     const itens = [
       { tipo: 'dividida', esq: S({ t: 'HOLOFOTE APRESENTA', f: 'C', cap: 30, lsEm: 0.08, cor: tinta }),
         dir: S({ t: 'A TURNÊ · 2027', f: 'C', cap: 30, lsEm: 0.08, cor: tinta, tnum: true }) },
-      { tipo: 'headliner', nome: D.headliner || 'DONA CIDA', capRef: 199, cor: dest, coracao: D.coracao, antes: 40, flex: 0.6 },
+      { tipo: 'headliner', nome: D.headliner || 'DONA CIDA', capRef: 199, cor: dest, coracao: D.coracao, antes: 136, flex: 1 },
       { tipo: 'cheia', s: S({ t: D.show || 'AO VIVO', f: 'V', wght: 700, cap: 112, cor: tinta }), modo: 'wdth', antes: 24 },
       { tipo: 'dividida', antes: 28, esq: S({ t: 'DOMINGO · 09.05', f: 'C', cap: 46, lsEm: 0.02, cor: tinta, tnum: true }),
         dir: S({ t: 'abertura: ' + (D.abertura || 'você'), f: 'S', x: 18, cor: tinta }) },
-      { tipo: 'regua', esp: 3, cor: tinta, antes: 40, flex: 1 },
+      { tipo: 'regua', esp: 3, cor: tinta, antes: 48, flex: 1 },
       { tipo: 'cheia', s: S({ t: 'ELA ESTEVE EM TODAS.', f: 'V', wght: 700, wdth: 125, cap: 40, lsEm: -0.005, cor: tinta }), modo: 'tamanho', antes: 32 },
     ];
-    (D.turne || []).forEach((l, i) => itens.push({ tipo: 'pontilhada', passo: i === 0 ? null : 40, antes: i === 0 ? 28 : 0,
-      esq: S({ t: l[0], f: 'C', cap: capL, lsEm: 0.02, cor: tinta, tnum: true }),
-      dir: S({ t: l[1], f: 'V', wght: 700, wdth: 75, cap: capL, lsEm: 0.01, cor: tinta }),
+    (D.turne || []).forEach((l, i) => itens.push({ tipo: 'pontilhada', passo: i === 0 ? null : passoL, antes: i === 0 ? 30 : 0,
+      esq: S({ t: l[0], f: 'C', cap: capL, lsEm: 0, cor: tinta, tnum: true }),
+      dir: S({ t: l[1], f: 'V', wght: 700, wdth: 75, cap: capL, lsEm: 0, cor: tinta }),
       opt: { passo: 0.409 * capL, folga: 0.45 * capL, fs: HF.fsDeCap('C', capL) } }));
-    itens.push({ tipo: 'regua', esp: 3, cor: tinta, antes: 24 });
+    // o endereço: Produção pequena, à esquerda, e um fio até o fim da medida (fecha a lista como a régua de antes)
+    const url = 'holofote.exemplo/cartaz';
+    const sUrl = S({ t: url, f: 'C', cap: 28, cor: tinta });
+    itens.push({ tipo: 'bloco', h: 40, antes: 30, desenhar: (pa, xa, xb, top) => {
+      const o = HF.texto(pa, Object.assign({}, sUrl));
+      HF.posicionar(o, xa, top + 34, 'left');
+      HF.regua(pa, o.inkX1 + 24, xb, top + 34 - HF.xPx(o.s) / 2, 3, tinta);
+    } });
     itens.push({ tipo: 'espaco', flex: 1 });
-    itens.push({ tipo: 'dividida', esq: S({ t: 'faz o cartaz dela.', f: 'C', cap: 34, cor: tinta }),
-      dir: S({ t: 'holofote.exemplo/cartaz', f: 'C', cap: 34, cor: tinta }) });
     itens.push(HF.assinatura(42, tinta, lampDe(cor), 32));
     HF.pilha(b, itens, { x0: F.x0, x1: F.x1, y0: F.y0 + 4, y1: F.y1, grade: 8 });
+    // a Fã: a chamada escrita à mão no vão entre o cabeçalho e a atração, encostada à direita; a seta desce até o nome
+    const cab = itens[0], at = itens[1], nome = at.objs[0];
+    const capTop = at.baseline - HF.capPx(nome.s), topoNome = at.baseline - at.top;
+    const fa = HF.texto(b, S({ t: 'faz o cartaz dela.', f: 'S', x: 24, cor: tinta }));
+    const xh = HF.xPx(fa.s);
+    const bf = Math.round(((cab.baseline + topoNome) / 2 + xh * 0.45) / 8) * 8;
+    HF.posicionar(fa, F.x1, bf, 'right');
+    const alvoX = nome.inkX0 + (nome.inkX1 - nome.inkX0) * 0.6;
+    HF.seta(b, fa.inkX0 - 16, bf - xh * 0.4, alvoX, topoNome - 14, 4.6, tinta, 0.3);
+    window.HF_QA.push({ item: 'C09 Fã: ar até o cabeçalho / até o nome', erro: 0, cabecalho: +(bf - xh * 1.45 - cab.baseline).toFixed(1),
+      nome: +(topoNome - bf).toFixed(1) });
+    window.HF_GEOM = { vaos: [at.antes, itens[4].antes, itens[itens.length - 2].antes].map((v) => +v.toFixed(1)) };
   };
 
   /* ---- O INGRESSO ● (§D.4) e D02 · O INGRESSO e-ticket (1080 × 1350). Desenha SÓ o ingresso, em fundo transparente:
@@ -211,7 +246,7 @@
     quadro(W, H, 'transparente');
     const b = document.body, cor = D.cor || 'amarelo', tinta = tintaDe(cor), dest = destDe(cor);
     const x0 = D.x || 140, w = D.w || 800, y0 = D.y || 88, hc = D.hCorpo || 892, hs = D.hCanhoto || 282;
-    const yp = y0 + hc, x1 = x0 + w, raio = 22, m = 56;
+    const yp = y0 + hc, x1 = x0 + w, raio = 22 * w / 800, m = 56 * w / 800;
     // forma do ingresso (SVG): retângulo com cantos de 6 px, dois meios-círculos no picote, furos do picote
     const s = HF.svg(b, 0, 0, W, H, `0 0 ${W} ${H}`);
     let d = `M${x0 + 6} ${y0} H${x1 - 6} Q${x1} ${y0} ${x1} ${y0 + 6} V${yp - raio} A${raio} ${raio} 0 0 0 ${x1} ${yp + raio}` +
@@ -221,36 +256,37 @@
     const xi = x0 + raio + 12 + ((w - 2 * raio - 24) - (n - 1) * passo) / 2;
     for (let i = 0; i < n; i++) { const cx = xi + i * passo; d += ` M${cx - 2.6} ${yp} a2.6 2.6 0 1 0 5.2 0 a2.6 2.6 0 1 0 -5.2 0 Z`; }
     HF.path(s, d, HF.cor[cor], 'evenodd');
-    // corpo
+    // corpo. k = escala do ingresso (D02 sai a 94 %, revisão do CCO de 6 out 2026): versais, vãos e margens acompanham
+    const k = w / 800;
     const X0 = x0 + m, X1 = x1 - m;
     const it = [
-      { tipo: 'dividida', esq: S({ t: 'INGRESSO', f: 'C', cap: 24, lsEm: 0.1, cor: tinta }),
-        dir: S({ t: 'A TURNÊ · 2027', f: 'C', cap: 24, lsEm: 0.1, cor: tinta, tnum: true }) },
-      { tipo: 'regua', esp: 2, cor: tinta, antes: 24 },
-      { tipo: 'headliner', nome: D.headliner || 'MÃE', capRef: HF.capMae(X1 - X0), cor: dest, coracao: D.coracao, antes: 28, flex: 1 },
-      { tipo: 'cheia', s: S({ t: D.show || 'AO VIVO', f: 'V', wght: 700, cap: 86, cor: tinta }), modo: 'wdth', antes: 20 },
-      { tipo: 'regua', esp: 2, cor: tinta, antes: 32, flex: 1 },
-      { tipo: 'pontilhada', antes: 28, esq: S({ t: 'SETOR:', f: 'C', cap: 28, lsEm: 0.06, cor: tinta }),
-        dir: S({ t: 'PRIMEIRA FILA', f: 'V', wght: 700, wdth: 75, cap: 28, lsEm: 0.01, cor: tinta }),
-        opt: { passo: 0.409 * 28, folga: 0.45 * 28, fs: HF.fsDeCap('C', 28) } },
-      { tipo: 'pontilhada', passo: 48, esq: S({ t: 'ASSENTO:', f: 'C', cap: 28, lsEm: 0.06, cor: tinta }),
-        dir: S({ t: 'O DE SEMPRE', f: 'V', wght: 700, wdth: 75, cap: 28, lsEm: 0.01, cor: tinta }),
-        opt: { passo: 0.409 * 28, folga: 0.45 * 28, fs: HF.fsDeCap('C', 28) } },
-      { tipo: 'regua', esp: 2, cor: tinta, antes: 28 },
-      { tipo: 'dividida', antes: 24, esq: S({ t: 'DOMINGO', f: 'V', wght: 700, wdth: 75, cap: 52, cor: tinta }),
-        dir: S({ t: '09.05', f: 'V', wght: 700, wdth: 75, cap: 52, cor: tinta, tnum: true }) },
+      { tipo: 'dividida', esq: S({ t: 'INGRESSO', f: 'C', cap: 24 * k, lsEm: 0.1, cor: tinta }),
+        dir: S({ t: 'A TURNÊ · 2027', f: 'C', cap: 24 * k, lsEm: 0.1, cor: tinta, tnum: true }) },
+      { tipo: 'regua', esp: 2, cor: tinta, antes: 24 * k },
+      { tipo: 'headliner', nome: D.headliner || 'MÃE', capRef: HF.capMae(X1 - X0), cor: dest, coracao: D.coracao, antes: 28 * k, flex: 1 },
+      { tipo: 'cheia', s: S({ t: D.show || 'AO VIVO', f: 'V', wght: 700, cap: 86 * k, cor: tinta }), modo: 'wdth', antes: 20 * k },
+      { tipo: 'regua', esp: 2, cor: tinta, antes: 32 * k, flex: 1 },
+      { tipo: 'pontilhada', antes: 28 * k, esq: S({ t: 'SETOR:', f: 'C', cap: 28 * k, lsEm: 0.06, cor: tinta }),
+        dir: S({ t: 'PRIMEIRA FILA', f: 'V', wght: 700, wdth: 75, cap: 28 * k, lsEm: 0.01, cor: tinta }),
+        opt: { passo: 0.409 * 28 * k, folga: 0.45 * 28 * k, fs: HF.fsDeCap('C', 28 * k) } },
+      { tipo: 'pontilhada', passo: 48 * k, esq: S({ t: 'ASSENTO:', f: 'C', cap: 28 * k, lsEm: 0.06, cor: tinta }),
+        dir: S({ t: 'O DE SEMPRE', f: 'V', wght: 700, wdth: 75, cap: 28 * k, lsEm: 0.01, cor: tinta }),
+        opt: { passo: 0.409 * 28 * k, folga: 0.45 * 28 * k, fs: HF.fsDeCap('C', 28 * k) } },
+      { tipo: 'regua', esp: 2, cor: tinta, antes: 28 * k },
+      { tipo: 'dividida', antes: 24 * k, esq: S({ t: 'DOMINGO', f: 'V', wght: 700, wdth: 75, cap: 52 * k, cor: tinta }),
+        dir: S({ t: '09.05', f: 'V', wght: 700, wdth: 75, cap: 52 * k, cor: tinta, tnum: true }) },
       { tipo: 'espaco', flex: 1.2 },
-      HF.assinatura(30, tinta, lampDe(cor), 24),
+      HF.assinatura(30 * k, tinta, lampDe(cor), 24 * k),
     ];
-    HF.pilha(b, it, { x0: X0, x1: X1, y0: y0 + 48, y1: yp - 48, grade: 8 });
+    HF.pilha(b, it, { x0: X0, x1: X1, y0: y0 + 48 * k, y1: yp - 48 * k, grade: 8 });
     // canhoto
     const its = [
-      { tipo: 'cheia', s: S({ t: 'ADMITE 1 · ATRAÇÃO', f: 'V', wght: 700, wdth: 125, cap: 40, lsEm: -0.005, cor: tinta }), modo: 'tamanho' },
-      { tipo: 'bloco', h: 76, antes: 22, desenhar: (pa, xa, xb, top) => HF.barras(pa, xa, top, xb - xa, 76, tinta, 509) },
-      { tipo: 'dividida', antes: 22, esq: S({ t: 'CÓDIGO DE BARRAS FICTÍCIO', f: 'C', cap: 15, lsEm: 0.12, cor: tinta }),
-        dir: S({ t: 'DOMINGO · 09.05', f: 'C', cap: 15, lsEm: 0.12, cor: tinta, tnum: true }) },
+      { tipo: 'cheia', s: S({ t: 'ADMITE 1 · ATRAÇÃO', f: 'V', wght: 700, wdth: 125, cap: 40 * k, lsEm: -0.005, cor: tinta }), modo: 'tamanho' },
+      { tipo: 'bloco', h: 76 * k, antes: 22 * k, desenhar: (pa, xa, xb, top) => HF.barras(pa, xa, top, xb - xa, 76 * k, tinta, 509) },
+      { tipo: 'dividida', antes: 22 * k, esq: S({ t: 'CÓDIGO DE BARRAS FICTÍCIO', f: 'C', cap: 15 * k, lsEm: 0.12, cor: tinta }),
+        dir: S({ t: 'DOMINGO · 09.05', f: 'C', cap: 15 * k, lsEm: 0.12, cor: tinta, tnum: true }) },
     ];
-    HF.pilha(b, its, { x0: X0, x1: X1, y0: yp + 44, y1: yp + hs - 40, grade: 8 });
+    HF.pilha(b, its, { x0: X0, x1: X1, y0: yp + 44 * k, y1: yp + hs - 40 * k, grade: 8 });
     window.HF_GEOM = { x0, x1, y0, yPicote: yp, y1: yp + hs, raio, cor };
   };
 
@@ -270,6 +306,49 @@
     return s;
   };
 
+  /* a janela da foto SEM foto (revisão do CCO, 6 out 2026: o hachurado "FOTO" não pode sair): uma retícula de meio-tom
+     desenhada por código — pontos pretos numa grade a 45°, grossos embaixo à esquerda e finos em cima à direita, como
+     a foto de jornal de um cartão de fã-clube — com a Fã escrevendo "(a foto dela aqui)" e uma cantoneira à mão. */
+  HF.janelaFoto = function (parent, x, y, w, h, tinta) {
+    const NSv = 'http://www.w3.org/2000/svg', cor = HF.cor[tinta] || tinta;
+    const s = HF.svg(parent, x, y, w, h, `0 0 ${w} ${h}`);
+    const mk = (tag, at, pai) => { const e = document.createElementNS(NSv, tag); Object.entries(at).forEach(([k, v]) => e.setAttribute(k, v)); (pai || s).appendChild(e); return e; };
+    const cp = mk('clipPath', { id: 'janelaD01' }); mk('rect', { x: 0, y: 0, width: w, height: h, rx: 16 }, cp);
+    const g = mk('g', { 'clip-path': 'url(#janelaD01)' });
+    // a nota da Fã fica numa clareira sem pontos (o papel do cartão), no terço de cima
+    const nota = HF.texto(parent, S({ t: '(a foto dela aqui)', f: 'S', x: 12, cor: tinta }));
+    if (nota.inkW > w - 48) HF.porTamanho(nota, w - 48);
+    const nx0 = x + (w - nota.inkW) / 2, nb = y + Math.round(h * 0.38);
+    HF.posicionar(nota, nx0, nb, 'left');
+    const xh = HF.xPx(nota.s), clar = { x0: nota.inkX0 - x - 14, x1: nota.inkX1 - x + 14, y0: nb - y - xh * 2.1, y1: nb - y + xh * 1.1 };
+    const passo = 9, c45 = Math.SQRT1_2, D2 = Math.hypot(w, h);
+    let d = '';
+    for (let i = -Math.ceil(D2 / passo); i <= Math.ceil(D2 / passo); i++) {
+      for (let j = -Math.ceil(D2 / passo); j <= Math.ceil(D2 / passo); j++) {
+        const px = w / 2 + (i - j) * passo * c45, py2 = h / 2 + (i + j) * passo * c45;
+        if (px < -4 || px > w + 4 || py2 < -4 || py2 > h + 4) continue;
+        // tom: 0 em cima à direita → 1 embaixo à esquerda, com uma curva de meio-tom (área ∝ tom)
+        const t = Math.min(0.82, Math.max(0, 1.35 * ((w - px) / w * 0.5 + py2 / h * 0.5) - 0.22));
+        let rr = (passo / 2) * 0.9 * Math.sqrt(t);
+        const dx = Math.max(clar.x0 - px, 0, px - clar.x1), dy = Math.max(clar.y0 - py2, 0, py2 - clar.y1);
+        const fora = Math.hypot(dx, dy);                       // a clareira tem borda macia de 26 px
+        rr *= Math.min(1, fora / 26);
+        if (rr < 0.45) continue;
+        d += `M${(px - rr).toFixed(2)} ${py2.toFixed(2)}a${rr.toFixed(2)} ${rr.toFixed(2)} 0 1 0 ${(2 * rr).toFixed(2)} 0a${rr.toFixed(2)} ${rr.toFixed(2)} 0 1 0 ${(-2 * rr).toFixed(2)} 0Z`;
+      }
+    }
+    mk('path', { d, fill: cor }, g);
+    // o fio da janela
+    mk('rect', { x: 1.25, y: 1.25, width: w - 2.5, height: h - 2.5, rx: 15, fill: 'none', stroke: cor, 'stroke-width': 2.5 });
+    // a cantoneira da Fã: um L de caneta no canto de cima à esquerda, passando um pouco do fio
+    const L = 46, o = -7;
+    mk('path', { d: `M${o + 2} ${o + L} C ${o + 1} ${o + L * 0.62}, ${o - 0.5} ${o + L * 0.3}, ${o + 1.5} ${o + 1.5} C ${o + L * 0.32} ${o - 0.5}, ${o + L * 0.66} ${o + 1}, ${o + L} ${o + 0.5}`,
+      fill: 'none', stroke: cor, 'stroke-width': 4.6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' });
+    s.style.overflow = 'visible';
+    parent.appendChild(nota.el);                               // a nota por cima dos pontos
+    return s;
+  };
+
   /* ---- D01 · A CARTEIRINHA (9:16 story, gerador) ●  D: {cor, headliner, anos, foto (url opcional)} */
   R.D01 = function (D) {
     const F = FMT['9x16'], cor = D.cor || 'amarelo';
@@ -278,9 +357,10 @@
     // o cartão: retrato, cantos arredondados, plastificado. Ocupa a caixa segura orgânica (x 140–940, y 270–1500)
     const cx0 = 140, cy0 = 286, cw = 800, ch = 1198, r = 44, m = 56;
     const card = HF.caixa(b, cx0, cy0, cw, ch, { background: HF.cor[cor], borderRadius: r + 'px', overflow: 'hidden' });
-    // faixa de cima (preto) com o nome do fã-clube
+    // faixa de cima com o nome do fã-clube: #2A2730, um preto levantado — no #121014 do campo a faixa preta sumia e o
+    // cartão perdia o topo (revisão do CCO, 6 out 2026)
     const fx = 'FÃ-CLUBE OFICIAL';
-    HF.caixa(b, cx0, cy0, cw, 168, { background: HF.cor.preto, borderRadius: `${r}px ${r}px 0 0` });
+    HF.caixa(b, cx0, cy0, cw, 168, { background: '#2A2730', borderRadius: `${r}px ${r}px 0 0` });
     const it0 = [{ tipo: 'cheia', s: S({ t: fx, f: 'V', wght: 700, wdth: 125, cap: 50, lsEm: -0.005, cor: 'amarelo' }), modo: 'tamanho' }];
     HF.pilha(b, it0, { x0: cx0 + m, x1: cx0 + cw - m, y0: cy0 + 56, y1: cy0 + 140, grade: 8 });
     // janela da foto (4:5) + número de sócio
@@ -290,10 +370,10 @@
       const im = document.createElement('img'); im.src = D.foto;
       Object.assign(im.style, { position: 'absolute', left: X0 + 'px', top: py + 'px', width: pw + 'px', height: ph + 'px', objectFit: 'cover', borderRadius: '16px' });
       b.appendChild(im);
-    } else HF.reserva(b, { id: 'D01_foto', x: X0, y: py, w: pw, h: ph, fundo: cor, tinta: tinta, rotulo: 'FOTO', nota: 'foto dela · 4:5',
-      conteudo: 'foto enviada pelo usuário (gerador); recorte 4:5, cantos 16 px' });
-    const caixaFoto = document.querySelector('.hf-ph:last-of-type');
-    if (caixaFoto) caixaFoto.style.borderRadius = '16px';
+    } else HF.janelaFoto(b, X0, py, pw, ph, tinta);
+    // o gerador troca esta janela pela foto enviada (recorte 4:5, cantos 16 px): placeholders.json continua dizendo onde
+    HF.placeholders.push({ id: 'D01_foto', tipo: 'retangulo', x: X0, y: py, w: pw, h: ph, rotulo: 'FOTO',
+      conteudo: 'foto enviada pelo usuário (gerador); recorte 4:5, cantos 16 px. Sem foto, a janela de amostra desenhada.' });
     const xs = X0 + pw + 40;
     const it1 = [
       { tipo: 'cheia', s: S({ t: 'SÓCIO Nº', f: 'C', cap: 60, lsEm: 0.02, cor: tinta }), modo: 'tamanho' },
@@ -364,8 +444,11 @@
     } else if (v === 'MAIS-UM') {
       const g = grupo(-6);
       recorte(36, 150, 440, 212, 'laranja', 0, g);
-      HF.pilha(g, [{ tipo: 'cheia', s: S({ t: 'MAIS UM!', f: 'X', cap: 80, lsEm: -0.01, cor: 'preto' }), modo: 'tamanho' }],
-        { x0: 70, x1: 442, y0: 206, y1: 320 });
+      const it = [{ tipo: 'cheia', s: S({ t: 'MAIS UM!', f: 'X', cap: 80, lsEm: -0.01, cor: 'preto' }), modo: 'tamanho' }];
+      HF.pilha(g, it, { x0: 70, x1: 442, y0: 206, y1: 320 });
+      // centrado no recorte pela altura de versal (revisão do CCO, 6 out 2026: sobrava 60 px em cima e 110 embaixo)
+      const o = it[0].objs[0];
+      HF.posicionar(o, o.x, 150 + 212 / 2 + HF.capPx(o.s) / 2, 'left');
     } else if (v === 'ABERTURA-VOCE') {
       const g = grupo(-4);
       recorte(40, 160, 432, 190, 'papel', 0, g);
@@ -390,10 +473,11 @@
       const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
       c.setAttribute('cx', 256); c.setAttribute('cy', 256); c.setAttribute('r', 232); c.setAttribute('fill', HF.cor.amarelo);
       s.appendChild(c);
-      const c2 = c.cloneNode(); c2.setAttribute('r', 206); c2.setAttribute('fill', 'none'); c2.setAttribute('stroke', HF.cor.preto); c2.setAttribute('stroke-width', 3);
-      s.appendChild(c2);
-      HF.pilha(b, [{ tipo: 'cheia', s: S({ t: 'PRECISAVA.', f: 'X', cap: 60, lsEm: -0.01, cor: 'preto' }), modo: 'tamanho' }],
-        { x0: 84, x1: 428, y0: 222, y1: 290 });
+      // sem o anel interno (o selo "anel + palavra" lia como modelo pronto, revisão do CCO de 6 out 2026): a palavra
+      // enche ~80 % do disco, centrada na altura de versal
+      const o = HF.texto(b, S({ t: 'PRECISAVA.', f: 'X', cap: 60, lsEm: -0.01, cor: 'preto' }));
+      HF.porTamanho(o, 0.8 * 2 * 232);
+      HF.posicionar(o, 256, 256 + HF.capPx(o.s) / 2, 'center');
     } else if (v === 'EQUIPE-TECNICA') {
       // credencial de equipe: crachá preto com furo de cordão
       const g = grupo(-5);

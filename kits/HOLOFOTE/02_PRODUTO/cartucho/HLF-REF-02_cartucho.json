@@ -19,23 +19,23 @@
   "panels": {
     "frente": [
       {
-        "label": "wordmark HOLOFOTE (mono, lit O solid)",
+        "label": "wordmark HOLOFOTE (logo SVG, mono)",
         "ink_mm": [
           5.0,
-          5.81,
+          5.94,
           35.0,
-          9.3
+          9.43
         ],
         "cap_mm": 3.371,
-        "tracking": -10
+        "source": "01_MARCA/logo/HOLOFOTE_logo_mono-preto_transparente.svg"
       },
       {
         "label": "NOVA TEMPORADA",
         "ink_mm": [
           5.0,
-          12.56,
+          12.69,
           69.0,
-          19.11
+          19.24
         ],
         "text": "NOVA TEMPORADA",
         "cap_mm": 6.333
@@ -44,35 +44,35 @@
         "label": "faixa",
         "ink_mm": [
           5.0,
-          25.64,
+          25.78,
           69.0,
-          35.24
+          35.37
         ],
         "text": "AO VIVO",
         "cap_mm": 9.285,
         "wdth": 125
       },
       {
-        "label": "O copo fica.",
+        "label": "O COPO FICA.",
         "ink_mm": [
           5.0,
-          44.2,
+          46.16,
           69.0,
-          54.99
+          52.13
         ],
-        "text": "O copo fica.",
-        "cap_mm": 8.635
+        "text": "O COPO FICA.",
+        "cap_mm": 5.775
       },
       {
-        "label": "A turnê continua.",
+        "label": "A TURNÊ CONTINUA.",
         "ink_mm": [
           5.0,
-          55.27,
+          54.52,
           69.0,
-          61.34
+          59.53
         ],
-        "text": "A turnê continua.",
-        "cap_mm": 5.862
+        "text": "A TURNÊ CONTINUA.",
+        "cap_mm": 3.814
       },
       {
         "label": "vela aromática · refil",
@@ -100,9 +100,9 @@
         "label": "MODO DE USO",
         "ink_mm": [
           5.0,
-          21.84,
+          27.34,
           26.67,
-          24.11
+          29.61
         ],
         "text": "MODO DE USO",
         "cap_mm": 2.2
@@ -111,44 +111,22 @@
         "label": "Retire o selo antes de usar. E",
         "ink_mm": [
           5.0,
-          25.55,
-          58.55,
-          27.72
+          31.0,
+          64.41,
+          33.22
         ],
-        "text": "Retire o selo antes de usar. Encaixe a cápsula no copo",
-        "cap_mm": 1.7
-      },
-      {
-        "label": "HOLOFOTE limpo e frio.",
-        "ink_mm": [
-          5.0,
-          28.35,
-          28.77,
-          30.47
-        ],
-        "text": "HOLOFOTE limpo e frio.",
+        "text": "Retire o selo antes de usar. Encaixe a cápsula no copo HOLOFOTE limpo e frio.",
         "cap_mm": 1.7
       },
       {
         "label": "Na primeira vez, deixe a cera ",
         "ink_mm": [
           5.0,
-          31.05,
-          56.81,
-          33.22
-        ],
-        "text": "Na primeira vez, deixe a cera derreter até a borda da",
-        "cap_mm": 1.7
-      },
-      {
-        "label": "cápsula (3 a 4 horas).",
-        "ink_mm": [
-          5.0,
-          33.8,
-          26.08,
+          33.75,
+          62.08,
           35.97
         ],
-        "text": "cápsula (3 a 4 horas).",
+        "text": "Na primeira vez, deixe a cera derreter até a borda da cápsula (3 a 4 horas).",
         "cap_mm": 1.7
       },
       {
@@ -156,21 +134,21 @@
         "ink_mm": [
           5.0,
           36.62,
-          60.03,
+          54.75,
           38.72
         ],
-        "text": "Antes de cada uso, retire a parte queimada do pavio de",
+        "text": "Antes de cada uso, retire a parte queimada do pavio de madeira,",
         "cap_mm": 1.7
       },
       {
-        "label": "madeira, deixando cerca de 5 m",
+        "label": "deixando cerca de 5 mm.",
         "ink_mm": [
           5.0,
           39.38,
-          39.16,
-          41.38
+          24.32,
+          41.1
         ],
-        "text": "madeira, deixando cerca de 5 mm.",
+        "text": "deixando cerca de 5 mm.",
         "cap_mm": 1.7
       },
       {
@@ -178,30 +156,19 @@
         "ink_mm": [
           5.0,
           42.1,
-          60.32,
+          68.44,
           44.25
         ],
-        "text": "Não queime por mais de 4 horas seguidas. Deixe esfriar",
-        "cap_mm": 1.7
-      },
-      {
-        "label": "antes de acender de novo.",
-        "ink_mm": [
-          5.0,
-          44.88,
-          31.17,
-          46.6
-        ],
-        "text": "antes de acender de novo.",
+        "text": "Não queime por mais de 4 horas seguidas. Deixe esfriar antes de acender de novo.",
         "cap_mm": 1.7
       },
       {
         "label": "Para apagar, use um abafador. ",
         "ink_mm": [
           5.0,
-          47.55,
-          49.25,
-          49.75
+          44.75,
+          39.31,
+          47.0
         ],
         "text": "Para apagar, use um abafador. Não use água.",
         "cap_mm": 1.7
@@ -210,9 +177,9 @@
         "label": "Encerre o uso quando restar ce",
         "ink_mm": [
           5.0,
-          50.35,
-          66.15,
-          52.47
+          47.6,
+          51.94,
+          49.72
         ],
         "text": "Encerre o uso quando restar cerca de 1 cm de cera no fundo.",
         "cap_mm": 1.7
@@ -221,38 +188,27 @@
         "label": "Use a cápsula sempre dentro do",
         "ink_mm": [
           5.0,
-          53.05,
-          55.45,
+          50.25,
+          64.7,
+          52.47
+        ],
+        "text": "Use a cápsula sempre dentro do copo HOLOFOTE. Apoie o copo sobre a tampa",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "virada ou sobre superfície pla",
+        "ink_mm": [
+          5.0,
+          53.0,
+          51.52,
           55.22
         ],
-        "text": "Use a cápsula sempre dentro do copo HOLOFOTE.",
+        "text": "virada ou sobre superfície plana, firme e resistente ao calor.",
         "cap_mm": 1.7
       },
       {
-        "label": "Apoie o copo sobre a tampa vir",
-        "ink_mm": [
-          5.0,
-          55.8,
-          66.05,
-          57.97
-        ],
-        "text": "Apoie o copo sobre a tampa virada ou sobre superfície plana,",
-        "cap_mm": 1.7
-      },
-      {
-        "label": "firme e resistente ao calor.",
-        "ink_mm": [
-          5.0,
-          58.6,
-          31.29,
-          60.35
-        ],
-        "text": "firme e resistente ao calor.",
-        "cap_mm": 1.7
-      },
-      {
-        "label": "legal width",
-        "font": "Special Gothic wght 400 wdth 100",
+        "label": "legal body",
+        "font": "Special Gothic Condensed One, tracking 0",
         "cap_mm": 1.7
       }
     ],
@@ -516,8 +472,8 @@
         "label": "Produto destinado exclusivamen",
         "ink_mm": [
           5.0,
-          25.55,
-          67.61,
+          25.5,
+          53.92,
           27.72
         ],
         "text": "Produto destinado exclusivamente à odorização de ambientes.",
@@ -528,7 +484,7 @@
         "ink_mm": [
           5.0,
           28.38,
-          29.26,
+          23.82,
           30.47
         ],
         "text": "Não aplicar sobre a pele.",
@@ -539,7 +495,7 @@
         "ink_mm": [
           5.0,
           31.13,
-          46.51,
+          37.33,
           33.22
         ],
         "text": "Nunca deixe a vela acesa sem supervisão.",
@@ -550,7 +506,7 @@
         "ink_mm": [
           5.0,
           33.85,
-          53.43,
+          42.8,
           35.97
         ],
         "text": "Mantenha fora do alcance de crianças e animais.",
@@ -561,29 +517,29 @@
         "ink_mm": [
           5.0,
           36.6,
-          65.15,
+          57.49,
           38.72
         ],
-        "text": "Mantenha a pelo menos 30 cm de cortinas, roupas de cama,",
+        "text": "Mantenha a pelo menos 30 cm de cortinas, roupas de cama, livros e",
         "cap_mm": 1.7
       },
       {
-        "label": "livros e outros materiais infl",
+        "label": "outros materiais inflamáveis.",
         "ink_mm": [
           5.0,
-          39.3,
-          41.0,
+          39.25,
+          27.69,
           41.1
         ],
-        "text": "livros e outros materiais inflamáveis.",
+        "text": "outros materiais inflamáveis.",
         "cap_mm": 1.7
       },
       {
         "label": "Use sobre superfície plana, fi",
         "ink_mm": [
           5.0,
-          42.05,
-          58.65,
+          42.0,
+          47.06,
           44.22
         ],
         "text": "Use sobre superfície plana, firme e resistente ao calor.",
@@ -594,7 +550,7 @@
         "ink_mm": [
           5.0,
           44.88,
-          36.88,
+          30.0,
           46.6
         ],
         "text": "Mantenha o ambiente ventilado.",
@@ -604,22 +560,22 @@
         "label": "Não mova a vela acesa ou com a",
         "ink_mm": [
           5.0,
-          47.55,
-          67.2,
+          47.5,
+          63.89,
           49.72
         ],
-        "text": "Não mova a vela acesa ou com a cera ainda líquida. O copo e a",
+        "text": "Não mova a vela acesa ou com a cera ainda líquida. O copo e a cápsula ficam",
         "cap_mm": 1.7
       },
       {
-        "label": "cápsula ficam quentes durante ",
+        "label": "quentes durante e após o uso.",
         "ink_mm": [
           5.0,
-          50.3,
-          49.34,
+          50.25,
+          28.25,
           52.47
         ],
-        "text": "cápsula ficam quentes durante e após o uso.",
+        "text": "quentes durante e após o uso.",
         "cap_mm": 1.7
       },
       {
@@ -627,21 +583,21 @@
         "ink_mm": [
           5.0,
           53.12,
-          64.62,
-          55.13
+          35.02,
+          54.85
         ],
-        "text": "Evite contato com os olhos e mucosas. Em caso de contato,",
+        "text": "Evite contato com os olhos e mucosas.",
         "cap_mm": 1.7
       },
       {
-        "label": "lave com água em abundância.",
+        "label": "Em caso de contato, lave com á",
         "ink_mm": [
           5.0,
-          55.8,
-          35.65,
+          55.75,
+          44.85,
           58.0
         ],
-        "text": "lave com água em abundância.",
+        "text": "Em caso de contato, lave com água em abundância.",
         "cap_mm": 1.7
       },
       {
@@ -649,15 +605,15 @@
         "ink_mm": [
           5.0,
           58.62,
-          16.09,
+          13.66,
           60.75
         ],
         "text": "Não ingerir.",
         "cap_mm": 1.7
       },
       {
-        "label": "legal width",
-        "font": "Special Gothic wght 400 wdth 100",
+        "label": "legal body",
+        "font": "Special Gothic Condensed One, tracking 0",
         "cap_mm": 1.7
       }
     ],
@@ -687,26 +643,28 @@
         "cap_mm": 2.0
       },
       {
-        "label": "papel",
+        "label": "CARTUCHO · PAPEL · RECICLE",
         "ink_mm": [
-          42.36,
-          45.0,
-          47.3,
-          47.46
+          40.0,
+          41.78,
+          67.12,
+          43.57
         ],
-        "text": "papel",
-        "cap_mm": 2.0
+        "text": "CARTUCHO · PAPEL · RECICLE",
+        "cap_mm": 1.731,
+        "tracking": 80
       },
       {
-        "label": "metal",
+        "label": "CÁPSULA · ALUMÍNIO · RECICLE",
         "ink_mm": [
-          61.64,
-          45.0,
-          66.69,
+          40.0,
+          44.74,
+          69.0,
           47.03
         ],
-        "text": "metal",
-        "cap_mm": 2.0
+        "text": "CÁPSULA · ALUMÍNIO · RECICLE",
+        "cap_mm": 1.731,
+        "tracking": 80
       },
       {
         "label": "bar block",
@@ -717,6 +675,15 @@
           20.0
         ],
         "scannable": false
+      },
+      {
+        "label": "disposal block",
+        "lines": [
+          "CARTUCHO · PAPEL · RECICLE",
+          "CÁPSULA · ALUMÍNIO · RECICLE"
+        ],
+        "cap_mm": 1.731,
+        "x_mm": 40.0
       }
     ]
   },
@@ -731,7 +698,22 @@
     },
     {
       "panel": "frente",
+      "platform": "O copo fica. A turnê continua.",
+      "used": "O COPO FICA. A TURNÊ CONTINUA.",
+      "font": "Expanded One caps",
+      "kind": "director's decision",
+      "reason": "Locutor lines are capitals everywhere except the lockup \"holofote nela.\"; lower case only in Shantell (the Fã) or Condensed One at 0 tracking (the Produção)"
+    },
+    {
+      "panel": "frente",
       "reason": "§C.9 lists the refill front as NOVA TEMPORADA · O copo fica. A turnê continua. · faixa name · PESO LÍQUIDO 200 g; \"vela aromática · refil\" (the peel lid's own string) is added beside the net weight so the main panel names the product"
+    },
+    {
+      "panel": "lateral-1",
+      "kind": "director's decision",
+      "platform": "body text in Special Gothic wght 400 (sentence case)",
+      "used": "Special Gothic Condensed One, sentence case, tracking 0 (the Produção)",
+      "reason": "lower case is allowed only in Shantell or Condensed One at 0 tracking"
     },
     {
       "panel": "lateral-1",
@@ -782,11 +764,28 @@
       "reason": "the refill carries MODO DE USO and ADVERTÊNCIAS on two sides"
     },
     {
+      "panel": "lateral-2",
+      "kind": "director's decision",
+      "platform": "body text in Special Gothic wght 400 (sentence case)",
+      "used": "Special Gothic Condensed One, sentence case, tracking 0 (the Produção)",
+      "reason": "lower case is allowed only in Shantell or Condensed One at 0 tracking"
+    },
+    {
       "panel": "topo",
       "kind": "director's decision",
       "platform": "ESTE LADO PRA CIMA ↑",
       "used": "ESTE LADO PRA CIMA",
       "reason": "an arrow is meaningless on a horizontal panel; the words stay"
+    },
+    {
+      "panel": "fundo",
+      "used": [
+        "CARTUCHO · PAPEL · RECICLE",
+        "CÁPSULA · ALUMÍNIO · RECICLE"
+      ],
+      "kind": "director's decision",
+      "platform": "disposal pictograms (generic bins) + material names",
+      "reason": "clip-art bins replaced by code-set Condensed One caps lines in the brand voice, one per material; \"O copo fica\" is the brand's own idea, so the disposal block says it"
     },
     {
       "panel": "fundo",
@@ -796,7 +795,7 @@
       "panel": "fundo",
       "kind": "director's decision",
       "platform": "papel · vidro · metal",
-      "used": "papel · metal",
+      "used": "CARTUCHO · PAPEL · RECICLE / CÁPSULA · ALUMÍNIO · RECICLE",
       "reason": "there is no glass in a refill"
     }
   ],

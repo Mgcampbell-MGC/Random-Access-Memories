@@ -99,7 +99,7 @@ RULES = [
     (r'PULSEIRA_padrao\.svg', 'A PULSEIRA: o desenho do jacquard em vetor.'),
     (r'PULSEIRA_tecido\.png', 'A PULSEIRA: render do tecido (fios de trama, sarja preta, ourela).'),
     (r'PULSEIRA_tecido_altura16\.png', 'A PULSEIRA: mapa de altura 16 bits do tecido.'),
-    (r'PULSEIRA_SELO_faixa\.png', 'Selo de papel 60 × 15 mm: a tira inteira como é impressa (só por fora), 20 px/mm; TOPO "pode / rasgar.", BAIXO "o que se guarda é a pulseira.".'),
+    (r'PULSEIRA_SELO_faixa\.png', 'Selo de papel 60 × 15 mm: a tira inteira como é impressa (só por fora), 20 px/mm; TOPO "PODE / RASGAR.", BAIXO "o que se guarda é a pulseira.".'),
     (r'PULSEIRA_SELO_faixa\.svg', 'Selo de papel: a tira inteira em vetor, em mm.'),
     (r'PULSEIRA_SELO_face-(topo|baixo)\.png', lambda m: f'Selo de papel: a face {m[1]} (15 × 16 mm) como aparece montada no maço, só revisão.'),
     (r'PULSEIRA\.json', 'A PULSEIRA: medidas, fonte e repetições.'),

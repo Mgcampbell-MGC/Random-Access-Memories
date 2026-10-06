@@ -110,40 +110,18 @@ REF_MODO_USE = ('Use a cápsula sempre dentro do copo HOLOFOTE. Apoie o copo sob
                 'plana, firme e resistente ao calor.')
 REF_LAST = ('Modo de uso e advertências completas: ver lateral.', 'Modo de uso e advertências completas: ver laterais.')
 SINGLE_CONTENT = 'CONTEÚDO: HOLOFOTE AO VIVO · O SINGLE — vela aromática · ODORIZANTE DE AMBIENTE'
-BINS = ['papel', 'vidro', 'metal']
-REF_BINS = ['papel', 'metal']                      # no glass in a refill
 BURN_200 = 'queima aprox. 40 h'                    # §B: 200 g ≈ 40 h (the setlist already states it)
 WORDMARK_W = 30.0                                  # refill front wordmark, ink width (§D.3 minimum 18 mm)
 
 
 def wordmark_mono(P, x0, baseline, ink_w=WORDMARK_W):
-    """HOLOFOTE wordmark (§D.3) in the carton's one type ink: Expanded One caps, tracking −10, the third O lit as a
-    solid disc of its own outer contour (§D.3 'Mono' and 'On amarelo': the lamp in the type ink, so the two-ink carton
-    needs no third ink)."""
-    ln, cap = K.fit_size(lambda c: Line([run_cap('HOLOFOTE', K.XP, c, -10, CAPS)]), ink_w, 1, 30)
-    p = K.place_left(ln, x0, baseline)
-    lit = [i for i, gl in enumerate(ln.glyphs) if gl.fc.name(gl.gid) == 'O'][2]
-    ds = []
-    for i, gl in enumerate(ln.glyphs):
-        if i != lit:
-            ds.append(glyph_path(gl, p.x, p.y))
-            continue
-        conts, cur = [], []
-        for op in gl.fc.outline(gl.gid):
-            cur.append(op)
-            if op[0] in ('closePath', 'endPath'):
-                conts.append(cur)
-                cur = []
-
-        def area(c):
-            pts = [pt for op in c for pt in op[1]]
-            return (max(q[0] for q in pts) - min(q[0] for q in pts)) * (max(q[1] for q in pts) - min(q[1] for q in pts))
-        ds.append(glyph_path(Glyph(gl.fc, gl.gid, gl.x, gl.y, gl.em, ops=max(conts, key=area)), p.x, p.y))
-    P.raw(' '.join(ds))
-    b = p.ink()
-    P.log.append(dict(label='wordmark HOLOFOTE (mono, lit O solid)', ink_mm=[round(v, 2) for v in b],
-                      cap_mm=round(cap, 3), tracking=-10))
-    return p, cap
+    """HOLOFOTE wordmark: the logo team's mono SVG (01_MARCA/logo, the lit O as a solid disc) in the carton's one
+    type ink (§D.3 'Mono'; on amarelo it is the §D.3 colourway itself), ink width ink_w. Returns (ink box, cap)."""
+    d, cap, box = K.logo_d(x0, baseline, ink_w)
+    P.raw(d)
+    P.log.append(dict(label='wordmark HOLOFOTE (logo SVG, mono)', ink_mm=[round(v, 2) for v in box],
+                      cap_mm=round(cap, 3), source='01_MARCA/logo/HOLOFOTE_logo_mono-preto_transparente.svg'))
+    return box, cap
 
 
 def manifesto(faixa, net, refil=False, single=False):
@@ -245,9 +223,9 @@ def front_refil(g, faixa):
     s = T.SKUS[faixa]
     flood, ink = colours(faixa)
     P = Panel(g, 'frente', g.W, g.H, flood, ink)
-    pw, cw = wordmark_mono(P, g.X0, 6.0 + 3.24)          # brand on the principal display panel
+    wb, cw = wordmark_mono(P, g.X0, 6.0 + WORDMARK_W * 710 / 6318)    # brand on the principal display panel
     ln, c1 = K.fit_size(lambda c: Line([run_cap(REF_TITLE, K.CN, c, 100, CAPS)]), g.MEAS, 1, 30)
-    y = pw.ink()[3] + cw + c1                              # clear space below the wordmark = its O height
+    y = wb[3] + cw + c1                                    # clear space below the wordmark = its O height
     P.add(K.place_left(ln, g.X0, y), REF_TITLE, cap_mm=round(c1, 3))
     P.dev.append(dict(panel='frente', kind=DD, added='HOLOFOTE wordmark', ink_w_mm=WORDMARK_W,
                       colourway='§D.3 mono: letters and the lit O in the type ink (a two-ink carton)',
@@ -259,9 +237,12 @@ def front_refil(g, faixa):
     acc = 0.34 * c2 if any(ch in s['show'] for ch in 'ÁÉÍÓÚÂÊÔÃÕ') else 0.0
     y += 4.4 + acc + c2
     P.add(K.place_left(ln, g.X0, y), 'faixa', cap_mm=round(c2, 3), wdth=s['wdth'])
-    f2 = K.SG(700, 100)
-    la, ca = K.fit_size(lambda c: Line([run_cap(REF_LINE[0], f2, c, 0)]), g.MEAS, 1, 30)
-    lb, cb = K.fit_size(lambda c: Line([run_cap(REF_LINE[1], f2, c, 0)]), g.MEAS, 1, 30)
+    f2 = K.XP                                   # the Locutor: Expanded One, capitals (CCO review, round 3)
+    ra, rb = REF_LINE[0].upper(), REF_LINE[1].upper()
+    la, ca = K.fit_size(lambda c: Line([run_cap(ra, f2, c, 0, CAPS)]), g.MEAS, 1, 30)
+    lb, cb = K.fit_size(lambda c: Line([run_cap(rb, f2, c, 0, CAPS)]), g.MEAS, 1, 30)
+    P.dev.append(dict(panel='frente', platform=' '.join(REF_LINE), used=ra + ' ' + rb, font='Expanded One caps',
+                      **T.LOCUTOR_CAPS))
     # bottom block first, then the Locutor line centred in the space left
     yb = g.H - 6.0
     pl = K.place_left(Line([run_cap(T.REF_LID[2], K.CN, 2.6, 0, FIG)]), g.X0, yb)
@@ -269,10 +250,11 @@ def front_refil(g, faixa):
                                                                                     FIG)]), g.X1, yb)
     yr = yb - 4.0 - 2.4
     top = y + 0.9
-    qh = ca + 2.4 + cb
+    accb = 0.32 * cb                            # the circumflex of TURNÊ needs room above line b
+    qh = ca + 2.4 + accb + cb
     ya = top + (yr - top - qh) / 2 + ca
-    P.add(K.place_left(la, g.X0, ya), REF_LINE[0], cap_mm=round(ca, 3))
-    P.add(K.place_left(lb, g.X0, ya + 2.4 + cb), REF_LINE[1], cap_mm=round(cb, 3))
+    P.add(K.place_left(la, g.X0, ya), ra, cap_mm=round(ca, 3))
+    P.add(K.place_left(lb, g.X0, ya + 2.4 + accb + cb), rb, cap_mm=round(cb, 3))
     P.raw(K.rect_d(g.X0, yr - 0.15, g.MEAS, 0.3))
     P.add(pl, 'vela aromática · refil')
     P.add(pr, 'PESO LÍQUIDO 200 g')
@@ -284,13 +266,14 @@ def front_refil(g, faixa):
 
 # ------------------------------------------------------------------------------------------------- the other panels
 def legal(g, faixa, items, name):
-    """Legal text in SG wght 400 at cap 1,7. If the block does not fit the panel at wdth 100, the WIDTH axis is
-    solved down (never the cap height): the largest wdth in 100…75 whose block fits."""
+    """Legal text: headings in Special Gothic wght 700 caps, cap 2,2; the body in Condensed One sentence case at
+    tracking 0, cap 1,7 (the Produção: CCO review, round 3 allows lower case only there or in Shantell)."""
     flood, ink = colours(faixa)
     P = Panel(g, name, g.D, g.H, flood, ink)
     hb = K.SG(700, 100)
+    bd = K.CN
 
-    def run(top, write, bd):
+    def run(top, write):
         y = top
         first = True
         for kind, t in items:
@@ -308,18 +291,11 @@ def legal(g, faixa, items, name):
                         P.add(K.place_left(ln, g.X0, y), tx[:30], cap_mm=1.7)
         return y
     avail = g.H - 2 * 5.5
-    wd = 100
-    while wd > 75 and run(0.0, False, K.SG(400, wd)) > avail:
-        wd -= 5
-    bd = K.SG(400, wd)
-    end = run(0.0, False, bd)
+    end = run(0.0, False)
     assert end <= avail + 0.5, (name, end, avail)
-    run((g.H - end) / 2 + 2.2 - 1.0, True, bd)
-    P.log.append(dict(label='legal width', font=f'Special Gothic wght 400 wdth {wd}', cap_mm=1.7))
-    if wd != 100:
-        P.dev.append(dict(panel=name, reason=f'MODO DE USO + ADVERTÊNCIAS need {run(0.0, False, K.SG(400, 100)):.1f} mm '
-                          f'of height at wdth 100 on this {g.D:.0f} mm panel ({avail:.0f} mm available); the width axis '
-                          f'is solved to wdth {wd} so the cap height stays at the platform\'s 1,7 mm'))
+    run((g.H - end) / 2 + 2.2 - 1.0, True)
+    P.log.append(dict(label='legal body', font='Special Gothic Condensed One, tracking 0', cap_mm=1.7))
+    P.dev.append(dict(panel=name, **T.BODY_PRODUCAO))
     return P
 
 
@@ -361,30 +337,29 @@ def back(g, faixa, net, refil=False, single=False):
     return P
 
 
-def bars_and_bins(P, by, labels=BINS):
-    """The fictional bar block and the three disposal marks on one row. On the 96 mm carton the block is 38 x 22 (as
-    on O CASE); on the 74 mm cartons it is 30 x 20 (an EAN-13 at ~80%) and the marks size to their slot."""
+def bars_and_bins(P, by, lines=None):
+    """The fictional bar block and, to its right, the disposal block (CCO review, round 3): one Condensed One caps line
+    per material in the brand voice, the last baseline on the bar caption's baseline. On the 96 mm carton the bars are
+    38 x 22 (as on O CASE); on the 74 mm cartons 30 x 20 (an EAN-13 at ~80%). The lines take cap 2,2 or the largest cap
+    that fits the slot, never under 1,7 (the legal cap)."""
     g = P.g
-    if g.W >= 90:
-        bw, bh, size = 38.0, 22.0, 9.0
-        xs = [g.X1 - 32.0, g.X1 - 18.0, g.X1 - 4.0]
-    else:
-        bw, bh = 30.0, 20.0
-        x_start = g.X0 + bw + 5.0
-        step = (g.X1 - x_start) / 3.0
-        size = min(9.0, step - 1.8)
-        xs = [x_start + step * (i + 0.5) for i in range(3)]
-    if len(labels) == 2:                            # two marks keep the three-mark size, on the outer two slots
-        xs = [xs[0], xs[2]]
-    assert len(xs) == len(labels)
+    lines = lines or T.DISPOSAL_CT
+    bw, bh = (38.0, 22.0) if g.W >= 90 else (30.0, 20.0)
     P.raw(K.bars_d(g.X0, by, bw, bh - 4.0))
     lnb, trb = K.fit_tracking([run_cap(T.BARCODE, K.CN, 2.0, 0, CAPS)], bw)
     P.add(K.place_left(lnb, g.X0, by + bh), 'barcode line', cap_mm=2.0)
-    for x, lab in zip(xs, labels):
-        iy = by + (bh - 4.0) - 3.0 - size            # icon foot 3 mm above the foot of the bars (as on INGRESSO)
-        P.raw(K.bin_icon_d(x - size / 2, iy, size))
-        P.add(K.place_center(Line([run_cap(lab, K.CN, 2.0, 0)]), x, by + bh), lab, cap_mm=2.0)
+    x0 = g.X0 + bw + 5.0
+    slot = g.X1 - x0
+    wid = max(Line([run_cap(t, K.CN, 1.0, 80, CAPS)]).ink_width() for t in lines)
+    cap = min(2.2, slot / wid)
+    assert cap >= 1.7, (cap, slot)
+    pitch = 2.0 * cap
+    for k, t in enumerate(lines):
+        yb = by + bh - pitch * (len(lines) - 1 - k)
+        P.add(K.place_left(Line([run_cap(t, K.CN, cap, 80, CAPS)]), x0, yb), t, cap_mm=round(cap, 3), tracking=80)
     P.log.append(dict(label='bar block', box_mm=[g.X0, by, bw, bh], scannable=False))
+    P.log.append(dict(label='disposal block', lines=list(lines), cap_mm=round(cap, 3), x_mm=round(x0, 2)))
+    P.dev.append(dict(panel=P.name, used=list(lines), **T.DISPOSAL_FIX))
 
 
 def aspas(s):
@@ -401,24 +376,35 @@ def aspas(s):
 
 
 def side_tag(g, faixa):
+    """Side 2: the wordmark (CCO review, round 3: the brand on every carton), the lockup holofote nela., the Locutor
+    line in capitals, then the bar block and the disposal lines."""
     flood, ink = colours(faixa)
     P = Panel(g, 'lateral-2', g.D, g.H, flood, ink)
+    top_m = 8.0 * g.H / 98.0
+    ww = 30.0 * g.MEAS / 64.0                      # 30 mm on the 74 mm cartons, 39,4 on O INGRESSO (≥ 30 mm)
+    wcap = ww * 710 / 6318
+    wb, wcap = wordmark_mono(P, g.X0, top_m + wcap, ww)
+    P.dev.append(dict(panel='lateral-2', kind=DD, added='HOLOFOTE wordmark (logo SVG, mono, carton ink)',
+                      ink_w_mm=round(ww, 2), reason='the brand on side 2 of every 200 g and SINGLE carton'))
     ln, c1 = K.fit_size(lambda c: Line([run_cap(T.CT_SIDE2[0], K.XP, c, -10)]), g.MEAS, 1, 30)
-    y = 8.0 * g.H / 98.0 + c1
-    P.add(K.place_left(ln, g.X0, y), 'tagline', cap_mm=round(c1, 3), font='Expanded One lower case (Locutor)')
+    y = top_m + wcap + wcap + c1                   # clear space under the wordmark = its O height
+    P.add(K.place_left(ln, g.X0, y), 'tagline', cap_mm=round(c1, 3), font='Expanded One lower case (the lockup)')
     q = T.CT_SIDE2[1]
     cut = q.index('. ') + 1
     qa, qb = q[:cut], q[cut + 1:]
     assert qa + ' ' + qb == q
-    qa = aspas(qa)   # typesetting, not a string change: the platform's ASCII " set as Brazilian aspas “ ”
-    f = K.SG(700, 100)
-    la, ca = K.fit_size(lambda c: Line([run_cap(qa, f, c, 0)]), g.MEAS, 1, 30)
-    lb, cb = K.fit_size(lambda c: Line([run_cap(qb, f, c, 0)]), g.MEAS, 1, 30)
-    by = g.H - 8.0 * g.H / 98.0 - (22.0 if g.W >= 90 else 20.0)
-    qh = ca + 3.0 + cb
-    ya = y + (by - y - qh) / 2 + ca
+    qa, qb = aspas(qa).upper(), qb.upper()          # the Locutor in capitals; ASCII " set as aspas “ ”
+    P.dev.append(dict(panel='lateral-2', platform=q, used=qa + ' ' + qb, font='Expanded One caps',
+                      **T.LOCUTOR_CAPS))
+    f = K.XP
+    la, ca = K.fit_size(lambda c: Line([run_cap(qa, f, c, 0, CAPS)]), g.MEAS, 1, 30)
+    lb, cb = K.fit_size(lambda c: Line([run_cap(qb, f, c, 0, CAPS)]), g.MEAS, 1, 30)
+    by = g.H - top_m - (22.0 if g.W >= 90 else 20.0)
+    acc_a, acc_b = 0.32 * ca, 0.32 * cb            # Ã in NÃO, É in É
+    qh = acc_a + ca + 2.6 + acc_b + cb
+    ya = y + (by - y - qh) / 2 + acc_a + ca
     P.add(K.place_left(la, g.X0, ya), 'quote a', cap_mm=round(ca, 3))
-    P.add(K.place_left(lb, g.X0, ya + 3.0 + cb), 'quote b', cap_mm=round(cb, 3))
+    P.add(K.place_left(lb, g.X0, ya + 2.6 + acc_b + cb), 'quote b', cap_mm=round(cb, 3))
     bars_and_bins(P, by)
     return P
 
@@ -436,12 +422,12 @@ def bottom(g, faixa, with_bars=False):
     flood, ink = colours(faixa)
     P = Panel(g, 'fundo', g.W, g.D, flood, ink)
     if with_bars:
-        bars_and_bins(P, (g.D - 20.0) / 2, REF_BINS)
+        bars_and_bins(P, (g.D - 20.0) / 2, T.DISPOSAL_REF)
         P.dev.append(dict(panel='fundo', reason='§C.9 gives the refill carton\'s other panels as MODO DE USO, '
                           'ADVERTÊNCIAS and MANIFESTO; the fictional bar block and the disposal marks (side 2 on O '
                           'INGRESSO) go on the bottom, the one panel left free; the top keeps O INGRESSO\'s '
                           '"ESTE LADO PRA CIMA"'))
-        P.dev.append(dict(panel='fundo', kind=DD, platform='papel · vidro · metal', used='papel · metal',
+        P.dev.append(dict(panel='fundo', kind=DD, platform='papel · vidro · metal', used=' / '.join(T.DISPOSAL_REF),
                           reason='there is no glass in a refill'))
     return P
 

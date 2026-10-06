@@ -223,7 +223,7 @@ def side1():
 # ------------------------------------------------------------------------------------------------- side 2
 def side2():
     S = Side('lado-2')
-    hb, bd = K.SG(700, 100), K.SG(400, 100)
+    hb, bd = K.SG(700, 100), K.CN               # body in Condensed One at tracking 0 (the Produção; round 3)
 
     def panel(i, head, body, sub=None):
         y0 = i * 100.0
@@ -238,8 +238,8 @@ def side2():
             y += 1.0
             if sub:
                 y += 4.4
-                if write:
-                    S.add(K.place_left(Line([run_cap(sub, hb, 2.6, 0)]), M0, y), sub, cap_mm=2.6)
+                if write:                       # a Locutor line: capitals (CCO review, round 3)
+                    S.add(K.place_left(Line([run_cap(sub.upper(), hb, 2.6, 0, CAPS)]), M0, y), sub.upper(), cap_mm=2.6)
                 y += 0.8
             for t in body:
                 lines, texts = K.para(t, bd, 2.0, MEAS, 0)
@@ -254,15 +254,41 @@ def side2():
     panel(0, T.P1B_HEAD, T.MODO_DE_USO[1:])
     panel(1, T.ADVERTENCIAS[0], T.ADVERTENCIAS[1:])
     panel(2, T.DEPOIS[0], T.DEPOIS[2:], sub=T.DEPOIS[1])
-    # P4': four ticket backs; turned over, the stub perforation is at x = 105 - 83 = 22
+    # P4': four ticket backs (CCO review, round 3: each a small ticket, not a lone line). Turned over left to right,
+    # the stub is x 0–22 (its perforation at x = 105 − 83 = 22) and the amarelo band's back is x 92–105.
     xb = W - PERF_X
+    xr = W - BAND
     for i in range(4):
         ty = 300.0 + 25.0 * i
-        ln = Line([run_cap(T.TICKET_BACK, K.CN, 1.6, 40, CAPS)])
-        avail = (W - BAND) - xb - 6.0
-        if ln.ink_width() > avail:
-            ln, trk = K.fit_tracking([run_cap(T.TICKET_BACK, K.CN, 1.6, 0, CAPS)], avail, lo=-20, hi=40)
-        S.add(K.place_left(ln, xb + 3.0, ty + 12.5 + 0.8), f'ticket back {i + 1}', cap_mm=1.6)
+        S.add(K.place_left(Line([run_cap('Nº', K.CN, 2.0, 40, CAPS)]), 4.0, ty + 7.6), f'stub nº {i + 1}', cap_mm=2.0)
+        S.add(K.place_left(Line([run_cap(f'{i + 1:02d}', K.CN, 7.0, 20, CAPS)]), 4.0, ty + 18.4), f'stub number {i + 1}',
+              cap_mm=7.0)
+        S.add(K.place_left(Line([run_cap(T.ADMITE_BACK, K.CN, 3.0, 80, CAPS)]), xb + 3.0, ty + 8.6), f'admite {i + 1}',
+              cap_mm=3.0)
+        # caps at +40, the lower-case close ("emitido por: você") at 0 tracking (the Produção rule)
+        k = T.TICKET_BACK.index('emitido')
+        avail = xr - xb - 6.0
+        tr_c = 40
+        while True:                                 # the caps tracking gives way first (never under 0)
+            ln = Line([run_cap(T.TICKET_BACK[:k], K.CN, 1.6, tr_c, CAPS), run_cap(T.TICKET_BACK[k:], K.CN, 1.6, 0, FIG)])
+            if ln.ink_width() <= avail or tr_c <= 0:
+                break
+            tr_c -= 2
+        assert ln.ink_width() <= avail, (ln.ink_width(), avail)
+        S.add(K.place_left(ln, xb + 3.0, ty + 14.4), f'ticket back {i + 1}', cap_mm=1.6)
+    # the tear lines, mirrored from side 1: between the tickets (x 0–92) and along the stub (x = 22)
+    d = []
+    for y in (325.0, 350.0, 375.0):
+        x = 0.0
+        while x < xr:
+            d.append(K.rect_d(x, y - 0.1, min(1.0, xr - x), 0.2))
+            x += 2.0
+    y = 300.0
+    while y < 400.0:
+        d.append(K.rect_d(xb - 0.1, y, 0.2, min(1.0, 400.0 - y)))
+        y += 2.0
+    S.L['preto'].append(' '.join(d))
+    S.log.append(dict(label="P4' perforations (printed tear lines)", horizontal_y_mm=[325, 350, 375], vertical_x_mm=xb))
     return S
 
 
@@ -364,7 +390,12 @@ def main():
     flatlay(out[1], out[2], m1, m2, os.path.join(od, 'SETLIST_preview_aberto.jpg'))
     meta['note'] = ('A MARCA on the cover is textured for the render; its print separation is the flat amarelo '
                     'shape in SETLIST_lado-1_amarelo.png')
-    meta['deviations'] = [dict(panel="P1' REGRAS DA CASA · MODO DE USO", **T.MODO_FIX)]
+    meta['deviations'] = [dict(panel="P1' REGRAS DA CASA · MODO DE USO", **T.MODO_FIX),
+                          dict(panel="P1' P2' P3' bodies", **T.BODY_PRODUCAO),
+                          dict(panel="P3' sub-head", platform=T.DEPOIS[1], used=T.DEPOIS[1].upper(), **T.LOCUTOR_CAPS),
+                          dict(panel="P4' ticket backs", kind=T.DD, added=['Nº 01–04 on the stub', T.ADMITE_BACK,
+                                                                           'printed tear lines'],
+                               reason='CCO review: each ticket back is a small ticket, not a lone 1,6 mm line')]
     R.write_json(meta, os.path.join(od, 'SETLIST.json'))
     print('setlist done')
 

@@ -320,7 +320,7 @@ Tudo aqui foi gerado por código em `_build/pack/` (um comando refaz tudo:
 - `PULSEIRA.json` — A PULSEIRA: medidas, fonte e repetições.
 - `PULSEIRA_SELO_face-baixo.png` — Selo de papel: a face baixo (15 × 16 mm) como aparece montada no maço, só revisão.
 - `PULSEIRA_SELO_face-topo.png` — Selo de papel: a face topo (15 × 16 mm) como aparece montada no maço, só revisão.
-- `PULSEIRA_SELO_faixa.png` — Selo de papel 60 × 15 mm: a tira inteira como é impressa (só por fora), 20 px/mm; TOPO "pode / rasgar.", BAIXO "o que se guarda é a pulseira.".
+- `PULSEIRA_SELO_faixa.png` — Selo de papel 60 × 15 mm: a tira inteira como é impressa (só por fora), 20 px/mm; TOPO "PODE / RASGAR.", BAIXO "o que se guarda é a pulseira.".
 - `PULSEIRA_SELO_faixa.svg` — Selo de papel: a tira inteira em vetor, em mm.
 - `PULSEIRA_padrao.png` — A PULSEIRA: desenho do jacquard 15 × 350 mm a 20 px/mm (preto + amarelo), duas repetições inteiras.
 - `PULSEIRA_padrao.svg` — A PULSEIRA: o desenho do jacquard em vetor.

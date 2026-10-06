@@ -338,9 +338,9 @@
         "layer": "papel",
         "ink_mm": [
           10.0,
-          17.66,
+          20.66,
           33.63,
-          20.14
+          23.14
         ],
         "stencil": false,
         "text": "MODO DE USO",
@@ -351,9 +351,9 @@
         "layer": "papel",
         "ink_mm": [
           10.0,
-          21.22,
-          87.99,
-          23.52
+          24.17,
+          70.44,
+          26.52
         ],
         "stencil": false,
         "text": "Na primeira vez, deixe a cera derreter até a borda da cápsula (3 a 4 horas).",
@@ -364,9 +364,9 @@
         "layer": "papel",
         "ink_mm": [
           10.0,
-          24.3,
-          105.26,
-          26.52
+          27.3,
+          83.59,
+          29.52
         ],
         "stencil": false,
         "text": "Antes de cada uso, retire a parte queimada do pavio de madeira, deixando cerca de 5 mm.",
@@ -377,9 +377,9 @@
         "layer": "papel",
         "ink_mm": [
           10.0,
-          27.27,
-          96.92,
-          29.55
+          30.27,
+          77.17,
+          32.55
         ],
         "stencil": false,
         "text": "Não queime por mais de 4 horas seguidas. Deixe esfriar antes de acender de novo.",
@@ -390,9 +390,9 @@
         "layer": "papel",
         "ink_mm": [
           10.0,
-          30.22,
-          56.85,
-          32.55
+          33.17,
+          46.33,
+          35.55
         ],
         "stencil": false,
         "text": "Para apagar, use um abafador. Não use água.",
@@ -403,9 +403,9 @@
         "layer": "papel",
         "ink_mm": [
           10.0,
-          33.27,
-          74.75,
-          35.52
+          36.27,
+          59.71,
+          38.52
         ],
         "stencil": false,
         "text": "Encerre o uso quando restar cerca de 1 cm de cera no fundo.",
@@ -416,25 +416,12 @@
         "layer": "papel",
         "ink_mm": [
           10.0,
-          36.22,
-          104.83,
-          38.52
-        ],
-        "stencil": false,
-        "text": "Use a vela sempre dentro do copo. Apoie o copo sobre a tampa virada ou sobre superfície",
-        "cap_mm": 1.8
-      },
-      {
-        "label": "MODO/ADV plana, firme e resistent",
-        "layer": "papel",
-        "ink_mm": [
-          10.0,
-          39.27,
-          44.48,
+          39.17,
+          110.94,
           41.52
         ],
         "stencil": false,
-        "text": "plana, firme e resistente ao calor.",
+        "text": "Use a vela sempre dentro do copo. Apoie o copo sobre a tampa virada ou sobre superfície plana, firme e resistente ao calor.",
         "cap_mm": 1.8
       },
       {
@@ -455,8 +442,8 @@
         "layer": "papel",
         "ink_mm": [
           10.0,
-          48.82,
-          102.82,
+          48.77,
+          82.24,
           51.12
         ],
         "stencil": false,
@@ -469,7 +456,7 @@
         "ink_mm": [
           10.0,
           51.9,
-          53.95,
+          44.23,
           54.12
         ],
         "stencil": false,
@@ -482,8 +469,8 @@
         "ink_mm": [
           10.0,
           54.87,
-          61.28,
-          57.11
+          50.02,
+          57.12
         ],
         "stencil": false,
         "text": "Mantenha fora do alcance de crianças e animais.",
@@ -494,8 +481,8 @@
         "layer": "papel",
         "ink_mm": [
           10.0,
-          57.82,
-          112.6,
+          57.77,
+          90.09,
           60.12
         ],
         "stencil": false,
@@ -507,8 +494,8 @@
         "layer": "papel",
         "ink_mm": [
           10.0,
-          60.82,
-          101.4,
+          60.77,
+          81.52,
           63.12
         ],
         "stencil": false,
@@ -520,25 +507,12 @@
         "layer": "papel",
         "ink_mm": [
           10.0,
-          63.82,
-          63.88,
+          63.77,
+          97.5,
           66.12
         ],
         "stencil": false,
-        "text": "Não mova a vela acesa ou com a cera ainda líquida.",
-        "cap_mm": 1.8
-      },
-      {
-        "label": "MODO/ADV O copo e a cápsula ficam",
-        "layer": "papel",
-        "ink_mm": [
-          10.0,
-          66.82,
-          68.97,
-          69.12
-        ],
-        "stencil": false,
-        "text": "O copo e a cápsula ficam quentes durante e após o uso.",
+        "text": "Não mova a vela acesa ou com a cera ainda líquida. O copo e a cápsula ficam quentes durante e após o uso.",
         "cap_mm": 1.8
       },
       {
@@ -546,9 +520,9 @@
         "layer": "papel",
         "ink_mm": [
           10.0,
-          69.82,
-          106.36,
-          72.15
+          66.77,
+          84.5,
+          69.15
         ],
         "stencil": false,
         "text": "Evite contato com os olhos e mucosas. Em caso de contato, lave com água em abundância.",
@@ -559,9 +533,9 @@
         "layer": "papel",
         "ink_mm": [
           10.0,
-          72.9,
-          21.75,
-          75.15
+          69.9,
+          19.17,
+          72.15
         ],
         "stencil": false,
         "text": "Não ingerir.",
@@ -795,70 +769,56 @@
         "label": "O copo é seu",
         "layer": "papel",
         "ink_mm": [
-          28.92,
+          56.08,
           52.78,
-          101.08,
+          73.92,
           56.7
         ],
         "stencil": false,
-        "text": "O copo é seu. O resto, separe: papel, plástico e metal.",
+        "text": "O copo é seu.",
         "cap_mm": 3.0
       },
       {
-        "label": "descarte papel",
+        "label": "descarte CASE · PAPEL",
         "layer": "papel",
         "ink_mm": [
-          29.28,
-          76.8,
-          34.72,
-          79.51
+          34.95,
+          62.61,
+          95.05,
+          66.49
         ],
         "stencil": false,
-        "text": "papel",
-        "cap_mm": 2.2
+        "text": "CASE · PAPEL, PLÁSTICO E METAL · SEPARE",
+        "cap_mm": 2.6,
+        "tracking": 80
       },
       {
-        "label": "descarte plástico",
+        "label": "descarte COPO · VIDRO",
         "layer": "papel",
         "ink_mm": [
-          49.98,
-          76.64,
-          58.02,
-          79.51
+          51.09,
+          68.56,
+          78.91,
+          71.24
         ],
         "stencil": false,
-        "text": "plástico",
-        "cap_mm": 2.2
+        "text": "COPO · VIDRO · FICA",
+        "cap_mm": 2.6,
+        "tracking": 80
       },
       {
-        "label": "descarte vidro",
+        "label": "descarte CÁPSULA · AL",
         "layer": "papel",
         "ink_mm": [
-          73.42,
-          76.8,
-          78.58,
-          79.04
+          43.23,
+          73.01,
+          86.77,
+          76.44
         ],
         "stencil": false,
-        "text": "vidro",
-        "cap_mm": 2.2
-      },
-      {
-        "label": "descarte metal",
-        "layer": "papel",
-        "ink_mm": [
-          95.22,
-          76.8,
-          100.78,
-          79.04
-        ],
-        "stencil": false,
-        "text": "metal",
-        "cap_mm": 2.2
-      },
-      {
-        "label": "disposal symbols",
-        "note": "generic bin pictogram + material; ABNT NBR 16182 artwork UNVERIFIED (standard not consulted)"
+        "text": "CÁPSULA · ALUMÍNIO · RECICLE",
+        "cap_mm": 2.6,
+        "tracking": 80
       }
     ],
     "top": [
@@ -963,11 +923,10 @@
       "PROTÓTIPO FICTÍCIO · DADOS FICTÍCIOS · NÃO COMERCIALIZAR"
     ],
     "base_under": [
-      "O copo é seu. O resto, separe: papel, plástico e metal.",
-      "papel",
-      "plástico",
-      "vidro",
-      "metal"
+      "O copo é seu.",
+      "CASE · PAPEL, PLÁSTICO E METAL · SEPARE",
+      "COPO · VIDRO · FICA",
+      "CÁPSULA · ALUMÍNIO · RECICLE"
     ],
     "mirror": "olha a atração."
   },
@@ -983,15 +942,41 @@
       "panel": "base fundo",
       "kind": "director's decision",
       "platform": "O case é de papel. O copo é seu.",
-      "used": "O copo é seu. O resto, separe: papel, plástico e metal.",
-      "reason": "false as written: the case also has EVA, a PMMA mirror, magnets, a polyester band and a plastic clasp; disposal marks papel · plástico · vidro · metal"
+      "used": "O copo é seu.",
+      "reason": "false as written: the case also has EVA, a PMMA mirror, magnets, a polyester band and a plastic clasp. Round 3: \"O resto, separe: papel, plástico e metal.\" dropped as redundant: the disposal block (CASE · PAPEL, PLÁSTICO E METAL · SEPARE …) says it"
     },
     {
       "panel": "base fundo",
+      "used": [
+        "CASE · PAPEL, PLÁSTICO E METAL · SEPARE",
+        "COPO · VIDRO · FICA",
+        "CÁPSULA · ALUMÍNIO · RECICLE"
+      ],
       "kind": "director's decision",
-      "platform": "papel · vidro · metal",
-      "used": "papel · plástico · vidro · metal",
-      "reason": "the case holds plastic parts (EVA, PMMA, clasp); the plástico mark is the same bin pictogram"
+      "platform": "disposal pictograms (generic bins) + material names",
+      "reason": "clip-art bins replaced by code-set Condensed One caps lines in the brand voice, one per material; \"O copo fica\" is the brand's own idea, so the disposal block says it"
+    },
+    {
+      "panel": "base esquerda (MODO DE USO)",
+      "kind": "director's decision",
+      "platform": "body text in Special Gothic wght 400 (sentence case)",
+      "used": "Special Gothic Condensed One, sentence case, tracking 0 (the Produção)",
+      "reason": "lower case is allowed only in Shantell or Condensed One at 0 tracking"
+    },
+    {
+      "panel": "tampa topo / base frente",
+      "kind": "director's decision",
+      "platform": "one horizontal 0,05 em bridge at 50 % cap through every glyph",
+      "used": "two short vertical bridges (0,05 em) per closed counter only; letters without a counter stay whole",
+      "reason": "the 50 % bridge cut the E/F middle arms into hairlines and halved S and C: it read as a strike-through"
+    },
+    {
+      "panel": "tampa topo",
+      "kind": "director's decision",
+      "status": "REVERTED",
+      "tried": "CAMARIM 1 · <name> filled to the wordmark ink width (70 mm) so the lockup is flush",
+      "used": "CAMARIM 1 · <name> filled to the 110 mm measure (as before round 3); the lockup stays ragged",
+      "reason": "§D rule 1 (\"Ela é sempre a maior palavra\") outranks a flush lockup: the flush version put the name below the wordmark cap"
     },
     {
       "panel": "base trás (MANIFESTO)",

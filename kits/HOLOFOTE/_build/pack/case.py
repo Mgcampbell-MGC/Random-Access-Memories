@@ -10,8 +10,9 @@ Panels at 10 px/mm, each drawn at its true aspect in its READING orientation (as
   lid:  top · front · back · left · right · inside (the dressing-room mirror)
   base: front (main panel) · left (MODO DE USO + ADVERTÊNCIAS) · right (RIDER) · back (MANIFESTO) · underside ·
         top (the EVA interior)
-Type: the lid top and the base front are STENCIL (one horizontal 0,05 em bridge at 50% of the cap height through
-every glyph; lower case is bridged at 50% of the x-height). Legal panels are not stencilled (§C.7 type column).
+Type: the lid top and the base front are STENCIL. Since the CCO review (round 3, director 6 Oct 2026) a glyph is
+bridged only where a stencil needs it: two short vertical 0,05 em bridges per closed counter (through the stroke above
+and below it); letters without a counter (E F S C H M T …) stay whole. Legal panels are not stencilled.
 
 Outputs in 02_PRODUTO/case/:
   CASE_<painel>.png / .svg                 common panels (art at 10 px/mm; SVG = the ink and foil layers in mm)
@@ -100,7 +101,7 @@ class Face:
         d = K.placed_paths(p)
         self.L[layer].append(d)
         if stencil:
-            self.bridge += K.stencil_rects(p, lower_xh=lower)
+            self.bridge += K.stencil_counter_rects(p)     # CCO review, round 3: vertical bridges per closed counter
         b = p.ink() if p.matrix is None and p.per_glyph is None else K.placed_ink_poly(p)
         self.log.append(dict(label=label, layer=layer, ink_mm=[round(v, 2) for v in b], stencil=stencil,
                              text=''.join(r.text for r in p.line.runs), **meta))
@@ -168,14 +169,10 @@ def wordmark(face, x0, baseline, ink_w=70.0, bridge=True):
             letters.append(glyph_path(g, p.x, p.y))
     face.L['papel_st' if bridge else 'papel'].append(' '.join(letters))
     if bridge:
-        # bridge only the letters: one rect per letter, skipping the lamp
-        h = 0.05 * ln.runs[0].em
-        yc = baseline - 0.5 * cap
-        for i, g in enumerate(ln.glyphs):
-            if i == lit_i or not g.bounds():
-                continue
-            b = g.bounds()
-            face.bridge.append((p.x + b[0] - 0.2, yc - h / 2, b[2] - b[0] + 0.4, h))
+        # bridge only the letters with a closed counter (the first two O's), never the lamp (CCO review, round 3)
+        lb = ln.glyphs[lit_i].bounds()
+        lx0, lx1 = p.x + lb[0], p.x + lb[2]
+        face.bridge += [r for r in K.stencil_counter_rects(p) if not (lx0 - 0.01 <= r[0] <= lx1)]
     b = p.ink()
     face.log.append(dict(label='wordmark', ink_mm=[round(v, 2) for v in b], cap_mm=round(cap, 3), tracking=-10,
                          lit='third O, amarelo', stencil=bridge))
@@ -225,10 +222,13 @@ def lid_top(u):
         r = run_cap(text, K.CN, c, 80, CAPS)
         r.heart_ref = K.XP
         return r
+    # fills the 110 mm measure: rule 1 ("ela é sempre a maior palavra") outranks a flush lockup (director, round 3:
+    # the round-3 flush version was reverted, the lockup stays ragged)
     ln, cap = K.fit_size(lambda c: Line([hrun(c)]), MEAS, 0.5, 60)
     y2 = base1 + 7.5 + cap
     f.add('papel_st', K.place_left(ln, MX0, y2), 'CAMARIM', stencil=True, cap_mm=round(cap, 3), tracking=80)
     assert cap > wcap, f'headliner line cap {cap:.2f} must stay above the wordmark cap {wcap:.2f} (rule 1)'
+    f.log.append(dict(label='name line vs wordmark', name_cap_mm=round(cap, 3), wordmark_cap_mm=round(wcap, 3)))
     ln = Line([run_cap(T.CASE_NO, K.CN, 5.0, 100, CAPS)])
     f.add('papel_st', K.place_left(ln, MX0, 114.0), 'CASE Nº', stencil=True, cap_mm=5.0, tracking=100)
     gaffer_x(f, 93.0, 95.0, 42.0)
@@ -333,7 +333,7 @@ def base_front(u):
 
 def base_left():
     f = Face('base_esquerda', W, H_BASE, 'blr', 'bl,br')
-    hb, bd = K.SG(700, 100), K.SG(400, 100)
+    hb, bd = K.SG(700, 100), K.CN              # the body in Condensed One, tracking 0 (the Produção; round 3)
 
     def spec_for(top):
         sp = [('head', T.MODO_DE_USO[0], hb, 2.4, 40, top)]
@@ -425,14 +425,10 @@ def base_under():
     f = Face('base_fundo', W, D, 'tblr', 'tl,tr,bl,br')
     ln = Line([run_cap(T.CASE_UNDER, K.CN, 3.0, 0)])
     f.add('papel', K.place_center(ln, W / 2, 56.0), 'O copo é seu', cap_mm=3.0)
-    labels = T.CASE_BINS                                   # papel · plástico · vidro · metal (director, 6 Oct 2026)
-    xs = [W / 2 + 22.0 * (i - (len(labels) - 1) / 2) for i in range(len(labels))]
-    for x, lab in zip(xs, labels):
-        f.L['papel'].append(K.bin_icon_d(x - 5.0, 64.0, 10.0))
-        l2 = Line([run_cap(lab, K.CN, 2.2, 0)])
-        f.add('papel', K.place_center(l2, x, 79.0), f'descarte {lab}', cap_mm=2.2)
-    f.log.append(dict(label='disposal symbols', note='generic bin pictogram + material; ABNT NBR 16182 artwork '
-                                                     'UNVERIFIED (standard not consulted)'))
+    # the disposal block (CCO review, round 3): one Condensed One caps line per material, centred, no pictograms
+    for k, t in enumerate(T.DISPOSAL_CASE):
+        l2 = Line([run_cap(t, K.CN, 2.6, 80, CAPS)])
+        f.add('papel', K.place_center(l2, W / 2, 66.0 + 5.2 * k), f'descarte {t[:12]}', cap_mm=2.6, tracking=80)
     return f
 
 
@@ -440,8 +436,17 @@ def case_decisions(u):
     """Director's decisions after the copy/compliance review (6 Oct 2026) that this unit prints."""
     d = [dict(panel='base esquerda (MODO DE USO)', **T.MODO_FIX),
          dict(panel='base fundo', **T.CASE_UNDER_FIX),
-         dict(panel='base fundo', kind=T.DD, platform='papel · vidro · metal', used=' · '.join(T.CASE_BINS),
-              reason='the case holds plastic parts (EVA, PMMA, clasp); the plástico mark is the same bin pictogram'),
+         dict(panel='base fundo', used=list(T.DISPOSAL_CASE), **T.DISPOSAL_FIX),
+         dict(panel='base esquerda (MODO DE USO)', **T.BODY_PRODUCAO),
+         dict(panel='tampa topo / base frente', kind=T.DD, platform='one horizontal 0,05 em bridge at 50 % cap through '
+              'every glyph', used='two short vertical bridges (0,05 em) per closed counter only; letters without a '
+              'counter stay whole', reason='the 50 % bridge cut the E/F middle arms into hairlines and halved S and C: '
+              'it read as a strike-through'),
+         dict(panel='tampa topo', kind=T.DD, status='REVERTED',
+              tried='CAMARIM 1 · <name> filled to the wordmark ink width (70 mm) so the lockup is flush',
+              used='CAMARIM 1 · <name> filled to the 110 mm measure (as before round 3); the lockup stays ragged',
+              reason='§D rule 1 ("Ela é sempre a maior palavra") outranks a flush lockup: the flush version put the '
+                     'name below the wordmark cap'),
          dict(panel='base trás (MANIFESTO)', **T.ALERG_FIX),
          dict(panel='base trás (MANIFESTO)', **T.INGREDIENT_BREAK)]
     if K.HEART in u['headliner']:
@@ -752,7 +757,7 @@ def main():
                                      T.L6_RIGHT_CAPS + T.L6_RIGHT_FIG, T.CASE_FRAGIL],
                          base_left=[T.MODO_DE_USO, T.ADVERTENCIAS],
                          base_right=[T.RIDER_HEAD] + [list(r) for r in T.RIDER] + [T.BARCODE],
-                         base_back=T.manifesto(u['faixa'], 'case'), base_under=[T.CASE_UNDER] + T.CASE_BINS,
+                         base_back=T.manifesto(u['faixa'], 'case'), base_under=[T.CASE_UNDER] + T.DISPOSAL_CASE,
                          mirror=T.CASE_MIRROR),
             deviations=case_decisions(u),
             generator='_build/pack/case.py')

@@ -404,8 +404,9 @@ def wood_material(charred=False, top_mm=7.5):
         nt.links.new(nz.outputs['Fac'], add.inputs[0])
         nt.links.new(sep.outputs['Z'], add.inputs[2])
         ch = nt.nodes.new('ShaderNodeMapRange')       # charred band, ragged edge
-        ch.inputs['From Min'].default_value = (top_mm - 2.2) * MM
-        ch.inputs['From Max'].default_value = (top_mm - 1.6) * MM
+        # 6 Oct: char most of the exposed plank (a lit wood wick is black down to ~1 mm above the pool); was 1,6–2,2 mm
+        ch.inputs['From Min'].default_value = (top_mm - 4.4) * MM
+        ch.inputs['From Max'].default_value = (top_mm - 3.6) * MM
         nt.links.new(add.outputs[0], ch.inputs['Value'])
         mx = nt.nodes.new('ShaderNodeMix')
         mx.data_type = 'RGBA'
@@ -468,7 +469,7 @@ def flame_material(seed=0.0, strength=1.0):
     nz.noise_dimensions = '4D'
     [i for i in nz.inputs if i.name == 'W'][0].default_value = seed
     nt.links.new(tc.outputs['Generated'], nz.inputs['Vector'])
-    wob = M('MULTIPLY', M('SUBTRACT', nz.outputs['Fac'], 0.5), M('MULTIPLY', M('POWER', M('MAXIMUM', z, 0.0), 1.4), 0.9))
+    wob = M('MULTIPLY', M('SUBTRACT', nz.outputs['Fac'], 0.5), M('MULTIPLY', M('POWER', M('MAXIMUM', z, 0.0), 1.3), 1.25))
     x = M('ADD', M('MULTIPLY', M('SUBTRACT', sep.outputs['X'], 0.5), 2.0), wob)
     y = M('MULTIPLY', M('SUBTRACT', sep.outputs['Y'], 0.5), 2.0)
     # half-width profile: rounded root, widest at a third of the height, pointed tip
@@ -486,17 +487,19 @@ def flame_material(seed=0.0, strength=1.0):
     env = smooth(core, 0.0, 0.12)
     inner = M('POWER', core, 0.5)
     dens = M('MULTIPLY', M('MULTIPLY', M('MULTIPLY', env, M('ADD', 0.55, M('MULTIPLY', inner, 0.45))), gap), top)
-    # temperature: core yellow-white, edge and tip orange (tip cools: the soot glows redder near the top)
-    tmp = nt.nodes.new('ShaderNodeMapRange')
-    tmp.inputs['To Min'].default_value = 2100     # tuned by eye (6 Oct): 1.400-1.900 K renders salmon-pink
-    tmp.inputs['To Max'].default_value = 4200     # under Khronos PBR Neutral; the core must clip toward white. Point light stays 1.900 K
-    hot = M('MULTIPLY', inner, M('SUBTRACT', 1.0, M('MULTIPLY', M('POWER', zc, 2.0), 0.55)))
-    nt.links.new(hot, tmp.inputs['Value'])
-    bb = nt.nodes.new('ShaderNodeBlackbody')
-    nt.links.new(tmp.outputs['Result'], bb.inputs['Temperature'])
+    # colour (6 Oct, second pass): blackbody pushed hard went pink-white and read as an LED. An art-directed ramp
+    # keyed on 'hot' (core and low = hot; edge and tip = cool): deep orange edge -> yellow -> warm white core.
+    hot = M('MULTIPLY', inner, M('SUBTRACT', 1.0, M('MULTIPLY', M('POWER', zc, 1.6), 0.7)))
+    rp = nt.nodes.new('ShaderNodeValToRGB')
+    els = rp.color_ramp.elements
+    els[0].position, els[0].color = 0.0, (0.80, 0.16, 0.012, 1)        # #E8701C deep orange (linear)
+    els[1].position, els[1].color = 0.92, (1.0, 0.86, 0.60, 1)          # #FFF0CC warm white
+    e = els.new(0.38); e.color = (1.0, 0.38, 0.045, 1)                  # #FFA43C orange-yellow
+    e = els.new(0.66); e.color = (1.0, 0.62, 0.16, 1)                   # #FFCF6E candle yellow
+    nt.links.new(hot, rp.inputs['Fac'])
     em = nt.nodes.new('ShaderNodeEmission')
-    nt.links.new(bb.outputs[0], em.inputs['Color'])
-    nt.links.new(M('MULTIPLY', dens, 4.0e4 * strength), em.inputs['Strength'])
+    nt.links.new(rp.outputs['Color'], em.inputs['Color'])
+    nt.links.new(M('MULTIPLY', dens, 1.6e4 * strength), em.inputs['Strength'])
     # blue root: a visible band at the bottom 20 %, on the outer half of the envelope
     blue = M('MULTIPLY', M('SUBTRACT', 1.0, smooth(z, 0.04, 0.24)), smooth(d, 0.35, 0.85))
     blue = M('MULTIPLY', blue, M('SUBTRACT', 1.0, smooth(d, 0.95, 1.15)))

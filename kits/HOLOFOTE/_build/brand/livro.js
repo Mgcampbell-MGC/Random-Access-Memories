@@ -23,7 +23,7 @@
     const medida = x1 - x0;
     const sBase = Object.assign({ f: o.f || 'C', cor: o.cor || TINTA }, o.estilo || {});
     sBase.fs = o.fs || HF.fsDeCap(sBase.f, o.cap);
-    const cru = texto.split(/\s+/).filter(Boolean), pal = [];
+    const cru = texto.split(/[ \t\n]+/).filter(Boolean), pal = [];   // \u00a0 no texto = espaço que não quebra (3,2\u00a0d)
     for (let i = 0; i < cru.length; i++) {
       if (/^[aeoéàAEOÉÀ]$/.test(cru[i]) && i < cru.length - 1) { pal.push(cru[i] + '\u00a0' + cru[i + 1]); i++; } else pal.push(cru[i]);
     }
@@ -100,7 +100,8 @@
     const wm = HF.wordmark(document.body, { x: X0, baseline: base, largura: MED, ink: 'papel', lamp: 'amarelo' });
     const k = wm.k, d = 734 * k, cx = X0 + (4466 - WM.inkX0) * k, fundoO = base + 12 * k;
     const s = svg(0, 0, 1920, 1080);
-    el(s, 'ellipse', { cx, cy: fundoO + 0.5 * d + 0.4 * d, rx: 1.2 * d, ry: 0.4 * d, fill: HF.cor.amarelo });   // §D.3: 2,4 d × 0,8 d, vão 0,5 d
+    const F = HF.FOCO;   // O FOCO redesenhado (revisão do CCO, 6 out 2026): poça 3,2 d × 0,5 d, vão 1,2 d
+    el(s, 'ellipse', { cx, cy: fundoO + F.vao * d + F.alt * d / 2, rx: F.larg * d / 2, ry: F.alt * d / 2, fill: HF.cor.amarelo });
     div({ t: 'holofote nela.', f: 'X', cap: 40, lsEm: -0.01, cor: t }, { t: 'A TURNÊ · CASO DEMONSTRATIVO · SOL ESTÚDIO', f: 'C', cap: 18, lsEm: 0.14, cor: t }, X0, X1, 1000);
   };
 
@@ -117,9 +118,17 @@
       a0, a1, y0 + 64, 30, { estilo: { wght: 500, wdth: 100 }, passo: 48 });
     const y2 = g8(c.fim + 88);
     regua(a0, a1, y2 - 44, 2);
-    const linhas = [['PLATAFORMA', 'MÃE AO VIVO'], ['CHAMADA', 'Sua vez.'], ['VERDADE DO PRODUTO', 'O menor holofote do Brasil. Pra maior atração.'], ['ASSINATURA', 'holofote nela.']];
-    linhas.forEach((l, i) => HF.pontilhada(document.body, S({ t: l[0], f: 'C', cap: 20, lsEm: 0.1, cor: t }),
-      S({ t: l[1], f: 'X', cap: 20, lsEm: -0.01, cor: t }), a0, a1, y2 + i * 40, { passo: 9, folga: 10, fs: HF.fsDeCap('C', 20) }));
+    // o Locutor é CAIXA ALTA em toda parte; só a assinatura fica em caixa baixa (revisão do CCO, 6 out 2026). A verdade
+    // do produto em versal não cabe numa linha com o rótulo: a segunda frase desce para a linha de baixo, alinhada à
+    // direita na coluna dos valores (continuação de tabela, sem pontilhado)
+    const linhas = [['PLATAFORMA', 'MÃE AO VIVO'], ['CHAMADA', 'SUA VEZ.'], ['VERDADE DO PRODUTO', 'O MENOR HOLOFOTE DO BRASIL.'],
+      [null, 'PRA MAIOR ATRAÇÃO.'], ['ASSINATURA', 'holofote nela.']];
+    linhas.forEach((l, i) => {
+      const v = S({ t: l[1], f: 'X', cap: 20, lsEm: -0.01, cor: t });
+      if (l[0]) HF.pontilhada(document.body, S({ t: l[0], f: 'C', cap: 20, lsEm: 0.1, cor: t }), v, a0, a1, y2 + i * 40,
+        { passo: 9, folga: 10, fs: HF.fsDeCap('C', 20) });
+      else T(v, a1, y2 + i * 40, 'right');
+    });
     const [b0, b1] = col(8, 11);
     const h = 864, w = Math.round(h * 9 / 16);
     HF.reserva(document.body, { id: 'KV-01', x: b1 - w, y: 128, w, h, fundo: 'preto', tinta: 'papel', rotulo: 'RENDER', nota: 'KV-01 · 9:16 · MÃE AO VIVO',
@@ -157,7 +166,7 @@
     const vozes = [
       { n: { t: 'O LOCUTOR', f: 'X', cap: 52, lsEm: -0.01 }, num: '01', quem: 'A MARCA NO VOLUME MÁXIMO',
         fonte: 'Special Gothic Expanded One, caixa alta, tracking de −10 a 0. Frases curtas, declarativas, cerimoniosas.',
-        ex: [[{ t: 'A ATRAÇÃO É ELA.', f: 'X', cap: 30, lsEm: -0.01 }, 'FILME'], [{ t: 'MÃE AO VIVO', f: 'X', cap: 30, lsEm: -0.01 }, 'PLATAFORMA'], [{ t: 'Sua vez.', f: 'X', cap: 30, lsEm: -0.01 }, 'CHAMADA']] },
+        ex: [[{ t: 'A ATRAÇÃO É ELA.', f: 'X', cap: 30, lsEm: -0.01 }, 'FILME'], [{ t: 'MÃE AO VIVO', f: 'X', cap: 30, lsEm: -0.01 }, 'PLATAFORMA'], [{ t: 'SUA VEZ.', f: 'X', cap: 30, lsEm: -0.01 }, 'CHAMADA']] },
       { n: { t: 'A PRODUÇÃO', f: 'C', cap: 52, lsEm: 0.02 }, num: '02', quem: 'A EQUIPE: PRÁTICA, DE BASTIDOR',
         fonte: 'Special Gothic Condensed One, caixa baixa a 0 ou versal de +80 a +120. Segurança, preço e instrução moram aqui.',
         ex: [[{ t: 'sessões de até 4 h.', f: 'C', cap: 34 }, 'SETLIST'], [{ t: 'reservar ingresso', f: 'C', cap: 34 }, 'BOTÃO DA LOJA'], [{ t: 'PESO LÍQUIDO 200 g', f: 'C', cap: 34, lsEm: 0.06, tnum: true }, 'COPO']] },
@@ -187,7 +196,9 @@
     const t = cab(5, 'O LOGO', 'papel');
     const WM = window.HF_WORDMARK;
     const cap = 112, u = cap / 710, oh = 734 * u, base = g8(176 + 722 * u + oh);
-    const wm = HF.wordmark(document.body, { x: X0 + oh, baseline: base, cap, ink: 'preto', lamp: 'amarelo' });
+    // no papel o O aceso é PRETO (§D.1: amarelo sobre papel é par 'Nunca', 1,18:1 — decisão do diretor, 6 out 2026)
+    const LP = HF.lampDe('papel');
+    const wm = HF.wordmark(document.body, { x: X0 + oh, baseline: base, cap, ink: 'preto', lamp: LP });
     const yT = base - 722 * u, yB = base + 12 * u, bx0 = X0, bx1 = wm.x1 + oh, lx = col(0, 8)[1];
     const s = svg(0, 0, 1920, 1080);
     const L = (x1, y1, x2, y2, tr) => el(s, 'line', { x1, y1, x2, y2, stroke: HF.cor.preto, 'stroke-width': 1.5, 'stroke-dasharray': tr || '' });
@@ -197,8 +208,10 @@
     const mx = (wm.x0 + wm.x1) / 2, my = (yT + yB) / 2;
     Oem(bx0 + oh / 2, my); Oem(bx1 - oh / 2, my); Oem(mx, yT - oh / 2); Oem(mx, yB + oh / 2);
     L(bx0, base, lx, base); L(bx0, base - cap, lx, base - cap);
-    T({ t: 'VERSAL', f: 'C', cap: 15, lsEm: 0.14, cor: t }, bx1 + 12, base - cap - 10, 'left');
-    T({ t: 'BASE', f: 'C', cap: 15, lsEm: 0.14, cor: t }, bx1 + 12, base - 10, 'left');
+    // VERSAL e BASE dentro da caixa tracejada, encostados na borda direita (revisão do CCO, 6 out 2026: fora dela, a 4 px
+    // do texto corrido, liam como parte dele): VERSAL em cima da linha de versal, BASE embaixo da linha de base
+    T({ t: 'VERSAL', f: 'C', cap: 15, lsEm: 0.14, cor: t }, bx1 - 12, base - cap - 10, 'right');
+    T({ t: 'BASE', f: 'C', cap: 15, lsEm: 0.14, cor: t }, bx1 - 12, base + 10 + 15, 'right');
     const yd = g8(yB + oh + 48);
     L(wm.x0, yd, wm.x1, yd); L(wm.x0, yd - 12, wm.x0, yd + 12); L(wm.x1, yd - 12, wm.x1, yd + 12);
     T({ t: 'TINTA: 8,90 × VERSAL · AVANÇO: 9,03 × VERSAL · MEDIDOS NO ARQUIVO DA FONTE', f: 'C', cap: 15, lsEm: 0.12, cor: t }, mx, yd + 36, 'center');
@@ -209,11 +222,11 @@
     // usos errados
     rot('NUNCA', X0, lx, 704);
     const n = 5, tw = (lx - X0 - (n - 1) * G) / n, th = 160, ty = 736;
-    const erros = [['NÃO ESTICAR', (x, y) => { const w = HF.wordmark(document.body, { x: x + 20, baseline: y + 92, largura: tw - 40, ink: 'preto', lamp: 'amarelo' }); w.el.style.transformOrigin = '50% 50%'; w.el.style.transform = 'scale(0.8, 1.9)'; }],
-      ['NÃO MOVER A LUZ', (x, y) => HF.wordmark(document.body, { x: x + 20, baseline: y + 92, largura: tw - 40, ink: 'preto', lamp: 'amarelo', acesos: [true, false, false] })],
-      ['NÃO CONTORNAR', (x, y) => { const w = HF.wordmark(document.body, { x: x + 20, baseline: y + 92, largura: tw - 40, ink: 'preto', lamp: 'amarelo' }); w.el.querySelectorAll('path').forEach((p) => { p.setAttribute('fill', 'none'); p.setAttribute('stroke', HF.cor.preto); p.setAttribute('stroke-width', 18); }); }],
+    const erros = [['NÃO ESTICAR', (x, y) => { const w = HF.wordmark(document.body, { x: x + 20, baseline: y + 92, largura: tw - 40, ink: 'preto', lamp: LP }); w.el.style.transformOrigin = '50% 50%'; w.el.style.transform = 'scale(0.8, 1.9)'; }],
+      ['NÃO MOVER A LUZ', (x, y) => HF.wordmark(document.body, { x: x + 20, baseline: y + 92, largura: tw - 40, ink: 'preto', lamp: LP, acesos: [true, false, false] })],
+      ['NÃO CONTORNAR', (x, y) => { const w = HF.wordmark(document.body, { x: x + 20, baseline: y + 92, largura: tw - 40, ink: 'preto', lamp: LP }); w.el.querySelectorAll('path').forEach((p) => { p.setAttribute('fill', 'none'); p.setAttribute('stroke', HF.cor.preto); p.setAttribute('stroke-width', 18); }); }],
       ['NÃO TROCAR A COR', (x, y) => HF.wordmark(document.body, { x: x + 20, baseline: y + 92, largura: tw - 40, ink: 'preto', lamp: 'rosa' })],
-      ['NÃO BRILHAR', (x, y) => { const w = HF.wordmark(document.body, { x: x + 20, baseline: y + 92, largura: tw - 40, ink: 'preto', lamp: 'amarelo' }); w.el.style.filter = `drop-shadow(0 0 10px ${HF.cor.amarelo}) drop-shadow(4px 6px 3px rgba(0,0,0,0.45))`; }]];
+      ['NÃO BRILHAR', (x, y) => { const w = HF.wordmark(document.body, { x: x + 20, baseline: y + 92, largura: tw - 40, ink: 'preto', lamp: LP }); w.el.style.filter = `drop-shadow(0 0 10px ${HF.cor.amarelo}) drop-shadow(4px 6px 3px rgba(0,0,0,0.45))`; }]];
     erros.forEach((e, i) => {
       const x = X0 + i * (tw + G);
       caixa(x, ty, tw, th, { boxShadow: `inset 0 0 0 1.5px ${HF.cor.preto}`, overflow: 'hidden' });
@@ -223,12 +236,12 @@
     });
     const [b0, b1] = col(9, 11);
     rot('CONSTRUÇÃO', b0, b1, 168);
-    corpo('Special Gothic Expanded One, caixa alta, tracking −10, kerning ligado. O terceiro O é preenchido por um disco do próprio contorno, em amarelo-cartaz: a lâmpada acesa. Os dois primeiros ficam vazados, lâmpadas apagadas.',
+    corpo('Special Gothic Expanded One, caixa alta, tracking −10, kerning ligado. O terceiro O é preenchido por um disco do próprio contorno: a lâmpada acesa. Os dois primeiros ficam vazados, lâmpadas apagadas. O disco é amarelo-cartaz no preto, no rosa e no violeta, e preto no papel, no amarelo e no laranja.',
       b0, b1, 224, 17, { passo: 32 });
     rot('TAMANHO MÍNIMO', b0, b1, 600);
-    HF.wordmark(document.body, { x: b0, baseline: 664, largura: 96, ink: 'preto', lamp: 'amarelo' });
+    HF.wordmark(document.body, { x: b0, baseline: 664, largura: 96, ink: 'preto', lamp: LP });
     T({ t: '96 PX NA TELA', f: 'C', cap: 15, lsEm: 0.14, cor: t }, b1, 664, 'right');
-    HF.wordmark(document.body, { x: b0, baseline: 720, largura: 18 * 96 / 25.4, ink: 'preto', lamp: 'amarelo' });
+    HF.wordmark(document.body, { x: b0, baseline: 720, largura: 18 * 96 / 25.4, ink: 'preto', lamp: LP });
     T({ t: '18 MM NA IMPRESSÃO', f: 'C', cap: 15, lsEm: 0.14, cor: t }, b1, 720, 'right');
     rot('NO AMARELO, TUDO PRETO', b0, b1, 840);
     caixa(b0, 864, b1 - b0, 112, { background: HF.cor.amarelo });
@@ -258,7 +271,8 @@
       const wm = HF.wordmark(document.body, { x: x + 20, baseline: y + qh / 2, largura: qw - 40, ink: 'papel', lamp: 'amarelo', acesos: q[2].map(Boolean) });
       if (i === 6) {
         const d = 734 * wm.k, cx = wm.x0 + (4466 - WM.inkX0) * wm.k, s2 = svg(0, 0, 1920, 1080);
-        el(s2, 'ellipse', { cx, cy: y + qh / 2 + 12 * wm.k + 0.9 * d, rx: 1.2 * d, ry: 0.4 * d, fill: HF.cor.amarelo });
+        const F = HF.FOCO;   // a poça de O FOCO (redesenhado em 6 out 2026): vão 1,2 d, 3,2 d × 0,5 d
+        el(s2, 'ellipse', { cx, cy: y + qh / 2 + 12 * wm.k + F.vao * d + F.alt * d / 2, rx: F.larg * d / 2, ry: F.alt * d / 2, fill: HF.cor.amarelo });
       }
       div({ t: q[0], f: 'C', cap: 16, lsEm: 0.1, cor: 'amarelo', tnum: true },
         q[1] === 'CLAC' ? { t: 'CLAC', f: 'X', cap: 16, lsEm: 0, cor: t } : { t: q[1], f: 'C', cap: 17, cor: t }, x, x + qw, y + qh + 40);
@@ -274,23 +288,39 @@
     caixa(960, 0, 960, 1080, { background: HF.cor.preto });
     HF.dividida(document.body, S({ t: 'HOLOFOTE · LIVRO DA MARCA', f: 'C', cap: 15, lsEm: 0.14, cor: 'preto' }), S({ t: '07 · O FOCO', f: 'C', cap: 15, lsEm: 0.14, cor: 'preto', tnum: true }), X0, 864, 80);
     HF.dividida(document.body, S({ t: 'O SÍMBOLO E O SINAL', f: 'C', cap: 15, lsEm: 0.14, cor: 'papel' }), S({ t: 'A MARCA', f: 'C', cap: 15, lsEm: 0.14, cor: 'papel' }), 1056, X1, 80);
-    const d = 220, cx = 480, top = 176;
+    // O FOCO redesenhado na revisão do CCO (6 out 2026): o desenho antigo (vão 0,5 d, poça 2,4 × 0,8 d) lia como o ícone
+    // genérico de usuário a 16–32 px. Agora a poça é larga e rasa e a lâmpada fica bem acima dela.
+    const F = HF.FOCO, d = 168, cx = 480, top = 168;
     const s = svg(0, 0, 960, 1080);
     el(s, 'circle', { cx, cy: top + d / 2, r: d / 2, fill: HF.cor.preto });
-    const ey = top + d + 0.5 * d + 0.4 * d;
-    el(s, 'ellipse', { cx, cy: ey, rx: 1.2 * d, ry: 0.4 * d, fill: HF.cor.preto });
+    const ey = top + d + F.vao * d + F.alt * d / 2, rx = F.larg * d / 2, ry = F.alt * d / 2;
+    el(s, 'ellipse', { cx, cy: ey, rx, ry, fill: HF.cor.preto });
     const L = (x1, y1, x2, y2) => el(s, 'line', { x1, y1, x2, y2, stroke: HF.cor.preto, 'stroke-width': 1.5 });
-    const xr = cx + 1.2 * d + 40;
-    L(xr, top, xr, top + d); L(xr - 10, top, xr + 10, top); L(xr - 10, top + d, xr + 10, top + d);
+    const xr = cx + rx + 36, yv = top + d + F.vao * d;
+    L(xr, top, xr, yv); [top, top + d, yv].forEach((yy) => L(xr - 10, yy, xr + 10, yy));
     T({ t: 'd', f: 'C', cap: 16, lsEm: 0.1, cor: 'preto' }, xr + 16, top + d / 2 + 8);
-    L(xr, top + d, xr, top + 1.5 * d); L(xr - 10, top + 1.5 * d, xr + 10, top + 1.5 * d);
-    T({ t: '0,5 d', f: 'C', cap: 16, lsEm: 0.1, cor: 'preto' }, xr + 16, top + 1.25 * d + 8);
-    L(cx - 1.2 * d, ey + 0.4 * d + 36, cx + 1.2 * d, ey + 0.4 * d + 36);
-    T({ t: '2,4 d', f: 'C', cap: 16, lsEm: 0.1, cor: 'preto' }, cx, ey + 0.4 * d + 72, 'center');
-    L(cx - 1.2 * d - 36, ey - 0.4 * d, cx - 1.2 * d - 36, ey + 0.4 * d);
-    T({ t: '0,8 d', f: 'C', cap: 16, lsEm: 0.1, cor: 'preto' }, cx - 1.2 * d - 50, ey + 8, 'right');
-    corpo('O disco aceso e, embaixo, a poça de luz no chão: uma elipse dura de 2,4 d por 0,8 d, a 0,5 d do disco. É o favicon, o avatar, a figurinha e a trama da pulseira. O tipo nunca entra na poça.',
-      X0, 864, 840, 18, { passo: 32, cor: 'preto' });
+    T({ t: '1,2 d', f: 'C', cap: 16, lsEm: 0.1, cor: 'preto' }, xr + 16, top + d + F.vao * d / 2 + 8);
+    L(cx - rx, ey + ry + 32, cx + rx, ey + ry + 32); L(cx - rx, ey + ry + 22, cx - rx, ey + ry + 42); L(cx + rx, ey + ry + 22, cx + rx, ey + ry + 42);
+    T({ t: '3,2 d', f: 'C', cap: 16, lsEm: 0.1, cor: 'preto' }, cx, ey + ry + 66, 'center');
+    L(cx - rx - 32, ey - ry, cx - rx - 32, ey + ry); L(cx - rx - 42, ey - ry, cx - rx - 22, ey - ry); L(cx - rx - 42, ey + ry, cx - rx - 22, ey + ry);
+    T({ t: '0,5 d', f: 'C', cap: 16, lsEm: 0.1, cor: 'preto' }, cx - rx - 46, ey + 8, 'right');
+    // o teste que decidiu o desenho: o mestre quadrado (01_MARCA/logo) no tamanho real de favicon e de avatar redondo
+    const yb = 776, tams = [64, 32, 24, 16];
+    rot('NO TAMANHO REAL · O MESTRE QUADRADO, CENTRADO PELA ÁREA', X0, 864, yb - 40);
+    let xx = X0;
+    tams.forEach((p) => {
+      img(K(D, '01_MARCA/logo/O_FOCO_preto.svg'), xx, yb + 64 - p, p, p, 'contain');
+      T({ t: p + ' PX', f: 'C', cap: 13, lsEm: 0.12, cor: 'preto', tnum: true }, xx, yb + 92);
+      xx += Math.max(p, 52) + 28;
+    });
+    xx += 24;
+    caixa(xx, yb, 64, 64, { background: HF.cor.preto, borderRadius: '50%', overflow: 'hidden' });
+    img(K(D, '01_MARCA/logo/O_FOCO_amarelo.svg'), xx, yb, 64, 64, 'contain');
+    caixa(xx + 92, yb + 32, 32, 32, { background: HF.cor.preto, borderRadius: '50%', overflow: 'hidden' });
+    img(K(D, '01_MARCA/logo/O_FOCO_amarelo.svg'), xx + 92, yb + 32, 32, 32, 'contain');
+    T({ t: 'AVATAR REDONDO: NADA CORTA', f: 'C', cap: 13, lsEm: 0.12, cor: 'preto' }, xx, yb + 92);
+    corpo('O disco aceso e, embaixo, a poça de luz no chão: uma elipse dura de 3,2\u00a0d por 0,5\u00a0d, a 1,2\u00a0d do disco. Larga, rasa e longe, para nunca ler como o ícone de usuário. É o favicon, o avatar, a figurinha e a trama da pulseira. O tipo nunca entra na poça.',
+      X0, 864, 920, 18, { passo: 32, cor: 'preto' });
     img(K(D, '01_MARCA/marca/A-MARCA_X_s927.png'), 1192, 150, 600, 600, 'contain');
     const lin = [['DUAS TIRAS A ±45°', 'COMPRIMENTO:LARGURA 3,75:1'], ['PONTAS RASGADAS À MÃO', 'UMA PONTA DESCOLA 0,5 MM'], ['MARCA ONDE O PRODUTO FICA', 'MARCADOR DE LISTA · CARIMBO DA SETLIST']];
     lin.forEach((l, i) => HF.pontilhada(document.body, S({ t: l[0], f: 'C', cap: 16, lsEm: 0.08, cor: 'papel' }), S({ t: l[1], f: 'C', cap: 16, lsEm: 0.08, cor: 'papel' }), 1056, X1, 824 + i * 36,
@@ -494,7 +524,18 @@
     const bul = [];
     [0.22, 0.5, 0.78].forEach((f) => bul.push([ew * f, 28], [ew * f, hh - 28]));
     [0.36, 0.64].forEach((f) => bul.push([28, hh * f], [ew - 28, hh * f]));
-    bul.forEach(([x, y]) => { el(s, 'circle', { cx: x, cy: y, r: 17, fill: HF.cor.papel }); el(s, 'line', { x1: x - 6, y1: y, x2: x + 6, y2: y, stroke: '#8a8790', 'stroke-width': 2.5 }); });
+    // as lâmpadas como no mestre do case (02_PRODUTO/case, _build/pack/case.py lid_inside): disco papel Ø 9 mm com o
+    // filamento cinza — a espiral horizontal presa em dois fios que descem até a base (revisão do CCO, 6 out 2026: o
+    // traço cinza reto lia como o botão "menos" de uma interface). Escala: r 17 px = 4,5 mm.
+    const mm = 17 / 4.5, cinza = '#94908B';
+    const filamento = (x, y) => {
+      const x0 = x - 1.7 * mm, x1 = x + 1.7 * mm, yc = y - 0.3 * mm, amp = 0.32 * mm;
+      let d = '';
+      for (let i = 0; i <= 60; i++) { const xx = x0 + (x1 - x0) * i / 60, yy = yc + amp * Math.sin(i / 60 * 2 * Math.PI * 6); d += (i ? 'L' : 'M') + xx.toFixed(2) + ' ' + yy.toFixed(2); }
+      d += ` M${x0} ${yc} L${x - 0.55 * mm} ${y + 2.7 * mm} M${x1} ${yc} L${x + 0.55 * mm} ${y + 2.7 * mm}`;
+      el(s, 'path', { d, fill: 'none', stroke: cinza, 'stroke-width': 1.3, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' });
+    };
+    bul.forEach(([x, y]) => { el(s, 'circle', { cx: x, cy: y, r: 17, fill: HF.cor.papel }); filamento(x, y); });
     T({ t: 'olha a atração.', f: 'S', x: 20, cor: 'papel' }, c0 + ew / 2, yt + hh - 88, 'center');
     leg('O ESPELHO', 'DEZ LÂMPADAS IMPRESSAS · NUNCA ACESAS', c0, c1, yt + hh + 36);
     regua(X0, X1, 632, 2);

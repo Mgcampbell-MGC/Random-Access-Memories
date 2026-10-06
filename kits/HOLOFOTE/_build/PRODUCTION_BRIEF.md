@@ -134,3 +134,40 @@ glyphs (HarfBuzz returned .notdef for every letter). Licences: OFL (copies in `f
      *holofote nela.* captions in 9–15 s.
   9. **Every lit-candle post carries** *Nunca deixe a vela acesa sem supervisão.* in its caption (§D.8.6).
   10. **S01 uses the 9:16 organic safe box** (x 140–940; sign-off centred at 540).
+
+- **CCO review, 6 Oct 2026 — 2D fixes (director's decisions; amend the platform):**
+  1. **Lit O on papel is PRETO** (§D.1: amarelo on papel is a "Never" pair, 1,18:1), as on amarelo and laranja. Code:
+     `lampDe` (pecas.js), `lamp` (cartaz.html), `ways` (_build/logo.py). `HOLOFOTE_logo_preto_transparente` = the mono.
+  2. **O FOCO redrawn:** disc d, gap 1,2 d, pool 3,2 d × 0,5 d (§D.3's 0,5 d / 2,4 × 0,8 d read as the user/avatar icon at
+     16–32 px), on a centred 1200 × 1200 square, area centroid on the centre, ink within 84 % of the radius (no clip in
+     a circular avatar). Constants: `FOCO` in _build/logo.py = `HF.FOCO` in holofote.js. The wristband is unchanged.
+  3. **The Locutor is CAPITALS everywhere except the lockup *holofote nela.*** — *SUA VEZ.* (C03, LIVRO-02, LIVRO-04);
+     LIVRO-02's product truth now reads *O MENOR HOLOFOTE DO BRASIL. / PRA MAIOR ATRAÇÃO.*
+  4. **CARTAZ-12 (C01):** *AO VIVO.* in SG 700, wdth solved (cap 112 u, as on the other eleven); *09.05.* in Expanded One
+     as on 05/06; *INGRESSOS COM* fills the measure by wdth and ***você.*** is the Fã at the glass's x-height, the
+     smallest word. Same words.
+  5. **Tears:** every edge tear on a clean poster stays ≥ 40 px from any glyph (`folga_tinta=40`; old layers 09–11 tear
+     free); every tear shows a 6–12 px fibrous paper-core band, anti-aliased, no stair-steps (`lambe.fibra_borda`).
+  6. **Dot leaders: minimum 5 dots** (`HF.pontilhada`); the poster tour list is set at tracking 0, as on the glass back,
+     so the retail ESTREIA line carries 6.
+  7. **C03/C07 thumbnails get a 6 px preto keyline**, drawn after the render is composited (which stays after O LAMBE).
+     `lancamento.py C` uses `_build/brand/cache/vela_c03.png` / `vela_c07.png` when no `--vela-c03/--vela-c07` is given.
+  8. **C03: 8 px before DE PÉ** (not 24): 7 px of clean paper under APLAUDIU at the acute after O LAMBE, measured on the
+     delivered PNG (7 gives exactly 6 at this seed, 5 at a worst-case 2 px ghost). The saved height is spread evenly;
+     the five gaps are 4,2 / 8,2 / 4,2 / 4,2 / 4,2 px and SHOW. keeps its baseline (1320).
+  9. **D01:** the photo window ships as a code-drawn halftone sample with the Fã's *(a foto dela aqui)* and a pen
+     corner bracket (the generator swaps in the photo); the card's top band is `#2A2730`, not preto.
+  10. **D02 at 94 %** (measure 752), centred: the torn assembly sits in x 164–934, y 84–1266 (4:5 box x 140–940,
+      y 64–1286). The tear follows the perforation (half-holes) with a 4–8 px fibrous core on both edges.
+  11. **BOLETIM signature row 16 px higher** (pilha box ends at y1 − 16), and the 8 px baseline grid no longer
+      accumulates rounding from line to line (`pilha.js`): bottom ink ≤ 994 (1:1) and ≤ 1489 (9:16).
+  12. **C09:** *faz o cartaz dela.* is the Fã's annotation with an arrow to DONA CIDA (between the header and the
+      name); the URL is small Produção filled to the measure by a rule; the tour list is at the glass proportion (cap
+      24, pitch 44) and the spare height is split over three equal gaps (no dead band). ⚠ C09 now carries two Shantell
+      marks (*abertura: você* belongs to O CARTAZ); the director's call.
+  13. **STK-02** centred on its tag; **STK-05** without the inner ring, PRECISAVA. filling 80 % of the disc.
+  14. **LIVRO-05** labels VERSAL/BASE inside the dashed box; **LIVRO-13** bulbs drawn like the case master (papel disc,
+      grey coiled filament on two support wires). RENDER boxes on LIVRO-02/12/16 stay for the director.
+  15. **O LAMBE:** wrinkle field at ~50 % scale (bubbles D/18, soft-edged; waves D/8) plus 3–5 directional creases;
+      the 160 × 3 px "wood grain" in black ink is gone (it read as scanner lines); the black plate gets a 1–2 px
+      misregistration ghost at 13 %. Re-run order: cartazes.py → lancamento.py → livro.py.

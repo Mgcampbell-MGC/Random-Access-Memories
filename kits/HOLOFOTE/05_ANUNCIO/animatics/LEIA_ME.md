@@ -27,8 +27,10 @@ Fidelidade do rótulo no bloco 9–15 s: `06_PRODUCAO/fidelidade/ANUNCIO_animati
   Anúncio 2: o telefone para cima, balançando (5 posições), no segundo sinal (6,0 s).
   Anúncio 3: coração com os dedos → dedo apontando, que chega no quadro da caixa (180 = 7,5 s).
 - **9,0–15,0 s:** KV-45 aceso (render do diretor, nunca refeito aqui), empurrão 100 → 103 % em torno do centro do
-  quadro, tipo do KV por código (título, *holofote nela.*, linha de segurança) e a legenda da VO em y 300–330.
-  Anúncio 2: preto nos quadros 216–219 (terceiro sinal em 9,0 s) e o CLAC acende no quadro 220.
+  quadro, tipo do KV por código (título, *holofote nela.*, linha de segurança). A legenda da VO (y 300–330) só existe
+  no anúncio 2 (*terceiro sinal.*): em 1A–1C (*Sua vez.*) e 3A–3C (*holofote nela.*) a fala já está escrita na tela
+  e a legenda sai (decisão do diretor, 6 out 2026). Anúncio 2: preto nos quadros 216–219 (terceiro sinal em 9,0 s) e
+  o CLAC acende no quadro 220.
 
 ## Enquadramento que as tomadas de pessoas precisam respeitar (medido no previs)
 
@@ -48,8 +50,12 @@ cd _build/anuncio
 $TTS vo.py _tmp_animatic/vo                                            # VO temporária
 for s in SIT_H01 SIT_H02 USHER_H01 CLAP_H01 CLAP_H02 PHONE_H01 HEART_H01 HEART_H02; do
   ../shots/blender.sh animatic_previs.py -- $s --samples 32 --pct 50; done   # placas do previs (540 × 960)
-$PY animatic.py camadas som quadros folhas fidelidade                     # camadas, mix, MP4, folhas, fidelidade
+$PY animatic.py camadas som quadros folhas fidelidade audio               # camadas, mix, MP4, folhas, fidelidade, som entregue
 ```
+
+**Quando o KV-45 for refeito** (placa e AOV novos, tipo do KV talvez em outra altura): rode só
+`$PY animatic.py camadas quadros folhas fidelidade audio`. O bloco 9–15 s é recomposto da placa, do `kv.html` e do AOV;
+a legenda da VO acompanha a linha de base do título.
 
 `animatic_previs.py -- --medir` imprime onde cabeça, mãos e telefone caem em pixels, sem renderizar.
 Os intermediários ficam em `_build/anuncio/_tmp_animatic/` (fora do git).
@@ -57,6 +63,9 @@ Os intermediários ficam em `_build/anuncio/_tmp_animatic/` (fora do git).
 ## O que é provisório
 
 - **A VO** é Kokoro local (pf_dora / pm_alex). Será trocada por voz sintética licenciada; depois disso, rode
-  `animatic.py som quadros folhas fidelidade` de novo (as legendas são realinhadas na hora).
+  `animatic.py som quadros folhas fidelidade audio` de novo (as legendas são realinhadas na hora).
 - **Os manequins** marcam lugar, pose e tempo. Rosto, roupa e luz finais vêm das tomadas geradas.
-- **Ninguém ouviu o som.** Foi conferido por números: −14 LUFS integrado, ≤ −1 dBTP, transientes no quadro.
+- **Ninguém ouviu o som.** Foi conferido por números: −14 LUFS integrado; o WAV sai a ≤ −1,6 dBTP para que o AAC
+  do MP4, decodificado, fique ≤ −1 dBTP (a −1,0 dBTP no WAV, o AAC passou para −0,72); transientes no quadro.
+- **Texto corrigido pelo diretor (6 out 2026):** *Prezinho.* / *DIA DAS MÃES · PREZINHO* sem acento (Lei 5.765/1971);
+  *holofote nela.* sempre em caixa baixa, inclusive como fala no roteiro.

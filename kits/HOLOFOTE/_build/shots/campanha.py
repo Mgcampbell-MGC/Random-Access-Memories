@@ -317,7 +317,7 @@ def b_c01():
 
 
 # ================================================================================================= C02 · A PRIMEIRA FILA
-def b_c02(spill=3.0, lens=40.0, dist=0.42, h_cam=0.20, ax=650, ay=1110):
+def b_c02(spill=3.0, lens=40.0, dist=0.42, h_cam=0.20, ax=650, ay=1040):
     """The escola set (preset C02, spot from above-upstage at 60 deg). The camera is a wider, closer version of the
     preset's (85 mm at 0,72 m showed 2,5 chairs): 40 mm at 0,42 m behind the candle, level, lens shift only, so the
     back panel is pin-sharp and big while the front row reads as a ROW of white monoblocs with the bag on the middle
@@ -587,11 +587,16 @@ def b_l00():
 
 
 def b_l03():
-    h = S.loja(key_az=-84.0, key_el=6.0, key_dist=1.0, key_size=0.06, fill_ratio=0.10)
+    h = S.loja(key_az=-84.0, key_el=6.0, key_dist=1.0, key_size=0.06, fill_ratio=0.40)
     root = H.copo(dict(faixa='02', wrap=S.wrap('02'), base_relief=BASE_RELIEF, base_sticker=BASE_STICKER),
                   at=(0, 0, (H.SIZES['200']['R_OUT'] + 0.10) * H.MM), rot_deg=0)
     root.rotation_euler = (math.radians(-90.0), 0.0, math.radians(15.0))
     adesivo_leitoso(root)
+    # the raking key alone leaves the base at ~60 % exposure: the amarelo reads olive. A soft on-axis fill (a white
+    # card beside the lens) lifts the face to its hex while the small hard key keeps the relief's shadows crisp.
+    tgt = Vector((0.0, 0.0, 0.038))
+    S._light('l03_cartao', 'AREA', tgt + S._dir(8.0, 10.0) * 1.0, tgt, S.ENERGIA['loja_key_k'] * 0.45, coll=h['coll'],
+             shape='RECTANGLE', size=0.6, size_y=0.8)
     pts = pontos([root])
     cam_fit(pts, 6.0, 0.0, 100, (1200, 1200), (96, 230, 1104, 970), target=(0, 0, 0.038))
     return dict(labels=[], copo=root)
