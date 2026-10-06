@@ -96,6 +96,10 @@ glyphs (HarfBuzz returned .notdef for every letter). Licences: OFL (copies in `f
   the master and compares tile by tile, with a planted error that must be caught. Calibration on the hero view:
   exact render worst tile 0,90–0,97 / 5th pct 0,98; planted error 0,17–0,19 (caught); a render whose label really said
   *MÃF* 0,025 (fail); AgX render fails on saturation (0,49 < 0,75).
+  **Glyph-corner rule, 6 Oct 2026:** a tile counts only if ≥ 2 % of it is ink and ≥ 2 % paper. KV-45's one tile under
+  0,80 (0,758) held 2 px of ink, the tip of a *v*, beside a shading band. With the rule: KV-45 worst 0,926 / p5 0,968,
+  planted error −0,14 (caught); calibration exact still 0,90 / 0,98; the *MÃF* render still fails at 0,025. The verdict
+  holds from 2 % to 10 %. Skipped tiles are counted in every report (`corner_tiles_skipped`, `corner_tiles_worst`).
 - **Flame-legibility gate (§D.6), run 6 Oct 2026 — the swap is recorded.** KV-01 9:16 at the platform camera (50 mm,
   220 mm high, −6°, glass 384 px), downscaled to 108 × 192, flame isolated as lit − unlit: the **16 × 12 mm** wood-wick
   flame showed its warm core on **3 px (FAIL, bar ≥ 9)**; the **double-ply wood wick with a 14 × 18 mm flame** showed

@@ -10,9 +10,10 @@ Shots (each writes _tmp_animatic/plates/<SHOT>[_<key>].png at 1080 x 1920 x pct)
   PHONE_H01               6–9 s Ad 2: phone up, flash on, back to camera; sway keys L2 L1 C R1 R2 (root roll)
   HEART_H01 HEART_H02     6–9 s Ad 3: seated finger-heart -> point; keys A / M / B; camera yawed 18 deg so the point reads
 
-Framing rule (1080 x 1920 space): the face never sits under type.
-  talk:  tag plate y 560–620 at x 120  -> head top below y 640;  captions y 1000–1240 -> chin above y 990.
-  gesture: title y 760–860            -> head and the gesture (hands, phone) above y 750, or the hands below 870.
+Framing rule (1080 x 1920 space): the face and the gesture never sit under type (checked on test renders).
+  talk:    tag plate y 560–620 at x 120 -> head top below y 640;  captions y 1000–1240 -> chin above y 990.
+  gesture: title y 760–860              -> chin above y 750 and the hands (clap, heart, point) below y 870;
+           the phone shot puts the phone and head above the title, which crosses the chest.
 All presenters: 50 mm, eye level (tilt 0), f/4, the APRESENTADORA front-left spot re-aimed at the mark.
 The presenter never holds the pack; no candle and no flame anywhere in these plates (CONAR art. 33)."""
 import sys, os, math
@@ -61,15 +62,15 @@ SHOTS = {
     'SIT_H01':   dict(body='H01', pose='a', mark=(SEAT_X, 0.0, 0.45), head_px=(540, 815), ppm=1333, keys={'': None}),
     'SIT_H02':   dict(body='H02', pose='a', mark=(SEAT_X, 0.0, 0.45), head_px=(540, 815), ppm=1333, keys={'': None}),
     'USHER_H01': dict(body='H01', pose='e', mark=(0.0, 0.95, 0.45), head_px=(540, 795), ppm=1150, keys={'': None}),
-    'CLAP_H01':  dict(body='H01', pose='b', mark=(SEAT_X, -0.55, 0.0), head_px=(540, 590), ppm=1150,
+    'CLAP_H01':  dict(body='H01', pose='b', mark=(SEAT_X, -0.55, 0.0), head_px=(540, 665), ppm=1150,
                       keys={'A': 1, 'M': 7, 'B': 13}),
-    'CLAP_H02':  dict(body='H02', pose='b', mark=(SEAT_X, -0.55, 0.0), head_px=(540, 590), ppm=1150,
+    'CLAP_H02':  dict(body='H02', pose='b', mark=(SEAT_X, -0.55, 0.0), head_px=(540, 665), ppm=1150,
                       keys={'A': 1, 'M': 7, 'B': 13}),
     'PHONE_H01': dict(body='H01', pose='c', mark=(0.0, 0.95, 0.45), head_px=(540, 600), ppm=900,
                       keys={'L2': -3.2, 'L1': -1.6, 'C': 0.0, 'R1': 1.6, 'R2': 3.2}, sway=True),
-    'HEART_H01': dict(body='H01', pose='d', mark=(SEAT_X, 0.0, 0.45), head_px=(560, 410), ppm=1300, yaw=-18.0,
+    'HEART_H01': dict(body='H01', pose='d', mark=(SEAT_X, 0.0, 0.45), head_px=(560, 545), ppm=1300, yaw=-18.0,
                       keys={'A': 1, 'M': 7, 'B': 13}),
-    'HEART_H02': dict(body='H02', pose='d', mark=(SEAT_X, 0.0, 0.45), head_px=(560, 410), ppm=1300, yaw=-18.0,
+    'HEART_H02': dict(body='H02', pose='d', mark=(SEAT_X, 0.0, 0.45), head_px=(560, 545), ppm=1300, yaw=-18.0,
                       keys={'A': 1, 'M': 7, 'B': 13}),
 }
 

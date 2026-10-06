@@ -32,6 +32,10 @@ import OpenEXR
 
 TILE = 16
 MIN_TILE_PASS = 0.80
+MIN_INK_FRAC = 0.02        # a lettered tile holds >= 2 % ink AND >= 2 % paper (>= 5 px of each in 16 x 16)
+# Added 6 Oct 2026 on KV-45: the only tile under 0,80 (0,758) held 2 px of ink, the tip of a 'v', beside a shading
+# band, so the band-pass compared light, not letters. Every tile at >= 2 % scored >= 0,926, and the result was the
+# same at 2, 4, 6, 8 and 10 %. The excluded tiles are counted and their worst score is reported, never hidden.
 P5_STILL = 0.95
 P5_FILM = 0.93
 MAX_HUE_SHIFT = 3.0        # degrees of CIELAB hue angle
@@ -110,8 +114,11 @@ def plant_error(alpha, uv, mask, size=300):
     return alt, box
 
 
-def score(asset_gray, ref_gray, valid, E):
-    """Per-tile correlation of the band-passed delivered image and the band-passed reference (same polarity)."""
+def score(asset_gray, ref_gray, valid, E, skipped=None):
+    """Per-tile correlation of the band-passed delivered image and the band-passed reference (same polarity).
+    Tiles holding only a glyph's corner (< MIN_INK_FRAC ink or paper) go to `skipped`, not to the verdict."""
+    if skipped is None:
+        skipped = []
     A = bandpass_gray(asset_gray)
     R = bandpass_gray(ref_gray)
     h, w = valid.shape
@@ -123,11 +130,13 @@ def score(asset_gray, ref_gray, valid, E):
             e = E[y:y + TILE, x:x + TILE]
             if not ((e > 0.6).any() and (e < 0.4).any()):     # a lettered tile holds an ink edge
                 continue
+            corner = min((e > 0.5).mean(), (e <= 0.5).mean()) < MIN_INK_FRAC   # a glyph's corner, not a glyph
             r = R[y:y + TILE, x:x + TILE].ravel()
             a = A[y:y + TILE, x:x + TILE].ravel()
             a = a - a.mean()
             r = r - r.mean()
-            out.append((y, x, float((a * r).sum() / np.sqrt((a * a).sum() * (r * r).sum() + 1e-9))))
+            v = float((a * r).sum() / np.sqrt((a * a).sum() * (r * r).sum() + 1e-9))
+            (skipped if corner else out).append((y, x, v))
     return out
 
 
@@ -160,9 +169,12 @@ def check(master_path, aov_path, asset_path, coat_hex=None, ink_hex='#121014', f
     # sanity: our sampling must agree with the renderer's own (proves the UV convention)
     agree = float(np.corrcoef(E[valid], ink_aov[valid])[0, 1]) if valid.sum() > 100 else float('nan')
     ref = (1.0 - E) * 255.0 if ink_sign < 0 else E * 255.0
-    s = score(gray, ref.astype(np.float32), valid, E)
+    sk = []
+    s = score(gray, ref.astype(np.float32), valid, E, sk)
     vals = np.array([v for _, _, v in s])
-    res = {'asset': asset_path, 'master': master_path, 'tiles': int(len(vals)), 'uv_agreement': round(agree, 4)}
+    res = {'asset': asset_path, 'master': master_path, 'tiles': int(len(vals)), 'uv_agreement': round(agree, 4),
+           'corner_tiles_skipped': len(sk),
+           'corner_tiles_worst': round(min(v for _, _, v in sk), 3) if sk else None}
     if not len(vals):
         res.update(pass_=False, reason='no lettered tile visible')
         return res

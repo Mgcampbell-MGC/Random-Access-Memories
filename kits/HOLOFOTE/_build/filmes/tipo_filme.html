@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>HOLOFOTE · tipo dos filmes</title>
+<link rel="stylesheet" href="../tokens.css"><link rel="stylesheet" href="../brand/base.css">
+<script src="../brand/metricas.js"></script><script src="../brand/wordmark.js"></script><script src="../brand/holofote.js"></script>
+<script src="../brand/pilha.js"></script><script src="../brand/pecas.js"></script>
+<style>html,body{margin:0;background:transparent}</style>
+</head><body>
+<script>
+/* One TYPE LAYER of a film frame (1080 x 1920, transparent), set by code with the kit's layout engine (holofote.js):
+   every line is measured and placed on its INK edge and baseline, every display line fills its measure.
+   Hash JSON: {camada: [elemento, ...]}. Elements:
+     {k:'linha', id, t, f:'X'|'C'|'V'|'S', cap|x, cor, op, lsEm, wght, wdth, tnum, y (baseline),
+      al:'left'|'center'|'right', x (anchor), x0, x1 (measure; default 140–940),
+      fill:null|'tamanho'|'tracking'|'wdth', capMax,
+      sq:{wdth:w}|{sx:k}, sqo:'center'|'left'|'right'   the poster squash of a slam (§E.4: wdth 75 → 128 → 125)
+      bnce: n (Shantell bounce axis, animated ±20 in film, 0 at rest), rv: 0–1 (draw-on: the ink revealed L→R)}
+     {k:'kv01', so:['L1E','L1D','MAE','SHOW','L4E','L4D'], sq:{id: {...}}, rv:{id: r}, bnce:{id: n}}
+         the KV-01 9:16 lineup exactly as kv.html sets it (baselines 360 / 640 / 768 / 832), one piece at a time
+     {k:'c03', ver:['ELA',...], sq:{palavra: {...}}, nota: 0–1, seta: 0–1}
+         the C03 stack (pecas.js R.C03, the same items and the same pilha box) without its bottom block
+   Output: window.HF_INFO.geom = {id: {x0, x1, top, base, bot}} (ink box) and HF_QA (measure errors). */
+const D = HF.dados({ camada: [] });
+const X0 = 140, X1 = 940;
+HF.pronto(() => {
+  const b = document.body;
+  b.style.width = '1080px'; b.style.height = '1920px';
+  if (D.fundo) b.style.background = HF.cor[D.fundo] || D.fundo;
+  const geom = {}, qa = [];
+  const cap = (f, c) => HF.fsDeCap(f, c), xh = (f, c) => HF.fsDeX(f, c);
+  function reg(id, o) {
+    const e = HF.extensoes(o);
+    geom[id] = { x0: +o.inkX0.toFixed(2), x1: +o.inkX1.toFixed(2), top: +(o.baseline - e.top).toFixed(2),
+      base: o.baseline, bot: +(o.baseline + e.bot).toFixed(2), fs: +o.s.fs.toFixed(3), cap: +HF.capPx(o.s).toFixed(2),
+      wdth: o.s.wdth || null, lsEm: o.s.lsEm != null ? +o.s.lsEm.toFixed(4) : null };
+  }
+  function bnce(o, n) {
+    if (o.s.f !== 'S' || n == null) return;
+    o.el.style.fontVariationSettings = `'wght' ${o.s.wght || 500}, 'INFM' ${o.s.infm == null ? 60 : o.s.infm}, 'BNCE' ${n}, 'SPAC' 0`;
+  }
+  function revelar(o, r) {
+    if (r == null || r >= 1) return;
+    const left = parseFloat(o.el.style.left), e = 3;
+    const p = o.inkX0 + Math.max(0, r) * o.inkW - left;
+    const m = `linear-gradient(to right, #000 ${p - e}px, transparent ${p + e}px)`;
+    o.el.style.webkitMaskImage = m; o.el.style.maskImage = m;
+    if (r <= 0) o.el.style.visibility = 'hidden';
+  }
+  // the slam squash: a VF/Expanded line is re-set at the same size on the wdth axis (true type, never stretched);
+  // above the axis (wdth 128) and for the static Condensed One the overshoot is a horizontal scale about the origin
+  function squash(parent, o, sq, origem) {
+    if (!sq) return o;
+    const ox = origem === 'left' ? o.inkX0 : origem === 'right' ? o.inkX1 : (o.inkX0 + o.inkX1) / 2;
+    let n = o, sx = sq.sx;
+    if (sq.wdth != null && (o.s.f === 'X' || o.s.f === 'V')) {
+      if (sq.wdth <= 125) {
+        n = HF.texto(parent, { t: o.s.t, f: 'V', wght: o.s.f === 'X' ? 700 : (o.s.wght || 700), wdth: sq.wdth, fs: o.s.fs,
+          lsEm: o.s.lsEm, cor: o.s.cor, op: o.s.op, tnum: o.s.tnum });
+        HF.posicionar(n, ox, o.baseline, origem === 'left' || origem === 'right' ? origem : 'center');
+        o.el.remove();
+        sx = null;
+      } else sx = sq.wdth / 125;
+    }
+    if (sx != null && sx !== 1) {
+      const left = parseFloat(n.el.style.left);
+      n.el.style.transformOrigin = `${ox - left}px 0px`;
+      n.el.style.transform = `scaleX(${sx})`;
+    }
+    return n;
+  }
+  function linha(L) {
+    const s = { t: L.t, f: L.f || 'C', cor: L.cor || 'papel', lsEm: L.lsEm != null ? L.lsEm : (L.f === 'C' ? 0.02 : -0.01),
+      wght: L.wght, wdth: L.wdth, op: L.op, tnum: L.tnum };
+    s.fs = L.x != null ? xh(s.f, L.x) : cap(s.f, L.cap || 46);
+    const x0 = L.x0 != null ? L.x0 : X0, x1 = L.x1 != null ? L.x1 : X1, med = x1 - x0;
+    let o = HF.texto(b, s);
+    if (L.fill === 'tamanho') HF.porTamanho(o, med, L.capMax ? cap(s.f, L.capMax) : null);
+    else if (L.fill === 'tracking') { HF.porTracking(o, med); if (o.inkW > med + 0.5) HF.porTamanho(o, med); }
+    else if (L.fill === 'wdth') {
+      HF.porWdth(o, med);
+      if (o.estado === 'longo') { HF.mudar(o, { wdth: 75 }); HF.porTamanho(o, med); }
+      if (o.estado === 'curto') { HF.mudar(o, { wdth: 125 }); HF.porTamanho(o, med); }
+    }
+    const al = L.fill ? 'left' : (L.al || 'center');
+    const ax = L.fill ? x0 : (L.ax != null ? L.ax : (al === 'left' ? x0 : al === 'right' ? x1 : 540));
+    HF.posicionar(o, ax, L.y, al);
+    if (L.trechos) {
+      // colour runs inside one set line (e.g. MÃE in amarelo inside MÃE AO VIVO): the line is measured whole first
+      const ch = [...L.t], sp = o.sp; sp.textContent = '';
+      let i = 0;
+      const cuts = L.trechos.slice().sort((a, b) => a[0] - b[0]);
+      const run = (a, b, cor) => { const e = document.createElement('span'); e.textContent = ch.slice(a, b).join('');
+        if (cor) e.style.color = HF.cor[cor] || cor; sp.appendChild(e); };
+      for (const [a, b2, cor] of cuts) { if (a > i) run(i, a, null); run(a, b2, cor); i = b2; }
+      if (i < ch.length) run(i, ch.length, null);
+    }
+    if (L.fill) qa.push({ nome: L.id || L.t, erro: +(o.inkW - med).toFixed(2), cap: +HF.capPx(o.s).toFixed(2) });
+    reg(L.id || L.t, o);
+    o = squash(b, o, L.sq, L.sqo || 'center');
+    bnce(o, L.bnce);
+    revelar(o, L.rv);
+    return o;
+  }
+  function kv01(E) {
+    const so = new Set(E.so || ['L1E', 'L1D', 'MAE', 'SHOW', 'L4E', 'L4D']);
+    const sq = E.sq || {}, rv = E.rv || {}, bn = E.bnce || {};
+    const keep = (id, o, origem) => {
+      reg(id, o);
+      if (!so.has(id)) { o.el.remove(); return; }
+      o = squash(b, o, sq[id], origem);
+      bnce(o, bn[id]);
+      revelar(o, rv[id]);
+    };
+    // exactly kv.html fmt '9x16' (KV-01): same strings, sizes, fills and baselines
+    const [a, c] = HF.dividida(b, { t: 'HOLOFOTE APRESENTA', f: 'C', fs: cap('C', 30), lsEm: 0.08, cor: 'papel' },
+      { t: 'A TURNÊ · 2027', f: 'C', fs: cap('C', 30), lsEm: 0.08, cor: 'papel', tnum: true }, X0, X1, 360);
+    keep('L1E', a, 'left'); keep('L1D', c, 'right');
+    const m = HF.texto(b, { t: 'MÃE', f: 'X', fs: cap('X', 199), lsEm: 0, cor: 'amarelo' });
+    HF.porTracking(m, X1 - X0);
+    if (m.inkW > X1 - X0 + 0.5) HF.porTamanho(m, X1 - X0);
+    HF.posicionar(m, X0, 640, 'left');
+    qa.push({ nome: 'MÃE', erro: +(m.inkW - (X1 - X0)).toFixed(2) });
+    keep('MAE', m, 'center');
+    const s = HF.cheia(b, { t: 'AO VIVO', f: 'V', wght: 700, wdth: 125, fs: cap('V', 112), cor: 'papel' }, X0, X1, 768, 'wdth');
+    qa.push({ nome: 'AO VIVO', erro: +s.erro.toFixed(2) });
+    keep('SHOW', s, 'center');
+    const [d1, d2] = HF.dividida(b, { t: 'DOMINGO · 09.05', f: 'C', fs: cap('C', 46), lsEm: 0.02, cor: 'amarelo', tnum: true },
+      { t: 'abertura: você', f: 'S', fs: xh('S', 18), cor: 'papel' }, X0, X1, 832);
+    keep('L4E', d1, 'left'); keep('L4D', d2, 'right');
+  }
+  function c03(E) {
+    // pecas.js R.C03, top part: the same items and the same pilha box, so the film IS the poster
+    const tinta = 'preto', gap = 4, S = HF.S;
+    const L = (t) => ({ tipo: 'cheia', s: S({ t, f: 'V', wght: 700, wdth: 125, cap: 100, lsEm: -0.01, cor: tinta }), modo: 'tamanho', antes: gap });
+    const itens = [L('ELA'), L('APLAUDIU'), L('DE PÉ'), L('O SEU'),
+      { tipo: 'dividida', antes: gap, esq: S({ t: 'PIOR', f: 'V', wght: 700, wdth: 125, cap: 112, lsEm: -0.01, cor: tinta }),
+        dir: S({ t: '2007)', f: 'S', x: 25, cor: tinta }) },
+      L('SHOW.')];
+    itens[0].antes = 0;
+    HF.pilha(b, itens, { x0: X0, x1: X1, y0: 270 + 4, y1: 1400, grade: 8 });
+    const pr = itens[4], pior = pr.objs[0], an2 = pr.objs[1], capP = HF.capPx(pior.s);
+    const an1 = HF.texto(b, S({ t: '(girassol,', f: 'S', x: 25, cor: tinta }));
+    const xhP = HF.xPx(an1.s), passo = Math.round(xhP * 2.6 / 8) * 8;
+    const xa = X1 - an1.inkW;
+    const b1 = Math.round((pr.baseline - capP + xhP * 1.2) / 8) * 8;
+    HF.posicionar(an1, xa, b1, 'left');
+    HF.posicionar(an2, xa + 8, b1 + passo, 'left');
+    const ver = new Set(E.ver || []), sq = E.sq || {};
+    const palavras = [['ELA', itens[0].objs[0]], ['APLAUDIU', itens[1].objs[0]], ['DE PÉ', itens[2].objs[0]],
+      ['O SEU', itens[3].objs[0]], ['PIOR', pior], ['SHOW.', itens[5].objs[0]]];
+    for (const [w, o] of palavras) {
+      reg(w, o);
+      if (!ver.has(w)) { o.el.remove(); continue; }
+      squash(b, o, sq[w], 'center');
+    }
+    // the fan's note draws on: "(girassol," then "2007)", then the arrow to PIOR (pen stroke, dash offset)
+    const nota = E.nota == null ? 0 : E.nota, setaR = E.seta == null ? 0 : E.seta;
+    reg('nota1', an1); reg('nota2', an2);
+    const r1 = Math.min(1, nota * 2), r2 = Math.max(0, nota * 2 - 1);
+    if (r1 <= 0) an1.el.remove(); else { bnce(an1, E.bnce); revelar(an1, r1); }
+    if (r2 <= 0) an2.el.remove(); else { bnce(an2, E.bnce); revelar(an2, r2); }
+    if (setaR > 0) {
+      const sv = HF.seta(b, xa - 14, b1 - xhP * 0.35, pior.inkX1 + 16, pr.baseline - capP * 0.62, 4.6, tinta, -0.28);
+      const ps = sv.querySelectorAll('path');
+      const corpo = ps[0], ponta = ps[1], Lc = corpo.getTotalLength();
+      const rc = Math.min(1, setaR / 0.8);
+      corpo.setAttribute('stroke-dasharray', `${Lc} ${Lc}`);
+      corpo.setAttribute('stroke-dashoffset', `${Lc * (1 - rc)}`);
+      if (setaR < 0.85) ponta.remove();
+      else { const Lp = ponta.getTotalLength(), rp = Math.min(1, (setaR - 0.85) / 0.15);
+        ponta.setAttribute('stroke-dasharray', `${Lp} ${Lp}`); ponta.setAttribute('stroke-dashoffset', `${Lp * (1 - rp)}`); }
+    }
+    geom.seta = { x0: pior.inkX1 + 16, y0: pr.baseline - capP * 0.62, x1: xa - 14, y1: b1 - xhP * 0.35 };
+  }
+  for (const E of D.camada) {
+    if (E.k === 'linha') linha(E);
+    else if (E.k === 'kv01') kv01(E);
+    else if (E.k === 'c03') c03(E);
+  }
+  window.HF_INFO = { geom };
+  window.HF_QA = qa.map((q) => ({ nome: q.nome, erro: q.erro, cap: q.cap }));
+});
+</script>
+</body></html>

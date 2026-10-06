@@ -57,6 +57,19 @@ SOUND = {
           '9-15': 'black 4 f; the third bell at 9,0; CLAC; applause; three claps'},
     '3': {'0-6': 'room tone', '6-9': 'one snare hit on the point', '9-15': 'CLAC -> applause -> three claps'},
 }
+SLUG = {'1': 'O-PIOR-SHOW', '2': 'PRIMEIRO-SINAL', '3': 'FA-DE-CARTEIRINHA'}
+# Framing the previs proved against the ad's fixed type (animatic_previs.py, 1080 x 1920 space). The people layer
+# must match it, or the type lands on a face or a hand.
+ENQUADRAMENTO = {
+    'fala_0_6': ('Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o '
+                 'queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.'),
+    '1': ('Gesto 6–9 s: queixo acima de y 750 e as mãos batendo palmas abaixo de y 870; o título E ELA APLAUDIU DE PÉ. '
+          '(y 760–860) cruza o peito entre os dois.'),
+    '2': ('Gesto 6–9 s: plano mais aberto; o telefone e a cabeça acima de y 750; o título LANTERNA PRA CIMA. '
+          '(y 760–860) cruza o peito.'),
+    '3': ('Gesto 6–9 s: câmera com 15–20° de giro para o dedo ler; queixo acima de y 750 e o coração com os dedos e o '
+          'dedo apontando abaixo de y 870; o título JÁ FOI FÃ DELA? (y 760–860) cruza o peito.'),
+}
 REJECT = ["any generated letter (backdrop, clothing, wristband, phone)", "the face changes between talk and gesture takes",
           "extra or fused fingers", "any flame or candle in a presenter scene", "an influencer smile on the hook",
           "waxy skin", "any blue or violet object in a frame with a stand-in", "a recognisable real person or celebrity likeness"]
@@ -100,6 +113,10 @@ def main():
             'audio': 'Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e '
                      'será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.',
             'rejeitar_se': REJECT,
+            'animatic': {k: '05_ANUNCIO/animatics/HLF-AD-%s_%s_%s' % (cut, SLUG[c], v)
+                         for k, v in (('com_som', 'animatic_som.mp4'), ('mudo', 'animatic_mudo.mp4'),
+                                      ('folha_de_contato', 'animatic_folha.png'))},
+            'enquadramento_pessoas': {'fala_0_6': ENQUADRAMENTO['fala_0_6'], 'gesto_6_9': ENQUADRAMENTO[c]},
             'divulgacao': 'Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma '
                           'são outra coisa e devem ser conferidas na hora de publicar.',
         })

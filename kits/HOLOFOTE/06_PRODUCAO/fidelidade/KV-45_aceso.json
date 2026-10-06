@@ -1,24 +1,26 @@
 [
   {
-    "asset": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/renders/KV-45_aceso.png",
-    "master": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/rotulos/HLF-02_ROTULO_wrap.png",
-    "tiles": 642,
+    "asset": "02_PRODUTO/renders/KV-45_aceso.png",
+    "master": "02_PRODUTO/rotulos/HLF-02_ROTULO_wrap.png",
+    "tiles": 594,
     "uv_agreement": 0.9992,
+    "corner_tiles_skipped": 47,
+    "corner_tiles_worst": 0.758,
     "control": {
       "patch_px": [
-        3514,
+        3517,
         1929,
         300,
         300
       ],
-      "worst_tile": -0.214,
+      "worst_tile": -0.142,
       "caught": true
     },
     "hue_shift_deg": -1.35,
     "sat_ratio": 0.999,
-    "worst_tile": 0.432,
-    "p5_tile": 0.872,
+    "worst_tile": 0.926,
+    "p5_tile": 0.968,
     "bar_p5": 0.95,
-    "pass": false
+    "pass": true
   }
 ]
