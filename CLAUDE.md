@@ -2889,6 +2889,22 @@ strangers' dead parents, alone, in year three?"**
       exact because the product is real, so the guarantee only beats other AI ads. Build moving-hand tracking only if
       ≥5 of the 20 calls ask for it.
     - **Expected closes from today's list: 10–25, about 15.** A guess; no call has been made.
+  - **★★ AN OUTSIDE "BUSINESS DESIGN" AND THE FOUNDER'S HOURS, 6 Oct 2026.**
+    - A supplied plan proposed R$5.990 campaigns, priced cost-plus on an assumed 14 hours a job.
+    - **Founder: *"max 3 hours jobs... for a campaign and 1 hour for 4 images"*, and prices stay at or under
+      R$2.990.** So its price case falls: its hours were about 5× too high.
+    - At 3 hours, R$2.990 earns ≈R$870–980 an hour after R$52–380 of tool costs, against R$290–360 needed.
+    - **At these hours the limit is sales, not production.** Even R$1.490 pays ≈R$370–480 an hour; a lower price
+      doubles the sales count (8–10 a month), it doesn't break her rate.
+    - **Its CRM checks were all correct.** 1.239 A/B beauty brands are 868 companies. 361 of 706 "WhatsApp" numbers
+      are registry mobiles. The 80-day lag is a median of 18 products.
+    - **Worth adopting from it, not yet done:**
+      - fix KEEP/SWITCH/STOP: both SWITCH and STOP fire at 8 above R$1.000 and 12 below, and four VITRINE sales can
+        "keep" a R$2.990 price nobody paid;
+      - qualify on a confirmed trigger, not a filing;
+      - fix the "stays on our computer" wording in the offer and contract;
+      - a countable scope;
+      - log hours on every job.
 
 ## The test design that works
 

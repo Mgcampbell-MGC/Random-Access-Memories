@@ -27,8 +27,11 @@ first; every later step waits for a result from the step before it.
     - Small brands spend less than this today. Every brand budget we found was under US$500 a project. A UGC video
       costs R$100–250 and an AI image R$53–60.
     - A traditional São Paulo launch shoot with a model and a film costs R$6.878–13.255.
-- **It is a good rate for Sol, because the machine is fast.** A launch takes her about 3–4,5 hours, so she earns about
-  R$665–1.000 an hour. The goal needs R$290–360.
+- **It is a good rate for Sol, because the machine is fast.** A launch takes her at most 3 hours and four images about
+  1 hour (the founder's figures, 6 Oct; the dry runs will record them). After R$52–380 of tool costs a launch earns
+  about R$870–980 an hour. The goal needs R$290–360.
+- **So the limit is sales, not production.** 4–5 launches a month take about 15 hours of her ~87. Even R$1.490 pays
+  about R$370–480 an hour, so a lower price would double the sales needed, not break her hourly rate.
 - **Never discount on a call.** If a brand can't pay, offer a smaller product, not a lower price.
 - **Lower (already agreed):** after the 20 calls, the KEEP, SWITCH and STOP bars in the one-page manual decide. SWITCH
   means ESSENCIAL R$1.490 + FILME R$990.
