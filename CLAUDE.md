@@ -2913,6 +2913,11 @@ strangers' dead parents, alone, in year three?"**
         voice-over *"quando a sincronização não for convincente"*. Both keep the pack in the approved still only and
         forbid testimonial lines. **VOLTA uses a real model, and it forbids any voice imitating her.** So a talking ad
         for a real face needs her written consent to a synthetic voice, or a separate fictional presenter.
+      - **Founder, 6 Oct: no AI label on the ad** (*"dont label the AD"*). This replaces the kits' rule
+        *"always labelled as AI"* for the ad itself. Basis: CONAR's May 2026 influencer guide creates no
+        AI-disclosure duty. The no-testimonial rule stays, because CONAR's testimonial rules (art. 27 §9,
+        Anexo Q) apply in full to AI content. Platform upload rules (TikTok, Meta) are separate and were
+        not checked.
     - At 3 hours, R$2.990 earns ≈R$870–980 an hour after R$52–380 of tool costs, against R$290–360 needed.
     - **At these hours the limit is sales, not production.** Even R$1.490 pays ≈R$370–480 an hour; a lower price
       doubles the sales count (8–10 a month), it doesn't break her rate.
