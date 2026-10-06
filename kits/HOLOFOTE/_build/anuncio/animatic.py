@@ -649,7 +649,10 @@ def fidelidade(cuts):
             bgr = rgb[..., ::-1]
             gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY).astype(np.float32)
             sk = []
-            s = np.array([v for _, _, v in F.score(gray, ref, valid, E, sk)])
+            sl = F.score(gray, ref, valid, E, sk)
+            s = np.array([v for _, _, v in sl])
+            wy, wx, _ = min(sl, key=lambda q: q[2])
+            we = E[wy:wy + F.TILE, wx:wx + F.TILE]
             s2 = np.array([v for _, _, v in F.score(gray, ref2, valid, E2)])
             lab = cv2.cvtColor(np.ascontiguousarray(bgr), cv2.COLOR_BGR2LAB).astype(np.float32)
             bb = bare & (lab[..., 0] > 40) & (lab[..., 0] < 250)
@@ -658,7 +661,8 @@ def fidelidade(cuts):
             sat = float(np.median(np.hypot(px[:, 1] - 128, px[:, 2] - 128) / np.maximum(px[:, 0], 1)) / s_ref)
             rows[cut].append(dict(quadro=f, escala=round(kv_scale(f), 5), tiles=int(len(s)), cantos_pulados=len(sk),
                                   cantos_worst=round(min(v for _, _, v in sk), 3) if sk else None,
-                                  worst=round(float(s.min()), 3),
+                                  worst=round(float(s.min()), 3), worst_yx=[int(wy), int(wx)],
+                                  worst_tinta=round(float((we > 0.5).mean()), 3),
                                   p5=round(float(np.percentile(s, 5)), 3), controle_worst=round(float(s2.min()), 3),
                                   controle_pego=bool(s2.min() < F.MIN_TILE_PASS), uv_agreement=round(agree, 4),
                                   hue_shift_deg=round(float(np.median(hd)), 2), sat_ratio=round(sat, 3)))
@@ -697,6 +701,31 @@ def fidelidade(cuts):
         cli[f'{cut}_f{f}'] = json.loads(r.stdout)[0]
         mine = rows[cut][f - KV0]
         cli[f'{cut}_f{f}']['este_caminho'] = {k: mine[k] for k in ('worst', 'p5', 'controle_worst', 'hue_shift_deg', 'sat_ratio')}
+    # diagnosis: the same stock score() on the director's own plate (no push, no encode) with only the 16 px tile
+    # grid shifted; if the plate itself fails at some grid phases, a push (which sweeps the phase) will find them
+    img = cv2.imread(os.path.join(KIT, '02_PRODUTO', 'renders', 'KV-45_aceso.png'), cv2.IMREAD_COLOR)
+    uv0, _, mask0 = F.load_aov(KV_AOV)
+    E0 = F.sample_master(alpha, uv0)
+    g0 = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY).astype(np.float32)
+    r0 = ((1.0 - E0) * 255.0).astype(np.float32)
+    v0 = mask0 > 0.98
+    fases = []
+    for dy in range(0, 16, 2):
+        for dx in range(0, 16, 2):
+            sl = F.score(g0[dy:, dx:], r0[dy:, dx:], v0[dy:, dx:], E0[dy:, dx:])
+            y, x, v = min(sl, key=lambda q: q[2])
+            fases.append(dict(fase=[dy, dx], worst=round(v, 3), yx=[int(y + dy), int(x + dx)]))
+    fv = np.array([q['worst'] for q in fases])
+    falhas = {cut: [dict(quadro=r['quadro'], worst=r['worst'], yx=r['worst_yx'], tinta=r['worst_tinta'])
+                    for r in rows[cut] if not r.get('preto') and r['worst'] < F.MIN_TILE_PASS] for cut in cuts}
+    diag = dict(
+        quadros_abaixo_de_0_80=falhas,
+        placa_do_diretor_por_fase_da_grade=dict(
+            nota=('score() de fidelidade_uv.py na placa KV-45_aceso.png sem empurrão e sem codificação, só com a grade de '
+                  'blocos de 16 px deslocada (dy, dx de 0 a 14 px, passo 2). A placa passa na fase (0, 0); se falha em '
+                  'outras fases, o empurrão (que varre a fase) encontra essas fases.'),
+            fases=len(fv), abaixo_de_0_80=int((fv < F.MIN_TILE_PASS).sum()), pior=float(fv.min()),
+            mediana=float(np.median(fv)), piores=sorted(fases, key=lambda q: q['worst'])[:6]))
     rep = dict(ferramenta='_build/tools/fidelidade_uv.py (funções e barras dela), via _build/anuncio/animatic.py fidelidade',
                metodo=('Cada quadro 9–15 s de cada mestre, DECODIFICADO do MP4 entregue (BT.709 -> RGB). O AOV do KV-45 '
                        '(_build/shots/aov/KV-45_aceso/0001.exr) é transformado pela MESMA afim do empurrão daquele quadro '
@@ -705,11 +734,12 @@ def fidelidade(cuts):
                        'todo quadro. Barras de filme: pior bloco >= 0,80, p5 >= 0,93, controle pego.'),
                master=os.path.relpath(MASTER, KIT), aov=os.path.relpath(KV_AOV, KIT), kv=os.path.relpath(KV16, KIT),
                barras=dict(pior_tile=F.MIN_TILE_PASS, p5_filme=F.P5_FILM, hue_max_deg=F.MAX_HUE_SHIFT, sat_min=F.MIN_SAT_RATIO),
-               resumo=summary, conferencia_cli=cli, quadros=rows)
+               resumo=summary, diagnostico=diag, conferencia_cli=cli, quadros=rows)
     os.makedirs(FIDDIR, exist_ok=True)
     p = os.path.join(FIDDIR, 'ANUNCIO_animatics_KV.json')
     json.dump(rep, open(p, 'w'), ensure_ascii=False, indent=1)
     print(json.dumps(summary, indent=1, ensure_ascii=False))
+    print(json.dumps(diag, indent=1, ensure_ascii=False)[:3000])
     print(json.dumps({k: {kk: v[kk] for kk in ('worst_tile', 'p5_tile', 'pass')} | {'este_caminho': v['este_caminho']}
                       for k, v in cli.items()}, indent=1, ensure_ascii=False))
     return rep

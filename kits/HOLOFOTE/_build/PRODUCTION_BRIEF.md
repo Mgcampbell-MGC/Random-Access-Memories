@@ -183,3 +183,8 @@ glyphs (HarfBuzz returned .notdef for every letter). Licences: OFL (copies in `f
   merged; the floor mirrored the coat as olive).
 - **C09, director 6 Oct:** two Shantell marks are accepted on C09 — *abertura: você* belongs to the poster generator's
   own output (the sample poster), and the CTA *faz o cartaz dela.* is the layout's one Fã annotation.
+- **KV-45 camera changed, director 6 Oct 2026 (CCO review):** `cam_height 0,240 m, tilt −11°, glass_px 883,
+  top_y 760` (was 0,160 / −5° / 610). At 160 mm the front lip hid the wick, the melt pool and the flame's root, so
+  the flame floated over the rim as a sprite. The glass now sits lower: the flame tip lands near y 600, clear of the
+  9–15 s type block (y 334–534). The F15 crane end, the flame crop box, F06C and the ads' KV block follow.
+  C03/C07 thumbnails are re-cropped from the new plate.

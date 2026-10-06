@@ -155,7 +155,7 @@ def filme(film):
             px = checar(alpha, aov, img)
             r['delivered_pixels'] = {k2: px.get(k2) for k2 in ('worst_tile', 'p5_tile', 'tiles', 'pass_')}
         else:
-            M = None if abs(mf['push'] - 1) < 1e-9 else C.empurrar_M(mf['push'], P.PUSH_CENTRO)
+            M = None if abs(mf['push'] - 1) < 1e-9 else C.empurrar_M(mf['push'], tuple(mf['centro']))
             full = 'aquec' not in mf and _luz_plena(film, f)
             r = checar(alpha, transformar(aov, M), img, coat=COAT if full else None)
             r['method'] = ('label AOV, 2D push x%.4f applied to the AOV' % mf['push']) if M is not None else 'label AOV'

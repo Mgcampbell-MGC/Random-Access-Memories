@@ -24,7 +24,7 @@ SQ_SX = [0.60, 0.84, 1.024]       # the same squash for the static Condensed One
 AQUEC = [(0.10, 2000.0), (0.55, 2700.0)]    # CLAC filament warm-up, 2 frames: (light gain, colour temperature)
 PUSH_F15 = (222, 359, 0.04)       # 2D dolly push on the KV-45 plate: frames, amount
 PUSH_F06A = (24, 95, 0.03)
-PUSH_CENTRO = (540.0, 760.0)      # the push expands about the label's upper half: the flame keeps clear of the type
+# the push centre is read from the KV-45 plate itself (comum.centro_push: x 540, 90 px below the top of the print)
 
 
 def ease_out(t, p=1.6):

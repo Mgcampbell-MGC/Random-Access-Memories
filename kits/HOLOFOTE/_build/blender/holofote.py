@@ -412,11 +412,11 @@ def wood_material(charred=False, top_mm=7.5):
         mx.data_type = 'RGBA'
         nt.links.new(ch.outputs['Result'], mx.inputs['Factor'])
         nt.links.new(col, mx.inputs['A'])
-        mx.inputs['B'].default_value = srgb('#16110E')
+        mx.inputs['B'].default_value = srgb('#0B0907')
         col = mx.outputs['Result']
         rr = nt.nodes.new('ShaderNodeMapRange')
         rr.inputs['To Min'].default_value = 0.8
-        rr.inputs['To Max'].default_value = 0.55
+        rr.inputs['To Max'].default_value = 0.92        # char is matte (0,55 caught the flame as a grey sheen)
         nt.links.new(ch.outputs['Result'], rr.inputs['Value'])
         nt.links.new(rr.outputs['Result'], bs.inputs['Roughness'])
     nt.links.new(col, bs.inputs['Base Color'])
@@ -499,7 +499,7 @@ def flame_material(seed=0.0, strength=1.0):
     nt.links.new(hot, rp.inputs['Fac'])
     em = nt.nodes.new('ShaderNodeEmission')
     nt.links.new(rp.outputs['Color'], em.inputs['Color'])
-    nt.links.new(M('MULTIPLY', dens, 1.6e4 * strength), em.inputs['Strength'])
+    nt.links.new(M('MULTIPLY', dens, 1.05e4 * strength), em.inputs['Strength'])
     # blue root: a visible band at the bottom 20 %, on the outer half of the envelope
     blue = M('MULTIPLY', M('SUBTRACT', 1.0, smooth(z, 0.04, 0.24)), smooth(d, 0.35, 0.85))
     blue = M('MULTIPLY', blue, M('SUBTRACT', 1.0, smooth(d, 0.95, 1.15)))
@@ -591,7 +591,8 @@ def flame(scale=1.0, seed=0.0, strength=1.0):
     f.scale = (W * (0.97 + 0.03 * scale), D, Hh * scale)
     f.data.materials.append(flame_material(seed, strength))
     f.visible_shadow = False
-    bpy.ops.object.light_add(type='POINT', location=(0, 0, zb + 4.5 * MM * scale))
+    # 9 mm up, in the flame body (was 4,5 mm, at the wick tip: it blasted the black char to tan, CCO pass 2)
+    bpy.ops.object.light_add(type='POINT', location=(0, 0, zb + 9.0 * MM * scale))
     L = bpy.context.object
     L.name = 'flame_light'
     L.data.energy = 1.4 * scale * strength      # was 0,25 W: the flame lit nothing (CCO review, 6 Oct)

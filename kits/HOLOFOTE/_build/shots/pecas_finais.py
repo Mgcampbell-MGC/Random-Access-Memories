@@ -1,11 +1,10 @@
 """HOLOFOTE · peças finais: o tipo, posto por código, sobre os renders limpos (plataforma §E.1–§E.2, §D.10).
 
-    /home/user/venvs/web/bin/python _build/shots/pecas_finais.py [KV01 KV45 C C03C07 PORTAO LIVRO]
+    /home/user/venvs/web/bin/python _build/shots/pecas_finais.py [KV01 KV45 C PORTAO LIVRO]
 
 KV01   KV-01 9:16 · 4:5 · 1:1 · 16:9: a camada de tipo de _build/kv/kv.html (tipo_kv.job) sobre KV-01_<fmt>_limpo.png
 KV45   KV-45 aceso/apagado × (SUA VEZ. · A ATRAÇÃO É ELA. · sem título) sobre os planos do diretor
 C      C01 C02 C04 C05 (1:1 e 9:16) C06 C08 C10: tipo_c.html (motor da marca) sobre os renders limpos
-C03C07 as miniaturas da vela em C03 e C07 (recorte do KV-45_aceso do diretor, sem alegação de fidelidade §D.7.5)
 PORTAO o portão de legibilidade da chama (§D.6) no KV-01 9:16 final
 LIVRO  os renders nas caixas RENDER das pranchas do livro da marca (01_MARCA/placeholders.json)
 Nenhuma placa de IA (decisão da dona, 6 out 2026). Nenhum pixel gerado; nenhuma edição por IA depois da composição.
@@ -178,7 +177,7 @@ def def_pecas():
             dict(tipo='cheia', s=X('tá salva no seu celular.', 60, cor='preto'), antes=16),
             dict(tipo='cheia', s=X('a gente bota no cartaz.', 60, cor='preto'), antes=16),
             dict(tipo='espaco', flex=1),
-            dict(tipo='assinatura', cap=26, tinta='preto', lamp='amarelo'),
+            dict(tipo='assinatura', cap=26, tinta='preto', lamp='preto'),      # §D.1: amarelo never on a light ground
         ]),
     ])
 
@@ -211,28 +210,6 @@ def serie_c(quais=None):
         out = os.path.join(LAN, 'C', 'C01_O-MURO.png')
         Image.open(c01).convert('RGB').save(out)
         print('  ', os.path.relpath(out, KIT))
-
-
-# ------------------------------------------------------------------------------------------------ C03 / C07
-def c03c07():
-    kv = os.path.join(RENDERS, 'KV-45_aceso.png')
-    im = Image.open(kv).convert('RGB')
-    W, H_ = im.size
-    # C03: a Ø360 porthole on the lit candle (flame to label), square crop on the glass
-    c03 = os.path.join(CACHE, 'C03_vela.png')
-    # the flame and the label face; a preto ring (~10 px at the final Ø 360) keeps the disc's edge where the yellow
-    # label meets the yellow paper (the brief's 'black circle'); no X arm inside
-    from PIL import ImageDraw
-    sq = im.crop((90, 430, 990, 1330))
-    d = ImageDraw.Draw(sq)
-    d.ellipse((0, 0, 899, 899), outline=(18, 16, 20), width=26)
-    sq.save(c03)
-    # C07: a 4:5 KV thumbnail (the whole lit candle on its X)
-    c07 = os.path.join(CACHE, 'C07_kv.png')
-    y0 = 380
-    im.crop((0, y0, 1080, y0 + 1350)).save(c07)
-    subprocess.run(['/home/user/venvs/web/bin/python', os.path.join(B, 'brand', 'lancamento.py'), 'C', '--vela-c03', c03,
-                    '--vela-c07', c07], check=True)
 
 
 # ------------------------------------------------------------------------------------------------ §D.6 flame gate
@@ -313,15 +290,13 @@ def livro():
 PREVIA = '--previa' in sys.argv
 
 if __name__ == '__main__':
-    a = [x for x in sys.argv[1:] if x != '--previa'] or ['KV01', 'KV45', 'C', 'C03C07', 'PORTAO']
+    a = [x for x in sys.argv[1:] if x != '--previa'] or ['KV01', 'KV45', 'C', 'PORTAO']
     if 'KV01' in a:
         kv01()
     if 'KV45' in a:
         kv45()
     if 'C' in a or any(x in ('C01', 'C02', 'C04', 'C05_1x1', 'C05_9x16', 'C06', 'C08', 'C10') for x in a):
         serie_c([x for x in a if x in ('C01', 'C02', 'C04', 'C05_1x1', 'C05_9x16', 'C06', 'C08', 'C10')] or None)
-    if 'C03C07' in a:
-        c03c07()
     if 'PORTAO' in a:
         portao()
     if 'LIVRO' in a:

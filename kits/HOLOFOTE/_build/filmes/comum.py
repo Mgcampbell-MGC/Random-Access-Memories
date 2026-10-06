@@ -175,3 +175,20 @@ def mascara_caixa(h, w, pena):
     m = np.minimum(y[:, None], x[None, :])
     m = np.clip((m - 2) / max(pena, 1), 0, 1)
     return (m * m * (3 - 2 * m))[..., None]
+
+
+_CENTRO = {}
+
+
+def centro_push(aov_path=None):
+    """Centre of the 2D dolly push on the KV-45 plate: x 540 and 90 px below the top of the print (the label's upper
+    half), read from the plate's own label AOV so it follows any re-framing of KV-45. The flame keeps clear of the type."""
+    aov_path = aov_path or os.path.join(AOV_KV, 'KV-45_aceso', '0001.exr')
+    if aov_path not in _CENTRO:
+        import OpenEXR
+        ch = OpenEXR.File(aov_path).parts[0].channels
+        m = next(v.pixels for k, v in ch.items() if k.split('.')[0] == 'label_mask')
+        m = m[..., 0] if m.ndim == 3 else m
+        ys = np.nonzero((m > 0.5).any(axis=1))[0]
+        _CENTRO[aov_path] = (540.0, float(ys.min()) + 90.0)
+    return _CENTRO[aov_path]

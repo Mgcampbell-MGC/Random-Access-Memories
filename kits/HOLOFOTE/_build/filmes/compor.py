@@ -204,8 +204,8 @@ def picture(film, f, F):
             sc = aquec(kv_aceso_cena(F, i) - bi, k, kel, bi)
         else:
             sc = kv_aceso_cena(F, i)
-        img = C.empurrar(C.para_tela(sc), s, P.PUSH_CENTRO)
-        man.update(aov=os.path.join(C.AOV_KV, 'KV-45_aceso', '0001.exr'), push=s, check='label')
+        img = C.empurrar(C.para_tela(sc), s, C.centro_push())
+        man.update(aov=os.path.join(C.AOV_KV, 'KV-45_aceso', '0001.exr'), push=s, centro=C.centro_push(), check='label')
         return img, man
     if film in ('F06A', 'F06B') or film == 'F06C_09-05':
         lit_from = {'F06A': 6, 'F06B': 84, 'F06C_09-05': 72}[film]
@@ -219,8 +219,8 @@ def picture(film, f, F):
             sc = aquec(kv_aceso_cena(F, i) - bi, k, kel, bi)
         else:
             sc = kv_aceso_cena(F, i)
-        img = C.empurrar(C.para_tela(sc), s, P.PUSH_CENTRO)
-        man.update(aov=os.path.join(C.AOV_KV, 'KV-45_aceso', '0001.exr'), push=s, check='label')
+        img = C.empurrar(C.para_tela(sc), s, C.centro_push())
+        man.update(aov=os.path.join(C.AOV_KV, 'KV-45_aceso', '0001.exr'), push=s, centro=C.centro_push(), check='label')
         return img, man
     if film.startswith('F06C'):
         if f < 72:

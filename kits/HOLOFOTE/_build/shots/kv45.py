@@ -14,9 +14,15 @@ def build(lit):
         S.ride(root, h['lift'])
         if lit:
             S.flame_bounce(h, root)
-        S.camera_glass(res=(1080, 1920), lens=85, cam_height=0.160, tilt_deg=-5, glass_px=883, top_y=610)
+        S.camera_glass(res=(1080, 1920), **CAM)
         S.clearance()
     return f
+
+
+# KV-45 camera, director 6 Oct 2026 after the CCO review: raised from 160 mm / -5 deg / top 610 so the wick, the
+# melt pool and the flame's root read (at 160 mm the front lip hid them), and the glass sits lower to leave the flame
+# and the type block (y 334-534) clear of each other. Films and ads take the same numbers.
+CAM = dict(lens=85, cam_height=0.240, tilt_deg=-11, glass_px=883, top_y=760)
 
 
 if __name__ == '__main__':
