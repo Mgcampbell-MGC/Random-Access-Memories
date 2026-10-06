@@ -5,7 +5,7 @@
     "tiles": 190,
     "uv_agreement": 0.9951,
     "corner_tiles_skipped": 4,
-    "corner_tiles_worst": 0.949,
+    "corner_tiles_worst": 0.95,
     "control": {
       "patch_px": [
         1404,
@@ -13,13 +13,13 @@
         300,
         300
       ],
-      "worst_tile": 0.665,
+      "worst_tile": 0.667,
       "caught": true
     },
-    "hue_shift_deg": -1.35,
+    "hue_shift_deg": -1.29,
     "sat_ratio": 0.999,
-    "worst_tile": 0.895,
-    "p5_tile": 0.951,
+    "worst_tile": 0.896,
+    "p5_tile": 0.952,
     "bar_p5": 0.95,
     "pass": true,
     "label_id": null,

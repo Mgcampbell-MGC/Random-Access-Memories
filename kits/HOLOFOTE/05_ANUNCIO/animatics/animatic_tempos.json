@@ -147,6 +147,11 @@
      "sync": "start"
     }
    ]
+  },
+  "som_entregue_aac": {
+   "lufs_i": -14.16,
+   "true_peak_dbtp": -1.21,
+   "duracao_s": 15.019
   }
  },
  "1B": {
@@ -322,6 +327,11 @@
      "sync": "start"
     }
    ]
+  },
+  "som_entregue_aac": {
+   "lufs_i": -14.16,
+   "true_peak_dbtp": -1.28,
+   "duracao_s": 15.019
   }
  },
  "1C": {
@@ -497,6 +507,11 @@
      "sync": "start"
     }
    ]
+  },
+  "som_entregue_aac": {
+   "lufs_i": -14.12,
+   "true_peak_dbtp": -1.2,
+   "duracao_s": 15.019
   }
  },
  "2A": {
@@ -670,6 +685,11 @@
      "sync": "start"
     }
    ]
+  },
+  "som_entregue_aac": {
+   "lufs_i": -14.15,
+   "true_peak_dbtp": -1.36,
+   "duracao_s": 15.019
   }
  },
  "2B": {
@@ -834,6 +854,11 @@
      "sync": "start"
     }
    ]
+  },
+  "som_entregue_aac": {
+   "lufs_i": -14.1,
+   "true_peak_dbtp": -1.29,
+   "duracao_s": 15.019
   }
  },
  "3A": {
@@ -990,6 +1015,11 @@
      "sync": "start"
     }
    ]
+  },
+  "som_entregue_aac": {
+   "lufs_i": -14.14,
+   "true_peak_dbtp": -1.24,
+   "duracao_s": 15.019
   }
  },
  "3B": {
@@ -1146,6 +1176,11 @@
      "sync": "start"
     }
    ]
+  },
+  "som_entregue_aac": {
+   "lufs_i": -14.12,
+   "true_peak_dbtp": -1.29,
+   "duracao_s": 15.019
   }
  },
  "3C": {
@@ -1302,6 +1337,11 @@
      "sync": "start"
     }
    ]
+  },
+  "som_entregue_aac": {
+   "lufs_i": -14.15,
+   "true_peak_dbtp": -1.24,
+   "duracao_s": 15.019
   }
  }
 }

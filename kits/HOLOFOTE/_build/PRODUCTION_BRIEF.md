@@ -188,3 +188,8 @@ glyphs (HarfBuzz returned .notdef for every letter). Licences: OFL (copies in `f
   the flame floated over the rim as a sprite. The glass now sits lower: the flame tip lands near y 600, clear of the
   9–15 s type block (y 334–534). The F15 crane end, the flame crop box, F06C and the ads' KV block follow.
   C03/C07 thumbnails are re-cropped from the new plate.
+- **Planted-error control sized to the shot, 6 Oct 2026 (director):** on C02 (glass at 30 % of frame) a fixed 300 px
+  master patch covered ~2 screen tiles and the control went uncaught (0,848) on a correct render. `plant_error` now
+  spans ≥ 3 × 3 screen tiles (from the UV gradient; min 300, max 1.200 px), sits inside the visible label and must
+  change under the mirror (mean |p − mirror(p)| ≥ 0,15). Re-run: C02 control 0,488 (caught), every real tile still
+  passes (worst 0,966); calibration exact still passes (0,90); the *MÃF* render still fails (0,025).

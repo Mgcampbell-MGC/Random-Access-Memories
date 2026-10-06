@@ -84,26 +84,37 @@ def bandpass_gray(g, s1=1.0, s2=4.0):
 
 
 def plant_error(alpha, uv, mask, size=300):
-    """Mirror the most lettered visible 300 x 300 px patch of the master. Returns the altered alpha and its box."""
+    """Mirror the most lettered, most asymmetric visible patch of the master. Returns the altered alpha and its box.
+
+    The patch is sized to the SHOT, not to the master (6 Oct 2026, C02): a fixed 300 px patch covered ~2 screen tiles
+    on a glass at 30 % of frame height, the tiles straddling its edge were only partly altered, and the control went
+    uncaught (0,848) on a correct render. It now spans at least 3 x 3 screen tiles (min 300 px), sits wholly inside
+    the visible label, and must change under the mirror (mean |p - mirror(p)| >= 0,15), so a "caught" control
+    always means "a wrong lettered region of this shot's scale fails"."""
     H, W = alpha.shape
     vis = mask > 0.98
     us = uv[..., 0][vis]
     vs = uv[..., 1][vis]
     if not len(us):
         return None, None
-    x0, x1 = int(np.percentile(us, 5) * W), int(np.percentile(us, 95) * W)
-    y0, y1 = int((1 - np.percentile(vs, 95)) * H), int((1 - np.percentile(vs, 5)) * H)
+    # master px per screen px along u, from the UV gradient over the visible label
+    du = np.abs(np.gradient(uv[..., 0], axis=1))[vis] * W
+    dv = np.abs(np.gradient(uv[..., 1], axis=0))[vis] * H
+    k = float(np.median(np.maximum(du, dv))) if len(du) else 1.0
+    size = int(min(1200, max(size, round(3 * TILE * k))))
+    x0, x1 = int(np.percentile(us, 10) * W), int(np.percentile(us, 90) * W)
+    y0, y1 = int((1 - np.percentile(vs, 90)) * H), int((1 - np.percentile(vs, 10)) * H)
     edges = np.abs(cv2.Laplacian(alpha.astype(np.float32), cv2.CV_32F))
     best, box = -1, None
-    for y in range(y0, max(y0 + 1, y1 - size), size // 3):
-        for x in range(x0, max(x0 + 1, x1 - size), size // 3):
+    for y in range(y0, max(y0 + 1, y1 - size), max(1, size // 4)):
+        for x in range(x0, max(x0 + 1, x1 - size), max(1, size // 4)):
             p = alpha[y:y + size, x:x + size]
             if p.shape != (size, size) or p.mean() < 0.05:
                 continue
-            e = edges[y:y + size, x:x + size].sum()
-            # the mirror must actually change something: skip symmetric patches
-            if np.abs(p - p[:, ::-1]).mean() < 0.05:
+            asym = float(np.abs(p - p[:, ::-1]).mean())
+            if asym < 0.15:                       # the mirror must actually change the letters
                 continue
+            e = edges[y:y + size, x:x + size].sum() * asym
             if e > best:
                 best, box = e, (x, y, size, size)
     if box is None:

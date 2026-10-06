@@ -273,6 +273,54 @@ KV01 = {'9x16': dict(res=(1080, 1920), glass=384, top=900, cx=None),
         '16x9': dict(res=(1920, 1080), glass=410, top=470, cx=1420)}
 
 
+def bandeira_negra(cam_loc, center=(0.0, 0.0), side=-1, dist=0.18, size=(0.20, 0.15), albedo=0.02, pool_r=0.10):
+    """A negative fill (photography, not a cheat on the check): a matte black flag standing on the floor just out of
+    frame on one side of the glass, turned to face the limb, so the glossy coat at that limb reflects black card
+    instead of the lit floor and tape. Camera-, diffuse- and shadow-invisible: it changes specular reflections only.
+    Placed along the mean mirror direction of camera rays hitting the limb band of the top label lines, kept outside
+    the spot pool (>= pool_r from the mark)."""
+    import bmesh
+    R = (H.R_OUT + H.COAT_T) * H.MM
+    C = Vector(cam_loc)
+    c0 = Vector((center[0], center[1], 0.0))
+    dirs, pts = [], []
+    # the limb on this side, as seen from the camera: points 6-22 deg in from the tangent, z 60-80 mm
+    to_cam = Vector((C.x - c0.x, C.y - c0.y, 0)).normalized()
+    a_cam = math.atan2(to_cam.y, to_cam.x)
+    for k in range(6, 23, 4):
+        a = a_cam + side * math.radians(90 - k)
+        for z in (0.060, 0.070, 0.080):
+            P = c0 + Vector((R * math.cos(a), R * math.sin(a), z))
+            n = Vector((math.cos(a), math.sin(a), 0.0))
+            d = (P - C).normalized()
+            r = d - 2 * d.dot(n) * n
+            dirs.append(r)
+            pts.append(P)
+    rm = sum(dirs, Vector()).normalized()
+    pm = sum(pts, Vector()) / len(pts)
+    q = pm + rm * dist
+    flat = Vector((q.x - c0.x, q.y - c0.y, 0))
+    if flat.length < pool_r + size[0] / 2:
+        q = c0 + flat.normalized() * (pool_r + size[0] / 2) + Vector((0, 0, q.z))
+    q.z = size[1] / 2                                   # standing on the floor
+    nrm = -Vector((rm.x, rm.y, 0)).normalized()          # its face toward the glass, vertical
+    bm = bmesh.new()
+    w, hh = size
+    vs = [bm.verts.new(v) for v in ((-w / 2, 0, -hh / 2), (w / 2, 0, -hh / 2), (w / 2, 0, hh / 2), (-w / 2, 0, hh / 2))]
+    bm.faces.new(vs)
+    m = S.material('bandeira_negra', **{'Base Color': (albedo, albedo, albedo, 1.0), 'Roughness': 0.95,
+                                        'Specular IOR Level': 0.1})
+    ob = S._bm_obj('bandeira_negra', bm, S._coll('PALCO'), m)
+    ob.location = q
+    ob.rotation_euler = (0, 0, math.atan2(nrm.y, nrm.x) - math.pi / 2)
+    ob.visible_camera = False
+    ob.visible_diffuse = False
+    ob.visible_shadow = False
+    ob.visible_volume_scatter = False
+    print('BANDEIRA at %.3f %.3f %.3f  facing %.2f %.2f  mean reflection %.2f %.2f %.2f' % (q.x, q.y, q.z, nrm.x, nrm.y, rm.x, rm.y, rm.z))
+    return ob
+
+
 def b_kv01(fmt, lit=True):
     k = KV01[fmt]
 
@@ -282,8 +330,12 @@ def b_kv01(fmt, lit=True):
         S.ride(root, h['lift'])
         if lit:
             S.flame_bounce(h, root)
-        S.camera_glass(res=k['res'], lens=50, cam_height=0.220, tilt_deg=-6, glass_px=k['glass'], top_y=k['top'],
-                       center_x=k['cx'], fstop=5.6)
+        cs = S.camera_glass(res=k['res'], lens=50, cam_height=0.220, tilt_deg=-6, glass_px=k['glass'], top_y=k['top'],
+                            center_x=k['cx'], fstop=5.6)
+        if fmt == '1x1':
+            # §D.7: at 1:1 the coat's grazing reflection of the lit floor and tape washed "HO" of HOLOFOTE APRESENTA
+            # at the left limb (worst tile 0,47–0,48 at 64 and 128 spp): a black flag camera-left (director, 6 Oct)
+            bandeira_negra(cs['location'], h['place'][:2], side=-1)
         S.clearance()
         return dict(labels=[lab(root, '02')])
     return f
