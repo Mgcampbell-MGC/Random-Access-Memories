@@ -22,3 +22,23 @@ supervisão.* (§D.8.6), e nenhum tipo entra na poça de luz (regra 3).
 
 Como refazer: `_build/shots/blender.sh _build/shots/campanha.py -- C01 C02 C04 C05_1x1 C05_9x16 C06 C08 C10` e depois
 `/home/user/venvs/web/bin/python _build/shots/pecas_finais.py C`. C03, C07 e C09 saem de `_build/brand/lancamento.py`.
+
+Notas de produção (6 out 2026):
+- Todas as peças com vela acesa (C02, C04, C06) foram refeitas com a chama final do diretor (holofote.py, terceira
+  passada).
+- C06: a especificação não dá guinada ao copo; a −12° do KV, as primeiras letras de HOLOFOTE APRESENTA ficavam no
+  limbo esquerdo, onde o albedo do revestimento cai (ladrilho 0,54 no passe de albedo). A −4° o painel fica de frente.
+  No blecaute a chama é a única luz e o rótulo fica no contraluz dela; um disco de luz quente minúsculo (`rim_spill`,
+  ligado só ao revestimento e à impressão por light linking, sem sombra, invisível à câmera e aos reflexos) devolve um
+  pouco da luz da chama à frente do copo — a `flame_spill` da biblioteca não alcança o rótulo (N·L < 0). A
+  verificação do rótulo é feita no passe de albedo e numa câmera idêntica em luz neutra (`C06_O-MENOR-HOLOFOTE_neutra`,
+  não é peça).
+- C08: o copo vazio vai a −6° (no KV é −12°): a −12° "rosas no palco" e "vela aromática" ficavam no limbo. O vidro é
+  transparente à sombra do spot só para o próprio vidro: a casca da impressão não projeta sombra (senão cada letra
+  desenha uma cópia deslocada de si mesma sob luz dura). Foco no rótulo, f/11.
+- C10: enquadramento mais próximo (85 mm a 0,90 m, copos a 92 mm) para que cada copo tenha ~26 % da altura e o tipo
+  pequeno de MÃE ♥ seja verificável. O copo amarelo reflete o rosa de DONA CIDA ao lado (efeito real do brilho do
+  revestimento); renderizado a 2× e reduzido 2 × 2, verificação no render 2× (relatório de registro
+  `C10_SALVA-COMO_limpo__<copo>.json`, 1× em `…_1x_informativo.json`).
+- C01, C04 (e L06): os copos ocupam menos de 20 % da altura do quadro — miniaturas, sem alegação de fidelidade (§D.7.5);
+  os relatórios existem e trazem `thumbnail_sem_alegacao: true`.

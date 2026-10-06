@@ -6,8 +6,9 @@
 Inputs (all regenerable):
   _tmp_animatic/vo/          temp VO, from  /home/user/venvs/kokoro/bin/python vo.py _tmp_animatic/vo
   _tmp_animatic/plates/      grey-mannequin previs plates, from  _build/shots/blender.sh animatic_previs.py
-  02_PRODUTO/renders/KV-45_aceso_16bit.png  the director's KV-45 plate (never re-rendered here)
-  _build/shots/aov/KV-45_aceso/0001.exr     its label AOVs (for the fidelity check)
+  02_PRODUTO/renders/KV-45_aceso_2x_16bit.png  the director's KV-45 plate at 200 % (never re-rendered here)
+  _build/shots/aov/KV-45_aceso_2x/0001.exr     its 200 % label AOVs (the check of record, at 2x)
+  _build/shots/aov/KV-45_aceso/0001.exr        the 1x AOVs (box of the 2x; the informative check on the MP4s)
 Outputs:
   05_ANUNCIO/animatics/HLF-AD-<cut>_<conceito>_animatic_som.mp4 / _mudo.mp4   (encoded ONLY by tools/codificar.py)
   05_ANUNCIO/animatics/HLF-AD-<cut>_<conceito>_animatic_folha.png             contact sheet, decoded from the MP4
@@ -15,7 +16,8 @@ Outputs:
   06_PRODUCAO/fidelidade/ANUNCIO_animatics_KV.json                           per-frame label fidelity, 9–15 s
 
 Timeline (platform §F): 0,0–2,0 hook · 2,0–6,0 body (the talk plate, tag, word-synced captions) · 6,0–9,0 gesture
-plate + gesture title · 9,0–15,0 KV-45 lit, push 100 -> 103 % about the frame centre, KV type (headline, lockup,
+plate + gesture title · 9,0–15,0 KV-45 lit, push 100 -> 103 % about the frame centre applied to the 200 % plate and
+area-averaged 2 x 2 to 1080 x 1920 (the label is verified on that 2x frame), KV type (headline, lockup,
 safety line) and the VO caption at y 300–330 — dropped where the VO line IS the headline or the lockup (1A–1C,
 3A–3C; director, 6 Oct 2026). Ad 2: black 4 frames, then the CLAC to lit (frame 220).
 The cut to the KV, the claps, the second bell and the snare are keyed to onsets MEASURED on the final mix.
@@ -44,8 +46,10 @@ LAY = os.path.join(TMP, 'camadas')
 SOM = os.path.join(TMP, 'som')
 OUT = os.path.join(KIT, '05_ANUNCIO', 'animatics')
 FIDDIR = os.path.join(KIT, '06_PRODUCAO', 'fidelidade')
-KV16 = os.path.join(KIT, '02_PRODUTO', 'renders', 'KV-45_aceso_16bit.png')
-KV_AOV = os.path.join(B, 'shots', 'aov', 'KV-45_aceso', '0001.exr')
+KV16 = os.path.join(KIT, '02_PRODUTO', 'renders', 'KV-45_aceso_16bit.png')          # 1x: informative only
+KV_AOV = os.path.join(B, 'shots', 'aov', 'KV-45_aceso', '0001.exr')                   # 1x AOV (box of the 2x)
+KV2X = os.path.join(KIT, '02_PRODUTO', 'renders', 'KV-45_aceso_2x_16bit.png')         # the 200 % render
+KV_AOV2X = os.path.join(B, 'shots', 'aov', 'KV-45_aceso_2x', '0001.exr')
 MASTER = os.path.join(KIT, '02_PRODUTO', 'rotulos', 'HLF-02_ROTULO_wrap.png')
 SFXROOT = os.path.join(KIT, '04_FILMES', 'som')
 
@@ -108,10 +112,36 @@ def kv_scale(f):
     return PUSH[0] + (PUSH[1] - PUSH[0]) * (f - KV0) / (N - 1 - KV0)
 
 
-def kv_affine(f):
+def kv_affine(f, k=1):
+    """The push on frame f in a k x pixel grid: scale about the frame centre (pixel-centre coordinates), so the
+    k x frame box-averaged k x k is exactly the 1x frame pushed about the 1x centre."""
     s = kv_scale(f)
-    cx, cy = PIVOT_KV
+    cx, cy = (W * k - 1) / 2.0, (H * k - 1) / 2.0
     return np.array([[s, 0, cx * (1 - s)], [0, s, cy * (1 - s)]], np.float64)
+
+
+_KV2 = []
+
+
+def kv_2x(f):
+    """THE KV frame: frame f's push applied to the 200 % plate (2160 x 3840, BGR float 0–1). The master gets this
+    area-averaged to 1080 x 1920 (reduce_2x); the label check of record runs on this, at 2x (director, 6 Oct 2026)."""
+    if not _KV2:
+        a = cv2.imread(KV2X, cv2.IMREAD_UNCHANGED)
+        if a is None or a.shape[:2] != (2 * H, 2 * W):
+            raise SystemExit('KV-45 2x plate missing or not 2160 x 3840: ' + KV2X)
+        _KV2.append(a.astype(np.float32) / (65535.0 if a.dtype == np.uint16 else 255.0))
+    return cv2.warpAffine(_KV2[0], kv_affine(f, 2), (2 * W, 2 * H), flags=cv2.INTER_LANCZOS4,
+                          borderMode=cv2.BORDER_REFLECT)
+
+
+def reduce_2x(a):
+    """2 x 2 area average, the reduction _build/shots/reduzir_2x.py applies to the plate."""
+    return cv2.resize(a, (a.shape[1] // 2, a.shape[0] // 2), interpolation=cv2.INTER_AREA)
+
+
+def to8(a):
+    return (np.clip(a, 0, 1) * 255.0 + 0.5).astype(np.uint8)
 
 
 def cuts_from_args(a):
@@ -372,16 +402,11 @@ def caption_key(cut, T, t):
 
 class Composer:
     """Every frame of one cut, composed from the plates, the overlay layers and the KV-45, keyed to the measured mix."""
-    _layers, _plates, _kv = {}, Plates(), None
+    _layers, _plates = {}, Plates()
 
     def __init__(self, cut, T, rep):
         self.cut, self.T, self.c = cut, T, cut[0]
         self.idx = json.load(open(os.path.join(LAY, 'index.json')))['index']
-        if Composer._kv is None:
-            kvp = cv2.imread(KV16, cv2.IMREAD_UNCHANGED)
-            if kvp is None or kvp.shape[:2] != (H, W):
-                raise SystemExit('KV-45 plate missing or not 1080 x 1920: ' + KV16)
-            Composer._kv = kvp.astype(np.float32) / (65535.0 if kvp.dtype == np.uint16 else 255.0)
         c = self.c
         # --- keys from the measured mix
         lit = 220 if c == '2' else KV0
@@ -433,8 +458,7 @@ class Composer:
         else:
             if self.kv_f != f:
                 self.kv_f = f
-                self.kv_img = cv2.warpAffine(Composer._kv, kv_affine(f), (W, H), flags=cv2.INTER_LANCZOS4,
-                                             borderMode=cv2.BORDER_REFLECT)
+                self.kv_img = reduce_2x(kv_2x(f))          # pushed at 2x, area-averaged to 1x
             img = self.kv_img.copy()
             over(img, self.L('kvtipo_' + cut))
             if self.kvleg_on and self.kvleg_on[0] <= t < self.kvleg_on[1]:
@@ -576,12 +600,13 @@ def _aov_raw(path):
     return uv, ink.astype(np.float32), mask.astype(np.float32)
 
 
-def aov_at(raw, f):
-    """The KV's label AOVs moved by the SAME affine as the picture on frame f. The EXR channels are pixel-filtered
-    (premultiplied by coverage), so they are warped as stored and load_aov's own division by the mask applies."""
+def aov_at(raw, f, k=1):
+    """The KV's label AOVs moved by the SAME affine as the picture on frame f (k x grid). The EXR channels are
+    pixel-filtered (premultiplied by coverage), so they are warped as stored and load_aov's division by the mask applies."""
     uv, ink, mask = raw
-    M = kv_affine(f)
-    wa = lambda a: cv2.warpAffine(a, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=0)
+    M = kv_affine(f, k)
+    wa = lambda a: cv2.warpAffine(a, M, (W * k, H * k), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT,
+                                  borderValue=0)
     return np.dstack([wa(uv[..., 0]), wa(uv[..., 1])]), wa(ink), wa(mask)
 
 
@@ -593,155 +618,166 @@ def write_exr(path, uv, ink, mask):
     OpenEXR.File({'compression': OpenEXR.ZIP_COMPRESSION, 'type': OpenEXR.scanlineimage}, ch).write(path)
 
 
-def fidelidade(cuts):
-    """Every KV frame (9–15 s) of every master, decoded from the delivered MP4, against the master label.
+def _refs(F, alpha, raw, f, k):
+    """fidelidade_uv's reference and planted-error reference for frame f, built once (they depend only on f)."""
+    uvr, inkr, maskr = aov_at(raw, f, k)
+    mk = np.clip(maskr, 1e-6, None)
+    uv = uvr / mk[..., None]
+    valid = maskr > 0.98
+    hh, ww = maskr.shape
+    ys, xs = np.where(maskr > 0)
+    y0, y1, x0, x1 = max(ys.min() - 8, 0), min(ys.max() + 9, hh), max(xs.min() - 8, 0), min(xs.max() + 9, ww)
+    E = np.zeros((hh, ww), np.float32)
+    E[y0:y1, x0:x1] = F.sample_master(alpha, uv[y0:y1, x0:x1])
+    alt, box = F.plant_error(alpha, uv, maskr)
+    E2 = np.zeros((hh, ww), np.float32)
+    E2[y0:y1, x0:x1] = F.sample_master(alt, uv[y0:y1, x0:x1])
+    agree = float(np.corrcoef(E[valid], (inkr / mk)[valid])[0, 1])
+    bare = valid & (E < 0.02)
+    bare = cv2.erode(bare.astype(np.uint8), np.ones((5, 5), np.uint8)) > 0
+    return dict(E=E, E2=E2, ref=((1.0 - E) * 255.0).astype(np.float32), ref2=((1.0 - E2) * 255.0).astype(np.float32),
+                valid=valid, bare=bare, agree=agree, box=box)
 
-    Method: fidelidade_uv.py's own functions and bars. For frame f the AOV is transformed by the frame's push
-    (aov_at); the reference and the planted-error reference depend only on f, so they are built once per frame and
-    scored against all eight masters (check() would rebuild them eight times). The stock CLI is run unmodified on
-    two frames as a cross-check of this path (scale 1,000 with the untouched EXR; scale 1,030 with a written EXR)."""
-    import fidelidade_uv as F
-    m = cv2.imread(MASTER, cv2.IMREAD_UNCHANGED)
-    alpha = m[..., 3].astype(np.float32) / 255.0
-    raw = _aov_raw(KV_AOV)
-    vids = {}
-    for cut in cuts:
-        name = 'HLF-AD-%s_%s_animatic' % (cut, SLUG[cut[0]])
-        vids[cut] = os.path.join(OUT, name + '_som.mp4')
-    # stream every master's KV frames (and its silent twin, which must carry the identical picture) in lockstep
-    st = {cut: Stream(vids[cut], KV0) for cut in cuts}
-    mu = {cut: Stream(vids[cut].replace('_som.mp4', '_mudo.mp4'), KV0) for cut in cuts}
-    same = {cut: True for cut in cuts}
-    keep = {cut: {} for cut in cuts}           # the two CLI cross-check frames
+
+def _row(F, R_, bgr, f):
+    """check()'s verdict on one frame (BGR uint8) against prebuilt references: the same functions, bars and order."""
     coat = F.hex_lab('#FFE81A')
     h_ref = float(F.hue_deg(coat[None, :])[0])
     s_ref = np.hypot(coat[1] - 128, coat[2] - 128) / max(coat[0], 1)
+    gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY).astype(np.float32)
+    sk = []
+    sl = F.score(gray, R_['ref'], R_['valid'], R_['E'], sk)
+    s = np.array([v for _, _, v in sl])
+    wy, wx, _ = min(sl, key=lambda q: q[2])
+    we = R_['E'][wy:wy + F.TILE, wx:wx + F.TILE]
+    s2 = np.array([v for _, _, v in F.score(gray, R_['ref2'], R_['valid'], R_['E2'])])
+    lab = cv2.cvtColor(np.ascontiguousarray(bgr), cv2.COLOR_BGR2LAB).astype(np.float32)
+    bb = R_['bare'] & (lab[..., 0] > 40) & (lab[..., 0] < 250)
+    hd = (F.hue_deg(lab[bb]) - h_ref + 180) % 360 - 180
+    px = lab[bb]
+    sat = float(np.median(np.hypot(px[:, 1] - 128, px[:, 2] - 128) / np.maximum(px[:, 0], 1)) / s_ref)
+    r = dict(quadro=f, escala=round(kv_scale(f), 5), tiles=int(len(s)), cantos_pulados=len(sk),
+             cantos_worst=round(min(v for _, _, v in sk), 3) if sk else None,
+             worst=round(float(s.min()), 3), worst_yx=[int(wy), int(wx)], worst_tinta=round(float((we > 0.5).mean()), 3),
+             p5=round(float(np.percentile(s, 5)), 3), controle_worst=round(float(s2.min()), 3),
+             controle_pego=bool(s2.min() < F.MIN_TILE_PASS), uv_agreement=round(R_['agree'], 4),
+             hue_shift_deg=round(float(np.median(hd)), 2), sat_ratio=round(sat, 3))
+    r['passa'] = bool(r['worst'] >= F.MIN_TILE_PASS and r['p5'] >= F.P5_FILM and r['controle_pego'] and
+                      abs(r['hue_shift_deg']) <= F.MAX_HUE_SHIFT and r['sat_ratio'] >= F.MIN_SAT_RATIO)
+    return r
+
+
+def _cli(F, png, exr):
+    r = subprocess.run([PY, os.path.join(B, 'tools', 'fidelidade_uv.py'), '--master', MASTER, '--aov', exr, '--asset', png,
+                        '--coat', '#FFE81A', '--film'], capture_output=True, text=True)
+    return json.loads(r.stdout)[0]
+
+
+def _summary(F, rr):
+    return dict(quadros_com_rotulo=len(rr), quadros_que_passam=sum(r['passa'] for r in rr),
+                pior_tile_min=min(r['worst'] for r in rr), p5_min=min(r['p5'] for r in rr),
+                controle_pego_em_todos=all(r['controle_pego'] for r in rr),
+                controle_worst_max=max(r['controle_worst'] for r in rr),
+                hue_shift_max_deg=max(abs(r['hue_shift_deg']) for r in rr), sat_ratio_min=min(r['sat_ratio'] for r in rr),
+                passa=all(r['passa'] for r in rr))
+
+
+def fidelidade(cuts):
+    """The label in the 9–15 s KV block of every master, against the master label (fidelidade_uv.py's own functions
+    and bars; film bars: worst lettered tile >= 0,80, p5 >= 0,93, planted error caught, colour).
+
+    OF RECORD, at 2x (director, 6 Oct 2026): for every KV frame f, kv_2x(f) — the push applied to the 200 % plate,
+    the very array the master is area-averaged from — against the 200 % AOV moved by the same 2x affine. That frame is
+    the same in all eight masters (the type and captions are composited at 1x after the reduction, above the label),
+    so each frame index is checked once and counted for every master that shows it (Ad 2 from frame 220).
+    The stock CLI is run unmodified on two 2x frames as a cross-check (f216 with the untouched 2x EXR; f359 with a
+    written 2x EXR).
+    INFORMATIVE, at 1x: every KV frame DECODED from each delivered MP4, against the 1x AOV moved by the 1x push (the
+    reading the director keeps as *_1x_informativo)."""
+    import fidelidade_uv as F
+    m = cv2.imread(MASTER, cv2.IMREAD_UNCHANGED)
+    alpha = m[..., 3].astype(np.float32) / 255.0
+    tmpd = os.path.join(TMP, 'fid_cli')
+    os.makedirs(tmpd, exist_ok=True)
+    # ---------------------------------------------------------------- A. of record: 2x
+    raw2 = _aov_raw(KV_AOV2X)
+    rows2, cli2 = [], {}
+    for f in range(KV0, N):
+        R_ = _refs(F, alpha, raw2, f, 2)
+        bgr = to8(kv_2x(f))
+        rows2.append(_row(F, R_, bgr, f))
+        if f in (KV0, N - 1):
+            png = os.path.join(tmpd, f'2x_f{f}.png')
+            cv2.imwrite(png, bgr)
+            if abs(kv_scale(f) - 1.0) < 1e-9:
+                exr = KV_AOV2X
+            else:
+                exr = os.path.join(tmpd, f'aov2x_f{f}.exr')
+                write_exr(exr, *aov_at(raw2, f, 2))
+            c = _cli(F, png, exr)
+            c['este_caminho'] = {k: rows2[-1][k] for k in ('worst', 'p5', 'controle_worst', 'hue_shift_deg', 'sat_ratio')}
+            cli2[f'2x_f{f}'] = c
+        if f % 24 == 0:
+            print('fidelidade 2x quadro', f, {k: rows2[-1][k] for k in ('worst', 'p5', 'controle_worst', 'passa')}, flush=True)
+    del raw2
+    por_mestre = {}
+    for cut in cuts:
+        lit = 220 if cut[0] == '2' else KV0
+        por_mestre[cut] = _summary(F, [r for r in rows2 if r['quadro'] >= lit])
+    # ---------------------------------------------------------------- B. informative: 1x, decoded from the MP4s
+    raw = _aov_raw(KV_AOV)
+    vids = {cut: os.path.join(OUT, 'HLF-AD-%s_%s_animatic_som.mp4' % (cut, SLUG[cut[0]])) for cut in cuts}
+    st = {cut: Stream(vids[cut], KV0) for cut in cuts}
+    mu = {cut: Stream(vids[cut].replace('_som.mp4', '_mudo.mp4'), KV0) for cut in cuts}
+    same = {cut: True for cut in cuts}
     rows = {cut: [] for cut in cuts}
     for f in range(KV0, N):
-        uvr, inkr, maskr = aov_at(raw, f)
-        mk = np.clip(maskr, 1e-6, None)
-        uv = uvr / mk[..., None]
-        mask = maskr
-        valid = mask > 0.98
-        ys, xs = np.where(mask > 0)
-        y0, y1, x0, x1 = max(ys.min() - 8, 0), min(ys.max() + 9, H), max(xs.min() - 8, 0), min(xs.max() + 9, W)
-        E = np.zeros((H, W), np.float32)
-        E[y0:y1, x0:x1] = F.sample_master(alpha, uv[y0:y1, x0:x1])
-        alt, box = F.plant_error(alpha, uv, mask)
-        E2 = np.zeros((H, W), np.float32)
-        E2[y0:y1, x0:x1] = F.sample_master(alt, uv[y0:y1, x0:x1])
-        agree = float(np.corrcoef(E[valid], (inkr / mk)[valid])[0, 1])
-        ref = ((1.0 - E) * 255.0).astype(np.float32)
-        ref2 = ((1.0 - E2) * 255.0).astype(np.float32)
-        bare = valid & (E < 0.02)
-        bare = cv2.erode(bare.astype(np.uint8), np.ones((5, 5), np.uint8)) > 0
+        R_ = _refs(F, alpha, raw, f, 1)
         for cut in cuts:
             rgb = st[cut].next()
             twin = mu[cut].next()
             if twin is None or not np.array_equal(rgb, twin):
                 same[cut] = False
-            if f in (KV0 + 4, N - 1) or (f == KV0 and cut[0] != '2'):
-                keep[cut][f] = rgb.copy()
-            lit = 220 if cut[0] == '2' else KV0
-            if f < lit:
+            if f < (220 if cut[0] == '2' else KV0):
                 rows[cut].append(dict(quadro=f, preto=True, media_rgb=round(float(rgb.mean()), 2)))
                 continue
-            bgr = rgb[..., ::-1]
-            gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY).astype(np.float32)
-            sk = []
-            sl = F.score(gray, ref, valid, E, sk)
-            s = np.array([v for _, _, v in sl])
-            wy, wx, _ = min(sl, key=lambda q: q[2])
-            we = E[wy:wy + F.TILE, wx:wx + F.TILE]
-            s2 = np.array([v for _, _, v in F.score(gray, ref2, valid, E2)])
-            lab = cv2.cvtColor(np.ascontiguousarray(bgr), cv2.COLOR_BGR2LAB).astype(np.float32)
-            bb = bare & (lab[..., 0] > 40) & (lab[..., 0] < 250)
-            hd = (F.hue_deg(lab[bb]) - h_ref + 180) % 360 - 180
-            px = lab[bb]
-            sat = float(np.median(np.hypot(px[:, 1] - 128, px[:, 2] - 128) / np.maximum(px[:, 0], 1)) / s_ref)
-            rows[cut].append(dict(quadro=f, escala=round(kv_scale(f), 5), tiles=int(len(s)), cantos_pulados=len(sk),
-                                  cantos_worst=round(min(v for _, _, v in sk), 3) if sk else None,
-                                  worst=round(float(s.min()), 3), worst_yx=[int(wy), int(wx)],
-                                  worst_tinta=round(float((we > 0.5).mean()), 3),
-                                  p5=round(float(np.percentile(s, 5)), 3), controle_worst=round(float(s2.min()), 3),
-                                  controle_pego=bool(s2.min() < F.MIN_TILE_PASS), uv_agreement=round(agree, 4),
-                                  hue_shift_deg=round(float(np.median(hd)), 2), sat_ratio=round(sat, 3)))
+            rows[cut].append(_row(F, R_, np.ascontiguousarray(rgb[..., ::-1]), f))
         if f % 24 == 0:
-            print('fidelidade quadro', f, {c: rows[c][-1].get('worst') for c in cuts}, flush=True)
+            print('fidelidade 1x (MP4) quadro', f, {c: rows[c][-1].get('worst') for c in cuts}, flush=True)
     for cut in cuts:
         st[cut].close()
         mu[cut].close()
-    summary = {}
-    for cut in cuts:
-        rr = [x for x in rows[cut] if not x.get('preto')]
-        w = min(x['worst'] for x in rr)
-        p5 = min(x['p5'] for x in rr)
-        ctl = all(x['controle_pego'] for x in rr)
-        hue = max(abs(x['hue_shift_deg']) for x in rr)
-        sat = min(x['sat_ratio'] for x in rr)
-        ok = (w >= F.MIN_TILE_PASS and p5 >= F.P5_FILM and ctl and hue <= F.MAX_HUE_SHIFT and sat >= F.MIN_SAT_RATIO)
-        summary[cut] = dict(quadros_com_rotulo=len(rr), quadros_pretos=len(rows[cut]) - len(rr), pior_tile_min=w,
-                            p5_min=p5, controle_pego_em_todos=ctl, controle_worst_max=max(x['controle_worst'] for x in rr),
-                            hue_shift_max_deg=hue, sat_ratio_min=sat, mudo_identico_ao_som=same[cut], passa=bool(ok))
-    # cross-check with the stock CLI on two frames of the first cut
-    cut = cuts[0]
-    tmpd = os.path.join(TMP, 'fid_cli')
-    os.makedirs(tmpd, exist_ok=True)
-    cli = {}
-    for f in (KV0 + (4 if cut[0] == '2' else 0), N - 1):
-        png = os.path.join(tmpd, f'{cut}_f{f}.png')
-        cv2.imwrite(png, keep[cut][f][..., ::-1])
-        if abs(kv_scale(f) - 1.0) < 1e-9:
-            exr = KV_AOV
-        else:
-            exr = os.path.join(tmpd, f'aov_f{f}.exr')
-            write_exr(exr, *aov_at(raw, f))
-        r = subprocess.run([PY, os.path.join(B, 'tools', 'fidelidade_uv.py'), '--master', MASTER, '--aov', exr, '--asset', png,
-                            '--coat', '#FFE81A', '--film'], capture_output=True, text=True)
-        cli[f'{cut}_f{f}'] = json.loads(r.stdout)[0]
-        mine = rows[cut][f - KV0]
-        cli[f'{cut}_f{f}']['este_caminho'] = {k: mine[k] for k in ('worst', 'p5', 'controle_worst', 'hue_shift_deg', 'sat_ratio')}
-    # diagnosis: the same stock score() on the director's own plate (no push, no encode) with only the 16 px tile
-    # grid shifted; if the plate itself fails at some grid phases, a push (which sweeps the phase) will find them
-    img = cv2.imread(os.path.join(KIT, '02_PRODUTO', 'renders', 'KV-45_aceso.png'), cv2.IMREAD_COLOR)
-    uv0, _, mask0 = F.load_aov(KV_AOV)
-    E0 = F.sample_master(alpha, uv0)
-    g0 = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY).astype(np.float32)
-    r0 = ((1.0 - E0) * 255.0).astype(np.float32)
-    v0 = mask0 > 0.98
-    fases = []
-    for dy in range(0, 16, 2):
-        for dx in range(0, 16, 2):
-            sl = F.score(g0[dy:, dx:], r0[dy:, dx:], v0[dy:, dx:], E0[dy:, dx:])
-            y, x, v = min(sl, key=lambda q: q[2])
-            fases.append(dict(fase=[dy, dx], worst=round(v, 3), yx=[int(y + dy), int(x + dx)]))
-    fv = np.array([q['worst'] for q in fases])
-    falhas = {cut: [dict(quadro=r['quadro'], worst=r['worst'], yx=r['worst_yx'], tinta=r['worst_tinta'])
-                    for r in rows[cut] if not r.get('preto') and r['worst'] < F.MIN_TILE_PASS] for cut in cuts}
-    diag = dict(
-        quadros_abaixo_de_0_80=falhas,
-        placa_do_diretor_por_fase_da_grade=dict(
-            nota=('score() de fidelidade_uv.py na placa KV-45_aceso.png sem empurrão e sem codificação, só com a grade de '
-                  'blocos de 16 px deslocada (dy, dx de 0 a 14 px, passo 2). A placa passa na fase (0, 0); se falha em '
-                  'outras fases, o empurrão (que varre a fase) encontra essas fases.'),
-            fases=len(fv), abaixo_de_0_80=int((fv < F.MIN_TILE_PASS).sum()), pior=float(fv.min()),
-            mediana=float(np.median(fv)), piores=sorted(fases, key=lambda q: q['worst'])[:6]))
-    rep = dict(ferramenta='_build/tools/fidelidade_uv.py (funções e barras dela), via _build/anuncio/animatic.py fidelidade',
-               metodo=('Cada quadro 9–15 s de cada mestre, DECODIFICADO do MP4 entregue (BT.709 -> RGB). O AOV do KV-45 '
-                       '(_build/shots/aov/KV-45_aceso/0001.exr) é transformado pela MESMA afim do empurrão daquele quadro '
-                       '(escala 1,000 -> 1,030 em torno do centro do quadro; canais pré-multiplicados pela cobertura, '
-                       'interpolação linear) e a referência é reconstruída do mestre nessa geometria. Erro plantado em '
-                       'todo quadro. Barras de filme: pior bloco >= 0,80, p5 >= 0,93, controle pego.'),
-               master=os.path.relpath(MASTER, KIT), aov=os.path.relpath(KV_AOV, KIT), kv=os.path.relpath(KV16, KIT),
-               barras=dict(pior_tile=F.MIN_TILE_PASS, p5_filme=F.P5_FILM, hue_max_deg=F.MAX_HUE_SHIFT, sat_min=F.MIN_SAT_RATIO),
-               resumo=summary, diagnostico=diag, conferencia_cli=cli, quadros=rows)
+    resumo1 = {cut: dict(_summary(F, [r for r in rows[cut] if not r.get('preto')]), mudo_identico_ao_som=same[cut],
+                         quadros_pretos=sum(1 for r in rows[cut] if r.get('preto'))) for cut in cuts}
+    rep = dict(
+        ferramenta='_build/tools/fidelidade_uv.py (funções e barras dela), via _build/anuncio/animatic.py fidelidade',
+        master=os.path.relpath(MASTER, KIT),
+        barras=dict(pior_tile=F.MIN_TILE_PASS, p5_filme=F.P5_FILM, hue_max_deg=F.MAX_HUE_SHIFT, sat_min=F.MIN_SAT_RATIO),
+        registro_2x=dict(
+            metodo=('VERIFICAÇÃO DE REGISTRO A 2x (decisão do diretor, 6 out 2026). Para cada quadro 9–15 s, o empurrão '
+                    'daquele quadro (escala 1,000 -> 1,030 em torno do centro, interpolação Lanczos) é aplicado à placa de '
+                    '200 % (02_PRODUTO/renders/KV-45_aceso_2x_16bit.png, 2160 x 3840) e o resultado, em 8 bits, é '
+                    'conferido contra o AOV de 200 % (_build/shots/aov/KV-45_aceso_2x/0001.exr) movido pela MESMA afim '
+                    '(canais pré-multiplicados, interpolação linear). É exatamente o quadro que, depois, é reduzido 2 x 2 '
+                    'por média de área para 1080 x 1920 e codificado. O quadro de 2x é o mesmo nos oito mestres (tipo e '
+                    'legenda entram a 1x, depois da redução, acima do rótulo): cada quadro é conferido uma vez e contado '
+                    'em todo mestre que o mostra (anúncio 2 a partir do quadro 220, depois de 4 quadros de preto). Erro '
+                    'plantado em todo quadro.'),
+            placa=os.path.relpath(KV2X, KIT), aov=os.path.relpath(KV_AOV2X, KIT),
+            por_mestre=por_mestre, conferencia_cli=cli2, quadros=rows2),
+        informativo_1x=dict(
+            metodo=('INFORMATIVO. Cada quadro 9–15 s DECODIFICADO de cada MP4 entregue (BT.709 -> RGB), contra o AOV de 1x '
+                    '(média 2 x 2 do de 200 %, _build/shots/aov/KV-45_aceso/0001.exr) movido pelo empurrão de 1x. Mede o '
+                    'que a codificação e a grade de 16 px a 1x fazem com o fio sob DOMINGO · 09.05; não é a verificação '
+                    'de registro.'),
+            aov=os.path.relpath(KV_AOV, KIT), resumo=resumo1, quadros=rows))
     os.makedirs(FIDDIR, exist_ok=True)
     p = os.path.join(FIDDIR, 'ANUNCIO_animatics_KV.json')
     json.dump(rep, open(p, 'w'), ensure_ascii=False, indent=1)
-    print(json.dumps(summary, indent=1, ensure_ascii=False))
-    print(json.dumps(diag, indent=1, ensure_ascii=False)[:3000])
-    print(json.dumps({k: {kk: v[kk] for kk in ('worst_tile', 'p5_tile', 'pass')} | {'este_caminho': v['este_caminho']}
-                      for k, v in cli.items()}, indent=1, ensure_ascii=False))
+    print('REGISTRO 2x', json.dumps(por_mestre, indent=1, ensure_ascii=False))
+    print('CLI 2x', json.dumps({k: {kk: v[kk] for kk in ('worst_tile', 'p5_tile', 'pass')} | {'este_caminho': v['este_caminho']}
+                                for k, v in cli2.items()}, indent=1, ensure_ascii=False))
+    print('INFORMATIVO 1x', json.dumps(resumo1, indent=1, ensure_ascii=False))
     return rep
 
 

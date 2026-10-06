@@ -31,18 +31,20 @@ def main(names):
         base = os.path.basename(jp)[:-5]
         if not base.startswith(MINE) or 'portao' in base:
             continue
-        shot = base.split('__')[0]
+        shot = base.split('__')[0].replace('_1x_informativo', '')
         if names and shot not in names:
             continue
         old = json.load(open(jp))[0]
-        aov = os.path.join(HERE, 'aov', shot, '0001.exr')
+        # a 2x route's report of record (it carries 'verificacao') was taken on the 2x AOVs in aov/<shot>_2x
+        adir = shot + ('_2x' if old.get('verificacao') else '')
+        aov = os.path.join(HERE, 'aov', adir, '0001.exr')
         if not os.path.exists(aov):
             rows.append((base, 'sem AOV'))
             continue
         f = faixa_de(old['master'])
         cmd = [WEB, os.path.join(HERE, 'fid_multi.py'), '--master', old['master'], '--aov', aov, '--asset', old['asset'],
                '--coat', COAT[f], '--ink', INK[f], '--json', jp,
-               '--debug', os.path.join(HERE, 'aov', shot, 'debug%s.png' % (base[len(shot):]))]
+               '--debug', os.path.join(HERE, 'aov', adir, 'debug%s.png' % (base[len(shot):]))]
         if old.get('label_id') is not None:
             cmd += ['--id', str(old['label_id'])]
         r = subprocess.run(cmd, capture_output=True, text=True)
@@ -53,6 +55,9 @@ def main(names):
             continue
         new['glass_frac_altura'] = old.get('glass_frac_altura')
         new['thumbnail_sem_alegacao'] = old.get('thumbnail_sem_alegacao')
+        for k in ('verificacao', 'nota'):
+            if old.get(k):
+                new[k] = old[k]
         json.dump([new], open(jp, 'w'), indent=2, ensure_ascii=False)
         c = new.get('control') or {}
         rows.append((base, new.get('worst_tile'), new.get('p5_tile'), c.get('worst_tile'), c.get('caught'),

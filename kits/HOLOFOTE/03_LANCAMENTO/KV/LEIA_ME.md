@@ -23,3 +23,10 @@ Notas:
   a camada do KV não a tinha), no chão escuro entre a poça e a assinatura, fora da poça.
 - Portão de legibilidade da chama (§D.6) refeito no KV-01 9:16 final: ver `06_PRODUCAO/fidelidade/KV-01_9x16_portao-chama.json`.
 - Fidelidade do rótulo de cada render: `06_PRODUCAO/fidelidade/KV-01_<formato>_limpo.json` e `KV-45_*.json`.
+- KV-45: os seis arquivos foram montados sobre os planos finais do diretor (`KV-45_apagado` das 10:53 e `KV-45_aceso`
+  das 11:50, já com a chama final). Os dois planos são renderizados a 2× e reduzidos 2 × 2; o relatório de
+  verificação é o do render 2× (`KV-45_aceso.json`: pior ladrilho 0,934, p5 0,962, matiz −1,29°, saturação 0,999,
+  controle plantado pego) e o 1× fica como `KV-45_*_1x_informativo.json`. As versões apagadas também levam a linha de
+  segurança, como as acesas (a mesma camada de tipo nas seis).
+- Chama: todos os KV-01 acesos foram refeitos com a chama final do diretor (holofote.py, terceira passada, 6 out:
+  corpo luminoso, azul só na borda da base, pavio carbonizado mais escuro).

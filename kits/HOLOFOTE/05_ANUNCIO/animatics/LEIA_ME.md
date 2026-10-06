@@ -26,8 +26,10 @@ Fidelidade do rótulo no bloco 9–15 s: `06_PRODUCAO/fidelidade/ANUNCIO_animati
   Anúncio 1: quatro palmas, mãos juntas exatamente nos quadros dos transientes medidos (151, 167, 184, 200).
   Anúncio 2: o telefone para cima, balançando (5 posições), no segundo sinal (6,0 s).
   Anúncio 3: coração com os dedos → dedo apontando, que chega no quadro da caixa (180 = 7,5 s).
-- **9,0–15,0 s:** KV-45 aceso (render do diretor, nunca refeito aqui), empurrão 100 → 103 % em torno do centro do
-  quadro, tipo do KV por código (título, *holofote nela.*, linha de segurança). A legenda da VO (y 300–330) só existe
+- **9,0–15,0 s:** KV-45 aceso (render do diretor a 200 %, nunca refeito aqui). O empurrão 100 → 103 % em torno do
+  centro do quadro é aplicado à placa de 2160 × 3840 e o quadro é reduzido 2 × 2 por média de área para 1080 × 1920
+  (a mesma redução de `_build/shots/reduzir_2x.py`). Depois entra o tipo do KV por código (título, *holofote nela.*,
+  linha de segurança). A legenda da VO (y 300–330) só existe
   no anúncio 2 (*terceiro sinal.*): em 1A–1C (*Sua vez.*) e 3A–3C (*holofote nela.*) a fala já está escrita na tela
   e a legenda sai (decisão do diretor, 6 out 2026). Anúncio 2: preto nos quadros 216–219 (terceiro sinal em 9,0 s) e
   o CLAC acende no quadro 220.
@@ -42,21 +44,25 @@ Fidelidade do rótulo no bloco 9–15 s: `06_PRODUCAO/fidelidade/ANUNCIO_animati
 - **Gesto, anúncio 3:** câmera girada ~18° para o dedo ler; coração e dedo acima de y 750, o título cruza a
   barriga. Entre o queixo e o coração há só ~10 cm: não cabe um título de 100 px ali.
 
-## Resultados medidos (6 out 2026, KV-45 das 09:05)
+## Resultados medidos (6 out 2026, KV-45 final a 200 %)
 
 - **Arquivos:** 8 × com som + 8 × mudo, 15,000 s, 360 quadros, 1080 × 1920, 24 fps, H.264 marcado BT.709 (codificar.py).
-  O mudo é o mesmo quadro a quadro (conferido: os 144 quadros do KV decodificados são idênticos ao com som).
+  O mudo é o mesmo quadro a quadro (conferido: os quadros do KV decodificados são idênticos ao com som).
 - **Som entregue (AAC decodificado):** −14,10 a −14,16 LUFS integrado; pico real −1,20 a −1,36 dBTP.
 - **Sincronia:** palmas nos quadros 151/167/184/200, segundo sinal 144, caixa 180, CLAC 216 (anúncio 2: sino 216,
   CLAC 220), todos medidos na mixagem final (desvio 0,00 quadro).
-- **Rótulo no bloco 9–15 s: REPROVADO pela barra de filme** (`06_PRODUCAO/fidelidade/ANUNCIO_animatics_KV.json`).
-  Em todo quadro: 5º percentil ≥ 0,96, erro plantado pego, matiz −1,42°, saturação 0,998. Mas o pior bloco cai
-  abaixo de 0,80 em 63 dos 144 quadros (mínimo 0,60). O bloco que falha é sempre o fio sob *DOMINGO · 09.05* onde
-  ele entra na borda esquerda do copo (x ≈ 240, y ≈ 1330–1390), com só 2–6 % de tinta, que o render quase não
-  resolve. Não é o animatic que estraga: o quadro 216 é a placa intacta (só codificada) e já dá 0,799; e a própria
-  placa do diretor, sem empurrão nem codificação, cai abaixo de 0,80 em 19 de 64 posições da grade de blocos
-  (mínimo 0,41). A placa passa na posição (0, 0) por sorte de grade; qualquer empurrão ou codificação a encontra.
-  **A decisão é do diretor** (regra de blocos de fio no verificador, ou a placa); o animatic se refaz com um comando.
+- **Rótulo no bloco 9–15 s, verificação de registro a 2x: APROVADO em todos os quadros de todos os mestres**
+  (`06_PRODUCAO/fidelidade/ANUNCIO_animatics_KV.json`, `registro_2x`). O empurrão de cada quadro é aplicado à placa de
+  200 % e esse quadro de 2160 × 3840 é conferido contra o AOV de 200 % movido pela mesma afim, com as funções e as
+  barras de filme de `fidelidade_uv.py`; é o mesmo quadro que depois é reduzido 2 × 2 e codificado. 1A, 1B, 1C, 3A,
+  3B, 3C: 144 de 144 quadros; 2A, 2B: 140 de 140 (os 4 primeiros são preto). Pior bloco 0,885 (quadro 287), 5º
+  percentil ≥ 0,96, erro plantado pego em todo quadro (pior controle −0,36), matiz 1,29°, saturação 0,999. O
+  verificador original, rodado sem alteração nos quadros 216 e 359 a 2x, dá os mesmos números (0,934 / 0,962 e 0,934
+  / 0,961).
+- **Leitura a 1x, informativa** (`informativo_1x`): nos quadros decodificados de cada MP4, 79 de 144 passam (anúncio
+  2: 78 de 140), pior bloco 0,67. Falha sempre o mesmo fio sob *DOMINGO · 09.05* na borda esquerda do copo
+  (x ≈ 240, y ≈ 1360–1390), que a grade de 16 px a 1x só pega por sorte de posição — o motivo de o diretor ter
+  passado a verificação de registro para 2x.
 
 ## Como refazer
 
@@ -69,9 +75,10 @@ for s in SIT_H01 SIT_H02 USHER_H01 CLAP_H01 CLAP_H02 PHONE_H01 HEART_H01 HEART_H
 $PY animatic.py camadas som quadros folhas fidelidade audio               # camadas, mix, MP4, folhas, fidelidade, som entregue
 ```
 
-**Quando o KV-45 for refeito** (placa e AOV novos, tipo do KV talvez em outra altura): rode só
-`$PY animatic.py camadas quadros folhas fidelidade audio`. O bloco 9–15 s é recomposto da placa, do `kv.html` e do AOV;
-a legenda da VO acompanha a linha de base do título.
+**Quando o KV-45 for refeito** (placa e AOV de 200 % novos, tipo do KV talvez em outra altura): rode só
+`$PY animatic.py camadas quadros folhas fidelidade audio`. O bloco 9–15 s é recomposto de
+`02_PRODUTO/renders/KV-45_aceso_2x_16bit.png`, do `kv.html` e de `_build/shots/aov/KV-45_aceso_2x/`; a legenda da VO
+acompanha a linha de base do título.
 
 `animatic_previs.py -- --medir` imprime onde cabeça, mãos e telefone caem em pixels, sem renderizar.
 Os intermediários ficam em `_build/anuncio/_tmp_animatic/` (fora do git).

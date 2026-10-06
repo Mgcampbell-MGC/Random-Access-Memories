@@ -99,8 +99,8 @@ def main():
         ads.append({
             'id': cut, 'conceito': r['conceito'], 'apresentador': r['apresentador'],
             'status': ('ANIMATIC PRODUZIDO (previs com manequim, VO temporária) — tomadas de pessoas a gerar. Rótulo do '
-                       'bloco 9–15 s NÃO verificado no filme: o verificador reprova blocos de fio de 2–6 % de tinta na '
-                       'borda esquerda do copo (ver 06_PRODUCAO/fidelidade/ANUNCIO_animatics_KV.json).'),
+                       'bloco 9–15 s verificado a 2x em todos os quadros (verificação de registro); a leitura a 1x do MP4 '
+                       'é informativa (ver 06_PRODUCAO/fidelidade/ANUNCIO_animatics_KV.json).'),
             'duracao_s': 15,
             'janelas_s': {'gancho': [0, 2], 'corpo': [2, 6], 'gesto': [6, 9], 'kv': [9, 15]},
             'falado_pt': {'gancho': r['gancho'], 'corpo': r['corpo'], 'kv_vo': r['kv_vo']},

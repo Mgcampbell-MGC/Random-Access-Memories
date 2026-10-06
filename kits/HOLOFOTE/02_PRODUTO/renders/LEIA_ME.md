@@ -8,7 +8,7 @@ Cada render com rótulo visível tem o seu relatório de fidelidade em `06_PRODU
 
 | Arquivo | O que é |
 |---|---|
-| `KV-45_aceso.png` · `KV-45_apagado.png` | KV-45 do diretor (quadro de produto dos 9–15 s), vela acesa e apagada. |
+| `KV-45_aceso.png` · `KV-45_apagado.png` | KV-45 do diretor (quadro de produto dos 9–15 s), vela acesa (chama final) e apagada; planos finais, rota 2×. |
 | `KV-01_9x16_limpo.png` | KV-01 9:16 sem tipo: AO VIVO acesa no X, guinada de 12° à esquerda, O PALCO. |
 | `KV-01_4x5_limpo.png` · `KV-01_1x1_limpo.png` · `KV-01_16x9_limpo.png` | O mesmo KV, cada formato com a sua câmera (números da plataforma §E.1). |
 | `KV-01_9x16_apagado_portao.png` | Referência apagada (50 %, 32 amostras) só para o portão da chama (§D.6); não é peça. |
@@ -21,6 +21,7 @@ Cada render com rótulo visível tem o seu relatório de fidelidade em `06_PRODU
 | `C08_NOVA-TEMPORADA_limpo.png` | C08: o copo limpo e vazio no X, a cápsula de refil ao lado com a tampa meio aberta. |
 | `C10_SALVA-COMO_limpo.png` | C10: reboco no flash, os três copos personalizados apagados: MÃE ♥, DONA CIDA, MAINHA. |
 | `L00_FRENTE_alpha.png` … `L07_NOVA-TEMPORADA_alpha.png` | As fotos de loja, transparentes (ver `03_LANCAMENTO/L/LEIA_ME.md`). |
+| `*_2x.png` · `*_2x_16bit.png` | Renders a 200 % dos planos que seguiram a rota 2× (KV-45 do diretor; C10 e, se precisar, o KV-01 1:1). O arquivo sem `_2x` é a média 2 × 2 deste; a verificação do rótulo de registro é a do 2× (`<nome>.json`, com a nota `verificacao`), a do 1× fica em `<nome>_1x_informativo.json`. |
 | `_campanha_testes/` | Testes de enquadramento (50 %, 24 amostras). Não são peças. |
 | `_sets_tests/` · `_objects_tests/` | Testes das equipes de cenários e objetos. |
 

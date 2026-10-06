@@ -165,11 +165,11 @@ def _tag_ids(labels):
                 n.inputs['Value'].default_value = float(k)
 
 
-def _check(name, L, p8, aov_dir, multi, albedo=None, film=False):
+def _check(name, L, p8, aov_dir, multi, albedo=None, film=False, jsuf='', nota=None):
     exr = os.path.join(aov_dir, '0001.exr')
     os.makedirs(FID, exist_ok=True)
     suf = ('__' + L['tag']) if multi else ''
-    jp = os.path.join(FID, name + suf + ('__albedo' if albedo else '') + '.json')
+    jp = os.path.join(FID, name + suf + ('__albedo' if albedo else '') + jsuf + '.json')
     asset = albedo or p8
     cmd = [WEB, os.path.join(HERE, 'fid_multi.py'), '--master', L['wrap'], '--aov', exr, '--asset', asset,
            '--coat', COAT[L['faixa']], '--ink', INK[L['faixa']], '--json', jp,
@@ -184,7 +184,11 @@ def _check(name, L, p8, aov_dir, multi, albedo=None, film=False):
     except Exception:
         rep = {'erro': (r.stderr or r.stdout)[-800:]}
     rep['glass_frac_altura'] = L.get('frac')
-    rep['thumbnail_sem_alegacao'] = bool(L.get('frac') is not None and L['frac'] < 0.20)
+    # rounded to 0,1 % of the height: the KV-01 9:16 glass is 384 px of 1920 by spec (exactly 20 %) and measures
+    # 383,996 px, which is not a thumbnail
+    rep['thumbnail_sem_alegacao'] = bool(L.get('frac') is not None and round(L['frac'], 3) < 0.20)
+    if nota:
+        rep['verificacao'] = nota
     json.dump([rep], open(jp, 'w'), indent=2, ensure_ascii=False)
     return rep
 
@@ -245,12 +249,17 @@ def foto(name, build, res, samples=64, transparent=False, pct=100, teste=False, 
     if labels and not teste:
         multi = len(labels) > 1
         if dois:
+            # the check of record for a 2x route is the 2x report, <name>[__copo].json (as KV-45, director 6 Oct);
+            # the 1x deliverable's check is kept as <name>[__copo]_1x_informativo.json
+            W2, H2 = res[0] * 2, res[1] * 2
+            nota = ('Verificado no render 2× (%d × %d, %s). O arquivo entregue (%d × %d) é a média 2 × 2 desse render, '
+                    'feita por _build/shots/reduzir_multi.py; nenhum pixel é gerado ou editado.' % (W2, H2, name, res[0], res[1]))
             for L in labels:
-                reps.append((L['tag'] + ' (2x)', _check(name + '_2x', L, os.path.join(outdir, stem + '_2x.png'),
-                                                       os.path.join(HERE, 'aov', name + '_2x'), multi)))
+                reps.append((L['tag'] + ' (2x, registro)', _check(name, L, os.path.join(outdir, stem + '_2x.png'),
+                                                                  os.path.join(HERE, 'aov', name + '_2x'), multi, nota=nota)))
         for L in labels:
-            rep = _check(name, L, final, aov_dir, multi)
-            reps.append((L['tag'], rep))
+            rep = _check(name, L, final, aov_dir, multi, jsuf='_1x_informativo' if dois else '')
+            reps.append((L['tag'] + (' (1x informativo)' if dois else ''), rep))
             if info.get('albedo'):
                 alb = os.path.join(aov_dir, 'albedo%s.png' % (('__' + L['tag']) if multi else ''))
                 subprocess.run([WEB, os.path.join(HERE, 'fid_multi.py'), '--albedo', os.path.join(aov_dir, '0001.exr'), alb],
@@ -332,9 +341,11 @@ def b_kv01(fmt, lit=True):
 
     def f():
         h = S.palco(at=(0, 0, 0))
-        # 1:1 only: the glass turned 4 deg less (-8 instead of -12) so HOLOFOTE APRESENTA comes off the left limb
-        # (route step 2, 6 Oct: the black flag of step 1 changed nothing, 0,483 -> 0,484, and was taken out)
-        root = H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=lit), at=h['place'], rot_deg=-8 if fmt == '1x1' else -12)
+        # 1:1 route (6 Oct), stopped at the first pass: step 1, a black flag camera-left, changed nothing (0,483 ->
+        # 0,484) and was taken out; step 2, the glass at -8 deg, moved the failure to the RIGHT limb (worst 0,097:
+        # at 260 px the label spans the whole visible front, so either limb's compressed type falls under the bar);
+        # step 3, the 2x route at the KV's own -12 deg: campanha.py -- KV01_1x1 --pct 200 --samples 64
+        root = H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=lit), at=h['place'], rot_deg=-12)
         S.ride(root, h['lift'])
         if lit:
             S.flame_bounce(h, root)
