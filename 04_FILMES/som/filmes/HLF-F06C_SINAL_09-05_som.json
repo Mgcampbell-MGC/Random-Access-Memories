@@ -1,0 +1,95 @@
+{
+  "arquivo": "HLF-F06C_SINAL_09-05_som.wav",
+  "duracao_s": 6.0,
+  "fps": 24.0,
+  "lufs_i": -14.03,
+  "true_peak_dbtp": -1.15,
+  "normalizacao": "−14 LUFS integrado, ≤ −1 dBTP",
+  "cues": [
+    {
+      "label": "3 sino(s) f0/f8/f16",
+      "arquivo": "sfx/HLF-SFX-09c_sinal_3_sinos.wav",
+      "quadro": 0.0,
+      "inicio_s": 0.0,
+      "sync": "start"
+    },
+    {
+      "label": "CLAC f72",
+      "arquivo": "sfx/HLF-SFX-01_clac.wav",
+      "quadro": 72.0,
+      "inicio_s": 3.0,
+      "sync": "onset"
+    },
+    {
+      "label": "pavio → aplauso f74→",
+      "arquivo": "identidade/HLF-ID-02_crepitar_para_aplauso_morph.wav",
+      "quadro": 74.0,
+      "inicio_s": 3.0833,
+      "sync": "start"
+    }
+  ],
+  "quadros_chave": [
+    {
+      "quadro": 0,
+      "onset_medido_s": 0.0,
+      "desvio_quadros": 0.001,
+      "ok": true
+    },
+    {
+      "quadro": 8,
+      "onset_medido_s": 0.3335,
+      "desvio_quadros": 0.004,
+      "ok": true
+    },
+    {
+      "quadro": 16,
+      "onset_medido_s": 0.6678,
+      "desvio_quadros": 0.027,
+      "ok": true
+    },
+    {
+      "quadro": 72,
+      "onset_medido_s": 3.0,
+      "desvio_quadros": 0.0,
+      "ok": true
+    }
+  ],
+  "onsets_medidos": [
+    {
+      "t_s": 0.0,
+      "quadro": 0.0
+    },
+    {
+      "t_s": 0.3335,
+      "quadro": 8.0
+    },
+    {
+      "t_s": 0.6678,
+      "quadro": 16.03
+    },
+    {
+      "t_s": 3.0,
+      "quadro": 72.0
+    },
+    {
+      "t_s": 3.275,
+      "quadro": 78.6
+    },
+    {
+      "t_s": 3.3283,
+      "quadro": 79.88
+    },
+    {
+      "t_s": 3.4251,
+      "quadro": 82.2
+    },
+    {
+      "t_s": 3.6274,
+      "quadro": 87.06
+    },
+    {
+      "t_s": 3.6742,
+      "quadro": 88.18
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "asset": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/renders/C02_A-PRIMEIRA-FILA_limpo.png",
+    "master": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/rotulos/HLF-CASE-02_MAE-CORACAO_ROTULO_wrap.png",
+    "tiles": 197,
+    "uv_agreement": 0.9782,
+    "corner_tiles_skipped": 15,
+    "corner_tiles_worst": 0.973,
+    "control": {
+      "patch_px": [
+        5796,
+        687,
+        564,
+        564
+      ],
+      "worst_tile": 0.488,
+      "caught": true
+    },
+    "hue_shift_deg": -1.54,
+    "sat_ratio": 0.953,
+    "worst_tile": 0.966,
+    "p5_tile": 0.982,
+    "bar_p5": 0.95,
+    "pass": true,
+    "label_id": null,
+    "glass_frac_altura": 0.3068464547395706,
+    "thumbnail_sem_alegacao": false
+  }
+]

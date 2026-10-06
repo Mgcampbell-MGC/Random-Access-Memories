@@ -1,0 +1,29 @@
+HOLOFOTE · STATUS DA ENTREGA · 6 out 2026
+
+Gerado por _build/pacote/maquina.py a partir das pastas. ENTREGUE = todos os arquivos esperados existem;
+PARCIAL = alguns; AUSENTE = nenhum. Nenhuma peça é "aprovada" aqui: aprovação é verificador real + olho humano.
+
+Sistema e livro da marca     ENTREGUE
+Logo, O FOCO, A MARCA        ENTREGUE
+Cartazes (12)                ENTREGUE
+Rótulos-mestre               ENTREGUE
+Embalagem e objetos          ENTREGUE
+KV-01 e KV-45                ENTREGUE
+Série C (C01–C10)            PARCIAL · falta: C10_*.png
+BOLETIM (B01–B08)            ENTREGUE
+D01, D02, figurinhas, S01    ENTREGUE
+Loja (L01–L07)               ENTREGUE
+Filmes                       PARCIAL · falta: *F15*_som.mp4, *F06A*_som.mp4, *F06B*_som.mp4
+Som                          ENTREGUE
+O ANÚNCIO (animatics)        ENTREGUE
+Arquivos de máquina          ENTREGUE
+Relatórios de fidelidade     ENTREGUE
+
+NÃO PRODUZIDO DE PROPÓSITO
+• Pessoas (H01, H02, M01) e as peças P01–P03: precisam de créditos de geração e da aprovação escrita da dona.
+  Os anúncios estão em animatic com manequim cinza; os prompts estão em 05_ANUNCIO/.
+• O som foi medido (loudness, pico, sincronia), mas ainda não foi ouvido por uma pessoa. Ouvir antes de mostrar.
+
+O PACOTE AINDA MOSTRA AUSENTE EM
+• figuras: figura CASE, figura KV-01_9x16, figura KV-01_4x5, figura KV-01_1x1, figura KV-01_16x9, figura C01, figura C02, figura C04, figura C05, figura C06, figura C08, figura C10, figura L01, figura L02, figura L03, figura L04, figura L05, figura L06, figura L07, figura F15_FRAMES, figura F06_FRAMES, figura ANUNCIO_ANIMATIC
+• dados: ANIMATIC_LUFS, F06A_DURACAO, F06A_FID, F06A_LUFS, F06A_QUADROS, F06A_TP, F06B_DURACAO, F06B_FID, F06B_LUFS, F06B_QUADROS, F06B_TP, F06C_0705_DURACAO, F06C_0705_FID, F06C_0705_LUFS, F06C_0705_QUADROS, F06C_0705_TP, F06C_0805_DURACAO, F06C_0805_FID, F06C_0805_LUFS, F06C_0805_QUADROS, F06C_0805_TP, F06C_0905_DURACAO, F06C_0905_FID, F06C_0905_LUFS, F06C_0905_QUADROS, F06C_0905_TP, F15_DURACAO, F15_FID, F15_LUFS, F15_QUADROS, F15_TP, FID_ALBEDO_CONTROLE, FID_ALBEDO_COR, FID_ALBEDO_P5, FID_ALBEDO_PIOR, FID_ALBEDO_RESULTADO, FID_BASE_CONTROLE, FID_BASE_COR, FID_BASE_P5, FID_BASE_PIOR, FID_BASE_RESULTADO, FID_CASE01_CONTROLE, FID_CASE01_COR, FID_CASE01_P5, FID_CASE01_PIOR, FID_CASE01_RESULTADO, FID_CASE02_CONTROLE, FID_CASE02_COR, FID_CASE02_P5, FID_CASE02_PIOR, FID_CASE02_RESULTADO, FID_CASE03_CONTROLE, FID_CASE03_COR, FID_CASE03_P5, FID_CASE03_PIOR, FID_CASE03_RESULTADO, FID_FRENTE_CONTROLE, FID_FRENTE_COR, FID_FRENTE_P5, FID_FRENTE_PIOR, FID_FRENTE_RESULTADO, FID_SINGLE_CONTROLE, FID_SINGLE_COR, FID_SINGLE_P5, FID_SINGLE_PIOR, FID_SINGLE_RESULTADO, FID_TRES_QUARTOS_CONTROLE, FID_TRES_QUARTOS_COR, FID_TRES_QUARTOS_P5, FID_TRES_QUARTOS_PIOR, FID_TRES_QUARTOS_RESULTADO, FID_VERSO_CONTROLE, FID_VERSO_COR, FID_VERSO_P5, FID_VERSO_PIOR, FID_VERSO_RESULTADO, S01_DURACAO, S01_LUFS, S01_QUADROS, S01_TP, SEG_ANUNCIOS, SEG_C02, SEG_C03, SEG_C04, SEG_C06, SEG_C07, SEG_F06AB, SEG_F06C, SEG_F15, SEG_KV01, SEG_L05

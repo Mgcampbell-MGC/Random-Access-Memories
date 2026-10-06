@@ -1,0 +1,27 @@
+[
+  {
+    "asset": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/renders/KV-45_aceso.png",
+    "master": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/rotulos/HLF-02_ROTULO_wrap.png",
+    "tiles": 546,
+    "uv_agreement": 0.9998,
+    "corner_tiles_skipped": 26,
+    "corner_tiles_worst": 0.98,
+    "control": {
+      "patch_px": [
+        1393,
+        1900,
+        300,
+        300
+      ],
+      "worst_tile": 0.008,
+      "caught": true
+    },
+    "hue_shift_deg": -1.29,
+    "sat_ratio": 0.999,
+    "worst_tile": 0.795,
+    "p5_tile": 0.989,
+    "bar_p5": 0.95,
+    "pass": false,
+    "nota": "Medição informativa no 1× entregue; a verificação vale no 2× (KV-45_aceso.json). Em 1× um bloco na borda esquerda divide a ponta de uma letra com uma faixa de reflexo do verniz."
+  }
+]

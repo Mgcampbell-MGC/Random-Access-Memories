@@ -1,0 +1,29 @@
+[
+  {
+    "asset": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/renders/C10_SALVA-COMO_limpo.png",
+    "master": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/rotulos/HLF-CASE-01_DONA-CIDA_ROTULO_wrap.png",
+    "tiles": 186,
+    "uv_agreement": 0.9839,
+    "corner_tiles_skipped": 2,
+    "corner_tiles_worst": 0.979,
+    "control": {
+      "patch_px": [
+        1054,
+        1647,
+        552,
+        552
+      ],
+      "worst_tile": 0.093,
+      "caught": true
+    },
+    "hue_shift_deg": 2.38,
+    "sat_ratio": 1.045,
+    "worst_tile": 0.916,
+    "p5_tile": 0.969,
+    "bar_p5": 0.95,
+    "pass": true,
+    "label_id": 2.0,
+    "glass_frac_altura": 0.26379984617233276,
+    "thumbnail_sem_alegacao": false
+  }
+]

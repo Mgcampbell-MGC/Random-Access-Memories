@@ -1,0 +1,38 @@
+{
+  "duracao_s": 6.0,
+  "fps": 24.0,
+  "cues": [
+    {
+      "label": "CLAC +0 f",
+      "file": "sfx/HLF-SFX-01_clac.wav",
+      "frame": 0,
+      "sync": "onset",
+      "gain_db": 2
+    },
+    {
+      "label": "pavio → aplauso",
+      "file": "identidade/HLF-ID-02_crepitar_para_aplauso_morph.wav",
+      "frame": 1,
+      "dur_s": 3.9583333333333335,
+      "fade_in": 0.03,
+      "fade_out": 0.004,
+      "gain_db": -4
+    },
+    {
+      "label": "palmas 13,0 s (f96 do bloco)",
+      "file": "sfx/HLF-SFX-06e_palmas_tres_10q.wav",
+      "frame": 96,
+      "sync": "onset",
+      "gain_db": 2
+    },
+    {
+      "label": "tom de sala",
+      "file": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+      "frame": 96,
+      "dur_s": 2.0,
+      "fade_in": 0.004,
+      "fade_out": 0.3,
+      "gain_db": -28
+    }
+  ]
+}

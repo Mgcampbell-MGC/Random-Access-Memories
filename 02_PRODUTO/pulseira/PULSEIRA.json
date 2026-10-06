@@ -1,0 +1,175 @@
+{
+  "band": {
+    "size_mm": [
+      15.0,
+      350.0
+    ],
+    "ppmm": 20,
+    "px": [
+      7000,
+      300
+    ],
+    "text": "ACESSO TOTAL · ATRAÇÃO · 09.05.27 · HOLOFOTE ·",
+    "font": "Special Gothic wght 700 wdth 75 caps",
+    "colours": {
+      "ground": "preto (black polyester)",
+      "jacquard": "amarelo"
+    },
+    "thread_pitch_mm": {
+      "weft": 0.25,
+      "warp": 0.2
+    },
+    "cap_mm": 5.527,
+    "tracking": 60,
+    "repeats": 2,
+    "zone_mm": [
+      14.0,
+      340.0
+    ],
+    "foco_disc_mm": 2.874,
+    "text_ink_mm": [
+      23.236,
+      330.764
+    ],
+    "baseline_mm_from_edge": 10.263,
+    "orientation": "x = along the band from the clasp end; y = across (15 mm)"
+  },
+  "seal": {
+    "size_mm": [
+      60.0,
+      15.0
+    ],
+    "ppmm": 20,
+    "stock": "uncoated papel-cartaz, printed one side (outside)",
+    "stack_mm": [
+      16.0,
+      2.5
+    ],
+    "perimeter_mm": 37.0,
+    "overlap_mm": 23.0,
+    "panels": [
+      {
+        "s_mm": [
+          0.0,
+          4.5
+        ],
+        "name": "interna-topo",
+        "where": "inner layer, under the top panel",
+        "visible": false
+      },
+      {
+        "s_mm": [
+          4.5,
+          7.0
+        ],
+        "name": "interna-lado",
+        "where": "inner layer, under the right side",
+        "visible": false
+      },
+      {
+        "s_mm": [
+          7.0,
+          23.0
+        ],
+        "name": "interna-baixo",
+        "where": "inner layer, under the underside panel (glue zone)",
+        "visible": false
+      },
+      {
+        "s_mm": [
+          23.0,
+          25.5
+        ],
+        "name": "lado-esquerdo",
+        "where": "left side of the stack",
+        "visible": true
+      },
+      {
+        "s_mm": [
+          25.5,
+          41.5
+        ],
+        "name": "TOPO",
+        "where": "top face: the front, \"PODE / RASGAR.\"",
+        "visible": true
+      },
+      {
+        "s_mm": [
+          41.5,
+          44.0
+        ],
+        "name": "lado-direito",
+        "where": "right side of the stack (outer layer)",
+        "visible": true
+      },
+      {
+        "s_mm": [
+          44.0,
+          60.0
+        ],
+        "name": "BAIXO",
+        "where": "underside: \"o que se guarda é a pulseira.\"",
+        "visible": true
+      }
+    ],
+    "amarelo_s_mm": [
+      23.0,
+      44.0
+    ],
+    "front": {
+      "panel": "TOPO",
+      "s_mm": [
+        25.5,
+        41.5
+      ],
+      "text": "PODE RASGAR.",
+      "lines": [
+        "PODE",
+        "RASGAR."
+      ],
+      "font": "Special Gothic Expanded One caps (the Locutor)",
+      "cap_mm": 1.799,
+      "longer_line_mm": 13.5,
+      "lead_mm": 2.519,
+      "alignment": "flush left, block centred on the face"
+    },
+    "back": {
+      "panel": "BAIXO",
+      "s_mm": [
+        44.0,
+        60.0
+      ],
+      "text": "o que se guarda é a pulseira.",
+      "lines": [
+        "o que se",
+        "guarda",
+        "é a",
+        "pulseira."
+      ],
+      "font": "Shantell Sans 500 INFM 60 BNCE 0",
+      "x_height_mm": 1.58,
+      "lead_mm": 3.397,
+      "alignment": "centred lines, block centred on the face"
+    },
+    "orientation": "flat file: x = s along the 60 mm strip (s = 0 is the end laid first), y = the 15 mm width (parallel to the band); lines are turned 90° clockwise",
+    "face_files": [
+      "PULSEIRA_SELO_face-topo.png",
+      "PULSEIRA_SELO_face-baixo.png"
+    ],
+    "deviation": {
+      "platform": "§C.6: front \"pode rasgar.\" Expanded One lower case cap 4,0 mm; back \"o que se guarda é a pulseira.\" Shantell x-height 1,8 on the reverse",
+      "used": "front in two lines at cap 1.799 mm on the top panel; back on the outer underside panel in 4 lines at x-height 1.58 mm",
+      "reason": "wrapped round the band and tail (≈16 x 2,5 mm) the seal shows only a ~15 x 16 mm top face; at cap 4,0 \"pode rasgar.\" is 41,6 mm wide and read \"…de ras…\" (3D team); director's decision 6 Oct 2026, exact strings kept"
+    },
+    "deviations": [
+      {
+        "panel": "TOPO",
+        "kind": "director's decision",
+        "platform": "pode rasgar.",
+        "used": "PODE RASGAR.",
+        "reason": "Locutor lines are capitals everywhere except the lockup \"holofote nela.\"; lower case only in Shantell (the Fã) or Condensed One at 0 tracking (the Produção)"
+      }
+    ]
+  },
+  "generator": "_build/pack/pulseira.py"
+}

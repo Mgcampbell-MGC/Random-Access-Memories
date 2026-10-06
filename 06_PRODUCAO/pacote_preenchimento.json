@@ -1,0 +1,212 @@
+{
+  "figuras": {
+    "ROTULO_FRENTE": [
+      "02_PRODUTO/rotulos/HLF-02_ROTULO_wrap_preview.png"
+    ],
+    "ROTULO_VERSO": [
+      "02_PRODUTO/rotulos/HLF-02_ROTULO_wrap_preview.png"
+    ],
+    "TAMPA": [
+      "02_PRODUTO/tampa/HLF-TAMPA-90_preview.png"
+    ],
+    "BASE": [
+      "02_PRODUTO/base/HLF-BASE-200_preview_por-baixo.png",
+      "03_LANCAMENTO/L/L03_A-BASE.png"
+    ],
+    "CASE": [
+      "03_LANCAMENTO/L/L04_O-CASE-ABERTO.png",
+      "03_LANCAMENTO/C/C05_O-CASE_1x1.png"
+    ],
+    "PULSEIRA": [
+      "02_PRODUTO/pulseira/PULSEIRA_padrao.png",
+      "02_PRODUTO/pulseira/PULSEIRA_SELO_faixa.png"
+    ],
+    "SETLIST": [
+      "02_PRODUTO/setlist/SETLIST_preview_aberto.jpg"
+    ],
+    "CARTUCHO": [
+      "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_planificado_preview.jpg"
+    ],
+    "ROTULOS_PERSONALIZADOS": [
+      "02_PRODUTO/rotulos/HLF-CASE-01_DONA-CIDA_ROTULO_wrap_preview.png",
+      "02_PRODUTO/rotulos/HLF-CASE-02_MAE-CORACAO_ROTULO_wrap_preview.png",
+      "02_PRODUTO/rotulos/HLF-CASE-03_MAINHA_ROTULO_wrap_preview.png"
+    ],
+    "PALETA": [
+      "01_MARCA/livro/LIVRO-08_PALETA.png"
+    ],
+    "TIPOGRAFIA": [
+      "01_MARCA/livro/LIVRO-04_AS-TRES-VOZES.png"
+    ],
+    "LOGO": [
+      "01_MARCA/livro/LIVRO-05_O-LOGO.png"
+    ],
+    "STK": [
+      "03_LANCAMENTO/STK/STK_folha_contato.jpg"
+    ],
+    "KV-01_9x16": [
+      "03_LANCAMENTO/KV/KV-01_9x16.png"
+    ],
+    "KV-01_4x5": [
+      "03_LANCAMENTO/KV/KV-01_4x5.png"
+    ],
+    "KV-01_1x1": [
+      "03_LANCAMENTO/KV/KV-01_1x1.png"
+    ],
+    "KV-01_16x9": [
+      "03_LANCAMENTO/KV/KV-01_16x9.png"
+    ],
+    "KV-45": [
+      "03_LANCAMENTO/KV/KV-45_aceso_SUA-VEZ.png"
+    ],
+    "C01": [
+      "03_LANCAMENTO/C/C01_O-MURO.png"
+    ],
+    "C02": [
+      "03_LANCAMENTO/C/C02_A-PRIMEIRA-FILA.png"
+    ],
+    "C03": [
+      "03_LANCAMENTO/C/C03_O-PIOR-SHOW.png"
+    ],
+    "C04": [
+      "03_LANCAMENTO/C/C04_A-DISCOGRAFIA.png"
+    ],
+    "C05": [
+      "03_LANCAMENTO/C/C05_O-CASE_1x1.png"
+    ],
+    "C06": [
+      "03_LANCAMENTO/C/C06_O-MENOR-HOLOFOTE.png"
+    ],
+    "C07": [
+      "03_LANCAMENTO/C/C07_PIX.png"
+    ],
+    "C08": [
+      "03_LANCAMENTO/C/C08_NOVA-TEMPORADA.png"
+    ],
+    "C09": [
+      "03_LANCAMENTO/C/C09_O-CARTAZ-DELA_DONA-CIDA.png"
+    ],
+    "B01": [
+      "03_LANCAMENTO/B/B01_BOLETIM_0205_1x1.png"
+    ],
+    "B02": [
+      "03_LANCAMENTO/B/B02_BOLETIM_0305_1x1.png"
+    ],
+    "B03": [
+      "03_LANCAMENTO/B/B03_BOLETIM_0405_1x1.png"
+    ],
+    "B04": [
+      "03_LANCAMENTO/B/B04_BOLETIM_0505_1x1.png"
+    ],
+    "B05": [
+      "03_LANCAMENTO/B/B05_BOLETIM_0605_1x1.png"
+    ],
+    "B06": [
+      "03_LANCAMENTO/B/B06_BOLETIM_0705_1x1.png"
+    ],
+    "B07": [
+      "03_LANCAMENTO/B/B07_BOLETIM_0805_1x1.png"
+    ],
+    "B08": [
+      "03_LANCAMENTO/B/B08_BOLETIM_0905_1x1.png"
+    ],
+    "D01": [
+      "03_LANCAMENTO/D/D01_A-CARTEIRINHA_9x16.png"
+    ],
+    "D02": [
+      "03_LANCAMENTO/D/D02_O-INGRESSO_inteiro.png",
+      "03_LANCAMENTO/D/D02_O-INGRESSO_rasgado.png"
+    ],
+    "L01": [
+      "03_LANCAMENTO/L/L01_FRENTE.png"
+    ],
+    "L02": [
+      "03_LANCAMENTO/L/L02_VERSO.png"
+    ],
+    "L03": [
+      "03_LANCAMENTO/L/L03_A-BASE.png"
+    ],
+    "L04": [
+      "03_LANCAMENTO/L/L04_O-CASE-ABERTO.png"
+    ],
+    "L05": [
+      "03_LANCAMENTO/L/L05_A-TAMPA-PALCO.png"
+    ],
+    "L06": [
+      "03_LANCAMENTO/L/L06_A-TURNE.png"
+    ],
+    "L07": [
+      "03_LANCAMENTO/L/L07_NOVA-TEMPORADA.png"
+    ],
+    "F06_FRAMES": [
+      "04_FILMES/F06C_SINAL_07-05_mudo.mp4",
+      "04_FILMES/F06C_SINAL_08-05_mudo.mp4"
+    ],
+    "CASTING_H01": [
+      "02_PRODUTO/renders/_objects_tests/T_previs_H01_stand.png"
+    ],
+    "CASTING_H02": [
+      "02_PRODUTO/renders/_objects_tests/T_previs_H02_stand.png"
+    ],
+    "ANUNCIO_ANIMATIC": [
+      "05_ANUNCIO/animatics/HLF-AD-1A_O-PIOR-SHOW_animatic_mudo.mp4"
+    ]
+  },
+  "faltas": [
+    "figura C10",
+    "figura F15_FRAMES"
+  ],
+  "dados_ausentes": [
+    "F06A_DURACAO",
+    "F06A_FID",
+    "F06A_LUFS",
+    "F06A_QUADROS",
+    "F06A_TP",
+    "F06B_DURACAO",
+    "F06B_FID",
+    "F06B_LUFS",
+    "F06B_QUADROS",
+    "F06B_TP",
+    "F06C_0905_DURACAO",
+    "F06C_0905_FID",
+    "F06C_0905_LUFS",
+    "F06C_0905_QUADROS",
+    "F06C_0905_TP",
+    "F15_DURACAO",
+    "F15_FID",
+    "F15_LUFS",
+    "F15_QUADROS",
+    "F15_TP",
+    "FID_BASE_CONTROLE",
+    "FID_BASE_COR",
+    "FID_BASE_P5",
+    "FID_BASE_PIOR",
+    "FID_BASE_RESULTADO",
+    "FID_SINGLE_CONTROLE",
+    "FID_SINGLE_COR",
+    "FID_SINGLE_P5",
+    "FID_SINGLE_PIOR",
+    "FID_SINGLE_RESULTADO",
+    "SEG_ANUNCIOS",
+    "SEG_C03",
+    "SEG_C07",
+    "SEG_F06AB",
+    "SEG_F06C",
+    "SEG_F15"
+  ],
+  "fontes": {
+    "F06C_0705": "04_FILMES/F06C_SINAL_07-05_som.mp4",
+    "F06C_0705_FID": "06_PRODUCAO/fidelidade/F06C_SINAL_07-05.json",
+    "F06C_0805": "04_FILMES/F06C_SINAL_08-05_som.mp4",
+    "F06C_0805_FID": "06_PRODUCAO/fidelidade/F06C_SINAL_08-05.json",
+    "S01": "04_FILMES/S01_DIGITANDO_som.mp4",
+    "FID_FRENTE": "06_PRODUCAO/fidelidade/L00_FRENTE.json",
+    "FID_TRES_QUARTOS": "06_PRODUCAO/fidelidade/L01_FRENTE.json",
+    "FID_VERSO": "06_PRODUCAO/fidelidade/L02_VERSO.json",
+    "FID_ALBEDO": "06_PRODUCAO/fidelidade/C06_O-MENOR-HOLOFOTE_limpo__albedo.json",
+    "FID_CASE01": "06_PRODUCAO/fidelidade/C10_SALVA-COMO_limpo__CASE-01_DONA-CIDA.json",
+    "FID_CASE02": "06_PRODUCAO/fidelidade/C10_SALVA-COMO_limpo__CASE-02_MAE-CORACAO.json",
+    "FID_CASE03": "06_PRODUCAO/fidelidade/C10_SALVA-COMO_limpo__CASE-03_MAINHA.json"
+  },
+  "restam_preencher": 3
+}

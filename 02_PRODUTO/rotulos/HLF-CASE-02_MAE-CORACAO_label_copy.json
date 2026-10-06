@@ -1,0 +1,674 @@
+{
+  "sku": "HLF-CASE-02",
+  "faixa": "02",
+  "headliner": "MÃE ♥",
+  "headliner_step": 2,
+  "show_name": "AO VIVO",
+  "show_wdth": 125,
+  "descriptor": "rosas no palco, luz quente",
+  "opening_act": "você",
+  "estreia_date": "03.08.2003",
+  "estreia_time": "14:32",
+  "tour_lines": [
+    "ESTREIA · 03.08.2003 · 14:32 ........ QUEM FEZ O SHOW FOI ELA",
+    "PREZINHO, DIA DAS MÃES ........ PRIMEIRA FILA",
+    "FESTA JUNINA ........ O BIGODE FOI ELA",
+    "FEIRA DE CIÊNCIAS ........ O VULCÃO TAMBÉM",
+    "PRONTO-SOCORRO, 3H ........ SEM INGRESSO. ENTROU.",
+    "FORMATURA ........ DE PÉ (COM O DEDO NA LENTE)",
+    "PRIMEIRO APÊ ........ 4 VIAGENS DE CARRO",
+    "09.05.2027 ........ A ATRAÇÃO É ELA"
+  ],
+  "warnings": [
+    "• Nunca deixe a vela acesa sem supervisão.",
+    "• Mantenha fora do alcance de crianças e animais.",
+    "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+    "  sobre superfície firme e resistente ao calor.",
+    "• O copo esquenta: não toque nem mova a vela acesa."
+  ],
+  "net_weight": "200 g",
+  "lot": "HLF0927",
+  "fab": "03/2027",
+  "val": "03/2029",
+  "master_hash": "2b54f4612f5c27c700bf5c3cc33ba1d45b63abdb6b8894ef32c30d4cedb4d968",
+  "front_lines": {
+    "L1": [
+      "HOLOFOTE APRESENTA",
+      "A TURNÊ · 2027"
+    ],
+    "L2": "MÃE ♥",
+    "L3": "AO VIVO",
+    "L4": [
+      "DOMINGO · 09.05",
+      "abertura: você"
+    ],
+    "L5": [
+      "rosas no palco, luz quente",
+      "FAIXA 02"
+    ],
+    "L6": [
+      "vela aromática",
+      "PESO LÍQUIDO 200 g"
+    ]
+  },
+  "back_lines": {
+    "B1": "ELA ESTEVE EM TODAS.",
+    "B2": [
+      "TURNÊ “VOCÊ”",
+      "DESDE O PRIMEIRO DIA"
+    ],
+    "tour": [
+      [
+        "ESTREIA · 03.08.2003 · 14:32",
+        "QUEM FEZ O SHOW FOI ELA"
+      ],
+      [
+        "PREZINHO, DIA DAS MÃES",
+        "PRIMEIRA FILA"
+      ],
+      [
+        "FESTA JUNINA",
+        "O BIGODE FOI ELA"
+      ],
+      [
+        "FEIRA DE CIÊNCIAS",
+        "O VULCÃO TAMBÉM"
+      ],
+      [
+        "PRONTO-SOCORRO, 3H",
+        "SEM INGRESSO. ENTROU."
+      ],
+      [
+        "FORMATURA",
+        "DE PÉ (COM O DEDO NA LENTE)"
+      ],
+      [
+        "PRIMEIRO APÊ",
+        "4 VIAGENS DE CARRO"
+      ],
+      [
+        "09.05.2027",
+        "A ATRAÇÃO É ELA"
+      ]
+    ],
+    "atencao": "ATENÇÃO",
+    "warnings": [
+      "• Nunca deixe a vela acesa sem supervisão.",
+      "• Mantenha fora do alcance de crianças e animais.",
+      "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+      "  sobre superfície firme e resistente ao calor.",
+      "• O copo esquenta: não toque nem mova a vela acesa."
+    ],
+    "full": "Advertências completas e modo de uso: ver embalagem externa.",
+    "odorizante": "ODORIZANTE DE AMBIENTE · Perfuma o ambiente com aroma agradável."
+  },
+  "ink": {
+    "name": "preto",
+    "hex": "#121014"
+  },
+  "coating": {
+    "name": "amarelo",
+    "hex": "#FFE81A"
+  },
+  "contract": {
+    "px": [
+      9552,
+      2560
+    ],
+    "ppmm": 40,
+    "front_px": [
+      948,
+      3828
+    ],
+    "back_px": [
+      5724,
+      8604
+    ],
+    "y_rule": "y = (82,0 - baseline_mm) x 40"
+  },
+  "headliner_fit": {
+    "step": 2,
+    "font": "Special Gothic wght 700 wdth 94",
+    "cap_mm": 17.8,
+    "tracking": 20.48,
+    "centred": false,
+    "natural_advance_mm": 71.802,
+    "forced": null,
+    "fill": "ink edges on 72,0 mm by tracking"
+  },
+  "measurements": {
+    "front": [
+      {
+        "label": "L1 L",
+        "ink_mm": [
+          23.7,
+          0.662,
+          55.017,
+          3.349
+        ],
+        "baseline_mm": 78.695,
+        "text": "HOLOFOTE APRESENTA"
+      },
+      {
+        "label": "L1 R",
+        "ink_mm": [
+          73.637,
+          0.05,
+          95.7,
+          3.349
+        ],
+        "baseline_mm": 78.695,
+        "text": "A TURNÊ · 2027",
+        "gap_to_left_mm": 18.619
+      },
+      {
+        "label": "L2",
+        "ink_mm": [
+          23.7,
+          7.96,
+          95.7,
+          31.301
+        ],
+        "baseline_mm": 51.0,
+        "step": 2,
+        "font": "Special Gothic wght 700 wdth 94",
+        "cap_mm": 17.8,
+        "tracking": 20.48,
+        "text": "MÃE ♥"
+      },
+      {
+        "label": "L3",
+        "ink_mm": [
+          23.7,
+          33.231,
+          95.7,
+          43.569
+        ],
+        "baseline_mm": 38.6,
+        "tracking": 36.333,
+        "text": "AO VIVO",
+        "font": "SG wght700 wdth125",
+        "cap_mm": 10.0
+      },
+      {
+        "label": "L4 L",
+        "ink_mm": [
+          23.7,
+          45.532,
+          61.114,
+          49.668
+        ],
+        "baseline_mm": 32.4,
+        "text": "DOMINGO · 09.05"
+      },
+      {
+        "label": "L4 R",
+        "ink_mm": [
+          72.099,
+          46.981,
+          95.7,
+          49.719
+        ],
+        "baseline_mm": 32.4,
+        "text": "abertura: você",
+        "gap_to_left_mm": 10.985
+      },
+      {
+        "label": "rule front",
+        "rule_mm": [
+          23.7,
+          30.6,
+          72.0,
+          0.25
+        ]
+      },
+      {
+        "label": "L5 L",
+        "ink_mm": [
+          23.7,
+          52.6,
+          54.391,
+          55.804
+        ],
+        "baseline_mm": 26.8,
+        "text": "rosas no palco, luz quente"
+      },
+      {
+        "label": "L5 R",
+        "ink_mm": [
+          83.169,
+          52.556,
+          95.7,
+          55.244
+        ],
+        "baseline_mm": 26.8,
+        "text": "FAIXA 02",
+        "gap_to_left_mm": 28.778
+      },
+      {
+        "label": "L6 L",
+        "ink_mm": [
+          23.7,
+          59.213,
+          41.332,
+          62.044
+        ],
+        "baseline_mm": 20.0,
+        "text": "vela aromática"
+      },
+      {
+        "label": "L6 R",
+        "ink_mm": [
+          64.081,
+          57.932,
+          95.7,
+          62.997
+        ],
+        "baseline_mm": 20.0,
+        "text": "PESO LÍQUIDO 200 g",
+        "gap_to_left_mm": 22.749
+      }
+    ],
+    "back": [
+      {
+        "label": "B1",
+        "ink_mm": [
+          143.1,
+          0.007,
+          215.1,
+          3.761
+        ],
+        "baseline_mm": 78.3,
+        "cap_mm": 3.6317,
+        "text": "ELA ESTEVE EM TODAS.",
+        "platform_cap_mm": 3.54
+      },
+      {
+        "label": "B2 L",
+        "ink_mm": [
+          143.1,
+          4.896,
+          158.458,
+          7.434
+        ],
+        "baseline_mm": 74.6,
+        "text": "TURNÊ “VOCÊ”"
+      },
+      {
+        "label": "B2 R",
+        "ink_mm": [
+          190.43,
+          5.366,
+          215.1,
+          7.434
+        ],
+        "baseline_mm": 74.6,
+        "text": "DESDE O PRIMEIRO DIA",
+        "gap_to_left_mm": 31.972
+      },
+      {
+        "label": "rule back top",
+        "rule_mm": [
+          143.1,
+          73.1,
+          72.0,
+          0.25
+        ]
+      },
+      {
+        "label": "T1 venue",
+        "ink_mm": [
+          143.1,
+          10.163,
+          173.11,
+          12.437
+        ],
+        "baseline_mm": 69.6,
+        "text": "ESTREIA · 03.08.2003 · 14:32"
+      },
+      {
+        "label": "T1 status",
+        "ink_mm": [
+          186.89,
+          10.163,
+          215.1,
+          12.784
+        ],
+        "baseline_mm": 69.6,
+        "text": "QUEM FEZ O SHOW FOI ELA"
+      },
+      {
+        "label": "T1 leader",
+        "dots": 14,
+        "leader_mm": 12.044
+      },
+      {
+        "label": "T2 venue",
+        "ink_mm": [
+          143.1,
+          13.079,
+          167.734,
+          16.218
+        ],
+        "baseline_mm": 66.2,
+        "text": "PREZINHO, DIA DAS MÃES"
+      },
+      {
+        "label": "T2 status",
+        "ink_mm": [
+          199.279,
+          13.6,
+          215.1,
+          15.8
+        ],
+        "baseline_mm": 66.2,
+        "text": "PRIMEIRA FILA"
+      },
+      {
+        "label": "T2 leader",
+        "dots": 33,
+        "leader_mm": 29.144
+      },
+      {
+        "label": "T3 venue",
+        "ink_mm": [
+          143.1,
+          16.963,
+          156.511,
+          19.237
+        ],
+        "baseline_mm": 62.8,
+        "text": "FESTA JUNINA"
+      },
+      {
+        "label": "T3 status",
+        "ink_mm": [
+          196.592,
+          16.963,
+          215.1,
+          19.237
+        ],
+        "baseline_mm": 62.8,
+        "text": "O BIGODE FOI ELA"
+      },
+      {
+        "label": "T3 leader",
+        "dots": 42,
+        "leader_mm": 37.244
+      },
+      {
+        "label": "T4 venue",
+        "ink_mm": [
+          143.1,
+          19.845,
+          161.403,
+          22.637
+        ],
+        "baseline_mm": 59.4,
+        "text": "FEIRA DE CIÊNCIAS"
+      },
+      {
+        "label": "T4 status",
+        "ink_mm": [
+          194.752,
+          19.669,
+          215.1,
+          22.637
+        ],
+        "baseline_mm": 59.4,
+        "text": "O VULCÃO TAMBÉM"
+      },
+      {
+        "label": "T4 leader",
+        "dots": 35,
+        "leader_mm": 30.944
+      },
+      {
+        "label": "T5 venue",
+        "ink_mm": [
+          143.1,
+          23.763,
+          165.239,
+          26.418
+        ],
+        "baseline_mm": 56.0,
+        "text": "PRONTO-SOCORRO, 3H"
+      },
+      {
+        "label": "T5 status",
+        "ink_mm": [
+          188.911,
+          23.763,
+          215.1,
+          26.037
+        ],
+        "baseline_mm": 56.0,
+        "text": "SEM INGRESSO. ENTROU."
+      },
+      {
+        "label": "T5 leader",
+        "dots": 24,
+        "leader_mm": 21.044
+      },
+      {
+        "label": "T6 venue",
+        "ink_mm": [
+          143.1,
+          27.163,
+          155.426,
+          29.437
+        ],
+        "baseline_mm": 52.6,
+        "text": "FORMATURA"
+      },
+      {
+        "label": "T6 status",
+        "ink_mm": [
+          183.532,
+          26.469,
+          215.1,
+          29.611
+        ],
+        "baseline_mm": 52.6,
+        "text": "DE PÉ (COM O DEDO NA LENTE)"
+      },
+      {
+        "label": "T6 leader",
+        "dots": 29,
+        "leader_mm": 25.544
+      },
+      {
+        "label": "T7 venue",
+        "ink_mm": [
+          143.1,
+          30.045,
+          157.075,
+          32.837
+        ],
+        "baseline_mm": 49.2,
+        "text": "PRIMEIRO APÊ"
+      },
+      {
+        "label": "T7 status",
+        "ink_mm": [
+          192.722,
+          30.563,
+          215.1,
+          32.837
+        ],
+        "baseline_mm": 49.2,
+        "text": "4 VIAGENS DE CARRO"
+      },
+      {
+        "label": "T7 leader",
+        "dots": 37,
+        "leader_mm": 32.744
+      },
+      {
+        "label": "T8 venue",
+        "ink_mm": [
+          143.1,
+          33.963,
+          155.575,
+          36.237
+        ],
+        "baseline_mm": 45.8,
+        "text": "09.05.2027"
+      },
+      {
+        "label": "T8 status",
+        "ink_mm": [
+          196.794,
+          33.269,
+          215.1,
+          36.73
+        ],
+        "baseline_mm": 45.8,
+        "text": "A ATRAÇÃO É ELA"
+      },
+      {
+        "label": "T8 leader",
+        "dots": 44,
+        "leader_mm": 39.044
+      },
+      {
+        "label": "tour widest text",
+        "mm": 58.219
+      },
+      {
+        "label": "rule back bottom",
+        "rule_mm": [
+          143.1,
+          43.6,
+          72.0,
+          0.25
+        ]
+      },
+      {
+        "label": "ATENCAO",
+        "ink_mm": [
+          143.1,
+          38.922,
+          156.114,
+          41.858
+        ],
+        "baseline_mm": 40.6,
+        "text": "ATENÇÃO"
+      },
+      {
+        "label": "W1",
+        "ink_mm": [
+          143.1,
+          42.3,
+          190.988,
+          44.642
+        ],
+        "baseline_mm": 37.8,
+        "text": "• Nunca deixe a vela acesa sem supervisão."
+      },
+      {
+        "label": "W2",
+        "ink_mm": [
+          143.1,
+          45.068,
+          198.719,
+          47.436
+        ],
+        "baseline_mm": 35.0,
+        "text": "• Mantenha fora do alcance de crianças e animais."
+      },
+      {
+        "label": "W3",
+        "ink_mm": [
+          143.1,
+          47.814,
+          210.649,
+          50.274
+        ],
+        "baseline_mm": 32.2,
+        "text": "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,"
+      },
+      {
+        "label": "W4",
+        "ink_mm": [
+          144.47,
+          50.614,
+          192.5,
+          53.042
+        ],
+        "baseline_mm": 29.4,
+        "text": "  sobre superfície firme e resistente ao calor."
+      },
+      {
+        "label": "W5",
+        "ink_mm": [
+          143.1,
+          53.468,
+          203.054,
+          55.842
+        ],
+        "baseline_mm": 26.6,
+        "text": "• O copo esquenta: não toque nem mova a vela acesa."
+      },
+      {
+        "label": "B_FULL",
+        "ink_mm": [
+          143.1,
+          56.5,
+          199.217,
+          58.874
+        ],
+        "baseline_mm": 23.6,
+        "text": "Advertências completas e modo de uso: ver embalagem externa."
+      },
+      {
+        "label": "B_ODOR",
+        "ink_mm": [
+          143.1,
+          59.364,
+          204.35,
+          61.874
+        ],
+        "baseline_mm": 20.6,
+        "text": "ODORIZANTE DE AMBIENTE · Perfuma o ambiente com aroma agradável."
+      }
+    ]
+  },
+  "deviations": [
+    {
+      "line": "L1",
+      "platform_baseline_mm": 79.2,
+      "used_baseline_mm": 78.695,
+      "reason": "accent top would sit 0.455 mm above the 82,0 mm print-zone top (the master cannot hold it); line lowered by 0.505 mm"
+    },
+    {
+      "line": "B2 left",
+      "kind": "director's decision",
+      "platform": "TURNÊ «VOCÊ»",
+      "used": "TURNÊ “VOCÊ”",
+      "reason": "guillemets are not Brazilian usage: curly double quotes"
+    },
+    {
+      "line": "T2 venue",
+      "kind": "director's decision",
+      "platform": "PRÉZINHO, DIA DAS MÃES",
+      "used": "PREZINHO, DIA DAS MÃES",
+      "reason": "spelling: Lei 5.765/1971 dropped the accent in -zinho derivatives (pé → pezinho, pré → prezinho)"
+    }
+  ],
+  "planted_error": {
+    "file": "_controle/HLF-CASE-02_MAE-CORACAO_ROTULO_wrap_ERRO-PLANTADO.png",
+    "patch_px": [
+      2456,
+      734,
+      300,
+      300
+    ],
+    "mirrored": "horizontal",
+    "on_glyph": "E",
+    "alpha_pixels_changed": 38466,
+    "note": "fidelity control only: NOT a print master"
+  },
+  "generated": "2026-10-06",
+  "generator": "_build/pack/rotulos.py"
+}

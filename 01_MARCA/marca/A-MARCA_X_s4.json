@@ -1,0 +1,27 @@
+{
+ "tamanho": 2048,
+ "semente": 4,
+ "razao": 3.75,
+ "fios": 40,
+ "topo": 1,
+ "ponta_levantada": {
+  "tira": 1,
+  "ponta": -1
+ },
+ "tiras": [
+  {
+   "cx": 1024.56,
+   "cy": 1047.41,
+   "angulo": 46.949,
+   "comprimento": 1982.11,
+   "largura": 546.13
+  },
+  {
+   "cx": 1017.93,
+   "cy": 1038.84,
+   "angulo": -44.528,
+   "comprimento": 1988.83,
+   "largura": 546.13
+  }
+ ]
+}

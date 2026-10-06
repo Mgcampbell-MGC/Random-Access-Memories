@@ -1,0 +1,28 @@
+HOLOFOTE · LEIA PRIMEIRO
+Caso demonstrativo · marca fictícia
+
+O QUE É
+HOLOFOTE é uma marca fictícia de velas para o Dia das Mães (domingo, 9 de maio de 2027), criada pelo SOL
+Estúdio para mostrar O LANÇAMENTO + O ANÚNCIO. Título: "Ela aplaudiu de pé o seu pior show." Assinatura:
+"holofote nela." Não existe cliente, produto à venda, contrato ou resultado comercial. Nome, @, domínio e
+todos os dados legais são de trabalho ou fictícios.
+
+POR ONDE COMEÇAR
+1. 07_KIT_COMPLETO/HOLOFOTE_PACKET.html: o pacote de informação criativa (abra no navegador; imprime em A4).
+2. 00_estrategia/CREATIVE_PLATFORM.md: a plataforma TRAVADA, fonte de verdade.
+3. _build/PRODUCTION_BRIEF.md: decisões da dona e do diretor, que prevalecem sobre a plataforma.
+4. 06_PRODUCAO/COMECE_AQUI_PROXIMO_LLM.txt: como produzir, refazer e conferir.
+
+PASTAS
+00_estrategia (só leitura) · 01_MARCA · 02_PRODUTO · 03_LANCAMENTO · 04_FILMES · 05_ANUNCIO · 06_PRODUCAO ·
+07_KIT_COMPLETO · _build (código, fontes, ferramentas)
+
+STATUS (6 out 2026)
+- Prontos: plataforma, logo, 12 cartazes, 8 mestres de rótulo e 3 cópias com erro plantado, modelo 3D com
+  rótulo por UV, verificador de fidelidade UV, arquivos de máquina do anúncio.
+- Em produção: renders, KV, séries C/B/L/D, filmes com som, animatics e relatório de fidelidade. O status
+  de cada entrega está na §00 do pacote.
+- Não feitos: imagens de pessoas (H01, H02, M01) e as peças P01–P03. Exigem créditos e aprovação escrita
+  da dona. A voz dos anúncios é temporária.
+- Decisão da dona: nenhuma placa de IA em peça alguma.
+- Nada foi publicado. Nada é chamado de APROVADO sem o verificador real e a revisão humana.

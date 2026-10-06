@@ -1,0 +1,285 @@
+{
+  "lids": [
+    {
+      "sku": "HLF-REF-01",
+      "file": "HLF-REF-01_TAMPA-PEEL.png",
+      "px": [
+        3080,
+        2640
+      ],
+      "ppmm": 40,
+      "disc_mm": 66.0,
+      "tab_mm": [
+        9.0,
+        14.0
+      ],
+      "flood": "rosa",
+      "ink": "#121014",
+      "lines": [
+        {
+          "text": "NOVA TEMPORADA",
+          "cap_mm": 4.059,
+          "measure_mm": 41.02,
+          "baseline_mm": 15.44
+        },
+        {
+          "text": "CAMARIM",
+          "cap_mm": 7.825,
+          "measure_mm": 55.03,
+          "baseline_mm": 29.44
+        },
+        {
+          "text": "vela aromática · refil",
+          "cap_mm": 3.0,
+          "baseline_mm": 36.44
+        },
+        {
+          "text": "PESO LÍQUIDO 200 g",
+          "cap_mm": "2,6 / figures 4,0",
+          "baseline_mm": 43.44
+        },
+        {
+          "text": "Use dentro do copo HOLOFOTE.",
+          "cap_mm": 2.4,
+          "baseline_mm": 49.04
+        },
+        {
+          "text": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "baseline_mm": 53.44
+        }
+      ],
+      "strings": [
+        "NOVA TEMPORADA",
+        "CAMARIM",
+        "PESO LÍQUIDO 200 g",
+        "vela aromática · refil",
+        "Use dentro do copo HOLOFOTE.",
+        "Retire o selo antes de acender."
+      ],
+      "deviations": [
+        {
+          "kind": "director's decision",
+          "added": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "reason": "refill safety: the peel lid (o selo) must come off before the candle is lit"
+        }
+      ]
+    },
+    {
+      "sku": "HLF-REF-02",
+      "file": "HLF-REF-02_TAMPA-PEEL.png",
+      "px": [
+        3080,
+        2640
+      ],
+      "ppmm": 40,
+      "disc_mm": 66.0,
+      "tab_mm": [
+        9.0,
+        14.0
+      ],
+      "flood": "amarelo",
+      "ink": "#121014",
+      "lines": [
+        {
+          "text": "NOVA TEMPORADA",
+          "cap_mm": 4.059,
+          "measure_mm": 41.02,
+          "baseline_mm": 15.44
+        },
+        {
+          "text": "AO VIVO",
+          "cap_mm": 7.966,
+          "measure_mm": 54.91,
+          "baseline_mm": 29.44
+        },
+        {
+          "text": "vela aromática · refil",
+          "cap_mm": 3.0,
+          "baseline_mm": 36.44
+        },
+        {
+          "text": "PESO LÍQUIDO 200 g",
+          "cap_mm": "2,6 / figures 4,0",
+          "baseline_mm": 43.44
+        },
+        {
+          "text": "Use dentro do copo HOLOFOTE.",
+          "cap_mm": 2.4,
+          "baseline_mm": 49.04
+        },
+        {
+          "text": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "baseline_mm": 53.44
+        }
+      ],
+      "strings": [
+        "NOVA TEMPORADA",
+        "AO VIVO",
+        "PESO LÍQUIDO 200 g",
+        "vela aromática · refil",
+        "Use dentro do copo HOLOFOTE.",
+        "Retire o selo antes de acender."
+      ],
+      "deviations": [
+        {
+          "kind": "director's decision",
+          "added": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "reason": "refill safety: the peel lid (o selo) must come off before the candle is lit"
+        }
+      ]
+    },
+    {
+      "sku": "HLF-REF-03",
+      "file": "HLF-REF-03_TAMPA-PEEL.png",
+      "px": [
+        3080,
+        2640
+      ],
+      "ppmm": 40,
+      "disc_mm": 66.0,
+      "tab_mm": [
+        9.0,
+        14.0
+      ],
+      "flood": "laranja",
+      "ink": "#121014",
+      "lines": [
+        {
+          "text": "NOVA TEMPORADA",
+          "cap_mm": 4.059,
+          "measure_mm": 41.02,
+          "baseline_mm": 15.44
+        },
+        {
+          "text": "MAIS UM!",
+          "cap_mm": 7.864,
+          "measure_mm": 55.0,
+          "baseline_mm": 29.44
+        },
+        {
+          "text": "vela aromática · refil",
+          "cap_mm": 3.0,
+          "baseline_mm": 36.44
+        },
+        {
+          "text": "PESO LÍQUIDO 200 g",
+          "cap_mm": "2,6 / figures 4,0",
+          "baseline_mm": 43.44
+        },
+        {
+          "text": "Use dentro do copo HOLOFOTE.",
+          "cap_mm": 2.4,
+          "baseline_mm": 49.04
+        },
+        {
+          "text": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "baseline_mm": 53.44
+        }
+      ],
+      "strings": [
+        "NOVA TEMPORADA",
+        "MAIS UM!",
+        "PESO LÍQUIDO 200 g",
+        "vela aromática · refil",
+        "Use dentro do copo HOLOFOTE.",
+        "Retire o selo antes de acender."
+      ],
+      "deviations": [
+        {
+          "kind": "director's decision",
+          "added": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "reason": "refill safety: the peel lid (o selo) must come off before the candle is lit"
+        }
+      ]
+    },
+    {
+      "sku": "HLF-REF-04",
+      "file": "HLF-REF-04_TAMPA-PEEL.png",
+      "px": [
+        3080,
+        2640
+      ],
+      "ppmm": 40,
+      "disc_mm": 66.0,
+      "tab_mm": [
+        9.0,
+        14.0
+      ],
+      "flood": "violeta",
+      "ink": "#FFF8EC",
+      "lines": [
+        {
+          "text": "NOVA TEMPORADA",
+          "cap_mm": 4.059,
+          "measure_mm": 41.02,
+          "baseline_mm": 15.44
+        },
+        {
+          "text": "ACÚSTICO",
+          "cap_mm": 7.826,
+          "measure_mm": 55.03,
+          "baseline_mm": 29.44
+        },
+        {
+          "text": "vela aromática · refil",
+          "cap_mm": 3.0,
+          "baseline_mm": 36.44
+        },
+        {
+          "text": "PESO LÍQUIDO 200 g",
+          "cap_mm": "2,6 / figures 4,0",
+          "baseline_mm": 43.44
+        },
+        {
+          "text": "Use dentro do copo HOLOFOTE.",
+          "cap_mm": 2.4,
+          "baseline_mm": 49.04
+        },
+        {
+          "text": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "baseline_mm": 53.44
+        }
+      ],
+      "strings": [
+        "NOVA TEMPORADA",
+        "ACÚSTICO",
+        "PESO LÍQUIDO 200 g",
+        "vela aromática · refil",
+        "Use dentro do copo HOLOFOTE.",
+        "Retire o selo antes de acender."
+      ],
+      "deviations": [
+        {
+          "kind": "director's decision",
+          "added": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "reason": "refill safety: the peel lid (o selo) must come off before the candle is lit"
+        }
+      ]
+    }
+  ],
+  "band": {
+    "file": "HLF-REF_CAPSULA_faixa-laser.png",
+    "px": [
+      8545,
+      400
+    ],
+    "ppmm": 40,
+    "circumference_mm": 213.628,
+    "height_mm": 10.0,
+    "text": "LOTE HLF0927 · FAB 03/2027 · VAL 03/2029",
+    "cap_mm": 2.0,
+    "tracking": 100,
+    "centre_u": 0.25,
+    "mark": "laser on black anodised (render the ink as the bare-aluminium tone)",
+    "placement": "band centred 12 mm below the capsule lip (UNVERIFIED with the capsule supplier)"
+  },
+  "generator": "_build/pack/refil.py"
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "asset": "/home/user/Random-Access-Memories/kits/HOLOFOTE/03_LANCAMENTO/L/L07_NOVA-TEMPORADA.png",
+    "master": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/rotulos/HLF-02_ROTULO_wrap.png",
+    "tiles": 212,
+    "uv_agreement": 0.9959,
+    "corner_tiles_skipped": 8,
+    "corner_tiles_worst": 0.969,
+    "control": {
+      "patch_px": [
+        1993,
+        1546,
+        434,
+        434
+      ],
+      "worst_tile": -0.287,
+      "caught": true
+    },
+    "hue_shift_deg": -0.47,
+    "sat_ratio": 0.895,
+    "worst_tile": 0.92,
+    "p5_tile": 0.963,
+    "bar_p5": 0.95,
+    "pass": true,
+    "label_id": null,
+    "glass_frac_altura": 0.4283561706542969,
+    "thumbnail_sem_alegacao": false
+  }
+]

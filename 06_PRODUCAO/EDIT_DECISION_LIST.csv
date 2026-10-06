@@ -1,0 +1,27 @@
+film,shot,source,timeline_in,timeline_out,frames,mode,notes
+F15_A-ENTRADA,F15-01,black,0,11,12,black,house dark; DOMINGO · 09.05 on black
+F15_A-ENTRADA,F15-02,render:_render/F15_camA_16bit.png,12,13,2,relight-2D warm-up,"CLAC: the spot comes up 10 % at 2.000 K, 55 % at 2.700 K (scene-linear, exact PBR Neutral inverse)"
+F15_A-ENTRADA,F15-03,render:_render/F15_camA_16bit.png,14,159,146,hold,"cam A (KV-01 9:16 framing), the empty hard pool on the X"
+F15_A-ENTRADA,F15-04,render:_render/grua/f####_50.png,160,175,16,3D frame 50 % + Lanczos 2x,crane + dolly A->B begins (ease in-out to f203); lift plate drops 100 mm f168–175; no candle in frame
+F15_A-ENTRADA,F15-05,render:_render/grua/f####_100.png,176,203,28,3D frame 100 % + label AOV,"the plate rises carrying the UNLIT candle, label to camera at yaw 12 deg, no rotation; locks flush and the camera settles at KV-45 on f203"
+F15_A-ENTRADA,F15-06,black,204,209,6,black,BLACKOUT: the spot cuts in 1 frame (CLAC-off f204; fsst f206 is sound only)
+F15_A-ENTRADA,F15-07,render:_render/F15_blecaute_16bit.png + _render/chama_blecaute/c####.png,210,221,12,still + 2D relight (flame gain) + 3D flame crop,"the wick catches f210–215 (scale 0,10 -> 1,0), then the flame alone in the black; label checked on the albedo pass"
+F15_A-ENTRADA,F15-08,KV-45_aceso + F15_blecaute (+ crops),222,223,2,relight-2D warm-up + 3D flame crop + 2D push,"CLAC: the spot snaps back on: blackout + gain x (lit - blackout), scene-linear"
+F15_A-ENTRADA,F15-09,KV-45_aceso_16bit.png + _render/chama_palco/c####.png,224,359,136,still + 3D flame crop loop + 2D push 0->4 %,"the KV-45 end card; push f222–359 ease-out; flame flicker = 24-frame crop loop (±6 %, 2–4 Hz)"
+F06A_CLAC,F06A-01,black,0,5,6,black,09.05 on black
+F06A_CLAC,F06A-02,KV-45_aceso + F15_blecaute (+ crops),6,7,2,relight-2D warm-up + 3D flame crop,CLAC: the candle is already lit in the dark; the spot warms up over it
+F06A_CLAC,F06A-03,KV-45_aceso_16bit.png + chama_palco,8,23,16,still + 3D flame crop loop,hold
+F06A_CLAC,F06A-04,KV-45_aceso_16bit.png + chama_palco,24,95,72,still + 3D flame crop loop + 2D push 0->3 %,"dolly push, ease-out"
+F06A_CLAC,F06A-05,KV-45_aceso_16bit.png + chama_palco,96,143,48,"still + 3D flame crop loop, push held at 3 %",end card: holofote nela. + safety; claps f100/110/120
+F06B_O-PIOR-SHOW,F06B-01,"lambe:amarelo (C03 recipe, seed 303)",0,83,84,poster: flat type -> O LAMBE per frame,"one word per beat (f0, 12, 24, 36, 48, 60), each fills the measure, poster squash; (girassol, 2007) + arrow draw on f66–83"
+F06B_O-PIOR-SHOW,F06B-02,KV-45_aceso + F15_blecaute (+ crops),84,85,2,relight-2D warm-up + 3D flame crop,hard cut; CLAC
+F06B_O-PIOR-SHOW,F06B-03,KV-45_aceso_16bit.png + chama_palco,86,143,58,still + 3D flame crop loop (hold),SUA VEZ. + holofote nela. + safety; claps f120/130/140
+F06C_SINAL_07-05,F06C-01,black,0,71,72,black,1 bell(s) f0/8/16; PRIMEIRO SINAL. on the first bell; faltam 2 dias. draws on f24–37
+F06C_SINAL_07-05,F06C-02,KV-45_apagado,72,73,2,relight-2D warm-up,CLAC f72
+F06C_SINAL_07-05,F06C-03,KV-45_apagado_16bit.png,74,143,70,still hold,MÃE AO VIVO · DOMINGO 09.05 + holofote nela.; the stage is set
+F06C_SINAL_08-05,F06C-01,black,0,71,72,black,2 bell(s) f0/8/16; SEGUNDO SINAL. on the first bell; é amanhã. draws on f24–37
+F06C_SINAL_08-05,F06C-02,KV-45_apagado,72,73,2,relight-2D warm-up,CLAC f72
+F06C_SINAL_08-05,F06C-03,KV-45_apagado_16bit.png,74,143,70,still hold,MÃE AO VIVO · DOMINGO 09.05 + holofote nela.; the stage is set
+F06C_SINAL_09-05,F06C-01,black,0,71,72,black,3 bell(s) f0/8/16; TERCEIRO SINAL. on the first bell; é hoje. draws on f24–37
+F06C_SINAL_09-05,F06C-02,KV-45_aceso + F15_blecaute (+ crops),72,73,2,relight-2D warm-up + 3D flame crop,CLAC f72
+F06C_SINAL_09-05,F06C-03,KV-45_aceso_16bit.png + chama_palco,74,143,70,still hold + 3D flame crop loop,MÃE AO VIVO · DOMINGO 09.05 + holofote nela. + safety; the stage is set

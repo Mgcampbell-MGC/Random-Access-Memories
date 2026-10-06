@@ -1,0 +1,65 @@
+{
+  "arquivo": "HLF-F06C_SINAL_08-05_som.wav",
+  "duracao_s": 6.0,
+  "fps": 24.0,
+  "lufs_i": -14.0,
+  "true_peak_dbtp": -1.09,
+  "normalizacao": "−14 LUFS integrado, ≤ −1 dBTP",
+  "cues": [
+    {
+      "label": "2 sino(s) f0/f8/f16",
+      "arquivo": "sfx/HLF-SFX-09b_sinal_2_sinos.wav",
+      "quadro": 0.0,
+      "inicio_s": 0.0,
+      "sync": "start"
+    },
+    {
+      "label": "CLAC f72",
+      "arquivo": "sfx/HLF-SFX-01_clac.wav",
+      "quadro": 72.0,
+      "inicio_s": 3.0,
+      "sync": "onset"
+    },
+    {
+      "label": "plateia chegando f74→",
+      "arquivo": "sfx/HLF-SFX-03_murmurio_teatro_loop.wav",
+      "quadro": 74.0,
+      "inicio_s": 3.0833,
+      "sync": "start"
+    }
+  ],
+  "quadros_chave": [
+    {
+      "quadro": 0,
+      "onset_medido_s": 0.0,
+      "desvio_quadros": 0.001,
+      "ok": true
+    },
+    {
+      "quadro": 8,
+      "onset_medido_s": 0.3334,
+      "desvio_quadros": 0.001,
+      "ok": true
+    },
+    {
+      "quadro": 72,
+      "onset_medido_s": 3.0,
+      "desvio_quadros": 0.0,
+      "ok": true
+    }
+  ],
+  "onsets_medidos": [
+    {
+      "t_s": 0.0,
+      "quadro": 0.0
+    },
+    {
+      "t_s": 0.3334,
+      "quadro": 8.0
+    },
+    {
+      "t_s": 3.0,
+      "quadro": 72.0
+    }
+  ]
+}

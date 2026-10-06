@@ -1,0 +1,181 @@
+SOL ESTÚDIO | O LANÇAMENTO + O ANÚNCIO
+HOLOFOTE · INSTRUÇÃO PARA O PRÓXIMO LLM / OPERADOR DE PRODUÇÃO
+Caso demonstrativo · marca fictícia
+
+Você recebe um kit em produção, não uma campanha para reinventar. A direção está TRAVADA em
+00_estrategia/CREATIVE_PLATFORM.md. Construa exatamente o que ela especifica, com as decisões de
+_build/PRODUCTION_BRIEF.md por cima. Nada é "melhorado" na produção: uma mudança exige nova versão da
+plataforma, aprovada pela dona. Toda string de campanha é copiada caractere por caractere (acentos, caixa,
+pontuação e ponto final).
+
+
+QUEM MANDA, EM ORDEM
+1. As decisões da dona e do diretor em _build/PRODUCTION_BRIEF.md.
+2. 00_estrategia/CREATIVE_PLATFORM.md. Dentro dela, a tabela mais específica vence a prosa, e a §C
+   (embalagem) vence o resto.
+3. 07_KIT_COMPLETO/HOLOFOTE_PACKET.html, o resumo em português para a produção. Se discordar dos dois acima,
+   eles vencem.
+
+
+LEIA NESTA ORDEM
+1. 00_LEIA_PRIMEIRO.txt
+2. 07_KIT_COMPLETO/HOLOFOTE_PACKET.html (abra no navegador; imprime em A4)
+3. 00_estrategia/CREATIVE_PLATFORM.md
+4. _build/PRODUCTION_BRIEF.md
+5. Este arquivo
+6. 02_PRODUTO/rotulos/: os mestres *_ROTULO_wrap.png e os *_label_copy.json (todas as strings da embalagem)
+7. 05_ANUNCIO/: MODEL_SHEET.json, CREATOR_ADS.json, CREATOR_PROMPTS.txt, SEEDANCE_PROMPTS.txt, PROMPTS_MODELO.json
+8. O LEIA_ME.md de cada pasta numerada
+
+
+AS DECISÕES QUE MUDAM A PLATAFORMA (6 out 2026)
+- NENHUMA PLACA DE IA EM PEÇA ALGUMA, por decisão da dona ("dont label the AD"). Saem "imagem ilustrativa
+  criada com IA", "render 3D ilustrativo · marca fictícia" e "… · publicidade" de KVs, imagens, filmes e
+  anúncios. A faixa onde ficavam continua vazia. Não queime placa de divulgação em nenhuma peça.
+  O texto impresso NA embalagem fica (PROTÓTIPO FICTÍCIO · NÃO COMERCIALIZAR, os "(FICTÍCIO)" do manifesto,
+  o CNPJ fictício): é desenho de embalagem, não aviso de IA.
+- Nenhuma fala de testemunho, nunca. O apresentador fala com "você" sobre "ela" e nunca diz "minha mãe".
+- Renders de beleza em Khronos PBR Neutral, look None, exposição ≈ −3,0. Não use AgX: medido, ele derruba
+  a saturação do amarelo pela metade (o amarelo vira mostarda).
+- Chama: o portão de legibilidade reprovou a chama de 16 × 12 mm (3 px no miolo, barra ≥ 9) e travou o
+  pavio de madeira de lâmina dupla com chama de 14 × 18 mm (10 px). holofote.copo() usa wick='double' por
+  padrão; wick='single' só em close.
+- A fidelidade do rótulo nos renders 3D é provada por _build/tools/fidelidade_uv.py (instruções abaixo).
+- _build/blender/holofote.py é o produto. Ninguém além do diretor edita esse arquivo.
+
+
+TRAVA DO RÓTULO
+- Nunca envie a um gerador de imagem ou vídeo: mestre de rótulo, render com rótulo, KV, cartaz, peça
+  composta ou qualquer imagem com letra nossa. Isso inclui upscale, "melhorar", "design view" e
+  image-to-video.
+- Todo pixel de produto é render Blender Cycles de geometria real vestindo o mestre do rótulo, ou
+  composição por código desse render. Nenhum pixel de embalagem é gerado.
+- Em cena gerada (pessoas), a embalagem é um substituto azul-croma fosco e chapado (#0047BB): cilindro de
+  7,6 cm de largura × 8,8 cm de altura com tampa de disco de 9,0 cm × 0,3 cm, apagado, em pé sobre uma
+  superfície, nunca na mão, sem texto, logo ou brilho. Nenhum outro azul ou ciano no quadro (sem jeans,
+  parede azul ou céu). Violeta-UV nunca. Nenhuma vela acesa em cena gerada. Cena de apresentador não tem
+  produto nenhum.
+- Câmera do Blender casada pela elipse do topo do substituto; luz casada pela sombra da cena; composição
+  por código, mantendo a sombra de contato da placa, borda de 1 px.
+- Depois que a embalagem entra no quadro: nenhuma edição por IA (sem upscale, reiluminação, remoção de
+  objeto, preenchimento generativo). Para mudar, volte à cena e componha de novo.
+- Texto de anúncio só por código, AO LADO da embalagem, nunca sobre ela. _build/tools/texto.py prova que
+  os pixels da embalagem ficaram idênticos.
+- O KV-45 entra nos anúncios como UMA camada de imagem, só com movimento de câmera (100 → 103%). Nunca
+  corrija a cor do KV; normalize a tomada do apresentador antes.
+- Recompor, nunca cortar: cada formato tem o tipo recomposto por código na sua medida.
+
+
+COMO REFAZER CADA COISA (rodar de kits/HOLOFOTE)
+PY=/home/user/venvs/web/bin/python
+BL=/home/user/venvs/blender/bin/python
+TTS=/home/user/venvs/kokoro/bin/python
+Fontes: só os arquivos de _build/fonts/ (oficiais). Nunca baixe pela API de CSS do Google Fonts com
+user-agent antigo: vêm subconjuntos sem glifos.
+
+- Logo e O FOCO ............ $PY _build/logo.py  → 01_MARCA/logo/
+- Métricas e wordmark (JS) . $PY _build/brand/metricas.py ; $PY _build/brand/wordmark.py
+- Cartazes do muro ......... $PY _build/brand/cartazes.py [01 07]  → 01_MARCA/cartazes/ (+ 3d/ albedo e altura)
+- A MARCA (X de gaffer) .... $PY _build/brand/marca.py --png saida.png --semente 927
+- O LAMBE .................. $PY _build/brand/lambe.py aplicar entrada.png saida.png --papel amarelo --semente N
+- Mestres de rótulo ........ $PY _build/pack/rotulos.py [--only HLF-02] ; $PY _build/pack/single.py
+                             → 02_PRODUTO/rotulos/ (mestre, SVG, prévia, label_copy.json, erro plantado)
+- Render 3D ................ $BL _build/blender/render_scene.py -- cena.json
+                             (chaves no docstring; camsolve.py resolve a câmera para pixels exatos)
+- Tipo do KV ............... $PY _build/kv/tipo_kv.py PASTA [--preview]
+- Peças gráficas ........... $PY _build/brand/lancamento.py [B C]  → 03_LANCAMENTO/{B,C,D,STK}/
+                             (B01–B08, C03, C07, C09, D01, D02, STK; miniatura da vela em C03/C07:
+                             ... lancamento.py C --vela-c03 render.png --vela-c07 render_kv.png)
+- Objetos 3D ............... _build/objects/objects_lib.py (case, setlist, pulseira, tampa solta; API no
+                             LEIA_ME.md da pasta; arte provisória: make_placeholders.py)
+- HTML → PNG ............... PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers $PY _build/tools/html2png.py pagina.html saida.png 1080x1350 [--transparent]
+- Arquivos do anúncio ...... $PY _build/anuncio/maquina.py  → 05_ANUNCIO/ (5 arquivos)
+- VO temporária ............ $TTS _build/anuncio/vo.py PASTA  → WAV por fala + vo_tempos.json
+- Tempos das legendas ...... $PY _build/anuncio/legendas.py PASTA_VO saida.json
+- Som inteiro .............. bash _build/sound/construir.sh  → 04_FILMES/som/ (~4 min, idêntico bit a bit)
+                             fontes CC0 por SHA-256 → vozes do público (Kokoro) → música → efeitos →
+                             som dos filmes → PNGs de verificação
+- Som por parte ............ $PY -I _build/sound/musica.py ; sfx.py [clac tosse] ; filmes.py [F15 F06B] ;
+                             mix.py (lista de cues → WAV a −14 LUFS, ≤ −1 dBTP)
+- Medir áudio .............. $PY _build/sound/analisar.py arquivo.wav --png saida.png
+- Ataques x quadros ........ $PY _build/sound/onsets.py arquivo.wav --fps 24 --snap 204 210  (±1 quadro = OK)
+- Codificar filme .......... $PY _build/tools/codificar.py PASTA_QUADROS FILME.mp4 --fps 24 [--trilha mix.wav] [--segundos 15]
+  ATENÇÃO: o padrão do codificar.py é 30 fps; os filmes do HOLOFOTE são 24 fps. Nunca use o MP4 padrão de
+  um renderizador: ele converte em BT.601 e marca BT.709, e o celular mostra as cores deslocadas.
+- Camada de pessoas (só quando houver cenas aprovadas): recortar.py → compor.py → texto.py, e
+  relatorio_fidelidade.py no composto.
+
+Geradores de peças finais que não estão nesta lista ficam em _build/ junto da família, com o comando no
+LEIA_ME.md da pasta de saída. Se o comando não estiver lá, registre-o ao entregar.
+
+Máquina: 4 núcleos compartilhados. Testes de Blender a ≤ 540 px e ≤ 32 amostras; nunca dois Blender ao
+mesmo tempo. Finais: stills a 1.024 amostras + OIDN; filmes a 512 + OIDN, conferindo cintilação num loop
+de 24 quadros antes do render completo. Olhe cada PNG que produzir, a 100%, antes de dizer que está pronto.
+
+
+COMO RODAR O VERIFICADOR UV (_build/tools/fidelidade_uv.py)
+1. Renderize a peça E o passe de AOV no MESMO tamanho entregue. Na cena: a vela com 'aov': True no spec e
+   holofote.enable_label_aovs(pasta_exr), que grava label_uv, label_ink, label_mask e Diffuse Color num
+   EXR multicamada.
+2. Rode:
+   $PY _build/tools/fidelidade_uv.py --master 02_PRODUTO/rotulos/HLF-02_ROTULO_wrap.png \
+       --aov <render>_aov.exr --asset <peça>.png --coat '#FFE81A' \
+       --json 06_PRODUCAO/<peça>_fidelidade.json --debug 06_PRODUCAO/<peça>_blocos.png
+   Filme: acrescente --film e passe cada quadro como --asset (todos os quadros com embalagem, não uma
+   amostra). Tinta clara (ACÚSTICO): --coat '#8424F5' --ink '#FFF8EC'.
+3. Barras: pior bloco com letra ≥ 0,80; 5º percentil ≥ 0,95 (still) ou ≥ 0,93 (filme); o erro plantado
+   (trecho de 300 × 300 px com letras, espelhado) TEM de ser pego (pior bloco do controle < 0,80);
+   cor: |desvio de matiz| ≤ 3,0° e razão de saturação ≥ 0,75, medida no render de luz neutra da mesma vista.
+4. Calibração no herói (6 out 2026): render exato, pior bloco 0,90–0,97 e 5º percentil 0,98; erro plantado
+   0,17–0,19 (pego); um rótulo que dizia "MÃF", 0,025 (falha); AgX falha na saturação (0,49 < 0,75).
+   Calibrado só no amarelo: recalibre rosa, laranja e violeta antes de confiar no veredito de cor.
+5. Quadros iluminados pela chama (F15 f204–221, C06, KV-45 aceso): letras no passe Diffuse Color (albedo),
+   com erro plantado; cor no render de luz neutra da mesma vista.
+6. Embalagem abaixo de 20% da altura do quadro (C03, C07) é miniatura: sem alegação de fidelidade.
+7. Personalizados (DONA CIDA, MÃE ♥, MAINHA): conferir o mestre plano contra o label_copy.json, com erro
+   plantado, ANTES de imprimir; AOV nas unidades de amostra renderizadas.
+8. Leia cada rótulo a 100% e compare com o mestre. O verificador pega redesenho, distorção e recoloração;
+   ele pode deixar passar uma letra muito parecida com outra.
+Saída 0 = tudo passou; 1 = algo falhou. Peça que falha não entra no conjunto final. Os resultados vão para
+a tabela da §6.6 do pacote, copiados do JSON.
+
+
+SEGURANÇA DA CHAMA (todo quadro entregue; qualquer NÃO = o quadro não é entregue)
+1. A embalagem só se move apagada.
+2. Vela acesa a ≥ 30 cm de papel, tecido, cadeira ou pessoa.
+3. Nada de confete, serpentina ou partícula em quadro aceso.
+4. Superfície firme e plana.
+5. Nenhuma vela acesa em cena gerada, nem sozinha num cômodo doméstico. O palco é o show.
+6. "Nunca deixe a vela acesa sem supervisão." em todo cartão final e todo post com produto aceso.
+
+
+HONESTIDADE DO CASO
+- O caso é "Caso demonstrativo · marca fictícia". Isso vai na apresentação do portfólio e nos documentos,
+  não queimado nas peças.
+- Pessoas (H01, H02, M01) NÃO foram geradas: faltam créditos e a aprovação escrita da dona. Não gere nem
+  compre créditos sem essa aprovação. Os anúncios estão em animatic com manequim cinza; P01–P03 não existem.
+- Som, registrado: a FANFARRA HOLOFOTE é composta e sintetizada em código (obra do estúdio, sem amostra),
+  não gerada por IA como a plataforma supunha; o mix NÃO tem metais (o stem experimental de musica.py
+  --metais precisa de um ouvido humano); o crepitar vem de gravações CC0 de fogo e de síntese, não de uma
+  vela real de pavio de madeira. Licenças em 04_FILMES/som/CREDITOS.md.
+- A VO dos animatics é temporária (Kokoro, local). Será trocada por voz sintética licenciada em PT-BR que
+  não imite ninguém. Depois disso, rode legendas.py de novo e meça de novo.
+- Se o lip-sync falhar: refaça 0–6 s como VO sobre uma tomada sem fala, com legendas. Sincronia quebrada
+  nunca vai ao ar.
+- Não invente cliente, contrato, depoimento, resultado comercial, eficácia, aprovação, ingrediente ou teste.
+- Não gere JSON com resultados fictícios. No pacote, os campos <span data-dado="..."> só recebem números de
+  relatório real, e os quadros <figure data-slot="..."> só recebem o arquivo final.
+- Nada é chamado de APROVADA sem o verificador real e a revisão humana. Até cada vista mestre passar,
+  arquivos e legendas dizem só "render 3D, textura do arquivo-mestre", nunca "verificado".
+- Peça ausente ou reprovada: liste com o motivo e deixe fora do conjunto publicado.
+- As regras de upload das plataformas (TikTok, Meta: identificação de IA e de publicidade) são uma
+  verificação separada, feita no dia de publicar, peça por peça. Resolva na legenda do post ou no rótulo
+  da própria plataforma; não queime placa na imagem sem nova decisão da dona.
+- Não publique, não compre ferramenta ou crédito e não registre domínio sem aprovação escrita da dona.
+  Não faça commit sem pedido.
+
+
+AO ENTREGAR
+Mostre os arquivos finais, o status de cada peça, o relatório de fidelidade de fato executado, o que falta
+e por quê. Um roteiro não é um filme; uma imagem estática não é um vídeo; um animatic não é um anúncio
+filmado.

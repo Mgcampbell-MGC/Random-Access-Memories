@@ -1,0 +1,29 @@
+[
+  {
+    "asset": "/home/user/Random-Access-Memories/kits/HOLOFOTE/03_LANCAMENTO/L/L06_A-TURNE.png",
+    "master": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/rotulos/HLF-02_ROTULO_wrap.png",
+    "tiles": 43,
+    "uv_agreement": 0.9954,
+    "corner_tiles_skipped": 2,
+    "corner_tiles_worst": 0.964,
+    "control": {
+      "patch_px": [
+        2688,
+        1090,
+        1102,
+        1102
+      ],
+      "worst_tile": -0.198,
+      "caught": true
+    },
+    "hue_shift_deg": -10.97,
+    "sat_ratio": 0.889,
+    "worst_tile": 0.881,
+    "p5_tile": 0.969,
+    "bar_p5": 0.95,
+    "pass": false,
+    "label_id": 3.0,
+    "glass_frac_altura": 0.16268059611320496,
+    "thumbnail_sem_alegacao": true
+  }
+]

@@ -1,0 +1,178 @@
+{
+ "HLF-BASE-200": {
+  "relief": {
+   "file": "HLF-BASE-200_PRECISAVA_altura16.png",
+   "px": [
+    2480,
+    2480
+   ],
+   "ppmm": 40,
+   "panel_diameter_mm": 62.0,
+   "text": "PRECISAVA.",
+   "font": "Special Gothic Expanded One",
+   "cap_mm": 4.5,
+   "tracking": 50.28,
+   "ink_width_mm": 47.0,
+   "platform_width_mm": 47.0,
+   "baseline_mm_above_centre": 4.0,
+   "relief_mm": 0.4,
+   "shoulder_mm": 0.12,
+   "ink_box_mm_from_centre": [
+    -23.5,
+    3.918,
+    23.5,
+    8.576
+   ],
+   "orientation": "viewed from below; image top = FRONT of the candle (-Y)"
+  },
+  "sticker": {
+   "preto": {
+    "file": "HLF-BASE-200_ETIQUETA-LOTE.png",
+    "px": [
+     1600,
+     480
+    ],
+    "size_mm": [
+     40.0,
+     12.0
+    ],
+    "lines": [
+     "LOTE HLF0927 · FAB 03/2027 · VAL 03/2029",
+     "INDÚSTRIA BRASILEIRA",
+     "PROTÓTIPO FICTÍCIO · NÃO COMERCIALIZAR"
+    ],
+    "caps_mm": [
+     1.4,
+     2.0,
+     1.4
+    ],
+    "measure_mm": 35.4,
+    "tracking": [
+     87.0,
+     100,
+     116.2
+    ],
+    "baselines_mm_from_top": [
+     3.47,
+     7.0,
+     9.93
+    ],
+    "fonts": [
+     "Special Gothic Condensed One",
+     "Special Gothic wdth 75 wght 700 (com destaque)",
+     "Special Gothic Condensed One"
+    ],
+    "line2": "centred (legal mark), lines 1 and 3 fill the measure"
+   },
+   "papel": {
+    "file": "HLF-BASE-200_ETIQUETA-LOTE_PAPEL-ACUSTICO.png",
+    "px": [
+     1600,
+     480
+    ],
+    "size_mm": [
+     40.0,
+     12.0
+    ],
+    "lines": [
+     "LOTE HLF0927 · FAB 03/2027 · VAL 03/2029",
+     "INDÚSTRIA BRASILEIRA",
+     "PROTÓTIPO FICTÍCIO · NÃO COMERCIALIZAR"
+    ],
+    "caps_mm": [
+     1.4,
+     2.0,
+     1.4
+    ],
+    "measure_mm": 35.4,
+    "tracking": [
+     87.0,
+     100,
+     116.2
+    ],
+    "baselines_mm_from_top": [
+     3.47,
+     7.0,
+     9.93
+    ],
+    "fonts": [
+     "Special Gothic Condensed One",
+     "Special Gothic wdth 75 wght 700 (com destaque)",
+     "Special Gothic Condensed One"
+    ],
+    "line2": "centred (legal mark), lines 1 and 3 fill the measure"
+   }
+  },
+  "sticker_centre_mm": -7.0,
+  "sticker_note": "centre on the panel axis, st_centre mm BELOW the centre in the reading view (toward the BACK of the candle, +Y), so it never covers PRECISAVA."
+ },
+ "HLF-BASE-080": {
+  "relief": {
+   "file": "HLF-BASE-080_PRECISAVA_altura16.png",
+   "px": [
+    1840,
+    1840
+   ],
+   "ppmm": 40,
+   "panel_diameter_mm": 46.0,
+   "text": "PRECISAVA.",
+   "font": "Special Gothic Expanded One",
+   "cap_mm": 3.4,
+   "tracking": 50.03,
+   "ink_width_mm": 35.5,
+   "platform_width_mm": 35.5,
+   "baseline_mm_above_centre": 3.0,
+   "relief_mm": 0.4,
+   "shoulder_mm": 0.12,
+   "ink_box_mm_from_centre": [
+    -17.75,
+    2.938,
+    17.75,
+    6.457
+   ],
+   "orientation": "viewed from below; image top = FRONT of the candle (-Y)"
+  },
+  "sticker": {
+   "preto": {
+    "file": "HLF-BASE-080_ETIQUETA-LOTE.png",
+    "px": [
+     1280,
+     400
+    ],
+    "size_mm": [
+     32.0,
+     10.0
+    ],
+    "lines": [
+     "LOTE HLF0927 · FAB 03/2027 · VAL 03/2029",
+     "INDÚSTRIA BRASILEIRA",
+     "PROTÓTIPO FICTÍCIO · NÃO COMERCIALIZAR"
+    ],
+    "caps_mm": [
+     1.2,
+     1.7,
+     1.2
+    ],
+    "measure_mm": 28.4,
+    "tracking": [
+     57.5,
+     100,
+     85.2
+    ],
+    "baselines_mm_from_top": [
+     2.82,
+     5.85,
+     8.38
+    ],
+    "fonts": [
+     "Special Gothic Condensed One",
+     "Special Gothic wdth 75 wght 700 (com destaque)",
+     "Special Gothic Condensed One"
+    ],
+    "line2": "centred (legal mark), lines 1 and 3 fill the measure"
+   }
+  },
+  "sticker_centre_mm": -5.2,
+  "sticker_note": "centre on the panel axis, st_centre mm BELOW the centre in the reading view (toward the BACK of the candle, +Y), so it never covers PRECISAVA."
+ }
+}

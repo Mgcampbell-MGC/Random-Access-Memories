@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>HOLOFOTE · livro da marca (prancha)</title>
+<link rel="stylesheet" href="../tokens.css"><link rel="stylesheet" href="base.css">
+<script src="metricas.js"></script><script src="wordmark.js"></script><script src="holofote.js"></script>
+<script src="pilha.js"></script><script src="pecas.js"></script><script src="livro.js"></script>
+</head><body>
+<script>
+/* #{"n": 1..16, "kit": "file:///…/HOLOFOTE/"} — as pranchas estão em livro.js */
+const D = HF.dados({ n: 1, kit: '../../' });
+HF.pronto(async () => {
+  window.HF_QA = window.HF_QA || [];
+  HF.livro[D.n](D);
+  await Promise.all([...document.images].map((i) => (i.complete ? 0 : new Promise((r) => { i.onload = i.onerror = r; }))));
+  window.HF_INFO = { n: D.n };
+});
+</script>
+</body></html>

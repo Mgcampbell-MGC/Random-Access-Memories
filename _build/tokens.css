@@ -1,0 +1,21 @@
+/* HOLOFOTE design tokens. Source of truth: 00_estrategia/CREATIVE_PLATFORM.md §D. */
+@font-face { font-family: 'SG Expanded'; src: url('fonts/SpecialGothicExpandedOne-Regular.ttf'); }
+@font-face { font-family: 'SG Condensed'; src: url('fonts/SpecialGothicCondensedOne-Regular.ttf'); }
+@font-face { font-family: 'SG'; src: url('fonts/SpecialGothic-VF.ttf'); font-weight: 400 700; font-stretch: 75% 125%; }
+@font-face { font-family: 'Shantell'; src: url('fonts/ShantellSans-VF.ttf'); font-weight: 300 800; }
+:root {
+  --preto: #121014;      /* PRETO-PALCO: stage, ink, lid, case */
+  --papel: #FFF8EC;      /* PAPEL-CARTAZ: poster paper, light ink, LOJA plate */
+  --amarelo: #FFE81A;    /* AMARELO-CARTAZ: the signal; hero AO VIVO */
+  --rosa: #FF4FA0;       /* ROSA-CHOQUE: CAMARIM */
+  --laranja: #FF6A1A;    /* LARANJA-BIS: MAIS UM! */
+  --violeta: #8424F5;    /* VIOLETA-UV: ACÚSTICO (never in a generated scene) */
+  --luz: #FFE9C4;        /* light reference only */
+  --cera: #F3E9D6;       /* wax, render only */
+  --croma: #0047BB;      /* production stand-in only, never brand */
+}
+/* Voices: Locutor = SG Expanded / SG 700 caps; Produção = SG Condensed; Fã = Shantell lower case */
+.locutor { font-family: 'SG Expanded'; text-transform: uppercase; letter-spacing: -0.01em; }
+.producao { font-family: 'SG Condensed'; }
+.fa { font-family: 'Shantell'; font-weight: 500; font-variation-settings: 'INFM' 60, 'BNCE' 0; text-transform: none; }
+.tnum { font-feature-settings: 'tnum' 1, 'lnum' 1; }

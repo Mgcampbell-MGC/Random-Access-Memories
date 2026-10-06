@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>HOLOFOTE · camadas do anúncio</title>
+<link rel="stylesheet" href="../tokens.css"><link rel="stylesheet" href="../brand/base.css">
+<script src="../brand/metricas.js"></script><script src="../brand/wordmark.js"></script><script src="../brand/holofote.js"></script>
+<style>
+html,body{margin:0;background:transparent}
+.leg{position:absolute;white-space:pre;font-family:'SG';font-variation-settings:'wght' 700,'wdth' 100;text-transform:lowercase;
+  color:#FFF8EC;-webkit-text-stroke:var(--st) #121014;paint-order:stroke fill;font-kerning:normal;line-height:1}
+.leg .on{color:#FFE81A}
+</style>
+</head><body>
+<script>
+/* Ad overlay layers, 1080 × 1920, transparent (platform §F.3). Data in the URL hash:
+   modo 'legenda'  : {linhas:[...], ativa: k}   — word-synced caption page; word k (0-based across the page) in amarelo.
+                     band y 1000–1240, centred on x 520; 58 px, 6 px preto stroke, lower case.
+   modo 'kvlegenda': {linhas:[...], banda}       — the 9–15 s VO caption, one line, y 300–330 (banda moves it with the
+                                                   KV headline if the KV type zone is re-set).
+   modo 'tag'      : {t}                         — hook tag: Condensed One caps on a preto credencial plate, x 120, y 560–620.
+   modo 'gesto'    : {t}                         — gesture title: Locutor caps, fills x 120–920, cap ≤ 110, centred y 760–860.
+   modo 'abertura' : {t, x, y}                   — Ad 2: 'abertura: você' in Shantell, tiny, right-aligned to x 920.
+   No disclosure plate (founder override 6 Oct 2026). */
+const D = HF.dados({ modo: 'legenda', linhas: ['esqueceu a coreografia,', 'chorou, acenou pra mãe errada.'], ativa: 0, t: 'DIA DAS MÃES · O PIOR SHOW' });
+HF.pronto(() => {
+  const b = document.body; b.style.width = '1080px'; b.style.height = '1920px';
+  const info = {};
+  if (D.modo === 'legenda' || D.modo === 'kvlegenda') {
+    let fs = D.modo === 'legenda' ? 58 : 40;
+    const st = D.modo === 'legenda' ? 6 : 4;
+    // the safe box is x 120–920: a 30-character line at 58 px runs ~822 px, so the page shrinks to fit 800 px
+    const probe = document.createElement('div'); probe.className = 'leg'; probe.style.fontSize = fs + 'px'; probe.style.setProperty('--st', st + 'px');
+    b.appendChild(probe);
+    let maxW = 0;
+    for (const l of D.linhas) { probe.textContent = l; maxW = Math.max(maxW, probe.getBoundingClientRect().width); }
+    probe.remove();
+    if (maxW > 800) fs = Math.floor(fs * 800 / maxW * 10) / 10;
+    info.fs = fs;
+    const lh = Math.round(fs * 1.16);
+    const n = D.linhas.length;
+    // vertical: the block is centred in its band (legenda 1000–1240; kvlegenda 300–330, one line)
+    const band = D.modo === 'legenda' ? [1000, 1240] : (D.banda || [300, 330]);
+    const capH = HF.capPx({ f: 'V', fs }), blockH = (n - 1) * lh + capH;
+    let base = (band[0] + band[1]) / 2 - blockH / 2 + capH;
+    let k = 0;
+    info.linhas = [];
+    for (const linha of D.linhas) {
+      const d = document.createElement('div'); d.className = 'leg';
+      d.style.fontSize = fs + 'px'; d.style.setProperty('--st', st + 'px');
+      linha.split(' ').forEach((w, i) => {
+        if (i) d.append(' ');
+        const s = document.createElement('span'); s.textContent = w;
+        if (D.modo === 'legenda' && k === D.ativa) s.className = 'on';
+        d.append(s); k++;
+      });
+      b.appendChild(d);
+      const r = d.getBoundingClientRect();
+      // baseline of a line box with line-height 1: ascent sits at (fs - (asc+desc)) handled by measuring a probe
+      const pr = document.createElement('span'); pr.style.cssText = 'display:inline-block;width:0;height:0;vertical-align:baseline';
+      d.append(pr);
+      const off = pr.getBoundingClientRect().top - r.top;
+      d.style.left = Math.round(520 - r.width / 2) + 'px';
+      d.style.top = Math.round(base - off) + 'px';
+      info.linhas.push({ t: linha, x0: 520 - r.width / 2, x1: 520 + r.width / 2, baseline: base, chars: linha.length });
+      base += lh;
+    }
+  } else if (D.modo === 'tag') {
+    // the credencial: preto plate, papel caps, a punched slot on the left and the lamination glare stripe
+    const s = { t: D.t, f: 'C', fs: 44, lsEm: 0.06, cor: 'papel' };
+    const o = HF.texto(b, s);
+    const padL = 58, padR = 26, y0 = 560, y1 = 620;
+    const w = padL + o.inkW + padR;
+    const plate = HF.caixa(b, 120, y0, w, y1 - y0, { background: '#121014', borderRadius: '6px', zIndex: 0 });
+    const slot = HF.caixa(b, 120 + 18, y0 + (y1 - y0) / 2 - 12, 22, 24, { background: 'transparent', boxShadow: 'inset 0 0 0 3px #FFF8EC', borderRadius: '12px', opacity: 0.9 });
+    const glare = HF.caixa(b, 120, y0 + 7, w, 8, { background: 'linear-gradient(90deg, rgba(255,248,236,0) 0%, rgba(255,248,236,.22) 30%, rgba(255,248,236,0) 62%)', borderRadius: '6px' });
+    b.appendChild(o.el);
+    o.el.style.zIndex = 2;
+    HF.posicionar(o, 120 + padL, (y0 + y1) / 2 + HF.capPx(s) / 2, 'left');
+    info.tag = { w, inkW: o.inkW };
+  } else if (D.modo === 'gesto') {
+    const o = HF.texto(b, { t: D.t, f: 'X', fs: HF.fsDeCap('X', 110), lsEm: -0.01, cor: 'papel' });
+    HF.porTamanho(o, 800, HF.fsDeCap('X', 110));
+    const cap = HF.capPx(o.s);
+    HF.posicionar(o, 520, 810 + cap / 2, 'center');
+    o.el.style.webkitTextStroke = '6px #121014'; o.el.style.paintOrder = 'stroke fill';
+    info.gesto = { cap, inkW: o.inkW };
+  } else if (D.modo === 'abertura') {
+    // §F.2 Ad 2 body: 'abertura: você' pops in Shantell 500, tiny, at the right (the KV's L4 voice, x-height 22 px),
+    // right-aligned to the safe box (x 920), baseline 968: one 8 px step above the caption band (y 1000).
+    const o = HF.texto(b, { t: D.t || 'abertura: você', f: 'S', fs: HF.fsDeX('S', D.x || 22), cor: 'papel' });
+    HF.posicionar(o, 920, D.y || 968, 'right');
+    o.el.style.webkitTextStroke = '4px #121014'; o.el.style.paintOrder = 'stroke fill';
+    info.abertura = { inkW: o.inkW, x1: 920, baseline: D.y || 968 };
+  }
+  window.HF_INFO = info;
+});
+</script>
+</body></html>

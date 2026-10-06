@@ -1,0 +1,716 @@
+{
+  "sku": "HLF-03-200",
+  "kind": "INGRESSO",
+  "faixa": "03",
+  "size_mm": [
+    96.0,
+    96.0,
+    98.0
+  ],
+  "stock": "SBS 400 g/m²",
+  "inks": [
+    "preto",
+    "laranja"
+  ],
+  "flood": "#FF6A1A",
+  "type_ink": "#121014",
+  "knockout": false,
+  "ppmm": 20,
+  "panels": {
+    "frente": [
+      {
+        "label": "L1 L",
+        "ink_mm": [
+          6.0,
+          6.95,
+          22.5,
+          10.08
+        ],
+        "text": "INGRESSO"
+      },
+      {
+        "label": "L1 R",
+        "ink_mm": [
+          56.86,
+          6.95,
+          90.0,
+          10.08
+        ],
+        "text": "HOLOFOTE MAIS UM!"
+      },
+      {
+        "label": "MÃE",
+        "ink_mm": [
+          6.0,
+          13.22,
+          90.0,
+          40.54
+        ],
+        "text": "MÃE",
+        "cap_mm": 20.767,
+        "tracking": 52.96
+      },
+      {
+        "label": "show",
+        "ink_mm": [
+          6.0,
+          43.14,
+          90.0,
+          55.21
+        ],
+        "text": "MAIS UM!",
+        "cap_mm": 11.667,
+        "wdth": 111,
+        "tracking": 21.0,
+        "accent_fix": null
+      },
+      {
+        "label": "L4 L",
+        "ink_mm": [
+          6.0,
+          58.93,
+          49.65,
+          63.75
+        ],
+        "text": "DOMINGO · 09.05"
+      },
+      {
+        "label": "L4 R",
+        "ink_mm": [
+          53.17,
+          60.59,
+          90.0,
+          63.73
+        ],
+        "text": "SETOR: PRIMEIRA FILA"
+      },
+      {
+        "label": "L5 burn time not set",
+        "gap_mm": -0.24
+      },
+      {
+        "label": "L5 L",
+        "ink_mm": [
+          6.0,
+          69.62,
+          26.57,
+          72.93
+        ],
+        "text": "vela aromática"
+      },
+      {
+        "label": "L5 R",
+        "ink_mm": [
+          54.95,
+          68.81,
+          90.0,
+          73.87
+        ],
+        "text": "PESO LÍQUIDO 200 g"
+      },
+      {
+        "label": "stub",
+        "ink_mm": [
+          6.0,
+          82.9,
+          90.0,
+          93.57
+        ],
+        "text": "ADMITE 1 · ATRAÇÃO",
+        "cap_mm": 7.248
+      },
+      {
+        "label": "perforation (printed)",
+        "y_mm": 78.47,
+        "dash_mm": [
+          1.2,
+          0.8
+        ],
+        "weight_mm": 0.4
+      }
+    ],
+    "lateral-1": [
+      {
+        "label": "MODO DE USO",
+        "ink_mm": [
+          6.0,
+          24.54,
+          27.67,
+          26.81
+        ],
+        "text": "MODO DE USO",
+        "cap_mm": 2.2
+      },
+      {
+        "label": "Na primeira vez, deixe a cera ",
+        "ink_mm": [
+          6.0,
+          28.2,
+          63.08,
+          30.42
+        ],
+        "text": "Na primeira vez, deixe a cera derreter até a borda da cápsula (3 a 4 horas).",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Antes de cada uso, retire a pa",
+        "ink_mm": [
+          6.0,
+          31.07,
+          75.5,
+          33.17
+        ],
+        "text": "Antes de cada uso, retire a parte queimada do pavio de madeira, deixando cerca de 5 mm.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Não queime por mais de 4 horas",
+        "ink_mm": [
+          6.0,
+          33.8,
+          69.44,
+          35.95
+        ],
+        "text": "Não queime por mais de 4 horas seguidas. Deixe esfriar antes de acender de novo.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Para apagar, use um abafador. ",
+        "ink_mm": [
+          6.0,
+          36.45,
+          40.31,
+          38.7
+        ],
+        "text": "Para apagar, use um abafador. Não use água.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Encerre o uso quando restar ce",
+        "ink_mm": [
+          6.0,
+          39.3,
+          52.94,
+          41.42
+        ],
+        "text": "Encerre o uso quando restar cerca de 1 cm de cera no fundo.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Use a vela sempre dentro do co",
+        "ink_mm": [
+          6.0,
+          41.95,
+          75.15,
+          44.17
+        ],
+        "text": "Use a vela sempre dentro do copo. Apoie o copo sobre a tampa virada ou sobre superfície",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "plana, firme e resistente ao c",
+        "ink_mm": [
+          6.0,
+          44.8,
+          31.68,
+          46.92
+        ],
+        "text": "plana, firme e resistente ao calor.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "ADVERTÊNCIAS",
+        "ink_mm": [
+          6.0,
+          48.31,
+          30.18,
+          51.16
+        ],
+        "text": "ADVERTÊNCIAS",
+        "cap_mm": 2.2
+      },
+      {
+        "label": "Produto destinado exclusivamen",
+        "ink_mm": [
+          6.0,
+          52.55,
+          74.22,
+          54.77
+        ],
+        "text": "Produto destinado exclusivamente à odorização de ambientes. Não aplicar sobre a pele.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Nunca deixe a vela acesa sem s",
+        "ink_mm": [
+          6.0,
+          55.42,
+          38.33,
+          57.52
+        ],
+        "text": "Nunca deixe a vela acesa sem supervisão.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Mantenha fora do alcance de cr",
+        "ink_mm": [
+          6.0,
+          58.15,
+          43.8,
+          60.27
+        ],
+        "text": "Mantenha fora do alcance de crianças e animais.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Mantenha a pelo menos 30 cm de",
+        "ink_mm": [
+          6.0,
+          60.8,
+          81.65,
+          63.02
+        ],
+        "text": "Mantenha a pelo menos 30 cm de cortinas, roupas de cama, livros e outros materiais inflamáveis.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Use sobre superfície plana, fi",
+        "ink_mm": [
+          6.0,
+          63.55,
+          73.55,
+          65.77
+        ],
+        "text": "Use sobre superfície plana, firme e resistente ao calor. Mantenha o ambiente ventilado.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Não mova a vela acesa ou com a",
+        "ink_mm": [
+          6.0,
+          66.3,
+          88.64,
+          68.52
+        ],
+        "text": "Não mova a vela acesa ou com a cera ainda líquida. O copo e a cápsula ficam quentes durante e após o uso.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Evite contato com os olhos e m",
+        "ink_mm": [
+          6.0,
+          69.05,
+          76.36,
+          71.3
+        ],
+        "text": "Evite contato com os olhos e mucosas. Em caso de contato, lave com água em abundância.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Não ingerir.",
+        "ink_mm": [
+          6.0,
+          71.92,
+          14.66,
+          74.05
+        ],
+        "text": "Não ingerir.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "legal body",
+        "font": "Special Gothic Condensed One, tracking 0",
+        "cap_mm": 1.7
+      }
+    ],
+    "verso": [
+      {
+        "label": "MANIFESTO head",
+        "ink_mm": [
+          6.0,
+          22.01,
+          90.0,
+          25.69
+        ],
+        "text": "MANIFESTO DE CARGA · TURNÊ DIA DAS MÃES 2027",
+        "cap_mm": 2.903
+      },
+      {
+        "label": "CONTEÚDO: HOLOFOTE MAIS UM! — ",
+        "ink_mm": [
+          6.0,
+          28.34,
+          66.15,
+          30.59
+        ],
+        "text": "CONTEÚDO: HOLOFOTE MAIS UM! — vela aromática · ODORIZANTE DE AMBIENTE",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "PESO LÍQUIDO 200 g",
+        "ink_mm": [
+          6.0,
+          31.06,
+          21.66,
+          33.7
+        ],
+        "text": "PESO LÍQUIDO 200 g",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "COMPOSIÇÃO / INGREDIENTS (INCI",
+        "ink_mm": [
+          6.0,
+          33.9,
+          79.76,
+          36.4
+        ],
+        "text": "COMPOSIÇÃO / INGREDIENTS (INCI): HYDROGENATED COCONUT OIL, HYDROGENATED SOYBEAN OIL,",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "PARFUM, LIMONENE, LINALOOL, CO",
+        "ink_mm": [
+          6.0,
+          36.99,
+          38.74,
+          39.04
+        ],
+        "text": "PARFUM, LIMONENE, LINALOOL, COUMARIN.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Ingredientes (português): óleo",
+        "ink_mm": [
+          6.0,
+          39.62,
+          89.48,
+          41.86
+        ],
+        "text": "Ingredientes (português): óleo de coco hidrogenado, óleo de soja hidrogenado, fragrância, limoneno, linalol,",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "cumarina. Pavio de madeira. Cá",
+        "ink_mm": [
+          6.0,
+          42.34,
+          44.29,
+          44.56
+        ],
+        "text": "cumarina. Pavio de madeira. Cápsula de alumínio.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "(Alérgenos da fragrância decla",
+        "ink_mm": [
+          6.0,
+          45.06,
+          52.61,
+          47.3
+        ],
+        "text": "(Alérgenos da fragrância declarados na composição acima.)",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Fabricado e distribuído por: P",
+        "ink_mm": [
+          6.0,
+          47.38,
+          76.89,
+          50.0
+        ],
+        "text": "Fabricado e distribuído por: PALCO PEQUENO INDÚSTRIA DE VELAS LTDA. (EMPRESA FICTÍCIA)",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "CNPJ 00.000.000/0001-00 (FICTÍ",
+        "ink_mm": [
+          6.0,
+          50.1,
+          35.65,
+          52.58
+        ],
+        "text": "CNPJ 00.000.000/0001-00 (FICTÍCIO)",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Rua do Palco, 0 — Bairro Fictí",
+        "ink_mm": [
+          6.0,
+          52.82,
+          74.95,
+          55.44
+        ],
+        "text": "Rua do Palco, 0 — Bairro Fictício — São Paulo/SP — CEP 00000-000 (ENDEREÇO FICTÍCIO)",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "AFE Anvisa nº 0.00000-0 · Proc",
+        "ink_mm": [
+          6.0,
+          55.54,
+          71.92,
+          58.02
+        ],
+        "text": "AFE Anvisa nº 0.00000-0 · Processo Anvisa nº 25351.000000/0000-00 (FICTÍCIOS)",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "SAC 0800 000 0000 · sac@holofo",
+        "ink_mm": [
+          6.0,
+          58.26,
+          65.01,
+          60.88
+        ],
+        "text": "SAC 0800 000 0000 · sac@holofote.exemplo · holofote.exemplo (FICTÍCIOS)",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "INDÚSTRIA BRASILEIRA",
+        "ink_mm": [
+          6.0,
+          61.5,
+          44.81,
+          65.55
+        ],
+        "text": "INDÚSTRIA BRASILEIRA",
+        "cap_mm": 3.0
+      },
+      {
+        "label": "LOTE: ver base do copo · FAB 0",
+        "ink_mm": [
+          6.0,
+          66.6,
+          56.05,
+          69.22
+        ],
+        "text": "LOTE: ver base do copo · FAB 03/2027 · VAL 03/2029 (FICTÍCIOS)",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "Modo de uso e advertências com",
+        "ink_mm": [
+          6.0,
+          69.84,
+          45.49,
+          71.94
+        ],
+        "text": "Modo de uso e advertências completas: ver lateral.",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "PROTÓTIPO FICTÍCIO · DADOS FIC",
+        "ink_mm": [
+          6.0,
+          72.04,
+          52.95,
+          74.29
+        ],
+        "text": "PROTÓTIPO FICTÍCIO · DADOS FICTÍCIOS · NÃO COMERCIALIZAR",
+        "cap_mm": 1.7
+      }
+    ],
+    "lateral-2": [
+      {
+        "label": "wordmark HOLOFOTE (logo SVG, mono)",
+        "ink_mm": [
+          6.0,
+          7.93,
+          45.38,
+          12.5
+        ],
+        "cap_mm": 4.425,
+        "source": "01_MARCA/logo/HOLOFOTE_logo_mono-preto_transparente.svg"
+      },
+      {
+        "label": "tagline",
+        "ink_mm": [
+          6.0,
+          16.72,
+          90.0,
+          24.62
+        ],
+        "text": "holofote nela.",
+        "cap_mm": 7.64,
+        "font": "Expanded One lower case (the lockup)"
+      },
+      {
+        "label": "quote a",
+        "ink_mm": [
+          6.0,
+          38.37,
+          90.0,
+          42.55
+        ],
+        "text": "ELA VAI DIZER “NÃO PRECISAVA”.",
+        "cap_mm": 3.136
+      },
+      {
+        "label": "quote b",
+        "ink_mm": [
+          6.0,
+          44.92,
+          90.0,
+          54.25
+        ],
+        "text": "É A SUA DEIXA.",
+        "cap_mm": 6.845
+      },
+      {
+        "label": "barcode line",
+        "ink_mm": [
+          6.0,
+          87.39,
+          44.0,
+          90.03
+        ],
+        "text": "CÓDIGO DE BARRAS FICTÍCIO",
+        "cap_mm": 2.0
+      },
+      {
+        "label": "CARTUCHO · PAPEL · RECICLE",
+        "ink_mm": [
+          49.0,
+          78.96,
+          83.46,
+          81.24
+        ],
+        "text": "CARTUCHO · PAPEL · RECICLE",
+        "cap_mm": 2.2,
+        "tracking": 80
+      },
+      {
+        "label": "COPO · VIDRO · FICA",
+        "ink_mm": [
+          49.0,
+          83.36,
+          72.54,
+          85.64
+        ],
+        "text": "COPO · VIDRO · FICA",
+        "cap_mm": 2.2,
+        "tracking": 80
+      },
+      {
+        "label": "CÁPSULA · ALUMÍNIO · RECICLE",
+        "ink_mm": [
+          49.0,
+          87.13,
+          85.85,
+          90.04
+        ],
+        "text": "CÁPSULA · ALUMÍNIO · RECICLE",
+        "cap_mm": 2.2,
+        "tracking": 80
+      },
+      {
+        "label": "bar block",
+        "box_mm": [
+          6.0,
+          68.0,
+          38.0,
+          22.0
+        ],
+        "scannable": false
+      },
+      {
+        "label": "disposal block",
+        "lines": [
+          "CARTUCHO · PAPEL · RECICLE",
+          "COPO · VIDRO · FICA",
+          "CÁPSULA · ALUMÍNIO · RECICLE"
+        ],
+        "cap_mm": 2.2,
+        "x_mm": 49.0
+      }
+    ],
+    "topo": [
+      {
+        "label": "topo",
+        "ink_mm": [
+          6.0,
+          44.33,
+          90.0,
+          51.67
+        ],
+        "text": "ESTE LADO PRA CIMA",
+        "cap_mm": 7.091
+      }
+    ],
+    "fundo": []
+  },
+  "deviations": [
+    {
+      "panel": "lateral-1",
+      "kind": "director's decision",
+      "platform": "body text in Special Gothic wght 400 (sentence case)",
+      "used": "Special Gothic Condensed One, sentence case, tracking 0 (the Produção)",
+      "reason": "lower case is allowed only in Shantell or Condensed One at 0 tracking"
+    },
+    {
+      "panel": "lateral-1",
+      "kind": "director's decision",
+      "platform": "Use a vela dentro do copo, sobre a tampa virada ou sobre superfície plana, firme e resistente ao calor.",
+      "used": "Use a vela sempre dentro do copo. Apoie o copo sobre a tampa virada ou sobre superfície plana, firme e resistente ao calor.",
+      "reason": "the old line read as if the candle could stand outside the glass: it is always used inside the glass, and the glass stands on the lid or a flat surface"
+    },
+    {
+      "panel": "verso",
+      "kind": "director's decision",
+      "platform": "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026 — exemplo; confirmar com o certificado do fornecedor da fragrância.)",
+      "used": "(Alérgenos da fragrância declarados na composição acima.)",
+      "reason": "internal note removed from every printed panel; the regulation number is not printed because no Anvisa RDC 1.029/2026 could be verified (search, 6 Oct 2026): an unverified citation never goes on pack",
+      "note_kept_in_json": "— exemplo; confirmar com o certificado do fornecedor da fragrância."
+    },
+    {
+      "panel": "verso",
+      "kind": "director's decision",
+      "reason": "ingredient lists break only after a comma (or after the list's colon), never inside a name: HYDROGENATED SOYBEAN OIL, alfa-isometil ionona stay whole"
+    },
+    {
+      "panel": "lateral-2",
+      "kind": "director's decision",
+      "added": "HOLOFOTE wordmark (logo SVG, mono, carton ink)",
+      "ink_w_mm": 39.38,
+      "reason": "the brand on side 2 of every 200 g and SINGLE carton"
+    },
+    {
+      "panel": "lateral-2",
+      "platform": "ela vai dizer \"não precisava\". é a sua deixa.",
+      "used": "ELA VAI DIZER “NÃO PRECISAVA”. É A SUA DEIXA.",
+      "font": "Expanded One caps",
+      "kind": "director's decision",
+      "reason": "Locutor lines are capitals everywhere except the lockup \"holofote nela.\"; lower case only in Shantell (the Fã) or Condensed One at 0 tracking (the Produção)"
+    },
+    {
+      "panel": "lateral-2",
+      "used": [
+        "CARTUCHO · PAPEL · RECICLE",
+        "COPO · VIDRO · FICA",
+        "CÁPSULA · ALUMÍNIO · RECICLE"
+      ],
+      "kind": "director's decision",
+      "platform": "disposal pictograms (generic bins) + material names",
+      "reason": "clip-art bins replaced by code-set Condensed One caps lines in the brand voice, one per material; \"O copo fica\" is the brand's own idea, so the disposal block says it"
+    },
+    {
+      "panel": "topo",
+      "kind": "director's decision",
+      "platform": "ESTE LADO PRA CIMA ↑",
+      "used": "ESTE LADO PRA CIMA",
+      "reason": "an arrow is meaningless on a horizontal panel; the words stay"
+    }
+  ],
+  "atlas": {
+    "file": "HLF-03-200_CARTUCHO_ATLAS.png",
+    "cell_px": [
+      1536,
+      1568
+    ],
+    "layout": "[., top, ., .] / [left, front, right, back] / [., bottom, ., .] (candle_lib.box); top: image top = back; bottom: image top = front"
+  },
+  "dieline": "02_PRODUTO/facas/FACA_CARTUCHO_96x96x98.svg",
+  "generator": "_build/pack/cartucho.py"
+}

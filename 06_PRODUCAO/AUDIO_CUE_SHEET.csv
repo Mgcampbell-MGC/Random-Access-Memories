@@ -1,0 +1,95 @@
+filme,quadro,inicio_s,sincronia,som,arquivo,lufs_i_mix,true_peak_mix
+HLF-AD_KV_9a15s_ad2_sino,,,onset,"terceiro sinal 9,0 s",,-14.0,-1.04
+HLF-AD_KV_9a15s_ad2_sino,,,onset,CLAC +4 f,,-14.0,-1.04
+HLF-AD_KV_9a15s_ad2_sino,,,,pavio → aplauso,,-14.0,-1.04
+HLF-AD_KV_9a15s_ad2_sino,,,onset,"palmas 13,0 s (f96 do bloco)",,-14.0,-1.04
+HLF-AD_KV_9a15s_ad2_sino,,,,tom de sala,,-14.0,-1.04
+HLF-AD_KV_9a15s_ad2_sino,0,0.0,ataque medido,desvio 0.0 quadro · OK,,-14.0,-1.04
+HLF-AD_KV_9a15s_ad2_sino,4,0.1667,ataque medido,desvio 0.0 quadro · OK,,-14.0,-1.04
+HLF-AD_KV_9a15s_ad2_sino,96,4.0005,ataque medido,desvio 0.013 quadro · OK,,-14.0,-1.04
+HLF-AD_KV_9a15s_ad2_sino,106,4.4167,ataque medido,desvio 0.0 quadro · OK,,-14.0,-1.04
+HLF-AD_KV_9a15s_ad2_sino,116,4.8328,ataque medido,desvio -0.012 quadro · OK,,-14.0,-1.04
+HLF-AD_KV_9a15s_ads1e3,,,onset,CLAC +0 f,,-14.0,-1.08
+HLF-AD_KV_9a15s_ads1e3,,,,pavio → aplauso,,-14.0,-1.08
+HLF-AD_KV_9a15s_ads1e3,,,onset,"palmas 13,0 s (f96 do bloco)",,-14.0,-1.08
+HLF-AD_KV_9a15s_ads1e3,,,,tom de sala,,-14.0,-1.08
+HLF-AD_KV_9a15s_ads1e3,0,0.0,ataque medido,desvio 0.001 quadro · OK,,-14.0,-1.08
+HLF-AD_KV_9a15s_ads1e3,96,4.0005,ataque medido,desvio 0.013 quadro · OK,,-14.0,-1.08
+HLF-AD_KV_9a15s_ads1e3,106,4.4167,ataque medido,desvio 0.0 quadro · OK,,-14.0,-1.08
+HLF-AD_KV_9a15s_ads1e3,116,4.8328,ataque medido,desvio -0.012 quadro · OK,,-14.0,-1.08
+HLF-F06A_CLAC,,,onset,CLAC f6,,-14.05,-1.15
+HLF-F06A_CLAC,,,,pavio f7,,-14.05,-1.15
+HLF-F06A_CLAC,,,,"pavio → aplauso (fusão começa f24), corta seco no corte de imagem f96",,-14.05,-1.15
+HLF-F06A_CLAC,,,onset,palmas f100/110/120,,-14.05,-1.15
+HLF-F06A_CLAC,,,,tom de sala f100→f144,,-14.05,-1.15
+HLF-F06A_CLAC,6,0.25,ataque medido,desvio 0.0 quadro · OK,,-14.05,-1.15
+HLF-F06A_CLAC,100,4.1667,ataque medido,desvio 0.0 quadro · OK,,-14.05,-1.15
+HLF-F06A_CLAC,110,4.5833,ataque medido,desvio 0.0 quadro · OK,,-14.05,-1.15
+HLF-F06A_CLAC,120,4.9995,ataque medido,desvio -0.012 quadro · OK,,-14.05,-1.15
+HLF-F06B_O_PIOR_SHOW,,,,"fanfarra (marcha, compasso 3) f0→f84",,-13.98,-1.15
+HLF-F06B_O_PIOR_SHOW,,,onset,tosse no PIOR f48,,-13.98,-1.15
+HLF-F06B_O_PIOR_SHOW,,,onset,CLAC f84 (corte pro KV-45),,-13.98,-1.15
+HLF-F06B_O_PIOR_SHOW,,,,aplauso f84→f120,,-13.98,-1.15
+HLF-F06B_O_PIOR_SHOW,,,onset,palmas f120/130/140,,-13.98,-1.15
+HLF-F06B_O_PIOR_SHOW,,,,tom de sala f120→,,-13.98,-1.15
+HLF-F06B_O_PIOR_SHOW,0,0.0,ataque medido,desvio 0.0 quadro · OK,,-13.98,-1.15
+HLF-F06B_O_PIOR_SHOW,12,0.4999,ataque medido,desvio -0.004 quadro · OK,,-13.98,-1.15
+HLF-F06B_O_PIOR_SHOW,24,0.9956,ataque medido,desvio -0.106 quadro · OK,,-13.98,-1.15
+HLF-F06B_O_PIOR_SHOW,36,1.4998,ataque medido,desvio -0.006 quadro · OK,,-13.98,-1.15
+HLF-F06B_O_PIOR_SHOW,48,1.9998,ataque medido,desvio -0.004 quadro · OK,,-13.98,-1.15
+HLF-F06B_O_PIOR_SHOW,60,2.503,ataque medido,desvio 0.071 quadro · OK,,-13.98,-1.15
+HLF-F06B_O_PIOR_SHOW,84,3.5,ataque medido,desvio 0.0 quadro · OK,,-13.98,-1.15
+HLF-F06B_O_PIOR_SHOW,120,5.0005,ataque medido,desvio 0.013 quadro · OK,,-13.98,-1.15
+HLF-F06B_O_PIOR_SHOW,130,5.4167,ataque medido,desvio 0.0 quadro · OK,,-13.98,-1.15
+HLF-F06B_O_PIOR_SHOW,140,5.8328,ataque medido,desvio -0.012 quadro · OK,,-13.98,-1.15
+HLF-F06C_SINAL_07-05,,,,1 sino(s) f0/f8/f16,,-14.0,-1.0
+HLF-F06C_SINAL_07-05,,,onset,CLAC f72,,-14.0,-1.0
+HLF-F06C_SINAL_07-05,,,,plateia chegando f74→,,-14.0,-1.0
+HLF-F06C_SINAL_07-05,0,0.0,ataque medido,desvio 0.0 quadro · OK,,-14.0,-1.0
+HLF-F06C_SINAL_07-05,72,3.0,ataque medido,desvio 0.0 quadro · OK,,-14.0,-1.0
+HLF-F06C_SINAL_08-05,,,,2 sino(s) f0/f8/f16,,-14.0,-1.09
+HLF-F06C_SINAL_08-05,,,onset,CLAC f72,,-14.0,-1.09
+HLF-F06C_SINAL_08-05,,,,plateia chegando f74→,,-14.0,-1.09
+HLF-F06C_SINAL_08-05,0,0.0,ataque medido,desvio 0.001 quadro · OK,,-14.0,-1.09
+HLF-F06C_SINAL_08-05,8,0.3334,ataque medido,desvio 0.001 quadro · OK,,-14.0,-1.09
+HLF-F06C_SINAL_08-05,72,3.0,ataque medido,desvio 0.0 quadro · OK,,-14.0,-1.09
+HLF-F06C_SINAL_09-05,,,,3 sino(s) f0/f8/f16,,-14.03,-1.15
+HLF-F06C_SINAL_09-05,,,onset,CLAC f72,,-14.03,-1.15
+HLF-F06C_SINAL_09-05,,,,pavio → aplauso f74→,,-14.03,-1.15
+HLF-F06C_SINAL_09-05,0,0.0,ataque medido,desvio 0.001 quadro · OK,,-14.03,-1.15
+HLF-F06C_SINAL_09-05,8,0.3335,ataque medido,desvio 0.004 quadro · OK,,-14.03,-1.15
+HLF-F06C_SINAL_09-05,16,0.6678,ataque medido,desvio 0.027 quadro · OK,,-14.03,-1.15
+HLF-F06C_SINAL_09-05,72,3.0,ataque medido,desvio 0.0 quadro · OK,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,,"fanfarra: rufo pp, corte seco f132",,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,onset,CLAC f12,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,,murmúrio sobe f12,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,onset,caixa f44,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,onset,bumbo f60,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,onset,caixa f84,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,onset,caixa f108,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,,ar da casa (silêncio) f132,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,onset,tosse f150,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,,elevador desce f168,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,,elevador sobe f177,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,,plateia cresce f168→f204,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,onset,CLAC-off f204 (BLACKOUT),,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,onset,fósforo fsst f206,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,,pavio → aplauso (morph) f210,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,onset,CLAC f222,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,,aplauso cresce f222→f312,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,onset,palmas f312/322/332,,-14.03,-1.15
+HLF-F15_A_ENTRADA,,,,tom de sala f312→f348,,-14.03,-1.15
+HLF-F15_A_ENTRADA,12,0.5,ataque medido,desvio 0.0 quadro · OK,,-14.03,-1.15
+HLF-F15_A_ENTRADA,44,1.8333,ataque medido,desvio 0.0 quadro · OK,,-14.03,-1.15
+HLF-F15_A_ENTRADA,60,2.5,ataque medido,desvio 0.0 quadro · OK,,-14.03,-1.15
+HLF-F15_A_ENTRADA,84,3.5,ataque medido,desvio 0.0 quadro · OK,,-14.03,-1.15
+HLF-F15_A_ENTRADA,108,4.5,ataque medido,desvio -0.001 quadro · OK,,-14.03,-1.15
+HLF-F15_A_ENTRADA,150,6.25,ataque medido,desvio 0.0 quadro · OK,,-14.03,-1.15
+HLF-F15_A_ENTRADA,204,8.4999,ataque medido,desvio -0.002 quadro · OK,,-14.03,-1.15
+HLF-F15_A_ENTRADA,206,8.5842,ataque medido,desvio 0.021 quadro · OK,,-14.03,-1.15
+HLF-F15_A_ENTRADA,222,9.25,ataque medido,desvio 0.0 quadro · OK,,-14.03,-1.15
+HLF-F15_A_ENTRADA,312,13.0005,ataque medido,desvio 0.013 quadro · OK,,-14.03,-1.15
+HLF-F15_A_ENTRADA,322,13.4167,ataque medido,desvio 0.0 quadro · OK,,-14.03,-1.15
+HLF-F15_A_ENTRADA,332,13.8328,ataque medido,desvio -0.012 quadro · OK,,-14.03,-1.15
+HLF-S01_DIGITANDO,226,8.3162,onset,HLF-ID-01 (1ª palma no quadro da assinatura),identidade/HLF-ID-01_vinheta_ovacao_de_uma_pessoa_so_2s0.wav,-14.0,-1.04
+HLF-S01_DIGITANDO,226,9.4172,ataque medido,desvio 0.013 quadro · OK,,-14.0,-1.04

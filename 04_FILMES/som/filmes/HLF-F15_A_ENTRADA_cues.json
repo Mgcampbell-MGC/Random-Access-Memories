@@ -1,0 +1,155 @@
+{
+  "duracao_s": 15.0,
+  "fps": 24.0,
+  "cues": [
+    {
+      "label": "fanfarra: rufo pp, corte seco f132",
+      "file": "musica/HLF-MUS-01_fanfarra_120bpm_20s_mix.wav",
+      "frame": 0,
+      "dur_s": 5.5,
+      "fade_out": 0.015,
+      "gain_db": -6
+    },
+    {
+      "label": "CLAC f12",
+      "file": "sfx/HLF-SFX-01_clac.wav",
+      "frame": 12,
+      "sync": "onset",
+      "gain_db": 2
+    },
+    {
+      "label": "murmúrio sobe f12",
+      "file": "sfx/HLF-SFX-03_murmurio_teatro_loop.wav",
+      "frame": 12,
+      "dur_s": 5.0,
+      "fade_in": 1.0,
+      "fade_out": 0.12,
+      "gain_db": -8
+    },
+    {
+      "label": "caixa f44",
+      "file": "musica/pecas/HLF-MUS-02_caixa_acento.wav",
+      "frame": 44,
+      "sync": "onset",
+      "gain_db": 1
+    },
+    {
+      "label": "bumbo f60",
+      "file": "musica/pecas/HLF-MUS-02_bumbo.wav",
+      "frame": 60,
+      "sync": "onset",
+      "gain_db": 0
+    },
+    {
+      "label": "caixa f84",
+      "file": "musica/pecas/HLF-MUS-02_caixa_acento.wav",
+      "frame": 84,
+      "sync": "onset",
+      "gain_db": 1
+    },
+    {
+      "label": "caixa f108",
+      "file": "musica/pecas/HLF-MUS-02_caixa_acento.wav",
+      "frame": 108,
+      "sync": "onset",
+      "gain_db": 1
+    },
+    {
+      "label": "ar da casa (silêncio) f132",
+      "file": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+      "frame": 132,
+      "dur_s": 1.5,
+      "fade_in": 0.05,
+      "fade_out": 0.3,
+      "gain_db": -30
+    },
+    {
+      "label": "tosse f150",
+      "file": "sfx/HLF-SFX-10_tosse_plateia.wav",
+      "frame": 150,
+      "sync": "onset",
+      "gain_db": -3
+    },
+    {
+      "label": "elevador desce f168",
+      "file": "sfx/HLF-SFX-11_elevador_hidraulico_1s.wav",
+      "frame": 168,
+      "dur_s": 0.36,
+      "fade_out": 0.08,
+      "gain_db": -6
+    },
+    {
+      "label": "elevador sobe f177",
+      "file": "sfx/HLF-SFX-11_elevador_hidraulico_1s.wav",
+      "frame": 177,
+      "dur_s": 1.0,
+      "fade_out": 0.06,
+      "gain_db": -6
+    },
+    {
+      "label": "plateia cresce f168→f204",
+      "file": "sfx/HLF-SFX-03_murmurio_teatro_loop.wav",
+      "frame": 168,
+      "trim_in_s": 4.0,
+      "dur_s": 1.5,
+      "fade_in": 1.2,
+      "fade_out": 0.02,
+      "gain_db": -5
+    },
+    {
+      "label": "CLAC-off f204 (BLACKOUT)",
+      "file": "sfx/HLF-SFX-02_clac_off.wav",
+      "frame": 204,
+      "sync": "onset",
+      "gain_db": 2
+    },
+    {
+      "label": "fósforo fsst f206",
+      "file": "sfx/HLF-SFX-07_fosforo_fsst.wav",
+      "frame": 206,
+      "sync": "onset",
+      "gain_db": -2
+    },
+    {
+      "label": "pavio → aplauso (morph) f210",
+      "file": "identidade/HLF-ID-02_crepitar_para_aplauso_morph.wav",
+      "frame": 210,
+      "dur_s": 4.25,
+      "fade_out": 0.004,
+      "gain_db": -4
+    },
+    {
+      "label": "CLAC f222",
+      "file": "sfx/HLF-SFX-01_clac.wav",
+      "frame": 222,
+      "sync": "onset",
+      "gain_db": 2
+    },
+    {
+      "label": "aplauso cresce f222→f312",
+      "file": "sfx/HLF-SFX-05_aplauso_estadio_distante.wav",
+      "frame": 222,
+      "trim_in_s": 2.5,
+      "dur_s": 3.75,
+      "fade_in": 1.5,
+      "fade_out": 0.004,
+      "gain_db": 2
+    },
+    {
+      "label": "palmas f312/322/332",
+      "file": "sfx/HLF-SFX-06e_palmas_tres_10q.wav",
+      "frame": 312,
+      "sync": "onset",
+      "gain_db": 2
+    },
+    {
+      "label": "tom de sala f312→f348",
+      "file": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+      "frame": 312,
+      "dur_s": 1.5,
+      "fade_in": 0.004,
+      "fade_out": 0.25,
+      "gain_db": -28
+    }
+  ]
+}

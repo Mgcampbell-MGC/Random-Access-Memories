@@ -1,0 +1,5 @@
+PRONTO · 06.10.2026 · 12 cartazes lambe 2000 × 3000 px para a parede 3D (O MURO / C01), O LAMBE aplicado em todos.
+CARTAZ-NN_*.png = assado RGBA (2D) · 3d/*_albedo.png = RGBA sem sombreado · 3d/*_altura.png = altura 16 bits (0–1).
+01–04 MÃE AO VIVO · 09.05 nas quatro cores · 05–06 versão curta 09.05 · 07 rosa rasgado sobre MAIS UM! ·
+08 laranja rasgado sobre CAMARIM · 09–10 camadas antigas soltas (CAMARIM, MAIS UM!) · 11 meio ACÚSTICO ·
+12 C01 "MÃE AO VIVO. 09.05. INGRESSOS COM você." (você na Fã, a menor palavra; O aceso preto no papel) · detalhes e sementes em cartazes.json · refazer: _build/brand/cartazes.py

@@ -1,0 +1,121 @@
+{
+  "arquivo": "HLF-F06A_CLAC_som.wav",
+  "duracao_s": 6.0,
+  "fps": 24.0,
+  "lufs_i": -14.05,
+  "true_peak_dbtp": -1.15,
+  "normalizacao": "−14 LUFS integrado, ≤ −1 dBTP",
+  "cues": [
+    {
+      "label": "CLAC f6",
+      "arquivo": "sfx/HLF-SFX-01_clac.wav",
+      "quadro": 6.0,
+      "inicio_s": 0.25,
+      "sync": "onset"
+    },
+    {
+      "label": "pavio f7",
+      "arquivo": "sfx/HLF-SFX-08_crepitar_pavio_loop.wav",
+      "quadro": 7.0,
+      "inicio_s": 0.2917,
+      "sync": "start"
+    },
+    {
+      "label": "pavio → aplauso (fusão começa f24), corta seco no corte de imagem f96",
+      "arquivo": "identidade/HLF-ID-02_crepitar_para_aplauso_morph.wav",
+      "quadro": 12.0,
+      "inicio_s": 0.5,
+      "sync": "start"
+    },
+    {
+      "label": "palmas f100/110/120",
+      "arquivo": "sfx/HLF-SFX-06e_palmas_tres_10q.wav",
+      "quadro": 100.0,
+      "inicio_s": 4.1667,
+      "sync": "onset"
+    },
+    {
+      "label": "tom de sala f100→f144",
+      "arquivo": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+      "quadro": 100.0,
+      "inicio_s": 4.1667,
+      "sync": "start"
+    }
+  ],
+  "quadros_chave": [
+    {
+      "quadro": 6,
+      "onset_medido_s": 0.25,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 100,
+      "onset_medido_s": 4.1667,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 110,
+      "onset_medido_s": 4.5833,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 120,
+      "onset_medido_s": 4.9995,
+      "desvio_quadros": -0.012,
+      "ok": true
+    }
+  ],
+  "onsets_medidos": [
+    {
+      "t_s": 0.25,
+      "quadro": 6.0
+    },
+    {
+      "t_s": 0.5791,
+      "quadro": 13.9
+    },
+    {
+      "t_s": 0.6916,
+      "quadro": 16.6
+    },
+    {
+      "t_s": 0.745,
+      "quadro": 17.88
+    },
+    {
+      "t_s": 0.8417,
+      "quadro": 20.2
+    },
+    {
+      "t_s": 1.044,
+      "quadro": 25.06
+    },
+    {
+      "t_s": 1.0908,
+      "quadro": 26.18
+    },
+    {
+      "t_s": 1.5422,
+      "quadro": 37.01
+    },
+    {
+      "t_s": 2.2591,
+      "quadro": 54.22
+    },
+    {
+      "t_s": 4.1667,
+      "quadro": 100.0
+    },
+    {
+      "t_s": 4.5833,
+      "quadro": 110.0
+    },
+    {
+      "t_s": 4.9995,
+      "quadro": 119.99
+    }
+  ]
+}

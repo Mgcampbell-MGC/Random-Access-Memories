@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>HOLOFOTE · camada de tipo do KV</title>
+<link rel="stylesheet" href="../tokens.css"><link rel="stylesheet" href="../brand/base.css">
+<script src="../brand/metricas.js"></script><script src="../brand/wordmark.js"></script><script src="../brand/holofote.js"></script>
+<style>html,body{margin:0;background:transparent}#plate{position:absolute;left:0;top:0}</style>
+</head><body>
+<script>
+/* KV type layer, set to the platform's exact baselines (§E.1). Data in the URL hash (JSON):
+   fmt: '9x16' | '4x5' | '1x1' | '16x9'  → KV-01 lineup
+        'kv45'                          → the KV-45 type zone (y 334–534): headline slot + lockup + safety line
+        'card'                          → one centred film card: {linhas:[{t,f,cap,cor,y}], ...}
+   plate: optional background image (the 3D render plate at the same size). Without it the PNG is transparent.
+   headliner/show/data/abertura: the lineup strings. headline: KV-45 slot (e.g. 'SUA VEZ.'), or null.
+   Every line fills its measure on the INK edge (holofote.js). No disclosure plate (founder override, 6 Oct 2026):
+   the band y 276–312 stays empty. */
+const D = HF.dados({ fmt: '9x16', plate: null, headliner: 'MÃE', show: 'AO VIVO', data: 'DOMINGO · 09.05', abertura: 'você',
+  headline: 'SUA VEZ.', lockup: true, safety: true, linhas: null, fundo: null });
+const FMT = {
+  '9x16': { W: 1080, H: 1920, x0: 140, x1: 940, l1: [30, 360], mae: [199, 640], show: [112, 768], l4: [46, 832], xS: 18, lock: [42, 1470] },
+  '4x5':  { W: 1080, H: 1350, x0: 140, x1: 940, l1: [30, 140], mae: [199, 421], show: [112, 553], l4: [40, 611], xS: 15.65, lock: [40, 1200] },
+  '1x1':  { W: 1080, H: 1080, x0: 180, x1: 900, l1: [26, 110], mae: [179, 363], show: [101, 482], l4: [36, 536], xS: 14.1, lock: [36, 1000] },
+  '16x9': { W: 1920, H: 1080, x0: 160, x1: 1000, l1: [30, 230], mae: [208, 524], show: [118, 660], l4: [44, 724], xS: 17.2, lock: [42, 900], lockAlign: 'left' },
+  'kv45': { W: 1080, H: 1920, x0: 140, x1: 940 },
+  'card': { W: 1080, H: 1920, x0: 140, x1: 940 },
+};
+HF.pronto(() => {
+  const F = FMT[D.fmt], b = document.body;
+  b.style.width = F.W + 'px'; b.style.height = F.H + 'px';
+  if (D.fundo) b.style.background = HF.cor[D.fundo] || D.fundo;
+  if (D.plate) { const im = document.createElement('img'); im.id = 'plate'; im.src = D.plate; im.width = F.W; im.height = F.H; b.appendChild(im); }
+  const cap = (f, c) => HF.fsDeCap(f, c), xh = (f, c) => HF.fsDeX(f, c);
+  const out = { fmt: D.fmt, linhas: [] };
+  const log = (nome, o) => out.linhas.push({ nome, x0: +o.inkX0.toFixed(2), x1: +o.inkX1.toFixed(2), baseline: o.baseline,
+    erro_medida: o.erro != null ? +o.erro.toFixed(2) : null, fs: +o.s.fs.toFixed(2), wdth: o.s.wdth || null });
+  if (D.fmt in { '9x16': 1, '4x5': 1, '1x1': 1, '16x9': 1 }) {
+    const { x0, x1 } = F;
+    const [a, c] = HF.dividida(b, { t: 'HOLOFOTE APRESENTA', f: 'C', fs: cap('C', F.l1[0]), lsEm: 0.08, cor: 'papel' },
+      { t: 'A TURNÊ · 2027', f: 'C', fs: cap('C', F.l1[0]), lsEm: 0.08, cor: 'papel', tnum: true }, x0, x1, F.l1[1]);
+    log('L1 esq', a); log('L1 dir', c);
+    // the headliner: cap fixed, tracking solves the measure (the label rule: natural + tracking)
+    const m = HF.texto(b, { t: D.headliner, f: 'X', fs: cap('X', F.mae[0]), lsEm: 0, cor: 'amarelo' });
+    HF.porTracking(m, x1 - x0);
+    if (m.inkW > x1 - x0 + 0.5) HF.porTamanho(m, x1 - x0);
+    HF.posicionar(m, x0, F.mae[1], 'left'); m.erro = m.inkW - (x1 - x0); log('headliner', m);
+    const s = HF.cheia(b, { t: D.show, f: 'V', wght: 700, wdth: 125, fs: cap('V', F.show[0]), cor: 'papel' }, x0, x1, F.show[1], 'wdth');
+    log('show', s);
+    const [d1, d2] = HF.dividida(b, { t: D.data, f: 'C', fs: cap('C', F.l4[0]), lsEm: 0.02, cor: 'amarelo', tnum: true },
+      { t: 'abertura: ' + D.abertura, f: 'S', fs: xh('S', F.xS), cor: 'papel' }, x0, x1, F.l4[1]);
+    log('L4 esq', d1); log('L4 dir', d2);
+    if (D.lockup) {
+      const L = HF.texto(b, { t: 'holofote nela.', f: 'X', fs: cap('X', F.lock[0]), lsEm: -0.01, cor: 'papel' });
+      HF.posicionar(L, F.lockAlign === 'left' ? x0 : (x0 + x1) / 2, F.lock[1], F.lockAlign || 'center'); log('lockup', L);
+    }
+  } else if (D.fmt === 'kv45') {
+    const { x0, x1 } = F;
+    if (D.headline) {
+      // headline slot y 340–442: Locutor, fills 800 px, cap ≤ 110 (SUA VEZ. = cap 102 at the full measure)
+      const h = HF.texto(b, { t: D.headline, f: 'X', fs: cap('X', 110), lsEm: -0.01, cor: 'papel' });
+      HF.porTamanho(h, x1 - x0, cap('X', 110));
+      HF.posicionar(h, (x0 + x1) / 2, 442, 'center'); h.erro = h.inkW - (x1 - x0); log('headline', h);
+    }
+    if (D.lockup) {
+      const L = HF.texto(b, { t: 'holofote nela.', f: 'X', fs: cap('X', 34), lsEm: -0.01, cor: 'papel' });
+      HF.posicionar(L, 540, 496, 'center'); log('lockup', L);
+    }
+    if (D.safety) {
+      const S = HF.texto(b, { t: 'nunca deixe a vela acesa sem supervisão.', f: 'C', fs: cap('C', 22), lsEm: 0.02, cor: 'papel', op: 0.85 });
+      HF.posicionar(S, 540, 530, 'center'); log('seguranca', S);
+    }
+  } else if (D.fmt === 'card') {
+    // film cards: each line {t, f:'X'|'C'|'V'|'S', cap|x, cor, y (baseline), align:'center'|'left'|'right', fill:true}
+    for (const l of D.linhas || []) {
+      const st = { t: l.t, f: l.f || 'C', cor: l.cor || 'papel', lsEm: l.lsEm != null ? l.lsEm : (l.f === 'C' ? 0.02 : -0.01),
+        wght: l.wght, wdth: l.wdth, op: l.op, tnum: l.tnum };
+      st.fs = l.x != null ? xh(st.f, l.x) : cap(st.f, l.cap || 46);
+      let o;
+      if (l.fill) {
+        o = HF.texto(b, st);
+        if (st.f === 'V') { HF.mudar(o, { wdth: 125 }); HF.porWdth(o, (l.x1 || F.x1) - (l.x0 || F.x0)); }
+        else HF.porTamanho(o, (l.x1 || F.x1) - (l.x0 || F.x0), l.capMax ? cap(st.f, l.capMax) : null);
+        HF.posicionar(o, l.x0 || F.x0, l.y, 'left');
+        o.erro = o.inkW - ((l.x1 || F.x1) - (l.x0 || F.x0));
+      } else {
+        o = HF.texto(b, st);
+        const al = l.align || 'center';
+        HF.posicionar(o, al === 'center' ? (l.cx || 540) : al === 'left' ? (l.x0 || F.x0) : (l.x1 || F.x1), l.y, al);
+      }
+      log(l.t, o);
+    }
+  }
+  window.HF_INFO = out;
+  window.HF_QA = out.linhas.filter((l) => l.erro_medida != null).map((l) => ({ nome: l.nome, erro: l.erro_medida }));
+});
+</script>
+</body></html>

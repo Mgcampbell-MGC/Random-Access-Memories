@@ -1,0 +1,81 @@
+{
+  "duracao_s": 6.0,
+  "fps": 24.0,
+  "cues": [
+    {
+      "label": "fanfarra (marcha, compasso 3) f0→f84",
+      "file": "musica/HLF-MUS-01_fanfarra_120bpm_20s_mix.wav",
+      "frame": 0,
+      "trim_in_s": 4.0,
+      "dur_s": 3.5,
+      "fade_out": 0.012,
+      "gain_db": -4,
+      "envelope": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.9,
+          0.0
+        ],
+        [
+          1.98,
+          -7.0
+        ],
+        [
+          2.7,
+          -7.0
+        ],
+        [
+          2.95,
+          0.0
+        ],
+        [
+          3.5,
+          0.0
+        ]
+      ]
+    },
+    {
+      "label": "tosse no PIOR f48",
+      "file": "sfx/HLF-SFX-10_tosse_plateia.wav",
+      "frame": 48,
+      "sync": "onset",
+      "gain_db": 1
+    },
+    {
+      "label": "CLAC f84 (corte pro KV-45)",
+      "file": "sfx/HLF-SFX-01_clac.wav",
+      "frame": 84,
+      "sync": "onset",
+      "gain_db": 2
+    },
+    {
+      "label": "aplauso f84→f120",
+      "file": "sfx/HLF-SFX-05_aplauso_estadio_distante.wav",
+      "frame": 84,
+      "trim_in_s": 5.0,
+      "dur_s": 1.5,
+      "fade_in": 0.25,
+      "fade_out": 0.004,
+      "gain_db": 0
+    },
+    {
+      "label": "palmas f120/130/140",
+      "file": "sfx/HLF-SFX-06e_palmas_tres_10q.wav",
+      "frame": 120,
+      "sync": "onset",
+      "gain_db": 2
+    },
+    {
+      "label": "tom de sala f120→",
+      "file": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+      "frame": 120,
+      "dur_s": 1.0,
+      "fade_in": 0.004,
+      "fade_out": 0.25,
+      "gain_db": -28
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "asset": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/renders/C01_O-MURO_limpo.png",
+    "master": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/rotulos/HLF-04_ROTULO_wrap.png",
+    "tiles": 79,
+    "uv_agreement": 0.9927,
+    "corner_tiles_skipped": 1,
+    "corner_tiles_worst": 0.986,
+    "control": {
+      "patch_px": [
+        1005,
+        1323,
+        844,
+        844
+      ],
+      "worst_tile": 0.054,
+      "caught": true
+    },
+    "hue_shift_deg": 1.32,
+    "sat_ratio": 1.137,
+    "worst_tile": 0.974,
+    "p5_tile": 0.981,
+    "bar_p5": 0.95,
+    "pass": true,
+    "label_id": 4.0,
+    "glass_frac_altura": 0.17596274614334106,
+    "thumbnail_sem_alegacao": true
+  }
+]

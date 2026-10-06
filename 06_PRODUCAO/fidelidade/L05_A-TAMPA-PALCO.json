@@ -1,0 +1,29 @@
+[
+  {
+    "asset": "/home/user/Random-Access-Memories/kits/HOLOFOTE/03_LANCAMENTO/L/L05_A-TAMPA-PALCO.png",
+    "master": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/rotulos/HLF-02_ROTULO_wrap.png",
+    "tiles": 348,
+    "uv_agreement": 0.9988,
+    "corner_tiles_skipped": 30,
+    "corner_tiles_worst": 0.965,
+    "control": {
+      "patch_px": [
+        3324,
+        1917,
+        321,
+        321
+      ],
+      "worst_tile": -0.014,
+      "caught": true
+    },
+    "hue_shift_deg": -0.47,
+    "sat_ratio": 0.874,
+    "worst_tile": 0.962,
+    "p5_tile": 0.979,
+    "bar_p5": 0.95,
+    "pass": true,
+    "label_id": null,
+    "glass_frac_altura": 0.6413754373788834,
+    "thumbnail_sem_alegacao": false
+  }
+]

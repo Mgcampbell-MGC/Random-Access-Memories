@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>HOLOFOTE · camadas de tipo da série C</title>
+<link rel="stylesheet" href="../tokens.css"><link rel="stylesheet" href="../brand/base.css">
+<script src="../brand/metricas.js"></script><script src="../brand/wordmark.js"></script><script src="../brand/holofote.js"></script>
+<script src="../brand/pilha.js"></script><script src="../brand/pecas.js"></script>
+<style>html,body{margin:0;background:transparent}</style>
+</head><body>
+<script>
+/* Camada de tipo (transparente) de uma peça da série C, composta depois sobre o render limpo (tipo_c.py).
+   Dados no hash: {W, H, fundo?, blocos:[{x0, x1, y0, y1, grade?, itens:[...]}]} ou {receita:'setlist', ...}.
+   Itens (px da peça final; cap/x viram font-size pelo motor da marca):
+     {tipo:'cheia', s:{t,f,cap|x,cor,wght?,wdth?,lsEm?,tnum?,op?}, modo:'tamanho'|'wdth', antes?, flex?, alinhar?}
+     {tipo:'dividida', esq:{...}, dir:{...}, antes?}
+     {tipo:'assinatura', cap, tinta, lamp, antes?}
+     {tipo:'espaco', flex}
+   Toda linha 'cheia' enche a medida na tinta (regra 2); vozes §A.6: X = o Locutor, C = a Produção, S = a Fã. */
+const D = HF.dados({ W: 1080, H: 1350, fundo: null, blocos: [] });
+const st = (s) => HF.S(Object.assign({}, s));
+function item(it) {
+  if (it.tipo === 'cheia') return Object.assign({}, it, { s: st(it.s), modo: it.modo || 'tamanho' });
+  if (it.tipo === 'dividida') return Object.assign({}, it, { esq: st(it.esq), dir: st(it.dir) });
+  if (it.tipo === 'assinatura') return HF.assinatura(it.cap, it.tinta || 'papel', it.lamp || 'amarelo', it.antes || 0);
+  return Object.assign({}, it);
+}
+function setlist(b) {
+  // A SETLIST do palco (C04): o cartão 105 × 400 mm da embalagem (§C.8), 20 px/mm, papel-cartaz, com a lista do show
+  // escrita à mão pela Fã (Shantell): 1. camarim · 2. ao vivo · 3. mais um! · 4. acústico. Linha de segurança presente
+  // (§D.4: "A SETLIST — the safety line is always present").
+  const k = 20, X0 = 10 * k, X1 = 95 * k;
+  HF.quadro(105 * k, 400 * k, 'papel');
+  const t1 = HF.cheia(b, st({ t: 'SETLIST', f: 'C', cap: 22 * k, lsEm: 0.08, cor: 'preto' }), X0, X1, 46 * k, 'tamanho');
+  const [d1, d2] = HF.dividida(b, st({ t: 'DOMINGO · 09.05', f: 'C', cap: 4.6 * k, lsEm: 0.08, cor: 'preto', tnum: true }),
+    st({ t: 'PALCO 1', f: 'C', cap: 4.6 * k, lsEm: 0.08, cor: 'preto', tnum: true }), X0, X1, 58 * k);
+  HF.regua(b, X0, X1, 66 * k, 0.5 * k, 'preto');
+  const faixas = ['1. camarim', '2. ao vivo', '3. mais um!', '4. acústico'];
+  // a mão da Fã: a maior linha cabe em 84 mm (folga para a fita e para a mão que não é régua)
+  let xh = 8.0 * k;
+  const os_ = faixas.map((t) => HF.texto(b, st({ t, f: 'S', x: xh, cor: 'preto', wght: 560 })));
+  const larg = Math.max(...os_.map((o) => o.inkW));
+  const kk = Math.min(1, (84 * k) / larg);
+  os_.forEach((o, i) => {
+    HF.mudar(o, { fs: o.s.fs * kk });
+    HF.posicionar(o, X0 + 1.2 * k + [0, 2.2, 0.6, 1.6][i] * k, (118 + i * 52) * k, 'left');
+  });
+  HF.regua(b, X0, X1, 330 * k, 0.5 * k, 'preto');
+  const s = HF.cheia(b, st({ t: 'nunca deixe a vela acesa sem supervisão.', f: 'C', cap: 3.6 * k, cor: 'preto' }), X0, X1, 342 * k, 'tamanho');
+  window.HF_QA = [{ nome: 'SETLIST', erro: +t1.erro.toFixed(2) }, { nome: 'seguranca', erro: +s.erro.toFixed(2) }];
+}
+HF.pronto(() => {
+  const b = document.body;
+  if (D.receita === 'setlist') return setlist(b);
+  b.style.width = D.W + 'px'; b.style.height = D.H + 'px';
+  if (D.fundo) b.style.background = HF.cor[D.fundo] || D.fundo;
+  const info = [];
+  for (const bl of D.blocos) {
+    const itens = bl.itens.map(item);
+    HF.pilha(b, itens, { x0: bl.x0, x1: bl.x1, y0: bl.y0, y1: bl.y1, grade: bl.grade == null ? 8 : bl.grade });
+    info.push(itens.map((it) => ({ tipo: it.tipo, baseline: it.baseline, top: it.top, bot: it.bot,
+      t: (it.objs || []).map((o) => o.s.t), cap: (it.objs || []).map((o) => +HF.capPx(o.s).toFixed(1)) })));
+  }
+  // single positioned lines (not filling): {s:{...}, x, y (baseline), align:'left'|'center'|'right'}
+  for (const l of D.linhas || []) {
+    const o = HF.texto(b, st(l.s));
+    HF.posicionar(o, l.x, l.y, l.align || 'center');
+    info.push([{ tipo: 'linha', baseline: l.y, t: [o.s.t], x0: +o.inkX0.toFixed(1), x1: +o.inkX1.toFixed(1),
+      capTop: +o.capTop.toFixed(1), cap: [+HF.capPx(o.s).toFixed(1)] }]);
+  }
+  window.HF_INFO = info;
+});
+</script>
+</body></html>

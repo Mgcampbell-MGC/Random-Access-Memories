@@ -1,0 +1,18 @@
+{
+  "teste": "§D.6 flame-legibility gate, KV-01 9:16 FINAL plate (campanha.py, 96 spp) at 108 × 192",
+  "metodo": "INTER_AREA downscale of the delivered lit plate and of an unlit render of the same camera; flame isolated as lit − unlit; warm-core pixel = luminance difference > 40/255 with R > B, counted above the glass rim (row ≤ 92). The same metric on the director's 6 Oct gate frames (single 16×12 / double 14×18, rendered WITH candle_lib.glare() Fog Glow) gives 3 / 12 (recorded 3 / 10).",
+  "warm_core_px": 12,
+  "barra": 9,
+  "passa": true,
+  "detalhe": {
+    "limiar_40": {
+      "chama": 12,
+      "fora_da_chama": 0
+    },
+    "limiar_35": {
+      "chama": 12,
+      "fora_da_chama": 7
+    }
+  },
+  "nota": "The pixels outside the flame window are the flame_bounce glow on the floor X tape, not the flame. The finals carry no bloom (glow halos are on the §D.11 never-do list); the 6 Oct PASS (10 px) was measured on frames rendered with Fog Glow, which spreads the core over more thumbnail pixels."
+}

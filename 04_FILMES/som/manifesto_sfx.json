@@ -1,0 +1,450 @@
+{
+  "identidade/HLF-ID-01_vinheta_ovacao_de_uma_pessoa_so_2s0.wav": {
+    "id": "HLF-ID-01",
+    "tipo": "identidade",
+    "duracao_s": 2.0,
+    "sincronia": "CLAC 0,000 · estádio 0,100–0,900 (corte seco) · palmas 1,100 / 1,400 / 1,700 · fim 2,000",
+    "onsets_medidos_s": [
+      0.0,
+      0.1063,
+      1.1005,
+      1.4005,
+      1.7
+    ],
+    "normalizacao": "−14 LUFS integrado, ≤ −1 dBTP (limitador true-peak)",
+    "lufs_i": -14.0,
+    "true_peak_dbtp": -1.87
+  },
+  "identidade/HLF-ID-02_crepitar_para_aplauso_morph.wav": {
+    "id": "HLF-ID-02",
+    "tipo": "identidade",
+    "duracao_s": 5.0,
+    "sincronia": "0,0–0,5 só o pavio · 0,5–2,0 a fusão (1,5 s) · 2,0–5,0 o aplauso distante crescendo",
+    "onsets_medidos_s": [
+      0.0083,
+      0.0927,
+      0.1916,
+      0.245,
+      0.3417,
+      0.4727,
+      0.544,
+      0.5908,
+      0.6623,
+      1.0422,
+      1.3051,
+      1.3539,
+      1.6302,
+      1.7591
+    ],
+    "normalizacao": "−14 LUFS integrado, ≤ −1 dBTP (limitador true-peak)",
+    "lufs_i": -14.03,
+    "true_peak_dbtp": -1.15
+  },
+  "sfx/HLF-SFX-01_clac.wav": {
+    "id": "HLF-SFX-01",
+    "tipo": "one-shot",
+    "duracao_s": 1.6,
+    "sincronia": "transiente do interruptor (o quadro em que a luz ACENDE começa 2 quadros = 83 ms depois)",
+    "onsets_medidos_s": [
+      0.02
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -21.05,
+    "true_peak_dbtp": -1.0,
+    "lufs_i": -26.58
+  },
+  "sfx/HLF-SFX-02_clac_off.wav": {
+    "id": "HLF-SFX-02",
+    "tipo": "one-shot",
+    "duracao_s": 1.2,
+    "sincronia": "transiente do interruptor (o BLACKOUT é neste quadro)",
+    "onsets_medidos_s": [
+      0.0188,
+      0.06
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.71,
+    "true_peak_dbtp": -1.0,
+    "lufs_i": -23.51
+  },
+  "sfx/HLF-SFX-03_murmurio_teatro_loop.wav": {
+    "id": "HLF-SFX-03",
+    "tipo": "loop 16 s",
+    "duracao_s": 16.0,
+    "sincronia": "loop sem emenda: o fim encosta no começo; sem ponto de sincronia",
+    "onsets_medidos_s": [
+      0.0003,
+      3.7867,
+      6.3533,
+      6.5565,
+      8.3389,
+      8.6324,
+      8.9734,
+      9.0931,
+      11.3971,
+      14.7818,
+      15.4525
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.0,
+    "true_peak_dbtp": -9.7,
+    "lufs_i": -23.86
+  },
+  "sfx/HLF-SFX-04_rugido_estadio_0s8.wav": {
+    "id": "HLF-SFX-04",
+    "tipo": "one-shot 0,8 s",
+    "duracao_s": 0.8,
+    "sincronia": "começa cheio no 1º sample (0,000 s) e corta seco em 0,800 s",
+    "onsets_medidos_s": [
+      0.0063
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.0,
+    "true_peak_dbtp": -10.84,
+    "lufs_i": -20.45
+  },
+  "sfx/HLF-SFX-05_aplauso_estadio_distante.wav": {
+    "id": "HLF-SFX-05",
+    "tipo": "one-shot 9 s",
+    "duracao_s": 9.0,
+    "sincronia": "cresce de longe a partir de 0 s; pico estável de ~5,0 s até o fim (corte seco no editor)",
+    "onsets_medidos_s": [
+      0.1958,
+      0.2534,
+      0.3359,
+      0.4823,
+      0.5735,
+      0.6337,
+      0.7639,
+      0.8432,
+      0.8919,
+      0.921,
+      0.9879,
+      1.0804,
+      1.1679,
+      1.3052,
+      1.405,
+      1.5243,
+      1.5617,
+      1.6177,
+      1.6745,
+      1.769,
+      1.8037,
+      1.8776,
+      1.9279,
+      1.9961,
+      2.0472,
+      2.1666,
+      2.2452,
+      2.296,
+      2.3571,
+      2.3874,
+      2.4909,
+      2.6044,
+      2.6821,
+      2.7086,
+      2.7829,
+      2.8215,
+      2.9075,
+      2.9719,
+      3.0251,
+      3.0914
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.0,
+    "true_peak_dbtp": -7.45,
+    "lufs_i": -22.19
+  },
+  "sfx/HLF-SFX-06a_palma_1.wav": {
+    "id": "HLF-SFX-06a",
+    "tipo": "one-shot",
+    "duracao_s": 0.6,
+    "sincronia": "transiente da palma em 0,020 s",
+    "onsets_medidos_s": [
+      0.0205
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -25.86,
+    "true_peak_dbtp": -1.0,
+    "lufs_i": -25.9
+  },
+  "sfx/HLF-SFX-06b_palma_2.wav": {
+    "id": "HLF-SFX-06b",
+    "tipo": "one-shot",
+    "duracao_s": 0.6,
+    "sincronia": "transiente da palma em 0,020 s",
+    "onsets_medidos_s": [
+      0.0205
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -25.07,
+    "true_peak_dbtp": -1.0,
+    "lufs_i": -25.11
+  },
+  "sfx/HLF-SFX-06c_palma_3.wav": {
+    "id": "HLF-SFX-06c",
+    "tipo": "one-shot",
+    "duracao_s": 0.6,
+    "sincronia": "transiente da palma em 0,020 s",
+    "onsets_medidos_s": [
+      0.02
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.67,
+    "true_peak_dbtp": -1.0,
+    "lufs_i": -20.71
+  },
+  "sfx/HLF-SFX-06d_palmas_tres_0s3.wav": {
+    "id": "HLF-SFX-06d",
+    "tipo": "one-shot",
+    "duracao_s": 1.1,
+    "sincronia": "palmas em 0,000 / 0,300 / 0,600 s (o espaçamento da vinheta)",
+    "onsets_medidos_s": [
+      0.0005,
+      0.3005,
+      0.6
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.96,
+    "true_peak_dbtp": -1.0,
+    "lufs_i": -23.07
+  },
+  "sfx/HLF-SFX-06e_palmas_tres_10q.wav": {
+    "id": "HLF-SFX-06e",
+    "tipo": "one-shot",
+    "duracao_s": 1.35,
+    "sincronia": "palmas nos quadros 0 / 10 / 20 a 24 fps (0,000 / 0,417 / 0,833 s): F15 f312/322/332, F06A f100/110/120",
+    "onsets_medidos_s": [
+      0.0005,
+      0.4172,
+      0.8333
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -22.73,
+    "true_peak_dbtp": -1.0,
+    "lufs_i": -24.17
+  },
+  "sfx/HLF-SFX-06f_palmas_quatro_auditorio.wav": {
+    "id": "HLF-SFX-06f",
+    "tipo": "one-shot",
+    "duracao_s": 3.4,
+    "sincronia": "quatro palmas lentas no auditório vazio, em 0,00 / 0,68 / 1,36 / 2,04 s (Ad 1, gesto 6–9 s)",
+    "onsets_medidos_s": [
+      0.0005,
+      0.6808,
+      1.36,
+      2.0405
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.02,
+    "true_peak_dbtp": -1.0,
+    "lufs_i": -25.28
+  },
+  "sfx/HLF-SFX-07_fosforo_fsst.wav": {
+    "id": "HLF-SFX-07",
+    "tipo": "one-shot",
+    "duracao_s": 1.1,
+    "sincronia": "início do risco (a cabeça do fósforo raspa) em 0,020 s",
+    "onsets_medidos_s": [
+      0.02
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.0,
+    "true_peak_dbtp": -7.04,
+    "lufs_i": -23.3
+  },
+  "sfx/HLF-SFX-08_crepitar_pavio_loop.wav": {
+    "id": "HLF-SFX-08",
+    "tipo": "loop 12 s",
+    "duracao_s": 12.0,
+    "sincronia": "loop sem emenda; sem ponto de sincronia",
+    "onsets_medidos_s": [
+      0.1724,
+      0.2029,
+      0.3375,
+      0.4487,
+      0.6003,
+      0.6714,
+      0.7225,
+      0.7977,
+      0.8682,
+      0.9189,
+      1.0028,
+      1.0667,
+      1.1253,
+      1.2152,
+      1.3033,
+      1.3732,
+      1.6123,
+      1.7359,
+      1.8417,
+      1.8879,
+      1.9888,
+      2.0604,
+      2.2037,
+      2.3605,
+      2.4715,
+      2.5306,
+      2.6318,
+      2.6916,
+      2.7261,
+      2.7846,
+      2.8207,
+      2.9013,
+      2.9921,
+      3.0843,
+      3.1442,
+      3.2347,
+      3.3079,
+      3.3751,
+      3.4248,
+      3.4557
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -24.85,
+    "true_peak_dbtp": -1.0,
+    "lufs_i": -31.82
+  },
+  "sfx/HLF-SFX-09_sino_teatro.wav": {
+    "id": "HLF-SFX-09",
+    "tipo": "one-shot",
+    "duracao_s": 3.6,
+    "sincronia": "golpe do sino em 0,000 s",
+    "onsets_medidos_s": [
+      0.0
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.0,
+    "true_peak_dbtp": -8.42,
+    "lufs_i": -27.16
+  },
+  "sfx/HLF-SFX-09a_sinal_1_sino.wav": {
+    "id": "HLF-SFX-09a",
+    "tipo": "one-shot (F06C 07.05)",
+    "duracao_s": 3.6,
+    "sincronia": "sino em f0 (0,000 s)",
+    "onsets_medidos_s": [
+      0.0
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.0,
+    "true_peak_dbtp": -10.01,
+    "lufs_i": -26.27
+  },
+  "sfx/HLF-SFX-09b_sinal_2_sinos.wav": {
+    "id": "HLF-SFX-09b",
+    "tipo": "one-shot (F06C 08.05)",
+    "duracao_s": 3.6,
+    "sincronia": "sinos em f0 e f8 (0,000 / 0,333 s)",
+    "onsets_medidos_s": [
+      0.0,
+      0.3335
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.0,
+    "true_peak_dbtp": -10.44,
+    "lufs_i": -24.57
+  },
+  "sfx/HLF-SFX-09c_sinal_3_sinos.wav": {
+    "id": "HLF-SFX-09c",
+    "tipo": "one-shot (F06C 09.05)",
+    "duracao_s": 3.6,
+    "sincronia": "sinos em f0, f8 e f16 (0,000 / 0,333 / 0,667 s)",
+    "onsets_medidos_s": [
+      0.0,
+      0.3335,
+      0.6678
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.0,
+    "true_peak_dbtp": -10.27,
+    "lufs_i": -23.7
+  },
+  "sfx/HLF-SFX-10_tosse_plateia.wav": {
+    "id": "HLF-SFX-10",
+    "tipo": "one-shot",
+    "duracao_s": 2.4,
+    "sincronia": "início da tosse em 0,020 s",
+    "onsets_medidos_s": [
+      0.0206,
+      0.2814
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.0,
+    "true_peak_dbtp": -1.84,
+    "lufs_i": -24.82
+  },
+  "sfx/HLF-SFX-11_elevador_hidraulico_1s.wav": {
+    "id": "HLF-SFX-11",
+    "tipo": "one-shot 1,0 s",
+    "duracao_s": 1.0,
+    "sincronia": "o motor parte em 0,000 s",
+    "onsets_medidos_s": [
+      0.0155,
+      0.4919,
+      0.8198,
+      0.8607
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.0,
+    "true_peak_dbtp": -9.69,
+    "lufs_i": -20.55
+  },
+  "sfx/HLF-SFX-12_ima_case.wav": {
+    "id": "HLF-SFX-12",
+    "tipo": "one-shot",
+    "duracao_s": 0.7,
+    "sincronia": "contato da tampa com os ímãs em 0,050 s",
+    "onsets_medidos_s": [
+      0.0017,
+      0.05
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -21.12,
+    "true_peak_dbtp": -1.0,
+    "lufs_i": -23.99
+  },
+  "sfx/HLF-SFX-13_pulseira_fecho.wav": {
+    "id": "HLF-SFX-13",
+    "tipo": "one-shot",
+    "duracao_s": 0.6,
+    "sincronia": "o clique final do fecho em 0,200 s",
+    "onsets_medidos_s": [
+      0.1129,
+      0.1495,
+      0.2005
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -22.2,
+    "true_peak_dbtp": -1.0,
+    "lufs_i": -22.93
+  },
+  "sfx/HLF-SFX-14_selo_papel_rrrip.wav": {
+    "id": "HLF-SFX-14",
+    "tipo": "one-shot",
+    "duracao_s": 0.9,
+    "sincronia": "início do rasgo em 0,020 s",
+    "onsets_medidos_s": [
+      0.02,
+      0.1343,
+      0.3
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.0,
+    "true_peak_dbtp": -3.72,
+    "lufs_i": -21.18
+  },
+  "sfx/HLF-SFX-15_tom_de_sala_loop.wav": {
+    "id": "HLF-SFX-15",
+    "tipo": "loop 12 s",
+    "duracao_s": 12.0,
+    "sincronia": "loop sem emenda; use bem baixo (ver ganho sugerido)",
+    "onsets_medidos_s": [
+      0.0
+    ],
+    "normalizacao": "max momentary −20 LUFS-M, ≤ −1 dBTP (ganho reduzido, sem limitador)",
+    "lufs_m_max": -20.0,
+    "true_peak_dbtp": -10.12,
+    "lufs_i": -20.55
+  }
+}

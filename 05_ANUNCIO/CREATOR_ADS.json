@@ -1,0 +1,530 @@
+[
+ {
+  "id": "1A",
+  "conceito": "O PIOR SHOW",
+  "apresentador": "H01",
+  "status": "ANIMATIC PRODUZIDO (previs com manequim, VO temporária) — tomadas de pessoas a gerar. Rótulo do bloco 9–15 s verificado a 2x em todos os quadros (verificação de registro); a leitura a 1x do MP4 é informativa (ver 06_PRODUCAO/fidelidade/ANUNCIO_animatics_KV.json).",
+  "duracao_s": 15,
+  "janelas_s": {
+   "gancho": [
+    0,
+    2
+   ],
+   "corpo": [
+    2,
+    6
+   ],
+   "gesto": [
+    6,
+    9
+   ],
+   "kv": [
+    9,
+    15
+   ]
+  },
+  "falado_pt": {
+   "gancho": "Pior show que ela já viu: você.",
+   "corpo": "Esqueceu a coreografia, chorou, acenou pra mãe errada.",
+   "kv_vo": "Sua vez."
+  },
+  "na_tela_pt": {
+   "tag_gancho": "DIA DAS MÃES · O PIOR SHOW",
+   "titulo_gesto": "E ELA APLAUDIU DE PÉ.",
+   "headline_kv": "SUA VEZ.",
+   "assinatura": "holofote nela.",
+   "seguranca": "nunca deixe a vela acesa sem supervisão."
+  },
+  "som": {
+   "0-6": "room tone",
+   "6-9": "four claps in the empty hall (reverb)",
+   "9-15": "CLAC at 9,0; crackle -> applause; three claps at 13,0"
+  },
+  "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. She sits on the edge of a low wooden stage, legs dangling, already mid-look into the lens. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, silent, no speech. She slides off the stage edge, stands, and begins a slow, deadpan clap toward the camera, four claps, face neutral, then the faintest smile. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+  "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+  "rejeitar_se": [
+   "any generated letter (backdrop, clothing, wristband, phone)",
+   "the face changes between talk and gesture takes",
+   "extra or fused fingers",
+   "any flame or candle in a presenter scene",
+   "an influencer smile on the hook",
+   "waxy skin",
+   "any blue or violet object in a frame with a stand-in",
+   "a recognisable real person or celebrity likeness"
+  ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-1A_O-PIOR-SHOW_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-1A_O-PIOR-SHOW_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-1A_O-PIOR-SHOW_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: plano médio fechado; queixo acima de y 750 e as mãos batendo palmas abaixo de y 865; o título E ELA APLAUDIU DE PÉ. (y 760–860) cruza o peito entre os dois."
+  },
+  "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+ },
+ {
+  "id": "1B",
+  "conceito": "O PIOR SHOW",
+  "apresentador": "H01",
+  "status": "ANIMATIC PRODUZIDO (previs com manequim, VO temporária) — tomadas de pessoas a gerar. Rótulo do bloco 9–15 s verificado a 2x em todos os quadros (verificação de registro); a leitura a 1x do MP4 é informativa (ver 06_PRODUCAO/fidelidade/ANUNCIO_animatics_KV.json).",
+  "duracao_s": 15,
+  "janelas_s": {
+   "gancho": [
+    0,
+    2
+   ],
+   "corpo": [
+    2,
+    6
+   ],
+   "gesto": [
+    6,
+    9
+   ],
+   "kv": [
+    9,
+    15
+   ]
+  },
+  "falado_pt": {
+   "gancho": "Prezinho. Você era um girassol.",
+   "corpo": "Esqueceu a coreografia. Chorou. Acenou pra mãe errada.",
+   "kv_vo": "Sua vez."
+  },
+  "na_tela_pt": {
+   "tag_gancho": "DIA DAS MÃES · PREZINHO",
+   "titulo_gesto": "E ELA APLAUDIU DE PÉ.",
+   "headline_kv": "SUA VEZ.",
+   "assinatura": "holofote nela.",
+   "seguranca": "nunca deixe a vela acesa sem supervisão."
+  },
+  "som": {
+   "0-6": "room tone",
+   "6-9": "four claps in the empty hall (reverb)",
+   "9-15": "CLAC at 9,0; crackle -> applause; three claps at 13,0"
+  },
+  "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. She sits on the edge of a low wooden stage, legs dangling, already mid-look into the lens; one eyebrow up. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, silent, no speech. She slides off the stage edge, stands, and begins a slow, deadpan clap toward the camera, four claps, face neutral, then the faintest smile. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+  "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+  "rejeitar_se": [
+   "any generated letter (backdrop, clothing, wristband, phone)",
+   "the face changes between talk and gesture takes",
+   "extra or fused fingers",
+   "any flame or candle in a presenter scene",
+   "an influencer smile on the hook",
+   "waxy skin",
+   "any blue or violet object in a frame with a stand-in",
+   "a recognisable real person or celebrity likeness"
+  ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-1B_O-PIOR-SHOW_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-1B_O-PIOR-SHOW_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-1B_O-PIOR-SHOW_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: plano médio fechado; queixo acima de y 750 e as mãos batendo palmas abaixo de y 865; o título E ELA APLAUDIU DE PÉ. (y 760–860) cruza o peito entre os dois."
+  },
+  "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+ },
+ {
+  "id": "1C",
+  "conceito": "O PIOR SHOW",
+  "apresentador": "H02",
+  "status": "ANIMATIC PRODUZIDO (previs com manequim, VO temporária) — tomadas de pessoas a gerar. Rótulo do bloco 9–15 s verificado a 2x em todos os quadros (verificação de registro); a leitura a 1x do MP4 é informativa (ver 06_PRODUCAO/fidelidade/ANUNCIO_animatics_KV.json).",
+  "duracao_s": 15,
+  "janelas_s": {
+   "gancho": [
+    0,
+    2
+   ],
+   "corpo": [
+    2,
+    6
+   ],
+   "gesto": [
+    6,
+    9
+   ],
+   "kv": [
+    9,
+    15
+   ]
+  },
+  "falado_pt": {
+   "gancho": "Prezinho. Você, de abelhinha.",
+   "corpo": "Errou o passo. Chorou. Acenou pra mãe errada.",
+   "kv_vo": "Sua vez."
+  },
+  "na_tela_pt": {
+   "tag_gancho": "DIA DAS MÃES · PREZINHO",
+   "titulo_gesto": "E ELA APLAUDIU DE PÉ.",
+   "headline_kv": "SUA VEZ.",
+   "assinatura": "holofote nela.",
+   "seguranca": "nunca deixe a vela acesa sem supervisão."
+  },
+  "som": {
+   "0-6": "room tone",
+   "6-9": "four claps in the empty hall (reverb)",
+   "9-15": "CLAC at 9,0; crackle -> applause; three claps at 13,0"
+  },
+  "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult man about 23: light brown skin, black hair in a low fade with a curly top, a thin patchy moustache he is clearly trying to grow, an expressive mouth, one dimple. His mother's old faded black nylon bum bag worn crossbody with no logo, an oversized heather-grey crew sweatshirt with no print, the same plain black woven festival wristband with a yellow stripe and no lettering, a thin silver chain. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. He looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. He sits on the edge of a low wooden stage, legs dangling, already mid-look into the lens. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult man about 23: light brown skin, black hair in a low fade with a curly top, a thin patchy moustache he is clearly trying to grow, an expressive mouth, one dimple. His mother's old faded black nylon bum bag worn crossbody with no logo, an oversized heather-grey crew sweatshirt with no print, the same plain black woven festival wristband with a yellow stripe and no lettering, a thin silver chain. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. He looks straight into the lens, deadpan, silent, no speech. He slides off the stage edge, stands, and begins a slow, deadpan clap toward the camera, four claps, face neutral, then the faintest smile. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+  "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+  "rejeitar_se": [
+   "any generated letter (backdrop, clothing, wristband, phone)",
+   "the face changes between talk and gesture takes",
+   "extra or fused fingers",
+   "any flame or candle in a presenter scene",
+   "an influencer smile on the hook",
+   "waxy skin",
+   "any blue or violet object in a frame with a stand-in",
+   "a recognisable real person or celebrity likeness"
+  ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-1C_O-PIOR-SHOW_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-1C_O-PIOR-SHOW_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-1C_O-PIOR-SHOW_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: plano médio fechado; queixo acima de y 750 e as mãos batendo palmas abaixo de y 865; o título E ELA APLAUDIU DE PÉ. (y 760–860) cruza o peito entre os dois."
+  },
+  "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+ },
+ {
+  "id": "2A",
+  "conceito": "PRIMEIRO SINAL",
+  "apresentador": "H01",
+  "status": "ANIMATIC PRODUZIDO (previs com manequim, VO temporária) — tomadas de pessoas a gerar. Rótulo do bloco 9–15 s verificado a 2x em todos os quadros (verificação de registro); a leitura a 1x do MP4 é informativa (ver 06_PRODUCAO/fidelidade/ANUNCIO_animatics_KV.json).",
+  "duracao_s": 15,
+  "janelas_s": {
+   "gancho": [
+    0,
+    2
+   ],
+   "corpo": [
+    2,
+    6
+   ],
+   "gesto": [
+    6,
+    9
+   ],
+   "kv": [
+    9,
+    15
+   ]
+  },
+  "falado_pt": {
+   "gancho": "Primeiro sinal.",
+   "corpo": "Domingo, nove de maio. Atração principal: ela. Abertura: você.",
+   "kv_vo": "Terceiro sinal."
+  },
+  "na_tela_pt": {
+   "tag_gancho": "PRIMEIRO SINAL · 09.05",
+   "titulo_gesto": "LANTERNA PRA CIMA.",
+   "headline_kv": "A ATRAÇÃO É ELA.",
+   "assinatura": "holofote nela.",
+   "seguranca": "nunca deixe a vela acesa sem supervisão."
+  },
+  "som": {
+   "0-6": "one theatre bell under the hook (2A)",
+   "6-9": "the second bell at 6,0",
+   "9-15": "black 4 f; the third bell at 9,0; CLAC; applause; three claps"
+  },
+  "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. She stands centre stage, hands behind her back, like a theatre usher. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, silent, no speech. Standing centre stage, she raises a phone high with its flashlight on, the back of the phone toward the camera and mostly hidden in her palm, screen never visible, and sways it slowly side to side, eyes closed for one second. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+  "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+  "rejeitar_se": [
+   "any generated letter (backdrop, clothing, wristband, phone)",
+   "the face changes between talk and gesture takes",
+   "extra or fused fingers",
+   "any flame or candle in a presenter scene",
+   "an influencer smile on the hook",
+   "waxy skin",
+   "any blue or violet object in a frame with a stand-in",
+   "a recognisable real person or celebrity likeness"
+  ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-2A_PRIMEIRO-SINAL_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-2A_PRIMEIRO-SINAL_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-2A_PRIMEIRO-SINAL_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: plano mais aberto; o telefone e a cabeça acima de y 750; o título LANTERNA PRA CIMA. (y 760–860) cruza o peito."
+  },
+  "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+ },
+ {
+  "id": "2B",
+  "conceito": "PRIMEIRO SINAL",
+  "apresentador": "H01",
+  "status": "ANIMATIC PRODUZIDO (previs com manequim, VO temporária) — tomadas de pessoas a gerar. Rótulo do bloco 9–15 s verificado a 2x em todos os quadros (verificação de registro); a leitura a 1x do MP4 é informativa (ver 06_PRODUCAO/fidelidade/ANUNCIO_animatics_KV.json).",
+  "duracao_s": 15,
+  "janelas_s": {
+   "gancho": [
+    0,
+    2
+   ],
+   "corpo": [
+    2,
+    6
+   ],
+   "gesto": [
+    6,
+    9
+   ],
+   "kv": [
+    9,
+    15
+   ]
+  },
+  "falado_pt": {
+   "gancho": "Comunicado da produção.",
+   "corpo": "Domingo, nove de maio. Atração principal: ela. Abertura: você.",
+   "kv_vo": "Terceiro sinal."
+  },
+  "na_tela_pt": {
+   "tag_gancho": "COMUNICADO OFICIAL · 09.05",
+   "titulo_gesto": "LANTERNA PRA CIMA.",
+   "headline_kv": "A ATRAÇÃO É ELA.",
+   "assinatura": "holofote nela.",
+   "seguranca": "nunca deixe a vela acesa sem supervisão."
+  },
+  "som": {
+   "0-6": "one theatre bell under the hook (2A)",
+   "6-9": "the second bell at 6,0",
+   "9-15": "black 4 f; the third bell at 9,0; CLAC; applause; three claps"
+  },
+  "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. She stands centre stage, hands behind her back; a beat of silence, then she speaks. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, silent, no speech. Standing centre stage, she raises a phone high with its flashlight on, the back of the phone toward the camera and mostly hidden in her palm, screen never visible, and sways it slowly side to side, eyes closed for one second. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+  "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+  "rejeitar_se": [
+   "any generated letter (backdrop, clothing, wristband, phone)",
+   "the face changes between talk and gesture takes",
+   "extra or fused fingers",
+   "any flame or candle in a presenter scene",
+   "an influencer smile on the hook",
+   "waxy skin",
+   "any blue or violet object in a frame with a stand-in",
+   "a recognisable real person or celebrity likeness"
+  ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-2B_PRIMEIRO-SINAL_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-2B_PRIMEIRO-SINAL_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-2B_PRIMEIRO-SINAL_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: plano mais aberto; o telefone e a cabeça acima de y 750; o título LANTERNA PRA CIMA. (y 760–860) cruza o peito."
+  },
+  "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+ },
+ {
+  "id": "3A",
+  "conceito": "FÃ DE CARTEIRINHA",
+  "apresentador": "H01",
+  "status": "ANIMATIC PRODUZIDO (previs com manequim, VO temporária) — tomadas de pessoas a gerar. Rótulo do bloco 9–15 s verificado a 2x em todos os quadros (verificação de registro); a leitura a 1x do MP4 é informativa (ver 06_PRODUCAO/fidelidade/ANUNCIO_animatics_KV.json).",
+  "duracao_s": 15,
+  "janelas_s": {
+   "gancho": [
+    0,
+    2
+   ],
+   "corpo": [
+    2,
+    6
+   ],
+   "gesto": [
+    6,
+    9
+   ],
+   "kv": [
+    9,
+    15
+   ]
+  },
+  "falado_pt": {
+   "gancho": "Dois dias de fila por um ingresso.",
+   "corpo": "Chorou na grade. E ela te buscou na porta, à uma da manhã.",
+   "kv_vo": "holofote nela."
+  },
+  "na_tela_pt": {
+   "tag_gancho": "FÃ DE QUEM, EXATAMENTE?",
+   "titulo_gesto": "JÁ FOI FÃ DELA?",
+   "headline_kv": "SUA VEZ.",
+   "assinatura": "holofote nela.",
+   "seguranca": "nunca deixe a vela acesa sem supervisão."
+  },
+  "som": {
+   "0-6": "room tone",
+   "6-9": "one snare hit on the point",
+   "9-15": "CLAC -> applause -> three claps"
+  },
+  "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. She sits on the edge of a low wooden stage, looking at camera like a disappointed tour manager; a slow lean toward the lens. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, silent, no speech. Seated on the stage edge, she makes a small finger-heart toward the camera, then turns it into an index finger pointing at the lens, one eyebrow raised. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+  "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+  "rejeitar_se": [
+   "any generated letter (backdrop, clothing, wristband, phone)",
+   "the face changes between talk and gesture takes",
+   "extra or fused fingers",
+   "any flame or candle in a presenter scene",
+   "an influencer smile on the hook",
+   "waxy skin",
+   "any blue or violet object in a frame with a stand-in",
+   "a recognisable real person or celebrity likeness"
+  ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-3A_FA-DE-CARTEIRINHA_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-3A_FA-DE-CARTEIRINHA_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-3A_FA-DE-CARTEIRINHA_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: câmera com ~18° de giro para o dedo ler; o rosto, o coração com os dedos e o dedo apontando acima de y 750; o título JÁ FOI FÃ DELA? (y 760–860) cruza a barriga. Entre o queixo e o coração há só ~10 cm: não cabe o título ali."
+  },
+  "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+ },
+ {
+  "id": "3B",
+  "conceito": "FÃ DE CARTEIRINHA",
+  "apresentador": "H01",
+  "status": "ANIMATIC PRODUZIDO (previs com manequim, VO temporária) — tomadas de pessoas a gerar. Rótulo do bloco 9–15 s verificado a 2x em todos os quadros (verificação de registro); a leitura a 1x do MP4 é informativa (ver 06_PRODUCAO/fidelidade/ANUNCIO_animatics_KV.json).",
+  "duracao_s": 15,
+  "janelas_s": {
+   "gancho": [
+    0,
+    2
+   ],
+   "corpo": [
+    2,
+    6
+   ],
+   "gesto": [
+    6,
+    9
+   ],
+   "kv": [
+    9,
+    15
+   ]
+  },
+  "falado_pt": {
+   "gancho": "Você sabe a setlist de todo mundo.",
+   "corpo": "Menos a dela. Ela tá em turnê desde que você nasceu.",
+   "kv_vo": "holofote nela."
+  },
+  "na_tela_pt": {
+   "tag_gancho": "SETLIST: TODO MUNDO, MENOS ELA",
+   "titulo_gesto": "JÁ FOI FÃ DELA?",
+   "headline_kv": "SUA VEZ.",
+   "assinatura": "holofote nela.",
+   "seguranca": "nunca deixe a vela acesa sem supervisão."
+  },
+  "som": {
+   "0-6": "room tone",
+   "6-9": "one snare hit on the point",
+   "9-15": "CLAC -> applause -> three claps"
+  },
+  "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. She sits on the edge of a low wooden stage, looking at camera like a disappointed tour manager; a slow lean toward the lens. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, silent, no speech. Seated on the stage edge, she makes a small finger-heart toward the camera, then turns it into an index finger pointing at the lens, one eyebrow raised. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+  "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+  "rejeitar_se": [
+   "any generated letter (backdrop, clothing, wristband, phone)",
+   "the face changes between talk and gesture takes",
+   "extra or fused fingers",
+   "any flame or candle in a presenter scene",
+   "an influencer smile on the hook",
+   "waxy skin",
+   "any blue or violet object in a frame with a stand-in",
+   "a recognisable real person or celebrity likeness"
+  ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-3B_FA-DE-CARTEIRINHA_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-3B_FA-DE-CARTEIRINHA_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-3B_FA-DE-CARTEIRINHA_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: câmera com ~18° de giro para o dedo ler; o rosto, o coração com os dedos e o dedo apontando acima de y 750; o título JÁ FOI FÃ DELA? (y 760–860) cruza a barriga. Entre o queixo e o coração há só ~10 cm: não cabe o título ali."
+  },
+  "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+ },
+ {
+  "id": "3C",
+  "conceito": "FÃ DE CARTEIRINHA",
+  "apresentador": "H02",
+  "status": "ANIMATIC PRODUZIDO (previs com manequim, VO temporária) — tomadas de pessoas a gerar. Rótulo do bloco 9–15 s verificado a 2x em todos os quadros (verificação de registro); a leitura a 1x do MP4 é informativa (ver 06_PRODUCAO/fidelidade/ANUNCIO_animatics_KV.json).",
+  "duracao_s": 15,
+  "janelas_s": {
+   "gancho": [
+    0,
+    2
+   ],
+   "corpo": [
+    2,
+    6
+   ],
+   "gesto": [
+    6,
+    9
+   ],
+   "kv": [
+    9,
+    15
+   ]
+  },
+  "falado_pt": {
+   "gancho": "Gritou o nome dele o show inteiro.",
+   "corpo": "Ele não sabe o seu. Ela escolheu o seu antes de você nascer.",
+   "kv_vo": "holofote nela."
+  },
+  "na_tela_pt": {
+   "tag_gancho": "FÃ DE QUEM, EXATAMENTE?",
+   "titulo_gesto": "JÁ FOI FÃ DELA?",
+   "headline_kv": "SUA VEZ.",
+   "assinatura": "holofote nela.",
+   "seguranca": "nunca deixe a vela acesa sem supervisão."
+  },
+  "som": {
+   "0-6": "room tone",
+   "6-9": "one snare hit on the point",
+   "9-15": "CLAC -> applause -> three claps"
+  },
+  "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult man about 23: light brown skin, black hair in a low fade with a curly top, a thin patchy moustache he is clearly trying to grow, an expressive mouth, one dimple. His mother's old faded black nylon bum bag worn crossbody with no logo, an oversized heather-grey crew sweatshirt with no print, the same plain black woven festival wristband with a yellow stripe and no lettering, a thin silver chain. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. He looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. He sits on the edge of a low wooden stage, looking at camera like a disappointed tour manager; a slow lean toward the lens. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult man about 23: light brown skin, black hair in a low fade with a curly top, a thin patchy moustache he is clearly trying to grow, an expressive mouth, one dimple. His mother's old faded black nylon bum bag worn crossbody with no logo, an oversized heather-grey crew sweatshirt with no print, the same plain black woven festival wristband with a yellow stripe and no lettering, a thin silver chain. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. He looks straight into the lens, deadpan, silent, no speech. Seated on the stage edge, he makes a small finger-heart toward the camera, then turns it into an index finger pointing at the lens, one eyebrow raised. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+  "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+  "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+  "rejeitar_se": [
+   "any generated letter (backdrop, clothing, wristband, phone)",
+   "the face changes between talk and gesture takes",
+   "extra or fused fingers",
+   "any flame or candle in a presenter scene",
+   "an influencer smile on the hook",
+   "waxy skin",
+   "any blue or violet object in a frame with a stand-in",
+   "a recognisable real person or celebrity likeness"
+  ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-3C_FA-DE-CARTEIRINHA_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-3C_FA-DE-CARTEIRINHA_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-3C_FA-DE-CARTEIRINHA_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: câmera com ~18° de giro para o dedo ler; o rosto, o coração com os dedos e o dedo apontando acima de y 750; o título JÁ FOI FÃ DELA? (y 760–860) cruza a barriga. Entre o queixo e o coração há só ~10 cm: não cabe o título ali."
+  },
+  "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+ }
+]

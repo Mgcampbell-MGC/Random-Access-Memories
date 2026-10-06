@@ -1,0 +1,29 @@
+[
+  {
+    "asset": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/renders/C04_A-DISCOGRAFIA_limpo.png",
+    "master": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/rotulos/HLF-04_ROTULO_wrap.png",
+    "tiles": 15,
+    "uv_agreement": 0.9829,
+    "corner_tiles_skipped": 0,
+    "corner_tiles_worst": null,
+    "control": {
+      "patch_px": [
+        1371,
+        882,
+        1200,
+        1200
+      ],
+      "worst_tile": 0.145,
+      "caught": true
+    },
+    "hue_shift_deg": 1.25,
+    "sat_ratio": 1.091,
+    "worst_tile": 0.733,
+    "p5_tile": 0.773,
+    "bar_p5": 0.95,
+    "pass": false,
+    "label_id": 4.0,
+    "glass_frac_altura": 0.09866183996200562,
+    "thumbnail_sem_alegacao": true
+  }
+]

@@ -1,0 +1,6 @@
+corte,arquivo_som,arquivo_mudo,duracao_s,quadros,lufs_i,true_peak_dbfs,rotulo_pior_bloco,quadros_com_rotulo,quadros_reprovados
+F06A · CLAC,AUSENTE,AUSENTE,,,,,,,
+F06B · O PIOR SHOW,AUSENTE,AUSENTE,,,,,,,
+F06C · SINAL 07.05,04_FILMES/F06C_SINAL_07-05_som.mp4,04_FILMES/F06C_SINAL_07-05_mudo.mp4,6.0,144,-14.1,-0.9,0.934,72,0
+F06C · SINAL 08.05,04_FILMES/F06C_SINAL_08-05_som.mp4,04_FILMES/F06C_SINAL_08-05_mudo.mp4,6.0,144,-14.0,0.5,0.934,72,0
+F06C · SINAL 09.05,AUSENTE,AUSENTE,,,,,,,

@@ -1,0 +1,30 @@
+[
+  {
+    "asset": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/renders/KV-01_9x16_limpo.png",
+    "master": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/rotulos/HLF-02_ROTULO_wrap.png",
+    "tiles": 168,
+    "uv_agreement": 0.9956,
+    "corner_tiles_skipped": 4,
+    "corner_tiles_worst": 0.799,
+    "control": {
+      "patch_px": [
+        1380,
+        1681,
+        569,
+        569
+      ],
+      "worst_tile": -0.11,
+      "caught": true
+    },
+    "hue_shift_deg": -1.29,
+    "sat_ratio": 0.999,
+    "worst_tile": 0.934,
+    "p5_tile": 0.957,
+    "bar_p5": 0.95,
+    "pass": true,
+    "label_id": null,
+    "glass_frac_altura": 0.19999772310256958,
+    "thumbnail_sem_alegacao": false,
+    "nota": "Copo de 384 px em 1920 (20,0 % da altura, pela especificação do KV); medido 383,996 px. Não é miniatura (§D.7.5 vale abaixo de 20 %)."
+  }
+]

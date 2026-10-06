@@ -1,0 +1,66 @@
+{
+ "file": "HLF-TAMPA-90_topo.png",
+ "px": [
+  3600,
+  3600
+ ],
+ "ppmm": 40,
+ "disc_diameter_mm": 90.0,
+ "seed": 927,
+ "sku": "HLF-02-200 (e todos os 200 g)",
+ "mapping": "planar from above; image centre = disc centre; image width = disc diameter; image top = back (+Y)",
+ "strips": [
+  {
+   "centre_mm": [
+    44.74,
+    44.88
+   ],
+   "angle_deg": 45.66,
+   "length_mm": 77.029,
+   "width_mm": 18.0
+  },
+  {
+   "centre_mm": [
+    44.836,
+    45.188
+   ],
+   "angle_deg": -45.7,
+   "length_mm": 77.822,
+   "width_mm": 18.0
+  }
+ ],
+ "strip_on_top": 1,
+ "lifted_end": {
+  "strip": 0,
+  "end": -1,
+  "lift_mm": 0.5
+ },
+ "tape_text": {
+  "text": "ela fica aqui.",
+  "font": "Shantell Sans 500 INFM 60 BNCE 0",
+  "x_height_mm": 2.4,
+  "colour": "preto",
+  "ink_width_mm": 31.507,
+  "along_strip_mm": [
+   -34.0,
+   -2.493
+  ],
+  "note": "upper-left arm of the strip on top, reading from the torn end toward the centre"
+ },
+ "brim_text": {
+  "text": "a tampa vira palco.",
+  "font": "Special Gothic Condensed One",
+  "cap_mm": 2.0,
+  "colour": "amarelo",
+  "baseline_radius_mm": 42.067,
+  "ink_radius_mm": [
+   40.058,
+   42.546
+  ],
+  "visible_brim_mm": [
+   38.0,
+   44.4
+  ],
+  "position": "6 o'clock, curved, letters toward the centre"
+ }
+}
