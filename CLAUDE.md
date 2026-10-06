@@ -2900,6 +2900,13 @@ strangers' dead parents, alone, in year three?"**
       clip. Price it against a São Paulo shoot with model and film (R$6.878–13.255), not a R$100–250 UGC video.
       My R$990 add-on price compared it to the wrong thing. Proposed, untested: the ad alone R$2.500–3.000; with
       O LANÇAMENTO R$4.990. Find the real number by quoting all three on the calls and logging which is chosen.
+    - **★★ POSITIONING, founder 6 Oct 2026: *"no ai slop here, madison ave level work."*** The sample kits (Drive
+      folder `1vWfNkXV4SIxRB4f7V4pUECrErnMHE90B`: AVELUNE, FAÍSCA, VÃO, PULSO, CERNA, DOBRA, VOLTA, TATO) carry a
+      29-page creative packet per brand: model sheet, continuity prompts, claim limits, frame-by-frame edit, sound
+      rules. **The client never sees the packet; they get the finished pieces.** Proposed sheet, to be tested on the
+      calls: VITRINE R$690 · O LANÇAMENTO R$3.900 · O ANÚNCIO (AI presenter, Portuguese voice, 15 s, 3 openings)
+      R$2.900 · both R$5.900 · EXTENSÃO R$990 · repeat launch R$3.300. Every film ships with sound and silent; the
+      presenter never holds the pack in motion (talk 0–6 s, gesture 6–9 s, approved product image 9–15 s).
     - At 3 hours, R$2.990 earns ≈R$870–980 an hour after R$52–380 of tool costs, against R$290–360 needed.
     - **At these hours the limit is sales, not production.** Even R$1.490 pays ≈R$370–480 an hour; a lower price
       doubles the sales count (8–10 a month), it doesn't break her rate.
