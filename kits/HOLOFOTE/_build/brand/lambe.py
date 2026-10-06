@@ -227,7 +227,7 @@ def rasgo_linha(H, W, r, p0, p1, amp=0.035):
     return mant.astype(np.float32), (franja * fibra).astype(np.float32)
 
 
-def rasgado(topo, antigo, r, buracos=(), cortes=(), sombra=True, ilhas=1.0):
+def rasgado(topo, antigo, r, buracos=(), cortes=(), sombra=True, ilhas=1.0, amp=0.035):
     """Compõe um cartaz de cima RASGADO sobre um cartaz antigo (mesmo retângulo).
     topo/antigo = tuplas (assado, albedo, altura) de aplicar(). buracos = [(cx, cy, rx, ry, rot)] que revelam o antigo.
     cortes = [(p0, p1)]: rasga o cartaz de cima ao longo da linha (o lado direito sai).
@@ -242,7 +242,7 @@ def rasgado(topo, antigo, r, buracos=(), cortes=(), sombra=True, ilhas=1.0):
         furo = np.maximum(furo, m)
         franja = np.maximum(franja, f)
     for (p0, p1) in cortes:
-        m, f = rasgo_linha(H, W, r, p0, p1)
+        m, f = rasgo_linha(H, W, r, p0, p1, amp)
         furo = np.maximum(furo, 1 - m)
         franja = np.maximum(franja, f)
     branco = np.array([0.985, 0.975, 0.955], np.float32)      # miolo do papel (o pigmento é só na superfície)

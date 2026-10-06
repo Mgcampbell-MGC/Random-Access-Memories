@@ -1,3 +1,5 @@
 __pycache__/
 *.pyc
 _build/**/teste_cache/
+*.log
+_tmp_*
