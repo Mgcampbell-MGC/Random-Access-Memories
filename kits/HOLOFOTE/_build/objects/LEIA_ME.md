@@ -74,9 +74,11 @@ c = O.case(state='open', open_deg=100, unit='HLF-CASE-02',
   a real tab, so the base material hides that drawing (`hide_rect` samples the tolex 18 mm lower). The open case
   then shows a clean base front with the real slot hole.
 - **Band** (`band_kw`): see §5.
-  - `route='drape'` (the default): the doubled strap goes straight down the front and out across the floor
-    toward the camera. Clasp and seal lie on the floor and read from above (C05). It covers about 15 mm of
-    *HOLOFOTE · AO VIVO*.
+  - `route='drape'` (the default): the doubled strap goes straight down the front onto the floor, then turns
+    left (`floor_turn_deg=-90`) and runs across the frame in front of the case. Clasp and seal lie on the floor
+    and the seal's *pode / rasgar.* reads upright from the front and from above (C05). It covers about 15 mm of
+    *HOLOFOTE · AO VIVO*. With `floor_turn_deg=0` the strap runs straight at the camera and the seal reads
+    sideways.
   - `route='corner'`: the strap runs left above the text, round the front-left edge, and down the left face to
     the floor. Clasp and seal sit on the upper left face, and the main panel stays clear for a front-on closed
     shot.
@@ -158,7 +160,7 @@ O.refil(faixa='02', peel=0.0, lid_art=None, band_art=None, lid_d=68.6, at=..., r
 
 ```python
 O.pulseira(preset='loose', ops=None, start=((0, 0, 0.5), (1, 0, 0), (0, 0, 1)), art_path=None, with_clasp=True)
-# threaded through the case: O.case(..., band=True, band_kw=dict(route='drape', drop_mm=34, tail_turn_deg=55))
+# threaded through the case: O.case(..., band=True, band_kw=dict(route='drape', floor_turn_deg=-90, tail_turn_deg=55))
 ```
 
 - **The band:** 15 × 350 mm, 1 mm thick, woven polyester.
@@ -173,9 +175,17 @@ O.pulseira(preset='loose', ops=None, start=((0, 0, 0.5), (1, 0, 0), (0, 0, 1)), 
 - **Through the case:** the band doubles through the single aligned slot. The inner leg is the outer route offset
   by one band thickness, and the U-turn behind the wall is hidden. The paper seal (`seal()`) wraps both legs just
   before the clasp.
-- **The seal:** `PULSEIRA_SELO_frente.png` and `PULSEIRA_SELO_verso.png`, each a 60 × 15 strip. The strip is
-  wrapped **physically** round the stack, with its centre on the top face and the overlap seam underneath. The
-  verso is the inside face.
+- **The seal** (`seal(p, t, up, read_up=(0,1,0), art_path=None, stack_mm=None)`): the packaging redesign of
+  6 Oct.
+  - One strip, `02_PRODUTO/pulseira/PULSEIRA_SELO_faixa.png` (60 × 15 mm, 20 px/mm, x = s along the strip),
+    printed on the outside only. The inside is plain papel.
+  - The panel layout comes from `PULSEIRA.json → seal`: s 0–23 is the hidden inner glue wrap; the left side is
+    23–25,5; TOPO is 25,5–41,5 (*pode / rasgar.*, centre 33,5); the right side is 41,5–44; BAIXO is 44–60
+    (*o que se guarda é a pulseira.*).
+  - It is wrapped round a 16 × 2,5 mm stack, and each panel lands on its own face.
+  - On TOPO, s increases toward `read_up`, so the letters' tops point toward the strip's higher end and away
+    from a front camera.
+  - The text lines run along the band, so they read upright only where the band runs across the frame.
 
 ## 6 · Previs mannequin (§F.1–F.2)
 
@@ -215,13 +225,9 @@ O.previs_stage(width=2.6, depth=1.4, height=0.55, at=(0, 0, 0.55))   # the sitti
 
 ## Known conflicts and decisions (for the director)
 
-1. **Seal legibility.**
-   - *"pode rasgar."* at cap 4,0 mm in Expanded One measures **41,6 mm**. The §C.6 seal is a 15 × 60 strip
-     wrapped round band and tail, a stack about 16 × 2,5 mm, so the top face shows only **about 16 mm** of the
-     strip ("…de ras…" in `T_band_detail.png`).
-   - C05's "seal readable" needs a seal redesign: for example, the text set across the band in two lines, or a
-     wider seal.
-   - This is a packaging decision. The model renders the physical result.
+1. **Seal legibility: resolved 6 Oct.** At cap 4,0 mm, *"pode rasgar."* measures 41,6 mm and could not fit the
+   ~16 mm top face. The packaging team reset it in two lines at cap 2,49 on the TOPO panel of
+   `PULSEIRA_SELO_faixa.png`, and it now reads in `T_band_detail.png`.
 2. **The hasp** has one aligned slot (the packaging contract). The band doubles through it with a hidden U-turn,
    which in reality needs a relief in the EVA behind the slot.
 3. **A lid at 140°** (the mirror-safe angle for C05) would need a ribbon stay in reality. None is modelled.
