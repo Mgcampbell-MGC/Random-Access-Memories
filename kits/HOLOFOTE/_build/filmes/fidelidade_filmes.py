@@ -3,7 +3,9 @@ _build/tools/fidelidade_uv.py: its own functions (sample_master, score with the 
 colour measure) and its own bars, applied frame by frame.
 
 How each kind of frame is checked (compor.py writes the kind per frame in _quadros/<FILM>/manifest.json):
-  label   the delivered frame against its view's label AOV. A 2D dolly push is a scale of the still, so the AOV's
+  label   KV-45-derived frames (the director's KV-45 plates): checked INLINE by compor.py on the 2x picture
+          (KV-45_*_2x plate + the 2x AOV, the official scale), which is then area-averaged to the delivered 1080.
+          Other 3D frames: the delivered frame against its view's label AOV. A 2D dolly push is a scale of the still, so the AOV's
           RAW (pixel-filtered) channels get the SAME affine transform as the picture before the reference is built:
           the check runs on the pushed frame itself, not on the pre-transform plate.
           3D frames (the F15 crane, f176–203) use their own per-frame AOV.
@@ -32,7 +34,7 @@ COAT = '#FFE81A'
 INK = '#121014'
 
 
-def ler_aov(path):
+def ler_aov(path, nativo=False):
     ch = OpenEXR.File(path).parts[0].channels
 
     def get(name):
@@ -49,7 +51,7 @@ def ler_aov(path):
         dc = get('DiffCol').astype(np.float32)[..., :3]
     except KeyError:
         dc = None
-    if mask.shape != (C.H, C.W):
+    if mask.shape != (C.H, C.W) and not nativo:
         # a supersampled render (motor.still pct=200): the AOVs are pixel-filtered, so area-averaging the raw
         # (coverage-weighted) channels to the film's 1080 x 1920 is exactly what a 1080 x 1920 render would hold
         r = lambda a: cv2.resize(np.ascontiguousarray(a), (C.W, C.H), interpolation=cv2.INTER_AREA)
@@ -148,6 +150,13 @@ def filme(film):
     for k in sorted(man, key=int):
         f, mf = int(k), man[k]
         if mf['check'] == 'none' or not mf['aov']:
+            continue
+        if 'fid' in mf:
+            # KV-45-derived frames were checked INLINE by compor.py on their 2x picture (the official scale)
+            r = dict(mf['fid'])
+            r['frame'] = f
+            r['pass'] = r.pop('pass_')
+            rows.append(r)
             continue
         if mf['aov'] not in cache:
             cache.clear() if len(cache) > 2 else None

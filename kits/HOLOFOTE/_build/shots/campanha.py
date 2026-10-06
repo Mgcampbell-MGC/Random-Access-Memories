@@ -232,6 +232,10 @@ def foto(name, build, res, samples=64, transparent=False, pct=100, teste=False, 
         subprocess.run([WEB, '-c', 'import sys,cv2,numpy as np;a=cv2.imread(sys.argv[1],cv2.IMREAD_UNCHANGED);'
                         'a=(a.astype(np.float64)/257.0).round().clip(0,255).astype(np.uint8) if a.dtype==np.uint16 else a;'
                         'cv2.imwrite(sys.argv[2],a)', p16, p8], check=True)
+    dois = pct == 200 and not teste and not loja
+    if dois:
+        # the 2x route: plate and AOVs reduced 2 x 2 to the 1x deliverable; both are checked below
+        subprocess.run([WEB, os.path.join(HERE, 'reduzir_multi.py'), name, stem], check=True)
     final = p8
     if loja:
         os.makedirs(LOJA_OUT, exist_ok=True)
@@ -240,6 +244,10 @@ def foto(name, build, res, samples=64, transparent=False, pct=100, teste=False, 
     reps = []
     if labels and not teste:
         multi = len(labels) > 1
+        if dois:
+            for L in labels:
+                reps.append((L['tag'] + ' (2x)', _check(name + '_2x', L, os.path.join(outdir, stem + '_2x.png'),
+                                                       os.path.join(HERE, 'aov', name + '_2x'), multi)))
         for L in labels:
             rep = _check(name, L, final, aov_dir, multi)
             reps.append((L['tag'], rep))
@@ -324,16 +332,14 @@ def b_kv01(fmt, lit=True):
 
     def f():
         h = S.palco(at=(0, 0, 0))
-        root = H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=lit), at=h['place'], rot_deg=-12)
+        # 1:1 only: the glass turned 4 deg less (-8 instead of -12) so HOLOFOTE APRESENTA comes off the left limb
+        # (route step 2, 6 Oct: the black flag of step 1 changed nothing, 0,483 -> 0,484, and was taken out)
+        root = H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=lit), at=h['place'], rot_deg=-8 if fmt == '1x1' else -12)
         S.ride(root, h['lift'])
         if lit:
             S.flame_bounce(h, root)
         cs = S.camera_glass(res=k['res'], lens=50, cam_height=0.220, tilt_deg=-6, glass_px=k['glass'], top_y=k['top'],
                             center_x=k['cx'], fstop=5.6)
-        if fmt == '1x1':
-            # §D.7: at 1:1 the coat's grazing reflection of the lit floor and tape washed "HO" of HOLOFOTE APRESENTA
-            # at the left limb (worst tile 0,47–0,48 at 64 and 128 spp): a black flag camera-left (director, 6 Oct)
-            bandeira_negra(cs['location'], h['place'][:2], side=-1)
         S.clearance()
         return dict(labels=[lab(root, '02')])
     return f
@@ -538,7 +544,8 @@ def vidro_transparente_para(lights, roots):
 
 def b_c08():
     h = S.palco(at=(0, 0, 0), pool_r=0.150)
-    root = H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=False), at=h['place'], rot_deg=-12)
+    # -6 deg, not the KV's -12: at -12 'rosas no palco' / 'vela aromática' sat on the left limb (worst tile 0,775)
+    root = H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=False), at=h['place'], rot_deg=-6)
     vazio(root)
     S.ride(root, h['lift'])
     rf = OL.refil(faixa='02', peel=0.5, at=(0.094, 0.030, 0.0), rot_deg=-120.0)

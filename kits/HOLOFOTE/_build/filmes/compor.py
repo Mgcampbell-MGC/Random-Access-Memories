@@ -107,6 +107,7 @@ def geometria(tipo, film):
 
 # ================================================================================================ pictures
 class Fontes:
+    """Every plate, at the film's 1x (1080 x 1920) or at the KV-45 check scale 2x (2160 x 3840)."""
     def __init__(self):
         self.c = {}
 
@@ -115,25 +116,41 @@ class Fontes:
             self.c[k] = fn()
         return self.c[k]
 
-    def plate(self, nome):
-        paths = {'camA': os.path.join(C.RENDER, 'F15_camA_16bit.png'),
-                 'L': os.path.join(C.RENDERS, 'KV-45_aceso_16bit.png'),
-                 'U': os.path.join(C.RENDERS, 'KV-45_apagado_16bit.png'),
-                 'B': os.path.join(C.RENDER, 'F15_blecaute_16bit.png')}
-        return self.get(nome, lambda: C.ao_formato(C.ler(paths[nome])))
+    def caminho(self, nome, q):
+        if nome in ('L', 'U'):
+            base = os.path.join(C.RENDERS, 'KV-45_%s' % ('aceso' if nome == 'L' else 'apagado'))
+            p2 = base + '_2x_16bit.png'
+            return p2 if (q == 2 and os.path.exists(p2)) else base + '_16bit.png'
+        return {'camA': os.path.join(C.RENDER, 'F15_camA_16bit.png'),
+                'B': os.path.join(C.RENDER, 'F15_blecaute_16bit.png')}[nome]
 
-    def cena(self, nome):
-        return self.get(nome + '_cena', lambda: C.para_cena(self.plate(nome)))
+    def plate(self, nome, q=1):
+        def fazer():
+            im = C.ler(self.caminho(nome, q))
+            w, h = C.W * q, C.H * q
+            if im.shape[:2] == (h, w):
+                return im
+            interp = cv2.INTER_AREA if im.shape[0] > h else cv2.INTER_CUBIC
+            return np.clip(cv2.resize(im, (w, h), interpolation=interp), 0, 1)
+        return self.get((nome, q), fazer)
 
-    def crop(self, kind, n):
+    def cena(self, nome, q=1):
+        return self.get((nome, q, 'cena'), lambda: C.para_cena(self.plate(nome, q)))
+
+    def crop(self, kind, n, q=1):
         p = os.path.join(C.RENDER, 'chama_' + kind, 'c%04d.png' % n)
-        return self.get(p, lambda: C.ler(p))
+        def fazer():
+            c = C.ler(p)
+            if q != 1:
+                c = np.clip(cv2.resize(c, (c.shape[1] * q, c.shape[0] * q), interpolation=cv2.INTER_CUBIC), 0, 1)
+            return C.para_cena(c)
+        return self.get((p, q), fazer)
 
-    def mask(self, kind='palco'):
+    def mask(self, kind='palco', q=1):
         """Where the crop replaces the plate: only where the FLAME changes. The union, over every crop of this kind,
-        of |crop - (the 2D light model at that flicker state)| > 10 levels (plus the flame's own pixels), closed, dilated 14 px, feathered (sigma 6) and
-        held to zero at the crop's own border. The plate keeps its own (2x supersampled) rim and wick everywhere else,
-        so no seam can show on the rim highlights that cross the box."""
+        of |crop - (the 2D light model at that flicker state)| > 10 levels (plus the flame's own pixels), closed,
+        dilated 14 px, feathered (sigma 6) and held to zero at the crop's own border. The plate keeps its own (2x
+        supersampled) rim and wick everywhere else, so no seam can show on the rim highlights that cross the box."""
         def fazer():
             import glob
             x0, y0, x1, y1 = caixa()
@@ -156,38 +173,38 @@ class Fontes:
             m = cv2.dilate(m, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (29, 29)))
             m = cv2.GaussianBlur(m.astype(np.float32), (0, 0), 6)
             m = np.minimum(m, C.mascara_caixa(y1 - y0, x1 - x0, 12)[..., 0])
+            if q != 1:
+                m = cv2.resize(m, (m.shape[1] * q, m.shape[0] * q), interpolation=cv2.INTER_LINEAR)
             return m[..., None]
-        return self.get('mask_' + kind, fazer)
+        return self.get(('mask', kind, q), fazer)
 
 
-def colar(base, crop, m):
-    x0, y0, x1, y1 = caixa()
+def colar(base, crop, m, q=1):
+    x0, y0, x1, y1 = [v * q for v in caixa()]
     out = base.copy()
     out[y0:y1, x0:x1] = base[y0:y1, x0:x1] * (1 - m) + crop * m
     return out
 
 
-def kv_aceso_cena(F, i):
+def kv_aceso_cena(F, i, q=1):
     """KV-45 lit with the flame in flicker state i (scene-linear): the flame's light on everything is the blackout
     plate's light (the flame is the only source there), scaled by the flicker; the flame itself is the 3D crop."""
     s, _ = R.flicker(i)
-    sc = F.cena('L') + (s - 1.0) * F.cena('B')
-    return colar(sc, C.para_cena(F.crop('palco', i % 24)), F.mask('palco'))
+    sc = F.cena('L', q) + (s - 1.0) * F.cena('B', q)
+    return colar(sc, F.crop('palco', i % 24, q), F.mask('palco', q), q)
 
 
 def blecaute_cena(F, f):
     """F15 blackout: the flame the only light. Everything it lights scales with it (point light, floor bounce, label
     wash were all rendered proportional to the flame's gain); the flame itself is the 3D crop of that frame."""
     s, _ = R.flame_state(f)
-    sc = F.cena('B') * s
-    return colar(sc, C.para_cena(F.crop('blecaute', f)), F.mask('blecaute'))
+    return colar(F.cena('B') * s, F.crop('blecaute', f), F.mask('blecaute'))
 
 
-def blecaute_idx_cena(F, i):
+def blecaute_idx_cena(F, i, q=1):
     """The blackout scene at flicker index i (rendered as F15 frames 216 + i)."""
-    f = 216 + (i % 24)
     s, _ = R.flicker(i)
-    return colar(F.cena('B') * s, C.para_cena(F.crop('blecaute', f)), F.mask('blecaute'))
+    return colar(F.cena('B', q) * s, F.crop('blecaute', 216 + (i % 24), q), F.mask('blecaute', q), q)
 
 
 def aquec(sc_luz, k, kelvin, sc_fixo=None):
@@ -198,8 +215,65 @@ def aquec(sc_luz, k, kelvin, sc_fixo=None):
     return out + sc_fixo if sc_fixo is not None else out
 
 
+class Verificador:
+    """The label check, run INLINE on the 2x picture of every KV-45-derived frame (the director's rule, 6 Oct: the
+    official verification is at 2x; the delivered frame is that 2x picture area-averaged to 1080). Identical label
+    regions (holds) reuse the previous result; every frame gets a row."""
+    def __init__(self):
+        import fidelidade_filmes as FF
+        self.FF = FF
+        m = cv2.imread(C.MASTER, cv2.IMREAD_UNCHANGED)
+        self.alpha = m[..., 3].astype(np.float32) / 255.0
+        self.aov = {}
+        self.ultimo = (None, None)
+
+    def __call__(self, img2, aov_path, s, centro2, cor):
+        FF = self.FF
+        if aov_path not in self.aov:
+            self.aov = {aov_path: FF.ler_aov(aov_path, nativo=True)}
+        aov = self.aov[aov_path]
+        M = None if abs(s - 1) < 1e-9 else C.empurrar_M(s, centro2)
+        bgr = (np.clip(img2, 0, 1) * 255 + 0.5).astype(np.uint8)[..., ::-1].copy()
+        a = FF.transformar(aov, M)
+        ys, xs = np.nonzero(a['mask'] > 0.02)
+        chave = hashlib.sha1(bgr[ys.min():ys.max() + 1, xs.min():xs.max() + 1].tobytes()).hexdigest() + str(cor)
+        if chave == self.ultimo[0]:
+            return dict(self.ultimo[1], reused_identical_label_region=True)
+        r = FF.checar(self.alpha, a, bgr, coat=FF.COAT if cor else None)
+        r['scale'] = '2x (%dx%d), then area-averaged to 1080 for delivery' % (bgr.shape[1], bgr.shape[0])
+        r['method'] = ('label AOV 2x, 2D push x%.4f applied to the AOV' % s) if M is not None else 'label AOV 2x'
+        self.ultimo = (chave, r)
+        return r
+
+
+VERIF = None
+
+
+def aquec_aceso(F, i, q, k, kel):
+    bi = blecaute_idx_cena(F, i, q)
+    return aquec(kv_aceso_cena(F, i, q) - bi, k, kel, bi)
+
+
+def kv45_frame(F, tela_fn, s, lit, cor):
+    """Build a KV-45-derived picture at 2x (if the director's 2x plate exists), check its label there, deliver the
+    area-average at 1x. tela_fn(q) -> display picture at scale q."""
+    global VERIF
+    q = 2 if os.path.exists(F.caminho('L' if lit else 'U', 2)) and F.caminho('L' if lit else 'U', 2).endswith('_2x_16bit.png') else 1
+    cx, cy = C.centro_push()
+    img = C.empurrar(tela_fn(q), s, (cx * q, cy * q))
+    nome = 'KV-45_aceso' if lit else 'KV-45_apagado'
+    man = dict(push=s, centro=[cx, cy], check='label')
+    if q == 2:
+        if VERIF is None:
+            VERIF = Verificador()
+        man['fid'] = VERIF(img, os.path.join(C.AOV_KV, nome + '_2x', '0001.exr'), s, (cx * 2, cy * 2), cor)
+        img = cv2.resize(img, (C.W, C.H), interpolation=cv2.INTER_AREA)
+    man['aov'] = os.path.join(C.AOV_KV, nome, '0001.exr')
+    return img, man
+
+
 def picture(film, f, F):
-    """-> (RGB float display image, manifest dict for the label check)."""
+    """-> (RGB float display image at 1x, manifest dict for the label check)."""
     man = dict(aov=None, push=1.0, check='none')
     if film == 'F15':
         if f <= 11 or 204 <= f <= 209:
@@ -215,7 +289,7 @@ def picture(film, f, F):
             p = os.path.join(C.RENDER, 'grua', 'f%04d_%d.png' % (f, 100 if full else 50))
             im = C.ler(p)
             if not full:
-                im = cv2.resize(im, (C.W, C.H), interpolation=cv2.INTER_LANCZOS4)
+                im = np.clip(cv2.resize(im, (C.W, C.H), interpolation=cv2.INTER_LANCZOS4), 0, 1)
             else:
                 man.update(aov=os.path.join(C.RENDER, 'grua_aov', '%04d.exr' % f), check='label')
             return im, man
@@ -226,36 +300,33 @@ def picture(film, f, F):
         s = P.push(f, P.PUSH_F15)
         if f in (222, 223):
             k, kel = P.AQUEC[f - 222]
-            bi = blecaute_idx_cena(F, i)
-            sc = aquec(kv_aceso_cena(F, i) - bi, k, kel, bi)
+            fn = lambda q: C.para_tela(aquec_aceso(F, i, q, k, kel))
         else:
-            sc = kv_aceso_cena(F, i)
-        img = C.empurrar(C.para_tela(sc), s, C.centro_push())
-        man.update(aov=os.path.join(C.AOV_KV, 'KV-45_aceso', '0001.exr'), push=s, centro=C.centro_push(), check='label')
-        return img, man
+            fn = lambda q: C.para_tela(kv_aceso_cena(F, i, q))
+        return kv45_frame(F, fn, s, True, f not in (222, 223))
     if film in ('F06A', 'F06B') or film == 'F06C_09-05':
         lit_from = {'F06A': 6, 'F06B': 84, 'F06C_09-05': 72}[film]
         if f < lit_from:
             return np.zeros((C.H, C.W, 3), np.float32), man
         i = f % 24
         s = P.push(f, P.PUSH_F06A) if film == 'F06A' else 1.0
-        if f in (lit_from, lit_from + 1):
+        warm = f in (lit_from, lit_from + 1)
+        if warm:
             k, kel = P.AQUEC[f - lit_from]
-            bi = blecaute_idx_cena(F, i)
-            sc = aquec(kv_aceso_cena(F, i) - bi, k, kel, bi)
+            fn = lambda q: C.para_tela(aquec_aceso(F, i, q, k, kel))
         else:
-            sc = kv_aceso_cena(F, i)
-        img = C.empurrar(C.para_tela(sc), s, C.centro_push())
-        man.update(aov=os.path.join(C.AOV_KV, 'KV-45_aceso', '0001.exr'), push=s, centro=C.centro_push(), check='label')
-        return img, man
+            fn = lambda q: C.para_tela(kv_aceso_cena(F, i, q))
+        return kv45_frame(F, fn, s, True, not warm)
     if film.startswith('F06C'):
         if f < 72:
             return np.zeros((C.H, C.W, 3), np.float32), man
-        man.update(aov=os.path.join(C.AOV_KV, 'KV-45_apagado', '0001.exr'), check='label')
-        if f in (72, 73):
+        warm = f in (72, 73)
+        if warm:
             k, kel = P.AQUEC[f - 72]
-            return C.para_tela(aquec(F.cena('U'), k, kel)), man
-        return F.plate('U'), man
+            fn = lambda q: C.para_tela(aquec(F.cena('U', q), k, kel))
+        else:
+            fn = lambda q: F.plate('U', q)
+        return kv45_frame(F, fn, 1.0, False, not warm)
     raise ValueError(film)
 
 
