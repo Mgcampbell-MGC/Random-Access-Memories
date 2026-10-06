@@ -17,7 +17,7 @@ import bpy
 import sets_lib as S
 
 OUT = os.path.join(S.KIT, '02_PRODUTO', 'renders', '_sets_tests')
-RES = (304, 540)
+RES = (540, 960)
 
 
 def kv01():
@@ -32,7 +32,7 @@ def shot(mode):
     S.cena(res=RES, samples=32)
     spot = mode not in ('blecaute',)
     h = S.palco(at=(0, 0, 0), spot=spot, lift_dz={'elevador': -0.100, 'subida': -0.040}.get(mode, 0.0),
-                haze=0.0015 if mode == 'haze' else 0.0)
+                haze=0.0015 if mode == 'haze' else 0.0, rotunda_spill=0.0 if mode == 'blecaute' else None)
     root = None
     if mode not in ('vazio', 'elevador'):
         lit = mode != 'subida'

@@ -61,11 +61,10 @@ def find_art(folder, *keys):
     return None
 
 
-def art(path, folder, keys, placeholder):
-    """Resolve an art parameter: an explicit path wins; otherwise the packaging team's file; otherwise the placeholder."""
-    if path:
-        return path
-    return find_art(folder, *keys) or ph(placeholder)
+def pfile(folder, name):
+    """02_PRODUTO/<folder>/<name> if it exists, else None (explicit file contracts, never keyword guesses)."""
+    q = os.path.join(PRODUTO, folder, name)
+    return q if os.path.exists(q) else None
 
 
 def _img(path, colorspace='sRGB'):
@@ -836,10 +835,10 @@ def mirror_reflection(built, cam_loc):
     return (d - 2 * d.dot(n) * n).normalized()
 
 
-def work_bulb(at=(0, 0, 0), lit=True, light_w=0.0, cord_mm=600.0):
+def work_bulb(at=(0, 0, 0), lit=True, light_w=0.0, cord_mm=600.0, filament=300.0):
     """A bare incandescent work-light bulb (A60, E27, clear glass, hanging on a black cord) for the case mirror to
     reflect (C05). The filament glows (~2.700 K); light_w > 0 adds a point light so it also lights the set.
-    Built hanging: base up, glass down. Returns Built(root, light)."""
+    Built hanging: base up, glass down. filament = emission strength. Returns Built(root, light, filament)."""
     before = set(bpy.data.objects)
     prof = [(0.0, 0.0), (8.0, -0.6), (14.0, -3.0), (14.2, -8.0), (17.5, -20.0), (24.5, -33.0), (29.0, -45.0),
             (30.0, -55.0), (28.8, -65.0), (24.5, -74.5), (17.0, -81.0), (9.0, -84.3), (0.0, -85.2)]
@@ -881,7 +880,7 @@ def work_bulb(at=(0, 0, 0), lit=True, light_w=0.0, cord_mm=600.0):
     bb = nt.nodes.new('ShaderNodeBlackbody')
     bb.inputs[0].default_value = 2700
     nt.links.new(bb.outputs[0], e.inputs[0])
-    e.inputs[1].default_value = 900.0 if lit else 0.0
+    e.inputs[1].default_value = filament if lit else 0.0
     nt.links.new(e.outputs[0], o.inputs[0])
     fil.data.materials.append(em)
     cord = _cylinder('bulb_cord', 0, 0, 2.6, 26.0, 26.0 + cord_mm, 16)
@@ -1132,7 +1131,7 @@ def _strip_mesh(name, samples, width, total=None):
 BAND = dict(L=350.0, W=15.0, T=1.0)
 
 
-def jacquard_material(name, art_path, length_mm=350.0, width_mm=15.0, reverse=False):
+def jacquard_material(name, art_path, length_mm=350.0, width_mm=15.0, reverse=False, height=None):
     """Woven polyester band: side 1 is the art (amarelo jacquard text on black); side 2 is the woven reverse, the
     same weave seen from the back: mirrored (UVs are shared) and a little duller."""
     m = bpy.data.materials.new(name)
@@ -1149,13 +1148,16 @@ def jacquard_material(name, art_path, length_mm=350.0, width_mm=15.0, reverse=Fa
         N.link(hsv.outputs['Color'], bs.inputs['Base Color'])
     else:
         N.link(tx.outputs['Color'], bs.inputs['Base Color'])
-    # weave: fine warp ribs along the band, a slower weft beat across
-    u, v, _ = N.sep(uvn.outputs['UV'])
-    um, vm = N.m('MULTIPLY', u, length_mm), N.m('MULTIPLY', v, width_mm)
-    rib = N.m('SINE', N.m('MULTIPLY', vm, 2 * math.pi / 0.32))
-    beat = N.m('SINE', N.m('MULTIPLY', um, 2 * math.pi / 0.55))
-    h = N.m('ADD', N.m('MULTIPLY', rib, 0.6), N.m('MULTIPLY', N.m('MULTIPLY', rib, beat), 0.4))
-    N.link(N.bump(h, 0.04), bs.inputs['Normal'])
+    if height:                      # the packaging team's woven height map (warp 0,20 / weft 0,25 mm)
+        h = N.m('ADD', N.tex(height, uvn.outputs['UV'], 'Non-Color', ext='EXTEND').outputs['Color'], 0.0)
+        N.link(N.bump(h, 0.06), bs.inputs['Normal'])
+    else:                           # procedural weave: fine warp ribs along the band, a slower weft beat across
+        u, v, _ = N.sep(uvn.outputs['UV'])
+        um, vm = N.m('MULTIPLY', u, length_mm), N.m('MULTIPLY', v, width_mm)
+        rib = N.m('SINE', N.m('MULTIPLY', vm, 2 * math.pi / 0.32))
+        beat = N.m('SINE', N.m('MULTIPLY', um, 2 * math.pi / 0.55))
+        h = N.m('ADD', N.m('MULTIPLY', rib, 0.6), N.m('MULTIPLY', N.m('MULTIPLY', rib, beat), 0.4))
+        N.link(N.bump(h, 0.04), bs.inputs['Normal'])
     bs.inputs['Roughness'].default_value = 0.62
     bs.inputs['Sheen Weight'].default_value = 0.22
     bs.inputs['Sheen Roughness'].default_value = 0.4
@@ -1163,15 +1165,22 @@ def jacquard_material(name, art_path, length_mm=350.0, width_mm=15.0, reverse=Fa
     return m
 
 
-def _band_object(samples, art_path, length):
+def band_art():
+    """The wristband's art: (colour, height) from 02_PRODUTO/pulseira/ (PULSEIRA_tecido.png: x along the band from
+    the clasp end, y across, black ground, amarelo jacquard; PULSEIRA_tecido_altura16.png), else the placeholder."""
+    return (pfile('pulseira', 'PULSEIRA_tecido.png') or ph('PH_PULSEIRA_jacquard.png'),
+            pfile('pulseira', 'PULSEIRA_tecido_altura16.png'))
+
+
+def _band_object(samples, art_path, length, height=None):
     ob = _strip_mesh('pulseira', samples, BAND['W'], total=length)
     s = ob.modifiers.new('sol', 'SOLIDIFY')
     s.thickness = BAND['T'] * MM
     s.offset = 0.0
     s.use_even_offset = True
     s.use_quality_normals = True
-    ob.data.materials.append(jacquard_material('pulseira', art_path, length, BAND['W']))
-    ob.data.materials.append(jacquard_material('pulseira_verso', art_path, length, BAND['W'], reverse=True))
+    ob.data.materials.append(jacquard_material('pulseira', art_path, length, BAND['W'], height=height))
+    ob.data.materials.append(jacquard_material('pulseira_verso', art_path, length, BAND['W'], reverse=True, height=height))
     ob.data.materials.append(_mat('pulseira_edge', **{'Base Color': srgb('#141316'), 'Roughness': 0.75}))
     s.material_offset = 1
     s.material_offset_rim = 2
@@ -1201,54 +1210,64 @@ def clasp(p, t, up, length=20.0, width=19.0, height=5.6, z_under=0.8):
     return ob
 
 
-def seal(p, t, up, stack_mm=2.0, length=15.0, front_art=None, back_art=None, paper=0.25):
+def seal(p, t, up, stack_mm=2.0, length=15.0, strip_mm=60.0, front_art=None, back_art=None, paper=0.25):
     """The paper seal (§C.6), uncoated papel-cartaz, wrapped round the stacked band and tail at p (mm, the centre of
-    the bottom layer's underside). The top face (toward `up`) carries front_art, the bottom face back_art; each art
-    image is that face as seen, upright with the band running away from the viewer (u across, v along)."""
-    front_art = art(front_art, 'pulseira', ('selo', 'frente'), 'PH_SELO_frente.png')
-    back_art = art(back_art, 'pulseira', ('selo', 'verso'), 'PH_SELO_verso.png')
+    the bottom layer's underside): `length` (15) along the band, the strip_mm (60) strip running round the stack.
+    Art = the packaging strips PULSEIRA_SELO_frente/verso.png (60 x 15 mm; x along the strip, y across): the strip's
+    centre sits on the top face (toward `up`), x increasing toward t x up (screen right when t points away from the
+    camera); its two ends overlap under the stack. The verso is the inside face, read once torn.
+    NB: a 60 mm strip round a ~16 x 2,5 mm stack shows only the middle ~16 mm of the strip on top (see LEIA_ME)."""
+    front_art = front_art or pfile('pulseira', 'PULSEIRA_SELO_frente.png') or ph('PH_SELO_frente.png')
+    back_art = back_art or pfile('pulseira', 'PULSEIRA_SELO_verso.png') or ph('PH_SELO_verso.png')
     t, up = Vector(t).normalized(), Vector(up).normalized()
     b = t.cross(up).normalized()
     w = BAND['W'] / 2 + 0.35
     z0, z1 = -0.08, stack_mm + 0.08
     rc = 0.55
-    # rounded-rectangle loop (in the b/up plane), extruded along t
-    loop = []
-    corners = [(w - rc, z1 - rc, 0), (-w + rc, z1 - rc, 90), (-w + rc, z0 + rc, 180), (w - rc, z0 + rc, 270)]
+    # loop in the (b, up) plane starting at the BOTTOM centre and running counter-clockwise (-b along the top),
+    # with the start point repeated so the overlap seam lies under the stack
+    loop = [(0.0, z0)]
+    corners = [(w - rc, z0 + rc, 270), (w - rc, z1 - rc, 0), (-w + rc, z1 - rc, 90), (-w + rc, z0 + rc, 180)]
     for cx, cz, a0 in corners:
         for i in range(7):
             a = math.radians(a0 + 90 * i / 6)
             loop.append((cx + rc * math.cos(a), cz + rc * math.sin(a)))
-    verts, faces, uv = [], [], []
+    loop.append((0.0, z0))
+    arc = [0.0]
+    for i in range(1, len(loop)):
+        arc.append(arc[-1] + math.hypot(loop[i][0] - loop[i - 1][0], loop[i][1] - loop[i - 1][1]))
+    P = arc[-1]
+    s_top = P / 2                                  # the top centre is half way round from the bottom centre
+    verts, faces, uvs = [], [], []
     rows = 9
-    for j in range(rows):
-        s = -length / 2 + length * j / (rows - 1)
-        for (x, z) in loop:
-            verts.append(x * b + z * up + s * t)
     nl = len(loop)
+    for j in range(rows):
+        sj = -length / 2 + length * j / (rows - 1)
+        for (x, z), sa in zip(loop, arc):
+            verts.append(Vector(p) * MM + (x * b + z * up + sj * t) * MM)
+            uvs.append((0.5 - (sa - s_top) / strip_mm, j / (rows - 1)))
     for j in range(rows - 1):
-        for i in range(nl):
-            a, bq = j * nl + i, j * nl + (i + 1) % nl
-            faces.append((a, a + nl, bq + nl, bq))
-    ob = _mesh_obj('seal', [Vector(p) * MM + Vector(v) * MM for v in verts], faces)
+        for i in range(nl - 1):
+            a_, b_ = j * nl + i, j * nl + i + 1
+            faces.append((a_, a_ + nl, b_ + nl, b_))
+    ob = _mesh_obj('seal', verts, faces)
     me = ob.data
     uvl = me.uv_layers.new(name='UVMap')
     for poly in me.polygons:
-        nrm = poly.normal
-        top = nrm.dot(up) > 0.5
-        bot = nrm.dot(up) < -0.5
-        poly.material_index = 0 if top else (1 if bot else 2)
         for li in poly.loop_indices:
-            co = me.vertices[me.loops[li].vertex_index].co / MM - Vector(p)
-            a = co.dot(b) / (2 * w) + 0.5
-            c = co.dot(t) / length + 0.5
-            uvl.data[li].uv = (a, c) if not bot else (a, 1 - c)
+            uvl.data[li].uv = uvs[me.loops[li].vertex_index]
+    c0 = me.polygons[len(me.polygons) // 2]
+    if c0.normal.dot(c0.center - Vector(p) * MM - (up * (stack_mm / 2)) * MM) < 0:
+        me.flip_normals()
     sol = ob.modifiers.new('sol', 'SOLIDIFY')
     sol.thickness = paper * MM
     sol.offset = 1.0
+    sol.material_offset = 1
+    sol.material_offset_rim = 2
     me.polygons.foreach_set('use_smooth', [True] * len(me.polygons))
-    ob.data.materials.append(paper_material('seal_front', front_art, AMARELO, rough=0.85))
-    ob.data.materials.append(paper_material('seal_back', back_art, PAPEL, rough=0.85))
+    # (with offset +1 the original faces end up outside and the generated shell inside)
+    ob.data.materials.append(paper_material('seal_outside', front_art, AMARELO, rough=0.85))
+    ob.data.materials.append(paper_material('seal_inside', back_art, PAPEL, rough=0.85))
     ob.data.materials.append(paper_material('seal_edge', None, PAPEL, rough=0.85))
     return ob
 
@@ -1269,7 +1288,9 @@ def _band_through_case(C=None, closed=False, route='drape', art_path=None, seal_
     C = C or CASE
     L = length or BAND['L']
     T = BAND['T']
-    art_path = art(art_path, 'pulseira', ('pulseira',), 'PH_PULSEIRA_jacquard.png')
+    hgt = None
+    if not art_path:
+        art_path, hgt = band_art()
     face = -C['D'] / 2 - (C['TAB_T'] + 0.02 if closed else 0.0)
     wall_in = -C['D'] / 2 + C['T']
     hx = C['W'] / 2
@@ -1314,7 +1335,7 @@ def _band_through_case(C=None, closed=False, route='drape', art_path=None, seal_
     tt = Turtle((0, 0, 0), (1, 0, 0), (0, 0, 1))
     tt.samples = smp
     tt.to_length(L, [])
-    band = _band_object(tt.samples, art_path, L)
+    band = _band_object(tt.samples, art_path, L, hgt)
     cp, ct, cn, _ = out.marks['clasp']
     cl = clasp(cp - cn * 1.5, ct, cn)
     sl = None
@@ -1334,7 +1355,9 @@ def pulseira(preset='loose', ops=None, start=((0, 0, 0.5), (1, 0, 0), (0, 0, 1))
     ops: your own Turtle steps, e.g. [('fwd', 40), ('turn', 30, 50), ('bend', 10, 60), ...] from `start`
     (point, tangent, side-1 normal, all mm). For the band threaded through O CASE use case(band=True).
     Returns Built(root, band, clasp)."""
-    art_path = art(art_path, 'pulseira', ('pulseira',), 'PH_PULSEIRA_jacquard.png')
+    hgt = None
+    if not art_path:
+        art_path, hgt = band_art()
     before = set(bpy.data.objects)
     p, t, n = start
     tu = Turtle(p, t, n)
@@ -1342,7 +1365,7 @@ def pulseira(preset='loose', ops=None, start=((0, 0, 0.5), (1, 0, 0), (0, 0, 1))
         ops = [('fwd', 28), ('turn', 38, 55), ('fwd', 22), ('bend', 7, 70), ('bend', -7, 70), ('turn', -95, 42),
                ('fwd', 18), ('turn', 55, 60), ('fwd', 400)]
     tu.to_length(BAND['L'], ops or [('fwd', 400)])
-    band = _band_object(tu.samples, art_path, BAND['L'])
+    band = _band_object(tu.samples, art_path, BAND['L'], hgt)
     cl = None
     if with_clasp:
         p0, t0, n0, _ = tu.samples[0]
@@ -1367,8 +1390,9 @@ def setlist(state='folded', fold_deg=None, side1=None, side2=None, lie=True, per
     (the cover) with +1; seen from above (70 deg) all four panels show either way.
     Returns Built(root, card)."""
     S = SETLIST
-    side1 = art(side1, 'setlist', ('lado1',), 'PH_SETLIST_lado1.png')
-    side2 = art(side2, 'setlist', ('lado2',), 'PH_SETLIST_lado2.png')
+    side1 = side1 or pfile('setlist', 'SETLIST_lado-1.png') or ph('PH_SETLIST_lado1.png')
+    side2 = side2 or pfile('setlist', 'SETLIST_lado-2.png') or ph('PH_SETLIST_lado2.png')
+    picote = pfile('setlist', 'SETLIST_picote_lado-1.png')
     before = set(bpy.data.objects)
     if fold_deg is None:
         fold_deg = {'folded': 180.0, 'fan': 70.0, 'flat': 3.0}[state]
@@ -1400,8 +1424,8 @@ def setlist(state='folded', fold_deg=None, side1=None, side2=None, lie=True, per
     sol.use_even_offset = True
     sol.material_offset = 1
     sol.material_offset_rim = 2
-    m1 = _card_material('setlist_lado1', side1, perforations, tot)
-    m2 = _card_material('setlist_lado2', side2, perforations, tot, mirror_u=True)
+    m1 = _card_material('setlist_lado1', side1, perforations, tot, picote=picote)
+    m2 = _card_material('setlist_lado2', side2, perforations, tot, mirror_u=True, picote=picote)
     card.data.materials.append(m1)
     card.data.materials.append(m2)
     card.data.materials.append(_mat('setlist_edge', **{'Base Color': srgb('#F7F1E4'), 'Roughness': 0.9}))
@@ -1434,7 +1458,7 @@ def setlist(state='folded', fold_deg=None, side1=None, side2=None, lie=True, per
 _setlist_fn = setlist
 
 
-def _card_material(name, art_path, perforations, total_len, mirror_u=False):
+def _card_material(name, art_path, perforations, total_len, mirror_u=False, picote=None):
     S = SETLIST
     m = paper_material(name, art_path, PAPEL, rough=0.88)
     if mirror_u:
@@ -1443,7 +1467,19 @@ def _card_material(name, art_path, perforations, total_len, mirror_u=False):
         uvn = [n for n in m.node_tree.nodes if n.bl_idname == 'ShaderNodeUVMap'][0]
         u, v, _ = N.sep(uvn.outputs['UV'])
         N.link(N.comb(N.m('SUBTRACT', 1.0, u), v, 0.0), tx.inputs['Vector'])
-    if perforations:
+    if perforations and picote:
+        # the packaging team's die mask (side 1 layout; side 2 reads it mirrored): the slits show as shadowed cuts
+        N = _NT(m)
+        bs = _bsdf(m)
+        uvn = [n for n in m.node_tree.nodes if n.bl_idname == 'ShaderNodeUVMap'][0]
+        vec = uvn.outputs['UV']
+        if mirror_u:
+            u, v, _ = N.sep(vec)
+            vec = N.comb(N.m('SUBTRACT', 1.0, u), v, 0.0)
+        pk = N.tex(picote, vec, 'Non-Color').outputs['Color']
+        base_col = [l.from_socket for l in m.node_tree.links if l.to_socket == bs.inputs['Base Color']][0]
+        N.link(N.mix(N.m('MULTIPLY', N.m('ADD', pk, 0.0), 0.65), base_col, (0.05, 0.045, 0.04, 1)), bs.inputs['Base Color'])
+    elif perforations:
         N = _NT(m)
         bs = _bsdf(m)
         uvn = [n for n in m.node_tree.nodes if n.bl_idname == 'ShaderNodeUVMap'][0]
@@ -1534,18 +1570,20 @@ def gaffer_strip(p0, p1, width=48.0, step_at=None, step_h=0.4, lift_end=0.0, hex
     return ob
 
 
-def setlist_taped(side1=None, at=(0, 0, 0), rot_deg=0.0, tape_hex=AMARELO, crease_deg=2.0):
-    """The setlist open flat and taped to the stage floor (C04): two torn strips of amarelo cloth gaffer, 48 mm,
-    across the top (P1) and bottom (P4) ends, one corner lifted. P1 is away from the camera (+Y)."""
+def setlist_taped(side1=None, at=(0, 0, 0), rot_deg=0.0, tape_hex=AMARELO, crease_deg=2.0, overlap_mm=10.0):
+    """The setlist open flat and taped to the stage floor (C04 style): two torn strips of amarelo cloth gaffer,
+    48 mm, across the top (P1) and bottom (P4) edges, each catching overlap_mm of the card; one corner lifted.
+    P1 is away from the camera (+Y). side1: any 105 x 400 art (P1 at the top)."""
     before = set(bpy.data.objects)
     sl = setlist(state='flat', fold_deg=crease_deg, side1=side1, lie=True)
     ys = [(sl.card.matrix_world @ v.co).y / MM for v in sl.card.data.vertices]
     y_top, y_bot = max(ys), min(ys)
-    W = SETLIST['W']
-    t1 = gaffer_strip((-W / 2 - 24, y_top - 12, 0), (W / 2 + 26, y_top - 10, 0), step_at=((0, y_top, 0), (0, 1, 0)),
-                      step_h=SETLIST['T'] + 0.1, seed=0.3)
-    t2 = gaffer_strip((W / 2 + 22, y_bot + 11, 0), (-W / 2 - 25, y_bot + 13, 0), step_at=((0, y_bot, 0), (0, -1, 0)),
-                      step_h=SETLIST['T'] + 0.1, lift_end=1.0, seed=1.7)
+    W, half = SETLIST['W'], 24.0
+    ct, cb = y_top - overlap_mm + half, y_bot + overlap_mm - half
+    t1 = gaffer_strip((-W / 2 - 24, ct - 1.0, 0), (W / 2 + 26, ct + 1.0, 0), step_at=((0, y_top, 0), (0, 1, 0)),
+                      step_h=SETLIST['T'] + 0.1, hexcol=tape_hex, seed=0.3)
+    t2 = gaffer_strip((W / 2 + 22, cb - 1.0, 0), (-W / 2 - 25, cb + 1.0, 0), step_at=((0, y_bot, 0), (0, -1, 0)),
+                      step_h=SETLIST['T'] + 0.1, lift_end=1.0, hexcol=tape_hex, seed=1.7)
     root = _finish('setlist_taped_root', before, at, rot_deg)
     return Built(root=root, setlist=sl, tapes=(t1, t2))
 

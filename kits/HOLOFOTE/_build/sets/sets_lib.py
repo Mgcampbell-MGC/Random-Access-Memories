@@ -29,6 +29,7 @@ import texturas as T
 
 KIT = os.path.abspath(os.path.join(HERE, '..', '..'))
 ROTULOS = os.path.join(KIT, '02_PRODUTO', 'rotulos')
+TAMPAS = os.path.join(KIT, '02_PRODUTO', 'tampa')
 CARTAZES = os.path.join(KIT, '01_MARCA', 'cartazes')
 
 # ----------------------------------------------------------------------------------------------------------------
@@ -46,6 +47,12 @@ ENERGIA = dict(
     loja_key_k=83.0,          # LOJA key, energy = k x d^2: coating at hex (dE00 3,0), fill = 20 %
 )
 EXPOSURE = -3.0
+
+
+def tampa_art(size='200'):
+    """The lid's UV print (gaffer X + 'ela fica aqui.'): HLF-TAMPA-90 for the 200 g, HLF-TAMPA-70 for O SINGLE."""
+    p = os.path.join(TAMPAS, 'HLF-TAMPA-%s_topo.png' % ('90' if size == '200' else '70'))
+    return p if os.path.exists(p) else None
 
 
 def wrap(faixa='02', personal=None):
@@ -1642,6 +1649,8 @@ def loja_camera(h, preset='L01', res=(1200, 1200), fill=0.65, size='200', center
     at = h['at']
     gp = int(round(res[1] * fill))
     top = (res[1] - gp) // 2
+    if preset == 'L01' and center_x is None:
+        center_x = 0.40 * res[0]                    # the candle left of centre, the leaning lid to its right
     if preset == 'L01':
         s = camera_glass(res=res, lens=85, cam_height=0.052, tilt_deg=0.0, glass_px=gp, top_y=top, at=at, size=size,
                          center_x=center_x)
@@ -1654,9 +1663,9 @@ def loja_camera(h, preset='L01', res=(1200, 1200), fill=0.65, size='200', center
     return s['object']
 
 
-def tampa_encostada(h, side=1, art=None):
+def tampa_encostada(h, side=1, art=None, size='200'):
     """L01: the lid leaning against the candle's right side, its top (the X, 'ela fica aqui.') to camera."""
-    t = H.tampa(art)
+    t = H.tampa(art or tampa_art(size), size=size)
     at = Vector(h['at'])
     t.location = at + Vector((side * 0.072, 0.014, 0.0))
     t.rotation_euler = (math.radians(78), 0.0, math.radians(side * 14))     # top to camera, leaning back 12 deg

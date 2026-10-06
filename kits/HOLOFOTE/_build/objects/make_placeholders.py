@@ -153,8 +153,9 @@ def main():
         x += 34 * ppm
     wb.save(os.path.join(OUT, 'PH_PULSEIRA_jacquard.png'))
     # Paper seal faces (the visible top face of the wrap, as seen; and the back face)
-    face(16, 15, AMARELO, (0x55, 0x52, 0x40), 'SELO', ppm=24, arrow=True).save(os.path.join(OUT, 'PH_SELO_frente.png'))
-    face(16, 15, PAPEL, GREY_ON_LIGHT, 'SELO V', ppm=24, arrow=True).save(os.path.join(OUT, 'PH_SELO_verso.png'))
+    # paper seal: the 60 x 15 strip (x along the strip, which wraps round band + tail), front and back
+    face(60, 15, AMARELO, (0x55, 0x52, 0x40), 'SELO', ppm=20, arrow=True).save(os.path.join(OUT, 'PH_SELO_frente.png'))
+    face(60, 15, PAPEL, GREY_ON_LIGHT, 'SELO VERSO', ppm=20, arrow=True).save(os.path.join(OUT, 'PH_SELO_verso.png'))
     print('placeholders ->', OUT)
 
 

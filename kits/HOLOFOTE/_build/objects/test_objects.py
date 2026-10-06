@@ -2,8 +2,9 @@
 
     /home/user/venvs/blender/bin/python test_objects.py -- <scene> [samples] [res]
 
-Scenes: case_open, case_closed, case_c05, ingresso, setlist, refil, pulseira, previs_H01_sit, previs_H01_stand,
-previs_H02_sit, previs_H02_stand. Output: 02_PRODUTO/renders/_objects_tests/T_<scene>.png
+Scenes: case_open, case_closed, case_hasp, band_detail, case_c05, props, paper, hands, phone,
+previs_H01_sit, previs_H01_stand, previs_H02_sit, previs_H02_stand.
+Output: 02_PRODUTO/renders/_objects_tests/T_<scene>.png (one Blender process at a time; these are look-dev, not finals)
 """
 import sys, os, math
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

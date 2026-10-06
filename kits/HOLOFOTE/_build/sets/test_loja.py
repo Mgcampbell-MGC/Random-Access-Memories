@@ -21,9 +21,9 @@ def shot(mode):
     if mode == 'l01':
         S.H.copo(dict(faixa='02', wrap=S.wrap('02')), at=h['place'], rot_deg=-20)
         S.tampa_encostada(h)
-        S.loja_camera(h, 'L01', res=(540, 540), fill=0.62, center_x=540 * 0.42)
+        S.loja_camera(h, 'L01', res=(540, 540), fill=0.62)
     else:
-        root = S.H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=True, lid='stage', lid_rot_deg=12), at=h['place'],
+        root = S.H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=True, lid='stage', lid_rot_deg=12, lid_art=S.tampa_art()), at=h['place'],
                         rot_deg=-20)
         S.flame_bounce(h, root, receivers=h['seamless_parts'], energy=0.04)
         S.loja_camera(h, 'L05', res=(540, 540))

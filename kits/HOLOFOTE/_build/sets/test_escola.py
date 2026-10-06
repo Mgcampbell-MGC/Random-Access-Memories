@@ -5,7 +5,7 @@
 c02             C02 · A PRIMEIRA FILA (4:5): upstage behind the lit candle, back panel to camera, the front row
                 of eight monoblocs >= 2 m away, the handbag saving a seat
 apresentadora   the ad previs medium shot (9:16, 50 mm, eye level, at the stage edge), spot from front-left
-geral           a wide look at the room (for the set designer, not a deliverable framing)
+geral           a wide WORK-LIGHT overview of the room (a soft ceiling light is added so the set reads; not a look)
 """
 import sys, os, time
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -30,6 +30,7 @@ def shot(mode):
         S.figura_sentada(h)
         S.escola_camera(h, 'APRESENTADORA', res=(304, 540))
     else:
+        S._light('luz_de_servico', 'AREA', (0, -5.0, 4.4), (0, -5.0, 0), 6000.0, shape='RECTANGLE', size=8.0, size_y=10.0)
         S.camera_look((5.4, -11.5, 2.6), (-0.5, 1.0, 0.9), lens=24)
         sc.render.resolution_x, sc.render.resolution_y = (540, 360)
     S.clearance()
