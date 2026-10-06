@@ -155,8 +155,8 @@ def fotos_F15():
     return [
         ('F15-01', 0, 11, 'black', 'black', 'house dark; DOMINGO · 09.05 on black'),
         ('F15-02', 12, 13, 'render:_render/F15_camA_16bit.png', 'relight-2D warm-up', 'CLAC: the spot comes up 10 % at 2.000 K, 55 % at 2.700 K (scene-linear, exact PBR Neutral inverse)'),
-        ('F15-03', 14, 159, 'render:_render/F15_camA_16bit.png', 'hold', 'cam A (KV-01 9:16 framing), the empty hard pool on the X'),
-        ('F15-04', 160, 175, 'render:_render/grua/f####_50.png', '3D frame 50 % + Lanczos 2x', 'crane + dolly A->B begins (ease in-out to f203); lift plate drops 100 mm f168–175; no candle in frame'),
+        ('F15-03', 14, 161, 'render:_render/F15_camA_16bit.png', 'hold', 'cam A (KV-01 9:16 framing), the empty hard pool on the X (the crane eases in from f160: f160–161 move < 0,05 px)'),
+        ('F15-04', 162, 175, 'render:_render/grua/f####_50.png', '3D frame 50 % + Lanczos 2x', 'crane + dolly A->B begins (ease in-out to f203); lift plate drops 100 mm f168–175; no candle in frame'),
         ('F15-05', 176, 203, 'render:_render/grua/f####_100.png', '3D frame 100 % + label AOV', 'the plate rises carrying the UNLIT candle, label to camera at yaw 12 deg, no rotation; locks flush and the camera settles at KV-45 on f203'),
         ('F15-06', 204, 209, 'black', 'black', 'BLACKOUT: the spot cuts in 1 frame (CLAC-off f204; fsst f206 is sound only)'),
         ('F15-07', 210, 221, 'render:_render/F15_blecaute_16bit.png + _render/chama_blecaute/c####.png', 'still + 2D relight (flame gain) + 3D flame crop', 'the wick catches f210–215 (scale 0,10 -> 1,0), then the flame alone in the black; label checked on the albedo pass'),

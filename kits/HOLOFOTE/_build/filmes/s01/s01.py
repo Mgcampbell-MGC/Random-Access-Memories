@@ -3,7 +3,7 @@
     /home/user/venvs/web/bin/python _build/filmes/s01/s01.py [--teste]
 
 Outputs:
-  04_FILMES/HLF-S01_DIGITANDO_som.mp4 and _mudo.mp4      1080 × 1920, 24 fps, BT.709 converted and tagged
+  04_FILMES/S01_DIGITANDO_som.mp4 and _mudo.mp4        1080 × 1920, 24 fps, BT.709 converted and tagged
   04_FILMES/som/filmes/HLF-S01_DIGITANDO_som.wav + .json  −14 LUFS integrated, ≤ −1 dBTP, cue list with onsets
   06_PRODUCAO/filmes/HLF-S01_DIGITANDO.json               timeline, durations, loudness (no label: no fidelity check)
 
@@ -224,7 +224,8 @@ def main():
     wav = os.path.join(fil, 'som', 'filmes', NOME + '_som.wav')
     js = os.path.join(fil, 'som', 'filmes', NOME + '_som.json')
     rep = som(ev, len(est), wav, js)
-    mux(out, wav, os.path.join(fil, NOME + '_som.mp4'), os.path.join(fil, NOME + '_mudo.mp4'))
+    filme = NOME.replace('HLF-', '')                 # films are named like the films team's (F06C_SINAL_07-05_som.mp4)
+    mux(out, wav, os.path.join(fil, filme + '_som.mp4'), os.path.join(fil, filme + '_mudo.mp4'))
     prod = os.path.join(KIT, '06_PRODUCAO', 'filmes')
     os.makedirs(prod, exist_ok=True)
     json.dump(dict(filme=NOME, formato='9:16 1080×1920', fps=FPS, quadros=len(est),

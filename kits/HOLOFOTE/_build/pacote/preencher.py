@@ -161,11 +161,11 @@ def fig_slots():
     for i in range(1, 8):
         f = achar('03_LANCAMENTO/L/L%02d_*.png' % i, '02_PRODUTO/renders/L%02d_*.png' % i)
         S['L%02d' % i] = ((lambda f=f: caber(ler(f), w=1200)) if f else None, [f])
-    f15 = achar('04_FILMES/HLF-F15*_mudo.mp4')
+    f15 = achar('04_FILMES/F15*_mudo.mp4', '04_FILMES/HLF-F15*_mudo.mp4')
     S['F15_FRAMES'] = ((lambda: grade(quadros_de(f15, [0, 14, 60, 132, 176, 204, 216, 222, 288, 359]), 5, 640, 16))
                        if f15 else None, [f15])
-    f6 = [achar('04_FILMES/HLF-F06A*_mudo.mp4'), achar('04_FILMES/HLF-F06B*_mudo.mp4'),
-          achar('04_FILMES/HLF-F06C*07*_mudo.mp4'), achar('04_FILMES/HLF-F06C*08*_mudo.mp4'), achar('04_FILMES/HLF-F06C*09*_mudo.mp4')]
+    f6 = [achar('04_FILMES/*F06A*_mudo.mp4'), achar('04_FILMES/*F06B*_mudo.mp4'),
+          achar('04_FILMES/*F06C*07-05*_mudo.mp4'), achar('04_FILMES/*F06C*08-05*_mudo.mp4'), achar('04_FILMES/*F06C*09-05*_mudo.mp4')]
     S['F06_FRAMES'] = ((lambda: grade(sum([quadros_de(m, [12, 72, 140]) for m in f6 if m], []), 6, 560, 16))
                        if any(f6) else None, f6)
     for h in ('H01', 'H02'):
@@ -225,10 +225,10 @@ def linha_fid(r):
 def dados():
     D = {}
     # filmes
-    filmes = {'F15': 'HLF-F15*', 'F06A': 'HLF-F06A*', 'F06B': 'HLF-F06B*', 'F06C_0705': 'HLF-F06C*07*',
-              'F06C_0805': 'HLF-F06C*08*', 'F06C_0905': 'HLF-F06C*09*', 'S01': 'HLF-S01*'}
+    filmes = {'F15': 'F15*', 'F06A': 'F06A*', 'F06B': 'F06B*', 'F06C_0705': 'F06C*07-05*',
+              'F06C_0805': 'F06C*08-05*', 'F06C_0905': 'F06C*09-05*', 'S01': 'S01*'}
     for key, pd in filmes.items():
-        mp4 = achar('04_FILMES/%s_som.mp4' % pd)
+        mp4 = achar('04_FILMES/%s_som.mp4' % pd, '04_FILMES/HLF-%s_som.mp4' % pd)
         if not mp4:
             continue
         dur, n = sonda(mp4)
@@ -239,7 +239,7 @@ def dados():
         D[key + '_TP'] = (br(tp, 1) + ' dBTP') if tp is not None else None
         FONTES[key] = os.path.relpath(mp4, KIT)
         if key != 'S01':
-            fs = sorted(glob.glob(os.path.join(FIDDIR, pd.replace('HLF-', '') + '.json')))
+            fs = sorted(glob.glob(os.path.join(FIDDIR, pd + '.json')))
             if fs:
                 R = json.load(open(fs[0])).get('resumo', {})
                 ok = not R.get('frames_fail') and R.get('frames_pass') == R.get('frames_label_visible')
@@ -349,14 +349,14 @@ STATUS = {
     'STATUS_C': ['03_LANCAMENTO/C/C%02d_*.png' % i for i in range(1, 11)],
     'STATUS_B': ['03_LANCAMENTO/B/B%02d_*.png' % i for i in range(1, 9)],
     'STATUS_DIGITAL': ['03_LANCAMENTO/D/D01_*.png', '03_LANCAMENTO/D/D02_*.png', '03_LANCAMENTO/STK/STK-0*.webp',
-                       '04_FILMES/HLF-S01*_som.mp4'],
+                       '04_FILMES/*S01*_som.mp4'],
     'STATUS_L': ['03_LANCAMENTO/L/L0%d_*.png' % i for i in range(1, 8)],
-    'STATUS_FILMES': ['04_FILMES/HLF-F15*_som.mp4', '04_FILMES/HLF-F06A*_som.mp4', '04_FILMES/HLF-F06B*_som.mp4',
-                      '04_FILMES/HLF-F06C*_som.mp4', '04_FILMES/HLF-S01*_som.mp4'],
+    'STATUS_FILMES': ['04_FILMES/*F15*_som.mp4', '04_FILMES/*F06A*_som.mp4', '04_FILMES/*F06B*_som.mp4',
+                      '04_FILMES/*F06C*_som.mp4', '04_FILMES/*S01*_som.mp4'],
     'STATUS_SOM': ['04_FILMES/som/identidade/HLF-ID-01_*.wav', '04_FILMES/som/sfx/HLF-SFX-01_*.wav', '04_FILMES/som/CREDITOS.md'],
     'STATUS_ANIMATIC': ['05_ANUNCIO/**/*1A*_som.mp4', '05_ANUNCIO/**/*3C*_som.mp4'],
-    'STATUS_MAQUINA': ['05_ANUNCIO/CREATOR_ADS.json', '05_ANUNCIO/SEEDANCE_PROMPTS.txt', '06_PRODUCAO/SCENE_PLAN.json',
-                       '06_PRODUCAO/MACHINE_BRIEF.json'],
+    'STATUS_MAQUINA': ['05_ANUNCIO/CREATOR_ADS.json', '05_ANUNCIO/SEEDANCE_PROMPTS.txt', '06_PRODUCAO/MACHINE_BRIEF.json',
+                       '06_PRODUCAO/CENAS.csv', '06_PRODUCAO/AUDIO_CUE_SHEET.csv', '06_PRODUCAO/TEXTOS_SOCIAL.txt'],
     'STATUS_FIDELIDADE': ['06_PRODUCAO/fidelidade/*.json'],
 }
 

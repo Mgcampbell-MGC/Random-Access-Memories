@@ -1,0 +1,3197 @@
+{
+ "kit": "HOLOFOTE",
+ "arquivos": 638,
+ "bytes": 641755994,
+ "itens": [
+  {
+   "arquivo": "00_estrategia/CREATIVE_PLATFORM.md",
+   "bytes": 107969,
+   "sha256": "2eebf41ac4780119eff5cc2efe0cf8cc659b93430a072b4caa1e71420c231823"
+  },
+  {
+   "arquivo": "00_estrategia/ecd_tools/back.py",
+   "bytes": 2088,
+   "sha256": "abdc3e5f150f0f95f7c3908984e3a798c70dd12b9577120d695efedf24942c4b"
+  },
+  {
+   "arquivo": "00_estrategia/ecd_tools/fit.py",
+   "bytes": 1986,
+   "sha256": "40a99ffe021241d9a8c84996f4fad8f623aeba2d3df725c9bf6dd303a7c66da0"
+  },
+  {
+   "arquivo": "00_estrategia/ecd_tools/metrics.py",
+   "bytes": 1969,
+   "sha256": "9180d8390ab7daf424e36433c0a2b0a23ad9c8641384ec4f91ded469ba336b87"
+  },
+  {
+   "arquivo": "00_estrategia/ecd_tools/scripts.py",
+   "bytes": 1201,
+   "sha256": "0658a581fbe4be32385a23178b747220f226fa6871ddd5a45217d36dc5e4acc3"
+  },
+  {
+   "arquivo": "00_estrategia/ecd_tools/widths.py",
+   "bytes": 1707,
+   "sha256": "2ea18ccb2231f95a19a0fb17902a6af9748df0d1fe3a4cc6e59a621a4128a7a1"
+  },
+  {
+   "arquivo": "00_estrategia/conceitos/A_language.md",
+   "bytes": 67206,
+   "sha256": "861e3af79e69764ff3b5215f6f5df821781bdd587118947b8fd0b65de31c375f"
+  },
+  {
+   "arquivo": "00_estrategia/conceitos/B_object.md",
+   "bytes": 53774,
+   "sha256": "009620c219bd876fadcf5360e67849b3ff4810fd476b752d24353a929b2cbc03"
+  },
+  {
+   "arquivo": "00_estrategia/conceitos/C_ritual.md",
+   "bytes": 88499,
+   "sha256": "69981d06726d77a5cbb4a83052603e07acfc64d027ad04ec09438b7683c4aeae"
+  },
+  {
+   "arquivo": "00_estrategia/conceitos/D_digital.md",
+   "bytes": 74092,
+   "sha256": "1d81aa12343fb7991f0621d25c4f1c863ef032380a7652acbe713d153cc9d563"
+  },
+  {
+   "arquivo": "00_estrategia/conceitos/E_wildcard.md",
+   "bytes": 98468,
+   "sha256": "5af6325117365ba304a3f024f2e0498e92c599db9c060d3c1d3a588ec06f8d92"
+  },
+  {
+   "arquivo": "00_estrategia/pesquisa/category.md",
+   "bytes": 40491,
+   "sha256": "8577cc900d45d872908800d9957a1d246ebe95fe9f1336eeaf8891356b4ccab9"
+  },
+  {
+   "arquivo": "00_estrategia/pesquisa/codes.md",
+   "bytes": 44904,
+   "sha256": "197f714199fd55e582aec7bf7f4544c797f02c53d29b8ca9bc9f8a9af04494e5"
+  },
+  {
+   "arquivo": "00_estrategia/pesquisa/culture.md",
+   "bytes": 37421,
+   "sha256": "2a27cbd68e8f9abfff4121d4d405aceece9500fa5355e4998ba3d33d4d1b5ac9"
+  },
+  {
+   "arquivo": "00_estrategia/pesquisa/label_rules.md",
+   "bytes": 39145,
+   "sha256": "2857709c00b71b39e25d895c36ab99364481e2ed005fde7e06b0f482a733fa2a"
+  },
+  {
+   "arquivo": "00_estrategia/juizes/cco.md",
+   "bytes": 19074,
+   "sha256": "c2f00b4e57c230fab4fbf88b87492aa29c0d836882a98265666fb00d08fced25"
+  },
+  {
+   "arquivo": "00_estrategia/juizes/genz.md",
+   "bytes": 14556,
+   "sha256": "eecddc1ee2ad76bfbb37306450804e3df925c21608d02ac5d810e84a81435294"
+  },
+  {
+   "arquivo": "00_estrategia/juizes/producer.md",
+   "bytes": 15965,
+   "sha256": "5c6e48759191c991110015fccb97bc1b65a5660688008450d82f8e12683649e1"
+  },
+  {
+   "arquivo": "01_MARCA/LEIA_ME.md",
+   "bytes": 7702,
+   "sha256": "457c7e4645566a443bf3daf44b95cc1d76ae1836af3026b51f7b8d1e34f66349"
+  },
+  {
+   "arquivo": "01_MARCA/placeholders.json",
+   "bytes": 335,
+   "sha256": "be2ae765ec84678b16ba2712c0fa4c06af87c5c9c3db4c9a3d7871277ad7f2bb"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/CARTAZ-01_MAE-AO-VIVO_amarelo.png",
+   "bytes": 7127432,
+   "sha256": "6efbdd7abaad3e26a2bea65b24642293a5b1d8eba5ac7f36e8099db81c9f4168"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/CARTAZ-02_MAE-AO-VIVO_rosa.png",
+   "bytes": 7216861,
+   "sha256": "476bed179fc36a356241e482e829e4f2d66e73fb96ad5e9faef0cbdb662639d7"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/CARTAZ-03_MAE-AO-VIVO_laranja.png",
+   "bytes": 6220541,
+   "sha256": "4675e42d482bdf09f7aaca16d39afd53047b3ba0eca0e7bb7f8a0316442d3d09"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/CARTAZ-04_MAE-AO-VIVO_violeta.png",
+   "bytes": 7559643,
+   "sha256": "02a20986e42455d2667917f12eb6e15a4b1fc273d69cd759651ccf7ce1db62f5"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/CARTAZ-05_MAE-AO-VIVO-0905_amarelo.png",
+   "bytes": 6776610,
+   "sha256": "5b9165db6db68cec03cfd6cb0c4cae0fc5ea0e991549d95f80f4223714511c5e"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/CARTAZ-06_MAE-AO-VIVO-0905_rosa.png",
+   "bytes": 6838990,
+   "sha256": "efa2dcbaf66abd5ff86db1c637d5dc69c5cfce4ca68b7cc019740dd6a8ae6f7c"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/CARTAZ-07_MAE-AO-VIVO_rosa_RASGADO-sobre-MAIS-UM.png",
+   "bytes": 7215052,
+   "sha256": "2ac4ac63fdc77efc05b39e055e231d0db6a4bfae178f89c72277ce39046f3b53"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/CARTAZ-08_MAE-AO-VIVO_laranja_RASGADO-sobre-CAMARIM.png",
+   "bytes": 6815105,
+   "sha256": "2221523464ccda32b79c26f8bb924029f3215f1413180f6fbd2527198fed2d17"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/CARTAZ-09_MAE-CAMARIM_rosa_ANTIGO.png",
+   "bytes": 7244177,
+   "sha256": "2778dfac17f2c160cb8058075ae1fa97613622fe981c881879c117805db7ad68"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/CARTAZ-10_MAE-MAIS-UM_laranja_ANTIGO.png",
+   "bytes": 6917247,
+   "sha256": "10daa22d1fcc7dfb822adf71d8824261cb1b1f3b56d4a66d4cfb55e820ff29d9"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/CARTAZ-11_MAE-ACUSTICO_violeta_METADE.png",
+   "bytes": 7470084,
+   "sha256": "5b869d2388da19d2d6eaa1ba31b373e9824319360f678159da75428ab0cd3043"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/CARTAZ-12_C01_MAE-AO-VIVO-INGRESSOS-COM-VOCE_papel.png",
+   "bytes": 7409465,
+   "sha256": "9ae3561072806b98b73c53044989825dc666aa4e2aa0b4363373d8eabe4260f2"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/CARTAZES_contato.jpg",
+   "bytes": 867842,
+   "sha256": "4c43e9e911e9b0243d38b8c303aa6d74b96bd22daaa79a25a5f7bb1ecca46fee"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/PRONTO.txt",
+   "bytes": 592,
+   "sha256": "0d7962f918a9a4ad8dd0c926229e768064b15ed3cb7cb4b2a8751a3ad18ae13e"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/cartazes.json",
+   "bytes": 5312,
+   "sha256": "b0329770e40c655f827a15da30677c3a9f234ebf12de9b0ee3a9ddf7881c4e4d"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-01_MAE-AO-VIVO_amarelo_albedo.png",
+   "bytes": 7052552,
+   "sha256": "850068a1850b9ba9e00bb7a9f5bf3438ea39e7dc663a4d13a7468b0d0112e7e5"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-01_MAE-AO-VIVO_amarelo_altura.png",
+   "bytes": 4108576,
+   "sha256": "7ecd34d77ad4d5d99ceff828bebb44318d01a867c24e8d2af3a1d74171ffc68f"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-02_MAE-AO-VIVO_rosa_albedo.png",
+   "bytes": 7288074,
+   "sha256": "77bd03fd5be191bb6c9083708ac704323764ece675a342bd67ac03510bfe2c16"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-02_MAE-AO-VIVO_rosa_altura.png",
+   "bytes": 4114093,
+   "sha256": "6b7d9fe090f15daf8ce420c8894cfedff7e6136cbc247af0d658c272c962f560"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-03_MAE-AO-VIVO_laranja_albedo.png",
+   "bytes": 6185245,
+   "sha256": "299f00ea1b5ea711374e83565bed002c8df20f3a590d5a805f917d3310882f6c"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-03_MAE-AO-VIVO_laranja_altura.png",
+   "bytes": 4237408,
+   "sha256": "3566b695a8105854ff77977b66574eeab20f0a54594bc5f0af693f4be9eb5c41"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-04_MAE-AO-VIVO_violeta_albedo.png",
+   "bytes": 7554689,
+   "sha256": "f8adb4528768cc973440f3eba865a714c69d8b7eca883487d1e13c3cf878a950"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-04_MAE-AO-VIVO_violeta_altura.png",
+   "bytes": 4114692,
+   "sha256": "bca8fe80696a0f26e8b6852eb71624f150c0cbdbc85218556ebb3721945631c2"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-05_MAE-AO-VIVO-0905_amarelo_albedo.png",
+   "bytes": 6678783,
+   "sha256": "ae6aab5c041dd7b29e7e8b0140538b1a93b0cb43a5b4aea0d9fb2599e2b716cb"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-05_MAE-AO-VIVO-0905_amarelo_altura.png",
+   "bytes": 3606121,
+   "sha256": "263bf94d75da1aa0742892a86fb0d36d6be1821caa34f09bb1847b1bda646936"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-06_MAE-AO-VIVO-0905_rosa_albedo.png",
+   "bytes": 6911823,
+   "sha256": "4e63c2bbf90367f3ac95fce2725bcf05f307891bdc28d12f1b4c0be274d91c20"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-06_MAE-AO-VIVO-0905_rosa_altura.png",
+   "bytes": 4109335,
+   "sha256": "7bed353cc5948e987b8d70e4abcbd0939165b6bf672a3f0b780d84d76feae7ec"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-07_MAE-AO-VIVO_rosa_RASGADO-sobre-MAIS-UM_albedo.png",
+   "bytes": 7306280,
+   "sha256": "991b52c6723b8cecaa6408ae578172de267d63bda5e441ed77b8d75b97de1e9f"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-07_MAE-AO-VIVO_rosa_RASGADO-sobre-MAIS-UM_altura.png",
+   "bytes": 3523636,
+   "sha256": "535288a15e7d8c83f6f8f11db437fd18c3a96dc1cce78261e9b768ecc44b1aa4"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-08_MAE-AO-VIVO_laranja_RASGADO-sobre-CAMARIM_albedo.png",
+   "bytes": 6784356,
+   "sha256": "949f8acd044c810be311fd8d77315b41040d8e95ab476df20ca3644b75073b30"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-08_MAE-AO-VIVO_laranja_RASGADO-sobre-CAMARIM_altura.png",
+   "bytes": 2992607,
+   "sha256": "7c57d0b377a7d323bdd4bbb36247f69d9f7d33a5bee7a412d3746147e7ac0a5b"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-09_MAE-CAMARIM_rosa_ANTIGO_albedo.png",
+   "bytes": 7221102,
+   "sha256": "ed9ddf9e1fd4c243cd0ff09f0df7ddeb70959331e28f25f85f9cea851df8a8b5"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-09_MAE-CAMARIM_rosa_ANTIGO_altura.png",
+   "bytes": 3605951,
+   "sha256": "6033696a2babb5c9ff5a06e549e8a2c56d346aba2bcbaf7016a53b026d3b2652"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-10_MAE-MAIS-UM_laranja_ANTIGO_albedo.png",
+   "bytes": 6891298,
+   "sha256": "7df3a2aae6e2f295e59423349887478a4765b755f94ae340fd7c3c2371f39a5a"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-10_MAE-MAIS-UM_laranja_ANTIGO_altura.png",
+   "bytes": 3822478,
+   "sha256": "8199d4f16362040e85e8180c3544642b163763fc48bcf6ecbb259cd79da66e75"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-11_MAE-ACUSTICO_violeta_METADE_albedo.png",
+   "bytes": 7452574,
+   "sha256": "380a3a2d863c496fabddda18834eb80af5f502317d550a4c7ae8c888e5f088b4"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-11_MAE-ACUSTICO_violeta_METADE_altura.png",
+   "bytes": 4363718,
+   "sha256": "9c3247bc61d8c1737308b154097688281affcf9d7b2ccc75d1a78acfcaeec221"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-12_C01_MAE-AO-VIVO-INGRESSOS-COM-VOCE_papel_albedo.png",
+   "bytes": 7346132,
+   "sha256": "9cb6a68728ef5d92e01096c8286efe160113906790bf51ead83dd27d54d9f9ab"
+  },
+  {
+   "arquivo": "01_MARCA/cartazes/3d/CARTAZ-12_C01_MAE-AO-VIVO-INGRESSOS-COM-VOCE_papel_altura.png",
+   "bytes": 3974443,
+   "sha256": "22c7d853f4c9c0d3af6c8de3b80346926edc13ac79d33c143f3e95505054f9d3"
+  },
+  {
+   "arquivo": "01_MARCA/logo/HOLOFOTE_logo_mono-preto_transparente.svg",
+   "bytes": 1826,
+   "sha256": "e812b231b41b1b1a47340b4f10bf4d15c20bc80cb57071192cfba8e7eea8d280"
+  },
+  {
+   "arquivo": "01_MARCA/logo/HOLOFOTE_logo_papel-sobre-preto.svg",
+   "bytes": 1875,
+   "sha256": "4a2de304ddf080344dc6a107eb48cc074d51506a8225a5ec36a6d5ce7c8b8516"
+  },
+  {
+   "arquivo": "01_MARCA/logo/HOLOFOTE_logo_papel-sobre-violeta.svg",
+   "bytes": 1875,
+   "sha256": "bf451e89ea015527bbb96a74d52e8ae5c2d2726cec7df90a674c8ace5dbf4ff4"
+  },
+  {
+   "arquivo": "01_MARCA/logo/HOLOFOTE_logo_papel_transparente.svg",
+   "bytes": 1826,
+   "sha256": "f2216e1ee2e455036ebf1723d1e4da2e94314e494402174727bbc42722db8199"
+  },
+  {
+   "arquivo": "01_MARCA/logo/HOLOFOTE_logo_preto-sobre-amarelo.svg",
+   "bytes": 1875,
+   "sha256": "1ae009a33d2dad860e982824d186545c40225d24cea5a68d15aef7dabfd1d157"
+  },
+  {
+   "arquivo": "01_MARCA/logo/HOLOFOTE_logo_preto-sobre-laranja.svg",
+   "bytes": 1875,
+   "sha256": "be7ff8d7fa949d81f281bb15d4a43f9836f54c9dacaca387ee5e051ba5bd1c35"
+  },
+  {
+   "arquivo": "01_MARCA/logo/HOLOFOTE_logo_preto-sobre-papel.svg",
+   "bytes": 1875,
+   "sha256": "bf098927f2c3950a5749ed09f32bfe099c0b82d5911d96c87e22ed6e3d727f66"
+  },
+  {
+   "arquivo": "01_MARCA/logo/HOLOFOTE_logo_preto-sobre-rosa.svg",
+   "bytes": 1875,
+   "sha256": "2f5a58f8d879a31714fc17d5207c2a62c00064b320ff299efd250fbf2de43763"
+  },
+  {
+   "arquivo": "01_MARCA/logo/HOLOFOTE_logo_preto_transparente.svg",
+   "bytes": 1826,
+   "sha256": "4de6528b2bf88bfc8cb89455c3ca91503f8610542b0889c6caf9cb3d5379a7d4"
+  },
+  {
+   "arquivo": "01_MARCA/logo/O_FOCO_amarelo-sobre-preto.svg",
+   "bytes": 283,
+   "sha256": "08378a3b726318da583d948f9f2cebdd82aca81766502fc934c13e80755d43a2"
+  },
+  {
+   "arquivo": "01_MARCA/logo/O_FOCO_amarelo.svg",
+   "bytes": 230,
+   "sha256": "35a32767dc47c62aae6a6dcf13d21b1be1582d908f70444ea49a2af41a29e898"
+  },
+  {
+   "arquivo": "01_MARCA/logo/O_FOCO_preto.svg",
+   "bytes": 230,
+   "sha256": "09f67aba23061b2d8e598ed5a4abecc54f3918a47c81deaad5be6230d94f02b4"
+  },
+  {
+   "arquivo": "01_MARCA/logo/png/HOLOFOTE_logo_mono-preto_transparente.png",
+   "bytes": 28696,
+   "sha256": "ca152e0b265c61df6204ff83e34856b9dac11ddbfef9d13a9c2d987a87d4a441"
+  },
+  {
+   "arquivo": "01_MARCA/logo/png/HOLOFOTE_logo_papel-sobre-preto.png",
+   "bytes": 29347,
+   "sha256": "8b650cb002d05f12d916fa1940dc5803fa20fffd4c8ca50049f87b3471dfa1a4"
+  },
+  {
+   "arquivo": "01_MARCA/logo/png/HOLOFOTE_logo_papel-sobre-violeta.png",
+   "bytes": 28309,
+   "sha256": "1db625c9c5a70b3994288777e5664e2f88e30aba393c4f3b85002a8058a1f640"
+  },
+  {
+   "arquivo": "01_MARCA/logo/png/HOLOFOTE_logo_papel_transparente.png",
+   "bytes": 27599,
+   "sha256": "e7ace21ee08fa8be349cd7a044a04ed6599b1768a0fae8355cf1e8e874d7297b"
+  },
+  {
+   "arquivo": "01_MARCA/logo/png/HOLOFOTE_logo_preto-sobre-amarelo.png",
+   "bytes": 28302,
+   "sha256": "f66f7dfa348db3db2f275c130f63660e989695180f43887afd41f97c7ca3e9d7"
+  },
+  {
+   "arquivo": "01_MARCA/logo/png/HOLOFOTE_logo_preto-sobre-laranja.png",
+   "bytes": 27937,
+   "sha256": "649b44e3cf68de3c8a321e429451fddbe86a285ba9659809d77aa194db71bff6"
+  },
+  {
+   "arquivo": "01_MARCA/logo/png/HOLOFOTE_logo_preto-sobre-papel.png",
+   "bytes": 28284,
+   "sha256": "6695c41666703f08fe37a64eec9d7f39c0f1fb0704ef7115752844eafb9b89ca"
+  },
+  {
+   "arquivo": "01_MARCA/logo/png/HOLOFOTE_logo_preto-sobre-rosa.png",
+   "bytes": 28333,
+   "sha256": "f609fd9251c8b91b54da364d70ea668e2a9a2748462da847ef75950a9e038d60"
+  },
+  {
+   "arquivo": "01_MARCA/logo/png/HOLOFOTE_logo_preto_transparente.png",
+   "bytes": 28773,
+   "sha256": "e140333c74b91a30ea0d469959c45148470947a16098b371dc5690f82ed3c454"
+  },
+  {
+   "arquivo": "01_MARCA/logo/png/O_FOCO_amarelo-sobre-preto.png",
+   "bytes": 26872,
+   "sha256": "ac277805b25bf78d4ffe97933ffd853b47cc988052a3b00a4248edf8e7d14103"
+  },
+  {
+   "arquivo": "01_MARCA/logo/png/O_FOCO_amarelo.png",
+   "bytes": 26248,
+   "sha256": "95de9b7065bde94edb18bf9ed272bb0d6a2f3bd14c78810855df61edb16dd49d"
+  },
+  {
+   "arquivo": "01_MARCA/logo/png/O_FOCO_preto.png",
+   "bytes": 27642,
+   "sha256": "a0784fc16d2c40733720719d0fbd61a117ad86af2015e3bc02027047193c6e48"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-01_CAPA.png",
+   "bytes": 54900,
+   "sha256": "87a3b2c4bfd3772a2d4944ec19c139780025d1a84ecd526ce6c97248b3f877b0"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-02_A-IDEIA.png",
+   "bytes": 165775,
+   "sha256": "ed134ecb6e6303ec08033d22c1131d5f73498339403b924aa4c666acefc162d0"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-03_O-INSIGHT.png",
+   "bytes": 188970,
+   "sha256": "55e407435e6e685a8916f61440ca6201d64828071c1377c0f2d7a586ddf2168b"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-04_AS-TRES-VOZES.png",
+   "bytes": 203741,
+   "sha256": "0951c8ad2816b1399672fb6ebfa59aa9b76a06491f536022128c37354733b03a"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-05_O-LOGO.png",
+   "bytes": 145509,
+   "sha256": "e1abec824b4f080140ff98532962f9f0582aa2f96e928eaec63f59050e17ba01"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-06_CORES-E-A-AFINACAO.png",
+   "bytes": 105322,
+   "sha256": "08ef21d6d59b0cbf1dcb44cd8251d9e5186ef836d36c257f01fef8fd9b7d4da7"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-07_O-FOCO-E-A-MARCA.png",
+   "bytes": 347111,
+   "sha256": "0f253ea2ea745778c973d5d3017834dbf857e4c02d687c583deda030130b66d3"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-08_PALETA.png",
+   "bytes": 191371,
+   "sha256": "dbcdbdc57d1e2071965fa767221290f1d5e714b8ad81ebf3c71456c2537c9ed6"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-09_TIPOGRAFIA-I.png",
+   "bytes": 225098,
+   "sha256": "d6004905df8623bcf8631811392b3117ea6180b0be194d473f487b69959ed5f0"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-10_TIPOGRAFIA-II.png",
+   "bytes": 203364,
+   "sha256": "3489eabc1699dac843d03c321583d4b68ea9eea765b810a79c5c7f1a044f0621"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-11_AS-SETE-REGRAS.png",
+   "bytes": 377325,
+   "sha256": "aadd9486fb8bce7994e0be6f58528e28239e7a83cdb181861841a7a798cde884"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-12_AS-DUAS-LUZES.png",
+   "bytes": 191264,
+   "sha256": "91d9f2571e110a307d5829b68c44c87bb61f929945ec1f8f5dcb6d25d885ac3e"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-13_DISPOSITIVOS-I.png",
+   "bytes": 760918,
+   "sha256": "c6e6be759fc6032bcc594f733b10dd5b2647ddc37debf573106b817ab127407e"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-14_DISPOSITIVOS-II.png",
+   "bytes": 678214,
+   "sha256": "d372b90142c1afb8ce096a94b2c0d5d6285c065a49d4d42b636909a0d269972b"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-15_NUNCA.png",
+   "bytes": 196022,
+   "sha256": "a9f55edb1c8b53ba8721cfc1d8081120b18d4f31ca6d34751a3619353f02568d"
+  },
+  {
+   "arquivo": "01_MARCA/livro/LIVRO-16_SUA-VEZ.png",
+   "bytes": 91360,
+   "sha256": "edfdd818fbb0d2de4f92b9335662cd2d0eb842824fb1cfc5eff3afa76816c4f6"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_1080x1080_s11_altura16.png",
+   "bytes": 1102448,
+   "sha256": "b3d6e8ded0542aaca849742f3a29225ded9ed38207c5fc2b3a188180d305fccd"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_1080x1080_s11_borda.png",
+   "bytes": 12953,
+   "sha256": "eceac7fca4988bd9962f2525c629410d2300579ba2448484e3680496ef020349"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_1080x1080_s11_grao.png",
+   "bytes": 1079936,
+   "sha256": "e1dcfbaf628daaba31363c2538678ab06b1cc767b5b1c7d76ee974bed2a234d1"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_1080x1080_s11_rugas.png",
+   "bytes": 214943,
+   "sha256": "c2a6730004e4ecdc487aa80000395fa5d0910337734d7ccc093c6b6bfe3ff294"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_1080x1350_s12_altura16.png",
+   "bytes": 1291743,
+   "sha256": "167904b5041920396e95412212584b9d0672b068a0104a09dc6db3457eb8f297"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_1080x1350_s12_borda.png",
+   "bytes": 15167,
+   "sha256": "03b588bd77f1f19df5c37a94a0b381c6d5032d2239c0e28a020679f8b3b50ca5"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_1080x1350_s12_grao.png",
+   "bytes": 1354704,
+   "sha256": "e773a77af4d74c161ed37182703c4abd31730dec392cc1af3db15ab062c5853c"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_1080x1350_s12_rugas.png",
+   "bytes": 296743,
+   "sha256": "5fc4cb142aab051aa85ad77a3ea2f5aa2a70b47da983307443638453c4de8977"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_1080x1920_s13_altura16.png",
+   "bytes": 1798086,
+   "sha256": "e236b71eb20a1f83a87a02005d01673f6f5fedd04f38d448512e8fca5321a767"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_1080x1920_s13_borda.png",
+   "bytes": 21735,
+   "sha256": "ccefbf93f07efdc53e6ea3f8e670b56ac5129f717c6b946c30ef67c8055b9859"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_1080x1920_s13_grao.png",
+   "bytes": 1921963,
+   "sha256": "f751d886f5003eb990df99eaa2008421254b0e3e7e9b2bfdb72933771f486c47"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_1080x1920_s13_rugas.png",
+   "bytes": 330679,
+   "sha256": "13f2cab1cac191e6a23f1128be1ce1699bfa9af8f698ef7e2a05cf62ce6a892f"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_2000x3000_s14_altura16.png",
+   "bytes": 4367041,
+   "sha256": "14ff76f5b8901249219a4a1865c4a4bc2c775dc42a0b8a98a0e368fd9413459f"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_2000x3000_s14_borda.png",
+   "bytes": 44851,
+   "sha256": "72cd0433190f4814359bc9100f2470108fe7a4a3c1e4b8aace9640e56ac853cd"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_2000x3000_s14_grao.png",
+   "bytes": 5570289,
+   "sha256": "db213064e5f11833c7d0970d930b58dfa8589387cc00471ca3bca0c8c7f8a89a"
+  },
+  {
+   "arquivo": "01_MARCA/lambe/LAMBE_2000x3000_s14_rugas.png",
+   "bytes": 734206,
+   "sha256": "9e22cc1ce589f23c8ef5eaa34b6c5a9411c9a90c8e0042f94936ab7991d2f440"
+  },
+  {
+   "arquivo": "01_MARCA/marca/A-MARCA_X_s4.json",
+   "bytes": 373,
+   "sha256": "f4cad75bcd308b59d824d6606f22c43f62b04f7ff408f86469e5fb8ffee2b457"
+  },
+  {
+   "arquivo": "01_MARCA/marca/A-MARCA_X_s4.png",
+   "bytes": 2100068,
+   "sha256": "c327542680ba3bec0e6673bce74e769d902304cd19e3a83352a4856ae8041fba"
+  },
+  {
+   "arquivo": "01_MARCA/marca/A-MARCA_X_s4.svg",
+   "bytes": 12397,
+   "sha256": "8e85ad1a1527b86a68d17b1d7b5a0f30e35fea5cd3b631c164bcdffd9320b032"
+  },
+  {
+   "arquivo": "01_MARCA/marca/A-MARCA_X_s4_sobre-preto.png",
+   "bytes": 1843839,
+   "sha256": "5248b79d001a32d9b4287c58e2d44b8c7b11ed78721942d64926e537012bde7a"
+  },
+  {
+   "arquivo": "01_MARCA/marca/A-MARCA_X_s927.json",
+   "bytes": 374,
+   "sha256": "df0ff4719155560403a341d91fb18b56746722303afdb57ca8bc607906f87d7d"
+  },
+  {
+   "arquivo": "01_MARCA/marca/A-MARCA_X_s927.png",
+   "bytes": 2121418,
+   "sha256": "1e23d479d1bf947e5c8cf5a8259b1e2b315e02b0a8a946614c2064b27b259a99"
+  },
+  {
+   "arquivo": "01_MARCA/marca/A-MARCA_X_s927.svg",
+   "bytes": 12531,
+   "sha256": "3004313f773a7cbd930e41615b6708346fcfba648b512c2f3faaa7aa790b94c5"
+  },
+  {
+   "arquivo": "01_MARCA/marca/A-MARCA_X_s927_sobre-preto.png",
+   "bytes": 1852027,
+   "sha256": "731e650cbc780f9d1107b54dca3784af8bf4f6136f08408a8ebe2d5d9563abf1"
+  },
+  {
+   "arquivo": "01_MARCA/marca/A-TIRA_s31.json",
+   "bytes": 256,
+   "sha256": "6d7308cdd164664fc5d73624171a8849a9da3ca22c0055a3e7dc308a2e7cd642"
+  },
+  {
+   "arquivo": "01_MARCA/marca/A-TIRA_s31.png",
+   "bytes": 969679,
+   "sha256": "d27ea8ad0823fcc8e5305d44ec2d5b4546501664f95c93d8b60b5598dd11e7ce"
+  },
+  {
+   "arquivo": "01_MARCA/marca/A-TIRA_s31.svg",
+   "bytes": 6061,
+   "sha256": "7b82238905871227fbfe0d3a9429173c504a735e87308ad0da6ea41e882ac78d"
+  },
+  {
+   "arquivo": "01_MARCA/marca/A-TIRA_s31_sobre-preto.png",
+   "bytes": 851931,
+   "sha256": "8732eb2f760b163ff8381e89439a310c1dd1e79fe7e9748f3bd5fa2d7beece12"
+  },
+  {
+   "arquivo": "02_PRODUTO/LEIA_ME.md",
+   "bytes": 32883,
+   "sha256": "4e4d829daa3561ac8bd8281a773256fa5270a1c7d5ca2f015e1941bd2830110a"
+  },
+  {
+   "arquivo": "02_PRODUTO/refil/HLF-REF-01_TAMPA-PEEL.png",
+   "bytes": 251454,
+   "sha256": "77e8f1fde1f3acfbb056dad78ebe887e447d5750d4a87a4e25c3d5456a609019"
+  },
+  {
+   "arquivo": "02_PRODUTO/refil/HLF-REF-01_TAMPA-PEEL.svg",
+   "bytes": 34725,
+   "sha256": "f425a97d8c6922074a4cac615be0c5658c702c184bc08d14b08a312264ea8342"
+  },
+  {
+   "arquivo": "02_PRODUTO/refil/HLF-REF-01_TAMPA-PEEL_tinta.png",
+   "bytes": 155782,
+   "sha256": "7ed84aa8f34179bbf55473b5f9a52c3dfd13a0ccde86dca40603f27470a4e3e2"
+  },
+  {
+   "arquivo": "02_PRODUTO/refil/HLF-REF-02_TAMPA-PEEL.png",
+   "bytes": 243569,
+   "sha256": "23824d27b5deac537387e80590c10c886e885ad73fa678372056a079363b1303"
+  },
+  {
+   "arquivo": "02_PRODUTO/refil/HLF-REF-02_TAMPA-PEEL.svg",
+   "bytes": 34921,
+   "sha256": "8741005dad5d13d5ec676286eff2c4854c8af3244c467a51114f9b19290ff676"
+  },
+  {
+   "arquivo": "02_PRODUTO/refil/HLF-REF-02_TAMPA-PEEL_tinta.png",
+   "bytes": 158851,
+   "sha256": "a11dec4127c0e4f4607b55ac2ae8b27c9f8b10379904b853f8202c28c3bea8c8"
+  },
+  {
+   "arquivo": "02_PRODUTO/refil/HLF-REF-03_TAMPA-PEEL.png",
+   "bytes": 232097,
+   "sha256": "07374d58f7efbcd162be4392a2d0ef66ba194e731533c1a2472ce00deeeada47"
+  },
+  {
+   "arquivo": "02_PRODUTO/refil/HLF-REF-03_TAMPA-PEEL.svg",
+   "bytes": 34911,
+   "sha256": "7092badea63cdb7acb9e37dc138d14a6ae26d8a2d6af46c130fbd9b53deafb7a"
+  },
+  {
+   "arquivo": "02_PRODUTO/refil/HLF-REF-03_TAMPA-PEEL_tinta.png",
+   "bytes": 153875,
+   "sha256": "c0a165578851bd65585908b100d552d40518013507dab7d4ae48d0385f93115c"
+  },
+  {
+   "arquivo": "02_PRODUTO/refil/HLF-REF-04_TAMPA-PEEL.png",
+   "bytes": 248901,
+   "sha256": "d4cc813ae5b39c5a15dfafe95c084941534c7ff6d7a2d4f6d37c1350485b9fb2"
+  },
+  {
+   "arquivo": "02_PRODUTO/refil/HLF-REF-04_TAMPA-PEEL.svg",
+   "bytes": 37249,
+   "sha256": "5538bed742c3679c770d8faa231d1a78f3232ab3d0b708e2ae6c524d5d22db4e"
+  },
+  {
+   "arquivo": "02_PRODUTO/refil/HLF-REF-04_TAMPA-PEEL_tinta.png",
+   "bytes": 161992,
+   "sha256": "b1620408f40ad608fc5e917c92bc5e3819e6b5174eb8d16ba4fa0f3fd926671b"
+  },
+  {
+   "arquivo": "02_PRODUTO/refil/HLF-REF_CAPSULA_faixa-laser.png",
+   "bytes": 43374,
+   "sha256": "c011af8939027253c1a0f5d2412f304bd49955dfb4ba2a7b5ecfc9de65d1a003"
+  },
+  {
+   "arquivo": "02_PRODUTO/refil/HLF-REF_CAPSULA_faixa-laser_preview.png",
+   "bytes": 58831,
+   "sha256": "f588386383499f2dd72321e244541c406f703cd03220f34c1eb5dc5eecd7525d"
+  },
+  {
+   "arquivo": "02_PRODUTO/refil/HLF-REF_refil.json",
+   "bytes": 5135,
+   "sha256": "145f30f7ab522f057b1026f69d37d637f71b0aa4b0c94280f887e173d5d28824"
+  },
+  {
+   "arquivo": "02_PRODUTO/pulseira/PULSEIRA.json",
+   "bytes": 4018,
+   "sha256": "53551e90ec64b9af8bcc22ba268b2d992664f0a2f57e1e1928bc570336e104b5"
+  },
+  {
+   "arquivo": "02_PRODUTO/pulseira/PULSEIRA_SELO_face-baixo.png",
+   "bytes": 24027,
+   "sha256": "d5c10fe7b24ca9741152fd1d48447121ad3e306b44c2864a131d7c4c14e5c605"
+  },
+  {
+   "arquivo": "02_PRODUTO/pulseira/PULSEIRA_SELO_face-topo.png",
+   "bytes": 11118,
+   "sha256": "68d7f7a6e7f6634048f78ba0f43173b60c561b6bbe0502c3dc475ce8641d2e6a"
+  },
+  {
+   "arquivo": "02_PRODUTO/pulseira/PULSEIRA_SELO_faixa.png",
+   "bytes": 41380,
+   "sha256": "d8660e582d61d5ee71bd18cffa4d418c1e3d3798af2ba1887bc3ad9f402711f8"
+  },
+  {
+   "arquivo": "02_PRODUTO/pulseira/PULSEIRA_SELO_faixa.svg",
+   "bytes": 35482,
+   "sha256": "6916e66ea97dd914cbf5a73bdbd82924edc1f6669b055a3efefd3ed9cf3ba3e9"
+  },
+  {
+   "arquivo": "02_PRODUTO/pulseira/PULSEIRA_padrao.png",
+   "bytes": 115370,
+   "sha256": "8a7b1f6425c327966a12c29aa6e80952e377fad884872943237ab9a90c25de78"
+  },
+  {
+   "arquivo": "02_PRODUTO/pulseira/PULSEIRA_padrao.svg",
+   "bytes": 37330,
+   "sha256": "fcf9f845f8e73c2f7d8f740b4da8c423d3e0a89230e5d661886f3d04513e671c"
+  },
+  {
+   "arquivo": "02_PRODUTO/pulseira/PULSEIRA_tecido.png",
+   "bytes": 585276,
+   "sha256": "d56db2b0f3f732295db7197eed1537c285db604d873d9ff69096762313f598fd"
+  },
+  {
+   "arquivo": "02_PRODUTO/pulseira/PULSEIRA_tecido_altura16.png",
+   "bytes": 50291,
+   "sha256": "07752352a997bae184ddd77c2923a77e04a4b06845cd3f26b8246931b3d3896f"
+  },
+  {
+   "arquivo": "02_PRODUTO/facas/FACA_CARTUCHO_74x74x76.svg",
+   "bytes": 127330,
+   "sha256": "25d48fd8bd5e130ddfef35b13f99bad53409cdaf6f55b1bc40fa7852c42f5a36"
+  },
+  {
+   "arquivo": "02_PRODUTO/facas/FACA_CARTUCHO_74x74x82.svg",
+   "bytes": 117648,
+   "sha256": "dfc3228de3e99a704b62a367b496458370e6b1f13b8a3bda3e7b1ae9544522ab"
+  },
+  {
+   "arquivo": "02_PRODUTO/facas/FACA_CARTUCHO_96x96x98.svg",
+   "bytes": 128442,
+   "sha256": "1818f4454bb53db35f287ff188c6b7c5bbfe3b52d285dd4ef709772107bd4cc9"
+  },
+  {
+   "arquivo": "02_PRODUTO/facas/FACA_CASE_base-130x130x102.svg",
+   "bytes": 117648,
+   "sha256": "14a0c5563b80755fe3c34e86d2fee0c851f96c49e411a87cbe381ea8249a7877"
+  },
+  {
+   "arquivo": "02_PRODUTO/facas/FACA_CASE_tampa-130x130x30.svg",
+   "bytes": 92143,
+   "sha256": "e5f7db90b37b49d090a07d080a99c29314d371c39b607aa4aa7070a6230d5b55"
+  },
+  {
+   "arquivo": "02_PRODUTO/facas/FACA_COPO-080_zona-impressao.svg",
+   "bytes": 130969,
+   "sha256": "2b9c3bf16f56f01de95d7e488cfb3992896c8efcd2b8d12650faf490ca4c87b5"
+  },
+  {
+   "arquivo": "02_PRODUTO/facas/FACA_COPO-200_zona-impressao.svg",
+   "bytes": 138905,
+   "sha256": "ce175b92e0bd1dd7bf6d280cc8e92641277d1b588238f351e223064a2c3ba3f3"
+  },
+  {
+   "arquivo": "02_PRODUTO/facas/FACA_ETIQUETA-LOTE_32x10.svg",
+   "bytes": 27226,
+   "sha256": "db5b9e24009f25436db3c9b98e09698a25437e3a4a8fe9cf02f9184263f37832"
+  },
+  {
+   "arquivo": "02_PRODUTO/facas/FACA_ETIQUETA-LOTE_40x12.svg",
+   "bytes": 26449,
+   "sha256": "e6352a76e0422c1a20bd6dd2e1e207abbfbdbceed3ebd409b8cd434d48773ea8"
+  },
+  {
+   "arquivo": "02_PRODUTO/facas/FACA_PULSEIRA_selo-60x15.svg",
+   "bytes": 164197,
+   "sha256": "81c23c3210c7f7738c6d18e9918d8c9b6bb58109c2b9a44f714892b55e4eb9f9"
+  },
+  {
+   "arquivo": "02_PRODUTO/facas/FACA_SETLIST_105x400.svg",
+   "bytes": 62928,
+   "sha256": "7bc1a5a62f0b6fca1ccd219d544a528d6a95a16e3422655f9e73ccd57862d56b"
+  },
+  {
+   "arquivo": "02_PRODUTO/facas/FACA_TAMPA_70.svg",
+   "bytes": 35996,
+   "sha256": "73a56afea1b1d23fb3547ab58afce86b66dafbc91438b3320deca88be024f9fb"
+  },
+  {
+   "arquivo": "02_PRODUTO/facas/FACA_TAMPA_90.svg",
+   "bytes": 37535,
+   "sha256": "52b80aeb388edb383369c6f66cea7ba72d872e668659e7afb03440e118aa120a"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_CARTUCHO_ATLAS.png",
+   "bytes": 1396954,
+   "sha256": "da06c4b7ceda8032d14c23a74971be80fefc1b2abfb75366c240b99ff7041095"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_CARTUCHO_frente.png",
+   "bytes": 175338,
+   "sha256": "78c644f8ac7deb87a18adabcf0b1f3b28e75490ef13f0aee99a8b95f01a2a6ed"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_CARTUCHO_frente.svg",
+   "bytes": 43098,
+   "sha256": "5531f35a6b6619163b1d0c578933d29672fe903c45c72708e955b8481d1c9b1f"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_CARTUCHO_fundo.png",
+   "bytes": 15164,
+   "sha256": "fe64473ae3d883326f56672da93116b4c2fe51d40f8961d116c0962bb62c1c70"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_CARTUCHO_fundo.svg",
+   "bytes": 183,
+   "sha256": "475e55d7ab431f3a4a1ab3c4837b35423240224efd9fec6dc64357bfe1e25108"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_CARTUCHO_lateral-1.png",
+   "bytes": 434253,
+   "sha256": "8a716e591e247b7e4c0bdd9d29b7808516af03ad11f9700b9e5968c66c014da4"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_CARTUCHO_lateral-1.svg",
+   "bytes": 597750,
+   "sha256": "61858c66fc9e1fc052f25b18c1a642dad3b46313ae3cb999d852ba0fb6a405dc"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_CARTUCHO_lateral-2.png",
+   "bytes": 136429,
+   "sha256": "40b19dae209a6880b9994d462718605128217e20210564c6e7bc8b86f8cd15a7"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_CARTUCHO_lateral-2.svg",
+   "bytes": 47714,
+   "sha256": "7b58dbabc7628b22e43330c073638680a23b6d24a30288d37e88d91c5e0b9780"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_CARTUCHO_planificado.png",
+   "bytes": 667893,
+   "sha256": "6598541ddb1cd8cb5c017a8581d74993c9552261d8d107b0e50bd73de27ec9a8"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_CARTUCHO_planificado_preview.jpg",
+   "bytes": 1301236,
+   "sha256": "264cc82c66a216cdeb83749430c262b3cb7d8809a558b9e0bce2ac0276371c2b"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_CARTUCHO_topo.png",
+   "bytes": 42242,
+   "sha256": "f7be81a920e86cc8911d7677401be5452dd00dfdcf231b7855ec9f17ed7efd71"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_CARTUCHO_topo.svg",
+   "bytes": 4991,
+   "sha256": "23dcd57769ea234d744f825f293cdbab23bd31711e55392887d6b32732b72cd1"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_CARTUCHO_verso.png",
+   "bytes": 412232,
+   "sha256": "efda93c3fd785b8e594da5d44faf83f2f3521d90ce3688bbd0cc1e096c9f688c"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_CARTUCHO_verso.svg",
+   "bytes": 417078,
+   "sha256": "6d7bc87f654c1eeb1cbc5d8c5dee69cb4cd61a327cc147ae12e159da1324a796"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-01-200_cartucho.json",
+   "bytes": 15143,
+   "sha256": "4395e77d3e9b6d3051d88a6ab2a7d708fbdd5be40efa7d0f9a6c5c55ab792646"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_CARTUCHO_ATLAS.png",
+   "bytes": 1148692,
+   "sha256": "e44770536f831bd1e175c148c068e37a22cca78de7f65911b6792f10db326da3"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_CARTUCHO_frente.png",
+   "bytes": 132652,
+   "sha256": "259a9ad4f839c792afb4a6e861e85f8331e2b138ab2c90fc564b4ab495aa76e0"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_CARTUCHO_frente.svg",
+   "bytes": 49728,
+   "sha256": "670fcfbd9b165c86fcaef53d44d949424f80bb631633ef8bf3c90a860e5d7309"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_CARTUCHO_fundo.png",
+   "bytes": 9712,
+   "sha256": "2ace0687f47f31973085024ec722e5e9102561d643c7ddb3c33e7558a22e1962"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_CARTUCHO_fundo.svg",
+   "bytes": 183,
+   "sha256": "576a22f2fded247d32e48f156957a1127449b46f10fbd586e36e04be00b4977a"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_CARTUCHO_lateral-1.png",
+   "bytes": 347727,
+   "sha256": "e78e96f5b28a0a8fd19bf82bae0f60403e04e5925f25246020611b60f157df8d"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_CARTUCHO_lateral-1.svg",
+   "bytes": 593177,
+   "sha256": "2aa3caf675d376bd95e44991372111aa007f1cff2cf7f152ffafec82460e09e3"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_CARTUCHO_lateral-2.png",
+   "bytes": 102469,
+   "sha256": "5cacc2d3deb3f416fd7f39d67c37f28856ddaf75c81e5cd12a1b1af875d04125"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_CARTUCHO_lateral-2.svg",
+   "bytes": 47945,
+   "sha256": "57513fab150c1ae03216fb04f441c03ccbffb4ff503482c1545e16045fcb3019"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_CARTUCHO_planificado.png",
+   "bytes": 547649,
+   "sha256": "36e01d29fc65858a01ed1b021068cd3de0bde868a29e634cbd50b99092253ca1"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_CARTUCHO_planificado_preview.jpg",
+   "bytes": 1220261,
+   "sha256": "c7a122b58ce919bed66b75cef885915da16629ab729e81622a963d4975b5dcfd"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_CARTUCHO_topo.png",
+   "bytes": 29193,
+   "sha256": "111c8860a538e63ade2d11d0db3f884c73b628ef056bc7b858ff05b00ba16636"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_CARTUCHO_topo.svg",
+   "bytes": 4944,
+   "sha256": "257075aa33ed88b253350c335c642ebe7989b4e47311e05048c4cfa79663f254"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_CARTUCHO_verso.png",
+   "bytes": 378899,
+   "sha256": "ab2aaa228c89a0b2ddce46ae06db92873eda0f2858f0809206c2a318b2af4f74"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_CARTUCHO_verso.svg",
+   "bytes": 421710,
+   "sha256": "ced6a75fd59779573b14d6d4bf11411125a51c811a3b13b29b21eb5d8d4dfd3c"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-080_cartucho.json",
+   "bytes": 16741,
+   "sha256": "367c5889b473b4e18864bf28a56f14025247fa7f165d8ab346609a8f9f84986d"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_ATLAS.png",
+   "bytes": 1337746,
+   "sha256": "2f2b41879fb2c4f50f854110ff32c721ca587bdbc7701bf442e9ea60a4d5a6cc"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_frente.png",
+   "bytes": 167702,
+   "sha256": "f029ac5cef1ccd1f914bc14188b20d1bb4035a9b3735cd4ace94ed83f9d8b85e"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_frente.svg",
+   "bytes": 43343,
+   "sha256": "39cc7ce741c933206056c5abb0df152b0d89b8ffe750a61b0f8f10cb78298816"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_fundo.png",
+   "bytes": 15165,
+   "sha256": "56eeec327083f4f104293c8e2423c6376ccec9c4fea59ca11f4f5d15d2676519"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_fundo.svg",
+   "bytes": 183,
+   "sha256": "fb0da9706b1f5d5afbc068820e52d0671dc359c9a9fa96d82889084bd6ad4893"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_lateral-1.png",
+   "bytes": 410285,
+   "sha256": "471b3a82e8db46080a9598bae3ea73bf767e54e49bd446823f133a19966cfb44"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_lateral-1.svg",
+   "bytes": 597750,
+   "sha256": "61dea551fdffc89011f84fc581f68f9fd9f88080ca88ad52a1120b74cf632c4e"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_lateral-2.png",
+   "bytes": 128741,
+   "sha256": "3403c35aa1a2eae9d355c5bcdd752d3416720b3850317fcf55702e580e5ff778"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_lateral-2.svg",
+   "bytes": 47714,
+   "sha256": "59135eb61d7e803b2e3a739ecb4c3df1de6cef2830bffa8c7da679df66c8afb4"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_planificado.png",
+   "bytes": 634056,
+   "sha256": "bb67903eafbddf070476436017ebfe1cd12ebc82afa1bacd43bbd0ea8afb1c26"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_planificado_preview.jpg",
+   "bytes": 1552718,
+   "sha256": "5519a3af05e760c1993b4fc2c6aa974917b790cf95784bb962a42de40157f08c"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_topo.png",
+   "bytes": 40692,
+   "sha256": "bfde0095015a0c918bc0534173b257c3556288b9eaccc0fa41b6f7d89c048411"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_topo.svg",
+   "bytes": 4991,
+   "sha256": "c7033fb6faf57b68f536155f228286a04d717f03bbe39215a5ce5d4e5e1d493c"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_verso.png",
+   "bytes": 398147,
+   "sha256": "e833d91972dd49a988c7fd35462cd2ea4858d654ab0859e30ba4c2eb2c201723"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_verso.svg",
+   "bytes": 420684,
+   "sha256": "9dda8e2afe9bd8d9208c490c6b52fe9d59f0f96f49176eb6918e944b6ddb12bb"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-02-200_cartucho.json",
+   "bytes": 15164,
+   "sha256": "c791ff28436db77b543dff69fff7079609dbd8c12e37c579b6d0162e082da5e0"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_CARTUCHO_ATLAS.png",
+   "bytes": 1258366,
+   "sha256": "591f1b6ebee38fc774c35d60e7eece64003d9f8c921281a5c658f41b2f4d8b6c"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_CARTUCHO_frente.png",
+   "bytes": 159231,
+   "sha256": "c24a89e8e826b71ef266eb1e0995f87c22c35534aacd18aa1a151f85d84cc7ad"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_CARTUCHO_frente.svg",
+   "bytes": 43183,
+   "sha256": "f9ece69ceddd965306ce1f0d77410b76c86b0d88e5b65cd7ddcf4dbd751c5c47"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_CARTUCHO_fundo.png",
+   "bytes": 15164,
+   "sha256": "626052b840215ff665250f1eaa9107342f290063e1b6558fa3962d5a01aa584d"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_CARTUCHO_fundo.svg",
+   "bytes": 183,
+   "sha256": "e43490bb16710b654284d8d009f176d2ec910f07207dbd48dde3d7d1b4888fed"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_CARTUCHO_lateral-1.png",
+   "bytes": 403567,
+   "sha256": "e23b1cd915d29f09d478ffcd7cf803d8e0bf3385d5acdcd964e32e7cba4c13cd"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_CARTUCHO_lateral-1.svg",
+   "bytes": 597750,
+   "sha256": "4de8500369f1271d5cf4b42bb3b2b5ad3785d637d9645b1484298016d55baf98"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_CARTUCHO_lateral-2.png",
+   "bytes": 125387,
+   "sha256": "dde32daf1b059d8490d25c5a3dab345dd1ef9b75e9107cf478d44d363ba3fc4a"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_CARTUCHO_lateral-2.svg",
+   "bytes": 47714,
+   "sha256": "a4820caa3e6b6cba7907953a466d29ec4305cb32d35cb069e33a4d9e93297c6b"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_CARTUCHO_planificado.png",
+   "bytes": 606254,
+   "sha256": "d0ddaea2e450fc2e736e694275e2cd7da6886eff3c9ac3c792f5cb1a6e357eb7"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_CARTUCHO_planificado_preview.jpg",
+   "bytes": 1510420,
+   "sha256": "7a7f03f8b456a1fe14356713b03b898417dfcf85acfd553af38554cc8e6bf7e7"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_CARTUCHO_topo.png",
+   "bytes": 39790,
+   "sha256": "84c780b64d11a0c16a9add62ef70a9f4cd177cab94d304d054cc5e949e5435cf"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_CARTUCHO_topo.svg",
+   "bytes": 4991,
+   "sha256": "a924d53df716b8b8d686b7bc853ae0d9504915e2f8827ddc62ee915b8b6d01e4"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_CARTUCHO_verso.png",
+   "bytes": 383627,
+   "sha256": "a09fd71acc163e83b756d78402c1fb8f949e020f9214fecd6fa7de6f1f2c96d0"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_CARTUCHO_verso.svg",
+   "bytes": 412805,
+   "sha256": "1b4688472d21f768acaed6c2160316703fca25fe8adf5b820c0b1a778c49c74e"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-03-200_cartucho.json",
+   "bytes": 15142,
+   "sha256": "2fc64abf18e40e24ae58bf656e91458e5eb9fb94715808492c3cddae1bd6d1e8"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_CARTUCHO_ATLAS.png",
+   "bytes": 1291927,
+   "sha256": "b8789f96e838b072bce0863192f05cacff5b74f36dc674b4820ead0bb89d76fa"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_CARTUCHO_frente.png",
+   "bytes": 172414,
+   "sha256": "6e3d1cb8392a9c913c5e091cd1f81450ccbd8663ac13778b1fa562044ca5e2a3"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_CARTUCHO_frente.svg",
+   "bytes": 47363,
+   "sha256": "953d61161070059726067d38fea592cf4f4f92379abecbd9514f08cd556d6335"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_CARTUCHO_fundo.png",
+   "bytes": 15164,
+   "sha256": "4572735775c41c38df5ce4e3788645ce470e16084325ab6777c5d484cd7ec5e3"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_CARTUCHO_fundo.svg",
+   "bytes": 183,
+   "sha256": "ff429c56ca02b7ca0e770cd8af3ec07bf110fbcf65694a98dc2435c71099e525"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_CARTUCHO_lateral-1.png",
+   "bytes": 412106,
+   "sha256": "14dbc0c7b803a8aa3ef91c5dbbb96667f50ee2cac8aefd0729f5a43bd5faad5e"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_CARTUCHO_lateral-1.svg",
+   "bytes": 597750,
+   "sha256": "8007f5619b3b40236d0176ef3023e451f26f81fdd563e4e5863240174f4ef091"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_CARTUCHO_lateral-2.png",
+   "bytes": 127754,
+   "sha256": "3a14ff9351c3df655cdfa17ca26a2206771b65a72ddc8f5bb3605c624710ba5f"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_CARTUCHO_lateral-2.svg",
+   "bytes": 47714,
+   "sha256": "4d5759497d4ba928389ec533ca3a80b4860accb9db198d49f3c22c915c2b2629"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_CARTUCHO_planificado.png",
+   "bytes": 623332,
+   "sha256": "8003f42dbbdce1a844263646582f274827838c4f957d50814fd2aeb05f29fb54"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_CARTUCHO_planificado_preview.jpg",
+   "bytes": 1433427,
+   "sha256": "7bcdc581626df937ec6463e045f1ec681746c243c9d050e7f23cba8b0ab781e2"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_CARTUCHO_topo.png",
+   "bytes": 40599,
+   "sha256": "f13c485114d07ad7f5885ba07b40bde0a4d935eda20ef6904647046858921c28"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_CARTUCHO_topo.svg",
+   "bytes": 4991,
+   "sha256": "82846a6fdc69fa924acd21cfe7eb3949b1800235ee3ed1ebf277092e1a2b340e"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_CARTUCHO_verso.png",
+   "bytes": 384783,
+   "sha256": "7d90e7e16d2df0a3caa5d0ba46b77c930c139b1851f303695a2bdff79f96cb53"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_CARTUCHO_verso.svg",
+   "bytes": 407947,
+   "sha256": "addcd72cf2daa224617126a0c8901950f28f018c269c021b9e98422b863c62fa"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-04-200_cartucho.json",
+   "bytes": 15359,
+   "sha256": "a9d95c9cbfa4381e66c10f32e57dfeba08c1ae98c563a0c1d5fdbc22108e621e"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_CARTUCHO_ATLAS.png",
+   "bytes": 1191593,
+   "sha256": "98af97232bb1833968b83a187185c7ca1936da651a2e67f14b451f576639582d"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_CARTUCHO_frente.png",
+   "bytes": 130382,
+   "sha256": "4d5c024b921dfc9b3e760b3fdb474b1cbe09f837202f549f0d76b5fbc4ae9f14"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_CARTUCHO_frente.svg",
+   "bytes": 37026,
+   "sha256": "6ea4d4ecf1a3aa006940739e45335aeffe8b4daa6ee199b16e63bc2bd7772bed"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_CARTUCHO_fundo.png",
+   "bytes": 35204,
+   "sha256": "8b49fa1a63117d97b34e1fc55eb0e0289b5d1d1639bf29c288b9ff1ab1f9d858"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_CARTUCHO_fundo.svg",
+   "bytes": 18485,
+   "sha256": "3ada78afb4be8cbb94366cdb81b3addf8722b62833a04c1f00e6badbdc1e5074"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_CARTUCHO_lateral-1.png",
+   "bytes": 195402,
+   "sha256": "1916c137f10223817c52cf62f4beae2d1e43f9960131ec67f806d700345f8890"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_CARTUCHO_lateral-1.svg",
+   "bytes": 264668,
+   "sha256": "84d50555ace980f23b76f879d50b00d7b693ace2f9b7ed7f52c4272350786d56"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_CARTUCHO_lateral-2.png",
+   "bytes": 245613,
+   "sha256": "12e034272494f4af6708c1a9320d7538bb10d797ce0fe08bba1f121fcc7d1dbc"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_CARTUCHO_lateral-2.svg",
+   "bytes": 330924,
+   "sha256": "929e05d81648202f6c8e121c763d34d6d3470daf0b30ead40477b539c1596f6f"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_CARTUCHO_planificado.png",
+   "bytes": 568595,
+   "sha256": "50a4dd2e97b4bacbde997c92008af683145b7da6a717a5366fad38e5e1785117"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_CARTUCHO_planificado_preview.jpg",
+   "bytes": 976679,
+   "sha256": "c47ecf9ff383c826594cf490e33ae0eeeb2110926e409f8b842f5e37e3683981"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_CARTUCHO_topo.png",
+   "bytes": 30208,
+   "sha256": "d9011be9f55f510c9e4020e07007c49ad584a988f48b214db45614cd5d22531f"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_CARTUCHO_topo.svg",
+   "bytes": 4944,
+   "sha256": "88e60c75ed376a4fb0702cc1b9dc615f65c6697510c4dd49221fd000ea015c3c"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_CARTUCHO_verso.png",
+   "bytes": 397269,
+   "sha256": "88644729db03b3c9ac84941a8349fb0af452fc5c12966e7670ec7ae245af5d75"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_CARTUCHO_verso.svg",
+   "bytes": 420510,
+   "sha256": "adcaf438bfd4df28b0cf236f395054a33407872ed667ce9ca83d9f2a7f19e096"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-01_cartucho.json",
+   "bytes": 15884,
+   "sha256": "150f9ba413d1d3b89b3b53d83f3f31a4f969ee6093295def1d875a4b9554f6ad"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_CARTUCHO_ATLAS.png",
+   "bytes": 1137040,
+   "sha256": "255072cffb23c147e0d775f2a944829918663d4b595fa703d8e0006e0e99b140"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_CARTUCHO_frente.png",
+   "bytes": 126813,
+   "sha256": "6c2be33405be9d291a1c45cd48197e23e75500791e7752c579636d56869b693d"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_CARTUCHO_frente.svg",
+   "bytes": 37158,
+   "sha256": "10ba76f09a5008045b2b468e7f4643e8b8fe4b9957e2f58f5166bfb35b1ee67c"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_CARTUCHO_fundo.png",
+   "bytes": 34160,
+   "sha256": "de899d3da4b9380819ca95be865844f24eff7f68c9622fc74e215e72074d86fc"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_CARTUCHO_fundo.svg",
+   "bytes": 18485,
+   "sha256": "4a4fb47d265adba2deeb3fdd8820224a1bb3f6246c41a0f1b311ce3866d61b4e"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_CARTUCHO_lateral-1.png",
+   "bytes": 185888,
+   "sha256": "d575f411394f2b3c776b5e5a186cc91fe018c0bdd3c911bef3ae12ad13a601cb"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_CARTUCHO_lateral-1.svg",
+   "bytes": 264668,
+   "sha256": "f7c6b17e3f9503313f4001efe5b639a696048ebe42180e30fa436bf24e7d712b"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_CARTUCHO_lateral-2.png",
+   "bytes": 230829,
+   "sha256": "825e66f77e23f4118fa94917e45d5277611adb7ff34dcf5cfe4cca9f11733078"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_CARTUCHO_lateral-2.svg",
+   "bytes": 330924,
+   "sha256": "f5387140178efbe7ad29a9c5bbe49bee9ed29033f0f1344b81ec91c22b1eff5a"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_CARTUCHO_planificado.png",
+   "bytes": 540144,
+   "sha256": "65144ed9eb5604c0aafdd8499a2a5c9fef105c1ffcb31c60e01a06cd3afbe8ee"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_CARTUCHO_planificado_preview.jpg",
+   "bytes": 1185146,
+   "sha256": "bce6c5078370a82543f0cd689206fd281872864ee189e8d5cd082738cb28eb38"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_CARTUCHO_topo.png",
+   "bytes": 29193,
+   "sha256": "111c8860a538e63ade2d11d0db3f884c73b628ef056bc7b858ff05b00ba16636"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_CARTUCHO_topo.svg",
+   "bytes": 4944,
+   "sha256": "257075aa33ed88b253350c335c642ebe7989b4e47311e05048c4cfa79663f254"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_CARTUCHO_verso.png",
+   "bytes": 381332,
+   "sha256": "dab991f7dd2382b09377c36180b59b9e748583646a74e00e067fe9bda71efaa9"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_CARTUCHO_verso.svg",
+   "bytes": 423680,
+   "sha256": "7714bd601d8c8eb55c346c96879ab13887454ded3364b643269bb05a0843e5e3"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-02_cartucho.json",
+   "bytes": 16109,
+   "sha256": "a811f269e9d7b32328a26e92db0990b0e2408a9396c45c1da20e17c3f864e9b4"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_CARTUCHO_ATLAS.png",
+   "bytes": 1074261,
+   "sha256": "7c703ba7e8ab9b7aa2e8eb8b570a740e47e4f27e16e4430f3edfb840d315739e"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_CARTUCHO_frente.png",
+   "bytes": 119571,
+   "sha256": "ea7188d21c0680430a171f0a4072d2bb0d3ac501dcdf49a6e8336359b4062c81"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_CARTUCHO_frente.svg",
+   "bytes": 37197,
+   "sha256": "c9e73c81880c3ed04bd2429752224ddb2d84806966e643fbaf83e21d949f22c1"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_CARTUCHO_fundo.png",
+   "bytes": 33546,
+   "sha256": "a9c973ece6e457294309a6acf85f304ba73d1385a0a7f1e3a48698a3168d8227"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_CARTUCHO_fundo.svg",
+   "bytes": 18485,
+   "sha256": "0549e05ef6736103c82c5c51d9a1128f1fd8a7ad84d30e62ba3242edb4f968f8"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_CARTUCHO_lateral-1.png",
+   "bytes": 182006,
+   "sha256": "328de2916810951a3606ff2a1424ee39ed07004908afb0a9dee48765f6e17afc"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_CARTUCHO_lateral-1.svg",
+   "bytes": 264668,
+   "sha256": "d05b472b49fe952a4611bad005f0656fbf516d6231a6aee0ee8e09b28d56cd03"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_CARTUCHO_lateral-2.png",
+   "bytes": 227281,
+   "sha256": "b10d005fe3ef1927ff79d4c8c7ca71c1ba1a398141474387823513ccdbb14e0c"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_CARTUCHO_lateral-2.svg",
+   "bytes": 330924,
+   "sha256": "5b752772b1bfcb84682eafc9323e069cd84aeb9eab2b20ae60040fd02d116f77"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_CARTUCHO_planificado.png",
+   "bytes": 516923,
+   "sha256": "c87fbada85299b058ba729ff51f98bb19ac713ce642af5735d7fc735ea9c82e1"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_CARTUCHO_planificado_preview.jpg",
+   "bytes": 1141445,
+   "sha256": "c8f42dd0c1d3f2cb4556df66aa6da0200a4af8a52899515cde9545f321ee7dd2"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_CARTUCHO_topo.png",
+   "bytes": 28581,
+   "sha256": "b8b4a066757cd22f0adce58e14dccdff856f16aacef16c62da5bba5bf14ce8f4"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_CARTUCHO_topo.svg",
+   "bytes": 4944,
+   "sha256": "41a2059dc81010b71866f014a24af98272ee87c46a437d0b322eaec4efc4a6e5"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_CARTUCHO_verso.png",
+   "bytes": 368508,
+   "sha256": "be236f41ebf88b9844435240294624bbb2c412dccf8f4058bc9f9d68f014ca35"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_CARTUCHO_verso.svg",
+   "bytes": 416249,
+   "sha256": "3ab6edf8dcc954513aa5c1e45a4342583cb93e4698e33a6d65d45264a8f045a8"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-03_cartucho.json",
+   "bytes": 15880,
+   "sha256": "13fe590e887b52b7438906d897b2c63d3fba433084ac97aaa93f5ca8c0034b00"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_CARTUCHO_ATLAS.png",
+   "bytes": 1100985,
+   "sha256": "424eca9896a113ab993d0b2a6a12a7dc06581afc18154e011c0c724e93bdfb9c"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_CARTUCHO_frente.png",
+   "bytes": 128386,
+   "sha256": "b087c65bec0213465daae4f557bb426634c4b9188db80a6da7d55156ccbc39f2"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_CARTUCHO_frente.svg",
+   "bytes": 39522,
+   "sha256": "73ae2b619b3cf68b16d5fe02c5467099f3d14be2fb89f2096f24c7b47944145c"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_CARTUCHO_fundo.png",
+   "bytes": 34098,
+   "sha256": "c4a853c0ac48ef75e310c5288ff1710f93d4ed7dc2591a15947caf8285e8fede"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_CARTUCHO_fundo.svg",
+   "bytes": 18485,
+   "sha256": "8a564b576807eedd1bf4ac5bb68eea249f1ef51da7c73eaaa599a29e16042544"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_CARTUCHO_lateral-1.png",
+   "bytes": 184390,
+   "sha256": "7430033b35871136f2903a34c38b8daf90a53a158ec28250122ddd39ab8dd1af"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_CARTUCHO_lateral-1.svg",
+   "bytes": 264668,
+   "sha256": "41e1dad4d13d3b33c8222e577008265e90c7546793bef3bf85c0e09765d27f30"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_CARTUCHO_lateral-2.png",
+   "bytes": 231967,
+   "sha256": "025326ec13c2ef61ea2417a81be0079c7c1c5acac4bb6d506dc66820dd4ed0ef"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_CARTUCHO_lateral-2.svg",
+   "bytes": 330924,
+   "sha256": "5e2134ab01a183992dbc8fef25a8ec4d95b7450387092a82d703ea8986de9c4d"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_CARTUCHO_planificado.png",
+   "bytes": 529891,
+   "sha256": "1ec8c71ba4770cef6fd706d3f9ca37e74a00d45bfdaddc777bf1523036da7962"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_CARTUCHO_planificado_preview.jpg",
+   "bytes": 1082704,
+   "sha256": "e278e0f19f2c9df0ab4ffa1cf703c2f91047ca106906d9d16c23f657d934bbca"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_CARTUCHO_topo.png",
+   "bytes": 29086,
+   "sha256": "26b11cb74907a85b8e9d61e55db80062ac7b9f676c92e17ac1413088bfa14350"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_CARTUCHO_topo.svg",
+   "bytes": 4944,
+   "sha256": "4e202e6e1724c80a95ebc5bf08f5514e21f93e6e01e382207a130d67e40cdda5"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_CARTUCHO_verso.png",
+   "bytes": 368998,
+   "sha256": "993549589f494cbb1d642eef7231edf4b9a6ea92baefdaf6dfaa10a1d1fe3006"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_CARTUCHO_verso.svg",
+   "bytes": 411313,
+   "sha256": "cc725dcb42e8884c9a44384c40e7186c8cd415c323e41868d6e4f757ac0ca27a"
+  },
+  {
+   "arquivo": "02_PRODUTO/cartucho/HLF-REF-04_cartucho.json",
+   "bytes": 15864,
+   "sha256": "1c68276dabc5381e5e57a1319e055eeb55e666d738275340e284d4517f92c59d"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_ABA_hasp.png",
+   "bytes": 7565,
+   "sha256": "3440aaf05a14cb9494ec0499df9e1e12456411e6ad3e9ae16095524842a746f5"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_ABA_hasp.svg",
+   "bytes": 8092,
+   "sha256": "5fd95972ec994e0279f219061186f49207a6be5e97aaecbae29f0487152ee35d"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_ATLAS_base_altura16.png",
+   "bytes": 14782245,
+   "sha256": "13320347ad082207e0411d0c81be306126589d971d9fe61df9ccc188bda3612d"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_ATLAS_base_foil.png",
+   "bytes": 28525,
+   "sha256": "b75be53bce4c563695fe8957d3d6155564282651c21164988ea64a3fd6dcb6ab"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_ATLAS_tampa_altura16.png",
+   "bytes": 12363484,
+   "sha256": "b7b02891a3f81da3fa42e56ff799f910d45ae7e97c767bc27e9531606745355f"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_ATLAS_tampa_espelho.png",
+   "bytes": 29115,
+   "sha256": "5f79965e6aa5db25f2927702e6223f5d8224c0d8c9ab5f1c66121584a3239bd3"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_ATLAS_tampa_foil.png",
+   "bytes": 31338,
+   "sha256": "10f308da9686b11a19aaec8a4678a96719a86e8ad576ef97eff1cfd21b388fe2"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_base_direita.png",
+   "bytes": 128260,
+   "sha256": "00cfe30f4069cea54887549a11ec2444e1e71d5d1338a9440ad030bbd2e5cb45"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_base_direita.svg",
+   "bytes": 221286,
+   "sha256": "aabfa263bc9e5a97be34b79220a0d18c26e7c349e13109815c30f216f7a85439"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_base_esquerda.png",
+   "bytes": 218986,
+   "sha256": "9eed0d340dce5bc8a22fbbd1a30ceba76823fa5eb2476733f38e57ed6b146ff1"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_base_esquerda.svg",
+   "bytes": 598428,
+   "sha256": "2df8c7536608e92979f61bc72f2b50f3f8406b5eb89e51b1fa98435a9e69e48d"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_base_fundo.png",
+   "bytes": 27616,
+   "sha256": "d7639f12e58850a8d91d9ad854e85f2ad494cc14dea4230602562f766e48e13e"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_base_fundo.svg",
+   "bytes": 23527,
+   "sha256": "9d4ecf6f23c8b3d7fe9cd0296bce75510eaee20e62445e152d8eaf04334ec64d"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_base_topo_EVA.png",
+   "bytes": 17260,
+   "sha256": "634befe06c828fdf91c0cf02a06d6d904f580e02e73bad050723c0ea934958c4"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_base_topo_EVA.svg",
+   "bytes": 350,
+   "sha256": "619050d0b8a6e170282119ee6768c801454e82f0ef955bf56830d0c244903342"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_tampa_dentro.png",
+   "bytes": 42123,
+   "sha256": "2e9d8ad237ec8ccbf8f8213db41690852dd8ca185da7cb9fb1b52d7101f657a3"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_tampa_dentro.svg",
+   "bytes": 57102,
+   "sha256": "ba1570d2320a7b4d50b1968be7b9fe7f644d48fedcd1d0eaf3aef2932eee2305"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_tampa_direita.png",
+   "bytes": 2825,
+   "sha256": "3c19313cb756ed3cc329400e043796aa0b3762f053a03c7222fb3b6da942ed1d"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_tampa_direita.svg",
+   "bytes": 483,
+   "sha256": "84c8edf4044a82e212f7b6f0c7a73c2bd682e436d139ea10bb4d65717ffb7508"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_tampa_esquerda.png",
+   "bytes": 2825,
+   "sha256": "3c19313cb756ed3cc329400e043796aa0b3762f053a03c7222fb3b6da942ed1d"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_tampa_esquerda.svg",
+   "bytes": 483,
+   "sha256": "84c8edf4044a82e212f7b6f0c7a73c2bd682e436d139ea10bb4d65717ffb7508"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_tampa_frente.png",
+   "bytes": 2825,
+   "sha256": "3c19313cb756ed3cc329400e043796aa0b3762f053a03c7222fb3b6da942ed1d"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_tampa_frente.svg",
+   "bytes": 483,
+   "sha256": "84c8edf4044a82e212f7b6f0c7a73c2bd682e436d139ea10bb4d65717ffb7508"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_tampa_tras.png",
+   "bytes": 2825,
+   "sha256": "3c19313cb756ed3cc329400e043796aa0b3762f053a03c7222fb3b6da942ed1d"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/CASE_tampa_tras.svg",
+   "bytes": 483,
+   "sha256": "84c8edf4044a82e212f7b6f0c7a73c2bd682e436d139ea10bb4d65717ffb7508"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-01_ATLAS_base.png",
+   "bytes": 1291147,
+   "sha256": "f887f9ae0ba4d997398c77984e296b78185f1717531b9f31ea4dc0fe29c532a0"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-01_ATLAS_tampa.png",
+   "bytes": 288832,
+   "sha256": "2a88809640ca819d0906677491a91d6553099535a9baef6266c906d7382f043d"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-01_PREVIEW_planificado.jpg",
+   "bytes": 886617,
+   "sha256": "1f7b2fdcec18a491ee427c773c9d1c488eb6aa9cc0d67b33674ea053d768fbd7"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-01_base_frente.png",
+   "bytes": 55171,
+   "sha256": "57e9d1bfde5198eaba53897fbbb1dd101a180fd06f8af977ddbc698f83c37bde"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-01_base_frente.svg",
+   "bytes": 29597,
+   "sha256": "23f8dc8a0fdbebc4af1ceb81e377000b2ded60ecd83350e3797eb55ac55d3b62"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-01_base_tras.png",
+   "bytes": 225444,
+   "sha256": "f01bee7548b27110d1f1c2b4e795921557bb9b17ca0415982cb64ab3d64815d6"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-01_base_tras.svg",
+   "bytes": 428441,
+   "sha256": "0bbcc557ac9c425af87ba543f0aa67e50f446df9097ccb4d7888fe2ad8f13372"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-01_case.json",
+   "bytes": 23548,
+   "sha256": "28d6b99e3728c17ff56d62930c3cd0a8700a0893166d38cb8bde65e24e41ca2f"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-01_tampa_topo.png",
+   "bytes": 170951,
+   "sha256": "4eb3905ae4d438bb390a6d6574538cbf057be316b706a5dc486599e2b74ddf48"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-01_tampa_topo.svg",
+   "bytes": 16602,
+   "sha256": "50dcf399f93bea205da017e545fb483daed69dd06137921cbcacc4f4969a643b"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-02_ATLAS_base.png",
+   "bytes": 1291483,
+   "sha256": "d6bf41ea6c798dc6d145ad12ed47df568af5bbae5bb7b9a595e19c375b299c97"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-02_ATLAS_tampa.png",
+   "bytes": 286545,
+   "sha256": "3183e9170c77a281cd961841a14ec952dcc600666f68ca6cd592d6a8c85d936a"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-02_PREVIEW_planificado.jpg",
+   "bytes": 884886,
+   "sha256": "c81535e943a019231450c81cd372a1d27e125c07a51d25ba13f8a06d4f636dc9"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-02_base_frente.png",
+   "bytes": 54584,
+   "sha256": "8b79410d17fd40d954841f5f8a136d4656ceb8ee45e689ac7792dbdd59cade60"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-02_base_frente.svg",
+   "bytes": 29750,
+   "sha256": "775557912d8327375b54d12be2959dbc092ed73a31eebf7ef4f8adf97c294519"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-02_base_tras.png",
+   "bytes": 227002,
+   "sha256": "0e3e8c7d9b51b89ab7bdf6af8b30bc75ea66b007d43a31c88e2b25f1abc81004"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-02_base_tras.svg",
+   "bytes": 432280,
+   "sha256": "da687367a9db233510c6ab731f4e20a01268faacaf32c3d1c393390a6fb159c3"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-02_case.json",
+   "bytes": 23585,
+   "sha256": "86c2bb6491e862d18f6cc44fdbf7cdf83e93b8b299c72c582dc9477126813d4f"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-02_tampa_topo.png",
+   "bytes": 169118,
+   "sha256": "5370b67c4754f1a8eb198d6113f1c85cbf7dd36d05442761516b7a032bbb5fc3"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-02_tampa_topo.svg",
+   "bytes": 14450,
+   "sha256": "318cdf7d876149a83e3c24f43eedfd90154169c50ab8dcb1d3e1f95c8c6dcc05"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-03_ATLAS_base.png",
+   "bytes": 1283858,
+   "sha256": "c589f14d1c505b0f4c98a1e0a70242e15cd9b7e569c63982bd86fbee003b921e"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-03_ATLAS_tampa.png",
+   "bytes": 285010,
+   "sha256": "4e9e89c7de9fd509497a92da0707136755458647b985951ed0c8e80017ef960f"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-03_PREVIEW_planificado.jpg",
+   "bytes": 885819,
+   "sha256": "9c4f4d573f22d5ee8a93aaccc0c2fe7fac839fe1fadcaa67382f78400105105f"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-03_base_frente.png",
+   "bytes": 53973,
+   "sha256": "a80cadc8d049824b8c54668b5126944627d26ba43559bdc35349f75f55eb643f"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-03_base_frente.svg",
+   "bytes": 29556,
+   "sha256": "0785a87acc21293df7c065f2540b066243d3097ec63fde60b8b81cc57a58f181"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-03_base_tras.png",
+   "bytes": 223685,
+   "sha256": "b27b40972e8f2eed8fa9845ffb05e135a88efda4ce7e0daf627be94dbd746a8a"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-03_base_tras.svg",
+   "bytes": 424354,
+   "sha256": "083f850f311cf9cb191bbcd79dd5b0038ea55ee588fccaca88a4434b7eb4bc57"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-03_case.json",
+   "bytes": 23529,
+   "sha256": "6fca88d0889371f38b46fc4a103421ae2be40a34281f0ac5d13ef86a79207d7a"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-03_tampa_topo.png",
+   "bytes": 167948,
+   "sha256": "a684fae5006258495e86028bd9b269f4546151c1424f170c12d19594fe8c11c0"
+  },
+  {
+   "arquivo": "02_PRODUTO/case/HLF-CASE-03_tampa_topo.svg",
+   "bytes": 14269,
+   "sha256": "07cdea86805e62d4fb5559b6bb6327b7e3311feb2226244bde38b4c4b65474b2"
+  },
+  {
+   "arquivo": "02_PRODUTO/tampa/HLF-TAMPA-70.json",
+   "bytes": 1227,
+   "sha256": "a360857d9e63d88c155a2d023d2ecb2cd0ec310d3eef43c924cd1927477043f4"
+  },
+  {
+   "arquivo": "02_PRODUTO/tampa/HLF-TAMPA-70_fita.png",
+   "bytes": 2553040,
+   "sha256": "a3b9f2ae5c2c672a1e81d006293072afffcf77f0d64d6bc4ff932e4ff3c51f02"
+  },
+  {
+   "arquivo": "02_PRODUTO/tampa/HLF-TAMPA-70_preview.png",
+   "bytes": 2579509,
+   "sha256": "7deb3dbbe993d61691f5fb185690d5cc87b2f02265ccc77ed4f07fac4ed98174"
+  },
+  {
+   "arquivo": "02_PRODUTO/tampa/HLF-TAMPA-70_tinta.png",
+   "bytes": 74687,
+   "sha256": "520032177ded06cfedc3763a9e621d82f746ca512d47483a9107e5d9ecab9c3a"
+  },
+  {
+   "arquivo": "02_PRODUTO/tampa/HLF-TAMPA-70_tinta.svg",
+   "bytes": 22477,
+   "sha256": "f36192cad82eb08055912a0350b9e4fb31b871a1dcd7962246050fed2b801b17"
+  },
+  {
+   "arquivo": "02_PRODUTO/tampa/HLF-TAMPA-70_topo.png",
+   "bytes": 2571872,
+   "sha256": "24598058a0a5d2eb4e8b34bed339235c5f62f5ac1f406ff08762374c838fecc6"
+  },
+  {
+   "arquivo": "02_PRODUTO/tampa/HLF-TAMPA-70_trama_altura.png",
+   "bytes": 4450203,
+   "sha256": "cfbe3d441643c3d275158a6a1ffbd7c46c256e158ef31603549ccdbc1eed58c2"
+  },
+  {
+   "arquivo": "02_PRODUTO/tampa/HLF-TAMPA-90.json",
+   "bytes": 1239,
+   "sha256": "d427b66bcdd9de39e11fd55a4a6a5937f4db37e2ad59b0598021d805ef2a41e5"
+  },
+  {
+   "arquivo": "02_PRODUTO/tampa/HLF-TAMPA-90_fita.png",
+   "bytes": 4192064,
+   "sha256": "a15352bfa9cb8dd17d707b165eb92bcd03d04512a043b997edc32e6c0cd88fd4"
+  },
+  {
+   "arquivo": "02_PRODUTO/tampa/HLF-TAMPA-90_preview.png",
+   "bytes": 4206977,
+   "sha256": "2b9d1a05d2397e03b2774635addf0fcf42db31ded4ff744b668f3f1ae098cf16"
+  },
+  {
+   "arquivo": "02_PRODUTO/tampa/HLF-TAMPA-90_tinta.png",
+   "bytes": 102868,
+   "sha256": "61ec4ac5f190fe9af14062cb65d675e658800fc66f2df16b68d40e64b08e313f"
+  },
+  {
+   "arquivo": "02_PRODUTO/tampa/HLF-TAMPA-90_tinta.svg",
+   "bytes": 22482,
+   "sha256": "5b806872fd46d6a50ebdffd6d39bf3f6e4d902d669d3ab6d5cf2345e7a071dde"
+  },
+  {
+   "arquivo": "02_PRODUTO/tampa/HLF-TAMPA-90_topo.png",
+   "bytes": 4202865,
+   "sha256": "f2b012c83b7bb22b53ebc2a6ec75944e5b8cd7e5dc7b222f1c0ab29782270ff5"
+  },
+  {
+   "arquivo": "02_PRODUTO/tampa/HLF-TAMPA-90_trama_altura.png",
+   "bytes": 7404527,
+   "sha256": "23637e21d6771a8437e6193e0e0c6987d4173c1072e129d2bdd9ad5158650c6e"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/KV-45_aceso.png",
+   "bytes": 1013431,
+   "sha256": "00750e2ec1200b661fd89480de0e0a9d01d64a2011cb941a600c0d564cad086b"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/KV-45_aceso_16bit.png",
+   "bytes": 6150427,
+   "sha256": "255d938cdbbd85bd50e7939ff9f375d8802fe2965fdf1f1817d4eeab054dd496"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/KV-45_apagado.png",
+   "bytes": 980359,
+   "sha256": "264e733fb714c311a39241aa62ae1ad0f9128fec6f0f826f98c9bf8c467d06d5"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/KV-45_apagado_16bit.png",
+   "bytes": 5877895,
+   "sha256": "52131adb513ba47d56549b393394d9f94a35ac5b472383ee9bff8aabcace8d35"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/ESCOLA_apresentadora.png",
+   "bytes": 166523,
+   "sha256": "263acee9d70770a599e3089472d155d9868b17476901f013c32c7d5f5e2d47d6"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/ESCOLA_c02.png",
+   "bytes": 230584,
+   "sha256": "e63222a30c9f5ab53f011979144e40b9cc8704e89196f02edc0abca94562bd01"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/ESCOLA_geral.png",
+   "bytes": 237914,
+   "sha256": "017c6da6d6a3ca98a75fc14639a3a97aa267791d2c32d067e111f92ed0132224"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/LOJA_l01.png",
+   "bytes": 204281,
+   "sha256": "ad04c6300e4667db7a3cad5dd9756a210122f23bfffb9ea98f57c9a515af5535"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/LOJA_l01_alpha.png",
+   "bytes": 326378,
+   "sha256": "32df2ed523217614b0d10b998f65ab1164abcc01f260cac6b3e3afd62f343cac"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/LOJA_l05.png",
+   "bytes": 181979,
+   "sha256": "0441714ce01d50678ce7eaa1529ccfe6c56436c5c953d0c2eb5d121fd4959ada"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/LOJA_l05_alpha.png",
+   "bytes": 301441,
+   "sha256": "e78155f29bfec2f8c66708b147a34b9dad872ac6a3dd9c1ce13d4e93b34aa69d"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/MURO_c01.png",
+   "bytes": 399142,
+   "sha256": "ee3cdaf9bccad2448d385864396e3d89f47c486c3cafefa3e73b480250cc381e"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/MURO_c10.png",
+   "bytes": 277711,
+   "sha256": "4a8cddcc99b4d54d6ec869abdc78edead749cec75e9e274c0f48cf40aba21d32"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/PALCO_blecaute.png",
+   "bytes": 282030,
+   "sha256": "85f0b2d9787487100416117788dd6555c9e18fffa3b5752cd4186e3e70516315"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/PALCO_elevador.png",
+   "bytes": 306875,
+   "sha256": "cb70219983cbc64355ee3156afa856bd296a9b7cc5f910793be3879db9246a84"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/PALCO_haze.png",
+   "bytes": 403528,
+   "sha256": "1147d00e271457ca428aa4cb7a2eaa150b91ab64e56e9888074eb845f26a79e3"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/PALCO_kv01.png",
+   "bytes": 403059,
+   "sha256": "1b8cd5559afc0ba557271c99e114bd37ca552d113c49903615bb687568b03fc2"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/PALCO_kv45.png",
+   "bytes": 501650,
+   "sha256": "60ddc792409902a71b1ad0361f5017928c07d474f0b58e412922cbdb79e8bcad"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/PALCO_subida.png",
+   "bytes": 440469,
+   "sha256": "55370b4fa366c24c0628cce4f735bfe430312bce2ab711765214aa7f30fbfcdd"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/PALCO_vazio.png",
+   "bytes": 309067,
+   "sha256": "c9961e4eeb3376caf1202b751a810ef032b0aa043ecf964b2fc1c3e6ca487e93"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_sets_tests/SETS_contato.jpg",
+   "bytes": 257171,
+   "sha256": "fe8e5723f4f744f45b3da3b23cdb47c728e209101da8ac503e5324857fa291b4"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_objects_tests/LEIA_ME.md",
+   "bytes": 1331,
+   "sha256": "c1b1c8aee63dc99862dc465fe5f62cc155caaa75ef62c6bc79ea1267023b22da"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_objects_tests/T_band_detail.png",
+   "bytes": 246512,
+   "sha256": "5d1a74e28749239f15a8afca414334e4c876341e79faa213dde0cc40c2d25b65"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_objects_tests/T_case_c05.png",
+   "bytes": 255600,
+   "sha256": "0ebb34b35db19184251e5555c26fbdd9fec76fa2a37fc10ae24b7cebbb9dd59c"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_objects_tests/T_case_closed.png",
+   "bytes": 287173,
+   "sha256": "cba7c8094fdd77f01b1acfc8a6d826473c3870fb340016c87aabff3f9e402915"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_objects_tests/T_case_hasp.png",
+   "bytes": 241540,
+   "sha256": "e6256525bb95cb22592dcd3f7412f6161e7dfa909a80af27732fb91a01b129f1"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_objects_tests/T_case_open.png",
+   "bytes": 285579,
+   "sha256": "71dfe5927e56c55b8306b55049756bc065e1583061db303a68ae63b54eb69f20"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_objects_tests/T_hands.png",
+   "bytes": 176975,
+   "sha256": "3b6bce4a546d9deb29f2b9360157f31f866631d6a2b3d4055bc4dbfbc21cad47"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_objects_tests/T_paper.png",
+   "bytes": 236849,
+   "sha256": "5065a415bca67333b447e9230a65d488c88c4a0db79ceff1d7056b37b56dac1e"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_objects_tests/T_phone.png",
+   "bytes": 90659,
+   "sha256": "4011a1c1276820e79d4dcbd4e7c5f2d86f4bcad899171926263cb1398bfd195f"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_objects_tests/T_previs_H01_sit.png",
+   "bytes": 171393,
+   "sha256": "9f746011c5a65bb6c6ce606f5ff8ecdfb16d7b19a0ebbae7cf1cd0742da9e247"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_objects_tests/T_previs_H01_stand.png",
+   "bytes": 169979,
+   "sha256": "8f85d9f5bc0f232fb9949045414061b24186ec4a2e740b0a10bdf097496b297f"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_objects_tests/T_previs_H02_sit.png",
+   "bytes": 173322,
+   "sha256": "efb2e5e6f80d7a77a5fa23b24ea94a2f12ca2dcd39da8e30f6429c863e99fa95"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_objects_tests/T_previs_H02_stand.png",
+   "bytes": 171689,
+   "sha256": "5b11ea15efee779c7a878ffc106aa4f37587d71e0e5cbeb7ed2dcceab202ae62"
+  },
+  {
+   "arquivo": "02_PRODUTO/renders/_objects_tests/T_props.png",
+   "bytes": 235320,
+   "sha256": "7c6024f845c7a66b5c9b21526fbf98d5e5fd4149e84fc6bb74d13f0e5d5ae25a"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-01_ROTULO_wrap.png",
+   "bytes": 840389,
+   "sha256": "470be87de2fa548babdd68dedd78a90fc17493eb754e1f6867b71e9b98945309"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-01_ROTULO_wrap.svg",
+   "bytes": 402885,
+   "sha256": "9f89e5435dc509385eb40f971a1aedaaf681686e2bed70e94e51188eb16336e1"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-01_ROTULO_wrap_preview.png",
+   "bytes": 1091834,
+   "sha256": "9d2d0b7c96aa8b37e9ca7da2fc55dc7104d15a8cc4779d4ccdd3ffc566e1cbe6"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-01_label_copy.json",
+   "bytes": 13557,
+   "sha256": "1eee5d5bf4b2bd547a660d84840fcfd6f9826800e9a2403ca469d1ad25527517"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-02-080_ROTULO_wrap.png",
+   "bytes": 544890,
+   "sha256": "0d55471a5b7b6ccd5c806afb8443b4dd46fee61afd454073e89f84cb320875e4"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-02-080_ROTULO_wrap.svg",
+   "bytes": 322906,
+   "sha256": "ac5a3750bd21f638eb40dca31c3a2fff29d68a749f88e1068c399c7e8644ff2a"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-02-080_ROTULO_wrap_ERRO-PLANTADO.png",
+   "bytes": 544956,
+   "sha256": "7925f447655af6180f82c725714b5e2d3dafcb2f4d10734354181bad2423f7bc"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-02-080_ROTULO_wrap_preview.png",
+   "bytes": 688683,
+   "sha256": "d93044897b98a9ab6544fbd3382f47759acd48a7d51bf5133fadbd12deb46f74"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-02-080_label_copy.json",
+   "bytes": 10644,
+   "sha256": "b6996d71abc2cca8d01de2dbbeb01b7054ab65034250568035772c9180b7f141"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-02_ROTULO_wrap.png",
+   "bytes": 851263,
+   "sha256": "0cb52f95987a88b86d501dac48e5ba6d918d38d42684cad9ebb1da551d20c0c4"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-02_ROTULO_wrap.svg",
+   "bytes": 405573,
+   "sha256": "ff42e8f4f97c88341f7f416a2da8add8d37fa586fb65fe4cfb460b27c50a4e3f"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-02_ROTULO_wrap_ERRO-PLANTADO.png",
+   "bytes": 851333,
+   "sha256": "e055380f504568cab6f66a824aba62826e4ab6f95966b166cea090fd0017160b"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-02_ROTULO_wrap_preview.png",
+   "bytes": 1040399,
+   "sha256": "8792bb0e4ebcdc75e9ec72c7553451c241c925b706b88ed9118bb030c0321e11"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-02_label_copy.json",
+   "bytes": 13783,
+   "sha256": "efaf20d625372b7fa09ed9a2cf5a6449981a12e2d219a1b038786ea317e10326"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-03_ROTULO_wrap.png",
+   "bytes": 846586,
+   "sha256": "36d8639e5ccd7faa55122d34f24d7711d5a915cc3b26cd6da4f1d96e1b8c1471"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-03_ROTULO_wrap.svg",
+   "bytes": 408759,
+   "sha256": "30e62b9a2bf9f33fe3b92f0099cf95cca40626c9e67f8fe5cbb10b3fb33981b7"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-03_ROTULO_wrap_preview.png",
+   "bytes": 1010507,
+   "sha256": "b6f836b2b48bb5825e9f1ca16db252ff767ad0fdaddc6048f45083ab22a51867"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-03_label_copy.json",
+   "bytes": 13588,
+   "sha256": "f9b4a23bd4664a235e6d5fc8231649a3bd9cbd1955c2d96444fb56d8283530b7"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-04_ROTULO_wrap.png",
+   "bytes": 851175,
+   "sha256": "6236f6d0091488dddac9f52a22448f8d1eeecc48e837a20c019ca9de42092a46"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-04_ROTULO_wrap.svg",
+   "bytes": 404168,
+   "sha256": "7e57e9ef8cd5bdbd7ab4cc24e5838fd9b886552e9433c341e11a2af942948bc0"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-04_ROTULO_wrap_preview.png",
+   "bytes": 1035261,
+   "sha256": "809f06efbe14465a3fafb393d63faea998e2195634311af3394fe64683963e18"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-04_label_copy.json",
+   "bytes": 14103,
+   "sha256": "d5df0fd6cb851393377acd78f2d34caccce9d545b3409b26f65c73571cb78cc0"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-CASE-01_DONA-CIDA_ROTULO_wrap.png",
+   "bytes": 860715,
+   "sha256": "485e7c46502ad6a0ddf72fba5cd3f4527d1d637ef1da03a21e54a9e253c737e5"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-CASE-01_DONA-CIDA_ROTULO_wrap.svg",
+   "bytes": 405635,
+   "sha256": "64fd9343fd3c10123c4d7530b0313932b5e96659975af2e02251c2924dbfc635"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-CASE-01_DONA-CIDA_ROTULO_wrap_preview.png",
+   "bytes": 1114702,
+   "sha256": "f010e6a29276ac4fad63dc997c8c0ac55368286ed16028e28f4ebec8d5bfb004"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-CASE-01_DONA-CIDA_label_copy.json",
+   "bytes": 13576,
+   "sha256": "5cf5b6cf0fb23301381cf97642bceb0e975af55af2bd25133350faf31fe490dc"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-CASE-02_MAE-CORACAO_ROTULO_wrap.png",
+   "bytes": 855864,
+   "sha256": "781c537d1dc9ec7826c872403d9312012da3ee2b0db501c4d255e888b106051b"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-CASE-02_MAE-CORACAO_ROTULO_wrap.svg",
+   "bytes": 407926,
+   "sha256": "7e13589ed1a4f2c701df0966ca4e521f1566f684d1ec3610b18de49e06f1aa94"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-CASE-02_MAE-CORACAO_ROTULO_wrap_ERRO-PLANTADO.png",
+   "bytes": 855947,
+   "sha256": "4ac2ec0177858fbb0b6544cb2ecc9902b38a36d5883ead7f2db67368d0e658df"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-CASE-02_MAE-CORACAO_ROTULO_wrap_preview.png",
+   "bytes": 1044958,
+   "sha256": "56e16886c751a1ff498f161aa175abf04075b55f7965e84ac91b55adbf30c2e2"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-CASE-02_MAE-CORACAO_label_copy.json",
+   "bytes": 13817,
+   "sha256": "32ee63926139892bb0505ed098e319713f60e02c2c0939c3e627c6176eb0165b"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-CASE-03_MAINHA_ROTULO_wrap.png",
+   "bytes": 845683,
+   "sha256": "123e46239d7785c603ecf6b6035e70f59c28b86e82e58d59b7016adae1de3ba1"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-CASE-03_MAINHA_ROTULO_wrap.svg",
+   "bytes": 406898,
+   "sha256": "8c56e3ca6f5ea7a6bd22f495fb62dfa68b82de26275253eb47225960034e9d6b"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-CASE-03_MAINHA_ROTULO_wrap_preview.png",
+   "bytes": 1002335,
+   "sha256": "6c945e64f48617975a3f9f270bd499982ccc43d5206a04fa5d5d430ad3ccb3ae"
+  },
+  {
+   "arquivo": "02_PRODUTO/rotulos/HLF-CASE-03_MAINHA_label_copy.json",
+   "bytes": 13838,
+   "sha256": "e5bf60fd66f63800c82293177aa2fec7837faba3b6a3401e8ff6e9e9a1f28682"
+  },
+  {
+   "arquivo": "02_PRODUTO/base/HLF-BASE-080_ETIQUETA-LOTE.png",
+   "bytes": 43906,
+   "sha256": "e7e823a286968f9ac6fa40def43642c3dfc4b57e4f4ee3d1f90d4b9ddb80d92c"
+  },
+  {
+   "arquivo": "02_PRODUTO/base/HLF-BASE-080_ETIQUETA-LOTE.svg",
+   "bytes": 28930,
+   "sha256": "e4078f8f5003652ab752ed440727660abde3fc498d90a0648e834540c5b043bb"
+  },
+  {
+   "arquivo": "02_PRODUTO/base/HLF-BASE-080_PRECISAVA.svg",
+   "bytes": 3158,
+   "sha256": "66c2faf3a7d536c3d1db2635e623da42fe323d0a46058e3e1231401f6316db38"
+  },
+  {
+   "arquivo": "02_PRODUTO/base/HLF-BASE-080_PRECISAVA_altura16.png",
+   "bytes": 50547,
+   "sha256": "30ca6813c113a63c67000c0a6642b621a68b97bd116d42826dee7860bc15334f"
+  },
+  {
+   "arquivo": "02_PRODUTO/base/HLF-BASE-080_preview_por-baixo.png",
+   "bytes": 583158,
+   "sha256": "cb917592697fb859c0c8c725f8a46b9fcf024362e4a894b8678e211f6a5d5980"
+  },
+  {
+   "arquivo": "02_PRODUTO/base/HLF-BASE-200_ETIQUETA-LOTE.png",
+   "bytes": 52880,
+   "sha256": "b8695ed4f03737f284b3229270ff88219ef04b06fd447265668aa59d6404d49f"
+  },
+  {
+   "arquivo": "02_PRODUTO/base/HLF-BASE-200_ETIQUETA-LOTE.svg",
+   "bytes": 29040,
+   "sha256": "d03f41231f198e6229b54bc6aa9bc0d64caa62541b456ee9c8b5f8b681302bbf"
+  },
+  {
+   "arquivo": "02_PRODUTO/base/HLF-BASE-200_ETIQUETA-LOTE_PAPEL-ACUSTICO.png",
+   "bytes": 52869,
+   "sha256": "5a5796859de759b569e09f21a9d0c0f5e953bcd4f30dbca1be71ddcbeec1bce2"
+  },
+  {
+   "arquivo": "02_PRODUTO/base/HLF-BASE-200_ETIQUETA-LOTE_PAPEL-ACUSTICO.svg",
+   "bytes": 29040,
+   "sha256": "ba4baf3be2730bb47452bcf52a2397db5af6bc8da76fabf36a80a0c582d3f455"
+  },
+  {
+   "arquivo": "02_PRODUTO/base/HLF-BASE-200_PRECISAVA.svg",
+   "bytes": 3163,
+   "sha256": "54d713d1c3d47b467da76153783c68890bdb5a055c3e3f79047489c0b40fdcef"
+  },
+  {
+   "arquivo": "02_PRODUTO/base/HLF-BASE-200_PRECISAVA_altura16.png",
+   "bytes": 67497,
+   "sha256": "332ee8b59b47bd57956be02c0248dd3a30511bcf05fd6c4cf1d4cda2d21c773a"
+  },
+  {
+   "arquivo": "02_PRODUTO/base/HLF-BASE-200_preview_por-baixo.png",
+   "bytes": 788980,
+   "sha256": "962987632ae800dd74cd35ba845bfcb943695a7200ded3699f4b1f13ca01e27f"
+  },
+  {
+   "arquivo": "02_PRODUTO/base/HLF-BASE.json",
+   "bytes": 3755,
+   "sha256": "1696beb34d1f3dc7ca9acea0b85f79277f95e081603c66fb521b0acce7c964aa"
+  },
+  {
+   "arquivo": "02_PRODUTO/setlist/SETLIST.json",
+   "bytes": 19014,
+   "sha256": "8d9138c432a936b6ff736dba5a5a6d2a089f90f3e0f465c206b6b535a8450984"
+  },
+  {
+   "arquivo": "02_PRODUTO/setlist/SETLIST_lado-1.png",
+   "bytes": 1129721,
+   "sha256": "7ba12a47235a7a7c9563440c17c504eb62469d17e141c3946e54f9262fd6216c"
+  },
+  {
+   "arquivo": "02_PRODUTO/setlist/SETLIST_lado-1.svg",
+   "bytes": 549854,
+   "sha256": "4165e46ffa2fdcdaf8dc98328057ab4257af8ecd3cefba261582264b1e180c2b"
+  },
+  {
+   "arquivo": "02_PRODUTO/setlist/SETLIST_lado-1_amarelo.png",
+   "bytes": 115088,
+   "sha256": "f7a462eb6b798135d010cafd41a8937e454a7a4166dd3ccf0880527b492a3176"
+  },
+  {
+   "arquivo": "02_PRODUTO/setlist/SETLIST_lado-1_preto.png",
+   "bytes": 558032,
+   "sha256": "478aed258d86db26123a373d559354a285dfd9f7aef36407b6a23e7fb6ec9c6b"
+  },
+  {
+   "arquivo": "02_PRODUTO/setlist/SETLIST_lado-2.png",
+   "bytes": 885613,
+   "sha256": "bc9070c734dd5f17b9c84c21a9512ff6a5953bc82e34945556b94d980108fabe"
+  },
+  {
+   "arquivo": "02_PRODUTO/setlist/SETLIST_lado-2.svg",
+   "bytes": 920394,
+   "sha256": "7a6910438ef2d074b27f59057eacfb917a7ee90c742d7ea06de0470085d01442"
+  },
+  {
+   "arquivo": "02_PRODUTO/setlist/SETLIST_lado-2_preto.png",
+   "bytes": 657939,
+   "sha256": "1565b6b3232080d8cc16d0e0e7c8117329462184157df502986d40793ab9fe8b"
+  },
+  {
+   "arquivo": "02_PRODUTO/setlist/SETLIST_picote_lado-1.png",
+   "bytes": 19231,
+   "sha256": "a1d94c8fed91054fc62ead07d4195973a35288254316460cb9b781a909e73dc3"
+  },
+  {
+   "arquivo": "02_PRODUTO/setlist/SETLIST_preview_aberto.jpg",
+   "bytes": 1007948,
+   "sha256": "d24cf4ae55ec8350ba285665e58ab8adbff6606956cf64435f983169e0fdfe15"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/D/D01_A-CARTEIRINHA_9x16.png",
+   "bytes": 943439,
+   "sha256": "0f7506d1097130aa8a0281f0eea7b3760ce531e3274aff19b118c6510f2d74c0"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/D/D02_O-INGRESSO_inteiro.png",
+   "bytes": 1145260,
+   "sha256": "c3469340913c4b043ecd59590d2196a9445882eed681ebf63cffd73758ad1f4a"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/D/D02_O-INGRESSO_rasgado.png",
+   "bytes": 1180969,
+   "sha256": "13c996a701dc4ea4782da382617dcd3efc001f8fc380d713344163aa0fc87acb"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/D/LEIA_ME.md",
+   "bytes": 829,
+   "sha256": "a58215535d1490e3842c415cd69a7da7b84a7ed9bac46ba2db1d07aa7bb64a51"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/D/placeholders.json",
+   "bytes": 66,
+   "sha256": "bad59ba6cee8325e1badafb8556f45655917294256d484dd3cf932f8162de5c9"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B01_BOLETIM_0205_1x1.png",
+   "bytes": 1306122,
+   "sha256": "1830847c29fd0a2da7722f6b5054340d6c8f37533097c5639adb6de242acbab8"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B01_BOLETIM_0205_9x16.png",
+   "bytes": 2306261,
+   "sha256": "044b44bb420b026faf3a2f58c2eff9b759fc566992f34fa37ca003fcfeb4d0e4"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B02_BOLETIM_0305_1x1.png",
+   "bytes": 1317945,
+   "sha256": "ce9b76bcccebfbd1cc9be54b0ef8c8f48be0ac65d0373a30e51f28d2416348f3"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B02_BOLETIM_0305_9x16.png",
+   "bytes": 2281775,
+   "sha256": "53c027c0bd676629dd5c5d8d95b9eefe97b03b2d857de77bbd7f7ce81c5b1133"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B03_BOLETIM_0405_1x1.png",
+   "bytes": 1142541,
+   "sha256": "51c0a41206c51e54950596f19fed5316e666b83af33517ff25099ef1681fabb6"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B03_BOLETIM_0405_9x16.png",
+   "bytes": 1986355,
+   "sha256": "79e2fd91ec889c6e670a15f0d2ee676b95875b57b0750fdcf78c6eb1e03f97d6"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B04_BOLETIM_0505_1x1.png",
+   "bytes": 1359747,
+   "sha256": "e84d49da9ad091417cd188150d8ce06821d2680241def6c2da61323297fa06cb"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B04_BOLETIM_0505_9x16.png",
+   "bytes": 2339599,
+   "sha256": "2a13781da183bb877992d2aaebd4078c520c0bb966b4b70cd6c12457089c39a9"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B05_BOLETIM_0605_1x1.png",
+   "bytes": 1321884,
+   "sha256": "0204301839c27331d696a4b89356ade6b80f0b25d0988cd2f6e733445857993c"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B05_BOLETIM_0605_9x16.png",
+   "bytes": 2284904,
+   "sha256": "24e114207547b740189c17c84955985f5c40fcb8e6ea12b5bc04e9c979ed190e"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B06_BOLETIM_0705_1x1.png",
+   "bytes": 1293389,
+   "sha256": "85ae38730a59fec1b3587c6dd080634b977394df50ed1d79195670b6ab4ce37b"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B06_BOLETIM_0705_9x16.png",
+   "bytes": 2249949,
+   "sha256": "30075e9543ed0b37f3375318596f81ea745aaadb564f1541f5577aa0938c0cef"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B07_BOLETIM_0805_1x1.png",
+   "bytes": 1169205,
+   "sha256": "0390c1f3b1310b1019c3f42254aa4509ea940b1ba1db008a7c056056b514b763"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B07_BOLETIM_0805_9x16.png",
+   "bytes": 2014611,
+   "sha256": "969622d8bc33330623b98e714753773075f374f57419bb8a06415cb1c706f470"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B08_BOLETIM_0905_1x1.png",
+   "bytes": 1307282,
+   "sha256": "819eb0d57948fc87c38cf841ed23b6b9d824db0be0b9d71ba59bed7fc93f66e8"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/B08_BOLETIM_0905_9x16.png",
+   "bytes": 2269473,
+   "sha256": "71804b7b42d80af97d239f7ea07bc9f3df88637a7d5960a200c629742f800a5f"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/B/LEIA_ME.md",
+   "bytes": 851,
+   "sha256": "7f4e343e94549fdc2853555048d2a4cd3e62eea333f29c7376686314f935c5ce"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/C/C03_O-PIOR-SHOW.png",
+   "bytes": 2224757,
+   "sha256": "a0f4f52e01404b71a423f811e09998eae8d2d9c5429761536aa3d60012ff6a10"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/C/C07_PIX.png",
+   "bytes": 2235413,
+   "sha256": "90d68dd68a6f51cc961f0876137755fcfdc7931746bb70e4187a6657511196a5"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/C/C09_O-CARTAZ-DELA_DONA-CIDA.png",
+   "bytes": 2333107,
+   "sha256": "5cdac79429b71e7c2bc330d0300451d4b7c941e7e28e90335274c016514c44c4"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/C/LEIA_ME.md",
+   "bytes": 1006,
+   "sha256": "867cd6cf5de1b6a3f703325a71968ce1ddb99a3f6c62d9e8e23664cfe3d2685b"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/C/placeholders.json",
+   "bytes": 109,
+   "sha256": "0360b3fcd99479749ee245e633089ff386577bbb63b57ff8c2724d38ffe64f60"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/KV/KV-45_aceso_A-ATRACAO-E-ELA.png",
+   "bytes": 886907,
+   "sha256": "64d6a8368ae586717931a002d3bc5d8bc9e6c7343537d37b5d961e67edfded0e"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/KV/KV-45_aceso_SUA-VEZ.png",
+   "bytes": 888354,
+   "sha256": "ee801b4aeb0e3d5f476a480a5d5ffabb343470af3fe9a980030202f334995a76"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/KV/KV-45_aceso_sem-titulo.png",
+   "bytes": 876180,
+   "sha256": "3cb4874bb22b51cb83c8b638322d02f31bc72641c3f5d2169a0bca1edb90d67f"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/KV/KV-45_apagado_A-ATRACAO-E-ELA.png",
+   "bytes": 853502,
+   "sha256": "93542f00dbe5045246014dbb012e6dde6e95e678efa573f6cfc1cd74e63d985b"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/KV/KV-45_apagado_SUA-VEZ.png",
+   "bytes": 854913,
+   "sha256": "6f02c5b6bd7bc97ea631ae16f65673ee5f439fc345c1326462d5ac8d5240700b"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/KV/KV-45_apagado_sem-titulo.png",
+   "bytes": 841806,
+   "sha256": "8c82e69de4fcfef170a13078687110d36e22ea821a57077bcf17759136221b83"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/STK/LEIA_ME.md",
+   "bytes": 1062,
+   "sha256": "dabf6ffab766d3696278e1076437a54a555f1f713321f1e3d0e5d315a081ce56"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/STK/STK-01_ACESSO-TOTAL.webp",
+   "bytes": 18948,
+   "sha256": "82d063c618debb162e1afe040318329d8227f126e084c12dffde1a35d4bc7283"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/STK/STK-02_MAIS-UM.webp",
+   "bytes": 15308,
+   "sha256": "963caaf39133e88afbf1dccc9e6ba48be5885f3e7ac7a0a8421e5dbbd4cd9d9c"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/STK/STK-03_ABERTURA-VOCE.webp",
+   "bytes": 7562,
+   "sha256": "f98704d7a41909ff0cf5edd716192b6208926819fee608c426855cee88a1edf6"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/STK/STK-04_NAO-PRECISAVA.webp",
+   "bytes": 14180,
+   "sha256": "7984ffa3a8ca27a683399acc7173b43fc1c0aae0fb37c09e3fec219e44c7ac2c"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/STK/STK-05_PRECISAVA.webp",
+   "bytes": 23234,
+   "sha256": "6b5899dd5c67d165c46e54390d26bb30e95a2a23f569c86b2ad8b00b7ca30843"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/STK/STK-06_EQUIPE-TECNICA.webp",
+   "bytes": 22320,
+   "sha256": "39cc73c7b112f46cd731da18d7eec289b416e21493b0ee43b19df1352a38bdcf"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/STK/STK-07_TERCEIRO-SINAL.webp",
+   "bytes": 11396,
+   "sha256": "7541a95021eefaee7be1e07195a20d28817ca121204c1ca289bc7874015d72ba"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/STK/STK-08_ELA-FICA-AQUI.webp",
+   "bytes": 15518,
+   "sha256": "8812bf4f64bf63591a0d93969d96b69bbcdba9bbb888415453c423fec2a20517"
+  },
+  {
+   "arquivo": "03_LANCAMENTO/STK/STK_folha_contato.jpg",
+   "bytes": 221684,
+   "sha256": "3cb1191ce2663e3b4476f16019ef27b5ea38f806f057aaab7748ba709a14f080"
+  },
+  {
+   "arquivo": "04_FILMES/F06C_SINAL_07-05_mudo.mp4",
+   "bytes": 527172,
+   "sha256": "f49c0f5e307081279852282b728f821745fdbabd2d66aceb18d758b45dd998ab"
+  },
+  {
+   "arquivo": "04_FILMES/F06C_SINAL_07-05_som.mp4",
+   "bytes": 626689,
+   "sha256": "4f17fce94dfc6239e04533d100d39cde88cbc2f52b199279808f81c7bb397f68"
+  },
+  {
+   "arquivo": "04_FILMES/F06C_SINAL_08-05_mudo.mp4",
+   "bytes": 525995,
+   "sha256": "5d8cfff8df1b9d41448c95122166d19e3c708cccdf0cd56dbe79b2dbdf00a0a7"
+  },
+  {
+   "arquivo": "04_FILMES/F06C_SINAL_08-05_som.mp4",
+   "bytes": 626340,
+   "sha256": "30820caa90c43975792041ac6579b53337238626e41d4db155b382f8adef50ee"
+  },
+  {
+   "arquivo": "04_FILMES/LEIA_ME.md",
+   "bytes": 2338,
+   "sha256": "5df63fec8a67512808a52eb8a08a86d9ac848af6e6278dc1a5bfa78f0f381f32"
+  },
+  {
+   "arquivo": "04_FILMES/S01_DIGITANDO_mudo.mp4",
+   "bytes": 42718644,
+   "sha256": "0390439365795ea262a063c7abae4a88c98be77ec235d2cdfea6398e9f75580c"
+  },
+  {
+   "arquivo": "04_FILMES/S01_DIGITANDO_som.mp4",
+   "bytes": 43089319,
+   "sha256": "5c6af10c8ceff9cfbbe12522d24e47c5a7242ffb3fff669870007dece0f45dae"
+  },
+  {
+   "arquivo": "04_FILMES/som/CREDITOS.md",
+   "bytes": 5384,
+   "sha256": "de46d7b64bff8980a508a1db8e8d871faf0920697c50fcdb16deeb43ef753acd"
+  },
+  {
+   "arquivo": "04_FILMES/som/LEIA_ME.md",
+   "bytes": 10899,
+   "sha256": "de5c44d2c22056b536ceab5fbfc51ea6100befc8ba15494a2e71a4d106c7cf21"
+  },
+  {
+   "arquivo": "04_FILMES/som/manifesto_sfx.json",
+   "bytes": 11941,
+   "sha256": "6e4cd71163449e9f141de34d693ab4553eb438735691a03b8132ff3113818a6b"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-AD_KV_9a15s_ad2_sino_cues.json",
+   "bytes": 1016,
+   "sha256": "d99b7468d0213434728dd7258e7d19dc19550e3727f22f3b99dca89dd16f59f9"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-AD_KV_9a15s_ad2_sino_som.json",
+   "bytes": 2727,
+   "sha256": "c391423d9ec7a723a43854c89cb02505b333ede629cc047942dcf049e6795569"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-AD_KV_9a15s_ad2_sino_som.wav",
+   "bytes": 1728044,
+   "sha256": "61b9b213f97c124a6a6330ef0bf0db57a2cd621806661346e5211e713c3f1400"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-AD_KV_9a15s_ads1e3_cues.json",
+   "bytes": 812,
+   "sha256": "1d21b18e5f0363ec63f11ca30ea6252140cf67a923cde1dbb72ac405bf046b97"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-AD_KV_9a15s_ads1e3_som.json",
+   "bytes": 1833,
+   "sha256": "7e831821d1bd877e39720a946c9e098a7026c86149b67362a41f28c42f987ccd"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-AD_KV_9a15s_ads1e3_som.wav",
+   "bytes": 1728044,
+   "sha256": "221ac65cf4f6f852e455e5b3e1844b9b1903b5b9f28a18c4764114ffd74d2cc5"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F06A_CLAC_cues.json",
+   "bytes": 1088,
+   "sha256": "bdd1a380eafb9426b7b4eef8e4c38cc79f2c9a8f8f5476caaf0c572eba831289"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F06A_CLAC_som.json",
+   "bytes": 2280,
+   "sha256": "6eb11da279d82b98d01b9c789b4d64fb4434cb6af251f22c866ff9c0a8181302"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F06A_CLAC_som.wav",
+   "bytes": 1728044,
+   "sha256": "37e023a5a43df5632be0b33e3355b7a5ff5d7dc2f3571401fe94983ea9f77004"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F06B_O_PIOR_SHOW_cues.json",
+   "bytes": 1565,
+   "sha256": "0932bb9b6af60242a61e566081fc5c29d739d1b28828016d3e054edbe6612cff"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F06B_O_PIOR_SHOW_som.json",
+   "bytes": 4056,
+   "sha256": "cb0ad83a80312502f9c4d515f26863d7f994a160c323cd869899d26ff1b63170"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F06B_O_PIOR_SHOW_som.wav",
+   "bytes": 1728044,
+   "sha256": "1354b1237194a9930123a4d93d9b576028d46dc516ef2c72f90fae64ef6de280"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F06C_SINAL_07-05_cues.json",
+   "bytes": 609,
+   "sha256": "993ae04bfb1a450dc46faef749e9868409c96c5e2cbe72d513146d502b8ce63d"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F06C_SINAL_07-05_som.json",
+   "bytes": 1075,
+   "sha256": "ac22051127cb3d10a9936e7f67a90d15a726978c2dea4c09c549085e9df6a344"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F06C_SINAL_07-05_som.wav",
+   "bytes": 1728044,
+   "sha256": "5722e041a93f64fd3bb0c27647f0255c6c5aa4e3252970e59ce4c2c17ddb0576"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F06C_SINAL_08-05_cues.json",
+   "bytes": 610,
+   "sha256": "33c858bcd2f81195c0f0a47e8696b4e1b7ecc231819b36b2283396176bf82e59"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F06C_SINAL_08-05_som.json",
+   "bytes": 1245,
+   "sha256": "96b62f656ad7f672660fad6e185fa399ba5a81e903df4550c3c0747539f516ed"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F06C_SINAL_08-05_som.wav",
+   "bytes": 1728044,
+   "sha256": "f8bc2eeef90fbb3a5b1ba8d8d97e9c9f9c67e25fce4ec7da29259bbc8a9d26b5"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F06C_SINAL_09-05_cues.json",
+   "bytes": 624,
+   "sha256": "4c03645d519116c933a4cbe06b20ad085939a4f57fc08e7d2ada9e548de0ba55"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F06C_SINAL_09-05_som.json",
+   "bytes": 1706,
+   "sha256": "e5a6eb84aebcfb41680e4c246c5109a3e849dfb95d34b962c21b850d089ebdab"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F06C_SINAL_09-05_som.wav",
+   "bytes": 1728044,
+   "sha256": "c0c47bfbcd8a2310c2e152ae9067dbd63306dd4b2994baec7d31eb45c2626acf"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F15_A_ENTRADA_cues.json",
+   "bytes": 3582,
+   "sha256": "c46f0b846263c5c47c3d95314b2976c3446b2d6de37383facdb5ee2c09b9a348"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F15_A_ENTRADA_som.json",
+   "bytes": 8353,
+   "sha256": "5c32b6f4ef1e2a9993d451d838ec9910fd06bcf1544912a0ed5f70fc0f8ccfd4"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-F15_A_ENTRADA_som.wav",
+   "bytes": 4320044,
+   "sha256": "a2e2fa2b099084c06bafc04d964307d632a6d9d301ce0987dc15ddc2e415dc4d"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-S01_DIGITANDO_som.json",
+   "bytes": 687,
+   "sha256": "3141d8eecee3379f5f9e6e8b4b0a71d683cbc8c6fb37f10d5bce7db6ac2d52e2"
+  },
+  {
+   "arquivo": "04_FILMES/som/filmes/HLF-S01_DIGITANDO_som.wav",
+   "bytes": 3120044,
+   "sha256": "cfedbd99ebb195106f0bba7672f41f1d076d4870c2f90d20fea84758183c18ac"
+  },
+  {
+   "arquivo": "04_FILMES/som/verificacao/VER-01_sfx_parte1.png",
+   "bytes": 662948,
+   "sha256": "4902e7e314388e59372b112949fb84efd140fdb4d9446346e9c5e17d0708713e"
+  },
+  {
+   "arquivo": "04_FILMES/som/verificacao/VER-02_sfx_parte2.png",
+   "bytes": 644060,
+   "sha256": "8d496b4c8a8d8ed1d478eee6456c12f7b301bbd93b33a72df61f9135df80ce4b"
+  },
+  {
+   "arquivo": "04_FILMES/som/verificacao/VER-03_identidade.png",
+   "bytes": 192130,
+   "sha256": "4ccc520f196ac3785c5e6d61b855d0b9d64b60021cb45cbe5fe9f21cf231a17f"
+  },
+  {
+   "arquivo": "04_FILMES/som/verificacao/VER-04_musica.png",
+   "bytes": 625923,
+   "sha256": "cc8870e20d0f8207bdfb255afc0d1519b7348030563833c9fe748292353c0b7b"
+  },
+  {
+   "arquivo": "04_FILMES/som/verificacao/VER-05_filmes.png",
+   "bytes": 708848,
+   "sha256": "9dff37d3004b4f113e0052dc299439ae157b11c4740baf6e8b9b49966388ad21"
+  },
+  {
+   "arquivo": "04_FILMES/som/musica/HLF-MUS-01_fanfarra_120bpm_20s_mix.wav",
+   "bytes": 5760044,
+   "sha256": "5f2bcf7b591eed4d64c76ccce21d995ba22720831698d5ae11e3152a0560919a"
+  },
+  {
+   "arquivo": "04_FILMES/som/musica/HLF-MUS-01_fanfarra_120bpm_20s_stem_bumbos.wav",
+   "bytes": 5760044,
+   "sha256": "2610d92eb5b65102b91d004ff30402d33c0eb5be5d1bd54a68b210a3cdd405e9"
+  },
+  {
+   "arquivo": "04_FILMES/som/musica/HLF-MUS-01_fanfarra_120bpm_20s_stem_caixas.wav",
+   "bytes": 5760044,
+   "sha256": "0914c1628fd0bd901b42dfbc32aef04db1e591c40b55958899c8d75609559a94"
+  },
+  {
+   "arquivo": "04_FILMES/som/musica/HLF-MUS-01_fanfarra_120bpm_20s_stem_pratos.wav",
+   "bytes": 5760044,
+   "sha256": "f85147bbd5842622aae3053828ed7d24e953b97a3e1b0f77da8511adf27dbb83"
+  },
+  {
+   "arquivo": "04_FILMES/som/musica/HLF-MUS-01_fanfarra_120bpm_20s_stem_tambores.wav",
+   "bytes": 5760044,
+   "sha256": "89becb55da8d93df9bf01607c2f74870884be0fc2746a9cdd0133501d1c71b3d"
+  },
+  {
+   "arquivo": "04_FILMES/som/musica/HLF-MUS-01_pontos_de_edicao.json",
+   "bytes": 3612,
+   "sha256": "0a3a3fb8972092f5fb0fa0b3c69dc0e048033016a7034338f567cb81bc98127f"
+  },
+  {
+   "arquivo": "04_FILMES/som/musica/pecas/HLF-MUS-02_bumbo.wav",
+   "bytes": 403244,
+   "sha256": "1077cfdcba2d66d6882991342ecbe6904b4d9b32d9b325207b3d61869a10a2f9"
+  },
+  {
+   "arquivo": "04_FILMES/som/musica/pecas/HLF-MUS-02_caixa_acento.wav",
+   "bytes": 345644,
+   "sha256": "34e0084f38f5e391e3e870795c40ce05d02b5d1992ad8a19e33d2b17e3f195eb"
+  },
+  {
+   "arquivo": "04_FILMES/som/musica/pecas/HLF-MUS-02_caixa_bumbo_juntos.wav",
+   "bytes": 403244,
+   "sha256": "68af5af76d05ef5084f8732fecfa328277bad1c67399e00b07a945b256fdb420"
+  },
+  {
+   "arquivo": "04_FILMES/som/musica/pecas/HLF-MUS-02_rufo_entrada_2s_pp_cresc.wav",
+   "bytes": 748844,
+   "sha256": "cd87f1938ca6675ef5fbd2ed11968c77e4dd29f7bc4c456aa7ab3409070df658"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-01_clac.wav",
+   "bytes": 460844,
+   "sha256": "3ba057286f52aa83e5bdace228b8da782e6972759fe9ab8755bc4d8e75f959e4"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-02_clac_off.wav",
+   "bytes": 345644,
+   "sha256": "f77b334c4f2cdb9dad30ba76c2d6714fcdfaea21b601fa220686f4d9864b481e"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-03_murmurio_teatro_loop.wav",
+   "bytes": 4608044,
+   "sha256": "a29422af57b52e2f56baa109e053ec3d398e8a2dd355d9c5b6bcf4544cd76fa4"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-04_rugido_estadio_0s8.wav",
+   "bytes": 230444,
+   "sha256": "b0a4743bf9914fc13327761688a5c78bb7d99a82496c91552e9e9ec3af00eae1"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-05_aplauso_estadio_distante.wav",
+   "bytes": 2592044,
+   "sha256": "b30f993f55cc824c373eff52a52587058f68f20e6de6db51dbe7d80882efa023"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-06a_palma_1.wav",
+   "bytes": 172844,
+   "sha256": "f4c0bbad3dd4a8077323457e6e20429df868486ea01182db45216d32e660ccce"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-06b_palma_2.wav",
+   "bytes": 172844,
+   "sha256": "c15b575d3d9b145f815fe6255dd4c0e9674e958f157ed892e5fea1303d728c86"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-06c_palma_3.wav",
+   "bytes": 172844,
+   "sha256": "275baf694fc9ca74d04cafe1e9fea705426191707fab64f74c556e3c1a2f37b8"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-06d_palmas_tres_0s3.wav",
+   "bytes": 316844,
+   "sha256": "f6d174cff271269ba0dae996188534a0b1cd1c3c286d553d3ee9a8f9f91979d1"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-06e_palmas_tres_10q.wav",
+   "bytes": 388844,
+   "sha256": "8285a5a6ce4ef4a2babe63923ccca4efa31c0a4ad74d32563c776dfdd5007356"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-06f_palmas_quatro_auditorio.wav",
+   "bytes": 979244,
+   "sha256": "bdcb3e5b14b255130daca1b5c3fa81c5f58cbe0716fb15780b061388865066e9"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-07_fosforo_fsst.wav",
+   "bytes": 316844,
+   "sha256": "30c2e92a11642ab6433531355e81b25fd04cd9caac8512ce7e699ac486c7b168"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-08_crepitar_pavio_loop.wav",
+   "bytes": 3456044,
+   "sha256": "c07891d684e68b79fa68541e037128f2de72e1cd6ae6fe12f7817566b85f5c15"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-09_sino_teatro.wav",
+   "bytes": 1036844,
+   "sha256": "57c898781cb23206775fd8406234a89d424e07511eb65b0ec0dcb05f0cd3066e"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-09a_sinal_1_sino.wav",
+   "bytes": 1036844,
+   "sha256": "8b28efb3db68ff4cb970b329f9e51ac3f45e08d235b268becbb7c5f9275f26ea"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-09b_sinal_2_sinos.wav",
+   "bytes": 1036844,
+   "sha256": "78f274a047a030e2204f7da721c258452ed678f96ec9a3410e741fa616ff5a39"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-09c_sinal_3_sinos.wav",
+   "bytes": 1036844,
+   "sha256": "80473ae193fe1466948e8bafc683f71e826445f28419a2095afd3d6eb9044697"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-10_tosse_plateia.wav",
+   "bytes": 691244,
+   "sha256": "1288f16eab23dc09c70498c812d275d8adf68d21a5e7a2a1b43cf6b31ff4b37f"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-11_elevador_hidraulico_1s.wav",
+   "bytes": 288044,
+   "sha256": "d685e853c05ce2033ad5e2cbbe06a7de4f82c9ac07a3778ff83775d52f2eb81b"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-12_ima_case.wav",
+   "bytes": 201644,
+   "sha256": "6655d6a8ed87ad22a00b2177b5192263b04820922cec1ba9ed8c10badbf1e6f2"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-13_pulseira_fecho.wav",
+   "bytes": 172844,
+   "sha256": "acee25bc4c7ea151bf665cf1696f4cecf7c357f28185ed76cfb071dd1e551ac2"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-14_selo_papel_rrrip.wav",
+   "bytes": 259244,
+   "sha256": "d48344a5099ee4ffd3c54fd80453d8b1ff35db6a6adf8fe73f056693ed8bd41c"
+  },
+  {
+   "arquivo": "04_FILMES/som/sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+   "bytes": 3456044,
+   "sha256": "358457341555a9ac274c07285404ea650c9fa6b2cf8cb2c073d3438be3bb7037"
+  },
+  {
+   "arquivo": "04_FILMES/som/identidade/HLF-ID-01_vinheta_ovacao_de_uma_pessoa_so_2s0.wav",
+   "bytes": 576044,
+   "sha256": "8fb2630f90171b41670e07e36d574043a3ddc0c80045d598d80ec11f08ad7a99"
+  },
+  {
+   "arquivo": "04_FILMES/som/identidade/HLF-ID-02_crepitar_para_aplauso_morph.wav",
+   "bytes": 1440044,
+   "sha256": "669aff43a8a0a5150ba6366b46087afdf479ab6e403786699a0dbf6dd63680b8"
+  },
+  {
+   "arquivo": "05_ANUNCIO/CREATOR_ADS.json",
+   "bytes": 38688,
+   "sha256": "6517f5a0d7f1b873e16e687b97140011d7bb90e92e22b1ff9636e25df2c66d44"
+  },
+  {
+   "arquivo": "05_ANUNCIO/CREATOR_PROMPTS.txt",
+   "bytes": 25154,
+   "sha256": "dcdcade335978ba9d1fc3b46693a4986cf58cace1c337ae1ce38af0a28f4f76e"
+  },
+  {
+   "arquivo": "05_ANUNCIO/MODEL_SHEET.json",
+   "bytes": 2962,
+   "sha256": "624f6e6aebd548ee936ea534a01a8976ed84aea27a9eb6bdc0313e73fb70113c"
+  },
+  {
+   "arquivo": "05_ANUNCIO/PROMPTS_MODELO.json",
+   "bytes": 5050,
+   "sha256": "7bb08ec9b6efa558ac6f31b87efa0d3b6180790202657b67b37a91f6c3a3f502"
+  },
+  {
+   "arquivo": "05_ANUNCIO/SEEDANCE_PROMPTS.txt",
+   "bytes": 17499,
+   "sha256": "e6ce9d19113bd4139a3efa0acb239e6df5e242e58de1b1cda2ce2097b6bfd55f"
+  },
+  {
+   "arquivo": "06_PRODUCAO/AUDIO_CUE_SHEET.csv",
+   "bytes": 6850,
+   "sha256": "60db9f87176cef23a6dac366903830ddc7c21338d91e3b6fe1672209babd87d8"
+  },
+  {
+   "arquivo": "06_PRODUCAO/CENAS.csv",
+   "bytes": 10089,
+   "sha256": "fb752af35a7dea900337cba5090caeacbe15a7c0f3b68068d0266c85e76bfbb5"
+  },
+  {
+   "arquivo": "06_PRODUCAO/COMECE_AQUI_PROXIMO_LLM.txt",
+   "bytes": 13174,
+   "sha256": "61316e04ce38759df4c18954108aef6b10a7e880fee61343c79943939bf18e18"
+  },
+  {
+   "arquivo": "06_PRODUCAO/CORTES_6S.csv",
+   "bytes": 496,
+   "sha256": "1c536cc52f64a9202f15f3d9e4301cf4fded49b5e66afc9fda54c7bd46e49d58"
+  },
+  {
+   "arquivo": "06_PRODUCAO/EDIT_DECISION_LIST.csv",
+   "bytes": 3948,
+   "sha256": "8a487f5fdbd3be6b04f5275e1100ba03732f16072a6ff840e68ab107a7af5218"
+  },
+  {
+   "arquivo": "06_PRODUCAO/MACHINE_BRIEF.json",
+   "bytes": 76899,
+   "sha256": "c018cdad6d33af60c09f814a1ec91e8ef27ef090a0a8c38344ab346b90839f67"
+  },
+  {
+   "arquivo": "06_PRODUCAO/STATUS_ENTREGA.txt",
+   "bytes": 3251,
+   "sha256": "4ea3044ebbe453b89531ff9208f3e12a9eddd182e346cc82b20a270c7af8c533"
+  },
+  {
+   "arquivo": "06_PRODUCAO/TEXTOS_SOCIAL.txt",
+   "bytes": 6731,
+   "sha256": "30e3e11a4a9d9468e2b50d0e1f23712470fb508bb42aba0d5bb332bd76af44e7"
+  },
+  {
+   "arquivo": "06_PRODUCAO/pacote_preenchimento.json",
+   "bytes": 4876,
+   "sha256": "ec5eb133a80201d2126db1d9be3eb63e2b9e299444a0e0d8128d6254a5b25adf"
+  },
+  {
+   "arquivo": "06_PRODUCAO/filmes/HLF-S01_DIGITANDO.json",
+   "bytes": 1550,
+   "sha256": "ac943525f932ef5c273e202d1e17423c26e934ebb108a4fded5b87878cf5da55"
+  },
+  {
+   "arquivo": "06_PRODUCAO/fidelidade/F06C_SINAL_07-05.json",
+   "bytes": 29014,
+   "sha256": "c7918497ee5dbb411c4ae91b5c3ddc9b0787b9c05a50541729e6ee0998e49556"
+  },
+  {
+   "arquivo": "06_PRODUCAO/fidelidade/F06C_SINAL_08-05.json",
+   "bytes": 29014,
+   "sha256": "926e432a7d46491b66015b832b4cf10b093ed4d085f1d9910042ce7806a36b46"
+  },
+  {
+   "arquivo": "06_PRODUCAO/fidelidade/KV-45_aceso.json",
+   "bytes": 523,
+   "sha256": "2641c4a4e042478eda70fed2ca2fbb13295dd0fda4739d58fc4f001f15de8358"
+  },
+  {
+   "arquivo": "06_PRODUCAO/fidelidade/KV-45_apagado.json",
+   "bytes": 621,
+   "sha256": "34b0270c095f038d472b7092043741c0ae153b78415b4ab9b604d0f0b24a08e0"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/HOLOFOTE_PACKET.html",
+   "bytes": 205275,
+   "sha256": "8ea0c23722ef8c52275698faf7c9fc91d416c1162d4f7c2b7fb33761a4bdfaee"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/B01.jpg",
+   "bytes": 248259,
+   "sha256": "f70f5ca222311ddfeea1bb92fd2106e182a8338d477e91b8a97ce0188f8938c5"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/B02.jpg",
+   "bytes": 184556,
+   "sha256": "2aa603ed2dcdfc1d87400eeabb7e96a23d63dd5254c6424fcaad88a9b3501171"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/B03.jpg",
+   "bytes": 193619,
+   "sha256": "08b66bc8b63554b6e63363f0bf7696ff5ed96d64f6d10c5d4c1701406cd66cf2"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/B04.jpg",
+   "bytes": 200024,
+   "sha256": "23f6da81385049bafbfed4b17904f9671c5c6ea7fb78a7f5d6030467daf37f1f"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/B05.jpg",
+   "bytes": 249012,
+   "sha256": "6ca4f2108edd73ae923eff02961acf2dce92f0c4c14a50c2cf668bbb45519b7d"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/B06.jpg",
+   "bytes": 174570,
+   "sha256": "9776424aab81dfb5bcee0f23543586245733eea75c3049f1aa4ff6190f41ba1b"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/B07.jpg",
+   "bytes": 202786,
+   "sha256": "d8450974dfe6b44fbd35c7a86e68f69cbde1b7fe5fbc409b78c110bc3456441b"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/B08.jpg",
+   "bytes": 255097,
+   "sha256": "1317e8b884edea681126195663b6605f16b9e01c9fb9e694d0a5ddcc72933153"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/BASE.jpg",
+   "bytes": 123469,
+   "sha256": "2500316a90ffc4ac2806371d34fd14f442b212366a50a9880c506a7e0a7afba1"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/C03.jpg",
+   "bytes": 415568,
+   "sha256": "7732208e2aa89659eda6d5c72a204b8be143d5038cc513e4187717d38f6f0bcb"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/C07.jpg",
+   "bytes": 424530,
+   "sha256": "63b396c987d2334432bec43a15320b51bf7cc9ca87437221011e29f68210a35c"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/C09.jpg",
+   "bytes": 321315,
+   "sha256": "9942be5b1bc60e9416d17f67c4652d46c7c39b4fb4f3ff563e06f475631f7b30"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/CARTUCHO.jpg",
+   "bytes": 236994,
+   "sha256": "06bd4fa6a1fb1deca2b04e2c494c5be68dc59116d96ad6251714ebbc53a35723"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/CASTING_H01.jpg",
+   "bytes": 19825,
+   "sha256": "b16c425e94748348975794ebbe03d77c638dee4cbfd3e09b09c78bacdf5f18b7"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/CASTING_H02.jpg",
+   "bytes": 20282,
+   "sha256": "c675e52bf49c3b40afd362efcc1d4b50f2447186bc0d8f1a29e2524600f219f8"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/D01.jpg",
+   "bytes": 203569,
+   "sha256": "30bb0c3167c70d4ca9845e7bd00bfe36b87c1693a873de9d44355eca2b10335e"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/D02.jpg",
+   "bytes": 711764,
+   "sha256": "1e60c9876858e2311a7edaa4aae919fedf9820dd3aaeb40870398a5e0a3bd2de"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/KV-45.jpg",
+   "bytes": 157536,
+   "sha256": "222ef33ac1adfe1ebde223ce5dea6c7b767f99ab2c71a018afd0467b7834f6b8"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/LOGO.jpg",
+   "bytes": 144986,
+   "sha256": "3cd026e7e3372feecab789ee149d1b6bace556e4cfa8ff77fc56a261db61da7b"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/PALETA.jpg",
+   "bytes": 200625,
+   "sha256": "bbcff9e7449891d9dc6d17ddd702f2fc06f6dd2b8b1b198a41405d0c86f44d19"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/PULSEIRA.jpg",
+   "bytes": 102614,
+   "sha256": "ffb1a4a41bdd220283ab944bfebfa63e1467fe7f35d42eb8e55769f5df6d83cd"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/ROTULOS_PERSONALIZADOS.jpg",
+   "bytes": 288450,
+   "sha256": "4212ff0b96edfef0352abf435ad6f66dd4dc8d238e7afb1bd02595a4923e2364"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/ROTULO_FRENTE.jpg",
+   "bytes": 183728,
+   "sha256": "43fcdad7d83083ec04fef40987370844035ca7745ea1f098ff0d3687a10fecab"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/ROTULO_VERSO.jpg",
+   "bytes": 404857,
+   "sha256": "4afc1ccdc015c547db16901372694c1b5adb3fec710a481aa099503b71769602"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/SETLIST.jpg",
+   "bytes": 752279,
+   "sha256": "061e48b5ae43be53ef35614970d288cde9932de4287925620c7f1e2cd523dfba"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/STK.jpg",
+   "bytes": 140242,
+   "sha256": "adbd604180d5cab4536c86a34c0a01cf71b859e76ed393f842028d12fd7d7752"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/TAMPA.jpg",
+   "bytes": 162289,
+   "sha256": "d06fff1e1906e33552ec2948de84008de0b6ca5f11a9f29213272dc21841bd50"
+  },
+  {
+   "arquivo": "07_KIT_COMPLETO/figuras/TIPOGRAFIA.jpg",
+   "bytes": 185140,
+   "sha256": "20712b4114cdb087161d8b9b2826b4c963a8c98cf71500f9686d365f9ed2fde3"
+  }
+ ]
+}

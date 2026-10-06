@@ -1,0 +1,1676 @@
+{
+ "kit": "HOLOFOTE · Dia das Mães 2027",
+ "natureza": "caso demonstrativo do SOL Estúdio · marca, produto e pessoas fictícios",
+ "leia_primeiro": [
+  "00_LEIA_PRIMEIRO.txt",
+  "06_PRODUCAO/COMECE_AQUI_PROXIMO_LLM.txt",
+  "07_KIT_COMPLETO/HOLOFOTE_PACKET.html"
+ ],
+ "plataforma": {
+  "nome": "MÃE AO VIVO",
+  "colecao": "A TURNÊ",
+  "assinatura": "holofote nela.",
+  "ideia": "Ela foi a plateia de todos os seus shows. No Dia das Mães, a atração é ela.",
+  "fonte": "00_estrategia/CREATIVE_PLATFORM.md"
+ },
+ "cores": {
+  "preto": {
+   "hex": "#121014",
+   "uso": "PRETO-PALCO: stage, ink, lid, case"
+  },
+  "papel": {
+   "hex": "#FFF8EC",
+   "uso": "PAPEL-CARTAZ: poster paper, light ink, LOJA plate"
+  },
+  "amarelo": {
+   "hex": "#FFE81A",
+   "uso": "AMARELO-CARTAZ: the signal; hero AO VIVO"
+  },
+  "rosa": {
+   "hex": "#FF4FA0",
+   "uso": "ROSA-CHOQUE: CAMARIM"
+  },
+  "laranja": {
+   "hex": "#FF6A1A",
+   "uso": "LARANJA-BIS: MAIS UM!"
+  },
+  "violeta": {
+   "hex": "#8424F5",
+   "uso": "VIOLETA-UV: ACÚSTICO (never in a generated scene)"
+  },
+  "luz": {
+   "hex": "#FFE9C4",
+   "uso": "light reference only"
+  },
+  "cera": {
+   "hex": "#F3E9D6",
+   "uso": "wax, render only"
+  },
+  "croma": {
+   "hex": "#0047BB",
+   "uso": "production stand-in only, never brand"
+  }
+ },
+ "vozes": {
+  "Locutor": "Special Gothic Expanded One / SG 700, caixa-alta, tracking −10 a 0; toda linha enche a medida",
+  "Produção": "Special Gothic Condensed One, caixa-alta +80 a +120 ou minúsculas a 0; algarismos tabulares",
+  "Fã": "Shantell Sans 500, INFM 60, só minúsculas, até 6 palavras, uma por layout"
+ },
+ "regras_de_producao": [
+  "A embalagem é exata por construção: o rótulo é o arquivo-mestre mapeado em UV no 3D, nunca desenhado por um gerador.",
+  "Todo still com rótulo visível passa por _build/tools/fidelidade_uv.py: pior bloco ≥ 0,80, 5º percentil ≥ 0,95 (filmes ≥ 0,93), erro plantado tem de ser pego, cor ≤ 3,0° de matiz e saturação ≥ 0,75.",
+  "Blocos com < 2 % de tinta ou de papel (canto de letra) não entram no veredito e são contados no relatório.",
+  "Embalagem abaixo de 20 % da altura do quadro é miniatura: sai do mesmo mestre, sem alegação de fidelidade.",
+  "Nenhuma edição por IA depois da composição. Tipo sempre por código (motor _build/brand/holofote.js).",
+  "Segurança da chama (§D.8): vela acesa só sob observação de cena; nada de papel, tecido ou confete perto da chama.",
+  "Sem rótulo de IA nos anúncios (fundadora, 6 out 2026). Sem depoimento, sem frase de luto, sem promessa que o rótulo não faz.",
+  "Vídeo: quadros PNG codificados por _build/tools/codificar.py (BT.709 convertido e marcado). Som: −14 LUFS integrado, ≤ −1 dBTP."
+ ],
+ "produtos": [
+  {
+   "sku": "HLF-01-200",
+   "faixa": "01",
+   "headliner": "MÃE",
+   "show_name": "CAMARIM",
+   "descriptor": "pó de arroz e batom",
+   "opening_act": "você",
+   "net_weight": "200 g",
+   "front_lines": {
+    "L1": [
+     "HOLOFOTE APRESENTA",
+     "A TURNÊ · 2027"
+    ],
+    "L2": "MÃE",
+    "L3": "CAMARIM",
+    "L4": [
+     "DOMINGO · 09.05",
+     "abertura: você"
+    ],
+    "L5": [
+     "pó de arroz e batom",
+     "FAIXA 01"
+    ],
+    "L6": [
+     "vela aromática",
+     "PESO LÍQUIDO 200 g"
+    ]
+   },
+   "back_lines": {
+    "B1": "ELA ESTEVE EM TODAS.",
+    "B2": [
+     "TURNÊ «VOCÊ»",
+     "DESDE O PRIMEIRO DIA"
+    ],
+    "tour": [
+     [
+      "ESTREIA · O DIA EM QUE VOCÊ NASCEU",
+      "QUEM FEZ O SHOW FOI ELA"
+     ],
+     [
+      "PRÉZINHO, DIA DAS MÃES",
+      "PRIMEIRA FILA"
+     ],
+     [
+      "FESTA JUNINA",
+      "O BIGODE FOI ELA"
+     ],
+     [
+      "FEIRA DE CIÊNCIAS",
+      "O VULCÃO TAMBÉM"
+     ],
+     [
+      "PRONTO-SOCORRO, 3H",
+      "SEM INGRESSO. ENTROU."
+     ],
+     [
+      "FORMATURA",
+      "DE PÉ (COM O DEDO NA LENTE)"
+     ],
+     [
+      "PRIMEIRO APÊ",
+      "4 VIAGENS DE CARRO"
+     ],
+     [
+      "09.05.2027",
+      "A ATRAÇÃO É ELA"
+     ]
+    ],
+    "atencao": "ATENÇÃO",
+    "warnings": [
+     "• Nunca deixe a vela acesa sem supervisão.",
+     "• Mantenha fora do alcance de crianças e animais.",
+     "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+     "  sobre superfície firme e resistente ao calor.",
+     "• O copo esquenta: não toque nem mova a vela acesa."
+    ],
+    "full": "Advertências completas e modo de uso: ver embalagem externa.",
+    "odorizante": "ODORIZANTE DE AMBIENTE · Perfuma o ambiente com aroma agradável."
+   },
+   "warnings": [
+    "• Nunca deixe a vela acesa sem supervisão.",
+    "• Mantenha fora do alcance de crianças e animais.",
+    "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+    "  sobre superfície firme e resistente ao calor.",
+    "• O copo esquenta: não toque nem mova a vela acesa."
+   ],
+   "master_hash": "470be87de2fa548babdd68dedd78a90fc17493eb754e1f6867b71e9b98945309",
+   "mestre": "02_PRODUTO/rotulos/HLF-01_ROTULO_wrap.png",
+   "copy_json": "02_PRODUTO/rotulos/HLF-01_label_copy.json"
+  },
+  {
+   "sku": "HLF-02-080",
+   "faixa": "02",
+   "headliner": "MÃE",
+   "show_name": "AO VIVO",
+   "descriptor": "rosas no palco, luz quente",
+   "opening_act": "você",
+   "net_weight": "80 g",
+   "front_lines": {
+    "L1": [
+     "HOLOFOTE APRESENTA",
+     "O SINGLE"
+    ],
+    "L2": "MÃE",
+    "L3": "AO VIVO",
+    "L4": [
+     "DOMINGO · 09.05",
+     "abertura: você"
+    ],
+    "L5": [
+     "rosas no palco, luz quente",
+     "FAIXA 02"
+    ],
+    "L6": [
+     "vela aromática",
+     "PESO LÍQUIDO 80 g"
+    ]
+   },
+   "back_lines": {
+    "B1": "ELA ESTEVE EM TODAS.",
+    "tour": [
+     [
+      "PRÉZINHO, DIA DAS MÃES",
+      "PRIMEIRA FILA"
+     ],
+     [
+      "PRONTO-SOCORRO, 3H",
+      "SEM INGRESSO. ENTROU."
+     ],
+     [
+      "09.05.2027",
+      "A ATRAÇÃO É ELA"
+     ]
+    ],
+    "atencao": "ATENÇÃO",
+    "warnings": [
+     "• Nunca deixe a vela acesa sem supervisão.",
+     "• Mantenha fora do alcance de crianças e animais.",
+     "• Acenda longe de cortinas, tecidos, papéis",
+     "  e correntes de ar, sobre superfície firme",
+     "  e resistente ao calor.",
+     "• O copo esquenta: não toque nem mova",
+     "  a vela acesa."
+    ],
+    "full": "Advertências completas e modo de uso: ver embalagem externa.",
+    "odorizante": [
+     "ODORIZANTE DE AMBIENTE",
+     "Perfuma o ambiente com aroma agradável."
+    ]
+   },
+   "warnings": [
+    "• Nunca deixe a vela acesa sem supervisão.",
+    "• Mantenha fora do alcance de crianças e animais.",
+    "• Acenda longe de cortinas, tecidos, papéis",
+    "  e correntes de ar, sobre superfície firme",
+    "  e resistente ao calor.",
+    "• O copo esquenta: não toque nem mova",
+    "  a vela acesa."
+   ],
+   "master_hash": "0d55471a5b7b6ccd5c806afb8443b4dd46fee61afd454073e89f84cb320875e4",
+   "mestre": "02_PRODUTO/rotulos/HLF-02-080_ROTULO_wrap.png",
+   "copy_json": "02_PRODUTO/rotulos/HLF-02-080_label_copy.json"
+  },
+  {
+   "sku": "HLF-02-200",
+   "faixa": "02",
+   "headliner": "MÃE",
+   "show_name": "AO VIVO",
+   "descriptor": "rosas no palco, luz quente",
+   "opening_act": "você",
+   "net_weight": "200 g",
+   "front_lines": {
+    "L1": [
+     "HOLOFOTE APRESENTA",
+     "A TURNÊ · 2027"
+    ],
+    "L2": "MÃE",
+    "L3": "AO VIVO",
+    "L4": [
+     "DOMINGO · 09.05",
+     "abertura: você"
+    ],
+    "L5": [
+     "rosas no palco, luz quente",
+     "FAIXA 02"
+    ],
+    "L6": [
+     "vela aromática",
+     "PESO LÍQUIDO 200 g"
+    ]
+   },
+   "back_lines": {
+    "B1": "ELA ESTEVE EM TODAS.",
+    "B2": [
+     "TURNÊ «VOCÊ»",
+     "DESDE O PRIMEIRO DIA"
+    ],
+    "tour": [
+     [
+      "ESTREIA · O DIA EM QUE VOCÊ NASCEU",
+      "QUEM FEZ O SHOW FOI ELA"
+     ],
+     [
+      "PRÉZINHO, DIA DAS MÃES",
+      "PRIMEIRA FILA"
+     ],
+     [
+      "FESTA JUNINA",
+      "O BIGODE FOI ELA"
+     ],
+     [
+      "FEIRA DE CIÊNCIAS",
+      "O VULCÃO TAMBÉM"
+     ],
+     [
+      "PRONTO-SOCORRO, 3H",
+      "SEM INGRESSO. ENTROU."
+     ],
+     [
+      "FORMATURA",
+      "DE PÉ (COM O DEDO NA LENTE)"
+     ],
+     [
+      "PRIMEIRO APÊ",
+      "4 VIAGENS DE CARRO"
+     ],
+     [
+      "09.05.2027",
+      "A ATRAÇÃO É ELA"
+     ]
+    ],
+    "atencao": "ATENÇÃO",
+    "warnings": [
+     "• Nunca deixe a vela acesa sem supervisão.",
+     "• Mantenha fora do alcance de crianças e animais.",
+     "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+     "  sobre superfície firme e resistente ao calor.",
+     "• O copo esquenta: não toque nem mova a vela acesa."
+    ],
+    "full": "Advertências completas e modo de uso: ver embalagem externa.",
+    "odorizante": "ODORIZANTE DE AMBIENTE · Perfuma o ambiente com aroma agradável."
+   },
+   "warnings": [
+    "• Nunca deixe a vela acesa sem supervisão.",
+    "• Mantenha fora do alcance de crianças e animais.",
+    "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+    "  sobre superfície firme e resistente ao calor.",
+    "• O copo esquenta: não toque nem mova a vela acesa."
+   ],
+   "master_hash": "0cb52f95987a88b86d501dac48e5ba6d918d38d42684cad9ebb1da551d20c0c4",
+   "mestre": "02_PRODUTO/rotulos/HLF-02_ROTULO_wrap.png",
+   "copy_json": "02_PRODUTO/rotulos/HLF-02_label_copy.json"
+  },
+  {
+   "sku": "HLF-03-200",
+   "faixa": "03",
+   "headliner": "MÃE",
+   "show_name": "MAIS UM!",
+   "descriptor": "laranja, cacau e mais um pouco",
+   "opening_act": "você",
+   "net_weight": "200 g",
+   "front_lines": {
+    "L1": [
+     "HOLOFOTE APRESENTA",
+     "A TURNÊ · 2027"
+    ],
+    "L2": "MÃE",
+    "L3": "MAIS UM!",
+    "L4": [
+     "DOMINGO · 09.05",
+     "abertura: você"
+    ],
+    "L5": [
+     "laranja, cacau e mais um pouco",
+     "FAIXA 03"
+    ],
+    "L6": [
+     "vela aromática",
+     "PESO LÍQUIDO 200 g"
+    ]
+   },
+   "back_lines": {
+    "B1": "ELA ESTEVE EM TODAS.",
+    "B2": [
+     "TURNÊ «VOCÊ»",
+     "DESDE O PRIMEIRO DIA"
+    ],
+    "tour": [
+     [
+      "ESTREIA · O DIA EM QUE VOCÊ NASCEU",
+      "QUEM FEZ O SHOW FOI ELA"
+     ],
+     [
+      "PRÉZINHO, DIA DAS MÃES",
+      "PRIMEIRA FILA"
+     ],
+     [
+      "FESTA JUNINA",
+      "O BIGODE FOI ELA"
+     ],
+     [
+      "FEIRA DE CIÊNCIAS",
+      "O VULCÃO TAMBÉM"
+     ],
+     [
+      "PRONTO-SOCORRO, 3H",
+      "SEM INGRESSO. ENTROU."
+     ],
+     [
+      "FORMATURA",
+      "DE PÉ (COM O DEDO NA LENTE)"
+     ],
+     [
+      "PRIMEIRO APÊ",
+      "4 VIAGENS DE CARRO"
+     ],
+     [
+      "09.05.2027",
+      "A ATRAÇÃO É ELA"
+     ]
+    ],
+    "atencao": "ATENÇÃO",
+    "warnings": [
+     "• Nunca deixe a vela acesa sem supervisão.",
+     "• Mantenha fora do alcance de crianças e animais.",
+     "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+     "  sobre superfície firme e resistente ao calor.",
+     "• O copo esquenta: não toque nem mova a vela acesa."
+    ],
+    "full": "Advertências completas e modo de uso: ver embalagem externa.",
+    "odorizante": "ODORIZANTE DE AMBIENTE · Perfuma o ambiente com aroma agradável."
+   },
+   "warnings": [
+    "• Nunca deixe a vela acesa sem supervisão.",
+    "• Mantenha fora do alcance de crianças e animais.",
+    "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+    "  sobre superfície firme e resistente ao calor.",
+    "• O copo esquenta: não toque nem mova a vela acesa."
+   ],
+   "master_hash": "36d8639e5ccd7faa55122d34f24d7711d5a915cc3b26cd6da4f1d96e1b8c1471",
+   "mestre": "02_PRODUTO/rotulos/HLF-03_ROTULO_wrap.png",
+   "copy_json": "02_PRODUTO/rotulos/HLF-03_label_copy.json"
+  },
+  {
+   "sku": "HLF-04-200",
+   "faixa": "04",
+   "headliner": "MÃE",
+   "show_name": "ACÚSTICO",
+   "descriptor": "voz e violão, luz baixa",
+   "opening_act": "você",
+   "net_weight": "200 g",
+   "front_lines": {
+    "L1": [
+     "HOLOFOTE APRESENTA",
+     "A TURNÊ · 2027"
+    ],
+    "L2": "MÃE",
+    "L3": "ACÚSTICO",
+    "L4": [
+     "DOMINGO · 09.05",
+     "abertura: você"
+    ],
+    "L5": [
+     "voz e violão, luz baixa",
+     "FAIXA 04"
+    ],
+    "L6": [
+     "vela aromática",
+     "PESO LÍQUIDO 200 g"
+    ]
+   },
+   "back_lines": {
+    "B1": "ELA ESTEVE EM TODAS.",
+    "B2": [
+     "TURNÊ «VOCÊ»",
+     "DESDE O PRIMEIRO DIA"
+    ],
+    "tour": [
+     [
+      "ESTREIA · O DIA EM QUE VOCÊ NASCEU",
+      "QUEM FEZ O SHOW FOI ELA"
+     ],
+     [
+      "PRÉZINHO, DIA DAS MÃES",
+      "PRIMEIRA FILA"
+     ],
+     [
+      "FESTA JUNINA",
+      "O BIGODE FOI ELA"
+     ],
+     [
+      "FEIRA DE CIÊNCIAS",
+      "O VULCÃO TAMBÉM"
+     ],
+     [
+      "PRONTO-SOCORRO, 3H",
+      "SEM INGRESSO. ENTROU."
+     ],
+     [
+      "FORMATURA",
+      "DE PÉ (COM O DEDO NA LENTE)"
+     ],
+     [
+      "PRIMEIRO APÊ",
+      "4 VIAGENS DE CARRO"
+     ],
+     [
+      "09.05.2027",
+      "A ATRAÇÃO É ELA"
+     ]
+    ],
+    "atencao": "ATENÇÃO",
+    "warnings": [
+     "• Nunca deixe a vela acesa sem supervisão.",
+     "• Mantenha fora do alcance de crianças e animais.",
+     "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+     "  sobre superfície firme e resistente ao calor.",
+     "• O copo esquenta: não toque nem mova a vela acesa."
+    ],
+    "full": "Advertências completas e modo de uso: ver embalagem externa.",
+    "odorizante": "ODORIZANTE DE AMBIENTE · Perfuma o ambiente com aroma agradável."
+   },
+   "warnings": [
+    "• Nunca deixe a vela acesa sem supervisão.",
+    "• Mantenha fora do alcance de crianças e animais.",
+    "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+    "  sobre superfície firme e resistente ao calor.",
+    "• O copo esquenta: não toque nem mova a vela acesa."
+   ],
+   "master_hash": "6236f6d0091488dddac9f52a22448f8d1eeecc48e837a20c019ca9de42092a46",
+   "mestre": "02_PRODUTO/rotulos/HLF-04_ROTULO_wrap.png",
+   "copy_json": "02_PRODUTO/rotulos/HLF-04_label_copy.json"
+  },
+  {
+   "sku": "HLF-CASE-01",
+   "faixa": "01",
+   "headliner": "DONA CIDA",
+   "show_name": "CAMARIM",
+   "descriptor": "pó de arroz e batom",
+   "opening_act": "você",
+   "net_weight": "200 g",
+   "front_lines": {
+    "L1": [
+     "HOLOFOTE APRESENTA",
+     "A TURNÊ · 2027"
+    ],
+    "L2": "DONA CIDA",
+    "L3": "CAMARIM",
+    "L4": [
+     "DOMINGO · 09.05",
+     "abertura: você"
+    ],
+    "L5": [
+     "pó de arroz e batom",
+     "FAIXA 01"
+    ],
+    "L6": [
+     "vela aromática",
+     "PESO LÍQUIDO 200 g"
+    ]
+   },
+   "back_lines": {
+    "B1": "ELA ESTEVE EM TODAS.",
+    "B2": [
+     "TURNÊ «VOCÊ»",
+     "DESDE O PRIMEIRO DIA"
+    ],
+    "tour": [
+     [
+      "ESTREIA · 21.11.1999 · 06:40",
+      "QUEM FEZ O SHOW FOI ELA"
+     ],
+     [
+      "PRÉZINHO, DIA DAS MÃES",
+      "PRIMEIRA FILA"
+     ],
+     [
+      "FESTA JUNINA",
+      "O BIGODE FOI ELA"
+     ],
+     [
+      "FEIRA DE CIÊNCIAS",
+      "O VULCÃO TAMBÉM"
+     ],
+     [
+      "PRONTO-SOCORRO, 3H",
+      "SEM INGRESSO. ENTROU."
+     ],
+     [
+      "FORMATURA",
+      "DE PÉ (COM O DEDO NA LENTE)"
+     ],
+     [
+      "PRIMEIRO APÊ",
+      "4 VIAGENS DE CARRO"
+     ],
+     [
+      "09.05.2027",
+      "A ATRAÇÃO É ELA"
+     ]
+    ],
+    "atencao": "ATENÇÃO",
+    "warnings": [
+     "• Nunca deixe a vela acesa sem supervisão.",
+     "• Mantenha fora do alcance de crianças e animais.",
+     "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+     "  sobre superfície firme e resistente ao calor.",
+     "• O copo esquenta: não toque nem mova a vela acesa."
+    ],
+    "full": "Advertências completas e modo de uso: ver embalagem externa.",
+    "odorizante": "ODORIZANTE DE AMBIENTE · Perfuma o ambiente com aroma agradável."
+   },
+   "warnings": [
+    "• Nunca deixe a vela acesa sem supervisão.",
+    "• Mantenha fora do alcance de crianças e animais.",
+    "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+    "  sobre superfície firme e resistente ao calor.",
+    "• O copo esquenta: não toque nem mova a vela acesa."
+   ],
+   "master_hash": "485e7c46502ad6a0ddf72fba5cd3f4527d1d637ef1da03a21e54a9e253c737e5",
+   "mestre": "02_PRODUTO/rotulos/HLF-CASE-01_DONA-CIDA_ROTULO_wrap.png",
+   "copy_json": "02_PRODUTO/rotulos/HLF-CASE-01_DONA-CIDA_label_copy.json"
+  },
+  {
+   "sku": "HLF-CASE-02",
+   "faixa": "02",
+   "headliner": "MÃE ♥",
+   "show_name": "AO VIVO",
+   "descriptor": "rosas no palco, luz quente",
+   "opening_act": "você",
+   "net_weight": "200 g",
+   "front_lines": {
+    "L1": [
+     "HOLOFOTE APRESENTA",
+     "A TURNÊ · 2027"
+    ],
+    "L2": "MÃE ♥",
+    "L3": "AO VIVO",
+    "L4": [
+     "DOMINGO · 09.05",
+     "abertura: você"
+    ],
+    "L5": [
+     "rosas no palco, luz quente",
+     "FAIXA 02"
+    ],
+    "L6": [
+     "vela aromática",
+     "PESO LÍQUIDO 200 g"
+    ]
+   },
+   "back_lines": {
+    "B1": "ELA ESTEVE EM TODAS.",
+    "B2": [
+     "TURNÊ «VOCÊ»",
+     "DESDE O PRIMEIRO DIA"
+    ],
+    "tour": [
+     [
+      "ESTREIA · 03.08.2003 · 14:32",
+      "QUEM FEZ O SHOW FOI ELA"
+     ],
+     [
+      "PRÉZINHO, DIA DAS MÃES",
+      "PRIMEIRA FILA"
+     ],
+     [
+      "FESTA JUNINA",
+      "O BIGODE FOI ELA"
+     ],
+     [
+      "FEIRA DE CIÊNCIAS",
+      "O VULCÃO TAMBÉM"
+     ],
+     [
+      "PRONTO-SOCORRO, 3H",
+      "SEM INGRESSO. ENTROU."
+     ],
+     [
+      "FORMATURA",
+      "DE PÉ (COM O DEDO NA LENTE)"
+     ],
+     [
+      "PRIMEIRO APÊ",
+      "4 VIAGENS DE CARRO"
+     ],
+     [
+      "09.05.2027",
+      "A ATRAÇÃO É ELA"
+     ]
+    ],
+    "atencao": "ATENÇÃO",
+    "warnings": [
+     "• Nunca deixe a vela acesa sem supervisão.",
+     "• Mantenha fora do alcance de crianças e animais.",
+     "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+     "  sobre superfície firme e resistente ao calor.",
+     "• O copo esquenta: não toque nem mova a vela acesa."
+    ],
+    "full": "Advertências completas e modo de uso: ver embalagem externa.",
+    "odorizante": "ODORIZANTE DE AMBIENTE · Perfuma o ambiente com aroma agradável."
+   },
+   "warnings": [
+    "• Nunca deixe a vela acesa sem supervisão.",
+    "• Mantenha fora do alcance de crianças e animais.",
+    "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+    "  sobre superfície firme e resistente ao calor.",
+    "• O copo esquenta: não toque nem mova a vela acesa."
+   ],
+   "master_hash": "781c537d1dc9ec7826c872403d9312012da3ee2b0db501c4d255e888b106051b",
+   "mestre": "02_PRODUTO/rotulos/HLF-CASE-02_MAE-CORACAO_ROTULO_wrap.png",
+   "copy_json": "02_PRODUTO/rotulos/HLF-CASE-02_MAE-CORACAO_label_copy.json"
+  },
+  {
+   "sku": "HLF-CASE-03",
+   "faixa": "03",
+   "headliner": "MAINHA",
+   "show_name": "MAIS UM!",
+   "descriptor": "laranja, cacau e mais um pouco",
+   "opening_act": "você",
+   "net_weight": "200 g",
+   "front_lines": {
+    "L1": [
+     "HOLOFOTE APRESENTA",
+     "A TURNÊ · 2027"
+    ],
+    "L2": "MAINHA",
+    "L3": "MAIS UM!",
+    "L4": [
+     "DOMINGO · 09.05",
+     "abertura: você"
+    ],
+    "L5": [
+     "laranja, cacau e mais um pouco",
+     "FAIXA 03"
+    ],
+    "L6": [
+     "vela aromática",
+     "PESO LÍQUIDO 200 g"
+    ]
+   },
+   "back_lines": {
+    "B1": "ELA ESTEVE EM TODAS.",
+    "B2": [
+     "TURNÊ «VOCÊ»",
+     "DESDE O PRIMEIRO DIA"
+    ],
+    "tour": [
+     [
+      "ESTREIA · 14.02.2005",
+      "QUEM FEZ O SHOW FOI ELA"
+     ],
+     [
+      "PRÉZINHO, DIA DAS MÃES",
+      "PRIMEIRA FILA"
+     ],
+     [
+      "FESTA JUNINA",
+      "O BIGODE FOI ELA"
+     ],
+     [
+      "FEIRA DE CIÊNCIAS",
+      "O VULCÃO TAMBÉM"
+     ],
+     [
+      "PRONTO-SOCORRO, 3H",
+      "SEM INGRESSO. ENTROU."
+     ],
+     [
+      "FORMATURA",
+      "DE PÉ (COM O DEDO NA LENTE)"
+     ],
+     [
+      "PRIMEIRO APÊ",
+      "4 VIAGENS DE CARRO"
+     ],
+     [
+      "09.05.2027",
+      "A ATRAÇÃO É ELA"
+     ]
+    ],
+    "atencao": "ATENÇÃO",
+    "warnings": [
+     "• Nunca deixe a vela acesa sem supervisão.",
+     "• Mantenha fora do alcance de crianças e animais.",
+     "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+     "  sobre superfície firme e resistente ao calor.",
+     "• O copo esquenta: não toque nem mova a vela acesa."
+    ],
+    "full": "Advertências completas e modo de uso: ver embalagem externa.",
+    "odorizante": "ODORIZANTE DE AMBIENTE · Perfuma o ambiente com aroma agradável."
+   },
+   "warnings": [
+    "• Nunca deixe a vela acesa sem supervisão.",
+    "• Mantenha fora do alcance de crianças e animais.",
+    "• Acenda longe de cortinas, tecidos, papéis e correntes de ar,",
+    "  sobre superfície firme e resistente ao calor.",
+    "• O copo esquenta: não toque nem mova a vela acesa."
+   ],
+   "master_hash": "123e46239d7785c603ecf6b6035e70f59c28b86e82e58d59b7016adae1de3ba1",
+   "mestre": "02_PRODUTO/rotulos/HLF-CASE-03_MAINHA_ROTULO_wrap.png",
+   "copy_json": "02_PRODUTO/rotulos/HLF-CASE-03_MAINHA_label_copy.json"
+  }
+ ],
+ "pecas": [
+  {
+   "id": "KV-01",
+   "peca": "KV-01 (4 formatos) e KV-45 (4 placas)",
+   "formato": "",
+   "data": "",
+   "descricao": "",
+   "texto_exato": "",
+   "origem": "local",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "KV-45",
+   "peca": "KV-45",
+   "formato": "",
+   "data": "",
+   "descricao": "",
+   "texto_exato": "",
+   "origem": "local",
+   "arquivos": "03_LANCAMENTO/KV/KV-45_aceso_A-ATRACAO-E-ELA.png | 03_LANCAMENTO/KV/KV-45_aceso_SUA-VEZ.png | 03_LANCAMENTO/KV/KV-45_aceso_sem-titulo.png | 03_LANCAMENTO/KV/KV-45_apagado_A-ATRACAO-E-ELA.png | 03_LANCAMENTO/KV/KV-45_apagado_SUA-VEZ.png | 03_LANCAMENTO/KV/KV-45_apagado_sem-titulo.png | 02_PRODUTO/renders/KV-45_aceso.png | 02_PRODUTO/renders/KV-45_apagado.png",
+   "render_s": "KV-45_aceso 390 s (128 amostras) | KV-45_apagado 309 s (96 amostras)",
+   "rotulo": "KV-45_aceso: pior 0,926 · p5 0,968 · PASSA | KV-45_apagado: pior 0,931 · p5 0,968 · PASSA"
+  },
+  {
+   "id": "C01",
+   "peca": "C01–C10",
+   "formato": "4:5",
+   "data": "",
+   "descricao": "Muro de reboco no flash de O MURO, com os nossos cartazes lambe em grade 4 × 3: MÃE AO VIVO · 09.05 nas quatro cores, dois rasgados mostrando camadas antigas (MAIS UM!, CAMARIM, meio ACÚSTICO) e um escorrido de cola seca. Num parapeito de concreto a ⅓ da altura, as quatro velas apagadas, tampadas, 01–02–03–04.",
+   "texto_exato": "Composto como mais um cartaz no muro: MÃE AO VIVO. 09.05. INGRESSOS COM VOCÊ.",
+   "origem": "local (Blender + tipo por código)",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "C02",
+   "peca": "C02 · A PRIMEIRA FILA",
+   "formato": "4:5",
+   "data": "",
+   "descricao": "Câmera no fundo do palco, atrás da vela, olhando para um auditório de escola vazio. O verso do copo para a câmera, nítido, com a linha ESTREIA de exemplo 03.08.2003 · 14:32; acesa, a 60 cm da beira do palco. Adiante, uma fileira de oito cadeiras monobloco brancas em luz fraca, a ≥2 m; uma bolsa de mulher guarda a cadeira do meio. Ninguém. Um spot duro de cima e de trás (elevação 60°) no verso; luzes da plateia a 5%.",
+   "texto_exato": "A vida toda guardando lugar na primeira fila. / Esse ano, o palco é dela.",
+   "origem": "local (Blender + tipo por código)",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "C03",
+   "peca": "C03 · O PIOR SHOW (miniatura)",
+   "formato": "9:16",
+   "data": "",
+   "descricao": "Papel lambe amarelo sangrado, tipo de madeira preto empilhado na largura toda: ELA / APLAUDIU / DE PÉ / O SEU / PIOR / SHOW. Anotação em Shantell ao lado de PIOR, (girassol, 2007), com seta. No terço de baixo, um círculo preto de Ø 360 px com a vela acesa (miniatura, sem alegação de fidelidade).",
+   "texto_exato": "Sua vez. holofote nela.",
+   "origem": "local (Blender + tipo por código)",
+   "arquivos": "03_LANCAMENTO/C/C03_O-PIOR-SHOW.png",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "C04",
+   "peca": "C04 · A DISCOGRAFIA",
+   "formato": "4:5",
+   "data": "",
+   "descricao": "As quatro velas acesas em fila no palco preto, cada uma na sua poça branca (quatro spots, para luz colorida nunca falsear revestimento). Setlist colada no chão 60 cm à frente, fora das poças.",
+   "texto_exato": "A DISCOGRAFIA DELA. / (até agora.); na setlist, em Shantell: 1. camarim · 2. ao vivo · 3. mais um! · 4. acústico",
+   "origem": "local (Blender + tipo por código)",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "C05",
+   "peca": "C05 · O CASE",
+   "formato": "1:1 + 9:16",
+   "data": "",
+   "descricao": "De cima a 70° sobre preto. O CASE aberto, tampa em pé. O espelho reflete só o teto escuro e uma lâmpada de serviço nua: nunca um rosto, nunca a embalagem. Na espuma, AO VIVO tampada; a setlist saindo da fenda; a pulseira passada pelo fecho com o selo pode rasgar. legível.",
+   "texto_exato": "Mãe não tem camarim. Agora tem. · O CASE · com o nome dela · R$179",
+   "origem": "local (Blender + tipo por código)",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "C06",
+   "peca": "C06 · O MENOR HOLOFOTE",
+   "formato": "4:5",
+   "data": "",
+   "descricao": "O quadro do blackout: vela acesa no preto total, sem spot, a chama como única luz. Rótulo iluminado só pela chama (conferido no passe albedo). Vidro a 30% da altura.",
+   "texto_exato": "O MENOR HOLOFOTE DO BRASIL. / Pra maior atração.",
+   "origem": "local (Blender + tipo por código)",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "C07",
+   "peca": "C07 · PIX (só 6 mai)",
+   "formato": "9:16",
+   "data": "",
+   "descricao": "Cartaz lambe amarelo de O MURO: PIX NÃO TEM CHEIRO. em tipo de madeira na largura toda; abaixo, uma miniatura do KV e MÃE AO VIVO · DOMINGO 09.05. Sem marca Pix.",
+   "texto_exato": "Pix não tem cheiro.",
+   "origem": "local (Blender + tipo por código)",
+   "arquivos": "03_LANCAMENTO/C/C07_PIX.png",
+   "render_s": "",
+   "rotulo": "não se aplica"
+  },
+  {
+   "id": "C08",
+   "peca": "C08 · NOVA TEMPORADA",
+   "formato": "4:5",
+   "data": "",
+   "descricao": "O PALCO: o copo limpo e vazio (apagado) no X, com a cápsula de refil preta em pé ao lado, selo para cima.",
+   "texto_exato": "O copo fica. A turnê continua. · refil 200 g · R$79",
+   "origem": "local (Blender + tipo por código)",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "C09",
+   "peca": "C09 · O CARTAZ DELA",
+   "formato": "9:16",
+   "data": "",
+   "descricao": "Amostra do gerador de cartaz: DONA CIDA AO VIVO em rosa, com seis datas de turnê e textura O LAMBE.",
+   "texto_exato": "faz o cartaz dela. · holofote.exemplo/cartaz",
+   "origem": "local (Blender + tipo por código)",
+   "arquivos": "03_LANCAMENTO/C/C09_O-CARTAZ-DELA_DONA-CIDA.png",
+   "render_s": "",
+   "rotulo": "não se aplica"
+  },
+  {
+   "id": "C10",
+   "peca": "C10 · SALVA COMO",
+   "formato": "4:5",
+   "data": "",
+   "descricao": "Flash de O MURO no reboco. Três copos personalizados num parapeito, apagados: MÃE ♥ (amarelo), DONA CIDA (rosa, passo 4), MAINHA (laranja, passo 3).",
+   "texto_exato": "comenta como ela tá salva no seu celular. a gente bota no cartaz.",
+   "origem": "local (Blender + tipo por código)",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "B01",
+   "peca": "B01–B08 (BOLETIM)",
+   "formato": "1:1 + 9:16",
+   "data": "02.05 (dom)",
+   "descricao": "Cartão lambe na cor da faixa do dia: escalação MÃE AO VIVO · DOMINGO 09.05, 06:03 pequeno no canto, a frase do dia, o wordmark. Download livre + pacote de figurinhas. Postado às 06:03, de 2 a 9 mai.",
+   "texto_exato": "bom dia. faltam 7 dias pro show. pode encaminhar.",
+   "origem": "local (Blender + tipo por código)",
+   "arquivos": "03_LANCAMENTO/B/B01_BOLETIM_0205_1x1.png | 03_LANCAMENTO/B/B01_BOLETIM_0205_9x16.png",
+   "render_s": "",
+   "rotulo": "não se aplica"
+  },
+  {
+   "id": "B02",
+   "peca": "B02",
+   "formato": "1:1 + 9:16",
+   "data": "03.05",
+   "descricao": "",
+   "texto_exato": "bom dia. a atração já confirmou presença. e você?",
+   "origem": "local",
+   "arquivos": "03_LANCAMENTO/B/B02_BOLETIM_0305_1x1.png | 03_LANCAMENTO/B/B02_BOLETIM_0305_9x16.png",
+   "render_s": "",
+   "rotulo": "não se aplica"
+  },
+  {
+   "id": "B03",
+   "peca": "B03",
+   "formato": "1:1 + 9:16",
+   "data": "04.05",
+   "descricao": "",
+   "texto_exato": "bom dia. leva um casaquinho. e um ingresso.",
+   "origem": "local",
+   "arquivos": "03_LANCAMENTO/B/B03_BOLETIM_0405_1x1.png | 03_LANCAMENTO/B/B03_BOLETIM_0405_9x16.png",
+   "render_s": "",
+   "rotulo": "não se aplica"
+  },
+  {
+   "id": "B04",
+   "peca": "B04",
+   "formato": "1:1 + 9:16",
+   "data": "05.05",
+   "descricao": "",
+   "texto_exato": "bom dia. ingressos com os filhos. (os filhos sabem quem são.)",
+   "origem": "local",
+   "arquivos": "03_LANCAMENTO/B/B04_BOLETIM_0505_1x1.png | 03_LANCAMENTO/B/B04_BOLETIM_0505_9x16.png",
+   "render_s": "",
+   "rotulo": "não se aplica"
+  },
+  {
+   "id": "B05",
+   "peca": "B05",
+   "formato": "1:1 + 9:16",
+   "data": "06.05",
+   "descricao": "",
+   "texto_exato": "bom dia. faltam 3 dias. vou contar até três.",
+   "origem": "local",
+   "arquivos": "03_LANCAMENTO/B/B05_BOLETIM_0605_1x1.png | 03_LANCAMENTO/B/B05_BOLETIM_0605_9x16.png",
+   "render_s": "",
+   "rotulo": "não se aplica"
+  },
+  {
+   "id": "B06",
+   "peca": "B06",
+   "formato": "1:1 + 9:16",
+   "data": "07.05",
+   "descricao": "",
+   "texto_exato": "bom dia. primeiro sinal.",
+   "origem": "local",
+   "arquivos": "03_LANCAMENTO/B/B06_BOLETIM_0705_1x1.png | 03_LANCAMENTO/B/B06_BOLETIM_0705_9x16.png",
+   "render_s": "",
+   "rotulo": "não se aplica"
+  },
+  {
+   "id": "B07",
+   "peca": "B07",
+   "formato": "1:1 + 9:16",
+   "data": "08.05",
+   "descricao": "",
+   "texto_exato": "bom dia. segundo sinal. visualizou? então.",
+   "origem": "local",
+   "arquivos": "03_LANCAMENTO/B/B07_BOLETIM_0805_1x1.png | 03_LANCAMENTO/B/B07_BOLETIM_0805_9x16.png",
+   "render_s": "",
+   "rotulo": "não se aplica"
+  },
+  {
+   "id": "B08",
+   "peca": "B08",
+   "formato": "1:1 + 9:16",
+   "data": "09.05",
+   "descricao": "",
+   "texto_exato": "bom dia. terceiro sinal. o show é hoje.",
+   "origem": "local",
+   "arquivos": "03_LANCAMENTO/B/B08_BOLETIM_0905_1x1.png | 03_LANCAMENTO/B/B08_BOLETIM_0905_9x16.png",
+   "render_s": "",
+   "rotulo": "não se aplica"
+  },
+  {
+   "id": "L01",
+   "peca": "L01–L07 (loja)",
+   "formato": "",
+   "data": "",
+   "descricao": "85 mm, na altura do rótulo (52 mm), inclinação 0°, yaw 20° (¾ frente). AO VIVO apagada, com a tampa encostada à direita mostrando o X e ela fica aqui.",
+   "texto_exato": "",
+   "origem": "local",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "L02",
+   "peca": "L02 · VERSO",
+   "formato": "",
+   "data": "",
+   "descricao": "O verso de frente (yaw 180°), sem tampa: ELA ESTEVE EM TODAS. O texto da página avisa que o verso é o ponto.",
+   "texto_exato": "",
+   "origem": "local",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "L03",
+   "peca": "L03 · A BASE",
+   "formato": "",
+   "data": "",
+   "descricao": "O copo deitado, base para a câmera, girado 15°, com luz rasante da esquerda para o relevo PRECISAVA. ler. Etiqueta de lote legível.",
+   "texto_exato": "",
+   "origem": "local",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "L04",
+   "peca": "L04 · O CASE ABERTO",
+   "formato": "",
+   "data": "",
+   "descricao": "De cima a 70°: case aberto com o espelho, copo na espuma, setlist aberta em leque mostrando os ingressos, pulseira com selo.",
+   "texto_exato": "",
+   "origem": "local",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "L05",
+   "peca": "L05 · A TAMPA-PALCO",
+   "formato": "",
+   "data": "",
+   "descricao": "A vela acesa em pé sobre a tampa virada, no fundo infinito; as pontas do X aparecem em volta da base; nada a menos de 30 cm. ¾ frente, 25° para baixo.",
+   "texto_exato": "",
+   "origem": "local",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "L06",
+   "peca": "L06 · A TURNÊ",
+   "formato": "",
+   "data": "",
+   "descricao": "Os quatro copos de 200 g tampados, mais O SINGLE (em escala real) e uma cápsula NOVA TEMPORADA, em fila, apagados. O único quadro onde as quatro cores se encontram.",
+   "texto_exato": "",
+   "origem": "local",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "L07",
+   "peca": "L07 · NOVA TEMPORADA",
+   "formato": "",
+   "data": "",
+   "descricao": "O copo limpo e vazio, a cápsula ao lado e o selo meio aberto.",
+   "texto_exato": "",
+   "origem": "local",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "D01",
+   "peca": "D01, D02, STK ×8, S01",
+   "formato": "9:16 (gerador)",
+   "data": "",
+   "descricao": "A carteirinha de fã-clube dos anos 80 como peça digital: cantos arredondados, janela de foto, faixa de brilho da plastificação.",
+   "texto_exato": "FÃ-CLUBE OFICIAL · [HEADLINER] · SÓCIO Nº 0001 · Membro desde: hoje · Atraso: [anos] anos · Validade: vitalícia · Benefício: acesso total (sempre teve).",
+   "origem": "local (Blender + tipo por código)",
+   "arquivos": "03_LANCAMENTO/D/D01_A-CARTEIRINHA_9x16.png",
+   "render_s": "",
+   "rotulo": "não se aplica"
+  },
+  {
+   "id": "D02",
+   "peca": "D02 · O INGRESSO",
+   "formato": "1080 × 1350",
+   "data": "",
+   "descricao": "A confirmação do pedido, por e-mail e link (sem marca de app de mensagens). O canhoto aparece “rasgado” depois da entrega.",
+   "texto_exato": "INGRESSO · MÃE AO VIVO · SETOR: PRIMEIRA FILA · ASSENTO: O DE SEMPRE · DOMINGO 09.05",
+   "origem": "local (Blender + tipo por código)",
+   "arquivos": "03_LANCAMENTO/D/D02_O-INGRESSO_inteiro.png | 03_LANCAMENTO/D/D02_O-INGRESSO_rasgado.png",
+   "render_s": "",
+   "rotulo": "não se aplica"
+  },
+  {
+   "id": "STK",
+   "peca": "STK",
+   "formato": "512 × 512 WebP ×8",
+   "data": "",
+   "descricao": "Só o nosso tipo e os nossos desenhos.",
+   "texto_exato": "ACESSO TOTAL · MAIS UM! · abertura: você · não precisava. · PRECISAVA. · equipe técnica · terceiro sinal · ela fica aqui.",
+   "origem": "local (Blender + tipo por código)",
+   "arquivos": "03_LANCAMENTO/STK/STK-01_ACESSO-TOTAL.webp | 03_LANCAMENTO/STK/STK-02_MAIS-UM.webp | 03_LANCAMENTO/STK/STK-03_ABERTURA-VOCE.webp | 03_LANCAMENTO/STK/STK-04_NAO-PRECISAVA.webp | 03_LANCAMENTO/STK/STK-05_PRECISAVA.webp | 03_LANCAMENTO/STK/STK-06_EQUIPE-TECNICA.webp | 03_LANCAMENTO/STK/STK-07_TERCEIRO-SINAL.webp | 03_LANCAMENTO/STK/STK-08_ELA-FICA-AQUI.webp",
+   "render_s": "",
+   "rotulo": "não se aplica"
+  },
+  {
+   "id": "S01",
+   "peca": "S01 · DIGITANDO",
+   "formato": "9:16, 10,8 s (a plataforma dizia 6 s; as contagens de quadros dela somam 8,4 s antes da assinatura, e o ritmo é a piada)",
+   "data": "",
+   "descricao": "Papel de O MURO. Shantell digita mãe, você foi a melhor plateia d (12 quadros por palavra), segura 18 quadros, apaga letra por letra (2 quadros cada) e digita domingo tô aí. Assinatura. Sem interface de chat.",
+   "texto_exato": "domingo tô aí. / holofote nela.",
+   "origem": "local (Blender + tipo por código)",
+   "arquivos": "04_FILMES/S01_DIGITANDO_som.mp4",
+   "render_s": "",
+   "rotulo": "não se aplica"
+  },
+  {
+   "id": "P01",
+   "peca": "P01 · A FOTO DE DIVULGAÇÃO",
+   "formato": "4:5",
+   "data": "",
+   "descricao": "M01 como foto de divulgação de estrela pop, flash duro na câmera, na própria sala. Substituto na mesa de centro a 70 cm, apagado, tampado. Embalagem composta por código. Não produzida (pessoas não geradas).",
+   "texto_exato": "Ela vai dizer \"não precisava\". É a sua deixa.",
+   "origem": "precisa de pessoa gerada",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "P02",
+   "peca": "P02 · A PLATEIA",
+   "formato": "9:16",
+   "data": "",
+   "descricao": "H01 sozinha na primeira fila de monoblocos brancos no auditório escuro, de pé, aplaudindo, filmada do palco sob um spot. Sem produto. Não produzida.",
+   "texto_exato": "Esse ano, você é a plateia.",
+   "origem": "precisa de pessoa gerada",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  },
+  {
+   "id": "P03",
+   "peca": "P03 · CAMARIM",
+   "formato": "4:5",
+   "data": "",
+   "descricao": "M01 num espelho de camarim real (lâmpadas acesas, cena gerada), passando batom vermelho, sorrindo para si. Sem produto. Não produzida.",
+   "texto_exato": "olha a atração.",
+   "origem": "precisa de pessoa gerada",
+   "arquivos": "AUSENTE",
+   "render_s": "",
+   "rotulo": ""
+  }
+ ],
+ "filmes": [
+  {
+   "filme": "F06C_SINAL_07-05",
+   "com_som": "04_FILMES/F06C_SINAL_07-05_som.mp4",
+   "sem_som": "04_FILMES/F06C_SINAL_07-05_mudo.mp4",
+   "duracao_s": 6.0,
+   "quadros": 144,
+   "fps": 24
+  },
+  {
+   "filme": "F06C_SINAL_08-05",
+   "com_som": "04_FILMES/F06C_SINAL_08-05_som.mp4",
+   "sem_som": "04_FILMES/F06C_SINAL_08-05_mudo.mp4",
+   "duracao_s": 6.0,
+   "quadros": 144,
+   "fps": 24
+  },
+  {
+   "filme": "S01_DIGITANDO",
+   "com_som": "04_FILMES/S01_DIGITANDO_som.mp4",
+   "sem_som": "04_FILMES/S01_DIGITANDO_mudo.mp4",
+   "duracao_s": 10.833,
+   "quadros": 260,
+   "fps": 24
+  }
+ ],
+ "anuncios": [
+  {
+   "id": "1A",
+   "conceito": "O PIOR SHOW",
+   "apresentador": "H01",
+   "status": "ANIMATIC PRODUZIDO (previs com manequim) — tomadas de pessoas a gerar",
+   "duracao_s": 15,
+   "janelas_s": {
+    "gancho": [
+     0,
+     2
+    ],
+    "corpo": [
+     2,
+     6
+    ],
+    "gesto": [
+     6,
+     9
+    ],
+    "kv": [
+     9,
+     15
+    ]
+   },
+   "falado_pt": {
+    "gancho": "Pior show que ela já viu: você.",
+    "corpo": "Esqueceu a coreografia, chorou, acenou pra mãe errada.",
+    "kv_vo": "Sua vez."
+   },
+   "na_tela_pt": {
+    "tag_gancho": "DIA DAS MÃES · O PIOR SHOW",
+    "titulo_gesto": "E ELA APLAUDIU DE PÉ.",
+    "headline_kv": "SUA VEZ.",
+    "assinatura": "holofote nela.",
+    "seguranca": "nunca deixe a vela acesa sem supervisão."
+   },
+   "som": {
+    "0-6": "room tone",
+    "6-9": "four claps in the empty hall (reverb)",
+    "9-15": "CLAC at 9,0; crackle -> applause; three claps at 13,0"
+   },
+   "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. She sits on the edge of a low wooden stage, legs dangling, already mid-look into the lens. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, silent, no speech. She slides off the stage edge, stands, and begins a slow, deadpan clap toward the camera, four claps, face neutral, then the faintest smile. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+   "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+   "rejeitar_se": [
+    "any generated letter (backdrop, clothing, wristband, phone)",
+    "the face changes between talk and gesture takes",
+    "extra or fused fingers",
+    "any flame or candle in a presenter scene",
+    "an influencer smile on the hook",
+    "waxy skin",
+    "any blue or violet object in a frame with a stand-in",
+    "a recognisable real person or celebrity likeness"
+   ],
+   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+  },
+  {
+   "id": "1B",
+   "conceito": "O PIOR SHOW",
+   "apresentador": "H01",
+   "status": "ANIMATIC PRODUZIDO (previs com manequim) — tomadas de pessoas a gerar",
+   "duracao_s": 15,
+   "janelas_s": {
+    "gancho": [
+     0,
+     2
+    ],
+    "corpo": [
+     2,
+     6
+    ],
+    "gesto": [
+     6,
+     9
+    ],
+    "kv": [
+     9,
+     15
+    ]
+   },
+   "falado_pt": {
+    "gancho": "Prézinho. Você era um girassol.",
+    "corpo": "Esqueceu a coreografia. Chorou. Acenou pra mãe errada.",
+    "kv_vo": "Sua vez."
+   },
+   "na_tela_pt": {
+    "tag_gancho": "DIA DAS MÃES · PRÉZINHO",
+    "titulo_gesto": "E ELA APLAUDIU DE PÉ.",
+    "headline_kv": "SUA VEZ.",
+    "assinatura": "holofote nela.",
+    "seguranca": "nunca deixe a vela acesa sem supervisão."
+   },
+   "som": {
+    "0-6": "room tone",
+    "6-9": "four claps in the empty hall (reverb)",
+    "9-15": "CLAC at 9,0; crackle -> applause; three claps at 13,0"
+   },
+   "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. She sits on the edge of a low wooden stage, legs dangling, already mid-look into the lens; one eyebrow up. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, silent, no speech. She slides off the stage edge, stands, and begins a slow, deadpan clap toward the camera, four claps, face neutral, then the faintest smile. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+   "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+   "rejeitar_se": [
+    "any generated letter (backdrop, clothing, wristband, phone)",
+    "the face changes between talk and gesture takes",
+    "extra or fused fingers",
+    "any flame or candle in a presenter scene",
+    "an influencer smile on the hook",
+    "waxy skin",
+    "any blue or violet object in a frame with a stand-in",
+    "a recognisable real person or celebrity likeness"
+   ],
+   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+  },
+  {
+   "id": "1C",
+   "conceito": "O PIOR SHOW",
+   "apresentador": "H02",
+   "status": "ANIMATIC PRODUZIDO (previs com manequim) — tomadas de pessoas a gerar",
+   "duracao_s": 15,
+   "janelas_s": {
+    "gancho": [
+     0,
+     2
+    ],
+    "corpo": [
+     2,
+     6
+    ],
+    "gesto": [
+     6,
+     9
+    ],
+    "kv": [
+     9,
+     15
+    ]
+   },
+   "falado_pt": {
+    "gancho": "Prézinho. Você, de abelhinha.",
+    "corpo": "Errou o passo. Chorou. Acenou pra mãe errada.",
+    "kv_vo": "Sua vez."
+   },
+   "na_tela_pt": {
+    "tag_gancho": "DIA DAS MÃES · PRÉZINHO",
+    "titulo_gesto": "E ELA APLAUDIU DE PÉ.",
+    "headline_kv": "SUA VEZ.",
+    "assinatura": "holofote nela.",
+    "seguranca": "nunca deixe a vela acesa sem supervisão."
+   },
+   "som": {
+    "0-6": "room tone",
+    "6-9": "four claps in the empty hall (reverb)",
+    "9-15": "CLAC at 9,0; crackle -> applause; three claps at 13,0"
+   },
+   "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult man about 23: light brown skin, black hair in a low fade with a curly top, a thin patchy moustache he is clearly trying to grow, an expressive mouth, one dimple. His mother's old faded black nylon bum bag worn crossbody with no logo, an oversized heather-grey crew sweatshirt with no print, the same plain black woven festival wristband with a yellow stripe and no lettering, a thin silver chain. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. He looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. He sits on the edge of a low wooden stage, legs dangling, already mid-look into the lens. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult man about 23: light brown skin, black hair in a low fade with a curly top, a thin patchy moustache he is clearly trying to grow, an expressive mouth, one dimple. His mother's old faded black nylon bum bag worn crossbody with no logo, an oversized heather-grey crew sweatshirt with no print, the same plain black woven festival wristband with a yellow stripe and no lettering, a thin silver chain. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. He looks straight into the lens, deadpan, silent, no speech. He slides off the stage edge, stands, and begins a slow, deadpan clap toward the camera, four claps, face neutral, then the faintest smile. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+   "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+   "rejeitar_se": [
+    "any generated letter (backdrop, clothing, wristband, phone)",
+    "the face changes between talk and gesture takes",
+    "extra or fused fingers",
+    "any flame or candle in a presenter scene",
+    "an influencer smile on the hook",
+    "waxy skin",
+    "any blue or violet object in a frame with a stand-in",
+    "a recognisable real person or celebrity likeness"
+   ],
+   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+  },
+  {
+   "id": "2A",
+   "conceito": "PRIMEIRO SINAL",
+   "apresentador": "H01",
+   "status": "ANIMATIC PRODUZIDO (previs com manequim) — tomadas de pessoas a gerar",
+   "duracao_s": 15,
+   "janelas_s": {
+    "gancho": [
+     0,
+     2
+    ],
+    "corpo": [
+     2,
+     6
+    ],
+    "gesto": [
+     6,
+     9
+    ],
+    "kv": [
+     9,
+     15
+    ]
+   },
+   "falado_pt": {
+    "gancho": "Primeiro sinal.",
+    "corpo": "Domingo, nove de maio. Atração principal: ela. Abertura: você.",
+    "kv_vo": "Terceiro sinal."
+   },
+   "na_tela_pt": {
+    "tag_gancho": "PRIMEIRO SINAL · 09.05",
+    "titulo_gesto": "LANTERNA PRA CIMA.",
+    "headline_kv": "A ATRAÇÃO É ELA.",
+    "assinatura": "holofote nela.",
+    "seguranca": "nunca deixe a vela acesa sem supervisão."
+   },
+   "som": {
+    "0-6": "one theatre bell under the hook (2A)",
+    "6-9": "the second bell at 6,0",
+    "9-15": "black 4 f; the third bell at 9,0; CLAC; applause; three claps"
+   },
+   "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. She stands centre stage, hands behind her back, like a theatre usher. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, silent, no speech. Standing centre stage, she raises a phone high with its flashlight on, the back of the phone toward the camera and mostly hidden in her palm, screen never visible, and sways it slowly side to side, eyes closed for one second. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+   "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+   "rejeitar_se": [
+    "any generated letter (backdrop, clothing, wristband, phone)",
+    "the face changes between talk and gesture takes",
+    "extra or fused fingers",
+    "any flame or candle in a presenter scene",
+    "an influencer smile on the hook",
+    "waxy skin",
+    "any blue or violet object in a frame with a stand-in",
+    "a recognisable real person or celebrity likeness"
+   ],
+   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+  },
+  {
+   "id": "2B",
+   "conceito": "PRIMEIRO SINAL",
+   "apresentador": "H01",
+   "status": "ANIMATIC PRODUZIDO (previs com manequim) — tomadas de pessoas a gerar",
+   "duracao_s": 15,
+   "janelas_s": {
+    "gancho": [
+     0,
+     2
+    ],
+    "corpo": [
+     2,
+     6
+    ],
+    "gesto": [
+     6,
+     9
+    ],
+    "kv": [
+     9,
+     15
+    ]
+   },
+   "falado_pt": {
+    "gancho": "Comunicado da produção.",
+    "corpo": "Domingo, nove de maio. Atração principal: ela. Abertura: você.",
+    "kv_vo": "Terceiro sinal."
+   },
+   "na_tela_pt": {
+    "tag_gancho": "COMUNICADO OFICIAL · 09.05",
+    "titulo_gesto": "LANTERNA PRA CIMA.",
+    "headline_kv": "A ATRAÇÃO É ELA.",
+    "assinatura": "holofote nela.",
+    "seguranca": "nunca deixe a vela acesa sem supervisão."
+   },
+   "som": {
+    "0-6": "one theatre bell under the hook (2A)",
+    "6-9": "the second bell at 6,0",
+    "9-15": "black 4 f; the third bell at 9,0; CLAC; applause; three claps"
+   },
+   "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. She stands centre stage, hands behind her back; a beat of silence, then she speaks. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, silent, no speech. Standing centre stage, she raises a phone high with its flashlight on, the back of the phone toward the camera and mostly hidden in her palm, screen never visible, and sways it slowly side to side, eyes closed for one second. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+   "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+   "rejeitar_se": [
+    "any generated letter (backdrop, clothing, wristband, phone)",
+    "the face changes between talk and gesture takes",
+    "extra or fused fingers",
+    "any flame or candle in a presenter scene",
+    "an influencer smile on the hook",
+    "waxy skin",
+    "any blue or violet object in a frame with a stand-in",
+    "a recognisable real person or celebrity likeness"
+   ],
+   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+  },
+  {
+   "id": "3A",
+   "conceito": "FÃ DE CARTEIRINHA",
+   "apresentador": "H01",
+   "status": "ANIMATIC PRODUZIDO (previs com manequim) — tomadas de pessoas a gerar",
+   "duracao_s": 15,
+   "janelas_s": {
+    "gancho": [
+     0,
+     2
+    ],
+    "corpo": [
+     2,
+     6
+    ],
+    "gesto": [
+     6,
+     9
+    ],
+    "kv": [
+     9,
+     15
+    ]
+   },
+   "falado_pt": {
+    "gancho": "Dois dias de fila por um ingresso.",
+    "corpo": "Chorou na grade. E ela te buscou na porta, à uma da manhã.",
+    "kv_vo": "Holofote nela."
+   },
+   "na_tela_pt": {
+    "tag_gancho": "FÃ DE QUEM, EXATAMENTE?",
+    "titulo_gesto": "JÁ FOI FÃ DELA?",
+    "headline_kv": "SUA VEZ.",
+    "assinatura": "holofote nela.",
+    "seguranca": "nunca deixe a vela acesa sem supervisão."
+   },
+   "som": {
+    "0-6": "room tone",
+    "6-9": "one snare hit on the point",
+    "9-15": "CLAC -> applause -> three claps"
+   },
+   "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. She sits on the edge of a low wooden stage, looking at camera like a disappointed tour manager; a slow lean toward the lens. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, silent, no speech. Seated on the stage edge, she makes a small finger-heart toward the camera, then turns it into an index finger pointing at the lens, one eyebrow raised. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+   "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+   "rejeitar_se": [
+    "any generated letter (backdrop, clothing, wristband, phone)",
+    "the face changes between talk and gesture takes",
+    "extra or fused fingers",
+    "any flame or candle in a presenter scene",
+    "an influencer smile on the hook",
+    "waxy skin",
+    "any blue or violet object in a frame with a stand-in",
+    "a recognisable real person or celebrity likeness"
+   ],
+   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+  },
+  {
+   "id": "3B",
+   "conceito": "FÃ DE CARTEIRINHA",
+   "apresentador": "H01",
+   "status": "ANIMATIC PRODUZIDO (previs com manequim) — tomadas de pessoas a gerar",
+   "duracao_s": 15,
+   "janelas_s": {
+    "gancho": [
+     0,
+     2
+    ],
+    "corpo": [
+     2,
+     6
+    ],
+    "gesto": [
+     6,
+     9
+    ],
+    "kv": [
+     9,
+     15
+    ]
+   },
+   "falado_pt": {
+    "gancho": "Você sabe a setlist de todo mundo.",
+    "corpo": "Menos a dela. Ela tá em turnê desde que você nasceu.",
+    "kv_vo": "Holofote nela."
+   },
+   "na_tela_pt": {
+    "tag_gancho": "SETLIST: TODO MUNDO, MENOS ELA",
+    "titulo_gesto": "JÁ FOI FÃ DELA?",
+    "headline_kv": "SUA VEZ.",
+    "assinatura": "holofote nela.",
+    "seguranca": "nunca deixe a vela acesa sem supervisão."
+   },
+   "som": {
+    "0-6": "room tone",
+    "6-9": "one snare hit on the point",
+    "9-15": "CLAC -> applause -> three claps"
+   },
+   "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. She sits on the edge of a low wooden stage, looking at camera like a disappointed tour manager; a slow lean toward the lens. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. She looks straight into the lens, deadpan, silent, no speech. Seated on the stage edge, she makes a small finger-heart toward the camera, then turns it into an index finger pointing at the lens, one eyebrow raised. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+   "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+   "rejeitar_se": [
+    "any generated letter (backdrop, clothing, wristband, phone)",
+    "the face changes between talk and gesture takes",
+    "extra or fused fingers",
+    "any flame or candle in a presenter scene",
+    "an influencer smile on the hook",
+    "waxy skin",
+    "any blue or violet object in a frame with a stand-in",
+    "a recognisable real person or celebrity likeness"
+   ],
+   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+  },
+  {
+   "id": "3C",
+   "conceito": "FÃ DE CARTEIRINHA",
+   "apresentador": "H02",
+   "status": "ANIMATIC PRODUZIDO (previs com manequim) — tomadas de pessoas a gerar",
+   "duracao_s": 15,
+   "janelas_s": {
+    "gancho": [
+     0,
+     2
+    ],
+    "corpo": [
+     2,
+     6
+    ],
+    "gesto": [
+     6,
+     9
+    ],
+    "kv": [
+     9,
+     15
+    ]
+   },
+   "falado_pt": {
+    "gancho": "Gritou o nome dele o show inteiro.",
+    "corpo": "Ele não sabe o seu. Ela escolheu o seu antes de você nascer.",
+    "kv_vo": "Holofote nela."
+   },
+   "na_tela_pt": {
+    "tag_gancho": "FÃ DE QUEM, EXATAMENTE?",
+    "titulo_gesto": "JÁ FOI FÃ DELA?",
+    "headline_kv": "SUA VEZ.",
+    "assinatura": "holofote nela.",
+    "seguranca": "nunca deixe a vela acesa sem supervisão."
+   },
+   "som": {
+    "0-6": "room tone",
+    "6-9": "one snare hit on the point",
+    "9-15": "CLAC -> applause -> three claps"
+   },
+   "prompt_tomada_fala_en": "One continuous six-second vertical shot. Fictional Brazilian adult man about 23: light brown skin, black hair in a low fade with a curly top, a thin patchy moustache he is clearly trying to grow, an expressive mouth, one dimple. His mother's old faded black nylon bum bag worn crossbody with no logo, an oversized heather-grey crew sweatshirt with no print, the same plain black woven festival wristband with a yellow stripe and no lettering, a thin silver chain. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. He looks straight into the lens, deadpan, and speaks naturally in Brazilian Portuguese with small, dry eyebrow movement and one small shrug; no big smile until the very end. He sits on the edge of a low wooden stage, looking at camera like a disappointed tour manager; a slow lean toward the lens. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "prompt_tomada_gesto_en": "One continuous four-second vertical shot. Fictional Brazilian adult man about 23: light brown skin, black hair in a low fade with a curly top, a thin patchy moustache he is clearly trying to grow, an expressive mouth, one dimple. His mother's old faded black nylon bum bag worn crossbody with no logo, an oversized heather-grey crew sweatshirt with no print, the same plain black woven festival wristband with a yellow stripe and no lettering, a thin silver chain. Empty Brazilian school auditorium at dusk; behind, a faded pink non-woven fabric backdrop decorated with paper flowers and paper hearts, absolutely no letters or words; below, rows of white plastic monobloc chairs; fluorescent tubes off; one warm theatrical spotlight from front-left. Camera locked at eye level, 50 mm perspective, medium shot. He looks straight into the lens, deadpan, silent, no speech. Seated on the stage edge, he makes a small finger-heart toward the camera, then turns it into an index finger pointing at the lens, one eyebrow raised. Real skin texture, natural asymmetry, believable hands. No product, candle, jar, bottle, label, text, logo, confetti, smoke, particles, lens flare, glow halo, no blue or purple objects. 9:16.",
+   "kv_9_15": "KV-45 aprovado como UMA camada de imagem, empurrão 100 → 103 %; tipo por código na zona y 334–534; legenda só da fala de VO em y 300–330. Nunca enviar o KV a um gerador.",
+   "audio": "Voz sintética licenciada em PT-BR, sem imitar ninguém; a VO temporária do animatic é local e será substituída. Se o lip-sync falhar, 0–6 s viram VO sobre tomada sem fala, com legendas.",
+   "rejeitar_se": [
+    "any generated letter (backdrop, clothing, wristband, phone)",
+    "the face changes between talk and gesture takes",
+    "extra or fused fingers",
+    "any flame or candle in a presenter scene",
+    "an influencer smile on the hook",
+    "waxy skin",
+    "any blue or violet object in a frame with a stand-in",
+    "a recognisable real person or celebrity likeness"
+   ],
+   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
+  }
+ ],
+ "som": {
+  "leia_me": "04_FILMES/som/LEIA_ME.md",
+  "creditos": "04_FILMES/som/CREDITOS.md",
+  "manifesto": "04_FILMES/som/manifesto_sfx.json",
+  "cue_sheet": "06_PRODUCAO/AUDIO_CUE_SHEET.csv"
+ },
+ "fidelidade": "06_PRODUCAO/fidelidade/ (um JSON por peça; filmes com resumo e quadro a quadro)",
+ "falta": "ver 06_PRODUCAO/STATUS_ENTREGA.txt"
+}

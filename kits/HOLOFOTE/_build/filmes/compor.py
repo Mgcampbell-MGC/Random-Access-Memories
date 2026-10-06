@@ -173,7 +173,8 @@ def picture(film, f, F):
         if f in (12, 13):
             k, kel = P.AQUEC[f - 12]
             return C.para_tela(aquec(F.cena('camA'), k, kel)), man
-        if f <= 159:
+        if f <= 161:
+            # the crane starts at f160 with a smootherstep ease: f160–161 move < 0,05 px, so they ARE the cam A still
             return F.plate('camA'), man
         if f <= 203:
             full = f >= 176

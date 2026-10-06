@@ -602,14 +602,17 @@ def fidelidade(cuts):
                 continue
             bgr = rgb[..., ::-1]
             gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY).astype(np.float32)
-            s = np.array([v for _, _, v in F.score(gray, ref, valid, E)])
+            sk = []
+            s = np.array([v for _, _, v in F.score(gray, ref, valid, E, sk)])
             s2 = np.array([v for _, _, v in F.score(gray, ref2, valid, E2)])
             lab = cv2.cvtColor(np.ascontiguousarray(bgr), cv2.COLOR_BGR2LAB).astype(np.float32)
             bb = bare & (lab[..., 0] > 40) & (lab[..., 0] < 250)
             hd = (F.hue_deg(lab[bb]) - h_ref + 180) % 360 - 180
             px = lab[bb]
             sat = float(np.median(np.hypot(px[:, 1] - 128, px[:, 2] - 128) / np.maximum(px[:, 0], 1)) / s_ref)
-            rows[cut].append(dict(quadro=f, escala=round(kv_scale(f), 5), tiles=int(len(s)), worst=round(float(s.min()), 3),
+            rows[cut].append(dict(quadro=f, escala=round(kv_scale(f), 5), tiles=int(len(s)), cantos_pulados=len(sk),
+                                  cantos_worst=round(min(v for _, _, v in sk), 3) if sk else None,
+                                  worst=round(float(s.min()), 3),
                                   p5=round(float(np.percentile(s, 5)), 3), controle_worst=round(float(s2.min()), 3),
                                   controle_pego=bool(s2.min() < F.MIN_TILE_PASS), uv_agreement=round(agree, 4),
                                   hue_shift_deg=round(float(np.median(hd)), 2), sat_ratio=round(sat, 3)))
