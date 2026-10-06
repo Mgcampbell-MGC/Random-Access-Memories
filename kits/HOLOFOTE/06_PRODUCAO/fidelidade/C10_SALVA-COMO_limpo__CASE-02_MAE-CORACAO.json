@@ -8,20 +8,20 @@
     "corner_tiles_worst": 0.957,
     "control": {
       "patch_px": [
-        1300,
-        1938,
-        300,
-        300
+        1192,
+        1490,
+        701,
+        701
       ],
-      "worst_tile": 0.899,
-      "caught": false
+      "worst_tile": -0.219,
+      "caught": true
     },
     "hue_shift_deg": -0.7,
     "sat_ratio": 0.95,
     "worst_tile": 0.942,
     "p5_tile": 0.967,
     "bar_p5": 0.95,
-    "pass": false,
+    "pass": true,
     "label_id": 1.0,
     "glass_frac_altura": 0.20452770590782166,
     "thumbnail_sem_alegacao": false
