@@ -18,12 +18,12 @@
     },
     "hue_shift_deg": -1.29,
     "sat_ratio": 0.999,
-    "worst_tile": 0.483,
-    "p5_tile": 0.954,
+    "worst_tile": 0.484,
+    "p5_tile": 0.953,
     "bar_p5": 0.95,
     "pass": false,
     "label_id": null,
-    "glass_frac_altura": 0.23872554302215576,
+    "glass_frac_altura": 0.24073757231235504,
     "thumbnail_sem_alegacao": false
   }
 ]

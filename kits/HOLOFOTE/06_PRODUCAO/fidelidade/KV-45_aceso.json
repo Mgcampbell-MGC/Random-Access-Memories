@@ -2,25 +2,26 @@
   {
     "asset": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/renders/KV-45_aceso.png",
     "master": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/rotulos/HLF-02_ROTULO_wrap.png",
-    "tiles": 544,
-    "uv_agreement": 0.9991,
-    "corner_tiles_skipped": 25,
-    "corner_tiles_worst": 0.947,
+    "tiles": 1300,
+    "uv_agreement": 0.9996,
+    "corner_tiles_skipped": 94,
+    "corner_tiles_worst": 0.941,
     "control": {
       "patch_px": [
-        3514,
-        1927,
+        1392,
+        1899,
         300,
         300
       ],
-      "worst_tile": -0.25,
+      "worst_tile": -0.629,
       "caught": true
     },
     "hue_shift_deg": -1.29,
     "sat_ratio": 0.999,
-    "worst_tile": 0.815,
-    "p5_tile": 0.966,
+    "worst_tile": 0.934,
+    "p5_tile": 0.962,
     "bar_p5": 0.95,
-    "pass": true
+    "pass": true,
+    "verificacao": "Verificado no render 2× (2160 × 3840, KV-45_aceso). O arquivo entregue (1080 × 1920) é a média 2 × 2 desse render, feita por _build/shots/reduzir_2x.py; nenhum pixel é gerado ou editado."
   }
 ]

@@ -274,6 +274,18 @@ def crop_box(root, margin=36, scale_max=1.10):
     return (max(0, x0), max(0, y0), min(RES[0], x1), min(RES[1], y1))
 
 
+def frames(spec):
+    """'0-23' or '210-223,228,229' -> list of ints."""
+    out = []
+    for part in spec.split(','):
+        if '-' in part:
+            a, b = part.split('-')
+            out += list(range(int(a), int(b) + 1))
+        else:
+            out.append(int(part))
+    return out
+
+
 def mode_chama(kind, lista, samples):
     """kind 'palco': loop indices (0–23) at KV-45 lit; kind 'blecaute': F15 frame numbers in the blackout scene."""
     od = os.path.join(OUT, 'chama_' + kind)

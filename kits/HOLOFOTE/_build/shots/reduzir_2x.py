@@ -64,7 +64,7 @@ def main():
     # 4. the 1× check, as motor.still runs it
     subprocess.run([WEB, os.path.join(KIT, '_build', 'tools', 'fidelidade_uv.py'), '--master', a.master,
                     '--aov', os.path.join(d1, '0001.exr'), '--asset', p8, '--coat', a.coat, '--json', j1,
-                    '--debug', os.path.join(d1, 'debug.png')], check=True, capture_output=True)
+                    '--debug', os.path.join(d1, 'debug.png')], capture_output=True)   # exit 1 = a 1x tile under the bar: reported, not fatal
     r1 = json.load(open(j1))[0]
     r2 = json.load(open(j2))[0] if os.path.exists(j2) else {}
     k = ('tiles', 'worst_tile', 'p5_tile', 'hue_shift_deg', 'sat_ratio', 'pass')

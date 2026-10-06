@@ -129,9 +129,35 @@ class Fontes:
         p = os.path.join(C.RENDER, 'chama_' + kind, 'c%04d.png' % n)
         return self.get(p, lambda: C.ler(p))
 
-    def mask(self):
-        x0, y0, x1, y1 = caixa()
-        return self.get('mask', lambda: C.mascara_caixa(y1 - y0, x1 - x0, PENA))
+    def mask(self, kind='palco'):
+        """Where the crop replaces the plate: only where the FLAME changes. The union, over every crop of this kind,
+        of |crop - (the 2D light model at that flicker state)| > 10 levels (plus the flame's own pixels), closed, dilated 14 px, feathered (sigma 6) and
+        held to zero at the crop's own border. The plate keeps its own (2x supersampled) rim and wick everywhere else,
+        so no seam can show on the rim highlights that cross the box."""
+        def fazer():
+            import glob
+            x0, y0, x1, y1 = caixa()
+            Ls, Bs = self.cena('L')[y0:y1, x0:x1], self.cena('B')[y0:y1, x0:x1]
+            d = np.zeros((y1 - y0, x1 - x0), np.float32)
+            for p in sorted(glob.glob(os.path.join(C.RENDER, 'chama_' + kind, 'c*.png'))):
+                c = C.ler(p)
+                n = int(os.path.basename(p)[1:5])
+                # what the 2D model alone would give at this flicker state: the crop replaces only where it differs
+                if kind == 'palco':
+                    base = C.para_tela(Ls + (R.flicker(n)[0] - 1.0) * Bs)
+                else:
+                    base = C.para_tela(Bs * R.flame_state(n)[0])
+                dd = np.abs(c - base).max(axis=-1)
+                if kind == 'blecaute':
+                    dd = np.maximum(dd, (c.max(axis=-1) > 0.35) * 1.0)    # the flame itself, at any ignition scale
+                d = np.maximum(d, dd)
+            m = (d > 10 / 255.0).astype(np.uint8)
+            m = cv2.morphologyEx(m, cv2.MORPH_CLOSE, np.ones((9, 9), np.uint8))
+            m = cv2.dilate(m, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (29, 29)))
+            m = cv2.GaussianBlur(m.astype(np.float32), (0, 0), 6)
+            m = np.minimum(m, C.mascara_caixa(y1 - y0, x1 - x0, 12)[..., 0])
+            return m[..., None]
+        return self.get('mask_' + kind, fazer)
 
 
 def colar(base, crop, m):
@@ -146,7 +172,7 @@ def kv_aceso_cena(F, i):
     plate's light (the flame is the only source there), scaled by the flicker; the flame itself is the 3D crop."""
     s, _ = R.flicker(i)
     sc = F.cena('L') + (s - 1.0) * F.cena('B')
-    return colar(sc, C.para_cena(F.crop('palco', i % 24)), F.mask())
+    return colar(sc, C.para_cena(F.crop('palco', i % 24)), F.mask('palco'))
 
 
 def blecaute_cena(F, f):
@@ -154,14 +180,14 @@ def blecaute_cena(F, f):
     wash were all rendered proportional to the flame's gain); the flame itself is the 3D crop of that frame."""
     s, _ = R.flame_state(f)
     sc = F.cena('B') * s
-    return colar(sc, C.para_cena(F.crop('blecaute', f)), F.mask())
+    return colar(sc, C.para_cena(F.crop('blecaute', f)), F.mask('blecaute'))
 
 
 def blecaute_idx_cena(F, i):
     """The blackout scene at flicker index i (rendered as F15 frames 216 + i)."""
     f = 216 + (i % 24)
     s, _ = R.flicker(i)
-    return colar(F.cena('B') * s, C.para_cena(F.crop('blecaute', f)), F.mask())
+    return colar(F.cena('B') * s, C.para_cena(F.crop('blecaute', f)), F.mask('blecaute'))
 
 
 def aquec(sc_luz, k, kelvin, sc_fixo=None):

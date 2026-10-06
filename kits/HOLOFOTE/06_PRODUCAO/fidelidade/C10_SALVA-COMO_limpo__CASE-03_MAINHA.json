@@ -2,28 +2,28 @@
   {
     "asset": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/renders/C10_SALVA-COMO_limpo.png",
     "master": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/rotulos/HLF-CASE-03_MAINHA_ROTULO_wrap.png",
-    "tiles": 119,
-    "uv_agreement": 0.9896,
-    "corner_tiles_skipped": 0,
-    "corner_tiles_worst": null,
+    "tiles": 202,
+    "uv_agreement": 0.9833,
+    "corner_tiles_skipped": 6,
+    "corner_tiles_worst": 0.96,
     "control": {
       "patch_px": [
-        886,
-        1490,
-        700,
-        700
+        1163,
+        1637,
+        549,
+        549
       ],
-      "worst_tile": -0.697,
+      "worst_tile": -0.282,
       "caught": true
     },
-    "hue_shift_deg": -2.36,
-    "sat_ratio": 0.94,
-    "worst_tile": 0.959,
-    "p5_tile": 0.979,
+    "hue_shift_deg": -2.66,
+    "sat_ratio": 0.948,
+    "worst_tile": 0.942,
+    "p5_tile": 0.97,
     "bar_p5": 0.95,
     "pass": true,
     "label_id": 3.0,
-    "glass_frac_altura": 0.20452770590782166,
+    "glass_frac_altura": 0.26379984617233276,
     "thumbnail_sem_alegacao": false
   }
 ]

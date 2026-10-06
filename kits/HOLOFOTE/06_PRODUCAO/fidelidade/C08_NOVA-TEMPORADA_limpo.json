@@ -2,28 +2,28 @@
   {
     "asset": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/renders/C08_NOVA-TEMPORADA_limpo.png",
     "master": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/rotulos/HLF-02_ROTULO_wrap.png",
-    "tiles": 220,
-    "uv_agreement": 0.9533,
-    "corner_tiles_skipped": 16,
-    "corner_tiles_worst": 0.58,
+    "tiles": 222,
+    "uv_agreement": 0.9978,
+    "corner_tiles_skipped": 15,
+    "corner_tiles_worst": 0.96,
     "control": {
       "patch_px": [
-        1354,
-        1797,
+        1351,
+        1787,
         472,
         472
       ],
-      "worst_tile": 0.204,
+      "worst_tile": 0.14,
       "caught": true
     },
-    "hue_shift_deg": -1.48,
+    "hue_shift_deg": -1.42,
     "sat_ratio": 0.999,
-    "worst_tile": 0.65,
-    "p5_tile": 0.768,
+    "worst_tile": 0.775,
+    "p5_tile": 0.972,
     "bar_p5": 0.95,
     "pass": false,
     "label_id": null,
-    "glass_frac_altura": 0.3104183077812195,
+    "glass_frac_altura": 0.31375010311603546,
     "thumbnail_sem_alegacao": false
   }
 ]

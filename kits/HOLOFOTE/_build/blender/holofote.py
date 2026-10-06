@@ -412,7 +412,7 @@ def wood_material(charred=False, top_mm=7.5):
         mx.data_type = 'RGBA'
         nt.links.new(ch.outputs['Result'], mx.inputs['Factor'])
         nt.links.new(col, mx.inputs['A'])
-        mx.inputs['B'].default_value = srgb('#0B0907')
+        mx.inputs['B'].default_value = srgb('#050403')
         col = mx.outputs['Result']
         rr = nt.nodes.new('ShaderNodeMapRange')
         rr.inputs['To Min'].default_value = 0.8
@@ -480,33 +480,39 @@ def flame_material(seed=0.0, strength=1.0):
     dy = M('DIVIDE', y, M('MULTIPLY', w, 0.9))
     d = M('SQRT', M('ADD', M('MULTIPLY', dx, dx), M('MULTIPLY', dy, dy)))
     core = M('MAXIMUM', M('SUBTRACT', 1.0, d), 0.0)
-    gap = smooth(z, 0.03, 0.16)                     # dim right above the wick
+    gap = smooth(z, 0.02, 0.10)                     # dim right above the wick (narrower, pass 3)
     top = M('SUBTRACT', 1.0, M('MULTIPLY', M('POWER', zc, 3.0), 0.5))
     # CCO review, 6 Oct: the old density (core^1,7) was a soft blob, as dim as the wax, and read as a sprite.
     # A candle's luminous zone has a DEFINED edge: a 12 % soft envelope, nearly flat inside, a little hotter in the core.
     env = smooth(core, 0.0, 0.12)
     inner = M('POWER', core, 0.5)
     dens = M('MULTIPLY', M('MULTIPLY', M('MULTIPLY', env, M('ADD', 0.55, M('MULTIPLY', inner, 0.45))), gap), top)
+    # pass 3 (6 Oct): the lower body is a flame's brightest, near-opaque zone; at 1,05e4 it was as bright as the lit wax
+    # behind it and read as a translucent blob. Peak the emission around a third of the height.
+    zb3 = M('DIVIDE', M('SUBTRACT', zc, 0.30), 0.22)
+    body = M('ADD', 1.0, M('MULTIPLY', M('EXPONENT', M('MULTIPLY', M('MULTIPLY', zb3, zb3), -1.0)), 2.2))
+    dens = M('MULTIPLY', dens, body)
     # colour (6 Oct, second pass): blackbody pushed hard went pink-white and read as an LED. An art-directed ramp
     # keyed on 'hot' (core and low = hot; edge and tip = cool): deep orange edge -> yellow -> warm white core.
     hot = M('MULTIPLY', inner, M('SUBTRACT', 1.0, M('MULTIPLY', M('POWER', zc, 1.6), 0.7)))
     rp = nt.nodes.new('ShaderNodeValToRGB')
     els = rp.color_ramp.elements
     els[0].position, els[0].color = 0.0, (0.80, 0.16, 0.012, 1)        # #E8701C deep orange (linear)
-    els[1].position, els[1].color = 0.92, (1.0, 0.86, 0.60, 1)          # #FFF0CC warm white
+    els[1].position, els[1].color = 0.92, (1.0, 0.80, 0.30, 1)          # clips to a yellow-white (was neutral white beside cream wax)
     e = els.new(0.38); e.color = (1.0, 0.38, 0.045, 1)                  # #FFA43C orange-yellow
-    e = els.new(0.66); e.color = (1.0, 0.62, 0.16, 1)                   # #FFCF6E candle yellow
+    e = els.new(0.66); e.color = (1.0, 0.58, 0.10, 1)                   # candle yellow
     nt.links.new(hot, rp.inputs['Fac'])
     em = nt.nodes.new('ShaderNodeEmission')
     nt.links.new(rp.outputs['Color'], em.inputs['Color'])
-    nt.links.new(M('MULTIPLY', dens, 1.05e4 * strength), em.inputs['Strength'])
-    # blue root: a visible band at the bottom 20 %, on the outer half of the envelope
-    blue = M('MULTIPLY', M('SUBTRACT', 1.0, smooth(z, 0.04, 0.24)), smooth(d, 0.35, 0.85))
-    blue = M('MULTIPLY', blue, M('SUBTRACT', 1.0, smooth(d, 0.95, 1.15)))
-    blue = M('MULTIPLY', blue, smooth(z, 0.0, 0.04))
+    nt.links.new(M('MULTIPLY', dens, 1.3e4 * strength), em.inputs['Strength'])
+    # blue root: only the very base (bottom 12 %) and the outer rim of the envelope, so it never tints the white
+    # body (pass 3: blue over the warm-white core mixed to lavender)
+    blue = M('MULTIPLY', M('SUBTRACT', 1.0, smooth(z, 0.02, 0.12)), smooth(d, 0.55, 0.90))
+    blue = M('MULTIPLY', blue, M('SUBTRACT', 1.0, smooth(d, 0.98, 1.15)))
+    blue = M('MULTIPLY', blue, smooth(z, 0.0, 0.03))
     eb = nt.nodes.new('ShaderNodeEmission')
     eb.inputs['Color'].default_value = (0.08, 0.22, 1.0, 1)
-    nt.links.new(M('MULTIPLY', blue, 6.0e3 * strength), eb.inputs['Strength'])
+    nt.links.new(M('MULTIPLY', blue, 3.0e3 * strength), eb.inputs['Strength'])
     add = nt.nodes.new('ShaderNodeAddShader')
     nt.links.new(em.outputs[0], add.inputs[0])
     nt.links.new(eb.outputs[0], add.inputs[1])

@@ -193,3 +193,12 @@ glyphs (HarfBuzz returned .notdef for every letter). Licences: OFL (copies in `f
   spans ≥ 3 × 3 screen tiles (from the UV gradient; min 300, max 1.200 px), sits inside the visible label and must
   change under the mirror (mean |p − mirror(p)| ≥ 0,15). Re-run: C02 control 0,488 (caught), every real tile still
   passes (worst 0,966); calibration exact still passes (0,90); the *MÃF* render still fails (0,025).
+- **Flame, pass 3 (final), 6 Oct 2026:** at 2× the lower body was a translucent blob over the lit wax. Emission now
+  peaks at a third of the height (×3,2), strength 1,3e4, the dark gap above the wick is narrower (z 0,02–0,10), the
+  blue root only lights the base rim (bottom 12 %, outer envelope, 3e3), char #050403. Khronos PBR Neutral compresses
+  the body to a warm near-white (measured RGB 254/242/230) with yellow-orange edges and an orange tip, as a candle
+  photographs at product exposure. All lit shots are re-rendered on it.
+- **KV-45 is verified at 2× (director, 6 Oct):** both plates render at 200 % and `reduzir_2x.py` area-averages them
+  to 1080 × 1920. Official reports `KV-45_*.json` are the 2× checks (worst 0,934, p5 0,96, control caught). The 1×
+  measurement is kept as `KV-45_*_1x_informativo.json` (worst 0,795: a 1–2 px hairline/letter tip sharing a tile with
+  the coat's reflection band at the limb, grid-position dependent). No bar or tile rule was changed for it.
