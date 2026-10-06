@@ -349,7 +349,8 @@ def back(g, faixa, net, refil=False, single=False):
                     P.add(K.place_left(li, g.X0, y), t, cap_mm=3.0)
                 y += 0.6
                 continue
-            ls, ts = K.para(t, K.CN, 1.7, g.MEAS, 0)
+            # "vela aromática · refil" is one name: no-break spaces keep it on one line
+            ls, ts = K.para(t.replace('aromática · refil', 'aromática\u00a0·\u00a0refil'), K.CN, 1.7, g.MEAS, 0)
             for l2, tx in zip(ls, ts):
                 y += 2.72
                 if write:
