@@ -3,7 +3,7 @@
  * HF.pilha(parent, itens, caixa) monta uma coluna de linhas que enchem a medida (regra 2) e distribui a sobra de
  * altura pelos itens com 'flex'. Cada item:
  *   {tipo:'cheia', s:{t,f,...}, modo:'tamanho'|'wdth'|'tracking', capMax?, antes?, flex?}
- *   {tipo:'dividida', esq:{...}, dir:{...}, antes?}            L/R que enche a medida
+ *   {tipo:'dividida', esq:{...}, dir:{...}, antes?, encher?}   L/R que enche a medida (encher: {modo:'wdth'|'tamanho', folga})
  *   {tipo:'pontilhada', esq:{...}|null, dir:{...}, opt?, antes?} com pontilhado (§C.3)
  *   {tipo:'regua', esp, cor, antes?}
  *   {tipo:'headliner', nome, capRef, cor, coracao?, antes?}     escada de encaixe §C.10 aplicada à medida
@@ -124,6 +124,18 @@
       } else if (it.tipo === 'dividida' || it.tipo === 'pontilhada') {
         const a = it.esq ? HF.texto(parent, Object.assign({}, it.esq)) : null;
         const b = HF.texto(parent, Object.assign({}, it.dir));
+        // 'encher': a coluna da esquerda enche a medida menos a da direita e uma folga (px), pelo eixo wdth (cai para o
+        // tamanho se nem 75 nem 125 resolverem). Ex.: "INGRESSOS COM" (Locutor) ← → "você." (a Fã), no C01.
+        if (it.encher && a) {
+          const alvo = medida - b.inkW - it.encher.folga;
+          if (it.encher.modo === 'tamanho') HF.porTamanho(a, alvo);
+          else {
+            HF.porWdth(a, alvo);
+            if (a.estado === 'longo') { HF.mudar(a, { wdth: 75 }); HF.porTamanho(a, alvo); }
+            if (a.estado === 'curto') { HF.mudar(a, { wdth: 125 }); HF.porTamanho(a, alvo); }
+          }
+          QA.push({ item: 'encher ' + a.s.t, erro: a.inkW - alvo, wdth: a.s.wdth, cap: +HF.capPx(a.s).toFixed(1) });
+        }
         it.objs = [a, b].filter(Boolean);
         const es = it.objs.map(extensoes);
         it.top = Math.max(...es.map((e) => e.top)); it.bot = Math.max(...es.map((e) => e.bot));

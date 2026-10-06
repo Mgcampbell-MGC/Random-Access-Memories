@@ -115,7 +115,7 @@ def manifesto(faixa, ver='case'):
         'PESO LÍQUIDO 200 g',
         'COMPOSIÇÃO / INGREDIENTS (INCI): ' + inci,
         'Ingredientes (português): ' + pt + ' Pavio de madeira. Cápsula de alumínio.',
-        '(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026.)',   # internal note: ALERG_NOTE
+        '(Alérgenos da fragrância declarados na composição acima.)',   # no regulation number: RDC 1.029/2026 is UNVERIFIED
         'Fabricado e distribuído por: PALCO PEQUENO INDÚSTRIA DE VELAS LTDA. (EMPRESA FICTÍCIA)',
         'CNPJ 00.000.000/0001-00 (FICTÍCIO)',
         'Rua do Palco, 0 — Bairro Fictício — São Paulo/SP — CEP 00000-000 (ENDEREÇO FICTÍCIO)',
@@ -141,8 +141,10 @@ CT_TOP_FIX = dict(kind=DD, platform='ESTE LADO PRA CIMA ↑', used=None,
 ALERG_NOTE = '— exemplo; confirmar com o certificado do fornecedor da fragrância.'
 ALERG_FIX = dict(kind=DD, platform='(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026 — exemplo; '
                  'confirmar com o certificado do fornecedor da fragrância.)',
-                 used='(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026.)',
-                 reason='internal note removed from every printed panel', note_kept_in_json=ALERG_NOTE)
+                 used='(Alérgenos da fragrância declarados na composição acima.)',
+                 reason='internal note removed from every printed panel; the regulation number is not printed because no '
+                        'Anvisa RDC 1.029/2026 could be verified (search, 6 Oct 2026): an unverified citation never goes on pack',
+                 note_kept_in_json=ALERG_NOTE)
 INGREDIENT_BREAK = dict(kind=DD, reason='ingredient lists break only after a comma (or after the list\'s colon), never '
                         'inside a name: HYDROGENATED SOYBEAN OIL, alfa-isometil ionona stay whole')
 

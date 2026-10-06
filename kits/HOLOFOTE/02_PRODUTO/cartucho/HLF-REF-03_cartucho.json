@@ -346,14 +346,14 @@
         "cap_mm": 1.7
       },
       {
-        "label": "(Alérgenos de fragrância decla",
+        "label": "(Alérgenos da fragrância decla",
         "ink_mm": [
           5.0,
           33.99,
-          63.77,
+          51.61,
           36.24
         ],
-        "text": "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026.)",
+        "text": "(Alérgenos da fragrância declarados na composição acima.)",
         "cap_mm": 1.7
       },
       {
@@ -740,8 +740,8 @@
       "panel": "verso",
       "kind": "director's decision",
       "platform": "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026 — exemplo; confirmar com o certificado do fornecedor da fragrância.)",
-      "used": "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026.)",
-      "reason": "internal note removed from every printed panel",
+      "used": "(Alérgenos da fragrância declarados na composição acima.)",
+      "reason": "internal note removed from every printed panel; the regulation number is not printed because no Anvisa RDC 1.029/2026 could be verified (search, 6 Oct 2026): an unverified citation never goes on pack",
       "note_kept_in_json": "— exemplo; confirmar com o certificado do fornecedor da fragrância."
     },
     {

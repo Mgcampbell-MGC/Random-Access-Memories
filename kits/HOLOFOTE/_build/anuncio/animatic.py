@@ -166,6 +166,22 @@ def camadas(cuts, T):
         p = path or os.path.join(LAY, key + '.png')
         index[key] = p
         jobs.append(dict(html=html_, saida=p, w=W, h=H, dados=dados, transparente=True))
+    # pass 1: the KV type layer (kv.html, the director's §E.1 type zone); its headline baseline sets the VO caption band
+    kvjobs = {}
+    for cut in cuts:
+        hl = R[cut]['headline']
+        j = tipo_kv.job('kv45', os.path.join(LAY, 'kvtipo_%s.png' % hl.replace(' ', '_').replace('.', '')),
+                        dict(headline=hl))
+        index['kvtipo_' + cut] = j['saida']
+        kvjobs[j['saida']] = j
+    kvout = renderizar(list(kvjobs.values()), verbose=False)
+    kvinfo = {os.path.basename(j): o for j, o in zip(kvjobs, kvout)}
+    band = {}
+    for cut in cuts:
+        hl = R[cut]['headline']
+        info = kvinfo[os.path.basename(index['kvtipo_' + cut])].get('info') or {}
+        base = next((l['baseline'] for l in info.get('linhas', []) if l['nome'] == 'headline'), 442)
+        band[cut] = [300 + (base - 442), 330 + (base - 442)]      # §F.2: y 300–330 when the headline sits at 442
     for cut in cuts:
         r = R[cut]
         add('tag_' + cut, dict(modo='tag', t=r['tag']))
@@ -176,14 +192,9 @@ def camadas(cuts, T):
                     add(f'leg_{cut}_{part}_{pi}_{k}', dict(modo='legenda', linhas=pg['linhas'], ativa=k))
         if kv_caption(cut):
             pg = T[cut]['kv_vo']['paginas'][0]
-            add('kvleg_' + cut, dict(modo='kvlegenda', linhas=pg['linhas']))
+            add('kvleg_' + cut, dict(modo='kvlegenda', linhas=pg['linhas'], banda=band[cut]))
         if cut[0] == '2':
             add('abertura', dict(modo='abertura', t='abertura: você'))
-        hl = r['headline']
-        j = tipo_kv.job('kv45', os.path.join(LAY, 'kvtipo_%s.png' % hl.replace(' ', '_').replace('.', '')),
-                        dict(headline=hl))
-        index['kvtipo_' + cut] = j['saida']
-        jobs.append(j)
     # dedupe identical jobs (same output path)
     seen, uniq = set(), []
     for j in jobs:
@@ -192,10 +203,11 @@ def camadas(cuts, T):
             uniq.append(j)
     out = renderizar(uniq, verbose=False)
     qa = {os.path.basename(j['saida']): o for j, o in zip(uniq, out)}
+    qa.update(kvinfo)
     bad = {k: v['console'] for k, v in qa.items() if v['console']}
     if bad:
         raise RuntimeError('console errors: %s' % bad)
-    json.dump(dict(index=index, info={k: v.get('info') for k, v in qa.items()},
+    json.dump(dict(index=index, banda_legenda_kv=band, info={k: v.get('info') for k, v in qa.items()},
                    qa_kv={k: v.get('qa') for k, v in qa.items() if k.startswith('kvtipo')}),
               open(os.path.join(LAY, 'index.json'), 'w'), ensure_ascii=False, indent=1)
     print('camadas:', len(uniq), 'PNGs')

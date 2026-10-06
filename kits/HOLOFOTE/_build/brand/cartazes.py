@@ -61,16 +61,21 @@ def teaser(cor):
 
 
 def c01():
-    """C01: 'MÃE AO VIVO. 09.05. INGRESSOS COM VOCÊ.' como mais um cartaz da parede, tipo de madeira empilhado."""
+    """C01: 'MÃE AO VIVO. 09.05. INGRESSOS COM VOCÊ.' como mais um cartaz da parede, na gramática do cartaz curto (05/06).
+    Revisão do CCO, 6 out 2026: AO VIVO. na mesma voz dos outros onze (SG 700, wdth resolvido para encher, versal 112 u);
+    09.05. no Locutor como nos cartazes 05/06; e 'você.' é a MENOR palavra (regra 1): a Fã, Shantell na altura-x do
+    'abertura: você' do copo, à direita de INGRESSOS COM, que enche o resto da medida pelo eixo wdth. As palavras não mudam."""
     return dict(W=W, H=H, cor='papel', modo='itens', itens=[
         dict(tipo='dividida', esq=dict(t='HOLOFOTE APRESENTA', f='C', cap=30, lsEm=0.08),
              dir=dict(t='A TURNÊ · 2027', f='C', cap=30, lsEm=0.08, tnum=True)),
         dict(tipo='headliner', nome='MÃE', capRef=199, antes=34, flex=1),
-        dict(tipo='cheia', s=dict(t='AO VIVO.', f='V', wght=700, cap=176), modo='wdth', antes=34, flex=1),
-        dict(tipo='cheia', s=dict(t='09.05.', f='V', wght=700, cap=176, tnum=True), modo='wdth', antes=34, flex=1),
-        dict(tipo='regua', antes=40, flex=1),
-        dict(tipo='cheia', s=dict(t='INGRESSOS COM VOCÊ.', f='V', wght=700, cap=60), modo='wdth', antes=40),
-        dict(tipo='espaco', flex=1),
+        dict(tipo='cheia', s=dict(t='AO VIVO.', f='V', wght=700, cap=112), modo='wdth', antes=22),
+        dict(tipo='regua', antes=44, flex=2),
+        dict(tipo='cheia', s=dict(t='09.05.', f='X', cap=150, lsEm=-0.01, tnum=True), modo='tamanho', antes=44, flex=0.6),
+        dict(tipo='dividida', antes=40, encher=dict(modo='wdth', folga=26),
+             esq=dict(t='INGRESSOS COM', f='V', wght=700, wdth=125, cap=46),
+             dir=dict(t='você.', f='S', x=18)),
+        dict(tipo='espaco', flex=1.4),
         dict(tipo='assinatura', cap=30, antes=44),
     ])
 

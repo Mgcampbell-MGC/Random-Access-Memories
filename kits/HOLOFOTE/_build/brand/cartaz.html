@@ -33,7 +33,9 @@ HF.pronto(() => {
   const regua = Math.max(2, M * 0.25 / 72);
   const cap = (f, c) => HF.fsDeCap(f, c * u);
   const xh = (f, c) => HF.fsDeX(f, c * u);
-  const lamp = D.lamp || (D.cor === 'amarelo' || D.cor === 'laranja' ? 'preto' : 'amarelo');   // §D.1 vence §D.3 no laranja   // §D.3 / logos aprovados: O aceso amarelo; no amarelo, disco preto
+  // O aceso (§D.3 + §D.1, decisões do diretor de 6 out 2026): amarelo no preto, rosa e violeta; PRETO no amarelo, no laranja
+  // (amarelo nunca encosta no laranja) e no papel (amarelo sobre papel é par 'Nunca', 1,18:1)
+  const lamp = D.lamp || (['amarelo', 'laranja', 'papel'].includes(D.cor) ? 'preto' : 'amarelo');
   const assinatura = (capU, antes) => ({ tipo: 'assinatura', fundo: true, antes,
     esq: { t: 'holofote nela.', f: 'X', fs: cap('X', capU), lsEm: -0.01, cor: tinta },
     marca: { ink: tinta, lamp }, capMarca: capU * u });
@@ -51,8 +53,10 @@ HF.pronto(() => {
       itens.push({ tipo: 'cheia', s: { t: D.turne.titulo, f: 'V', wght: 700, wdth: 125, fs: cap('V', 39), lsEm: -0.005, cor: tinta }, modo: 'tamanho', antes: 26 * u });
       const capL = 24.4, passo = 37.8 * u;
       D.turne.linhas.forEach((l, i) => itens.push({ tipo: 'pontilhada', passo: i === 0 ? null : passo, antes: i === 0 ? 24 * u : 0,
-        esq: { t: l[0], f: 'C', fs: cap('C', capL), lsEm: 0.02, cor: tinta, tnum: true },
-        dir: { t: l[1], f: 'V', wght: 700, wdth: 75, fs: cap('V', capL), lsEm: 0.01, cor: tinta },
+        // tracking 0 nas duas colunas, como no verso do copo (§C.3, _build/pack/rotulos.py): com +20/+10 o líder da
+        // ESTREIA de varejo caía para 3 pontos e lia como reticências (revisão do CCO, 6 out 2026)
+        esq: { t: l[0], f: 'C', fs: cap('C', capL), lsEm: 0, cor: tinta, tnum: true },
+        dir: { t: l[1], f: 'V', wght: 700, wdth: 75, fs: cap('V', capL), lsEm: 0, cor: tinta },
         opt: { passo: 0.409 * capL * u, folga: 0.45 * capL * u, fs: cap('C', capL) } }));
       itens.push({ tipo: 'regua', esp: regua, cor: tinta, antes: 22 * u });
     } else itens.push({ tipo: 'espaco', flex: 3 });
@@ -78,6 +82,7 @@ HF.pronto(() => {
       if (e.antes != null) it.antes = e.antes * u;
       if (e.passo != null) it.passo = e.passo * u;
       if (e.capMax != null) it.capMax = e.capMax * u;
+      if (e.encher) it.encher = Object.assign({}, e.encher, { folga: (e.encher.folga || 0) * u });
       if (e.tipo === 'regua') { it.esp = regua; it.cor = it.cor === 'destaque' ? dest : (it.cor || tinta); }
       if (e.tipo === 'headliner') { it.capRef = (e.capRef || 198) * u; it.cor = e.cor === 'tinta' || !e.cor ? dest : e.cor; }
       if (e.tipo === 'assinatura') Object.assign(it, assinatura(e.cap || 30, (e.antes || 0) * u));

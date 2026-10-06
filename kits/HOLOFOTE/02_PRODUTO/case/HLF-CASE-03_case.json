@@ -198,16 +198,16 @@
         "cap_mm": 1.8
       },
       {
-        "label": "manifesto (Alérgenos de fragrânc",
+        "label": "manifesto (Alérgenos da fragrânc",
         "layer": "papel",
         "ink_mm": [
           10.0,
           42.2,
-          72.23,
+          59.35,
           44.58
         ],
         "stencil": false,
-        "text": "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026.)",
+        "text": "(Alérgenos da fragrância declarados na composição acima.)",
         "cap_mm": 1.8
       },
       {
@@ -951,7 +951,7 @@
       "PESO LÍQUIDO 200 g",
       "COMPOSIÇÃO / INGREDIENTS (INCI): HYDROGENATED COCONUT OIL, HYDROGENATED SOYBEAN OIL, PARFUM, LIMONENE, LINALOOL, COUMARIN.",
       "Ingredientes (português): óleo de coco hidrogenado, óleo de soja hidrogenado, fragrância, limoneno, linalol, cumarina. Pavio de madeira. Cápsula de alumínio.",
-      "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026.)",
+      "(Alérgenos da fragrância declarados na composição acima.)",
       "Fabricado e distribuído por: PALCO PEQUENO INDÚSTRIA DE VELAS LTDA. (EMPRESA FICTÍCIA)",
       "CNPJ 00.000.000/0001-00 (FICTÍCIO)",
       "Rua do Palco, 0 — Bairro Fictício — São Paulo/SP — CEP 00000-000 (ENDEREÇO FICTÍCIO)",
@@ -997,8 +997,8 @@
       "panel": "base trás (MANIFESTO)",
       "kind": "director's decision",
       "platform": "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026 — exemplo; confirmar com o certificado do fornecedor da fragrância.)",
-      "used": "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026.)",
-      "reason": "internal note removed from every printed panel",
+      "used": "(Alérgenos da fragrância declarados na composição acima.)",
+      "reason": "internal note removed from every printed panel; the regulation number is not printed because no Anvisa RDC 1.029/2026 could be verified (search, 6 Oct 2026): an unverified citation never goes on pack",
       "note_kept_in_json": "— exemplo; confirmar com o certificado do fornecedor da fragrância."
     },
     {

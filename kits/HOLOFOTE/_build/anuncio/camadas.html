@@ -14,7 +14,8 @@ html,body{margin:0;background:transparent}
 /* Ad overlay layers, 1080 × 1920, transparent (platform §F.3). Data in the URL hash:
    modo 'legenda'  : {linhas:[...], ativa: k}   — word-synced caption page; word k (0-based across the page) in amarelo.
                      band y 1000–1240, centred on x 520; 58 px, 6 px preto stroke, lower case.
-   modo 'kvlegenda': {linhas:[...]}              — the 9–15 s VO caption, one line, y 300–330.
+   modo 'kvlegenda': {linhas:[...], banda}       — the 9–15 s VO caption, one line, y 300–330 (banda moves it with the
+                                                   KV headline if the KV type zone is re-set).
    modo 'tag'      : {t}                         — hook tag: Condensed One caps on a preto credencial plate, x 120, y 560–620.
    modo 'gesto'    : {t}                         — gesture title: Locutor caps, fills x 120–920, cap ≤ 110, centred y 760–860.
    modo 'abertura' : {t, x, y}                   — Ad 2: 'abertura: você' in Shantell, tiny, right-aligned to x 920.
@@ -37,7 +38,7 @@ HF.pronto(() => {
     const lh = Math.round(fs * 1.16);
     const n = D.linhas.length;
     // vertical: the block is centred in its band (legenda 1000–1240; kvlegenda 300–330, one line)
-    const band = D.modo === 'legenda' ? [1000, 1240] : [300, 330];
+    const band = D.modo === 'legenda' ? [1000, 1240] : (D.banda || [300, 330]);
     const capH = HF.capPx({ f: 'V', fs }), blockH = (n - 1) * lh + capH;
     let base = (band[0] + band[1]) / 2 - blockH / 2 + capH;
     let k = 0;

@@ -508,7 +508,8 @@ def flame_spill(h, copo_root, energy=0.012):
 def _lacquer_material(mark, decal_path, scratch_path, name='laca', base_hex='#0A0A0B', downstage=0.30):
     """Black lacquer stage floor #0A0A0B: roughness 0,15–0,30 on a 400 mm noise, fine anisotropic scratches, two
     road-case scuff arcs, a tape-residue ghost and foot-traffic dust. Object coordinates (floor & plate share them)."""
-    m = material(name, **{'Base Color': srgb(base_hex), 'Roughness': 0.22, 'Specular IOR Level': 0.5})
+    # roughness 0,32 (was 0,22): the near-mirror lacquer reflected the yellow coat as an olive smear (CCO review, 6 Oct)
+    m = material(name, **{'Base Color': srgb(base_hex), 'Roughness': 0.32, 'Specular IOR Level': 0.5})
     nt = m.node_tree
     bs = nt.nodes['Principled BSDF']
     tc = _n(nt, 'ShaderNodeTexCoord')
@@ -739,7 +740,7 @@ def _rotunda(coll, at, dist=4.0, width=11.0, height=6.5, amp=0.040, seed=3):
 def palco(at=(0.0, 0.0, 0.0), x_rot_deg=0.0, plate_rot_deg=0.0, lift_dz=0.0, floor_size=16.0,
           spot=True, spot_az=-30.0, spot_el=55.0, spot_deg=26.0, spot_blend=0.04, spot_radius=None,
           pool_r=0.090, spot_aim_z=0.020, spot_kelvin=3200, balance_k=3300, spot_energy=None,
-          rotunda=True, rotunda_dist=4.0, rotunda_spill=None, haze=0.0, tape_hex='#FFE81A', tape_gain=0.70,
+          rotunda=True, rotunda_dist=4.0, rotunda_spill=None, haze=0.0, tape_hex='#FFE81A', tape_gain=0.58,
           floor_hex='#1A1918', downstage=0.30, seed=7):
     """O PALCO (§D.6): black lacquer stage, the floor X with its lift plate, the rotunda 4 m back, the hard spot.
 
@@ -750,6 +751,7 @@ def palco(at=(0.0, 0.0, 0.0), x_rot_deg=0.0, plate_rot_deg=0.0, lift_dz=0.0, flo
     balance_k   the camera white balance the 3.200 K spot is recorded at (3.300 = a hair warm; 3.200 = neutral).
     spot_radius None = 0,0103 x throw (a 0,6 deg source: 4 mm at 0,39 m). The platform's 20 mm assumes a long
                 throw; at this throw it is a 2,9 deg source and the pool edge stops being hard.
+    tape_gain   0,58 (was 0,70): the tape sits ~15 % below the glass coat so cup and X separate at thumbnail size.
     floor_hex   the lacquer's ALBEDO. The platform's #0A0A0B is the floor as seen; as an albedo (0,3 %) it is darker
                 than any real black paint and PBR Neutral's toe erases the lit pool. #1A1918 (1,0 %) + dust reads.
     haze        world volume density for a visible cone (platform: 0,0015). 0 = off.

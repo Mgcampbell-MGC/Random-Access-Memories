@@ -276,7 +276,8 @@ def coating_material(hexcol, fingerprint=None, relief=None):
 
 
 def glass_material():
-    return material('glass', **{'Base Color': (1, 1, 1, 1), 'Roughness': 0.0, 'IOR': 1.52, 'Transmission Weight': 1.0,
+    # roughness 0,06 (was 0): a hard spot on a perfect lip made pinpoint glints that read as floating embers
+    return material('glass', **{'Base Color': (1, 1, 1, 1), 'Roughness': 0.06, 'IOR': 1.52, 'Transmission Weight': 1.0,
                                 'Specular IOR Level': 0.5})
 
 
@@ -480,24 +481,29 @@ def flame_material(seed=0.0, strength=1.0):
     core = M('MAXIMUM', M('SUBTRACT', 1.0, d), 0.0)
     gap = smooth(z, 0.03, 0.16)                     # dim right above the wick
     top = M('SUBTRACT', 1.0, M('MULTIPLY', M('POWER', zc, 3.0), 0.5))
-    dens = M('MULTIPLY', M('MULTIPLY', M('POWER', core, 1.7), gap), top)
-    # temperature: 1.400 K at the edge -> 1.900 K in the core
+    # CCO review, 6 Oct: the old density (core^1,7) was a soft blob, as dim as the wax, and read as a sprite.
+    # A candle's luminous zone has a DEFINED edge: a 12 % soft envelope, nearly flat inside, a little hotter in the core.
+    env = smooth(core, 0.0, 0.12)
+    inner = M('POWER', core, 0.5)
+    dens = M('MULTIPLY', M('MULTIPLY', M('MULTIPLY', env, M('ADD', 0.55, M('MULTIPLY', inner, 0.45))), gap), top)
+    # temperature: core yellow-white, edge and tip orange (tip cools: the soot glows redder near the top)
     tmp = nt.nodes.new('ShaderNodeMapRange')
-    tmp.inputs['To Min'].default_value = 2200     # tuned by eye (6 Oct): 1.400-1.900 K renders salmon-pink
-    tmp.inputs['To Max'].default_value = 3600     # under Khronos PBR Neutral; 2.200-3.600 reads candle-yellow. Point light stays 1.900 K
-    nt.links.new(M('POWER', core, 0.6), tmp.inputs['Value'])
+    tmp.inputs['To Min'].default_value = 2100     # tuned by eye (6 Oct): 1.400-1.900 K renders salmon-pink
+    tmp.inputs['To Max'].default_value = 4200     # under Khronos PBR Neutral; the core must clip toward white. Point light stays 1.900 K
+    hot = M('MULTIPLY', inner, M('SUBTRACT', 1.0, M('MULTIPLY', M('POWER', zc, 2.0), 0.55)))
+    nt.links.new(hot, tmp.inputs['Value'])
     bb = nt.nodes.new('ShaderNodeBlackbody')
     nt.links.new(tmp.outputs['Result'], bb.inputs['Temperature'])
     em = nt.nodes.new('ShaderNodeEmission')
     nt.links.new(bb.outputs[0], em.inputs['Color'])
-    nt.links.new(M('MULTIPLY', dens, 1.2e4 * strength), em.inputs['Strength'])
-    # faint blue root: the bottom 15 %, on the outside of the core
-    blue = M('MULTIPLY', M('SUBTRACT', 1.0, smooth(z, 0.02, 0.22)), smooth(d, 0.45, 0.95))
-    blue = M('MULTIPLY', blue, M('SUBTRACT', 1.0, smooth(d, 0.95, 1.25)))
-    blue = M('MULTIPLY', blue, smooth(z, 0.0, 0.05))
+    nt.links.new(M('MULTIPLY', dens, 4.0e4 * strength), em.inputs['Strength'])
+    # blue root: a visible band at the bottom 20 %, on the outer half of the envelope
+    blue = M('MULTIPLY', M('SUBTRACT', 1.0, smooth(z, 0.04, 0.24)), smooth(d, 0.35, 0.85))
+    blue = M('MULTIPLY', blue, M('SUBTRACT', 1.0, smooth(d, 0.95, 1.15)))
+    blue = M('MULTIPLY', blue, smooth(z, 0.0, 0.04))
     eb = nt.nodes.new('ShaderNodeEmission')
-    eb.inputs['Color'].default_value = (0.10, 0.25, 1.0, 1)
-    nt.links.new(M('MULTIPLY', blue, 0.9e3 * strength), eb.inputs['Strength'])
+    eb.inputs['Color'].default_value = (0.08, 0.22, 1.0, 1)
+    nt.links.new(M('MULTIPLY', blue, 6.0e3 * strength), eb.inputs['Strength'])
     add = nt.nodes.new('ShaderNodeAddShader')
     nt.links.new(em.outputs[0], add.inputs[0])
     nt.links.new(eb.outputs[0], add.inputs[1])
@@ -585,7 +591,7 @@ def flame(scale=1.0, seed=0.0, strength=1.0):
     bpy.ops.object.light_add(type='POINT', location=(0, 0, zb + 4.5 * MM * scale))
     L = bpy.context.object
     L.name = 'flame_light'
-    L.data.energy = 0.25 * scale * strength
+    L.data.energy = 1.4 * scale * strength      # was 0,25 W: the flame lit nothing (CCO review, 6 Oct)
     L.data.color = (1.0, 0.56, 0.24)        # ~1.900 K
     L.data.shadow_soft_size = 3 * MM
     return f, L

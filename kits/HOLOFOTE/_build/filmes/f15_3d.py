@@ -82,8 +82,10 @@ def cam_A():
     return S.solve_glass(res=RES, lens=50, cam_height=0.220, tilt_deg=-6, glass_px=384, top_y=900)
 
 
-def cam_B():
-    return S.solve_glass(res=RES, lens=85, cam_height=0.160, tilt_deg=-5, glass_px=883, top_y=610)
+def cam_params(ob):
+    cd = ob.data
+    return dict(location=tuple(ob.location), rotation_euler=tuple(ob.rotation_euler), lens=cd.lens,
+                shift_x=cd.shift_x, shift_y=cd.shift_y)
 
 
 def make_cam(name='cam'):
@@ -119,21 +121,58 @@ def set_cam(ob, f, A, B):
     return u
 
 
-def build_palco(candle=True, lit=False, spot=True, flame_scale=1.0, flame_seed=0.0, blackout_spill=False):
-    if spot:
-        h = S.palco(at=(0, 0, 0))
-    else:
-        h = S.palco(at=(0, 0, 0), spot=False, rotunda_spill=0.0)
+def build_palco(candle=True):
+    """O PALCO + the UNLIT candle on the lift, for cam A and the crane (no flame in these frames)."""
+    h = S.palco(at=(0, 0, 0))
     root = None
     if candle:
-        spec = dict(faixa='02', wrap=S.wrap('02'), lit=lit, flame_scale=flame_scale, flame_seed=flame_seed)
-        root = H.copo(spec, at=h['place'], rot_deg=-12)
+        root = H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=False), at=h['place'], rot_deg=-12)
         S.ride(root, h['lift'])
-        if lit:
-            S.flame_bounce(h, root)
-            if blackout_spill:
-                S.flame_spill(h, root)
     return h, root
+
+
+def build_kv45(lit, flame_scale=1.0, flame_seed=0.0, blackout=False, light_gain=1.0):
+    """The KV-45 scene built by the director's OWN function (shots/kv45.py build()), so our frames, crops and blackout
+    match the plates whatever the director changes there (flame, lights, framing). Two things are injected:
+    the flame's flicker state (flame_scale/flame_seed, holofote's film parameters) and, for the blackout, spot and
+    rotunda spill off + the label wash (flame_spill). light_gain scales the flame-derived cheat lights with the flame."""
+    import kv45
+    cap = {}
+    copo0, palco0 = H.copo, S.palco
+
+    def copo(spec, *a, **k):
+        spec = dict(spec)
+        if spec.get('lit'):
+            spec.update(flame_scale=flame_scale, flame_seed=flame_seed)
+        r = copo0(spec, *a, **k)
+        cap['root'] = r
+        return r
+
+    def palco(*a, **k):
+        if blackout:
+            k.update(spot=False, rotunda_spill=0.0)
+        h = palco0(*a, **k)
+        cap['h'] = h
+        return h
+    H.copo, S.palco = copo, palco
+    try:
+        kv45.build(lit)()
+    finally:
+        H.copo, S.palco = copo0, palco0
+    h, root = cap['h'], cap['root']
+    if lit and blackout and h.get('flame_spill') is None:
+        S.flame_spill(h, root)
+    for k in ('flame_bounce', 'flame_spill'):
+        if h.get(k) is not None:
+            h[k].data.energy *= light_gain
+    return h, root, bpy.context.scene.camera
+
+
+def kv45_cam():
+    """Camera B = the KV-45 camera, read from the director's scene (built, read, discarded)."""
+    settings(1)
+    _, _, cam = build_kv45(False)
+    return cam_params(cam)
 
 
 def render(path):
@@ -147,50 +186,50 @@ def aov_on(aov_dir):
 
 # ---------------------------------------------------------------------------------------------------- modes
 def mode_dry():
+    B = kv45_cam()
     settings(8)
     h, root = build_palco(candle=True)
-    A, B = cam_A(), cam_B()
+    A = cam_A()
     cam = make_cam()
     import numpy as np
     pts = S._glass_points('200', 32)
-    rows = []
     for f in range(G0, G1 + 1):
         u = set_cam(cam, f, A, B)
         z = lift_z(f)
         bpy.context.view_layer.update()
         R = cam.matrix_world.to_3x3()
-        px, py = S.project(pts + np.array([0, 0, z]), cam.location, R, cam.data.lens, RES,
-                           (cam.data.shift_x, cam.data.shift_y))
-        mx, my = S.project(np.array([[0, 0, 0]]), cam.location, R, cam.data.lens, RES, (cam.data.shift_x, cam.data.shift_y))
-        rows.append(dict(f=f, u=round(u, 3), lift_mm=round(z * 1000, 1), lens=round(cam.data.lens, 2),
-                         cam=[round(v, 4) for v in cam.location], mark=[round(float(mx[0]), 1), round(float(my[0]), 1)],
-                         glass_top=round(float(py.min()), 1), glass_bot=round(float(py.max()), 1),
-                         glass_x=[round(float(px.min()), 1), round(float(px.max()), 1)]))
-    for r in rows:
-        print('DRY', json.dumps(r))
-    print('A', json.dumps({k: (v if not hasattr(v, '__len__') or isinstance(v, str) else list(v)) for k, v in A.items() if k != 'check'}, default=str))
-    print('B', json.dumps({k: (v if not hasattr(v, '__len__') or isinstance(v, str) else list(v)) for k, v in B.items() if k != 'check'}, default=str))
+        sh = (cam.data.shift_x, cam.data.shift_y)
+        px, py = S.project(pts + np.array([0, 0, z]), cam.location, R, cam.data.lens, RES, sh)
+        mx, my = S.project(np.array([[0, 0, 0]]), cam.location, R, cam.data.lens, RES, sh)
+        print('DRY', json.dumps(dict(f=f, u=round(u, 3), lift_mm=round(z * 1000, 1), lens=round(cam.data.lens, 2),
+                                     cam=[round(v, 4) for v in cam.location], mark=[round(float(mx[0]), 1), round(float(my[0]), 1)],
+                                     glass_top=round(float(py.min()), 1), glass_bot=round(float(py.max()), 1))))
+    print('B', json.dumps(B))
 
 
 def mode_camA(samples):
     settings(samples)
     build_palco(candle=False)
     cam = make_cam()
-    set_cam(cam, G0, cam_A(), cam_B())
+    A = cam_A()
+    for k in ('location', 'rotation_euler'):
+        setattr(cam, k, A[k])
+    cam.data.lens, cam.data.shift_x, cam.data.shift_y = A['lens'], A['shift_x'], A['shift_y']
     t = time.time()
     render(os.path.join(OUT, 'F15_camA_16bit.png'))
     print('TEMPO camA', round(time.time() - t, 1))
 
 
 def mode_grua(f0, f1, pct, samples):
+    B = kv45_cam()
     sc = settings(samples, pct)
     h, root = build_palco(candle=True)
     parts = S.descendants(root)
-    A, B = cam_A(), cam_B()
+    A = cam_A()
     cam = make_cam()
-    aov_dir = os.path.join(OUT, 'grua_aov')
-    aov_on(aov_dir)
+    aov_on(os.path.join(OUT, 'grua_aov'))
     os.makedirs(os.path.join(OUT, 'grua'), exist_ok=True)
+    json.dump(dict(A=A, B=B), open(os.path.join(OUT, 'grua', 'cameras.json'), 'w'), default=list)
     for f in range(f0, f1 + 1):
         sc.frame_current = f
         sc.frame_set(f)
@@ -206,61 +245,56 @@ def mode_grua(f0, f1, pct, samples):
 
 def mode_blecaute(samples):
     sc = settings(samples)
-    h, root = build_palco(candle=True, lit=True, spot=False, blackout_spill=True)
-    S.camera_glass(res=RES, lens=85, cam_height=0.160, tilt_deg=-5, glass_px=883, top_y=610)
+    h, root, cam = build_kv45(True, blackout=True)
     aov_on(os.path.join(OUT, 'blecaute_aov'))
     sc.frame_current = 1
-    S.clearance()
     t = time.time()
     render(os.path.join(OUT, 'F15_blecaute_16bit.png'))
     print('TEMPO blecaute', round(time.time() - t, 1))
 
 
-def crop_box():
-    """Pixel box (x0, y0, x1, y1) around the flame at KV-45, generous for scale 1,10 and the seed tongues."""
-    return (430, 450, 650, 670)
-
-
-def frames(spec):
-    out = []
-    for part in spec.split(','):
-        if '-' in part:
-            a, b = part.split('-')
-            out += list(range(int(a), int(b) + 1))
-        else:
-            out.append(int(part))
-    return out
+def crop_box(root, margin=36, scale_max=1.10):
+    """Pixel box (x0, y0, x1, y1) around the flame at the KV-45 camera: the flame object's box at the largest flicker
+    scale, projected, plus a margin for the seed's tongues; multiples of 2 px."""
+    import numpy as np
+    from mathutils import Vector
+    bpy.context.view_layer.update()
+    fl = [o for o in S.descendants(root) if o.type == 'MESH' and o.name.startswith('flame')][0]
+    cam = bpy.context.scene.camera
+    pts = []
+    for c in fl.bound_box:
+        p = fl.matrix_world @ Vector(c)
+        base = fl.matrix_world @ Vector((0, 0, -0.5))
+        pts.append(base + (p - base) * scale_max)
+    R = cam.matrix_world.to_3x3()
+    px, py = S.project(np.array([tuple(p) for p in pts]), cam.location, R, cam.data.lens, RES,
+                       (cam.data.shift_x, cam.data.shift_y))
+    x0, x1 = int(px.min() - margin) // 2 * 2, int(px.max() + margin + 2) // 2 * 2
+    y0, y1 = int(py.min() - margin) // 2 * 2, int(py.max() + margin + 2) // 2 * 2
+    return (max(0, x0), max(0, y0), min(RES[0], x1), min(RES[1], y1))
 
 
 def mode_chama(kind, lista, samples):
-    x0, y0, x1, y1 = crop_box()
-    W, Hh = RES
+    """kind 'palco': loop indices (0–23) at KV-45 lit; kind 'blecaute': F15 frame numbers in the blackout scene."""
     od = os.path.join(OUT, 'chama_' + kind)
     os.makedirs(od, exist_ok=True)
+    W, Hh = RES
+    box = None
     for f in lista:
-        if kind == 'palco':
-            s, seed = flicker(f)
-            gain = s
-        else:
-            s, seed = flame_state(f)
-            gain = s
-        # rebuild per frame: flame_scale/seed are build-time parameters of the director's model
-        settings(samples, threshold=0.005)
-        sc = bpy.context.scene
+        s, seed = flicker(f) if kind == 'palco' else flame_state(f)
+        sc = settings(samples, threshold=0.005)
+        h, root, cam = build_kv45(True, flame_scale=s, flame_seed=seed, blackout=(kind == 'blecaute'), light_gain=s)
+        if box is None:
+            box = crop_box(root)
+        x0, y0, x1, y1 = box
         sc.render.use_border = True
         sc.render.use_crop_to_border = True
         sc.render.border_min_x, sc.render.border_max_x = x0 / W, x1 / W
         sc.render.border_min_y, sc.render.border_max_y = 1 - y1 / Hh, 1 - y0 / Hh
-        h, root = build_palco(candle=True, lit=True, spot=(kind == 'palco'), flame_scale=s, flame_seed=seed,
-                              blackout_spill=(kind == 'blecaute'))
-        for k in ('flame_bounce', 'flame_spill'):
-            if h.get(k) is not None:
-                h[k].data.energy *= gain
-        S.camera_glass(res=RES, lens=85, cam_height=0.160, tilt_deg=-5, glass_px=883, top_y=610)
         t = time.time()
         render(os.path.join(od, 'c%04d.png' % f))
-        print('TEMPO chama', kind, f, round(s, 4), round(seed, 4), round(time.time() - t, 1), flush=True)
-    json.dump(dict(box=crop_box(), res=RES), open(os.path.join(od, 'box.json'), 'w'))
+        print('TEMPO chama', kind, f, round(s, 4), round(seed, 4), box, round(time.time() - t, 1), flush=True)
+        json.dump(dict(box=box, res=RES), open(os.path.join(od, 'box.json'), 'w'))
 
 
 if __name__ == '__main__':

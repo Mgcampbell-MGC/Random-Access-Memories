@@ -175,8 +175,24 @@
     const ds = { t: '.', f: opt.f, fs: opt.fs, cor: opt.cor, op: opt.op };
     const g = gm(ds, '.'), u = ds.fs / M[ds.f].upm, dotW = (g[2] - g[1]) * u;
     const passo = opt.passo || ds.fs * 0.32, folga = opt.folga == null ? passo * 0.9 : opt.folga;
+    // mínimo de pontos (revisão do CCO, 6 out 2026: um líder de 3 pontos lê como reticências). Se não couber no passo
+    // da tabela, as duas colunas perdem o tracking (até 0) e, se ainda faltar, encolhem juntas (no máximo 6 %).
+    const minP = opt.minPontos == null ? 5 : opt.minPontos;
+    const precisa = () => (minP - 1) * passo + dotW + 2 * folga;
+    const livre = () => b.inkX0 - (a ? a.inkX1 : x0 - folga);
+    if (a && livre() < precisa()) {
+      for (const o of [a, b]) if ((o.s.lsEm || 0) > 0) HF.mudar(o, { lsEm: 0 });
+      const fa0 = a.s.fs, fb0 = b.s.fs;
+      for (let i = 0; i < 4 && livre() < precisa() - 0.1; i++) {
+        const k = Math.max(0.94 * fa0 / a.s.fs, (a.inkW + b.inkW - (precisa() - livre())) / (a.inkW + b.inkW));
+        HF.mudar(a, { fs: a.s.fs * k }); HF.mudar(b, { fs: b.s.fs * k });
+      }
+      HF.posicionar(a, x0, baseline, 'left'); HF.posicionar(b, x1, baseline, 'right');
+      (window.HF_QA = window.HF_QA || []).push({ item: 'pontilhada: líder apertado ' + a.s.t, erro: 0, ls: a.s.lsEm, fs: +a.s.fs.toFixed(2) });
+    }
     const ini = (a ? a.inkX1 : x0 - folga) + folga, fim = b.inkX0 - folga;
     const n = Math.max(0, Math.floor((fim - ini - dotW) / passo) + 1);
+    if (n < minP) (window.HF_QA = window.HF_QA || []).push({ item: 'pontilhada: só ' + n + ' pontos em ' + (a ? a.s.t : b.s.t), erro: minP - n });
     const pontos = [];
     if (n >= 2) {
       const p = (fim - ini - dotW) / (n - 1);
@@ -242,13 +258,17 @@
     }
     return { el: s, x0: x, x1: x + w, capTop: o.baseline - WM.cap * k, baseline: o.baseline, k, cap: WM.cap * k };
   };
-  // O FOCO: disco d, elipse 2,4d × 0,8d, vão 0,5d (§D.3)
+  // O FOCO (§D.3, redesenhado na revisão do CCO de 6 out 2026 — o desenho antigo, vão 0,5 d e poça 2,4 × 0,8 d, lia
+  // como o ícone genérico de usuário a 16–32 px): disco d, vão 1,2 d, poça 3,2 d × 0,5 d. Mesmas constantes de
+  // _build/logo.py (FOCO). (cx, top) = centro horizontal e topo do disco.
+  HF.FOCO = { vao: 1.2, larg: 3.2, alt: 0.5 };
   HF.foco = function (parent, cx, top, d, cor) {
-    const s = svg(parent, cx - 1.2 * d, top, 2.4 * d, 2.3 * d, `0 0 ${2.4 * d} ${2.3 * d}`);
+    const F = HF.FOCO, w = F.larg * d, h = d + F.vao * d + F.alt * d;
+    const s = svg(parent, cx - w / 2, top, w, h, `0 0 ${w} ${h}`);
     const c = document.createElementNS(NS, 'circle');
-    c.setAttribute('cx', 1.2 * d); c.setAttribute('cy', d / 2); c.setAttribute('r', d / 2); c.setAttribute('fill', C(cor));
+    c.setAttribute('cx', w / 2); c.setAttribute('cy', d / 2); c.setAttribute('r', d / 2); c.setAttribute('fill', C(cor));
     const e = document.createElementNS(NS, 'ellipse');
-    e.setAttribute('cx', 1.2 * d); e.setAttribute('cy', 1.5 * d + 0.4 * d); e.setAttribute('rx', 1.2 * d); e.setAttribute('ry', 0.4 * d); e.setAttribute('fill', C(cor));
+    e.setAttribute('cx', w / 2); e.setAttribute('cy', d + F.vao * d + F.alt * d / 2); e.setAttribute('rx', w / 2); e.setAttribute('ry', F.alt * d / 2); e.setAttribute('fill', C(cor));
     s.append(c, e);
     return s;
   };

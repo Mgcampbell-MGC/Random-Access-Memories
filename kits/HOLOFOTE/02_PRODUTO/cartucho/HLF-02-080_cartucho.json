@@ -390,9 +390,9 @@
         "label": "MANIFESTO head",
         "ink_mm": [
           5.0,
-          4.73,
+          3.37,
           69.0,
-          7.53
+          6.17
         ],
         "text": "MANIFESTO DE CARGA · TURNÊ DIA DAS MÃES 2027",
         "cap_mm": 2.212
@@ -401,20 +401,31 @@
         "label": "CONTEÚDO: HOLOFOTE AO VIVO · O",
         "ink_mm": [
           5.0,
-          10.2,
-          50.41,
-          12.44
+          8.84,
+          51.19,
+          11.08
         ],
-        "text": "CONTEÚDO: HOLOFOTE AO VIVO · O SINGLE — vela aromática",
+        "text": "CONTEÚDO: HOLOFOTE AO VIVO · O SINGLE — vela aromática ·",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "ODORIZANTE DE AMBIENTE",
+        "ink_mm": [
+          5.0,
+          12.05,
+          25.29,
+          13.8
+        ],
+        "text": "ODORIZANTE DE AMBIENTE",
         "cap_mm": 1.7
       },
       {
         "label": "PESO LÍQUIDO 80 g",
         "ink_mm": [
           5.0,
-          12.92,
+          14.28,
           19.53,
-          15.56
+          16.92
         ],
         "text": "PESO LÍQUIDO 80 g",
         "cap_mm": 1.7
@@ -423,9 +434,9 @@
         "label": "COMPOSIÇÃO / INGREDIENTS (INCI",
         "ink_mm": [
           5.0,
-          15.75,
+          17.11,
           31.55,
-          18.26
+          19.62
         ],
         "text": "COMPOSIÇÃO / INGREDIENTS (INCI):",
         "cap_mm": 1.7
@@ -434,9 +445,9 @@
         "label": "HYDROGENATED COCONUT OIL, HYDR",
         "ink_mm": [
           5.0,
-          18.85,
+          20.21,
           67.57,
-          20.9
+          22.26
         ],
         "text": "HYDROGENATED COCONUT OIL, HYDROGENATED SOYBEAN OIL, PARFUM, LIMONENE,",
         "cap_mm": 1.7
@@ -445,9 +456,9 @@
         "label": "LINALOOL, CITRONELLOL, GERANIO",
         "ink_mm": [
           5.0,
-          21.57,
+          22.93,
           32.29,
-          23.62
+          24.98
         ],
         "text": "LINALOOL, CITRONELLOL, GERANIOL.",
         "cap_mm": 1.7
@@ -456,9 +467,9 @@
         "label": "Ingredientes (português): óleo",
         "ink_mm": [
           5.0,
-          24.19,
+          25.55,
           66.09,
-          26.44
+          27.8
         ],
         "text": "Ingredientes (português): óleo de coco hidrogenado, óleo de soja hidrogenado,",
         "cap_mm": 1.7
@@ -467,9 +478,9 @@
         "label": "fragrância, limoneno, linalol,",
         "ink_mm": [
           5.0,
-          27.01,
+          28.37,
           42.41,
-          29.16
+          30.52
         ],
         "text": "fragrância, limoneno, linalol, citronelol, geraniol.",
         "cap_mm": 1.7
@@ -478,31 +489,31 @@
         "label": "Pavio de madeira. Cápsula de a",
         "ink_mm": [
           5.0,
-          29.63,
+          30.99,
           35.09,
-          31.85
+          33.21
         ],
         "text": "Pavio de madeira. Cápsula de alumínio.",
         "cap_mm": 1.7
       },
       {
-        "label": "(Alérgenos de fragrância decla",
+        "label": "(Alérgenos da fragrância decla",
         "ink_mm": [
           5.0,
-          32.35,
-          63.77,
-          34.6
+          33.71,
+          51.61,
+          35.96
         ],
-        "text": "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026.)",
+        "text": "(Alérgenos da fragrância declarados na composição acima.)",
         "cap_mm": 1.7
       },
       {
         "label": "Fabricado e distribuído por: P",
         "ink_mm": [
           5.0,
-          34.68,
+          36.04,
           60.26,
-          37.29
+          38.65
         ],
         "text": "Fabricado e distribuído por: PALCO PEQUENO INDÚSTRIA DE VELAS LTDA.",
         "cap_mm": 1.7
@@ -511,9 +522,9 @@
         "label": "(EMPRESA FICTÍCIA)",
         "ink_mm": [
           5.0,
-          37.4,
+          38.76,
           20.18,
-          39.85
+          41.21
         ],
         "text": "(EMPRESA FICTÍCIA)",
         "cap_mm": 1.7
@@ -522,9 +533,9 @@
         "label": "CNPJ 00.000.000/0001-00 (FICTÍ",
         "ink_mm": [
           5.0,
-          40.12,
+          41.48,
           34.65,
-          42.59
+          43.95
         ],
         "text": "CNPJ 00.000.000/0001-00 (FICTÍCIO)",
         "cap_mm": 1.7
@@ -533,9 +544,9 @@
         "label": "Rua do Palco, 0 — Bairro Fictí",
         "ink_mm": [
           5.0,
-          43.23,
+          44.59,
           44.19,
-          45.38
+          46.74
         ],
         "text": "Rua do Palco, 0 — Bairro Fictício — São Paulo/SP —",
         "cap_mm": 1.7
@@ -544,9 +555,9 @@
         "label": "CEP 00000-000 (ENDEREÇO FICTÍC",
         "ink_mm": [
           5.0,
-          45.56,
+          46.92,
           34.28,
-          48.18
+          49.54
         ],
         "text": "CEP 00000-000 (ENDEREÇO FICTÍCIO)",
         "cap_mm": 1.7
@@ -555,9 +566,9 @@
         "label": "AFE Anvisa nº 0.00000-0 ·",
         "ink_mm": [
           5.0,
-          48.77,
+          50.13,
           25.57,
-          50.52
+          51.88
         ],
         "text": "AFE Anvisa nº 0.00000-0 ·",
         "cap_mm": 1.7
@@ -566,9 +577,9 @@
         "label": "Processo Anvisa nº 25351.00000",
         "ink_mm": [
           5.0,
-          51.0,
+          52.36,
           49.82,
-          53.47
+          54.83
         ],
         "text": "Processo Anvisa nº 25351.000000/0000-00 (FICTÍCIOS)",
         "cap_mm": 1.7
@@ -577,9 +588,9 @@
         "label": "SAC 0800 000 0000 · sac@holofo",
         "ink_mm": [
           5.0,
-          53.72,
+          55.08,
           64.01,
-          56.33
+          57.69
         ],
         "text": "SAC 0800 000 0000 · sac@holofote.exemplo · holofote.exemplo (FICTÍCIOS)",
         "cap_mm": 1.7
@@ -588,9 +599,9 @@
         "label": "INDÚSTRIA BRASILEIRA",
         "ink_mm": [
           5.0,
-          56.96,
+          58.32,
           43.81,
-          61.01
+          62.37
         ],
         "text": "INDÚSTRIA BRASILEIRA",
         "cap_mm": 3.0
@@ -599,9 +610,9 @@
         "label": "LOTE: ver base do copo · FAB 0",
         "ink_mm": [
           5.0,
-          62.06,
+          63.42,
           55.05,
-          64.67
+          66.03
         ],
         "text": "LOTE: ver base do copo · FAB 03/2027 · VAL 03/2029 (FICTÍCIOS)",
         "cap_mm": 1.7
@@ -610,9 +621,9 @@
         "label": "Modo de uso e advertências com",
         "ink_mm": [
           5.0,
-          65.3,
+          66.66,
           44.49,
-          67.39
+          68.75
         ],
         "text": "Modo de uso e advertências completas: ver lateral.",
         "cap_mm": 1.7
@@ -621,9 +632,9 @@
         "label": "PROTÓTIPO FICTÍCIO · DADOS FIC",
         "ink_mm": [
           5.0,
-          67.5,
+          68.86,
           51.95,
-          69.75
+          71.11
         ],
         "text": "PROTÓTIPO FICTÍCIO · DADOS FICTÍCIOS · NÃO COMERCIALIZAR",
         "cap_mm": 1.7
@@ -758,8 +769,8 @@
       "panel": "verso",
       "kind": "director's decision",
       "platform": "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026 — exemplo; confirmar com o certificado do fornecedor da fragrância.)",
-      "used": "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026.)",
-      "reason": "internal note removed from every printed panel",
+      "used": "(Alérgenos da fragrância declarados na composição acima.)",
+      "reason": "internal note removed from every printed panel; the regulation number is not printed because no Anvisa RDC 1.029/2026 could be verified (search, 6 Oct 2026): an unverified citation never goes on pack",
       "note_kept_in_json": "— exemplo; confirmar com o certificado do fornecedor da fragrância."
     },
     {
@@ -771,7 +782,7 @@
       "panel": "verso",
       "kind": "director's decision",
       "platform": "CONTEÚDO: HOLOFOTE AO VIVO — vela aromática · ODORIZANTE DE AMBIENTE",
-      "used": "CONTEÚDO: HOLOFOTE AO VIVO · O SINGLE — vela aromática",
+      "used": "CONTEÚDO: HOLOFOTE AO VIVO · O SINGLE — vela aromática · ODORIZANTE DE AMBIENTE",
       "reason": "the contents line names O SINGLE (the string as given by the director)"
     },
     {

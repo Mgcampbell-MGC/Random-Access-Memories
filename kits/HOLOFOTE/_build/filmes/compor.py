@@ -24,8 +24,16 @@ import lambe               # noqa: E402
 from render import renderizar   # noqa: E402
 
 PAGINA = os.path.join(HERE, 'tipo_filme.html')
-BOX = (430, 450, 650, 670)            # = f15_3d.crop_box()
 PENA = 20
+
+
+def caixa():
+    """The flame crop box, written by f15_3d.py next to the crops (projected from the flame at the KV-45 camera)."""
+    for k in ('palco', 'blecaute'):
+        p = os.path.join(C.RENDER, 'chama_' + k, 'box.json')
+        if os.path.exists(p):
+            return tuple(json.load(open(p))['box'])
+    raise FileNotFoundError('no flame crop box: render the crops first (f15_3d.py chama)')
 
 
 # ================================================================================================ type layers
@@ -122,12 +130,12 @@ class Fontes:
         return self.get(p, lambda: C.ler(p))
 
     def mask(self):
-        x0, y0, x1, y1 = BOX
+        x0, y0, x1, y1 = caixa()
         return self.get('mask', lambda: C.mascara_caixa(y1 - y0, x1 - x0, PENA))
 
 
 def colar(base, crop, m):
-    x0, y0, x1, y1 = BOX
+    x0, y0, x1, y1 = caixa()
     out = base.copy()
     out[y0:y1, x0:x1] = base[y0:y1, x0:x1] * (1 - m) + crop * m
     return out

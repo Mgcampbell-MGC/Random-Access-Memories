@@ -94,22 +94,44 @@ def svg_wordmark(ink, lamp, bg=None, pad=None):
             f'<g transform="translate({pad},{pad})">{body}</g></svg>'), W, H
 
 
-def svg_foco(color, bg=None):
-    """O FOCO: the lit disc (d) over a flat floor ellipse (2.4d x 0.8d), gap 0.5d."""
-    d = 400
-    W = 2.4 * d + 2 * 0.25 * d
-    H = d + 0.5 * d + 0.8 * d + 2 * 0.25 * d
-    cx = W / 2
-    top = 0.25 * d
-    rect = f'<rect width="{W}" height="{H}" fill="{bg}"/>' if bg else ''
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">{rect}'
-            f'<circle cx="{cx}" cy="{top + d / 2}" r="{d / 2}" fill="{color}"/>'
-            f'<ellipse cx="{cx}" cy="{top + d + 0.5 * d + 0.4 * d}" rx="{1.2 * d}" ry="{0.4 * d}" fill="{color}"/></svg>')
+# O FOCO, CCO review 6 Oct 2026: at 16–32 px the old geometry (gap 0,5 d, pool 2,4 × 0,8 d) read as the generic
+# user/avatar icon (a head over shoulders). The pool is now wide and flat and the lamp hangs well above it.
+FOCO = dict(vao=1.2, larg=3.2, alt=0.5)          # in units of d: gap disc→pool, pool width, pool height
+FOCO_RAIO_MAX = 0.84                               # farthest ink from the canvas centre, as a fraction of S/2
+
+
+def foco_geometria(S=1200):
+    """Disc and pool on a centred SQUARE canvas S × S: the area centroid sits on the canvas centre and the farthest
+    ink point stays inside FOCO_RAIO_MAX × S/2, so a circular avatar crop never clips it.
+    Returns dict(d, cx, cy_disco, cy_poca, rx, ry) in px."""
+    import math
+    g, w, h = FOCO['vao'], FOCO['larg'], FOCO['alt']
+    # in units of d, origin at the disc top
+    cy_d, cy_p, rx, ry = 0.5, 1.0 + g + h / 2, w / 2, h / 2
+    a_d, a_p = math.pi * 0.25, math.pi * rx * ry
+    yc = (a_d * cy_d + a_p * cy_p) / (a_d + a_p)          # area centroid
+    far = max(abs(0 - yc),                                   # disc top
+              max(math.hypot(rx * math.cos(t), cy_p + ry * math.sin(t) - yc) for t in [i * math.pi / 180 for i in range(360)]),
+              max(math.hypot(0.5 * math.cos(t), cy_d + 0.5 * math.sin(t) - yc) for t in [i * math.pi / 180 for i in range(360)]))
+    d = FOCO_RAIO_MAX * (S / 2) / far
+    top = S / 2 - yc * d
+    return dict(d=d, cx=S / 2, cy_disco=top + cy_d * d, cy_poca=top + cy_p * d, rx=rx * d, ry=ry * d, S=S)
+
+
+def svg_foco(color, bg=None, S=1200):
+    """O FOCO: the lit disc (d) above a flat floor pool (3,2 d × 0,5 d), gap 1,2 d, on a centred S × S square."""
+    f = foco_geometria(S)
+    r = lambda v: f'{v:.2f}'
+    rect = f'<rect width="{S}" height="{S}" fill="{bg}"/>' if bg else ''
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {S} {S}" width="{S}" height="{S}">{rect}'
+            f'<circle cx="{r(f["cx"])}" cy="{r(f["cy_disco"])}" r="{r(f["d"] / 2)}" fill="{color}"/>'
+            f'<ellipse cx="{r(f["cx"])}" cy="{r(f["cy_poca"])}" rx="{r(f["rx"])}" ry="{r(f["ry"])}" fill="{color}"/></svg>')
 
 
 def main():
     ways = {
-        'HOLOFOTE_logo_preto-sobre-papel': (C['preto'], C['amarelo'], C['papel']),
+        # CCO review 6 Oct 2026 (§D.1: amarelo on papel is a 'Never' pair, 1,18:1): on papel the lit O is preto too
+        'HOLOFOTE_logo_preto-sobre-papel': (C['preto'], C['preto'], C['papel']),
         'HOLOFOTE_logo_papel-sobre-preto': (C['papel'], C['amarelo'], C['preto']),
         'HOLOFOTE_logo_preto-sobre-amarelo': (C['preto'], C['preto'], C['amarelo']),
         'HOLOFOTE_logo_preto-sobre-rosa': (C['preto'], C['amarelo'], C['rosa']),
@@ -117,7 +139,9 @@ def main():
         'HOLOFOTE_logo_papel-sobre-violeta': (C['papel'], C['amarelo'], C['violeta']),
         'HOLOFOTE_logo_mono-preto_transparente': (C['preto'], C['preto'], None),
         'HOLOFOTE_logo_papel_transparente': (C['papel'], C['amarelo'], None),
-        'HOLOFOTE_logo_preto_transparente': (C['preto'], C['amarelo'], None),
+        # preto letters go on light grounds (papel, amarelo, laranja), where the lit O is preto: = the mono version.
+        # For rosa use preto-sobre-rosa (amarelo lamp).
+        'HOLOFOTE_logo_preto_transparente': (C['preto'], C['preto'], None),
     }
     for name, (ink, lamp, bg) in ways.items():
         svg, W, H = svg_wordmark(ink, lamp, bg)
@@ -128,6 +152,9 @@ def main():
         open(os.path.join(OUT, name + '.svg'), 'w').write(svg_foco(col, bg))
     letters, lit, width = wordmark_paths()
     print('wordmark width/cap =', round(width / CAP, 3), '(platform says 9,273)')
+    f = foco_geometria(1200)
+    print('O FOCO on 1200 × 1200: d =', round(f['d'], 1), 'disc centre y', round(f['cy_disco'], 1), 'pool centre y',
+          round(f['cy_poca'], 1), 'pool', round(2 * f['rx']), '×', round(2 * f['ry']))
 
 
 if __name__ == '__main__':

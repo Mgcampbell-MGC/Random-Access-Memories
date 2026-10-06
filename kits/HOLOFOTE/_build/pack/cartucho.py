@@ -109,7 +109,7 @@ REF_MODO_FIRST = 'Retire o selo antes de usar. Encaixe a cápsula no copo HOLOFO
 REF_MODO_USE = ('Use a cápsula sempre dentro do copo HOLOFOTE. Apoie o copo sobre a tampa virada ou sobre superfície '
                 'plana, firme e resistente ao calor.')
 REF_LAST = ('Modo de uso e advertências completas: ver lateral.', 'Modo de uso e advertências completas: ver laterais.')
-SINGLE_CONTENT = 'CONTEÚDO: HOLOFOTE AO VIVO · O SINGLE — vela aromática'
+SINGLE_CONTENT = 'CONTEÚDO: HOLOFOTE AO VIVO · O SINGLE — vela aromática · ODORIZANTE DE AMBIENTE'
 BINS = ['papel', 'vidro', 'metal']
 REF_BINS = ['papel', 'metal']                      # no glass in a refill
 BURN_200 = 'queima aprox. 40 h'                    # §B: 200 g ≈ 40 h (the setlist already states it)
