@@ -29,17 +29,17 @@ RULES = [
     (r'HLF-02-080_ROTULO_wrap\.png', 'O SINGLE: mestre do rótulo 7288 × 1960 px (182,2 mm × zona 14–63 mm, 40 px/mm), só tinta, fundo transparente.'),
     (r'HLF-02-080_ROTULO_wrap\.svg', 'O SINGLE: o mesmo rótulo em vetor, em milímetros reais.'),
     (r'HLF-02-080_ROTULO_wrap_preview\.png', 'O SINGLE: prévia chapada do rótulo sobre o amarelo do copo.'),
-    (r'HLF-02-080_ROTULO_wrap_ERRO-PLANTADO\.png', 'O SINGLE: cópia com erro plantado (E de MÃE espelhado) para testar a ferramenta de fidelidade.'),
+    (r'HLF-02-080_ROTULO_wrap_ERRO-PLANTADO\.png', 'O SINGLE: cópia com erro plantado (E de MÃE espelhado) para testar a ferramenta de fidelidade. NÃO IMPRIMIR.'),
     (r'HLF-02-080_label_copy\.json', 'O SINGLE: todos os textos, medidas e o hash do mestre.'),
     (r'(HLF-0\d)_ROTULO_wrap\.png', lambda m: f'{m[1]}: mestre do rótulo 9552 × 2560 px (40 px/mm), só tinta, fundo transparente.'),
     (r'(HLF-0\d)_ROTULO_wrap\.svg', lambda m: f'{m[1]}: o mesmo rótulo em vetor, em milímetros reais.'),
     (r'(HLF-0\d)_ROTULO_wrap_preview\.png', lambda m: f'{m[1]}: prévia chapada do rótulo sobre a cor do copo.'),
-    (r'(HLF-0\d)_ROTULO_wrap_ERRO-PLANTADO\.png', lambda m: f'{m[1]}: cópia com erro plantado para testar a fidelidade.'),
+    (r'(HLF-0\d)_ROTULO_wrap_ERRO-PLANTADO\.png', lambda m: f'{m[1]}: cópia com erro plantado (E de MÃE espelhado) para testar a fidelidade. NÃO IMPRIMIR.'),
     (r'(HLF-0\d)_label_copy\.json', lambda m: f'{m[1]}: todos os textos, medidas, desvios e o hash do mestre.'),
     (r'(HLF-CASE-0\d_[A-Z-]+)_ROTULO_wrap\.png', lambda m: f'{m[1]}: mestre do rótulo personalizado (9552 × 2560 px).'),
     (r'(HLF-CASE-0\d_[A-Z-]+)_ROTULO_wrap\.svg', lambda m: f'{m[1]}: o mesmo rótulo personalizado em vetor.'),
     (r'(HLF-CASE-0\d_[A-Z-]+)_ROTULO_wrap_preview\.png', lambda m: f'{m[1]}: prévia do rótulo personalizado sobre a cor do copo.'),
-    (r'(HLF-CASE-0\d_[A-Z-]+)_ROTULO_wrap_ERRO-PLANTADO\.png', lambda m: f'{m[1]}: cópia com erro plantado para testar a fidelidade.'),
+    (r'(HLF-CASE-0\d_[A-Z-]+)_ROTULO_wrap_ERRO-PLANTADO\.png', lambda m: f'{m[1]}: cópia com erro plantado para testar a fidelidade. NÃO IMPRIMIR.'),
     (r'(HLF-CASE-0\d_[A-Z-]+)_label_copy\.json', lambda m: f'{m[1]}: textos, dados do pedido (fictícios) e medidas.'),
     # tampa
     (r'HLF-TAMPA-(\d\d)_topo\.png', lambda m: f'Tampa Ø{m[1]}: arte completa da impressão UV (fita gaffer + sombra + tintas), transparente fora do disco. É o arquivo que o 3D aplica.'),
@@ -80,7 +80,7 @@ RULES = [
     (CT + r'_CARTUCHO_([a-z0-9-]+)\.svg', lambda m: f'{ct(m[1])[0]}: painel {m[2]} em vetor.'),
     (CT + r'_cartucho\.json', lambda m: f'{ct(m[1])[0]}: textos, medidas e desvios de cada painel.'),
     # refil
-    (r'HLF-REF-0(\d)_TAMPA-PEEL\.png', lambda m: f'Refil NOVA TEMPORADA {FAIXA[m[1]]}: tampa peel Ø66 com aba, cor da faixa + tinta, recorte em alfa, 40 px/mm.'),
+    (r'HLF-REF-0(\d)_TAMPA-PEEL\.png', lambda m: f'Refil NOVA TEMPORADA {FAIXA[m[1]]}: tampa peel Ø66 com aba, cor da faixa + tinta, recorte em alfa, 40 px/mm (inclui "Retire o selo antes de acender.").'),
     (r'HLF-REF-0(\d)_TAMPA-PEEL_tinta\.png', lambda m: f'Refil {FAIXA[m[1]]}: só a tinta da tampa peel.'),
     (r'HLF-REF-0(\d)_TAMPA-PEEL\.svg', lambda m: f'Refil {FAIXA[m[1]]}: tampa peel em vetor, com a faca.'),
     (r'HLF-REF_CAPSULA_faixa-laser\.png', 'Cápsula do refil: faixa de LOTE · FAB · VAL gravada a laser (213,6 × 10 mm), transparente.'),
@@ -125,7 +125,8 @@ Tudo aqui foi gerado por código em `_build/pack/` (um comando refaz tudo:
 
 """
 
-SECTIONS = [('rotulos', 'Rótulos do copo'), ('tampa', 'Tampa-palco'), ('base', 'Fundo do copo e etiqueta de lote'),
+SECTIONS = [('rotulos', 'Rótulos do copo'),
+            ('rotulos/_controle', 'Controles de fidelidade: cópias com erro proposital, NÃO são mestres de impressão'), ('tampa', 'Tampa-palco'), ('base', 'Fundo do copo e etiqueta de lote'),
             ('case', 'O CASE'), ('cartucho', 'Cartuchos: O INGRESSO, O INGRESSO SINGLE e refil NOVA TEMPORADA'), ('refil', 'Refil NOVA TEMPORADA'),
             ('setlist', 'A SETLIST'), ('pulseira', 'A PULSEIRA'), ('facas', 'Facas e desenhos técnicos')]
 
@@ -147,7 +148,7 @@ def main():
             continue
         out.append(f'## {folder}/ · {title}\n')
         for f in sorted(os.listdir(p)):
-            if f.startswith('.') or f == 'LEIA_ME.md':
+            if f.startswith('.') or f == 'LEIA_ME.md' or os.path.isdir(os.path.join(p, f)):
                 continue
             d = describe(f)
             if d is None:

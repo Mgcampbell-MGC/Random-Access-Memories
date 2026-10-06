@@ -317,7 +317,7 @@ def b_c01():
 
 
 # ================================================================================================= C02 · A PRIMEIRA FILA
-def b_c02(spill=3.0, lens=40.0, dist=0.42, h_cam=0.20, ax=650, ay=1000):
+def b_c02(spill=3.0, lens=40.0, dist=0.42, h_cam=0.20, ax=650, ay=1110):
     """The escola set (preset C02, spot from above-upstage at 60 deg). The camera is a wider, closer version of the
     preset's (85 mm at 0,72 m showed 2,5 chairs): 40 mm at 0,42 m behind the candle, level, lens shift only, so the
     back panel is pin-sharp and big while the front row reads as a ROW of white monoblocs with the bag on the middle
@@ -339,10 +339,10 @@ def b_c02(spill=3.0, lens=40.0, dist=0.42, h_cam=0.20, ax=650, ay=1000):
 
 
 # ================================================================================================= C04 · A DISCOGRAFIA
-C04_X = (-0.24, -0.08, 0.08, 0.24)
+C04_X = (-0.225, -0.075, 0.075, 0.225)
 
 
-def b_c04(floor_hex='#2A2825', wash=1.4):
+def b_c04(floor_hex='#383532', wash=12.0):
     """Four lit candles in a row, each in its own white hard pool (four 3.200 K spots recorded balanced, as O PALCO),
     no floor X (A MARCA is one per frame and no candle here is 'the' candle). The setlist is taped flat in front, its
     far edge 0,64 m from the flames, out of the pools; its only light is a dim shadowless wash light-linked to the
@@ -352,7 +352,7 @@ def b_c04(floor_hex='#2A2825', wash=1.4):
     for o in (h['tape_plate'], h['tape_floor']):
         o.hide_render = True
     roots = []
-    pool_r, spot_deg = 0.066, 26.0
+    pool_r, spot_deg = 0.060, 26.0
     throw = pool_r / math.tan(math.radians(spot_deg / 2))
     for i, (x, f) in enumerate(zip(C04_X, ['01', '02', '03', '04'])):
         r = H.copo(dict(faixa=f, wrap=S.wrap(f), lit=True, flame_seed=0.37 * i), at=(x, 0, 0), rot_deg=-6)
@@ -372,9 +372,9 @@ def b_c04(floor_hex='#2A2825', wash=1.4):
     wl.visible_camera = False
     S.link_receivers(wl, [o for o in S.descendants(sl.root) if o.type == 'MESH'])
     S.clearance()
-    pts = [(x, 0, z) for x in (C04_X[0] - 0.085, C04_X[-1] + 0.085) for z in (0.0, 0.115)] + \
-          [(x, -1.04, 0.0) for x in (-0.08, 0.08)]
-    cam_fit(pts, 27.0, 0.0, 50, (1080, 1350), (90, 440, 990, 1330), fstop=8.0, target=(0.0, -0.35, 0.05))
+    pts = [(x, 0, z) for x in (C04_X[0] - 0.07, C04_X[-1] + 0.07) for z in (0.0, 0.115)] + \
+          [(x, -0.99, 0.0) for x in (-0.08, 0.08)]
+    cam_fit(pts, 30.0, 0.0, 85, (1080, 1350), (40, 440, 1040, 1340), fstop=11.0, target=(0.0, -0.40, 0.05))
     return dict(labels=[lab(r, f) for r, f in zip(roots, ['01', '02', '03', '04'])])
 
 
@@ -418,10 +418,10 @@ def b_c05(fmt):
         spot_palco((0.0, 0.03, 0.06), 0.20)
         ang = OL.open_deg_for_camera(70)
         c = OL.case(state='open', open_deg=ang, copo=dict(faixa='02', wrap=S.wrap('02'), lid_art=S.tampa_art()),
-                    band=True, band_kw=dict(route='corner'), at=(0, 0, 0), rot_deg=14.0)
-        pts = pontos([c.root])
-        box = (190, 250, 890, 920) if fmt == '1x1' else (110, 540, 970, 1380)
-        cam = cam_fit(pts, 70.0, -8.0, 60, res, box, fstop=11.0, target=(0, 0.02, 0.07))
+                    band=True, band_kw=dict(route='corner'), at=(0, 0, 0), rot_deg=8.0)
+        pts = pontos([o for o in (c.base, c.lid, c.mirror)])
+        box = (190, 292, 890, 932) if fmt == '1x1' else (130, 700, 950, 1384)
+        cam = cam_fit(pts, 70.0, -6.0, 60, res, box, fstop=11.0, target=(0, 0.02, 0.07))
         bpy.context.view_layer.update()
         OL.place_work_bulb(c, cam, dist=1.3)
         return dict(labels=[], case=c)
@@ -429,15 +429,42 @@ def b_c05(fmt):
 
 
 # ================================================================================================= C06 · O MENOR HOLOFOTE
-def b_c06(spill=0.035):
+def rim_spill(root, energy, coll=None):
+    """C06's 'label dimly flame-lit' (§E.2, §D.7.3). S.flame_spill() (a down-facing disc AT the flame, inside the glass)
+    cannot reach the label: every point of the outer coating faces away from it (N.L < 0), so the label rendered
+    black (measured: sRGB 0,3 / 255 on the panel). This motivated cheat sits just above the front of the rim, where
+    the flame's light spills over the lip, shadowless, 1.900 K, light-linked to this copo's coating and print only:
+    a warm top-down falloff on the panel, nothing else in the frame sees it."""
+    fl = [o for o in S.descendants(root) if o.name.startswith('flame_light')]
+    parts = [o for o in S.descendants(root) if o.type == 'MESH' and (o.name.startswith('coating') or o.name.startswith('print'))]
+    bpy.context.view_layer.update()
+    base = root.matrix_world.translation
+    yaw = root.matrix_world.to_euler().z
+    fwd = Vector((math.sin(yaw) * 0, -1, 0))                 # toward the camera (-Y)
+    p = base + Vector((0, -0.052, 0.098))
+    L = S._light('rim_spill', 'AREA', p, (base.x, base.y - 0.040, base.z + 0.040), energy, color=(1.0, 0.56, 0.24),
+                 coll=coll, shape='DISK', size=0.03)
+    L.data.use_shadow = False
+    L.visible_camera = False
+    L.visible_glossy = False
+    S.link_receivers(L, parts)
+    return L
+
+
+def b_c06(spill=0.02, lit=True, neutra=False):
     h = S.palco(at=(0, 0, 0), spot=False, rotunda_spill=0.0)
-    root = H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=True), at=h['place'], rot_deg=-12)
+    root = H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=lit), at=h['place'], rot_deg=-12)
     S.ride(root, h['lift'])
-    S.flame_bounce(h, root)
-    S.flame_spill(h, root, energy=spill)
+    if lit:
+        S.flame_bounce(h, root)
+        rim_spill(root, spill, h['coll'])
+    if neutra:
+        # §D.7.3: colour on the neutral-light render of the same view: a white 30 x 30 cm key, no flame
+        tgt = Vector((0, 0, 0.044))
+        S._light('neutra', 'AREA', tgt + S._dir(-20.0, 25.0) * 1.0, tgt, S.ENERGIA['loja_key_k'], shape='SQUARE', size=0.3)
     S.camera_glass(res=(1080, 1350), lens=85, cam_height=0.150, tilt_deg=-5, glass_px=405, top_y=600)
     S.clearance()
-    return dict(labels=[lab(root, '02')], albedo=True)
+    return dict(labels=[lab(root, '02')], albedo=lit)
 
 
 # ================================================================================================= C08 · NOVA TEMPORADA
@@ -461,10 +488,8 @@ def b_c08():
     S.ride(root, h['lift'])
     rf = OL.refil(faixa='02', peel=0.5, at=(0.094, 0.030, 0.0), rot_deg=-120.0)
     vidro_transparente_para([h['spot']], [root])
-    gp, top = 400, 640
-    px_mm = gp / 88.0
-    S.camera_glass(res=(1080, 1350), lens=50, cam_height=0.220, tilt_deg=-6, glass_px=gp, top_y=top,
-                   center_x=540 - 47 * px_mm, fstop=5.6)
+    pts = pontos([root, rf.root])
+    cam_fit(pts, 9.0, -8.0, 50, (1080, 1350), (170, 560, 910, 1110), fstop=5.6, target=(0.045, 0.01, 0.045))
     return dict(labels=[lab(root, '02')])
 
 
@@ -500,12 +525,49 @@ def tampa_lean(at, side=1, out=0.050, back=0.040, face_deg=26.0, lean_deg=12.0, 
     return t
 
 
+def tampa_apoiada(at, beta=13.0, face=-12.0, dy=0.010, size='200'):
+    """L01, physically: the stage lid stands on its rim at the candle's own right side (the viewer's left), its top
+    (the X and 'ela fica aqui.') to camera, turned a little outward, and LEANS sideways onto the glass: its upper rim
+    touches the coated wall. Solved: the lid slides toward the candle until its nearest rim point is 0,3 mm off the
+    coating, then drops until its lowest point is on the floor (iterated)."""
+    t = H.tampa(S.tampa_art(size), size=size)
+    H.use_size(size)
+    R_lid = H.LID_R * H.MM
+    r_coat = (H.R_OUT + H.COAT_T + 0.3) * H.MM
+    t.rotation_euler = Euler((math.radians(90.0), math.radians(beta), math.radians(face)), 'XYZ')
+    rim = [Vector((R_lid * math.cos(2 * math.pi * k / 180), R_lid * math.sin(2 * math.pi * k / 180), z * H.MM))
+           for k in range(180) for z in (1.5, 4.5)]
+    at = Vector(at)
+    x, z = at.x - 0.08, 0.0
+
+    def world(x, z):
+        t.location = (x, at.y + dy, z)
+        bpy.context.view_layer.update()
+        M = t.matrix_world
+        return [M @ p for p in rim]
+    for _ in range(4):
+        lo, hi = at.x - 0.20, at.x
+        for _ in range(50):
+            mid = (lo + hi) / 2
+            ps = world(mid, z)
+            dmin = min(math.hypot(p.x - at.x, p.y - at.y) for p in ps if p.z < at.z + H.H_GLASS * H.MM)
+            if dmin < r_coat:
+                hi = mid
+            else:
+                lo = mid
+        x = lo
+        ps = world(x, z)
+        z -= min(p.z for p in ps) - at.z
+    world(x, z)
+    return t
+
+
 def b_l01():
     h = S.loja()
     root = H.copo(dict(faixa='02', wrap=S.wrap('02')), at=h['place'], rot_deg=-20)
-    t = tampa_lean(h['place'])
+    t = tampa_apoiada(h['place'])
     pts = pontos([root, t])
-    cam_fit(pts, 0.0, 0.0, 85, (1200, 1200), (96, 150, 1104, 1050), target=(0.03, 0, 0.044))
+    cam_fit(pts, 0.0, 0.0, 85, (1200, 1200), (96, 150, 1104, 1050), target=(-0.02, 0, 0.044))
     return dict(labels=[lab(root, '02')])
 
 
@@ -525,13 +587,33 @@ def b_l00():
 
 
 def b_l03():
-    h = S.loja(key_az=-84.0, key_el=9.0, key_dist=1.0, fill_ratio=0.12)
+    h = S.loja(key_az=-84.0, key_el=6.0, key_dist=1.0, key_size=0.06, fill_ratio=0.10)
     root = H.copo(dict(faixa='02', wrap=S.wrap('02'), base_relief=BASE_RELIEF, base_sticker=BASE_STICKER),
                   at=(0, 0, (H.SIZES['200']['R_OUT'] + 0.10) * H.MM), rot_deg=0)
     root.rotation_euler = (math.radians(-90.0), 0.0, math.radians(15.0))
+    adesivo_leitoso(root)
     pts = pontos([root])
     cam_fit(pts, 6.0, 0.0, 100, (1200, 1200), (96, 230, 1104, 970), target=(0, 0, 0.038))
     return dict(labels=[], copo=root)
+
+
+def adesivo_leitoso(root):
+    """Workaround (holofote.sticker, not edited): its clear-film haze mixes 12 % of the ink PNG's colour, and the
+    PNG's transparent pixels are near-black, so the 'clear matte PP' read as a dark grey plate. Here the haze takes a
+    milky white instead (a matte PP film lifts what is under it), the ink stays the master's black."""
+    for o in S.descendants(root):
+        if not o.name.startswith('lot_sticker'):
+            continue
+        for m in o.data.materials:
+            nt = m.node_tree
+            tx = next(n for n in nt.nodes if n.bl_idname == 'ShaderNodeTexImage')
+            bs = nt.nodes['Principled BSDF']
+            mix = nt.nodes.new('ShaderNodeMix')
+            mix.data_type = 'RGBA'
+            mix.inputs['A'].default_value = (0.92, 0.92, 0.90, 1.0)
+            nt.links.new(tx.outputs['Alpha'], mix.inputs['Factor'])
+            nt.links.new(tx.outputs['Color'], mix.inputs['B'])
+            nt.links.new(mix.outputs['Result'], bs.inputs['Base Color'])
 
 
 def b_l04():
@@ -575,7 +657,7 @@ def b_l06():
         roots.append(r)
         labels.append(lab(r, f, w, 'HLF-%s-%s' % (f, s)))
     pts = pontos(roots)
-    cam_fit(pts, 10.0, 0.0, 85, (1200, 1200), (96, 96, 1104, 1104), fstop=11.0, target=(0, 0, 0.045))
+    cam_fit(pts, 12.0, 30.0, 85, (1200, 1200), (96, 96, 1104, 1104), fstop=16.0, target=(0, 0, 0.045))
     return dict(labels=labels)
 
 
@@ -604,6 +686,7 @@ def shots():
         f, res = b_c05(fmt)
         T['C05_' + fmt] = dict(nome='C05_O-CASE_%s_limpo' % fmt, b=f, res=res, s=64)
     T['C06'] = dict(nome='C06_O-MENOR-HOLOFOTE_limpo', b=b_c06, res=(1080, 1350), s=64)
+    T['C06_neutra'] = dict(nome='C06_O-MENOR-HOLOFOTE_neutra', b=lambda: b_c06(lit=False, neutra=True), res=(1080, 1350), s=24)
     T['C08'] = dict(nome='C08_NOVA-TEMPORADA_limpo', b=b_c08, res=(1080, 1350), s=64)
     T['C10'] = dict(nome='C10_SALVA-COMO_limpo', b=b_c10, res=(1080, 1350), s=64)
     for k, b, n in (('L00', b_l00, 'L00_FRENTE'), ('L01', b_l01, 'L01_FRENTE'), ('L02', b_l02, 'L02_VERSO'), ('L03', b_l03, 'L03_A-BASE'),

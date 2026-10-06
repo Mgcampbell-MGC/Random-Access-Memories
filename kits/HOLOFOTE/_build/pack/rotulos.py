@@ -8,7 +8,8 @@ x 5724–8604. A platform baseline b mm sits at y = (82,0 - b) x 40.
 
 Writes into 02_PRODUTO/rotulos/: <ID>_ROTULO_wrap.png (master), <ID>_ROTULO_wrap.svg (same art as a vector file in
 real mm), <ID>_ROTULO_wrap_preview.png (coating colour behind the ink), <ID>_label_copy.json, and for the hero
-(HLF-02) and the personalised hero (HLF-CASE-02) a planted-error copy for the fidelity test.
+(HLF-02) and the personalised hero (HLF-CASE-02) a planted-error copy for the fidelity test, written to
+02_PRODUTO/rotulos/_controle/ so a printer can never pick it up with the masters.
 """
 import os
 import sys
@@ -267,6 +268,8 @@ def back(panel, estreia_venue):
               platform_cap_mm=3.54)
     split_line(panel, [run_cap(T.B2_LEFT, CN, 2.0, 80, CAPS)], [run_cap(T.B2_RIGHT, CN, 2.0, 80, CAPS)], 74.6, x0, x1,
                'B2')
+    panel.dev.append(dict(line='B2 left', **T.B2_FIX))
+    panel.dev.append(dict(line='T2 venue', **T.TOUR_FIX))
     hairline(panel, x0, x1, 73.1, 'rule back top')
     tour = [(estreia_venue, T.ESTREIA_STATUS)] + T.TOUR
     st = SG(700, 75)
@@ -346,7 +349,13 @@ def build(uid, sku, headliner_name='MÃE', opening=T.OPENING_DEFAULT, estreia=No
         R.save_png(np.clip(np.round(prev), 0, 255).astype(np.uint8), base + '_preview.png')
         res['master'] = base + '.png'
     if planted and write:
-        res['planted'] = plant_error(master, fp, base + '_ERRO-PLANTADO.png')
+        # the deliberately wrong copy lives in rotulos/_controle/, never beside the masters a printer picks up
+        ctl = os.path.join(OUT, '_controle')
+        os.makedirs(ctl, exist_ok=True)
+        res['planted'] = plant_error(master, fp, os.path.join(ctl, f'{uid}_ROTULO_wrap_ERRO-PLANTADO.png'))
+        stale = base + '_ERRO-PLANTADO.png'
+        if os.path.exists(stale):
+            os.remove(stale)
 
     tour_pairs = [(venue, T.ESTREIA_STATUS)] + T.TOUR
     copy = dict(
@@ -406,8 +415,9 @@ def plant_error(master, fp, path, size=300):
     out[y0:y0 + size, x0:x0 + size] = master[y0:y0 + size, x0:x0 + size][:, ::-1]
     R.save_png(out, path)
     changed = int((out[..., 3] != master[..., 3]).sum())
-    return dict(file=os.path.basename(path), patch_px=[x0, y0, size, size], mirrored='horizontal',
-                on_glyph=p.line.glyphs[p.line.glyphs.index(g)].fc.name(g.gid), alpha_pixels_changed=changed)
+    return dict(file=os.path.relpath(path, OUT), patch_px=[x0, y0, size, size], mirrored='horizontal',
+                on_glyph=p.line.glyphs[p.line.glyphs.index(g)].fc.name(g.gid), alpha_pixels_changed=changed,
+                note='fidelity control only: NOT a print master')
 
 
 UNITS = {

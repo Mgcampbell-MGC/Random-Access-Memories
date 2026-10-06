@@ -63,12 +63,13 @@ SLUG = {'1': 'O-PIOR-SHOW', '2': 'PRIMEIRO-SINAL', '3': 'FA-DE-CARTEIRINHA'}
 ENQUADRAMENTO = {
     'fala_0_6': ('Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o '
                  'queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.'),
-    '1': ('Gesto 6–9 s: queixo acima de y 750 e as mãos batendo palmas abaixo de y 870; o título E ELA APLAUDIU DE PÉ. '
-          '(y 760–860) cruza o peito entre os dois.'),
+    '1': ('Gesto 6–9 s: plano médio fechado; queixo acima de y 750 e as mãos batendo palmas abaixo de y 865; o título '
+          'E ELA APLAUDIU DE PÉ. (y 760–860) cruza o peito entre os dois.'),
     '2': ('Gesto 6–9 s: plano mais aberto; o telefone e a cabeça acima de y 750; o título LANTERNA PRA CIMA. '
           '(y 760–860) cruza o peito.'),
-    '3': ('Gesto 6–9 s: câmera com 15–20° de giro para o dedo ler; queixo acima de y 750 e o coração com os dedos e o '
-          'dedo apontando abaixo de y 870; o título JÁ FOI FÃ DELA? (y 760–860) cruza o peito.'),
+    '3': ('Gesto 6–9 s: câmera com ~18° de giro para o dedo ler; o rosto, o coração com os dedos e o dedo apontando '
+          'acima de y 750; o título JÁ FOI FÃ DELA? (y 760–860) cruza a barriga. Entre o queixo e o coração há só ~10 cm: '
+          'não cabe o título ali.'),
 }
 REJECT = ["any generated letter (backdrop, clothing, wristband, phone)", "the face changes between talk and gesture takes",
           "extra or fused fingers", "any flame or candle in a presenter scene", "an influencer smile on the hook",

@@ -16,7 +16,8 @@ Outputs:
 
 Timeline (platform §F): 0,0–2,0 hook · 2,0–6,0 body (the talk plate, tag, word-synced captions) · 6,0–9,0 gesture
 plate + gesture title · 9,0–15,0 KV-45 lit, push 100 -> 103 % about the frame centre, KV type (headline, lockup,
-safety line) and the VO caption at y 300–330. Ad 2: black 4 frames, then the CLAC to lit (frame 220).
+safety line) and the VO caption at y 300–330 — dropped where the VO line IS the headline or the lockup (1A–1C,
+3A–3C; director, 6 Oct 2026). Ad 2: black 4 frames, then the CLAC to lit (frame 220).
 The cut to the KV, the claps, the second bell and the snare are keyed to onsets MEASURED on the final mix.
 No disclosure plate (founder override, 6 Oct 2026). Silent master = the same picture with no audio track: every
 spoken line is already captioned in both.
@@ -74,6 +75,18 @@ def gesture_plates(cut):
     return {'1': 'CLAP_' + p, '2': 'PHONE_H01', '3': 'HEART_' + p}[cut[0]]
 
 
+LOCKUP = 'holofote nela.'
+
+
+def kv_caption(cut):
+    """Director, 6 Oct 2026 (compliance review): the 9–15 s VO caption never duplicates type already on screen in
+    another case. When the VO line IS the headline or the lockup, the caption is dropped: the KV type already carries
+    the words for silent viewers. 1A–1C 'Sua vez.' = SUA VEZ.; 3A–3C 'holofote nela.' = the lockup; 2A–2B keep it."""
+    norm = lambda x: ' '.join(x.lower().split())
+    v = norm(R[cut]['kv_vo'])
+    return v not in (norm(R[cut]['headline']), norm(LOCKUP))
+
+
 def ease(u):
     u = min(1.0, max(0.0, u))
     return u * u * (3 - 2 * u)
@@ -124,11 +137,19 @@ def tempos(cuts):
             pgs = LG.pages(ws)
             for pg in pgs:
                 n = sum(len(l) for l in pg['linhas'])
-                pg['cps'] = round(n / max(pg['t1'] - pg['t0'], 1e-3), 1)
+                pg['cps'] = round(n / max(pg['t1'] - pg['t0'], 1e-3), 1)        # over the spoken words only
             v = vt[f'{cut}_{part}']
             allw[part] = dict(inicio_audio_s=t0, palavras=ws, paginas=pgs, fala_s=[ws[0]['t0'], ws[-1]['t1']],
                               arquivo_s=v['duracao_s'], velocidade_tts=v['velocidade'],
                               janela_s={'gancho': [0.0, 2.0], 'corpo': [2.0, 6.0], 'kv_vo': [9.0, 15.0]}[part])
+        # reading rate over the time each page is actually on screen (a page holds until the next starts; the body's
+        # last page to 6,0 s; the KV caption for its display window)
+        seq = [pg for part in ('gancho', 'corpo') for pg in allw[part]['paginas']]
+        for i, pg in enumerate(seq):
+            end = seq[i + 1]['t0'] if i + 1 < len(seq) else 6.0
+            pg['cps_leitura'] = round(sum(len(l) for l in pg['linhas']) / max(end - pg['t0'], 1e-3), 1)
+        kv = allw['kv_vo']['paginas'][0]
+        kv['cps_leitura'] = round(sum(len(l) for l in kv['linhas']) / max(kv['t1'] + 0.75 - kv['t0'], 1.5), 1)
         res[cut] = allw
     return res
 
@@ -153,8 +174,9 @@ def camadas(cuts, T):
             for pi, pg in enumerate(T[cut][part]['paginas']):
                 for k in range(len(pg['palavras'])):
                     add(f'leg_{cut}_{part}_{pi}_{k}', dict(modo='legenda', linhas=pg['linhas'], ativa=k))
-        pg = T[cut]['kv_vo']['paginas'][0]
-        add('kvleg_' + cut, dict(modo='kvlegenda', linhas=pg['linhas']))
+        if kv_caption(cut):
+            pg = T[cut]['kv_vo']['paginas'][0]
+            add('kvleg_' + cut, dict(modo='kvlegenda', linhas=pg['linhas']))
         if cut[0] == '2':
             add('abertura', dict(modo='abertura', t='abertura: você'))
         hl = r['headline']
@@ -359,7 +381,7 @@ class Composer:
         else:
             claps = []
         kvleg = T[cut]['kv_vo']['paginas'][0]
-        self.kvleg_on = (kvleg['t0'], max(kvleg['t1'] + 0.75, kvleg['t0'] + 1.5))
+        self.kvleg_on = (kvleg['t0'], max(kvleg['t1'] + 0.75, kvleg['t0'] + 1.5)) if kv_caption(cut) else None
         self.ab_on = T[cut]['corpo']['paginas'][-1]['palavras'][-1]['t0'] if c == '2' else None
         self.lit, self.claps, self.clac = lit, claps, clac
         self.tp = talk_plate(cut)
@@ -368,7 +390,8 @@ class Composer:
 
     def log(self):
         return dict(kv_aceso_quadro=self.lit, clac_medido_s=self.clac, palmas_ou_caixa_quadros=self.claps,
-                    legenda_kv_s=[round(x, 3) for x in self.kvleg_on], abertura_s=self.ab_on,
+                    legenda_kv_s=[round(x, 3) for x in self.kvleg_on] if self.kvleg_on else
+                    'sem legenda: a fala é o título ou a assinatura já na tela (diretor, 6 out 2026)', abertura_s=self.ab_on,
                     placas=dict(fala=self.tp, gesto=gesture_plates(self.cut)))
 
     def L(self, key):
@@ -399,7 +422,7 @@ class Composer:
                                              borderMode=cv2.BORDER_REFLECT)
             img = self.kv_img.copy()
             over(img, self.L('kvtipo_' + cut))
-            if self.kvleg_on[0] <= t < self.kvleg_on[1]:
+            if self.kvleg_on and self.kvleg_on[0] <= t < self.kvleg_on[1]:
                 over(img, self.L('kvleg_' + cut))
         return (np.clip(img, 0, 1) * 255.0 + 0.5).astype(np.uint8)       # BGR (plates and layers read by OpenCV)
 
@@ -484,7 +507,7 @@ def folhas(cuts, T):
     fonts = os.path.join(B, 'fonts')
     fC = lambda s: ImageFont.truetype(os.path.join(fonts, 'SpecialGothicCondensedOne-Regular.ttf'), s)
     times = [0.5, 2.5, 4.5, 7.5, 10.0, 14.0]
-    tw, th, g, top = 400, 711, 24, 150
+    tw, th, g, top = 400, 711, 24, 236
     for cut in cuts:
         c = cut[0]
         r = R[cut]
@@ -494,12 +517,15 @@ def folhas(cuts, T):
         Hd = top + 2 * (th + 46) + g
         sheet = Image.new('RGB', (Wd, Hd), (0x12, 0x10, 0x14))
         d = ImageDraw.Draw(sheet)
-        d.text((g, 22), f'HOLOFOTE · O ANÚNCIO · {cut} · {r["conceito"]} · {r["apresentador"]} · ANIMATIC (PREVIS)',
+        papel, cinza = (0xFF, 0xF8, 0xEC), (0xB8, 0xB0, 0xA8)
+        d.text((g, 20), f'HOLOFOTE · O ANÚNCIO · {cut} · {r["conceito"]} · {r["apresentador"]} · ANIMATIC (PREVIS)',
                font=fC(38), fill=(0xFF, 0xE8, 0x1A))
-        d.text((g, 72), f'“{r["gancho"]}” / “{r["corpo"]}” / VO 9–15 s: “{r["kv_vo"]}”', font=fC(24),
-               fill=(0xFF, 0xF8, 0xEC))
-        d.text((g, 106), 'manequim cinza no lugar das tomadas de pessoas; VO temporária; 9–15 s = KV-45 real',
-               font=fC(22), fill=(0xB8, 0xB0, 0xA8))
+        d.text((g, 74), f'0–2 s  “{r["gancho"]}”   ·   credencial: {r["tag"]}', font=fC(24), fill=papel)
+        d.text((g, 106), f'2–6 s  “{r["corpo"]}”', font=fC(24), fill=papel)
+        d.text((g, 138), f'6–9 s  título: {r["gesto"]}   ·   9–15 s  VO “{r["kv_vo"]}” · título do KV: {r["headline"]}'
+               + ('' if kv_caption(cut) else '  (sem legenda: a fala já está na tela)'), font=fC(24), fill=papel)
+        d.text((g, 178), 'manequim cinza no lugar das tomadas de pessoas · VO temporária (Kokoro) · 9–15 s = KV-45 real · '
+               'quadros tirados do MP4 entregue', font=fC(21), fill=cinza)
         for i, ts in enumerate(times):
             f = int(round(ts * FPS))
             im = Image.fromarray(v[f]).resize((tw, th), Image.LANCZOS)
@@ -701,7 +727,8 @@ def main():
             old[cut] = dict(chaves=log[cut], vo={p: {k: T[cut][p][k] for k in ('inicio_audio_s', 'fala_s', 'arquivo_s',
                                                                                 'velocidade_tts', 'janela_s')}
                                                  for p in ('gancho', 'corpo', 'kv_vo')},
-                            legendas={p: [dict(linhas=pg['linhas'], t0=pg['t0'], t1=pg['t1'], cps=pg['cps'])
+                            legendas={p: [dict(linhas=pg['linhas'], t0=pg['t0'], t1=pg['t1'], cps_fala=pg['cps'],
+                                               cps_leitura=pg['cps_leitura'])
                                           for pg in T[cut][p]['paginas']] for p in ('gancho', 'corpo', 'kv_vo')},
                             som=dict(lufs_i=SR_[cut].get('lufs_i'), true_peak_dbtp=SR_[cut].get('true_peak_dbtp'),
                                      cues=SR_[cut].get('cues')))

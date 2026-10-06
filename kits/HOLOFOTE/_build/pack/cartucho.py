@@ -33,7 +33,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import comum as K
 from comum import R, T, Line, Placed, run_cap, run_xh, CAPS, FIG
 import facas
-from tipos import clear_accents
+from tipos import clear_accents, Glyph, glyph_path
 
 PP = 20
 ATLAS_PP = 16
@@ -103,15 +103,73 @@ def split(P, lruns, rruns, y, label):
 
 REF_LOT = ('LOTE: ver base do copo', 'LOTE: marcado na cápsula')     # director's correction for the refill cartons
 
+# director's decisions after the copy/compliance review, 6 Oct 2026 (recorded in every JSON they touch)
+DD = T.DD
+REF_MODO_FIRST = 'Retire o selo antes de usar. Encaixe a cápsula no copo HOLOFOTE limpo e frio.'
+REF_MODO_USE = ('Use a cápsula sempre dentro do copo HOLOFOTE. Apoie o copo sobre a tampa virada ou sobre superfície '
+                'plana, firme e resistente ao calor.')
+REF_LAST = ('Modo de uso e advertências completas: ver lateral.', 'Modo de uso e advertências completas: ver laterais.')
+SINGLE_CONTENT = 'CONTEÚDO: HOLOFOTE AO VIVO · O SINGLE — vela aromática'
+BINS = ['papel', 'vidro', 'metal']
+REF_BINS = ['papel', 'metal']                      # no glass in a refill
+BURN_200 = 'queima aprox. 40 h'                    # §B: 200 g ≈ 40 h (the setlist already states it)
+WORDMARK_W = 30.0                                  # refill front wordmark, ink width (§D.3 minimum 18 mm)
 
-def manifesto(faixa, net, refil=False):
+
+def wordmark_mono(P, x0, baseline, ink_w=WORDMARK_W):
+    """HOLOFOTE wordmark (§D.3) in the carton's one type ink: Expanded One caps, tracking −10, the third O lit as a
+    solid disc of its own outer contour (§D.3 'Mono' and 'On amarelo': the lamp in the type ink, so the two-ink carton
+    needs no third ink)."""
+    ln, cap = K.fit_size(lambda c: Line([run_cap('HOLOFOTE', K.XP, c, -10, CAPS)]), ink_w, 1, 30)
+    p = K.place_left(ln, x0, baseline)
+    lit = [i for i, gl in enumerate(ln.glyphs) if gl.fc.name(gl.gid) == 'O'][2]
+    ds = []
+    for i, gl in enumerate(ln.glyphs):
+        if i != lit:
+            ds.append(glyph_path(gl, p.x, p.y))
+            continue
+        conts, cur = [], []
+        for op in gl.fc.outline(gl.gid):
+            cur.append(op)
+            if op[0] in ('closePath', 'endPath'):
+                conts.append(cur)
+                cur = []
+
+        def area(c):
+            pts = [pt for op in c for pt in op[1]]
+            return (max(q[0] for q in pts) - min(q[0] for q in pts)) * (max(q[1] for q in pts) - min(q[1] for q in pts))
+        ds.append(glyph_path(Glyph(gl.fc, gl.gid, gl.x, gl.y, gl.em, ops=max(conts, key=area)), p.x, p.y))
+    P.raw(' '.join(ds))
+    b = p.ink()
+    P.log.append(dict(label='wordmark HOLOFOTE (mono, lit O solid)', ink_mm=[round(v, 2) for v in b],
+                      cap_mm=round(cap, 3), tracking=-10))
+    return p, cap
+
+
+def manifesto(faixa, net, refil=False, single=False):
+    """The carton MANIFESTO lines, with every decision applied; returns (lines, deviation records)."""
     lines = T.manifesto(faixa, ver='carton')
     lines = [('PESO LÍQUIDO ' + net) if t == 'PESO LÍQUIDO 200 g' else t for t in lines]
+    dev = [dict(panel='verso', **T.ALERG_FIX), dict(panel='verso', **T.INGREDIENT_BREAK)]
+
+    def swap(old_prefix, new, why, whole=False):
+        hits = [i for i, t in enumerate(lines) if t.startswith(old_prefix)]
+        assert len(hits) == 1, (old_prefix, hits)
+        i = hits[0]
+        was = lines[i]
+        lines[i] = new if whole else new + was[len(old_prefix):]
+        dev.append(dict(panel='verso', kind=DD, platform=was, used=lines[i], reason=why))
     if refil:
-        hits = [i for i, t in enumerate(lines) if t.startswith(REF_LOT[0])]
-        assert len(hits) == 1, hits
-        lines[hits[0]] = REF_LOT[1] + lines[hits[0]][len(REF_LOT[0]):]
-    return lines
+        swap(REF_LOT[0], REF_LOT[1], "a refill's lot is laser-marked on the capsule band (director, as platform "
+             "owner, 6 Oct 2026); the rest of the MANIFESTO is verbatim")
+        show = T.SKUS[faixa]['show']
+        swap('CONTEÚDO:', f'CONTEÚDO: HOLOFOTE {show} — vela aromática · refil · ODORIZANTE DE AMBIENTE',
+             'the contents line names the refill', whole=True)
+        swap(REF_LAST[0], REF_LAST[1], 'the refill carries MODO DE USO and ADVERTÊNCIAS on two sides', whole=True)
+    if single:
+        swap('CONTEÚDO:', SINGLE_CONTENT, 'the contents line names O SINGLE (the string as given by the director)',
+             whole=True)
+    return lines, dev
 
 
 # ------------------------------------------------------------------------------------------------- fronts
@@ -151,10 +209,21 @@ def front_ticket(g, faixa, single=False):
     y += 2.6 * sc
     P.raw(K.rect_d(g.X0, y - 0.15, g.MEAS, 0.3))
     y += 2.6 * sc + 4.0
+    right5 = [run_cap(T.L6_RIGHT_CAPS, K.CN, cap1, 80, CAPS), run_cap(SINGLE_NET if single else T.L6_RIGHT_FIG,
+                                                                     K.CN, 4.0, 0, FIG)]
     left = T.L6_LEFT + (' · ' + SINGLE_BURN if single else '')
-    split(P, [run_cap(left, K.CN, cap1, 0, FIG)],
-          [run_cap(T.L6_RIGHT_CAPS, K.CN, cap1, 80, CAPS), run_cap(SINGLE_NET if single else T.L6_RIGHT_FIG,
-                                                                     K.CN, 4.0, 0, FIG)], y, 'L5')
+    if not single:
+        # optional (director, 6 Oct 2026): the 200 g burn time beside PESO LÍQUIDO, only if it fits with nothing moved
+        cand = T.L6_LEFT + ' · ' + BURN_200
+        gap = g.MEAS - Line([run_cap(cand, K.CN, cap1, 0, FIG)]).ink_width() - Line(right5).ink_width()
+        if gap >= 6.0:
+            left = cand
+            P.dev.append(dict(panel='frente', kind=DD, added=BURN_200, line='L5', gap_to_right_mm=round(gap, 2),
+                              reason='optional: the 200 g burn time near PESO LÍQUIDO (the setlist already states 40 h)'
+                                     '; set on L5 after vela aromática, nothing else moved'))
+        else:
+            P.log.append(dict(label='L5 burn time not set', gap_mm=round(gap, 2)))
+    split(P, [run_cap(left, K.CN, cap1, 0, FIG)], right5, y, 'L5')
     yp = y + 5.6 * sc
     perf_d, xx = [], 0.0
     while xx < g.W:
@@ -176,9 +245,13 @@ def front_refil(g, faixa):
     s = T.SKUS[faixa]
     flood, ink = colours(faixa)
     P = Panel(g, 'frente', g.W, g.H, flood, ink)
+    pw, cw = wordmark_mono(P, g.X0, 6.0 + 3.24)          # brand on the principal display panel
     ln, c1 = K.fit_size(lambda c: Line([run_cap(REF_TITLE, K.CN, c, 100, CAPS)]), g.MEAS, 1, 30)
-    y = 7.0 + c1
+    y = pw.ink()[3] + cw + c1                              # clear space below the wordmark = its O height
     P.add(K.place_left(ln, g.X0, y), REF_TITLE, cap_mm=round(c1, 3))
+    P.dev.append(dict(panel='frente', kind=DD, added='HOLOFOTE wordmark', ink_w_mm=WORDMARK_W,
+                      colourway='§D.3 mono: letters and the lit O in the type ink (a two-ink carton)',
+                      reason='the brand must be on the principal display panel'))
     y += 2.4
     P.raw(K.rect_d(g.X0, y - 0.15, g.MEAS, 0.3))
     f = K.SG(700, s['wdth'])
@@ -250,14 +323,11 @@ def legal(g, faixa, items, name):
     return P
 
 
-def back(g, faixa, net, refil=False):
+def back(g, faixa, net, refil=False, single=False):
     flood, ink = colours(faixa)
     P = Panel(g, 'verso', g.W, g.H, flood, ink)
-    lines = manifesto(faixa, net, refil)
-    if refil:
-        P.dev.append(dict(panel='verso', kind="director's correction", platform=REF_LOT[0], used=REF_LOT[1],
-                          reason="a refill's lot is laser-marked on the capsule band (director, as platform owner, "
-                                 "6 Oct 2026); the rest of the MANIFESTO is verbatim"))
+    lines, dev = manifesto(faixa, net, refil, single)
+    P.dev += dev
 
     def run(top, write):
         ln, cap = K.fit_size(lambda c: Line([run_cap(lines[0], K.CN, c, 100, CAPS)]), g.MEAS, 1, 20)
@@ -290,7 +360,7 @@ def back(g, faixa, net, refil=False):
     return P
 
 
-def bars_and_bins(P, by):
+def bars_and_bins(P, by, labels=BINS):
     """The fictional bar block and the three disposal marks on one row. On the 96 mm carton the block is 38 x 22 (as
     on O CASE); on the 74 mm cartons it is 30 x 20 (an EAN-13 at ~80%) and the marks size to their slot."""
     g = P.g
@@ -303,10 +373,13 @@ def bars_and_bins(P, by):
         step = (g.X1 - x_start) / 3.0
         size = min(9.0, step - 1.8)
         xs = [x_start + step * (i + 0.5) for i in range(3)]
+    if len(labels) == 2:                            # two marks keep the three-mark size, on the outer two slots
+        xs = [xs[0], xs[2]]
+    assert len(xs) == len(labels)
     P.raw(K.bars_d(g.X0, by, bw, bh - 4.0))
     lnb, trb = K.fit_tracking([run_cap(T.BARCODE, K.CN, 2.0, 0, CAPS)], bw)
     P.add(K.place_left(lnb, g.X0, by + bh), 'barcode line', cap_mm=2.0)
-    for x, lab in zip(xs, ['papel', 'vidro', 'metal']):
+    for x, lab in zip(xs, labels):
         iy = by + (bh - 4.0) - 3.0 - size            # icon foot 3 mm above the foot of the bars (as on INGRESSO)
         P.raw(K.bin_icon_d(x - size / 2, iy, size))
         P.add(K.place_center(Line([run_cap(lab, K.CN, 2.0, 0)]), x, by + bh), lab, cap_mm=2.0)
@@ -354,6 +427,7 @@ def top(g, faixa):
     P = Panel(g, 'topo', g.W, g.D, flood, ink)
     ln, c = K.fit_size(lambda c: Line([run_cap(T.CT_TOP, K.CN, c, 100, CAPS)]), g.MEAS, 1, 30)
     P.add(K.place_left(ln, g.X0, g.D / 2 + c / 2), 'topo', cap_mm=round(c, 3))
+    P.dev.append(dict(panel='topo', **T.CT_TOP_FIX))
     return P
 
 
@@ -361,11 +435,13 @@ def bottom(g, faixa, with_bars=False):
     flood, ink = colours(faixa)
     P = Panel(g, 'fundo', g.W, g.D, flood, ink)
     if with_bars:
-        bars_and_bins(P, (g.D - 20.0) / 2)
+        bars_and_bins(P, (g.D - 20.0) / 2, REF_BINS)
         P.dev.append(dict(panel='fundo', reason='§C.9 gives the refill carton\'s other panels as MODO DE USO, '
                           'ADVERTÊNCIAS and MANIFESTO; the fictional bar block and the disposal marks (side 2 on O '
                           'INGRESSO) go on the bottom, the one panel left free; the top keeps O INGRESSO\'s '
-                          '"ESTE LADO PRA CIMA ↑"'))
+                          '"ESTE LADO PRA CIMA"'))
+        P.dev.append(dict(panel='fundo', kind=DD, platform='papel · vidro · metal', used='papel · metal',
+                          reason='there is no glass in a refill'))
     return P
 
 
@@ -453,12 +529,22 @@ def build(kind, faixa, od):
     modo = [('h', T.MODO_DE_USO[0])] + [('b', t) for t in T.MODO_DE_USO[1:]]
     adv = [('h', T.ADVERTENCIAS[0])] + [('b', t) for t in T.ADVERTENCIAS[1:]]
     if kind == 'REFIL':
-        panels = dict(front=front_refil(g, faixa), right=legal(g, faixa, modo, 'lateral-1'), back=back(g, faixa, K_['net'], True),
+        assert T.MODO_DE_USO[-1] == T.MODO_FIX['used']
+        modo_r = [('h', T.MODO_DE_USO[0]), ('b', REF_MODO_FIRST)] + [('b', t) for t in T.MODO_DE_USO[1:-1]] + \
+                 [('b', REF_MODO_USE)]
+        right = legal(g, faixa, modo_r, 'lateral-1')
+        right.dev.append(dict(panel='lateral-1', kind=DD, added=REF_MODO_FIRST, position='first item of MODO DE USO',
+                              reason='refill safety: the seal comes off and the capsule goes into a clean, cold glass'))
+        right.dev.append(dict(panel='lateral-1', kind=DD, platform=T.MODO_FIX['platform'], used=REF_MODO_USE,
+                              reason='the refill capsule is always used inside the HOLOFOTE glass'))
+        panels = dict(front=front_refil(g, faixa), right=right, back=back(g, faixa, K_['net'], True),
                       left=legal(g, faixa, adv, 'lateral-2'), top=top(g, faixa), bottom=bottom(g, faixa, True))
     else:
-        panels = dict(front=front_ticket(g, faixa, kind == 'SINGLE'), right=legal(g, faixa, modo + adv, 'lateral-1'),
-                      back=back(g, faixa, K_['net']), left=side_tag(g, faixa), top=top(g, faixa),
-                      bottom=bottom(g, faixa))
+        right = legal(g, faixa, modo + adv, 'lateral-1')
+        right.dev.append(dict(panel='lateral-1', **T.MODO_FIX))
+        panels = dict(front=front_ticket(g, faixa, kind == 'SINGLE'), right=right,
+                      back=back(g, faixa, K_['net'], single=(kind == 'SINGLE')), left=side_tag(g, faixa),
+                      top=top(g, faixa), bottom=bottom(g, faixa))
     names = dict(front='frente', right='lateral-1', back='verso', left='lateral-2', top='topo', bottom='fundo')
     meta = dict(sku=code, kind=kind, faixa=faixa, size_mm=[g.W, g.D, g.H], stock='SBS 400 g/m²',
                 inks=['preto', T.SKUS[faixa]['coating']], flood=flood, type_ink=ink, knockout=(faixa == '04'),

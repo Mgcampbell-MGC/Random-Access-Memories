@@ -54,6 +54,15 @@
    "any blue or violet object in a frame with a stand-in",
    "a recognisable real person or celebrity likeness"
   ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-1A_O-PIOR-SHOW_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-1A_O-PIOR-SHOW_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-1A_O-PIOR-SHOW_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: plano médio fechado; queixo acima de y 750 e as mãos batendo palmas abaixo de y 865; o título E ELA APLAUDIU DE PÉ. (y 760–860) cruza o peito entre os dois."
+  },
   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
  },
  {
@@ -81,12 +90,12 @@
    ]
   },
   "falado_pt": {
-   "gancho": "Prézinho. Você era um girassol.",
+   "gancho": "Prezinho. Você era um girassol.",
    "corpo": "Esqueceu a coreografia. Chorou. Acenou pra mãe errada.",
    "kv_vo": "Sua vez."
   },
   "na_tela_pt": {
-   "tag_gancho": "DIA DAS MÃES · PRÉZINHO",
+   "tag_gancho": "DIA DAS MÃES · PREZINHO",
    "titulo_gesto": "E ELA APLAUDIU DE PÉ.",
    "headline_kv": "SUA VEZ.",
    "assinatura": "holofote nela.",
@@ -111,6 +120,15 @@
    "any blue or violet object in a frame with a stand-in",
    "a recognisable real person or celebrity likeness"
   ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-1B_O-PIOR-SHOW_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-1B_O-PIOR-SHOW_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-1B_O-PIOR-SHOW_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: plano médio fechado; queixo acima de y 750 e as mãos batendo palmas abaixo de y 865; o título E ELA APLAUDIU DE PÉ. (y 760–860) cruza o peito entre os dois."
+  },
   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
  },
  {
@@ -138,12 +156,12 @@
    ]
   },
   "falado_pt": {
-   "gancho": "Prézinho. Você, de abelhinha.",
+   "gancho": "Prezinho. Você, de abelhinha.",
    "corpo": "Errou o passo. Chorou. Acenou pra mãe errada.",
    "kv_vo": "Sua vez."
   },
   "na_tela_pt": {
-   "tag_gancho": "DIA DAS MÃES · PRÉZINHO",
+   "tag_gancho": "DIA DAS MÃES · PREZINHO",
    "titulo_gesto": "E ELA APLAUDIU DE PÉ.",
    "headline_kv": "SUA VEZ.",
    "assinatura": "holofote nela.",
@@ -168,6 +186,15 @@
    "any blue or violet object in a frame with a stand-in",
    "a recognisable real person or celebrity likeness"
   ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-1C_O-PIOR-SHOW_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-1C_O-PIOR-SHOW_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-1C_O-PIOR-SHOW_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: plano médio fechado; queixo acima de y 750 e as mãos batendo palmas abaixo de y 865; o título E ELA APLAUDIU DE PÉ. (y 760–860) cruza o peito entre os dois."
+  },
   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
  },
  {
@@ -225,6 +252,15 @@
    "any blue or violet object in a frame with a stand-in",
    "a recognisable real person or celebrity likeness"
   ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-2A_PRIMEIRO-SINAL_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-2A_PRIMEIRO-SINAL_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-2A_PRIMEIRO-SINAL_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: plano mais aberto; o telefone e a cabeça acima de y 750; o título LANTERNA PRA CIMA. (y 760–860) cruza o peito."
+  },
   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
  },
  {
@@ -282,6 +318,15 @@
    "any blue or violet object in a frame with a stand-in",
    "a recognisable real person or celebrity likeness"
   ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-2B_PRIMEIRO-SINAL_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-2B_PRIMEIRO-SINAL_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-2B_PRIMEIRO-SINAL_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: plano mais aberto; o telefone e a cabeça acima de y 750; o título LANTERNA PRA CIMA. (y 760–860) cruza o peito."
+  },
   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
  },
  {
@@ -311,7 +356,7 @@
   "falado_pt": {
    "gancho": "Dois dias de fila por um ingresso.",
    "corpo": "Chorou na grade. E ela te buscou na porta, à uma da manhã.",
-   "kv_vo": "Holofote nela."
+   "kv_vo": "holofote nela."
   },
   "na_tela_pt": {
    "tag_gancho": "FÃ DE QUEM, EXATAMENTE?",
@@ -339,6 +384,15 @@
    "any blue or violet object in a frame with a stand-in",
    "a recognisable real person or celebrity likeness"
   ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-3A_FA-DE-CARTEIRINHA_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-3A_FA-DE-CARTEIRINHA_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-3A_FA-DE-CARTEIRINHA_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: câmera com ~18° de giro para o dedo ler; o rosto, o coração com os dedos e o dedo apontando acima de y 750; o título JÁ FOI FÃ DELA? (y 760–860) cruza a barriga. Entre o queixo e o coração há só ~10 cm: não cabe o título ali."
+  },
   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
  },
  {
@@ -368,7 +422,7 @@
   "falado_pt": {
    "gancho": "Você sabe a setlist de todo mundo.",
    "corpo": "Menos a dela. Ela tá em turnê desde que você nasceu.",
-   "kv_vo": "Holofote nela."
+   "kv_vo": "holofote nela."
   },
   "na_tela_pt": {
    "tag_gancho": "SETLIST: TODO MUNDO, MENOS ELA",
@@ -396,6 +450,15 @@
    "any blue or violet object in a frame with a stand-in",
    "a recognisable real person or celebrity likeness"
   ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-3B_FA-DE-CARTEIRINHA_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-3B_FA-DE-CARTEIRINHA_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-3B_FA-DE-CARTEIRINHA_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: câmera com ~18° de giro para o dedo ler; o rosto, o coração com os dedos e o dedo apontando acima de y 750; o título JÁ FOI FÃ DELA? (y 760–860) cruza a barriga. Entre o queixo e o coração há só ~10 cm: não cabe o título ali."
+  },
   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
  },
  {
@@ -425,7 +488,7 @@
   "falado_pt": {
    "gancho": "Gritou o nome dele o show inteiro.",
    "corpo": "Ele não sabe o seu. Ela escolheu o seu antes de você nascer.",
-   "kv_vo": "Holofote nela."
+   "kv_vo": "holofote nela."
   },
   "na_tela_pt": {
    "tag_gancho": "FÃ DE QUEM, EXATAMENTE?",
@@ -453,6 +516,15 @@
    "any blue or violet object in a frame with a stand-in",
    "a recognisable real person or celebrity likeness"
   ],
+  "animatic": {
+   "com_som": "05_ANUNCIO/animatics/HLF-AD-3C_FA-DE-CARTEIRINHA_animatic_som.mp4",
+   "mudo": "05_ANUNCIO/animatics/HLF-AD-3C_FA-DE-CARTEIRINHA_animatic_mudo.mp4",
+   "folha_de_contato": "05_ANUNCIO/animatics/HLF-AD-3C_FA-DE-CARTEIRINHA_animatic_folha.png"
+  },
+  "enquadramento_pessoas": {
+   "fala_0_6": "Rosto entre y 640 e y 990: o topo da cabeça abaixo da credencial (y 560–620, a partir de x 120) e o queixo acima da faixa de legendas (y 1000–1240), que cai sobre o peito.",
+   "gesto_6_9": "Gesto 6–9 s: câmera com ~18° de giro para o dedo ler; o rosto, o coração com os dedos e o dedo apontando acima de y 750; o título JÁ FOI FÃ DELA? (y 760–860) cruza a barriga. Entre o queixo e o coração há só ~10 cm: não cabe o título ali."
+  },
   "divulgacao": "Nenhuma placa de IA na peça (decisão da dona, 6 out 2026). As regras de upload da plataforma são outra coisa e devem ser conferidas na hora de publicar."
  }
 ]

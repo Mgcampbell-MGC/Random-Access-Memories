@@ -115,3 +115,22 @@ glyphs (HarfBuzz returned .notdef for every letter). Licences: OFL (copies in `f
   (12 f per word, 18 f hold on the half-typed *d*, 2 f per deleted letter, 12 f per word) sum to 202 f = 8,4 s before
   the sign-off, and the rhythm is the joke. *domingo tô aí.* wraps to two lines (877 px on one line > the 800 px safe
   box). The sign-off lands on HLF-ID-01's first clap (measured 0,013 f off). Keys: Kenney UI clicks, CC0 (credited).
+
+- **Copy and compliance review, 6 Oct 2026 — director's decisions (amend the platform):**
+  1. **PREZINHO**, not *PRÉZINHO* (Lei 5.765/1971 dropped the accent in -zinho derivatives). Glass backs, posters,
+     C09, ads 1B/1C, packet.
+  2. **TURNÊ “VOCÊ”** with Brazilian curly quotes, not guillemets.
+  3. **Refill safety:** *Retire o selo antes de usar. Encaixe a cápsula no copo HOLOFOTE limpo e frio.* on the carton;
+     *Retire o selo antes de acender.* on every peel lid; refill disposal symbols papel · metal; HOLOFOTE on the main
+     panel. **Case underside:** *O copo é seu. O resto, separe: papel, plástico e metal.*
+  4. **Use line, every pack:** *Use a vela sempre dentro do copo. Apoie o copo sobre a tampa virada ou sobre
+     superfície plana, firme e resistente ao calor.* (the old line read as three alternatives).
+  5. **Planted-error masters live in `02_PRODUTO/rotulos/_controle/`**, never beside print masters.
+  6. **C03/C07 thumbnails are composited AFTER O LAMBE.** The lambe pass re-inks and misregisters what it touches; it
+     garbled the label. **C03:** 24 px above *DE PÉ* so the acute clears *APLAUDIU*.
+  7. **Body text is ragged-right** in the brand book. Fill-the-measure is the display rule, not the body rule. No
+     one-letter word at a line end; no single-word last line.
+  8. **Dates are always DOMINGO · 09.05.** VO captions never duplicate on-screen type: drop *Sua vez.* /
+     *holofote nela.* captions in 9–15 s.
+  9. **Every lit-candle post carries** *Nunca deixe a vela acesa sem supervisão.* in its caption (§D.8.6).
+  10. **S01 uses the 9:16 organic safe box** (x 140–940; sign-off centred at 540).

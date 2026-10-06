@@ -21,7 +21,7 @@ DESVIOS = [
     'F15 f204–209 is pure black (the candle is unlit when the spot cuts; the match strike at f206 is sound only, per the table).',
     'F06A end card uses the F15 end-card setting (holofote nela. filling 800 at baseline 410 + safety line at 508); the F06A table names the lines but not their layout.',
     'F06A headline A ATRAÇÃO É ELA. sits at baseline 410 (not the slot\'s 442) so abertura: você at baseline 470 clears its descender (Ç) by ~20 px.',
-    'F06C KV-45 state: MÃE AO VIVO fills the headline slot (MÃE in amarelo), DOMINGO 09.05 and holofote nela. share baseline 496 as an L/R split, safety at 530 on the lit 09.05 only. The table names the strings, not their layout.',
+    'F06C KV-45 state: MÃE AO VIVO fills the headline slot (MÃE in amarelo), DOMINGO · 09.05 (the dotted date, compliance review) and holofote nela. share baseline 496 as an L/R split, safety at 530 on the lit 09.05 only. The table names the strings, not their layout.',
     'F06C sub-line (Shantell, the Fã) at x-height 36 px, centred, baseline 900; the table gives only its baseline.',
     'Push centre (540, 760): the dolly expands about the label\'s upper half so the flame tip stays clear of the type zone.',
     'Crane frames f160–175 (no candle) rendered at 50 % and Lanczos-upscaled; f176–203 at 100 % with label AOVs; 48 samples + OIDN (adaptive 0,02), the director\'s light-path trims.',

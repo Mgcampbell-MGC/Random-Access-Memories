@@ -11,7 +11,7 @@
   "estreia_time": "14:32",
   "tour_lines": [
     "ESTREIA · 03.08.2003 · 14:32 ........ QUEM FEZ O SHOW FOI ELA",
-    "PRÉZINHO, DIA DAS MÃES ........ PRIMEIRA FILA",
+    "PREZINHO, DIA DAS MÃES ........ PRIMEIRA FILA",
     "FESTA JUNINA ........ O BIGODE FOI ELA",
     "FEIRA DE CIÊNCIAS ........ O VULCÃO TAMBÉM",
     "PRONTO-SOCORRO, 3H ........ SEM INGRESSO. ENTROU.",
@@ -30,7 +30,7 @@
   "lot": "HLF0927",
   "fab": "03/2027",
   "val": "03/2029",
-  "master_hash": "781c537d1dc9ec7826c872403d9312012da3ee2b0db501c4d255e888b106051b",
+  "master_hash": "2b54f4612f5c27c700bf5c3cc33ba1d45b63abdb6b8894ef32c30d4cedb4d968",
   "front_lines": {
     "L1": [
       "HOLOFOTE APRESENTA",
@@ -54,7 +54,7 @@
   "back_lines": {
     "B1": "ELA ESTEVE EM TODAS.",
     "B2": [
-      "TURNÊ «VOCÊ»",
+      "TURNÊ “VOCÊ”",
       "DESDE O PRIMEIRO DIA"
     ],
     "tour": [
@@ -63,7 +63,7 @@
         "QUEM FEZ O SHOW FOI ELA"
       ],
       [
-        "PRÉZINHO, DIA DAS MÃES",
+        "PREZINHO, DIA DAS MÃES",
         "PRIMEIRA FILA"
       ],
       [
@@ -288,11 +288,11 @@
         "ink_mm": [
           143.1,
           4.896,
-          158.866,
+          158.458,
           7.434
         ],
         "baseline_mm": 74.6,
-        "text": "TURNÊ «VOCÊ»"
+        "text": "TURNÊ “VOCÊ”"
       },
       {
         "label": "B2 R",
@@ -304,7 +304,7 @@
         ],
         "baseline_mm": 74.6,
         "text": "DESDE O PRIMEIRO DIA",
-        "gap_to_left_mm": 31.563
+        "gap_to_left_mm": 31.972
       },
       {
         "label": "rule back top",
@@ -346,12 +346,12 @@
         "label": "T2 venue",
         "ink_mm": [
           143.1,
-          12.928,
+          13.079,
           167.734,
           16.218
         ],
         "baseline_mm": 66.2,
-        "text": "PRÉZINHO, DIA DAS MÃES"
+        "text": "PREZINHO, DIA DAS MÃES"
       },
       {
         "label": "T2 status",
@@ -640,10 +640,24 @@
       "platform_baseline_mm": 79.2,
       "used_baseline_mm": 78.695,
       "reason": "accent top would sit 0.455 mm above the 82,0 mm print-zone top (the master cannot hold it); line lowered by 0.505 mm"
+    },
+    {
+      "line": "B2 left",
+      "kind": "director's decision",
+      "platform": "TURNÊ «VOCÊ»",
+      "used": "TURNÊ “VOCÊ”",
+      "reason": "guillemets are not Brazilian usage: curly double quotes"
+    },
+    {
+      "line": "T2 venue",
+      "kind": "director's decision",
+      "platform": "PRÉZINHO, DIA DAS MÃES",
+      "used": "PREZINHO, DIA DAS MÃES",
+      "reason": "spelling: Lei 5.765/1971 dropped the accent in -zinho derivatives (pé → pezinho, pré → prezinho)"
     }
   ],
   "planted_error": {
-    "file": "HLF-CASE-02_MAE-CORACAO_ROTULO_wrap_ERRO-PLANTADO.png",
+    "file": "_controle/HLF-CASE-02_MAE-CORACAO_ROTULO_wrap_ERRO-PLANTADO.png",
     "patch_px": [
       2456,
       734,
@@ -652,7 +666,8 @@
     ],
     "mirrored": "horizontal",
     "on_glyph": "E",
-    "alpha_pixels_changed": 38466
+    "alpha_pixels_changed": 38466,
+    "note": "fidelity control only: NOT a print master"
   },
   "generated": "2026-10-06",
   "generator": "_build/pack/rotulos.py"

@@ -18,30 +18,35 @@
       "lines": [
         {
           "text": "NOVA TEMPORADA",
-          "cap_mm": 4.375,
-          "measure_mm": 44.21,
-          "baseline_mm": 17.38
+          "cap_mm": 4.059,
+          "measure_mm": 41.02,
+          "baseline_mm": 15.44
         },
         {
           "text": "CAMARIM",
-          "cap_mm": 8.016,
-          "measure_mm": 56.37,
-          "baseline_mm": 31.38
+          "cap_mm": 7.825,
+          "measure_mm": 55.03,
+          "baseline_mm": 29.44
         },
         {
           "text": "vela aromática · refil",
           "cap_mm": 3.0,
-          "baseline_mm": 38.38
+          "baseline_mm": 36.44
         },
         {
           "text": "PESO LÍQUIDO 200 g",
           "cap_mm": "2,6 / figures 4,0",
-          "baseline_mm": 45.38
+          "baseline_mm": 43.44
         },
         {
           "text": "Use dentro do copo HOLOFOTE.",
           "cap_mm": 2.4,
-          "baseline_mm": 50.98
+          "baseline_mm": 49.04
+        },
+        {
+          "text": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "baseline_mm": 53.44
         }
       ],
       "strings": [
@@ -49,7 +54,16 @@
         "CAMARIM",
         "PESO LÍQUIDO 200 g",
         "vela aromática · refil",
-        "Use dentro do copo HOLOFOTE."
+        "Use dentro do copo HOLOFOTE.",
+        "Retire o selo antes de acender."
+      ],
+      "deviations": [
+        {
+          "kind": "director's decision",
+          "added": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "reason": "refill safety: the peel lid (o selo) must come off before the candle is lit"
+        }
       ]
     },
     {
@@ -70,30 +84,35 @@
       "lines": [
         {
           "text": "NOVA TEMPORADA",
-          "cap_mm": 4.375,
-          "measure_mm": 44.21,
-          "baseline_mm": 17.38
+          "cap_mm": 4.059,
+          "measure_mm": 41.02,
+          "baseline_mm": 15.44
         },
         {
           "text": "AO VIVO",
-          "cap_mm": 8.163,
-          "measure_mm": 56.27,
-          "baseline_mm": 31.38
+          "cap_mm": 7.966,
+          "measure_mm": 54.91,
+          "baseline_mm": 29.44
         },
         {
           "text": "vela aromática · refil",
           "cap_mm": 3.0,
-          "baseline_mm": 38.38
+          "baseline_mm": 36.44
         },
         {
           "text": "PESO LÍQUIDO 200 g",
           "cap_mm": "2,6 / figures 4,0",
-          "baseline_mm": 45.38
+          "baseline_mm": 43.44
         },
         {
           "text": "Use dentro do copo HOLOFOTE.",
           "cap_mm": 2.4,
-          "baseline_mm": 50.98
+          "baseline_mm": 49.04
+        },
+        {
+          "text": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "baseline_mm": 53.44
         }
       ],
       "strings": [
@@ -101,7 +120,16 @@
         "AO VIVO",
         "PESO LÍQUIDO 200 g",
         "vela aromática · refil",
-        "Use dentro do copo HOLOFOTE."
+        "Use dentro do copo HOLOFOTE.",
+        "Retire o selo antes de acender."
+      ],
+      "deviations": [
+        {
+          "kind": "director's decision",
+          "added": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "reason": "refill safety: the peel lid (o selo) must come off before the candle is lit"
+        }
       ]
     },
     {
@@ -122,30 +150,35 @@
       "lines": [
         {
           "text": "NOVA TEMPORADA",
-          "cap_mm": 4.375,
-          "measure_mm": 44.21,
-          "baseline_mm": 17.38
+          "cap_mm": 4.059,
+          "measure_mm": 41.02,
+          "baseline_mm": 15.44
         },
         {
           "text": "MAIS UM!",
-          "cap_mm": 8.057,
-          "measure_mm": 56.34,
-          "baseline_mm": 31.38
+          "cap_mm": 7.864,
+          "measure_mm": 55.0,
+          "baseline_mm": 29.44
         },
         {
           "text": "vela aromática · refil",
           "cap_mm": 3.0,
-          "baseline_mm": 38.38
+          "baseline_mm": 36.44
         },
         {
           "text": "PESO LÍQUIDO 200 g",
           "cap_mm": "2,6 / figures 4,0",
-          "baseline_mm": 45.38
+          "baseline_mm": 43.44
         },
         {
           "text": "Use dentro do copo HOLOFOTE.",
           "cap_mm": 2.4,
-          "baseline_mm": 50.98
+          "baseline_mm": 49.04
+        },
+        {
+          "text": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "baseline_mm": 53.44
         }
       ],
       "strings": [
@@ -153,7 +186,16 @@
         "MAIS UM!",
         "PESO LÍQUIDO 200 g",
         "vela aromática · refil",
-        "Use dentro do copo HOLOFOTE."
+        "Use dentro do copo HOLOFOTE.",
+        "Retire o selo antes de acender."
+      ],
+      "deviations": [
+        {
+          "kind": "director's decision",
+          "added": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "reason": "refill safety: the peel lid (o selo) must come off before the candle is lit"
+        }
       ]
     },
     {
@@ -174,30 +216,35 @@
       "lines": [
         {
           "text": "NOVA TEMPORADA",
-          "cap_mm": 4.375,
-          "measure_mm": 44.21,
-          "baseline_mm": 17.38
+          "cap_mm": 4.059,
+          "measure_mm": 41.02,
+          "baseline_mm": 15.44
         },
         {
           "text": "ACÚSTICO",
-          "cap_mm": 8.017,
-          "measure_mm": 56.37,
-          "baseline_mm": 31.38
+          "cap_mm": 7.826,
+          "measure_mm": 55.03,
+          "baseline_mm": 29.44
         },
         {
           "text": "vela aromática · refil",
           "cap_mm": 3.0,
-          "baseline_mm": 38.38
+          "baseline_mm": 36.44
         },
         {
           "text": "PESO LÍQUIDO 200 g",
           "cap_mm": "2,6 / figures 4,0",
-          "baseline_mm": 45.38
+          "baseline_mm": 43.44
         },
         {
           "text": "Use dentro do copo HOLOFOTE.",
           "cap_mm": 2.4,
-          "baseline_mm": 50.98
+          "baseline_mm": 49.04
+        },
+        {
+          "text": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "baseline_mm": 53.44
         }
       ],
       "strings": [
@@ -205,7 +252,16 @@
         "ACÚSTICO",
         "PESO LÍQUIDO 200 g",
         "vela aromática · refil",
-        "Use dentro do copo HOLOFOTE."
+        "Use dentro do copo HOLOFOTE.",
+        "Retire o selo antes de acender."
+      ],
+      "deviations": [
+        {
+          "kind": "director's decision",
+          "added": "Retire o selo antes de acender.",
+          "cap_mm": 2.4,
+          "reason": "refill safety: the peel lid (o selo) must come off before the candle is lit"
+        }
       ]
     }
   ],

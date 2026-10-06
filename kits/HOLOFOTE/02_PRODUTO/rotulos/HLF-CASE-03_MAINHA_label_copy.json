@@ -11,7 +11,7 @@
   "estreia_time": null,
   "tour_lines": [
     "ESTREIA · 14.02.2005 ........ QUEM FEZ O SHOW FOI ELA",
-    "PRÉZINHO, DIA DAS MÃES ........ PRIMEIRA FILA",
+    "PREZINHO, DIA DAS MÃES ........ PRIMEIRA FILA",
     "FESTA JUNINA ........ O BIGODE FOI ELA",
     "FEIRA DE CIÊNCIAS ........ O VULCÃO TAMBÉM",
     "PRONTO-SOCORRO, 3H ........ SEM INGRESSO. ENTROU.",
@@ -30,7 +30,7 @@
   "lot": "HLF0927",
   "fab": "03/2027",
   "val": "03/2029",
-  "master_hash": "123e46239d7785c603ecf6b6035e70f59c28b86e82e58d59b7016adae1de3ba1",
+  "master_hash": "66b7a949c2022cee4e141693b2799d112c2c6613faeef5eb1ea7f46d8c2433fe",
   "front_lines": {
     "L1": [
       "HOLOFOTE APRESENTA",
@@ -54,7 +54,7 @@
   "back_lines": {
     "B1": "ELA ESTEVE EM TODAS.",
     "B2": [
-      "TURNÊ «VOCÊ»",
+      "TURNÊ “VOCÊ”",
       "DESDE O PRIMEIRO DIA"
     ],
     "tour": [
@@ -63,7 +63,7 @@
         "QUEM FEZ O SHOW FOI ELA"
       ],
       [
-        "PRÉZINHO, DIA DAS MÃES",
+        "PREZINHO, DIA DAS MÃES",
         "PRIMEIRA FILA"
       ],
       [
@@ -291,11 +291,11 @@
         "ink_mm": [
           143.1,
           4.896,
-          158.866,
+          158.458,
           7.434
         ],
         "baseline_mm": 74.6,
-        "text": "TURNÊ «VOCÊ»"
+        "text": "TURNÊ “VOCÊ”"
       },
       {
         "label": "B2 R",
@@ -307,7 +307,7 @@
         ],
         "baseline_mm": 74.6,
         "text": "DESDE O PRIMEIRO DIA",
-        "gap_to_left_mm": 31.563
+        "gap_to_left_mm": 31.972
       },
       {
         "label": "rule back top",
@@ -349,12 +349,12 @@
         "label": "T2 venue",
         "ink_mm": [
           143.1,
-          12.928,
+          13.079,
           167.734,
           16.218
         ],
         "baseline_mm": 66.2,
-        "text": "PRÉZINHO, DIA DAS MÃES"
+        "text": "PREZINHO, DIA DAS MÃES"
       },
       {
         "label": "T2 status",
@@ -647,6 +647,20 @@
     {
       "line": "L2",
       "reason": "fit ladder at cap 17,8 gives step 2 (natural advance fits); the brief and the platform example (§C.10, measured by ecd_tools/fit.py at cap 17,9) require step 3: step 3 is used"
+    },
+    {
+      "line": "B2 left",
+      "kind": "director's decision",
+      "platform": "TURNÊ «VOCÊ»",
+      "used": "TURNÊ “VOCÊ”",
+      "reason": "guillemets are not Brazilian usage: curly double quotes"
+    },
+    {
+      "line": "T2 venue",
+      "kind": "director's decision",
+      "platform": "PRÉZINHO, DIA DAS MÃES",
+      "used": "PREZINHO, DIA DAS MÃES",
+      "reason": "spelling: Lei 5.765/1971 dropped the accent in -zinho derivatives (pé → pezinho, pré → prezinho)"
     }
   ],
   "planted_error": null,

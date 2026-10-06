@@ -3,8 +3,8 @@
 Uma linha gera tudo, do zero (arte chapada no Chromium → O LAMBE / papel em Python → 03_LANCAMENTO/):
     /home/user/venvs/web/bin/python _build/brand/lancamento.py              (tudo)
     /home/user/venvs/web/bin/python _build/brand/lancamento.py B C           (só as famílias B e C)
-Encaixar a vela renderizada nas miniaturas de C03/C07 (o espaço reservado é substituído e O LAMBE reaplicado com a
-mesma semente, então a miniatura ganha o mesmo papel):
+Encaixar a vela renderizada nas miniaturas de C03/C07 (o render entra DEPOIS de O LAMBE, intocado: o passe de papel
+reentinta e desregistra tudo o que toca, e o rótulo tem de continuar sendo o pixel do mestre):
     ... lancamento.py C --vela-c03 render_vela.png --vela-c07 render_kv.png
 Saídas e espaços reservados: 03_LANCAMENTO/{B,C,D,STK}/ + 03_LANCAMENTO/C/placeholders.json.
 """
@@ -34,7 +34,7 @@ BOLETIM = [
     ('B07', '08.05', 'laranja', 'bom dia. segundo sinal. visualizou? então.', ['bom dia. segundo sinal.', 'visualizou? então.']),
     ('B08', '09.05', 'amarelo', 'bom dia. terceiro sinal. o show é hoje.', ['bom dia. terceiro sinal.', 'o show é hoje.']),
 ]
-TURNE_C09 = [['ESTREIA · 21.11.1999 · 06:40', 'QUEM FEZ O SHOW FOI ELA'], ['PRÉZINHO, DIA DAS MÃES', 'PRIMEIRA FILA'],
+TURNE_C09 = [['ESTREIA · 21.11.1999 · 06:40', 'QUEM FEZ O SHOW FOI ELA'], ['PREZINHO, DIA DAS MÃES', 'PRIMEIRA FILA'],
              ['FESTA JUNINA', 'O BIGODE FOI ELA'], ['PRONTO-SOCORRO, 3H', 'SEM INGRESSO. ENTROU.'],
              ['FORMATURA', 'DE PÉ (COM O DEDO NA LENTE)'], ['09.05.2027', 'A ATRAÇÃO É ELA']]
 STK = [('STK-01', 'ACESSO-TOTAL'), ('STK-02', 'MAIS-UM'), ('STK-03', 'ABERTURA-VOCE'), ('STK-04', 'NAO-PRECISAVA'),
@@ -102,12 +102,14 @@ def fazer_C(vela_c03=None, vela_c07=None):
     for p, j, r in zip(pecas, jobs, res):
         checar(p[0], r)
         nome = p[1] + '.png'
+        out = os.path.join(L, 'C', nome)
+        lamber(j['saida'], out, p[3], p[4], rugas=0.8, registro=1.8)
+        # the render goes in AFTER O LAMBE: the lambe pass re-inks and misregisters everything it touches, and the
+        # pack's label must stay the master's pixels (platform §0 rule 1; garbled thumbnails caught in review, 6 Oct)
         for q in r['placeholders']:
             ph[nome] = [round(q['x']), round(q['y']), round(q['w']), round(q['h'])]
             if p[5]:
-                compor_miniatura(j['saida'], ph[nome], p[5], q['tipo'] == 'circulo')
-        out = os.path.join(L, 'C', nome)
-        lamber(j['saida'], out, p[3], p[4], rugas=0.8, registro=1.8)
+                compor_miniatura(out, ph[nome], p[5], q['tipo'] == 'circulo')
         print('  ', os.path.relpath(out, KIT))
     json.dump(ph, open(os.path.join(L, 'C', 'placeholders.json'), 'w'), ensure_ascii=False, indent=1)
 

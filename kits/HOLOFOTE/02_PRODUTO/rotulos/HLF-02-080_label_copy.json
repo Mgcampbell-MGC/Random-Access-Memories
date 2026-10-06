@@ -10,7 +10,7 @@
   "estreia_date": null,
   "estreia_time": null,
   "tour_lines": [
-    "PRÉZINHO, DIA DAS MÃES ........ PRIMEIRA FILA",
+    "PREZINHO, DIA DAS MÃES ........ PRIMEIRA FILA",
     "PRONTO-SOCORRO, 3H ........ SEM INGRESSO. ENTROU.",
     "09.05.2027 ........ A ATRAÇÃO É ELA"
   ],
@@ -27,7 +27,7 @@
   "lot": "HLF0927",
   "fab": "03/2027",
   "val": "03/2029",
-  "master_hash": "0d55471a5b7b6ccd5c806afb8443b4dd46fee61afd454073e89f84cb320875e4",
+  "master_hash": "46eb2d2ed0d9b839693f1caa555de7aa4579274dd2fe25af5655f82287c8910c",
   "front_lines": {
     "L1": [
       "HOLOFOTE APRESENTA",
@@ -52,7 +52,7 @@
     "B1": "ELA ESTEVE EM TODAS.",
     "tour": [
       [
-        "PRÉZINHO, DIA DAS MÃES",
+        "PREZINHO, DIA DAS MÃES",
         "PRIMEIRA FILA"
       ],
       [
@@ -277,12 +277,12 @@
         "label": "T1 venue",
         "ink_mm": [
           109.65,
-          4.65,
+          4.774,
           129.805,
           7.342
         ],
         "baseline_mm": 56.0,
-        "text": "PRÉZINHO, DIA DAS MÃES"
+        "text": "PREZINHO, DIA DAS MÃES"
       },
       {
         "label": "T1 status",
@@ -499,9 +499,17 @@
       }
     ]
   },
-  "deviations": [],
+  "deviations": [
+    {
+      "line": "T1 venue",
+      "kind": "director's decision",
+      "platform": "PRÉZINHO, DIA DAS MÃES",
+      "used": "PREZINHO, DIA DAS MÃES",
+      "reason": "spelling: Lei 5.765/1971 dropped the accent in -zinho derivatives (pé → pezinho, pré → prezinho)"
+    }
+  ],
   "planted_error": {
-    "file": "HLF-02-080_ROTULO_wrap_ERRO-PLANTADO.png",
+    "file": "_controle/HLF-02-080_ROTULO_wrap_ERRO-PLANTADO.png",
     "patch_px": [
       2437,
       507,
@@ -510,7 +518,8 @@
     ],
     "mirrored": "horizontal",
     "on_glyph": "E",
-    "alpha_pixels_changed": 27120
+    "alpha_pixels_changed": 27120,
+    "note": "fidelity control only: NOT a print master"
   },
   "personalised": false,
   "generated": "2026-10-06",

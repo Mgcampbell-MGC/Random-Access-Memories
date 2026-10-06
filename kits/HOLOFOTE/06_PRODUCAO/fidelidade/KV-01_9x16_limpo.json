@@ -1,0 +1,29 @@
+[
+  {
+    "asset": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/renders/KV-01_9x16_limpo.png",
+    "master": "/home/user/Random-Access-Memories/kits/HOLOFOTE/02_PRODUTO/rotulos/HLF-02_ROTULO_wrap.png",
+    "tiles": 168,
+    "uv_agreement": 0.9956,
+    "corner_tiles_skipped": 4,
+    "corner_tiles_worst": 0.797,
+    "control": {
+      "patch_px": [
+        1301,
+        1935,
+        300,
+        300
+      ],
+      "worst_tile": 0.794,
+      "caught": true
+    },
+    "hue_shift_deg": -1.35,
+    "sat_ratio": 0.999,
+    "worst_tile": 0.934,
+    "p5_tile": 0.957,
+    "bar_p5": 0.95,
+    "pass": true,
+    "label_id": null,
+    "glass_frac_altura": 0.1981152892112732,
+    "thumbnail_sem_alegacao": true
+  }
+]

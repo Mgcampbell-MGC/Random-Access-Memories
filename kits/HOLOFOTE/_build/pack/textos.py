@@ -35,12 +35,12 @@ NET_WEIGHT = '200 g'
 
 # §C.3 back panel
 B1 = 'ELA ESTEVE EM TODAS.'
-B2_LEFT = 'TURNÊ «VOCÊ»'
+B2_LEFT = 'TURNÊ \u201cVOCÊ\u201d'   # director's decision 6 Oct 2026 (platform: «VOCÊ»); see B2_FIX
 B2_RIGHT = 'DESDE O PRIMEIRO DIA'
 ESTREIA_RETAIL = 'ESTREIA · O DIA EM QUE VOCÊ NASCEU'
 ESTREIA_STATUS = 'QUEM FEZ O SHOW FOI ELA'
 TOUR = [  # lines 2..8 (line 1 is ESTREIA)
-    ('PRÉZINHO, DIA DAS MÃES', 'PRIMEIRA FILA'),
+    ('PREZINHO, DIA DAS MÃES', 'PRIMEIRA FILA'),   # director's decision 6 Oct 2026; see TOUR_FIX
     ('FESTA JUNINA', 'O BIGODE FOI ELA'),
     ('FEIRA DE CIÊNCIAS', 'O VULCÃO TAMBÉM'),
     ('PRONTO-SOCORRO, 3H', 'SEM INGRESSO. ENTROU.'),
@@ -48,6 +48,12 @@ TOUR = [  # lines 2..8 (line 1 is ESTREIA)
     ('PRIMEIRO APÊ', '4 VIAGENS DE CARRO'),
     ('09.05.2027', 'A ATRAÇÃO É ELA'),
 ]
+# director's decisions after the copy/compliance review (6 Oct 2026); every file that prints them records them
+TOUR_FIX = dict(kind="director's decision", platform='PRÉZINHO, DIA DAS MÃES', used='PREZINHO, DIA DAS MÃES',
+                reason='spelling: Lei 5.765/1971 dropped the accent in -zinho derivatives (pé → pezinho, '
+                       'pré → prezinho)')
+B2_FIX = dict(kind="director's decision", platform='TURNÊ «VOCÊ»', used='TURNÊ \u201cVOCÊ\u201d',
+              reason='guillemets are not Brazilian usage: curly double quotes')
 ATENCAO = 'ATENÇÃO'
 WARNINGS = [  # the five printed lines, bullets included, continuation indented
     '• Nunca deixe a vela acesa sem supervisão.',
@@ -81,7 +87,8 @@ CASE_CAMARIM = 'CAMARIM 1 · '  # + headliner
 CASE_LID_FRONT = 'acesso restrito'
 CASE_FRONT_SHOW = 'HOLOFOTE · '  # + show name
 CASE_FRAGIL = 'FRÁGIL · ESTE LADO PRA CIMA ↑'
-CASE_UNDER = 'O case é de papel. O copo é seu.'
+CASE_UNDER = 'O copo é seu. O resto, separe: papel, plástico e metal.'   # director's decision, see CASE_UNDER_FIX
+CASE_BINS = ['papel', 'plástico', 'vidro', 'metal']
 CASE_MIRROR = 'olha a atração.'
 RIDER_HEAD = 'RIDER DA ATRAÇÃO · TURNÊ DIA DAS MÃES 2027'
 RIDER = [
@@ -108,8 +115,7 @@ def manifesto(faixa, ver='case'):
         'PESO LÍQUIDO 200 g',
         'COMPOSIÇÃO / INGREDIENTS (INCI): ' + inci,
         'Ingredientes (português): ' + pt + ' Pavio de madeira. Cápsula de alumínio.',
-        '(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026 — exemplo; confirmar com o '
-        'certificado do fornecedor da fragrância.)',
+        '(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026.)',   # internal note: ALERG_NOTE
         'Fabricado e distribuído por: PALCO PEQUENO INDÚSTRIA DE VELAS LTDA. (EMPRESA FICTÍCIA)',
         'CNPJ 00.000.000/0001-00 (FICTÍCIO)',
         'Rua do Palco, 0 — Bairro Fictício — São Paulo/SP — CEP 00000-000 (ENDEREÇO FICTÍCIO)',
@@ -120,6 +126,25 @@ def manifesto(faixa, ver='case'):
         last_ver,
         'PROTÓTIPO FICTÍCIO · DADOS FICTÍCIOS · NÃO COMERCIALIZAR',
     ]
+
+
+# director's decisions after the copy/compliance review (6 Oct 2026), recorded in every JSON that prints them
+DD = "director's decision"
+MODO_FIX = dict(kind=DD, platform='Use a vela dentro do copo, sobre a tampa virada ou sobre superfície plana, firme e '
+                'resistente ao calor.', used=None, reason='the old line read as if the candle could stand outside the '
+                'glass: it is always used inside the glass, and the glass stands on the lid or a flat surface')
+CASE_UNDER_FIX = dict(kind=DD, platform='O case é de papel. O copo é seu.', used=None,
+                      reason='false as written: the case also has EVA, a PMMA mirror, magnets, a polyester band and a '
+                             'plastic clasp; disposal marks papel · plástico · vidro · metal')
+CT_TOP_FIX = dict(kind=DD, platform='ESTE LADO PRA CIMA ↑', used=None,
+                  reason='an arrow is meaningless on a horizontal panel; the words stay')
+ALERG_NOTE = '— exemplo; confirmar com o certificado do fornecedor da fragrância.'
+ALERG_FIX = dict(kind=DD, platform='(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026 — exemplo; '
+                 'confirmar com o certificado do fornecedor da fragrância.)',
+                 used='(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026.)',
+                 reason='internal note removed from every printed panel', note_kept_in_json=ALERG_NOTE)
+INGREDIENT_BREAK = dict(kind=DD, reason='ingredient lists break only after a comma (or after the list\'s colon), never '
+                        'inside a name: HYDROGENATED SOYBEAN OIL, alfa-isometil ionona stay whole')
 
 
 # §C.8 SETLIST
@@ -152,7 +177,8 @@ MODO_DE_USO = [
     'Não queime por mais de 4 horas seguidas. Deixe esfriar antes de acender de novo.',
     'Para apagar, use um abafador. Não use água.',
     'Encerre o uso quando restar cerca de 1 cm de cera no fundo.',
-    'Use a vela dentro do copo, sobre a tampa virada ou sobre superfície plana, firme e resistente ao calor.',
+    'Use a vela sempre dentro do copo. Apoie o copo sobre a tampa virada ou sobre superfície plana, firme e '
+    'resistente ao calor.',   # director's decision 6 Oct 2026, see MODO_FIX
 ]
 ADVERTENCIAS = [
     'ADVERTÊNCIAS',
@@ -180,10 +206,15 @@ P1B_HEAD = 'REGRAS DA CASA · MODO DE USO'
 CT_FRONT = dict(ingresso='INGRESSO', platform='MÃE AO VIVO', date='DOMINGO · 09.05', setor='SETOR: PRIMEIRA FILA',
                 stub='ADMITE 1 · ATRAÇÃO')
 CT_SIDE2 = ['holofote nela.', 'ela vai dizer "não precisava". é a sua deixa.']
-CT_TOP = 'ESTE LADO PRA CIMA ↑'
+CT_TOP = 'ESTE LADO PRA CIMA'   # director's decision 6 Oct 2026 (platform: '… ↑'), see CT_TOP_FIX
 
 # §C.9 refill
 REF_LID = ['NOVA TEMPORADA', 'PESO LÍQUIDO 200 g', 'vela aromática · refil', 'Use dentro do copo HOLOFOTE.']
 REF_BAND = 'LOTE HLF0927 · FAB 03/2027 · VAL 03/2029'
 
 TAGLINE = 'holofote nela.'
+
+# the director's-decision records carry the string actually printed
+MODO_FIX['used'] = MODO_DE_USO[-1]
+CASE_UNDER_FIX['used'] = CASE_UNDER
+CT_TOP_FIX['used'] = CT_TOP

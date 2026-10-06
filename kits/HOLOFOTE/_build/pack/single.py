@@ -7,8 +7,8 @@ transparent, ink pixels only (PRETO-PALCO on AMARELO-CARTAZ). x = 0 is the centr
 front panel centre (x = 1822, panel x 742–2902), u = 0,75 the back (x = 5466, panel x 4386–6546). A platform baseline
 b mm sits at y = (63,0 - b) x 40. The SINGLE is re-set, never scaled, and never personalised.
 
-Writes into 02_PRODUTO/rotulos/: HLF-02-080_ROTULO_wrap.png (+ .svg, _preview.png, _ERRO-PLANTADO.png) and
-HLF-02-080_label_copy.json.
+Writes into 02_PRODUTO/rotulos/: HLF-02-080_ROTULO_wrap.png (+ .svg, _preview.png) and HLF-02-080_label_copy.json;
+the planted-error control goes to 02_PRODUTO/rotulos/_controle/ (never beside the master).
 """
 import os
 import sys
@@ -51,7 +51,7 @@ def Y(b):
 # §C.9b exact strings (the SINGLE's own text; the hero's live in textos.py)
 S_L1_RIGHT = 'O SINGLE'
 S_NET = '80 g'
-S_TOUR = [('PRÉZINHO, DIA DAS MÃES', 'PRIMEIRA FILA'),
+S_TOUR = [(T.TOUR_FIX['used'], 'PRIMEIRA FILA'),          # director's decision 6 Oct 2026 (platform: PRÉZINHO)
           ('PRONTO-SOCORRO, 3H', 'SEM INGRESSO. ENTROU.'),
           ('09.05.2027', 'A ATRAÇÃO É ELA')]
 S_WARN = ['• Nunca deixe a vela acesa sem supervisão.',
@@ -155,6 +155,7 @@ def back(panel):
         widest = max(widest, (pv.ink()[2] - pv.ink()[0]) + (ps.ink()[2] - ps.ink()[0]))
         leaders(panel, pv, ps, b, x0, 1.8, 0.75, label=f'T{i + 1}')
     panel.log.append(dict(label='tour widest text', mm=round(widest, 3)))
+    panel.dev.append(dict(line='T1 venue', **T.TOUR_FIX))
     rule(panel, x0, x1, 48.6, 'rule back bottom')
     panel.add(place_left(Line([run_cap(T.ATENCAO, SG(700, 100), 1.7, 60, CAPS)]), x0, Y(46.2)), 'ATENCAO',
               baseline_mm=46.2, text=T.ATENCAO)
@@ -191,8 +192,9 @@ def plant_error(master, fp, path):
     out = master.copy()
     out[y0:y0 + size, x0:x0 + size] = master[y0:y0 + size, x0:x0 + size][:, ::-1]
     R.save_png(out, path)
-    return dict(file=os.path.basename(path), patch_px=[x0, y0, size, size], mirrored='horizontal',
-                on_glyph=g.fc.name(g.gid), alpha_pixels_changed=int((out[..., 3] != master[..., 3]).sum()))
+    return dict(file=os.path.relpath(path, OUT), patch_px=[x0, y0, size, size], mirrored='horizontal',
+                on_glyph=g.fc.name(g.gid), alpha_pixels_changed=int((out[..., 3] != master[..., 3]).sum()),
+                note='fidelity control only: NOT a print master')
 
 
 def main():
@@ -221,7 +223,11 @@ def main():
     prev = R.flat(a.shape[0], a.shape[1], coat)
     R.over(prev, a, ink)
     R.save_png(np.clip(np.round(prev), 0, 255).astype(np.uint8), base + '_preview.png')
-    planted = plant_error(master, fp, base + '_ERRO-PLANTADO.png')
+    ctl = os.path.join(OUT, '_controle')            # the deliberately wrong copy never sits beside the master
+    os.makedirs(ctl, exist_ok=True)
+    planted = plant_error(master, fp, os.path.join(ctl, 'HLF-02-080_ROTULO_wrap_ERRO-PLANTADO.png'))
+    if os.path.exists(base + '_ERRO-PLANTADO.png'):
+        os.remove(base + '_ERRO-PLANTADO.png')
     copy = dict(
         sku='HLF-02-080', faixa='02', headliner='MÃE', headliner_step=1, show_name=s['show'], show_wdth=125,
         descriptor=s['descriptor'], opening_act=T.OPENING_DEFAULT, estreia_date=None, estreia_time=None,

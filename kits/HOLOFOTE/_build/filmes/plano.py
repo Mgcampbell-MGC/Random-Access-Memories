@@ -247,7 +247,7 @@ def tipo_F06C(data):
         if f >= 72:
             els = [L('MÃE AO VIVO', 'X', 442, id='mav', fill='tamanho', capMax=110, lsEm=-0.01, cor='papel',
                      trechos=[[0, 3, 'amarelo']]),
-                   L('DOMINGO 09.05', 'C', 496, id='dom', cap=34, lsEm=0.02, cor='amarelo', tnum=True, al='left', ax=140),
+                   L('DOMINGO · 09.05', 'C', 496, id='dom', cap=34, lsEm=0.02, cor='amarelo', tnum=True, al='left', ax=140),
                    L('holofote nela.', 'X', 496, id='lk', cap=34, lsEm=-0.01, cor='papel', al='right', ax=940)]
             if v['aceso']:
                 els.append(L(y=530, id='seg', **SEG))
@@ -263,7 +263,7 @@ def fotos_F06C(data):
         ('F06C-01', 0, 71, 'black', 'black', '%d bell(s) f0/8/16; %s on the first bell; %s draws on f24–37' % (v['sinos'], v['titulo'], v['sub'])),
         ('F06C-02', 72, 73, st + (' + F15_blecaute (+ crops)' if v['aceso'] else ''), 'relight-2D warm-up' + (' + 3D flame crop' if v['aceso'] else ''), 'CLAC f72'),
         ('F06C-03', 74, 143, st + '_16bit.png' + (' + chama_palco' if v['aceso'] else ''), 'still hold' + (' + 3D flame crop loop' if v['aceso'] else ''),
-         'MÃE AO VIVO · DOMINGO 09.05 + holofote nela.' + (' + safety' if v['aceso'] else '') + '; the stage is set'),
+         'MÃE AO VIVO + DOMINGO · 09.05 + holofote nela.' + (' + safety' if v['aceso'] else '') + '; the stage is set'),
     ]
 
 

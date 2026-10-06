@@ -16,57 +16,37 @@
      Procura o corpo (±6 %) em que a quebra gananciosa deixa a última linha ≥ 80 % cheia e nenhum espaço entre
      palavras passa de 0,9 em; depois cada linha é fechada na borda da tinta por word-spacing (±0,5 px). */
   HF.corrido = function (parent, texto, x0, x1, base0, o) {
+    /* Running text, ragged right (review 6 Oct 2026: forced justification of body text opened rivers on nine
+       boards; "every line fills its measure" is the DISPLAY rule, not the body rule). Greedy breaks at the asked
+       size, a one-letter word never ends a line (a, e, o, é, à… travel with the next word), the last line never
+       holds a single word. If o.maxLinhas cannot be met at the asked size, the size steps down 1 % at a time. */
     const medida = x1 - x0;
     const sBase = Object.assign({ f: o.f || 'C', cor: o.cor || TINTA }, o.estilo || {});
     sBase.fs = o.fs || HF.fsDeCap(sBase.f, o.cap);
-    const pal = texto.split(/\s+/).filter(Boolean);
-    const larg = (t) => { const e = HF.texto(parent, Object.assign({}, sBase, { t })); const w = e.adv; e.el.remove(); return w; };
-    const ws = pal.map(larg), esp = larg('a a') - larg('aa');
-    const quebrar = (k) => {
-      const L = []; let cur = [], w = 0;
-      pal.forEach((p, i) => {
-        const add = cur.length ? esp * k + ws[i] * k : ws[i] * k;
-        if (cur.length && w + add > medida) { L.push({ ids: cur, w }); cur = [i]; w = ws[i] * k; } else { cur.push(i); w += add; }
+    const cru = texto.split(/\s+/).filter(Boolean), pal = [];
+    for (let i = 0; i < cru.length; i++) {
+      if (/^[aeoéàAEOÉÀ]$/.test(cru[i]) && i < cru.length - 1) { pal.push(cru[i] + '\u00a0' + cru[i + 1]); i++; } else pal.push(cru[i]);
+    }
+    const larg = (t, fs) => { const e = HF.texto(parent, Object.assign({}, sBase, { t, fs })); const w = e.inkW; e.el.remove(); return w; };
+    const quebrar = (fs) => {
+      const L = []; let cur = [];
+      pal.forEach((p) => {
+        const tenta = cur.concat([p]);
+        if (cur.length && larg(tenta.join(' '), fs) > medida) { L.push(cur); cur = [p]; } else cur = tenta;
       });
-      L.push({ ids: cur, w });
+      L.push(cur);
+      if (L.length > 1 && L[L.length - 1].length < 2 && L[L.length - 2].length > 2) L[L.length - 1].unshift(L[L.length - 2].pop());
       return L;
     };
-    // custo: distância do corpo pedido + maior espaço entre palavras + o que falta na última linha
-    const avaliar = (ultMin, gapMax) => {
-      let best = null;
-      for (let i = -60; i <= 60; i++) {
-        const k = 1 + i * 0.0025, L = quebrar(k);
-        if (o.maxLinhas && L.length > o.maxLinhas) continue;
-        const ultL = L[L.length - 1];
-        if (L.length > 1 && ultL.ids.length < 2) continue;                 // nunca uma palavra sozinha na última linha
-        const ult = ultL.w / medida;
-        if (L.length === 1 ? ult < 0.97 : ult < ultMin) continue;
-        const gap = Math.max(...L.map((l) => (l.ids.length > 1 ? (medida - l.w) / (l.ids.length - 1) : 0))) / (sBase.fs * k);
-        if (gap > gapMax) continue;
-        const custo = Math.abs(k - 1) * (o.rigido ? 40 : 14) + gap + (1 - ult) * 1.5;
-        if (!best || custo < best.custo) best = { k, L, custo };
-      }
-      return best;
-    };
-    let melhor = avaliar(o.ultimaMin || 0.8, 0.8) || avaliar(0.62, 1.2);
-    if (!melhor) { console.warn('corrido: sem corpo que feche a última linha:', texto.slice(0, 40)); melhor = { k: 1, L: quebrar(1) }; }
+    let fs = sBase.fs, L = quebrar(fs);
+    for (let n = 0; o.maxLinhas && L.length > o.maxLinhas && n < 15; n++) { fs *= 0.99; L = quebrar(fs); }
     const passo = o.passo || g8(HF.capPx(sBase) * 1.75);
     const linhas = [];
-    melhor.L.forEach((l, i) => {
-      const t = l.ids.map((j) => pal[j]).join(' ');
-      const s = Object.assign({}, sBase, { t, fs: sBase.fs * melhor.k });
-      const e = HF.texto(parent, s);
-      const n = l.ids.length - 1;
-      if (n > 0) {
-        let wsp = 0;
-        for (let it = 0; it < 4; it++) {
-          wsp += (medida - e.inkW) / n;
-          e.el.style.wordSpacing = wsp + 'px';
-          HF.mudar(e, {});
-        }
-      } else if (melhor.L.length === 1 && Math.abs(e.inkW - medida) > 0.5) HF.porTamanho(e, medida);
+    L.forEach((l, i) => {
+      const t = l.join(' ');
+      const e = HF.texto(parent, Object.assign({}, sBase, { t, fs }));
       HF.posicionar(e, x0, base0 + i * passo, 'left');
-      (window.HF_QA = window.HF_QA || []).push({ item: 'corrido: ' + t.slice(0, 24), erro: e.inkW - medida, k: +melhor.k.toFixed(4) });
+      (window.HF_QA = window.HF_QA || []).push({ item: 'corrido: ' + t.slice(0, 24), erro: Math.max(0, e.inkW - medida) });
       linhas.push(e);
     });
     return { linhas, fim: base0 + (linhas.length - 1) * passo, passo };
@@ -158,7 +138,7 @@
     T({ t: 'REGRA 1, NUMA FRASE SÓ: ELA, A MAIOR. VOCÊ, A MENOR.', f: 'C', cap: 15, lsEm: 0.14, cor: 'amarelo' }, X1, b2, 'right');
     const cols = [
       ['01 · O LADO DELA', 'a origem', 'O primeiro palco de todo brasileiro foi o show de Dia das Mães da escola: fantasia de girassol, fundo de TNT, um passo esquecido, um tchau para a mãe errada. Ela estava na primeira fila, filmando com o dedo na lente.'],
-      ['02 · O SEU LADO', 'a metáfora', 'A geração Z é a mais fluente em fandom do Brasil. Acampa 48 horas na porta do estádio, sabe a setlist de cor e briga pela grade. A HOLOFOTE dá a ela um papel que ela já ensaiou a vida toda, com outra atração.'],
+      ['02 · O SEU LADO', 'a metáfora', 'A geração Z é a mais fluente em fandom do Brasil. Acampa 48 horas na porta do estádio, sabe a setlist de cor e briga pela grade. A HOLOFOTE entrega a essa geração um papel que ela ensaiou a vida toda, com uma nova atração.'],
       ['03 · A LÍNGUA', 'longe dos holofotes', 'O português descreve a vida inteira dela com uma expressão: longe dos holofotes. A marca é a resposta literal: um holofote do tamanho de um copo, apontado para ela, no único domingo em que o show é dela.'],
     ];
     cols.forEach((c, i) => {
@@ -181,8 +161,8 @@
       { n: { t: 'A PRODUÇÃO', f: 'C', cap: 52, lsEm: 0.02 }, num: '02', quem: 'A EQUIPE: PRÁTICA, DE BASTIDOR',
         fonte: 'Special Gothic Condensed One, caixa baixa a 0 ou versal de +80 a +120. Segurança, preço e instrução moram aqui.',
         ex: [[{ t: 'sessões de até 4 h.', f: 'C', cap: 34 }, 'SETLIST'], [{ t: 'reservar ingresso', f: 'C', cap: 34 }, 'BOTÃO DA LOJA'], [{ t: 'PESO LÍQUIDO 200 g', f: 'C', cap: 34, lsEm: 0.06, tnum: true }, 'COPO']] },
-      { n: { t: 'a fã', f: 'S', x: 40 }, num: '03', quem: 'VOCÊ, O FILHO: CARINHO, CAIXA BAIXA',
-        fonte: 'Shantell Sans 500, INFM 60. Só caixa baixa, até seis palavras, uma pontuação, uma vez por peça.',
+      { n: { t: 'a fã', f: 'S', x: 40 }, num: '03', quem: 'VOCÊ, FILHO OU FILHA: CARINHO, CAIXA BAIXA',
+        fonte: 'Shantell Sans 500, INFM 60. Só caixa baixa, até seis palavras, um sinal de pontuação, uma vez por peça.',
         ex: [[{ t: '(girassol, 2007)', f: 'S', x: 25 }, 'C03'], [{ t: 'abertura: você', f: 'S', x: 25 }, 'O CARTAZ'], [{ t: 'ela fica aqui.', f: 'S', x: 25 }, 'A TAMPA']] },
     ];
     vozes.forEach((v, i) => {
@@ -198,7 +178,7 @@
       });
     });
     regua(X0, X1, 952, 2);
-    div({ t: 'DUAS EXCEÇÕES: "holofote nela." é o Locutor em caixa baixa.', f: 'C', cap: 18, cor: t },
+    div({ t: 'DUAS EXCEÇÕES: “holofote nela.” é o Locutor em caixa baixa.', f: 'C', cap: 18, cor: t },
       { t: 'O único ponto de exclamação da marca mora em MAIS UM!', f: 'C', cap: 18, cor: t }, X0, X1, 1000);
   };
 
@@ -312,7 +292,7 @@
     corpo('O disco aceso e, embaixo, a poça de luz no chão: uma elipse dura de 2,4 d por 0,8 d, a 0,5 d do disco. É o favicon, o avatar, a figurinha e a trama da pulseira. O tipo nunca entra na poça.',
       X0, 864, 840, 18, { passo: 32, cor: 'preto' });
     img(K(D, '01_MARCA/marca/A-MARCA_X_s927.png'), 1192, 150, 600, 600, 'contain');
-    const lin = [['DUAS TIRAS A ±45°', 'COMPRIMENTO : LARGURA 3,75 : 1'], ['PONTAS RASGADAS À MÃO', 'UMA PONTA DESCOLA 0,5 MM'], ['MARCA ONDE O PRODUTO FICA', 'MARCADOR DE LISTA · CARIMBO DA SETLIST']];
+    const lin = [['DUAS TIRAS A ±45°', 'COMPRIMENTO:LARGURA 3,75:1'], ['PONTAS RASGADAS À MÃO', 'UMA PONTA DESCOLA 0,5 MM'], ['MARCA ONDE O PRODUTO FICA', 'MARCADOR DE LISTA · CARIMBO DA SETLIST']];
     lin.forEach((l, i) => HF.pontilhada(document.body, S({ t: l[0], f: 'C', cap: 16, lsEm: 0.08, cor: 'papel' }), S({ t: l[1], f: 'C', cap: 16, lsEm: 0.08, cor: 'papel' }), 1056, X1, 824 + i * 36,
       { passo: 8, folga: 10, fs: HF.fsDeCap('C', 16), op: 0.6 }));
     cheia({ t: 'UMA POR QUADRO.', f: 'X', cap: 40, lsEm: -0.01, cor: 'amarelo' }, 1056, X1, 1008);
@@ -419,7 +399,7 @@
     const regras = [['SÓ CAIXA BAIXA', 'NUNCA GRITA COM ELA'], ['ATÉ SEIS PALAVRAS', 'UMA PONTUAÇÃO'], ['UMA POR PEÇA', 'SETA OU SUBLINHADO'], ['BNCE 0 NO IMPRESSO', '±20 NO FILME'], ['INFM 40 A 70', 'WGHT 450 A 550']];
     regras.forEach((l, i) => HF.pontilhada(document.body, S({ t: l[0], f: 'C', cap: 17, lsEm: 0.08, cor: 'preto' }), S({ t: l[1], f: 'C', cap: 17, lsEm: 0.08, cor: 'preto' }), b0, b1, 568 + i * 44,
       { passo: 8, folga: 10, fs: HF.fsDeCap('C', 17) }));
-    corpo('A Fã é você, o filho, escrevendo à mão na margem: uma anotação, uma seta, um sublinhado. É a menor voz da peça, de propósito, e nunca escreve em caixa alta.', b0, b1, 832, 17, { passo: 32, cor: 'preto' });
+    corpo('A Fã é você, filho ou filha, escrevendo à mão na margem: uma anotação, uma seta, um sublinhado. É a menor voz da peça, de propósito, e nunca escreve em caixa alta.', b0, b1, 832, 17, { passo: 32, cor: 'preto' });
   };
 
   /* ================= 11 · AS SETE REGRAS (cada uma mostrada) */
@@ -552,7 +532,8 @@
       return o;
     };
     est('CASE Nº 09.05', 296); est('CAMARIM 1 · MÃE', 432);
-    img(K(D, '01_MARCA/marca/A-MARCA_X_s4.png'), a1 - 96, 128 + 400 - 96, 72, 72, 'contain');
+    // the X marks where the product stands: bottom-right corner, clear of the stencil's baseline (review, 6 Oct)
+    img(K(D, '01_MARCA/marca/A-MARCA_X_s4.png'), a1 - 80, 128 + 400 - 72, 56, 56, 'contain');
     div({ t: 'O CASE', f: 'C', cap: 18, lsEm: 0.1, cor: t }, { t: 'ESTÊNCIL · PONTE DE 50 % EM TODA LETRA', f: 'C', cap: 15, lsEm: 0.06, cor: t }, a0, a1, 568);
     const [b0, b1] = col(6, 11);
     caixa(b0, 128, b1 - b0, 400, { background: HF.cor.amarelo });

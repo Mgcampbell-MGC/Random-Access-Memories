@@ -111,7 +111,9 @@
     const b = document.body, tinta = 'preto', med = F.x1 - F.x0, gap = 4;
     const L = (t) => ({ tipo: 'cheia', s: S({ t, f: 'V', wght: 700, wdth: 125, cap: 100, lsEm: -0.01, cor: tinta }), modo: 'tamanho', antes: gap });
     // PIOR divide a linha com a nota da Fã (L/R que enche a medida): PIOR fica no corpo em que sobra lugar para a nota
-    const itens = [L('ELA'), L('APLAUDIU'), L('DE PÉ'), L('O SEU'),
+    // DE PÉ: the acute needs air under APLAUDIU (§D.2); 4 px closes under O LAMBE's misregistration (review, 6 Oct)
+    const dePe = Object.assign(L('DE PÉ'), { antes: 24 });
+    const itens = [L('ELA'), L('APLAUDIU'), dePe, L('O SEU'),
       { tipo: 'dividida', antes: gap, esq: S({ t: 'PIOR', f: 'V', wght: 700, wdth: 125, cap: 112, lsEm: -0.01, cor: tinta }),
         dir: S({ t: '2007)', f: 'S', x: 25, cor: tinta }) },
       L('SHOW.')];

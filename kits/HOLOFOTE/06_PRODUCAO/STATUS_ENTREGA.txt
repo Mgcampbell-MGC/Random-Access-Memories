@@ -16,7 +16,7 @@ Loja (L01–L07)               AUSENTE
 Filmes                       PARCIAL · falta: *F15*_som.mp4, *F06A*_som.mp4, *F06B*_som.mp4
 Som                          ENTREGUE
 O ANÚNCIO (animatics)        AUSENTE
-Arquivos de máquina          PARCIAL · falta: SCENE_PLAN.json
+Arquivos de máquina          ENTREGUE
 Relatórios de fidelidade     ENTREGUE
 
 NÃO PRODUZIDO DE PROPÓSITO

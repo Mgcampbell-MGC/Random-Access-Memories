@@ -31,7 +31,7 @@ def ids_do_pacote():
     out = {}
     for t in re.findall(r'<table.*?</table>', s, re.S):
         hdr = [re.sub(r'<[^>]+>', '', c).strip() for c in re.findall(r'<th[^>]*>(.*?)</th>', t, re.S)]
-        for r in re.findall(r'<tr>(.*?)</tr>', t, re.S):
+        for r in re.findall(r'<tr[^>]*>(.*?)</tr>', t, re.S):
             cells = [re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', c))).strip()
                      for c in re.findall(r'<td[^>]*>(.*?)</td>', r, re.S)]
             m = re.match(r'^(KV-0\d|C\d\d|B0\d|L0\d|D0\d|S01|STK|P0\d)\b', cells[0]) if cells else None
@@ -40,11 +40,11 @@ def ids_do_pacote():
             key = m.group(1)
             d = out.setdefault(key, {'nome': cells[0]})
             if hdr[:2] == ['ID', 'Formato'] and len(cells) >= 4:
-                d.update(formato=cells[1], descricao=cells[2], texto=cells[3], faz=cells[4] if len(cells) > 4 else None)
+                d.update(nome=cells[0], formato=cells[1], descricao=cells[2], texto=cells[3], faz=cells[4] if len(cells) > 4 else None)
             elif hdr[:2] == ['ID', 'Cena'] and len(cells) >= 2:
-                d.update(descricao=cells[1])
+                d.update(nome=cells[0], descricao=cells[1])
             elif hdr[:2] == ['Cartão', 'Data'] and len(cells) >= 4:
-                d.update(data=cells[1], cor=cells[2], texto=cells[3], formato='1:1 + 9:16')
+                d.update(nome='%s · BOLETIM' % cells[0], data=cells[1], cor=cells[2], texto=cells[3], formato='1:1 + 9:16')
     out.setdefault('KV-01', {}).update(nome='KV-01 · MÃE AO VIVO', formato='9:16 · 4:5 · 1:1 · 16:9',
         descricao='O PALCO: a vela AO VIVO acesa sobre o X de fita, sob um spot duro, com a escalação MÃE AO VIVO em tipo por código.',
         texto='MÃE AO VIVO · DOMINGO · 09.05 · abertura: você · holofote nela.')
@@ -178,34 +178,34 @@ def cortes():
 # Copy for the organic posts. Rules: the piece's own line leads; one product line; the signature in lower case; no
 # testimonial, no memorial phrasing, no claim the label does not make; prices only where the platform sets them.
 SOCIAL = [
-    ('C01', '19.04 · ato 1 O MURO', 'MÃE AO VIVO. 09.05. Ingressos com você.\nA TURNÊ: quatro velas aromáticas, quatro shows dela.\nholofote nela.',
-     'Muro de reboco coberto de cartazes lambe amarelos, rosa, laranja e violeta escritos MÃE AO VIVO 09.05; num parapeito, quatro velas em copos coloridos, tampadas.'),
+    ('C01', '19.04 · ato 1 O MURO', 'MÃE AO VIVO. 09.05. INGRESSOS COM VOCÊ.\nA TURNÊ: quatro velas aromáticas, quatro faixas do show dela.\nholofote nela.',
+     'Muro de reboco coberto de cartazes lambe-lambe amarelos, rosa, laranja e violeta escritos MÃE AO VIVO · 09.05, dois deles rasgados; num parapeito, quatro velas em copos coloridos, tampadas. Um dos cartazes diz MÃE AO VIVO. 09.05. INGRESSOS COM VOCÊ.'),
     ('C10', '22.04 · ato 1 O MURO', 'comenta como ela tá salva no seu celular. a gente bota no cartaz.\nholofote nela.',
      'Três velas em copos coloridos num parapeito, com nomes no rótulo: MÃE com coração, DONA CIDA e MAINHA.'),
-    ('C09', '26.04 · ato 1 O MURO', 'faz o cartaz dela.\nholofote.exemplo/cartaz',
-     'Cartaz lambe rosa escrito DONA CIDA AO VIVO, com seis datas de turnê.'),
-    ('C02', '01.05 · ato 2 O PALCO', 'A vida toda guardando lugar na primeira fila.\nEsse ano, o palco é dela.\nholofote nela.',
+    ('C09', '26.04 · ato 1 O MURO', 'faz o cartaz dela.\nholofote.exemplo/cartaz\nholofote nela.',
+     'Cartaz lambe-lambe rosa escrito DONA CIDA AO VIVO, com seis momentos da turnê dela, e a chamada faz o cartaz dela.'),
+    ('C02', '01.05 · ato 2 O PALCO', 'A vida toda guardando lugar na primeira fila.\nEsse ano, o palco é dela.\nholofote nela.\nNunca deixe a vela acesa sem supervisão.',
      'Vela acesa no palco de um auditório de escola vazio, vista de trás; ao fundo, oito cadeiras brancas e uma bolsa guardando a do meio.'),
-    ('C03', '02.05 · ato 2 O PALCO', 'Ela aplaudiu de pé o seu pior show.\nSua vez.\nholofote nela.',
-     'Cartaz amarelo com letras pretas grandes: ELA APLAUDIU DE PÉ O SEU PIOR SHOW, com a anotação girassol, 2007; embaixo, um círculo com a vela acesa.'),
-    ('C04', '03.05 · ato 2 O PALCO', 'A discografia dela. (até agora.)\n1. camarim · 2. ao vivo · 3. mais um! · 4. acústico\nholofote nela.',
-     'Quatro velas acesas em fila num palco preto, cada uma sob seu próprio foco de luz branca; um setlist colado no chão à frente.'),
+    ('C03', '02.05 · ato 2 O PALCO', 'Ela aplaudiu de pé o seu pior show.\nSua vez.\nholofote nela.\nNunca deixe a vela acesa sem supervisão.',
+     'Cartaz amarelo com letras pretas grandes: ELA APLAUDIU DE PÉ O SEU PIOR SHOW., com a anotação à mão (girassol, 2007); embaixo, um círculo com a vela acesa e os textos Sua vez., holofote nela. e nunca deixe a vela acesa sem supervisão.'),
+    ('C04', '03.05 · ato 2 O PALCO', 'A discografia dela. (até agora.)\n1. camarim · 2. ao vivo · 3. mais um! · 4. acústico\nholofote nela.\nNunca deixe a vela acesa sem supervisão.',
+     'Quatro velas acesas em fila num palco preto, cada uma sob seu próprio foco de luz branca; uma setlist colada no chão à frente.'),
     ('C05', '04.05 · ato 2 O PALCO', 'Mãe não tem camarim. Agora tem.\nO CASE · com o nome dela · R$179\nholofote nela.',
-     'Case de turnê preto aberto, visto de cima, com espelho na tampa, a vela na espuma, o setlist e uma pulseira de tecido amarela e preta.'),
-    ('C06', '05.05 · ato 2 O PALCO', 'O menor holofote do Brasil.\nPra maior atração.\nholofote nela.',
+     'Case de turnê preto aberto, visto de cima, com espelho na tampa, a vela tampada na espuma, a setlist e uma pulseira de tecido preta com letras amarelas.'),
+    ('C06', '05.05 · ato 2 O PALCO', 'O menor holofote do Brasil.\nPra maior atração.\nholofote nela.\nNunca deixe a vela acesa sem supervisão.',
      'Uma vela acesa no escuro total; só a chama ilumina o rótulo amarelo.'),
-    ('C07', '06.05 · ato 2 O PALCO (só neste dia)', 'Pix não tem cheiro.\nMÃE AO VIVO · domingo 09.05\nholofote nela.',
-     'Cartaz lambe amarelo escrito PIX NÃO TEM CHEIRO em letras pretas grandes, com a vela em miniatura embaixo.'),
+    ('C07', '06.05 · ato 2 O PALCO (só neste dia)', 'Pix não tem cheiro.\nMÃE AO VIVO · DOMINGO · 09.05\nholofote nela.\nNunca deixe a vela acesa sem supervisão.',
+     'Cartaz lambe-lambe amarelo escrito PIX NÃO TEM CHEIRO. em letras pretas grandes; embaixo, a vela acesa em miniatura, MÃE AO VIVO, DOMINGO · 09.05, holofote nela. e nunca deixe a vela acesa sem supervisão.'),
     ('S01', '08.05 · ato 2 O PALCO (sugerida)', 'domingo tô aí.\nholofote nela.',
-     'Vídeo: numa parede creme, alguém digita mãe, você foi a melhor plateia d… para, apaga tudo letra por letra e digita domingo tô aí.'),
+     'Vídeo: num papel creme, alguém digita “mãe, você foi a melhor plateia d…”, para, apaga letra por letra e digita “domingo tô aí.”; no fim, holofote nela.'),
     ('C08', '10.05 · ato 3 O BIS', 'O copo fica. A turnê continua.\nrefil 200 g · R$79\nholofote nela.',
-     'Copo de vela limpo e vazio sobre um X de fita no palco, com a cápsula de refil preta ao lado e o selo meio aberto.'),
+     'Copo de vela limpo e vazio sobre um X de fita no palco, com a cápsula de refil preta ao lado e a tampa-selo levantada.'),
 ]
 
 
 def social(ids):
     out = ['HOLOFOTE · TEXTOS DOS POSTS ORGÂNICOS · Dia das Mães 2027 (marca fictícia, caso demonstrativo)',
-           'Regra: a linha da peça abre; uma linha de produto; a assinatura em minúsculas. Sem depoimento, sem luto, sem promessa que o rótulo não faz.',
+           'Regra: a linha da peça abre; uma linha de produto; a assinatura em minúsculas; em todo post com vela acesa, a linha de segurança (§D.8.6). Sem depoimento, sem luto, sem promessa que o rótulo não faz.',
            'Os BOLETINS (B01–B08) saem às 06:03, de 02 a 09.05, com a frase do dia como legenda e nada mais.',
            'Sem rótulo de IA nos anúncios (decisão da fundadora, 6 out 2026).',
            'Datas: os atos são os da plataforma (§E). Fixadas por ela: C07 (06.05), BOLETIM (02–09.05, 06:03), F06C (07, 08 e 09.05) e C08 (10.05). As outras datas são sugestão dentro do ato.', '']
@@ -219,7 +219,7 @@ def social(ids):
         fs = arquivo_da_peca('B%02d' % i)
         out += ['B%02d · BOLETIM · %s 06:03 · %s' % (i, d.get('data', ''), d.get('cor', '')),
                 'ARQUIVO: ' + (' | '.join(rel(f) for f in fs) or 'AUSENTE'), 'LEGENDA:', d.get('texto', ''),
-                'TEXTO ALTERNATIVO: Cartão lambe na cor %s com MÃE AO VIVO · DOMINGO 09.05, o horário 06:03 no canto e a frase: %s'
+                'TEXTO ALTERNATIVO: Cartão lambe-lambe %s com MÃE AO VIVO · DOMINGO · 09.05, o horário 06:03 no canto e a frase: %s'
                 % (d.get('cor', ''), d.get('texto', '')), '']
     open(os.path.join(PROD, 'TEXTOS_SOCIAL.txt'), 'w', encoding='utf-8').write('\n'.join(out))
 

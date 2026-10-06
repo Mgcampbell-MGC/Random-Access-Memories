@@ -5,7 +5,7 @@ LOTE · FAB · VAL band on the capsule wall.
 
 Peel lid: paper/foil, printed ONE colour on the faixa colour (preto; papel on ACÚSTICO). Text, exact:
   NOVA TEMPORADA · [faixa name] · PESO LÍQUIDO 200 g (figures 4,0 mm) · vela aromática · refil ·
-  Use dentro do copo HOLOFOTE.
+  Use dentro do copo HOLOFOTE. · plus, by director's decision (6 Oct 2026): Retire o selo antes de acender.
 Set as a lineup inside the circle: the two display lines fill their chord; the small lines are centred.
 A 14 x 9 mm pull tab at 3 o'clock (die shape in alpha). 40 px/mm.
 
@@ -32,6 +32,10 @@ TAB_W, TAB_H = 9.0, 14.0             # tab sticks out 9 mm at 3 o'clock, 14 mm t
 CW, CH = D + TAB_W + 2.0, D          # canvas mm (disc left, tab right)
 CX, CY = RR, RR
 LASER = '#C9C8C5'
+# director's decision after the copy/compliance review, 6 Oct 2026: a safety line added to every peel lid
+LID_SAFETY = 'Retire o selo antes de acender.'
+LID_SAFETY_DEV = dict(kind="director's decision", added=LID_SAFETY, cap_mm=2.4,
+                      reason='refill safety: the peel lid (o selo) must come off before the candle is lit')
 ANOD = '#141416'
 
 
@@ -93,6 +97,10 @@ def lid(faixa):
         p5 = K.place_center(Line([run_cap(T.REF_LID[3], K.CN, 2.4, 0)]), CX, y)
         placed.append(p5)
         log.append(dict(text=T.REF_LID[3], cap_mm=2.4, baseline_mm=round(y, 2)))
+        y += 4.4
+        p6 = K.place_center(Line([run_cap(LID_SAFETY, K.CN, 2.4, 0)]), CX, y)
+        placed.append(p6)
+        log.append(dict(text=LID_SAFETY, cap_mm=2.4, baseline_mm=round(y, 2)))
         top = p1.ink()[1]
         bot = max(q.ink()[3] for q in placed)
         return top, bot
@@ -124,7 +132,8 @@ def lid(faixa):
     R.write_svg(doc, os.path.join(od, f'{code}_TAMPA-PEEL.svg'))
     return dict(sku=code, file=f'{code}_TAMPA-PEEL.png', px=list(a.shape[::-1]), ppmm=PP, disc_mm=D,
                 tab_mm=[TAB_W, TAB_H], flood=s['coating'], ink=ink, lines=log,
-                strings=[T.REF_LID[0], s['show'], T.REF_LID[1], T.REF_LID[2], T.REF_LID[3]])
+                strings=[T.REF_LID[0], s['show'], T.REF_LID[1], T.REF_LID[2], T.REF_LID[3], LID_SAFETY],
+                deviations=[LID_SAFETY_DEV])
 
 
 def band():

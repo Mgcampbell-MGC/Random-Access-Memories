@@ -204,9 +204,29 @@ def bind_words(words):
     return out
 
 
-def para(text, fc, cap, measure, tracking=0.0, features=None, min_last=2):
-    """Return a list of Lines for a paragraph broken to a measure (ink width)."""
+def bind_list(words):
+    """An ingredient list breaks only after a comma (or a colon or full stop): each item stays whole."""
+    out, cur = [], []
+    for w in words:
+        cur.append(w)
+        if w.endswith((',', ':', '.', ';')):
+            out.append(' '.join(cur))
+            cur = []
+    if cur:
+        out.append(' '.join(cur))
+    return out
+
+
+def is_ingredient_list(text):
+    return text.startswith(('COMPOSIÇÃO', 'Ingredientes'))
+
+
+def para(text, fc, cap, measure, tracking=0.0, features=None, min_last=2, list_breaks=None):
+    """Return a list of Lines for a paragraph broken to a measure (ink width). Ingredient lists (or list_breaks=True)
+    break only between items."""
     words = bind_words(text.split(' '))
+    if list_breaks or (list_breaks is None and is_ingredient_list(text)):
+        words = bind_list(words)
     feats = dict(FIG)
     if features:
         feats.update(features)

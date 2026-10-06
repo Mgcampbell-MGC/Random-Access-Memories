@@ -13,12 +13,10 @@ Tudo aqui foi gerado por código em `_build/pack/` (um comando refaz tudo:
 - `HLF-01_label_copy.json` — HLF-01: todos os textos, medidas, desvios e o hash do mestre.
 - `HLF-02-080_ROTULO_wrap.png` — O SINGLE: mestre do rótulo 7288 × 1960 px (182,2 mm × zona 14–63 mm, 40 px/mm), só tinta, fundo transparente.
 - `HLF-02-080_ROTULO_wrap.svg` — O SINGLE: o mesmo rótulo em vetor, em milímetros reais.
-- `HLF-02-080_ROTULO_wrap_ERRO-PLANTADO.png` — O SINGLE: cópia com erro plantado (E de MÃE espelhado) para testar a ferramenta de fidelidade.
 - `HLF-02-080_ROTULO_wrap_preview.png` — O SINGLE: prévia chapada do rótulo sobre o amarelo do copo.
 - `HLF-02-080_label_copy.json` — O SINGLE: todos os textos, medidas e o hash do mestre.
 - `HLF-02_ROTULO_wrap.png` — HLF-02: mestre do rótulo 9552 × 2560 px (40 px/mm), só tinta, fundo transparente.
 - `HLF-02_ROTULO_wrap.svg` — HLF-02: o mesmo rótulo em vetor, em milímetros reais.
-- `HLF-02_ROTULO_wrap_ERRO-PLANTADO.png` — HLF-02: cópia com erro plantado para testar a fidelidade.
 - `HLF-02_ROTULO_wrap_preview.png` — HLF-02: prévia chapada do rótulo sobre a cor do copo.
 - `HLF-02_label_copy.json` — HLF-02: todos os textos, medidas, desvios e o hash do mestre.
 - `HLF-03_ROTULO_wrap.png` — HLF-03: mestre do rótulo 9552 × 2560 px (40 px/mm), só tinta, fundo transparente.
@@ -35,13 +33,18 @@ Tudo aqui foi gerado por código em `_build/pack/` (um comando refaz tudo:
 - `HLF-CASE-01_DONA-CIDA_label_copy.json` — HLF-CASE-01_DONA-CIDA: textos, dados do pedido (fictícios) e medidas.
 - `HLF-CASE-02_MAE-CORACAO_ROTULO_wrap.png` — HLF-CASE-02_MAE-CORACAO: mestre do rótulo personalizado (9552 × 2560 px).
 - `HLF-CASE-02_MAE-CORACAO_ROTULO_wrap.svg` — HLF-CASE-02_MAE-CORACAO: o mesmo rótulo personalizado em vetor.
-- `HLF-CASE-02_MAE-CORACAO_ROTULO_wrap_ERRO-PLANTADO.png` — HLF-CASE-02_MAE-CORACAO: cópia com erro plantado para testar a fidelidade.
 - `HLF-CASE-02_MAE-CORACAO_ROTULO_wrap_preview.png` — HLF-CASE-02_MAE-CORACAO: prévia do rótulo personalizado sobre a cor do copo.
 - `HLF-CASE-02_MAE-CORACAO_label_copy.json` — HLF-CASE-02_MAE-CORACAO: textos, dados do pedido (fictícios) e medidas.
 - `HLF-CASE-03_MAINHA_ROTULO_wrap.png` — HLF-CASE-03_MAINHA: mestre do rótulo personalizado (9552 × 2560 px).
 - `HLF-CASE-03_MAINHA_ROTULO_wrap.svg` — HLF-CASE-03_MAINHA: o mesmo rótulo personalizado em vetor.
 - `HLF-CASE-03_MAINHA_ROTULO_wrap_preview.png` — HLF-CASE-03_MAINHA: prévia do rótulo personalizado sobre a cor do copo.
 - `HLF-CASE-03_MAINHA_label_copy.json` — HLF-CASE-03_MAINHA: textos, dados do pedido (fictícios) e medidas.
+
+## rotulos/_controle/ · Controles de fidelidade: cópias com erro proposital, NÃO são mestres de impressão
+
+- `HLF-02-080_ROTULO_wrap_ERRO-PLANTADO.png` — O SINGLE: cópia com erro plantado (E de MÃE espelhado) para testar a ferramenta de fidelidade. NÃO IMPRIMIR.
+- `HLF-02_ROTULO_wrap_ERRO-PLANTADO.png` — HLF-02: cópia com erro plantado (E de MÃE espelhado) para testar a fidelidade. NÃO IMPRIMIR.
+- `HLF-CASE-02_MAE-CORACAO_ROTULO_wrap_ERRO-PLANTADO.png` — HLF-CASE-02_MAE-CORACAO: cópia com erro plantado para testar a fidelidade. NÃO IMPRIMIR.
 
 ## tampa/ · Tampa-palco
 
@@ -283,16 +286,16 @@ Tudo aqui foi gerado por código em `_build/pack/` (um comando refaz tudo:
 
 ## refil/ · Refil NOVA TEMPORADA
 
-- `HLF-REF-01_TAMPA-PEEL.png` — Refil NOVA TEMPORADA CAMARIM: tampa peel Ø66 com aba, cor da faixa + tinta, recorte em alfa, 40 px/mm.
+- `HLF-REF-01_TAMPA-PEEL.png` — Refil NOVA TEMPORADA CAMARIM: tampa peel Ø66 com aba, cor da faixa + tinta, recorte em alfa, 40 px/mm (inclui "Retire o selo antes de acender.").
 - `HLF-REF-01_TAMPA-PEEL.svg` — Refil CAMARIM: tampa peel em vetor, com a faca.
 - `HLF-REF-01_TAMPA-PEEL_tinta.png` — Refil CAMARIM: só a tinta da tampa peel.
-- `HLF-REF-02_TAMPA-PEEL.png` — Refil NOVA TEMPORADA AO VIVO: tampa peel Ø66 com aba, cor da faixa + tinta, recorte em alfa, 40 px/mm.
+- `HLF-REF-02_TAMPA-PEEL.png` — Refil NOVA TEMPORADA AO VIVO: tampa peel Ø66 com aba, cor da faixa + tinta, recorte em alfa, 40 px/mm (inclui "Retire o selo antes de acender.").
 - `HLF-REF-02_TAMPA-PEEL.svg` — Refil AO VIVO: tampa peel em vetor, com a faca.
 - `HLF-REF-02_TAMPA-PEEL_tinta.png` — Refil AO VIVO: só a tinta da tampa peel.
-- `HLF-REF-03_TAMPA-PEEL.png` — Refil NOVA TEMPORADA MAIS UM!: tampa peel Ø66 com aba, cor da faixa + tinta, recorte em alfa, 40 px/mm.
+- `HLF-REF-03_TAMPA-PEEL.png` — Refil NOVA TEMPORADA MAIS UM!: tampa peel Ø66 com aba, cor da faixa + tinta, recorte em alfa, 40 px/mm (inclui "Retire o selo antes de acender.").
 - `HLF-REF-03_TAMPA-PEEL.svg` — Refil MAIS UM!: tampa peel em vetor, com a faca.
 - `HLF-REF-03_TAMPA-PEEL_tinta.png` — Refil MAIS UM!: só a tinta da tampa peel.
-- `HLF-REF-04_TAMPA-PEEL.png` — Refil NOVA TEMPORADA ACÚSTICO: tampa peel Ø66 com aba, cor da faixa + tinta, recorte em alfa, 40 px/mm.
+- `HLF-REF-04_TAMPA-PEEL.png` — Refil NOVA TEMPORADA ACÚSTICO: tampa peel Ø66 com aba, cor da faixa + tinta, recorte em alfa, 40 px/mm (inclui "Retire o selo antes de acender.").
 - `HLF-REF-04_TAMPA-PEEL.svg` — Refil ACÚSTICO: tampa peel em vetor, com a faca.
 - `HLF-REF-04_TAMPA-PEEL_tinta.png` — Refil ACÚSTICO: só a tinta da tampa peel.
 - `HLF-REF_CAPSULA_faixa-laser.png` — Cápsula do refil: faixa de LOTE · FAB · VAL gravada a laser (213,6 × 10 mm), transparente.

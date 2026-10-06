@@ -102,64 +102,63 @@ SEG = 'nunca deixe a vela acesa sem supervisão.'
 PECAS = {}
 
 
+def LOCK(cap, cor='papel'):
+    return dict(t='holofote nela.', f='X', cap=cap, cor=cor, lsEm=-0.01)
+
+
 def def_pecas():
     P = PECAS
-    # C02 · 4:5 · the type sits in the dark of the house, above the front row; the stage pool fills the bottom
+    # Lit pieces carry the safety micro-line (§D.8.6). Sign-off rows are L/R splits that fill the measure (rule 2),
+    # the C07 pattern: Produção left, the lockup right. Type never enters a pool (rule 3).
+    # C02 · 4:5 · all type in the dark of the house above the front row; the stage floor is the pool
     P['C02'] = dict(plate='C02_A-PRIMEIRA-FILA_limpo.png', out='C02_A-PRIMEIRA-FILA.png', W=1080, H=1350, blocos=[
-        dict(x0=140, x1=940, y0=72, y1=420, itens=[
+        dict(x0=140, x1=940, y0=72, y1=368, itens=[
             dict(tipo='cheia', s=X('A vida toda guardando', 54)),
-            dict(tipo='cheia', s=X('lugar na primeira fila.', 54), antes=14),
-            dict(tipo='cheia', s=X('Esse ano, o palco é dela.', 54, cor='amarelo'), antes=34),
-        ]),
-        dict(x0=140, x1=940, y0=1206, y1=1286, itens=[
-            dict(tipo='assinatura', cap=28, tinta='papel', lamp='amarelo'),
-            dict(tipo='cheia', s=C(SEG, 18, op=0.85), antes=14),
+            dict(tipo='cheia', s=X('lugar na primeira fila.', 54), antes=12),
+            dict(tipo='cheia', s=X('Esse ano, o palco é dela.', 54, cor='amarelo'), antes=28),
+            dict(tipo='dividida', esq=C(SEG, 17, op=0.85), dir=LOCK(24), antes=30),
         ]),
     ])
-    # C04 · 4:5 · A DISCOGRAFIA / DELA. (ela, a maior palavra) · (até agora.) Produção; the setlist carries the Fã
+    # C04 · 4:5 · A DISCOGRAFIA / DELA. (ela, the biggest word); (até agora.) in the Produção — the Fã is on the
+    # setlist (one Fã per layout); the safety line bottom-left, clear of the setlist and of the pools
     P['C04'] = dict(plate='C04_A-DISCOGRAFIA_limpo.png', out='C04_A-DISCOGRAFIA.png', W=1080, H=1350, blocos=[
-        dict(x0=140, x1=940, y0=72, y1=400, itens=[
+        dict(x0=140, x1=940, y0=72, y1=420, itens=[
             dict(tipo='cheia', s=X('A DISCOGRAFIA', 60)),
-            dict(tipo='cheia', s=X('DELA.', 200), antes=18),
-            dict(tipo='dividida', esq=C(SEG, 18, op=0.85), dir=C('(até agora.)', 30), antes=22),
+            dict(tipo='cheia', s=X('DELA.', 200), antes=16),
+            dict(tipo='dividida', esq=C('(até agora.)', 30), dir=LOCK(24), antes=26),
         ]),
-        dict(x0=140, x1=940, y0=1240, y1=1286, itens=[
-            dict(tipo='assinatura', cap=28, tinta='papel', lamp='amarelo'),
-        ]),
-    ])
+    ], linhas=[dict(s=C(SEG, 16, op=0.85), x=140, y=1286, align='left')])
     # C05 · 1:1 and 9:16 · unlit (the copo is in the foam, lid on): no safety line needed
     P['C05_1x1'] = dict(plate='C05_O-CASE_1x1_limpo.png', out='C05_O-CASE_1x1.png', W=1080, H=1080, blocos=[
-        dict(x0=180, x1=900, y0=80, y1=232, itens=[
-            dict(tipo='cheia', s=X('Mãe não tem camarim.', 48)),
-            dict(tipo='cheia', s=X('Agora tem.', 48, cor='amarelo'), antes=12),
+        dict(x0=180, x1=900, y0=80, y1=268, itens=[
+            dict(tipo='cheia', s=X('Mãe não tem camarim.', 44)),
+            dict(tipo='cheia', s=X('Agora tem.', 80, cor='amarelo'), antes=18),
         ]),
-        dict(x0=180, x1=900, y0=948, y1=1000, itens=[
-            dict(tipo='dividida', esq=C('O CASE · com o nome dela · R$179', 26, lsEm=0.04, tnum=True),
-                 dir=dict(t='holofote nela.', f='X', cap=24, cor='papel', lsEm=-0.01)),
+        dict(x0=180, x1=900, y0=962, y1=1000, itens=[
+            dict(tipo='dividida', esq=C('O CASE · com o nome dela · R$179', 22, lsEm=0.03, tnum=True), dir=LOCK(22)),
         ]),
     ])
     P['C05_9x16'] = dict(plate='C05_O-CASE_9x16_limpo.png', out='C05_O-CASE_9x16.png', W=1080, H=1920, blocos=[
-        dict(x0=140, x1=940, y0=278, y1=500, itens=[
+        dict(x0=140, x1=940, y0=278, y1=650, itens=[
             dict(tipo='cheia', s=X('Mãe não tem', 80)),
             dict(tipo='cheia', s=X('camarim.', 80), antes=14),
-            dict(tipo='cheia', s=X('Agora tem.', 80, cor='amarelo'), antes=14),
+            dict(tipo='cheia', s=X('Agora tem.', 80, cor='amarelo'), antes=22),
         ]),
-        dict(x0=140, x1=940, y0=1400, y1=1500, itens=[
-            dict(tipo='cheia', s=C('O CASE · com o nome dela · R$179', 34, lsEm=0.04, tnum=True)),
-            dict(tipo='assinatura', cap=30, tinta='papel', lamp='amarelo', antes=24),
+        dict(x0=140, x1=940, y0=1404, y1=1500, itens=[
+            dict(tipo='dividida', esq=C('O CASE · com o nome dela', 32, lsEm=0.03), dir=C('R$179', 32, lsEm=0.03, tnum=True)),
+            dict(tipo='assinatura', cap=30, tinta='papel', lamp='amarelo', antes=26),
         ]),
     ])
     # C06 · 4:5 · blackout: the flame is the only light; type in the dark above and below
     P['C06'] = dict(plate='C06_O-MENOR-HOLOFOTE_limpo.png', out='C06_O-MENOR-HOLOFOTE.png', W=1080, H=1350, blocos=[
-        dict(x0=140, x1=940, y0=72, y1=400, itens=[
+        dict(x0=140, x1=940, y0=72, y1=440, itens=[
             dict(tipo='cheia', s=X('O MENOR', 120)),
             dict(tipo='cheia', s=X('HOLOFOTE', 120), antes=14),
             dict(tipo='cheia', s=X('DO BRASIL.', 120), antes=14),
         ]),
-        dict(x0=140, x1=940, y0=1160, y1=1286, itens=[
+        dict(x0=140, x1=940, y0=1146, y1=1286, itens=[
             dict(tipo='cheia', s=X('Pra maior atração.', 52, cor='amarelo')),
-            dict(tipo='assinatura', cap=26, tinta='papel', lamp='amarelo', antes=24),
-            dict(tipo='cheia', s=C(SEG, 18, op=0.85), antes=12),
+            dict(tipo='dividida', esq=C(SEG, 17, op=0.85), dir=LOCK(24), antes=26),
         ]),
     ])
     # C08 · 4:5 · unlit
@@ -168,20 +167,18 @@ def def_pecas():
             dict(tipo='cheia', s=X('O copo fica.', 90)),
             dict(tipo='cheia', s=X('A turnê continua.', 90, cor='amarelo'), antes=16),
         ]),
-        dict(x0=140, x1=940, y0=1220, y1=1286, itens=[
-            dict(tipo='dividida', esq=C('refil 200 g · R$79', 30, lsEm=0.02, tnum=True),
-                 dir=dict(t='holofote nela.', f='X', cap=26, cor='papel', lsEm=-0.01)),
+        dict(x0=140, x1=940, y0=1236, y1=1286, itens=[
+            dict(tipo='dividida', esq=C('refil 200 g · R$79', 30, lsEm=0.02, tnum=True), dir=LOCK(26)),
         ]),
     ])
     # C10 · 4:5 · O MURO, preto on plaster; unlit
     P['C10'] = dict(plate='C10_SALVA-COMO_limpo.png', out='C10_SALVA-COMO.png', W=1080, H=1350, blocos=[
-        dict(x0=140, x1=940, y0=72, y1=560, itens=[
+        dict(x0=140, x1=940, y0=72, y1=430, itens=[
             dict(tipo='cheia', s=X('comenta como ela', 60, cor='preto')),
             dict(tipo='cheia', s=X('tá salva no seu celular.', 60, cor='preto'), antes=16),
             dict(tipo='cheia', s=X('a gente bota no cartaz.', 60, cor='preto'), antes=16),
-        ]),
-        dict(x0=140, x1=940, y0=1240, y1=1286, itens=[
-            dict(tipo='assinatura', cap=28, tinta='preto', lamp='amarelo'),
+            dict(tipo='espaco', flex=1),
+            dict(tipo='assinatura', cap=26, tinta='preto', lamp='amarelo'),
         ]),
     ])
 
@@ -193,13 +190,19 @@ def serie_c(quais=None):
     for k in ks:
         p = PECAS[k]
         jobs.append(dict(html=HTML, saida=os.path.join(CACHE, k + '_tipo.png'), w=p['W'], h=p['H'], transparente=True,
-                         dados=dict(W=p['W'], H=p['H'], blocos=p['blocos'])))
+                         dados=dict(W=p['W'], H=p['H'], blocos=p['blocos'], linhas=p.get('linhas', []))))
     res = renderizar(jobs, verbose=False)
     for k, j, r in zip(ks, jobs, res):
         qa(k, r)
         p = PECAS[k]
         plate = os.path.join(RENDERS, p['plate'])
-        if os.path.exists(plate):
+        if PREVIA:
+            t = os.path.join(RENDERS, '_campanha_testes', p['plate'])
+            if os.path.exists(t):
+                big = os.path.join(CACHE, 'previa_plate_' + p['plate'])
+                Image.open(t).convert('RGB').resize((p['W'], p['H']), Image.LANCZOS).save(big)
+                compor(big, j['saida'], os.path.join(CACHE, 'previa_' + p['out']))
+        elif os.path.exists(plate):
             compor(plate, j['saida'], os.path.join(LAN, 'C', p['out']))
         json.dump(r.get('info'), open(os.path.join(CACHE, k + '_tipo.json'), 'w'), ensure_ascii=False, indent=1)
     # C01: the headline IS the poster on the wall (§E.2: "set as one more poster on the wall"); no overlay
@@ -298,8 +301,10 @@ def livro():
     return feito
 
 
+PREVIA = '--previa' in sys.argv
+
 if __name__ == '__main__':
-    a = sys.argv[1:] or ['KV01', 'KV45', 'C', 'C03C07', 'PORTAO']
+    a = [x for x in sys.argv[1:] if x != '--previa'] or ['KV01', 'KV45', 'C', 'C03C07', 'PORTAO']
     if 'KV01' in a:
         kv01()
     if 'KV45' in a:

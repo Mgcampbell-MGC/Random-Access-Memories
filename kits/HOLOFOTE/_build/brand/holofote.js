@@ -167,7 +167,7 @@
     a.par = b;
     return [a, b];
   };
-  // pontilhado de tabela: "PRÉZINHO ....... PRIMEIRA FILA" (§C.3: ponto Condensed One, passo fixo, mínimo)
+  // pontilhado de tabela: "PREZINHO ....... PRIMEIRA FILA" (§C.3: ponto Condensed One, passo fixo, mínimo)
   HF.pontilhada = function (parent, esq, dir, x0, x1, baseline, opt) {
     opt = Object.assign({ passo: null, folga: null, f: 'C', cor: esq.cor, fs: esq.fs }, opt || {});
     const [a, b] = esq ? HF.dividida(parent, esq, dir, x0, x1, baseline) : [null, HF.texto(parent, dir)];
