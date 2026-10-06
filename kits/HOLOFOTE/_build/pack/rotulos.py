@@ -20,7 +20,7 @@ import numpy as np
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from tipos import (face, Line, Run, run_cap, run_xh, CAPS, FIG, HEART, heart_metrics, fit_tracking, fit_axis, fit_size,
-                   place_left, place_right, place_center, placed_paths, Placed)
+                   place_left, place_right, place_center, placed_paths, Placed, clear_accents)
 import raster as R
 import textos as T
 
@@ -198,8 +198,20 @@ def front(panel, sku, headliner_name, opening, force_step=None):
                   tracking=h['tracking'], text=headliner_name)
     # L3 show name: SG wght 700, wdth as the platform solved it, cap 10,0, filled by tracking
     f3 = SG(700, s['wdth'])
-    full_line(panel, [run_cap(s['show'], f3, 10.0, 0.0, CAPS)], 38.6, x0, x1, 'L3', font=f'SG wght700 wdth{s["wdth"]}',
-              cap_mm=10.0)
+    p3 = full_line(panel, [run_cap(s['show'], f3, 10.0, 0.0, CAPS)], 38.6, x0, x1, 'L3',
+                   font=f'SG wght700 wdth{s["wdth"]}', cap_mm=10.0)
+    # an accent in the show name (ACÚSTICO) must clear the headliner above it: re-letter that accent only
+    l2 = [q for q in panel.placed if q is not p3 and q.y == Y(51.0)]
+    obst = [(q.x + gb[0], q.x + gb[2], q.y + gb[3]) for q in l2 for gb in (g.bounds() for g in q.line.glyphs) if gb]
+    fix = clear_accents(p3, obst)
+    if fix:
+        for m in panel.log:
+            if m['label'] == 'L3':
+                m['ink_mm'] = [round(v, 3) for v in p3.ink()]
+        panel.dev.append(dict(line='L3', reason='the show-name accent rose into the headliner line above it (platform '
+                              'baselines 51,0 / 38,6 leave 2,4 mm; the accent needs 3,3 mm): that accent alone is '
+                              're-lettered to clear the headliner by 0,6 mm; baseline, cap, wdth and spacing unchanged',
+                              changes=fix))
     # L4
     op = T.L4_RIGHT_PREFIX + opening
     pl, pr = split_line(panel, [run_cap(T.L4_LEFT, CN, 4.0, 80, CAPS)], [run_xh(op, SH, 1.6)], 32.4, x0, x1, 'L4')

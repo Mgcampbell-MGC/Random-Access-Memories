@@ -1,0 +1,463 @@
+{
+  "arquivo": "HLF-F15_A_ENTRADA_som.wav",
+  "duracao_s": 15.0,
+  "fps": 24.0,
+  "lufs_i": -14.03,
+  "true_peak_dbtp": -1.15,
+  "normalizacao": "−14 LUFS integrado, ≤ −1 dBTP",
+  "cues": [
+    {
+      "label": "fanfarra: rufo pp, corte seco f132",
+      "arquivo": "musica/HLF-MUS-01_fanfarra_120bpm_20s_mix.wav",
+      "quadro": 0.0,
+      "inicio_s": 0.0,
+      "sync": "start"
+    },
+    {
+      "label": "CLAC f12",
+      "arquivo": "sfx/HLF-SFX-01_clac.wav",
+      "quadro": 12.0,
+      "inicio_s": 0.5,
+      "sync": "onset"
+    },
+    {
+      "label": "murmúrio sobe f12",
+      "arquivo": "sfx/HLF-SFX-03_murmurio_teatro_loop.wav",
+      "quadro": 12.0,
+      "inicio_s": 0.5,
+      "sync": "start"
+    },
+    {
+      "label": "caixa f44",
+      "arquivo": "musica/pecas/HLF-MUS-02_caixa_acento.wav",
+      "quadro": 44.0,
+      "inicio_s": 1.8333,
+      "sync": "onset"
+    },
+    {
+      "label": "bumbo f60",
+      "arquivo": "musica/pecas/HLF-MUS-02_bumbo.wav",
+      "quadro": 60.0,
+      "inicio_s": 2.5,
+      "sync": "onset"
+    },
+    {
+      "label": "caixa f84",
+      "arquivo": "musica/pecas/HLF-MUS-02_caixa_acento.wav",
+      "quadro": 84.0,
+      "inicio_s": 3.5,
+      "sync": "onset"
+    },
+    {
+      "label": "caixa f108",
+      "arquivo": "musica/pecas/HLF-MUS-02_caixa_acento.wav",
+      "quadro": 108.0,
+      "inicio_s": 4.5,
+      "sync": "onset"
+    },
+    {
+      "label": "ar da casa (silêncio) f132",
+      "arquivo": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+      "quadro": 132.0,
+      "inicio_s": 5.5,
+      "sync": "start"
+    },
+    {
+      "label": "tosse f150",
+      "arquivo": "sfx/HLF-SFX-10_tosse_plateia.wav",
+      "quadro": 150.0,
+      "inicio_s": 6.25,
+      "sync": "onset"
+    },
+    {
+      "label": "elevador desce f168",
+      "arquivo": "sfx/HLF-SFX-11_elevador_hidraulico_1s.wav",
+      "quadro": 168.0,
+      "inicio_s": 7.0,
+      "sync": "start"
+    },
+    {
+      "label": "elevador sobe f177",
+      "arquivo": "sfx/HLF-SFX-11_elevador_hidraulico_1s.wav",
+      "quadro": 177.0,
+      "inicio_s": 7.375,
+      "sync": "start"
+    },
+    {
+      "label": "plateia cresce f168→f204",
+      "arquivo": "sfx/HLF-SFX-03_murmurio_teatro_loop.wav",
+      "quadro": 168.0,
+      "inicio_s": 7.0,
+      "sync": "start"
+    },
+    {
+      "label": "CLAC-off f204 (BLACKOUT)",
+      "arquivo": "sfx/HLF-SFX-02_clac_off.wav",
+      "quadro": 204.0,
+      "inicio_s": 8.5,
+      "sync": "onset"
+    },
+    {
+      "label": "fósforo fsst f206",
+      "arquivo": "sfx/HLF-SFX-07_fosforo_fsst.wav",
+      "quadro": 206.0,
+      "inicio_s": 8.5833,
+      "sync": "onset"
+    },
+    {
+      "label": "pavio → aplauso (morph) f210",
+      "arquivo": "identidade/HLF-ID-02_crepitar_para_aplauso_morph.wav",
+      "quadro": 210.0,
+      "inicio_s": 8.75,
+      "sync": "start"
+    },
+    {
+      "label": "CLAC f222",
+      "arquivo": "sfx/HLF-SFX-01_clac.wav",
+      "quadro": 222.0,
+      "inicio_s": 9.25,
+      "sync": "onset"
+    },
+    {
+      "label": "aplauso cresce f222→f312",
+      "arquivo": "sfx/HLF-SFX-05_aplauso_estadio_distante.wav",
+      "quadro": 222.0,
+      "inicio_s": 9.25,
+      "sync": "start"
+    },
+    {
+      "label": "palmas f312/322/332",
+      "arquivo": "sfx/HLF-SFX-06e_palmas_tres_10q.wav",
+      "quadro": 312.0,
+      "inicio_s": 13.0,
+      "sync": "onset"
+    },
+    {
+      "label": "tom de sala f312→f348",
+      "arquivo": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+      "quadro": 312.0,
+      "inicio_s": 13.0,
+      "sync": "start"
+    }
+  ],
+  "quadros_chave": [
+    {
+      "quadro": 12,
+      "onset_medido_s": 0.5,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 44,
+      "onset_medido_s": 1.8333,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 60,
+      "onset_medido_s": 2.5,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 84,
+      "onset_medido_s": 3.5,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 108,
+      "onset_medido_s": 4.5,
+      "desvio_quadros": -0.001,
+      "ok": true
+    },
+    {
+      "quadro": 150,
+      "onset_medido_s": 6.25,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 204,
+      "onset_medido_s": 8.4999,
+      "desvio_quadros": -0.002,
+      "ok": true
+    },
+    {
+      "quadro": 206,
+      "onset_medido_s": 8.5842,
+      "desvio_quadros": 0.021,
+      "ok": true
+    },
+    {
+      "quadro": 222,
+      "onset_medido_s": 9.25,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 312,
+      "onset_medido_s": 13.0005,
+      "desvio_quadros": 0.013,
+      "ok": true
+    },
+    {
+      "quadro": 322,
+      "onset_medido_s": 13.4167,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 332,
+      "onset_medido_s": 13.8328,
+      "desvio_quadros": -0.012,
+      "ok": true
+    }
+  ],
+  "onsets_medidos": [
+    {
+      "t_s": 0.0002,
+      "quadro": 0.0
+    },
+    {
+      "t_s": 0.1,
+      "quadro": 2.4
+    },
+    {
+      "t_s": 0.1887,
+      "quadro": 4.53
+    },
+    {
+      "t_s": 0.2367,
+      "quadro": 5.68
+    },
+    {
+      "t_s": 0.3338,
+      "quadro": 8.01
+    },
+    {
+      "t_s": 0.385,
+      "quadro": 9.24
+    },
+    {
+      "t_s": 0.5,
+      "quadro": 12.0
+    },
+    {
+      "t_s": 0.9101,
+      "quadro": 21.84
+    },
+    {
+      "t_s": 1.048,
+      "quadro": 25.15
+    },
+    {
+      "t_s": 1.4269,
+      "quadro": 34.25
+    },
+    {
+      "t_s": 1.8333,
+      "quadro": 44.0
+    },
+    {
+      "t_s": 1.9992,
+      "quadro": 47.98
+    },
+    {
+      "t_s": 2.0945,
+      "quadro": 50.27
+    },
+    {
+      "t_s": 2.2874,
+      "quadro": 54.9
+    },
+    {
+      "t_s": 2.5,
+      "quadro": 60.0
+    },
+    {
+      "t_s": 2.7612,
+      "quadro": 66.27
+    },
+    {
+      "t_s": 3.004,
+      "quadro": 72.1
+    },
+    {
+      "t_s": 3.236,
+      "quadro": 77.66
+    },
+    {
+      "t_s": 3.425,
+      "quadro": 82.2
+    },
+    {
+      "t_s": 3.5,
+      "quadro": 84.0
+    },
+    {
+      "t_s": 3.9985,
+      "quadro": 95.96
+    },
+    {
+      "t_s": 4.2486,
+      "quadro": 101.97
+    },
+    {
+      "t_s": 4.5,
+      "quadro": 108.0
+    },
+    {
+      "t_s": 4.7517,
+      "quadro": 114.04
+    },
+    {
+      "t_s": 4.8706,
+      "quadro": 116.89
+    },
+    {
+      "t_s": 4.9956,
+      "quadro": 119.89
+    },
+    {
+      "t_s": 5.2503,
+      "quadro": 126.01
+    },
+    {
+      "t_s": 5.3739,
+      "quadro": 128.97
+    },
+    {
+      "t_s": 6.25,
+      "quadro": 150.0
+    },
+    {
+      "t_s": 6.5108,
+      "quadro": 156.26
+    },
+    {
+      "t_s": 8.4999,
+      "quadro": 204.0
+    },
+    {
+      "t_s": 8.5842,
+      "quadro": 206.02
+    },
+    {
+      "t_s": 8.6321,
+      "quadro": 207.17
+    },
+    {
+      "t_s": 8.7583,
+      "quadro": 210.2
+    },
+    {
+      "t_s": 8.8291,
+      "quadro": 211.9
+    },
+    {
+      "t_s": 8.9416,
+      "quadro": 214.6
+    },
+    {
+      "t_s": 8.995,
+      "quadro": 215.88
+    },
+    {
+      "t_s": 9.0493,
+      "quadro": 217.18
+    },
+    {
+      "t_s": 9.0917,
+      "quadro": 218.2
+    },
+    {
+      "t_s": 9.2227,
+      "quadro": 221.35
+    },
+    {
+      "t_s": 9.25,
+      "quadro": 222.0
+    },
+    {
+      "t_s": 9.3403,
+      "quadro": 224.17
+    },
+    {
+      "t_s": 9.401,
+      "quadro": 225.62
+    },
+    {
+      "t_s": 9.5335,
+      "quadro": 228.8
+    },
+    {
+      "t_s": 9.7922,
+      "quadro": 235.01
+    },
+    {
+      "t_s": 9.8779,
+      "quadro": 237.07
+    },
+    {
+      "t_s": 9.9166,
+      "quadro": 238.0
+    },
+    {
+      "t_s": 9.9807,
+      "quadro": 239.54
+    },
+    {
+      "t_s": 10.0551,
+      "quadro": 241.32
+    },
+    {
+      "t_s": 10.1039,
+      "quadro": 242.49
+    },
+    {
+      "t_s": 10.1504,
+      "quadro": 243.61
+    },
+    {
+      "t_s": 10.2082,
+      "quadro": 245.0
+    },
+    {
+      "t_s": 10.3431,
+      "quadro": 248.24
+    },
+    {
+      "t_s": 10.3803,
+      "quadro": 249.13
+    },
+    {
+      "t_s": 10.4713,
+      "quadro": 251.31
+    },
+    {
+      "t_s": 10.5079,
+      "quadro": 252.19
+    },
+    {
+      "t_s": 10.5512,
+      "quadro": 253.23
+    },
+    {
+      "t_s": 10.6975,
+      "quadro": 256.74
+    },
+    {
+      "t_s": 13.0005,
+      "quadro": 312.01
+    },
+    {
+      "t_s": 13.4167,
+      "quadro": 322.0
+    },
+    {
+      "t_s": 13.8328,
+      "quadro": 331.99
+    }
+  ]
+}

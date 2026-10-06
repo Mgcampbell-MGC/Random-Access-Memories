@@ -390,7 +390,7 @@ def norm_sfx(x: np.ndarray, target_m: float = -20.0, tp_ceiling: float = -1.0):
     return y, info
 
 
-def norm_mix(x: np.ndarray, target_i: float = -14.0, tp_ceiling: float = -1.0, iters: int = 4):
+def norm_mix(x: np.ndarray, target_i: float = -14.0, tp_ceiling: float = -1.0, iters: int = 12):
     """Programme normalisation: integrated loudness -> target_i LUFS, true peak <= tp_ceiling via the limiter."""
     y = stereo(x).copy()
     for _ in range(iters):
@@ -398,6 +398,43 @@ def norm_mix(x: np.ndarray, target_i: float = -14.0, tp_ceiling: float = -1.0, i
         y = y * db(target_i - li)
         if true_peak(y) > tp_ceiling:
             y = tp_limit(y, tp_ceiling)
-        if abs(integrated(y) - target_i) < 0.1 and true_peak(y) <= tp_ceiling + 0.01:
+        if abs(integrated(y) - target_i) < 0.05 and true_peak(y) <= tp_ceiling + 0.01:
             break
     return y, dict(lufs_i=round(integrated(y), 2), true_peak_dbtp=round(true_peak(y), 2))
+
+
+# ----------------------------------------------------------------------------------------------- matching EQ
+
+OCT = np.array([63, 125, 250, 500, 1000, 2000, 4000, 8000, 16000], float)
+
+
+def octave_levels(x: np.ndarray, sr: int = SR) -> np.ndarray:
+    """Long-term octave-band levels (dB) of x at OCT centres."""
+    f, p = signal.welch(mono(x), fs=sr, nperseg=8192)
+    out = []
+    for b in OCT:
+        m = (f > b / np.sqrt(2)) & (f < b * np.sqrt(2))
+        out.append(10 * np.log10(p[m].mean() + 1e-24))
+    return np.array(out)
+
+
+def match_tilt(x: np.ndarray, target: dict, loop: bool = False, limit: float = 18.0, sr: int = SR) -> np.ndarray:
+    """Zero-phase matching EQ: reshape x's long-term spectrum toward `target` {octave_centre_Hz: dB relative}.
+    Bands absent from `target` are left alone. Done in the FFT domain (circular when loop=True, padded otherwise)."""
+    cur = octave_levels(x, sr)
+    keys = sorted(target)
+    ref_c = np.interp(np.log2(1000), np.log2(OCT), cur)
+    corr = {}
+    for k in keys:
+        c = np.interp(np.log2(k), np.log2(OCT), cur) - ref_c
+        corr[k] = float(np.clip(target[k] - c, -limit, limit))
+    xs = stereo(x)
+    n = len(xs) if loop else int(2 ** np.ceil(np.log2(len(xs) + sr)))
+    F = np.fft.rfft(xs, n=n, axis=0)
+    f = np.fft.rfftfreq(n, 1 / sr)
+    lf = np.log2(np.maximum(f, 20.0))
+    g_db = np.interp(lf, np.log2(keys), [corr[k] for k in keys])
+    F *= (10 ** (g_db / 20))[:, None]
+    y = np.fft.irfft(F, n=n, axis=0)[:len(xs)]
+    # keep the overall level where it was (RMS)
+    return y * (np.sqrt((xs ** 2).mean()) / (np.sqrt((y ** 2).mean()) + 1e-20))

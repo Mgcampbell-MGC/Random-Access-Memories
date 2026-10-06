@@ -276,9 +276,12 @@ def textura_tinta(al, r, forca=1.0):
     veio = np.clip(ruido.anisotropico(H + 4, W + 4, 160.0, 3.0, r)[:H, :W] * 1.4, 0, 1)  # 0–1, fibras longas
     miolo = np.clip((dist - 1.0) / 2.5, 0, 1)
     dens = 1 - forca * (0.85 * falhas + miolo * (0.035 * mancha + 0.022 * veio))
-    # borda irregular (tinta espalha / falha), ~0,5 px
-    borda = (al > 0.02) & (al < 0.98)
-    jit = ruido.valor(H, W, 1.8, r) * 0.28
+    # borda irregular (tinta espalha / falha), ~0,5 px — só na borda antialias de verdade (gradiente alto): um véu
+    # semitransparente (o brilho da plastificação, uma sombra) não é borda de tinta e não pode virar granulado
+    gx = cv2.Sobel(al, cv2.CV_32F, 1, 0, ksize=3)
+    gy = cv2.Sobel(al, cv2.CV_32F, 0, 1, ksize=3)
+    borda = (al > 0.02) & (al < 0.98) & (np.hypot(gx, gy) > 0.35)
+    jit = ruido.valor(H, W, 1.8, r) * 0.28 * min(1.0, forca)
     al2 = np.where(borda, np.clip(al + jit, 0, 1), al)
     return np.clip(al2 * dens, 0, 1)
 

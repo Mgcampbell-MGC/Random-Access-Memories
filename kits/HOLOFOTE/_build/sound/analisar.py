@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-"""HOLOFOTE · inspect.py — "ears" for a team that cannot hear.
+"""HOLOFOTE · analisar.py — "ears" for a team that cannot hear.
 
 Prints peak / true-peak / RMS / LUFS / duration and the onset times of an audio file, and writes a PNG with the
 waveform (top), a log-frequency spectrogram (middle) and an RMS envelope in dBFS (bottom).
 
-    python inspect.py file.wav [file2.ogg ...] [--png out.png] [--grid png_dir]
+    python analisar.py file.wav [file2.ogg ...] [--png out.png] [--grid png_dir]
 """
 import argparse, os, sys
 import numpy as np

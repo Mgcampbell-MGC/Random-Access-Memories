@@ -1,0 +1,100 @@
+"""Low-res look-dev renders for the objects library (<= 540 px, <= 32 samples, Khronos PBR Neutral, exposure -3).
+
+    /home/user/venvs/blender/bin/python test_objects.py -- <scene> [samples] [res]
+
+Scenes: case_open, case_closed, case_c05, ingresso, setlist, refil, pulseira, previs_H01_sit, previs_H01_stand,
+previs_H02_sit, previs_H02_stand. Output: 02_PRODUTO/renders/_objects_tests/T_<scene>.png
+"""
+import sys, os, math
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import bpy
+import objects_lib as O
+from candle_lib import MM, srgb, material, reset, world, area_light, spot, camera, render, glare
+
+OUT = os.path.join(O.KIT, '02_PRODUTO', 'renders', '_objects_tests')
+WRAP = os.path.join(O.KIT, '02_PRODUTO', 'rotulos', 'HLF-02_ROTULO_wrap.png')
+TAMPA = os.path.join(O.KIT, '02_PRODUTO', 'tampa', 'HLF-TAMPA-90_topo.png')
+args = sys.argv[sys.argv.index('--') + 1:] if '--' in sys.argv else ['case_open']
+scene = args[0]
+samples = int(args[1]) if len(args) > 1 else 24
+res = int(args[2]) if len(args) > 2 else 540
+
+
+def stage_floor(hexcol='#0A0A0B', rough=0.45, size=6):
+    bpy.ops.mesh.primitive_plane_add(size=size)
+    f = bpy.context.object
+    f.name = 'floor'
+    f.data.materials.append(material('floor', **{'Base Color': srgb(hexcol), 'Roughness': rough}))
+    return f
+
+
+def setup(w, h, samples=samples, exposure=-3.0):
+    sc = reset(res=(w, h), samples=samples, view='Khronos PBR Neutral', exposure=exposure)
+    sc.cycles.volume_step_rate = 1.0
+    return sc
+
+
+def look_rig(target=(0, 0, 0.06), key=40, rim=30, fill=6, d=1.0):
+    # key high front-left (its floor reflection falls behind the object), rim behind-right, low fill right
+    area_light((-0.45 * d, -0.35 * d, 1.0 * d), target, 0.45, key)
+    area_light((0.55 * d, 0.75 * d, 0.45 * d), target, 0.3, rim)
+    area_light((0.9 * d, -0.5 * d, 0.25 * d), target, 0.8, fill)
+
+
+def lookdev(floor='#3B3B3E', world_s=5.0):
+    """Neutral grey look-dev: mid-dark floor, soft grey world, one soft key (exposure -3 calibrated)."""
+    world('#9A9A9E', world_s)
+    stage_floor(floor, 0.65)
+
+
+def sph(el, az, d, target):
+    el, az = math.radians(el), math.radians(az)
+    return (target[0] + d * math.cos(el) * math.sin(az), target[1] - d * math.cos(el) * math.cos(az), target[2] + d * math.sin(el))
+
+
+if scene == 'case_open':
+    setup(res, res)
+    lookdev()
+    O.case(state='open', open_deg=100, copo=dict(faixa='02', wrap=WRAP, lid_art=TAMPA), band=True)
+    area_light((-0.5, -0.45, 0.9), (0, 0, 0.08), 0.5, 45)
+    t = (-0.005, -0.01, 0.085)
+    camera(sph(24, -30, 0.62, t), t, 60)
+elif scene == 'case_closed':
+    setup(res, res)
+    lookdev()
+    O.case(state='closed', copo=None, band=True)
+    area_light((-0.5, -0.45, 0.9), (0, 0, 0.07), 0.5, 45)
+    t = (-0.01, -0.02, 0.06)
+    camera(sph(18, -34, 0.55, t), t, 60)
+elif scene == 'case_hasp':
+    setup(res, int(res * 0.75))
+    lookdev()
+    O.case(state='closed', copo=None, band=True)
+    area_light((-0.5, -0.45, 0.9), (0, 0, 0.07), 0.5, 45)
+    t = (-0.04, -0.09, 0.03)
+    camera(sph(35, -40, 0.30, t), t, 60)
+elif scene == 'band_detail':
+    setup(res, int(res * 0.75))
+    lookdev(floor='#77777B')
+    c = O.case(state='closed', copo=None, band=True)
+    area_light((-0.4, -0.5, 0.8), (-0.02, -0.1, 0.0), 0.4, 45)
+    t = (-0.012, -0.088, 0.008)
+    camera(sph(38, -22, 0.24, t), t, 60)
+elif scene == 'case_c05':
+    # C05 / L04 geometry: top-down at 70 deg; the lid opens to the mirror-safe angle; the bulb is placed in the mirror
+    setup(res, res)
+    world('#000000', 0.0)
+    stage_floor()
+    ang = O.open_deg_for_camera(70)
+    c = O.case(state='open', open_deg=ang, copo=dict(faixa='02', wrap=WRAP, lid_art=TAMPA), band=True)
+    t = (0, 0.0, 0.05)
+    cam = camera(sph(70, 0, 0.78, t), t, 60)
+    bpy.context.view_layer.update()
+    O.place_work_bulb(c, cam, dist=1.3)
+    spot(sph(62, -25, 1.6, (0, 0, 0.06)), (0, 0, 0.06), 260, 30, 0.08, 0.02, (1.0, 0.86, 0.70))
+    area_light((0.6, 0.7, 0.5), (0, 0, 0.08), 0.3, 25)
+else:
+    raise SystemExit('unknown scene ' + scene)
+
+os.makedirs(OUT, exist_ok=True)
+render(os.path.join(OUT, 'T_%s.png' % scene))

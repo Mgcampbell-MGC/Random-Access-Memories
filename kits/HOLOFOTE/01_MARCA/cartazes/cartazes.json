@@ -4,7 +4,7 @@
   2000,
   3000
  ],
- "nota": "assado = 2D; 3d/ = albedo sem sombreado + altura 16 bits (0,5 = plano) para deslocamento",
+ "nota": "assado = 2D (rugas já sombreadas). 3d/ = albedo RGBA sem sombreado + altura 16 bits normalizada 0–1 (mín–máx da colagem; nas camadas rasgadas o papel antigo fica mais baixo). Deslocamento sugerido: 0,6 mm de amplitude total, midlevel 0,5. Alfa = borda rasgada.",
  "cartazes": [
   {
    "id": "01",

@@ -392,3 +392,69 @@ def stencil_bands(p, frac=0.5, gap_em=0.05):
         x1 = max(b[2] for b in bs) + p.x + 0.5
         rects.append((x0, yc - h / 2, x1 - x0, h))
     return rects
+
+
+# --------------------------------------------------------------------------------------------------------------------
+def clear_accents(p, obstacles, min_gap=0.6, keep_gap=0.3):
+    """Display-lockup accent fitting (lettering, not scaling): for each glyph of the Placed line `p` whose ACCENT
+    rises to within min_gap mm of an obstacle's ink directly above it, re-letter that accent only: lower it first
+    (keeping its shape, never closer than keep_gap mm to the cap height), then flatten it vertically only as much as
+    still needed. Letters, baseline, size, width and spacing are untouched.
+    obstacles: list of (x0, x1, y_bottom) in page mm (y down). Returns a log of the changes."""
+    log = []
+    for i, g in enumerate(p.line.glyphs):
+        if g.ops is not None:
+            continue
+        b = g.bounds()
+        if not b:
+            continue
+        gx0, gx1, gtop = p.x + b[0], p.x + b[2], p.y + b[1]
+        lim = None
+        for (ox0, ox1, oyb) in obstacles:
+            if ox1 > gx0 and ox0 < gx1:
+                lim = oyb + min_gap if lim is None else max(lim, oyb + min_gap)
+        if lim is None or gtop >= lim:
+            continue
+        fc, s = g.fc, g.em / g.fc.upm
+        ops = fc.outline(g.gid)
+        conts, cur = [], []
+        for op in ops:
+            cur.append(op)
+            if op[0] in ('closePath', 'endPath'):
+                conts.append(cur)
+                cur = []
+
+        def ys(c):
+            return [pt[1] for op in c for pt in op[1]]
+        acc = [k for k, c in enumerate(conts) if ys(c) and min(ys(c)) > fc.cap - 5]
+        if not acc:
+            continue
+        lo = min(min(ys(conts[k])) for k in acc)
+        hi = max(max(ys(conts[k])) for k in acc)
+        top_new = (p.y - lim) / s                 # font units above the baseline
+        floor = fc.cap + keep_gap / s
+        if top_new - floor <= 0:
+            continue
+        if hi - lo <= top_new - floor:
+            def tf(y):
+                return y - (hi - top_new)
+            mode = 'lowered'
+        else:
+            k_ = (top_new - floor) / (hi - lo)
+
+            def tf(y):
+                return floor + (y - lo) * k_
+            mode = f'lowered and flattened to {100 * (top_new - floor) / (hi - lo):.0f}%'
+        new_ops = []
+        for k, c in enumerate(conts):
+            for op in c:
+                if k in acc and op[1]:
+                    new_ops.append((op[0], tuple((pt[0], tf(pt[1])) for pt in op[1])))
+                else:
+                    new_ops.append(op)
+        ext = fc.extents(g.gid)
+        g.ops = new_ops
+        g.ext = (ext[0], ext[1], ext[2], tf(hi))
+        log.append(dict(glyph=fc.name(g.gid), mode=mode, accent_top_mm_before=round(hi * s, 3),
+                        accent_top_mm_after=round(tf(hi) * s, 3), clearance_mm=round(min_gap, 2)))
+    return log

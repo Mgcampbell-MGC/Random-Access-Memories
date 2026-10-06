@@ -103,13 +103,24 @@
         if (it.modo === 'wdth') {
           HF.porWdth(o, medida);
           if (o.estado === 'longo') { HF.mudar(o, { wdth: 75 }); HF.porTamanho(o, medida); }
-          if (o.estado === 'curto') HF.porTracking(o, medida);
+          if (o.estado === 'curto') { HF.mudar(o, { wdth: 125 }); HF.porTamanho(o, medida); }   // cresce, nunca espaceja
         } else if (it.modo === 'tracking') HF.porTracking(o, medida);
+        else if (it.modo === 'auto') {
+          // Produção que enche: começa condensada (V 500 wdth 75 = a Condensed One) e enche por tamanho; se passar do
+          // teto de versal, trava o tamanho no teto e alarga pelo eixo wdth; se nem a 125 encher, cresce por tamanho.
+          HF.mudar(o, { wdth: 75 });
+          HF.porTamanho(o, medida);
+          if (it.capMax && HF.capPx(o.s) > it.capMax) {
+            HF.mudar(o, { fs: HF.fsDeCap(o.s.f, it.capMax) });
+            HF.porWdth(o, medida);
+            if (o.estado === 'curto') { HF.mudar(o, { wdth: 125, lsEm: 0 }); HF.porTamanho(o, medida); }
+          }
+        }
         else HF.porTamanho(o, medida, it.capMax ? (it.capMax * M[o.s.f].upm) / M[o.s.f].cap : null);
         it.objs = [o];
         const e = extensoes(o);
         it.top = it.topFix != null ? it.topFix : e.top; it.bot = e.bot; it.al = it.alinhar || 'left';
-        QA.push({ item: o.s.t, erro: it.modo === 'tamanho' && it.capMax ? 0 : o.inkW - medida });
+        QA.push({ item: o.s.t, erro: it.modo === 'tamanho' && it.capMax ? 0 : o.inkW - medida, cap: +HF.capPx(o.s).toFixed(1), wdth: o.s.wdth });
       } else if (it.tipo === 'dividida' || it.tipo === 'pontilhada') {
         const a = it.esq ? HF.texto(parent, Object.assign({}, it.esq)) : null;
         const b = HF.texto(parent, Object.assign({}, it.dir));
@@ -130,6 +141,17 @@
         }
       } else if (it.tipo === 'assinatura') {
         const a = HF.texto(parent, Object.assign({}, it.esq));
+        // "holofote nela." à esquerda, wordmark à direita (largura = 9,273 × versal): se não couberem com folga de
+        // 1,5 versal, os dois encolhem juntos, na mesma proporção
+        const WMk = (window.HF_WORDMARK.inkX1 - window.HF_WORDMARK.inkX0) / window.HF_WORDMARK.cap;
+        const capM = it.capMarca || HF.capPx(a.s);
+        const folga = Math.max(24, 1.5 * capM);
+        const need = a.inkW + WMk * capM + folga;
+        if (need > medida) {
+          const k = (medida - folga) / (a.inkW + WMk * capM);
+          HF.mudar(a, { fs: a.s.fs * k });
+          it.capMarca = capM * k;
+        }
         it.objs = [a];
         const e = extensoes(a); it.top = e.top; it.bot = e.bot;
       } else if (it.tipo === 'regua') { it.top = it.esp / 2; it.bot = it.esp / 2; }
@@ -147,9 +169,11 @@
     if (pesos > 0 && sobra > 0) for (const it of itens) it.antes += (sobra * (it.flex || 0)) / pesos;
     // 3. posiciona
     let y = cx.y0;
+    const grade = cx.grade || 0;          // grade de linha de base (px): 8 nas peças digitais (§D.10)
     for (const it of itens) {
       y += it.antes;
-      const base = y + it.top;
+      let base = y + it.top;
+      if (grade && it.tipo !== 'bloco' && it.tipo !== 'espaco') base = Math.round(base / grade) * grade;
       it.baseline = base;
       if (it.tipo === 'cheia') HF.posicionar(it.objs[0], it.al === 'right' ? x1 : x0, base, it.al);
       else if (it.tipo === 'dividida') {

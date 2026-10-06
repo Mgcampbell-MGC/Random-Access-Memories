@@ -41,11 +41,16 @@
   // métrica de glifo [adv, xMin, xMax, yMin, yMax] em unidades (interpola wdth no variável)
   function gm(s, ch) {
     if (s.f === 'V') {
-      const t = M.V.g[s.wght || 700], w = Math.max(75, Math.min(125, s.wdth || 100));
+      // interpola wdth (passo 1) e wght (tabelas 400 e 700; os contornos do VF são lineares entre os mestres)
+      const w = Math.max(75, Math.min(125, s.wdth || 100)), wg = Math.max(400, Math.min(700, s.wght || 700));
       const a = Math.floor(w), b = Math.min(125, a + 1), f = w - a;
-      const ga = t[a][ch], gb = t[b][ch];
-      if (!ga) return null;
-      return ga.map((v, i) => v + (gb[i] - v) * f);
+      const em = (t) => { const ga = t[a][ch], gb = t[b][ch]; return ga ? ga.map((v, i) => v + (gb[i] - v) * f) : null; };
+      // mestres de peso 400 · 500 · 700 (o VF tem um mestre intermediário: interpolar 400→700 direto erra)
+      const [p0, p1] = wg <= 500 ? [400, 500] : [500, 700];
+      const ga = em(M.V.g[p0]), gb = em(M.V.g[p1]);
+      if (!ga || !gb) return gb || ga || null;
+      const k = (wg - p0) / (p1 - p0);
+      return ga.map((v, i) => v + (gb[i] - v) * k);
     }
     return M[s.f].g[ch] || null;
   }
@@ -148,7 +153,7 @@
     if (modo === 'wdth') {
       HF.porWdth(o, medida);
       if (o.estado === 'longo') { HF.mudar(o, { wdth: 75 }); HF.porTamanho(o, medida); }
-      if (o.estado === 'curto') HF.porTracking(o, medida);
+      if (o.estado === 'curto') { HF.mudar(o, { wdth: 125 }); HF.porTamanho(o, medida); }   // nunca abre tracking
     } else if (modo === 'tracking') HF.porTracking(o, medida);
     else HF.porTamanho(o, medida);
     HF.posicionar(o, x0, baseline, 'left');

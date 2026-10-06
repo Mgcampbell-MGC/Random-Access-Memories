@@ -13,6 +13,7 @@ Saídas:
 Uso:
   python marca.py --png saida.png [--svg saida.svg] [--tamanho 1024] [--semente 927] [--razao 3.75]
                   [--fios 40] [--fundo transparente|preto|papel|<hex>] [--sem-sombra] [--cor amarelo]
+                  [--uma --angulo -6]   (uma tira só: o pedaço de fita da tampa)
 """
 import argparse, json, math, os, sys
 import numpy as np
@@ -147,16 +148,21 @@ def textura_tecido(s, t, tira, fios, r, ss):
     return v
 
 
-def gerar(S=1024, semente=927, razao=3.75, fios=40, cor='amarelo', sombra=True, ss=None):
+def gerar(S=1024, semente=927, razao=3.75, fios=40, cor='amarelo', sombra=True, ss=None, uma=False, angulo=-6.0):
+    """uma=True: UMA tira só (A TIRA: o pedaço de fita da tampa, 'ela fica aqui.'), quase horizontal, no ângulo dado."""
     r = ruido.rng(semente)
     ss = ss or (3 if S <= 1200 else 2 if S <= 2600 else 1)
     tiras, topo, lev = geometria(S, razao, r)
+    if uma:
+        L = 0.9 * S
+        tiras = [dict(cx=S / 2, cy=S / 2, ang=angulo + r.uniform(-1.2, 1.2), L=L, W=L / razao)]
+        topo, lev = 0, dict(tira=0, ponta=int(r.choice([-1, 1])))
     base = hex2rgb(cor)
     N = S * ss
     alfa = np.zeros((N, N), np.float32)
     rgb = np.zeros((N, N, 3), np.float32)
     sombra_bg = np.zeros((N, N), np.float32)
-    ordem = [1 - topo, topo]
+    ordem = [0] if uma else [1 - topo, topo]
     mascaras = {}
     for i in ordem:
         tira = tiras[i]
@@ -233,7 +239,7 @@ def svg(tiras, topo, S, semente, cor='amarelo', fios=40):
     r = ruido.rng(semente + 1)
     c = CORES.get(cor, cor)
     defs, corpo = [], []
-    for i in [1 - topo, topo]:
+    for i in ([0] if len(tiras) == 1 else [1 - topo, topo]):
         t = tiras[i]
         L, W = t['L'], t['W']
         perf = perfis_pontas(W, r, n=90)
@@ -264,8 +270,10 @@ def main():
     ap.add_argument('--cor', default='amarelo')
     ap.add_argument('--fundo', default='transparente')
     ap.add_argument('--sem-sombra', action='store_true')
+    ap.add_argument('--uma', action='store_true', help='uma tira só (A TIRA), não o X')
+    ap.add_argument('--angulo', type=float, default=-6.0, help='ângulo da tira única, graus')
     a = ap.parse_args()
-    img, meta, tiras = gerar(a.tamanho, a.semente, a.razao, a.fios, a.cor, not a.sem_sombra)
+    img, meta, tiras = gerar(a.tamanho, a.semente, a.razao, a.fios, a.cor, not a.sem_sombra, uma=a.uma, angulo=a.angulo)
     if a.png:
         salvar_png(img, a.png, a.fundo)
         print('A MARCA png', a.png)

@@ -1,0 +1,232 @@
+{
+  "arquivo": "HLF-F06B_O_PIOR_SHOW_som.wav",
+  "duracao_s": 6.0,
+  "fps": 24.0,
+  "lufs_i": -13.98,
+  "true_peak_dbtp": -1.15,
+  "normalizacao": "−14 LUFS integrado, ≤ −1 dBTP",
+  "cues": [
+    {
+      "label": "fanfarra (marcha, compasso 3) f0→f84",
+      "arquivo": "musica/HLF-MUS-01_fanfarra_120bpm_20s_mix.wav",
+      "quadro": 0.0,
+      "inicio_s": 0.0,
+      "sync": "start"
+    },
+    {
+      "label": "tosse no PIOR f48",
+      "arquivo": "sfx/HLF-SFX-10_tosse_plateia.wav",
+      "quadro": 48.0,
+      "inicio_s": 2.0,
+      "sync": "onset"
+    },
+    {
+      "label": "CLAC f84 (corte pro KV-45)",
+      "arquivo": "sfx/HLF-SFX-01_clac.wav",
+      "quadro": 84.0,
+      "inicio_s": 3.5,
+      "sync": "onset"
+    },
+    {
+      "label": "aplauso f84→f120",
+      "arquivo": "sfx/HLF-SFX-05_aplauso_estadio_distante.wav",
+      "quadro": 84.0,
+      "inicio_s": 3.5,
+      "sync": "start"
+    },
+    {
+      "label": "palmas f120/130/140",
+      "arquivo": "sfx/HLF-SFX-06e_palmas_tres_10q.wav",
+      "quadro": 120.0,
+      "inicio_s": 5.0,
+      "sync": "onset"
+    },
+    {
+      "label": "tom de sala f120→",
+      "arquivo": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+      "quadro": 120.0,
+      "inicio_s": 5.0,
+      "sync": "start"
+    }
+  ],
+  "quadros_chave": [
+    {
+      "quadro": 0,
+      "onset_medido_s": 0.0,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 12,
+      "onset_medido_s": 0.4999,
+      "desvio_quadros": -0.004,
+      "ok": true
+    },
+    {
+      "quadro": 24,
+      "onset_medido_s": 0.9956,
+      "desvio_quadros": -0.106,
+      "ok": true
+    },
+    {
+      "quadro": 36,
+      "onset_medido_s": 1.4998,
+      "desvio_quadros": -0.006,
+      "ok": true
+    },
+    {
+      "quadro": 48,
+      "onset_medido_s": 1.9998,
+      "desvio_quadros": -0.004,
+      "ok": true
+    },
+    {
+      "quadro": 60,
+      "onset_medido_s": 2.503,
+      "desvio_quadros": 0.071,
+      "ok": true
+    },
+    {
+      "quadro": 84,
+      "onset_medido_s": 3.5,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 120,
+      "onset_medido_s": 5.0005,
+      "desvio_quadros": 0.013,
+      "ok": true
+    },
+    {
+      "quadro": 130,
+      "onset_medido_s": 5.4167,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 140,
+      "onset_medido_s": 5.8328,
+      "desvio_quadros": -0.012,
+      "ok": true
+    }
+  ],
+  "onsets_medidos": [
+    {
+      "t_s": 0.0,
+      "quadro": 0.0
+    },
+    {
+      "t_s": 0.2486,
+      "quadro": 5.97
+    },
+    {
+      "t_s": 0.3783,
+      "quadro": 9.08
+    },
+    {
+      "t_s": 0.4999,
+      "quadro": 12.0
+    },
+    {
+      "t_s": 0.6252,
+      "quadro": 15.01
+    },
+    {
+      "t_s": 0.7518,
+      "quadro": 18.04
+    },
+    {
+      "t_s": 0.8728,
+      "quadro": 20.95
+    },
+    {
+      "t_s": 0.9956,
+      "quadro": 23.89
+    },
+    {
+      "t_s": 1.2503,
+      "quadro": 30.01
+    },
+    {
+      "t_s": 1.3739,
+      "quadro": 32.97
+    },
+    {
+      "t_s": 1.4998,
+      "quadro": 35.99
+    },
+    {
+      "t_s": 1.7501,
+      "quadro": 42.0
+    },
+    {
+      "t_s": 1.8808,
+      "quadro": 45.14
+    },
+    {
+      "t_s": 1.9998,
+      "quadro": 48.0
+    },
+    {
+      "t_s": 2.1371,
+      "quadro": 51.29
+    },
+    {
+      "t_s": 2.2595,
+      "quadro": 54.23
+    },
+    {
+      "t_s": 2.355,
+      "quadro": 56.52
+    },
+    {
+      "t_s": 2.503,
+      "quadro": 60.07
+    },
+    {
+      "t_s": 2.6267,
+      "quadro": 63.04
+    },
+    {
+      "t_s": 2.7493,
+      "quadro": 65.98
+    },
+    {
+      "t_s": 2.8778,
+      "quadro": 69.07
+    },
+    {
+      "t_s": 3.0001,
+      "quadro": 72.0
+    },
+    {
+      "t_s": 3.1291,
+      "quadro": 75.1
+    },
+    {
+      "t_s": 3.2469,
+      "quadro": 77.93
+    },
+    {
+      "t_s": 3.3757,
+      "quadro": 81.02
+    },
+    {
+      "t_s": 3.5,
+      "quadro": 84.0
+    },
+    {
+      "t_s": 5.0005,
+      "quadro": 120.01
+    },
+    {
+      "t_s": 5.4167,
+      "quadro": 130.0
+    },
+    {
+      "t_s": 5.8328,
+      "quadro": 139.99
+    }
+  ]
+}

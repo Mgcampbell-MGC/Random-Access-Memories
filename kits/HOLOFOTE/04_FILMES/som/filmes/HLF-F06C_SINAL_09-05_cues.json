@@ -1,0 +1,30 @@
+{
+  "duracao_s": 6.0,
+  "fps": 24.0,
+  "cues": [
+    {
+      "label": "3 sino(s) f0/f8/f16",
+      "file": "sfx/HLF-SFX-09c_sinal_3_sinos.wav",
+      "frame": 0,
+      "dur_s": 3.0,
+      "fade_out": 0.35,
+      "gain_db": 0
+    },
+    {
+      "label": "CLAC f72",
+      "file": "sfx/HLF-SFX-01_clac.wav",
+      "frame": 72,
+      "sync": "onset",
+      "gain_db": 2
+    },
+    {
+      "label": "pavio → aplauso f74→",
+      "file": "identidade/HLF-ID-02_crepitar_para_aplauso_morph.wav",
+      "frame": 74,
+      "dur_s": 2.9166666666666665,
+      "fade_in": 0.04,
+      "fade_out": 0.3,
+      "gain_db": -4
+    }
+  ]
+}

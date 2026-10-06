@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>HOLOFOTE · peça (template)</title>
+<link rel="stylesheet" href="../tokens.css"><link rel="stylesheet" href="base.css">
+<script src="metricas.js"></script><script src="wordmark.js"></script><script src="holofote.js"></script>
+<script src="pilha.js"></script><script src="pecas.js"></script>
+</head><body>
+<script>
+/* Template genérico: #{"receita": "boletim" | "C03" | "C07" | "C09" | "D01" | "D02" | "ingresso" | "stk", ...dados}.
+   A receita está em pecas.js. A arte sai CHAPADA (cores exatas); O LAMBE entra depois, em Python (lancamento.py). */
+const D = HF.dados({ receita: 'boletim' });
+HF.pronto(() => {
+  window.HF_QA = window.HF_QA || [];
+  HF.receitas[D.receita](D);
+  window.HF_INFO = Object.assign({ receita: D.receita }, window.HF_GEOM || {});
+});
+</script>
+</body></html>

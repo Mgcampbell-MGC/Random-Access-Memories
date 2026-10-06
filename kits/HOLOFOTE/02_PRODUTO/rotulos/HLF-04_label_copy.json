@@ -30,7 +30,7 @@
   "lot": "HLF0927",
   "fab": "03/2027",
   "val": "03/2029",
-  "master_hash": "e38145bd410664196fdf05a86f6e939b12d9966387e23778d2f691d86f113596",
+  "master_hash": "6236f6d0091488dddac9f52a22448f8d1eeecc48e837a20c019ca9de42092a46",
   "front_lines": {
     "L1": [
       "HOLOFOTE APRESENTA",
@@ -180,7 +180,7 @@
         "label": "L3",
         "ink_mm": [
           23.7,
-          30.062,
+          31.6,
           95.7,
           43.569
         ],
@@ -640,6 +640,19 @@
       "platform_baseline_mm": 79.2,
       "used_baseline_mm": 78.695,
       "reason": "accent top would sit 0.455 mm above the 82,0 mm print-zone top (the master cannot hold it); line lowered by 0.505 mm"
+    },
+    {
+      "line": "L3",
+      "reason": "the show-name accent rose into the headliner line above it (platform baselines 51,0 / 38,6 leave 2,4 mm; the accent needs 3,3 mm): that accent alone is re-lettered to clear the headliner by 0,6 mm; baseline, cap, wdth and spacing unchanged",
+      "changes": [
+        {
+          "glyph": "Uacute",
+          "mode": "lowered and flattened to 57%",
+          "accent_top_mm_before": 13.335,
+          "accent_top_mm_after": 11.8,
+          "clearance_mm": 0.6
+        }
+      ]
     }
   ],
   "planted_error": null,

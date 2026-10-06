@@ -1,0 +1,155 @@
+{
+  "arquivo": "HLF-AD_KV_9a15s_ad2_sino_som.wav",
+  "duracao_s": 6.0,
+  "fps": 24.0,
+  "lufs_i": -14.0,
+  "true_peak_dbtp": -1.04,
+  "normalizacao": "−14 LUFS integrado, ≤ −1 dBTP",
+  "cues": [
+    {
+      "label": "terceiro sinal 9,0 s",
+      "arquivo": "sfx/HLF-SFX-09_sino_teatro.wav",
+      "quadro": 0.0,
+      "inicio_s": 0.0,
+      "sync": "onset"
+    },
+    {
+      "label": "CLAC +4 f",
+      "arquivo": "sfx/HLF-SFX-01_clac.wav",
+      "quadro": 4.0,
+      "inicio_s": 0.1667,
+      "sync": "onset"
+    },
+    {
+      "label": "pavio → aplauso",
+      "arquivo": "identidade/HLF-ID-02_crepitar_para_aplauso_morph.wav",
+      "quadro": 5.0,
+      "inicio_s": 0.2083,
+      "sync": "start"
+    },
+    {
+      "label": "palmas 13,0 s (f96 do bloco)",
+      "arquivo": "sfx/HLF-SFX-06e_palmas_tres_10q.wav",
+      "quadro": 96.0,
+      "inicio_s": 4.0,
+      "sync": "onset"
+    },
+    {
+      "label": "tom de sala",
+      "arquivo": "sfx/HLF-SFX-15_tom_de_sala_loop.wav",
+      "quadro": 96.0,
+      "inicio_s": 4.0,
+      "sync": "start"
+    }
+  ],
+  "quadros_chave": [
+    {
+      "quadro": 0,
+      "onset_medido_s": 0.0,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 4,
+      "onset_medido_s": 0.1667,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 96,
+      "onset_medido_s": 4.0005,
+      "desvio_quadros": 0.013,
+      "ok": true
+    },
+    {
+      "quadro": 106,
+      "onset_medido_s": 4.4167,
+      "desvio_quadros": 0.0,
+      "ok": true
+    },
+    {
+      "quadro": 116,
+      "onset_medido_s": 4.8328,
+      "desvio_quadros": -0.012,
+      "ok": true
+    }
+  ],
+  "onsets_medidos": [
+    {
+      "t_s": 0.0,
+      "quadro": 0.0
+    },
+    {
+      "t_s": 0.1667,
+      "quadro": 4.0
+    },
+    {
+      "t_s": 0.3012,
+      "quadro": 7.23
+    },
+    {
+      "t_s": 0.4,
+      "quadro": 9.6
+    },
+    {
+      "t_s": 0.4533,
+      "quadro": 10.88
+    },
+    {
+      "t_s": 0.5501,
+      "quadro": 13.2
+    },
+    {
+      "t_s": 0.7524,
+      "quadro": 18.06
+    },
+    {
+      "t_s": 0.7992,
+      "quadro": 19.18
+    },
+    {
+      "t_s": 0.8593,
+      "quadro": 20.62
+    },
+    {
+      "t_s": 1.2505,
+      "quadro": 30.01
+    },
+    {
+      "t_s": 1.5135,
+      "quadro": 36.32
+    },
+    {
+      "t_s": 1.5622,
+      "quadro": 37.49
+    },
+    {
+      "t_s": 1.8015,
+      "quadro": 43.24
+    },
+    {
+      "t_s": 1.8386,
+      "quadro": 44.13
+    },
+    {
+      "t_s": 1.9675,
+      "quadro": 47.22
+    },
+    {
+      "t_s": 2.1567,
+      "quadro": 51.76
+    },
+    {
+      "t_s": 4.0005,
+      "quadro": 96.01
+    },
+    {
+      "t_s": 4.4167,
+      "quadro": 106.0
+    },
+    {
+      "t_s": 4.8328,
+      "quadro": 115.99
+    }
+  ]
+}

@@ -54,7 +54,7 @@ def main():
     M['S'] = dict(upm=1000, cap=round(g['H'][4], 1), x=round(g['x'][4], 1), g=g)
     vf = TTFont(os.path.join(FONTS, 'SpecialGothic-VF.ttf'))
     V = {}
-    for wght in (400, 700):
+    for wght in (400, 500, 700):
         V[wght] = {}
         for wdth in range(75, 126):
             gs = vf.getGlyphSet(location={'wght': wght, 'wdth': wdth})

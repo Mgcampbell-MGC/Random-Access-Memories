@@ -8,7 +8,7 @@ O que sai em 01_MARCA/cartazes/ (2000 × 3000 px, sRGB):
     CARTAZ-NN_<nome>.png            RGBA 'assado': O LAMBE completo (rugas sombreadas, grão, registro, borda rasgada).
                                     Para 2D, pranchas, e para o 3D se não for usar deslocamento.
     3d/CARTAZ-NN_<nome>_albedo.png  RGBA sem o sombreado das rugas (o 3D faz a luz).
-    3d/CARTAZ-NN_<nome>_altura.png  mapa de altura 16 bits das rugas da colagem (0,5 = plano) para deslocamento.
+    3d/CARTAZ-NN_<nome>_altura.png  mapa de altura 16 bits das rugas da colagem (normalizado 0–1) para deslocamento.
     cartazes.json                   o que é cada cartaz, semente, cores, onde estão os rasgos.
     CARTAZES_contato.jpg            folha de contato (prévia).
 Os cartazes chapados (antes do LAMBE) ficam em _build/brand/cache/ (não versionar).
@@ -210,7 +210,7 @@ def main():
         antigos[m['id']] = m
     todos = [antigos[k] for k in sorted(antigos)]
     json.dump(dict(fonte='_build/brand/cartazes.py', tamanho=[W, H],
-                   nota='assado = 2D; 3d/ = albedo sem sombreado + altura 16 bits (0,5 = plano) para deslocamento',
+                   nota='assado = 2D (rugas já sombreadas). 3d/ = albedo RGBA sem sombreado + altura 16 bits normalizada 0–1 (mín–máx da colagem; nas camadas rasgadas o papel antigo fica mais baixo). Deslocamento sugerido: 0,6 mm de amplitude total, midlevel 0,5. Alfa = borda rasgada.',
                    cartazes=todos), open(js, 'w'), ensure_ascii=False, indent=1)
     if len(todos) == len(CARTAZES):
         contato(todos)
