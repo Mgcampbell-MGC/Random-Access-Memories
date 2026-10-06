@@ -908,13 +908,16 @@ def place_work_bulb(built_case, cam, dist=1.4, **kw):
 INGRESSO = dict(W=96.0, D=96.0, H=98.0)
 
 
-def ingresso(atlas_path=None, faixa='02', size=None, at=(0, 0, 0), rot_deg=0.0, bulge_mm=0.35):
+def ingresso(atlas_path=None, faixa='02', sku=None, size=None, at=(0, 0, 0), rot_deg=0.0, bulge_mm=0.35):
     """Carton O INGRESSO (§C.9), 96 x 96 x 98 tuck-end, SBS 400 g/m2. 4 x 3 atlas per candle_lib.box() (packaging
-    team, 02_PRODUTO/cartucho/). The panels bow out bulge_mm, the folded edges are rounded, the top tuck flap shows
+    team, 02_PRODUTO/cartucho/<sku>_CARTUCHO_ATLAS.png, sku defaults to HLF-<faixa>-200; cells may be non-square,
+    the grid only has to be uniform). The panels bow out bulge_mm, the folded edges are rounded, the top tuck flap shows
     its slit along the front and both sides, and the ink cracks faintly white on the folds.
     size=(w, d, h) re-sets the carton (O INGRESSO SINGLE 74 x 74 x 76, NOVA TEMPORADA carton 74 x 74 x 82)."""
     W, D, Hh = size or (INGRESSO['W'], INGRESSO['D'], INGRESSO['H'])
-    atlas_path = art(atlas_path, 'cartucho', ('%s' % faixa,), 'PH_INGRESSO_atlas.png')
+    if not atlas_path:
+        q = os.path.join(PRODUTO, 'cartucho', '%s_CARTUCHO_ATLAS.png' % (sku or 'HLF-%s-200' % faixa))
+        atlas_path = q if os.path.exists(q) else ph('PH_INGRESSO_atlas.png')
     before = set(bpy.data.objects)
     bm = bmesh.new()
     bmesh.ops.create_cube(bm, size=1.0)

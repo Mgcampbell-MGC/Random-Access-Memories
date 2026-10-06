@@ -80,6 +80,18 @@ elif scene == 'band_detail':
     area_light((-0.4, -0.5, 0.8), (-0.02, -0.1, 0.0), 0.4, 45)
     t = (-0.012, -0.088, 0.008)
     camera(sph(38, -22, 0.24, t), t, 60)
+elif scene == 'props':
+    setup(res, int(res * 0.75))
+    lookdev(floor='#6C6C70')
+    O.ingresso(faixa='02', at=(-0.115, 0.06, 0), rot_deg=18)
+    O.refil(faixa='02', peel=0.0, at=(0.035, 0.085, 0), rot_deg=0)
+    O.refil(faixa='02', peel=0.5, at=(0.125, 0.03, 0), rot_deg=-15)
+    O.setlist(state='fan', fold_deg=130, at=(0.0, -0.075, 0), rot_deg=-8)
+    O.pulseira(preset='loose', at=(-0.19, -0.13, 0), rot_deg=10)
+    area_light((-0.45, -0.5, 0.8), (0, 0, 0.03), 0.6, 55)
+    area_light((0.6, 0.6, 0.4), (0, 0, 0.03), 0.4, 20)
+    t = (-0.02, -0.01, 0.03)
+    camera(sph(38, -12, 0.75, t), t, 50)
 elif scene == 'case_c05':
     # C05 / L04 geometry: top-down at 70 deg; the lid opens to the mirror-safe angle; the bulb is placed in the mirror
     setup(res, res)
