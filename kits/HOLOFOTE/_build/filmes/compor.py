@@ -285,6 +285,18 @@ def folha_contato(film, od, extra=()):
     return p
 
 
+# frames every contact sheet adds to its every-6th grid: slams, warm-ups, cuts, the crane, the flame
+EXTRA = {
+    'F15': [12, 13, 14, 15, 16, 17, 44, 45, 46, 60, 61, 62, 84, 85, 86, 108, 109, 110, 133, 139, 145, 151, 155, 157,
+            159, 161, 163, 165, 167, 169, 171, 173, 175, 177, 179, 181, 183, 185, 187, 189, 191, 193, 195, 197, 199, 201,
+            203, 205, 210, 211, 212, 213, 214, 215, 217, 219, 221, 222, 223, 225, 288, 300, 359],
+    'F06A': [5, 6, 7, 8, 9, 10, 11, 25, 29, 33, 37, 41, 45, 96],
+    'F06B': [1, 2, 3, 13, 14, 15, 49, 50, 51, 61, 62, 63, 67, 71, 75, 79, 81, 83, 84, 85, 86],
+    'F06C_07-05': [8, 16, 25, 29, 33, 37, 72, 73, 74], 'F06C_08-05': [8, 16, 25, 29, 33, 37, 72, 73, 74],
+    'F06C_09-05': [8, 16, 25, 29, 33, 37, 72, 73, 74],
+}
+
+
 def codificar(film, od):
     nome = P.NOME[film]
     wav = os.path.join(C.SOM, P.SOM[film] + '_som.wav')
@@ -302,6 +314,6 @@ if __name__ == '__main__':
     films = [x for x in a if not x.startswith('--')] or list(P.DUR)
     for film in films:
         od, man, geom = compor_filme(film, a)
-        print(folha_contato(film, od))
+        print(folha_contato(film, od, EXTRA.get(film, ())))
         if '--sem-video' not in a:
             print(codificar(film, od))

@@ -137,7 +137,8 @@ HF.pronto(() => {
         dir: S({ t: '2007)', f: 'S', x: 25, cor: tinta }) },
       L('SHOW.')];
     itens[0].antes = 0;
-    HF.pilha(b, itens, { x0: X0, x1: X1, y0: 270 + 4, y1: 1400, grade: 8 });
+    const y0 = E.y0 != null ? E.y0 : 274;      // C03's box is y0 274; the film centres the stack in the 9:16 safe box
+    HF.pilha(b, itens, { x0: X0, x1: X1, y0, y1: y0 + 1126, grade: 8 });
     const pr = itens[4], pior = pr.objs[0], an2 = pr.objs[1], capP = HF.capPx(pior.s);
     const an1 = HF.texto(b, S({ t: '(girassol,', f: 'S', x: 25, cor: tinta }));
     const xhP = HF.xPx(an1.s), passo = Math.round(xhP * 2.6 / 8) * 8;

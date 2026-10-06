@@ -171,7 +171,7 @@ def tipo_F06A(f, geom):
     if f <= 5:
         out.append((camada(L('09.05', 'C', 1002, cap=120, lsEm=0.02, cor='amarelo', tnum=True, al='center')), 0, 0))
     if 8 <= f <= 95:
-        out.append((camada(L('A ATRAÇÃO É ELA.', 'X', 442, id='atr', fill='tamanho', capMax=110, lsEm=-0.01, cor='papel',
+        out.append((camada(L('A ATRAÇÃO É ELA.', 'X', 410, id='atr', fill='tamanho', capMax=110, lsEm=-0.01, cor='papel',
                              sq=squash(f, 8))), 0, 0))
     if 24 <= f <= 95:
         ab = geom['ab470']
@@ -208,7 +208,7 @@ def tipo_F06B(f, geom):
                 sq[w] = s
         nota = 0.0 if f < 66 else min(1.0, (f - 65) / 12.0)
         seta = 0.0 if f < 78 else min(1.0, (f - 77) / 6.0)
-        return [({'camada': [{'k': 'c03', 'ver': ver, 'sq': sq, 'nota': nota, 'seta': seta, 'bnce': bnce(f, 66, 77)}],
+        return [({'camada': [{'k': 'c03', 'y0': 370, 'ver': ver, 'sq': sq, 'nota': nota, 'seta': seta, 'bnce': bnce(f, 66, 77)}],
                   'fundo': 'amarelo'}, 0, 0)]
     return [(camada(L('SUA VEZ.', 'X', 442, id='hl', fill='tamanho', capMax=110, lsEm=-0.01, cor='papel'),
                     L('holofote nela.', 'X', 496, id='lk', cap=34, lsEm=-0.01, cor='papel', al='center'),
@@ -242,7 +242,7 @@ def tipo_F06C(data):
             out.append((camada(L(v['titulo'], 'C', round(760 + cap / 2), id='titulo', fill='tamanho', lsEm=0.02, cor='papel')), 0, 0))
         if 24 <= f <= 71:
             rv = min(1.0, (f - 23) / 14.0)
-            out.append((camada(L(v['sub'], 'S', 900, id='sub', x=34, cor='papel', al='center', rv=rv if rv < 1 else None,
+            out.append((camada(L(v['sub'], 'S', 900, id='sub', x=36, cor='papel', al='center', rv=rv if rv < 1 else None,
                                  bnce=bnce(f, 24, 37))), 0, 0))
         if f >= 72:
             els = [L('MÃE AO VIVO', 'X', 442, id='mav', fill='tamanho', capMax=110, lsEm=-0.01, cor='papel',
@@ -273,36 +273,40 @@ FOTOS = {'F15': fotos_F15, 'F06A': fotos_F06A, 'F06B': fotos_F06B,
          'F06C_07-05': lambda: fotos_F06C('07-05'), 'F06C_08-05': lambda: fotos_F06C('08-05'),
          'F06C_09-05': lambda: fotos_F06C('09-05')}
 
-# type events keyed to sound: (film, frame of the slam/cut, what, the sound team's key frame it rides)
+# picture/type events keyed to sound: (film, frame of the event, what, the sound key frame it is keyed to or None).
+# Each keyed event is checked against the onset the sound team MEASURED in the final mix (±1 frame, §E.5).
 SINCRONIA = [
-    ('F15', 12, 'CLAC warm-up (picture)', 12), ('F15', 14, 'A ATRAÇÃO É ELA. slam (after the 2-frame warm-up)', 12),
-    ('F15', 44, 'L1 slam', 44), ('F15', 60, 'MÃE slam', 60), ('F15', 84, 'AO VIVO slam', 84),
-    ('F15', 108, 'DOMINGO · 09.05 slam', 108), ('F15', 204, 'BLACKOUT cut', 204), ('F15', 222, 'CLAC: spot back on', 222),
-    ('F06A', 6, 'CLAC warm-up', 6), ('F06B', 0, 'ELA', 0), ('F06B', 12, 'APLAUDIU', 12), ('F06B', 24, 'DE PÉ', 24),
-    ('F06B', 36, 'O SEU', 36), ('F06B', 48, 'PIOR (+ the cough)', 48), ('F06B', 60, 'SHOW.', 60), ('F06B', 84, 'cut to KV-45 (CLAC)', 84),
-    ('F06C_07-05', 0, 'title on bell 1', 0), ('F06C_07-05', 72, 'CLAC', 72),
-    ('F06C_08-05', 0, 'title on bell 1', 0), ('F06C_08-05', 72, 'CLAC', 72),
-    ('F06C_09-05', 0, 'title on bell 1', 0), ('F06C_09-05', 72, 'CLAC', 72),
+    ('F15', 12, 'CLAC warm-up begins (cam A)', 12),
+    ('F15', 14, 'A ATRAÇÃO É ELA. slams: the first full-light frame after the 2-frame warm-up (table f14–17)', None),
+    ('F15', 44, 'L1 HOLOFOTE APRESENTA · A TURNÊ · 2027 slams (snare)', 44), ('F15', 60, 'MÃE slams (bass drum)', 60),
+    ('F15', 84, 'AO VIVO slams (snare)', 84), ('F15', 108, 'DOMINGO · 09.05 slams (snare)', 108),
+    ('F15', 150, 'você is drawing on through the cough', 150),
+    ('F15', 204, 'BLACKOUT cut (CLAC-off)', 204), ('F15', 222, 'CLAC: the spot snaps back on; PRA MAIOR ATRAÇÃO. cut', 222),
+    ('F15', 312, 'end card held under the three claps', 312),
+    ('F06A', 6, 'CLAC warm-up begins', 6),
+    ('F06A', 8, 'A ATRAÇÃO É ELA. slams: first full-light frame after the warm-up (table f8–11)', None),
+    ('F06A', 100, 'end card (cut f96) under the first clap', 100),
+    ('F06B', 0, 'ELA', 0), ('F06B', 12, 'APLAUDIU', 12), ('F06B', 24, 'DE PÉ', 24), ('F06B', 36, 'O SEU', 36),
+    ('F06B', 48, 'PIOR (+ the cough)', 48), ('F06B', 60, 'SHOW.', 60), ('F06B', 84, 'hard cut to KV-45, CLAC warm-up', 84),
+    ('F06C_07-05', 0, 'title on bell 1', 0), ('F06C_07-05', 72, 'CLAC warm-up -> KV-45 unlit', 72),
+    ('F06C_08-05', 0, 'title on bell 1', 0), ('F06C_08-05', 72, 'CLAC warm-up -> KV-45 unlit', 72),
+    ('F06C_09-05', 0, 'title on bell 1', 0), ('F06C_09-05', 72, 'CLAC warm-up -> KV-45 lit', 72),
 ]
 
 
 def verificar_sincronia():
-    """Each keyed picture/type event against the onset the sound team MEASURED in the final mix."""
+    """Each keyed picture/type event against the onset measured in the final mix: error = event frame - onset frame."""
     rows = []
     for film, fr, what, key in SINCRONIA:
+        if key is None:
+            rows.append(dict(film=film, frame=fr, what=what, keyed_to=None, ok=None))
+            continue
         js = json.load(open(os.path.join(C.SOM, SOM[film] + '_som.json')))
-        ks = {k['quadro']: k for k in js.get('quadros_chave', [])}
-        on = ks.get(key)
-        if on is None:
-            # fall back to the nearest measured onset in the mix
-            ons = [o['t_s'] * 24 for o in js['onsets_medidos']]
-            near = min(ons, key=lambda q: abs(q - key))
-            onset_f = near
-        else:
-            onset_f = on['onset_medido_s'] * 24
-        rows.append(dict(film=film, frame=fr, what=what, onset_frame=round(onset_f, 3), sound_key=key,
-                         error_frames=round(fr - onset_f if fr == key else (key - onset_f), 3),
-                         ok=abs((key - onset_f)) <= 1.0))
+        ks = {k['quadro']: k['onset_medido_s'] * 24 for k in js.get('quadros_chave', [])}
+        ons = [o['t_s'] * 24 for o in js['onsets_medidos']]
+        onset_f = ks.get(key, min(ons, key=lambda q: abs(q - key)))
+        rows.append(dict(film=film, frame=fr, what=what, keyed_to=key, onset_frame=round(onset_f, 3),
+                         error_frames=round(fr - onset_f, 3), ok=abs(fr - onset_f) <= 1.0))
     return rows
 
 

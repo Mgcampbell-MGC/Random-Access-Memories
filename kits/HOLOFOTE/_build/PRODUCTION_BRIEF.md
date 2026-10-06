@@ -109,3 +109,9 @@ glyphs (HarfBuzz returned .notdef for every letter). Licences: OFL (copies in `f
   never touches laranja, so on laranja the lit O is preto, as on amarelo. (3) Width-axis values solved at the ink
   edge stand (CAMARIM 104, MAIS UM! 110, ACÚSTICO 100). (4) C07 follows its §E.2 row (PIX is its largest word).
   (5) `01_MARCA/cartazes/3d/` (albedo + height maps for the 3D wall) is regenerable and stays out of git.
+
+- **S01 · DIGITANDO, 6 Oct 2026 (director).** Built in 2D by `_build/filmes/s01/s01.py` (Shantell on O MURO papel;
+  the line never reflows, each line shows a prefix of itself). **It runs 10,83 s, not 6 s:** the platform's own counts
+  (12 f per word, 18 f hold on the half-typed *d*, 2 f per deleted letter, 12 f per word) sum to 202 f = 8,4 s before
+  the sign-off, and the rhythm is the joke. *domingo tô aí.* wraps to two lines (877 px on one line > the 800 px safe
+  box). The sign-off lands on HLF-ID-01's first clap (measured 0,013 f off). Keys: Kenney UI clicks, CC0 (credited).

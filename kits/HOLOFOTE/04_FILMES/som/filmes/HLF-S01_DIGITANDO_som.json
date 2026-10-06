@@ -1,0 +1,28 @@
+{
+  "arquivo": "HLF-S01_DIGITANDO_som.wav",
+  "duracao_s": 10.833,
+  "fps": 24,
+  "lufs_i": -14.0,
+  "true_peak_dbtp": -1.04,
+  "normalizacao": "−14 LUFS integrado, ≤ −1 dBTP",
+  "cues": [
+    {
+      "label": "HLF-ID-01 (1ª palma no quadro da assinatura)",
+      "quadro": 226,
+      "arquivo": "identidade/HLF-ID-01_vinheta_ovacao_de_uma_pessoa_so_2s0.wav",
+      "inicio_s": 8.3162,
+      "sync": "onset"
+    }
+  ],
+  "teclas": 46,
+  "apagadas": 32,
+  "fontes_teclas": "Kenney UI Audio (CC0): click2, click4, click5, switch13, switch14",
+  "quadros_chave": [
+    {
+      "quadro": 226,
+      "onset_medido_s": 9.4172,
+      "desvio_quadros": 0.013,
+      "ok": true
+    }
+  ]
+}

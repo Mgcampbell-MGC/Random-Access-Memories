@@ -59,6 +59,13 @@ HF.pronto(() => {
     info.push(itens.map((it) => ({ tipo: it.tipo, baseline: it.baseline, top: it.top, bot: it.bot,
       t: (it.objs || []).map((o) => o.s.t), cap: (it.objs || []).map((o) => +HF.capPx(o.s).toFixed(1)) })));
   }
+  // single positioned lines (not filling): {s:{...}, x, y (baseline), align:'left'|'center'|'right'}
+  for (const l of D.linhas || []) {
+    const o = HF.texto(b, st(l.s));
+    HF.posicionar(o, l.x, l.y, l.align || 'center');
+    info.push([{ tipo: 'linha', baseline: l.y, t: [o.s.t], x0: +o.inkX0.toFixed(1), x1: +o.inkX1.toFixed(1),
+      capTop: +o.capTop.toFixed(1), cap: [+HF.capPx(o.s).toFixed(1)] }]);
+  }
   window.HF_INFO = info;
 });
 </script>

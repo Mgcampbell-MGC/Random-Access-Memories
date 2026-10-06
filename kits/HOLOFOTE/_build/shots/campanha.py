@@ -299,6 +299,12 @@ C01_GRADE = ['07', '01', '08', '02',
 
 def b_c01():
     h = S.muro(n=4, spacing=0.100, grade=C01_GRADE, poster_w=0.22, ledge_z=0.315, drip_cell=2)
+    # the headline poster is the LAST one pasted: on top of its neighbours' 12 mm overlaps, so its last letter
+    # (VOCÊ.) is never under the next poster's edge
+    front = min(p.location.y for p in h['posters'])
+    for p in h['posters']:
+        if p.get('cartaz') == '12':
+            p.location.y = front - 0.0004
     roots = []
     for i, f in enumerate(['01', '02', '03', '04']):
         roots.append(H.copo(dict(faixa=f, wrap=S.wrap(f), lid='on', lid_art=S.tampa_art()), at=h['slots'][i], rot_deg=0))
@@ -311,72 +317,111 @@ def b_c01():
 
 
 # ================================================================================================= C02 · A PRIMEIRA FILA
-def b_c02(spill=3.0, cam='preset'):
+def b_c02(spill=3.0, lens=40.0, dist=0.42, h_cam=0.20, ax=650, ay=1000):
+    """The escola set (preset C02, spot from above-upstage at 60 deg). The camera is a wider, closer version of the
+    preset's (85 mm at 0,72 m showed 2,5 chairs): 40 mm at 0,42 m behind the candle, level, lens shift only, so the
+    back panel is pin-sharp and big while the front row reads as a ROW of white monoblocs with the bag on the middle
+    seat. The candle is the personalised MÃE ♥ unit, whose back panel carries the ESTREIA line 03.08.2003 · 14:32.
+    The spot's spill toward the front row is raised x3 (2 % -> 6 %): at 2 % the white chairs read as dark grey."""
     def f():
         h = S.escola(preset='C02')
-        root = H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=True), at=h['place'], rot_deg=h['candle_rot'])
+        w = S.wrap(personal='CASE-02_MAE-CORACAO')
+        root = H.copo(dict(faixa='02', wrap=w, lit=True), at=h['place'], rot_deg=h['candle_rot'])
         S.flame_bounce(h, root, receivers=[o for o in h['coll'].objects if o.name.startswith('palco_tabuado')])
         if spill != 1.0 and h.get('spill'):
             h['spill'].data.energy *= spill
-        S.escola_camera(h, 'C02', res=(1080, 1350))
+        px, py, pz = h['place']
+        S.camera_pin((px + 0.03, py + dist, pz + h_cam), 180.0, 0.0, lens, (1080, 1350), (px, py, pz + 0.044),
+                     (ax, ay), fstop=16.0, focus=dist)
         S.clearance()
-        return dict(labels=[lab(root, '02')])
+        return dict(labels=[lab(root, '02', w, 'CASE-02_MAE-CORACAO')])
     return f
 
 
 # ================================================================================================= C04 · A DISCOGRAFIA
-C04_X = (-0.30, -0.10, 0.10, 0.30)
+C04_X = (-0.24, -0.08, 0.08, 0.24)
 
 
-def b_c04():
-    h = S.palco(at=(0, 0, 0), spot=False, rotunda_spill=None)
-    esconder_objs = [h['tape_plate'], h['tape_floor']]
-    for o in esconder_objs:
+def b_c04(floor_hex='#2A2825', wash=1.4):
+    """Four lit candles in a row, each in its own white hard pool (four 3.200 K spots recorded balanced, as O PALCO),
+    no floor X (A MARCA is one per frame and no candle here is 'the' candle). The setlist is taped flat in front, its
+    far edge 0,64 m from the flames, out of the pools; its only light is a dim shadowless wash light-linked to the
+    paper and tape (the spill a real stage has). floor_hex: the lacquer albedo lifted to #2A2825 so four small pools
+    read on the floor (at #1A1918 they vanish without the yellow X to show them)."""
+    h = S.palco(at=(0, 0, 0), spot=False, floor_hex=floor_hex)
+    for o in (h['tape_plate'], h['tape_floor']):
         o.hide_render = True
     roots = []
-    pool_r, spot_deg = 0.078, 26.0
+    pool_r, spot_deg = 0.066, 26.0
     throw = pool_r / math.tan(math.radians(spot_deg / 2))
-    for x, f in zip(C04_X, ['01', '02', '03', '04']):
-        r = H.copo(dict(faixa=f, wrap=S.wrap(f), lit=True, flame_seed=hash(f) % 7 * 0.13), at=(x, 0, 0), rot_deg=-6)
+    for i, (x, f) in enumerate(zip(C04_X, ['01', '02', '03', '04'])):
+        r = H.copo(dict(faixa=f, wrap=S.wrap(f), lit=True, flame_seed=0.37 * i), at=(x, 0, 0), rot_deg=-6)
         roots.append(r)
         S.flame_bounce(h, r)
         tgt = Vector((x, 0, 0.020))
         loc = tgt + S._dir(-30.0, 55.0) * throw
-        L = S._light('c04_spot_' + f, 'SPOT', loc, tgt, S.ENERGIA['palco_spot_k'] * throw ** 2,
-                     color=S.balanced(3200, 3300), coll=h['coll'], spot_size=math.radians(spot_deg), spot_blend=0.04,
-                     shadow_soft_size=0.0103 * throw)
-    # the setlist, taped flat 60 cm in front of the row (its far edge 0,62 m from the flames), out of the pools
+        S._light('c04_spot_' + f, 'SPOT', loc, tgt, S.ENERGIA['palco_spot_k'] * throw ** 2,
+                 color=S.balanced(3200, 3300), coll=h['coll'], spot_size=math.radians(spot_deg), spot_blend=0.04,
+                 shadow_soft_size=0.0103 * throw)
     side1 = SETLIST_C04 if os.path.exists(SETLIST_C04) else None
-    sl = OL.setlist_taped(side1=side1, at=(0.0, -0.82, 0.0), rot_deg=-3.0)
+    sl = OL.setlist_taped(side1=side1, at=(0.0, -0.88, 0.0), rot_deg=-3.0)
     marcar([sl.root])
-    # its only light: a dim, shadowless downstage wash light-linked to the paper and tape (the spill off the four
-    # lanterns a real stage would have; nothing else sees it)
-    wash = S._light('c04_setlist_wash', 'AREA', (0.0, -0.95, 0.9), (0.0, -0.82, 0.0), 2.2, coll=h['coll'],
-                    shape='RECTANGLE', size=0.9, size_y=0.6, use_shadow=False)
-    wash.visible_camera = False
-    S.link_receivers(wash, [o for o in S.descendants(sl.root) if o.type == 'MESH'])
+    wl = S._light('c04_setlist_wash', 'AREA', (0.0, -1.0, 0.9), (0.0, -0.88, 0.0), wash, coll=h['coll'],
+                  shape='RECTANGLE', size=0.9, size_y=0.6)
+    wl.data.use_shadow = False
+    wl.visible_camera = False
+    S.link_receivers(wl, [o for o in S.descendants(sl.root) if o.type == 'MESH'])
     S.clearance()
-    pts = [(x, 0, z) for x in (C04_X[0] - 0.12, C04_X[-1] + 0.12) for z in (0.0, 0.11)] + \
-          [(x, -1.02, 0.0) for x in (-0.09, 0.09)]
-    cam_fit(pts, 24.0, 0.0, 70, (1080, 1350), (90, 470, 990, 1310), fstop=8.0,
-            target=(0.0, -0.30, 0.05))
+    pts = [(x, 0, z) for x in (C04_X[0] - 0.085, C04_X[-1] + 0.085) for z in (0.0, 0.115)] + \
+          [(x, -1.04, 0.0) for x in (-0.08, 0.08)]
+    cam_fit(pts, 27.0, 0.0, 50, (1080, 1350), (90, 440, 990, 1330), fstop=8.0, target=(0.0, -0.35, 0.05))
     return dict(labels=[lab(r, f) for r, f in zip(roots, ['01', '02', '03', '04'])])
 
 
 # ================================================================================================= C05 · O CASE
+def chao_preto(hexc='#1C1B1D', size=8.0):
+    """Plain black floor (C05 'on black'): the lacquer's scratch web reads as noise from 70 deg above at this scale."""
+    import bmesh
+    m = S.material('chao_preto', **{'Base Color': S.srgb(hexc), 'Roughness': 0.55, 'Specular IOR Level': 0.4})
+    nt = m.node_tree
+    bs = nt.nodes['Principled BSDF']
+    nz = nt.nodes.new('ShaderNodeTexNoise')
+    nz.inputs['Scale'].default_value = 7.0
+    nz.inputs['Detail'].default_value = 8.0
+    mr = nt.nodes.new('ShaderNodeMapRange')
+    mr.inputs['To Min'].default_value = 0.45
+    mr.inputs['To Max'].default_value = 0.68
+    nt.links.new(nz.outputs['Fac'], mr.inputs['Value'])
+    nt.links.new(mr.outputs['Result'], bs.inputs['Roughness'])
+    bm = bmesh.new()
+    vs = [bm.verts.new((x * size / 2, y * size / 2, 0.0)) for x, y in ((-1, -1), (1, -1), (1, 1), (-1, 1))]
+    bm.faces.new(vs)
+    ob = S._bm_obj('chao_preto', bm, S._coll('C05'), m)
+    ob['apoio'] = True
+    return ob
+
+
+def spot_palco(tgt, pool_r, az=-30.0, el=55.0, deg=26.0, name='spot'):
+    """The O PALCO hard spot (calibrated: energy = palco_spot_k x throw^2, 3.200 K recorded balanced at 3.300 K)."""
+    throw = pool_r / math.tan(math.radians(deg / 2))
+    tgt = Vector(tgt)
+    loc = tgt + S._dir(az, el) * throw
+    return S._light(name, 'SPOT', loc, tgt, S.ENERGIA['palco_spot_k'] * throw ** 2, color=S.balanced(3200, 3300),
+                    spot_size=math.radians(deg), spot_blend=0.04, shadow_soft_size=0.0103 * throw)
+
+
 def b_c05(fmt):
     res = (1080, 1080) if fmt == '1x1' else (1080, 1920)
 
     def f():
-        h = S.palco(at=(0, 0, 0), pool_r=0.17, spot_aim_z=0.06)
-        for o in (h['tape_plate'], h['tape_floor']):
-            o.hide_render = True
+        chao_preto()
+        spot_palco((0.0, 0.03, 0.06), 0.20)
         ang = OL.open_deg_for_camera(70)
         c = OL.case(state='open', open_deg=ang, copo=dict(faixa='02', wrap=S.wrap('02'), lid_art=S.tampa_art()),
-                    band=True, band_kw=dict(route='corner'), at=(0, 0, 0), rot_deg=22.0)
+                    band=True, band_kw=dict(route='corner'), at=(0, 0, 0), rot_deg=14.0)
         pts = pontos([c.root])
-        box = (110, 110, 970, 970) if fmt == '1x1' else (90, 560, 990, 1460)
-        cam = cam_fit(pts, 70.0, 0.0, 60, res, box, fstop=11.0, target=(0, 0, 0.07))
+        box = (190, 250, 890, 920) if fmt == '1x1' else (110, 540, 970, 1380)
+        cam = cam_fit(pts, 70.0, -8.0, 60, res, box, fstop=11.0, target=(0, 0.02, 0.07))
         bpy.context.view_layer.update()
         OL.place_work_bulb(c, cam, dist=1.3)
         return dict(labels=[], case=c)
@@ -384,7 +429,7 @@ def b_c05(fmt):
 
 
 # ================================================================================================= C06 · O MENOR HOLOFOTE
-def b_c06(spill=0.012):
+def b_c06(spill=0.035):
     h = S.palco(at=(0, 0, 0), spot=False, rotunda_spill=0.0)
     root = H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=True), at=h['place'], rot_deg=-12)
     S.ride(root, h['lift'])
@@ -396,16 +441,30 @@ def b_c06(spill=0.012):
 
 
 # ================================================================================================= C08 · NOVA TEMPORADA
+def vidro_transparente_para(lights, roots):
+    """Shadow linking: the clean glass stops blocking these lights, so a key that enters the empty glass's mouth lights
+    the coating seen through the inner wall (Cycles blocks direct light behind refractive glass; without this the
+    inside of an empty coated glass renders as a black hole)."""
+    vidro = set(o for r in roots for o in S.descendants(r) if o.name.startswith('glass'))
+    for L in lights:
+        c = bpy.data.collections.new(L.name + '_bloqueia')
+        for o in bpy.context.scene.objects:
+            if o.type == 'MESH' and o not in vidro:
+                c.objects.link(o)
+        L.light_linking.blocker_collection = c
+
+
 def b_c08():
     h = S.palco(at=(0, 0, 0), pool_r=0.150)
     root = H.copo(dict(faixa='02', wrap=S.wrap('02'), lit=False), at=h['place'], rot_deg=-12)
     vazio(root)
     S.ride(root, h['lift'])
-    rf = OL.refil(faixa='02', peel=0.5, at=(0.098, 0.012, 0.0), rot_deg=-150.0)
-    gp, top = 440, 610
+    rf = OL.refil(faixa='02', peel=0.5, at=(0.094, 0.030, 0.0), rot_deg=-120.0)
+    vidro_transparente_para([h['spot']], [root])
+    gp, top = 400, 640
     px_mm = gp / 88.0
     S.camera_glass(res=(1080, 1350), lens=50, cam_height=0.220, tilt_deg=-6, glass_px=gp, top_y=top,
-                   center_x=540 - 49 * px_mm * 0.95, fstop=5.6)
+                   center_x=540 - 47 * px_mm, fstop=5.6)
     return dict(labels=[lab(root, '02')])
 
 
@@ -454,6 +513,14 @@ def b_l02():
     h = S.loja()
     root = H.copo(dict(faixa='02', wrap=S.wrap('02')), at=h['place'], rot_deg=180)
     _loja_cam_glass(h, (1200, 1200), 0.68, 0.052, 0.0)
+    return dict(labels=[lab(root, '02')])
+
+
+def b_l00():
+    """Director's addition: the FRONT panel straight on (0 deg), lid on, unlit — the packet's 'Frente 0°' row."""
+    h = S.loja()
+    root = H.copo(dict(faixa='02', wrap=S.wrap('02'), lid='on', lid_art=S.tampa_art()), at=h['place'], rot_deg=0)
+    _loja_cam_glass(h, (1200, 1200), 0.66, 0.052, 0.0)
     return dict(labels=[lab(root, '02')])
 
 
@@ -517,6 +584,7 @@ def b_l07():
     root = H.copo(dict(faixa='02', wrap=S.wrap('02')), at=(-0.045, 0.02, 0), rot_deg=-18)
     vazio(root)
     rf = OL.refil(faixa='02', peel=0.5, at=(0.050, -0.030, 0.0), rot_deg=-140.0)
+    vidro_transparente_para([h['key'], h['fill']], [root])
     pts = pontos([root, rf.root])
     cam_fit(pts, 22.0, 0.0, 85, (1200, 1200), (96, 170, 1104, 1030), fstop=11.0, target=(0, 0, 0.04))
     return dict(labels=[lab(root, '02')])
@@ -538,7 +606,7 @@ def shots():
     T['C06'] = dict(nome='C06_O-MENOR-HOLOFOTE_limpo', b=b_c06, res=(1080, 1350), s=64)
     T['C08'] = dict(nome='C08_NOVA-TEMPORADA_limpo', b=b_c08, res=(1080, 1350), s=64)
     T['C10'] = dict(nome='C10_SALVA-COMO_limpo', b=b_c10, res=(1080, 1350), s=64)
-    for k, b, n in (('L01', b_l01, 'L01_FRENTE'), ('L02', b_l02, 'L02_VERSO'), ('L03', b_l03, 'L03_A-BASE'),
+    for k, b, n in (('L00', b_l00, 'L00_FRENTE'), ('L01', b_l01, 'L01_FRENTE'), ('L02', b_l02, 'L02_VERSO'), ('L03', b_l03, 'L03_A-BASE'),
                     ('L04', b_l04, 'L04_O-CASE-ABERTO'), ('L05', b_l05, 'L05_A-TAMPA-PALCO'), ('L06', b_l06, 'L06_A-TURNE'),
                     ('L07', b_l07, 'L07_NOVA-TEMPORADA')):
         T[k] = dict(nome=n, b=b, res=(1200, 1200), s=64, loja=True)

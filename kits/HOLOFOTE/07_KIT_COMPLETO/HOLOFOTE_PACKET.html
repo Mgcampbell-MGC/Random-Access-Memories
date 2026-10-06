@@ -153,6 +153,8 @@ figure[data-slot="FIDELIDADE_TABELA"] .slot { aspect-ratio: 3 / 2; }
 .bloco .ex { font-weight: 600; }
 p, li, figcaption { text-wrap: pretty; }
 .junto { break-inside: avoid; }
+figure img.fig { display: block; width: 100%; height: auto; }
+figure:has(img.fig) .slot { display: none; }
 </style>
 </head>
 <body>
@@ -206,25 +208,25 @@ p, li, figcaption { text-wrap: pretty; }
 </table>
 
 <h3 class="quebra" style="border-top:none;padding-top:0;margin-top:0">Status por entrega</h3>
-<p class="pequeno">Preenchido pelo diretor a partir das pastas, no fechamento: <span data-dado="STATUS_DATA">[preencher]</span>. Valores possíveis: ENTREGUE, PARCIAL, AUSENTE (com o motivo). Nenhuma peça é chamada de APROVADA neste documento; isso só vale para peças que passaram no verificador real (§6) e na revisão humana.</p>
+<p class="pequeno">Preenchido pelo diretor a partir das pastas, no fechamento: <span data-dado="STATUS_DATA">6 out 2026</span>. Valores possíveis: ENTREGUE, PARCIAL, AUSENTE (com o motivo). Nenhuma peça é chamada de APROVADA neste documento; isso só vale para peças que passaram no verificador real (§6) e na revisão humana.</p>
 <table>
   <thead><tr><th style="width:34%">Entrega</th><th style="width:30%">Pasta</th><th>Status</th></tr></thead>
   <tbody>
-    <tr><td>Logo e O FOCO (SVG)</td><td><code>01_MARCA/logo/</code></td><td><span data-dado="STATUS_LOGO">[preencher]</span></td></tr>
-    <tr><td>12 cartazes lambe-lambe (O MURO)</td><td><code>01_MARCA/cartazes/</code></td><td><span data-dado="STATUS_CARTAZES">[preencher]</span></td></tr>
-    <tr><td>Pranchas do sistema: paleta, tipografia, dispositivos</td><td><code>01_MARCA/</code></td><td><span data-dado="STATUS_SISTEMA">[preencher]</span></td></tr>
-    <tr><td>8 mestres de rótulo + 3 cópias com erro plantado</td><td><code>02_PRODUTO/rotulos/</code></td><td><span data-dado="STATUS_ROTULOS">[preencher]</span></td></tr>
-    <tr><td>Packshots: tampa, base, case, setlist, pulseira, cartucho</td><td><code>02_PRODUTO/</code></td><td><span data-dado="STATUS_PACKSHOTS">[preencher]</span></td></tr>
-    <tr><td>KV-01 (4 formatos) e KV-45 (4 placas)</td><td><code>03_LANCAMENTO/</code></td><td><span data-dado="STATUS_KV">[preencher]</span></td></tr>
-    <tr><td>C01–C10</td><td><code>03_LANCAMENTO/</code></td><td><span data-dado="STATUS_C">[preencher]</span></td></tr>
-    <tr><td>B01–B08 (BOLETIM)</td><td><code>03_LANCAMENTO/</code></td><td><span data-dado="STATUS_B">[preencher]</span></td></tr>
-    <tr><td>D01, D02, STK ×8, S01</td><td><code>03_LANCAMENTO/</code></td><td><span data-dado="STATUS_DIGITAL">[preencher]</span></td></tr>
-    <tr><td>L01–L07 (loja)</td><td><code>03_LANCAMENTO/</code></td><td><span data-dado="STATUS_L">[preencher]</span></td></tr>
-    <tr><td>F15, F06A, F06B, F06C ×3, com e sem som</td><td><code>04_FILMES/</code></td><td><span data-dado="STATUS_FILMES">[preencher]</span></td></tr>
-    <tr><td>Logo sonoro, trilha, foley, mixes, créditos</td><td><code>04_FILMES/som/</code></td><td><span data-dado="STATUS_SOM">[preencher]</span></td></tr>
-    <tr><td>8 masters do anúncio em animatic</td><td><code>05_ANUNCIO/</code></td><td><span data-dado="STATUS_ANIMATIC">[preencher]</span></td></tr>
-    <tr><td>Arquivos de máquina do anúncio (5)</td><td><code>05_ANUNCIO/</code></td><td><span data-dado="STATUS_MAQUINA">[preencher]</span></td></tr>
-    <tr><td>Relatório de fidelidade</td><td><code>06_PRODUCAO/</code></td><td><span data-dado="STATUS_FIDELIDADE">[preencher]</span></td></tr>
+    <tr><td>Logo e O FOCO (SVG)</td><td><code>01_MARCA/logo/</code></td><td><span data-dado="STATUS_LOGO">ENTREGUE</span></td></tr>
+    <tr><td>12 cartazes lambe-lambe (O MURO)</td><td><code>01_MARCA/cartazes/</code></td><td><span data-dado="STATUS_CARTAZES">ENTREGUE</span></td></tr>
+    <tr><td>Pranchas do sistema: paleta, tipografia, dispositivos</td><td><code>01_MARCA/</code></td><td><span data-dado="STATUS_SISTEMA">ENTREGUE</span></td></tr>
+    <tr><td>8 mestres de rótulo + 3 cópias com erro plantado</td><td><code>02_PRODUTO/rotulos/</code></td><td><span data-dado="STATUS_ROTULOS">ENTREGUE</span></td></tr>
+    <tr><td>Packshots: tampa, base, case, setlist, pulseira, cartucho</td><td><code>02_PRODUTO/</code></td><td><span data-dado="STATUS_PACKSHOTS">PARCIAL · falta: L04*.png</span></td></tr>
+    <tr><td>KV-01 (4 formatos) e KV-45 (4 placas)</td><td><code>03_LANCAMENTO/</code></td><td><span data-dado="STATUS_KV">AUSENTE</span></td></tr>
+    <tr><td>C01–C10</td><td><code>03_LANCAMENTO/</code></td><td><span data-dado="STATUS_C">PARCIAL · falta: C01_*.png, C02_*.png, C04_*.png, C05_*.png, C06_*.png, C08_*.png, C10_*.png</span></td></tr>
+    <tr><td>B01–B08 (BOLETIM)</td><td><code>03_LANCAMENTO/</code></td><td><span data-dado="STATUS_B">ENTREGUE</span></td></tr>
+    <tr><td>D01, D02, STK ×8, S01</td><td><code>03_LANCAMENTO/</code></td><td><span data-dado="STATUS_DIGITAL">PARCIAL · falta: HLF-S01*_som.mp4</span></td></tr>
+    <tr><td>L01–L07 (loja)</td><td><code>03_LANCAMENTO/</code></td><td><span data-dado="STATUS_L">AUSENTE</span></td></tr>
+    <tr><td>F15, F06A, F06B, F06C ×3, com e sem som</td><td><code>04_FILMES/</code></td><td><span data-dado="STATUS_FILMES">AUSENTE</span></td></tr>
+    <tr><td>Logo sonoro, trilha, foley, mixes, créditos</td><td><code>04_FILMES/som/</code></td><td><span data-dado="STATUS_SOM">ENTREGUE</span></td></tr>
+    <tr><td>8 masters do anúncio em animatic</td><td><code>05_ANUNCIO/</code></td><td><span data-dado="STATUS_ANIMATIC">AUSENTE</span></td></tr>
+    <tr><td>Arquivos de máquina do anúncio (5)</td><td><code>05_ANUNCIO/</code></td><td><span data-dado="STATUS_MAQUINA">PARCIAL · falta: SCENE_PLAN.json, MACHINE_BRIEF.json</span></td></tr>
+    <tr><td>Relatório de fidelidade</td><td><code>06_PRODUCAO/</code></td><td><span data-dado="STATUS_FIDELIDADE">ENTREGUE</span></td></tr>
     <tr><td>Pessoas (H01, H02, M01) e peças P01–P03</td><td>—</td><td><strong>Não geradas.</strong> Exigem créditos e aprovação escrita da dona.</td></tr>
   </tbody>
 </table>
@@ -494,8 +496,8 @@ p, li, figcaption { text-wrap: pretty; }
   <li>Medidas tipográficas tomadas no arquivo da fonte: algarismos de 710 unidades; altura-x de 509 na Condensed One (x ÷ algarismo = 0,717). Um “g” a 100% ao lado de algarismos de 4,0 mm tem altura-x de 2,87 mm, acima da linha de ⅔ do Inmetro (2,67 mm). Todos os algarismos usam <code>tnum</code>.</li>
 </ul>
 <div class="grade g2">
-  <figure data-slot="ROTULO_FRENTE"><div class="slot">Rótulo · frente</div><figcaption>HLF-02, painel da frente recortado do mestre <code>HLF-02_ROTULO_wrap.png</code> (9.552 × 2.560 px, 40 px/mm), tinta preta sobre o amarelo.</figcaption></figure>
-  <figure data-slot="ROTULO_VERSO"><div class="slot">Rótulo · verso</div><figcaption>HLF-02, painel do verso: a camiseta da turnê, com a linha ESTREIA de varejo.</figcaption></figure>
+  <figure data-slot="ROTULO_FRENTE"><img class="fig" src="figuras/ROTULO_FRENTE.jpg" alt="ROTULO_FRENTE"><figcaption>HLF-02, painel da frente recortado do mestre <code>HLF-02_ROTULO_wrap.png</code> (9.552 × 2.560 px, 40 px/mm), tinta preta sobre o amarelo.</figcaption></figure>
+  <figure data-slot="ROTULO_VERSO"><img class="fig" src="figuras/ROTULO_VERSO.jpg" alt="ROTULO_VERSO"><figcaption>HLF-02, painel do verso: a camiseta da turnê, com a linha ESTREIA de varejo.</figcaption></figure>
 </div>
 
 <h3>4.3 Verso: a camiseta da turnê (exato; medida 72,0 mm)</h3>
@@ -557,10 +559,10 @@ p, li, figcaption { text-wrap: pretty; }
   <li><strong>Uso:</strong> ela rasga o selo, tira a fita do fecho e prende no pulso. <em>Acesso liberado.</em></li>
 </ul>
 <div class="grade">
-  <figure data-slot="TAMPA"><div class="slot">Tampa-palco</div><figcaption>Topo da tampa com o X de gaffer, <em class="fa">ela fica aqui.</em> e <strong class="ex">a tampa vira palco.</strong> na aba.</figcaption></figure>
-  <figure data-slot="BASE"><div class="slot">Base</div><figcaption>Fundo do copo: relevo <strong class="ex">PRECISAVA.</strong> com luz rasante e a etiqueta de lote.</figcaption></figure>
+  <figure data-slot="TAMPA"><img class="fig" src="figuras/TAMPA.jpg" alt="TAMPA"><figcaption>Topo da tampa com o X de gaffer, <em class="fa">ela fica aqui.</em> e <strong class="ex">a tampa vira palco.</strong> na aba.</figcaption></figure>
+  <figure data-slot="BASE"><img class="fig" src="figuras/BASE.jpg" alt="BASE"><figcaption>Fundo do copo: relevo <strong class="ex">PRECISAVA.</strong> com luz rasante e a etiqueta de lote.</figcaption></figure>
   <figure data-slot="CASE"><div class="slot">O CASE</div><figcaption>O CASE fechado e aberto: tolex, cantoneiras, espelho de camarim, espuma, setlist.</figcaption></figure>
-  <figure data-slot="PULSEIRA"><div class="slot">Pulseira e selo</div><figcaption>A fita com o jacquard completo e o selo <strong class="ex">pode rasgar.</strong></figcaption></figure>
+  <figure data-slot="PULSEIRA"><img class="fig" src="figuras/PULSEIRA.jpg" alt="PULSEIRA"><figcaption>A fita com o jacquard completo e o selo <strong class="ex">pode rasgar.</strong></figcaption></figure>
 </div>
 
 <h3>4.7 O CASE (a caixa de presente, R$179)</h3>
@@ -676,7 +678,7 @@ p, li, figcaption { text-wrap: pretty; }
 <p><strong class="ex">Evite contato com os olhos e mucosas. Em caso de contato, lave com água em abundância.</strong></p>
 <p><strong class="ex">Não ingerir.</strong></p></div>
 </div>
-<figure data-slot="SETLIST"><div class="slot">Setlist · lados 1 e 2</div><figcaption>A sanfona aberta, lado 1 (capa, roteiro, ingressos) e lado 2 (modo de uso, advertências, depois da temporada, versos dos ingressos).</figcaption></figure>
+<figure data-slot="SETLIST"><img class="fig" src="figuras/SETLIST.jpg" alt="SETLIST"><figcaption>A sanfona aberta, lado 1 (capa, roteiro, ingressos) e lado 2 (modo de uso, advertências, depois da temporada, versos dos ingressos).</figcaption></figure>
 
 <h3>4.9 Cartuchos e refil</h3>
 <p><strong>Cartucho O INGRESSO</strong> (HLF-01…04-200): 96 × 96 × 98 mm, fechamento tuck-end, SBS 400 g/m², duas cores (preto + a cor da faixa). A frente é um ingresso gigante.</p>
@@ -694,7 +696,7 @@ p, li, figcaption { text-wrap: pretty; }
   <li><strong>Cartucho O INGRESSO SINGLE</strong> (HLF-02-080): 74 × 74 × 76 mm; mesmo texto com <em>PESO LÍQUIDO 80 g</em>, <em>aprox. 16 h</em> e <strong class="ex">O SINGLE</strong>. O MANIFESTO leva a linha de 80 g.</li>
   <li><strong>Refil NOVA TEMPORADA</strong> (HLF-REF-0n). Selo Ø 66 mm termosselado, papel/alumínio, uma cor sobre a cor da faixa: <strong class="ex">NOVA TEMPORADA</strong> · [NOME DA FAIXA] · <strong class="ex">PESO LÍQUIDO 200 g</strong> (algarismos 4,0 mm) · <strong class="ex">vela aromática · refil</strong> · <strong class="ex">Use dentro do copo HOLOFOTE.</strong> Parede da cápsula: faixa anodizada preta com <strong>LOTE · FAB · VAL</strong> a laser. Cartucho 74 × 74 × 82 mm; frente: <strong class="ex">NOVA TEMPORADA</strong> · <strong class="ex">O copo fica. A turnê continua.</strong> · nome da faixa · <strong class="ex">PESO LÍQUIDO 200 g</strong>; demais painéis: MODO DE USO, ADVERTÊNCIAS e MANIFESTO, literais.</li>
 </ul>
-<figure data-slot="CARTUCHO"><div class="slot">Cartucho O INGRESSO</div><figcaption>Cartucho O INGRESSO do herói, frente e laterais planificadas.</figcaption></figure>
+<figure data-slot="CARTUCHO"><img class="fig" src="figuras/CARTUCHO.jpg" alt="CARTUCHO"><figcaption>Cartucho O INGRESSO do herói, frente e laterais planificadas.</figcaption></figure>
 
 <h3>4.10 O SINGLE (HLF-02-080): recomposto, nunca escalado</h3>
 <ul>
@@ -748,7 +750,7 @@ p, li, figcaption { text-wrap: pretty; }
     <tr><td><strong class="ex">seu nome (vai no menor tamanho do copo)</strong></td><td>L4 da frente, direita: <em class="fa">abertura: [nome]</em></td><td>Caixa baixa, 1–12 caracteres, Shantell com altura-x fixa de 1,6 mm, alinhado à direita, ≤34 mm de largura, ou o pedido é recusado. Padrão: <em class="fa">você</em>. Continua a menor palavra do painel.</td></tr>
   </tbody>
 </table>
-<figure data-slot="ROTULOS_PERSONALIZADOS"><div class="slot">Rótulos personalizados · DONA CIDA · MÃE <span class="sh">♥</span> · MAINHA</div><figcaption>As três frentes personalizadas lado a lado, cada uma no passo da escada que o código escolheu.</figcaption></figure>
+<figure data-slot="ROTULOS_PERSONALIZADOS"><img class="fig" src="figuras/ROTULOS_PERSONALIZADOS.jpg" alt="ROTULOS_PERSONALIZADOS"><figcaption>As três frentes personalizadas lado a lado, cada uma no passo da escada que o código escolheu.</figcaption></figure>
 <table class="compacta">
   <thead><tr><th style="width:7%">Passo</th><th>Escada de ajuste da atração (medida 72,0 mm, base 51,0 mm). Use o primeiro passo que funcionar.</th></tr></thead>
   <tbody>
@@ -820,7 +822,7 @@ p, li, figcaption { text-wrap: pretty; }
   <li><strong>Lei da cor:</strong> cada peça usa <strong>uma cor de faixa + preto + papel</strong> (o amarelo pode acompanhar qualquer faixa como sinal). As quatro cores só se encontram nas fotos da coleção (C01, C04, L06) e no muro de cartazes.</li>
   <li><strong>Evitados de propósito:</strong> verde brat, vidro preto com rótulo rosa (Boy Smells), dourado (o clichê do troféu) e qualquer azul.</li>
 </ul>
-<figure data-slot="PALETA"><div class="slot">Prancha de paleta</div><figcaption>Prancha de paleta com os pares medidos.</figcaption></figure>
+<figure data-slot="PALETA"><img class="fig" src="figuras/PALETA.jpg" alt="PALETA"><figcaption>Prancha de paleta com os pares medidos.</figcaption></figure>
 
 <h3>5.2 Tipografia: duas famílias Google Fonts, SIL OFL</h3>
 <table class="compacta">
@@ -836,7 +838,7 @@ p, li, figcaption { text-wrap: pretty; }
   <li><strong>Regra do produtor:</strong> medir algarismos e altura-x no arquivo da fonte antes de compor qualquer linha legal. Condensed One: algarismo 710, altura-x 509 (razão 0,717), “g” de −177 a 566. Topo do til do <em>Ã</em> a 934 unidades na Expanded One: reservar <strong>+31,5% da altura de caixa</strong> acima de todo Ã e Õ.</li>
   <li><strong>Fora do sistema:</strong> Fraunces, Playwrite BR, Young Serif e Doto (conceitos A–D); Cormorant Garamond e DM Sans (kits anteriores); Bricolage Grotesque e Instrument Serif (padrão demais); BBH Bartle e Hegarty (sem português).</li>
 </ul>
-<figure data-slot="TIPOGRAFIA"><div class="slot">Prancha de tipografia · as três vozes</div><figcaption>As três vozes em uso: Locutor, Produção, Fã.</figcaption></figure>
+<figure data-slot="TIPOGRAFIA"><img class="fig" src="figuras/TIPOGRAFIA.jpg" alt="TIPOGRAFIA"><figcaption>As três vozes em uso: Locutor, Produção, Fã.</figcaption></figure>
 
 <h3>5.3 Logo, O FOCO e A MARCA</h3>
 <ul>
@@ -848,7 +850,7 @@ p, li, figcaption { text-wrap: pretty; }
   <li><strong>Assinatura gráfica, A MARCA:</strong> o X de gaffer amarelo, duas tiras a ±45° com razão comprimento:largura 3,75:1 e pontas rasgadas. Marca onde o produto fica, serve de marcador de lista e carimba a setlist. <strong>Um por quadro.</strong></li>
   <li>Arquivos: <code>01_MARCA/logo/</code> (9 combinações do wordmark + 3 do O FOCO, contornos exatos gerados por <code>_build/logo.py</code>).</li>
 </ul>
-<figure data-slot="LOGO"><div class="slot">Logo · combinações e afinação</div><figcaption>Wordmark nas combinações aprovadas, O FOCO e A MARCA.</figcaption></figure>
+<figure data-slot="LOGO"><img class="fig" src="figuras/LOGO.jpg" alt="LOGO"><figcaption>Wordmark nas combinações aprovadas, O FOCO e A MARCA.</figcaption></figure>
 
 <h3>5.4 Dispositivos gráficos (todos por código; ● = guiado por dados)</h3>
 <table class="compacta">
@@ -1012,23 +1014,23 @@ p, li, figcaption { text-wrap: pretty; }
 </ul>
 
 <h3>6.6 Resultados (relatório real)</h3>
-<p class="pequeno">Preencher a partir de <code>06_PRODUCAO/*_fidelidade.json</code>. Cor = matiz / saturação. Controle = pior bloco com o erro plantado (tem de ser &lt; 0,80). Relatório: <span data-dado="FID_RELATORIO_ARQUIVO">[preencher]</span>.</p>
+<p class="pequeno">Preencher a partir de <code>06_PRODUCAO/*_fidelidade.json</code>. Cor = matiz / saturação. Controle = pior bloco com o erro plantado (tem de ser &lt; 0,80). Relatório: <span data-dado="FID_RELATORIO_ARQUIVO">06_PRODUCAO/fidelidade/ (um JSON por peça)</span>.</p>
 <table class="compacta">
   <thead><tr><th style="width:27%">Vista ou unidade</th><th class="n">Pior bloco</th><th class="n">5º pct</th><th class="n">Controle</th><th class="n">Cor</th><th class="n">Resultado</th></tr></thead>
   <tbody>
-    <tr><td>Frente 0° (HLF-02)</td><td class="n"><span data-dado="FID_FRENTE_PIOR">[preencher]</span></td><td class="n"><span data-dado="FID_FRENTE_P5">[preencher]</span></td><td class="n"><span data-dado="FID_FRENTE_CONTROLE">[preencher]</span></td><td class="n"><span data-dado="FID_FRENTE_COR">[preencher]</span></td><td class="n"><span data-dado="FID_FRENTE_RESULTADO">[preencher]</span></td></tr>
-    <tr><td>¾ frente 20° (HLF-02)</td><td class="n"><span data-dado="FID_TRES_QUARTOS_PIOR">[preencher]</span></td><td class="n"><span data-dado="FID_TRES_QUARTOS_P5">[preencher]</span></td><td class="n"><span data-dado="FID_TRES_QUARTOS_CONTROLE">[preencher]</span></td><td class="n"><span data-dado="FID_TRES_QUARTOS_COR">[preencher]</span></td><td class="n"><span data-dado="FID_TRES_QUARTOS_RESULTADO">[preencher]</span></td></tr>
-    <tr><td>Verso 180° (HLF-02)</td><td class="n"><span data-dado="FID_VERSO_PIOR">[preencher]</span></td><td class="n"><span data-dado="FID_VERSO_P5">[preencher]</span></td><td class="n"><span data-dado="FID_VERSO_CONTROLE">[preencher]</span></td><td class="n"><span data-dado="FID_VERSO_COR">[preencher]</span></td><td class="n"><span data-dado="FID_VERSO_RESULTADO">[preencher]</span></td></tr>
-    <tr><td>Base (L03)</td><td class="n"><span data-dado="FID_BASE_PIOR">[preencher]</span></td><td class="n"><span data-dado="FID_BASE_P5">[preencher]</span></td><td class="n"><span data-dado="FID_BASE_CONTROLE">[preencher]</span></td><td class="n"><span data-dado="FID_BASE_COR">[preencher]</span></td><td class="n"><span data-dado="FID_BASE_RESULTADO">[preencher]</span></td></tr>
-    <tr><td>Albedo, quadros iluminados pela chama</td><td class="n"><span data-dado="FID_ALBEDO_PIOR">[preencher]</span></td><td class="n"><span data-dado="FID_ALBEDO_P5">[preencher]</span></td><td class="n"><span data-dado="FID_ALBEDO_CONTROLE">[preencher]</span></td><td class="n"><span data-dado="FID_ALBEDO_COR">[preencher]</span></td><td class="n"><span data-dado="FID_ALBEDO_RESULTADO">[preencher]</span></td></tr>
-    <tr><td>HLF-CASE-01 DONA CIDA</td><td class="n"><span data-dado="FID_CASE01_PIOR">[preencher]</span></td><td class="n"><span data-dado="FID_CASE01_P5">[preencher]</span></td><td class="n"><span data-dado="FID_CASE01_CONTROLE">[preencher]</span></td><td class="n"><span data-dado="FID_CASE01_COR">[preencher]</span></td><td class="n"><span data-dado="FID_CASE01_RESULTADO">[preencher]</span></td></tr>
-    <tr><td>HLF-CASE-02 MÃE <span class="sh">♥</span></td><td class="n"><span data-dado="FID_CASE02_PIOR">[preencher]</span></td><td class="n"><span data-dado="FID_CASE02_P5">[preencher]</span></td><td class="n"><span data-dado="FID_CASE02_CONTROLE">[preencher]</span></td><td class="n"><span data-dado="FID_CASE02_COR">[preencher]</span></td><td class="n"><span data-dado="FID_CASE02_RESULTADO">[preencher]</span></td></tr>
-    <tr><td>HLF-CASE-03 MAINHA</td><td class="n"><span data-dado="FID_CASE03_PIOR">[preencher]</span></td><td class="n"><span data-dado="FID_CASE03_P5">[preencher]</span></td><td class="n"><span data-dado="FID_CASE03_CONTROLE">[preencher]</span></td><td class="n"><span data-dado="FID_CASE03_COR">[preencher]</span></td><td class="n"><span data-dado="FID_CASE03_RESULTADO">[preencher]</span></td></tr>
-    <tr><td>HLF-02-080 O SINGLE</td><td class="n"><span data-dado="FID_SINGLE_PIOR">[preencher]</span></td><td class="n"><span data-dado="FID_SINGLE_P5">[preencher]</span></td><td class="n"><span data-dado="FID_SINGLE_CONTROLE">[preencher]</span></td><td class="n"><span data-dado="FID_SINGLE_COR">[preencher]</span></td><td class="n"><span data-dado="FID_SINGLE_RESULTADO">[preencher]</span></td></tr>
+    <tr><td>Frente 0° (HLF-02)</td><td class="n"><span data-dado="FID_FRENTE_PIOR">AUSENTE</span></td><td class="n"><span data-dado="FID_FRENTE_P5">AUSENTE</span></td><td class="n"><span data-dado="FID_FRENTE_CONTROLE">AUSENTE</span></td><td class="n"><span data-dado="FID_FRENTE_COR">AUSENTE</span></td><td class="n"><span data-dado="FID_FRENTE_RESULTADO">AUSENTE</span></td></tr>
+    <tr><td>¾ frente 20° (HLF-02)</td><td class="n"><span data-dado="FID_TRES_QUARTOS_PIOR">AUSENTE</span></td><td class="n"><span data-dado="FID_TRES_QUARTOS_P5">AUSENTE</span></td><td class="n"><span data-dado="FID_TRES_QUARTOS_CONTROLE">AUSENTE</span></td><td class="n"><span data-dado="FID_TRES_QUARTOS_COR">AUSENTE</span></td><td class="n"><span data-dado="FID_TRES_QUARTOS_RESULTADO">AUSENTE</span></td></tr>
+    <tr><td>Verso 180° (HLF-02)</td><td class="n"><span data-dado="FID_VERSO_PIOR">AUSENTE</span></td><td class="n"><span data-dado="FID_VERSO_P5">AUSENTE</span></td><td class="n"><span data-dado="FID_VERSO_CONTROLE">AUSENTE</span></td><td class="n"><span data-dado="FID_VERSO_COR">AUSENTE</span></td><td class="n"><span data-dado="FID_VERSO_RESULTADO">AUSENTE</span></td></tr>
+    <tr><td>Base (L03)</td><td class="n"><span data-dado="FID_BASE_PIOR">AUSENTE</span></td><td class="n"><span data-dado="FID_BASE_P5">AUSENTE</span></td><td class="n"><span data-dado="FID_BASE_CONTROLE">AUSENTE</span></td><td class="n"><span data-dado="FID_BASE_COR">AUSENTE</span></td><td class="n"><span data-dado="FID_BASE_RESULTADO">AUSENTE</span></td></tr>
+    <tr><td>Albedo, quadros iluminados pela chama</td><td class="n"><span data-dado="FID_ALBEDO_PIOR">AUSENTE</span></td><td class="n"><span data-dado="FID_ALBEDO_P5">AUSENTE</span></td><td class="n"><span data-dado="FID_ALBEDO_CONTROLE">AUSENTE</span></td><td class="n"><span data-dado="FID_ALBEDO_COR">AUSENTE</span></td><td class="n"><span data-dado="FID_ALBEDO_RESULTADO">AUSENTE</span></td></tr>
+    <tr><td>HLF-CASE-01 DONA CIDA</td><td class="n"><span data-dado="FID_CASE01_PIOR">AUSENTE</span></td><td class="n"><span data-dado="FID_CASE01_P5">AUSENTE</span></td><td class="n"><span data-dado="FID_CASE01_CONTROLE">AUSENTE</span></td><td class="n"><span data-dado="FID_CASE01_COR">AUSENTE</span></td><td class="n"><span data-dado="FID_CASE01_RESULTADO">AUSENTE</span></td></tr>
+    <tr><td>HLF-CASE-02 MÃE <span class="sh">♥</span></td><td class="n"><span data-dado="FID_CASE02_PIOR">AUSENTE</span></td><td class="n"><span data-dado="FID_CASE02_P5">AUSENTE</span></td><td class="n"><span data-dado="FID_CASE02_CONTROLE">AUSENTE</span></td><td class="n"><span data-dado="FID_CASE02_COR">AUSENTE</span></td><td class="n"><span data-dado="FID_CASE02_RESULTADO">AUSENTE</span></td></tr>
+    <tr><td>HLF-CASE-03 MAINHA</td><td class="n"><span data-dado="FID_CASE03_PIOR">AUSENTE</span></td><td class="n"><span data-dado="FID_CASE03_P5">AUSENTE</span></td><td class="n"><span data-dado="FID_CASE03_CONTROLE">AUSENTE</span></td><td class="n"><span data-dado="FID_CASE03_COR">AUSENTE</span></td><td class="n"><span data-dado="FID_CASE03_RESULTADO">AUSENTE</span></td></tr>
+    <tr><td>HLF-02-080 O SINGLE</td><td class="n"><span data-dado="FID_SINGLE_PIOR">AUSENTE</span></td><td class="n"><span data-dado="FID_SINGLE_P5">AUSENTE</span></td><td class="n"><span data-dado="FID_SINGLE_CONTROLE">AUSENTE</span></td><td class="n"><span data-dado="FID_SINGLE_COR">AUSENTE</span></td><td class="n"><span data-dado="FID_SINGLE_RESULTADO">AUSENTE</span></td></tr>
   </tbody>
 </table>
-<p>Total: <span data-dado="FID_PECAS_CONFERIDAS">[preencher]</span> peças e <span data-dado="FID_QUADROS_CONFERIDOS">[preencher]</span> quadros de filme conferidos; <span data-dado="FID_PECAS_PASSARAM">[preencher]</span> passaram; <span data-dado="FID_PECAS_FALHARAM">[preencher]</span> falharam (motivo no relatório). Peça que falha não entra no conjunto final.</p>
-<figure data-slot="FIDELIDADE_TABELA"><div class="slot">Tabela de fidelidade · gerada do JSON real</div><figcaption>Tabela por peça gerada do JSON real: peça · pior bloco · 5º percentil · erro plantado pego · cor · resultado. Nada aqui vem de estimativa.</figcaption></figure>
+<p>Total: <span data-dado="FID_PECAS_CONFERIDAS">2</span> peças e <span data-dado="FID_QUADROS_CONFERIDOS">144</span> quadros de filme conferidos; <span data-dado="FID_PECAS_PASSARAM">2</span> passaram; <span data-dado="FID_PECAS_FALHARAM">0</span> falharam (motivo no relatório). Peça que falha não entra no conjunto final.</p>
+<figure data-slot="FIDELIDADE_TABELA"><table class="compacta"><thead><tr><th>Peça</th><th>Pior bloco</th><th>5º pct</th><th>Erro plantado</th><th>Cor (matiz / sat.)</th><th>Resultado</th></tr></thead><tbody><tr><td>F06C_SINAL_07-05 (filme, 72 quadros com rótulo)</td><td class="n">0,923</td><td class="n">0,968</td><td class="n">72/72 pegos</td><td class="n">−1,3° / 1,00</td><td>PASSA</td></tr><tr><td>F06C_SINAL_08-05 (filme, 72 quadros com rótulo)</td><td class="n">0,923</td><td class="n">0,968</td><td class="n">72/72 pegos</td><td class="n">−1,3° / 1,00</td><td>PASSA</td></tr><tr><td>KV-45_aceso</td><td class="n">0,926</td><td class="n">0,968</td><td class="n">−0,14 (pego)</td><td class="n">−1,4° / 1,00</td><td>PASSA</td></tr><tr><td>KV-45_apagado</td><td class="n">0,931</td><td class="n">0,968</td><td class="n">−0,14 (pego)</td><td class="n">−1,3° / 1,00</td><td>PASSA</td></tr></tbody></table><figcaption>Tabela por peça gerada do JSON real: peça · pior bloco · 5º percentil · erro plantado pego · cor · resultado. Nada aqui vem de estimativa.</figcaption></figure>
 </section>
 
 <!-- ============================================================ 07 -->
@@ -1051,12 +1053,12 @@ p, li, figcaption { text-wrap: pretty; }
 <table class="compacta">
   <thead><tr><th style="width:30%">Peça</th><th>Checklist</th><th style="width:30%">Peça</th><th>Checklist</th></tr></thead>
   <tbody>
-    <tr><td>KV-01 (4 formatos)</td><td><span data-dado="SEG_KV01">[preencher]</span></td><td>L05 · A TAMPA-PALCO</td><td><span data-dado="SEG_L05">[preencher]</span></td></tr>
-    <tr><td>KV-45 aceso (com e sem tipo)</td><td><span data-dado="SEG_KV45">[preencher]</span></td><td>F15 · A ENTRADA</td><td><span data-dado="SEG_F15">[preencher]</span></td></tr>
-    <tr><td>C02 · A PRIMEIRA FILA</td><td><span data-dado="SEG_C02">[preencher]</span></td><td>F06A e F06B</td><td><span data-dado="SEG_F06AB">[preencher]</span></td></tr>
-    <tr><td>C03 · O PIOR SHOW (miniatura)</td><td><span data-dado="SEG_C03">[preencher]</span></td><td>F06C 09.05 (aceso)</td><td><span data-dado="SEG_F06C">[preencher]</span></td></tr>
-    <tr><td>C04 · A DISCOGRAFIA</td><td><span data-dado="SEG_C04">[preencher]</span></td><td>Anúncios, bloco 9–15 s</td><td><span data-dado="SEG_ANUNCIOS">[preencher]</span></td></tr>
-    <tr><td>C06 · O MENOR HOLOFOTE</td><td><span data-dado="SEG_C06">[preencher]</span></td><td>C07 · PIX (miniatura do KV)</td><td><span data-dado="SEG_C07">[preencher]</span></td></tr>
+    <tr><td>KV-01 (4 formatos)</td><td><span data-dado="SEG_KV01">AUSENTE</span></td><td>L05 · A TAMPA-PALCO</td><td><span data-dado="SEG_L05">AUSENTE</span></td></tr>
+    <tr><td>KV-45 aceso (com e sem tipo)</td><td><span data-dado="SEG_KV45">11,7 min (2 placas)</span></td><td>F15 · A ENTRADA</td><td><span data-dado="SEG_F15">AUSENTE</span></td></tr>
+    <tr><td>C02 · A PRIMEIRA FILA</td><td><span data-dado="SEG_C02">AUSENTE</span></td><td>F06A e F06B</td><td><span data-dado="SEG_F06AB">AUSENTE</span></td></tr>
+    <tr><td>C03 · O PIOR SHOW (miniatura)</td><td><span data-dado="SEG_C03">AUSENTE</span></td><td>F06C 09.05 (aceso)</td><td><span data-dado="SEG_F06C">AUSENTE</span></td></tr>
+    <tr><td>C04 · A DISCOGRAFIA</td><td><span data-dado="SEG_C04">AUSENTE</span></td><td>Anúncios, bloco 9–15 s</td><td><span data-dado="SEG_ANUNCIOS">AUSENTE</span></td></tr>
+    <tr><td>C06 · O MENOR HOLOFOTE</td><td><span data-dado="SEG_C06">AUSENTE</span></td><td>C07 · PIX (miniatura do KV)</td><td><span data-dado="SEG_C07">AUSENTE</span></td></tr>
   </tbody>
 </table>
 </section>
@@ -1118,7 +1120,7 @@ p, li, figcaption { text-wrap: pretty; }
 </div>
 <div class="grade" style="grid-template-columns: 2.6fr 1fr">
   <figure data-slot="KV-01_16x9"><div class="slot">KV-01 16:9</div><figcaption>KV-01 16:9, 1920 × 1080, topo do site e banner da coleção.</figcaption></figure>
-  <figure data-slot="KV-45"><div class="slot">KV-45</div><figcaption>KV-45 aceso com tipo: o quadro de produto dos anúncios e filmes.</figcaption></figure>
+  <figure data-slot="KV-45"><img class="fig" src="figuras/KV-45.jpg" alt="KV-45"><figcaption>KV-45 aceso com tipo: o quadro de produto dos anúncios e filmes.</figcaption></figure>
 </div>
 
 <h3>8.3 A lista completa de imagens</h3>
@@ -1150,13 +1152,13 @@ p, li, figcaption { text-wrap: pretty; }
 <div class="grade g5">
   <figure data-slot="C01"><div class="slot">C01</div><figcaption>C01 · O MURO</figcaption></figure>
   <figure data-slot="C02"><div class="slot">C02</div><figcaption>C02 · A PRIMEIRA FILA</figcaption></figure>
-  <figure data-slot="C03"><div class="slot">C03</div><figcaption>C03 · O PIOR SHOW</figcaption></figure>
+  <figure data-slot="C03"><img class="fig" src="figuras/C03.jpg" alt="C03"><figcaption>C03 · O PIOR SHOW</figcaption></figure>
   <figure data-slot="C04"><div class="slot">C04</div><figcaption>C04 · A DISCOGRAFIA</figcaption></figure>
   <figure data-slot="C05"><div class="slot">C05</div><figcaption>C05 · O CASE</figcaption></figure>
   <figure data-slot="C06"><div class="slot">C06</div><figcaption>C06 · O MENOR HOLOFOTE</figcaption></figure>
-  <figure data-slot="C07"><div class="slot">C07</div><figcaption>C07 · PIX (6 mai)</figcaption></figure>
+  <figure data-slot="C07"><img class="fig" src="figuras/C07.jpg" alt="C07"><figcaption>C07 · PIX (6 mai)</figcaption></figure>
   <figure data-slot="C08"><div class="slot">C08</div><figcaption>C08 · NOVA TEMPORADA</figcaption></figure>
-  <figure data-slot="C09"><div class="slot">C09</div><figcaption>C09 · O CARTAZ DELA</figcaption></figure>
+  <figure data-slot="C09"><img class="fig" src="figuras/C09.jpg" alt="C09"><figcaption>C09 · O CARTAZ DELA</figcaption></figure>
   <figure data-slot="C10"><div class="slot">C10</div><figcaption>C10 · SALVA COMO</figcaption></figure>
 </div>
 
@@ -1176,19 +1178,19 @@ p, li, figcaption { text-wrap: pretty; }
 </table>
 <p class="pequeno">Regra de gênero: citam o gênero “bom dia” das correntes de mensagem, com disciplina de design. Não são religiosos. Nunca Comic Sans, glitter ou GIF de flor.</p>
 <div class="grade g4">
-  <figure data-slot="B01"><div class="slot">B01</div><figcaption>B01 · 02.05 · amarelo</figcaption></figure>
-  <figure data-slot="B02"><div class="slot">B02</div><figcaption>B02 · 03.05 · rosa</figcaption></figure>
-  <figure data-slot="B03"><div class="slot">B03</div><figcaption>B03 · 04.05 · laranja</figcaption></figure>
-  <figure data-slot="B04"><div class="slot">B04</div><figcaption>B04 · 05.05 · violeta</figcaption></figure>
-  <figure data-slot="B05"><div class="slot">B05</div><figcaption>B05 · 06.05 · amarelo</figcaption></figure>
-  <figure data-slot="B06"><div class="slot">B06</div><figcaption>B06 · 07.05 · rosa</figcaption></figure>
-  <figure data-slot="B07"><div class="slot">B07</div><figcaption>B07 · 08.05 · laranja</figcaption></figure>
-  <figure data-slot="B08"><div class="slot">B08</div><figcaption>B08 · 09.05 · amarelo</figcaption></figure>
+  <figure data-slot="B01"><img class="fig" src="figuras/B01.jpg" alt="B01"><figcaption>B01 · 02.05 · amarelo</figcaption></figure>
+  <figure data-slot="B02"><img class="fig" src="figuras/B02.jpg" alt="B02"><figcaption>B02 · 03.05 · rosa</figcaption></figure>
+  <figure data-slot="B03"><img class="fig" src="figuras/B03.jpg" alt="B03"><figcaption>B03 · 04.05 · laranja</figcaption></figure>
+  <figure data-slot="B04"><img class="fig" src="figuras/B04.jpg" alt="B04"><figcaption>B04 · 05.05 · violeta</figcaption></figure>
+  <figure data-slot="B05"><img class="fig" src="figuras/B05.jpg" alt="B05"><figcaption>B05 · 06.05 · amarelo</figcaption></figure>
+  <figure data-slot="B06"><img class="fig" src="figuras/B06.jpg" alt="B06"><figcaption>B06 · 07.05 · rosa</figcaption></figure>
+  <figure data-slot="B07"><img class="fig" src="figuras/B07.jpg" alt="B07"><figcaption>B07 · 08.05 · laranja</figcaption></figure>
+  <figure data-slot="B08"><img class="fig" src="figuras/B08.jpg" alt="B08"><figcaption>B08 · 09.05 · amarelo</figcaption></figure>
 </div>
 <div class="grade" style="grid-template-columns: 2fr 1fr 1.6fr">
-  <figure data-slot="STK"><div class="slot">STK · 8 figurinhas</div><figcaption>As oito figurinhas, 512 × 512 WebP.</figcaption></figure>
-  <figure data-slot="D01"><div class="slot">D01</div><figcaption>D01 · A CARTEIRINHA</figcaption></figure>
-  <figure data-slot="D02"><div class="slot">D02</div><figcaption>D02 · O INGRESSO</figcaption></figure>
+  <figure data-slot="STK"><img class="fig" src="figuras/STK.jpg" alt="STK"><figcaption>As oito figurinhas, 512 × 512 WebP.</figcaption></figure>
+  <figure data-slot="D01"><img class="fig" src="figuras/D01.jpg" alt="D01"><figcaption>D01 · A CARTEIRINHA</figcaption></figure>
+  <figure data-slot="D02"><img class="fig" src="figuras/D02.jpg" alt="D02"><figcaption>D02 · O INGRESSO</figcaption></figure>
 </div>
 
 <h4>E-commerce (estado LOJA, 1200 × 1200, sem tipo na imagem)</h4>
@@ -1328,13 +1330,13 @@ p, li, figcaption { text-wrap: pretty; }
 <table class="compacta">
   <thead><tr><th style="width:22%">Filme</th><th class="n">Duração</th><th class="n">Quadros</th><th class="n">Loudness integrado</th><th class="n">True peak</th><th class="n">Fidelidade (pior quadro)</th></tr></thead>
   <tbody>
-    <tr><td>F15 · A ENTRADA</td><td class="n"><span data-dado="F15_DURACAO">[preencher]</span></td><td class="n"><span data-dado="F15_QUADROS">[preencher]</span></td><td class="n"><span data-dado="F15_LUFS">[preencher]</span></td><td class="n"><span data-dado="F15_TP">[preencher]</span></td><td class="n"><span data-dado="F15_FID">[preencher]</span></td></tr>
-    <tr><td>F06A · CLAC</td><td class="n"><span data-dado="F06A_DURACAO">[preencher]</span></td><td class="n"><span data-dado="F06A_QUADROS">[preencher]</span></td><td class="n"><span data-dado="F06A_LUFS">[preencher]</span></td><td class="n"><span data-dado="F06A_TP">[preencher]</span></td><td class="n"><span data-dado="F06A_FID">[preencher]</span></td></tr>
-    <tr><td>F06B · O PIOR SHOW</td><td class="n"><span data-dado="F06B_DURACAO">[preencher]</span></td><td class="n"><span data-dado="F06B_QUADROS">[preencher]</span></td><td class="n"><span data-dado="F06B_LUFS">[preencher]</span></td><td class="n"><span data-dado="F06B_TP">[preencher]</span></td><td class="n"><span data-dado="F06B_FID">[preencher]</span></td></tr>
-    <tr><td>F06C · 07.05</td><td class="n"><span data-dado="F06C_0705_DURACAO">[preencher]</span></td><td class="n"><span data-dado="F06C_0705_QUADROS">[preencher]</span></td><td class="n"><span data-dado="F06C_0705_LUFS">[preencher]</span></td><td class="n"><span data-dado="F06C_0705_TP">[preencher]</span></td><td class="n"><span data-dado="F06C_0705_FID">[preencher]</span></td></tr>
-    <tr><td>F06C · 08.05</td><td class="n"><span data-dado="F06C_0805_DURACAO">[preencher]</span></td><td class="n"><span data-dado="F06C_0805_QUADROS">[preencher]</span></td><td class="n"><span data-dado="F06C_0805_LUFS">[preencher]</span></td><td class="n"><span data-dado="F06C_0805_TP">[preencher]</span></td><td class="n"><span data-dado="F06C_0805_FID">[preencher]</span></td></tr>
-    <tr><td>F06C · 09.05</td><td class="n"><span data-dado="F06C_0905_DURACAO">[preencher]</span></td><td class="n"><span data-dado="F06C_0905_QUADROS">[preencher]</span></td><td class="n"><span data-dado="F06C_0905_LUFS">[preencher]</span></td><td class="n"><span data-dado="F06C_0905_TP">[preencher]</span></td><td class="n"><span data-dado="F06C_0905_FID">[preencher]</span></td></tr>
-    <tr><td>S01 · DIGITANDO (sem embalagem)</td><td class="n"><span data-dado="S01_DURACAO">[preencher]</span></td><td class="n"><span data-dado="S01_QUADROS">[preencher]</span></td><td class="n"><span data-dado="S01_LUFS">[preencher]</span></td><td class="n"><span data-dado="S01_TP">[preencher]</span></td><td class="n">não se aplica</td></tr>
+    <tr><td>F15 · A ENTRADA</td><td class="n"><span data-dado="F15_DURACAO">AUSENTE</span></td><td class="n"><span data-dado="F15_QUADROS">AUSENTE</span></td><td class="n"><span data-dado="F15_LUFS">AUSENTE</span></td><td class="n"><span data-dado="F15_TP">AUSENTE</span></td><td class="n"><span data-dado="F15_FID">AUSENTE</span></td></tr>
+    <tr><td>F06A · CLAC</td><td class="n"><span data-dado="F06A_DURACAO">AUSENTE</span></td><td class="n"><span data-dado="F06A_QUADROS">AUSENTE</span></td><td class="n"><span data-dado="F06A_LUFS">AUSENTE</span></td><td class="n"><span data-dado="F06A_TP">AUSENTE</span></td><td class="n"><span data-dado="F06A_FID">AUSENTE</span></td></tr>
+    <tr><td>F06B · O PIOR SHOW</td><td class="n"><span data-dado="F06B_DURACAO">AUSENTE</span></td><td class="n"><span data-dado="F06B_QUADROS">AUSENTE</span></td><td class="n"><span data-dado="F06B_LUFS">AUSENTE</span></td><td class="n"><span data-dado="F06B_TP">AUSENTE</span></td><td class="n"><span data-dado="F06B_FID">AUSENTE</span></td></tr>
+    <tr><td>F06C · 07.05</td><td class="n"><span data-dado="F06C_0705_DURACAO">AUSENTE</span></td><td class="n"><span data-dado="F06C_0705_QUADROS">AUSENTE</span></td><td class="n"><span data-dado="F06C_0705_LUFS">AUSENTE</span></td><td class="n"><span data-dado="F06C_0705_TP">AUSENTE</span></td><td class="n"><span data-dado="F06C_0705_FID">AUSENTE</span></td></tr>
+    <tr><td>F06C · 08.05</td><td class="n"><span data-dado="F06C_0805_DURACAO">AUSENTE</span></td><td class="n"><span data-dado="F06C_0805_QUADROS">AUSENTE</span></td><td class="n"><span data-dado="F06C_0805_LUFS">AUSENTE</span></td><td class="n"><span data-dado="F06C_0805_TP">AUSENTE</span></td><td class="n"><span data-dado="F06C_0805_FID">AUSENTE</span></td></tr>
+    <tr><td>F06C · 09.05</td><td class="n"><span data-dado="F06C_0905_DURACAO">AUSENTE</span></td><td class="n"><span data-dado="F06C_0905_QUADROS">AUSENTE</span></td><td class="n"><span data-dado="F06C_0905_LUFS">AUSENTE</span></td><td class="n"><span data-dado="F06C_0905_TP">AUSENTE</span></td><td class="n"><span data-dado="F06C_0905_FID">AUSENTE</span></td></tr>
+    <tr><td>S01 · DIGITANDO (sem embalagem)</td><td class="n"><span data-dado="S01_DURACAO">AUSENTE</span></td><td class="n"><span data-dado="S01_QUADROS">AUSENTE</span></td><td class="n"><span data-dado="S01_LUFS">AUSENTE</span></td><td class="n"><span data-dado="S01_TP">AUSENTE</span></td><td class="n">não se aplica</td></tr>
   </tbody>
 </table>
 <p class="pequeno">Alvos: −14 LUFS integrado, −1 dBTP. Medir com <code>_build/sound/analisar.py</code> no arquivo final decodificado, nunca no projeto.</p>
@@ -1346,7 +1348,7 @@ p, li, figcaption { text-wrap: pretty; }
   <li><strong>0,1–0,9 s:</strong> rugido de estádio.</li>
   <li><strong>Corte seco.</strong> Três palmas de um só par de mãos, numa sala pequena e seca, em 1,1, 1,4 e 1,7 s.</li>
 </ol>
-<p>Um estádio inteiro, entregue por uma pessoa só: esse é o presente. Arquivo: <code>04_FILMES/som/identidade/HLF-ID-01_vinheta_ovacao_de_uma_pessoa_so_2s0.wav</code>; palmas medidas pela equipe de som em 1,1005 / 1,4005 / 1,7000 s. Duração do arquivo final: <span data-dado="SOM_LOGO_DURACAO">[preencher]</span>.</p>
+<p>Um estádio inteiro, entregue por uma pessoa só: esse é o presente. Arquivo: <code>04_FILMES/som/identidade/HLF-ID-01_vinheta_ovacao_de_uma_pessoa_so_2s0.wav</code>; palmas medidas pela equipe de som em 1,1005 / 1,4005 / 1,7000 s. Duração do arquivo final: <span data-dado="SOM_LOGO_DURACAO">2,000 s</span>.</p>
 <h4>Trilha</h4>
 <ul>
   <li><strong>FANFARRA HOLOFOTE</strong> (<code>HLF-MUS-01</code>): fanfarra escolar a 120 BPM, 20 s (10 compassos). Composta e sintetizada inteiramente em código (<code>_build/sound/musica.py</code>), sem amostra gravada, sem melodia e sem citar ritmo de música, torcida ou artista. Obra do SOL Estúdio. Stems: caixas, bumbos, pratos e a soma dos tambores; pontos de edição a cada 2,0 s (48 quadros) em <code>HLF-MUS-01_pontos_de_edicao.json</code>.</li>
@@ -1362,7 +1364,7 @@ p, li, figcaption { text-wrap: pretty; }
 <h4>A metamorfose</h4>
 <p>O crepitar do pavio vira aplauso distante em <strong>1,5 s</strong>. <strong>A vela aplaude ela.</strong></p>
 <h4>Dado, não decoração</h4>
-<p>Toda batida de tipo e todo aquecimento de CLAC são presos à <strong>detecção de ataque nos transientes gravados</strong>, não a olho. <code>_build/sound/onsets.py</code> (librosa, refinado à amostra) mede os ataques na mixagem final; <code>filmes.py</code> põe cada transiente no quadro com <code>"sync": "onset"</code> e informa, em <code>04_FILMES/som/filmes/&lt;ID&gt;_som.json</code>, o desvio de cada um (±1 quadro = OK). O tipo encaixa nesses tempos medidos. Maior desvio medido: <span data-dado="SOM_ONSET_DESVIO_MAX">[preencher]</span>.</p>
+<p>Toda batida de tipo e todo aquecimento de CLAC são presos à <strong>detecção de ataque nos transientes gravados</strong>, não a olho. <code>_build/sound/onsets.py</code> (librosa, refinado à amostra) mede os ataques na mixagem final; <code>filmes.py</code> põe cada transiente no quadro com <code>"sync": "onset"</code> e informa, em <code>04_FILMES/som/filmes/&lt;ID&gt;_som.json</code>, o desvio de cada um (±1 quadro = OK). O tipo encaixa nesses tempos medidos. Maior desvio medido: <span data-dado="SOM_ONSET_DESVIO_MAX">0,106 quadro (em 44 ataques medidos)</span>.</p>
 <h4>Mixagem</h4>
 <ul>
   <li><strong>−14 LUFS integrado, ≤ −1 dBTP</strong> na identidade, na música e nos filmes (<code>mix.py</code>: pyloudnorm, ITU-R BS.1770-4, limitador de true peak com sobreamostragem 4×). Efeitos de biblioteca a −20 LUFS-M de pico; os ganhos de uso estão nos <code>*_cues.json</code> dos filmes.</li>
@@ -1415,8 +1417,8 @@ p, li, figcaption { text-wrap: pretty; }
 <h4>M01 · <em>a atração</em> · só P01 e P03</h4>
 <p>Brasileira fictícia de cerca de 54 anos: pele morena média e quente, linhas de riso, leve assimetria; cabelo escuro curto e desalinhado com grisalho natural nas têmporas; <strong>óculos de leitura de armação vermelha empurrados para a cabeça</strong>; batom vermelho; argolinhas douradas. Em P01: <strong>blazer smoking preto com lapela de cetim</strong> sobre camiseta branca de algodão, calça de moletom cinza de ficar em casa e chinelo de borracha preto. <strong>O blazer de foto de divulgação sobre a roupa de casa é a ideia inteira.</strong> Pega no meio da risada, uma mão cobrindo metade da boca, a outra erguida com a palma para fora, como quem diz “para com isso”. Sofá bege, dois vasos de planta, relógio de parede, um retrato de família desfocado. O substituto azul numa mesa de centro baixa de madeira 70 cm à frente dela (x 50%, y 70%, 13% da altura), apagado. Nada azul.</p>
 <div class="grade g2">
-  <figure data-slot="CASTING_H01"><div class="slot">Casting H01 · não gerado</div><figcaption>H01 · a fã atrasada. Referência de casting <strong>não gerada</strong> neste kit; o animatic usa manequim cinza com a silhueta dela. Prompt em <code>05_ANUNCIO/PROMPTS_MODELO.json</code>.</figcaption></figure>
-  <figure data-slot="CASTING_H02"><div class="slot">Casting H02 · não gerado</div><figcaption>H02 · o fã atrasado. Referência de casting <strong>não gerada</strong>; mesma situação de H01.</figcaption></figure>
+  <figure data-slot="CASTING_H01"><img class="fig" src="figuras/CASTING_H01.jpg" alt="CASTING_H01"><figcaption>H01 · a fã atrasada. Referência de casting <strong>não gerada</strong> neste kit; o animatic usa manequim cinza com a silhueta dela. Prompt em <code>05_ANUNCIO/PROMPTS_MODELO.json</code>.</figcaption></figure>
+  <figure data-slot="CASTING_H02"><img class="fig" src="figuras/CASTING_H02.jpg" alt="CASTING_H02"><figcaption>H02 · o fã atrasado. Referência de casting <strong>não gerada</strong>; mesma situação de H01.</figcaption></figure>
 </div>
 
 <h3>10.3 Os três conceitos: roteiros exatos</h3>
@@ -1463,14 +1465,14 @@ p, li, figcaption { text-wrap: pretty; }
 <table class="compacta">
   <thead><tr><th style="width:8%">Master</th><th style="width:18%">Conceito</th><th style="width:8%">Elenco</th><th class="n">Caracteres</th><th class="n">Taxa</th><th class="n">VO gancho</th><th class="n">VO corpo</th><th class="n">VO KV</th></tr></thead>
   <tbody>
-    <tr><td class="id">1A</td><td>O PIOR SHOW</td><td>H01</td><td class="n">86</td><td class="n">14,3 car/s</td><td class="n"><span data-dado="VO_1A_GANCHO">[preencher]</span></td><td class="n"><span data-dado="VO_1A_CORPO">[preencher]</span></td><td class="n"><span data-dado="VO_1A_KV">[preencher]</span></td></tr>
-    <tr><td class="id">1B</td><td>O PIOR SHOW</td><td>H01</td><td class="n">86</td><td class="n">14,3 car/s</td><td class="n"><span data-dado="VO_1B_GANCHO">[preencher]</span></td><td class="n"><span data-dado="VO_1B_CORPO">[preencher]</span></td><td class="n"><span data-dado="VO_1B_KV">[preencher]</span></td></tr>
-    <tr><td class="id">1C</td><td>O PIOR SHOW</td><td>H02</td><td class="n">75</td><td class="n">12,5 car/s</td><td class="n"><span data-dado="VO_1C_GANCHO">[preencher]</span></td><td class="n"><span data-dado="VO_1C_CORPO">[preencher]</span></td><td class="n"><span data-dado="VO_1C_KV">[preencher]</span></td></tr>
-    <tr><td class="id">2A</td><td>PRIMEIRO SINAL</td><td>H01</td><td class="n">78</td><td class="n">13,0 car/s</td><td class="n"><span data-dado="VO_2A_GANCHO">[preencher]</span></td><td class="n"><span data-dado="VO_2A_CORPO">[preencher]</span></td><td class="n"><span data-dado="VO_2A_KV">[preencher]</span></td></tr>
-    <tr><td class="id">2B</td><td>PRIMEIRO SINAL</td><td>H01</td><td class="n">86</td><td class="n">14,3 car/s</td><td class="n"><span data-dado="VO_2B_GANCHO">[preencher]</span></td><td class="n"><span data-dado="VO_2B_CORPO">[preencher]</span></td><td class="n"><span data-dado="VO_2B_KV">[preencher]</span></td></tr>
-    <tr><td class="id">3A</td><td>FÃ DE CARTEIRINHA</td><td>H01</td><td class="n">93</td><td class="n">15,5 car/s</td><td class="n"><span data-dado="VO_3A_GANCHO">[preencher]</span></td><td class="n"><span data-dado="VO_3A_CORPO">[preencher]</span></td><td class="n"><span data-dado="VO_3A_KV">[preencher]</span></td></tr>
-    <tr><td class="id">3B</td><td>FÃ DE CARTEIRINHA</td><td>H01</td><td class="n">87</td><td class="n">14,5 car/s</td><td class="n"><span data-dado="VO_3B_GANCHO">[preencher]</span></td><td class="n"><span data-dado="VO_3B_CORPO">[preencher]</span></td><td class="n"><span data-dado="VO_3B_KV">[preencher]</span></td></tr>
-    <tr><td class="id">3C</td><td>FÃ DE CARTEIRINHA</td><td>H02</td><td class="n">95</td><td class="n">15,8 car/s</td><td class="n"><span data-dado="VO_3C_GANCHO">[preencher]</span></td><td class="n"><span data-dado="VO_3C_CORPO">[preencher]</span></td><td class="n"><span data-dado="VO_3C_KV">[preencher]</span></td></tr>
+    <tr><td class="id">1A</td><td>O PIOR SHOW</td><td>H01</td><td class="n">86</td><td class="n">14,3 car/s</td><td class="n"><span data-dado="VO_1A_GANCHO">1,83 s / 1,85 s</span></td><td class="n"><span data-dado="VO_1A_CORPO">3,18 s / 3,85 s</span></td><td class="n"><span data-dado="VO_1A_KV">0,72 s / 1,60 s</span></td></tr>
+    <tr><td class="id">1B</td><td>O PIOR SHOW</td><td>H01</td><td class="n">86</td><td class="n">14,3 car/s</td><td class="n"><span data-dado="VO_1B_GANCHO">1,81 s / 1,85 s</span></td><td class="n"><span data-dado="VO_1B_CORPO">3,12 s / 3,85 s</span></td><td class="n"><span data-dado="VO_1B_KV">0,72 s / 1,60 s</span></td></tr>
+    <tr><td class="id">1C</td><td>O PIOR SHOW</td><td>H02</td><td class="n">75</td><td class="n">12,5 car/s</td><td class="n"><span data-dado="VO_1C_GANCHO">1,79 s / 1,85 s</span></td><td class="n"><span data-dado="VO_1C_CORPO">2,45 s / 3,85 s</span></td><td class="n"><span data-dado="VO_1C_KV">0,75 s / 1,60 s</span></td></tr>
+    <tr><td class="id">2A</td><td>PRIMEIRO SINAL</td><td>H01</td><td class="n">78</td><td class="n">13,0 car/s</td><td class="n"><span data-dado="VO_2A_GANCHO">1,09 s / 1,85 s</span></td><td class="n"><span data-dado="VO_2A_CORPO">3,80 s / 3,85 s</span></td><td class="n"><span data-dado="VO_2A_KV">1,15 s / 1,60 s</span></td></tr>
+    <tr><td class="id">2B</td><td>PRIMEIRO SINAL</td><td>H01</td><td class="n">86</td><td class="n">14,3 car/s</td><td class="n"><span data-dado="VO_2B_GANCHO">1,62 s / 1,85 s</span></td><td class="n"><span data-dado="VO_2B_CORPO">3,80 s / 3,85 s</span></td><td class="n"><span data-dado="VO_2B_KV">1,15 s / 1,60 s</span></td></tr>
+    <tr><td class="id">3A</td><td>FÃ DE CARTEIRINHA</td><td>H01</td><td class="n">93</td><td class="n">15,5 car/s</td><td class="n"><span data-dado="VO_3A_GANCHO">1,81 s / 1,85 s</span></td><td class="n"><span data-dado="VO_3A_CORPO">3,46 s / 3,85 s</span></td><td class="n"><span data-dado="VO_3A_KV">1,24 s / 1,60 s</span></td></tr>
+    <tr><td class="id">3B</td><td>FÃ DE CARTEIRINHA</td><td>H01</td><td class="n">87</td><td class="n">14,5 car/s</td><td class="n"><span data-dado="VO_3B_GANCHO">1,83 s / 1,85 s</span></td><td class="n"><span data-dado="VO_3B_CORPO">3,14 s / 3,85 s</span></td><td class="n"><span data-dado="VO_3B_KV">1,24 s / 1,60 s</span></td></tr>
+    <tr><td class="id">3C</td><td>FÃ DE CARTEIRINHA</td><td>H02</td><td class="n">95</td><td class="n">15,8 car/s</td><td class="n"><span data-dado="VO_3C_GANCHO">1,81 s / 1,85 s</span></td><td class="n"><span data-dado="VO_3C_CORPO">3,50 s / 3,85 s</span></td><td class="n"><span data-dado="VO_3C_KV">1,26 s / 1,60 s</span></td></tr>
   </tbody>
 </table>
 
@@ -1508,7 +1510,7 @@ p, li, figcaption { text-wrap: pretty; }
   <li>Manequim cinza com a silhueta de H01/H02 em 0–9 s; KV-45 real em 9–15 s; tags, legendas, títulos e bloco KV por código; sons da biblioteca da §9.6.</li>
   <li><strong>VO temporária:</strong> Kokoro local (<code>pf_dora</code> feminina, <code>pm_alex</code> masculina, PT-BR), ajustada à janela só pela velocidade (<code>_build/anuncio/vo.py</code>). Será trocada pela voz licenciada.</li>
   <li><strong>Sincronia das legendas:</strong> sem ASR nesta máquina, as palavras são alinhadas pela energia da própria VO (<code>_build/anuncio/legendas.py</code>): precisão de cerca de uma sílaba. Com a voz final, rodar de novo. Linha do tempo: gancho a partir de 0,10 s; corpo 2,05 s; linha do KV 9,25 s (depois do CLAC em 9,0).</li>
-  <li>Loudness medido dos animatics: <span data-dado="ANIMATIC_LUFS">[preencher]</span>.</li>
+  <li>Loudness medido dos animatics: <span data-dado="ANIMATIC_LUFS">AUSENTE</span>.</li>
 </ul>
 <figure data-slot="ANUNCIO_ANIMATIC"><div class="slot">Animatic · quadros-chave dos 8 masters</div><figcaption>Quadros-chave do animatic: gancho (0–2 s), corpo (2–6 s), gesto (6–9 s) e bloco KV (9–15 s), com manequim no lugar das pessoas.</figcaption></figure>
 </section>

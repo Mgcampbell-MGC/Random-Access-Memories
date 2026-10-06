@@ -13,7 +13,7 @@ executado: os zips são abertos pelo Python e só o áudio é lido.
 |---|---|---|---|---|
 | Impact Sounds (pack) | Kenney (kenney.nl) | https://kenney.nl/assets/impact-sounds · "License: Creative Commons CC0" + `License.txt` no zip | `impactBell_heavy_002.ogg` (só o ataque metálico) | sinos |
 | RPG Audio (pack) | Kenney | https://kenney.nl/assets/rpg-audio · CC0 + `License.txt` | `metalLatch.ogg`, `bookClose.ogg`, `cloth1.ogg`, `knifeSlice.ogg`, `creak1-3.ogg` | CLAC, CLAC-off, ímã do case, pulseira, fósforo, cadeiras do murmúrio |
-| UI Audio (pack) | Kenney | https://kenney.nl/assets/ui-audio · CC0 + `License.txt` | `click2.ogg`, `click3.ogg`, `switch7.ogg` | pulseira, ímã do case |
+| UI Audio (pack) | Kenney | https://kenney.nl/assets/ui-audio · CC0 + `License.txt` | `click2.ogg`, `click3.ogg`, `switch7.ogg`; e, no S01, `click4.ogg`, `click5.ogg`, `switch13.ogg`, `switch14.ogg` | pulseira, ímã do case; as teclas do S01 (passa-baixa 5,2 kHz; as de apagar −3 semitons) |
 | Casino Audio (pack) | Kenney | https://kenney.nl/assets/casino-audio · CC0 + `License.txt` | `cards-pack-open-1.ogg` (o rasgo) | selo de papel |
 | Applause in a large hall or church | eXpl0it3r | https://opengameart.org/content/applause-in-a-large-hall-or-church · "License(s): CC0" | o aplauso inteiro (39 s) | aplauso distante, rugido, fusão |
 | Well Done (palmas) | qubodup | https://opengameart.org/content/well-done · CC0 (*"Changed to CC0 on 2024-10-05"*; gravação própria) | 4 palmas isoladas (t = 0,064 · 1,089 · 2,235 · 3,432 s) | todas as palmas, vinheta, fusão |

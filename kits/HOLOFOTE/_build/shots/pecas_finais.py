@@ -46,12 +46,32 @@ def qa(nome, r):
 
 
 # ------------------------------------------------------------------------------------------------ KV-01 / KV-45
+# §D.8.6: the safety micro-line is on every lit-product post. kv.html (the director's exact KV-01 layer) has none,
+# so it is added here as its own layer, in the KV-45 style (Condensed One lower case, papel 85 %), in the dark floor
+# between the pool's lower edge and the lockup (9:16, 1:1), under the lockup (4:5), under the left lockup (16:9).
+KV01_SEG = {'9x16': dict(x=540, y=1408, cap=18, align='center'), '4x5': dict(x=540, y=1248, cap=16, align='center'),
+            '1x1': dict(x=540, y=946, cap=15, align='center'), '16x9': dict(x=160, y=944, cap=17, align='left')}
+KV01_RES = {'9x16': (1080, 1920), '4x5': (1080, 1350), '1x1': (1080, 1080), '16x9': (1920, 1080)}
+
+
 def kv01():
-    jobs = [tipo_kv.job(f, os.path.join(CACHE, 'KV-01_%s_tipo.png' % f)) for f in ('9x16', '4x5', '1x1', '16x9')]
+    fm = ('9x16', '4x5', '1x1', '16x9')
+    jobs = [tipo_kv.job(f, os.path.join(CACHE, 'KV-01_%s_tipo.png' % f)) for f in fm]
+    for f in fm:
+        w, h = KV01_RES[f]
+        g = KV01_SEG[f]
+        jobs.append(dict(html=HTML, saida=os.path.join(CACHE, 'KV-01_%s_seguranca.png' % f), w=w, h=h, transparente=True,
+                         dados=dict(W=w, H=h, blocos=[], linhas=[dict(s=C(SEG, g['cap'], lsEm=0.02, op=0.85), x=g['x'],
+                                                                          y=g['y'], align=g['align'])])))
     res = renderizar(jobs, verbose=False)
-    for f, j, r in zip(('9x16', '4x5', '1x1', '16x9'), jobs, res):
-        qa('KV-01 ' + f, r)
-        compor(os.path.join(RENDERS, 'KV-01_%s_limpo.png' % f), j['saida'], os.path.join(LAN, 'KV', 'KV-01_%s.png' % f))
+    for i, f in enumerate(fm):
+        qa('KV-01 ' + f, res[i])
+        json.dump(res[4 + i].get('info'), open(os.path.join(CACHE, 'KV-01_%s_seguranca.json' % f), 'w'), ensure_ascii=False)
+        tmp = os.path.join(CACHE, 'KV-01_%s_tipo_tudo.png' % f)
+        a = Image.open(jobs[i]['saida']).convert('RGBA')
+        a.alpha_composite(Image.open(jobs[4 + i]['saida']).convert('RGBA'))
+        a.save(tmp)
+        compor(os.path.join(RENDERS, 'KV-01_%s_limpo.png' % f), tmp, os.path.join(LAN, 'KV', 'KV-01_%s.png' % f))
 
 
 KV45_TITULOS = (('SUA VEZ.', 'SUA-VEZ'), ('A ATRAÇÃO É ELA.', 'A-ATRACAO-E-ELA'), (None, 'sem-titulo'))
@@ -197,7 +217,13 @@ def c03c07():
     W, H_ = im.size
     # C03: a Ø360 porthole on the lit candle (flame to label), square crop on the glass
     c03 = os.path.join(CACHE, 'C03_vela.png')
-    im.crop((0, 470, 1080, 1550)).save(c03)
+    # the flame and the label face; a preto ring (~10 px at the final Ø 360) keeps the disc's edge where the yellow
+    # label meets the yellow paper (the brief's 'black circle'); no X arm inside
+    from PIL import ImageDraw
+    sq = im.crop((90, 430, 990, 1330))
+    d = ImageDraw.Draw(sq)
+    d.ellipse((0, 0, 899, 899), outline=(18, 16, 20), width=26)
+    sq.save(c03)
     # C07: a 4:5 KV thumbnail (the whole lit candle on its X)
     c07 = os.path.join(CACHE, 'C07_kv.png')
     y0 = 380

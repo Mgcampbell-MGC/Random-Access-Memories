@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>HOLOFOTE · S01 DIGITANDO</title>
+<link rel="stylesheet" href="../../tokens.css"><link rel="stylesheet" href="../../brand/base.css">
+<script src="../../brand/metricas.js"></script><script src="../../brand/wordmark.js"></script><script src="../../brand/holofote.js"></script>
+<style>
+html,body{background:#FFF8EC}
+#muro{position:absolute;left:0;top:0;width:1080px;height:1920px}
+#caret{position:absolute;background:#121014;width:7px;border-radius:1px}
+</style>
+</head><body>
+<img id="muro" src="_s01/muro.png">
+<div id="caret"></div>
+<script>
+/* S01 · DIGITANDO (platform §E.2). One page; Python calls quadro(estado) per frame and screenshots it.
+   estado = {n1: chars of message 1 shown, n2: chars of message 2 shown, caret: 0|1, lock: 0|1}.
+   Text is never reflowed: each line shows a PREFIX of its own string, so shaping and kerning are the full line's. */
+const D = HF.dados({
+  m1: ['mãe, você foi', 'a melhor', 'plateia d'],   // joined by the soft-wrap spaces: 'mãe, você foi a melhor plateia d'
+  m2: ['domingo', 'tô aí.'],
+  x0: 120, x1: 920,                                   // safe box (§D.10)
+  lockup: 'holofote nela.', lockCap: 42, lockBase: 1470, lockX: 520,
+});
+HF.pronto(() => {
+  const b = document.body; b.style.width = '1080px'; b.style.height = '1920px';
+  // one size for both messages: the longest line of message 1 fills the safe box at the ink
+  const probe = HF.texto(b, { t: D.m1[0], f: 'S', fs: 120 });
+  HF.porTamanho(probe, D.x1 - D.x0);
+  const fs = Math.floor(probe.s.fs * 10) / 10; probe.el.remove();
+  const lh = Math.round(fs * 1.18 / 8) * 8;           // 8 px rhythm (§D.10)
+  const cap = HF.capPx({ f: 'S', fs }), xh = HF.xPx({ f: 'S', fs });
+  // vertical: message 1's block (3 lines) sits on the optical centre (y 880); message 2 starts on its first baseline
+  const n = D.m1.length, blockH = (n - 1) * lh + cap;
+  const base0 = Math.round(880 - blockH / 2 + cap);
+  const mk = (t, i) => { const o = HF.texto(b, { t, f: 'S', fs }); HF.posicionar(o, D.x0, base0 + i * lh, 'left'); return o; };
+  const L1 = D.m1.map(mk), L2 = D.m2.map(mk);
+  // message 2 must fit on its lines
+  const w2 = Math.max(...L2.map((o) => o.inkW));
+  const lock = HF.texto(b, { t: D.lockup, f: 'X', fs: HF.fsDeCap('X', D.lockCap) });
+  HF.posicionar(lock, D.lockX, D.lockBase, 'center');
+  const caret = document.getElementById('caret');
+  caret.style.height = Math.round(cap * 1.32) + 'px';
+  // char counts with the soft-wrap spaces (a space at a wrap belongs to the line before it)
+  const len = (L) => L.reduce((a, o, i) => a + o.s.t.length + (i < L.length - 1 ? 1 : 0), 0);
+  function show(L, k) {
+    // returns [line index, x of caret] after showing k chars of the joined string
+    let rest = k, at = [0, D.x0];
+    L.forEach((o, i) => {
+      const full = o.s.t.length + (i < L.length - 1 ? 1 : 0);
+      const m = Math.max(0, Math.min(rest, full));
+      const vis = o.s.t.slice(0, Math.min(m, o.s.t.length));
+      o.sp.textContent = vis;
+      if (rest > 0 || i === 0) {
+        if (m === full && i < L.length - 1) at = [i + 1, D.x0];            // the wrap space was typed: caret to next line
+        else if (vis.length) {
+          const r = document.createRange(); r.setStart(o.sp.firstChild, 0); r.setEnd(o.sp.firstChild, vis.length);
+          at = [i, r.getBoundingClientRect().right];
+        } else at = [i, D.x0];
+      }
+      rest -= full;
+    });
+    return at;
+  }
+  window.quadro = function (e) {
+    L1.forEach((o) => (o.el.style.display = e.n2 > 0 || e.fase2 ? 'none' : 'block'));
+    L2.forEach((o) => (o.el.style.display = e.fase2 ? 'block' : 'none'));
+    const at = e.fase2 ? show(L2, e.n2) : show(L1, e.n1);
+    const base = base0 + at[0] * lh;
+    caret.style.left = Math.round(at[1] + (at[1] > D.x0 + 1 ? fs * 0.06 : -2)) + 'px';
+    caret.style.top = Math.round(base - cap * 1.1) + 'px';
+    caret.style.opacity = e.caret ? 1 : 0;
+    lock.el.style.opacity = e.lock ? 1 : 0;
+    return true;
+  };
+  window.HF_INFO = { fs, lh, cap, xh, base0, len1: len(L1), len2: len(L2), w1: L1.map((o) => o.inkW), w2,
+    lock: { inkW: lock.inkW, x0: lock.inkX0, x1: lock.inkX1 } };
+  window.quadro({ n1: 0, n2: 0, caret: 1, lock: 0, fase2: 0 });
+});
+</script>
+</body></html>

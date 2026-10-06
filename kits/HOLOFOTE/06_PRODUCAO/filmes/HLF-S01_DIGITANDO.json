@@ -1,0 +1,62 @@
+{
+  "filme": "HLF-S01_DIGITANDO",
+  "formato": "9:16 1080×1920",
+  "fps": 24,
+  "quadros": 260,
+  "duracao_s": 10.833,
+  "marcos": {
+    "hold_inicio": 90,
+    "assinatura": 226,
+    "quadros": 260
+  },
+  "layout": {
+    "fs": 125.5,
+    "lh": 152,
+    "cap": 92.98295,
+    "xh": 62.2731,
+    "base0": 774,
+    "len1": 32,
+    "len2": 14,
+    "w1": [
+      799.4467,
+      555.6583,
+      557.18215
+    ],
+    "w2": 515.918,
+    "lock": {
+      "inkW": 469.3501320422535,
+      "x0": 285.3249339788733,
+      "x1": 754.6750660211268
+    }
+  },
+  "nota": "The platform says 6 s; its own frame counts (12 f/word, 18 f hold, 2 f/letter deleted, 12 f/word) sum to 202 f = 8,4 s before the sign-off. Director: the rhythm wins; the film runs 10.83 s.",
+  "som": {
+    "arquivo": "HLF-S01_DIGITANDO_som.wav",
+    "duracao_s": 10.833,
+    "fps": 24,
+    "lufs_i": -14.0,
+    "true_peak_dbtp": -1.04,
+    "normalizacao": "−14 LUFS integrado, ≤ −1 dBTP",
+    "cues": [
+      {
+        "label": "HLF-ID-01 (1ª palma no quadro da assinatura)",
+        "quadro": 226,
+        "arquivo": "identidade/HLF-ID-01_vinheta_ovacao_de_uma_pessoa_so_2s0.wav",
+        "inicio_s": 8.3162,
+        "sync": "onset"
+      }
+    ],
+    "teclas": 46,
+    "apagadas": 32,
+    "fontes_teclas": "Kenney UI Audio (CC0): click2, click4, click5, switch13, switch14",
+    "quadros_chave": [
+      {
+        "quadro": 226,
+        "onset_medido_s": 9.4172,
+        "desvio_quadros": 0.013,
+        "ok": true
+      }
+    ]
+  },
+  "fidelidade": "não se aplica (sem embalagem)"
+}

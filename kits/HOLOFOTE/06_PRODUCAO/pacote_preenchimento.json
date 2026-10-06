@@ -1,0 +1,211 @@
+{
+  "figuras": {
+    "ROTULO_FRENTE": [
+      "02_PRODUTO/rotulos/HLF-02_ROTULO_wrap_preview.png"
+    ],
+    "ROTULO_VERSO": [
+      "02_PRODUTO/rotulos/HLF-02_ROTULO_wrap_preview.png"
+    ],
+    "TAMPA": [
+      "02_PRODUTO/tampa/HLF-TAMPA-90_preview.png"
+    ],
+    "BASE": [
+      "02_PRODUTO/base/HLF-BASE-200_preview_por-baixo.png"
+    ],
+    "PULSEIRA": [
+      "02_PRODUTO/pulseira/PULSEIRA_padrao.png",
+      "02_PRODUTO/pulseira/PULSEIRA_SELO_faixa.png"
+    ],
+    "SETLIST": [
+      "02_PRODUTO/setlist/SETLIST_preview_aberto.jpg"
+    ],
+    "CARTUCHO": [
+      "02_PRODUTO/cartucho/HLF-02-200_CARTUCHO_planificado_preview.jpg"
+    ],
+    "ROTULOS_PERSONALIZADOS": [
+      "02_PRODUTO/rotulos/HLF-CASE-01_DONA-CIDA_ROTULO_wrap_preview.png",
+      "02_PRODUTO/rotulos/HLF-CASE-02_MAE-CORACAO_ROTULO_wrap_preview.png",
+      "02_PRODUTO/rotulos/HLF-CASE-03_MAINHA_ROTULO_wrap_preview.png"
+    ],
+    "PALETA": [
+      "01_MARCA/livro/LIVRO-08_PALETA.png"
+    ],
+    "TIPOGRAFIA": [
+      "01_MARCA/livro/LIVRO-04_AS-TRES-VOZES.png"
+    ],
+    "LOGO": [
+      "01_MARCA/livro/LIVRO-05_O-LOGO.png"
+    ],
+    "STK": [
+      "03_LANCAMENTO/STK/STK_folha_contato.jpg"
+    ],
+    "KV-45": [
+      "02_PRODUTO/renders/KV-45_aceso.png"
+    ],
+    "C03": [
+      "03_LANCAMENTO/C/C03_O-PIOR-SHOW.png"
+    ],
+    "C07": [
+      "03_LANCAMENTO/C/C07_PIX.png"
+    ],
+    "C09": [
+      "03_LANCAMENTO/C/C09_O-CARTAZ-DELA_DONA-CIDA.png"
+    ],
+    "B01": [
+      "03_LANCAMENTO/B/B01_BOLETIM_0205_1x1.png"
+    ],
+    "B02": [
+      "03_LANCAMENTO/B/B02_BOLETIM_0305_1x1.png"
+    ],
+    "B03": [
+      "03_LANCAMENTO/B/B03_BOLETIM_0405_1x1.png"
+    ],
+    "B04": [
+      "03_LANCAMENTO/B/B04_BOLETIM_0505_1x1.png"
+    ],
+    "B05": [
+      "03_LANCAMENTO/B/B05_BOLETIM_0605_1x1.png"
+    ],
+    "B06": [
+      "03_LANCAMENTO/B/B06_BOLETIM_0705_1x1.png"
+    ],
+    "B07": [
+      "03_LANCAMENTO/B/B07_BOLETIM_0805_1x1.png"
+    ],
+    "B08": [
+      "03_LANCAMENTO/B/B08_BOLETIM_0905_1x1.png"
+    ],
+    "D01": [
+      "03_LANCAMENTO/D/D01_A-CARTEIRINHA_9x16.png"
+    ],
+    "D02": [
+      "03_LANCAMENTO/D/D02_O-INGRESSO_inteiro.png",
+      "03_LANCAMENTO/D/D02_O-INGRESSO_rasgado.png"
+    ],
+    "CASTING_H01": [
+      "02_PRODUTO/renders/_objects_tests/T_previs_H01_stand.png"
+    ],
+    "CASTING_H02": [
+      "02_PRODUTO/renders/_objects_tests/T_previs_H02_stand.png"
+    ]
+  },
+  "faltas": [
+    "figura CASE",
+    "figura KV-01_9x16",
+    "figura KV-01_4x5",
+    "figura KV-01_1x1",
+    "figura KV-01_16x9",
+    "figura C01",
+    "figura C02",
+    "figura C04",
+    "figura C05",
+    "figura C06",
+    "figura C08",
+    "figura C10",
+    "figura L01",
+    "figura L02",
+    "figura L03",
+    "figura L04",
+    "figura L05",
+    "figura L06",
+    "figura L07",
+    "figura F15_FRAMES",
+    "figura F06_FRAMES",
+    "figura ANUNCIO_ANIMATIC"
+  ],
+  "dados_ausentes": [
+    "ANIMATIC_LUFS",
+    "F06A_DURACAO",
+    "F06A_FID",
+    "F06A_LUFS",
+    "F06A_QUADROS",
+    "F06A_TP",
+    "F06B_DURACAO",
+    "F06B_FID",
+    "F06B_LUFS",
+    "F06B_QUADROS",
+    "F06B_TP",
+    "F06C_0705_DURACAO",
+    "F06C_0705_FID",
+    "F06C_0705_LUFS",
+    "F06C_0705_QUADROS",
+    "F06C_0705_TP",
+    "F06C_0805_DURACAO",
+    "F06C_0805_FID",
+    "F06C_0805_LUFS",
+    "F06C_0805_QUADROS",
+    "F06C_0805_TP",
+    "F06C_0905_DURACAO",
+    "F06C_0905_FID",
+    "F06C_0905_LUFS",
+    "F06C_0905_QUADROS",
+    "F06C_0905_TP",
+    "F15_DURACAO",
+    "F15_FID",
+    "F15_LUFS",
+    "F15_QUADROS",
+    "F15_TP",
+    "FID_ALBEDO_CONTROLE",
+    "FID_ALBEDO_COR",
+    "FID_ALBEDO_P5",
+    "FID_ALBEDO_PIOR",
+    "FID_ALBEDO_RESULTADO",
+    "FID_BASE_CONTROLE",
+    "FID_BASE_COR",
+    "FID_BASE_P5",
+    "FID_BASE_PIOR",
+    "FID_BASE_RESULTADO",
+    "FID_CASE01_CONTROLE",
+    "FID_CASE01_COR",
+    "FID_CASE01_P5",
+    "FID_CASE01_PIOR",
+    "FID_CASE01_RESULTADO",
+    "FID_CASE02_CONTROLE",
+    "FID_CASE02_COR",
+    "FID_CASE02_P5",
+    "FID_CASE02_PIOR",
+    "FID_CASE02_RESULTADO",
+    "FID_CASE03_CONTROLE",
+    "FID_CASE03_COR",
+    "FID_CASE03_P5",
+    "FID_CASE03_PIOR",
+    "FID_CASE03_RESULTADO",
+    "FID_FRENTE_CONTROLE",
+    "FID_FRENTE_COR",
+    "FID_FRENTE_P5",
+    "FID_FRENTE_PIOR",
+    "FID_FRENTE_RESULTADO",
+    "FID_SINGLE_CONTROLE",
+    "FID_SINGLE_COR",
+    "FID_SINGLE_P5",
+    "FID_SINGLE_PIOR",
+    "FID_SINGLE_RESULTADO",
+    "FID_TRES_QUARTOS_CONTROLE",
+    "FID_TRES_QUARTOS_COR",
+    "FID_TRES_QUARTOS_P5",
+    "FID_TRES_QUARTOS_PIOR",
+    "FID_TRES_QUARTOS_RESULTADO",
+    "FID_VERSO_CONTROLE",
+    "FID_VERSO_COR",
+    "FID_VERSO_P5",
+    "FID_VERSO_PIOR",
+    "FID_VERSO_RESULTADO",
+    "S01_DURACAO",
+    "S01_LUFS",
+    "S01_QUADROS",
+    "S01_TP",
+    "SEG_ANUNCIOS",
+    "SEG_C02",
+    "SEG_C03",
+    "SEG_C04",
+    "SEG_C06",
+    "SEG_C07",
+    "SEG_F06AB",
+    "SEG_F06C",
+    "SEG_F15",
+    "SEG_KV01",
+    "SEG_L05"
+  ],
+  "fontes": {},
+  "restam_preencher": 3
+}

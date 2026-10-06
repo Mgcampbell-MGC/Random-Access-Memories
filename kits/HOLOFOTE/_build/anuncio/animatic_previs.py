@@ -12,8 +12,12 @@ Shots (each writes _tmp_animatic/plates/<SHOT>[_<key>].png at 1080 x 1920 x pct)
 
 Framing rule (1080 x 1920 space): the face and the gesture never sit under type (checked on test renders).
   talk:    tag plate y 560–620 at x 120 -> head top below y 640;  captions y 1000–1240 -> chin above y 990.
-  gesture: title y 760–860              -> chin above y 750 and the hands (clap, heart, point) below y 870;
-           the phone shot puts the phone and head above the title, which crosses the chest.
+  gesture: title y 760–860              -> Ad 1: chin above y 750 and the clapping hands below y 865 (a close
+           medium shot, the title on the chest between them); Ad 2: phone and head above the title, which crosses
+           the chest; Ad 3: the heart and the point above y 750 and the title across the belly (chin to heart is
+           ~0,10 m, too little room for a 100 px title between them).
+  `--medir` prints the projected head / hand / phone boxes per key without rendering; every value above was
+  measured that way, not eyeballed.
 All presenters: 50 mm, eye level (tilt 0), f/4, the APRESENTADORA front-left spot re-aimed at the mark.
 The presenter never holds the pack; no candle and no flame anywhere in these plates (CONAR art. 33)."""
 import sys, os, math
@@ -62,15 +66,15 @@ SHOTS = {
     'SIT_H01':   dict(body='H01', pose='a', mark=(SEAT_X, 0.0, 0.45), head_px=(540, 815), ppm=1333, keys={'': None}),
     'SIT_H02':   dict(body='H02', pose='a', mark=(SEAT_X, 0.0, 0.45), head_px=(540, 815), ppm=1333, keys={'': None}),
     'USHER_H01': dict(body='H01', pose='e', mark=(0.0, 0.95, 0.45), head_px=(540, 795), ppm=1150, keys={'': None}),
-    'CLAP_H01':  dict(body='H01', pose='b', mark=(SEAT_X, -0.55, 0.0), head_px=(540, 665), ppm=1150,
+    'CLAP_H01':  dict(body='H01', pose='b', mark=(SEAT_X, -0.55, 0.0), head_px=(540, 563), ppm=1600,
                       keys={'A': 1, 'M': 7, 'B': 13}),
-    'CLAP_H02':  dict(body='H02', pose='b', mark=(SEAT_X, -0.55, 0.0), head_px=(540, 665), ppm=1150,
+    'CLAP_H02':  dict(body='H02', pose='b', mark=(SEAT_X, -0.55, 0.0), head_px=(540, 563), ppm=1600,
                       keys={'A': 1, 'M': 7, 'B': 13}),
     'PHONE_H01': dict(body='H01', pose='c', mark=(0.0, 0.95, 0.45), head_px=(540, 600), ppm=900,
                       keys={'L2': -3.2, 'L1': -1.6, 'C': 0.0, 'R1': 1.6, 'R2': 3.2}, sway=True),
-    'HEART_H01': dict(body='H01', pose='d', mark=(SEAT_X, 0.0, 0.45), head_px=(560, 545), ppm=1300, yaw=-18.0,
+    'HEART_H01': dict(body='H01', pose='d', mark=(SEAT_X, 0.0, 0.45), head_px=(560, 360), ppm=1150, yaw=-18.0,
                       keys={'A': 1, 'M': 7, 'B': 13}),
-    'HEART_H02': dict(body='H02', pose='d', mark=(SEAT_X, 0.0, 0.45), head_px=(560, 545), ppm=1300, yaw=-18.0,
+    'HEART_H02': dict(body='H02', pose='d', mark=(SEAT_X, 0.0, 0.45), head_px=(560, 360), ppm=1150, yaw=-18.0,
                       keys={'A': 1, 'M': 7, 'B': 13}),
 }
 
@@ -110,10 +114,31 @@ def main():
     samples = int(a[a.index('--samples') + 1]) if '--samples' in a else 32
     pct = int(a[a.index('--pct') + 1]) if '--pct' in a else 50
     shots = [x for x in a if x in SHOTS] or list(SHOTS)
+    medir = '--medir' in a
     os.makedirs(OUT, exist_ok=True)
     for name in shots:
         sp, m = build(name, samples, pct)
         for k, v in sp['keys'].items():
+            if medir:
+                # where the head and hands land (1080 x 1920 px) on this key, from the camera itself; no render
+                if sp.get('sway'):
+                    m.root.rotation_euler = (0.0, math.radians(v), 0.0)
+                bpy.context.scene.frame_set(v if (v is not None and not sp.get('sway')) else 1)
+                bpy.context.view_layer.update()
+                from bpy_extras.object_utils import world_to_camera_view as w2c
+                sc, cam = bpy.context.scene, bpy.context.scene.camera
+                out = {}
+                for part in ('head', 'hand_L', 'hand_R', 'phone'):
+                    ob = m.parts.get(part)
+                    if ob is None:
+                        continue
+                    pts = [ob.matrix_world @ Vector(c) for c in ob.bound_box]
+                    pp = [w2c(sc, cam, q) for q in pts]
+                    xs = [q.x * 1080 for q in pp]
+                    ys = [(1 - q.y) * 1920 for q in pp]
+                    out[part] = (round(min(xs)), round(min(ys)), round(max(xs)), round(max(ys)))
+                print('MEDIDA', name, k, out, flush=True)
+                continue
             if sp.get('sway'):
                 # sway: roll the whole figure about the feet (root on the stage), the phone moves ~6 cm per degree
                 m.root.rotation_euler = (0.0, math.radians(v), 0.0)
