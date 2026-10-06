@@ -2,8 +2,8 @@
 
 You are finishing a production kit that is about 85% done. Don't redesign anything: the creative direction is locked.
 
-**Where it is:** GitHub repo `mgcampbell-mgc/random-access-memories`, branch `claude/volta-architecture-design-txe8r5`,
-folder `kits/HOLOFOTE/`. Run every command from inside `kits/HOLOFOTE`.
+**Where it is:** the HOLOFOTE package folder, which is the one containing this file. It is the ZIP of GitHub branch
+`holofote-kit` in `mgcampbell-mgc/random-access-memories`. Run every command from inside that folder.
 
 **Read these first, in order:**
 1. `06_PRODUCAO/COMECE_AQUI_PROXIMO_LLM.txt`: the full rulebook and every command.
