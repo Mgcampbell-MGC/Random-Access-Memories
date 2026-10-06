@@ -175,7 +175,7 @@ def copo(size):
     else:
         C, Hg, z0, z1, meas, coat_top, tag = 182.2, 66.0, 14.0, 63.0, 54.0, 65.0, 'COPO-080'
         title = 'O SINGLE · zona de impressão desenrolada · Ø58 × 66 mm · circunferência 182,2 mm'
-    S = Sheet(C, Hg)
+    S = Sheet(C, Hg, margin=36.0)
 
     def Y(z):
         return Hg - z
@@ -187,12 +187,16 @@ def copo(size):
         S.path('ZONA', f'M{f(cx)},{f(Y(z1) - 2)} V{f(Y(z0) + 2)}')
         S.text(cx, Y(z1) - 1.5, f'{nm} · {meas:.1f} mm'.replace('.', ','), 2.4, 'middle')
     gap = (C - 2 * meas) / 2
-    S.text(0.5, Y((z0 + z1) / 2), 'x = 0 · emenda no centro da lacuna esquerda', 2.0)
-    S.text(C / 2, Y((z0 + z1) / 2), f'lacuna lateral {gap:.1f} mm · sem tinta'.replace('.', ','), 2.0, 'middle')
-    S.text(C - 0.5, Y((z0 + z1) / 2), 'lacuna esquerda (continua em x = 0)', 2.0, 'end')
+    zm = Y((z0 + z1) / 2)
+    S.text(gap / 4, zm, 'x = 0', 2.0, 'middle')
+    S.text(gap / 4, zm + 3.4, 'emenda', 2.0, 'middle')
+    S.text(C / 2, zm, f'lacuna lateral {gap:.1f} mm'.replace('.', ','), 2.0, 'middle')
+    S.text(C / 2, zm + 3.4, 'sem tinta', 2.0, 'middle')
+    S.text(C - gap / 4, zm, f'x = {C:.1f}'.replace('.', ','), 2.0, 'middle')
+    S.text(C - gap / 4, zm + 3.4, '(= x 0)', 2.0, 'middle')
     S.text(C + 1, Y(z1) + 1.0, f'{z1:.1f} mm'.replace('.', ','), 2.0)
     S.text(C + 1, Y(z0) + 1.0, f'{z0:.1f} mm'.replace('.', ','), 2.0)
-    S.text(C + 1, Y(coat_top) + 1.0, f'revestimento até {coat_top:.1f}'.replace('.', ','), 2.0)
+    S.text(-1.5, Y(coat_top) + 1.0, f'revestimento até {coat_top:.1f}'.replace('.', ','), 2.0, 'end')
     S.text(C / 2, Hg + 6, f'base 0 mm · faixa lisa 0–{z0:.0f} mm (plinto) · borda de vidro livre de 1,0 mm', 2.2,
            'middle')
     px = int(round(C * 40))

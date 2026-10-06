@@ -173,12 +173,17 @@ def _cylinder(name, cx, cy, r, z0, z1, segs=128):
     return _link(bpy.data.objects.new(name, me))
 
 
-def _ellipsoid_bm(bm, center, radii, rot=None, segs=24, rings=14):
-    """Add an ellipsoid (UV sphere) to a bmesh. center/radii in metres, rot a 3x3 Matrix."""
+def _ellipsoid_bm(bm, center, radii, rot=None, segs=24, rings=14, power=1.0):
+    """Add an ellipsoid (UV sphere) to a bmesh. center/radii in metres, rot a 3x3 Matrix. power < 1 squares it off
+    into a superellipsoid (rounded box) on its local x and y axes, keeping the z (thickness) section round."""
     ret = bmesh.ops.create_uvsphere(bm, u_segments=segs, v_segments=rings, radius=1.0)
     R = rot if rot is not None else Matrix.Identity(3)
     for v in ret['verts']:
-        p = Vector((v.co.x * radii[0], v.co.y * radii[1], v.co.z * radii[2]))
+        x, y, z = v.co
+        if power != 1.0:
+            x = math.copysign(abs(x) ** power, x)
+            y = math.copysign(abs(y) ** power, y)
+        p = Vector((x * radii[0], y * radii[1], z * radii[2]))
         v.co = R @ p + Vector(center)
     return ret['verts']
 
@@ -1350,25 +1355,27 @@ def pulseira(preset='loose', ops=None, start=((0, 0, 0.5), (1, 0, 0), (0, 0, 1))
 SETLIST = dict(W=105.0, P=100.0, N=4, T=0.4, R=0.5)
 
 
-def setlist(state='folded', fold_deg=None, side1=None, side2=None, lie=True, perforations=True, at=(0, 0, 0),
-            rot_deg=0.0):
+def setlist(state='folded', fold_deg=None, side1=None, side2=None, lie=True, perforations=True, first_fold=-1,
+            at=(0, 0, 0), rot_deg=0.0):
     """A SETLIST (§C.8): concertina card 105 x 400 flat, four 105 x 100 panels, 300 g/m2 uncoated papel (0,4 mm).
     side1 / side2: 105 x 400 art (P1 at the TOP of the image); side 2 is drawn as seen from the back, P1' at the top.
     state 'folded' (fold 178 deg, ~3 mm thick, standing, P1 facing -Y, bottom folds on z = 0) |
-          'fan'    (default fold 120 deg; the zigzag stands, or lies on the floor with lie=True) |
+          'fan'    (default fold 70 deg: panels +-35 deg; lies on the floor, P1 far; lie=False stands it) |
           'flat'   (open on the floor, P1 away from the camera, faint residual creases).
     Perforations (between the tickets, the P3/P4 fold and the 22 mm stubs at x = 83) are cut into the card shader.
+    first_fold -1 | +1 flips the zigzag: lying fans tilt P2/P4 (the tickets) toward a front camera with -1, P1/P3
+    (the cover) with +1; seen from above (70 deg) all four panels show either way.
     Returns Built(root, card)."""
     S = SETLIST
     side1 = art(side1, 'setlist', ('lado1',), 'PH_SETLIST_lado1.png')
     side2 = art(side2, 'setlist', ('lado2',), 'PH_SETLIST_lado2.png')
     before = set(bpy.data.objects)
     if fold_deg is None:
-        fold_deg = {'folded': 180.0, 'fan': 120.0, 'flat': 3.0}[state]
+        fold_deg = {'folded': 180.0, 'fan': 70.0, 'flat': 3.0}[state]
     r = S['R']
     # path in the (y, z) plane: start at P1's top edge heading down, side 1 facing -Y
     tu = Turtle((0, 0, 0), (0, 0, -1), (0, -1, 0), step=2.0)
-    sign = -1.0
+    sign = -1.0 if first_fold < 0 or state == 'folded' else 1.0
     for i in range(S['N']):
         straight = S['P'] - (r * math.radians(fold_deg) if i in (0, S['N'] - 1) else 2 * r * math.radians(fold_deg)) / 2
         tu.fwd(straight)
@@ -1544,17 +1551,45 @@ def setlist_taped(side1=None, at=(0, 0, 0), rot_deg=0.0, tape_hex=AMARELO, creas
 
 
 # =============================================================================================== 4. NOVA TEMPORADA
-def refil(faixa='02', lid_art=None, band_art=None, peel=0.0, lid_d=68.6, art_d=66.0, at=(0, 0, 0), rot_deg=0.0,
-          band_z=(31.0, 43.0)):
+def refil_contract(faixa='02'):
+    """The packaging team's refill files (02_PRODUTO/refil/, generator _build/pack/refil.py) and their geometry."""
+    d = os.path.join(PRODUTO, 'refil')
+    c = dict(lid=None, band=None, disc_mm=66.0, tab_mm=(9.0, 14.0), lid_px_mm=None,
+             band_h=10.0, band_below_lip=12.0, band_centre_u=0.25)
+    j = os.path.join(d, 'HLF-REF_refil.json')
+    lid = os.path.join(d, 'HLF-REF-%s_TAMPA-PEEL.png' % faixa)
+    band = os.path.join(d, 'HLF-REF_CAPSULA_faixa-laser.png')
+    c['lid'] = lid if os.path.exists(lid) else None
+    c['band'] = band if os.path.exists(band) else None
+    if os.path.exists(j):
+        import json
+        try:
+            J = json.load(open(j))
+            L = [x for x in J['lids'] if x['sku'].endswith(faixa)][0]
+            c['disc_mm'] = L['disc_mm']
+            c['tab_mm'] = tuple(L['tab_mm'])
+            c['lid_px_mm'] = (L['px'][0] / L['ppmm'], L['px'][1] / L['ppmm'])
+            c['band_h'] = J['band']['height_mm']
+            c['band_centre_u'] = J['band']['centre_u']
+        except Exception as e:
+            print('refil_contract: json not read (%s)' % e)
+    return c
+
+
+def refil(faixa='02', lid_art=None, band_art=None, peel=0.0, lid_d=68.6, at=(0, 0, 0), rot_deg=0.0):
     """NOVA TEMPORADA refill (§C.9): the A CÁPSULA of holofote.py (black anodised deep-drawn aluminium Ø68 x 74,
-    rolled lip, wax + wood wick inside) standing on z = 0, closed by a heat-sealed paper/foil peel lid.
-    lid_art: the printed peel lid, a square image covering the Ø art_d (66) print circle (outside it: the faixa
-    colour). band_art: the laser-marked LOTE · FAB · VAL wall band, a wrap image (u = 0,5 at the front) between
-    band_z (mm). peel: 0 sealed .. 1 fully peeled back (0,5 = 'half-peeled', L07). The lid is modelled at lid_d
-    (68,6, the lip's outer edge) because a Ø66 lid cannot seal on the Ø67,4 lip; the art still prints at Ø66.
+    rolled lip, wax + wood wick inside) standing on z = 0, closed by a heat-sealed paper/foil peel lid with its
+    pull tab pointing +X (the packaging art's right).
+    lid_art   the printed peel lid (packaging: HLF-REF-0n_TAMPA-PEEL.png, 40 px/mm: the Ø66 disc on the left, the
+              tab to the right). The physical lid is lid_d (68,6, the lip's outer edge: a Ø66 lid cannot seal on the
+              Ø67,4 lip); the ring outside the Ø66 print is the faixa colour.
+    band_art  the laser-marked LOTE · FAB · VAL wall band (HLF-REF_CAPSULA_faixa-laser.png, u = 0,25 at the front,
+              10 mm tall, centred 12 mm below the lip); the ink renders as bare aluminium.
+    peel      0 sealed .. 1 fully peeled back from the tab side (0,5 = half-peeled, L07 / C08).
     Returns Built(root, capsule, wax, wick, lid)."""
-    lid_art = art(lid_art, 'refil', ('tampa',), 'PH_REFIL_tampa.png')
-    band_art = art(band_art, 'refil', ('faixa',), 'PH_REFIL_faixa.png')
+    K = refil_contract(faixa)
+    lid_art = lid_art or K['lid'] or ph('PH_REFIL_tampa.png')
+    band_art = band_art or K['band'] or ph('PH_REFIL_faixa.png')
     before = set(bpy.data.objects)
     H.use_size('200')
     base = H.BASE
@@ -1573,47 +1608,48 @@ def refil(faixa='02', lid_art=None, band_art=None, peel=0.0, lid_d=68.6, art_d=6
     wax.data.materials.append(H.wax_material(False))
     wick = H.wick_plank(False, False, False)
     parts = [cap, wax, wick]
-    # laser band on the wall
-    if band_art:
-        r = (H.CAP_R + 0.02)
-        segs = 512
-        z0, z1 = base + band_z[0], base + band_z[1]
-        verts, faces, uvs = [], [], []
-        for i in range(segs + 1):
-            u = i / segs
-            a = (u - 0.5) * 2 * math.pi
-            for z in (z0, z1):
-                verts.append(Vector((r * math.sin(a), -r * math.cos(a), z)) * MM)
-                uvs.append((u, 0.0 if z == z0 else 1.0))
-        for i in range(segs):
-            a = 2 * i
-            faces.append((a, a + 2, a + 3, a + 1))
-        sh = _mesh_obj('refil_laser', verts, faces)
-        uv = sh.data.uv_layers.new(name='UVMap')
-        for poly in sh.data.polygons:
-            for li in poly.loop_indices:
-                uv.data[li].uv = uvs[sh.data.loops[li].vertex_index]
-        f0 = sh.data.polygons[0]
-        if f0.normal.dot(Vector((f0.center.x, f0.center.y, 0))) < 0:
-            sh.data.flip_normals()
-        sh.data.polygons.foreach_set('use_smooth', [True] * len(sh.data.polygons))
-        m = bpy.data.materials.new('laser')
-        m.use_nodes = True
-        N = _NT(m)
-        bs = _bsdf(m)
-        tx = N.tex(band_art, N.new('ShaderNodeUVMap', uv_map='UVMap').outputs['UV'])
-        N.link(tx.outputs['Color'], bs.inputs['Base Color'])
-        bs.inputs['Metallic'].default_value = 0.3
-        bs.inputs['Roughness'].default_value = 0.6
-        tr = N.new('ShaderNodeBsdfTransparent')
-        mix = N.new('ShaderNodeMixShader')
-        N.link(tx.outputs['Alpha'], mix.inputs[0])
-        N.link(tr.outputs[0], mix.inputs[1])
-        N.link(bs.outputs[0], mix.inputs[2])
-        N.link(mix.outputs[0], m.node_tree.nodes['Material Output'].inputs[0])
-        sh.data.materials.append(m)
-        parts.append(sh)
-    lid = _peel_lid(faixa, lid_art, peel, lid_d, art_d, z=base + H.CAP_H + 0.04)
+    # laser band: a 360 deg shell 0,02 mm proud of the wall, u = centre_u at the front (-Y)
+    top = base + H.CAP_H
+    zc = top - K['band_below_lip']
+    z0, z1 = zc - K['band_h'] / 2, zc + K['band_h'] / 2
+    r = H.CAP_R + 0.02
+    segs = 720
+    verts, faces, uvs = [], [], []
+    for i in range(segs + 1):
+        u = i / segs
+        a = (u - K['band_centre_u']) * 2 * math.pi
+        for k, z in enumerate((z0, z1)):
+            verts.append(Vector((r * math.sin(a), -r * math.cos(a), z)) * MM)
+            uvs.append((u, float(k)))
+    for i in range(segs):
+        a = 2 * i
+        faces.append((a, a + 2, a + 3, a + 1))
+    sh = _mesh_obj('refil_laser', verts, faces)
+    uv = sh.data.uv_layers.new(name='UVMap')
+    for poly in sh.data.polygons:
+        for li in poly.loop_indices:
+            uv.data[li].uv = uvs[sh.data.loops[li].vertex_index]
+    f0 = sh.data.polygons[0]
+    if f0.normal.dot(Vector((f0.center.x, f0.center.y, 0))) < 0:
+        sh.data.flip_normals()
+    sh.data.polygons.foreach_set('use_smooth', [True] * len(sh.data.polygons))
+    m = bpy.data.materials.new('laser')
+    m.use_nodes = True
+    N = _NT(m)
+    bs = _bsdf(m)
+    tx = N.tex(band_art, N.new('ShaderNodeUVMap', uv_map='UVMap').outputs['UV'])
+    bs.inputs['Base Color'].default_value = srgb('#B9BBBD')
+    bs.inputs['Metallic'].default_value = 1.0
+    bs.inputs['Roughness'].default_value = 0.45
+    tr = N.new('ShaderNodeBsdfTransparent')
+    mix = N.new('ShaderNodeMixShader')
+    N.link(tx.outputs['Alpha'], mix.inputs[0])
+    N.link(tr.outputs[0], mix.inputs[1])
+    N.link(bs.outputs[0], mix.inputs[2])
+    N.link(mix.outputs[0], m.node_tree.nodes['Material Output'].inputs[0])
+    sh.data.materials.append(m)
+    parts.append(sh)
+    lid = _peel_lid(faixa, lid_art, peel, lid_d, K, z=top + 0.04)
     parts.append(lid)
     holder = _empty('refil_offset', (0, 0, -base * MM))
     _parent(parts, holder)
@@ -1621,63 +1657,64 @@ def refil(faixa='02', lid_art=None, band_art=None, peel=0.0, lid_d=68.6, art_d=6
     return Built(root=root, capsule=cap, wax=wax, wick=wick, lid=lid)
 
 
-def _peel_lid(faixa, lid_art, peel, lid_d, art_d, z, rings=40, segs=160, tab=(14.0, 9.0), bend_r=7.0, bend_max=150.0):
-    """Peel lid: polar disc + a front pull tab, 0,12 mm, printed paper on top, foil underneath (with the seal ring
-    printed by the lip). The peel curls the front portion back over the top about a line moving from the front edge
-    (peel 0) to the back edge (peel 1)."""
+def _peel_lid(faixa, lid_art, peel, lid_d, K, z, rings=44, segs=176, bend_r=7.0, bend_max=150.0):
+    """Peel lid: polar disc + the pull tab along +X, 0,12 mm; printed paper on top, foil underneath with the seal
+    ring pressed in by the lip. Peeling curls everything past a bend line (moving from the tab side, peel 0, to the
+    far side, peel 1) back over the top on a radius bend_r."""
     R = lid_d / 2
-    verts, uvs, faces = [], [], []
-    verts.append((0.0, 0.0))
+    disc = K['disc_mm']
+    tl, tw = K['tab_mm']
+    if K.get('lid_px_mm'):
+        img_w, img_h = K['lid_px_mm']
+        x_end = img_w - disc / 2                   # the tab's end, from the disc centre
+    else:
+        img_w, img_h, x_end = disc + tl + 2.0, disc, disc / 2 + tl + 2.0
+    verts = [(0.0, 0.0)]
     for i in range(1, rings + 1):
         rr = R * i / rings
         for j in range(segs):
             a = 2 * math.pi * j / segs
-            verts.append((rr * math.sin(a), -rr * math.cos(a)))
-    for j in range(segs):
-        faces.append((0, 1 + j, 1 + (j + 1) % segs))
+            verts.append((rr * math.cos(a), rr * math.sin(a)))
+    faces = [(0, 1 + j, 1 + (j + 1) % segs) for j in range(segs)]
     for i in range(1, rings):
         o0, o1 = 1 + (i - 1) * segs, 1 + i * segs
         for j in range(segs):
             faces.append((o0 + j, o1 + j, o1 + (j + 1) % segs, o0 + (j + 1) % segs))
-    # pull tab at the front (-Y): a rounded rectangle grid attached to the outer ring
-    tw, tl = tab
     k0 = len(verts)
-    nx, ny = 10, 6
+    nx, ny, rc = 12, 10, 2.5
     for iy in range(ny + 1):
+        y = -tw / 2 + tw * iy / ny
+        x0 = math.sqrt(max(0.0, R * R - y * y)) - 1.0
+        dy = abs(y) - (tw / 2 - rc)
+        x1 = x_end - rc + math.sqrt(max(0.0, rc * rc - dy * dy)) if dy > 0 else x_end
         for ix in range(nx + 1):
-            x = -tw / 2 + tw * ix / nx
-            yy = -math.sqrt(max(0.0, R * R - x * x)) + 1.2 - (tl + 1.2) * iy / ny
-            k = 1.0 - (iy / ny) ** 3 * (abs(x) / (tw / 2)) ** 4 * 0.35
-            verts.append((x * k, yy))
+            verts.append((x0 + (x1 - x0) * ix / nx, y))
     for iy in range(ny):
         for ix in range(nx):
             a = k0 + iy * (nx + 1) + ix
-            faces.append((a, a + nx + 1, a + nx + 2, a + 1))
-    # peel deformation
-    yb = R - peel * 2 * R + 1e-3       # bend line (y); points with y < yb are lifted
-    yb = R + 0.6 if peel <= 0 else yb
-    out = []
-    th_max = math.radians(bend_max)
+            faces.append((a, a + 1, a + nx + 2, a + nx + 1))
+    xb = R - peel * 2 * R
+    th = math.radians(bend_max)
+    out, uvs = [], []
     for k, (x, y) in enumerate(verts):
         zz = 0.015 if k >= k0 else 0.0
-        yy = y
-        if y < yb and peel > 0:
-            u = yb - y
-            if u <= bend_r * th_max:
-                ph = u / bend_r  # noqa
-                yy = yb - bend_r * math.sin(ph)
-                zz += bend_r * (1 - math.cos(ph))
+        xx = x
+        if peel > 0 and x > xb:
+            u = x - xb
+            if u <= bend_r * th:
+                ph_ = u / bend_r
+                xx = xb + bend_r * math.sin(ph_)
+                zz += bend_r * (1 - math.cos(ph_))
             else:
-                ph = th_max
-                y0 = yb - bend_r * math.sin(ph)
-                z0 = bend_r * (1 - math.cos(ph))
-                e = u - bend_r * th_max
-                yy = y0 - e * math.cos(ph)
-                zz += z0 + e * math.sin(ph)
-        elif y < -R + 0.5 and peel <= 0:
-            zz += (min(0.0, y + R - 0.5) ** 2) * 0.012         # the tab lifts a touch on a sealed lid
-        out.append(Vector((x, yy, z + zz)) * MM)
-        uvs.append((x / art_d + 0.5, y / art_d + 0.5))
+                x0_ = xb + bend_r * math.sin(th)
+                z0_ = bend_r * (1 - math.cos(th))
+                e = u - bend_r * th
+                xx = x0_ + e * math.cos(th)
+                zz += z0_ + e * math.sin(th)
+        elif peel <= 0 and x > R - 0.5:
+            zz += (x - R + 0.5) ** 2 * 0.012          # the tab lifts a touch on a sealed lid
+        out.append(Vector((xx, y, z + zz)) * MM)
+        uvs.append(((x + disc / 2) / img_w, (y + img_h / 2) / img_h))
     ob = _mesh_obj('refil_lid', out, faces)
     uv = ob.data.uv_layers.new(name='UVMap')
     for poly in ob.data.polygons:
@@ -1689,13 +1726,11 @@ def _peel_lid(faixa, lid_art, peel, lid_d, art_d, z, rings=40, segs=160, tab=(14
     sol.offset = -1.0
     sol.material_offset = 1
     sol.material_offset_rim = 1
-    # top: print inside the Ø art_d circle, the faixa colour outside
     m = bpy.data.materials.new('peel_top')
     m.use_nodes = True
     N = _NT(m)
     bs = _bsdf(m)
-    uvn = N.new('ShaderNodeUVMap', uv_map='UVMap')
-    tx = N.tex(lid_art, uvn.outputs['UV'])
+    tx = N.tex(lid_art, N.new('ShaderNodeUVMap', uv_map='UVMap').outputs['UV'])
     coat = srgb(FAIXA_COAT.get(faixa, AMARELO))
     N.link(N.mix(tx.outputs['Alpha'], coat, tx.outputs['Color']), bs.inputs['Base Color'])
     bs.inputs['Roughness'].default_value = 0.5
@@ -1706,20 +1741,581 @@ def _peel_lid(faixa, lid_art, peel, lid_d, art_d, z, rings=40, segs=160, tab=(14
     N.link(tc.outputs['Object'], nz.inputs['Vector'])
     N.link(N.bump(nz.outputs['Fac'], 0.02), bs.inputs['Normal'])
     ob.data.materials.append(m)
-    # underside: matte foil with the lip's seal ring pressed in
     f = bpy.data.materials.new('peel_foil')
     f.use_nodes = True
     N = _NT(f)
     bs = _bsdf(f)
-    bs.inputs['Base Color'].default_value = srgb('#CFD1D3')
     bs.inputs['Metallic'].default_value = 1.0
-    uvn = N.new('ShaderNodeUVMap', uv_map='UVMap')
-    u, v, _ = N.sep(uvn.outputs['UV'])
-    rr = N.m('SQRT', N.m('ADD', N.m('POWER', N.m('SUBTRACT', u, 0.5), 2.0), N.m('POWER', N.m('SUBTRACT', v, 0.5), 2.0)))
-    rmm = N.m('MULTIPLY', rr, art_d)
-    ring = N.m('MULTIPLY', N.smooth(rmm, 32.9, 33.3), N.smooth(rmm, 34.4, 34.0))
+    u, v, _ = N.sep(N.new('ShaderNodeUVMap', uv_map='UVMap').outputs['UV'])
+    xm = N.m('SUBTRACT', N.m('MULTIPLY', u, img_w), disc / 2)
+    ym = N.m('SUBTRACT', N.m('MULTIPLY', v, img_h), img_h / 2)
+    rmm = N.m('SQRT', N.m('ADD', N.m('MULTIPLY', xm, xm), N.m('MULTIPLY', ym, ym)))
+    ring = N.m('MULTIPLY', N.smooth(rmm, 33.0, 33.4), N.smooth(rmm, 34.4, 34.0))
     N.link(N.remap(ring, 0, 1, 0.28, 0.6), bs.inputs['Roughness'])
     N.link(N.mix(ring, srgb('#CFD1D3'), srgb('#A9A39A')), bs.inputs['Base Color'])
     N.link(N.bump(ring, 0.04), bs.inputs['Normal'])
     ob.data.materials.append(f)
     return ob
+
+
+# =============================================================================================== 6. PREVIS MANNEQUIN
+GREY = dict(skin='#8C8C8C', trousers='#5C5C5E', shoes='#3A3A3B', tee='#474748', cardigan='#BDBDBB',
+            sweat='#A2A2A2', bag='#2E2E30', hair_H01='#D2D2D0', hair_H02='#2C2C2D', phone='#141416')
+
+# Proportions are fractions of height H (Drillis & Contini-style segment ratios, tuned by eye on the renders).
+BODIES = {
+    'H01': dict(H=1.65, sh=0.095, hip=0.055, pelvis=(0.088, 0.066), waist=(0.071, 0.055), chest=(0.083, 0.062),
+                neck=0.032, arm=(0.034, 0.029, 0.022, 0.021, 0.016), leg=(0.054, 0.047, 0.032, 0.031, 0.019),
+                head=(0.045, 0.057, 0.066), top='cardigan', hair='buzz', bag=False),
+    'H02': dict(H=1.76, sh=0.104, hip=0.051, pelvis=(0.084, 0.063), waist=(0.079, 0.059), chest=(0.093, 0.068),
+                neck=0.037, arm=(0.038, 0.033, 0.024, 0.024, 0.018), leg=(0.054, 0.047, 0.033, 0.032, 0.020),
+                head=(0.044, 0.056, 0.064), top='sweatshirt', hair='fade', bag=True),
+}
+SEG = dict(ua=0.186, fa=0.146, hand=0.108, th=0.245, sh=0.246, foot=0.152, ankle=0.039)
+
+
+def _frame(y_dir, z_hint):
+    """Right-handed rotation whose columns are X, Y, Z with Y = y_dir and Z as close to z_hint as possible."""
+    Y = Vector(y_dir).normalized()
+    Z = Vector(z_hint) - Y * Vector(z_hint).dot(Y)
+    if Z.length < 1e-6:
+        Z = Y.orthogonal()
+    Z.normalize()
+    return Matrix((Y.cross(Z), Y, Z)).transposed()
+
+
+def _ik2(a, c, L1, L2, pole):
+    """Two-bone IK: joint positions (mid, end) for a chain of lengths L1, L2 from a toward c, bending toward pole."""
+    a, c = Vector(a), Vector(c)
+    d = c - a
+    dist = min(max(d.length, 1e-4), (L1 + L2) * 0.999)
+    u = d.normalized()
+    c = a + u * dist
+    x = (L1 * L1 - L2 * L2 + dist * dist) / (2 * dist)
+    h = math.sqrt(max(0.0, L1 * L1 - x * x))
+    pv = Vector(pole) - u * Vector(pole).dot(u)
+    pv = pv.normalized() if pv.length > 1e-6 else u.orthogonal().normalized()
+    return a + u * x + pv * h, c
+
+
+def _pose_skeleton(B, pose, key):
+    """Joint positions (root-local metres, facing -Y) plus hand/foot/head frames for one pose key.
+    Standing poses: root on the floor between the feet. Sitting poses: root on the stage's top front edge (the edge
+    runs along X at y = 0, the stage is +Y, the drop is -Y)."""
+    Hh = B['H']
+    L = {k: v * Hh for k, v in SEG.items()}
+    sit = pose in ('a', 'd')
+    J, F = {}, {}
+    lean, slouch = (6.0, 7.0) if sit else (0.0, 2.0)
+    if sit:
+        knee_y = -0.085
+        hip_z = 0.056 * Hh
+        J['pelvis'] = Vector((0.0, knee_y + L['th'] * 0.995, hip_z))
+    else:
+        J['pelvis'] = Vector((0.0, 0.0, 0.51 * Hh))
+    Rw = Matrix.Rotation(math.radians(lean), 3, 'X')
+    Rc = Matrix.Rotation(math.radians(lean + slouch), 3, 'X')
+    J['waist'] = J['pelvis'] + Rw @ Vector((0, 0, 0.10 * Hh))
+    J['chest'] = J['waist'] + Rc @ Vector((0, 0, 0.115 * Hh))
+    J['neck'] = J['chest'] + Rc @ Vector((0, 0.004 * Hh, 0.088 * Hh))
+    J['neck_top'] = J['neck'] + Matrix.Rotation(math.radians(lean + slouch - 10.0), 3, 'X') @ Vector((0, 0, 0.05 * Hh))
+    for s, side in ((1, 'L'), (-1, 'R')):
+        J['shoulder_' + side] = J['neck'] + Rc @ Vector((s * B['sh'] * Hh, 0.006 * Hh, -0.020 * Hh))
+        J['hip_' + side] = J['pelvis'] + Vector((s * B['hip'] * Hh, 0.0, 0.0))
+    # --- legs
+    for s, side in ((1, 'L'), (-1, 'R')):
+        hp = J['hip_' + side]
+        if sit:
+            kn = hp + Vector((s * 0.012, -L['th'] * math.cos(math.radians(3)), -L['th'] * math.sin(math.radians(3))))
+            sw = math.radians(4.0 if side == 'L' else -3.0)       # the legs dangle, one a touch forward
+            an = kn + Vector((s * 0.01, L['sh'] * math.sin(math.radians(9)) * (1 if side == 'L' else 0.6),
+                              -L['sh'] * math.cos(math.radians(9))))
+            fdir = Vector((s * 0.12, -math.cos(math.radians(38)) + sw, -math.sin(math.radians(38))))
+        else:
+            an = Vector((s * 0.105 * Hh / 1.7, 0.0, L['ankle']))
+            kn, an = _ik2(hp, an, L['th'], L['sh'], (0, -1, 0))
+            fdir = Vector((s * 0.16, -1.0, 0.0))
+        J['knee_' + side], J['ankle_' + side] = kn, an
+        J['thigh_' + side] = hp.lerp(kn, 0.45)
+        J['calf_' + side] = kn.lerp(an, 0.32)
+        F['foot_' + side] = (an, _frame(fdir, (0, 0, 1)))
+    # --- head: looks at the camera (-Y), level
+    yaw, pitch = 0.0, (-4.0 if sit else 0.0)
+    Rh = Matrix.Rotation(math.radians(yaw), 3, 'Z') @ Matrix.Rotation(math.radians(-pitch), 3, 'X')
+    F['head'] = (J['neck_top'] + Rh @ Vector((0, -0.010 * Hh, 0.050 * Hh)), Rh)
+    # --- arms: wrist targets per pose, then IK
+    S = {side: J['shoulder_' + side] for side in 'LR'}
+    ch = J['chest']
+    hands = {}
+    if pose == 'a' or pose == 'd':
+        # hands flat on the stage beside the hips, fingers forward
+        for s, side in ((1, 'L'), (-1, 'R')):
+            hands[side] = (Vector((s * 0.205, J['pelvis'].y - 0.03, 0.022)), (s * 0.25, -1, 0), (0, 0, 1), 'rest',
+                           (s * 0.6, 1.0, 0.2))
+    if pose == 'b':
+        apart = (key != 'B')
+        for s, side in ((1, 'L'), (-1, 'R')):
+            x = s * (0.125 if apart else 0.019)
+            w = Vector((x, ch.y - 0.27, ch.z - 0.035))
+            hands[side] = (w, (-s * (0.25 if apart else 0.05), -0.55, 0.8), (s, 0, 0), 'flat', (s * 0.8, 0.4, -1.0))
+    if pose == 'c':
+        hands['L'] = (S['L'] + Vector((0.035, 0.02, -L['ua'] - L['fa'] + 0.03)), (0.05, -0.1, -1), (1, 0, 0), 'rest',
+                      (0.3, 1.0, 0.0))
+        hands['R'] = (S['R'] + Vector((-0.07, -0.05, L['ua'] + L['fa'] - 0.05)), (0.08, -0.05, 1), (0, -1, 0), 'hold',
+                      (-1.0, 0.4, -0.2))
+    if pose == 'd':
+        if key != 'B':      # finger heart, at chin height in front of the right chest, palm to camera
+            hands['R'] = (S['R'] + Vector((0.08, -0.30, -0.06)), (0.10, -0.35, 1.0), (0, 1, 0.2), 'heart',
+                          (-0.6, 0.3, -1.0))
+        else:               # pointing at the lens, arm out, index forward, palm down
+            hands['R'] = (S['R'] + Vector((0.05, -L['ua'] - L['fa'] + 0.02, 0.06)), (0.06, -1, 0.06), (0, 0, 1), 'point',
+                          (-0.7, 0.2, -1.0))
+    for side in 'LR':
+        w, fdir, ddir, shape, pole = hands[side]
+        el, wr = _ik2(S[side], w, L['ua'], L['fa'], pole)
+        J['elbow_' + side], J['wrist_' + side] = el, wr
+        J['uarm_' + side] = S[side].lerp(el, 0.45)
+        J['farm_' + side] = el.lerp(wr, 0.5)
+        F['hand_' + side] = (wr, _frame(fdir, ddir), shape)
+    # garment helper nodes
+    up = Rw @ Vector((0, 0, 1))
+    J['hem'] = J['pelvis'] - up * (0.07 * Hh) + Vector((0, -0.004 * Hh, 0))
+    J['hem_s'] = J['pelvis'] - up * (0.03 * Hh)
+    J['collar'] = J['neck'] + Rc @ Vector((0, 0.002 * Hh, -0.006 * Hh))
+    J['yoke'] = J['neck'] + Rc @ Vector((0, 0.006 * Hh, -0.024 * Hh))
+    F['torso'] = (J['chest'], Rc, Rw)
+    return J, F
+
+
+def _hand_parts(shape, s, Lh):
+    """Ellipsoid parts (centre, axis, radii) of a hand in hand-local coords (Y fingers, Z dorsal, thumb on -X for the
+    right hand). s = +1 left, -1 right. Same part count for every shape so two shapes can blend as shape keys."""
+    u = Lh
+    curl = dict(flat=4, rest=16, hold=78, point=118, heart=122)[shape]
+    icurl = dict(flat=4, rest=14, hold=62, point=0, heart=48)[shape]
+    tdir = dict(flat=(-0.42, 0.9, 0.0), rest=(-0.5, 0.85, -0.15), hold=(-0.15, 0.85, -0.55), point=(0.45, 0.55, -0.75),
+                heart=(0.12, 1.0, 0.18))[shape]
+
+    def mx(v):                     # parts are written for the right hand (thumb on -X); mirror x for the left
+        return Vector((v[0] * (1 if s < 0 else -1), v[1], v[2]))
+    parts = [(mx((0.01 * u, 0.27 * u, 0.0)), Vector((0, 1, 0)), (0.215 * u, 0.29 * u, 0.068 * u), 0.55)]
+    for pivx, length, rad, c in ((0.060, 0.50, (0.165, 0.27, 0.058), curl), (-0.135, 0.48, (0.068, 0.26, 0.055), icurl)):
+        piv = Vector((pivx * u, 0.47 * u, 0.0))
+        R = Matrix.Rotation(math.radians(-c), 3, 'X')
+        axis = R @ Vector((0, 1, 0))
+        if shape == 'heart' and pivx < 0:
+            axis = Matrix.Rotation(math.radians(18), 3, 'Z') @ axis
+        cen = piv + axis * (length * u / 2 - 0.02 * u)
+        parts.append((mx(cen), mx(axis), (rad[0] * u, rad[1] * u, rad[2] * u), 0.6 if pivx > 0 else 0.8))
+    td = Vector(tdir).normalized()
+    tp = Vector((-0.17 * u, 0.10 * u, -0.025 * u))
+    parts.append((mx(tp + td * 0.18 * u), mx(td), (0.068 * u, 0.19 * u, 0.064 * u), 0.9))
+    return parts
+
+
+def _parts_mesh(name, parts, segs=20, rings=12):
+    bm = bmesh.new()
+    for part in parts:
+        cen, axis, rad = part[:3]
+        R = _frame(axis, (0, 0, 1))
+        _ellipsoid_bm(bm, cen, (rad[0], rad[1], rad[2]), R, segs, rings, part[3] if len(part) > 3 else 1.0)
+    me = bpy.data.meshes.new(name)
+    bm.to_mesh(me)
+    bm.free()
+    me.polygons.foreach_set('use_smooth', [True] * len(me.polygons))
+    return me
+
+
+def _head_mesh(B, Hh, hair=None, segs=48, rings=32):
+    """The head in head-local coords (centre at the origin, face toward -Y): an egg cranium with a narrower jaw, a
+    chin, a simple nose and brow, small ears. hair='buzz' | 'fade' returns the hair shell instead."""
+    w, d, h = (B['head'][0] * Hh, B['head'][1] * Hh, B['head'][2] * Hh)
+    bm = bmesh.new()
+    ret = bmesh.ops.create_uvsphere(bm, u_segments=segs, v_segments=rings, radius=1.0)
+    for v in ret['verts']:
+        x, y, z = v.co
+        if z < 0:                                           # jaw narrows, chin comes forward
+            x *= 1 - 0.30 * (-z) ** 1.5
+            if y < 0:
+                y *= 1 - 0.06 * (-z)
+        if y > 0 and z > -0.2:
+            y *= 1.04                                       # fuller back of the skull
+        if y < -0.55:
+            y = -0.55 - (-y - 0.55) * 0.80                  # a slightly flatter face plane
+        if hair is None:
+            nose = 0.11 * math.exp(-((x / 0.12) ** 2 + ((z + 0.05) / 0.17) ** 2)) * (1 if y < 0 else 0)
+            brow = 0.035 * math.exp(-(((z - 0.22) / 0.08) ** 2)) * max(0.0, -y) * (1 - min(1.0, abs(x) / 0.6))
+            chin = 0.05 * math.exp(-((x / 0.25) ** 2 + ((z + 0.82) / 0.15) ** 2)) * (1 if y < 0 else 0)
+            y -= nose + brow + chin
+        v.co = Vector((x * w, y * d, z * h))
+    if hair:
+        # a full shell over the skull that sinks 4 mm under the skin below the hairline: the visible edge is the
+        # smooth intersection curve, never a stair-step of deleted faces
+        bm.normal_update()
+        for v in bm.verts:
+            x, y, z = v.co.x / w, v.co.y / d, v.co.z / h
+            line = 0.36 * max(0.0, -y) + 0.10 * (1 - abs(y)) - 0.42 * max(0.0, y)     # forehead, temples, nape
+            k = min(1.0, max(0.0, (z - line + 0.05) / 0.07))
+            k = k * k * (3 - 2 * k)
+            if hair == 'buzz':
+                t = 0.0035
+            else:
+                t = 0.0018 + 0.034 * min(1.0, max(0.0, (z - 0.30) / 0.45)) ** 1.4 * (0.75 + 0.25 * max(0.0, -y))
+            v.co += v.normal * (t * k - 0.004 * (1 - k))
+    else:
+        for s in (1, -1):                                    # ears
+            _ellipsoid_bm(bm, (s * w * 0.97, 0.06 * d, -0.04 * h), (0.10 * w, 0.20 * d, 0.30 * h),
+                          Matrix.Rotation(math.radians(s * -12), 3, 'Z'), 16, 10)
+    me = bpy.data.meshes.new('head' if not hair else 'hair')
+    bm.to_mesh(me)
+    bm.free()
+    me.polygons.foreach_set('use_smooth', [True] * len(me.polygons))
+    return me
+
+
+def _catmull(P, sub):
+    """Positions and parameters along a Catmull-Rom spline through P (sub samples per segment)."""
+    P = [Vector(p) for p in P]
+    ext = [P[0] + (P[0] - P[1])] + P + [P[-1] + (P[-1] - P[-2])]
+    out = []
+    for i in range(len(P) - 1):
+        p0, p1, p2, p3 = ext[i], ext[i + 1], ext[i + 2], ext[i + 3]
+        for k in range(sub):
+            t = k / sub
+            t2, t3 = t * t, t * t * t
+            out.append((0.5 * ((2 * p1) + (-p0 + p2) * t + (2 * p0 - 5 * p1 + 4 * p2 - p3) * t2 + (-p0 + 3 * p1 - 3 * p2 + p3) * t3),
+                        i + t))
+    out.append((P[-1], len(P) - 1.0))
+    return out
+
+
+def _loft_verts(P, RX, RY, lat0, n=28, sub=6, cap0=True, cap1=True, gap=None, caps=5):
+    """Vertices of a smooth elliptical tube through joint positions P (radii RX/RY per joint, interpolated smoothly).
+    lat0 is the lateral (x-radius) direction at the first joint, parallel-transported along the path.
+    gap(param) -> half-angle (radians) of an opening centred on the 'front' (-depth) side; the tube is then an open
+    sheet with no caps. Returns (verts, faces, ring_count, ring_size)."""
+    smp = _catmull(P, sub)
+    pts = [s[0] for s in smp]
+    T = []
+    for i in range(len(pts)):
+        a = pts[max(0, i - 1)]
+        b = pts[min(len(pts) - 1, i + 1)]
+        T.append((b - a).normalized())
+    lat = Vector(lat0)
+    lat = (lat - T[0] * lat.dot(T[0])).normalized()
+    frames = []
+    for i in range(len(pts)):
+        if i:
+            q = T[i - 1].rotation_difference(T[i])
+            lat = (q @ lat)
+            lat = (lat - T[i] * lat.dot(T[i])).normalized()
+        frames.append((lat.copy(), T[i].cross(lat).normalized()))
+
+    def rad(R, u):
+        i = min(int(u), len(R) - 2)
+        f = u - i
+        f = f * f * (3 - 2 * f)
+        return R[i] * (1 - f) + R[i + 1] * f
+    rings = []
+    for (p, u), (X, Y) in zip(smp, frames):
+        rings.append((p, X, Y, rad(RX, u), rad(RY, u), u))
+    open_ = gap is not None
+    if not open_:
+        def capring(r, direction, k):
+            p, X, Y, rx, ry, u = r
+            out = []
+            for j in range(1, k + 1):
+                ph = (math.pi / 2) * j / (k + 0.35)
+                rr = max(rx, ry)
+                out.append((p + direction * rr * 0.92 * math.sin(ph), X, Y, rx * math.cos(ph), ry * math.cos(ph), u))
+            return out
+        if cap0:
+            rings = list(reversed(capring(rings[0], -T[0], caps))) + rings
+        if cap1:
+            rings = rings + capring(rings[-1], T[-1], caps)
+    verts, faces = [], []
+    for p, X, Y, rx, ry, u in rings:
+        if open_:
+            g = gap(u)
+            ths = [-math.pi / 2 + g + (2 * math.pi - 2 * g) * j / (n - 1) for j in range(n)]
+        else:
+            ths = [-math.pi / 2 + 2 * math.pi * j / n for j in range(n)]
+        for th in ths:
+            verts.append(p + X * (rx * math.cos(th)) + Y * (ry * math.sin(th)))
+    m = len(rings)
+    for i in range(m - 1):
+        for j in range(n - (1 if open_ else 0)):
+            a, b = i * n + j, i * n + (j + 1) % n
+            faces.append((a, b, b + n, a + n))
+    if not open_:
+        for end, rev in ((0, True), (m - 1, False)):
+            f = [end * n + j for j in range(n)]
+            faces.append(tuple(reversed(f)) if rev else tuple(f))
+    return verts, faces
+
+
+def _loft_obj(name, segs, JA, JB, mat, solid=None):
+    """segs: list of (nodes, RX, RY, lat0, kw) lofts joined in one object; JB adds a shape key 'B'."""
+    def build(J):
+        V, Fc = [], []
+        for nodes, RX, RY, lat0, kw in segs:
+            v, f = _loft_verts([J[nn] for nn in nodes], RX, RY, lat0(J) if callable(lat0) else lat0, **kw)
+            o = len(V)
+            V += v
+            Fc += [tuple(i + o for i in ff) for ff in f]
+        return V, Fc
+    V, Fc = build(JA)
+    ob = _mesh_obj(name, V, Fc)
+    me = ob.data
+    # outward normals (the side/front sectors are built CCW seen along the tube, so check once and flip if needed)
+    me.polygons.foreach_set('use_smooth', [True] * len(me.polygons))
+    if JB is not None:
+        VB, _ = build(JB)
+        ob.shape_key_add(name='Basis')
+        kb = ob.shape_key_add(name='B')
+        for i, v in enumerate(VB):
+            kb.data[i].co = v
+    if solid:
+        s = ob.modifiers.new('sol', 'SOLIDIFY')
+        s.thickness = solid
+        s.offset = -1.0
+    ob.data.materials.append(mat)
+    return ob
+
+
+def _skin(name, nodes, edges, radii, JA, JB, mat, root='pelvis', levels=2, smooth=0.5):
+    idx = {n: i for i, n in enumerate(nodes)}
+    me = bpy.data.meshes.new(name)
+    me.from_pydata([JA[n] for n in nodes], [(idx[a], idx[b]) for a, b in edges if a in idx and b in idx], [])
+    ob = _link(bpy.data.objects.new(name, me))
+    sk = ob.modifiers.new('skin', 'SKIN')
+    sk.use_smooth_shade = True
+    sk.branch_smoothing = smooth
+    for n in nodes:
+        r = radii[n]
+        me.skin_vertices[0].data[idx[n]].radius = (r, r) if isinstance(r, (int, float)) else r
+    me.skin_vertices[0].data[idx[root]].use_root = True
+    ss = ob.modifiers.new('sub', 'SUBSURF')
+    ss.levels = levels
+    ss.render_levels = levels
+    if JB is not None:
+        ob.shape_key_add(name='Basis')
+        kb = ob.shape_key_add(name='B')
+        for n in nodes:
+            kb.data[idx[n]].co = JB[n]
+    ob.data.materials.append(mat)
+    return ob
+
+
+def _arm_edges(side):
+    s = '_' + side
+    return [('chest', 'shoulder' + s), ('shoulder' + s, 'uarm' + s), ('uarm' + s, 'elbow' + s), ('elbow' + s, 'farm' + s),
+            ('farm' + s, 'wrist' + s)]
+
+
+def _leg_edges(side):
+    s = '_' + side
+    return [('pelvis', 'hip' + s), ('hip' + s, 'thigh' + s), ('thigh' + s, 'knee' + s), ('knee' + s, 'calf' + s),
+            ('calf' + s, 'ankle' + s)]
+
+
+def previs(body='H01', pose='a', key=None, frames=(1, 13), at=(0, 0, 0), rot_deg=0.0, phone_flash=True):
+    """A neutral-grey previs mannequin for the O ANÚNCIO animatic (§F.1–F.2). Matte greys, no facial detail beyond
+    the simple form (a nose and brow so the eyeline reads), mitten hands with a separate index and thumb.
+    body  'H01' (a fã atrasada, ~25, 1,65 m: platinum buzz-cut silhouette, oversized cardigan open over a tee) |
+          'H02' (o fã atrasado, ~23, 1,76 m: curly-top fade, oversized sweatshirt, crossbody bag).
+    pose  'a' sitting on the stage edge, legs dangling, looking at camera (root = the stage's top front edge)
+          'b' standing deadpan slow clap: key A hands apart, key B hands together (root = floor)
+          'c' standing, right arm raised holding a phone back-to-camera, flash on (root = floor)
+          'd' sitting, finger-heart (key A) then pointing at the lens (key B) (root = stage edge)
+    key   None: animated between the keys (A at frames[0], B at frames[1]) for two-key poses; 'A' / 'B': static.
+    The presenter never holds the pack. Returns Built(root, parts, keys)."""
+    B = BODIES[body]
+    Hh = B['H']
+    two = pose in ('b', 'd')
+    kA = 'A' if key in (None, 'A') or not two else 'B'
+    JA, FA = _pose_skeleton(B, pose, kA)
+    JB, FB = (None, None)
+    if two and key is None:
+        JB, FB = _pose_skeleton(B, pose, 'B')
+    before = set(bpy.data.objects)
+    mats = {k: grey_material('previs_' + k, v) for k, v in GREY.items()}
+    X = Vector((1, 0, 0))
+    H_ = Hh
+    pr, wr_, cr = B['pelvis'], B['waist'], B['chest']
+    sh = B['sh']
+    a, la = B['arm'], B['leg']
+
+    def limb(nodes, radii, k=1.0, add=0.0, **kw):
+        r = [x * H_ * k + add for x in radii]
+        return (nodes, r, r, (0, 0, 1), dict(n=20, sub=5, **kw))
+
+    def arms(radii, k=1.0, add=0.0, nodes=('shoulder', 'uarm', 'elbow', 'farm', 'wrist'), **kw):
+        return [limb([n + '_' + sd for n in nodes], radii, k, add, **kw) for sd in 'LR']
+    torso_nodes = ['hem_s', 'pelvis', 'waist', 'chest', 'yoke', 'neck', 'neck_top']
+    TX = [0.075, pr[0], wr_[0], cr[0], sh - 0.012, B['neck'], B['neck'] * 0.92]
+    TY = [0.058, pr[1], wr_[1], cr[1], 0.044, B['neck'], B['neck'] * 0.92]
+    parts = {}
+    parts['body'] = _loft_obj('previs_body', [
+        (torso_nodes, [x * H_ for x in TX], [y * H_ for y in TY], X, dict(n=32, sub=6))] + arms(a),
+        JA, JB, mats['skin'])
+    parts['trousers'] = _loft_obj('previs_trousers', [
+        (['hem_s', 'pelvis', 'waist'], [0.080 * H_, pr[0] * 1.07 * H_, wr_[0] * 1.04 * H_],
+         [0.062 * H_, pr[1] * 1.07 * H_, wr_[1] * 1.04 * H_], X, dict(n=32, sub=6))] +
+        [limb(['hip_' + sd, 'thigh_' + sd, 'knee_' + sd, 'calf_' + sd, 'ankle_' + sd],
+              (la[0] * 0.80,) + tuple(la[1:]), 1.10, 0.004) for sd in 'LR'],      # the thigh top merges into the pelvis
+        JA, JB, mats['trousers'])
+    if B['top'] == 'cardigan':
+        gn = ['hem_s', 'pelvis', 'waist', 'chest', 'yoke', 'collar']
+        parts['tee'] = _loft_obj('previs_tee', [
+            (gn, [x * H_ * 1.06 + 0.003 for x in (0.078, pr[0], wr_[0], cr[0], sh - 0.010, B['neck'] * 1.12)],
+             [y * H_ * 1.06 + 0.003 for y in (0.060, pr[1], wr_[1], cr[1], 0.048, B['neck'] * 1.12)], X,
+             dict(n=32, sub=6, cap0=False, cap1=False))] +
+            arms((a[0] * 1.08, a[1] * 1.15), nodes=('shoulder', 'uarm'), cap1=False), JA, JB, mats['tee'], solid=0.003)
+        cn = ['hem', 'pelvis', 'waist', 'chest', 'yoke', 'collar']
+        CX = [0.104, 0.104, 0.098, 0.103, sh + 0.004, 0.058]
+        CY = [0.083, 0.082, 0.077, 0.081, 0.058, 0.052]
+
+        def gap(u):                           # open front: a 1 cm placket line to the chest, then the V to the collar
+            w = 0.0055 * H_ if u <= 2.4 else 0.0055 * H_ + (0.042 * H_) * ((u - 2.4) / 2.6) ** 1.2
+            i = min(int(u), len(CX) - 2)
+            f = u - i
+            rx = (CX[i] * (1 - f) + CX[i + 1] * f) * H_
+            return math.asin(min(0.97, w / rx))
+        parts['cardigan'] = _loft_obj('previs_cardigan', [
+            (cn, [x * H_ for x in CX], [y * H_ for y in CY], X, dict(n=40, sub=6, gap=gap))] +
+            arms((0.043, 0.044, 0.039, 0.036, 0.031), cap1=False), JA, JB, mats['cardigan'], solid=0.007)
+    else:
+        sn = ['hem_s', 'pelvis', 'waist', 'chest', 'yoke', 'collar']      # ribbed hem gathers at the hip line
+        parts['sweatshirt'] = _loft_obj('previs_sweatshirt', [
+            (sn, [x * H_ for x in (0.103, 0.101, 0.099, 0.106, sh + 0.004, 0.047)],
+             [y * H_ for y in (0.077, 0.076, 0.076, 0.081, 0.058, 0.045)], X,
+             dict(n=36, sub=6, cap0=False, cap1=False))] +
+            arms((0.042, 0.042, 0.036, 0.032, 0.023), cap1=False), JA, JB, mats['sweat'], solid=0.005)
+    # head + hair
+    hc, Rh = FA['head']
+    head = _link(bpy.data.objects.new('previs_head', _head_mesh(B, Hh)))
+    head.matrix_world = Matrix.Translation(hc) @ Rh.to_4x4()
+    head.data.materials.append(mats['skin'])
+    hair = _link(bpy.data.objects.new('previs_hair', _head_mesh(B, Hh, hair=B['hair'])))
+    hair.matrix_world = head.matrix_world.copy()
+    hair.data.materials.append(mats['hair_' + body])
+    parts['head'], parts['hair'] = head, hair
+    # hands (shape keys when the hand shape changes between keys), feet
+    Lh = SEG['hand'] * Hh
+    for s, side in ((1, 'L'), (-1, 'R')):
+        wA, RA, shA = FA['hand_' + side]
+        me = _parts_mesh('hand', _hand_parts(shA, s, Lh))
+        hand = _link(bpy.data.objects.new('previs_hand_' + side, me))
+        hand.data.materials.append(mats['skin'])
+        hand.rotation_mode = 'QUATERNION'
+        hand.location = wA
+        hand.rotation_quaternion = RA.to_quaternion()
+        if FB is not None:
+            wB, RB, shB = FB['hand_' + side]
+            if shB != shA:
+                meB = _parts_mesh('handB', _hand_parts(shB, s, Lh))
+                hand.shape_key_add(name='Basis')
+                kb = hand.shape_key_add(name='B')
+                for i, v in enumerate(meB.vertices):
+                    kb.data[i].co = v.co
+                bpy.data.meshes.remove(meB)
+                kb.value = 0.0
+                kb.keyframe_insert('value', frame=frames[0])
+                kb.value = 1.0
+                kb.keyframe_insert('value', frame=frames[1])
+                kb.value = 0.0
+            hand.keyframe_insert('location', frame=frames[0])
+            hand.keyframe_insert('rotation_quaternion', frame=frames[0])
+            hand.location = wB
+            q = RB.to_quaternion()
+            if q.dot(hand.rotation_quaternion) < 0:
+                q.negate()
+            hand.rotation_quaternion = q
+            hand.keyframe_insert('location', frame=frames[1])
+            hand.keyframe_insert('rotation_quaternion', frame=frames[1])
+        parts['hand_' + side] = hand
+        an, Rf = FA['foot_' + side]
+        Lf, ha = SEG['foot'] * Hh, SEG['ankle'] * Hh
+        foot = _link(bpy.data.objects.new('previs_foot_' + side, _parts_mesh('foot', [
+            (Vector((0, 0.30 * Lf, -0.55 * ha)), Vector((0, 1, 0)), (0.20 * Lf, 0.56 * Lf, 0.52 * ha + 0.012)),
+            (Vector((0, -0.05 * Lf, -0.25 * ha)), Vector((0, 1, 0)), (0.17 * Lf, 0.22 * Lf, 0.70 * ha + 0.01))], 24, 14)))
+        foot.matrix_world = Matrix.Translation(an) @ Rf.to_4x4()
+        foot.data.materials.append(mats['shoes'])
+        parts['foot_' + side] = foot
+    # shape-key animation of the skin graphs
+    if JB is not None:
+        for k in ('body', 'trousers', 'tee', 'cardigan', 'sweatshirt'):
+            ob = parts.get(k)
+            if ob is not None and ob.data.shape_keys:  # noqa
+                kb = ob.data.shape_keys.key_blocks['B']
+                kb.value = 0.0
+                kb.keyframe_insert('value', frame=frames[0])
+                kb.value = 1.0
+                kb.keyframe_insert('value', frame=frames[1])
+                kb.value = 0.0
+        bpy.context.scene.frame_set(frames[0])
+    # props
+    if pose == 'c':
+        wR, RR, _ = FA['hand_R']
+        ph_ = _cuboid('previs_phone', -36, 36, -4, 4, 0, 150)
+        _bevel(ph_, 5.0, 3, 30)
+        ph_.data.materials.append(mats['phone'])
+        ph_.parent = parts['hand_R']
+        ph_.matrix_parent_inverse = Matrix.Identity(4)
+        ph_.location = (0.0, 0.03, -0.022)                     # hand-local: up the fingers, on the palm side
+        ph_.rotation_mode = 'XYZ'
+        ph_.rotation_euler = (math.radians(-90), 0, 0)
+        if phone_flash:
+            fl = _cylinder('previs_flash', 0, 0, 3.0, 0, 0.6, 24)
+            em = bpy.data.materials.new('flash')
+            em.use_nodes = True
+            nt = em.node_tree
+            nt.nodes.clear()
+            o = nt.nodes.new('ShaderNodeOutputMaterial')
+            e = nt.nodes.new('ShaderNodeEmission')
+            e.inputs[0].default_value = (1.0, 0.97, 0.9, 1)
+            e.inputs[1].default_value = 400.0
+            nt.links.new(e.outputs[0], o.inputs[0])
+            fl.data.materials.append(em)
+            fl.parent = ph_
+            fl.matrix_parent_inverse = Matrix.Identity(4)
+            fl.location = (0.022, -0.0045, 0.135)
+            fl.rotation_euler = (math.radians(90), 0, 0)
+        parts['phone'] = ph_
+    if B['bag']:
+        ch, Rc, Rw = FA['torso']
+        dz = B['chest'][1] * Hh * 1.15
+        bag_c = ch + Rc @ Vector((-0.035, -(dz + 0.034), -0.045 * Hh))
+        bag = _cuboid('previs_bag', -115, 115, -32, 32, -55, 55)
+        _bevel(bag, 26.0, 5, 30)
+        bag.matrix_world = Matrix.Translation(bag_c) @ (Rc @ Matrix.Rotation(math.radians(-24), 3, 'Y')).to_4x4()
+        bag.data.materials.append(mats['bag'])
+        pts = [(-0.085, -(dz + 0.03), 0.02), (0.06, -(dz - 0.005), 0.10), (0.115, -0.03, 0.150), (0.105, 0.06, 0.13),
+               (0.03, dz + 0.012, 0.03), (-0.08, dz - 0.01, -0.07), (-0.145, 0.03, -0.10), (-0.13, -(dz - 0.0), -0.09),
+               (-0.095, -(dz + 0.03), -0.075)]
+        cu = bpy.data.curves.new('strap', 'CURVE')
+        cu.dimensions = '3D'
+        cu.bevel_depth = 0.006
+        cu.bevel_resolution = 2
+        sp = cu.splines.new('NURBS')
+        sp.points.add(len(pts) - 1)
+        for i, q in enumerate(pts):
+            w = ch + Rc @ Vector(q)
+            sp.points[i].co = (w.x, w.y, w.z, 1.0)
+        sp.use_endpoint_u = True
+        sp.order_u = 4
+        strap = _link(bpy.data.objects.new('previs_strap', cu))
+        strap.data.materials.append(mats['bag'])
+        parts['bag'], parts['strap'] = bag, strap
+    root = _finish('previs_%s_%s_root' % (body, pose), before, at, rot_deg)
+    return Built(root=root, parts=parts, keys=('A', 'B') if two else ('A',), frames=frames, body=body, pose=pose)
+
+
+def previs_stage(width=2.6, depth=1.4, height=0.55, at=(0, 0, 0), hexcol='#6E6A64'):
+    """A plain grey low stage for the previs: its top front edge runs along X through `at` (the sitting poses' root)."""
+    before = set(bpy.data.objects)
+    st = _cuboid('previs_stage', -width / 2 / MM, width / 2 / MM, 0, depth / MM, -height / MM, 0)
+    st.data.materials.append(grey_material('previs_stage', hexcol, 0.7))
+    root = _finish('previs_stage_root', before, at)
+    return Built(root=root, stage=st)

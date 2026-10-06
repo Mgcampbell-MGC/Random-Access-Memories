@@ -1,0 +1,1018 @@
+{
+  "size_mm": [
+    105.0,
+    400.0
+  ],
+  "ppmm": 20,
+  "panels": "4 x 105 x 100 (folds at 100, 200, 300)",
+  "inks": [
+    "preto",
+    "amarelo"
+  ],
+  "stock": "300 g/m² uncoated papel-cartaz",
+  "perforations": {
+    "tickets_y_mm": [
+      325,
+      350,
+      375
+    ],
+    "stub_x_mm_side1": 83.0,
+    "stub_x_mm_side2": 22.0
+  },
+  "side_2": "turned over left to right (P1' behind P1)",
+  "generator": "_build/pack/setlist.py",
+  "lado-1": [
+    {
+      "label": "SETLIST",
+      "ink_mm": [
+        8.0,
+        9.63,
+        97.0,
+        32.37
+      ],
+      "text": "SETLIST",
+      "cap_mm": 22.0,
+      "tracking": 55.0
+    },
+    {
+      "label": "date",
+      "ink_mm": [
+        8.0,
+        37.91,
+        97.0,
+        43.2
+      ],
+      "text": "DOMINGO · 09.05 · CAMARIM 1",
+      "cap_mm": 5.109
+    },
+    {
+      "label": "fã",
+      "ink_mm": [
+        8.0,
+        49.98,
+        80.2,
+        56.62
+      ],
+      "text": "(ela abre. você acende.)",
+      "xh_mm": 3.0
+    },
+    {
+      "label": "A MARCA",
+      "centre_mm": [
+        79.0,
+        76.0
+      ],
+      "strip_mm": [
+        40.0,
+        10.67
+      ],
+      "seed": 927
+    },
+    {
+      "label": "P2 header L",
+      "ink_mm": [
+        8.0,
+        107.76,
+        17.74,
+        110.04
+      ],
+      "text": "SETLIST"
+    },
+    {
+      "label": "P2 header R",
+      "ink_mm": [
+        58.67,
+        107.76,
+        97.0,
+        110.04
+      ],
+      "text": "DOMINGO · 09.05 · CAMARIM 1"
+    },
+    {
+      "label": "step 1.",
+      "ink_mm": [
+        10.64,
+        133.75,
+        12.6,
+        136.35
+      ],
+      "text": "1."
+    },
+    {
+      "label": "step tira a pulseira do cas",
+      "ink_mm": [
+        14.2,
+        133.75,
+        57.99,
+        136.95
+      ],
+      "text": "tira a pulseira do case e põe no pulso",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "who ela",
+      "ink_mm": [
+        90.08,
+        132.9,
+        97.0,
+        136.47
+      ],
+      "text": "ela",
+      "xh_mm": 2.2
+    },
+    {
+      "label": "step 2.",
+      "ink_mm": [
+        10.52,
+        141.21,
+        12.6,
+        143.85
+      ],
+      "text": "2."
+    },
+    {
+      "label": "step abre o case",
+      "ink_mm": [
+        14.2,
+        141.25,
+        27.69,
+        143.89
+      ],
+      "text": "abre o case",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "who ela",
+      "ink_mm": [
+        90.08,
+        140.4,
+        97.0,
+        143.97
+      ],
+      "text": "ela",
+      "xh_mm": 2.2
+    },
+    {
+      "label": "step 3.",
+      "ink_mm": [
+        10.52,
+        148.71,
+        12.6,
+        151.39
+      ],
+      "text": "3."
+    },
+    {
+      "label": "step olha no espelho",
+      "ink_mm": [
+        14.2,
+        148.75,
+        32.83,
+        151.95
+      ],
+      "text": "olha no espelho",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "who ela",
+      "ink_mm": [
+        90.08,
+        147.9,
+        97.0,
+        151.47
+      ],
+      "text": "ela",
+      "xh_mm": 2.2
+    },
+    {
+      "label": "step 4.",
+      "ink_mm": [
+        10.5,
+        156.25,
+        12.6,
+        158.85
+      ],
+      "text": "4."
+    },
+    {
+      "label": "step tampa na mesa, X pra c",
+      "ink_mm": [
+        14.2,
+        156.06,
+        63.11,
+        159.45
+      ],
+      "text": "tampa na mesa, X pra cima: isso é o palco",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "who você (equipe técnica)",
+      "ink_mm": [
+        50.04,
+        160.74,
+        97.0,
+        165.64
+      ],
+      "text": "você (equipe técnica)",
+      "xh_mm": 2.2
+    },
+    {
+      "label": "step 5.",
+      "ink_mm": [
+        10.54,
+        169.35,
+        12.6,
+        171.99
+      ],
+      "text": "5."
+    },
+    {
+      "label": "step vela em cima do X. mes",
+      "ink_mm": [
+        14.2,
+        169.31,
+        61.14,
+        172.6
+      ],
+      "text": "vela em cima do X. mesa firme, longe de",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "step cortina, papel e tecid",
+      "ink_mm": [
+        14.2,
+        174.95,
+        40.7,
+        178.15
+      ],
+      "text": "cortina, papel e tecido",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "who você",
+      "ink_mm": [
+        87.17,
+        173.95,
+        97.0,
+        177.71
+      ],
+      "text": "você",
+      "xh_mm": 2.2
+    },
+    {
+      "label": "P3 header L",
+      "ink_mm": [
+        8.0,
+        207.76,
+        17.74,
+        210.04
+      ],
+      "text": "SETLIST"
+    },
+    {
+      "label": "P3 header R",
+      "ink_mm": [
+        58.67,
+        207.76,
+        97.0,
+        210.04
+      ],
+      "text": "DOMINGO · 09.05 · CAMARIM 1"
+    },
+    {
+      "label": "step 6.",
+      "ink_mm": [
+        10.52,
+        229.31,
+        12.6,
+        231.99
+      ],
+      "text": "6."
+    },
+    {
+      "label": "step tira a parte queimada ",
+      "ink_mm": [
+        14.2,
+        229.35,
+        70.17,
+        232.55
+      ],
+      "text": "tira a parte queimada do pavio. deixa uns 5 mm",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "who você",
+      "ink_mm": [
+        87.17,
+        228.35,
+        97.0,
+        232.11
+      ],
+      "text": "você",
+      "xh_mm": 2.2
+    },
+    {
+      "label": "step 7.",
+      "ink_mm": [
+        10.52,
+        236.85,
+        12.6,
+        239.45
+      ],
+      "text": "7."
+    },
+    {
+      "label": "step terceiro sinal: acende",
+      "ink_mm": [
+        14.2,
+        236.85,
+        39.91,
+        239.49
+      ],
+      "text": "terceiro sinal: acende",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "who você",
+      "ink_mm": [
+        87.17,
+        235.85,
+        97.0,
+        239.61
+      ],
+      "text": "você",
+      "xh_mm": 2.2
+    },
+    {
+      "label": "step primeira vez: deixa de",
+      "ink_mm": [
+        14.2,
+        242.26,
+        71.47,
+        245.65
+      ],
+      "text": "primeira vez: deixa derreter até a borda (3 a 4 h).",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "step 8.",
+      "ink_mm": [
+        10.49,
+        249.91,
+        12.6,
+        252.59
+      ],
+      "text": "8."
+    },
+    {
+      "label": "step bis permitido. sessões",
+      "ink_mm": [
+        14.2,
+        249.76,
+        85.44,
+        253.15
+      ],
+      "text": "bis permitido. sessões de até 4 h. temporada de aprox. 40 h.",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "step 9.",
+      "ink_mm": [
+        10.5,
+        257.41,
+        12.6,
+        260.09
+      ],
+      "text": "9."
+    },
+    {
+      "label": "step ninguém sai de perto d",
+      "ink_mm": [
+        14.2,
+        257.26,
+        83.86,
+        260.7
+      ],
+      "text": "ninguém sai de perto da vela acesa. nem pra buscar o bolo.",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "step 10.",
+      "ink_mm": [
+        8.92,
+        264.91,
+        12.6,
+        267.59
+      ],
+      "text": "10."
+    },
+    {
+      "label": "step pra apagar: abafador, ",
+      "ink_mm": [
+        14.2,
+        264.76,
+        54.53,
+        268.2
+      ],
+      "text": "pra apagar: abafador, nunca água.",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "step encerra quando restar ",
+      "ink_mm": [
+        14.2,
+        270.55,
+        57.18,
+        273.75
+      ],
+      "text": "encerra quando restar 1 cm de cera.",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "BIS",
+      "ink_mm": [
+        8.0,
+        280.85,
+        59.65,
+        284.55
+      ],
+      "text": "BIS: não guarda pra visita. o show é hoje.",
+      "cap_mm": 2.8
+    },
+    {
+      "label": "BIS · 4 INGRESSOS (vertical)",
+      "ink_mm": [
+        2.17,
+        303.0,
+        10.83,
+        397.0
+      ],
+      "text": "BIS · 4 INGRESSOS",
+      "cap_mm": 8.374
+    },
+    {
+      "label": "INGRESSO 01",
+      "ink_mm": [
+        16.0,
+        305.55,
+        37.2,
+        308.65
+      ],
+      "text": "INGRESSO 01",
+      "cap_mm": 3.0
+    },
+    {
+      "label": "INGRESSO 01 promise",
+      "ink_mm": [
+        16.0,
+        311.46,
+        69.9,
+        315.04
+      ],
+      "text": "1 áudio de 7 minutos, ouvido",
+      "xh_mm": 1.8
+    },
+    {
+      "label": "INGRESSO 01 promise",
+      "ink_mm": [
+        16.0,
+        316.44,
+        33.67,
+        319.85
+      ],
+      "text": "até o fim.",
+      "xh_mm": 1.8
+    },
+    {
+      "label": "stub",
+      "ink_mm": [
+        92.7,
+        301.83,
+        95.3,
+        323.17
+      ],
+      "text": "ADMITE 1 · ELA",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "INGRESSO 02",
+      "ink_mm": [
+        16.0,
+        330.55,
+        37.19,
+        333.65
+      ],
+      "text": "INGRESSO 02",
+      "cap_mm": 3.0
+    },
+    {
+      "label": "INGRESSO 02 promise",
+      "ink_mm": [
+        16.0,
+        336.58,
+        57.45,
+        340.36
+      ],
+      "text": "avisar quando chegar.",
+      "xh_mm": 1.8
+    },
+    {
+      "label": "INGRESSO 02 promise",
+      "ink_mm": [
+        16.0,
+        341.45,
+        44.57,
+        345.37
+      ],
+      "text": "sem você pedir.",
+      "xh_mm": 1.8
+    },
+    {
+      "label": "stub",
+      "ink_mm": [
+        92.7,
+        326.83,
+        95.3,
+        348.17
+      ],
+      "text": "ADMITE 1 · ELA",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "INGRESSO 03",
+      "ink_mm": [
+        16.0,
+        355.55,
+        37.24,
+        358.65
+      ],
+      "text": "INGRESSO 03",
+      "cap_mm": 3.0
+    },
+    {
+      "label": "INGRESSO 03 promise",
+      "ink_mm": [
+        16.0,
+        361.58,
+        75.97,
+        365.36
+      ],
+      "text": "1 domingo sem celular na mesa.",
+      "xh_mm": 1.8
+    },
+    {
+      "label": "stub",
+      "ink_mm": [
+        92.7,
+        351.83,
+        95.3,
+        373.17
+      ],
+      "text": "ADMITE 1 · ELA",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "INGRESSO 04",
+      "ink_mm": [
+        16.0,
+        380.55,
+        37.26,
+        383.65
+      ],
+      "text": "INGRESSO 04",
+      "cap_mm": 3.0
+    },
+    {
+      "label": "write-in line",
+      "ink_mm": [
+        16.0,
+        393.28,
+        80.0,
+        393.69
+      ],
+      "text": "______________________________",
+      "tracking": -126.1
+    },
+    {
+      "label": "stub",
+      "ink_mm": [
+        92.7,
+        376.83,
+        95.3,
+        398.17
+      ],
+      "text": "ADMITE 1 · ELA",
+      "cap_mm": 2.6
+    }
+  ],
+  "lado-2": [
+    {
+      "label": "REGRAS DA CASA · MODO DE USO",
+      "ink_mm": [
+        8.0,
+        29.09,
+        86.93,
+        32.61
+      ],
+      "text": "REGRAS DA CASA · MODO DE USO",
+      "cap_mm": 3.4
+    },
+    {
+      "label": "Na primeira vez, deixe a cera ",
+      "ink_mm": [
+        8.0,
+        37.86,
+        94.65,
+        40.41
+      ],
+      "text": "Na primeira vez, deixe a cera derreter até a borda da cápsula (3 a 4 horas).",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Antes de cada uso, retire a pa",
+      "ink_mm": [
+        8.0,
+        42.15,
+        83.48,
+        44.61
+      ],
+      "text": "Antes de cada uso, retire a parte queimada do pavio de madeira,",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "deixando cerca de 5 mm.",
+      "ink_mm": [
+        8.0,
+        45.45,
+        37.56,
+        47.48
+      ],
+      "text": "deixando cerca de 5 mm.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Não queime por mais de 4 horas",
+      "ink_mm": [
+        8.0,
+        49.65,
+        57.53,
+        52.15
+      ],
+      "text": "Não queime por mais de 4 horas seguidas.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Deixe esfriar antes de acender",
+      "ink_mm": [
+        8.0,
+        52.92,
+        54.11,
+        54.98
+      ],
+      "text": "Deixe esfriar antes de acender de novo.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Para apagar, use um abafador. ",
+      "ink_mm": [
+        8.0,
+        57.06,
+        60.05,
+        59.65
+      ],
+      "text": "Para apagar, use um abafador. Não use água.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Encerre o uso quando restar ce",
+      "ink_mm": [
+        8.0,
+        61.32,
+        79.94,
+        63.81
+      ],
+      "text": "Encerre o uso quando restar cerca de 1 cm de cera no fundo.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Use a vela dentro do copo, sob",
+      "ink_mm": [
+        8.0,
+        65.46,
+        87.53,
+        68.01
+      ],
+      "text": "Use a vela dentro do copo, sobre a tampa virada ou sobre superfície",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "plana, firme e resistente ao c",
+      "ink_mm": [
+        8.0,
+        68.82,
+        46.31,
+        71.31
+      ],
+      "text": "plana, firme e resistente ao calor.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "ADVERTÊNCIAS",
+      "ink_mm": [
+        8.0,
+        120.7,
+        45.38,
+        125.11
+      ],
+      "text": "ADVERTÊNCIAS",
+      "cap_mm": 3.4
+    },
+    {
+      "label": "Produto destinado exclusivamen",
+      "ink_mm": [
+        8.0,
+        130.36,
+        81.66,
+        132.91
+      ],
+      "text": "Produto destinado exclusivamente à odorização de ambientes.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Não aplicar sobre a pele.",
+      "ink_mm": [
+        8.0,
+        133.75,
+        36.55,
+        136.21
+      ],
+      "text": "Não aplicar sobre a pele.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Nunca deixe a vela acesa sem s",
+      "ink_mm": [
+        8.0,
+        137.95,
+        56.84,
+        140.41
+      ],
+      "text": "Nunca deixe a vela acesa sem supervisão.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Mantenha fora do alcance de cr",
+      "ink_mm": [
+        8.0,
+        142.12,
+        64.97,
+        144.61
+      ],
+      "text": "Mantenha fora do alcance de crianças e animais.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Mantenha a pelo menos 30 cm de",
+      "ink_mm": [
+        8.0,
+        146.32,
+        87.72,
+        148.81
+      ],
+      "text": "Mantenha a pelo menos 30 cm de cortinas, roupas de cama, livros e",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "outros materiais inflamáveis.",
+      "ink_mm": [
+        8.0,
+        149.56,
+        41.44,
+        151.68
+      ],
+      "text": "outros materiais inflamáveis.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Use sobre superfície plana, fi",
+      "ink_mm": [
+        8.0,
+        153.76,
+        71.11,
+        156.31
+      ],
+      "text": "Use sobre superfície plana, firme e resistente ao calor.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Mantenha o ambiente ventilado.",
+      "ink_mm": [
+        8.0,
+        157.15,
+        45.51,
+        159.18
+      ],
+      "text": "Mantenha o ambiente ventilado.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Não mova a vela acesa ou com a",
+      "ink_mm": [
+        8.0,
+        161.26,
+        90.94,
+        163.81
+      ],
+      "text": "Não mova a vela acesa ou com a cera ainda líquida. O copo e a cápsula",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "ficam quentes durante e após o",
+      "ink_mm": [
+        8.0,
+        164.56,
+        50.47,
+        167.11
+      ],
+      "text": "ficam quentes durante e após o uso.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Evite contato com os olhos e m",
+      "ink_mm": [
+        8.0,
+        168.85,
+        83.47,
+        171.21
+      ],
+      "text": "Evite contato com os olhos e mucosas. Em caso de contato, lave",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "com água em abundância.",
+      "ink_mm": [
+        8.0,
+        172.06,
+        38.76,
+        174.65
+      ],
+      "text": "com água em abundância.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Não ingerir.",
+      "ink_mm": [
+        8.0,
+        176.35,
+        21.05,
+        178.85
+      ],
+      "text": "Não ingerir.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "DEPOIS DA TEMPORADA",
+      "ink_mm": [
+        8.0,
+        230.69,
+        65.44,
+        234.21
+      ],
+      "text": "DEPOIS DA TEMPORADA",
+      "cap_mm": 3.4
+    },
+    {
+      "label": "A temporada acabou. O copo fica.",
+      "ink_mm": [
+        8.0,
+        239.11,
+        63.2,
+        242.35
+      ],
+      "text": "A temporada acabou. O copo fica.",
+      "cap_mm": 2.6
+    },
+    {
+      "label": "Com tudo frio, retire a cápsul",
+      "ink_mm": [
+        8.0,
+        244.66,
+        57.15,
+        247.21
+      ],
+      "text": "Com tudo frio, retire a cápsula pela borda.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Lave o copo com água morna e s",
+      "ink_mm": [
+        8.0,
+        247.96,
+        52.88,
+        250.55
+      ],
+      "text": "Lave o copo com água morna e sabão.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Nova temporada: encaixe uma cá",
+      "ink_mm": [
+        8.0,
+        252.16,
+        76.38,
+        254.71
+      ],
+      "text": "Nova temporada: encaixe uma cápsula de refil HOLOFOTE",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "200 g no copo limpo.",
+      "ink_mm": [
+        8.0,
+        255.52,
+        32.98,
+        258.05
+      ],
+      "text": "200 g no copo limpo.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Ou use o copo pra pincéis, can",
+      "ink_mm": [
+        8.0,
+        259.66,
+        60.28,
+        262.21
+      ],
+      "text": "Ou use o copo pra pincéis, canetas ou flores.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Não use o copo para bebidas ou",
+      "ink_mm": [
+        8.0,
+        263.05,
+        58.21,
+        265.51
+      ],
+      "text": "Não use o copo para bebidas ou alimentos.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "Descarte a cápsula vazia na co",
+      "ink_mm": [
+        8.0,
+        267.16,
+        61.03,
+        269.71
+      ],
+      "text": "Descarte a cápsula vazia na coleta de metais.",
+      "cap_mm": 2.0
+    },
+    {
+      "label": "ticket back 1",
+      "ink_mm": [
+        25.0,
+        311.21,
+        89.0,
+        313.67
+      ],
+      "text": "SETOR: PRIMEIRA FILA · ASSENTO: O DE SEMPRE · VALIDADE: VITALÍCIA · emitido por: você",
+      "cap_mm": 1.6
+    },
+    {
+      "label": "ticket back 2",
+      "ink_mm": [
+        25.0,
+        336.21,
+        89.0,
+        338.67
+      ],
+      "text": "SETOR: PRIMEIRA FILA · ASSENTO: O DE SEMPRE · VALIDADE: VITALÍCIA · emitido por: você",
+      "cap_mm": 1.6
+    },
+    {
+      "label": "ticket back 3",
+      "ink_mm": [
+        25.0,
+        361.21,
+        89.0,
+        363.67
+      ],
+      "text": "SETOR: PRIMEIRA FILA · ASSENTO: O DE SEMPRE · VALIDADE: VITALÍCIA · emitido por: você",
+      "cap_mm": 1.6
+    },
+    {
+      "label": "ticket back 4",
+      "ink_mm": [
+        25.0,
+        386.21,
+        89.0,
+        388.67
+      ],
+      "text": "SETOR: PRIMEIRA FILA · ASSENTO: O DE SEMPRE · VALIDADE: VITALÍCIA · emitido por: você",
+      "cap_mm": 1.6
+    }
+  ],
+  "note": "A MARCA on the cover is textured for the render; its print separation is the flat amarelo shape in SETLIST_lado-1_amarelo.png"
+}

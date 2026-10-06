@@ -33,7 +33,7 @@ HF.pronto(() => {
   const regua = Math.max(2, M * 0.25 / 72);
   const cap = (f, c) => HF.fsDeCap(f, c * u);
   const xh = (f, c) => HF.fsDeX(f, c * u);
-  const lamp = D.lamp || (D.cor === 'amarelo' ? 'preto' : 'amarelo');   // §D.3 / logos aprovados: O aceso amarelo; no amarelo, disco preto
+  const lamp = D.lamp || (D.cor === 'amarelo' || D.cor === 'laranja' ? 'preto' : 'amarelo');   // §D.1 vence §D.3 no laranja   // §D.3 / logos aprovados: O aceso amarelo; no amarelo, disco preto
   const assinatura = (capU, antes) => ({ tipo: 'assinatura', fundo: true, antes,
     esq: { t: 'holofote nela.', f: 'X', fs: cap('X', capU), lsEm: -0.01, cor: tinta },
     marca: { ink: tinta, lamp }, capMarca: capU * u });

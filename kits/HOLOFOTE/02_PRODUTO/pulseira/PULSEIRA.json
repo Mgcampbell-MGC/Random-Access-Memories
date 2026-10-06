@@ -1,0 +1,69 @@
+{
+  "band": {
+    "size_mm": [
+      15.0,
+      350.0
+    ],
+    "ppmm": 20,
+    "px": [
+      7000,
+      300
+    ],
+    "text": "ACESSO TOTAL · ATRAÇÃO · 09.05.27 · HOLOFOTE ·",
+    "font": "Special Gothic wght 700 wdth 75 caps",
+    "colours": {
+      "ground": "preto (black polyester)",
+      "jacquard": "amarelo"
+    },
+    "thread_pitch_mm": {
+      "weft": 0.25,
+      "warp": 0.2
+    },
+    "cap_mm": 5.527,
+    "tracking": 60,
+    "repeats": 2,
+    "zone_mm": [
+      14.0,
+      340.0
+    ],
+    "foco_disc_mm": 2.874,
+    "text_ink_mm": [
+      23.236,
+      330.764
+    ],
+    "baseline_mm_from_edge": 10.263,
+    "orientation": "x = along the band from the clasp end; y = across (15 mm)"
+  },
+  "seal": {
+    "size_mm": [
+      60.0,
+      15.0
+    ],
+    "ppmm": 20,
+    "stock": "uncoated papel-cartaz",
+    "front_flood": "amarelo",
+    "back_flood": "papel (unprinted)",
+    "front": {
+      "text": "pode rasgar.",
+      "cap_mm": 4.0,
+      "ink_mm": [
+        9.91,
+        4.95,
+        50.09,
+        9.95
+      ]
+    },
+    "back": {
+      "text": "o que se guarda é a pulseira.",
+      "xh_mm": 1.8,
+      "ink_mm": [
+        3.16,
+        5.39,
+        56.84,
+        9.37
+      ]
+    },
+    "use": "wrapped round band and tail; the back is the inside face, read once torn"
+  },
+  "generator": "_build/pack/pulseira.py"
+}

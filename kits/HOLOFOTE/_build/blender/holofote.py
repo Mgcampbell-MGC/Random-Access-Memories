@@ -740,11 +740,15 @@ def copo(spec, at=(0, 0, 0), rot_deg=0.0):
 
 
 def sticker(path):
-    """Lot sticker: clear matte PP 40 x 12 mm on the base underside, centred at -7,0 mm (toward the front)."""
-    bpy.ops.mesh.primitive_plane_add(size=1, location=(0, -7.0 * MM, PANEL_D * MM - COAT_T * MM - 0.03 * MM))
+    """Lot sticker: clear matte PP on the base underside, 7,0 mm below the panel centre AS READ FROM BELOW (§C.4).
+    The relief and sticker art read from below with the image top at the FRONT (-Y), so "below centre" is +Y.
+    200 g: 40 x 12 mm at +7,0 mm. O SINGLE: 32 x 10 mm at +5,2 mm (pack team, 6 Oct 2026)."""
+    single = SIZES['080']['R_OUT'] == R_OUT
+    w, h, off = (32.0, 10.0, 5.2) if single else (40.0, 12.0, 7.0)
+    bpy.ops.mesh.primitive_plane_add(size=1, location=(0, off * MM, PANEL_D * MM - COAT_T * MM - 0.03 * MM))
     s = bpy.context.object
     s.name = 'lot_sticker'
-    s.scale = (40 * MM, 12 * MM, 1)
+    s.scale = (w * MM, h * MM, 1)
     s.rotation_euler = (math.pi, 0, 0)       # faces down
     img = bpy.data.images.load(path)
     m = bpy.data.materials.new('sticker')

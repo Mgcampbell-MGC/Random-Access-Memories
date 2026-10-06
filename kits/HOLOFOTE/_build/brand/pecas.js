@@ -31,7 +31,7 @@
   // abre o tracking até +200 para encher, e MÃE com 5 % de folga vira M Ã E.
   HF.capMae = (medida) => (medida * 17.8) / 72;
   const tintaDe = (cor) => HF.tinta[cor] || 'preto';
-  const lampDe = (cor) => (cor === 'amarelo' ? 'preto' : 'amarelo');       // §D.3, logos aprovados
+  const lampDe = (cor) => (cor === 'amarelo' || cor === 'laranja' ? 'preto' : 'amarelo');   // §D.3; §D.1 vence: amarelo nunca encosta no laranja
   const destDe = (cor) => (cor === 'violeta' || cor === 'preto' ? 'amarelo' : tintaDe(cor));
   HF.assinatura = (cap, tinta, lamp, antes) => ({ tipo: 'assinatura', antes: antes || 0,
     esq: S({ t: 'holofote nela.', f: 'X', cap, lsEm: -0.01, cor: tinta }), marca: { ink: tinta, lamp }, capMarca: cap });

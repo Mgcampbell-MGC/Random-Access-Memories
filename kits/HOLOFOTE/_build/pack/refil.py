@@ -76,7 +76,7 @@ def lid(faixa):
         placed.clear()
         log.clear()
         y = y0
-        p1, c1 = fill_line(T.REF_LID[0], K.CN, y, 3.4, CAPS, by='tracking')
+        p1, c1 = fill_line(T.REF_LID[0], K.CN, y, 4.0, CAPS, by='size', tr=100)
         y += 3.0
         y_show = y + 11.0
         p2, c2 = fill_line(s['show'], K.SG(700, s['wdth']), y_show, 11.0, CAPS, by='size')
@@ -130,7 +130,8 @@ def lid(faixa):
 def band():
     C = math.pi * 68.0
     Hb = 10.0
-    ln, tr = K.fit_tracking([run_cap(T.REF_BAND, K.CN, 2.0, 0, CAPS)], 62.0)
+    tr = 100
+    ln = Line([run_cap(T.REF_BAND, K.CN, 2.0, tr, CAPS)])
     p = K.place_center(ln, C * 0.25, Hb / 2 + 1.0)
     a, _ = K.raster_paths(C, Hb, PP, [K.placed_paths(p)])
     od = os.path.dirname(K.out('refil', 'x'))

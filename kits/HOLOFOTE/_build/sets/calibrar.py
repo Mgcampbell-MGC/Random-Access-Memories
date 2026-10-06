@@ -46,7 +46,11 @@ def sample(exr_path, cam, pts):
     return np.median(np.array(vals), axis=0), len(vals)
 
 
-def run(which, faixa='02', res=(270, 480)):
+RES = dict(palco=(270, 480), escola=(216, 270), muro=(216, 270), loja=(240, 240))
+
+
+def run(which, faixa='02', res=None, balance_k=None):
+    res = res or RES[which]
     S.cena(res=res, samples=48, exposure=0.0)
     sc = bpy.context.scene
     sc.view_settings.view_transform = 'Standard'
@@ -61,16 +65,16 @@ def run(which, faixa='02', res=(270, 480)):
         const = S.ENERGIA[key]
         az = 0.0
     elif which == 'escola':
-        h = S.escola(preset='C02', candle=False)
+        h = S.escola(preset='C02', candle=False, **({'balance_k': balance_k} if balance_k else {}))
         root = S.H.copo(spec, at=h['place'], rot_deg=h['candle_rot'])
         cam = S.escola_camera(h, 'C02')
         energy, key = h['spot'].data.energy, 'escola_spot_k'
         const = S.ENERGIA[key]
         az = 180.0
     elif which == 'muro':
-        h = S.muro()
+        h = S.muro(n=3, spacing=0.11)
         root = S.H.copo(spec, at=h['slots'][1], rot_deg=0)
-        cam = S.muro_camera(h, 'C01')
+        cam = S.muro_camera(h, 'C10')
         energy, key = h['flash'].data.energy, 'muro_flash_k'
         const = S.ENERGIA[key]
         az = 0.0
@@ -92,7 +96,7 @@ def run(which, faixa='02', res=(270, 480)):
     hexc = medir.FAIXA_HEX[faixa]
     s, rep = medir.best_scale(med, hexc, S.EXPOSURE)
     now = medir.compare(medir.display(med, S.EXPOSURE), hexc)
-    out = dict(set=which, faixa=faixa, samples=n, energy_rendered=energy, const_rendered=const,
+    out = dict(set=which, faixa=faixa, balance_k=balance_k, samples=n, energy_rendered=energy, const_rendered=const,
                coat_linear=[float(x) for x in med], reads_now=now, scale=s, const_new=const * s,
                energy_new=energy * s, reads_new=rep)
     print('CALIB', json.dumps(out, indent=1))
@@ -108,5 +112,6 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('which')
     ap.add_argument('--faixa', default='02')
+    ap.add_argument('--balance', type=float, default=None)
     a = ap.parse_args(argv)
-    run(a.which, a.faixa)
+    run(a.which, a.faixa, balance_k=a.balance)

@@ -100,3 +100,8 @@ glyphs (HarfBuzz returned .notdef for every letter). Licences: OFL (copies in `f
   220 mm high, −6°, glass 384 px), downscaled to 108 × 192, flame isolated as lit − unlit: the **16 × 12 mm** wood-wick
   flame showed its warm core on **3 px (FAIL, bar ≥ 9)**; the **double-ply wood wick with a 14 × 18 mm flame** showed
   **10 px (PASS)**. `holofote.copo()` now defaults to `wick='double'`; pass `wick='single'` only for close-ups.
+- **Brand decisions, 6 Oct 2026 (brand team's open questions):** (1) the wordmark is **9,03 × cap** at the advance
+  width (8,90 at the ink); the platform's 9,273 is superseded by the font file. (2) **§D.1 wins over §D.3**: amarelo
+  never touches laranja, so on laranja the lit O is preto, as on amarelo. (3) Width-axis values solved at the ink
+  edge stand (CAMARIM 104, MAIS UM! 110, ACÚSTICO 100). (4) C07 follows its §E.2 row (PIX is its largest word).
+  (5) `01_MARCA/cartazes/3d/` (albedo + height maps for the 3D wall) is regenerable and stays out of git.

@@ -113,7 +113,7 @@ def main():
         'HOLOFOTE_logo_papel-sobre-preto': (C['papel'], C['amarelo'], C['preto']),
         'HOLOFOTE_logo_preto-sobre-amarelo': (C['preto'], C['preto'], C['amarelo']),
         'HOLOFOTE_logo_preto-sobre-rosa': (C['preto'], C['amarelo'], C['rosa']),
-        'HOLOFOTE_logo_preto-sobre-laranja': (C['preto'], C['amarelo'], C['laranja']),
+        'HOLOFOTE_logo_preto-sobre-laranja': (C['preto'], C['preto'], C['laranja']),   # §D.1: amarelo never touches laranja
         'HOLOFOTE_logo_papel-sobre-violeta': (C['papel'], C['amarelo'], C['violeta']),
         'HOLOFOTE_logo_mono-preto_transparente': (C['preto'], C['preto'], None),
         'HOLOFOTE_logo_papel_transparente': (C['papel'], C['amarelo'], None),

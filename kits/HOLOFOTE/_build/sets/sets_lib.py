@@ -38,12 +38,12 @@ ENERGIA = dict(
     palco_spot_k=593.0,       # W per m^2 of throw: 3.200 K hard spot (balanced 3.300 K), coating at hex on the lit panel
     palco_spill=12000.0,      # rotunda spill, light-linked to the rotunda: folds upper-left, ~90 % in shadow
     flame_bounce=0.08,        # warm bounce disc on the lacquer + tape (light-linked), cheat, see flame_bounce()
-    escola_spot_k=190.0,
+    escola_spot_k=700.0,      # C02 spot, balanced 3.050 K: back panel at hex (dE00 3,6) despite the warm wood bounce
     escola_house=1.0,         # practicals: 4 globes, dimmed (~5 %)
-    escola_spill=0.035,       # C02 spill = 3,5 % of the spot, wide cone toward the front row
-    escola_presenter=0.30,    # presenter key relative to the coating-calibrated spot (skin is not a coating)
-    muro_flash_k=60.0,
-    loja_key_k=60.0,
+    escola_spill=0.020,       # C02 spill = 2 % of the spot, wide cone toward the front row
+    escola_presenter=0.220,   # presenter key relative to the coating-calibrated spot (skin is not a coating)
+    muro_flash_k=89.5,        # on-camera flash, energy = k x d^2: coating at hex (dE00 2,8)
+    loja_key_k=83.0,          # LOJA key, energy = k x d^2: coating at hex (dE00 3,0), fill = 20 %
 )
 EXPOSURE = -3.0
 
@@ -279,6 +279,8 @@ def clearance(min_m=0.30, raise_on_fail=False, verbose=True):
     if verbose:
         if not flames:
             print('CLEARANCE: no lit flame in the scene')
+        elif not targets:
+            print('CLEARANCE: no paper/fabric/chair/person tagged in the scene')
         else:
             near = sorted(rows, key=lambda r: r[2])[:6]
             for r in near:
@@ -957,7 +959,7 @@ def _parede(name='parede', baixo='#7F8C78', cima='#E6DCC3', barra=1.50):
     return m
 
 
-def _tnt(name='tnt', hexc='#E2A9BB'):
+def _tnt(name='tnt', hexc='#E9B6C5'):
     """Faded pink TNT (non-woven polypropylene): thin, matte, a little translucent, sun-faded in streaks."""
     m = bpy.data.materials.new(name)
     m.use_nodes = True
@@ -1045,7 +1047,7 @@ DUSK = (1.0, 0.80, 0.72)          # dusk through frosted glass: warm rose-grey, 
 
 def escola(at=(0.0, 0.60), rot_deg=0.0, preset='C02', candle=None, stage_h=0.45, stage_depth=3.2, stage_w=9.0,
            room_w=13.0, room_len=15.0, ceiling=4.6, front_gap=2.20, rows=6, per_row=8, chair_pitch=0.58,
-           row_pitch=0.95, bag_seat=4, bag_hex='#5A3A28', spot_kelvin=3200, balance_k=3300, house=None,
+           row_pitch=0.95, bag_seat=4, bag_hex='#5A3A28', spot_kelvin=3200, balance_k=3050, house=None,
            dusk=1.0, presenter_x=-0.60, seed=11):
     """A ESCOLA: an empty Brazilian school auditorium at dusk. Stage front edge on y = 0 (stage toward +Y), the
     auditorium floor at z = 0, the stage top at z = stage_h.
@@ -1090,14 +1092,14 @@ def escola(at=(0.0, 0.60), rot_deg=0.0, preset='C02', candle=None, stage_h=0.45,
     deco = []
     flower_cols = [('#E98AA8', '#F6C6D3'), ('#F4F1EA', '#FBE3EA'), ('#D9536F', '#F09AAE'), ('#F2B8C9', '#FFFFFF'),
                    ('#F3D27A', '#FBE9B5')]
-    zc, R = stage_h + 1.55, 0.62
+    zc, R, hxc = stage_h + 1.25, 0.50, presenter_x + 0.66
     for k in range(26):                               # a big heart outline made of paper flowers
         t = 2 * math.pi * k / 26
         hx = 16 * math.sin(t) ** 3 / 17 * R
         hz = (13 * math.cos(t) - 5 * math.cos(2 * t) - 2 * math.cos(3 * t) - math.cos(4 * t)) / 17 * R
         f = O.flor_papel(radius=rng.uniform(0.055, 0.085), petals=int(rng.integers(7, 10)),
                          colors=flower_cols[k % len(flower_cols)], seed=k, coll=coll)
-        f.location = (0.55 + hx, yb_ - 0.02, zc + hz)
+        f.location = (hxc + hx, yb_ - 0.02, zc + hz)
         f.rotation_euler = (0, rng.normal(0, 0.3), math.pi)
         deco.append(f)
     for k in range(9):                                # loose flowers in the corners
@@ -1112,7 +1114,7 @@ def escola(at=(0.0, 0.60), rot_deg=0.0, preset='C02', candle=None, stage_h=0.45,
     for k in range(nh):
         s = k / (nh - 1)
         x = -2.9 + 5.8 * s
-        z = stage_h + 2.62 - 0.30 * math.sin(math.pi * s)
+        z = stage_h + 2.55 - 0.42 * math.sin(math.pi * s)
         c = O.coracao(size=rng.uniform(0.13, 0.19), hexc=heart_cols[k % 5], seed=k, coll=coll)
         c.location = (x, yb_ - 0.08, z - 0.10)
         c.rotation_euler = (rng.normal(0, 0.08), rng.normal(0, 0.12), math.pi + rng.normal(0, 0.15))
@@ -1124,7 +1126,7 @@ def escola(at=(0.0, 0.60), rot_deg=0.0, preset='C02', candle=None, stage_h=0.45,
     sp.points.add(30)
     for k, p in enumerate(sp.points):
         s = k / 30
-        p.co = (-3.0 + 6.0 * s, yb_ - 0.075, stage_h + 2.62 - 0.30 * math.sin(math.pi * s), 1)
+        p.co = (-3.0 + 6.0 * s, yb_ - 0.075, stage_h + 2.55 - 0.42 * math.sin(math.pi * (6.0 * s - 0.1) / 5.8), 1)
     string = bpy.data.objects.new('barbante', cur)
     coll.objects.link(string)
     cur.materials.append(material('barbante', **{'Base Color': srgb('#E9E1D0'), 'Roughness': 0.9}))
@@ -1188,6 +1190,8 @@ def escola(at=(0.0, 0.60), rot_deg=0.0, preset='C02', candle=None, stage_h=0.45,
                        color=DUSK, coll=coll, shape='RECTANGLE', size=1.4, size_y=0.9)
     door = material('porta', **{'Base Color': srgb('#6B5B4A'), 'Roughness': 0.5})
     _box(coll, 'porta', -1.0, 1.0, yb + 0.005, yb + 0.05, 0.0, 2.3, door)
+    win = win.copy()
+    win.node_tree.nodes['Emission'].inputs['Strength'].default_value = 0.35 * dusk
     for sx in (-0.5, 0.5):
         _plane(coll, 'porta_vidro', [(sx - 0.25, yb + 0.055, 1.4), (sx + 0.25, yb + 0.055, 1.4),
                                      (sx + 0.25, yb + 0.055, 2.0), (sx - 0.25, yb + 0.055, 2.0)], win)
@@ -1245,17 +1249,18 @@ def escola(at=(0.0, 0.60), rot_deg=0.0, preset='C02', candle=None, stage_h=0.45,
 
 def escola_camera(h, preset='C02', res=None):
     """Camera presets (they set the render resolution too).
-    'C02'           4:5, 50 mm, 0,42 m upstage of the candle and 0,12 m to its left (audience view), lens 19 cm
-                    above the stage: the back panel pin-sharp at lower right, the front row across the frame above
-                    the stage edge, the handbag's seat clear of the candle. f/11 so the monoblocs still read.
+    'C02'           4:5, 85 mm, 0,72 m upstage of the candle and 0,03 m to its left (audience view), lens 21 cm
+                    above the stage, level (verticals straight, lens shift only): the back panel pin-sharp right of
+                    centre, the front row compressed across the frame above the stage edge, the handbag's seat
+                    clear of the candle. f/16 so the monoblocs still read.
     'APRESENTADORA' 9:16, 50 mm, eye level of a person sitting on the stage edge (stage + 0,78 m), 1,40 m away,
                     locked off. Behind her the TNT backdrop."""
     if preset == 'C02':
         res = res or (1080, 1350)
         px, py, pz = h['place']
         sx = res[0] / 1080.0
-        cam = camera_pin((px + 0.12, py + 0.42, pz + 0.19), 180.0 + 4.0, -6.0, 50, res, (px, py, pz + 0.044),
-                         (690 * sx, 1010 * sx), fstop=11.0, focus=0.40)
+        cam = camera_pin((px + 0.03, py + 0.72, pz + 0.21), 180.0, 0.0, 85, res, (px, py, pz + 0.044),
+                         (610 * sx, 1010 * sx), fstop=16.0, focus=0.69)
     else:
         res = res or (1080, 1920)
         x, y, z = h['presenter']
@@ -1291,3 +1296,381 @@ def figura_sentada(h, coll=None):
     for p in parts:
         _flag(p, inflamavel=True)
     return parts
+
+
+# ================================================================================================================
+# 3. O MURO — plaster, pasted lambe posters, a dried glue drip, a concrete ledge, the hard on-camera flash
+# ================================================================================================================
+PLACEHOLDER = ['#FFE81A', '#FF4FA0', '#FF6A1A', '#8424F5', '#FFF8EC']
+# C01's default wall (row-major from the top-left). The headline poster 12 (MÃE AO VIVO. 09.05. INGRESSOS COM VOCÊ.)
+# sits top-centre, clear of the candles; the posters behind the ledge's candle group contrast with them (rosa and
+# amarelo candles before violeta 04, laranja and violeta candles before amarelo 05); the torn 07/08 and the old
+# layers 09-11 give the wall its history; the bottom row runs under the ledge.
+C01_GRADE = ['07', '12', '03', '06',
+             '10', '04', '05', '08',
+             '01', '02', '11', '09']
+
+
+def cartazes(folder=CARTAZES):
+    """The brand team's lambe posters, keyed by id, once PRONTO.txt exists: {id: dict(albedo, altura, nome, papel)}.
+    Returns {} (=> flat placeholders) while the folder is not ready."""
+    import json
+    if not os.path.exists(os.path.join(folder, 'PRONTO.txt')):
+        return {}
+    out = {}
+    man = os.path.join(folder, 'cartazes.json')
+    if os.path.exists(man):
+        for c in json.load(open(man))['cartazes']:
+            arq = [os.path.join(folder, a) for a in c['arquivos']]
+            alb = next((a for a in arq if a.endswith('_albedo.png')), None)
+            alt = next((a for a in arq if a.endswith('_altura.png')), None)
+            if alb and os.path.exists(alb):
+                out[c['id']] = dict(albedo=alb, altura=alt if alt and os.path.exists(alt) else None,
+                                    nome=c.get('nome', c['id']), papel=c.get('papel'))
+    else:
+        for p in sorted(glob.glob(os.path.join(folder, '3d', '*_albedo.png'))):
+            k = os.path.basename(p).split('_')[0].replace('CARTAZ-', '')
+            alt = p.replace('_albedo.png', '_altura.png')
+            out[k] = dict(albedo=p, altura=alt if os.path.exists(alt) else None, nome=k, papel=None)
+    return out
+
+
+def _poster_material(spec, name, seed):
+    """Lambe paper: the brand's albedo (never retouched) with its torn-edge alpha; matte paper with a semi-gloss
+    film of dried paste in broad brush strokes. A placeholder is a flat colour field."""
+    m = bpy.data.materials.new(name)
+    m.use_nodes = True
+    nt = m.node_tree
+    bs = nt.nodes['Principled BSDF']
+    bs.inputs['Specular IOR Level'].default_value = 0.4
+    tc = _n(nt, 'ShaderNodeTexCoord')
+    out = nt.nodes['Material Output']
+    if 'albedo' in spec:
+        ti = _img(nt, spec['albedo'], colorspace='sRGB', ext='CLIP', interp='Cubic')
+        ti.image.alpha_mode = 'STRAIGHT'
+        _l(nt, tc.outputs['UV'], ti.inputs['Vector'])
+        _l(nt, ti.outputs['Color'], bs.inputs['Base Color'])
+        alpha = ti.outputs['Alpha']
+    else:
+        bs.inputs['Base Color'].default_value = srgb(spec['cor'])
+        alpha = None
+    # paste film: broad near-horizontal brush strokes of lower roughness
+    mp = _n(nt, 'ShaderNodeMapping')
+    mp.inputs['Scale'].default_value = (3.0, 30.0, 3.0)
+    mp.inputs['Location'].default_value = (seed * 1.7, seed * 0.3, 0)
+    _l(nt, tc.outputs['Object'], mp.inputs['Vector'])
+    nz = _n(nt, 'ShaderNodeTexNoise', **{'Scale': 1.0, 'Detail': 3.0, 'Distortion': 0.6})
+    _l(nt, mp.outputs[0], nz.inputs['Vector'])
+    _l(nt, _maprange(nt, nz.outputs['Fac'], 0.35, 0.7, 0.78, 0.42), bs.inputs['Roughness'])
+    if alpha is not None:
+        tr = _n(nt, 'ShaderNodeBsdfTransparent')
+        mix = _n(nt, 'ShaderNodeMixShader')
+        _l(nt, alpha, mix.inputs[0])
+        _l(nt, tr.outputs[0], mix.inputs[1])
+        _l(nt, bs.outputs[0], mix.inputs[2])
+        _l(nt, mix.outputs[0], out.inputs['Surface'])
+    return m
+
+
+def _poster(coll, spec, w, h_, loc, rot_deg, name, seed, res=0.003, amp=0.0006):
+    """One pasted poster: a grid in the XZ plane facing -Y, displaced by its height map (0,6 mm, midlevel 0,5)."""
+    nx, nz = max(2, int(w / res)), max(2, int(h_ / res))
+    bm = bmesh.new()
+    uvl = bm.loops.layers.uv.new('UVMap')
+    g = [[bm.verts.new((-w / 2 + w * i / nx, 0.0, -h_ / 2 + h_ * j / nz)) for i in range(nx + 1)] for j in range(nz + 1)]
+    for j in range(nz):
+        for i in range(nx):
+            f = bm.faces.new((g[j][i], g[j][i + 1], g[j + 1][i + 1], g[j + 1][i]))     # normal -Y (to camera)
+            for lp, (a, b) in zip(f.loops, ((i, j), (i + 1, j), (i + 1, j + 1), (i, j + 1))):
+                lp[uvl].uv = (a / nx, b / nz)
+    ob = _bm_obj(name, bm, coll, _poster_material(spec, name + '_mat', seed), smooth=True)
+    hp = spec.get('altura') or T.rugas_cartaz(seed=seed % 7 + 1)
+    tex = bpy.data.textures.new(name + '_alt', 'IMAGE')
+    tex.image = bpy.data.images.load(hp, check_existing=True)
+    tex.image.colorspace_settings.name = 'Non-Color'
+    tex.extension = 'EXTEND'
+    d = ob.modifiers.new('rugas', 'DISPLACE')
+    d.texture = tex
+    d.texture_coords = 'UV'
+    d.direction = 'NORMAL'
+    d.strength = amp if spec.get('altura') else amp * 1.6
+    d.mid_level = 0.5
+    ob.location = Vector(loc)
+    ob.rotation_euler = (0, math.radians(rot_deg), 0)
+    return _flag(ob, inflamavel=True)
+
+
+def _reboco_material(name='reboco', hexc='#B9B1A3'):
+    """Rough street plaster (reboco/chapisco): grainy bump, rain-streak stains, worn paint, matte."""
+    path = T.reboco()
+    m = material(name, **{'Base Color': srgb(hexc), 'Roughness': 0.92, 'Specular IOR Level': 0.3})
+    nt = m.node_tree
+    bs = nt.nodes['Principled BSDF']
+    tc = _n(nt, 'ShaderNodeTexCoord')
+    mp = _n(nt, 'ShaderNodeMapping')
+    mp.inputs['Rotation'].default_value = (math.radians(90), 0, 0)     # wall in XZ: map (x, z)
+    _l(nt, tc.outputs['Object'], mp.inputs['Vector'])
+    ti = _img(nt, path, interp='Cubic')
+    _l(nt, mp.outputs[0], ti.inputs['Vector'])
+    sep = _n(nt, 'ShaderNodeSeparateColor')
+    _l(nt, ti.outputs['Color'], sep.inputs['Color'])
+    hgt, stain, wear = sep.outputs[0], sep.outputs[1], sep.outputs[2]
+    col = _mix(nt, _maprange(nt, stain, 0.35, 0.85, 0.0, 0.28), srgb(hexc), srgb('#8A8174'))
+    col = _mix(nt, _math(nt, 'MULTIPLY', wear, 0.35), col, srgb('#A59D90'))
+    col = _mix(nt, _maprange(nt, hgt, 0.3, 0.7, 0.10, 0.0), col, srgb('#6E675C'))   # grain pits hold dirt
+    _l(nt, col, bs.inputs['Base Color'])
+    b = _n(nt, 'ShaderNodeBump', **{'Strength': 0.8, 'Distance': 0.0015})
+    _l(nt, hgt, b.inputs['Height'])
+    _l(nt, b.outputs['Normal'], bs.inputs['Normal'])
+    return m
+
+
+def _concreto(name='concreto', hexc='#8C887F'):
+    m = material(name, **{'Base Color': srgb(hexc), 'Roughness': 0.88, 'Specular IOR Level': 0.35})
+    nt = m.node_tree
+    bs = nt.nodes['Principled BSDF']
+    tc = _n(nt, 'ShaderNodeTexCoord')
+    vo = _n(nt, 'ShaderNodeTexVoronoi', **{'Scale': 260.0})
+    _l(nt, tc.outputs['Object'], vo.inputs['Vector'])
+    nz = _n(nt, 'ShaderNodeTexNoise', **{'Scale': 9.0, 'Detail': 8.0})
+    _l(nt, tc.outputs['Object'], nz.inputs['Vector'])
+    col = _mix(nt, _maprange(nt, vo.outputs['Distance'], 0.0, 0.5, 0.35, 0.0), srgb(hexc), srgb('#A9A497'))
+    col = _mix(nt, _maprange(nt, nz.outputs['Fac'], 0.45, 0.8, 0.0, 0.5), col, srgb('#5F5B54'))
+    _l(nt, col, bs.inputs['Base Color'])
+    b = _n(nt, 'ShaderNodeBump', **{'Strength': 0.5, 'Distance': 0.001})
+    _l(nt, vo.outputs['Distance'], b.inputs['Height'])
+    _l(nt, b.outputs['Normal'], bs.inputs['Normal'])
+    return m
+
+
+def _glue_drip(coll, top, length=0.16, seed=3):
+    """A dried paste drip from a poster's bottom edge: a thin flattened rivulet ending in a bead."""
+    rng = np.random.default_rng(seed)
+    top = Vector(top)
+    pts, rr = [], []
+    n = 24
+    for i in range(n + 1):
+        t = i / n
+        pts.append(top + Vector((0.004 * math.sin(t * 5 + seed) + rng.normal(0, 0.0006), -0.0008, -length * t)))
+        rr.append(0.0028 * (1 - 0.45 * t) + (0.0028 * max(0, (t - 0.88) / 0.12) ** 0.6))
+    bm = bmesh.new()
+    prof = [(math.cos(2 * math.pi * k / 12), 0.35 * math.sin(2 * math.pi * k / 12)) for k in range(12)]
+    O.sweep(bm, pts, prof, [Vector((0, -1, 0))] * len(pts), scales=[(r, r) for r in rr])
+    m = material('cola_seca', **{'Base Color': srgb('#EDE4CF'), 'Roughness': 0.12, 'Specular IOR Level': 0.5,
+                                 'Transmission Weight': 0.35, 'Coat Weight': 0.5, 'Coat Roughness': 0.08})
+    return _bm_obj('cola_escorrida', bm, coll, m, smooth=True)
+
+
+def muro(n=4, spacing=0.125, grade=None, cols=4, rows=3, poster_w=0.32, ledge_z=None, ledge_depth=0.13,
+         wall_w=3.2, wall_h=2.6, drip_cell=2, folder=CARTAZES, posters=True, seed=21):
+    """O MURO: a plaster wall (plane y = 0, facing -Y) with lambe posters in a cols x rows grid, a concrete ledge
+    across the lower third, a dried glue drip. Posters are the brand team's 01_MARCA/cartazes/ (PRONTO.txt) or flat
+    placeholders. Candles stand on h['slots'] (n of them, `spacing` apart, centred), unlit (§D.8: the ledge is
+    within 30 cm of the paper — clearance() says NO for a lit candle here).
+    grade      list of poster ids, row-major from the top-left (default C01_GRADE); a hex string = placeholder colour.
+    poster_w   poster width in metres (the art is 2:3).
+    posters    False = bare plaster (C10 'O MURO flash on plaster'); the ledge and grid geometry stay the same."""
+    coll = _coll('MURO')
+    rng = np.random.default_rng(seed)
+    h = dict(coll=coll)
+    ph = poster_w * 1.5
+    gw = cols * poster_w - (cols - 1) * 0.012
+    gh = rows * ph - (rows - 1) * 0.012
+    z_base = 0.10
+    if ledge_z is None:
+        ledge_z = z_base + gh / 3.0
+    # wall
+    bm = bmesh.new()
+    vs = [bm.verts.new(c) for c in ((-wall_w / 2, 0, 0), (wall_w / 2, 0, 0), (wall_w / 2, 0, wall_h + 0.4),
+                                    (-wall_w / 2, 0, wall_h + 0.4))]
+    bm.faces.new(vs)
+    wall = _bm_obj('muro_reboco', bm, coll, _reboco_material())
+    # ground (sidewalk) so the ledge sits somewhere
+    _plane(coll, 'calcada', [(-wall_w / 2, -1.5, 0), (wall_w / 2, -1.5, 0), (wall_w / 2, 0, 0), (-wall_w / 2, 0, 0)],
+           _concreto('calcada', '#7E7A73'))
+    # posters
+    pool = cartazes(folder)
+    grade = grade or C01_GRADE
+    show = posters
+    posters = []
+    k = 0
+    for r in range(rows if show else 0):
+        for c in range(cols):
+            gid = grade[k % len(grade)]
+            spec = pool.get(gid) if pool else None
+            if spec is None:
+                spec = dict(cor=gid if str(gid).startswith('#') else PLACEHOLDER[k % len(PLACEHOLDER)])
+            x = -gw / 2 + poster_w / 2 + c * (poster_w - 0.012) + rng.normal(0, 0.006)
+            z = z_base + gh - ph / 2 - r * (ph - 0.012) + rng.normal(0, 0.006)
+            y = -0.0004 - 0.00025 * k                  # later posters on top
+            p = _poster(coll, spec, poster_w, ph, (x, y, z), rng.normal(0, 0.5), 'cartaz_%02d' % k, seed + k)
+            p['cartaz'] = str(gid)
+            posters.append(p)
+            k += 1
+    h['posters'] = posters
+    h['placeholders'] = not bool(pool)
+    # the glue drip from the bottom edge of one poster
+    if show and drip_cell is not None and 0 <= drip_cell < len(posters):
+        p = posters[drip_cell]
+        top = p.location + Vector((poster_w * 0.18, -0.0012, -ph / 2 + 0.004))
+        h['drip'] = _glue_drip(coll, top, length=0.15, seed=seed)
+    # the concrete ledge (chipped edges)
+    bm = bmesh.new()
+    bmesh.ops.create_cube(bm, size=1.0)
+    for v in bm.verts:
+        v.co = Vector((v.co.x * wall_w, -ledge_depth / 2 + v.co.y * ledge_depth - 0.002, ledge_z - 0.035 + v.co.z * 0.07))
+    bmesh.ops.subdivide_edges(bm, edges=bm.edges[:], cuts=24, use_grid_fill=True)
+    for v in bm.verts:
+        if v.co.y < -ledge_depth + 0.004 and v.co.z > ledge_z - 0.004:
+            v.co.z -= abs(rng.normal(0, 0.0015))
+            v.co.y += abs(rng.normal(0, 0.0012))
+    ledge = _bm_obj('muro_peitoril', bm, coll, _concreto())
+    bv = ledge.modifiers.new('bev', 'BEVEL')
+    bv.width = 0.004
+    bv.segments = 2
+    _flag(ledge, apoio=True)
+    # two steel brackets under the cantilevered ledge, outside the poster field
+    for bx in (-gw / 2 - 0.10, gw / 2 + 0.10):
+        _box(coll, 'muro_mao_francesa', bx - 0.012, bx + 0.012, -ledge_depth + 0.02, -0.001, ledge_z - 0.22, ledge_z - 0.07,
+             material('ferro', **{'Base Color': srgb('#3A3530'), 'Roughness': 0.6, 'Metallic': 0.7}))
+    h['ledge_z'] = ledge_z
+    h['slots'] = [(-(n - 1) / 2 * spacing + i * spacing, -ledge_depth / 2 - 0.002, ledge_z) for i in range(n)]
+    h['grid'] = dict(w=gw, h=gh, z0=z_base, poster_w=poster_w, poster_h=ph)
+    # a very dim warm ambience so the flash shadow is not digital black
+    w = bpy.context.scene.world
+    w.node_tree.nodes['Background'].inputs[0].default_value = srgb('#4A3E33')
+    w.node_tree.nodes['Background'].inputs[1].default_value = 0.015
+    return h
+
+
+def flash(cam, offset=(-0.05, 0.15), size=0.03, energy=None, target_dist=1.0, stop=0.0, name='flash'):
+    """The hard on-camera flash: a 3 x 3 cm area light 15 cm above the lens axis (and 5 cm left, so the hard shadow
+    falls down-right), parented to the camera, firing along the view. Energy = ENERGIA['muro_flash_k'] x d^2, d the
+    distance to the subject plane. stop: extra stops over the coating calibration. Under PBR Neutral paper never truly
+    clips: at 0 the papel poster reads ~(242, 236, 222) and the coating dE00 2,8; at +0,5 paper (249, 243, 232) and the
+    coating washes to dE00 4,0 (saturation 0,73) — the platform's '+0,5 stop' costs the coating rule."""
+    e = (ENERGIA['muro_flash_k'] * target_dist ** 2 if energy is None else energy) * 2.0 ** stop
+    L = bpy.data.lights.new(name, 'AREA')
+    L.shape = 'SQUARE'
+    L.size = size
+    L.energy = e
+    L.color = (1.0, 0.985, 0.96)                     # 5.500 K flash, recorded near daylight balance
+    ob = bpy.data.objects.new(name, L)
+    bpy.context.scene.collection.objects.link(ob)
+    ob.parent = cam
+    ob.location = (offset[0], offset[1], 0.0)        # camera local: x right, y up, -z forward
+    ob.rotation_euler = (0, 0, 0)
+    return ob
+
+
+def muro_camera(h, preset='C01', res=None, flash_on=True, stop=0.0):
+    """'C01' 4:5: the whole poster grid, the ledge at 1/3 height, the candles centred, 50 mm, straight on.
+    'C10' 4:5: closer, the ledge's three glasses ~32 % of frame height, 85 mm."""
+    g = h['grid']
+    res = res or (1080, 1350)
+    sx = res[0] / 1080.0
+    if preset == 'C01':
+        lens = 50.0
+        H_ = g['h'] * 1.0
+        d = (H_ / 2) / math.tan(math.atan(18 / lens)) + 0.0
+        cam = camera_pin((0.0, -d, h['ledge_z'] + 0.25), 0.0, 0.0, lens, res, (0.0, 0.0, h['ledge_z']),
+                         (540 * sx, 1350 * sx * 2 / 3), fstop=8.0, focus=d - 0.06)
+        dist = d
+    else:
+        lens = 85.0
+        d = 0.95
+        cam = camera_pin((0.0, -d, h['ledge_z'] + 0.10), 0.0, 0.0, lens, res, (0.0, -0.06, h['ledge_z'] + 0.044),
+                         (540 * sx, 860 * sx), fstop=8.0, focus=d - 0.06)
+        dist = d
+    if flash_on:
+        h['flash'] = flash(cam, target_dist=dist, stop=stop)
+    return cam
+
+
+# ================================================================================================================
+# 4. LOJA — seamless shadow catcher, key + bounce; the #FFF8EC plate is added by code afterwards (loja_plate)
+# ================================================================================================================
+def loja(at=(0.0, 0.0, 0.0), key_az=-45.0, key_el=35.0, key_dist=1.2, key_size=0.30, fill_ratio=0.20,
+         sweep_back=0.55, balance=None):
+    """LOJA (§D.6, §E.3): render with S.cena(transparent=True). A seamless (floor, 0,35 m cove, back) that is a SHADOW
+    CATCHER in papel, so it keeps the contact shadow and bounces papel light while the background stays alpha for
+    the code-filled #FFF8EC plate. Key: 30 x 30 cm at 1,2 m, 45 deg left, elevation 35 deg. Fill: a white bounce on
+    the right at 20 % of the key (a soft 0,8 x 1,0 m source, visible in the coat as a reflection strip).
+    The cove starts `sweep_back` behind the product (>= 0,30 m from a lit flame, §D.8)."""
+    coll = _coll('LOJA')
+    at = Vector(at)
+    h = dict(coll=coll, at=tuple(at), place=tuple(at))
+    # seamless: floor -> cove -> back, as one shadow-catcher surface
+    bm = bmesh.new()
+    prof = [(-1.2 + 0.05 * i, 0.0) for i in range(int((sweep_back + 1.2) / 0.05) + 1)]
+    R = 0.35
+    for k in range(1, 13):
+        a = math.radians(90 * k / 12)
+        prof.append((sweep_back + R * math.sin(a), R * (1 - math.cos(a))))
+    prof += [(sweep_back + R, R + 0.25 * i) for i in range(1, 9)]
+    W = 3.0
+    pm = material('papel_fundo', **{'Base Color': srgb(PAPEL_HEX), 'Roughness': 0.9, 'Specular IOR Level': 0.2})
+    n_floor = sum(1 for y, z in prof if z == 0.0)
+    parts = []
+    for name, seg, flag in (('loja_fundo_chao', prof[:n_floor], dict(apoio=True)),
+                            ('loja_fundo_curva', prof[n_floor - 1:], dict(inflamavel=True))):
+        bm = bmesh.new()
+        rows = [[bm.verts.new((at.x + xx, at.y + y, at.z + z)) for xx in (-W / 2, W / 2)] for y, z in seg]
+        for i in range(len(rows) - 1):
+            bm.faces.new((rows[i][0], rows[i][1], rows[i + 1][1], rows[i + 1][0]))
+        ob = _bm_obj(name, bm, coll, pm, smooth=True)
+        ob.is_shadow_catcher = True
+        parts.append(_flag(ob, **flag))
+    h['seamless'] = parts[0]
+    h['seamless_parts'] = parts
+    tgt = at + Vector((0, 0, 0.044))
+    e = ENERGIA['loja_key_k'] * key_dist ** 2
+    key = _light('loja_key', 'AREA', tgt + _dir(key_az, key_el) * key_dist, tgt, e, coll=coll, shape='SQUARE',
+                 size=key_size)
+    fill = _light('loja_rebatedor', 'AREA', tgt + _dir(60.0, 15.0) * key_dist, tgt, e * fill_ratio, coll=coll,
+                  shape='RECTANGLE', size=0.8, size_y=1.0)
+    h['key'], h['fill'] = key, fill
+    return h
+
+
+PAPEL_HEX = '#FFF8EC'
+
+
+def loja_camera(h, preset='L01', res=(1200, 1200), fill=0.65, size='200', center_x=None):
+    """'L01' 85 mm, lens at label height (52 mm), 0 deg tilt; the candle is turned 20 deg (3/4 front) by the caller.
+    'L05' 3/4 front, 25 deg down. Product centred, glass `fill` of the frame height (§D.10: >= 62 %)."""
+    at = h['at']
+    gp = int(round(res[1] * fill))
+    top = (res[1] - gp) // 2
+    if preset == 'L01':
+        s = camera_glass(res=res, lens=85, cam_height=0.052, tilt_deg=0.0, glass_px=gp, top_y=top, at=at, size=size,
+                         center_x=center_x)
+    else:
+        s = camera_glass(res=res, lens=85, cam_height=0.0, tilt_deg=-25.0, glass_px=gp, top_y=top, at=at, size=size)
+        # height solved from the 25 deg line of sight, then re-solved so the glass still spans gp
+        d = s['distance']
+        s = camera_glass(res=res, lens=85, cam_height=0.044 + d * math.tan(math.radians(25)), tilt_deg=-25.0,
+                         glass_px=gp, top_y=top, at=at, size=size, center_x=center_x)
+    return s['object']
+
+
+def tampa_encostada(h, side=1, art=None):
+    """L01: the lid leaning against the candle's right side, its top (the X, 'ela fica aqui.') to camera."""
+    t = H.tampa(art)
+    at = Vector(h['at'])
+    t.location = at + Vector((side * 0.072, 0.014, 0.0))
+    t.rotation_euler = (math.radians(78), 0.0, math.radians(side * 14))     # top to camera, leaning back 12 deg
+    bpy.context.view_layer.update()
+    # rest the lowest point of the tilted disc on the floor
+    zmin = min((o.matrix_world @ Vector(c)).z for o in descendants(t) if o.type == 'MESH' for c in o.bound_box)
+    t.location.z -= zmin - at.z
+    return t
+
+
+def loja_plate(png_in, png_out, hexc=PAPEL_HEX):
+    """Composite a transparent LOJA render (with its caught shadow) over the exact papel plate, by code."""
+    from PIL import Image
+    im = Image.open(png_in).convert('RGBA')
+    plate = Image.new('RGBA', im.size, tuple(int(hexc.lstrip('#')[i:i + 2], 16) for i in (0, 2, 4)) + (255,))
+    Image.alpha_composite(plate, im).convert('RGB').save(png_out)
+    return png_out
