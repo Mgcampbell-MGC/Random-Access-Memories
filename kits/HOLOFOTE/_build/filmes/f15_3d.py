@@ -75,6 +75,10 @@ def settings(samples, pct=100, threshold=0.02):
     sc.render.resolution_x, sc.render.resolution_y = RES
     sc.render.resolution_percentage = pct
     sc.render.image_settings.color_depth = '16'
+    if os.environ.get('HF_THREADS'):
+        # approved off-lock runs are pinned to two cores (taskset): render with exactly that many threads
+        sc.render.threads_mode = 'FIXED'
+        sc.render.threads = int(os.environ['HF_THREADS'])
     return sc
 
 
