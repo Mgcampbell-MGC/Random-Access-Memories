@@ -244,16 +244,25 @@ def portao():
     b = cv2.resize(unl, (108, 192), interpolation=cv2.INTER_AREA).astype(np.float64)
     d = a - b
     lum = 0.2126 * d[..., 2] + 0.7152 * d[..., 1] + 0.0722 * d[..., 0]
-    core = (lum > 40) & (d[..., 2] > d[..., 0])
-    n = int(core.sum())
-    ys, xs = np.where(core)
-    rep = dict(teste='§D.6 flame-legibility gate, KV-01 9:16 FINAL (campanha.py) at 108 × 192',
+    warm = d[..., 2] > d[..., 0]
+    # the flame itself: above the glass rim (KV-01 9:16 layout: glass top y 900 -> row 90) + 2 rows of lip glow
+    flame_rows = np.zeros_like(lum, bool)
+    flame_rows[:93, :] = True
+    out = {}
+    for t in (40, 35):
+        core = (lum > t) & warm
+        out[t] = dict(chama=int((core & flame_rows).sum()), fora_da_chama=int((core & ~flame_rows).sum()))
+    n = out[40]['chama']
+    rep = dict(teste='§D.6 flame-legibility gate, KV-01 9:16 FINAL plate (campanha.py, 96 spp) at 108 × 192',
                metodo='INTER_AREA downscale of the delivered lit plate and of an unlit render of the same camera; '
-                      'flame isolated as lit − unlit; warm-core pixel = luminance difference > 40/255 with R > B. '
-                      'The same metric on the director\'s 6 Oct gate frames (single 16×12 / double 14×18) gives 3 / 12 '
-                      '(recorded 3 / 10): same verdicts.',
+                      'flame isolated as lit − unlit; warm-core pixel = luminance difference > 40/255 with R > B, counted '
+                      'above the glass rim (row ≤ 92). The same metric on the director\'s 6 Oct gate frames (single 16×12 / '
+                      'double 14×18, rendered WITH candle_lib.glare() Fog Glow) gives 3 / 12 (recorded 3 / 10).',
                warm_core_px=n, barra=9, passa=bool(n >= 9),
-               caixa=[int(xs.min()), int(ys.min()), int(xs.max()), int(ys.max())] if n else None)
+               detalhe={'limiar_40': out[40], 'limiar_35': out[35]},
+               nota='The pixels outside the flame window are the flame_bounce glow on the floor X tape, not the flame. '
+                    'The finals carry no bloom (glow halos are on the §D.11 never-do list); the 6 Oct PASS (10 px) was '
+                    'measured on frames rendered with Fog Glow, which spreads the core over more thumbnail pixels.')
     os.makedirs(os.path.join(KIT, '06_PRODUCAO', 'fidelidade'), exist_ok=True)
     json.dump(rep, open(os.path.join(KIT, '06_PRODUCAO', 'fidelidade', 'KV-01_9x16_portao-chama.json'), 'w'),
               ensure_ascii=False, indent=2)

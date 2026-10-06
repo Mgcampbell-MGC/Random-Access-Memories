@@ -220,7 +220,12 @@ def lid_top(u):
     base1 = 25.0
     p, wcap = wordmark(f, MX0, base1)
     text = T.CASE_CAMARIM + u['headliner']
-    ln, cap = fill_size(text, K.CN, MEAS, 80)
+
+    def hrun(c):                  # a heart in this line takes the glass label's heart (Expanded One proportions)
+        r = run_cap(text, K.CN, c, 80, CAPS)
+        r.heart_ref = K.XP
+        return r
+    ln, cap = K.fit_size(lambda c: Line([hrun(c)]), MEAS, 0.5, 60)
     y2 = base1 + 7.5 + cap
     f.add('papel_st', K.place_left(ln, MX0, y2), 'CAMARIM', stencil=True, cap_mm=round(cap, 3), tracking=80)
     assert cap > wcap, f'headliner line cap {cap:.2f} must stay above the wordmark cap {wcap:.2f} (rule 1)'
@@ -419,9 +424,9 @@ def base_back(u, top=None):
 def base_under():
     f = Face('base_fundo', W, D, 'tblr', 'tl,tr,bl,br')
     ln = Line([run_cap(T.CASE_UNDER, K.CN, 3.0, 0)])
-    f.add('papel', K.place_center(ln, W / 2, 56.0), 'O case é de papel', cap_mm=3.0)
-    labels = ['papel', 'vidro', 'metal']
-    xs = [W / 2 - 22.0, W / 2, W / 2 + 22.0]
+    f.add('papel', K.place_center(ln, W / 2, 56.0), 'O copo é seu', cap_mm=3.0)
+    labels = T.CASE_BINS                                   # papel · plástico · vidro · metal (director, 6 Oct 2026)
+    xs = [W / 2 + 22.0 * (i - (len(labels) - 1) / 2) for i in range(len(labels))]
     for x, lab in zip(xs, labels):
         f.L['papel'].append(K.bin_icon_d(x - 5.0, 64.0, 10.0))
         l2 = Line([run_cap(lab, K.CN, 2.2, 0)])
@@ -429,6 +434,21 @@ def base_under():
     f.log.append(dict(label='disposal symbols', note='generic bin pictogram + material; ABNT NBR 16182 artwork '
                                                      'UNVERIFIED (standard not consulted)'))
     return f
+
+
+def case_decisions(u):
+    """Director's decisions after the copy/compliance review (6 Oct 2026) that this unit prints."""
+    d = [dict(panel='base esquerda (MODO DE USO)', **T.MODO_FIX),
+         dict(panel='base fundo', **T.CASE_UNDER_FIX),
+         dict(panel='base fundo', kind=T.DD, platform='papel · vidro · metal', used=' · '.join(T.CASE_BINS),
+              reason='the case holds plastic parts (EVA, PMMA, clasp); the plástico mark is the same bin pictogram'),
+         dict(panel='base trás (MANIFESTO)', **T.ALERG_FIX),
+         dict(panel='base trás (MANIFESTO)', **T.INGREDIENT_BREAK)]
+    if K.HEART in u['headliner']:
+        d.append(dict(panel='tampa topo', kind=T.DD, platform='heart drawn to the Condensed One O (a narrow teardrop)',
+                      used='the glass label heart: same vector, Expanded One O proportions, Condensed One bearings',
+                      reason='the case-lid heart must match the heart on the glass'))
+    return d
 
 
 def base_top():
@@ -732,8 +752,9 @@ def main():
                                      T.L6_RIGHT_CAPS + T.L6_RIGHT_FIG, T.CASE_FRAGIL],
                          base_left=[T.MODO_DE_USO, T.ADVERTENCIAS],
                          base_right=[T.RIDER_HEAD] + [list(r) for r in T.RIDER] + [T.BARCODE],
-                         base_back=T.manifesto(u['faixa'], 'case'), base_under=[T.CASE_UNDER, 'papel', 'vidro', 'metal'],
+                         base_back=T.manifesto(u['faixa'], 'case'), base_under=[T.CASE_UNDER] + T.CASE_BINS,
                          mirror=T.CASE_MIRROR),
+            deviations=case_decisions(u),
             generator='_build/pack/case.py')
         R.write_json(meta, os.path.join(od, f'{pref}_case.json'))
         print(uid, 'done')

@@ -364,6 +364,7 @@ def main():
     flatlay(out[1], out[2], m1, m2, os.path.join(od, 'SETLIST_preview_aberto.jpg'))
     meta['note'] = ('A MARCA on the cover is textured for the render; its print separation is the flat amarelo '
                     'shape in SETLIST_lado-1_amarelo.png')
+    meta['deviations'] = [dict(panel="P1' REGRAS DA CASA · MODO DE USO", **T.MODO_FIX)]
     R.write_json(meta, os.path.join(od, 'SETLIST.json'))
     print('setlist done')
 

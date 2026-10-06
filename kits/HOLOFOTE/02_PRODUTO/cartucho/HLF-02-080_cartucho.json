@@ -204,25 +204,25 @@
         "cap_mm": 1.7
       },
       {
-        "label": "Use a vela dentro do copo, sob",
+        "label": "Use a vela sempre dentro do co",
         "ink_mm": [
           5.0,
-          25.5,
-          62.02,
+          25.57,
+          65.58,
           27.67
         ],
-        "text": "Use a vela dentro do copo, sobre a tampa virada ou sobre superfície plana,",
+        "text": "Use a vela sempre dentro do copo. Apoie o copo sobre a tampa virada ou sobre",
         "cap_mm": 1.7
       },
       {
-        "label": "firme e resistente ao calor.",
+        "label": "superfície plana, firme e resi",
         "ink_mm": [
           5.0,
-          28.3,
-          25.32,
-          30.05
+          28.25,
+          38.4,
+          30.42
         ],
-        "text": "firme e resistente ao calor.",
+        "text": "superfície plana, firme e resistente ao calor.",
         "cap_mm": 1.7
       },
       {
@@ -398,14 +398,14 @@
         "cap_mm": 2.212
       },
       {
-        "label": "CONTEÚDO: HOLOFOTE AO VIVO — v",
+        "label": "CONTEÚDO: HOLOFOTE AO VIVO · O",
         "ink_mm": [
           5.0,
           10.2,
-          63.92,
+          50.41,
           12.44
         ],
-        "text": "CONTEÚDO: HOLOFOTE AO VIVO — vela aromática · ODORIZANTE DE AMBIENTE",
+        "text": "CONTEÚDO: HOLOFOTE AO VIVO · O SINGLE — vela aromática",
         "cap_mm": 1.7
       },
       {
@@ -424,30 +424,41 @@
         "ink_mm": [
           5.0,
           15.75,
-          67.95,
+          31.55,
           18.26
         ],
-        "text": "COMPOSIÇÃO / INGREDIENTS (INCI): HYDROGENATED COCONUT OIL, HYDROGENATED",
+        "text": "COMPOSIÇÃO / INGREDIENTS (INCI):",
         "cap_mm": 1.7
       },
       {
-        "label": "SOYBEAN OIL, PARFUM, LIMONENE,",
+        "label": "HYDROGENATED COCONUT OIL, HYDR",
         "ink_mm": [
           5.0,
           18.85,
-          59.03,
+          67.57,
           20.9
         ],
-        "text": "SOYBEAN OIL, PARFUM, LIMONENE, LINALOOL, CITRONELLOL, GERANIOL.",
+        "text": "HYDROGENATED COCONUT OIL, HYDROGENATED SOYBEAN OIL, PARFUM, LIMONENE,",
+        "cap_mm": 1.7
+      },
+      {
+        "label": "LINALOOL, CITRONELLOL, GERANIO",
+        "ink_mm": [
+          5.0,
+          21.57,
+          32.29,
+          23.62
+        ],
+        "text": "LINALOOL, CITRONELLOL, GERANIOL.",
         "cap_mm": 1.7
       },
       {
         "label": "Ingredientes (português): óleo",
         "ink_mm": [
           5.0,
-          21.47,
+          24.19,
           66.09,
-          23.72
+          26.44
         ],
         "text": "Ingredientes (português): óleo de coco hidrogenado, óleo de soja hidrogenado,",
         "cap_mm": 1.7
@@ -456,9 +467,9 @@
         "label": "fragrância, limoneno, linalol,",
         "ink_mm": [
           5.0,
-          24.29,
+          27.01,
           42.41,
-          26.44
+          29.16
         ],
         "text": "fragrância, limoneno, linalol, citronelol, geraniol.",
         "cap_mm": 1.7
@@ -467,9 +478,9 @@
         "label": "Pavio de madeira. Cápsula de a",
         "ink_mm": [
           5.0,
-          26.91,
+          29.63,
           35.09,
-          29.13
+          31.85
         ],
         "text": "Pavio de madeira. Cápsula de alumínio.",
         "cap_mm": 1.7
@@ -478,22 +489,11 @@
         "label": "(Alérgenos de fragrância decla",
         "ink_mm": [
           5.0,
-          29.63,
-          64.68,
-          31.88
-        ],
-        "text": "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026 —",
-        "cap_mm": 1.7
-      },
-      {
-        "label": "exemplo; confirmar com o certi",
-        "ink_mm": [
-          5.0,
-          32.41,
-          57.44,
+          32.35,
+          63.77,
           34.6
         ],
-        "text": "exemplo; confirmar com o certificado do fornecedor da fragrância.)",
+        "text": "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026.)",
         "cap_mm": 1.7
       },
       {
@@ -724,12 +724,12 @@
         "label": "topo",
         "ink_mm": [
           5.0,
-          34.44,
+          34.21,
           69.0,
-          39.56
+          39.79
         ],
-        "text": "ESTE LADO PRA CIMA ↑",
-        "cap_mm": 4.945
+        "text": "ESTE LADO PRA CIMA",
+        "cap_mm": 5.402
       }
     ],
     "fundo": []
@@ -746,6 +746,40 @@
     {
       "panel": "lateral-1",
       "reason": "MODO DE USO + ADVERTÊNCIAS need 68.8 mm of height at wdth 100 on this 74 mm panel (65 mm available); the width axis is solved to wdth 80 so the cap height stays at the platform's 1,7 mm"
+    },
+    {
+      "panel": "lateral-1",
+      "kind": "director's decision",
+      "platform": "Use a vela dentro do copo, sobre a tampa virada ou sobre superfície plana, firme e resistente ao calor.",
+      "used": "Use a vela sempre dentro do copo. Apoie o copo sobre a tampa virada ou sobre superfície plana, firme e resistente ao calor.",
+      "reason": "the old line read as if the candle could stand outside the glass: it is always used inside the glass, and the glass stands on the lid or a flat surface"
+    },
+    {
+      "panel": "verso",
+      "kind": "director's decision",
+      "platform": "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026 — exemplo; confirmar com o certificado do fornecedor da fragrância.)",
+      "used": "(Alérgenos de fragrância declarados conforme RDC Anvisa nº 1.029/2026.)",
+      "reason": "internal note removed from every printed panel",
+      "note_kept_in_json": "— exemplo; confirmar com o certificado do fornecedor da fragrância."
+    },
+    {
+      "panel": "verso",
+      "kind": "director's decision",
+      "reason": "ingredient lists break only after a comma (or after the list's colon), never inside a name: HYDROGENATED SOYBEAN OIL, alfa-isometil ionona stay whole"
+    },
+    {
+      "panel": "verso",
+      "kind": "director's decision",
+      "platform": "CONTEÚDO: HOLOFOTE AO VIVO — vela aromática · ODORIZANTE DE AMBIENTE",
+      "used": "CONTEÚDO: HOLOFOTE AO VIVO · O SINGLE — vela aromática",
+      "reason": "the contents line names O SINGLE (the string as given by the director)"
+    },
+    {
+      "panel": "topo",
+      "kind": "director's decision",
+      "platform": "ESTE LADO PRA CIMA ↑",
+      "used": "ESTE LADO PRA CIMA",
+      "reason": "an arrow is meaningless on a horizontal panel; the words stay"
     }
   ],
   "atlas": {

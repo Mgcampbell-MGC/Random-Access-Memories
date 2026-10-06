@@ -129,16 +129,22 @@ HEART_UNIT = [  # unit box, y up; bottom point at (0.5, 0)
 HEART = '♥'
 
 
-def heart_metrics(fc):
+def heart_metrics(fc, ref=None):
+    """ref: take the heart's WIDTH (its proportions) from another face's 'O', keeping this face's side bearings, so
+    one heart shape can sit in a condensed line (O CASE lid: the glass label's heart, director 6 Oct 2026)."""
     o = fc.gid('O')
     ex = fc.extents(o)
     adv = fc.font.get_glyph_h_advance(o)
     w = (ex[2] - ex[0])
+    if ref is not None:
+        ro = ref.extents(ref.gid('O'))
+        w2 = (ro[2] - ro[0]) * fc.upm / ref.upm
+        adv, w = adv - w + w2, w2
     return dict(lsb=ex[0], w=w, adv=adv, ymin=-12, ymax=722)
 
 
-def heart_ops(fc):
-    m = heart_metrics(fc)
+def heart_ops(fc, ref=None):
+    m = heart_metrics(fc, ref)
     ops = []
     for op in HEART_UNIT:
         if op[0] == 'closePath':
@@ -209,7 +215,7 @@ class Line:
                         gl.append(Glyph(r.fc, gid, x + xo * s, -yo * s, r.em, tag=r.tag, run=r))
                         x += adv * s + r.tracking / 1000.0 * r.em
                 if pi < len(parts) - 1:   # a heart goes here
-                    ops, ext, adv = heart_ops(r.fc)
+                    ops, ext, adv = heart_ops(r.fc, getattr(r, 'heart_ref', None))
                     gl.append(Glyph(r.fc, -1, x, 0.0, r.em, ops=ops, ext=ext, tag=r.tag, run=r))
                     x += adv * s + r.tracking / 1000.0 * r.em
         # remove the trailing tracking of the very last glyph

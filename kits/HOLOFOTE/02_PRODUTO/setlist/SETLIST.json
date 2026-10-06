@@ -695,25 +695,25 @@
       "cap_mm": 2.0
     },
     {
-      "label": "Use a vela dentro do copo, sob",
+      "label": "Use a vela sempre dentro do co",
       "ink_mm": [
         8.0,
-        65.46,
-        87.53,
+        65.55,
+        93.61,
         68.01
       ],
-      "text": "Use a vela dentro do copo, sobre a tampa virada ou sobre superfície",
+      "text": "Use a vela sempre dentro do copo. Apoie o copo sobre a tampa virada ou",
       "cap_mm": 2.0
     },
     {
-      "label": "plana, firme e resistente ao c",
+      "label": "sobre superfície plana, firme ",
       "ink_mm": [
         8.0,
-        68.82,
-        46.31,
+        68.76,
+        66.08,
         71.31
       ],
-      "text": "plana, firme e resistente ao calor.",
+      "text": "sobre superfície plana, firme e resistente ao calor.",
       "cap_mm": 2.0
     },
     {
@@ -1014,5 +1014,14 @@
       "cap_mm": 1.6
     }
   ],
-  "note": "A MARCA on the cover is textured for the render; its print separation is the flat amarelo shape in SETLIST_lado-1_amarelo.png"
+  "note": "A MARCA on the cover is textured for the render; its print separation is the flat amarelo shape in SETLIST_lado-1_amarelo.png",
+  "deviations": [
+    {
+      "panel": "P1' REGRAS DA CASA · MODO DE USO",
+      "kind": "director's decision",
+      "platform": "Use a vela dentro do copo, sobre a tampa virada ou sobre superfície plana, firme e resistente ao calor.",
+      "used": "Use a vela sempre dentro do copo. Apoie o copo sobre a tampa virada ou sobre superfície plana, firme e resistente ao calor.",
+      "reason": "the old line read as if the candle could stand outside the glass: it is always used inside the glass, and the glass stands on the lid or a flat surface"
+    }
+  ]
 }
