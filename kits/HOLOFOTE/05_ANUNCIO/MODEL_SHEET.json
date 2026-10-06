@@ -1,0 +1,52 @@
+{
+ "modelos": {
+  "H01": {
+   "nome": "a fã atrasada",
+   "idade": 25,
+   "cortes": [
+    "1A",
+    "1B",
+    "2A",
+    "2B",
+    "3A",
+    "3B"
+   ],
+   "descricao_en": "Fictional Brazilian adult woman about 25: deep brown skin with visible texture and a few small dark marks on the cheekbones, bleached platinum buzz cut grown out to about two centimetres with dark roots, strong straight brows, a small scar through the outer end of the left eyebrow, slightly crooked lower teeth, thin gold wire-rim oval glasses, smudged black eyeliner, bare skin. A chunky cream hand-knitted cardigan, slightly too big, uneven stitches, one button missing, over a washed-black crew T-shirt with no print; a plain black woven fabric festival wristband with a yellow stripe and no lettering; short yellow nail polish chipped at the tips; a single silver ear cuff on the left ear.",
+   "energia": "Deadpan. Seca e sem pressa; as sobrancelhas trabalham; o calor só aparece na última palavra falada. Nunca tom de influencer, nunca \"gente\", nunca suspiro.",
+   "voz": "Sintética licenciada, média-grave, paulistana neutra, ~15 caracteres/s; leve sorriso só na última fala. Não imita ninguém.",
+   "nunca": "Nunca diz \"eu\" sobre um evento de vida, nunca alega ter mãe própria na fala, nunca é cliente."
+  },
+  "H02": {
+   "nome": "o fã atrasado",
+   "idade": 23,
+   "cortes": [
+    "1C",
+    "3C"
+   ],
+   "descricao_en": "Fictional Brazilian adult man about 23: light brown skin, black hair in a low fade with a curly top, a thin patchy moustache he is clearly trying to grow, an expressive mouth, one dimple. His mother's old faded black nylon bum bag worn crossbody with no logo, an oversized heather-grey crew sweatshirt with no print, the same plain black woven festival wristband with a yellow stripe and no lettering, a thin silver chain.",
+   "energia": "Deadpan, meio tempo mais lento que H01; envergonhado da própria sinceridade.",
+   "voz": "Sintética licenciada, média, paulistana, ~15 caracteres/s.",
+   "nunca": "As mesmas regras de fala de H01."
+  },
+  "M01": {
+   "nome": "a atração",
+   "idade": 54,
+   "pecas": [
+    "P01",
+    "P03"
+   ],
+   "descricao_en": "Fictional Brazilian woman about 54: warm medium-brown skin, laugh lines, slight asymmetry; a short tousled dark cut with natural grey at the temples; red-framed reading glasses pushed up on her head; red lipstick; small gold hoops."
+  }
+ },
+ "rejeitar_se": [
+  "any generated letter (backdrop, clothing, wristband, phone)",
+  "the face changes between talk and gesture takes",
+  "extra or fused fingers",
+  "any flame or candle in a presenter scene",
+  "an influencer smile on the hook",
+  "waxy skin",
+  "any blue or violet object in a frame with a stand-in",
+  "a recognisable real person or celebrity likeness"
+ ],
+ "status": "Elenco especificado; imagens de pessoas NÃO geradas neste kit (sem créditos aprovados). O animatic usa manequins cinza com as silhuetas do elenco."
+}

@@ -175,8 +175,9 @@ def _mancha_rasgo(H, W, cx, cy, raio, r):
     return m
 
 
-def buraco(H, W, r, cx, cy, rx, ry, rot=0.0):
-    """Buraco rasgado num cartaz de cima (para revelar camada antiga): forma orgânica + franja de fibra."""
+def buraco(H, W, r, cx, cy, rx, ry, rot=0.0, ilhas=1.0):
+    """Buraco rasgado num cartaz de cima (para revelar camada antiga): forma orgânica + franja de fibra.
+    ilhas 0–1: quantidade de pedacinhos do cartaz de cima que ficaram grudados dentro do buraco."""
     yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
     c, s = math.cos(rot), math.sin(rot)
     u = ((xx - cx) * c + (yy - cy) * s) / rx
@@ -184,19 +185,81 @@ def buraco(H, W, r, cx, cy, rx, ry, rot=0.0):
     ang = np.arctan2(v, u)
     rr = np.hypot(u, v)
     n = 1024
-    perf = 1 + ruido.perfil_1d(n, r, 0.42, ((0.25, 1.0), (0.07, 0.6), (0.018, 0.4), (0.005, 0.25)))
+    perf = 1 + ruido.perfil_1d(n, r, 0.42, ((0.25, 1.0), (0.07, 0.55), (0.018, 0.25), (0.005, 0.09), (0.002, 0.04)))
     idx = ((ang + np.pi) / (2 * np.pi) * (n - 1)).astype(int)
     lim = perf[idx]
     escala = min(rx, ry)
     dist = (lim - rr) * escala            # px dentro do buraco (+)
     m = np.clip(dist + 0.5, 0, 1)
-    # ilhas: pedaços do cartaz de cima que ficaram grudados
-    ilhas = (ruido.fractal(H, W, escala * 0.18, r, 3) > 0.42) & (dist > escala * 0.05)
-    m = np.where(ilhas, m * 0.0, m)
     franja = np.clip(1 - np.abs(dist + escala * 0.012) / (escala * 0.014), 0, 1) * (dist < 0.5)
     fibra = np.clip(ruido.valor(H, W, 1.5, r) * 1.5 + 0.6, 0, 1)
+    if ilhas > 0:
+        # ilhas: pedaços do cartaz de cima que ficaram grudados, com borda antialias e franja própria
+        f = ruido.fractal(H, W, escala * 0.18, r, 3)
+        lim_i = 0.62 - 0.2 * ilhas
+        isl = ((f > lim_i) & (dist > escala * 0.05)).astype(np.float32)
+        isl = cv2.GaussianBlur(isl, (0, 0), 0.7)
+        borda_i = np.clip(cv2.dilate(isl, np.ones((5, 5), np.uint8)) - isl, 0, 1)
+        m = m * (1 - isl)
+        franja = np.maximum(franja, borda_i * m)
     return m.astype(np.float32), (franja * fibra).astype(np.float32)
 
+
+
+def rasgo_linha(H, W, r, p0, p1, amp=0.035):
+    """Rasgo ao longo da linha p0→p1 (px): devolve (mantém, franja). 'mantém' = 1 do lado ESQUERDO da linha
+    (olhando de p0 para p1); franja = fibra branca do miolo do papel exposta na borda rasgada."""
+    yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
+    (x0, y0), (x1, y1) = p0, p1
+    L = math.hypot(x1 - x0, y1 - y0)
+    ux, uy = (x1 - x0) / L, (y1 - y0) / L
+    s = (xx - x0) * ux + (yy - y0) * uy                      # ao longo
+    d = (xx - x0) * uy - (yy - y0) * ux                      # distância assinada (− = esquerda)
+    n = 2048
+    perf = ruido.perfil_1d(n, r, amp * L, ((0.14, 1.0), (0.04, 0.38), (0.012, 0.13), (0.004, 0.045), (0.0015, 0.02)))
+    idx = np.clip((s / L) * (n - 1), 0, n - 1).astype(int)
+    dist = perf[idx] - d                                      # >0 = fica
+    mant = np.clip(dist + 0.5, 0, 1)
+    largura = r.uniform(3.0, 7.0)                             # a franja varia: o papel rasga em bisel
+    lf = largura * (0.6 + 0.8 * np.clip(ruido.valor(H, W, 40, r) + 0.5, 0, 1))
+    franja = np.clip(1 - dist / lf, 0, 1) * (dist > -0.5)
+    fibra = np.clip(ruido.valor(H, W, 1.5, r) * 1.6 + 0.55, 0, 1)
+    return mant.astype(np.float32), (franja * fibra).astype(np.float32)
+
+
+def rasgado(topo, antigo, r, buracos=(), cortes=(), sombra=True, ilhas=1.0):
+    """Compõe um cartaz de cima RASGADO sobre um cartaz antigo (mesmo retângulo).
+    topo/antigo = tuplas (assado, albedo, altura) de aplicar(). buracos = [(cx, cy, rx, ry, rot)] que revelam o antigo.
+    cortes = [(p0, p1)]: rasga o cartaz de cima ao longo da linha (o lado direito sai).
+    Devolve (assado, albedo, altura) já compostos; o alfa externo é o do cartaz de cima."""
+    ta, tb, th = topo
+    aa, ab, ah = antigo
+    H, W = th.shape
+    furo = np.zeros((H, W), np.float32)
+    franja = np.zeros((H, W), np.float32)
+    for (cx, cy, rx, ry, rot) in buracos:
+        m, f = buraco(H, W, r, cx, cy, rx, ry, rot, ilhas)
+        furo = np.maximum(furo, m)
+        franja = np.maximum(franja, f)
+    for (p0, p1) in cortes:
+        m, f = rasgo_linha(H, W, r, p0, p1)
+        furo = np.maximum(furo, 1 - m)
+        franja = np.maximum(franja, f)
+    branco = np.array([0.985, 0.975, 0.955], np.float32)      # miolo do papel (o pigmento é só na superfície)
+    def junta(t, a, sombrear):
+        c = t[..., :3] * (1 - furo[..., None]) + a[..., :3] * furo[..., None]
+        if sombrear and sombra:
+            # sombra fina da borda do papel de cima sobre o de baixo (luz de cima-esquerda)
+            borda = cv2.GaussianBlur(np.roll(np.roll(1 - furo, 3, 0), 2, 1), (0, 0), 2.2)
+            c = c * (1 - 0.28 * np.clip(borda - (1 - furo), 0, 1))[..., None]
+        fr = (franja * (1 - furo))[..., None] * 0.9
+        c = c * (1 - fr) + branco * fr
+        alfa = np.maximum(t[..., 3] * (1 - furo), a[..., 3] * furo)
+        return np.dstack([np.clip(c, 0, 1), alfa])
+    assado = junta(ta, aa, True)
+    albedo = junta(tb, ab, False)
+    altura = (0.35 + 0.65 * th) * (1 - furo) + 0.35 * ah * furo   # o antigo fica ~0,1 mm abaixo
+    return assado, albedo, altura
 
 # ------------------------------------------------------------------ 3. tinta
 def textura_tinta(al, r, forca=1.0):
@@ -207,11 +270,12 @@ def textura_tinta(al, r, forca=1.0):
     f = ruido.valor(H, W, 1.4, r) + 0.7 * ruido.valor(H, W, 5.0, r) + 0.5 * ruido.valor(H, W, 40.0, r)
     fs = (f - f.mean()) / (f.std() + 1e-6)
     falhas = np.clip((fs - 2.45) * 2.5, 0, 1) * np.clip((dist - 2) / 6.0, 0, 1)
-    # mancha de densidade e veio de madeira (só nos chapados grandes)
-    mancha = np.clip(ruido.fractal(H, W, 90, r, 3), -1, 1)
-    veio = ruido.anisotropico(H + 4, W + 4, 120.0, 2.2, r)[:H, :W]
-    grande = np.clip((dist - 10) / 25, 0, 1)
-    dens = 1 - forca * (0.85 * falhas + 0.03 * (mancha + 1) * grande + 0.045 * np.clip(veio, 0, None) * grande)
+    # mancha de densidade e veio de madeira. A transição borda→miolo tem 2–3 px (o 'squeeze' da tinta na borda do
+    # tipo), nunca uma rampa larga: uma rampa de 25 px lê como 'inner glow' digital, não como tinta.
+    mancha = np.clip(ruido.fractal(H, W, 70, r, 3) * 1.6, -1, 1) * 0.5 + 0.5          # 0–1
+    veio = np.clip(ruido.anisotropico(H + 4, W + 4, 160.0, 3.0, r)[:H, :W] * 1.4, 0, 1)  # 0–1, fibras longas
+    miolo = np.clip((dist - 1.0) / 2.5, 0, 1)
+    dens = 1 - forca * (0.85 * falhas + miolo * (0.035 * mancha + 0.022 * veio))
     # borda irregular (tinta espalha / falha), ~0,5 px
     borda = (al > 0.02) & (al < 0.98)
     jit = ruido.valor(H, W, 1.8, r) * 0.28
@@ -225,8 +289,25 @@ def deslocar(a, dx, dy):
 
 
 # ------------------------------------------------------------------ aplicar
-def aplicar(img, papel, semente=7, rasgo=0.3, rugas=1.0, registro=2.0, grao=1.0, tinta=1.0, borda=True):
-    """img: HxWx3 uint8 ou float. Devolve (assado RGBA float, albedo RGBA float, altura float 0–1, info)."""
+def envelhecer(out, r, idade, papel):
+    """Cartaz de camada antiga: sol desbota (menos saturação, mais claro) de forma manchada, um pouco de sujeira."""
+    H, W, _ = out.shape
+    k = idade * (0.55 + 0.45 * np.clip(ruido.fractal(H, W, max(H, W) / 5, r, 3) + 0.5, 0, 1))[..., None]
+    lum = (out @ np.array([0.2126, 0.7152, 0.0722], np.float32))[..., None]
+    sat = 1 - 0.38 * k
+    desb = lum + (out - lum) * sat
+    desb = desb + (1 - desb) * 0.16 * k                                   # clareia (UV + chuva)
+    amarelado = np.array([1.0, 0.985, 0.94], np.float32)                  # o papel amarela
+    desb = desb * (1 - 0.35 * k) + desb * amarelado * 0.35 * k
+    sujeira = np.clip(ruido.fractal(H, W, 140, r, 4) * 1.4, 0, 1)
+    escorrido = np.clip(ruido.anisotropico(H + 4, W + 4, 6.0, 260.0, r)[:H, :W], 0, 1)  # marcas verticais de chuva
+    desb = desb * (1 - idade * (0.05 * sujeira + 0.035 * escorrido))[..., None]
+    return np.clip(desb, 0, 1)
+
+
+def aplicar(img, papel, semente=7, rasgo=0.3, rugas=1.0, registro=2.0, grao=1.0, tinta=1.0, borda=True, idade=0.0):
+    """img: HxWx3 uint8 ou float. Devolve (assado RGBA float, albedo RGBA float, altura float 0–1, info).
+    idade 0–1: cartaz de camada antiga (desbotado, sujo, mais enrugado)."""
     r = ruido.rng(semente)
     im = img.astype(np.float32) / (255.0 if img.dtype == np.uint8 else 1.0)
     H, W, _ = im.shape
@@ -234,7 +315,7 @@ def aplicar(img, papel, semente=7, rasgo=0.3, rugas=1.0, registro=2.0, grao=1.0,
     pap = rgb(papel)
     out = np.empty_like(im)
     out[:] = pap
-    info = dict(semente=semente, chapas={}, papel=papel)
+    info = dict(semente=semente, chapas={}, papel=papel, idade=idade)
     for n in ORDEM_IMPRESSAO:
         if n not in chapas:
             continue
@@ -251,6 +332,9 @@ def aplicar(img, papel, semente=7, rasgo=0.3, rugas=1.0, registro=2.0, grao=1.0,
         out = out * (1 - al[..., None]) + cor * al[..., None]
         info['chapas'][n] = dict(dx=round(dx, 2), dy=round(dy, 2))
     out = np.where(estranho[..., None], im, out)
+    if idade > 0:
+        out = envelhecer(out, r, idade, papel)
+        rugas = rugas * (1 + 0.6 * idade)
     # papel: grão (mais no papel que na tinta)
     g = grao_papel(H, W, r)
     lum_tinta = 1 - np.clip(np.linalg.norm(out - pap, axis=2) * 1.5, 0, 1)

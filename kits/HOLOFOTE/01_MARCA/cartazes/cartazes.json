@@ -1,0 +1,254 @@
+{
+ "fonte": "_build/brand/cartazes.py",
+ "tamanho": [
+  2000,
+  3000
+ ],
+ "nota": "assado = 2D; 3d/ = albedo sem sombreado + altura 16 bits (0,5 = plano) para deslocamento",
+ "cartazes": [
+  {
+   "id": "01",
+   "nome": "MAE-AO-VIVO_amarelo",
+   "papel": "amarelo",
+   "semente": 101,
+   "tamanho": [
+    2000,
+    3000
+   ],
+   "rasgo_borda": 0.3,
+   "arquivos": [
+    "CARTAZ-01_MAE-AO-VIVO_amarelo.png",
+    "3d/CARTAZ-01_MAE-AO-VIVO_amarelo_albedo.png",
+    "3d/CARTAZ-01_MAE-AO-VIVO_amarelo_altura.png"
+   ]
+  },
+  {
+   "id": "02",
+   "nome": "MAE-AO-VIVO_rosa",
+   "papel": "rosa",
+   "semente": 102,
+   "tamanho": [
+    2000,
+    3000
+   ],
+   "rasgo_borda": 0.35,
+   "arquivos": [
+    "CARTAZ-02_MAE-AO-VIVO_rosa.png",
+    "3d/CARTAZ-02_MAE-AO-VIVO_rosa_albedo.png",
+    "3d/CARTAZ-02_MAE-AO-VIVO_rosa_altura.png"
+   ]
+  },
+  {
+   "id": "03",
+   "nome": "MAE-AO-VIVO_laranja",
+   "papel": "laranja",
+   "semente": 103,
+   "tamanho": [
+    2000,
+    3000
+   ],
+   "rasgo_borda": 0.25,
+   "arquivos": [
+    "CARTAZ-03_MAE-AO-VIVO_laranja.png",
+    "3d/CARTAZ-03_MAE-AO-VIVO_laranja_albedo.png",
+    "3d/CARTAZ-03_MAE-AO-VIVO_laranja_altura.png"
+   ]
+  },
+  {
+   "id": "04",
+   "nome": "MAE-AO-VIVO_violeta",
+   "papel": "violeta",
+   "semente": 104,
+   "tamanho": [
+    2000,
+    3000
+   ],
+   "rasgo_borda": 0.4,
+   "arquivos": [
+    "CARTAZ-04_MAE-AO-VIVO_violeta.png",
+    "3d/CARTAZ-04_MAE-AO-VIVO_violeta_albedo.png",
+    "3d/CARTAZ-04_MAE-AO-VIVO_violeta_altura.png"
+   ]
+  },
+  {
+   "id": "05",
+   "nome": "MAE-AO-VIVO-0905_amarelo",
+   "papel": "amarelo",
+   "semente": 105,
+   "tamanho": [
+    2000,
+    3000
+   ],
+   "rasgo_borda": 0.3,
+   "arquivos": [
+    "CARTAZ-05_MAE-AO-VIVO-0905_amarelo.png",
+    "3d/CARTAZ-05_MAE-AO-VIVO-0905_amarelo_albedo.png",
+    "3d/CARTAZ-05_MAE-AO-VIVO-0905_amarelo_altura.png"
+   ]
+  },
+  {
+   "id": "06",
+   "nome": "MAE-AO-VIVO-0905_rosa",
+   "papel": "rosa",
+   "semente": 106,
+   "tamanho": [
+    2000,
+    3000
+   ],
+   "rasgo_borda": 0.35,
+   "arquivos": [
+    "CARTAZ-06_MAE-AO-VIVO-0905_rosa.png",
+    "3d/CARTAZ-06_MAE-AO-VIVO-0905_rosa_albedo.png",
+    "3d/CARTAZ-06_MAE-AO-VIVO-0905_rosa_altura.png"
+   ]
+  },
+  {
+   "id": "07",
+   "nome": "MAE-AO-VIVO_rosa_RASGADO-sobre-MAIS-UM",
+   "papel": "rosa",
+   "semente": 107,
+   "tamanho": [
+    2000,
+    3000
+   ],
+   "rasgo": {
+    "tipo": "faixa",
+    "centro": [
+     1040,
+     1169
+    ],
+    "raios": [
+     1280,
+     331
+    ]
+   },
+   "camada_antiga": {
+    "papel": "laranja",
+    "show": "MAIS UM!",
+    "semente": 207,
+    "idade": 0.55
+   },
+   "rasgo_borda": 0.45,
+   "arquivos": [
+    "CARTAZ-07_MAE-AO-VIVO_rosa_RASGADO-sobre-MAIS-UM.png",
+    "3d/CARTAZ-07_MAE-AO-VIVO_rosa_RASGADO-sobre-MAIS-UM_albedo.png",
+    "3d/CARTAZ-07_MAE-AO-VIVO_rosa_RASGADO-sobre-MAIS-UM_altura.png"
+   ]
+  },
+  {
+   "id": "08",
+   "nome": "MAE-AO-VIVO_laranja_RASGADO-sobre-CAMARIM",
+   "papel": "laranja",
+   "semente": 108,
+   "tamanho": [
+    2000,
+    3000
+   ],
+   "rasgo": {
+    "tipo": "corte",
+    "linha": [
+     [
+      2060,
+      1047
+     ],
+     [
+      -60,
+      991
+     ]
+    ]
+   },
+   "camada_antiga": {
+    "papel": "rosa",
+    "show": "CAMARIM",
+    "semente": 208,
+    "idade": 0.6
+   },
+   "rasgo_borda": 0.45,
+   "arquivos": [
+    "CARTAZ-08_MAE-AO-VIVO_laranja_RASGADO-sobre-CAMARIM.png",
+    "3d/CARTAZ-08_MAE-AO-VIVO_laranja_RASGADO-sobre-CAMARIM_albedo.png",
+    "3d/CARTAZ-08_MAE-AO-VIVO_laranja_RASGADO-sobre-CAMARIM_altura.png"
+   ]
+  },
+  {
+   "id": "09",
+   "nome": "MAE-CAMARIM_rosa_ANTIGO",
+   "papel": "rosa",
+   "semente": 209,
+   "tamanho": [
+    2000,
+    3000
+   ],
+   "idade": 0.6,
+   "rasgo_borda": 0.6,
+   "arquivos": [
+    "CARTAZ-09_MAE-CAMARIM_rosa_ANTIGO.png",
+    "3d/CARTAZ-09_MAE-CAMARIM_rosa_ANTIGO_albedo.png",
+    "3d/CARTAZ-09_MAE-CAMARIM_rosa_ANTIGO_altura.png"
+   ]
+  },
+  {
+   "id": "10",
+   "nome": "MAE-MAIS-UM_laranja_ANTIGO",
+   "papel": "laranja",
+   "semente": 210,
+   "tamanho": [
+    2000,
+    3000
+   ],
+   "idade": 0.55,
+   "rasgo_borda": 0.6,
+   "arquivos": [
+    "CARTAZ-10_MAE-MAIS-UM_laranja_ANTIGO.png",
+    "3d/CARTAZ-10_MAE-MAIS-UM_laranja_ANTIGO_albedo.png",
+    "3d/CARTAZ-10_MAE-MAIS-UM_laranja_ANTIGO_altura.png"
+   ]
+  },
+  {
+   "id": "11",
+   "nome": "MAE-ACUSTICO_violeta_METADE",
+   "papel": "violeta",
+   "semente": 211,
+   "tamanho": [
+    2000,
+    3000
+   ],
+   "rasgo": {
+    "tipo": "metade",
+    "linha": [
+     [
+      1225,
+      -60
+     ],
+     [
+      955,
+      3060
+     ]
+    ]
+   },
+   "idade": 0.65,
+   "rasgo_borda": 0.5,
+   "arquivos": [
+    "CARTAZ-11_MAE-ACUSTICO_violeta_METADE.png",
+    "3d/CARTAZ-11_MAE-ACUSTICO_violeta_METADE_albedo.png",
+    "3d/CARTAZ-11_MAE-ACUSTICO_violeta_METADE_altura.png"
+   ]
+  },
+  {
+   "id": "12",
+   "nome": "C01_MAE-AO-VIVO-INGRESSOS-COM-VOCE_papel",
+   "papel": "papel",
+   "semente": 112,
+   "tamanho": [
+    2000,
+    3000
+   ],
+   "rasgo_borda": 0.25,
+   "arquivos": [
+    "CARTAZ-12_C01_MAE-AO-VIVO-INGRESSOS-COM-VOCE_papel.png",
+    "3d/CARTAZ-12_C01_MAE-AO-VIVO-INGRESSOS-COM-VOCE_papel_albedo.png",
+    "3d/CARTAZ-12_C01_MAE-AO-VIVO-INGRESSOS-COM-VOCE_papel_altura.png"
+   ]
+  }
+ ]
+}

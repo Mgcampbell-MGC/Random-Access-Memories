@@ -96,3 +96,7 @@ glyphs (HarfBuzz returned .notdef for every letter). Licences: OFL (copies in `f
   the master and compares tile by tile, with a planted error that must be caught. Calibration on the hero view:
   exact render worst tile 0,90–0,97 / 5th pct 0,98; planted error 0,17–0,19 (caught); a render whose label really said
   *MÃF* 0,025 (fail); AgX render fails on saturation (0,49 < 0,75).
+- **Flame-legibility gate (§D.6), run 6 Oct 2026 — the swap is recorded.** KV-01 9:16 at the platform camera (50 mm,
+  220 mm high, −6°, glass 384 px), downscaled to 108 × 192, flame isolated as lit − unlit: the **16 × 12 mm** wood-wick
+  flame showed its warm core on **3 px (FAIL, bar ≥ 9)**; the **double-ply wood wick with a 14 × 18 mm flame** showed
+  **10 px (PASS)**. `holofote.copo()` now defaults to `wick='double'`; pass `wick='single'` only for close-ups.

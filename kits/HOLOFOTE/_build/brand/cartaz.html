@@ -33,7 +33,7 @@ HF.pronto(() => {
   const regua = Math.max(2, M * 0.25 / 72);
   const cap = (f, c) => HF.fsDeCap(f, c * u);
   const xh = (f, c) => HF.fsDeX(f, c * u);
-  const lamp = (D.cor === 'violeta' || D.cor === 'preto') ? 'amarelo' : tinta;   // impressão a 1 cor: O aceso chapado
+  const lamp = D.lamp || (D.cor === 'amarelo' ? 'preto' : 'amarelo');   // §D.3 / logos aprovados: O aceso amarelo; no amarelo, disco preto
   const assinatura = (capU, antes) => ({ tipo: 'assinatura', fundo: true, antes,
     esq: { t: 'holofote nela.', f: 'X', fs: cap('X', capU), lsEm: -0.01, cor: tinta },
     marca: { ink: tinta, lamp }, capMarca: capU * u });
@@ -94,7 +94,7 @@ HF.pronto(() => {
     }
   }
   HF.pilha(document.body, itens, { x0, x1, y0, y1 });
-  window.HF_INFO = { u, x0, x1, y0, y1, itens: itens.map((i) => ({ tipo: i.tipo, baseline: i.baseline, passo: i.r && i.r.passo })) };
+  window.HF_INFO = { u, x0, x1, y0, y1, itens: itens.map((i) => ({ tipo: i.tipo, t: (i.s && i.s.t) || i.nome || (i.esq && i.esq.t) || '', baseline: i.baseline, top: i.top, bot: i.bot, passo: i.r && i.r.passo, x0: i.objs && i.objs[0] ? i.objs[0].inkX0 : null, x1: i.objs && i.objs[0] ? i.objs[0].inkX1 : null })) };
 });
 </script>
 </body></html>

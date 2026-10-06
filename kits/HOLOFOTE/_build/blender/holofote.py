@@ -674,6 +674,11 @@ TAMPA_TOP = 4.5  # mm, top of the disc when the gasket rests on the floor
 def copo(spec, at=(0, 0, 0), rot_deg=0.0):
     """The whole candle. Returns the root empty (move/rotate the root, never the parts)."""
     use_size(spec.get('size', '200'))
+    if spec.get('wick', 'double') == 'double':
+        # §D.6 flame-legibility gate fallback: double-ply wood wick, flame 14 x 18 mm (taller, narrower)
+        g = globals()
+        g['WICK_T'] = 2 * g['WICK_T'] + 0.2
+        g['FLAME_W'], g['FLAME_H'] = 14.0 * g['FLAME_W'] / 16.0, 21.0 * g['FLAME_W'] / 16.0
     chroma = spec.get('chroma', False)
     fx = FAIXAS[spec.get('faixa', '02')]
     coat_hex = spec.get('coating', fx['coat'])

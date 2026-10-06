@@ -37,7 +37,8 @@ def renderizar(jobs, verbose=True):
             os.makedirs(os.path.dirname(os.path.abspath(j['saida'])), exist_ok=True)
             pg.screenshot(path=j['saida'], omit_background=j.get('transparente', False),
                           clip={'x': 0, 'y': 0, 'width': w, 'height': h})
-            info = pg.evaluate("({placeholders: (window.HF && HF.placeholders) || [], qa: window.HF_QA || []})")
+            info = pg.evaluate("({placeholders: (window.HF && HF.placeholders) || [], qa: window.HF_QA || [], "
+                               "info: window.HF_INFO || null})")
             info['console'] = msgs
             res.append(info)
             if verbose:
