@@ -243,8 +243,9 @@ def mode_grua(f0, f1, pct, samples):
         print('TEMPO grua', f, pct, round(time.time() - t, 1), flush=True)
 
 
-def mode_blecaute(samples):
-    sc = settings(samples)
+def mode_blecaute(samples, pct=100):
+    """pct 200: rendered at 2x like the director's KV-45 plates (area-averaged to 1x by the compositor)."""
+    sc = settings(samples, pct)
     h, root, cam = build_kv45(True, blackout=True)
     aov_on(os.path.join(OUT, 'blecaute_aov'))
     sc.frame_current = 1
@@ -322,6 +323,6 @@ if __name__ == '__main__':
     elif mode == 'grua':
         mode_grua(int(a[1]), int(a[2]), opt('--pct', 100), opt('--samples', 64))
     elif mode == 'blecaute':
-        mode_blecaute(opt('--samples', 128))
+        mode_blecaute(opt('--samples', 128), opt('--pct', 100))
     elif mode == 'chama':
         mode_chama(a[1], frames(a[2]), opt('--samples', 192))

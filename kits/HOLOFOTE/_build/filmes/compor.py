@@ -286,6 +286,16 @@ def picture(film, f, F):
             return F.plate('camA'), man
         if f <= 203:
             full = f >= 176
+            p2 = os.path.join(C.RENDER, 'grua', 'f%04d_200.png' % f)
+            if full and os.path.exists(p2):
+                # rendered at 2x (supersampled): checked at 2x against its own 2x AOV, delivered area-averaged
+                global VERIF
+                if VERIF is None:
+                    VERIF = Verificador()
+                im2 = C.ler(p2)
+                man.update(aov=os.path.join(C.RENDER, 'grua_aov', '%04d.exr' % f), check='label')
+                man['fid'] = VERIF(im2, man['aov'], 1.0, (0, 0), True)
+                return cv2.resize(im2, (C.W, C.H), interpolation=cv2.INTER_AREA), man
             p = os.path.join(C.RENDER, 'grua', 'f%04d_%d.png' % (f, 100 if full else 50))
             im = C.ler(p)
             if not full:

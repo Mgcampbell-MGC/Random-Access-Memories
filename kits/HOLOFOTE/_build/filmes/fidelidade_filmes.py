@@ -162,10 +162,14 @@ def filme(film):
             cache.clear() if len(cache) > 2 else None
             cache[mf['aov']] = ler_aov(mf['aov'])
         aov = cache[mf['aov']]
+        if mf['check'] == 'albedo' and mf['aov'] + '#nativo' not in cache:
+            cache[mf['aov'] + '#nativo'] = ler_aov(mf['aov'], nativo=True)
         img = cv2.imread(os.path.join(od, 'q%04d.png' % f), cv2.IMREAD_COLOR)
         if mf['check'] == 'albedo':
             if mf['aov'] not in albedo_res:
-                albedo_res[mf['aov']] = checar(alpha, aov, albedo_bgr(aov['diffcol']))
+                an = cache[mf['aov'] + '#nativo']           # the albedo at the render's own scale (2x)
+                albedo_res[mf['aov']] = checar(alpha, an, albedo_bgr(an['diffcol']))
+                albedo_res[mf['aov']]['scale'] = '%dx%d' % an['mask'].shape[::-1]
             r = dict(albedo_res[mf['aov']])
             r['method'] = 'albedo pass (Diffuse Color) of the blackout render, frame-invariant camera and pack'
             px = checar(alpha, aov, img)

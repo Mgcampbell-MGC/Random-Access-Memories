@@ -5,14 +5,14 @@
   "frames_label_visible": 72,
   "frames_pass": 72,
   "frames_fail": [],
-  "worst_tile_min": 0.923,
-  "worst_tile_frame": 72,
-  "p5_min": 0.968,
+  "worst_tile_min": 0.934,
+  "worst_tile_frame": 74,
+  "p5_min": 0.963,
   "controls_caught": 72,
   "colour_frames": 70,
   "hue_shift_range": [
-   -1.29,
-   -1.29
+   -1.22,
+   -1.22
   ],
   "sat_ratio_min": 0.999,
   "bars": {
@@ -22,1586 +22,1727 @@
    "sat": 0.75
   },
   "tool": "_build/tools/fidelidade_uv.py (functions and bars) via _build/filmes/fidelidade_filmes.py",
-  "seconds": 105.5
+  "seconds": 0.7
  },
  "quadros": [
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.757,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.962,
    "control": {
-    "worst_tile": -0.132,
+    "worst_tile": -0.511,
     "caught": true
    },
-   "worst_tile": 0.923,
+   "worst_tile": 0.969,
    "worst_at": [
-    224,
-    1248
+    784,
+    2384
    ],
-   "p5_tile": 0.986,
+   "p5_tile": 0.984,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
    "frame": 72,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.767,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.954,
    "control": {
-    "worst_tile": -0.138,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "worst_tile": 0.928,
+   "worst_tile": 0.962,
    "worst_at": [
-    224,
-    1248
+    496,
+    2096
    ],
-   "p5_tile": 0.98,
+   "p5_tile": 0.978,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
    "frame": 73,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
    "frame": 74,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 75,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 76,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 77,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 78,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 79,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 80,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 81,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 82,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 83,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 84,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 85,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 86,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 87,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 88,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 89,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 90,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 91,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 92,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 93,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 94,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 95,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 96,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 97,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 98,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 99,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 100,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 101,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 102,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 103,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 104,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 105,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 106,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 107,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 108,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 109,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 110,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 111,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 112,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 113,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 114,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 115,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 116,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 117,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 118,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 119,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 120,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 121,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 122,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 123,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 124,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 125,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 126,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 127,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 128,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 129,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 130,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 131,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 132,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 133,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 134,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 135,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 136,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 137,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 138,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 139,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 140,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 141,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 142,
    "pass": true
   },
   {
-   "tiles": 594,
-   "uv_agreement": 0.9992,
-   "corner_tiles_skipped": 47,
-   "corner_tiles_worst": 0.769,
+   "tiles": 1298,
+   "uv_agreement": 0.9996,
+   "corner_tiles_skipped": 94,
+   "corner_tiles_worst": 0.936,
    "control": {
-    "worst_tile": -0.139,
+    "worst_tile": -0.513,
     "caught": true
    },
-   "hue_shift_deg": -1.29,
+   "hue_shift_deg": -1.22,
    "sat_ratio": 0.999,
-   "worst_tile": 0.931,
+   "worst_tile": 0.934,
    "worst_at": [
-    224,
-    1248
+    960,
+    2144
    ],
-   "p5_tile": 0.968,
+   "p5_tile": 0.963,
    "bar_p5": 0.93,
-   "method": "label AOV",
+   "scale": "2x (2160x3840), then area-averaged to 1080 for delivery",
+   "method": "label AOV 2x",
+   "reused_identical_label_region": true,
    "frame": 143,
    "pass": true
   }
