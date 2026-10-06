@@ -101,9 +101,17 @@ def split(P, lruns, rruns, y, label):
     return pl, pr
 
 
-def manifesto(faixa, net):
+REF_LOT = ('LOTE: ver base do copo', 'LOTE: marcado na cápsula')     # director's correction for the refill cartons
+
+
+def manifesto(faixa, net, refil=False):
     lines = T.manifesto(faixa, ver='carton')
-    return [('PESO LÍQUIDO ' + net) if t == 'PESO LÍQUIDO 200 g' else t for t in lines]
+    lines = [('PESO LÍQUIDO ' + net) if t == 'PESO LÍQUIDO 200 g' else t for t in lines]
+    if refil:
+        hits = [i for i, t in enumerate(lines) if t.startswith(REF_LOT[0])]
+        assert len(hits) == 1, hits
+        lines[hits[0]] = REF_LOT[1] + lines[hits[0]][len(REF_LOT[0]):]
+    return lines
 
 
 # ------------------------------------------------------------------------------------------------- fronts
@@ -242,10 +250,14 @@ def legal(g, faixa, items, name):
     return P
 
 
-def back(g, faixa, net):
+def back(g, faixa, net, refil=False):
     flood, ink = colours(faixa)
     P = Panel(g, 'verso', g.W, g.H, flood, ink)
-    lines = manifesto(faixa, net)
+    lines = manifesto(faixa, net, refil)
+    if refil:
+        P.dev.append(dict(panel='verso', kind="director's correction", platform=REF_LOT[0], used=REF_LOT[1],
+                          reason="a refill's lot is laser-marked on the capsule band (director, as platform owner, "
+                                 "6 Oct 2026); the rest of the MANIFESTO is verbatim"))
 
     def run(top, write):
         ln, cap = K.fit_size(lambda c: Line([run_cap(lines[0], K.CN, c, 100, CAPS)]), g.MEAS, 1, 20)
@@ -441,7 +453,7 @@ def build(kind, faixa, od):
     modo = [('h', T.MODO_DE_USO[0])] + [('b', t) for t in T.MODO_DE_USO[1:]]
     adv = [('h', T.ADVERTENCIAS[0])] + [('b', t) for t in T.ADVERTENCIAS[1:]]
     if kind == 'REFIL':
-        panels = dict(front=front_refil(g, faixa), right=legal(g, faixa, modo, 'lateral-1'), back=back(g, faixa, K_['net']),
+        panels = dict(front=front_refil(g, faixa), right=legal(g, faixa, modo, 'lateral-1'), back=back(g, faixa, K_['net'], True),
                       left=legal(g, faixa, adv, 'lateral-2'), top=top(g, faixa), bottom=bottom(g, faixa, True))
     else:
         panels = dict(front=front_ticket(g, faixa, kind == 'SINGLE'), right=legal(g, faixa, modo + adv, 'lateral-1'),

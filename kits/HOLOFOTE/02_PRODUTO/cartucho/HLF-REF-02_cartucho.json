@@ -423,14 +423,14 @@
         "cap_mm": 3.0
       },
       {
-        "label": "LOTE: ver base do copo · FAB 0",
+        "label": "LOTE: marcado na cápsula · FAB",
         "ink_mm": [
           5.0,
           65.06,
-          55.05,
+          57.56,
           67.67
         ],
-        "text": "LOTE: ver base do copo · FAB 03/2027 · VAL 03/2029 (FICTÍCIOS)",
+        "text": "LOTE: marcado na cápsula · FAB 03/2027 · VAL 03/2029 (FICTÍCIOS)",
         "cap_mm": 1.7
       },
       {
@@ -691,6 +691,13 @@
     {
       "panel": "frente",
       "reason": "§C.9 lists the refill front as NOVA TEMPORADA · O copo fica. A turnê continua. · faixa name · PESO LÍQUIDO 200 g; \"vela aromática · refil\" (the peel lid's own string) is added beside the net weight so the main panel names the product"
+    },
+    {
+      "panel": "verso",
+      "kind": "director's correction",
+      "platform": "LOTE: ver base do copo",
+      "used": "LOTE: marcado na cápsula",
+      "reason": "a refill's lot is laser-marked on the capsule band (director, as platform owner, 6 Oct 2026); the rest of the MANIFESTO is verbatim"
     },
     {
       "panel": "fundo",
