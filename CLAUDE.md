@@ -2891,8 +2891,15 @@ strangers' dead parents, alone, in year three?"**
     - **Expected closes from today's list: 10–25, about 15.** A guess; no call has been made.
   - **★★ AN OUTSIDE "BUSINESS DESIGN" AND THE FOUNDER'S HOURS, 6 Oct 2026.**
     - A supplied plan proposed R$5.990 campaigns, priced cost-plus on an assumed 14 hours a job.
-    - **Founder: *"max 3 hours jobs... for a campaign and 1 hour for 4 images"*, and prices stay at or under
-      R$2.990.** So its price case falls: its hours were about 5× too high.
+    - **Founder: *"max 3 hours jobs... for a campaign and 1 hour for 4 images"*.** So its cost-plus price case
+      falls: its hours were about 5× too high. *(⚠ I first recorded this as "prices stay at or under R$2.990". That
+      was a misreading: the founder was saying the HOURS stay under the 7–8-hour break-even, and then rejected both
+      R$2.990 and R$5.990. There is no founder price ceiling. Price on value, not on hours.)*
+    - **★ VALUE, NOT HOURS, 6 Oct 2026.** Asked what the Climate Rescue AI-presenter ad is worth: a scripted 30 s ad
+      with a model-quality presenter, four settings, a test story and an end card is a PRODUCTION, not a creator
+      clip. Price it against a São Paulo shoot with model and film (R$6.878–13.255), not a R$100–250 UGC video.
+      My R$990 add-on price compared it to the wrong thing. Proposed, untested: the ad alone R$2.500–3.000; with
+      O LANÇAMENTO R$4.990. Find the real number by quoting all three on the calls and logging which is chosen.
     - At 3 hours, R$2.990 earns ≈R$870–980 an hour after R$52–380 of tool costs, against R$290–360 needed.
     - **At these hours the limit is sales, not production.** Even R$1.490 pays ≈R$370–480 an hour; a lower price
       doubles the sales count (8–10 a month), it doesn't break her rate.
