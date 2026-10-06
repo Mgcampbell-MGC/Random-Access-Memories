@@ -1,13 +1,24 @@
-# 03_LANCAMENTO/C · C03, C07, C09 (§E.2)
+# 03_LANCAMENTO/C · a série C (§E.2)
 
 | Arquivo | O que é |
 |---|---|
-| `C03_O-PIOR-SHOW.png` | 9:16. ELA / APLAUDIU / DE PÉ / O SEU / PIOR / SHOW. em tipo de madeira, a nota da Fã "(girassol, 2007)" com seta, o círculo Ø 360 da vela acesa com fio preto de 6 px, "SUA VEZ." + "holofote nela." + linha de segurança. Os vãos da pilha são iguais (o de DE PÉ só tem o ar do agudo: ≥ 6 px limpos depois de O LAMBE). |
-| `C07_PIX.png` | 9:16, só em 6 de maio. PIX / NÃO TEM / CHEIRO., miniatura do KV com fio preto de 6 px, MÃE AO VIVO · DOMINGO 09.05, linha de segurança e assinatura. Sem marca Pix. |
-| `C09_O-CARTAZ-DELA_DONA-CIDA.png` | 9:16. Saída de exemplo do gerador: DONA CIDA AO VIVO em rosa (escada passo 4), seis datas da turnê; "faz o cartaz dela." é a anotação da Fã com seta até o nome; "holofote.exemplo/cartaz" em Produção pequena com um fio até o fim da medida. |
-| `placeholders.json` | Caixa `[x, y, w, h]` da miniatura da vela em C03 (círculo) e C07 (retângulo 4:5). |
+| `C01_O-MURO.png` | 4:5. A parede de lambe-lambe no flash duro, os cartazes da marca em grade 4 × 3 (dois rasgados até camadas antigas, uma gota de cola seca); no peitoril de concreto, as quatro velas apagadas e tampadas, 01–02–03–04. O título é o cartaz 12 colado na parede: MÃE AO VIVO. 09.05. INGRESSOS COM VOCÊ. (nenhum tipo por cima). |
+| `C02_A-PRIMEIRA-FILA.png` | 4:5. Do palco de uma escola: o verso da vela MÃE ♥ acesa, com a linha ESTREIA · 03.08.2003 · 14:32; lá embaixo, a primeira fila de cadeiras brancas e uma bolsa guardando o lugar do meio. "A vida toda guardando lugar na primeira fila." / "Esse ano, o palco é dela." + linha de segurança e "holofote nela.". |
+| `C03_O-PIOR-SHOW.png` | 9:16 (equipe de marca). ELA / APLAUDIU / DE PÉ / O SEU / PIOR / SHOW. em tipo de madeira, a nota da Fã "(girassol, 2007)", o círculo da vela acesa, "Sua vez." + "holofote nela." + linha de segurança. |
+| `C04_A-DISCOGRAFIA.png` | 4:5. As quatro velas acesas em fila no palco preto, cada uma no seu foco branco; a setlist colada no chão 60 cm à frente, escrita à mão pela Fã: 1. camarim · 2. ao vivo · 3. mais um! · 4. acústico. "A DISCOGRAFIA DELA." / "(até agora.)" + "holofote nela." e a linha de segurança. |
+| `C05_O-CASE_1x1.png` | 1:1. O CASE aberto visto a 70° de cima, no preto: o espelho mostra só o teto e uma lâmpada nua; na espuma, a AO VIVO tampada; a setlist saindo da fenda; a pulseira pela fechadura. "Mãe não tem camarim." / "Agora tem." + "O CASE · com o nome dela · R$179" e "holofote nela.". |
+| `C05_O-CASE_9x16.png` | 9:16. A mesma cena com câmera e tipo próprios (nunca recortado do 1:1). |
+| `C06_O-MENOR-HOLOFOTE.png` | 4:5. Blecaute: a vela acesa no escuro, a chama é a única luz. "O MENOR HOLOFOTE DO BRASIL." / "Pra maior atração." + linha de segurança e "holofote nela.". |
+| `C07_PIX.png` | 9:16, só em 6 de maio (equipe de marca). PIX / NÃO TEM / CHEIRO., miniatura do KV, MÃE AO VIVO · DOMINGO 09.05. Sem marca Pix. |
+| `C08_NOVA-TEMPORADA.png` | 4:5. O copo limpo e vazio no X, a cápsula de refil preta ao lado com a tampa de selar meio aberta. "O copo fica." / "A turnê continua." + "refil 200 g · R$79" e "holofote nela.". |
+| `C09_O-CARTAZ-DELA_DONA-CIDA.png` | 9:16 (equipe de marca). Saída de exemplo do gerador: DONA CIDA AO VIVO em rosa. |
+| `C10_SALVA-COMO.png` | 4:5. Reboco no flash, três copos personalizados apagados no peitoril: MÃE ♥ (amarelo), DONA CIDA (rosa), MAINHA (laranja). "comenta como ela tá salva no seu celular. a gente bota no cartaz." + "holofote nela." (O aceso em preto: amarelo nunca sobre fundo claro, §D.1). |
+| `placeholders.json` | Caixas da miniatura da vela em C03 e C07 (equipe de marca). |
 
-As miniaturas não têm alegação de fidelidade (§D.7.5). Para pôr o render no lugar com o mesmo papel:
-`python _build/brand/lancamento.py C` usa `_build/brand/cache/vela_c03.png` e `vela_c07.png` (recortes do KV-45 aceso);
-`… C --vela-c03 vela.png --vela-c07 kv.png` troca os arquivos. O render entra DEPOIS de O LAMBE, intocado, e o fio
-preto de 6 px é desenhado depois do render.
+As peças de C01–C10 feitas em 3D têm o render limpo em `02_PRODUTO/renders/C0n_*_limpo.png`; o tipo é posto por código
+(motor da marca: `_build/shots/tipo_c.html`, composto por `_build/shots/pecas_finais.py C`). Nenhuma placa de IA, nenhum
+pixel gerado, nenhuma edição por IA depois da composição. Toda peça com vela acesa leva *nunca deixe a vela acesa sem
+supervisão.* (§D.8.6), e nenhum tipo entra na poça de luz (regra 3).
+
+Como refazer: `_build/shots/blender.sh _build/shots/campanha.py -- C01 C02 C04 C05_1x1 C05_9x16 C06 C08 C10` e depois
+`/home/user/venvs/web/bin/python _build/shots/pecas_finais.py C`. C03, C07 e C09 saem de `_build/brand/lancamento.py`.

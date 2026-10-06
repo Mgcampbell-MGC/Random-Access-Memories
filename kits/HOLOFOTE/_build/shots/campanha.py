@@ -415,12 +415,12 @@ def b_c05(fmt):
 
     def f():
         chao_preto()
-        spot_palco((0.0, 0.03, 0.06), 0.20)
+        spot_palco((0.0, 0.03, 0.06), 0.155)
         ang = OL.open_deg_for_camera(70)
         c = OL.case(state='open', open_deg=ang, copo=dict(faixa='02', wrap=S.wrap('02'), lid_art=S.tampa_art()),
                     band=True, band_kw=dict(route='corner'), at=(0, 0, 0), rot_deg=8.0)
         pts = pontos([o for o in (c.base, c.lid, c.mirror)])
-        box = (190, 292, 890, 932) if fmt == '1x1' else (130, 700, 950, 1384)
+        box = (200, 344, 880, 944) if fmt == '1x1' else (150, 800, 930, 1440)
         cam = cam_fit(pts, 70.0, -6.0, 60, res, box, fstop=11.0, target=(0, 0.02, 0.07))
         bpy.context.view_layer.update()
         OL.place_work_bulb(c, cam, dist=1.3)
@@ -687,7 +687,8 @@ def b_l07():
 def shots():
     T = {}
     for fmt, k in KV01.items():
-        T['KV01_' + fmt] = dict(nome='KV-01_%s_limpo' % fmt, b=b_kv01(fmt), res=k['res'], s=96 if fmt == '9x16' else 64)
+        T['KV01_' + fmt] = dict(nome='KV-01_%s_limpo' % fmt, b=b_kv01(fmt), res=k['res'],
+                                s={'9x16': 96, '1x1': 128}.get(fmt, 64))     # 1:1 at 128: small type at the limb vs the denoiser
     T['KV01_9x16_apagado'] = dict(nome='KV-01_9x16_apagado_portao', b=b_kv01('9x16', lit=False), res=(1080, 1920), s=32, pct=50,
                                   nolabel=True)
     T['C01'] = dict(nome='C01_O-MURO_limpo', b=b_c01, res=(1080, 1350), s=64)

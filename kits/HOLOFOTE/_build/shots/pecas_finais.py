@@ -128,24 +128,21 @@ def def_pecas():
         ]),
     ], linhas=[dict(s=C(SEG, 16, op=0.85), x=140, y=1286, align='left')])
     # C05 · 1:1 and 9:16 · unlit (the copo is in the foam, lid on): no safety line needed
+    # all type above the case: the pool and the wristband's tail own the bottom of the frame (rule 3)
     P['C05_1x1'] = dict(plate='C05_O-CASE_1x1_limpo.png', out='C05_O-CASE_1x1.png', W=1080, H=1080, blocos=[
-        dict(x0=180, x1=900, y0=80, y1=268, itens=[
+        dict(x0=180, x1=900, y0=80, y1=318, itens=[
             dict(tipo='cheia', s=X('Mãe não tem camarim.', 44)),
-            dict(tipo='cheia', s=X('Agora tem.', 80, cor='amarelo'), antes=18),
-        ]),
-        dict(x0=180, x1=900, y0=962, y1=1000, itens=[
-            dict(tipo='dividida', esq=C('O CASE · com o nome dela · R$179', 22, lsEm=0.03, tnum=True), dir=LOCK(22)),
+            dict(tipo='cheia', s=X('Agora tem.', 80, cor='amarelo'), antes=16),
+            dict(tipo='dividida', esq=C('O CASE · com o nome dela · R$179', 22, lsEm=0.03, tnum=True), dir=LOCK(22), antes=26),
         ]),
     ])
     P['C05_9x16'] = dict(plate='C05_O-CASE_9x16_limpo.png', out='C05_O-CASE_9x16.png', W=1080, H=1920, blocos=[
-        dict(x0=140, x1=940, y0=278, y1=650, itens=[
+        dict(x0=140, x1=940, y0=278, y1=770, itens=[
             dict(tipo='cheia', s=X('Mãe não tem', 80)),
             dict(tipo='cheia', s=X('camarim.', 80), antes=14),
             dict(tipo='cheia', s=X('Agora tem.', 80, cor='amarelo'), antes=22),
-        ]),
-        dict(x0=140, x1=940, y0=1404, y1=1500, itens=[
-            dict(tipo='dividida', esq=C('O CASE · com o nome dela', 32, lsEm=0.03), dir=C('R$179', 32, lsEm=0.03, tnum=True)),
-            dict(tipo='assinatura', cap=30, tinta='papel', lamp='amarelo', antes=26),
+            dict(tipo='dividida', esq=C('O CASE · com o nome dela', 30, lsEm=0.03), dir=C('R$179', 30, lsEm=0.03, tnum=True), antes=34),
+            dict(tipo='assinatura', cap=26, tinta='papel', lamp='amarelo', antes=22),
         ]),
     ])
     # C06 · 4:5 · blackout: the flame is the only light; type in the dark above and below
@@ -176,8 +173,7 @@ def def_pecas():
             dict(tipo='cheia', s=X('comenta como ela', 60, cor='preto')),
             dict(tipo='cheia', s=X('tá salva no seu celular.', 60, cor='preto'), antes=16),
             dict(tipo='cheia', s=X('a gente bota no cartaz.', 60, cor='preto'), antes=16),
-            dict(tipo='espaco', flex=1),
-            dict(tipo='assinatura', cap=26, tinta='preto', lamp='preto'),      # §D.1: amarelo never on a light ground
+            dict(tipo='assinatura', cap=26, tinta='preto', lamp='preto', antes=44),   # §D.1: amarelo never on a light ground
         ]),
     ])
 

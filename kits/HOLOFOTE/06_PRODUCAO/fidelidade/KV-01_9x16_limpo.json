@@ -5,7 +5,7 @@
     "tiles": 168,
     "uv_agreement": 0.9956,
     "corner_tiles_skipped": 4,
-    "corner_tiles_worst": 0.797,
+    "corner_tiles_worst": 0.799,
     "control": {
       "patch_px": [
         1301,
@@ -13,10 +13,10 @@
         300,
         300
       ],
-      "worst_tile": 0.794,
+      "worst_tile": 0.796,
       "caught": true
     },
-    "hue_shift_deg": -1.35,
+    "hue_shift_deg": -1.29,
     "sat_ratio": 0.999,
     "worst_tile": 0.934,
     "p5_tile": 0.957,
