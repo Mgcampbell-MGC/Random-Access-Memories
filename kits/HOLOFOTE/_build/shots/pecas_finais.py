@@ -126,7 +126,7 @@ def def_pecas():
             dict(tipo='cheia', s=X('DELA.', 200), antes=16),
             dict(tipo='dividida', esq=C('(até agora.)', 30), dir=LOCK(24), antes=26),
         ]),
-    ], linhas=[dict(s=C(SEG, 16, op=0.85), x=140, y=1286, align='left')])
+    ], linhas=[dict(s=C(SEG, 15, op=0.85), x=940, y=1286, align='right')])   # bottom-right, clear of the setlist
     # C05 · 1:1 and 9:16 · unlit (the copo is in the foam, lid on): no safety line needed
     # all type above the case: the pool and the wristband's tail own the bottom of the frame (rule 3)
     P['C05_1x1'] = dict(plate='C05_O-CASE_1x1_limpo.png', out='C05_O-CASE_1x1.png', W=1080, H=1080, blocos=[

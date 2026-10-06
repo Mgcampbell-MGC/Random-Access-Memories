@@ -22,6 +22,8 @@
     "p5_tile": 0.982,
     "bar_p5": 0.95,
     "pass": true,
-    "label_id": null
+    "label_id": null,
+    "glass_frac_altura": null,
+    "thumbnail_sem_alegacao": null
   }
 ]
